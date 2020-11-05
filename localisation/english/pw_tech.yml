@@ -1,0 +1,12 @@
+﻿l_english:
+
+    # Planetary Megastructures Tech
+    pw_tech_planetary_mega_engineering:0 "Planetary Mega-Engineering"
+    pw_tech_planetary_mega_engineering_desc:1 "In our path to reach the stars we must never forget to build our stepping stones.\nTo do so, we must first study the materials and techniques involved in the building of wonderous monuments and gather the required resources for their construction."
+
+    # feature_planetary:0 "Megastructure Restoration"
+    # feature_planetary_desc:0 "Allows us to repair ruined Megastructures."
+
+    # Particle Supercollider
+    pw_tech_particle_supercollider:0 "Particle Supercollider"
+    pw_tech_particle_supercollider_desc:1 "A huge circumference of cables, ducts and sensor with thousands of kilometers in diameter. Here we can perform never observed particle acceleration and collision and put the most wild theories on Field Manipulation in practice."
