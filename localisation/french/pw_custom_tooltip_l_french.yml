@@ -1,0 +1,8 @@
+﻿l_french:
+
+    # Planetary Megastructures Tech
+    pw_tech_planetary_mega_engineering:0 "Planetary Mega-Engineering"
+    pw_tech_planetary_mega_engineering_desc:1 "In our path to reach the stars we must never forget to build our stepping stones.\nTo do so, we must first study the materials and techniques involved in this monumental scale building and gather the required resources."
+
+    # feature_planetary:0 "Megastructure Restoration"
+    # feature_planetary_desc:0 "Allows us to repair ruined Megastructures."
