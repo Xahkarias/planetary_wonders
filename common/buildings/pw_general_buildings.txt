@@ -1,4 +1,4 @@
-pw_space_elevator = {
+pw_building_space_elevator = {
 	base_buildtime = @pw_building_buildtime
 	add_to_first_building_slot = yes
 	base_cap_amount = 1
@@ -91,7 +91,21 @@ pw_space_elevator = {
 			owner = { is_gestalt = no }
 		}
 		text = job_clerk_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
 		text = job_merchant_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
 		text = job_enforcer_effect_desc
 	}
 
@@ -100,7 +114,6 @@ pw_space_elevator = {
 			exists = owner
 			owner = { is_gestalt = yes }
 		}
-		text = job_maintenance_drone_effect_desc
 		text = job_patrol_drone_effect_desc
 	}
 
@@ -110,7 +123,22 @@ pw_space_elevator = {
 			owner = { is_gestalt = yes }
 		}
 		text = job_maintenance_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
 		text = job_patrol_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
 	}
 
 	on_built = {

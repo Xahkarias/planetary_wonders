@@ -1,4 +1,4 @@
-pw_particle_supercollider = {
+pw_building_particle_supercollider = {
 	base_buildtime = @pw_building_buildtime
 	add_to_first_building_slot = yes
 	base_cap_amount = 1
@@ -87,6 +87,13 @@ pw_particle_supercollider = {
 			owner = { is_gestalt = no }
 		}
 		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
 		text = job_head_researcher_effect_desc
 	}
 
@@ -147,6 +154,5 @@ pw_particle_supercollider = {
 		log = "[This.pw_planetary_wonder_limit]"
 		log = "Wonder maximum in each planet (country scope):"
 		log = "[Owner.pw_planetary_wonder_limit]"
-
 	}
 }
