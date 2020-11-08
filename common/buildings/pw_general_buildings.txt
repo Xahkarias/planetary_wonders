@@ -1,0 +1,159 @@
+pw_space_elevator = {
+	base_buildtime = @pw_building_buildtime
+	add_to_first_building_slot = yes
+	base_cap_amount = 1
+	can_be_ruined = no
+
+	category = trade
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+		free_district_slots > 0 # Needs a free district to occupy
+
+		custom_tooltip = {
+			text = PW_PLANET_WONDER_LIMIT
+			set_variable = { which = pw_planetary_wonder_limit value = owner } # Change variable context
+			check_variable = { which = pw_planet_wonders_built value < pw_planetary_wonder_limit }
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+		pop_resettlement_cost_mult = -0.25
+		planet_immigration_pull_mult = 0.25
+		planet_pops_consumer_goods_upkeep_mult = -0.05
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = @pw_building_worker_jobs
+			job_merchant_add = @pw_building_ruler_jobs
+			job_enforcer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = @pw_building_menial_jobs
+			job_patrol_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = @pw_building_menial_jobs
+			job_patrol_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+		}
+		upkeep = {
+			energy = @pw_building_upkeep
+		}
+	}
+
+	prerequisites = {
+		pw_tech_space_elevator
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_clerk_effect_desc
+		text = job_merchant_effect_desc
+		text = job_enforcer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+		text = job_patrol_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+		text = job_patrol_drone_effect_desc
+	}
+
+	on_built = {
+		log = "on_built for Space Elevator!"
+		log = "Wonders built or building in this planet:"
+		log = "[This.pw_planet_wonders_built]"
+		log = "Wonder maximum in each planet (planet scope):"
+		log = "[This.pw_planetary_wonder_limit]"
+		log = "Wonder maximum in each planet (country scope):"
+		log = "[Owner.pw_planetary_wonder_limit]"
+	}
+
+	on_destroy = {
+		log = "on_destroy for Space Elevator!"
+		change_variable = {which = pw_planet_wonders_built value = -1}
+		log = "Wonders built or building in this planet:"
+		log = "[This.pw_planet_wonders_built]"
+		log = "Wonder maximum in each planet (planet scope):"
+		log = "[This.pw_planetary_wonder_limit]"
+		log = "Wonder maximum in each planet (country scope):"
+		log = "[Owner.pw_planetary_wonder_limit]"
+	}
+
+	on_queued = {
+		log = "on_queued for Space Elevator!"
+		change_variable = {which = pw_planet_wonders_built value = +1}
+		log = "Wonders built or building in this planet:"
+		log = "[This.pw_planet_wonders_built]"
+		log = "Wonder maximum in each planet (planet scope):"
+		log = "[This.pw_planetary_wonder_limit]"
+		log = "Wonder maximum in each planet (country scope):"
+		log = "[Owner.pw_planetary_wonder_limit]"
+	}
+
+	on_unqueued = {
+		log = "on_unqueued for Space Elevator!"
+		change_variable = {which = pw_planet_wonders_built value = -1}
+		log = "Wonders built or building in this planet:"
+		log = "[This.pw_planet_wonders_built]"
+		log = "Wonder maximum in each planet (planet scope):"
+		log = "[This.pw_planetary_wonder_limit]"
+		log = "Wonder maximum in each planet (country scope):"
+		log = "[Owner.pw_planetary_wonder_limit]"
+
+	}
+}
