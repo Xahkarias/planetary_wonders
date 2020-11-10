@@ -17,9 +17,6 @@ pw_tech_planetary_mega_engineering = {
 	modifier = {
 		country_resource_max_add = 5000
 		planet_building_build_speed_mult = 0.50
-		#Increases planetary wonder limit by 1:
-		#	in case it doesent exist yet, create it and set it to 1.
-		change_variable = {which = pw_planetary_wonder_limit value = 1}
 	}
 
 	weight_modifier = {

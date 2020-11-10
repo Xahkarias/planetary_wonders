@@ -1,3 +1,5 @@
 ﻿l_english:
 
-    PW_PLANET_WONDER_LIMIT: "Only 1 Planetary Wonder is allowed per planet"
+    pw_planet_wonder_limit_warning: "§YPlanets can only support a single Wonder of any type."
+
+    pw_planet_wonder_limit: "Planet already has another Wonder."

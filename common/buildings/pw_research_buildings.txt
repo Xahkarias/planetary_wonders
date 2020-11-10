@@ -22,13 +22,7 @@ pw_building_particle_supercollider = {
 	allow = {
 		has_major_upgraded_capital = yes
 		free_district_slots > 0 # Needs a free district to occupy
-
-
-		custom_tooltip = {
-			text = PW_PLANET_WONDER_LIMIT
-			set_variable = { which = pw_planetary_wonder_limit value = owner } # Change variable context
-			check_variable = { which = pw_planet_wonders_built value < pw_planetary_wonder_limit }
-		}
+		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
 	planet_modifier = {

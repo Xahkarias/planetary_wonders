@@ -1,0 +1,20 @@
+pw_can_build_planetary_wonder = {
+	OR = {
+		custom_tooltip = {
+			fail_text = pw_planet_wonder_limit_warning
+			has_edict = pw_edict_monumentality
+		}
+
+		pw_has_planetary_wonder = no
+	}
+}
+
+pw_has_planetary_wonder = {
+	custom_tooltip = {
+		fail_text = pw_planet_wonder_limit
+		OR = {
+			has_building = pw_building_particle_supercollider
+			has_building = pw_building_space_elevator
+		}
+	}
+}
