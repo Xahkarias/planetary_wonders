@@ -10,6 +10,8 @@ pw_building_space_elevator = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		NOT = { is_planet_class = pc_habitat }
+		NOT = { is_planet_class = pc_ringworld_habitable }
 	}
 
 	destroy_trigger = {
