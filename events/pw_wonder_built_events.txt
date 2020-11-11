@@ -1,0 +1,47 @@
+namespace = pw_wonder_built
+
+#
+planet_event = {
+	id = pw_wonder_built.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+		is_occupied_flag = no
+	}
+
+
+
+}
+
+# Refugees Arrive (species already present in empire)
+pop_event = {
+	id = refugees.2
+	title = OK
+	desc = OK
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = MESSAGE_REFUGEES_ARRIVED
+			days = 30
+			target = event_target:RefugeeEscapedPlanet # the Go To
+			variable = {
+				type = name
+				localization = SPECIES
+				scope = root.species
+			}
+			variable = {
+				type = name
+				localization = PLANET
+				scope = root.planet
+			}
+		}
+
+	}
+}

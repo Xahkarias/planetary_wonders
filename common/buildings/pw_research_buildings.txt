@@ -26,7 +26,6 @@ pw_building_particle_supercollider = {
 	}
 
 	planet_modifier = {
-		custom_tooltip = pw_planet_wonder
 		planet_max_districts_add = -1
 		planet_researchers_physics_research_produces_mult = @pw_building_research_mod
 	}
@@ -77,6 +76,10 @@ pw_building_particle_supercollider = {
 	}
 
 	triggered_desc = {
+		text = pw_planet_wonder
+	}
+
+	triggered_desc = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
@@ -109,45 +112,6 @@ pw_building_particle_supercollider = {
 	}
 
 	on_built = {
-		log = "on_built for Particle Supercollider!"
-		log = "Wonders built or building in this planet:"
-		log = "[This.pw_planet_wonders_built]"
-		log = "Wonder maximum in each planet (planet scope):"
-		log = "[This.pw_planetary_wonder_limit]"
-		log = "Wonder maximum in each planet (country scope):"
-		log = "[Owner.pw_planetary_wonder_limit]"
-	}
 
-	on_destroy = {
-		log = "on_destroy for Particle Supercollider!"
-		change_variable = {which = pw_planet_wonders_built value = -1}
-		log = "Wonders built or building in this planet:"
-		log = "[This.pw_planet_wonders_built]"
-		log = "Wonder maximum in each planet (planet scope):"
-		log = "[This.pw_planetary_wonder_limit]"
-		log = "Wonder maximum in each planet (country scope):"
-		log = "[Owner.pw_planetary_wonder_limit]"
-	}
-
-	on_queued = {
-		log = "on_queued for Particle Supercollider!"
-		change_variable = {which = pw_planet_wonders_built value = +1}
-		log = "Wonders built or building in this planet:"
-		log = "[This.pw_planet_wonders_built]"
-		log = "Wonder maximum in each planet (planet scope):"
-		log = "[This.pw_planetary_wonder_limit]"
-		log = "Wonder maximum in each planet (country scope):"
-		log = "[Owner.pw_planetary_wonder_limit]"
-	}
-
-	on_unqueued = {
-		log = "on_unqueued for Particle Supercollider!"
-		change_variable = {which = pw_planet_wonders_built value = -1}
-		log = "Wonders built or building in this planet:"
-		log = "[This.pw_planet_wonders_built]"
-		log = "Wonder maximum in each planet (planet scope):"
-		log = "[This.pw_planetary_wonder_limit]"
-		log = "Wonder maximum in each planet (country scope):"
-		log = "[Owner.pw_planetary_wonder_limit]"
 	}
 }

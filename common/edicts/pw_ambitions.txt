@@ -10,7 +10,7 @@ pw_ambition_monumentality = {
 		category = edicts
 	}
 
-	modifier = {
+	effect = {
 		custom_tooltip = pw_ambition_monumentality_tooltip
 	}
 
