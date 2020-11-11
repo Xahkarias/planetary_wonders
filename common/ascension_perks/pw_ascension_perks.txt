@@ -1,0 +1,29 @@
+
+pw_ap_planetary_wonders = {
+	potential = {
+		NOT = {
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+	}
+
+	possible = {
+		has_technology = pw_tech_planetary_mega_engineering
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "no_rev_engineering"
+	}
+
+	modifier = {
+		# ship_sensor_range_add = 2
+		# ship_hyperlane_range_add = 4
+	}
+
+	ai_weight = {
+		factor = 1
+	}
+}
