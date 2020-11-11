@@ -28,10 +28,11 @@ pw_building_space_elevator = {
 	}
 
 	planet_modifier = {
+		custom_tooltip = pw_planet_wonder
 		planet_max_districts_add = -1
 		pop_resettlement_cost_mult = -0.25
 		planet_immigration_pull_mult = 0.25
-		planet_pops_consumer_goods_upkeep_mult = -0.05
+		#planet_pops_consumer_goods_upkeep_mult = -0.05
 	}
 
 	triggered_planet_modifier = {

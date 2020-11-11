@@ -26,6 +26,7 @@ pw_building_particle_supercollider = {
 	}
 
 	planet_modifier = {
+		custom_tooltip = pw_planet_wonder
 		planet_max_districts_add = -1
 		planet_researchers_physics_research_produces_mult = @pw_building_research_mod
 	}
