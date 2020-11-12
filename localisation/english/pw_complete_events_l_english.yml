@@ -1,0 +1,6 @@
+﻿l_english:
+
+    #Complete Space Elevator
+    pw_complete.100.name: "To the stars we rise"
+    pw_complete.100.desc: "A great spire launches for the clouds of [ROOT.GetName] ending only on its outer atmosphere. Already the platforms run up and down carrying immigrants and emigrants, exports and imports. The Space Elevator provides a variety of jobs in transportation, but it also caries some concern on the surveillance of our planets borders.\n\nNevertheless it stands a planetary monument."
+    pw_complete.100.a: "Marvelous."
