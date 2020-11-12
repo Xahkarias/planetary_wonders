@@ -1,16 +1,16 @@
 ﻿l_english:
 
     # Planetary Megastructures Tech
-    pw_tech_planetary_mega_engineering:0 "Planetary Mega-Engineering"
-    pw_tech_planetary_mega_engineering_desc:0 "In our path to reach the stars we must never forget to build our stepping stones.\nTo do so, we must first study the materials and techniques involved in the building of wonderous monuments and gather the required resources for their construction."
+    pw_tech_planetary_mega_engineering: "Planetary Mega-Engineering"
+    pw_tech_planetary_mega_engineering_desc: "In our path to reach the stars we must never forget to build our stepping stones.\nTo do so, we must first study the materials and techniques involved in the building of wonderous monuments and gather the required resources for their construction."
 
-    # feature_planetary:0 "Megastructure Restoration"
-    # feature_planetary_desc:0 "Allows us to repair ruined Megastructures."
+    # feature_planetary: "Megastructure Restoration"
+    # feature_planetary_desc: "Allows us to repair ruined Megastructures."
 
     # Particle Supercollider
-    pw_tech_particle_supercollider:0 "Particle Supercollider"
-    pw_tech_particle_supercollider_desc:0 "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with state of the art sensors."
+    pw_tech_particle_supercollider: "Particle Supercollider"
+    pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with state of the art sensors."
 
     # Space Elevator
-    pw_tech_space_elevator:0 "Space Elevator"
-    pw_tech_space_elevator_desc:0 "A marvel of logistics engineering, a device capable of transportation of goods and people to and from space with minimal consumption of energy."
+    pw_tech_space_elevator: "Space Elevator"
+    pw_tech_space_elevator_desc: "A marvel of logistics engineering, a device capable of transportation of goods and people to and from space with minimal consumption of energy."

@@ -1,9 +1,9 @@
 ﻿l_english:
 
     # Particle Supercollider
-    pw_building_particle_supercollider:0 "Particle Supercollider"
-    pw_building_particle_supercollider_desc:0 "A huge circumference of cables, ducts and sensor with thousands of kilometers in diameter. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
+    pw_building_particle_supercollider: "Particle Supercollider"
+    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensor with thousands of kilometers in diameter. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
 
     # Space Elevator
-    pw_building_space_elevator:0 "Space Elevator"
-    pw_building_space_elevator_desc:0 "A truly babylonian tower that extends to the skies and constantly moves freight and travelers. The space elevator provides many logistics jobs and facilitates the transposition of our population."
+    pw_building_space_elevator: "Space Elevator"
+    pw_building_space_elevator_desc: "A truly babylonian tower that extends to the skies and constantly moves freight and travelers. The space elevator provides many logistics jobs and facilitates the transposition of our population."

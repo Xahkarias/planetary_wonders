@@ -1,5 +1,5 @@
 ﻿l_english:
 
     # Planetary Wonders
-    pw_ap_planetary_wonders:0 "Planetary Wonders"
-    pw_ap_planetary_wonders_desc:0 "The eyes of the galaxy marvel in awe of the wonders we have built. It is high time to tackle bolder projects and see to what limits our ambitions extends."
+    pw_ap_planetary_wonders: "Planetary Wonders"
+    pw_ap_planetary_wonders_desc: "The eyes of the galaxy marvel in awe of the wonders we have built. It is high time to tackle bolder projects and see to what limits our ambitions extends."
