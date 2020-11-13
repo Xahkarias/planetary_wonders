@@ -1,6 +1,11 @@
 ﻿l_english:
 
     #Complete Space Elevator
-    pw_complete.100.name: "To the stars we rise"
-    pw_complete.100.desc: "A great spire launches for the clouds of [ROOT.GetName] ending only on its outer atmosphere. Already the platforms run up and down carrying immigrants and emigrants, exports and imports. The Space Elevator provides a variety of jobs in transportation, but it also caries some concern on the surveillance of our planets borders.\n\nNevertheless it stands a planetary monument."
-    pw_complete.100.a: "Marvelous."
+    pw_complete.100.name: "To The Stars We Rise"
+    pw_complete.100.desc: "A great spire launches for the clouds of [ROOT.GetName] ending only on its outer atmosphere. Already the platforms of our recently built Space Elevator run up and down, carrying immigrants and emigrants; exports and imports.\nThe city sized launch complex provides a variety of jobs in transportation and logistics, but it also caries some concern on the surveillance of our planet borders.\n\nNevertheless it stands a planetary monument."
+    pw_complete.100.a: "Marvelous!"
+
+    #Complete Particle Supercollider
+    pw_complete.200.name: "Accelerating Forward"
+    pw_complete.200.desc: "A myriad of experiments proposals has arrived at [ROOT.GetName] on the last fez months as the entire scientific community yearns to to see what this newly built Particle Supercollider can reveal.\nSpanning a circumference that could encompass our largest cities and draining twice as much power, the Supercollider is capable of positron collisions never before observed in controlled experiments and more importantly put the most delirious theories of field manipulation, quantum entanglements and rope theory to test.\n\nWho knows what lurks behind the veil of theory?\nLet us peek behind the curtains."
+    pw_complete.200.a: "At once!"

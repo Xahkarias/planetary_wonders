@@ -142,6 +142,7 @@ pw_building_space_elevator = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder_built.1 }
+		planet_event = { id = pw_complete.1 }
+		planet_event = { id = pw_complete.100 }
 	}
 }
