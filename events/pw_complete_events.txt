@@ -46,10 +46,52 @@ planet_event = {
 
 	option = {
 		name = pw_complete.100.a
+		tooltip = {
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = {has_country_flag = space_elevator_built}}
 	}
 
 	immediate = {
 		owner = { set_country_flag = space_elevator_built }
+	}
+
+}
+
+# Particle Supercollider -> id 200
+
+#On first time Particle Supercollider is built
+planet_event = {
+	id = pw_complete.200
+	title = "pw_complete.200.name"
+	desc = "pw_complete.200.desc"
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_complete.200.a
+		tooltip = {
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = {has_country_flag = particle_supercollider_built}}
+	}
+
+	immediate = {
+		owner = { set_country_flag = particle_supercollider_built }
 	}
 
 }
