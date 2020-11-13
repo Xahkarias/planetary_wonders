@@ -7,5 +7,5 @@
 
     #Complete Particle Supercollider
     pw_complete.200.name: "Accelerating Forward"
-    pw_complete.200.desc: "A myriad of experiments proposals has arrived at [ROOT.GetName] on the last fez months as the entire scientific community yearns to to see what this newly built Particle Supercollider can reveal.\nSpanning a circumference that could encompass our largest cities and draining twice as much power, the Supercollider is capable of positron collisions never before observed in controlled experiments and more importantly put the most delirious theories of field manipulation, quantum entanglements and rope theory to test.\n\nWho knows what lurks behind the veil of theory?\nLet us peek behind the curtains."
-    pw_complete.200.a: "At once!"
+    pw_complete.200.desc: "A myriad of experiments proposals has arrived at [ROOT.GetName] on the last fez months as the entire scientific community yearns to to see what this newly built Particle Supercollider can reveal.\nSpanning a circumference that could encompass our largest cities and draining twice as much power, the Supercollider is capable of positron collisions never before observed in controlled experiments and more importantly, it is capable of put the most delirious theories of field manipulation, quantum entanglements and rope theory to the test.\n\nWho knows what lurks behind the veil of theory?"
+    pw_complete.200.a: "Let us peek behind the curtains of space and time."
