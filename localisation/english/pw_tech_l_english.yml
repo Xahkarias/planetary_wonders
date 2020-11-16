@@ -9,7 +9,7 @@
 
     # Particle Supercollider
     pw_tech_particle_supercollider: "Particle Supercollider"
-    pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with state of the art sensors."
+    pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with an array of state of the art sensors."
 
     # Space Elevator
     pw_tech_space_elevator: "Space Elevator"
