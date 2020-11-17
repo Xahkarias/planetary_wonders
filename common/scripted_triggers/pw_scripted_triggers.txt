@@ -1,3 +1,4 @@
+#Scope: Planet
 pw_can_build_planetary_wonder = {
 	custom_tooltip = {
 		success_text = pw_planet_wonder_limit_warning
@@ -5,21 +6,38 @@ pw_can_build_planetary_wonder = {
 
 		OR = {
 			owner = {has_edict = pw_ambition_monumentality}
-			pw_has_any_planetary_wonder = no
+			NOT = { pw_has_any_planetary_wonder = yes }
 		}
 	}
 }
 
+#Scope: Planet
 pw_has_any_planetary_wonder = {
-	custom_tooltip = {
-		OR = {
-			pw_has_planetary_wonder = {WONDER = particle_supercollider}
-			pw_has_planetary_wonder = {WONDER = space_elevator}
-		}
+	OR = {
+		pw_has_planetary_wonder = {WONDER = space_elevator}
+		pw_has_planetary_wonder = {WONDER = particle_supercollider}
 	}
 }
 
+#Scope: Planet
 pw_has_planetary_wonder = {
 	has_building = pw_building_$WONDER$
 	has_building_construction = pw_building_$WONDER$
+}
+
+
+#Scope: Country
+pw_has_build_any_planetary_wonder = {
+	OR = {
+		has_country_flag = space_elevator_built
+		has_country_flag = particle_supercollider_built
+	}
+}
+
+pw_country_has_planetary_wonder = {
+	owner = {
+		any_owned_planet = {
+			pw_has_planetary_wonder = {WONDER = $WONDER$}
+		}
+	}
 }

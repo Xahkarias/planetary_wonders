@@ -1,6 +1,7 @@
 namespace = pw_complete
 
 #Message for wonder construction complete
+# UNUSED!
 planet_event = {
 	id = pw_complete.1
 	hide_window = yes
@@ -15,7 +16,7 @@ planet_event = {
 	immediate = {
 		create_message = {
 			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
-			localization = PW_MESSAGE_WONDER_COMPLETE
+			localization = pw_message_space_elevator_complete
 			days = 30
 			target = THIS
 			variable = {
@@ -34,23 +35,50 @@ planet_event = {
 
 # Space Elevator -> id 100
 
-#On first time Space Elevator is built
+#On Space Elevator built
 planet_event = {
 	id = pw_complete.100
-	title = "pw_complete.100.name"
-	desc = "pw_complete.100.desc"
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_space_elevator_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_complete.101 }
+	}
+}
+
+#On first time Space Elevator is built
+planet_event = {
+	id = pw_complete.101
+	title = "pw_complete.101.name"
+	desc = "pw_complete.101.desc"
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.100.a
-		tooltip = {
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
-			}
+		name = pw_complete.101.a
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
 		}
 	}
 
@@ -66,23 +94,50 @@ planet_event = {
 
 # Particle Supercollider -> id 200
 
-#On first time Particle Supercollider is built
+#On Particle Supercollider built
 planet_event = {
 	id = pw_complete.200
-	title = "pw_complete.200.name"
-	desc = "pw_complete.200.desc"
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_particle_supercollider_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_complete.201 }
+	}
+}
+
+#On first time Particle Supercollider is built
+planet_event = {
+	id = pw_complete.201
+	title = "pw_complete.201.name"
+	desc = "pw_complete.201.desc"
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.200.a
-		tooltip = {
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
-			}
+		name = pw_complete.201.a
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
 		}
 	}
 
@@ -93,5 +148,4 @@ planet_event = {
 	immediate = {
 		owner = { set_country_flag = particle_supercollider_built }
 	}
-
 }

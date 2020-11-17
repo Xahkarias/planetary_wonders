@@ -3,6 +3,9 @@
 @pw_building_upkeep = 20
 @pw_building_buildtime = 50
 
+#Resource Production
+@pw_influence_production = 0.1
+
 #Regular Jobs:
 @pw_building_worker_jobs = 15
 @pw_building_worker_jobs_minor = 2
