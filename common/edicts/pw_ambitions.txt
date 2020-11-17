@@ -12,6 +12,7 @@ pw_ambition_monumentality = {
 
 	effect = {
 		custom_tooltip = pw_ambition_monumentality_tooltip
+		custom_tooltip = pw_ambition_monumentality_tooltip
 	}
 
 	potential = {
