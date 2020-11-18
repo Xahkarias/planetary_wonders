@@ -13,3 +13,11 @@
     pw_complete.201.name: "Accelerating Forward"
     pw_complete.201.desc: "A myriad of experiments proposals has arrived at [ROOT.GetName] on the last fez months as the entire scientific community yearns to to see what this newly built Particle Supercollider can reveal.\nSpanning a circumference that could encompass our largest cities and draining twice as much power, the Supercollider is capable of positron collisions never before observed in controlled experiments and more importantly, it is capable of putting the most delirious theories of field manipulation, quantum entanglements and rope theory to the test.\n\nWho knows what lurks behind the veil of theory?"
     pw_complete.201.a: "Let us peek behind the curtains of space and time."
+
+    #Complete Domed City
+    pw_message_particle_supercollider_complete: "§MDomed City§! has been constructed in $PLANET|Y$."
+    #First Time Complete Domed City
+    pw_complete.301.name: "Isolation Experiments"
+    pw_complete.301.desc: "A city district of [ROOT.GetName], completely secluded behind a holographic dome and protected by a powerful force field. It is finally complete.\nUtilizing hundreds of thousands of sensor, cameras and actuators our scientists can elaborate many different societal experiments at a city scale. This alone can advance our understanding of societal mechanism and statecraft by years.Topics such as democracy, autocracy, technocracy, cooperation, competition, segregation, extreme or flat hierarchies and more can be explored without moral boundaries from the outside world, not to mention the examination of applying chemical, physical ou psychological stimulus in these communities.\n\nWe can finally have systematic testing to things we could only look back to observe."
+    pw_complete.301.a: "Start recruiting volunteers."
+    pw_complete.301.b: "Rally the subjects."

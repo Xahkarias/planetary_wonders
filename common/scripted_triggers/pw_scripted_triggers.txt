@@ -16,6 +16,7 @@ pw_has_any_planetary_wonder = {
 	OR = {
 		pw_has_planetary_wonder = {WONDER = space_elevator}
 		pw_has_planetary_wonder = {WONDER = particle_supercollider}
+		pw_has_planetary_wonder = {WONDER = domed_city}
 	}
 }
 
@@ -31,6 +32,7 @@ pw_has_build_any_planetary_wonder = {
 	OR = {
 		has_country_flag = space_elevator_built
 		has_country_flag = particle_supercollider_built
+		has_country_flag = domed_city_built
 	}
 }
 

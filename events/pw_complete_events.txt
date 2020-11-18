@@ -9,7 +9,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 		is_occupied_flag = no
 	}
 
@@ -43,7 +42,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 		is_occupied_flag = no
 	}
 
@@ -102,7 +100,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 		is_occupied_flag = no
 	}
 
@@ -147,5 +144,70 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = particle_supercollider_built }
+	}
+}
+
+# Domed City -> id 300
+
+#On Domed City built
+planet_event = {
+	id = pw_complete.300
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_domed_city_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_complete.301 }
+	}
+}
+
+#On first time Domed City is built
+planet_event = {
+	id = pw_complete.301
+	title = "pw_complete.301.name"
+	desc = "pw_complete.301.desc"
+	picture = GFX_evt_society_research
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_complete.301.a
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
+		}
+	}
+
+	option = {
+		name = pw_complete.301.b
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
+		}
+	}
+
+	trigger = {
+		NOT = {owner = {has_country_flag = domed_city_built}}
+	}
+
+	immediate = {
+		owner = { set_country_flag = domed_city_built }
 	}
 }
