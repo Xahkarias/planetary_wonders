@@ -15,7 +15,7 @@
     pw_complete.201.a: "Let us peek behind the curtains of space and time."
 
     #Complete Domed City
-    pw_message_particle_supercollider_complete: "§MDomed City§! has been constructed in $PLANET|Y$."
+    pw_message_domed_city_complete: "§MDomed City§! has been constructed in $PLANET|Y$."
     #First Time Complete Domed City
     pw_complete.301.name: "Isolation Experiments"
     pw_complete.301.desc: "A city district of [ROOT.GetName], completely secluded behind a holographic dome and protected by a powerful force field. It is finally complete.\nUtilizing hundreds of thousands of sensor, cameras and actuators our scientists can elaborate many different societal experiments at a city scale. This alone can advance our understanding of societal mechanism and statecraft by years.Topics such as democracy, autocracy, technocracy, cooperation, competition, segregation, extreme or flat hierarchies and more can be explored without moral boundaries from the outside world, not to mention the examination of applying chemical, physical ou psychological stimulus in these communities.\n\nWe can finally have systematic testing to things we could only look back to observe."

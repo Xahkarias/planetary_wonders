@@ -89,67 +89,6 @@ pw_tech_planetary_mega_engineering = {
 
 # Individual tech: Planetary Wonders
 
-# Particle Supercollider
-pw_tech_particle_supercollider = {
-	area = physics
-	cost = @tier4cost2
-	tier = 4
-	category = { particles }
-	ai_update_type = all
-	prerequisites = { "pw_tech_planetary_mega_engineering" }
-	weight = @tier4weight2
-	is_rare = yes
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 2
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_maniacal"
-			}
-		}
-
-		modifier = {
-			factor = 2
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_spark_of_genius"
-			}
-		}
-
-		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
-		}
-
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_particle_supercollider }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-	}
-}
-
 #Space Elevator
 pw_tech_space_elevator = {
 	area = engineering
@@ -206,6 +145,67 @@ pw_tech_space_elevator = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# Particle Supercollider
+pw_tech_particle_supercollider = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = all
+	prerequisites = { "pw_tech_planetary_mega_engineering" }
+	weight = @tier4weight2
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_particle_supercollider }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
 			}
 		}
 	}
