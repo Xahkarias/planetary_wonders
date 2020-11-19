@@ -8,6 +8,7 @@
 @pw_building_buildtime = 50 #Change me!
 
 #Resource Production
+@pw_stability_production = 5
 @pw_influence_production = 0.1
 
 #Regular Jobs:

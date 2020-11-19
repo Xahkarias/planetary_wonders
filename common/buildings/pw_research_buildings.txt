@@ -67,7 +67,7 @@ pw_building_particle_supercollider = {
 			owner = { has_edict = pw_ambition_monumentality }
 		}
 		modifier = {
-			country_influence_produces_add = @pw_influence_production
+			planet_stability_add = @pw_stability_production
 		}
 	}
 
@@ -198,7 +198,7 @@ pw_building_domed_city = {
 			owner = { has_edict = pw_ambition_monumentality }
 		}
 		modifier = {
-			country_influence_produces_add = @pw_influence_production
+			planet_stability_add = @pw_stability_production
 		}
 	}
 
@@ -323,13 +323,13 @@ pw_building_abyssal_crater_test_site = {
 		}
 	}
 
-	triggered_country_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { has_edict = pw_ambition_monumentality }
 		}
 		modifier = {
-			country_influence_produces_add = @pw_influence_production
+			planet_stability_add = @pw_stability_production
 		}
 	}
 
