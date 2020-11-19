@@ -78,6 +78,20 @@ planet_event = {
 			modifier = pw_mod_wonder_built_recently_happiness
 			days = 1800 # 5 years
 		}
+		trigger = {
+			NOT = { owner = is_xenophobe }
+		}
+	}
+
+	option = {
+		name = pw_complete.101.b
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
+		}
+		trigger = {
+			NOT = { owner = is_xenophile }
+		}
 	}
 
 	trigger = {
@@ -136,6 +150,20 @@ planet_event = {
 			modifier = pw_mod_wonder_built_recently_happiness
 			days = 1800 # 5 years
 		}
+		trigger = {
+			NOT = { owner = is_spiritualist }
+		}
+	}
+
+	option = {
+		name = pw_complete.201.b
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
+		}
+		trigger = {
+			NOT = { owner = is_materialist }
+		}
 	}
 
 	trigger = {
@@ -193,6 +221,9 @@ planet_event = {
 			modifier = pw_mod_wonder_built_recently_happiness
 			days = 1800 # 5 years
 		}
+		trigger = {
+			NOT = { owner = is_authoritarian }
+		}
 	}
 
 	option = {
@@ -200,6 +231,9 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_wonder_built_recently_happiness
 			days = 1800 # 5 years
+		}
+		trigger = {
+			NOT = { owner = is_egalitarian }
 		}
 	}
 
@@ -209,5 +243,76 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = domed_city_built }
+	}
+}
+
+# Abyssal Crater Test Site -> id 400
+
+#On Abyssal Crater Test Site built
+planet_event = {
+	id = pw_complete.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_domed_city_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_complete.401 }
+	}
+}
+
+#On first time Abyssal Crater Test Site is built
+planet_event = {
+	id = pw_complete.401
+	title = "pw_complete.401.name"
+	desc = "pw_complete.401.desc"
+	picture = GFX_evt_underground_civilization
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_complete.401.a
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
+		}
+		trigger = {
+			NOT = { owner = is_militarist }
+		}
+	}
+
+	option = {
+		name = pw_complete.401.b
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = 1800 # 5 years
+		}
+		trigger = {
+			NOT = { owner = is_pacifist }
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = abyssal_crater_test_site_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = abyssal_crater_test_site_built }
 	}
 }

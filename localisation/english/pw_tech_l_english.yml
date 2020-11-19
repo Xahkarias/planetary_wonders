@@ -7,6 +7,10 @@
     # feature_planetary: "Megastructure Restoration"
     # feature_planetary_desc: "Allows us to repair ruined Megastructures."
 
+    # Space Elevator:
+    pw_tech_space_elevator: "Space Elevator"
+    pw_tech_space_elevator_desc: "A marvel of logistics engineering, a device capable of transportation of goods and people to and from space with minimal consumption of energy."
+
     # Particle Supercollider:
     pw_tech_particle_supercollider: "Particle Supercollider"
     pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with an array of state of the art sensors."
@@ -15,6 +19,6 @@
     pw_tech_domed_city: "Domed City"
     pw_tech_domed_city_desc: "A dedicated societal test site: an isolated city where we can determine the exact influence of any imaginable factors in any form of society organization, not limited by the morale of the outside world."
 
-    # Space Elevator:
-    pw_tech_space_elevator: "Space Elevator"
-    pw_tech_space_elevator_desc: "A marvel of logistics engineering, a device capable of transportation of goods and people to and from space with minimal consumption of energy."
+    # Abyssal Crater Test Site:
+    pw_tech_abyssal_crater_test_site: "Abyssal Crater Test Site"
+    pw_tech_abyssal_crater_test_site_desc: "An entire crater reserved for the testing of orbit-ground and ground-ground missile shooting as well as targeted material resistance and multi pressure and multi gravity structure construction."

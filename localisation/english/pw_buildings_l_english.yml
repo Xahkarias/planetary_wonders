@@ -22,3 +22,8 @@
     pw_domed_city: "§MDomed City§!"
     pw_building_domed_city: "Domed City"
     pw_building_domed_city_desc: "A city completely enclosed by a dome, with no contact with the outside world save for an enormous team of researches constantly observing, probing and testing the unknowing inhabitants. Many social experiments can be performed here as every aspect of these subjects life is controlled, from the minute detail to the city's atmosphere, at some extra cost of consumer goods."
+
+    # Abyssal Crater Test Site
+    pw_domed_city: "§MAbyssal Crater Test Site§!"
+    pw_building_abyssal_crater_test_site: "Abyssal Crater Test Site"
+    pw_building_abyssal_crater_test_site_desc: "An enormous crater designated as a dedicated test site for rocketry, spacecraft launch and landing, material strength testing and building patterns under multiple conditions of pressure and gravity. Given the subject, the tests conducted here demand extra alloys."
