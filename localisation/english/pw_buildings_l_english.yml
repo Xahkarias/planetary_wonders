@@ -5,6 +5,10 @@
     pw_planet_wonders: "§MPlanetary Wonders§!"
     pw_planet_wonder_lb: "§MPlanetary Wonder§!\n"
 
+    #Tooltips:
+    pw_planet_wonder_limit_warning: "§YNotice:§! Planets can only support a single $pw_planet_wonder$ of any type."
+    pw_planet_wonder_limit: "§R[This.Planet.GetName] already has another $pw_planet_wonder$.§!"
+
     # Space Elevator
     pw_space_elevator: "§MSpace Elevator§!"
     pw_building_space_elevator: "Space Elevator"

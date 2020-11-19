@@ -74,9 +74,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.101.a
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_xenophobe }
@@ -85,9 +88,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.101.b
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_xenophile }
@@ -146,9 +152,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.201.a
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_spiritualist }
@@ -157,9 +166,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.201.b
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_materialist }
@@ -217,9 +229,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.301.a
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_authoritarian }
@@ -228,9 +243,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.301.b
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_egalitarian }
@@ -288,9 +306,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.401.a
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_militarist }
@@ -299,9 +320,12 @@ planet_event = {
 
 	option = {
 		name = pw_complete.401.b
-		add_modifier = {
-			modifier = pw_mod_wonder_built_recently_happiness
-			days = 1800 # 5 years
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
 		}
 		trigger = {
 			NOT = { owner = is_pacifist }
