@@ -28,6 +28,26 @@
     pw_building_domed_city_desc: "A city completely enclosed by a dome, with no contact with the outside world save for an enormous team of researches constantly observing, probing and testing the unknowing inhabitants. Many social experiments can be performed here as every aspect of these subjects life is controlled, from the minute detail to the city's atmosphere, at some extra cost of consumer goods."
 
     # Abyssal Crater Test Site
-    pw_domed_city: "§MAbyssal Crater Test Site§!"
+    pw_abyssal_crater_test_site: "§MAbyssal Crater Test Site§!"
     pw_building_abyssal_crater_test_site: "Abyssal Crater Test Site"
     pw_building_abyssal_crater_test_site_desc: "An enormous crater designated as a dedicated test site for rocketry, spacecraft launch and landing, material strength testing and building patterns under multiple conditions of pressure and gravity. Given the subject, the tests conducted here demand extra alloys."
+
+    #Resource Buildings:
+
+    # Erebus Project
+    pw_erebus_project: "§MErebus Project§!"
+    pw_building_erebus_project: "Erebus Project"
+    pw_building_erebus_project_desc: "A complex network of tunnels, miners and extractors that spreads across all of the planets subterrane."
+    mod_country_resource_max_minerals_add: "Mineral Storage Capacity"
+
+    # Helios Tower
+    pw_helios_tower: "§MHelios Tower§!"
+    pw_building_helios_tower: "Helios Tower"
+    pw_building_helios_tower_desc: ""
+    mod_country_resource_max_energy_add: "Energy Storage Capacity"
+
+    # Demetrian Fields
+    pw_demetrian_fields: "§MDemetrian Fields§!"
+    pw_building_demetrian_fields: "Demetrian Fields"
+    pw_building_demetrian_fields_desc: ""
+    mod_country_resource_max_food_add: "Food Storage Capacity"

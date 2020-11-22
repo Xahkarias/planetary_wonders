@@ -1,10 +1,15 @@
+#Buildings
+
 #Resource Cost:
 @pw_building_cost = 5000
+@pw_building_cost_advanced = 500
 @pw_building_cost_rare = 100
+
 @pw_building_upkeep = 15
 @pw_building_upkeep_expensive = 20
 @pw_building_upkeep_extra = 5
 @pw_building_upkeep_rare = 1
+
 @pw_building_buildtime = 50 #Change me!
 
 #Resource Production
@@ -22,5 +27,14 @@
 @pw_building_menial_jobs_minor = 4
 @pw_building_complex_jobs = 12
 
-#Research Variables:
+#Modifiers production:
 @pw_building_research_mod = 0.1
+#@pw_building_resource_mod = 0.15
+
+
+#Decisions
+
+#Cost:
+@pw_decision_influence_cost = 25
+@pw_decision_resource_cost = 1000
+@pw_decision_resource_mod = 0.15

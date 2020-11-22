@@ -1,10 +1,12 @@
-#icon_frame = 1 # green frame
-#icon_frame = 2 # yellow frame
-#icon_frame = 3 # red frame
-
 #Planetary Modifiers
 pw_mod_wonder_built_recently_happiness = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_artist_monument_erected.dds"
-	icon_frame = 1
+	icon_frame = @icon_frame_green
 	pop_happiness = 0.05
+}
+
+pw_mod_erebus_prospect = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_rich.dds"
+	icon_frame = @icon_frame_green
+	planet_miners_minerals_produces_mult = @pw_decision_resource_mod
 }

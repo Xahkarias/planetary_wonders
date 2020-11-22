@@ -22,3 +22,7 @@
     # Abyssal Crater Test Site:
     pw_tech_abyssal_crater_test_site: "Abyssal Crater Test Site"
     pw_tech_abyssal_crater_test_site_desc: "An entire crater reserved for the testing of orbit-ground and ground-ground missile shooting as well as targeted material resistance and multi pressure and multi gravity structure construction."
+
+    # Erebus project:
+    pw_tech_erebus_project: "Erebus project"
+    pw_tech_erebus_project_desc: "An entire subterrane mining network.\nThe mineral are down there, we just need to go get them."

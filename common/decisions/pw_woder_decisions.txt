@@ -1,0 +1,30 @@
+pw_decision_erebus_prospect = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = @pw_decision_influence_cost
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	potential = {
+		has_building = pw_building_erebus_project
+	}
+
+	allow = {
+		NOT = { has_modifier = pw_mod_erebus_prospect }
+	}
+
+	effect = {
+		add_planet_devastation = 25
+		add_modifier = { modifier = pw_mod_erebus_prospect days = 3600 }
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
