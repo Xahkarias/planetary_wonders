@@ -82,7 +82,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_xenophobe = no
+			owner = { is_xenophobe = no }
 		}
 	}
 
@@ -96,7 +96,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_xenophile = no
+			owner = { is_xenophile = no }
 		}
 	}
 
@@ -160,7 +160,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_spiritualist = no
+			owner = { is_spiritualist = no }
 		}
 	}
 
@@ -174,7 +174,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_materialist = no
+			owner = { is_materialist = no }
 		}
 	}
 
@@ -237,7 +237,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_authoritarian = no
+			owner = { is_authoritarian = no }
 		}
 	}
 
@@ -251,7 +251,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_egalitarian = no
+			owner = { is_egalitarian = no }
 		}
 	}
 
@@ -314,7 +314,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_militarist = no
+			owner = { is_militarist = no }
 		}
 	}
 
@@ -328,7 +328,7 @@ planet_event = {
 			}
 		}
 		trigger = {
-			is_pacifist = no
+			owner = { is_pacifist = no }
 		}
 	}
 
@@ -389,9 +389,6 @@ planet_event = {
 				modifier = pw_mod_wonder_built_recently_happiness
 				days = 1800 # 5 years
 			}
-		}
-		trigger = {
-			is_militarist = no
 		}
 	}
 
