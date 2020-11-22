@@ -1,4 +1,4 @@
-version="2.8.0"
+version="2.8.1"
 tags={
 	"Buildings"
 	"Technologies"
@@ -6,4 +6,4 @@ tags={
 	"Economy"
 }
 name="Planetary Wonders"
-supported_version="2.8.0"
+supported_version="2.8.1"
