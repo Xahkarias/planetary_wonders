@@ -14,9 +14,7 @@ pw_tech_planetary_mega_engineering = {
 	weight = @tier4weight2
 	is_rare = yes
 
-	# feature_flags = {
-	# 	megaengineering
-	# }
+	#feature_flags = { planetary_wonders }
 
 	modifier = {
 		country_resource_max_add = 5000
