@@ -7,3 +7,7 @@
     # Aggressive prospecting
     pw_mod_erebus_prospect: "Prospecting Aggressively"
     pw_mod_erebus_prospect_desc: "Leaving no stones left unturned in search for valuable minerals"
+
+    # Cloud Seeding
+    pw_mod_helios_seeding: "Seeded Clouds"
+    pw_mod_helios_seeding_desc: "Meticulously directing the clouds in the atmosphere to gather the most solar energy on the surface. Additionally causes floods to overwork the hydropower facilities."

@@ -33,7 +33,7 @@ pw_mining_director = {
 	}
 
 	planet_modifier = {
-		planet_miners_minerals_produces_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.1
 	}
 
 	weight = {
@@ -66,15 +66,89 @@ pw_mining_director = {
 			has_trait = trait_robust
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+
+pw_energy_director = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_energy_nexus
+	clothes_texture_index = 2
+	icon = technician
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = capacity_subsidies
+				}
+			}
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_erudite
+		}
+		modifier = {
+			factor = 2
 			OR = {
-				has_trait = trait_robot_domestic_protocols
-				has_trait = trait_charismatic
+				has_trait = trait_ingenious
 			}
 		}
 		modifier = {
-			factor = 0.75
-			has_trait = trait_repugnant
+			factor = 5
+			has_job = pw_energy_director
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_robust
 		}
 		modifier = {
 			factor = 1.5

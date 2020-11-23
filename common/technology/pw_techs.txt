@@ -5,7 +5,6 @@ pw_tech_planetary_mega_engineering = {
 	category = { industry }
 	cost = @tier4cost2
 	tier = 4
-	ai_update_type = all
 	prerequisites = {
 		tech_housing_1
 		tech_construction_templates
@@ -97,7 +96,6 @@ pw_tech_space_elevator = {
 	cost = @tier4cost2
 	tier = 4
 	category = { voidcraft }
-	ai_update_type = all
 	prerequisites = { pw_tech_planetary_mega_engineering }
 	weight = @tier4weight2
 	is_rare = yes
@@ -158,7 +156,6 @@ pw_tech_particle_supercollider = {
 	cost = @tier4cost2
 	tier = 4
 	category = { particles }
-	ai_update_type = all
 	prerequisites = { pw_tech_planetary_mega_engineering }
 	weight = @tier4weight2
 	is_rare = yes
@@ -219,7 +216,6 @@ pw_tech_domed_city = {
 	cost = @tier4cost2
 	tier = 4
 	category = { statecraft }
-	ai_update_type = all
 	prerequisites = { pw_tech_planetary_mega_engineering }
 	weight = @tier4weight2
 	is_rare = yes
@@ -280,7 +276,6 @@ pw_tech_abyssal_crater_test_site = {
 	cost = @tier4cost2
 	tier = 4
 	category = { propulsion }
-	ai_update_type = all
 	prerequisites = { pw_tech_planetary_mega_engineering }
 	weight = @tier4weight2
 	is_rare = yes
@@ -341,7 +336,6 @@ pw_tech_erebus_project = {
 	cost = @tier4cost3
 	tier = 4
 	category = { industry }
-	ai_update_type = all
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
 		tech_mineral_purification_2
@@ -399,6 +393,74 @@ pw_tech_erebus_project = {
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+# Helios Tower
+pw_tech_helios_tower = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { field_manipulation }
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_power_hub_2
+	}
+	weight = @tier4weight2
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_maniacal
+			}
+		}
+
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_helios_tower }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}

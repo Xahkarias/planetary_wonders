@@ -8,5 +8,13 @@ pw_mod_wonder_built_recently_happiness = {
 pw_mod_erebus_prospect = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_rich.dds"
 	icon_frame = @icon_frame_green
-	planet_miners_minerals_produces_mult = @pw_decision_resource_mod
+	planet_miners_produces_mult = @pw_decision_resource_mod
+	# planet_mining_drone_produces_mult = @pw_decision_resource_mod
+}
+
+pw_mod_helios_seeding = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+	icon_frame = @icon_frame_green
+	planet_technician_produces_mult = @pw_decision_resource_mod
+	# planet_technician_drone_produces_mult = @pw_decision_resource_mod
 }

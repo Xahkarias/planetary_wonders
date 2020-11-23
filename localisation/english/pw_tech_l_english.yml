@@ -25,3 +25,7 @@
     # Erebus project:
     pw_tech_erebus_project: "Erebus project"
     pw_tech_erebus_project_desc: "An entire subterrane mining network.\nThe mineral are down there, we just need to go get them."
+
+    # Helios Tower:
+    pw_tech_helios_tower: "Helios Tower"
+    pw_tech_helios_tower_desc: "A central generator tower surrounded with fields of mirror arrays all redirecting solar power towards to the pinnacle.\nMaybe we should encompass a star next."
