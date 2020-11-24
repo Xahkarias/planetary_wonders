@@ -417,7 +417,7 @@ planet_event = {
 	immediate = {
 		create_message = {
 			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
-			localization = pw_message_erebus_project_complete
+			localization = pw_message_helios_tower_complete
 			days = 30
 			target = THIS
 			variable = {
@@ -458,5 +458,65 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = helios_tower_built }
+	}
+}
+
+# Demetrius Fields -> id 700
+
+#On Demetrius Fields Test Site built
+planet_event = {
+	id = pw_complete.700
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_demetrius_fields_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_complete.701 }
+	}
+}
+
+#On first time Demetrius Fields Test Site is built
+planet_event = {
+	id = pw_complete.701
+	title = "pw_complete.701.name"
+	desc = "pw_complete.701.desc"
+	picture = GFX_evt_sapient_AI
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_complete.701.a
+		if = {
+			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = demetrius_fields_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = demetrius_fields_built }
 	}
 }
