@@ -1,6 +1,6 @@
 # Planetary Wonders (Stellaris Mod)
 
-A mod for the game [Stellaris]() that aims to add planetary mega-structures to the game.
+A mod for the game [Stellaris](https://store.steampowered.com/app/281990/Stellaris/) that aims to add planetary mega-structures to the game.
 
 [Steam Workshop Link]()
 
@@ -32,4 +32,4 @@ Unlocked by Ascension Perk:
 * Custom event pictures
 
 ## Credits
-WIP
+Thumbnail - "[FUTURE CITY](https://www.deviantart.com/boombastik3/art/FUTURE-CITY-284229568)" by [Boombastik3](https://www.deviantart.com/boombastik3) is licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/?ref=ccsearch&atype=rich)
