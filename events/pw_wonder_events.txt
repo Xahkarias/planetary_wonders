@@ -1,9 +1,9 @@
-namespace = pw_complete
+namespace = pw_wonder
 
 #Message for wonder construction complete
 # UNUSED!
 planet_event = {
-	id = pw_complete.1
+	id = pw_wonder.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -36,7 +36,7 @@ planet_event = {
 
 #On Space Elevator built
 planet_event = {
-	id = pw_complete.100
+	id = pw_wonder.100
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -58,22 +58,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.101 }
+		planet_event = { id = pw_wonder.101 }
 	}
 }
 
 #On first time Space Elevator is built
 planet_event = {
-	id = pw_complete.101
-	title = "pw_complete.101.name"
-	desc = "pw_complete.101.desc"
+	id = pw_wonder.101
+	title = "pw_wonder.101.name"
+	desc = "pw_wonder.101.desc"
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.101.a
+		name = pw_wonder.101.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -87,7 +87,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_complete.101.b
+		name = pw_wonder.101.b
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -114,7 +114,7 @@ planet_event = {
 
 #On Particle Supercollider built
 planet_event = {
-	id = pw_complete.200
+	id = pw_wonder.200
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -136,22 +136,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.201 }
+		planet_event = { id = pw_wonder.201 }
 	}
 }
 
 #On first time Particle Supercollider is built
 planet_event = {
-	id = pw_complete.201
-	title = "pw_complete.201.name"
-	desc = "pw_complete.201.desc"
+	id = pw_wonder.201
+	title = "pw_wonder.201.name"
+	desc = "pw_wonder.201.desc"
 	picture = GFX_evt_ancient_databank
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.201.a
+		name = pw_wonder.201.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -165,7 +165,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_complete.201.b
+		name = pw_wonder.201.b
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -191,7 +191,7 @@ planet_event = {
 
 #On Domed City built
 planet_event = {
-	id = pw_complete.300
+	id = pw_wonder.300
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -213,22 +213,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.301 }
+		planet_event = { id = pw_wonder.301 }
 	}
 }
 
 #On first time Domed City is built
 planet_event = {
-	id = pw_complete.301
-	title = "pw_complete.301.name"
-	desc = "pw_complete.301.desc"
+	id = pw_wonder.301
+	title = "pw_wonder.301.name"
+	desc = "pw_wonder.301.desc"
 	picture = GFX_evt_society_research
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.301.a
+		name = pw_wonder.301.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -242,7 +242,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_complete.301.b
+		name = pw_wonder.301.b
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -268,7 +268,7 @@ planet_event = {
 
 #On Abyssal Crater Test Site built
 planet_event = {
-	id = pw_complete.400
+	id = pw_wonder.400
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -290,22 +290,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.401 }
+		planet_event = { id = pw_wonder.401 }
 	}
 }
 
 #On first time Abyssal Crater Test Site is built
 planet_event = {
-	id = pw_complete.401
-	title = "pw_complete.401.name"
-	desc = "pw_complete.401.desc"
+	id = pw_wonder.401
+	title = "pw_wonder.401.name"
+	desc = "pw_wonder.401.desc"
 	picture = GFX_evt_underground_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.401.a
+		name = pw_wonder.401.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -319,7 +319,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_complete.401.b
+		name = pw_wonder.401.b
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -345,7 +345,7 @@ planet_event = {
 
 #On Erebus Project Test Site built
 planet_event = {
-	id = pw_complete.500
+	id = pw_wonder.500
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -367,22 +367,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.501 }
+		planet_event = { id = pw_wonder.501 }
 	}
 }
 
 #On first time Erebus Project Test Site is built
 planet_event = {
-	id = pw_complete.501
-	title = "pw_complete.501.name"
-	desc = "pw_complete.501.desc"
+	id = pw_wonder.501
+	title = "pw_wonder.501.name"
+	desc = "pw_wonder.501.desc"
 	picture = GFX_evt_mining_operations
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.501.a
+		name = pw_wonder.501.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -405,7 +405,7 @@ planet_event = {
 
 #On Helios Tower Test Site built
 planet_event = {
-	id = pw_complete.600
+	id = pw_wonder.600
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -427,22 +427,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.601 }
+		planet_event = { id = pw_wonder.601 }
 	}
 }
 
 #On first time Helios Tower Test Site is built
 planet_event = {
-	id = pw_complete.601
-	title = "pw_complete.601.name"
-	desc = "pw_complete.601.desc"
+	id = pw_wonder.601
+	title = "pw_wonder.601.name"
+	desc = "pw_wonder.601.desc"
 	picture = GFX_evt_sapient_AI
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.601.a
+		name = pw_wonder.601.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {
@@ -465,7 +465,7 @@ planet_event = {
 
 #On Demetrius Fields Test Site built
 planet_event = {
-	id = pw_complete.700
+	id = pw_wonder.700
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -487,22 +487,22 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_complete.701 }
+		planet_event = { id = pw_wonder.701 }
 	}
 }
 
 #On first time Demetrius Fields Test Site is built
 planet_event = {
-	id = pw_complete.701
-	title = "pw_complete.701.name"
-	desc = "pw_complete.701.desc"
+	id = pw_wonder.701
+	title = "pw_wonder.701.name"
+	desc = "pw_wonder.701.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
 
 	option = {
-		name = pw_complete.701.a
+		name = pw_wonder.701.a
 		if = {
 			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
 			add_modifier = {

@@ -124,7 +124,7 @@ pw_building_particle_supercollider = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_complete.200 }
+		planet_event = { id = pw_wonder.200 }
 	}
 }
 
@@ -256,7 +256,7 @@ pw_building_domed_city = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_complete.300 }
+		planet_event = { id = pw_wonder.300 }
 	}
 }
 
@@ -387,6 +387,6 @@ pw_building_abyssal_crater_test_site = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_complete.400 }
+		planet_event = { id = pw_wonder.400 }
 	}
 }

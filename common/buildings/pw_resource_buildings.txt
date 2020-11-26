@@ -148,7 +148,7 @@ pw_building_erebus_project = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_complete.500 }
+		planet_event = { id = pw_wonder.500 }
 	}
 }
 
@@ -302,7 +302,7 @@ pw_building_helios_tower = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_complete.600 }
+		planet_event = { id = pw_wonder.600 }
 	}
 }
 
@@ -456,6 +456,6 @@ pw_building_demetrius_fields = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_complete.700 }
+		planet_event = { id = pw_wonder.700 }
 	}
 }
