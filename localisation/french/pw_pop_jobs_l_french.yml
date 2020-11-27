@@ -19,6 +19,15 @@
     mod_job_pw_energy_director_per_pop: "§G+1§! $job_pw_energy_director$ Job per $VALUE$ Pops"
     mod_job_pw_energy_director_per_pop_short: "\n§G+1§! £mod_job_pw_energy_director_add£ per $VALUE$ £pop£"
 
+    # Agriculture Director
+    job_pw_agriculture_director: "Agriculture Director"
+    job_pw_agriculture_director_plural: "Agriculture Directors"
+    job_pw_agriculture_director_desc: "Farmers, biologists, botanists, meteorologists all work in coordination to maintain the great harvests in the Demetrius Fields."
+    job_pw_agriculture_director_effect_desc: "£job_farmer£ $job_pw_agriculture_director_plural$ produce £food£ §Y$food$§! and increase £job_farmer£ food production."
+    mod_job_pw_agriculture_director_add: "$job_pw_agriculture_director$ Jobs"
+    mod_job_pw_agriculture_director_per_pop: "§G+1§! $job_pw_agriculture_director$ Job per $VALUE$ Pops"
+    mod_job_pw_agriculture_director_per_pop_short: "\n§G+1§! £mod_job_pw_agriculture_director_add£ per $VALUE$ £pop£"
+
 
     # Gestalt Jobs:
     # Mining Coordinator
@@ -38,3 +47,12 @@
     mod_job_pw_energy_coordinator_add: "$job_pw_energy_coordinator$ Jobs"
     mod_job_pw_energy_coordinator_per_pop: "§G+1§! $job_pw_energy_coordinator$ Job per $VALUE$ Pops"
     mod_job_pw_energy_coordinator_per_pop_short: "\n§G+1§! £mod_job_pw_energy_coordinator_add£ per $VALUE$ £pop£"
+
+    # Food Coordinator
+    job_pw_food_coordinator: "Food Coordinator"
+    job_pw_food_coordinator_plural: "Food Coordinators"
+    job_pw_food_coordinator_desc: "Specialized drones that creates a subset of the gestalt entirely devoted to sowing, planting, harvesting, herding, hunting and finding food sources all in the Demetrius Fields."
+    job_pw_food_coordinator_effect_desc: "£job_farmer_drone£ $job_pw_food_coordinator_plural$ produce £food£ §Y$food$§! and increase £job_farmer_drone£ food production."
+    mod_job_pw_food_coordinator_add: "$job_pw_food_coordinator$ Jobs"
+    mod_job_pw_food_coordinator_per_pop: "§G+1§! $job_pw_food_coordinator$ Job per $VALUE$ Pops"
+    mod_job_pw_food_coordinator_per_pop_short: "\n§G+1§! £mod_job_pw_food_coordinator_add£ per $VALUE$ £pop£"

@@ -49,5 +49,5 @@
     # Demetrius Fields
     pw_demetrius_fields: "§MDemetrius Fields§!"
     pw_building_demetrius_fields: "Demetrius Fields"
-    pw_building_demetrius_fields_desc: ""
+    pw_building_demetrius_fields_desc: "An entire artificial environment with controlled climate and regulated food chains design to extract the most in quantity and type of nutrients from the soil."
     mod_country_resource_max_food_add: "Food Storage Capacity"

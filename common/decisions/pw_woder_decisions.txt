@@ -1,4 +1,4 @@
-pw_decision_erebus_prospecting = {
+pw_decision_erebus_prospectinging = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_resources
