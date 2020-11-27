@@ -110,7 +110,7 @@ pw_building_particle_supercollider = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_hive_empire = yes }
 		}
 		text = job_brain_drone_effect_desc
 	}
@@ -118,7 +118,7 @@ pw_building_particle_supercollider = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		text = job_calculator_effect_desc
 	}
@@ -242,7 +242,7 @@ pw_building_domed_city = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_hive_empire = yes }
 		}
 		text = job_brain_drone_effect_desc
 	}
@@ -250,7 +250,7 @@ pw_building_domed_city = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		text = job_calculator_effect_desc
 	}
@@ -373,7 +373,7 @@ pw_building_abyssal_crater_test_site = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_hive_empire = yes }
 		}
 		text = job_brain_drone_effect_desc
 	}
@@ -381,7 +381,7 @@ pw_building_abyssal_crater_test_site = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		text = job_calculator_effect_desc
 	}
