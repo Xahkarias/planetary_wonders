@@ -75,10 +75,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.101.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -89,10 +103,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.101.b
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -153,10 +181,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.201.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -167,10 +209,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.201.b
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -230,10 +286,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.301.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -244,10 +314,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.301.b
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -307,10 +391,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.401.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -321,10 +419,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.401.b
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 		trigger = {
@@ -384,10 +496,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.501.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 	}
@@ -444,10 +570,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.601.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 	}
@@ -504,10 +644,24 @@ planet_event = {
 	option = {
 		name = pw_wonder.701.a
 		if = {
-			limit = { NOT = { has_modifier = pw_mod_wonder_built_recently_happiness } }
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			if = {
+				limit = { owner = { is_gestalt = no } }
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_happiness
+					days = 1800 # 5 years
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_wonder_built_recently_unity
+					days = 1800 # 5 years
+				}
 			}
 		}
 	}

@@ -100,7 +100,7 @@ pw_food_coordinator = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_food_processing_facility
-	icon = agri_drone
+	icon = farmer
 
 	possible_pre_triggers = {
 		has_owner = yes

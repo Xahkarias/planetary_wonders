@@ -1,12 +1,12 @@
 ﻿l_english:
 
     # Wonder completed (regular)
-    pw_mod_wonder_built_recently_happiness: "$pw_planet_wonder|M$ Recently Constructed"
-    pw_mod_wonder_built_recently_happiness_desc: "The people are still celebrating the construction of a $pw_planet_wonder|M$ in this planet"
+    pw_mod_wonder_built_recently_happiness: "$pw_planet_wonder$ Recently Constructed"
+    pw_mod_wonder_built_recently_happiness_desc: "The people are still celebrating the construction of a $pw_planet_wonder$ in this planet"
 
     # Wonder completed (gestalt)
-    pw_mod_wonder_built_recently_unity: "$pw_planet_wonder|M$ Recently Constructed"
-    pw_mod_wonder_built_recently_unity_desc: "Our purpose is more clear with the construction of a $pw_planet_wonder|M$ in this planet"
+    pw_mod_wonder_built_recently_unity: "$pw_planet_wonder$ Recently Constructed"
+    pw_mod_wonder_built_recently_unity_desc: "Our purpose is more clear with the construction of a $pw_planet_wonder$ in this planet"
 
     # Aggressive prospecting
     pw_mod_erebus_prospecting: "Prospecting Aggressively"

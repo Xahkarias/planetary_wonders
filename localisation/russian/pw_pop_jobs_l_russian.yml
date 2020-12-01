@@ -52,7 +52,7 @@
     job_pw_food_coordinator: "Food Coordinator"
     job_pw_food_coordinator_plural: "Food Coordinators"
     job_pw_food_coordinator_desc: "Specialized drones that creates a subset of the gestalt entirely devoted to sowing, planting, harvesting, herding, hunting and finding food sources all in the Demetrius Fields."
-    job_pw_food_coordinator_effect_desc: "£job_farmer_drone£ $job_pw_food_coordinator_plural$ produce £food£ §Y$food$§! and increase £job_farmer_drone£ food production."
+    job_pw_food_coordinator_effect_desc: "£job_agri_drone£ $job_pw_food_coordinator_plural$ produce £food£ §Y$food$§! and increase £job_agri_drone£ food production."
     mod_job_pw_food_coordinator_add: "$job_pw_food_coordinator$ Jobs"
     mod_job_pw_food_coordinator_per_pop: "§G+1§! $job_pw_food_coordinator$ Job per $VALUE$ Pops"
     mod_job_pw_food_coordinator_per_pop_short: "\n§G+1§! £mod_job_pw_food_coordinator_add£ per $VALUE$ £pop£"
