@@ -20,10 +20,10 @@ pw_decision_erebus_prospecting = {
 	}
 
 	effect = {
-		add_planet_devastation = 25
+		add_planet_devastation = @pw_decision_devastation
 		add_modifier = {
 			modifier = pw_mod_erebus_prospecting
-			days = 3600 # 10 years
+			days = @pw_decision_duration
 		}
 	}
 
@@ -58,10 +58,10 @@ pw_decision_helios_seeding = {
 	}
 
 	effect = {
-		add_planet_devastation = 25
+		add_planet_devastation = @pw_decision_devastation
 		add_modifier = {
 			modifier = pw_mod_helios_seeding
-			days = 3600 # 10 years
+			days = @pw_decision_duration
 		}
 	}
 
@@ -96,10 +96,10 @@ pw_decision_demetrius_harvesting = {
 	}
 
 	effect = {
-		add_planet_devastation = 25
+		add_planet_devastation = @pw_decision_devastation
 		add_modifier = {
 			modifier = pw_mod_demetrius_harvesting
-			days = 3600 # 10 years
+			days = @pw_decision_duration
 		}
 	}
 

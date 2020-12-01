@@ -1,20 +1,20 @@
 #Buildings
 
 #Resource Cost:
-@pw_building_cost = 5000
+@pw_building_cost = 10000 #half of an arcology
 @pw_building_cost_advanced = 500
 @pw_building_cost_rare = 100
 
 @pw_building_upkeep = 15
 @pw_building_upkeep_expensive = 20
-@pw_building_upkeep_extra = 5
+@pw_building_upkeep_extra = 5 # Consumer goods or alloys in special cases
 @pw_building_upkeep_rare = 1
 
-@pw_building_buildtime = 50 #Change me!
+@pw_building_buildtime = 1800 #5 years
 
 #Resource Production
 @pw_stability_production = 5
-@pw_influence_production = 0.1
+#@pw_influence_production = 0.1
 
 #Regular Jobs:
 @pw_building_worker_jobs = 15
@@ -43,4 +43,8 @@
 #Cost:
 @pw_decision_influence_cost = 25
 @pw_decision_resource_cost = 1000
+@pw_decision_devastation = 25
+
+#Effect:
 @pw_decision_resource_mod = 0.15
+@pw_decision_duration = 1800 # 5 years
