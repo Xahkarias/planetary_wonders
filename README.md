@@ -2,7 +2,7 @@
 
 A mod for the game [Stellaris](https://store.steampowered.com/app/281990/Stellaris/) that aims to add planetary mega-structures to the game.
 
-[Steam Workshop Link]()
+[Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2305790641)
 
 (This is playable but very early in development)
 
