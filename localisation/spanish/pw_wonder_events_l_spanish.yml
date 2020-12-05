@@ -40,7 +40,7 @@
     pw_wonder.501.a: "The minerals must flow."
 
     #Complete Helios Tower
-    pw_message_erebus_project_complete: "§MHelios Tower§! has been constructed in $PLANET|Y$."
+    pw_message_helios_tower_complete: "§MHelios Tower§! has been constructed in $PLANET|Y$."
     #First Time Complete Helios Tower
     pw_wonder.601.name: "A Blazing Spire Is Born"
     pw_wonder.601.desc: "A field the size of a city of automated mirror arrays calibrated to converge a chunk of the energy of [ROOT.GetStarName] that hits the surface of [ROOT.GetName] to a central spire. The Helios Tower possess the most advanced energy conversion technology and is now ready to supplement any of our country's need for power.\n\nPerhaps we could also iterate on the design and maybe even trap a star in the future"
