@@ -1,4 +1,8 @@
 Feature Plan.todo
 New Wonder Checklist.todo
 .vscode
-screenshots/*
+
+*.py[cod]
+
+screenshots/
+__pycache__/
