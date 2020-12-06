@@ -904,3 +904,122 @@ planet_event = {
 		owner = { set_country_flag = demetrius_fields_built }
 	}
 }
+
+# Galactic Model -> id 800
+
+#On Galactic Model built
+planet_event = {
+	id = pw_wonder.800
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_galactic_model_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.801 }
+		planet_event = { id = pw_wonder.802 }
+	}
+}
+
+#On first time Galactic Model is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.801
+	title = "pw_wonder.801.name"
+	desc = "pw_wonder.801.desc"
+	picture = GFX_evt_clocks
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.801.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = galactic_model_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = galactic_model_built }
+	}
+}
+
+#On first time Galactic Model is built (Gestalt)
+planet_event = {
+	id = pw_wonder.802
+	title = "pw_wonder.802.name"
+	desc = "pw_wonder.802.desc"
+	picture = GFX_evt_clocks
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.802.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.802.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = galactic_model_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = galactic_model_built }
+	}
+}

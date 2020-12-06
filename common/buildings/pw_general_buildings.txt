@@ -139,3 +139,166 @@ pw_building_space_elevator = {
 		planet_event = { id = pw_wonder.100 }
 	}
 }
+
+pw_building_galactic_model = {
+	base_buildtime = @pw_building_buildtime
+	add_to_first_building_slot = yes
+	base_cap_amount = 1
+	can_be_ruined = no
+
+	category = government
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		NOT = { is_planet_class = pc_habitat }
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+		free_district_slots > 0 # Needs a free district to occupy
+		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+			rare_crystals = @pw_building_cost_rare
+		}
+		upkeep = {
+			energy = @pw_building_upkeep
+			rare_crystals = @pw_building_upkeep_rare
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	country_modifier = {
+		country_admin_cap_mult = 0.05
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_bureaucrat_add = @pw_building_specialist_jobs
+			job_administrator_add = @pw_building_ruler_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = @pw_building_complex_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = @pw_building_complex_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = pw_ambition_monumentality }
+		}
+		modifier = {
+			planet_stability_add = @pw_stability_production
+		}
+	}
+
+	prerequisites = {
+		pw_tech_galactic_modeling
+		#"tech_galactic_bureaucracy"
+	}
+
+	triggered_desc = {
+		text = pw_planet_wonder_lb
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_bureaucrat_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_administrator_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_synapse_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_coordinator_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			buildings_has_crystals = no
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 0 }
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 10 }
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 20 }
+		}
+		modifier = {
+			factor = 2
+			owner = { empire_sprawl_over_cap > 40 }
+		}
+		modifier = {
+			factor = 2
+			owner = { has_valid_civic = civic_byzantine_bureaucracy }
+		}
+	}
+
+	on_built = {
+		planet_event = { id = pw_wonder.800 }
+	}
+}

@@ -551,3 +551,86 @@ pw_tech_demetrius_fields = {
 		}
 	}
 }
+
+#Galactic Modeling
+pw_tech_galactic_modeling = {
+	area = society
+	cost = @tier4cost2
+	tier = 4
+	category = { statecraft }
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_galactic_bureaucracy
+	}
+	weight = @tier4weight2
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_maniacal
+			}
+		}
+
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = 0
+			num_owned_planets < 3
+		}
+
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 5
+		}
+
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 6
+		}
+
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 7
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_space_elevator }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
