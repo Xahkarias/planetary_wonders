@@ -28,6 +28,15 @@
     mod_job_pw_agriculture_director_per_pop: "§G+1§! $job_pw_agriculture_director$ Job per $VALUE$ Pops"
     mod_job_pw_agriculture_director_per_pop_short: "\n§G+1§! £mod_job_pw_agriculture_director_add£ per $VALUE$ £pop£"
 
+    # Test Subject
+    job_pw_domed_city_test_subject: "Test Subject"
+    job_pw_domed_city_test_subject_plural: "Test Subjects"
+    job_pw_domed_city_test_subject_desc: "The unsuspecting population of the Domed City research project."
+    job_pw_domed_city_test_subject_effect_desc: "£job_researcher£ $job_pw_domed_city_test_subject_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £society£ §Y$society_research$§!."
+    mod_job_pw_domed_city_test_subject_add: "$job_pw_domed_city_test_subject$ Jobs"
+    mod_job_pw_domed_city_test_subject_per_pop: "§G+1§! $job_pw_domed_city_test_subject$ Job per $VALUE$ Pops"
+    mod_job_pw_domed_city_test_subject_per_pop_short: "\n§G+1§! £mod_job_pw_domed_city_test_subject_add£ per $VALUE$ £pop£"
+
 
     # Gestalt Jobs:
     # Mining Coordinator
@@ -56,3 +65,12 @@
     mod_job_pw_food_coordinator_add: "$job_pw_food_coordinator$ Jobs"
     mod_job_pw_food_coordinator_per_pop: "§G+1§! $job_pw_food_coordinator$ Job per $VALUE$ Pops"
     mod_job_pw_food_coordinator_per_pop_short: "\n§G+1§! £mod_job_pw_food_coordinator_add£ per $VALUE$ £pop£"
+
+    # Subject Drone
+    job_pw_domed_city_subject_drone: "Drone Test Subject"
+    job_pw_domed_city_subject_drone_plural: "Drone Test Subjects"
+    job_pw_domed_city_subject_drone_desc: "With their connection to the Gestalt nearly severed, this drones emulate other empires organization for research."
+    job_pw_domed_city_subject_drone_effect_desc: "£job_researcher£ $job_pw_domed_city_subject_drone_plural$ turn £food£ §Y$food$§! and £minerals£ §Y$minerals$§! into £society£ §Y$society_research$§!."
+    mod_job_pw_domed_city_subject_drone_add: "$job_pw_domed_city_subject_drone$ Jobs"
+    mod_job_pw_domed_city_subject_drone_per_pop: "§G+1§! $job_pw_domed_city_subject_drone$ Job per $VALUE$ Pops"
+    mod_job_pw_domed_city_subject_drone_per_pop_short: "\n§G+1§! £mod_job_pw_domed_city_subject_drone_add£ per $VALUE$ £pop£"
