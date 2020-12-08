@@ -51,3 +51,9 @@
     pw_building_demetrius_fields: "Demetrius Fields"
     pw_building_demetrius_fields_desc: "An entire artificial environment with controlled climate and regulated food chains design to extract the most in quantity and type of nutrients from the soil."
     mod_country_resource_max_food_add: "Food Storage Capacity"
+
+    pw_empire_unique: "Â§SEmpire UniqueÂ§!"
+    pw_empire_unique_lb: "Â§SEmpire UniqueÂ§!\n"
+    pw_galactic_model: "Â§MGalactic ModelÂ§!"
+    pw_building_galactic_model: "Galactic Model"
+    pw_building_galactic_model_desc: "A physical model of the Galaxy in such a proportion that allows us to plan, maintain and project all of our administrative plans: logistics, military, diplomacy, commerce and any other aspect that needs holographic analysis."
