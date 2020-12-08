@@ -10,6 +10,7 @@ pw_building_particle_supercollider = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		NOT = { is_planet_class = pc_habitat }
 	}
 
 	destroy_trigger = {
@@ -140,6 +141,7 @@ pw_building_domed_city = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		NOT = { is_planet_class = pc_habitat }
 	}
 
 	destroy_trigger = {
@@ -295,6 +297,7 @@ pw_building_abyssal_crater_test_site = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		NOT = { is_planet_class = pc_habitat }
 	}
 
 	destroy_trigger = {
