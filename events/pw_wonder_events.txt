@@ -962,6 +962,25 @@ planet_event = {
 		}
 	}
 
+	option = {
+		name = pw_wonder.801.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+		trigger = {
+			owner = { is_spiritualist = yes }
+		}
+	}
+
 	trigger = {
 		NOT = {owner = { has_country_flag = galactic_model_built }}
 		owner = { is_gestalt = no }

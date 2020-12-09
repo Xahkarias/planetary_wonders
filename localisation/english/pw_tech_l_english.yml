@@ -34,6 +34,14 @@
     pw_tech_demetrius_fields: "Demetrius Fields"
     pw_tech_demetrius_fields_desc: "A planetary ecosystem facility that boosts plant, animal or fungi growth and harvest in ideal conditions.\nIt is just the cycle of life, really."
 
-    # Galactic Modeling:
-    pw_tech_galactic_modeling: "Galactic Modeling"
+    # Astronomical Modeling:
+    pw_tech_galactic_modeling: "Astronomical Modeling"
     pw_tech_galactic_modeling_desc: "There comes a time in our stellar expansion that classic bureaucracy is simply not enough. We need a centralized model of our galaxy to coordinate our empire."
+
+    # Panopticon 1:
+    pw_tech_utilitarian_vigilance: "Utilitarian Vigilance"
+    pw_tech_utilitarian_vigilance_desc: ""
+
+    # Panopticon 2:
+    pw_tech_utilitarian_punishment: "Utilitarian Punishment"
+    pw_tech_utilitarian_punishment_desc: ""

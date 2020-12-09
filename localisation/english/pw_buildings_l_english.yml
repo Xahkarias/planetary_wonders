@@ -17,10 +17,16 @@
     pw_building_space_elevator: "Space Elevator"
     pw_building_space_elevator_desc: "A truly babylonian tower that extends to the skies and constantly moves freight and travelers. The space elevator provides many logistics jobs and facilitates the transposition of our population."
 
-    # Galactic Model
-    pw_galactic_model: "§MGalactic Model§!"
-    pw_building_galactic_model: "Galactic Model"
-    pw_building_galactic_model_desc: "A physical model of the Galaxy in such a proportion that allows us to plan, maintain and project all of our administrative plans: logistics, military, diplomacy, commerce and any other aspect that needs holographic analysis."
+    # Astronomical Model Bureau
+    pw_galactic_model: "§MAstronomical Model Bureau§!"
+    pw_building_galactic_model: "Astronomical Model Bureau"
+    pw_building_galactic_model_desc: "A wondrous physical model, representing the entirety of the known galaxy in a reduced - yet colossal - scale. Dynamic and ever-changing, it allows us to chart, maintain and project all of our administrative plans: logistics, military, diplomacy, commerce and any other aspect that needs holographic analysis."
+    pw_building_galactic_model_policy_tooltip: "Allows our empire to select Policies of Expansion.\n"
+
+    # Panopticon
+    pw_panopticon: "§MPanopticon§!"
+    pw_building_panopticon: "Panopticon"
+    pw_building_panopticon_desc: "A circular prison that surrounds a single guard tower, where every prisoner behaves not because they are being watched, but because they might be. The vigilance of the Panopticon extends beyond its walls and permeates our citizens everyday lives making each one their own warden."
 
 
     # Research Buildings:

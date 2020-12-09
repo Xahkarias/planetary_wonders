@@ -1,7 +1,7 @@
 # Version 1.1.0 (for Stellaris 2.8.1)
 
 Added:
-* Wonder: Galactic Model
+* Wonder: Astronomical Model Bureau
 * Wonder: Panopticon
 
 Update:
