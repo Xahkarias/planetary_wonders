@@ -1,0 +1,41 @@
+pw_edict_panspectron = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = information_quarantine }
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = information_quarantine
+			}
+			influence = 100
+		}
+	}
+
+	modifier = {
+		pop_ethic_authoritarian_attraction_mult = 0.5
+		# Test Value!!!
+		job_enforcer_per_crime = 2
+		# Test Value!!!
+	}
+
+	effect = {
+		custom_tooltip = pw_edict_panspectron_tooltip
+	}
+
+	potential = {
+		has_technology = pw_tech_utilitarian_punishment
+		has_ascension_perk = pw_ap_planetary_wonders
+	}
+
+	ai_weight = {
+		weight = @EdictLowPrio
+	}
+}

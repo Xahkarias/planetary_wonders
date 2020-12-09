@@ -97,3 +97,11 @@
     pw_wonder.802.desc: "The galaxy has become too complex - and too volatile - for any kind of classical centralized organizational system to be either efficient or useful.We needed something bolder.\nThe solution: A complete, physical, almost to proportion model of the entire galaxy. An enormous facility in [ROOT.GetName] where we have charted from the greatest star to the smallest asteroid. Where we can project all of the productions and needs of our planets, tackle all of its logistics challenges and organize the whole bureaucracy. Here we can see our empire for what it is: a connected cohesive mind, that needs its synapsis firing smoothly.\nEvery new bit of information our empire receives can be readily cataloged and used to update the model. Stellar storms, draught, scarcity, all can be accounted for and hastily acted upon to maintain our systems functioning. Since we also consider the influence of our neighbors, the model allows us to exploit some minor diplomatic cracks, facilitating transactions. We shall visualize all of the variables of the chessboard, like the perfect player, and acquire a more refined grasp of the functioning of our empire - always remaining some steps ahead.\nThe Model was also built with some room to expand and add new systems to the galaxy, to future proof, in case some theories prove to be correct.\n\nAnd as it was always meant to be, the Universe now contains the Model and the Model contains the Universe."
     pw_wonder.802.a: "No corner of the universe shall be left uncharted."
     pw_wonder.802.b: "We and the galaxy are One now."
+
+    #Complete Panopticon
+    pw_message_panopticon_complete: "pw_panopticon has been constructed in $PLANET|Y$."
+    #First Time Complete Panopticon (Regular Empire)
+    pw_wonder.801.name: ""
+    pw_wonder.801.desc: "All the world is a prison and all the people merely prisoners and guards."
+    pw_wonder.801.a: "We must reinforce discipline."
+    pw_wonder.801.b: "We must apply punishment."

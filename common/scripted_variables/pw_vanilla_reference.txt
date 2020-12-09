@@ -2,3 +2,10 @@
 @icon_frame_green = 1
 @icon_frame_yellow = 2
 @icon_frame_red = 3
+
+#Edict cost:
+@Edict1Cost = 100
+@Edict2Cost = 200
+@Edict3Cost = 300
+
+@EdictPerpetual = -1

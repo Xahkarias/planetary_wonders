@@ -212,8 +212,8 @@ pw_building_galactic_model = {
 	}
 
 	country_modifier = {
-		country_admin_cap_mult = 0.1
-		diplomacy_upkeep_mult = 0.1
+		country_admin_cap_mult = 0.2
+		diplomacy_upkeep_mult = 0.2
 	}
 
 	triggered_planet_modifier = {
@@ -267,6 +267,10 @@ pw_building_galactic_model = {
 
 	triggered_desc = {
 		text = pw_empire_unique_lb
+	}
+
+	triggered_desc = {
+		text = pw_building_galactic_model_policy_tooltip
 	}
 
 	triggered_desc = {
@@ -331,5 +335,139 @@ pw_building_galactic_model = {
 
 	on_built = {
 		planet_event = { id = pw_wonder.800 }
+	}
+}
+
+pw_building_panopticon = {
+	base_buildtime = @pw_building_buildtime
+	add_to_first_building_slot = yes
+	base_cap_amount = 1
+	can_be_ruined = no
+
+	category = government
+
+	potential = {
+		exists = owner
+		OR = {
+			has_modifier = penal_colony
+			owner = { has_valid_civic = civic_police_state }
+		}
+	}
+
+	destroy_trigger = {
+		NOR = {
+			has_modifier = penal_colony
+			owner = { has_civic = civic_police_state }
+		}
+	}
+
+	convert_to = {
+		building_hall_judgment
+		building_sentinel_posts
+		building_psi_corps
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+		free_district_slots > 0 # Needs a free district to occupy
+		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	country_modifier = {
+		#Test!!!
+		planet_crime_mult = -0.2
+		#Test!!!
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_enforcer_add = @pw_building_specialist_jobs
+		}
+	}
+
+	#Impossible in Vanilla
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = @pw_building_complex_jobs
+		}
+	}
+
+	#Impossible in Vanilla
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = @pw_building_complex_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = pw_ambition_monumentality }
+		}
+		modifier = {
+			planet_stability_add = @pw_stability_production
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+		}
+		upkeep = {
+			energy = @pw_building_upkeep
+		}
+	}
+
+	prerequisites = {
+		pw_tech_utilitarian_vigilance
+	}
+
+	triggered_desc = {
+		text = pw_planet_wonder_lb
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_enforcer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_patrol_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_patrol_drone_effect_desc
+	}
+
+	on_built = {
+		planet_event = { id = pw_wonder.900 }
 	}
 }
