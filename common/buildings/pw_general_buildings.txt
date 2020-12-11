@@ -393,6 +393,17 @@ pw_building_panopticon = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { has_edict = pw_edict_panspectron }
+		}
+		modifier = {
+			job_pw_big_brother_add = @pw_building_ruler_jobs
+		}
+	}
+
 	#Impossible in Vanilla
 	triggered_planet_modifier = {
 		potential = {
@@ -449,6 +460,15 @@ pw_building_panopticon = {
 			owner = { is_gestalt = no }
 		}
 		text = job_enforcer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { has_edict = pw_edict_panspectron }
+		}
+		text = job_pw_big_brother_effect_desc
 	}
 
 	triggered_desc = {

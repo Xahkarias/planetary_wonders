@@ -40,8 +40,4 @@
 
     # Panopticon 1:
     pw_tech_utilitarian_vigilance: "Utilitarian Vigilance"
-    pw_tech_utilitarian_vigilance_desc: "So far we have faced every pop in our galaxy as a criminal in potential, but perhaps it is high time we see them as a warden in potential."
-
-    # Panopticon 2:
-    pw_tech_utilitarian_punishment: "Utilitarian Punishment"
-    pw_tech_utilitarian_punishment_desc: "Vigilance should not come directly from the powers that be, rather than from the populace itself. Punishment should remain as a concept, people can project much more terrible things than we can inflict."
+    pw_tech_utilitarian_vigilance_desc: "Vigilance should not come directly from the powers that be, rather than from the populace itself. Punishment should remain as a concept, people can project much more terrible things than we can inflict. We have always seen each member of the population as a criminal in potential, but perhaps it is high time we see them as a warden in potential."

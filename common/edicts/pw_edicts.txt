@@ -7,13 +7,13 @@ pw_edict_panspectron = {
 		category = edicts
 		cost = { #Activation Cost
 			trigger = {
-				NOT = { has_edict = information_quarantine }
+				NOT = { has_edict = pw_edict_panspectron }
 			}
 			influence = 200
 		}
 		cost = { #Deactivation Cost
 			trigger = {
-				has_edict = information_quarantine
+				has_edict = pw_edict_panspectron
 			}
 			influence = 100
 		}
@@ -21,9 +21,15 @@ pw_edict_panspectron = {
 
 	modifier = {
 		pop_ethic_authoritarian_attraction_mult = 0.5
+		pop_government_ethic_attraction = 0.5
+		pop_cat_worker_political_power = -0.25
+
 		# Test Value!!!
 		job_enforcer_per_crime = 2
 		# Test Value!!!
+
+		# custom_tooltip = edict_capacity_subsidies_tooltip
+		# show_only_custom_tooltip = no
 	}
 
 	effect = {
@@ -31,8 +37,13 @@ pw_edict_panspectron = {
 	}
 
 	potential = {
-		has_technology = pw_tech_utilitarian_punishment
-		has_ascension_perk = pw_ap_planetary_wonders
+		has_technology = pw_tech_utilitarian_vigilance
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_building = pw_building_panopticon
+		}
 	}
 
 	ai_weight = {

@@ -101,7 +101,7 @@
     #Complete Panopticon
     pw_message_panopticon_complete: "pw_panopticon has been constructed in $PLANET|Y$."
     #First Time Complete Panopticon (Regular Empire)
-    pw_wonder.801.name: ""
-    pw_wonder.801.desc: "All the world is a prison and all the people merely prisoners and guards."
-    pw_wonder.801.a: "We must reinforce discipline."
-    pw_wonder.801.b: "We must apply punishment."
+    pw_wonder.901.name: "I see you"
+    pw_wonder.901.desc: "All the world is a prison and all the people merely prisoners and guards.\nThe Panopticon is the state of the art in vigilance technology. With only a handful of actual guards, it operates with two simple concepts: imagination and fear. Because of the way it was built, each inmate can never be sure when they are being watched, but the possibility that they are, dissimulates any deviant behavior. The fear of punishment becomes the punishment itself and lack of compliancy is inhibited.\nThis concept can be expanded to every criminal in potential, the so called population, by the implementation of a peculiar moral vigilance system in which anyone else could be a potential informer. That is what we call the Panspectron: everyone will watch over everyone else - and themselves - influenced by a carefully curated artificial moral code that prioritizes the maintenance of the status quo. If it depended solely on the Panspectron, our regime would never change.\n\n\"Denounce!\" posters are already being hanged, subversive unity will be impossible."
+    pw_wonder.901.a: "We must reinforce discipline."
+    pw_wonder.901.b: "We must apply punishment."
