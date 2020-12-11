@@ -802,9 +802,9 @@ planet_event = {
 	}
 }
 
-# Demetrius Fields -> id 700
+# Demetrius Cornucopia -> id 700
 
-#On Demetrius Fields built
+#On Demetrius Cornucopia built
 planet_event = {
 	id = pw_wonder.700
 	hide_window = yes
@@ -833,7 +833,7 @@ planet_event = {
 	}
 }
 
-#On first time Demetrius Fields is built (Regular Empire)
+#On first time Demetrius Cornucopia is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.701
 	title = "pw_wonder.701.name"
@@ -869,7 +869,7 @@ planet_event = {
 	}
 }
 
-#On first time Demetrius Fields is built (Gestalt)
+#On first time Demetrius Cornucopia is built (Gestalt)
 planet_event = {
 	id = pw_wonder.702
 	title = "pw_wonder.702.name"

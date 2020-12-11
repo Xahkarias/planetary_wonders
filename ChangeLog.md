@@ -14,6 +14,7 @@ Update:
   * Changed (regular): 1 Merchant -> 1 Merchant per 50 pop
   * Added (hive): 1 Synapse drone per 50 pop
   * Added (machine): 1 Evaluator per 50 pop
+* Demetrius Fields renamed to Demetrius Cornucopia.
 
 # Version 1.0.1 (for Stellaris 2.8.1)
 

@@ -46,9 +46,9 @@
     pw_building_helios_tower_desc: "A hemisphere crater filled with a moving array of mirrors, all directing the energy from this star to a central generator tower, where it can be transformed to fit our purposes."
     mod_country_resource_max_energy_add: "Energy Storage Capacity"
 
-    # Demetrius Fields
-    pw_demetrius_fields: "§MDemetrius Fields§!"
-    pw_building_demetrius_fields: "Demetrius Fields"
+    # Demetrius Cornucopia
+    pw_demetrius_fields: "§MDemetrius Cornucopia§!"
+    pw_building_demetrius_fields: "Demetrius Cornucopia"
     pw_building_demetrius_fields_desc: "An entire artificial environment with controlled climate and regulated food chains design to extract the most in quantity and type of nutrients from the soil."
     mod_country_resource_max_food_add: "Food Storage Capacity"
 

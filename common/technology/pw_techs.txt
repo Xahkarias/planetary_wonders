@@ -478,7 +478,7 @@ pw_tech_helios_tower = {
 	}
 }
 
-# Demetrius Fields
+# Demetrius Cornucopia
 pw_tech_demetrius_fields = {
 	area = society
 	cost = @tier4cost3

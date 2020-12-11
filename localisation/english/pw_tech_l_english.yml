@@ -30,8 +30,8 @@
     pw_tech_helios_tower: "Helios Tower"
     pw_tech_helios_tower_desc: "A central generator tower surrounded with fields of mirror arrays all redirecting solar power towards to the pinnacle.\nMaybe we should encompass a star next."
 
-    # Demetrius Fields:
-    pw_tech_demetrius_fields: "Demetrius Fields"
+    # Demetrius Cornucopia:
+    pw_tech_demetrius_fields: "Demetrius Cornucopia"
     pw_tech_demetrius_fields_desc: "A planetary ecosystem facility that boosts plant, animal or fungi growth and harvest in ideal conditions.\nIt is just the cycle of life, really."
 
     # Astronomical Modeling:

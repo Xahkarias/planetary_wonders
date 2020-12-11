@@ -74,15 +74,15 @@
     pw_wonder.602.desc: "A field the size of a city of automated mirror arrays calibrated to converge a chunk of the energy of [ROOT.GetStarName] that hits the surface of [ROOT.GetName] to a central spire. The Helios Tower possess the most advanced energy conversion technology and is now ready to supplement any of our country's need for power.\n\nPerhaps we could also iterate on the design and maybe even trap a star in the future."
     pw_wonder.602.a: "Brilliant!"
 
-    #Complete Demetrius Fields
-    pw_message_demetrius_fields_complete: "§MDemetrius Fields§! has been constructed in $PLANET|Y$."
-    #First Time Complete Demetrius Fields (Regular Empire)
+    #Complete Demetrius Cornucopia
+    pw_message_demetrius_fields_complete: "§MDemetrius Cornucopia§! has been constructed in $PLANET|Y$."
+    #First Time Complete Demetrius Cornucopia (Regular Empire)
     pw_wonder.701.name: "Feed The World"
-    pw_wonder.701.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Fields. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
+    pw_wonder.701.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
     pw_wonder.701.a: "Seed the earth!"
-    #First Time Complete Demetrius Fields (Gestalt)
+    #First Time Complete Demetrius Cornucopia (Gestalt)
     pw_wonder.702.name: "Feed The World"
-    pw_wonder.702.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Fields. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
+    pw_wonder.702.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
     pw_wonder.702.a: "We hunger!"
 
     pw_message_galactic_model_complete: "Â§MAstronomical Model BureauÂ§! has been constructed in $PLANET|Y$."

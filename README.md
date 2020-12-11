@@ -20,7 +20,7 @@ Wonder List:
 Unlocked by Ascension Perk:
 * Erebus Project
 * Helios Tower
-* Demetrius Fields
+* Demetrius Cornucopia
 
 ## Planned Features
 * Event chains for all wonders
