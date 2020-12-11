@@ -57,3 +57,8 @@
     pw_galactic_model: "Â§MAstronomical Model BureauÂ§!"
     pw_building_galactic_model: "Astronomical Model Bureau"
     pw_building_galactic_model_desc: "A physical model of the Galaxy in such a proportion that allows us to plan, maintain and project all of our administrative plans: logistics, military, diplomacy, commerce and any other aspect that needs holographic analysis."
+
+    pw_building_galactic_model_policy_tooltip: "Allows our empire to select Policies of Expansion.\n"
+    pw_panopticon: "Â§MPanopticonÂ§!"
+    pw_building_panopticon: "Panopticon"
+    pw_building_panopticon_desc: "A circular prison that surrounds a single guard tower, where every prisoner behaves not because they are being watched, but because they might be. The vigilance of the Panopticon extends beyond its walls and permeates our citizens everyday lives making each one their own warden."

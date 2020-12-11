@@ -36,3 +36,8 @@
 
     pw_tech_galactic_modeling: "Astronomical Model Bureauing"
     pw_tech_galactic_modeling_desc: "There comes a time in our stellar expansion that classic bureaucracy is simply not enough. We need a centralized model of our galaxy to coordinate our empire."
+
+    pw_prereq_planetary_wonders: "$pw_planet_wonders$ construction"
+    pw_prereq_planetary_wonders_desc: "Allows us to build one $pw_planet_wonder$ on each planet. They take up one district slot from the planet."
+    pw_tech_utilitarian_vigilance: "Utilitarian Vigilance"
+    pw_tech_utilitarian_vigilance_desc: "Vigilance should not come directly from the powers that be, rather than from the populace itself. Punishment should remain as a concept, people can project much more terrible things than we can inflict. We have always seen each member of the population as a criminal in potential, but perhaps it is high time we see them as a warden in potential."

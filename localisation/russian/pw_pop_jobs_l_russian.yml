@@ -71,3 +71,11 @@
     mod_job_pw_domed_city_subject_drone_add: "$job_pw_domed_city_subject_drone$ Jobs"
     mod_job_pw_domed_city_subject_drone_per_pop: "Â§G+1Â§! $job_pw_domed_city_subject_drone$ Job per $VALUE$ Pops"
     mod_job_pw_domed_city_subject_drone_per_pop_short: "\nÂ§G+1Â§! Â£mod_job_pw_domed_city_subject_drone_addÂ£ per $VALUE$ Â£popÂ£"
+
+    job_pw_big_brother: "Big Brother"
+    job_pw_big_brother_plural: "Big Brothers"
+    job_pw_big_brother_desc: "A select cabal with eyes and ears everywhere and with the power to take action against the population, should it benefit the maintenance of the status quo. It is just a coincidence that the elites remain unscathed."
+    job_pw_big_brother_effect_desc: "Â£job_enforcerÂ£ $job_pw_big_brother_plural$ turn Â£consumer_goodsÂ£ Â§Y$consumer_goods$Â§! and Â£energyÂ£ Â§Y$energy$Â§! into Â£unityÂ£ Â§Y$unity$Â§!."
+    mod_job_pw_big_brother_add: "$job_pw_big_brother$ Jobs"
+    mod_job_pw_big_brother_per_pop: "Â§G+1Â§! $job_pw_big_brother$ Job per $VALUE$ Pops"
+    mod_job_pw_big_brother_per_pop_short: "\nÂ§G+1Â§! Â£mod_job_pw_big_brother_addÂ£ per $VALUE$ Â£popÂ£"
