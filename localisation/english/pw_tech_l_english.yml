@@ -3,8 +3,8 @@
     # Planetary Megastructures Tech:
     pw_tech_planetary_mega_engineering: "Planetary Mega-Engineering"
     pw_tech_planetary_mega_engineering_desc: "In our path to reach the stars we must never forget to build our stepping stones.\nTo do so, we must first study the materials and techniques involved in the building of wonderous monuments and gather the required resources for their construction."
-    feature_planetary_wonders: "$pw_planet_wonders$"
-    feature_planetary_wonders_desc: "Allows us to build one $pw_planet_wonder$ on each planet."
+    pw_prereq_planetary_wonders: "$pw_planet_wonders$ construction"
+    pw_prereq_planetary_wonders_desc: "Allows us to build one $pw_planet_wonder$ on each planet. They take up one district slot from the planet."
 
     # Space Elevator:
     pw_tech_space_elevator: "Space Elevator"

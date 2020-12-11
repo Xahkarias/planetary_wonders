@@ -15,6 +15,7 @@ Update:
   * Added (hive): 1 Synapse drone per 50 pop
   * Added (machine): 1 Evaluator per 50 pop
 * Demetrius Fields renamed to Demetrius Cornucopia.
+* Planetary Megastructures tech: added prereqfor_desc.
 
 # Version 1.0.1 (for Stellaris 2.8.1)
 

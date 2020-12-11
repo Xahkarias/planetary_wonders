@@ -15,6 +15,13 @@ pw_tech_planetary_mega_engineering = {
 
 	#feature_flags = { planetary_wonders }
 
+	prereqfor_desc = {
+		custom = {
+			title = pw_prereq_planetary_wonders
+			desc = pw_prereq_planetary_wonders_desc
+		}
+	}
+
 	modifier = {
 		country_resource_max_add = 5000
 		planet_building_build_speed_mult = 0.50
