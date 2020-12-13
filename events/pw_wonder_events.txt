@@ -1059,7 +1059,7 @@ planet_event = {
 	immediate = {
 		create_message = {
 			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
-			localization = pw_message_galactic_model_complete
+			localization = pw_message_panopticon_complete
 			days = 30
 			target = THIS
 			variable = {
@@ -1121,5 +1121,86 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = panopticon_built }
+	}
+}
+
+# Enigma Engine -> id 1000
+
+#On Enigma Engine built
+planet_event = {
+	id = pw_wonder.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_enigma_engine_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1001 }
+	}
+}
+
+#On first time Enigma Engine is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1001
+	title = "pw_wonder.1001.name"
+	desc = "pw_wonder.1001.desc"
+	picture = GFX_evt_announcement
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1001.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1001.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = enigma_engine_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = enigma_engine_built }
 	}
 }

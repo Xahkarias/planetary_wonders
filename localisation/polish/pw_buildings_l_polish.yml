@@ -62,3 +62,8 @@
     pw_panopticon: "Â§MPanopticonÂ§!"
     pw_building_panopticon: "Panopticon"
     pw_building_panopticon_desc: "A circular prison that surrounds a single guard tower, where every prisoner behaves not because they are being watched, but because they might be. The vigilance of the Panopticon extends beyond its walls and permeates our citizens everyday lives making each one their own warden."
+
+    pw_enigma_engine: "Â§MEnigma EngineÂ§!"
+    pw_building_enigma_engine: "Enigma Engine"
+    pw_building_enigma_engine_desc: "A machine. Built by ignoring logical output and following but the most basic directives. We do not fully understand how it works, only that it consumes a great quantity of power and incorporates other machinery to remain in constant motion. It's gears spin, it's pulleys pull and we try to decipher it."
+    pw_enigma_engine_tooltip: "Allows us to research $pw_enigma$ technologies."

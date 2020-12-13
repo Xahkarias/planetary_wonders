@@ -4,6 +4,7 @@
 @pw_building_cost = 10000 #half of an arcology
 @pw_building_cost_advanced = 500
 @pw_building_cost_rare = 100
+@pw_building_cost_minor_artifact = 10
 
 @pw_building_upkeep = 15
 @pw_building_upkeep_expensive = 20
@@ -38,6 +39,11 @@
 @pw_job_director_resource_base = 2
 @pw_job_director_resource_mult = 0.1
 
+#Per pop count
+@pw_job_per_50_pop = 0.02
+@pw_job_per_25_pop = 0.04
+
+
 #Decisions
 
 #Cost:
@@ -48,3 +54,9 @@
 #Effect:
 @pw_decision_resource_mod = 0.15
 @pw_decision_duration = 1800 # 5 years
+
+
+# Techs
+
+#Cost:
+@pw_enigma_tech_cost = 60000

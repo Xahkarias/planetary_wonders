@@ -32,6 +32,8 @@ pw_has_any_planetary_wonder = {
 		has_building_construction = pw_building_galactic_model
 		has_building = pw_building_panopticon
 		has_building_construction = pw_building_panopticon
+		has_building = pw_building_enigma_engine
+		has_building_construction = pw_building_enigma_engine
 		# pw_has_planetary_wonder = {WONDER = pw_building_space_elevator}
 		# pw_has_planetary_wonder = {WONDER = pw_building_particle_supercollider}
 		# pw_has_planetary_wonder = {WONDER = pw_building_domed_city}
@@ -60,6 +62,7 @@ pw_has_build_any_planetary_wonder = {
 		has_country_flag = demetrius_fields_built
 		has_country_flag = galactic_model_built
 		has_country_flag = panopticon_built
+		has_country_flag = enigma_engine_built
 	}
 }
 

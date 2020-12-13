@@ -79,3 +79,11 @@
     mod_job_pw_big_brother_add: "$job_pw_big_brother$ Jobs"
     mod_job_pw_big_brother_per_pop: "Â§G+1Â§! $job_pw_big_brother$ Job per $VALUE$ Pops"
     mod_job_pw_big_brother_per_pop_short: "\nÂ§G+1Â§! Â£mod_job_pw_big_brother_addÂ£ per $VALUE$ Â£popÂ£"
+
+    job_pw_enigma_decipher: "Enigma Decipher"
+    job_pw_enigma_decipher_plural: "Enigma Deciphers"
+    job_pw_enigma_decipher_desc: "Drones following decipher protocols trying to understand the unpredictable movements of the Enigma Engine. Constantly the breakthrough of new technology or glimpses of simulated prediction comes to them. It is known that the engine changes the code of those who try to decipher it."
+    job_pw_enigma_decipher_effect_desc: "Â£job_evaluatorÂ£ $job_pw_enigma_decipher_plural$ turn Â£energyÂ£ Â§Y$energy$Â§! into Â£societyÂ£ Â§Y$society_research$Â§!, Â£physicsÂ£ Â§Y$physics_research$Â§!, Â£engineeringÂ£ Â§Y$engineering_research$Â§! and Â£unityÂ£ Â§Y$unity$Â§!."
+    mod_job_pw_enigma_decipher_add: "$job_pw_enigma_decipher$ Jobs"
+    mod_job_pw_enigma_decipher_per_pop: "Â§G+1Â§! $job_pw_enigma_decipher$ Job per $VALUE$ Pops"
+    mod_job_pw_enigma_decipher_per_pop_short: "\nÂ§G+1Â§! Â£mod_job_pw_enigma_decipher_addÂ£ per $VALUE$ Â£popÂ£"

@@ -652,7 +652,7 @@ pw_tech_galactic_modeling = {
 	}
 }
 
-# Panopticon 1
+# Panopticon
 pw_tech_utilitarian_vigilance = {
 	area = society
 	cost = @tier4cost3
@@ -743,6 +743,97 @@ pw_tech_utilitarian_vigilance = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# Enigma Engine
+pw_tech_metaphysical_singularity = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { computing }
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_global_research_initiative
+		tech_science_nexus
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		is_machine_empire = yes
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = pw_prereq_enigmas
+			desc = pw_prereq_enigmas_desc
+		}
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_computing"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_metaphysical_singularity }
+			}
+		}
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_machine_introspective
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_machine_predictive_analysis
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
 			}
 		}
 	}
