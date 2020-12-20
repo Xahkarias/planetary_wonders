@@ -16,6 +16,10 @@ Wonder List:
 * Particle Supercollider
 * Domed City
 * Abyssal Test Crater
+* Astronomical Model Bureau
+* Panopticon
+* Enigma Engine
+* Solipsist Debate Hall
 
 Unlocked by Ascension Perk:
 * Erebus Project

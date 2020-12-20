@@ -66,8 +66,8 @@ planet_event = {
 #On first time Space Elevator is built (regular empire)
 planet_event = {
 	id = pw_wonder.101
-	title = "pw_wonder.101.name"
-	desc = "pw_wonder.101.desc"
+	title = pw_wonder.101.name
+	desc = pw_wonder.101.desc
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -124,8 +124,8 @@ planet_event = {
 #On first time Space Elevator is built (gestalt)
 planet_event = {
 	id = pw_wonder.102
-	title = "pw_wonder.102.name"
-	desc = "pw_wonder.102.desc"
+	title = pw_wonder.102.name
+	desc = pw_wonder.102.desc
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -207,8 +207,8 @@ planet_event = {
 #On first time Particle Supercollider is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.201
-	title = "pw_wonder.201.name"
-	desc = "pw_wonder.201.desc"
+	title = pw_wonder.201.name
+	desc = pw_wonder.201.desc
 	picture = GFX_evt_ancient_databank
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -265,8 +265,8 @@ planet_event = {
 #On first time Particle Supercollider is built (Gestalt)
 planet_event = {
 	id = pw_wonder.202
-	title = "pw_wonder.202.name"
-	desc = "pw_wonder.202.desc"
+	title = pw_wonder.202.name
+	desc = pw_wonder.202.desc
 	picture = GFX_evt_ancient_databank
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -348,8 +348,8 @@ planet_event = {
 #On first time Domed City is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.301
-	title = "pw_wonder.301.name"
-	desc = "pw_wonder.301.desc"
+	title = pw_wonder.301.name
+	desc = pw_wonder.301.desc
 	picture = GFX_evt_society_research
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -406,8 +406,8 @@ planet_event = {
 #On first time Domed City is built (Gestalt)
 planet_event = {
 	id = pw_wonder.302
-	title = "pw_wonder.302.name"
-	desc = "pw_wonder.302.desc"
+	title = pw_wonder.302.name
+	desc = pw_wonder.302.desc
 	picture = GFX_evt_society_research
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -489,8 +489,8 @@ planet_event = {
 #On first time Abyssal Crater Test Site is built (regular Empire)
 planet_event = {
 	id = pw_wonder.401
-	title = "pw_wonder.401.name"
-	desc = "pw_wonder.401.desc"
+	title = pw_wonder.401.name
+	desc = pw_wonder.401.desc
 	picture = GFX_evt_underground_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -547,8 +547,8 @@ planet_event = {
 #On first time Abyssal Crater Test Site is built (Gestalt)
 planet_event = {
 	id = pw_wonder.402
-	title = "pw_wonder.402.name"
-	desc = "pw_wonder.402.desc"
+	title = pw_wonder.402.name
+	desc = pw_wonder.402.desc
 	picture = GFX_evt_underground_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -630,8 +630,8 @@ planet_event = {
 #On first time Erebus Project is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.501
-	title = "pw_wonder.501.name"
-	desc = "pw_wonder.501.desc"
+	title = pw_wonder.501.name
+	desc = pw_wonder.501.desc
 	picture = GFX_evt_mining_operations
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -666,8 +666,8 @@ planet_event = {
 #On first time Erebus Project is built (Gestalt)
 planet_event = {
 	id = pw_wonder.502
-	title = "pw_wonder.502.name"
-	desc = "pw_wonder.502.desc"
+	title = pw_wonder.502.name
+	desc = pw_wonder.502.desc
 	picture = GFX_evt_mining_operations
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -733,8 +733,8 @@ planet_event = {
 #On first time Helios Tower is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.601
-	title = "pw_wonder.601.name"
-	desc = "pw_wonder.601.desc"
+	title = pw_wonder.601.name
+	desc = pw_wonder.601.desc
 	picture = GFX_evt_sapient_AI
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -769,8 +769,8 @@ planet_event = {
 #On first time Helios Tower is built (Gestalt)
 planet_event = {
 	id = pw_wonder.602
-	title = "pw_wonder.602.name"
-	desc = "pw_wonder.602.desc"
+	title = pw_wonder.602.name
+	desc = pw_wonder.602.desc
 	picture = GFX_evt_sapient_AI
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -836,8 +836,8 @@ planet_event = {
 #On first time Demetrius Cornucopia is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.701
-	title = "pw_wonder.701.name"
-	desc = "pw_wonder.701.desc"
+	title = pw_wonder.701.name
+	desc = pw_wonder.701.desc
 	picture = GFX_evt_alien_nature
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -872,8 +872,8 @@ planet_event = {
 #On first time Demetrius Cornucopia is built (Gestalt)
 planet_event = {
 	id = pw_wonder.702
-	title = "pw_wonder.702.name"
-	desc = "pw_wonder.702.desc"
+	title = pw_wonder.702.name
+	desc = pw_wonder.702.desc
 	picture = GFX_evt_alien_nature
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -939,8 +939,8 @@ planet_event = {
 #On first time Astronomical Model Bureau is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.801
-	title = "pw_wonder.801.name"
-	desc = "pw_wonder.801.desc"
+	title = pw_wonder.801.name
+	desc = pw_wonder.801.desc
 	picture = GFX_evt_clocks
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -994,8 +994,8 @@ planet_event = {
 #On first time Astronomical Model Bureau is built (Gestalt)
 planet_event = {
 	id = pw_wonder.802
-	title = "pw_wonder.802.name"
-	desc = "pw_wonder.802.desc"
+	title = pw_wonder.802.name
+	desc = pw_wonder.802.desc
 	picture = GFX_evt_clocks
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -1076,8 +1076,8 @@ planet_event = {
 #On first time Panopticon is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.901
-	title = "pw_wonder.901.name"
-	desc = "pw_wonder.901.desc"
+	title = pw_wonder.901.name
+	desc = pw_wonder.901.desc
 	picture = GFX_evt_announcement
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -1154,11 +1154,11 @@ planet_event = {
 	}
 }
 
-#On first time Enigma Engine is built (Regular Empire)
+#On first time Enigma Engine is built (Machine Empire)
 planet_event = {
 	id = pw_wonder.1001
-	title = "pw_wonder.1001.name"
-	desc = "pw_wonder.1001.desc"
+	title = pw_wonder.1001.name
+	desc = pw_wonder.1001.desc
 	picture = GFX_evt_relic_shipyard
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -1202,5 +1202,76 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = enigma_engine_built }
+	}
+}
+
+# Solipsist Debate Hall -> id 1100
+
+#On Solipsist Debate Hall built
+planet_event = {
+	id = pw_wonder.1100
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_solipsist_debate_hall_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1101 }
+	}
+}
+
+#On first time Solipsist Debate Hall is built (Hive Empire)
+planet_event = {
+	id = pw_wonder.1101
+	title = pw_wonder.1101.name
+	desc = pw_wonder.1101.desc
+	picture = GFX_evt_hive_mind
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1101.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+
+		event_target:root_scope = {
+			country_event = {
+				id = pw_solipsist_debate.1
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = solipsist_debate_hall_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = solipsist_debate_hall_built }
 	}
 }

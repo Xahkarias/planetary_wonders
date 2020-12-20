@@ -3,6 +3,8 @@
 Added:
 * Wonder: Astronomical Model Bureau
 * Wonder: Panopticon
+* Wonder: Enigma Engine
+* Wonder: Solipsist Debate Hall
 
 Update:
 * Added Test subject/drone test subject job to Domed City

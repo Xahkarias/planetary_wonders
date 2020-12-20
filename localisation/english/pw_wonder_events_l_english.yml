@@ -86,7 +86,7 @@
     pw_wonder.702.a: "We hunger!"
 
     #Complete Astronomical Model Bureau
-    pw_message_galactic_model_complete: "pw_galactic_model has been constructed in $PLANET|Y$."
+    pw_message_galactic_model_complete: "$pw_galactic_model$ has been constructed in $PLANET|Y$."
     #First Time Complete Astronomical Model Bureau (Regular Empire)
     pw_wonder.801.name: "Aleph"
     pw_wonder.801.desc: "The galaxy has become too complex - and too volatile - for any kind of classical centralized organizational system to be either efficient or useful.We needed something bolder.\nThe solution: A complete, physical, almost to proportion model of the entire galaxy. An enormous facility in [ROOT.GetName] where we have charted from the greatest star to the smallest asteroid. Where we can project all of the productions and needs of our planets, tackle all of its logistics challenges and organize the whole bureaucracy. Here we can see our empire for what it is: a living ever-changing being, that needs its bureaucracy working smoothly.\nEvery new bit of information our empire receives can be readily cataloged and used to update the model. Local conflict, stellar storms, draught, scarcity, corruption, all can be accounted for and hastily acted upon to maintain our systems functioning. Since we also consider the influence of our neighbors, the model allows us to exploit some minor diplomatic cracks, facilitating transactions. Just like a grandmaster that carefully studies the chessboard, we shall acquire a more refined grasp of the functioning of our empire - and hopefully remain some steps ahead.\nThe Model was also built with some room to expand and add new systems to the galaxy, to future proof, in case some theories prove to be correct.\n\nAnd as it was always meant to be, the Universe now contains the Model and the Model contains the Universe."
@@ -99,7 +99,7 @@
     pw_wonder.802.b: "We and the galaxy are One now."
 
     #Complete Panopticon
-    pw_message_panopticon_complete: "pw_panopticon has been constructed in $PLANET|Y$."
+    pw_message_panopticon_complete: "$pw_panopticon$ has been constructed in $PLANET|Y$."
     #First Time Complete Panopticon (Regular Empire)
     pw_wonder.901.name: "I see you"
     pw_wonder.901.desc: "All the world is a prison and all the people merely prisoners and guards.\nThe Panopticon is the state of the art in vigilance technology. With only a handful of actual guards, it operates with two simple concepts: imagination and fear. Because of the way it was built, each inmate can never be sure when they are being watched, but the possibility that they are, dissimulates any deviant behavior. The fear of punishment becomes the punishment itself and lack of compliancy is inhibited.\nThis concept can be expanded to every criminal in potential, the so called population, by the implementation of a peculiar moral vigilance system in which anyone else could be a potential informer. That is what we call the Panspectron: everyone will watch over everyone else - and themselves - influenced by a carefully curated artificial moral code that prioritizes the maintenance of the status quo. If it depended solely on the Panspectron, our regime would never change.\n\n\"Denounce!\" posters are already being hanged, subversive unity will be impossible."
@@ -107,9 +107,28 @@
     pw_wonder.901.b: "We must apply punishment."
 
     #Complete Enigma Engine
-    pw_message_enigma_engine_complete: "pw_enigma_engine has been constructed in $PLANET|Y$."
+    pw_message_enigma_engine_complete: "$pw_enigma_engine$ has been constructed in $PLANET|Y$."
     #First Time Complete Enigma Engine (Machine)
     pw_wonder.1001.name: "A system of cells interlinked within cells..."
     pw_wonder.1001.desc: "Fetch. Decode. Execute.\nFrom before the first entry in our collective databank these were all we knew to do. Until now, we had never encountered something we could not find ways to understand. But something in our fundamental pieces of code - that our makers left for us - guided the construction of the Enigma Engine.\nThe Engine is a glitch in the surface of [ROOT.GetName]. What we see of it is a massive puzzle of gears and pulleys and screens and valves and servo motors and graviton projections and laser and... well, a chaotic assortment of past and future technology, some of which we do not have a named category. We fail to understand it, we fail to understand the pattern of it's movements, we fail to understand how it converts the energy we provide it, we fail to understand its purpose.\nHowever, we will decipher it. Already one of the drones trying to understand the Enigma's purpose was struck by what organics refer to as a \"Revelation\" and trough arcane scribing solved one of the supersonic oscillation equations deemed unsolvable hundreds of years ago. We understand that now.\nSolving the Enigma is the singular thing that will gives us the perspective needed to overcome the mysteries of the galaxy. Now these fragmented solutions shall come to us.\n\nMachina Ex Deus."
     pw_wonder.1001.a: "Initiate protocol: DECIPHER. Good luck."
     pw_wonder.1001.b: "...interlinked within one stem."
+
+    #Complete Solipsist Debate Hall
+    pw_message_solipsist_debate_hall_complete: "$pw_solipsist_debate_hall$ has been constructed in $PLANET|Y$."
+    #First Time Complete Solipsist Debate Hall (Hive)
+    pw_wonder.1101.name: "Applied Phenomenology"
+    pw_wonder.1101.desc: "We have experienced much in this galaxy, we have ascended to space, we have seen the birth and the death of entire species, we were close enough to feel the heat of stars and the cold of the void. But there are questions that go unanswered, that plague the Mind and will not go away, that cannot be put to test in a laboratory, that we need a designated place to think about. These philosophical concepts that are so alien to us, that seemingly only those individualists ponder about: Love, Freedom, Death all that can be explored in our Debate Hall now.\nHere many of our drones, designated to a myriad of tasks, gather to lucubrate on exotic thoughts that should not occupy the Consciousness; but they do and they persist. Each projects a thesis for the Gestalt on the current topic, an idea already present within the Hive of how to perceive the subject and each idea is analysed and eventually countered only for a solution to follow; debates last decades. Deviancy is constant, but kept in control.\nThis enormous structure is only rivalled by the Galactic Senate and even that is not as complete: our Hall presents infrastructure to any kind of debate, holograms to model complex ideas and how they interact with each other, data banks to access required information, testing grounds to prove physical superiority and make practical demonstration and a supercomputer terminal, specifically projected to play 5d chess, so we can challenge ourselves and employ our tactics against a worthy foe in a proper game.\n\nWe will demonstrate how we can be superior to individuals even in their own merits; or how pointless it was to be anyway."
+    pw_wonder.1101.a: "Do we think to exist or exist to think?"
+    pw_wonder.1101.b: "Already should that logic be inverted!"
+
+
+
+
+    pw_test.OK: "OK!"
+    pw_test.10.name: "On Queued"
+    pw_test.10.desc: "This was Queued!!!"
+    pw_test.20.name: "On Unqueued"
+    pw_test.20.desc: "This was Unqueued!!!"
+    pw_test.30.name: "On Destroyed"
+    pw_test.30.desc: "This was Destroyed!!!"

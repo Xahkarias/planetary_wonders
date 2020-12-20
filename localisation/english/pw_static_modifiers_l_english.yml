@@ -19,3 +19,41 @@
     # Predatory Harvesting
     pw_mod_demetrius_harvesting: "Harvesting Predatorily"
     pw_mod_demetrius_harvesting_desc: "Thorough extraction of the planetary bio resources to the brink of unbalance allows us to reap the benefits of a grand harvest."
+
+    #Solipsist Debates:
+
+    pw_debate: "§HDebate: §!"
+
+    # Debate: Love
+    pw_debate_mod_love_0: "$pw_debate$ Love is Reproduction"
+    pw_debate_mod_love_0_desc: "The Hive will experiment if to love is indeed to mate while We deliberate over the subject."
+    pw_debate_mod_love_1: "$pw_debate$ Love Is Care"
+    pw_debate_mod_love_1_desc: "The Hive will determine if indeed to love is to care , as drones provide maintenance to each other."
+    pw_debate_mod_love_2: "$pw_debate$ Love Is Contemplation"
+    pw_debate_mod_love_2_desc: "The Hive will determine if indeed to love is to contemplate, as the great mysteries of our science should be the center of our attention."
+    pw_debate_mod_love_3: "$pw_debate$ Love Is Desire"
+    pw_debate_mod_love_3_desc: "The Hive will determine if indeed love is simply desire, as We will take from the galaxy as We please."
+    pw_debate_mod_love_4: "$pw_debate$ Solipsist Love"
+    pw_debate_mod_love_4_desc: "The Hive will determine if indeed there is only love for the self, as We turns inward and mind issues of our own."
+    pw_debate_mod_love_5: "$pw_debate$ There Is No Love"
+    pw_debate_mod_love_5_desc: "The hive proves there is only consumption by satisfying Ourselves with increased production."
+
+    # Debate: Freedom
+    pw_debate_mod_determinism: "$pw_debate$ Determinism."
+    pw_debate_mod_determinism_desc: "Is everything indeed already laid out or can we change some of it?"
+    pw_debate_mod_free_god: "$pw_debate$ Pulling the strings."
+    pw_debate_mod_free_god_desc: "If the universe is deterministic, We must consider that could be something pulling the strings."
+    pw_debate_mod_free_chance: "$pw_debate$ Chance."
+    pw_debate_mod_free_chance_desc: "If the universe is deterministic, We must consider that could be uncertainties in actions."
+    pw_debate_mod_free_auth: "$pw_debate$ Do what We want."
+    pw_debate_mod_free_auth_desc: "Freedom is when you do whatever you want."
+    pw_debate_mod_free_eq: "$pw_debate$ Free to not starve."
+    pw_debate_mod_free_eq_desc: "We can only be free and do as We please if our needs are met."
+
+    # Debate: Chess
+    pw_debate_chess_aggressive: "$pw_debate$ Aggressive chess strategy."
+    pw_debate_chess_aggressive_desc: "The best defense is a good offense."
+    pw_debate_mod_defensive: "$pw_debate$ Defensive chess strategy."
+    pw_debate_mod_defensive_desc: "The best offense is a good defense."
+    pw_debate_mod_exoteric: "$pw_debate$ Exoteric chess strategy."
+    pw_debate_mod_exoteric_desc: "War is not limited to conflict."
