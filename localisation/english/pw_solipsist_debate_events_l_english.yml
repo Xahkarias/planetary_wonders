@@ -8,8 +8,7 @@
     pw_solipsist_debate.1.b: "Freedom."
     pw_solipsist_debate.1.b.tooltip: "Everyone else strive for it, fight for it, but the concept never seemed to match what they meant."
     pw_solipsist_debate.1.c: "Death."
-    pw_solipsist_debate.1.c.tooltip: "WIP"
-    # pw_solipsist_debate.1.c.tooltip: "We know that the universe will die, eventually, but what about Us?"
+    pw_solipsist_debate.1.c.tooltip: "We know that the universe will die, eventually, but what about Us?"
     pw_solipsist_debate.1.d: "Let Us play 5D Chess."
     pw_solipsist_debate.1.d.tooltip: "We wish to discuss nothing for now, prepare the Debate Hall for a great game that could last decades."
     pw_solipsist_debate.1.e: "We have no time for those futile debates."
@@ -121,47 +120,52 @@
 
     #Chess
     #Chess Initial
-    pw_solipsist_debate.40.name: ""
-    pw_solipsist_debate.40.desc: ""
-    pw_solipsist_debate.40.a: "Aggressive"
-    pw_solipsist_debate.40.b: "Defensive"
-    pw_solipsist_debate.40.c: "Exoteric"
+    pw_solipsist_debate.40.name: "Hive's Gambit"
+    pw_solipsist_debate.40.desc: "We should take a break from all of this debating and projecting abstract scenarios, to relax and play a comfortable game of 5D-Chess with the supercomputer terminal installed in the Debate Hall.\n5D-Chess is a simple game for Us, We have remarkable spatial perception with so many eyes producing images at the same time, the only difficulty comes from managing time and different timelines but experience shall sharpen Our skills.\nThe game uses a variation of 3D Chess in which peaces can be moved in or into the past, creating different timelines; peaces can also move between timelines. The game is over when a check-mate is performed in any current timeline, at any time. 5D-Chess is really just warmup for the real game: 6D-Chess, which uses a variation of 4D space, but We have to start somewhere.\n\nSuch a sophisticated game against such a skilled opponent can last decades, but for now the supercomputer interface cordially offers Us the first move. We need to determine Our starting strategy."
+    pw_solipsist_debate.40.a: "Go for an Aggressive strategy."
+    pw_solipsist_debate.40.b: "Better be safe with a Defensive strategy."
+    pw_solipsist_debate.40.c: "Try Exoteric moves, let Us be unpredictable."
 
     #Chess Wining
-    pw_solipsist_debate.41.name: ""
-    pw_solipsist_debate.41.desc: ""
-    pw_solipsist_debate.41.a: "Continue"
-    pw_solipsist_debate.41.b: "Change"
-    pw_solipsist_debate.41.c: "Exoteric"
+    pw_solipsist_debate.41.name: "En Passant"
+    pw_solipsist_debate.41.desc: "That strategy paid out!\nWith the correct feints and strategic sacrifices, in the correct places at the correct times, We managed to get ahead with more peaces in most timelines.\nThe battle is no over, however, and We must decide whether to continue with Our strategy, if We are confident in Our luck so far, or to change and surprise Our opponent. We can always appeal to bolder, exoteric, moves and hope to confuse Our opponent until We can claim victory."
+    pw_solipsist_debate.41.a: "Why change what is working? Continue the strategy."
+    pw_solipsist_debate.41.b: "Never let your opponent be comfortable. Change the strategy."
+    pw_solipsist_debate.41.c: "They will never see this coming, try exoteric moves."
 
     #Chess Losing
-    pw_solipsist_debate.42.name: ""
-    pw_solipsist_debate.42.desc: ""
-    pw_solipsist_debate.42.a: "Continue"
-    pw_solipsist_debate.42.b: "Change"
-    pw_solipsist_debate.42.c: "Exoteric"
+    pw_solipsist_debate.42.name: "Castling"
+    pw_solipsist_debate.42.desc: "Our strategy wasn't the best.\nAll of Our bluffs were called and We had to trade more away than We could get back. All in all, We have amassed more losses than Our opponent, which puts Us in a complicated spot. We must choose the following steps with care.\nShould We insist in the previous strategy, and hope that it pays out now? Or should we change and try to win by cutting Our losses? We can also try something different, very different and unpredictable, and try to confuse Our opponent to victory."
+    pw_solipsist_debate.42.a: "We were almost dominating that timeline! We should keep going."
+    pw_solipsist_debate.42.b: "It is wise to know when to retreat tactically. Change the strategy!"
+    pw_solipsist_debate.42.c: "We have nothing to lose now, let Us try everything, be unpredictable."
 
     #Chess Breakthrough
-    pw_solipsist_debate.43.name: ""
-    pw_solipsist_debate.43.desc: ""
-    pw_solipsist_debate.43.a: "Continue"
+    pw_solipsist_debate.43.name: "The Grand Game"
+    pw_solipsist_debate.43.desc: "Our last move in the long game of 5D-Chess reveled something We were not expecting, the thought pattern behind the board state and the evaluation of the best outcome can be elegantly mapped to the understating of technology being researched.\n\nWe have made a great breakthrough in the grand game of the galaxy."
+    pw_solipsist_debate.43.a: "But what about the game?"
 
     #Chess Exoteric Win
-    pw_solipsist_debate.44.name: ""
-    pw_solipsist_debate.44.desc: ""
-    pw_solipsist_debate.44.a: "Continue"
+    pw_solipsist_debate.44.name: "Scholar's Mate"
+    pw_solipsist_debate.44.desc: "After a series of seemingly unconnected plays in the 5d-Chess game, that conceded a lot of ground to our opponent, surprisingly, We notice that victory can be achieved with a single extra move, and there is nothing the computer can do to to prevent it. Our simulations didn't saw this coming, and We concluded theirs failed to see it too. After taking a year to consider every possible outcome, We commit to the next play and, in a masterfully executed game, claim victory!"
+    pw_solipsist_debate.44.a: "That was easy. Rematch?"
 
     #Chess Exoteric Loss
-    pw_solipsist_debate.45.name: ""
-    pw_solipsist_debate.45.desc: ""
-    pw_solipsist_debate.45.a: "Continue"
+    pw_solipsist_debate.45.name: "Fool's Mate"
+    pw_solipsist_debate.45.desc: "After exactly three moves after adopting this exoteric strategy in the 5D-Chess game, which took half a decade to assert, the computer surprised Us with a simple pawn placed at the right place at the right time that gave them the win.\n\nSometimes, weird strategies are just that: weird, and not actually useful."
+    pw_solipsist_debate.45.a: "Maybe it works next time?"
 
     #Chess Win
-    pw_solipsist_debate.46.name: ""
-    pw_solipsist_debate.46.desc: ""
-    pw_solipsist_debate.46.a: "Continue"
+    pw_solipsist_debate.46.name: "Checkmate"
+    pw_solipsist_debate.46.desc: "After an intense game of 5D-Chess, filled with back and forth (literally in space and time), called bluffs and good trades, We have emerged victorious!\nThe game was difficult, and our strategy solid, but the last few years of the game was just considering the alternatives Our opponent had to not lose, We had already won.\nThis was a great exercise and a rewarding game."
+    pw_solipsist_debate.46.a: "Let's discuss something or play again."
 
     #Chess Loss
-    pw_solipsist_debate.47.name: ""
-    pw_solipsist_debate.47.desc: ""
-    pw_solipsist_debate.47.a: "Continue"
+    pw_solipsist_debate.47.name: "Checkmate"
+    pw_solipsist_debate.47.desc: "After an intense game of 5D-Chess, filled with back and forth (literally in space and time), surprising moves and sub-par trades, We have found ourselves in a position where defeat is inevitable. Every possibility We consider is destined to fail. unfortunately We have to concede this game, but it was a great learning experience."
+    pw_solipsist_debate.47.a: "Lets discuss something now... or maybe a rematch?"
+
+    #Chess Draw
+    pw_solipsist_debate.48.name: "Grandmaster Draw"
+    pw_solipsist_debate.48.desc: "After an intense game of 5D-Chess, filled with back and forth (literally in space and time), incredible turns and a great deal os resilience from both players, the supercomputer offers a Draw. Indeed, none of Our analyses show any sing of victory or defeat of any of the parts, the last 136 moves have been repeated several times and led back to the same spot in the game. We find the only way of ending the game is agreeing with the draw, no player could overcome the other and We may have found a worthy opponent."
+    pw_solipsist_debate.48.a: "This deserves a rematch! Or maybe We can do something else."

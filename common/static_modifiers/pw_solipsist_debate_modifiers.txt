@@ -102,6 +102,22 @@ pw_debate_mod_defensive = {
 	shipclass_starbase_damage_mult = 0.25
 }
 
+pw_debate_chess_stubborn = {
+	icon = "gfx/interface/icons/modifiers/mod_country_border_mult.dds"
+	icon_frame = @pw_icon_frame_red
+
+	army_disengage_chance_mult = -0.15
+	ship_disengage_chance_mult = -0.15
+}
+
+pw_debate_mod_flexible = {
+	icon = "gfx/interface/icons/modifiers/mod_country_border_mult.dds"
+	icon_frame = @pw_icon_frame_green
+
+	army_disengage_chance_mult = 0.15
+	ship_disengage_chance_mult = 0.15
+}
+
 pw_debate_mod_exoteric = {
 	icon = "gfx/interface/icons/modifiers/mod_country_border_mult.dds"
 	icon_frame = @pw_icon_frame_green
