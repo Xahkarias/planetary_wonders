@@ -1,3 +1,12 @@
+#A tech has been researched
+# This = Country
+on_tech_increased = {
+	events = {
+		pw_wonder.1002 #Enigma Engine
+		pw_wonder.1102 #Solipsist Debate Hall
+	}
+}
+
 #A building construction has been completed.
 # This = Planet
 on_building_complete = {

@@ -8,6 +8,7 @@
 @pw_Edict2Cost = 200
 @pw_Edict3Cost = 300
 
+#Edict Duration
 @pw_EdictPerpetual = -1
 
 #Days to Years Conversion:

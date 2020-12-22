@@ -1205,6 +1205,52 @@ planet_event = {
 	}
 }
 
+# If last tech researched was Metaphysical Singularity and minor artifacts are needed
+country_event = {
+	id = pw_wonder.1002
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_ancrel = yes
+		last_increased_tech = pw_tech_metaphysical_singularity
+		resource_stockpile_compare = {
+			resource = minor_artifacts
+			value < 10
+		}
+	}
+
+	immediate = {
+		country_event = {
+			id = pw_wonder.1003
+			days = 30
+			random = 30
+		}
+	}
+}
+
+# Get some minor artifacts to build the Enigma Engine.
+country_event = {
+	id = pw_wonder.1003
+	title = pw_wonder.1003.name
+	desc = pw_wonder.1003.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	trigger = {
+		has_ancrel = yes
+		has_technology = pw_tech_metaphysical_singularity
+	}
+
+	option = {
+		name = pw_wonder.1003.a
+		add_resource = {
+			minor_artifacts = 15
+		}
+	}
+}
+
 # Solipsist Debate Hall -> id 1100
 
 #On Solipsist Debate Hall built
@@ -1273,5 +1319,51 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = solipsist_debate_hall_built }
+	}
+}
+
+# If last tech researched was Metacognition Dialectics and minor artifacts are needed.
+country_event = {
+	id = pw_wonder.1102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_ancrel = yes
+		last_increased_tech = pw_tech_metacognition_dialectics
+		resource_stockpile_compare = {
+			resource = minor_artifacts
+			value < 10
+		}
+	}
+
+	immediate = {
+		country_event = {
+			id = pw_wonder.1103
+			days = 30
+			random = 30
+		}
+	}
+}
+
+# Get some minor artifacts to build the Solipsist Debate Hall.
+country_event = {
+	id = pw_wonder.1103
+	title = pw_wonder.1103.name
+	desc = pw_wonder.1103.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	trigger = {
+		has_ancrel = yes
+		has_technology = pw_tech_metaphysical_singularity
+	}
+
+	option = {
+		name = pw_wonder.1103.a
+		add_resource = {
+			minor_artifacts = 15
+		}
 	}
 }

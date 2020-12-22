@@ -214,6 +214,7 @@ country_event = {
 
 	immediate = {
 		set_country_flag = pw_hive_debate_love_done
+		set_country_flag = pw_hive_is_debating
 	}
 
 	option = {
@@ -221,10 +222,6 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_0
-		}
-
-		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 		}
 
 		country_event = {
@@ -390,10 +387,6 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.12.a
 
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
-
 		country_event = {
 			id = pw_solipsist_debate.2
 			days = 5
@@ -427,10 +420,6 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.13.a
-
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -466,10 +455,6 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.14.a
 
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
-
 		country_event = {
 			id = pw_solipsist_debate.2
 			days = 5
@@ -503,10 +488,6 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.15.a
-
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -542,10 +523,6 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.16.a
 
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
-
 		country_event = {
 			id = pw_solipsist_debate.2
 			days = 5
@@ -570,6 +547,7 @@ country_event = {
 
 	immediate = {
 		set_country_flag = pw_hive_debate_free_done
+		set_country_flag = pw_hive_is_debating
 	}
 
 	option = {
@@ -580,7 +558,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 			country_event = {
 				id = pw_solipsist_debate.21
 				days = @pw_5years
@@ -597,7 +574,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 			country_event = {
 				id = pw_solipsist_debate.22
 				days = @pw_5years
@@ -614,7 +590,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 			country_event = {
 				id = pw_solipsist_debate.22
 				days = @pw_5years
@@ -863,10 +838,6 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.25.a
 
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
-
 		country_event = {
 			id = pw_solipsist_debate.2
 			days = 5
@@ -909,10 +880,6 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.26.a
 
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
-
 		country_event = {
 			id = pw_solipsist_debate.2
 			days = 5
@@ -921,10 +888,6 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.26.b
-
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
 
 		country_event = {
 			id = pw_solipsist_debate.24
@@ -958,10 +921,6 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.27.a
-
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -997,10 +956,6 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.28.a
 
-		hidden_effect = {
-			remove_country_flag = pw_hive_is_debating
-		}
-
 		country_event = {
 			id = pw_solipsist_debate.2
 			days = 5
@@ -1023,6 +978,10 @@ country_event = {
 		is_hive_empire = yes
 	}
 
+	immediate = {
+		set_country_flag = pw_hive_is_debating
+	}
+
 	#Aggressive strategy
 	option = {
 		name = pw_solipsist_debate.40.a
@@ -1032,7 +991,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 			random_list = {
 				50 = {
 					country_event = {
@@ -1061,7 +1019,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 			random_list = {
 				50 = {
 					country_event = {
@@ -1090,7 +1047,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = pw_hive_is_debating
 			random_list = {
 				40 = {
 					country_event = {

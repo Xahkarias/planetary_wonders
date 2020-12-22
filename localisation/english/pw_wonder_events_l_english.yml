@@ -114,6 +114,11 @@
     pw_wonder.1001.a: "Initiate protocol: DECIPHER. Good luck."
     pw_wonder.1001.b: "...interlinked within one stem."
 
+    # Get extra minor artifacts to build Enigma Engine
+    pw_wonder.1003.name: "Mystery Machine"
+    pw_wonder.1003.desc: "In recent routine maintenance, the readings of some drones in different planets has shown abnormal levels, and a scan suggested alien interference in their design. Primary disassembly methods revealed foreign insertion of anomalous artifacts in core mechanical parts of many drone unities. Strangely, these artifacts did not interfere with drone movement or production and seem to hev been inserted during drone assembly, yet none of our factories show sings of breach. We could not determine their origin or purpose for that matters, but the central intelligence might be able to give these artifacts a proper function.\n\nAfter massive recall, several more drones showed the same readings, which could yield a substantial stockpile of artifacts."
+    pw_wonder.1003.a: "Initiate extraction protocols."
+
     #Complete Solipsist Debate Hall
     pw_message_solipsist_debate_hall_complete: "$pw_solipsist_debate_hall$ has been constructed in $PLANET|Y$."
     #First Time Complete Solipsist Debate Hall (Hive)
@@ -122,7 +127,10 @@
     pw_wonder.1101.a: "Do we think to exist or exist to think?"
     pw_wonder.1101.b: "Already should that logic be inverted!"
 
-
+    # Get extra minor artifacts to build Solipsist Debate Hall
+    pw_wonder.1103.name: "Beacon Within"
+    pw_wonder.1103.desc: "A small pulse in the subspace interface triggered many sensors of Our drones across the empire, just barely enough so the Gestalt could feel it.Equipment analysis show no propagation of this pulse between planets and none offworld drone reported its presence. The origin could only be traced to several Hive capital buildings in every planet, and after preliminary expedition, several deposits of alien artifacts were found within the walls of Our constructions. There is no indication of their purpose or their origin, but all suggests these artifacts were placed there during construction.\n\nAfter full extraction, which did not threaten the integrity of Our structures, We have amassed a substantial amount of these elusive artifacts."
+    pw_wonder.1103.a: "We will put them to use."
 
 
     pw_test.OK: "OK!"

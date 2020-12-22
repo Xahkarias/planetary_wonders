@@ -50,3 +50,42 @@ pw_edict_panspectron = {
 		weight = @EdictLowPrio
 	}
 }
+
+pw_edict_hive_debate = {
+	length = @pw_1year
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_edict_hive_debate }
+			}
+			influence = 25
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_edict_panspectron_tooltip
+		country_event = {
+			id = pw_solipsist_debate.1
+		}
+	}
+
+	potential = {
+		has_technology = pw_tech_metacognition_dialectics
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_building = pw_building_solipsist_debate_hall
+		}
+		NOT = {
+			has_country_flag = pw_hive_is_debating
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
