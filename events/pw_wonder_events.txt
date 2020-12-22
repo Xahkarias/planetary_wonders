@@ -59,10 +59,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.101 }
+		planet_event = { id = pw_wonder.102 }
 	}
 }
 
-#On first time Space Elevator is built
+#On first time Space Elevator is built (regular empire)
 planet_event = {
 	id = pw_wonder.101
 	title = "pw_wonder.101.name"
@@ -81,23 +82,14 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_xenophobe = no }
-		}
+		# trigger = {
+		# 	owner = { is_xenophobe = no }
+		# }
 	}
 
 	option = {
@@ -109,33 +101,76 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_xenophile = no }
-		}
+		# trigger = {
+		# 	owner = { is_xenophile = no }
+		# }
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = space_elevator_built}}
+		NOT = {owner = {has_country_flag = space_elevator_built }}
+		owner = { is_gestalt = no }
 	}
 
 	immediate = {
 		owner = { set_country_flag = space_elevator_built }
 	}
+}
 
+#On first time Space Elevator is built (gestalt)
+planet_event = {
+	id = pw_wonder.102
+	title = "pw_wonder.102.name"
+	desc = "pw_wonder.102.desc"
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.102.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.102.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = {has_country_flag = space_elevator_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = space_elevator_built }
+	}
 }
 
 # Particle Supercollider -> id 200
@@ -165,10 +200,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.201 }
+		planet_event = { id = pw_wonder.202 }
 	}
 }
 
-#On first time Particle Supercollider is built
+#On first time Particle Supercollider is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.201
 	title = "pw_wonder.201.name"
@@ -187,23 +223,14 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_spiritualist = no }
-		}
+		# trigger = {
+			# owner = { is_spiritualist = no }
+		# }
 	}
 
 	option = {
@@ -215,27 +242,71 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_materialist = no }
+		# trigger = {
+			# owner = { is_materialist = no }
+		# }
+	}
+
+	trigger = {
+		NOT = {owner = {has_country_flag = particle_supercollider_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = particle_supercollider_built }
+	}
+}
+
+#On first time Particle Supercollider is built (Gestalt)
+planet_event = {
+	id = pw_wonder.202
+	title = "pw_wonder.202.name"
+	desc = "pw_wonder.202.desc"
+	picture = GFX_evt_ancient_databank
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.202.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.202.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
 		}
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = particle_supercollider_built}}
+		NOT = {owner = {has_country_flag = particle_supercollider_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
@@ -270,10 +341,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.301 }
+		planet_event = { id = pw_wonder.302 }
 	}
 }
 
-#On first time Domed City is built
+#On first time Domed City is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.301
 	title = "pw_wonder.301.name"
@@ -292,23 +364,14 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_authoritarian = no }
-		}
+		# trigger = {
+			# owner = { is_authoritarian = no }
+		# }
 	}
 
 	option = {
@@ -320,27 +383,71 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_egalitarian = no }
+		# trigger = {
+			# owner = { is_egalitarian = no }
+		# }
+	}
+
+	trigger = {
+		NOT = {owner = {has_country_flag = domed_city_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = domed_city_built }
+	}
+}
+
+#On first time Domed City is built (Gestalt)
+planet_event = {
+	id = pw_wonder.302
+	title = "pw_wonder.302.name"
+	desc = "pw_wonder.302.desc"
+	picture = GFX_evt_society_research
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.302.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.302.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
 		}
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = domed_city_built}}
+		NOT = {owner = {has_country_flag = domed_city_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
@@ -375,10 +482,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.401 }
+		planet_event = { id = pw_wonder.402 }
 	}
 }
 
-#On first time Abyssal Crater Test Site is built
+#On first time Abyssal Crater Test Site is built (regular Empire)
 planet_event = {
 	id = pw_wonder.401
 	title = "pw_wonder.401.name"
@@ -397,23 +505,14 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_militarist = no }
-		}
+		# trigger = {
+			# owner = { is_militarist = no }
+		# }
 	}
 
 	option = {
@@ -425,27 +524,71 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
-		trigger = {
-			owner = { is_pacifist = no }
+		# trigger = {
+			# owner = { is_pacifist = no }
+		# }
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = abyssal_crater_test_site_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = abyssal_crater_test_site_built }
+	}
+}
+
+#On first time Abyssal Crater Test Site is built (Gestalt)
+planet_event = {
+	id = pw_wonder.402
+	title = "pw_wonder.402.name"
+	desc = "pw_wonder.402.desc"
+	picture = GFX_evt_underground_civilization
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.402.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.402.b
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
 		}
 	}
 
 	trigger = {
 		NOT = {owner = { has_country_flag = abyssal_crater_test_site_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
@@ -455,7 +598,7 @@ planet_event = {
 
 # Erebus Project -> id 500
 
-#On Erebus Project Test Site built
+#On Erebus Project built
 planet_event = {
 	id = pw_wonder.500
 	hide_window = yes
@@ -480,10 +623,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.501 }
+		planet_event = { id = pw_wonder.502 }
 	}
 }
 
-#On first time Erebus Project Test Site is built
+#On first time Erebus Project is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.501
 	title = "pw_wonder.501.name"
@@ -502,24 +646,52 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
 	}
 
 	trigger = {
 		NOT = {owner = { has_country_flag = erebus_project_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = erebus_project_built }
+	}
+}
+
+#On first time Erebus Project is built (Gestalt)
+planet_event = {
+	id = pw_wonder.502
+	title = "pw_wonder.502.name"
+	desc = "pw_wonder.502.desc"
+	picture = GFX_evt_mining_operations
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.502.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = erebus_project_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
@@ -529,7 +701,7 @@ planet_event = {
 
 # Helios Tower -> id 600
 
-#On Helios Tower Test Site built
+#On Helios Tower built
 planet_event = {
 	id = pw_wonder.600
 	hide_window = yes
@@ -554,10 +726,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.601 }
+		planet_event = { id = pw_wonder.602 }
 	}
 }
 
-#On first time Helios Tower Test Site is built
+#On first time Helios Tower is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.601
 	title = "pw_wonder.601.name"
@@ -576,24 +749,52 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
 	}
 
 	trigger = {
 		NOT = {owner = { has_country_flag = helios_tower_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = helios_tower_built }
+	}
+}
+
+#On first time Helios Tower is built (Gestalt)
+planet_event = {
+	id = pw_wonder.602
+	title = "pw_wonder.602.name"
+	desc = "pw_wonder.602.desc"
+	picture = GFX_evt_sapient_AI
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.602.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = helios_tower_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
@@ -603,7 +804,7 @@ planet_event = {
 
 # Demetrius Fields -> id 700
 
-#On Demetrius Fields Test Site built
+#On Demetrius Fields built
 planet_event = {
 	id = pw_wonder.700
 	hide_window = yes
@@ -628,10 +829,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.701 }
+		planet_event = { id = pw_wonder.702 }
 	}
 }
 
-#On first time Demetrius Fields Test Site is built
+#On first time Demetrius Fields is built (Regular Empire)
 planet_event = {
 	id = pw_wonder.701
 	title = "pw_wonder.701.name"
@@ -650,24 +852,52 @@ planet_event = {
 					has_modifier = pw_mod_wonder_built_recently_unity
 				}
 			}
-			if = {
-				limit = { owner = { is_gestalt = no } }
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_happiness
-					days = 1800 # 5 years
-				}
-			}
-			else = {
-				add_modifier = {
-					modifier = pw_mod_wonder_built_recently_unity
-					days = 1800 # 5 years
-				}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
 			}
 		}
 	}
 
 	trigger = {
 		NOT = {owner = { has_country_flag = demetrius_fields_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = demetrius_fields_built }
+	}
+}
+
+#On first time Demetrius Fields is built (Gestalt)
+planet_event = {
+	id = pw_wonder.702
+	title = "pw_wonder.702.name"
+	desc = "pw_wonder.702.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.702.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = demetrius_fields_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
