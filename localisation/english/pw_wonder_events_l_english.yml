@@ -132,6 +132,17 @@
     pw_wonder.1103.desc: "A small pulse in the subspace interface triggered many sensors of Our drones across the empire, just barely enough so the Gestalt could feel it.Equipment analysis show no propagation of this pulse between planets and none offworld drone reported its presence. The origin could only be traced to several Hive capital buildings in every planet, and after preliminary expedition, several deposits of alien artifacts were found within the walls of Our constructions. There is no indication of their purpose or their origin, but all suggests these artifacts were placed there during construction.\n\nAfter full extraction, which did not threaten the integrity of Our structures, We have amassed a substantial amount of these elusive artifacts."
     pw_wonder.1103.a: "We will put them to use."
 
+    #Complete Guardian Angel
+    pw_message_guardian_angel_complete: "$pw_guardian_angel$ has been constructed in $PLANET|Y$."
+    #First Time Complete Guardian Angel (Regular Empire)
+    pw_wonder.1201.name: "Thrice Happy Those Whose Fortresses Already Rises"
+    pw_wonder.1201.desc: "We all cheer as the planetary general of [ROOT.GetName] breaks a bottle at the hull of the newly built Guardian Angel, to commemorate it's first and perpetual flight. Now every inhabitant of [ROOT.GetName] can look up to see their wingless protector, or their dreadful opponent, should they conspire against us.\nThis magnificent platform uses anti-gravity propulsion technology to patrol the skies over our major cities. It is equipped with anti-orbital battery firing lines, to deter any fleet who plans to bombard this defended planet, and a host of valiant soldiers and vehicles, ready to deploy, should any dare to enact a direct invasion.\nIn times of relative peace, this bastion can serve as training ground for expeditionary forces and assault troops. As well as fortify the contingency of planetary patrols, but its simple presence already dissimulates organized crime activities.\n\nOur tremendous vigilant already safeguards our skies."
+    pw_wonder.1201.a: "The sword that fights evil, dies with a dull blade"
+    #First Time Complete Guardian Angel (Gestalt)
+    pw_wonder.1202.name: "Thrice Happy Those Whose Fortresses Already Rises"
+    pw_wonder.1202.desc: "All drones of [ROOT.GetName] witness the ascension of the newly built Guardian Angel, to take to it's first and perpetual flight. Now every drone of [ROOT.GetName] can look up to see Our wingless protector, and Our enemies can look down and despair in their doomed invasion.\nThis magnificent platform uses anti-gravity propulsion technology to patrol the skies over our major cities. It is equipped with anti-orbital battery firing lines, to deter any fleet who plans to bombard this defended planet, and a host of diligent warriors and vehicles, ready to deploy, should any dare to enact a direct invasion.\nIn times of relative peace, this bastion can serve as training ground for expeditionary forces and assault troops. As well as fortify the contingency of planetary patrols, but its simple presence already dissimulates organized deviant activities.\n\nOur tremendous vigilant already safeguards our skies."
+    pw_wonder.1202.a: "The sword that fights evil, dies with a dull blade"
+
 
     pw_test.OK: "OK!"
     pw_test.10.name: "On Queued"

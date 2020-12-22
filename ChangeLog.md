@@ -5,6 +5,7 @@ Added:
 * Wonder: Panopticon
 * Wonder: Enigma Engine
 * Wonder: Solipsist Debate Hall
+* Wonder: Guardian Angel
 
 Update:
 * Added Test subject/drone test subject job to Domed City

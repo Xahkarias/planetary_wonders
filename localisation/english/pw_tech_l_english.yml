@@ -49,10 +49,13 @@
     pw_prereq_enigmas: "$pw_enigma$ technology"
     pw_prereq_enigmas_desc: "By pursuing a primary directive buried deep in our code we may come about enigmas of our existence, by interiorizing them we shall understand the impossibilities universe and choose to ignore them."
 
-
     # Solipsist Debate Hall:
     pw_tech_metacognition_dialectics: "Metacognition Dialectics"
     pw_tech_metacognition_dialectics_desc: "We have seen and done more than almost any organism in the galaxy can claim, however some concepts never made sense and still, never left the Mind. Love, Freedom and many others, we must interpret them because we must be able to change them, that is the point after all. Thesis, antithesis, synthesis; or the other way around."
+
+    # Guardian Angel:
+    pw_tech_guardian_angel: "Guardian Angel"
+    pw_tech_guardian_angel_desc: "Space is full of threats, whether provoked or not, and for that we must upgrade our last lines of defense: our planets. New anti-gravity propulsion shall keep our greatest guardian in the skies of every one of our cities. We shall be protected from bombardment or invasion."
 
 
     #Enigma tech:

@@ -1367,3 +1367,174 @@ country_event = {
 		}
 	}
 }
+
+# Guardian Angel -> id 1200
+
+#On Guardian Angel built
+planet_event = {
+	id = pw_wonder.1200
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_guardian_angel_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1201 } #Regular first time
+		planet_event = { id = pw_wonder.1202 } #Gestalt first time
+		planet_event = { id = pw_wonder.1203 } #Add flying fortress army
+	}
+}
+
+#On first time Guardian Angel is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1201
+	title = pw_wonder.1201.name
+	desc = pw_wonder.1201.desc
+	picture = GFX_evt_landing_ship_2
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1201.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = guardian_angel_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = guardian_angel_built }
+	}
+}
+
+#On first time Guardian Angel is built (Gestalt Empire)
+planet_event = {
+	id = pw_wonder.1202
+	title = pw_wonder.1202.name
+	desc = pw_wonder.1202.desc
+	picture = GFX_evt_landing_ship_2
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1202.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = 1800 # 5 years
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = guardian_angel_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = guardian_angel_built }
+	}
+}
+
+#On Guardian Angel built add army
+planet_event = {
+	id = pw_wonder.1203
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_guardian_angel
+		NOT = {
+			any_planet_army = {
+				army_type = pw_army_flying_fortress
+			}
+		}
+	}
+
+	immediate = {
+		create_army = {
+			name = pw_army_flying_fortress_name
+			owner = THIS.owner
+			type = pw_army_flying_fortress
+		}
+	}
+
+}
+
+#On Guardian Angel destroyed/replaced ->
+planet_event = {
+	id = pw_wonder.1204
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		last_building_changed = pw_building_guardian_angel
+		always = no
+	}
+
+	immediate = {
+		planet_event = {
+			id = pw_wonder.1205
+		}
+	}
+}
+
+# -> remove Flying Fortress
+planet_event = {
+	id = pw_wonder.1205
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_building = pw_building_guardian_angel }
+		any_planet_army = {
+			army_type = pw_army_flying_fortress
+		}
+	}
+
+	immediate = {
+		every_planet_army = {
+			if = {
+				limit = { army_type = pw_army_flying_fortress }
+				remove_army = yes
+			}
+		}
+	}
+}

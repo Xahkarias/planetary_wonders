@@ -20,6 +20,7 @@ Wonder List:
 * Panopticon
 * Enigma Engine
 * Solipsist Debate Hall
+* Guardian Angel
 
 Unlocked by Ascension Perk:
 * Erebus Project

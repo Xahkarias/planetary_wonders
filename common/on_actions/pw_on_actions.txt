@@ -43,7 +43,7 @@ on_building_upgraded = {
 # This = Planet
 on_building_demolished = {
 	events = {
-
+		pw_wonder.1204
 	}
 }
 
@@ -51,6 +51,6 @@ on_building_demolished = {
 # This = Planet
 on_building_replaced = {
 	events = {
-
+		pw_wonder.1204
 	}
 }

@@ -28,6 +28,12 @@
     pw_building_panopticon: "Panopticon"
     pw_building_panopticon_desc: "A circular prison that surrounds a single guard tower, where every prisoner behaves not because they are being watched, but because they might be. The vigilance of the Panopticon extends beyond its walls and permeates our citizens everyday lives making each one their own warden."
 
+    # Guardian Angel
+    pw_guardian_angel: "MGuardian Angel§!"
+    pw_building_guardian_angel: "Guardian Angel"
+    pw_building_guardian_angel_desc: "A floating bastion that watches over our cities. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform. When out of conflict it provides training drills for our recruits."
+    pw_guardian_angel_tooltip: "Creates a Flying Fortress army to defend the planet."
+
 
     # Research Buildings:
 

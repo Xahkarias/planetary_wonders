@@ -11,6 +11,10 @@ pw_decision_erebus_prospecting = {
 		}
 	}
 
+	prerequisites = {
+		pw_tech_erebus_project
+	}
+
 	potential = {
 		has_building = pw_building_erebus_project
 	}
@@ -47,6 +51,10 @@ pw_decision_helios_seeding = {
 			influence = @pw_decision_influence_cost
 			energy = @pw_decision_resource_cost
 		}
+	}
+
+	prerequisites = {
+		pw_tech_helios_tower
 	}
 
 	potential = {
@@ -87,6 +95,10 @@ pw_decision_demetrius_harvesting = {
 		}
 	}
 
+	prerequisites = {
+		pw_tech_demetrius_fields
+	}
+
 	potential = {
 		has_building = pw_building_demetrius_fields
 	}
@@ -100,6 +112,52 @@ pw_decision_demetrius_harvesting = {
 		add_modifier = {
 			modifier = pw_mod_demetrius_harvesting
 			days = @pw_decision_duration
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			planet_devastation > 10
+		}
+	}
+}
+
+#If the Flying fortress is destroyed, but Guardian Angels still stands.
+pw_decision_rebuild_flying_fortress = {
+	owned_planets_only = yes
+	sound = event_construction_02
+	icon = decision_martial_law
+
+	enactment_time = @pw_halfYear
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = @pw_decision_influence_cost
+			minerals = @pw_decision_resource_cost
+		}
+	}
+
+	potential = {
+		has_building = pw_building_guardian_angel
+		NOT = {
+			any_planet_army = {
+				army_type = pw_army_flying_fortress
+			}
+		}
+	}
+
+	prerequisites = {
+		pw_tech_guardian_angel
+	}
+
+	effect = {
+		create_army = {
+			name = pw_army_flying_fortress_name
+			owner = THIS.owner
+			type = pw_army_flying_fortress
 		}
 	}
 
