@@ -17,6 +17,7 @@ file_location = "./../localisation/"
 file_extension = ".yml"
 files = [
     "pw_ambitions_l_",
+    "pw_armies_l_",
     "pw_ascension_perks_l_",
     "pw_buildings_l_",
     "pw_decisions_l_",
@@ -82,7 +83,7 @@ def getDiffDict(ref_dict, comp_dict):
     result_dict = {}
     for key in missing_keys:
         result_dict[key] = ref_dict[key]
-    
+
     return result_dict
 
 
@@ -113,4 +114,3 @@ for file in files:
         missing_keys = getDiffDict(ref_keys, current_keys)
         if (missing_keys):
             appendLocalisationKeys(file_path, missing_keys)
-
