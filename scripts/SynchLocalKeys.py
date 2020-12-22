@@ -21,10 +21,11 @@ files = [
     "pw_ascension_perks_l_",
     "pw_buildings_l_",
     "pw_decisions_l_",
+    "pw_edicts_l_",
     "pw_messages_l_",
-    "pw_policies_l_"
+    "pw_policies_l_",
     "pw_pop_jobs_l_",
-    "pw_solipsist_debate_events_"
+    "pw_solipsist_debate_events_l_",
     "pw_static_modifiers_l_",
     "pw_tech_l_",
     "pw_wonder_events_l_",
@@ -94,6 +95,7 @@ def createNewLanguageFile(file_path, language):
     '''
     print("Creating new file: ", file_path)
     with open(file_path, 'w', encoding='utf-8') as file:
+        file.write('\ufeff')
         file.write('l_{0}:\n\n    '.format(language))
 
 for file in files:
