@@ -44,7 +44,7 @@
     #First Time Complete Abyssal Crater Test Site (Regular Empire)
     pw_wonder.401.name: "Between Haven and Earth"
     pw_wonder.401.desc: "After many months of work we have established a convenient pit in the surface of [ROOT.GetName] and already our testing site there can be inaugurated along side its sister site, a small orbital station that remains constantly in the zenith of the crater.\nThis area is reserved for extreme conditions engineering testing such as orbital missile propulsion, high gravity spacecraft launches and material resistance to explosion and piercing damage. The orbital sister site presents many new opportunities to test spatial to ground and ground to space targeting.\nWe can also take advantage of the massive height difference to experiment with a variety of building patterns that range from micro to macro gravity and pressure conditions.\n\nCertainly our offensive and defensive capabilities will benefit greatly from bombarding an abyss, if only we can spare extra alloys for the many tests."
-    pw_wonder.401.a: "The galaxy is dark and full of enemies, we should be prepared even if we wont use it."
+    pw_wonder.401.a: "The galaxy is dark and full of enemies, we should be prepared."
     pw_wonder.401.b: "It will be good to know the extend of the damage we can cause."
     #First Time Complete Abyssal Crater Test Site (Gestalt)
     pw_wonder.402.name: "Between Haven and Earth"
@@ -90,7 +90,7 @@
     #First Time Complete Astronomical Model Bureau (Regular Empire)
     pw_wonder.801.name: "Aleph"
     pw_wonder.801.desc: "The galaxy has become too complex - and too volatile - for any kind of classical centralized organizational system to be either efficient or useful.We needed something bolder.\nThe solution: A complete, physical, almost to proportion model of the entire galaxy. An enormous facility in [ROOT.GetName] where we have charted from the greatest star to the smallest asteroid. Where we can project all of the productions and needs of our planets, tackle all of its logistics challenges and organize the whole bureaucracy. Here we can see our empire for what it is: a living ever-changing being, that needs its bureaucracy working smoothly.\nEvery new bit of information our empire receives can be readily cataloged and used to update the model. Local conflict, stellar storms, draught, scarcity, corruption, all can be accounted for and hastily acted upon to maintain our systems functioning. Since we also consider the influence of our neighbors, the model allows us to exploit some minor diplomatic cracks, facilitating transactions. Just like a grandmaster that carefully studies the chessboard, we shall acquire a more refined grasp of the functioning of our empire - and hopefully remain some steps ahead.\nThe Model was also built with some room to expand and add new systems to the galaxy, to future proof, in case some theories prove to be correct.\n\nAnd as it was always meant to be, the Universe now contains the Model and the Model contains the Universe."
-    pw_wonder.801.a: "The bureaucracy must expand to meet the needs of the expanding bureaucracy."
+    pw_wonder.801.a: "The bureaucracy expands to satisfy the expanding bureaucracy."
     pw_wonder.801.b: "All may gaze upon the Creation now."
     #First Time Complete Astronomical Model Bureau (Gestalt)
     pw_wonder.802.name: "Aleph"

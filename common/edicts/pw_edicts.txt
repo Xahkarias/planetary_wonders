@@ -23,13 +23,7 @@ pw_edict_panspectron = {
 		pop_ethic_authoritarian_attraction_mult = 0.5
 		pop_government_ethic_attraction = 0.5
 		pop_cat_worker_political_power = -0.25
-
-		# Test Value!!!
-		job_enforcer_per_crime = 2
-		# Test Value!!!
-
-		# custom_tooltip = edict_capacity_subsidies_tooltip
-		# show_only_custom_tooltip = no
+		job_enforcer_per_pop = @pw_job_per_50_pop
 	}
 
 	effect = {

@@ -13,8 +13,6 @@ pw_tech_planetary_mega_engineering = {
 	weight = @tier4weight2
 	is_rare = yes
 
-	#feature_flags = { planetary_wonders }
-
 	prereqfor_desc = {
 		custom = {
 			title = pw_prereq_planetary_wonders
@@ -572,6 +570,13 @@ pw_tech_galactic_modeling = {
 	weight = @tier4weight2
 	is_rare = yes
 
+	prereqfor_desc = {
+		custom = {
+			title = pw_prereq_galactic_modeling
+			desc = pw_prereq_galactic_modeling_desc
+		}
+	}
+
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
@@ -664,6 +669,13 @@ pw_tech_utilitarian_vigilance = {
 	}
 	weight = @tier4weight2
 	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = pw_prereq_utilitarian_vigilance
+			desc = pw_prereq_utilitarian_vigilance_desc
+		}
+	}
 
 	weight_modifier = {
 		factor = 0.5
