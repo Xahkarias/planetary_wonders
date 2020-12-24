@@ -670,13 +670,6 @@ pw_tech_utilitarian_vigilance = {
 	weight = @tier4weight2
 	is_rare = yes
 
-	prereqfor_desc = {
-		custom = {
-			title = pw_prereq_utilitarian_vigilance
-			desc = pw_prereq_utilitarian_vigilance_desc
-		}
-	}
-
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
@@ -768,8 +761,8 @@ pw_tech_metaphysical_singularity = {
 	category = { computing }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_global_research_initiative
-		tech_science_nexus
+		tech_physics_3
+		tech_positronic_implants
 	}
 	weight = @tier5weight2
 	is_rare = yes

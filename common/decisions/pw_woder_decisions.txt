@@ -154,10 +154,14 @@ pw_decision_rebuild_flying_fortress = {
 	}
 
 	effect = {
+		custom_tooltip = pw_decision_rebuild_flying_fortress_tooltip
 		create_army = {
 			name = pw_army_flying_fortress_name
 			owner = THIS.owner
 			type = pw_army_flying_fortress
+		}
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1206 }
 		}
 	}
 

@@ -8,7 +8,6 @@ pw_enigma_tech_micro_graviton_equipment = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_engineering_3
 	}
@@ -83,7 +82,6 @@ pw_enigma_tech_absolute_processor_cooling = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_engineering_3
 	}
@@ -158,7 +156,6 @@ pw_enigma_tech_non_euclidean_building = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_engineering_3
 	}
@@ -233,7 +230,6 @@ pw_enigma_tech_quantum_movement = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_engineering_3
 	}
@@ -308,7 +304,6 @@ pw_enigma_tech_harmonic_aligning_magnets = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_engineering_3
 	}
@@ -385,7 +380,6 @@ pw_enigma_tech_virtual_conscience = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_physics_3
 	}
@@ -462,7 +456,6 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_physics_3
 	}
@@ -537,7 +530,6 @@ pw_enigma_tech_hyper_stabilization_fields = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_physics_3
 	}
@@ -551,7 +543,7 @@ pw_enigma_tech_hyper_stabilization_fields = {
 	}
 
 	modifier = {
-		country_rare_crystals_produces_mult = 0.2
+		country_volatile_motes_produces_mult = 0.2
 	}
 
 	weight_modifier = {
@@ -612,7 +604,6 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_physics_3
 	}
@@ -626,7 +617,7 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 	}
 
 	modifier = {
-		planet_pops_energy_upkeep_mult = -0.15
+		planet_pops_robotics_upkeep_mult = -0.15
 	}
 
 	weight_modifier = {
@@ -687,7 +678,6 @@ pw_enigma_tech_atomic_transistor_substrate = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_physics_3
 	}
@@ -765,7 +755,6 @@ pw_enigma_tech_reflex_arc_emulators = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_society_3
 	}
@@ -842,7 +831,6 @@ pw_enigma_tech_atomic_clock_synchronization = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_society_3
 	}
@@ -919,7 +907,6 @@ pw_enigma_tech_gas_molecular_sculpting = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_society_3
 	}
@@ -994,7 +981,6 @@ pw_enigma_tech_exoteric_predictions_system = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_society_3
 	}
@@ -1069,7 +1055,6 @@ pw_enigma_tech_bio_frequency_emitters = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_society_3
 	}
@@ -1157,7 +1142,6 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 	cost = @pw_enigma_tech_cost
 	tier = 5
 	prerequisites = {
-		tech_science_nexus
 		pw_tech_metaphysical_singularity
 		tech_society_3
 	}
@@ -1171,7 +1155,7 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 	}
 
 	modifier = {
-		country_command_limit_mult = 0.2
+		country_command_limit_add = 50
 	}
 
 	weight_modifier = {

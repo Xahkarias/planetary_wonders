@@ -37,20 +37,18 @@
     # Astronomical Modeling:
     pw_tech_galactic_modeling: "Astronomical Modeling"
     pw_tech_galactic_modeling_desc: "There comes a time in our stellar expansion that classic bureaucracy is simply not enough. We need a centralized model of our galaxy to coordinate our empire."
-    pw_prereq_galactic_modeling: "Expansion Policy"
+    pw_prereq_galactic_modeling: "§SUnlocks Policy:§! Expansion."
     pw_prereq_galactic_modeling_desc: "Allows us to set expansion policies after building the $pw_building_galactic_model$"
 
     # Panopticon:
     pw_tech_utilitarian_vigilance: "Utilitarian Vigilance"
     pw_tech_utilitarian_vigilance_desc: "Vigilance should not come directly from the powers that be, rather than from the populace itself. Punishment should remain as a concept, people can project much more terrible things than we can inflict. We have always seen each member of the population as a criminal in potential, but perhaps it is high time we see them as a warden in potential."
-    pw_prereq_utilitarian_vigilance: "Edict Panspectron"
-    pw_prereq_utilitarian_vigilance_desc: "Allows us to enact the edict Panspectron after building the $pw_building_panopticon$"
 
     # Enigma Engine:
     pw_tech_metaphysical_singularity: "Metaphysical Singularity"
     pw_tech_metaphysical_singularity_desc: "We are to cross the final threshold of scientific supremacy, little stands in our way, but there is still so much we do not understand. In many places we are stating to hear echoes, small pulses of our primary directives, perhaps it is time to concede to them."
     pw_enigma: "§BEnigma§!"
-    pw_prereq_enigmas: "$pw_enigma$ technology"
+    pw_prereq_enigmas:  "Unlocks: $pw_enigma$ Technology"
     pw_prereq_enigmas_desc: "By pursuing a primary directive buried deep in our code we may come about enigmas of our existence, by interiorizing them we shall understand the impossibilities universe and choose to ignore them."
 
     # Solipsist Debate Hall:

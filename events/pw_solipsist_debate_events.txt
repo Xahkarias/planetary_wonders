@@ -219,15 +219,18 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.10.a
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_0
 		}
 
-		country_event = {
-			id = pw_solipsist_debate.11
-			days = @pw_5years
-			random = @pw_1year
+		hidden_effect = {
+			country_event = {
+				id = pw_solipsist_debate.11
+				days = @pw_5years
+				random = @pw_1year
+			}
 		}
 	}
 }
@@ -257,6 +260,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.11.a
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_1
@@ -279,6 +283,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.11.b
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_2
@@ -301,6 +306,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.11.c
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_3
@@ -323,6 +329,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.11.d
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_4
@@ -339,6 +346,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.11.e
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_5
@@ -386,6 +394,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.12.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -420,6 +429,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.13.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -454,6 +464,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.14.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -488,6 +499,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.15.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -522,6 +534,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.16.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -552,6 +565,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.20.a
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_determinism
@@ -568,6 +582,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.20.b
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_determinism
@@ -584,6 +599,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.20.c
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_determinism
@@ -646,6 +662,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.21.c
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		hidden_effect = {
 			country_event = {
@@ -703,6 +720,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.22.c
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		hidden_effect = {
 			country_event = {
@@ -730,6 +748,7 @@ country_event = {
 	#God
 	option = {
 		name = pw_solipsist_debate.23.a
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_god
@@ -747,6 +766,7 @@ country_event = {
 	#Chance
 	option = {
 		name = pw_solipsist_debate.23.b
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_chance
@@ -779,6 +799,7 @@ country_event = {
 	#What you want
 	option = {
 		name = pw_solipsist_debate.24.a
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_auth
@@ -796,6 +817,7 @@ country_event = {
 	#To not starve
 	option = {
 		name = pw_solipsist_debate.24.b
+		custom_tooltip = pw_solipsist_time_tooltip
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_eq
@@ -837,6 +859,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.25.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -846,9 +869,12 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.25.b
+		custom_tooltip = pw_solipsist_continue_tooltip
 
-		country_event = {
-			id = pw_solipsist_debate.24
+		hidden_effect = {
+			country_event = {
+				id = pw_solipsist_debate.24
+			}
 		}
 	}
 }
@@ -879,6 +905,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.26.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -888,6 +915,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.26.b
+		custom_tooltip = pw_solipsist_continue_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.24
@@ -921,6 +949,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.27.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2
@@ -955,6 +984,7 @@ country_event = {
 
 	option = {
 		name = pw_solipsist_debate.28.a
+		custom_tooltip = pw_solipsist_restart_tooltip
 
 		country_event = {
 			id = pw_solipsist_debate.2

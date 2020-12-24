@@ -30,8 +30,8 @@ pw_edict_panspectron = {
 		custom_tooltip = pw_edict_panspectron_tooltip
 	}
 
-	potential = {
-		has_technology = pw_tech_utilitarian_vigilance
+	prerequisites = {
+		pw_tech_utilitarian_vigilance
 	}
 
 	allow = {
@@ -60,22 +60,24 @@ pw_edict_hive_debate = {
 	}
 
 	effect = {
-		custom_tooltip = pw_edict_panspectron_tooltip
 		country_event = {
 			id = pw_solipsist_debate.1
 		}
 	}
 
+	prerequisites = {
+		pw_tech_metacognition_dialectics
+	}
+
 	potential = {
-		has_technology = pw_tech_metacognition_dialectics
+		NOT = {
+			has_country_flag = pw_hive_is_debating
+		}
 	}
 
 	allow = {
 		any_owned_planet = {
 			has_building = pw_building_solipsist_debate_hall
-		}
-		NOT = {
-			has_country_flag = pw_hive_is_debating
 		}
 	}
 

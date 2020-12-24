@@ -28,7 +28,7 @@ pw_debate_mod_love_3 = {
 	icon_frame = @pw_icon_frame_green
 
 	country_claim_influence_cost_mult = -0.25
-	starbase_outpost_influence_cost_mult = -0.25
+	country_starbase_influence_cost_mult = -0.25
 }
 
 pw_debate_mod_love_4 = {
@@ -64,9 +64,9 @@ pw_debate_mod_free_chance = {
 	icon = "gfx/interface/icons/modifiers/mod_pop_non_slave_resource_output.dds"
 	icon_frame = @pw_icon_frame_green
 
-	country_society_research_produces_mult = 0.15
-	country_engineering_research_produces_mult = 0.15
-	country_physics_research_produces_mult = 0.15
+	country_society_research_produces_mult = 0.1
+	country_engineering_research_produces_mult = 0.1
+	country_physics_research_produces_mult = 0.1
 }
 
 pw_debate_mod_free_auth = {

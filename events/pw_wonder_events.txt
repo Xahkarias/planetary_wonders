@@ -1278,6 +1278,11 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1101 }
+		owner = {
+			country_event = {
+				id = pw_solipsist_debate.1
+			}
+		}
 	}
 }
 
@@ -1303,12 +1308,6 @@ planet_event = {
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
 				days = 1800 # 5 years
-			}
-		}
-
-		event_target:root_scope = {
-			country_event = {
-				id = pw_solipsist_debate.1
 			}
 		}
 	}
@@ -1357,7 +1356,7 @@ country_event = {
 
 	trigger = {
 		has_ancrel = yes
-		has_technology = pw_tech_metaphysical_singularity
+		has_technology = pw_tech_metacognition_dialectics
 	}
 
 	option = {
@@ -1428,6 +1427,7 @@ planet_event = {
 
 	trigger = {
 		NOT = {owner = { has_country_flag = guardian_angel_built }}
+		owner = { is_gestalt = no }
 	}
 
 	immediate = {
@@ -1463,6 +1463,7 @@ planet_event = {
 
 	trigger = {
 		NOT = {owner = { has_country_flag = guardian_angel_built }}
+		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
@@ -1505,7 +1506,6 @@ planet_event = {
 
 	trigger = {
 		last_building_changed = pw_building_guardian_angel
-		always = no
 	}
 
 	immediate = {
@@ -1534,6 +1534,31 @@ planet_event = {
 			if = {
 				limit = { army_type = pw_army_flying_fortress }
 				remove_army = yes
+			}
+		}
+	}
+}
+
+#On Flying Fortress is rebuild
+planet_event = {
+	id = pw_wonder.1206
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = ARMY_RECRUITMENT
+			localization = pw_message_guardian_angel_flying_fortress_rebuild
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
 			}
 		}
 	}

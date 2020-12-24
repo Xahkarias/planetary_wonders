@@ -82,8 +82,8 @@ pw_has_build_any_planetary_wonder = {
 
 # Scope: Planet
 pw_is_wonder_empire_unique = {
-	owner = { NOT = { any_owned_planet = { OR = {
+	owner = { any_owned_planet = { OR = {
 		has_building = $WONDER$
 		has_building_construction = $WONDER$
-	}}}}
+	}}}
 }

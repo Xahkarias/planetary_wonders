@@ -33,7 +33,6 @@
     pw_building_guardian_angel: "Guardian Angel"
     pw_building_guardian_angel_desc: "A floating bastion that watches over our cities. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform. When out of conflict it provides training drills for our recruits."
     pw_guardian_angel_tooltip: "Creates a Flying Fortress army to defend the planet."
-    pw_army_flying_fortress_name: "Guardian Angel"
 
     # Research Buildings:
 

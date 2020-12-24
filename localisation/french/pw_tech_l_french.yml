@@ -44,10 +44,10 @@
 
     pw_tech_metaphysical_singularity: "Metaphysical Singularity"
     pw_tech_metaphysical_singularity_desc: "We are to cross the final threshold of scientific supremacy, little stands in our way, but there is still so much we do not understand. In many places we are stating to hear echoes, small pulses of our primary directives, perhaps it is time to concede to them."
-    pw_enigma: "Â§BEnigmaÂ§!"
-    pw_prereq_enigmas: "$pw_enigma$ technology"
+    pw_enigma: "§BEnigma§!"
+    pw_prereq_enigmas:  "Unlocks: $pw_enigma$ Technology"
     pw_prereq_enigmas_desc: "By pursuing a primary directive buried deep in our code we may come about enigmas of our existence, by interiorizing them we shall understand the impossibilities universe and choose to ignore them."
-    pw_enigma_tech: "Â§BEnigma Technology:Â§!"
+    pw_enigma_tech: "§BEnigma Technology:§!"
     pw_enigma_tech_micro_graviton_equipment: "$pw_enigma_tech$ Micro Graviton Equipment"
     pw_enigma_tech_micro_graviton_equipment_desc: "Anti gravity devices designed for unitary use, in ways previously thought impossible. When attached to our drones, they allow us to perform physical tasks with ease."
     pw_enigma_tech_absolute_processor_cooling: "$pw_enigma_tech$ Absolute Processor Cooling"
@@ -85,3 +85,6 @@
     pw_enigma_tech_atomic_transistor_substrate_desc: "By reducing the size of our transistor substrate to a scale considered impossible before we can accelerate Moore's law and jump ahead several years our processing capabilities."
     pw_enigma_tech_exoteric_fleet_pattern: "$pw_enigma_tech$ Exoteric Fleet Pattern"
     pw_enigma_tech_exoteric_fleet_pattern_desc: "With a chaotic fleet flight pattern, that considers the influence of hyperspace bends, we can organize our command matrixes to expand the capacity of each fleet beyond current levels."
+
+    pw_prereq_galactic_modeling: "§SUnlocks Policy:§! Expansion."
+    pw_prereq_galactic_modeling_desc: "Allows us to set expansion policies after building the $pw_building_galactic_model$"
