@@ -1,3 +1,8 @@
+# Version 1.1.1 (for Stellaris 2.8.1)
+Fixes:
+* Fixed: Big Brother job rotating pops into ruler jobs and unemployed them.
+* Fixed: Criminal Heritages can get the Panopticon tech, since they can't build the Panopticon.
+
 # Version 1.1.0 (for Stellaris 2.8.1)
 
 Added:
