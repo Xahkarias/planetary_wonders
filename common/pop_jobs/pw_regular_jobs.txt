@@ -534,52 +534,23 @@ pw_big_brother = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		modifier = {
-			factor = 2
-			has_trait = trait_resilient
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_very_strong
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_strong
-		}
-		modifier = {
-			factor = 10
-			is_enslaved = yes
-			has_slavery_type = { type = slavery_military }
-		}
-		modifier = {
-			factor = 0.50
-			has_trait = trait_weak
-		}
-		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
 		modifier = {
 			factor = 10
-			has_job = enforcer
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_cybernetic
+			has_job = pw_big_brother
 		}
 		modifier = {
 			factor = 2
-			has_trait = trait_presapient_earthbound
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_limited_regeneration
+			has_trait = trait_cybernetic
 		}
 		modifier = {
 			factor = 1.1
 			has_trait = trait_presapient_proles
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			has_trait = trait_brainslug
 			exists = owner
 			owner = { has_valid_civic = civic_police_state }
@@ -589,14 +560,6 @@ pw_big_brother = {
 			has_trait = trait_presapient_natural_intellectuals
 			exists = owner
 			owner = { has_valid_civic = civic_police_state }
-		}
-		modifier = {
-			factor = 20
-			has_job = enforcer
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
 		}
 		modifier = {
 			factor = 1.1
@@ -612,13 +575,9 @@ pw_big_brother = {
 			has_trait = trait_quarrelsome
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.5
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_lithoid
 		}
 	}
 }
