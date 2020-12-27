@@ -670,6 +670,12 @@ pw_tech_utilitarian_vigilance = {
 	weight = @tier4weight2
 	is_rare = yes
 
+	potential = {
+		NOT = {
+			has_valid_civic = civic_criminal_heritage
+		}
+	}
+
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
