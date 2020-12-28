@@ -72,7 +72,7 @@ def appendLocalisationKeys(file_path, localisationMap):
 
 def getDiffDict(ref_dict, comp_dict):
     '''
-        Return a distionary with the missing items from comp_dict
+        Return a dictionary with the missing items from comp_dict
         using ref_dict as reference.
     '''
 
