@@ -70,7 +70,7 @@
     pw_enigma_tech_absolute_processor_cooling_desc: "Using science bending materials that can reach temperatures bellow what was thought as absolute to cool our processors allows us to overclock them past previous established limits and triple our complex drones operations per second."
 
     pw_enigma_tech_non_euclidean_building: "$pw_enigma_tech$ Non Euclidean Building"
-    pw_enigma_tech_non_euclidean_building_desc: "Building our drone storages with an exoteric design, deciphered from the Enigma Engine, gives them the unintelligible property of being bigger on the inside than on the outside."
+    pw_enigma_tech_non_euclidean_building_desc: "Building our drone storages with an esoteric design, deciphered from the Enigma Engine, gives them the unintelligible property of being bigger on the inside than on the outside."
 
     pw_enigma_tech_quantum_movement: "$pw_enigma_tech$ Quantum Movement"
     pw_enigma_tech_quantum_movement_desc: "Using the vacuous energy between planets and breaching the Principle of Uncertainty we can have our ships achieve FTL capabilities in brief jumps outside of the Hyperlane system."
@@ -96,7 +96,7 @@
     pw_enigma_tech_gas_molecular_sculpting: "$pw_enigma_tech$ Gas Molecular Sculpting"
     pw_enigma_tech_gas_molecular_sculpting_desc: "It is now clear to us that Exotic Gasses follow a molecular structure close to rare space-born organisms. This realization allows us to use bio molecular sculpting to manufacture those Gasses."
 
-    pw_enigma_tech_exoteric_predictions_system: "$pw_enigma_tech$ Exoteric Predictions System"
+    pw_enigma_tech_exoteric_predictions_system: "$pw_enigma_tech$ Esoteric Predictions System"
     pw_enigma_tech_exoteric_predictions_system_desc: "Following our Deciphers example we should increased the range of all the sensor in our decision networks giving deciding weight to variables thought as spurious before. This can lead to an increased accuracy in prediction, specially for chaotic models."
 
     pw_enigma_tech_bio_frequency_emitters: "$pw_enigma_tech$ Bio Frequency Emitters"
@@ -108,5 +108,5 @@
     pw_enigma_tech_atomic_transistor_substrate: "$pw_enigma_tech$ Atomic Transistor Substrate"
     pw_enigma_tech_atomic_transistor_substrate_desc: "By reducing the size of our transistor substrate to a scale considered impossible before we can accelerate Moore's law and jump ahead several years our processing capabilities."
 
-    pw_enigma_tech_exoteric_fleet_pattern: "$pw_enigma_tech$ Exoteric Fleet Pattern"
+    pw_enigma_tech_exoteric_fleet_pattern: "$pw_enigma_tech$ Esoteric Fleet Pattern"
     pw_enigma_tech_exoteric_fleet_pattern_desc: "With a chaotic fleet flight pattern, that considers the influence of hyperspace bends, we can organize our command matrixes to expand the capacity of each fleet beyond current levels."

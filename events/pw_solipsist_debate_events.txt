@@ -1068,7 +1068,7 @@ country_event = {
 		}
 	}
 
-	#Exoteric strategy
+	#Esoteric strategy
 	option = {
 		name = pw_solipsist_debate.40.c
 
@@ -1223,7 +1223,7 @@ country_event = {
 		}
 	}
 
-	#Exoteric strategy
+	#Esoteric strategy
 	option = {
 		name = pw_solipsist_debate.41.c
 
@@ -1377,7 +1377,7 @@ country_event = {
 		}
 	}
 
-	#Exoteric Strategy
+	#Esoteric Strategy
 	option = {
 		name = pw_solipsist_debate.42.c
 
@@ -1490,7 +1490,7 @@ country_event = {
 	}
 }
 
-#Chess Exoteric Win
+#Chess Esoteric Win
 country_event = {
 	id = pw_solipsist_debate.44
 	title = pw_solipsist_debate.44.name
@@ -1529,7 +1529,7 @@ country_event = {
 	}
 }
 
-#Chess Exoteric loss
+#Chess Esoteric loss
 country_event = {
 	id = pw_solipsist_debate.45
 	title = pw_solipsist_debate.45.name

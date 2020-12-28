@@ -129,14 +129,14 @@
     pw_solipsist_debate.40.desc: "We should take a break from all of this debating and projecting abstract scenarios, to relax and play a comfortable game of 5D-Chess with the supercomputer terminal installed in the Debate Hall.\n5D-Chess is a simple game for Us, We have remarkable spatial perception with so many eyes producing images at the same time, the only difficulty comes from managing time and different timelines but experience shall sharpen Our skills.\nThe game uses a variation of 3D Chess in which peaces can be moved in or into the past, creating different timelines; peaces can also move between timelines. The game is over when a check-mate is performed in any current timeline, at any time. 5D-Chess is really just warmup for the real game: 6D-Chess, which uses a variation of 4D space, but We have to start somewhere.\n\nSuch a sophisticated game against such a skilled opponent can last decades, but for now the supercomputer interface cordially offers Us the first move. We need to determine Our starting strategy."
     pw_solipsist_debate.40.a: "Go for an Aggressive strategy."
     pw_solipsist_debate.40.b: "Better be safe with a Defensive strategy."
-    pw_solipsist_debate.40.c: "Try Exoteric moves, let Us be unpredictable."
+    pw_solipsist_debate.40.c: "Try Esoteric moves, let Us be unpredictable."
 
     #Chess Wining
     pw_solipsist_debate.41.name: "En Passant"
-    pw_solipsist_debate.41.desc: "That strategy paid out!\nWith the correct feints and strategic sacrifices, in the correct places at the correct times, We managed to get ahead with more peaces in most timelines.\nThe battle is no over, however, and We must decide whether to continue with Our strategy, if We are confident in Our luck so far, or to change and surprise Our opponent. We can always appeal to bolder, exoteric, moves and hope to confuse Our opponent until We can claim victory."
+    pw_solipsist_debate.41.desc: "That strategy paid out!\nWith the correct feints and strategic sacrifices, in the correct places at the correct times, We managed to get ahead with more peaces in most timelines.\nThe battle is no over, however, and We must decide whether to continue with Our strategy, if We are confident in Our luck so far, or to change and surprise Our opponent. We can always appeal to bolder, esoteric, moves and hope to confuse Our opponent until We can claim victory."
     pw_solipsist_debate.41.a: "Why change what is working? Continue the strategy."
     pw_solipsist_debate.41.b: "Never let your opponent be comfortable. Change the strategy."
-    pw_solipsist_debate.41.c: "They will never see this coming, try exoteric moves."
+    pw_solipsist_debate.41.c: "They will never see this coming, try esoteric moves."
 
     #Chess Losing
     pw_solipsist_debate.42.name: "Castling"
@@ -150,14 +150,14 @@
     pw_solipsist_debate.43.desc: "Our last move in the long game of 5D-Chess reveled something We were not expecting, the thought pattern behind the board state and the evaluation of the best outcome can be elegantly mapped to the understating of technology being researched.\n\nWe have made a great breakthrough in the grand game of the galaxy."
     pw_solipsist_debate.43.a: "But what about the game?"
 
-    #Chess Exoteric Win
+    #Chess Esoteric Win
     pw_solipsist_debate.44.name: "Scholar's Mate"
     pw_solipsist_debate.44.desc: "After a series of seemingly unconnected plays in the 5d-Chess game, that conceded a lot of ground to our opponent, surprisingly, We notice that victory can be achieved with a single extra move, and there is nothing the computer can do to to prevent it. Our simulations didn't saw this coming, and We concluded theirs failed to see it too. After taking a year to consider every possible outcome, We commit to the next play and, in a masterfully executed game, claim victory!"
     pw_solipsist_debate.44.a: "That was easy. Rematch?"
 
-    #Chess Exoteric Loss
+    #Chess Esoteric Loss
     pw_solipsist_debate.45.name: "Fool's Mate"
-    pw_solipsist_debate.45.desc: "After exactly three moves after adopting this exoteric strategy in the 5D-Chess game, which took half a decade to assert, the computer surprised Us with a simple pawn placed at the right place at the right time that gave them the win.\n\nSometimes, weird strategies are just that: weird, and not actually useful."
+    pw_solipsist_debate.45.desc: "After exactly three moves after adopting this esoteric strategy in the 5D-Chess game, which took half a decade to assert, the computer surprised Us with a simple pawn placed at the right place at the right time that gave them the win.\n\nSometimes, weird strategies are just that: weird, and not actually useful."
     pw_solipsist_debate.45.a: "Maybe it works next time?"
 
     #Chess Win
