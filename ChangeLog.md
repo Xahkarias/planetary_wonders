@@ -1,3 +1,8 @@
+# Version 1.2.0 (for Stellaris 2.8.1)
+Changes:
+* Corrected "Exoteric" to "Esoteric" in localizations
+* Added tooltip for empire unique Wonders.
+
 # Version 1.1.1 (for Stellaris 2.8.1)
 Fixes:
 * Fixed: Big Brother job rotating pops into ruler jobs and unemployed them.
