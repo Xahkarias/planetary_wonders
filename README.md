@@ -4,8 +4,6 @@ A mod for the game [Stellaris](https://store.steampowered.com/app/281990/Stellar
 
 [Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2305790641)
 
-(This is playable but very early in development)
-
 ## Contents
 
 ### Wonders
@@ -38,3 +36,7 @@ Unlocked by Ascension Perk:
 
 ## Credits
 Thumbnail - "[FUTURE CITY](https://www.deviantart.com/boombastik3/art/FUTURE-CITY-284229568)" by [Boombastik3](https://www.deviantart.com/boombastik3) is licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/?ref=ccsearch&atype=rich)
+
+Wonders Building Icon - [Monument](https://thenounproject.com/term/monument/1178950/) by [Setyo Ari Wibowo](https://thenounproject.com/seochan.art/) from the [Noun Project](https://thenounproject.com/) edited with color.
+
+Assets for icons are taken from [Ethos Unique Techs and Buildings]() by [Dumuzii](). Check out and support their work. If you like this mod, you will probably like that mod too.
