@@ -1,3 +1,10 @@
+#Game has started
+on_game_start = {
+	events = {
+		pw_wonder.0
+	}
+}
+
 #A tech has been researched
 # This = Country
 on_tech_increased = {

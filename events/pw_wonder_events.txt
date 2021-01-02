@@ -1,5 +1,14 @@
 namespace = pw_wonder
 
+# Initial event to say this mod is active.
+event = {
+	id = pw_wonder.0
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { set_global_flag = pw_active }
+}
+
 #Message for wonder construction complete
 # UNUSED!
 planet_event = {
