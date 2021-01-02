@@ -46,7 +46,7 @@ pw_edict_panspectron = {
 }
 
 pw_edict_hive_debate = {
-	length = @pw_1year
+	length = 0
 	icon = "GFX_edict_type_policy"
 
 	resources = {
@@ -55,7 +55,7 @@ pw_edict_hive_debate = {
 			trigger = {
 				NOT = { has_edict = pw_edict_hive_debate }
 			}
-			influence = 25
+			influence = 50
 		}
 	}
 

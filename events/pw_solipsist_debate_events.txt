@@ -20,7 +20,7 @@ country_event = {
 	}
 
 	immediate = {
-		remove_country_flag = pw_hive_is_debating
+		set_country_flag = pw_hive_is_debating
 	}
 
 	#Love
@@ -71,6 +71,10 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.1.e
 		custom_tooltip = pw_solipsist_debate.1.e.tooltip
+
+		hidden_effect = {
+			remove_country_flag = pw_hive_is_debating
+		}
 	}
 
 }
@@ -87,11 +91,6 @@ country_event = {
 
 	trigger = {
 		is_hive_empire = yes
-	}
-
-	immediate = {
-		remove_country_flag = pw_hive_is_debating
-
 	}
 
 	#Love
@@ -214,7 +213,6 @@ country_event = {
 
 	immediate = {
 		set_country_flag = pw_hive_debate_love_done
-		set_country_flag = pw_hive_is_debating
 	}
 
 	option = {
@@ -560,7 +558,6 @@ country_event = {
 
 	immediate = {
 		set_country_flag = pw_hive_debate_free_done
-		set_country_flag = pw_hive_is_debating
 	}
 
 	option = {
@@ -1006,10 +1003,6 @@ country_event = {
 
 	trigger = {
 		is_hive_empire = yes
-	}
-
-	immediate = {
-		set_country_flag = pw_hive_is_debating
 	}
 
 	#Aggressive strategy

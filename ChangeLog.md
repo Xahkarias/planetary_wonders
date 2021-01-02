@@ -3,6 +3,7 @@ Changes:
 * Corrected "Exoteric" to "Esoteric" in localizations
 * Added tooltip for empire unique Wonders.
 * Added new building, technology, jobs, decisions and ascension perk icons.
+* Streamlined Solipsist Debate flag and edict.
 
 # Version 1.1.1 (for Stellaris 2.8.1)
 Fixes:
