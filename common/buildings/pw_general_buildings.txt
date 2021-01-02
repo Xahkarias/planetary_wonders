@@ -713,6 +713,10 @@ pw_building_guardian_angel = {
 		planet_event = { id = pw_wonder.1200 }
 	}
 
+	on_destroy = {
+		planet_event = { id = pw_wonder.1205 }
+	}
+
 	ai_weight = {
 		weight = 0
 		modifier = {

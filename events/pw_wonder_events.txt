@@ -1540,10 +1540,8 @@ planet_event = {
 
 	immediate = {
 		every_planet_army = {
-			if = {
-				limit = { army_type = pw_army_flying_fortress }
-				remove_army = yes
-			}
+			limit = { army_type = pw_army_flying_fortress }
+			remove_army = yes
 		}
 	}
 }
