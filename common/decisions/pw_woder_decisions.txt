@@ -1,7 +1,7 @@
 pw_decision_erebus_prospecting = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_resources
+	icon = pw_decision_erebus_prospecting
 
 	resources = {
 		category = decisions
@@ -43,7 +43,7 @@ pw_decision_erebus_prospecting = {
 pw_decision_helios_seeding = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_resources
+	icon = pw_decision_helios_seeding
 
 	resources = {
 		category = decisions
@@ -85,7 +85,7 @@ pw_decision_helios_seeding = {
 pw_decision_demetrius_harvesting = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_resources
+	icon = pw_decision_demetrius_harvesting
 
 	resources = {
 		category = decisions
@@ -128,7 +128,7 @@ pw_decision_demetrius_harvesting = {
 pw_decision_rebuild_flying_fortress = {
 	owned_planets_only = yes
 	sound = event_construction_02
-	icon = decision_martial_law
+	icon = pw_decision_rebuild_flying_fortress
 
 	enactment_time = @pw_halfYear
 
