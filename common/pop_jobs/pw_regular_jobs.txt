@@ -324,7 +324,7 @@ pw_domed_city_test_subject = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes #No machines
+		pw_sentient_worker_job_check_trigger = yes #Only sentient machines
 	}
 
 	resources = {
