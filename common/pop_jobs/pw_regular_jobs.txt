@@ -1,7 +1,7 @@
 pw_mining_director = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
+	building_icon = pw_building_erebus_project
 	clothes_texture_index = 2
 	icon = miner
 
@@ -86,7 +86,7 @@ pw_mining_director = {
 pw_energy_director = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_energy_nexus
+	building_icon = pw_building_helios_tower
 	clothes_texture_index = 2
 	icon = technician
 
@@ -171,7 +171,7 @@ pw_energy_director = {
 pw_agriculture_director = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_food_processing_center
+	building_icon = pw_building_demetrius_fields
 	clothes_texture_index = 2
 	icon = farmer
 
@@ -313,7 +313,6 @@ pw_domed_city_test_subject = {
 	condition_string = WORKER_JOB_TRIGGER
 	building_icon = pw_building_domed_city
 	clothes_texture_index = 3
-	icon = researcher
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -458,9 +457,8 @@ pw_domed_city_test_subject = {
 pw_big_brother = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_hall_judgment
+	building_icon = pw_building_panopticon
 	clothes_texture_index = 1
-	icon = enforcer
 
 	possible_pre_triggers = {
 		has_owner = yes
