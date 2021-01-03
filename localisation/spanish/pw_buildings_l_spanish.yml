@@ -78,3 +78,10 @@
     pw_solipsist_debate_hall_tooltip: "Allows us to deliberate with ourselves over certain subjects."
 
     pw_empire_unique_tooltip: "Only one allowed in the empire."
+
+    pw_secluded_sector: "Â§MSecluded SectorÂ§!"
+    pw_building_secluded_sector: "Secluded Sector"
+    pw_building_secluded_sector_desc: "A habitat sector completely enclosed by a sphere, with no contact with the outside world save for an enormous team of researches constantly observing, probing and testing the unknowing space inhabitants. Many social experiments can be performed here as every aspect of these subjects life is controlled, from the minute detail to the sector atmospheric simulation, at some extra cost of consumer goods."
+    pw_abyssal_crater_test_site_habitat: "Â§MAPlanetary Test SiteÂ§!"
+    pw_building_abyssal_crater_test_site_habitat: "APlanetary Test Site"
+    pw_building_abyssal_crater_test_site_habitat_desc: "An enormous crater in the planet bellow designated as a dedicated test site for rocketry, spacecraft launch and landing, material strength testing and building patterns under multiple conditions of pressure and gravity. Given the subject, the tests conducted here demand extra alloys."

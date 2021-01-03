@@ -337,15 +337,31 @@ planet_event = {
 	}
 
 	immediate = {
-		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
-			localization = pw_message_domed_city_complete
-			days = 30
-			target = THIS
-			variable = {
-				type = name
-				localization = PLANET
-				scope = ROOT
+		if = {
+			limit = { is_planet_class = pc_habitat }
+			create_message = {
+				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				localization = pw_message_secluded_sector_complete
+				days = 30
+				target = THIS
+				variable = {
+					type = name
+					localization = PLANET
+					scope = ROOT
+				}
+			}
+		}
+		else = {
+			create_message = {
+				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				localization = pw_message_domed_city_complete
+				days = 30
+				target = THIS
+				variable = {
+					type = name
+					localization = PLANET
+					scope = ROOT
+				}
 			}
 		}
 
@@ -358,7 +374,19 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.301
 	title = pw_wonder.301.name
-	desc = pw_wonder.301.desc
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_habitat }
+		}
+		text = pw_wonder.301.desc.planet
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_habitat
+		}
+		text = pw_wonder.301.desc.habitat
+	}
+
 	picture = GFX_evt_society_research
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -416,7 +444,18 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.302
 	title = pw_wonder.302.name
-	desc = pw_wonder.302.desc
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_habitat }
+		}
+		text = pw_wonder.302.desc.planet
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_habitat
+		}
+		text = pw_wonder.302.desc.habitat
+	}
 	picture = GFX_evt_society_research
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -478,15 +517,31 @@ planet_event = {
 	}
 
 	immediate = {
-		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
-			localization = pw_message_abyssal_crater_test_site_complete
-			days = 30
-			target = THIS
-			variable = {
-				type = name
-				localization = PLANET
-				scope = ROOT
+		if = {
+			limit = { is_planet_class = pc_habitat }
+			create_message = {
+				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				localization = pw_message_abyssal_crater_test_site_habitat_complete
+				days = 30
+				target = THIS
+				variable = {
+					type = name
+					localization = PLANET
+					scope = ROOT
+				}
+			}
+		}
+		else = {
+			create_message = {
+				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				localization = pw_message_abyssal_crater_test_site_complete
+				days = 30
+				target = THIS
+				variable = {
+					type = name
+					localization = PLANET
+					scope = ROOT
+				}
 			}
 		}
 
@@ -499,7 +554,18 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.401
 	title = pw_wonder.401.name
-	desc = pw_wonder.401.desc
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_habitat }
+		}
+		text = pw_wonder.401.desc.planet
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_habitat
+		}
+		text = pw_wonder.401.desc.habitat
+	}
 	picture = GFX_evt_underground_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -557,7 +623,18 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.402
 	title = pw_wonder.402.name
-	desc = pw_wonder.402.desc
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_habitat }
+		}
+		text = pw_wonder.402.desc.planet
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_habitat
+		}
+		text = pw_wonder.402.desc.habitat
+	}
 	picture = GFX_evt_underground_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
