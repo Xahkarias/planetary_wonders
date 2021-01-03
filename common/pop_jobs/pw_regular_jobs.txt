@@ -10,6 +10,7 @@ pw_mining_director = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible = {
@@ -95,6 +96,7 @@ pw_energy_director = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible = {
@@ -180,6 +182,7 @@ pw_agriculture_director = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible = {
@@ -465,6 +468,7 @@ pw_big_brother = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
 	possible = {
@@ -576,6 +580,84 @@ pw_big_brother = {
 			factor = 0.5
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
+		}
+	}
+}
+
+pw_tourist = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_residence
+	clothes_texture_index = 2
+	icon = clerk
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		complex_worker_job_check_trigger = yes
+	}
+
+	planet_modifier = {
+		trade_value_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			any_playable_country = {
+				NOT = { is_country = owner }
+				has_migration_access = owner
+			}
+		}
+		modifier = {
+			trade_value_add = 4
+		}
+	}
+
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 0.25
+			is_shackled_robot = yes
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = { is_fallen_empire = yes }
+		}
+		modifier = {
+			factor = 5
+			has_migration_control = no
+		}
+		modifier = {
+			factor = 2
+			has_citizenship_rights = yes
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_citizenship_type = {
+					type = citizenship_full
+				}
+				has_citizenship_type = {
+					type = citizenship_full_machine
+				}
+			}
 		}
 	}
 }

@@ -5,6 +5,7 @@ Changes:
 * Added new building, technology, jobs, decisions and ascension perk icons.
 * Streamlined Solipsist Debate flag and edict.
 * Changed: Particle Supercollider, Domed City (Secluded Sector), Abyssal Crater test Site (Planetary Test Site), Galactic Model and Panopticon allowed in habitats with the Voidborn Ascension perk.
+* Changed: Space Elevator is allowed in Resort Colonies and produces Tourist jobs.
 
 # Version 1.1.1 (for Stellaris 2.8.1)
 Fixes:

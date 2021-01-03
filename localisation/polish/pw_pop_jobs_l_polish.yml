@@ -87,3 +87,11 @@
     mod_job_pw_enigma_decipher_add: "$job_pw_enigma_decipher$ Jobs"
     mod_job_pw_enigma_decipher_per_pop: "§G+1§! $job_pw_enigma_decipher$ Job per $VALUE$ Pops"
     mod_job_pw_enigma_decipher_per_pop_short: "\n§G+1§! £job_evaluator£ per $VALUE$ £pop£"
+
+    job_pw_tourist: "Tourist"
+    job_pw_tourist_plural: "Tourists"
+    job_pw_tourist_desc: "The numerous travellers, domestic or otherwise, that visit the natural and constructed wonders of this Resort world, and improve greatly the local economy, while damaging the environment and most labour laws."
+    job_pw_tourist_effect_desc: "Â£job_clerkÂ£ $job_pw_tourist_plural$ produce Â£consumer_goodsÂ£ Â§Y$consumer_goods$Â§!."
+    mod_job_pw_tourist_add: "$job_pw_tourist$ Jobs"
+    mod_job_pw_tourist_per_pop: "Â§G+1Â§! $job_pw_tourist$ Job per $VALUE$ Pops"
+    mod_job_pw_tourist_per_pop_short: "\nÂ§G+1Â§! Â£job_clerkÂ£ per $VALUE$ Â£popÂ£"
