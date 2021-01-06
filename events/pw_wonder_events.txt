@@ -69,6 +69,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.101 }
 		planet_event = { id = pw_wonder.102 }
+		planet_event = { id = pw_wonder.103 days = 5 }
 	}
 }
 
@@ -81,6 +82,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = {has_country_flag = space_elevator_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = space_elevator_built }
+	}
 
 	option = {
 		name = pw_wonder.101.a
@@ -96,9 +106,10 @@ planet_event = {
 				days = 1800 # 5 years
 			}
 		}
-		# trigger = {
-		# 	owner = { is_xenophobe = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_space_elevator_xenophile
+			days = 1800 # 5 years
+		}
 	}
 
 	option = {
@@ -115,18 +126,10 @@ planet_event = {
 				days = 1800 # 5 years
 			}
 		}
-		# trigger = {
-		# 	owner = { is_xenophile = no }
-		# }
-	}
-
-	trigger = {
-		NOT = {owner = {has_country_flag = space_elevator_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = space_elevator_built }
+		add_modifier = {
+			modifier = pw_mod_space_elevator_xenophobe
+			days = 1800 # 5 years
+		}
 	}
 }
 
@@ -181,6 +184,148 @@ planet_event = {
 		owner = { set_country_flag = space_elevator_built }
 	}
 }
+
+#Random choice of event after Space Elevator is build.
+planet_event = {
+	id = pw_wonder.103
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_building = pw_building_space_elevator
+	}
+
+	immediate = {
+		if = {
+			limit = { owner = { is_gestalt = no }}
+			random_list = {
+				10 = {
+					planet_event = { id = pw_wonder.104 days = 180 random = 180 }
+				}
+				10 = {
+					planet_event = { id = pw_wonder.105 days = 180 random = 180 }
+				}
+				10 = {
+					planet_event = { id = pw_wonder.106 days = 180 random = 180 }
+				}
+			}
+		}
+	}
+}
+
+#Seize unregulated goods
+planet_event = {
+	id = pw_wonder.104
+	title = pw_wonder.104.name
+	desc = pw_wonder.104.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		owner = { has_country_flag = pw_wonder_event_104 }
+		has_building = pw_building_space_elevator
+	}
+	immediate = {
+		owner = { set_country_flag = pw_wonder_event_104 }
+	}
+	option = {
+		name = pw_wonder.104.a
+		owner = {
+			add_resource = {
+				consumer_goods = 1000
+			}
+		}
+	}
+	option = {
+		name = pw_wonder.104.b
+		owner = {
+			add_resource = {
+				energy = 2500
+			}
+		}
+	}
+}
+
+#Banned Substances
+planet_event = {
+	id = pw_wonder.105
+	title = pw_wonder.105.name
+	desc = pw_wonder.105.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		owner = { has_country_flag = pw_wonder_event_105 }
+		has_building = pw_building_space_elevator
+	}
+	immediate = {
+		owner = { set_country_flag = pw_wonder_event_105 }
+	}
+	option = {
+		name = pw_wonder.105.a
+		add_modifier = { modifier = pw_mod_space_elevator_105_a days = @pw_5years }
+	}
+	option = {
+		name = pw_wonder.105.b
+		add_modifier = { modifier = pw_mod_space_elevator_105_b days = @pw_5years }
+	}
+	option = {
+		name = pw_wonder.105.c
+		add_modifier = { modifier = pw_mod_space_elevator_105_c days = @pw_5years }
+	}
+}
+
+#Stowaways
+planet_event = {
+	id = pw_wonder.106
+	title = pw_wonder.106.name
+	desc = pw_wonder.106.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		owner = { has_country_flag = pw_wonder_event_106 }
+		has_building = pw_building_space_elevator
+	}
+	immediate = {
+		owner = { set_country_flag = pw_wonder_event_106 }
+	}
+	option = {
+		name = pw_wonder.106.a
+		create_pop = {
+			species = owner
+		}
+	}
+	option = {
+		name = pw_wonder.106.b
+		create_fleet = {
+			name = "Stowaways"
+			effect = {
+				set_owner = owner
+				set_location = THIS
+				create_ship = {
+					name = "Stowaways"
+					design = shipclass_colonizer
+				}
+			}
+		}
+	}
+	option = {
+		name = pw_wonder.106.c
+		owner = {
+			add_resource = {
+				influence = 100
+			}
+		}
+	}
+}
+
 
 # Particle Supercollider -> id 200
 
@@ -785,6 +930,227 @@ planet_event = {
 	}
 }
 
+#Random Aggressive Prospecting effect
+planet_event = {
+	id = pw_wonder.503
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_planet_flag = pw_aggressive_prospecting_event_triggered }
+		has_modifier = pw_mod_erebus_prospecting
+	}
+
+	immediate = {
+		if = {
+			limit = { #Exhausted mining options.
+				has_planet_flag = pw_aggressive_prospecting_crystal
+				has_planet_flag = pw_aggressive_prospecting_motes
+				has_planet_flag = pw_aggressive_prospecting_gases
+			}
+			planet_event = {
+				id = pw_wonder.510
+				days = 60
+				random = 30
+			}
+		}
+		else = {
+			random_list = {
+				10 = {
+					planet_event = {
+						id = pw_wonder.504
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.506
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.508
+						days = 60
+						random = 30
+					}
+				}
+				10 = {}
+			}
+		}
+	}
+}
+
+#Check if already added crystals
+planet_event = {
+	id = pw_wonder.504
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_erebus_project
+	}
+	immediate = {
+		if = {
+			limit = { has_planet_flag = pw_aggressive_prospecting_crystal }
+			planet_event = { id = pw_wonder.503 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.505 }
+		}
+	}
+}
+
+#Aggressive Prospecting adds Crystals
+planet_event = {
+	id = pw_wonder.505
+	title = pw_wonder.505.name
+	desc = pw_wonder.505.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		set_planet_flag = pw_aggressive_prospecting_crystal
+	}
+	trigger = {
+		has_building = pw_building_erebus_project
+	}
+	option = {
+		name = pw_wonder.505.a
+		owner = {
+			add_resource = {
+				rare_crystals = 500
+			}
+		}
+	}
+}
+
+#Check if already added motes
+planet_event = {
+	id = pw_wonder.506
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_erebus_project
+	}
+	immediate = {
+		if = {
+			limit = { has_planet_flag = pw_aggressive_prospecting_motes }
+			planet_event = { id = pw_wonder.503 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.507 }
+		}
+	}
+}
+
+#Aggressive Prospecting adds Motes
+planet_event = {
+	id = pw_wonder.507
+	title = pw_wonder.507.name
+	desc = pw_wonder.507.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		set_planet_flag = pw_aggressive_prospecting_motes
+	}
+	trigger = {
+		has_building = pw_building_erebus_project
+	}
+	option = {
+		name = pw_wonder.507.a
+		owner = {
+			add_resource = {
+				volatile_motes = 500
+			}
+		}
+	}
+}
+
+#Check if already added gases
+planet_event = {
+	id = pw_wonder.508
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_erebus_project
+	}
+	immediate = {
+		if = {
+			limit = { has_planet_flag = pw_aggressive_prospecting_gases }
+			planet_event = { id = pw_wonder.503 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.509 }
+		}
+	}
+}
+
+#Aggressive Prospecting adds gases
+planet_event = {
+	id = pw_wonder.509
+	title = pw_wonder.509.name
+	desc = pw_wonder.509.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		set_planet_flag = pw_aggressive_prospecting_gases
+	}
+	trigger = {
+		has_building = pw_building_erebus_project
+	}
+	option = {
+		name = pw_wonder.509.a
+		owner = {
+			add_resource = {
+				exotic_gases = 500
+			}
+		}
+	}
+}
+
+#Aggressive Prospecting adds Poor Mineral Quality
+planet_event = {
+	id = pw_wonder.510
+	title = pw_wonder.510.name
+	desc = pw_wonder.510.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_helios_tower
+	}
+	immediate = {
+		set_planet_flag = pw_aggressive_prospecting_event_triggered
+	}
+	option = {
+		name = pw_wonder.510.a
+		if = {
+			limit = { NOT = { has_planet_modifier = pm_mineral_poor }}
+			add_modifier = {
+				modifier = mineral_poor
+			}
+		}
+	}
+}
+
 # Helios Tower -> id 600
 
 #On Helios Tower built
@@ -885,6 +1251,186 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = helios_tower_built }
+	}
+}
+
+#Random Cloud Seeding effect
+planet_event = {
+	id = pw_wonder.603
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_planet_flag = pw_cloud_seeding_event_triggered }
+	}
+
+	immediate = {
+		set_planet_flag = pw_cloud_seeding_event_triggered
+		if = {
+			limit = { #Machine and Hive planets can't have Atmospheric Aphrodisiacs mod.
+				OR = {
+					is_planet_class = pc_machine
+					is_planet_class = pc_hive
+				}
+			}
+			random_list = {
+				10 = {
+					planet_event = {
+						id = pw_wonder.604
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.605
+						days = 60
+						random = 30
+					}
+				}
+				5 = {}
+			}
+		}
+		else = {
+			random_list = {
+				10 = {
+					planet_event = {
+						id = pw_wonder.604
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.605
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.606
+						days = 60
+						random = 30
+					}
+				}
+				5 = {}
+			}
+		}
+	}
+}
+
+#Cloud Seeding adds Hazardous Weather
+planet_event = {
+	id = pw_wonder.604
+	title = pw_wonder.604.name
+	desc = pw_wonder.604.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_hazardous_weather }
+		has_building = pw_building_helios_tower
+	}
+	option = {
+		name = pw_wonder.604.a
+		add_modifier = {
+			modifier = hazardous_weather
+		}
+	}
+	option = {
+		name = pw_wonder.604.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+		}
+	}
+}
+
+#Cloud Seeding adds Wild Storms
+planet_event = {
+	id = pw_wonder.605
+	title = pw_wonder.605.name
+	desc = pw_wonder.605.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_wild_storms }
+		has_building = pw_building_helios_tower
+	}
+	option = {
+		name = pw_wonder.605.a
+		add_modifier = {
+			modifier = wild_storms
+		}
+	}
+	option = {
+		name = pw_wonder.605.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+		}
+	}
+}
+
+#Cloud Seeding adds Atmospheric Aphrodisiacs
+planet_event = {
+	id = pw_wonder.606
+	title = pw_wonder.606.name
+	desc = pw_wonder.606.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_atmospheric_aphrodisiac }
+		has_building = pw_building_helios_tower
+	}
+	option = {
+		name = pw_wonder.606.a
+		add_modifier = {
+			modifier = atmospheric_aphrodisiac
+		}
+	}
+	option = {
+		name = pw_wonder.606.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+		}
 	}
 }
 
@@ -991,6 +1537,296 @@ planet_event = {
 	}
 }
 
+#Random Predatory Harvesting effect
+planet_event = {
+	id = pw_wonder.703
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_planet_flag = pw_predatory_harvesting_event_triggered }
+	}
+
+	immediate = {
+		set_planet_flag = pw_predatory_harvesting_event_triggered
+		if = {
+			limit = { #Hive planets can't have Natural Beauty mod.
+				OR = {
+					is_planet_class = pc_hive
+				}
+			}
+			random_list = {
+				10 = {
+					planet_event = {
+						id = pw_wonder.704
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.705
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.706
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.707
+						days = 60
+						random = 30
+					}
+				}
+				5 = {}
+			}
+		}
+		else = {
+			random_list = {
+				10 = {
+					planet_event = {
+						id = pw_wonder.704
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.705
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.706
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.707
+						days = 60
+						random = 30
+					}
+				}
+				10 = {
+					planet_event = {
+						id = pw_wonder.708
+						days = 60
+						random = 30
+					}
+				}
+				5 = {}
+			}
+		}
+	}
+}
+
+#Predatory Harvesting adds Lush
+planet_event = {
+	id = pw_wonder.704
+	title = pw_wonder.704.name
+	desc = pw_wonder.704.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_lush }
+		has_building = pw_building_demetrius_fields
+	}
+	option = {
+		name = pw_wonder.704.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = food
+					value >= 3000
+				}
+			}
+		}
+		add_modifier = {
+			modifier = lush_planet
+		}
+		owner = {
+			add_resource = {
+				food = -3000
+			}
+		}
+	}
+	option = {
+		name = pw_wonder.704.b
+	}
+}
+
+#Predatory Harvesting adds Bleak
+planet_event = {
+	id = pw_wonder.705
+	title = pw_wonder.705.name
+	desc = pw_wonder.705.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_bleak }
+		has_building = pw_building_demetrius_fields
+	}
+	option = {
+		name = pw_wonder.705.a
+		add_modifier = {
+			modifier = bleak_planet
+		}
+	}
+	option = {
+		name = pw_wonder.705.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = food
+					value >= 2000
+				}
+			}
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				food = -2000
+				energy = -1000
+			}
+		}
+	}
+}
+
+#Predatory Harvesting adds Hostile Fauna
+planet_event = {
+	id = pw_wonder.706
+	title = pw_wonder.706.name
+	desc = pw_wonder.706.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_dangerous_wildlife }
+		has_building = pw_building_demetrius_fields
+	}
+	option = {
+		name = pw_wonder.706.a
+		add_modifier = {
+			modifier = dangerous_wildlife
+		}
+	}
+	option = {
+		name = pw_wonder.706.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+		}
+	}
+}
+
+#Predatory Harvesting adds Titanic Life
+planet_event = {
+	id = pw_wonder.707
+	title = pw_wonder.707.name
+	desc = pw_wonder.707.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_titanic_life }
+		has_building = pw_building_demetrius_fields
+	}
+	option = {
+		name = pw_wonder.707.a
+		add_modifier = {
+			modifier = titanic_life
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = food
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				food = -1000
+			}
+		}
+	}
+	option = {
+		name = pw_wonder.707.b
+	}
+}
+
+#Predatory Harvesting adds Natural Beauty
+planet_event = {
+	id = pw_wonder.708
+	title = pw_wonder.708.name
+	desc = pw_wonder.708.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_planet_modifier = pm_natural_beauty }
+		has_building = pw_building_demetrius_fields
+	}
+	option = {
+		name = pw_wonder.708.a
+		add_modifier = {
+			modifier = natural_beauty
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = food
+					value >= 2000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				food = -2000
+			}
+		}
+	}
+	option = {
+		name = pw_wonder.708.b
+	}
+}
+
 # Astronomical Model Bureau -> id 800
 
 #On Astronomical Model Bureau built
@@ -1019,6 +1855,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.801 }
 		planet_event = { id = pw_wonder.802 }
+		planet_event = { id = pw_wonder.803 days = 60 random = 30}
 	}
 }
 
@@ -1129,6 +1966,79 @@ planet_event = {
 	}
 }
 
+#Tow asteroid
+planet_event = {
+	id = pw_wonder.803
+	title = pw_wonder.803.name
+	desc = pw_wonder.803.desc
+	picture = GFX_evt_clocks
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_galactic_model
+		NOT = { owner = { has_country_flag = galactic_model_tow_asteroid }}
+		owner = {
+			any_planet_within_border = {
+				is_planet_class = pc_asteroid
+			}
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = galactic_model_tow_asteroid }
+	}
+
+	option = {
+		name = pw_wonder.803.a
+		owner = {
+			random_planet_within_border = {
+				limit = {
+					is_planet_class = pc_asteroid
+				}
+				enable_special_project = {
+					name = PW_TOW_ASTEROID_PROJECT
+					location = this
+					owner = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.803.b
+		allow = {
+			has_resource = { type = influence amount > 100 }
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = pw_wonder.804
+	title = pw_wonder.804.name
+	desc = pw_wonder.804.desc
+	picture = GFX_evt_clocks
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.804.a
+		owner = {
+			add_resource = {
+				unity = 1000
+				engineering_research = 1000
+			}
+		}
+	}
+}
+
 # Panopticon -> id 900
 
 #On Panopticon built
@@ -1156,6 +2066,7 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.901 }
+		owner = { country_event = { id = pw_wonder.902 }}
 	}
 }
 
@@ -1210,6 +2121,130 @@ planet_event = {
 	}
 }
 
+#Get another empire with corrupt leader
+country_event = {
+	id = pw_wonder.902
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_at_war = no
+		is_ai = no
+		any_owned_planet = {
+			has_building = pw_building_panopticon
+		}
+		any_country = {
+			any_neighbor_country = {
+				is_ai = yes
+				is_country_type = default
+				is_gestalt = no
+				is_homicidal = no
+				has_communications = root
+				NOT = { is_at_war_with = root }
+				NOT = { has_valid_civic = civic_criminal_heritage }
+				any_owned_leader = {
+					has_trait = leader_trait_corrupt
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_neighbor_country = {
+			limit = {
+				is_ai = yes
+				is_country_type = default
+				is_gestalt = no
+				is_homicidal = no
+				has_communications = root
+				NOT = { is_at_war_with = root }
+				NOT = { has_valid_civic = civic_criminal_heritage }
+				any_owned_leader = {
+					has_trait = leader_trait_corrupt
+				}
+			}
+			save_event_target_as = PWEmpireWithCorruptLeader
+			random_owned_leader = {
+				limit = {
+					has_trait = leader_trait_corrupt
+				}
+				save_event_target_as = PWForeignCorruptLeader
+			}
+			root = { country_event = { id = pw_wonder.903 } }
+		}
+	}
+}
+
+#Empire with corrupt leader asks to deal with it.
+country_event = {
+	id = pw_wonder.903
+	title = pw_wonder.903.name
+	desc = pw_wonder.903.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	location = THIS
+	diplomatic = yes
+
+	trigger = {
+		any_owned_planet = {
+			has_building = pw_building_panopticon
+		}
+	}
+	picture_event_data = {
+		portrait = event_target:PWEmpireWithCorruptLeader
+		planet_background = event_target:PWEmpireWithCorruptLeader
+		graphical_culture = event_target:PWEmpireWithCorruptLeader
+		city_level = event_target:PWEmpireWithCorruptLeader
+		room = event_target:PWEmpireWithCorruptLeader.ruler
+	}
+	option = {
+		name = pw_wonder.903.a
+		add_favors = {
+			target = event_target:PWEmpireWithCorruptLeader
+			value = 2
+		}
+		event_target:PWEmpireWithCorruptLeader = {
+			add_opinion_modifier = {
+				who = root
+				modifier = pw_opinion_helped_with_corruption
+			}
+		}
+		event_target:PWForeignCorruptLeader = {
+			remove_trait = leader_trait_corrupt
+		}
+	}
+	option = {
+		name = pw_wonder.903.b
+		add_resource = {
+			energy = 1000
+		}
+		event_target:PWEmpireWithCorruptLeader = {
+			add_opinion_modifier = {
+				who = root
+				modifier = pw_opinion_helped_with_corruption
+			}
+		}
+		event_target:PWForeignCorruptLeader = {
+			kill_leader = {}
+		}
+	}
+	option = {
+		name = pw_wonder.903.c
+		add_resource = {
+			influence = 50
+		}
+		event_target:PWEmpireWithCorruptLeader = {
+			add_opinion_modifier = {
+				who = root
+				modifier = pw_opinion_refused_to_help
+			}
+		}
+	}
+
+}
+
+#Examine crime in other empires
+
 # Enigma Engine -> id 1000
 
 #On Enigma Engine built
@@ -1237,6 +2272,7 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1001 }
+		planet_event = { id = pw_wonder.1010 }
 	}
 }
 
@@ -1302,7 +2338,7 @@ country_event = {
 		last_increased_tech = pw_tech_metaphysical_singularity
 		resource_stockpile_compare = {
 			resource = minor_artifacts
-			value < 10
+			value <= 10
 		}
 	}
 
@@ -1333,6 +2369,252 @@ country_event = {
 		name = pw_wonder.1003.a
 		add_resource = {
 			minor_artifacts = 15
+		}
+	}
+}
+
+#If last increased tech was a Enigma tech:
+country_event = {
+	id = pw_wonder.1004
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		pw_last_increased_tech_was_enigma_tech = yes
+		NOT = { has_country_flag = pw_enigma_fe_task_started }
+	}
+
+	immediate = {
+		set_country_flag = pw_enigma_fe_task_started
+		# Get Fallen Empire to make request:
+		country_event = { id = pw_wonder.1005 }
+	}
+}
+
+#Get Machine Fallen empire to receive gift from
+country_event = {
+	id = pw_wonder.1005
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_at_war = no
+		is_ai = no
+		any_owned_planet = {
+			has_building = pw_building_enigma_engine
+		}
+		any_country = {
+			is_valid_fallen_empire_for_task = yes
+			has_authority = auth_machine_intelligence
+			has_communications = root
+			opinion = {
+				who = THIS
+				value > -70
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_valid_fallen_empire_for_task = yes
+				has_authority = auth_machine_intelligence
+				has_communications = root
+				opinion = {
+					who = THIS
+					value > -70
+				}
+			}
+			save_event_target_as = PWFallenEmpireTaskOrigin
+			root = { country_event = { id = pw_wonder.1006 days = 30 random = 30} }
+		}
+	}
+}
+
+# Get Request from Fallen Empire after researching enigma tech
+country_event = {
+	id = pw_wonder.1006
+	title = pw_wonder.1006.name
+	desc = pw_wonder.1006.desc
+	is_triggered_only = yes
+	location = THIS
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireTaskOrigin
+		planet_background = event_target:PWFallenEmpireTaskOrigin
+		graphical_culture = event_target:PWFallenEmpireTaskOrigin
+		city_level = event_target:PWFallenEmpireTaskOrigin
+		room = event_target:PWFallenEmpireTaskOrigin.ruler
+	}
+	option = {
+		name = pw_wonder.1006.a
+		hidden_effect = {
+			event_target:PWFallenEmpireGiftOrigin = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_wonder.1007 days = 60 random = 30	}
+		}
+	}
+	option = {
+		name = pw_wonder.1006.b
+		hidden_effect = {
+			event_target:PWFallenEmpireGiftOrigin = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+# Get gift from Fallen Empire After fulfilling request.
+country_event = {
+	id = pw_wonder.1007
+	title = pw_wonder.1007.name
+	desc = pw_wonder.1007.desc
+	is_triggered_only = yes
+	location = THIS
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireTaskOrigin
+		planet_background = event_target:PWFallenEmpireTaskOrigin
+		graphical_culture = event_target:PWFallenEmpireTaskOrigin
+		city_level = event_target:PWFallenEmpireTaskOrigin
+		room = event_target:PWFallenEmpireTaskOrigin.ruler
+	}
+
+	option = {
+		name = pw_wonder.1007.a
+		if = {
+			limit = { has_distar = yes }
+			add_resource = {
+				nanites = 250
+				sr_living_metal = 250
+			}
+		}
+		else = {
+			add_resource = {
+				sr_living_metal = 250
+			}
+		}
+	}
+	option = {
+		name = pw_wonder.1007.b
+		add_resource = {
+			society_research = 5000
+			physics_research = 5000
+			engineering_research = 5000
+		}
+	}
+	option = {
+		name = pw_wonder.1007.c
+		add_resource = {
+			influence = 100
+		}
+	}
+}
+
+#Start Enigma Engine Energy
+planet_event = {
+	id = pw_wonder.1010
+	title = pw_wonder.1010.name
+	desc = pw_wonder.1010.desc
+	picture = GFX_evt_relic_shipyard
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_enigma_engine
+		owner = { NOT = { has_country_flag = pw_enigma_engine_deviant_events }}
+	}
+	immediate = {
+		owner = { set_country_flag = pw_enigma_engine_deviant_events }
+	}
+	option = {
+		name = pw_wonder.1010.a
+		add_modifier = {
+			modifier = pw_mod_enigma_engine_energy
+		}
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1011 days = 180 random = 30 }
+		}
+	}
+}
+
+#Enigma Engine Housing
+planet_event = {
+	id = pw_wonder.1011
+	title = pw_wonder.1011.name
+	desc = pw_wonder.1011.desc
+	picture = GFX_evt_relic_shipyard
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_enigma_engine
+	}
+	option = {
+		name = pw_wonder.1011.a
+		add_modifier = {
+			modifier = pw_mod_enigma_engine_housing
+		}
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1012 days = 180 random = 30 }
+		}
+	}
+}
+
+#Enigma Engine Art
+planet_event = {
+	id = pw_wonder.1012
+	title = pw_wonder.1012.name
+	desc = pw_wonder.1012.desc
+	picture = GFX_evt_relic_shipyard
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_building = pw_building_enigma_engine
+	}
+	option = {
+		name = pw_wonder.1012.a
+		add_modifier = {
+			modifier = pw_mod_enigma_engine_art
+		}
+		enable_special_project = {
+			name = PW_FIX_ENIGMA_DRONES
+			location = this
+			owner = owner
+		}
+	}
+	option = {
+		name = pw_wonder.1012.b
+		add_modifier = {
+			modifier = pw_mod_enigma_engine_art
+		}
+		owner = { add_100_unity_per_year_passed = yes }
+	}
+}
+
+planet_event = {
+	id = pw_wonder.1013
+	title = pw_wonder.1013.name
+	desc = pw_wonder.1013.desc
+	picture = GFX_evt_relic_shipyard
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1013.a
+		remove_modifier = pw_mod_enigma_engine_energy
+		remove_modifier = pw_mod_enigma_engine_housing
+		remove_modifier = pw_mod_enigma_engine_art
+		owner = {
+			add_resource = {
+				influence = 50
+			}
 		}
 	}
 }
@@ -1418,7 +2700,7 @@ country_event = {
 		last_increased_tech = pw_tech_metacognition_dialectics
 		resource_stockpile_compare = {
 			resource = minor_artifacts
-			value < 10
+			value <= 10
 		}
 	}
 
@@ -1453,6 +2735,125 @@ country_event = {
 	}
 }
 
+#Get fallen empire to receive gift from
+country_event = {
+	id = pw_wonder.1104
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		NOT ={ has_country_flag = pw_sdh_fe_gift_received }
+		is_at_war = no
+		is_ai = no
+		any_owned_planet = {
+			has_building = pw_building_solipsist_debate_hall
+		}
+		any_country = {
+			is_valid_fallen_empire_for_task = yes
+			NOT = { has_authority = auth_machine_intelligence }
+			has_communications = root
+			opinion = {
+				who = THIS
+				value > -70
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_valid_fallen_empire_for_task = yes
+				NOT = { has_authority = auth_machine_intelligence }
+				has_communications = root
+				opinion = {
+					who = THIS
+					value > -70
+				}
+			}
+			save_event_target_as = PWFallenEmpireGiftOrigin
+			root = { country_event = { id = pw_wonder.1105 } }
+		}
+	}
+}
+
+# Get gift from Fallen Empire After a Debate.
+country_event = {
+	id = pw_wonder.1105
+	title = pw_wonder.1105.name
+	desc = pw_wonder.1105.desc
+	is_triggered_only = yes
+	location = THIS
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireGiftOrigin
+		planet_background = event_target:PWFallenEmpireGiftOrigin
+		graphical_culture = event_target:PWFallenEmpireGiftOrigin
+		city_level = event_target:PWFallenEmpireGiftOrigin
+		room = event_target:PWFallenEmpireGiftOrigin.ruler
+	}
+
+	immediate = {
+		set_country_flag = pw_sdh_fe_gift_received
+	}
+	option = {
+		name = pw_wonder.1105.a
+		add_resource = {
+			sr_dark_matter = 250
+		}
+		hidden_effect = { event_target:PWFallenEmpireGiftOrigin = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}}
+	}
+	option = {
+		name = pw_wonder.1105.b
+		add_100_unity_per_year_passed = yes
+		hidden_effect = { event_target:PWFallenEmpireGiftOrigin = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}}
+	}
+	option = {
+		name = pw_wonder.1105.c
+		add_resource = {
+			influence = 100
+		}
+		hidden_effect = { event_target:PWFallenEmpireGiftOrigin = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}}
+	}
+}
+
+# Hive fights after a Debate.
+country_event = {
+	id = pw_wonder.1106
+	title = pw_wonder.1106.name
+	desc = pw_wonder.1106.desc
+	picture = GFX_evt_hive_mind
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_country_flag = pw_sdh_debate_conflict }
+	}
+
+	immediate = {
+		set_country_flag = pw_sdh_debate_conflict
+	}
+	option = {
+		name = pw_wonder.1106.a
+		add_modifier = {
+			modifier = pw_debate_mod_syncretic
+			days = @pw_1year
+		}
+	}
+	option = {
+		name = pw_wonder.1106.b
+		add_modifier = {
+			modifier = pw_debate_mod_deviancy
+			days = @pw_1year
+		}
+	}
+	option = {
+		name = pw_wonder.1106.c
+		random_owned_pop = { kill_pop = yes }
+	}
+}
+
 # Guardian Angel -> id 1200
 
 #On Guardian Angel built
@@ -1482,6 +2883,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1201 } #Regular first time
 		planet_event = { id = pw_wonder.1202 } #Gestalt first time
 		planet_event = { id = pw_wonder.1203 } #Add flying fortress army
+		planet_event = { id = pw_wonder.1207 days = 60 random = 30 } #Guardian Angel Peace Choice.
 	}
 }
 
@@ -1644,6 +3046,49 @@ planet_event = {
 				localization = PLANET
 				scope = ROOT
 			}
+		}
+	}
+}
+
+planet_event = {
+	id = pw_wonder.1207
+	title = pw_wonder.1207.name
+	desc = pw_wonder.1207.desc
+	picture = GFX_evt_landing_ship_2
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		owner = { is_at_war = no }
+		NOR = {
+			has_planet_flag = pw_guardian_angel_train
+			has_planet_flag = pw_guardian_angel_police_operations
+			has_planet_flag = pw_guardian_angel_attraction
+		}
+	}
+	option = {
+		name = pw_wonder.1207.a
+		custom_tooltip = pw_wonder.1207.a.tooltip
+		hidden_effect = {
+			set_planet_flag = pw_guardian_angel_train
+		}
+	}
+	option = {
+		name = pw_wonder.1207.b
+		custom_tooltip = pw_wonder.1207.b.tooltip
+		hidden_effect = {
+			set_planet_flag = pw_guardian_angel_police_operations
+		}
+	}
+	option = {
+		name = pw_wonder.1207.c
+		custom_tooltip = pw_wonder.1207.c.tooltip
+		trigger = {
+			owner = { can_generate_trade_value = yes }
+		}
+		hidden_effect = {
+			set_planet_flag = pw_guardian_angel_attraction
 		}
 	}
 }

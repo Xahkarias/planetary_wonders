@@ -11,6 +11,7 @@ on_tech_increased = {
 	events = {
 		pw_wonder.1002 #Enigma Engine
 		pw_wonder.1102 #Solipsist Debate Hall
+		pw_wonder.1004 #Check for Enigma Tech
 	}
 }
 

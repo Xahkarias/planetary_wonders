@@ -93,6 +93,20 @@ country_event = {
 		is_hive_empire = yes
 	}
 
+	immediate = {
+		#Have a random event after a debate happens.
+		random_list = {
+			10 ={
+				#Fallen Empire gives gift.
+				country_event = { id = pw_wonder.1104 days = 30 random = 30}
+			}
+			10 ={
+				#The hive fights.
+				country_event = { id = pw_wonder.1106 days = 30 random = 30}
+			}
+		}
+	}
+
 	#Love
 	option = {
 		name = pw_solipsist_debate.1.a

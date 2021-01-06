@@ -29,6 +29,11 @@ pw_decision_erebus_prospecting = {
 			modifier = pw_mod_erebus_prospecting
 			days = @pw_decision_duration
 		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.503
+			}
+		}
 	}
 
 	ai_weight = {
@@ -71,6 +76,11 @@ pw_decision_helios_seeding = {
 			modifier = pw_mod_helios_seeding
 			days = @pw_decision_duration
 		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.603
+			}
+		}
 	}
 
 	ai_weight = {
@@ -112,6 +122,11 @@ pw_decision_demetrius_harvesting = {
 		add_modifier = {
 			modifier = pw_mod_demetrius_harvesting
 			days = @pw_decision_duration
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.703
+			}
 		}
 	}
 

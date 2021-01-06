@@ -294,6 +294,7 @@ pw_building_secluded_sector = {
 	base_cap_amount = 1
 	can_be_ruined = no
 	icon = pw_building_domed_city
+	show_tech_unlock_if = { owner = { has_ascension_perk = ap_voidborn }}
 
 	category = research
 
@@ -575,6 +576,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	base_cap_amount = 1
 	can_be_ruined = no
 	icon = pw_building_abyssal_crater_test_site
+	show_tech_unlock_if = { owner = { has_ascension_perk = ap_voidborn }}
 
 	category = research
 

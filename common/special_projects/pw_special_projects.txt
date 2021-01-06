@@ -1,0 +1,43 @@
+
+#Tow an asteroid for the Galactic Model.
+special_project = {
+	key = PW_TOW_ASTEROID_PROJECT
+	cost = 0
+	days_to_research = @pw_2years
+	tech_department = engineering_technology
+	picture = GFX_evt_asteroid_field
+	location = yes
+
+	event_scope = planet_event
+
+	requirements = {
+		shipclass_constructor = 1
+	}
+
+	on_success = {
+		planet_event = {
+			id = pw_wonder.804
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Fix drones for the Enigma Engine
+special_project = {
+	key = PW_FIX_ENIGMA_DRONES
+	cost = 10000
+	tech_department = physics_technology
+	picture = GFX_evt_asteroid_field
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_wonder.1013 }
+	}
+
+	on_fail = {
+	}
+}

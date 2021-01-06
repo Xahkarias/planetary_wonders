@@ -88,3 +88,24 @@ pw_sentient_worker_job_check_trigger = {
 		}
 	}
 }
+
+pw_last_increased_tech_was_enigma_tech = {
+	OR = {
+		last_increased_tech = pw_enigma_tech_micro_graviton_equipment
+		last_increased_tech = pw_enigma_tech_absolute_processor_cooling
+		last_increased_tech = pw_enigma_tech_non_euclidean_building
+		last_increased_tech = pw_enigma_tech_quantum_movement
+		last_increased_tech = pw_enigma_tech_harmonic_aligning_magnets
+		last_increased_tech = pw_enigma_tech_virtual_conscience
+		last_increased_tech = pw_enigma_tech_hypersonic_frequency_tuning
+		last_increased_tech = pw_enigma_tech_hyper_stabilization_fields
+		last_increased_tech = pw_enigma_tech_breach_of_thermodynamic_law
+		last_increased_tech = pw_enigma_tech_atomic_transistor_substrate
+		last_increased_tech = pw_enigma_tech_reflex_arc_emulators
+		last_increased_tech = pw_enigma_tech_atomic_clock_synchronization
+		last_increased_tech = pw_enigma_tech_gas_molecular_sculpting
+		last_increased_tech = pw_enigma_tech_exoteric_predictions_system
+		last_increased_tech = pw_enigma_tech_bio_frequency_emitters
+		last_increased_tech = pw_enigma_tech_exoteric_fleet_pattern
+	}
+}

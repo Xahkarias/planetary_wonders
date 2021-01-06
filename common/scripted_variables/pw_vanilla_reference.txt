@@ -14,6 +14,6 @@
 #Days to Years Conversion:
 @pw_10years = 3600
 @pw_5years  = 1800
-@pw_2year = 720
+@pw_2years = 720
 @pw_1year = 360
 @pw_halfYear = 180

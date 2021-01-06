@@ -650,6 +650,40 @@ pw_building_guardian_angel = {
 		}
 	}
 
+	#Choice based modifiers:
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_planet_flag = pw_guardian_angel_train
+			owner = { is_at_war = no }
+		}
+		modifier = {
+			army_starting_experience_add = 200
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_planet_flag = pw_guardian_angel_police_operations
+			owner = { is_at_war = no }
+		}
+		modifier = {
+			planet_crime_mult = -0.25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_planet_flag = pw_guardian_angel_attraction
+			owner = { is_at_war = no }
+		}
+		modifier = {
+			trade_value_add = 15
+		}
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {

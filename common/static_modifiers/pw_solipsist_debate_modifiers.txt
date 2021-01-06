@@ -126,3 +126,17 @@ pw_debate_mod_exoteric = {
 	country_war_exhaustion_mult = -0.2
 	country_claim_influence_cost_mult = -0.2
 }
+
+pw_debate_mod_syncretic = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_crime_mult.dds"
+	icon_frame = @pw_icon_frame_green
+
+	empire_size_pops_mult = 0.2
+}
+
+pw_debate_mod_deviancy = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_crime_mult.dds"
+	icon_frame = @pw_icon_frame_green
+
+	planet_crime_add = 25
+}
