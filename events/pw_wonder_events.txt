@@ -103,12 +103,12 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		add_modifier = {
 			modifier = pw_mod_space_elevator_xenophile
-			days = 1800 # 5 years
+			days = @pw_5years
 		}
 	}
 
@@ -123,12 +123,12 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		add_modifier = {
 			modifier = pw_mod_space_elevator_xenophobe
-			days = 1800 # 5 years
+			days = @pw_5years
 		}
 	}
 }
@@ -154,7 +154,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -170,7 +170,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -379,7 +379,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		# trigger = {
@@ -398,7 +398,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		# trigger = {
@@ -437,7 +437,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -453,7 +453,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -548,7 +548,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		# trigger = {
@@ -567,7 +567,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		# trigger = {
@@ -617,7 +617,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -633,7 +633,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -727,7 +727,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		# trigger = {
@@ -746,7 +746,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		# trigger = {
@@ -796,7 +796,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -812,7 +812,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -879,7 +879,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -915,7 +915,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1203,7 +1203,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1239,7 +1239,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1486,7 +1486,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1522,7 +1522,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1880,7 +1880,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1896,7 +1896,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 		trigger = {
@@ -1935,7 +1935,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -1951,7 +1951,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2091,7 +2091,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2107,7 +2107,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2297,7 +2297,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2313,7 +2313,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2533,6 +2533,7 @@ planet_event = {
 		name = pw_wonder.1010.a
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_energy
+			days = -1
 		}
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1011 days = 180 random = 30 }
@@ -2557,6 +2558,7 @@ planet_event = {
 		name = pw_wonder.1011.a
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_housing
+			days = -1
 		}
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1012 days = 180 random = 30 }
@@ -2581,6 +2583,7 @@ planet_event = {
 		name = pw_wonder.1012.a
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_art
+			days = -1
 		}
 		enable_special_project = {
 			name = PW_FIX_ENIGMA_DRONES
@@ -2592,6 +2595,7 @@ planet_event = {
 		name = pw_wonder.1012.b
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_art
+			days = -1
 		}
 		owner = { add_100_unity_per_year_passed = yes }
 	}
@@ -2675,7 +2679,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2908,7 +2912,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}
@@ -2944,7 +2948,7 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
-				days = 1800 # 5 years
+				days = @pw_5years
 			}
 		}
 	}

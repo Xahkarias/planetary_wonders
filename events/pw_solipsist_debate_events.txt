@@ -235,6 +235,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_0
+			days = -1
 		}
 
 		hidden_effect = {
@@ -276,6 +277,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_1
+			days = -1
 		}
 
 		trigger = {
@@ -299,6 +301,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_2
+			days = -1
 		}
 
 		trigger = {
@@ -322,6 +325,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_3
+			days = -1
 		}
 
 		trigger = {
@@ -345,6 +349,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_4
+			days = -1
 		}
 
 		hidden_effect = {
@@ -362,6 +367,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_love_5
+			days = -1
 		}
 
 		trigger = {
@@ -580,6 +586,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_determinism
+			days = -1
 		}
 
 		hidden_effect = {
@@ -597,6 +604,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_determinism
+			days = -1
 		}
 
 		hidden_effect = {
@@ -614,6 +622,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_determinism
+			days = -1
 		}
 
 		hidden_effect = {
@@ -763,6 +772,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_god
+			days = -1
 		}
 
 		hidden_effect = {
@@ -781,6 +791,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_chance
+			days = -1
 		}
 
 		hidden_effect = {
@@ -814,6 +825,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_auth
+			days = -1
 		}
 
 		hidden_effect = {
@@ -832,6 +844,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_free_eq
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1025,6 +1038,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_chess_aggressive
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1053,6 +1067,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_defensive
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1081,6 +1096,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_exoteric
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1166,6 +1182,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_chess_stubborn
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1201,6 +1218,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_flexible
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1236,6 +1254,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_exoteric
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1321,6 +1340,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_chess_stubborn
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1355,6 +1375,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_flexible
+			days = -1
 		}
 
 		hidden_effect = {
@@ -1390,6 +1411,7 @@ country_event = {
 
 		add_modifier = {
 			modifier = pw_debate_mod_exoteric
+			days = -1
 		}
 
 		hidden_effect = {
