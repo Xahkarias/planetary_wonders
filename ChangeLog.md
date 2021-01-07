@@ -7,6 +7,7 @@ Changes:
 * Changed: Particle Supercollider, Domed City (Secluded Sector), Abyssal Crater test Site (Planetary Test Site), Galactic Model and Panopticon allowed in habitats with the Voidborn Ascension perk.
 * Changed: Space Elevator is allowed in Resort Colonies and produces Tourist jobs.
 * Added: new random events after each wonder is completed.
+* Added: Better AI Weight to wonder construction.
 
 # Version 1.1.1 (for Stellaris 2.8.1)
 Fixes:

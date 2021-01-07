@@ -14,10 +14,7 @@ pw_building_space_elevator = {
 	}
 
 	destroy_trigger = {
-		OR = {
-			has_modifier = slave_colony
-			has_modifier = resort_colony
-		}
+		has_modifier = slave_colony
 	}
 
 	allow = {
@@ -167,6 +164,77 @@ pw_building_space_elevator = {
 	on_built = {
 		planet_event = { id = pw_wonder.100 }
 	}
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			building_relaxed_basic_income_check = no
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_space_elevator }
+			NOT = { has_building_construction = pw_building_space_elevator }
+		}
+		modifier = {
+			factor = 2
+			has_building = building_commercial_zone
+		}
+		modifier = {
+			factor = 2.5
+			has_building = building_commercial_megaplex
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_building = building_holo_theatres
+				has_building = building_temple
+				has_building = building_temple_of_prosperity
+				has_building = building_sacrificial_temple_1
+			}
+		}
+		modifier = {
+			factor = 1.75
+			OR = {
+				has_building = building_hyper_entertainment_forum
+				has_building = building_holotemple
+				has_building = building_sacrificial_temple_2
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_building = building_sacred_nexus
+				has_building = building_sacrificial_temple_3
+			}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		modifier = {
+			factor = 2.5
+			num_pops > 60
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
+	}
 }
 
 pw_building_galactic_model = {
@@ -313,11 +381,46 @@ pw_building_galactic_model = {
 		text = job_coordinator_effect_desc
 	}
 
+	on_built = {
+		planet_event = { id = pw_wonder.800 }
+	}
+
 	ai_weight = {
-		weight = 10
+		weight = 40
 		modifier = {
 			factor = 0
 			buildings_has_crystals = no
+			building_relaxed_basic_income_check = no
+			owner = {
+				OR = {
+					AND = {
+						is_regular_empire = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value > 5
+						}
+					}
+					AND = {
+						is_regular_empire = no
+						has_monthly_income = {
+							resource = minerals
+							value > 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_galactic_model }
+			NOT = { has_building_construction = pw_building_galactic_model }
 		}
 		modifier = {
 			factor = 2
@@ -339,10 +442,22 @@ pw_building_galactic_model = {
 			factor = 2
 			owner = { has_valid_civic = civic_byzantine_bureaucracy }
 		}
-	}
-
-	on_built = {
-		planet_event = { id = pw_wonder.800 }
+		modifier = {
+			factor = 1.5
+			has_building = building_bureaucratic_1
+		}
+		modifier = {
+			factor = 2
+			has_building = building_bureaucratic_2
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
 	}
 }
 
@@ -523,6 +638,77 @@ pw_building_panopticon = {
 
 	on_built = {
 		planet_event = { id = pw_wonder.900 }
+	}
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			building_relaxed_basic_income_check = no
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_panopticon }
+			NOT = { has_building_construction = pw_building_panopticon }
+		}
+		modifier = {
+			factor = 2
+			planet_crime > 0
+		}
+		modifier = {
+			factor = 2
+			planet_crime > 20
+		}
+		modifier = {
+			factor = 2
+			planet_crime > 40
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				any_owned_planet = {
+					planet_crime > 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				any_owned_planet = {
+					planet_crime > 20
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				any_owned_planet = {
+					planet_crime > 30
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = {
+				has_valid_civic = civic_police_state
+			}
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
 	}
 }
 
@@ -768,13 +954,23 @@ pw_building_guardian_angel = {
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 20
 		modifier = {
-			weight = 5
-			free_jobs < 1
-			free_building_slots > 1
-			free_district_slots > 1
-			buildings_has_motes = yes
+			factor = 0
+			buildings_has_motes = no
+			building_relaxed_basic_income_check = no
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_guardian_angel }
+			NOT = { has_building_construction = pw_building_guardian_angel }
 		}
 		modifier = {
 			factor = 2
@@ -782,10 +978,29 @@ pw_building_guardian_angel = {
 		}
 		modifier = {
 			factor = 2
-			planet_crime > 10
+			owner = { used_naval_capacity_percent > 0.9	}
 		}
 		modifier = {
 			factor = 2
+			planet_crime > 10
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				owner = { is_militarist = yes }
+				owner = { is_gestalt = yes }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				owner = { has_valid_civic = civic_machine_terminator }
+				owner = { has_valid_civic = civic_hive_devouring_swarm }
+				owner = { has_valid_civic = civic_fanatic_purifiers }
+			}
+		}
+		modifier = {
+			factor = 3
 			owner = { is_at_war = yes }
 		}
 	}

@@ -104,4 +104,29 @@ pw_building_enigma_engine = {
 	on_built = {
 		planet_event = { id = pw_wonder.1000 }
 	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 15
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+		modifier = {
+			factor = 2
+			num_pops > 50
+		}
+		modifier = {
+			factor = 2
+			num_pops > 100
+		}
+	}
 }

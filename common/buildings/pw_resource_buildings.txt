@@ -150,6 +150,60 @@ pw_building_erebus_project = {
 	on_built = {
 		planet_event = { id = pw_wonder.500 }
 	}
+
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0
+			building_relaxed_basic_income_check = no
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_erebus_project }
+			NOT = { has_building_construction = pw_building_erebus_project }
+		}
+		modifier = {
+			factor = 1.5
+			exists = owner
+			OR = {
+				owner = { is_machine_empire = yes }
+				owner = { is_lithoid_empire = yes }
+			}
+		}
+		modifier = {
+			factor = 4
+			has_designation = col_mining
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_designation = col_rural
+				has_designation = col_rural_gestalt
+			}
+		}
+		modifier = {
+			factor = 2
+			districts_good_minerals = yes
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 100
+				}
+			}
+		}
+	}
 }
 
 pw_building_helios_tower = {
@@ -304,6 +358,55 @@ pw_building_helios_tower = {
 	on_built = {
 		planet_event = { id = pw_wonder.600 }
 	}
+
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_helios_tower }
+			NOT = { has_building_construction = pw_building_helios_tower }
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			OR = {
+				owner = { is_machine_empire = yes }
+			}
+		}
+		modifier = {
+			factor = 4
+			has_designation = col_generator
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_designation = col_rural
+				has_designation = col_rural_gestalt
+			}
+		}
+		modifier = {
+			factor = 2
+			districts_good_energy = yes
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 100
+				}
+			}
+		}
+	}
 }
 
 pw_building_demetrius_fields = {
@@ -457,5 +560,54 @@ pw_building_demetrius_fields = {
 
 	on_built = {
 		planet_event = { id = pw_wonder.700 }
+	}
+
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_demetrius_fields }
+			NOT = { has_building_construction = pw_building_demetrius_fields }
+		}
+		modifier = {
+			factor = 0.1
+			exists = owner
+			OR = {
+				owner = { is_machine_empire = yes }
+			}
+		}
+		modifier = {
+			factor = 4
+			has_designation = col_farming
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_designation = col_rural
+				has_designation = col_rural_gestalt
+			}
+		}
+		modifier = {
+			factor = 2
+			districts_good_food = yes
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 100
+				}
+			}
+		}
 	}
 }

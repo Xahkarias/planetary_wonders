@@ -130,6 +130,67 @@ pw_building_particle_supercollider = {
 	on_built = {
 		planet_event = { id = pw_wonder.200 }
 	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			buildings_has_crystals = no
+			building_relaxed_basic_income_check = no
+			owner = {
+				OR = {
+					AND = {
+						country_uses_consumer_goods = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 5
+						}
+					}
+					AND = {
+						country_uses_consumer_goods = no
+						has_monthly_income = {
+							resource = minerals
+							value < 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_particle_supercollider }
+			NOT = { has_building_construction = pw_building_particle_supercollider }
+		}
+		modifier = {
+			factor = 2
+			has_building = building_research_lab_1
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+				has_district = district_hab_science
+				has_district = district_rw_science
+				jobs_any_research = yes
+			}
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
+	}
 }
 
 pw_building_domed_city = {
@@ -286,6 +347,67 @@ pw_building_domed_city = {
 	on_built = {
 		planet_event = { id = pw_wonder.300 }
 	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			buildings_has_exotic_gases = no
+			building_relaxed_basic_income_check = no
+			owner = {
+				OR = {
+					AND = {
+						country_uses_consumer_goods = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 5
+						}
+					}
+					AND = {
+						country_uses_consumer_goods = no
+						has_monthly_income = {
+							resource = minerals
+							value < 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_domed_city }
+			NOT = { has_building_construction = pw_building_domed_city }
+		}
+		modifier = {
+			factor = 2
+			has_building = building_research_lab_1
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+				has_district = district_hab_science
+				has_district = district_rw_science
+				jobs_any_research = yes
+			}
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
+	}
 }
 
 pw_building_secluded_sector = {
@@ -436,6 +558,67 @@ pw_building_secluded_sector = {
 	on_built = {
 		planet_event = { id = pw_wonder.300 }
 	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			buildings_has_exotic_gases = no
+			building_relaxed_basic_income_check = no
+			owner = {
+				OR = {
+					AND = {
+						country_uses_consumer_goods = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 5
+						}
+					}
+					AND = {
+						country_uses_consumer_goods = no
+						has_monthly_income = {
+							resource = minerals
+							value < 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_secluded_sector }
+			NOT = { has_building_construction = pw_building_secluded_sector }
+		}
+		modifier = {
+			factor = 2
+			has_building = building_research_lab_1
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+				has_district = district_hab_science
+				has_district = district_rw_science
+				jobs_any_research = yes
+			}
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
+	}
 }
 
 pw_building_abyssal_crater_test_site = {
@@ -568,6 +751,67 @@ pw_building_abyssal_crater_test_site = {
 	on_built = {
 		planet_event = { id = pw_wonder.400 }
 	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			buildings_has_motes = no
+			building_relaxed_basic_income_check = no
+			owner = {
+				OR = {
+					AND = {
+						country_uses_consumer_goods = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 5
+						}
+					}
+					AND = {
+						country_uses_consumer_goods = no
+						has_monthly_income = {
+							resource = minerals
+							value < 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_abyssal_crater_test_site }
+			NOT = { has_building_construction = pw_building_abyssal_crater_test_site }
+		}
+		modifier = {
+			factor = 2
+			has_building = building_research_lab_1
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+				has_district = district_hab_science
+				has_district = district_rw_science
+				jobs_any_research = yes
+			}
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
+	}
 }
 
 pw_building_abyssal_crater_test_site_habitat = {
@@ -693,5 +937,66 @@ pw_building_abyssal_crater_test_site_habitat = {
 
 	on_built = {
 		planet_event = { id = pw_wonder.400 }
+	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			buildings_has_motes = no
+			building_relaxed_basic_income_check = no
+			owner = {
+				OR = {
+					AND = {
+						country_uses_consumer_goods = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 5
+						}
+					}
+					AND = {
+						country_uses_consumer_goods = no
+						has_monthly_income = {
+							resource = minerals
+							value < 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_building = pw_building_abyssal_crater_test_site_habitat }
+			NOT = { has_building_construction = pw_building_abyssal_crater_test_site_habitat }
+		}
+		modifier = {
+			factor = 2
+			has_building = building_research_lab_1
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+				has_district = district_hab_science
+				has_district = district_rw_science
+				jobs_any_research = yes
+			}
+		}
+		modifier = {
+			factor = 0.75
+			planet_size < 15
+		}
+		modifier = {
+			factor = 1.5
+			planet_size > 20
+		}
 	}
 }

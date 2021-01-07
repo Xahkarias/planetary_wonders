@@ -193,4 +193,24 @@ pw_building_solipsist_debate_hall = {
 	on_built = {
 		planet_event = { id = pw_wonder.1100 }
 	}
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			buildings_has_exotic_gases = no
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+		modifier = {
+			factor = 2
+			num_pops > 50
+		}
+		modifier = {
+			factor = 2
+			num_pops > 100
+		}
+	}
 }
