@@ -46,6 +46,10 @@
     pw_debate_mod_deviancy: "$pw_debate$ Deviant Thoughts"
     pw_debate_mod_deviancy_desc: "The Hive is trying to ignore arguing drones, which lefts them in deviancy."
 
+    #Astronomical Model Bureau mods:
+    pw_mod_galactic_model_anomaly_sensor: "Galactic Map"
+    pw_mod_galactic_model_anomaly_sensor_desc: "We have found a sort of Galactic Map, that helps ous scientist to survey new celestial bodies and detect hyperlanes"
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"

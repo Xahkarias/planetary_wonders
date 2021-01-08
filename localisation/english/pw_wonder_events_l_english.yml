@@ -178,7 +178,7 @@
     pw_wonder.802.b: "We and the galaxy are One now."
     #Asteroid in the wrong orbit
     pw_wonder.803.name: "Not Quite The Universe"
-    pw_wonder.803.desc: "After many successful analyses in the Astronomical Model Bureau by the Histogram Intergalactic Navigation Node, it's main analytical tool, it was verified that one specific planetary body is not actually following it's predicted path in the model, and in a span of 25 years will deviate from the model by 1 Kilometer.\n\nWhen faced with this disparity, we have two options, either we recognize our failings, admit defeat and adjust our model, or we can adjust the galaxy and put that asteroid in the orbit it should have."
+    pw_wonder.803.desc: "After many successful analyses in the Astronomical Model Bureau by the Heuristic Intergalactic Navigation Node, it's main analytical tool, it was verified that one specific planetary body is not actually following it's predicted path in the model, and in a span of 25 years will deviate from the model by 1 Kilometer.\n\nWhen faced with this disparity, we have two options, either we recognize our failings, admit defeat and adjust our model, or we can adjust the galaxy and put that asteroid in the orbit it should have."
     pw_wonder.803.a: "Tow the asteroid into its Correct orbit."
     pw_wonder.803.b: "Sometimes we make mistakes, and need to correct them."
     #Asteroid in the wrong orbit (Success)

@@ -80,3 +80,11 @@ pw_mod_enigma_engine_art = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_museum.dds"
 	icon_frame = 3
 }
+
+#Country modifiers:
+pw_mod_galactic_model_anomaly_sensor = {
+	ship_hyperlane_range_add = 5
+	science_ship_survey_speed = 0.25
+	icon = "gfx/interface/icons/modifiers/mod_planet_sensor_range_mult.dds"
+	icon_frame = 3
+}

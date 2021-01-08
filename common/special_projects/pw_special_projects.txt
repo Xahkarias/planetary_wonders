@@ -41,3 +41,99 @@ special_project = {
 	on_fail = {
 	}
 }
+
+#Anomaly: Investigate Enigma Engine Debris
+special_project = {
+	key = PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL
+	cost = 0
+	days_to_research = @pw_1year
+	tech_department = physics_technology
+	picture = GFX_evt_space_debris
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_anomaly.101 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Anomaly: Delve into the secrets of the Enigma Engine.
+special_project = {
+	key = PW_DISCOVER_ENIGMA_ENGINE_SECRETS
+	cost = 0
+	days_to_research = @pw_2years
+	tech_department = physics_technology
+	picture = GFX_evt_relic_shipyard
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_anomaly.102 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Anomaly: Decode Solipsist Debate Hall device
+special_project = {
+	key = PW_DECODE_SDH_DEVICE
+	cost = 0
+	days_to_research = @pw_1year
+	tech_department = society_technology
+	picture = GFX_evt_hive_mind
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_anomaly.111 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Anomaly: Discover the secrets of the Solipsist Debate Hall (Gestalt)
+special_project = {
+	key = PW_DISCOVER_SDH_SECRETS
+	cost = 0
+	days_to_research = @pw_2years
+	tech_department = society_technology
+	picture = GFX_evt_hive_mind
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_anomaly.112 }
+	}
+
+	on_fail = {
+	}
+}
