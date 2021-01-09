@@ -72,7 +72,7 @@ special_project = {
 	cost = 0
 	days_to_research = @pw_2years
 	tech_department = physics_technology
-	picture = GFX_evt_relic_shipyard
+	picture = GFX_evt_enigma_engine
 	location = yes
 
 	event_scope = ship_event

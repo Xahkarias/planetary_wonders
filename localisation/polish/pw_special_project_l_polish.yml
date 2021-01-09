@@ -1,0 +1,15 @@
+﻿l_polish:
+
+    
+    PW_TOW_ASTEROID_PROJECT: "Tow Asteroid"
+    PW_TOW_ASTEROID_PROJECT_DESC: "The orbit of this small asteroid is in discordance with the predictions of our Astronomical Model Bureau, and should be corrected by towing the asteroid into the correct path."
+    PW_FIX_ENIGMA_DRONES: "Counter Enigma Effects"
+    PW_FIX_ENIGMA_DRONES_DESC: "The effects of the Enigma Engine have gone too far to be any moe tolerated. We have organized a project to reverse its signals and transmit it in the entire planet, as to negate the negative effects of the Engine in our drones."
+    PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL: "Investigate the Enigmatic Signal"
+    PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL_DESC: "The erratic machine found in the asteroid field emits a cyphered signal that could contain information about it's construction."
+    PW_DISCOVER_ENIGMA_ENGINE_SECRETS: "Discover the secrets of the Enigma Engine"
+    PW_DISCOVER_ENIGMA_ENGINE_SECRETS_DESC: "The signal the Enigma Engine projects reverberates into our Machine Mind and calls out to us, there is something here that we need to pursue."
+    PW_DECODE_SDH_DEVICE: "Decode Debate Hall Device"
+    PW_DECODE_SDH_DEVICE_DESC: "The strange device found in the ruins of the Debate Hall may contain the keys for understanding the society that build it, and may have insights for our own society."
+    PW_DISCOVER_SDH_SECRETS: "Discover the secrets of the Solipsist Debate Hall"
+    PW_DISCOVER_SDH_SECRETS_DESC: "The contents found on the alien device in this ruined Solipsist Debate Hall piqued the interest of the Hive Mind. Perhaps we can study this ancient Hall and attempt to construct such a wonder for our own metaphysical needs."

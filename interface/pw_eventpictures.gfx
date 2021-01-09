@@ -1,0 +1,44 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_abyssal_crater_test_site"
+		texturefile = "gfx/event_pictures/abyssal_crater_test_site.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_demetrius_cornucopia"
+		texturefile = "gfx/event_pictures/demetrius_cornucopia.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_domed_city"
+		texturefile = "gfx/event_pictures/domed_city.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_enigma_engine"
+		texturefile = "gfx/event_pictures/enigma_engine.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_galactic_model"
+		texturefile = "gfx/event_pictures/galactic_model.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_helios_tower"
+		texturefile = "gfx/event_pictures/helios_tower.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_space_elevator"
+		texturefile = "gfx/event_pictures/space_elevator.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

@@ -8,6 +8,7 @@ Changes:
 * Changed: Space Elevator is allowed in Resort Colonies and produces Tourist jobs.
 * Added: new random events after each wonder is completed.
 * Added: Better AI Weight to wonder construction.
+* Added: New event pictures for Abyssal Test Crater, Demetrius Cornucopia, Domed City, Enigma Engine, Astronomical Model Bureau, Helios Tower and Space Elevator.
 
 # Version 1.1.1 (for Stellaris 2.8.1)
 Fixes:
