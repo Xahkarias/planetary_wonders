@@ -129,6 +129,10 @@ pw_building_solipsist_debate_hall = {
 	}
 
 	triggered_desc = {
+		text = pw_empire_unique_lb
+	}
+
+	triggered_desc = {
 		text = pw_solipsist_debate_hall_tooltip
 	}
 

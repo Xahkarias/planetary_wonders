@@ -224,7 +224,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		owner = { has_country_flag = pw_wonder_event_104 }
+		NOT = { owner = { has_country_flag = pw_wonder_event_104 }}
 		has_building = pw_building_space_elevator
 	}
 	immediate = {
@@ -259,7 +259,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		owner = { has_country_flag = pw_wonder_event_105 }
+		NOT = { owner = { has_country_flag = pw_wonder_event_105 }}
 		has_building = pw_building_space_elevator
 	}
 	immediate = {
@@ -290,7 +290,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		owner = { has_country_flag = pw_wonder_event_106 }
+		NOT = { owner = { has_country_flag = pw_wonder_event_106 }}
 		has_building = pw_building_space_elevator
 	}
 	immediate = {
@@ -302,20 +302,28 @@ planet_event = {
 			species = owner
 		}
 	}
-	option = {
-		name = pw_wonder.106.b
-		create_fleet = {
-			name = "Stowaways"
-			effect = {
-				set_owner = owner
-				set_location = THIS
-				create_ship = {
-					name = "Stowaways"
-					design = shipclass_colonizer
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = pw_wonder.106.b
+	# 	create_fleet = {
+	# 		name = "Stowaways"
+	# 		effect = {
+	# 			set_owner = owner
+	# 			set_location = {
+	# 				target = THIS
+	# 				distance = 5
+	# 				angle = random
+	# 			}
+	# 			create_ship = {
+	# 				name = random
+	# 				design = colonizer
+	# 				#random_existing_design = colonizer
+	# 				colonizer_species = owner_main_species
+	# 				prefix = yes
+	# 				upgradable = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 	option = {
 		name = pw_wonder.106.c
 		owner = {
@@ -382,9 +390,10 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
-		# trigger = {
-			# owner = { is_spiritualist = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_particle_supercollider_materialist
+			days = @pw_5years
+		}
 	}
 
 	option = {
@@ -401,9 +410,10 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
-		# trigger = {
-			# owner = { is_materialist = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_particle_supercollider_spiritualist
+			days = @pw_5years
+		}
 	}
 
 	trigger = {
@@ -551,9 +561,10 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
-		# trigger = {
-			# owner = { is_authoritarian = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_domed_city_egalitarian
+			days = @pw_5years
+		}
 	}
 
 	option = {
@@ -570,9 +581,10 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
-		# trigger = {
-			# owner = { is_egalitarian = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_domed_city_authoritarian
+			days = @pw_5years
+		}
 	}
 
 	trigger = {
@@ -730,9 +742,10 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
-		# trigger = {
-			# owner = { is_militarist = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_abyssal_test_crater_pacifist
+			days = @pw_5years
+		}
 	}
 
 	option = {
@@ -749,9 +762,10 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
-		# trigger = {
-			# owner = { is_pacifist = no }
-		# }
+		add_modifier = {
+			modifier = pw_mod_abyssal_test_crater_militarist
+			days = @pw_5years
+		}
 	}
 
 	trigger = {
@@ -1135,7 +1149,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_helios_tower
+		has_building = pw_building_erebus_project
 	}
 	immediate = {
 		set_planet_flag = pw_aggressive_prospecting_event_triggered
@@ -1470,7 +1484,7 @@ planet_event = {
 	id = pw_wonder.701
 	title = pw_wonder.701.name
 	desc = pw_wonder.701.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
@@ -1506,7 +1520,7 @@ planet_event = {
 	id = pw_wonder.702
 	title = pw_wonder.702.name
 	desc = pw_wonder.702.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
@@ -1551,9 +1565,7 @@ planet_event = {
 		set_planet_flag = pw_predatory_harvesting_event_triggered
 		if = {
 			limit = { #Hive planets can't have Natural Beauty mod.
-				OR = {
-					is_planet_class = pc_hive
-				}
+				is_planet_class = pc_hive
 			}
 			random_list = {
 				10 = {
@@ -1635,7 +1647,7 @@ planet_event = {
 	id = pw_wonder.704
 	title = pw_wonder.704.name
 	desc = pw_wonder.704.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
 	location = THIS
@@ -1673,7 +1685,7 @@ planet_event = {
 	id = pw_wonder.705
 	title = pw_wonder.705.name
 	desc = pw_wonder.705.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
 	location = THIS
@@ -1684,12 +1696,6 @@ planet_event = {
 	}
 	option = {
 		name = pw_wonder.705.a
-		add_modifier = {
-			modifier = bleak_planet
-		}
-	}
-	option = {
-		name = pw_wonder.705.b
 		allow = {
 			owner = {
 				resource_stockpile_compare = {
@@ -1711,6 +1717,12 @@ planet_event = {
 			}
 		}
 	}
+	option = {
+		name = pw_wonder.705.b
+		add_modifier = {
+			modifier = bleak_planet
+		}
+	}
 }
 
 #Predatory Harvesting adds Hostile Fauna
@@ -1718,7 +1730,7 @@ planet_event = {
 	id = pw_wonder.706
 	title = pw_wonder.706.name
 	desc = pw_wonder.706.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
 	location = THIS
@@ -1756,7 +1768,7 @@ planet_event = {
 	id = pw_wonder.707
 	title = pw_wonder.707.name
 	desc = pw_wonder.707.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
 	location = THIS
@@ -1794,7 +1806,7 @@ planet_event = {
 	id = pw_wonder.708
 	title = pw_wonder.708.name
 	desc = pw_wonder.708.desc
-	picture = GFX_evt_domed_city
+	picture = GFX_evt_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
 	location = THIS
@@ -2009,7 +2021,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.803.b
 		allow = {
-			has_resource = { type = influence amount > 100 }
+			owner = { has_resource = { type = influence amount > 100 }}
 		}
 		owner = {
 			add_resource = {
@@ -2019,7 +2031,8 @@ planet_event = {
 	}
 }
 
-planet_event = {
+#Tow asteroid (success)
+country_event = {
 	id = pw_wonder.804
 	title = pw_wonder.804.name
 	desc = pw_wonder.804.desc
@@ -2030,11 +2043,9 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.804.a
-		owner = {
-			add_resource = {
-				unity = 1000
-				engineering_research = 1000
-			}
+		add_resource = {
+			unity = 1000
+			engineering_research = 1000
 		}
 	}
 }
@@ -2272,7 +2283,7 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1001 }
-		planet_event = { id = pw_wonder.1010 }
+		planet_event = { id = pw_wonder.1010 days = 60 random = 30 } #Event Chain
 	}
 }
 
@@ -2404,7 +2415,8 @@ country_event = {
 			has_building = pw_building_enigma_engine
 		}
 		any_country = {
-			is_valid_fallen_empire_for_task = yes
+			is_country_type = fallen_empire
+			is_at_war = no
 			has_authority = auth_machine_intelligence
 			has_communications = root
 			opinion = {
@@ -2417,7 +2429,8 @@ country_event = {
 	immediate = {
 		random_country = {
 			limit = {
-				is_valid_fallen_empire_for_task = yes
+				is_country_type = fallen_empire
+				is_at_war = no
 				has_authority = auth_machine_intelligence
 				has_communications = root
 				opinion = {
@@ -2601,6 +2614,7 @@ planet_event = {
 	}
 }
 
+#Enigma Engine resolution
 planet_event = {
 	id = pw_wonder.1013
 	title = pw_wonder.1013.name
@@ -2753,8 +2767,13 @@ country_event = {
 			has_building = pw_building_solipsist_debate_hall
 		}
 		any_country = {
-			is_valid_fallen_empire_for_task = yes
-			NOT = { has_authority = auth_machine_intelligence }
+			is_country_type = fallen_empire
+			is_at_war = no
+			OR = {
+				has_ethic = ethic_fanatic_spiritualist
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_fanatic_materialist
+			}
 			has_communications = root
 			opinion = {
 				who = THIS
@@ -2766,7 +2785,13 @@ country_event = {
 	immediate = {
 		random_country = {
 			limit = {
-				is_valid_fallen_empire_for_task = yes
+				is_country_type = fallen_empire
+				is_at_war = no
+				OR = {
+					has_ethic = ethic_fanatic_spiritualist
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_fanatic_materialist
+				}
 				NOT = { has_authority = auth_machine_intelligence }
 				has_communications = root
 				opinion = {
@@ -2854,7 +2879,12 @@ country_event = {
 	}
 	option = {
 		name = pw_wonder.1106.c
-		random_owned_pop = { kill_pop = yes }
+		random_owned_planet = {
+			limit = {
+				has_building = pw_building_solipsist_debate_hall
+			}
+			random_owned_pop = { kill_pop = yes }
+		}
 	}
 }
 
@@ -3054,6 +3084,7 @@ planet_event = {
 	}
 }
 
+#Guardian Angel peace choice
 planet_event = {
 	id = pw_wonder.1207
 	title = pw_wonder.1207.name

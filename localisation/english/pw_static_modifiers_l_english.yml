@@ -32,9 +32,28 @@
     pw_mod_space_elevator_105_c: "Space Elevator: Banned Substances"
     pw_mod_space_elevator_105_c_desc: "All illegal substances are banned and completely controlled. Crime rises, but stability is kept in check too."
 
+    #Particle Supercollider
+    pw_mod_particle_supercollider_materialist: "Particle Supercollider: Veil of theory"
+    pw_mod_particle_supercollider_materialist_desc: "The Particle Supercollider is for all to explore the mysteries of space-time."
+    pw_mod_particle_supercollider_spiritualist: "Particle Supercollider: Destiny Manifest"
+    pw_mod_particle_supercollider_spiritualist_desc: "The Particle Supercollider is for observation of the creation and holy purposes."
+
+    #Domed City
+    pw_mod_domed_city_egalitarian: "Domed City: Volunteers"
+    pw_mod_domed_city_egalitarian_desc: "The Domed City welcomes volunteers and will not house those who wish not to live there."
+    pw_mod_domed_city_authoritarian: "Domed City: Subjects"
+    pw_mod_domed_city_authoritarian_desc: "The Domed City will house whomever we throw inside, they should not know of their nature anyway."
+
+    #Abyssal Test Crater
+    pw_mod_abyssal_test_crater_pacifist: "Abyssal Test Crater: Defense in Mind"
+    pw_mod_abyssal_test_crater_pacifist_desc: "The Abyssal Test Crater tests many weapons of war, but they should only be employed in our defense from the dangers of the galaxy."
+    pw_mod_abyssal_test_crater_militarist: "Abyssal Test Crater: Offense in Mind"
+    pw_mod_abyssal_test_crater_militarist_desc: "The Abyssal Test Crater will supply all of the military technologies we need to campaign over the galaxy."
+
     # Enigma Engines Event mods:
     pw_mod_enigma_engine_energy: "Enigmatic Taste"
     pw_mod_enigma_engine_energy_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of taste, that makes them consume more power."
+    planet_pops_robotics_energy_upkeep_mult: "Robotic Pop Energy Upkeep"
     pw_mod_enigma_engine_housing: "Enigmatic Privacy"
     pw_mod_enigma_engine_housing_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of privacy, which increases the need for housing."
     pw_mod_enigma_engine_art: "Enigmatic Art"

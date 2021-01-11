@@ -5,7 +5,7 @@ ship_event = {
 	id = pw_anomaly.20
 	title = pw_anomaly.20.name
 	desc = pw_anomaly.20.desc
-	picture = GFX_evt_helios_tower
+	picture = GFX_evt_ancient_databank
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
 	location = THIS
@@ -35,7 +35,7 @@ ship_event = {
 	id = pw_anomaly.30
 	title = pw_anomaly.30.name
 	desc = pw_anomaly.30.desc
-	picture = GFX_evt_demetrius_cornucopia
+	picture = GFX_evt_domed_city
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
 	location = THIS
@@ -46,7 +46,7 @@ ship_event = {
 	#Science
 	option = {
 		name = pw_anomaly.30.a
-		FROM = { add_deposit = d_engineering_3 }
+		FROM = { add_deposit = d_society_3 }
 	}
 
 	#Trade Value
@@ -168,12 +168,12 @@ ship_event = {
 	picture = GFX_evt_enigma_engine
 	show_sound = event_alien_signal
 	is_triggered_only = yes
-	location = THIS
+	location = FROM
 
 	#Science
 	option = {
 		name = pw_anomaly.101.a
-		FROM = {
+		from.from.from = {
 			add_deposit = d_engineering_3
 			add_deposit = d_physics_3
 			add_deposit = d_society_3
@@ -182,14 +182,19 @@ ship_event = {
 	#Continue to building project.
 	option = {
 		name = pw_anomaly.101.b
-		FROM = {
-			add_deposit = d_engineering_2
-			add_deposit = d_physics_2
-			add_deposit = d_society_2
+		trigger = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		from.from.from = {
+			add_deposit = d_engineering_3
+			add_deposit = d_physics_3
+			add_deposit = d_society_3
 		}
 		enable_special_project = {
 			name = PW_DISCOVER_ENIGMA_ENGINE_SECRETS
-			location = FROM
+			location = FROMFROMFROM
 		}
 	}
 }
@@ -217,7 +222,7 @@ ship_event = {
 				add_research_option = pw_tech_metaphysical_singularity
 				add_tech_progress = {
 					tech = pw_tech_metaphysical_singularity
-					progress = 0.1
+					progress = 0.05
 				}
 			}
 			else = {
@@ -278,6 +283,11 @@ ship_event = {
 	#OK (regular empire)
 	option = {
 		name = pw_anomaly.111.a
+		trigger = {
+			owner = {
+				is_gestalt = no
+			}
+		}
 		owner = {
 			add_resource = {
 				society_research = 500
@@ -329,7 +339,12 @@ ship_event = {
 	}
 	#Hive Mind
 	option = {
-		name = pw_anomaly.111.b
+		name = pw_anomaly.111.c
+		trigger = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
 		owner = {
 			add_resource = {
 				society_research = 500
@@ -354,12 +369,17 @@ ship_event = {
 		}
 		enable_special_project = {
 			name = PW_DISCOVER_SDH_SECRETS
-			location = THIS
+			location = FROMFROMFROM
 		}
 	}
 	#Machine
 	option = {
-		name = pw_anomaly.111.b
+		name = pw_anomaly.111.d
+		trigger = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
 		owner = {
 			add_resource = {
 				society_research = 500
@@ -403,7 +423,7 @@ ship_event = {
 				add_research_option = pw_tech_metacognition_dialectics
 				add_tech_progress = {
 					tech = pw_tech_metacognition_dialectics
-					progress = 0.1
+					progress = 0.05
 				}
 			}
 			else = {

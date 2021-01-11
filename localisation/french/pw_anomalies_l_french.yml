@@ -1,6 +1,6 @@
 ﻿l_french:
 
-    
+
     pw_anomaly_ruined_particle_supercollider_category: "Collider in Ruins"
     pw_anomaly_ruined_particle_supercollider_category_desc: "A huge structure in a circular shape lies in ruins in the surface of this planet, it still has sings of energy flowing, but its purpose is a mystery."
     pw_anomaly.20.name: "Ancient Collider"
@@ -51,5 +51,5 @@
     pw_anomaly.111.c: "Stimulating. Delve further into the secrets of the building."
     pw_anomaly.111.d: "Information incorporated. The rest is spurious."
     pw_anomaly.112.name: "Solipsist Debate Hall"
-    pw_anomaly.112.desc: "Diligent inspection of each chamber of the Debate Hall shows that it was specifically created by and to some Hive Mind organism, of that no doubts are left. Although the original creator's form was much different form our own, much of the building could be rebuild with corrections, to adapt for our personal use. The ruins reveal that a lot was planned for this structure: egalitarian debate halls, confrontational battle chambers and expositional projectors. Of note, it was found a framework of some sort of super computer, with terminals scattered throughout the building; the function of such machine could not be determined, however, for most of it's processors and data banks were missing.\nThere is still a lot to progress to be made first, before putting the Mind to the goal of replicating this wonder in our terms, for our benefit, but this serves as a fine starting point for ideas."
+    pw_anomaly.112.desc: "Diligent inspection of each chamber of the Debate Hall shows that it was specifically created by and to some Hive Mind organism, of that no doubts are left. Although the original creator's form was much different form our own, much of the building could be rebuild with corrections, to adapt for our personal use. The ruins reveal that a lot was planned for this structure: egalitarian debate halls, confrontational battle chambers and expositional projectors. Of note, it was found a framework of some sort of super computer, with terminals scattered throughout the building; the function of such machine could not be determined, however, for most of it's processors and data banks were missing.\nThere is still a lot of progress to be made first, before putting the Mind to the goal of replicating this wonder in our terms, for our benefit, but this serves as a fine starting point for ideas."
     pw_anomaly.112.a: "We are still to leave our mark in the Universe."

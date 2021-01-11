@@ -207,6 +207,10 @@ country_event = {
 	option = {
 		name = pw_solipsist_debate.1.e
 		custom_tooltip = pw_solipsist_debate.1.e.tooltip
+
+		hidden_effect = {
+			remove_country_flag = pw_hive_is_debating
+		}
 	}
 }
 

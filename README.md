@@ -54,4 +54,4 @@ Demetrius Cornucopia event image - [sci-fi park](https://www.deviantart.com/zoow
 
 Abyssal Test Crater event image - [Khione](https://www.deviantart.com/justv23/art/Khione-852609139) by [JustV23](https://www.deviantart.com/justv23) is license under [CC BY-NC-ND 3.0](https://creativecommons.org/licenses/by-nc-nd/3.0/) cropped to fit Stellaris event frame.
 
-Enigma Engine event image - [Virtual Prison Cell](https://www.deviantart.com/spiraloso/art/Virtual-Prison-Cell-833156800) by [spiraloso](https://www.deviantart.com/spiraloso) is license under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) cropped to fit Stellaris event frame.
+Enigma Engine event image - [Virtual Prison Cell](https://www.deviantart.com/spiraloso/art/Virtual-Prison-Cell-833156800) by [spiraloso](https://www.deviantart.com/spiraloso) is license under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) which is an edit of [Alien Fungi Farming](https://www.deviantart.com/banner4/art/Alien-Fungi-Farming-755315936) by [banner4](https://www.deviantart.com/banner4), cropped to fit Stellaris event frame.

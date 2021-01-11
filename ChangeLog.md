@@ -1,14 +1,18 @@
 # Version 1.2.0 (for Stellaris 2.8.1)
-Changes:
-* Corrected "Exoteric" to "Esoteric" in localizations
-* Added tooltip for empire unique Wonders.
+Updates:
+* Changed Particle Supercollider, Domed City (Secluded Sector), Abyssal Crater test Site (Planetary Test Site), Galactic Model and Panopticon allowed in habitats with the Voidborn Ascension perk.
+* Changed Space Elevator is allowed in Resort Colonies and produces Tourist jobs.
 * Added new building, technology, jobs, decisions and ascension perk icons.
+* Added New event pictures for Abyssal Test Crater, Demetrius Cornucopia, Domed City, Enigma Engine, Astronomical Model Bureau, Helios Tower and Space Elevator.
+* Added New random events after each wonder is completed.
+* Added tooltip for empire unique Wonders.
+* Added Better AI Weight to wonder construction.
+* Added Global flag 'pw_active' on game start to signalize that this mod is active.
+
+Fixes:
+* Corrected "Exoteric" to "Esoteric" in localizations
 * Streamlined Solipsist Debate flag and edict.
-* Changed: Particle Supercollider, Domed City (Secluded Sector), Abyssal Crater test Site (Planetary Test Site), Galactic Model and Panopticon allowed in habitats with the Voidborn Ascension perk.
-* Changed: Space Elevator is allowed in Resort Colonies and produces Tourist jobs.
-* Added: new random events after each wonder is completed.
-* Added: Better AI Weight to wonder construction.
-* Added: New event pictures for Abyssal Test Crater, Demetrius Cornucopia, Domed City, Enigma Engine, Astronomical Model Bureau, Helios Tower and Space Elevator.
+* Fixed Job trigger of Domed City Test Subject to allow for sentient machines, but not drones.
 
 # Version 1.1.1 (for Stellaris 2.8.1)
 Fixes:

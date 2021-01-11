@@ -1,10 +1,10 @@
 ﻿l_braz_por:
 
-    
+
     PW_TOW_ASTEROID_PROJECT: "Tow Asteroid"
     PW_TOW_ASTEROID_PROJECT_DESC: "The orbit of this small asteroid is in discordance with the predictions of our Astronomical Model Bureau, and should be corrected by towing the asteroid into the correct path."
     PW_FIX_ENIGMA_DRONES: "Counter Enigma Effects"
-    PW_FIX_ENIGMA_DRONES_DESC: "The effects of the Enigma Engine have gone too far to be any moe tolerated. We have organized a project to reverse its signals and transmit it in the entire planet, as to negate the negative effects of the Engine in our drones."
+    PW_FIX_ENIGMA_DRONES_DESC: "The effects of the Enigma Engine have gone too far to be tolerated any more. We have organized a project to reverse its signals and transmit it in the entire planet, as to negate the negative effects of the Engine in our drones."
     PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL: "Investigate the Enigmatic Signal"
     PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL_DESC: "The erratic machine found in the asteroid field emits a cyphered signal that could contain information about it's construction."
     PW_DISCOVER_ENIGMA_ENGINE_SECRETS: "Discover the secrets of the Enigma Engine"

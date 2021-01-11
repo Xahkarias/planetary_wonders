@@ -844,7 +844,7 @@ pw_building_guardian_angel = {
 			owner = { is_at_war = no }
 		}
 		modifier = {
-			army_starting_experience_add = 200
+			planet_army_build_speed_mult = 0.2
 		}
 	}
 

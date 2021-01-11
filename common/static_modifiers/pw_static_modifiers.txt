@@ -63,6 +63,42 @@ pw_mod_space_elevator_105_c = {
 	planet_stability_add = 15
 }
 
+pw_mod_particle_supercollider_materialist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_ethic_materialist_attraction_mult = 0.1
+}
+
+pw_mod_particle_supercollider_spiritualist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_ethic_spiritualist_attraction_mult = 0.1
+}
+
+pw_mod_domed_city_egalitarian = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_ethic_egalitarian_attraction_mult = 0.1
+}
+
+pw_mod_domed_city_authoritarian = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_ethic_authoritarian_attraction_mult = 0.1
+}
+
+pw_mod_abyssal_test_crater_pacifist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_ethic_pacifist_attraction_mult = 0.1
+}
+
+pw_mod_abyssal_test_crater_militarist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_ethic_militarist_attraction_mult = 0.1
+}
+
 pw_mod_enigma_engine_energy = {
 	planet_pops_robotics_energy_upkeep_mult = 0.5
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"

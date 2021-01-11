@@ -6,17 +6,20 @@ special_project = {
 	days_to_research = @pw_2years
 	tech_department = engineering_technology
 	picture = GFX_evt_asteroid_field
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
 	location = yes
 
-	event_scope = planet_event
+	event_scope = ship_event
 
 	requirements = {
 		shipclass_constructor = 1
 	}
 
 	on_success = {
-		planet_event = {
-			id = pw_wonder.804
+		owner = {
+			country_event = {
+				id = pw_wonder.804
+			}
 		}
 	}
 
@@ -29,7 +32,8 @@ special_project = {
 	key = PW_FIX_ENIGMA_DRONES
 	cost = 10000
 	tech_department = physics_technology
-	picture = GFX_evt_asteroid_field
+	picture = GFX_evt_enigma_engine
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
 	location = yes
 
 	event_scope = planet_event

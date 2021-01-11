@@ -90,6 +90,10 @@ pw_building_enigma_engine = {
 	}
 
 	triggered_desc = {
+		text = pw_empire_unique_lb
+	}
+
+	triggered_desc = {
 		text = pw_enigma_engine_tooltip
 	}
 

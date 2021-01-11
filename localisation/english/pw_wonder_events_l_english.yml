@@ -87,19 +87,19 @@
     pw_wonder.502.a: "The minerals must flow!"
     #Add Crystals after Aggressive Prospecting.
     pw_wonder.505.name: "Prospecting for Crystals"
-    pw_wonder.505.desc: "During or current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of valuable crystals, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
+    pw_wonder.505.desc: "During our current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of valuable crystals, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
     pw_wonder.505.a: "Great! Put it to good use, for now."
     #Add Motes after Aggressive Prospecting.
     pw_wonder.507.name: "Prospecting for Motes"
-    pw_wonder.507.desc: "During or current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of stabilized motes, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
+    pw_wonder.507.desc: "During our current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of stabilized motes, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
     pw_wonder.507.a: "Great! Put it to good use, for now."
     #Add Gases after Aggressive Prospecting.
     pw_wonder.509.name: "Prospecting for Gases"
-    pw_wonder.509.desc: "During or current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of uncommon gases, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
+    pw_wonder.509.desc: "During our current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of uncommon gases, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
     pw_wonder.509.a: "Great! Put it to good use, for now."
     #Add Poor Mineral Quality after Aggressive Prospecting.
     pw_wonder.510.name: "Mineral Draining"
-    pw_wonder.510.desc: "During or current Aggressive Prospecting of the mines of [ROOT.GetName], we have come to discover that the mining network project in the planet has completely exhausted the mineral properties of the land. Constant aggressive mining in search of valuable minerals have extracted almost all of the veins in this planet. We can keep the mineral project in place, but it will produce results much bellow average."
+    pw_wonder.510.desc: "During our current Aggressive Prospecting of the mines of [ROOT.GetName], we have come to discover that the mining network project in the planet has completely exhausted the mineral properties of the land. Constant aggressive mining in search of valuable minerals have extracted almost all of the veins in this planet. We can keep the mineral project in place, but it will produce results much bellow average."
     pw_wonder.510.a: "That is a shame, and a lesson to be had."
 
     #Complete Helios Tower
@@ -142,7 +142,7 @@
     pw_wonder.704.name: "Lush Harvest"
     pw_wonder.704.desc: "During the current Predatory Harvest in [ROOT.GetName], to boost the production of the Demetrius Cornucopia new experiments in life cycles and vegetal proliferation opened the opportunity to improve the entire biosphere of the planet. A great boon to life can be had here, if we can spare the necessary nutrients to maintain this new sprawling of lifeforms as a permanent change."
     pw_wonder.704.a: "Fertilize the land, grow life."
-    pw_wonder.704.b: "We can maintain those changes."
+    pw_wonder.704.b: "We can't maintain those changes."
     #Add Bleak after predatory harvest.
     pw_wonder.705.name: "Bleak Harvest"
     pw_wonder.705.desc: "During the current Predatory Harvest in [ROOT.GetName], to boost the production of the Demetrius Cornucopia new experiments in life cycles and vegetal proliferation have artificially selected an extremely strong fungus, capable of unbalancing the biosphere of the planet and potentially leave the soil bleak of nutrients. We can use our resources to prevent the fungus from spreading and reinstall nutrients to the land."
@@ -284,4 +284,4 @@
     pw_wonder.1207.b: "Use the fortress as an Enforcer Center"
     pw_wonder.1207.b.tooltip: "In times of peace, the Guardian Angel will be used as the center of enforcer operations in the planet, monitoring most of the criminal action here."
     pw_wonder.1207.c: "Use the fortress as a Tourist Attraction"
-    pw_wonder.1207.c.tooltip: "In times of peace, the Guardian Angel will be used as a tourist attraction, which provides cultural takes visitors."
+    pw_wonder.1207.c.tooltip: "In times of peace, the Guardian Angel will be used as a tourist attraction, which provides cultural expositions and recreational flights to visitors."
