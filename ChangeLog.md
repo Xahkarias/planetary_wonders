@@ -1,5 +1,10 @@
 # Version 1.2.0 (for Stellaris 2.8.1)
 Updates:
+* Updated building icons.
+* Updated event texts.
+
+# Version 1.2.0 (for Stellaris 2.8.1)
+Updates:
 * Changed Particle Supercollider, Domed City (Secluded Sector), Abyssal Crater test Site (Planetary Test Site), Galactic Model and Panopticon allowed in habitats with the Voidborn Ascension perk.
 * Changed Space Elevator is allowed in Resort Colonies and produces Tourist jobs.
 * Added new building, technology, jobs, decisions and ascension perk icons.

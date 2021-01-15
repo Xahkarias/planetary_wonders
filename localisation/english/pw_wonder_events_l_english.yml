@@ -254,7 +254,7 @@
     pw_wonder.1103.a: "We will put them to use."
     # Receive gift from fallen empires after debate
     pw_wonder.1105.name: "Fallen Philosophies"
-    pw_wonder.1105.desc: "Hello again, [ROOT.GetAdj].\nWe have took notice of the parliament structure You have build - the called Solipsist Debate Hall - and were interested in what was being discussed by a Gestalt Consciousness. We have tapped into Your subspace communication mechanism, translated Your thoughts and found the themes of the debate curiously inebriating. [ROOT.GetName] have helped us understand more of ourselves and the galaxy in this process, and for that we are thankful.\n\nPlease accept this gift of harvested Dark Matter, as a token of our gratitude."
+    pw_wonder.1105.desc: "Greetings. [ROOT.GetAdj].\nWe have took notice of the parliament structure You have build - the called Solipsist Debate Hall - and were interested in what was being discussed by a Gestalt Consciousness. We have tapped into Your subspace communication mechanism, translated Your thoughts and found the themes of the debate curiously inebriating. [ROOT.GetName] have helped us understand more of ourselves and the galaxy in this process, and for that we are thankful.\n\nPlease accept this gift of harvested Dark Matter, as a token of our gratitude."
     pw_wonder.1105.a: "We gladly accept this gift."
     pw_wonder.1105.b: "Stay and share with Us your own thoughts."
     pw_wonder.1105.c: "Begone, and never tap into the mind again."
