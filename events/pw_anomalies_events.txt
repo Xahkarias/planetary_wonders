@@ -60,7 +60,7 @@ ship_event = {
 
 	#Minor Artifacts + Trade value
 	option = {
-		name = pw_anomaly.30.b
+		name = pw_anomaly.30.c
 		trigger = {
 			owner = { has_valid_civic = civic_barbaric_despoilers }
 		}
