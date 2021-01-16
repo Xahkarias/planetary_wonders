@@ -3,7 +3,7 @@
 special_project = {
 	key = PW_TOW_ASTEROID_PROJECT
 	cost = 0
-	days_to_research = @pw_2years
+	days_to_research = @pw_1year
 	tech_department = engineering_technology
 	picture = GFX_evt_asteroid_field
 	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
@@ -19,6 +19,34 @@ special_project = {
 		owner = {
 			country_event = {
 				id = pw_wonder.804
+			}
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Move a mountain for the Galactic Model.
+special_project = {
+	key = PW_MOVE_MOUNTAIN_PROJECT
+	cost = 0
+	days_to_research = @pw_1year
+	tech_department = engineering_technology
+	picture = GFX_evt_cold_barren
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_constructor = 1
+	}
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = pw_wonder.806
 			}
 		}
 	}

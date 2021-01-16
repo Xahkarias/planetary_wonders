@@ -1,4 +1,8 @@
-# Version 1.2.0 (for Stellaris 2.8.1)
+# Version 1.3.0 (for Stellaris 2.8.1)
+Changes:
+* Corrected anomaly text and options.
+* Added new Astronomical Model Bureau flavor events.
+# Version 1.2.1 (for Stellaris 2.8.1)
 Updates:
 * Updated building icons.
 * Updated event texts.

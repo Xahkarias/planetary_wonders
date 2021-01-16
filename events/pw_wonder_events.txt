@@ -1867,7 +1867,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.801 }
 		planet_event = { id = pw_wonder.802 }
-		planet_event = { id = pw_wonder.803 days = 60 random = 30}
+		planet_event = { id = pw_wonder.803 days = 90 random = 30 }
 	}
 }
 
@@ -1880,6 +1880,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = galactic_model_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = galactic_model_built }
+	}
 
 	option = {
 		name = pw_wonder.801.a
@@ -1916,13 +1925,11 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = galactic_model_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = galactic_model_built }
+	after = {
+		owner = {
+			#Recurring event ofr planet resources
+			country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		}
 	}
 }
 
@@ -1935,6 +1942,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = galactic_model_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = galactic_model_built }
+	}
 
 	option = {
 		name = pw_wonder.802.a
@@ -1968,13 +1984,11 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = galactic_model_built }}
-		owner = { is_gestalt = yes }
-	}
-
-	immediate = {
-		owner = { set_country_flag = galactic_model_built }
+	after = {
+		owner = {
+			#Recurring event ofr planet resources
+			country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		}
 	}
 }
 
@@ -2021,11 +2035,11 @@ planet_event = {
 	option = {
 		name = pw_wonder.803.b
 		allow = {
-			owner = { has_resource = { type = influence amount > 100 }}
+			owner = { has_resource = { type = influence amount > 50 }}
 		}
 		owner = {
 			add_resource = {
-				influence = -100
+				influence = -50
 			}
 		}
 	}
@@ -2046,6 +2060,178 @@ country_event = {
 		add_resource = {
 			unity = 1000
 			engineering_research = 1000
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.805 days = 180 random = 180 }
+		}
+	}
+}
+
+#Move mountain
+country_event = {
+	id = pw_wonder.805
+	title = pw_wonder.805.name
+	desc = pw_wonder.805.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		any_owned_planet = {
+			has_building = pw_building_galactic_model
+		}
+		NOT = { owner = { has_country_flag = galactic_model_move_mountain }}
+		owner = {
+			any_planet_within_border = {
+				uninhabitable_regular_planet = yes
+			}
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = galactic_model_move_mountain }
+	}
+
+	option = {
+		name = pw_wonder.805.a
+		owner = {
+			random_planet_within_border = {
+				limit = {
+					uninhabitable_regular_planet = yes
+				}
+				enable_special_project = {
+					name = PW_MOVE_MOUNTAIN_PROJECT
+					location = this
+					owner = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.805.b
+		allow = {
+			owner = { has_resource = { type = influence amount > 100 }}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+	}
+}
+
+#Move mountain (success)
+country_event = {
+	id = pw_wonder.806
+	title = pw_wonder.806.name
+	desc = pw_wonder.806.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.806.a
+		add_resource = {
+			unity = 1500
+			engineering_research = 1000
+		}
+		random_list = {
+			1 = {
+				add_resource = { rare_crystals = 250 }
+			}
+			1 = {
+				add_resource = { exotic_gases = 250 }
+			}
+			1 = {
+				add_resource = { volatile_motes = 250 }
+			}
+		}
+		# hidden_effect = {
+		# 	#Next event in AMB chain
+		# 	country_event = { id = pw_wonder.805 days = 180 random = 180 }
+		# }
+	}
+}
+
+#Get random planet to give resources.
+country_event = {
+	id = pw_wonder.820
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		any_planet_within_border = {
+			has_deposit = no
+			OR = {
+				is_asteroid = yes
+				uninhabitable_regular_planet = yes
+				is_planet_class = pc_gas_giant
+			}
+		}
+	}
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				has_deposit = no
+				OR = {
+					is_asteroid = yes
+					uninhabitable_regular_planet = yes
+					is_planet_class = pc_gas_giant
+				}
+			}
+			planet_event = { id = pw_wonder.821 }
+		}
+	}
+}
+
+#Add a random deposit to planet which has not.
+planet_event = {
+	id = pw_wonder.821
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		random_list = {
+			30 = {
+				add_deposit = d_rare_crystals_1
+			}
+			30 = {
+				add_deposit = d_exotic_gases_1
+			}
+			30 = {
+				add_deposit = d_volatile_motes_1
+			}
+			3 = {
+				add_deposit = d_dark_matter_deposit_1
+			}
+			3 = {
+				add_deposit = d_living_metal_deposit
+			}
+			3 = {
+				modifier = {
+					factor = 0
+					controller = {
+						is_materialist = yes
+					}
+				}
+				add_deposit = d_zro_deposit_1
+			}
+		}
+		hidden_effect = {
+			controller = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
 		}
 	}
 }
