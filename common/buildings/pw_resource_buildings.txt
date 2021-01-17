@@ -30,6 +30,9 @@ pw_building_erebus_project = {
 		has_major_upgraded_capital = yes
 		free_district_slots > 0 # Needs a free district to occupy
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+		NOT = {
+			has_modifier = pw_mod_gaia_unstable_weather
+		}
 		OR = {
 			is_cold = yes
 			is_planet_class = pc_gaia
@@ -238,6 +241,9 @@ pw_building_helios_tower = {
 		has_major_upgraded_capital = yes
 		free_district_slots > 0 # Needs a free district to occupy
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+		NOT = {
+			has_modifier = pw_mod_gaia_unstable_weather
+		}
 		OR = {
 			is_dry = yes
 			is_planet_class = pc_gaia
@@ -441,6 +447,9 @@ pw_building_demetrius_fields = {
 		has_major_upgraded_capital = yes
 		free_district_slots > 0 # Needs a free district to occupy
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+		NOT = {
+			has_modifier = pw_mod_gaia_unstable_weather
+		}
 		OR = {
 			is_wet = yes
 			is_planet_class = pc_gaia

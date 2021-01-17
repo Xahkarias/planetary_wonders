@@ -69,6 +69,10 @@
     pw_mod_galactic_model_anomaly_sensor: "Galactic Map"
     pw_mod_galactic_model_anomaly_sensor_desc: "We have found a sort of Galactic Map, that helps ous scientist to survey new celestial bodies and detect hyperlanes"
 
+    #Astronomical Model Bureau mods:
+    pw_mod_gaia_unstable_weather: "Unstable Ecosystem"
+    pw_mod_gaia_unstable_weather_desc: "Constant draining of resources have left this planet bare at some point in time, and now it can not be pushed past it's limits."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"
