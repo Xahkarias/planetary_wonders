@@ -2,6 +2,8 @@
 Changes:
 * Corrected anomaly text and options.
 * Added new Astronomical Model Bureau flavor events.
+* Added new Drained Paradise archaeological site.
+
 # Version 1.2.1 (for Stellaris 2.8.1)
 Updates:
 * Updated building icons.

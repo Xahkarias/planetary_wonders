@@ -1,0 +1,101 @@
+pw_d_ancient_cornucopia = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_city_ruins
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		district_farming_max = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_farmer_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_agri_drone_add = 3
+		}
+	}
+}
+
+pw_d_ancient_solar_tower = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_solar_array
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+		district_generator_max = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_technician_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 3
+		}
+	}
+}
+
+pw_d_ancient_mining_project = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_mining_tunnels
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_jobs_minerals_produces_mult = 0.1
+		district_mining_max = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_miner_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 3
+		}
+	}
+}

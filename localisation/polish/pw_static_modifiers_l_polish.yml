@@ -90,3 +90,6 @@
     pw_mod_abyssal_test_crater_militarist: "Abyssal Test Crater: Offense in Mind"
     pw_mod_abyssal_test_crater_militarist_desc: "The Abyssal Test Crater will supply all of the military technologies we need to campaign over the galaxy."
     planet_pops_robotics_energy_upkeep_mult: "Robotic Pop Energy Upkeep"
+
+    pw_mod_gaia_unstable_weather: "Unstable Ecosystem"
+    pw_mod_gaia_unstable_weather_desc: "Constant draining of resources have left this planet bare at some point in time, and now it can not be pushed past its limits."

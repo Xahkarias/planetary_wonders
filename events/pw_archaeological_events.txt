@@ -106,7 +106,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = INTERESTING
+		name = CONTINUE
 		small_artifact_reward = yes
 		allow = {
 			controller = { has_resource = { type = energy amount > 1500 }}
@@ -144,7 +144,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = INTERESTING
+		name = pw_archaeology.125.a
 		small_artifact_reward = yes
 		trigger = {
 			controller = { country_uses_food = yes }
@@ -164,7 +164,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = INTERESTING
+		name = pw_archaeology.125.b
 		small_artifact_reward = yes
 		trigger = {
 			controller = { country_uses_food = no }
@@ -215,6 +215,15 @@ fleet_event = {
 		}
 		planet = {
 			change_pc = pc_gaia
+			hidden_effect = {
+				reroll_deposits = yes
+				add_modifier = {
+					modifier = pw_mod_gaia_unstable_weather
+				}
+			}
+			add_deposit = pw_d_ancient_cornucopia
+			add_deposit = pw_d_ancient_solar_tower
+			add_deposit = pw_d_ancient_mining_project
 		}
 	}
 }
