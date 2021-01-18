@@ -48,7 +48,7 @@
     #Events
     pw_anomaly.100.name: "A Machine"
     pw_anomaly.100.desc: "Searching through the asteroid field, [Root.Leader.GetName] has found many pieces of machinery floating adrift between the rocks. Following this mechanical trail, [Root.Leader.GetSheHe] encountered a huge assortment of gears, rotors, antennas and pulleys amalgamated into a singular machine, bridging two asteroids drifting away in space. Curiously, the letters S.H.C. seem to be stamped in many of the composing parts. This appears to be the source of the signal and the movement as its wheels keep turning, even with no apparent power source.\nIt is clearly an autonomous system of some sort, but many mysteries regarding its origin remain. A special project can be prepared to investigate further details."
-    pw_anomaly.100.a: "It's purpose must be determined."
+    pw_anomaly.100.a: "its purpose must be determined."
     pw_anomaly.100.b: "It is heresy. Let the asteroids consume it."
     #Decode the signal
     pw_anomaly.101.name: "Engine of Enigma"
@@ -57,7 +57,7 @@
     pw_anomaly.101.b: "We ask and the signal answers. Attempt to replicate it."
     #Discover the Engine
     pw_anomaly.102.name: "Echoes and Shades"
-    pw_anomaly.102.desc: "We have chased this signal into the asteroids and many drones attempted to decipher the perpetual movements of the Enigma Engine, to no avail. We have come to realization that this signal was not made for us. It has helped us realize that we must find and build our own signal, after understanding much of the universe that is still left to understand. By pursuing this signal we will be able to build our own Enigma Engine, with it's own enigma to be deciphered by us and its own pseudo-answers for us to forever chase."
+    pw_anomaly.102.desc: "We have chased this signal into the asteroids and many drones attempted to decipher the perpetual movements of the Enigma Engine, to no avail. We have come to realization that this signal was not made for us. It has helped us realize that we must find and build our own signal, after understanding much of the universe that is still left to understand. By pursuing this signal we will be able to build our own Enigma Engine, with its own enigma to be deciphered by us and its own pseudo-answers for us to forever chase."
     pw_anomaly.102.a: "Set it as our goal. It is our Purpose."
 
     #Ruined Solipsist Debate Hall
@@ -78,5 +78,5 @@
     pw_anomaly.111.d: "Information incorporated. The rest is spurious."
     #Discover the Hall:
     pw_anomaly.112.name: "Solipsist Debate Hall"
-    pw_anomaly.112.desc: "Diligent inspection of each chamber of the Debate Hall shows that it was specifically created by and to some Hive Mind organism, of that no doubts are left. Although the original creator's form was much different form our own, much of the building could be rebuild with corrections, to adapt for our personal use. The ruins reveal that a lot was planned for this structure: egalitarian debate halls, confrontational battle chambers and expositional projectors. Of note, it was found a framework of some sort of super computer, with terminals scattered throughout the building; the function of such machine could not be determined, however, for most of it's processors and data banks were missing.\nThere is still a lot of progress to be made first, before putting the Mind to the goal of replicating this wonder in our terms, for our benefit, but this serves as a fine starting point for ideas."
+    pw_anomaly.112.desc: "Diligent inspection of each chamber of the Debate Hall shows that it was specifically created by and to some Hive Mind organism, of that no doubts are left. Although the original creator's form was much different form our own, much of the building could be rebuild with corrections, to adapt for our personal use. The ruins reveal that a lot was planned for this structure: egalitarian debate halls, confrontational battle chambers and expositional projectors. Of note, it was found a framework of some sort of super computer, with terminals scattered throughout the building; the function of such machine could not be determined, however, for most of its processors and data banks were missing.\nThere is still a lot of progress to be made first, before putting the Mind to the goal of replicating this wonder in our terms, for our benefit, but this serves as a fine starting point for ideas."
     pw_anomaly.112.a: "We are still to leave our mark in the Universe."

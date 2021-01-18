@@ -65,7 +65,7 @@
 
     pw_enigma_engine: "§MEnigma Engine§!"
     pw_building_enigma_engine: "Enigma Engine"
-    pw_building_enigma_engine_desc: "A machine. Built by ignoring logical output and following but the most basic directives. We do not fully understand how it works, only that it consumes a great quantity of power and incorporates other machinery to remain in constant motion. It's gears spin, it's pulleys pull and we try to decipher it."
+    pw_building_enigma_engine_desc: "A machine. Built by ignoring logical output and following but the most basic directives. We do not fully understand how it works, only that it consumes a great quantity of power and incorporates other machinery to remain in constant motion. its gears spin, its pulleys pull and we try to decipher it."
     pw_enigma_engine_tooltip: "Allows us to research $pw_enigma$ technologies."
 
     pw_guardian_angel: "MGuardian Angel§!"

@@ -63,7 +63,7 @@
     pw_enigma_tech_hyper_stabilization_fields: "$pw_enigma_tech$ Hyper Stabilization Fields"
     pw_enigma_tech_hyper_stabilization_fields_desc: "The magnetic fields produced by the Enigma Engine harbors their own secrets. Erratic and useless substances subjected to the field can be stabilized into useful Volatile Motes."
     pw_enigma_tech_breach_of_thermodynamic_law: "$pw_enigma_tech$ Breach Of Thermodynamic Law"
-    pw_enigma_tech_breach_of_thermodynamic_law_desc: "The Enigma Engine seems to be aligned with the entropy of this galaxy and it trough it's study we can understand this inexorable movement. Unfortunately it would seem we could only influence it in a micro scale, should be useful for drone energy conservation. It is possible that we are draining energy from somewhere else in the universe."
+    pw_enigma_tech_breach_of_thermodynamic_law_desc: "The Enigma Engine seems to be aligned with the entropy of this galaxy and it trough its study we can understand this inexorable movement. Unfortunately it would seem we could only influence it in a micro scale, should be useful for drone energy conservation. It is possible that we are draining energy from somewhere else in the universe."
     pw_enigma_tech_reflex_arc_emulators: "$pw_enigma_tech$ Reflex Arc Emulators"
     pw_enigma_tech_reflex_arc_emulators_desc: "Combining organic techniques and machine interface we can calibrate our drone to make faster critical decisions then they are capable of processing. This instils some form of primary directive of auto preservation."
     pw_enigma_tech_atomic_clock_synchronization: "$pw_enigma_tech$ Atomic Clock Synchronization"
