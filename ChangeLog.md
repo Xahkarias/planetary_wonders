@@ -1,3 +1,6 @@
+# Version 1.3.1 (for Stellaris 2.8.1)
+* Fixed Solipsist Debate Hall having 1 spawning drone job per pop for devouring swarm.
+
 # Version 1.2.0 (for Stellaris 2.8.1)
 Updates:
 * Updated building icons.
