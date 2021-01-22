@@ -73,6 +73,14 @@
     pw_mod_gaia_unstable_weather: "Unstable Ecosystem"
     pw_mod_gaia_unstable_weather_desc: "Constant draining of resources have left this planet bare at some point in time, and now it can not be pushed past its limits."
 
+    #Astronomical Model Bureau mods:
+    pw_mod_mantle_crucible_alloys: "$pw_mantle_crucible$: Alloys"
+    pw_mod_mantle_crucible_alloys_desc: "Focusing the $pw_mantle_crucible$ on military industry to produce more alloys for our fleets."
+
+    #Astronomical Model Bureau mods:
+    pw_mod_mantle_crucible_consumer_goods: "$pw_mantle_crucible$: Consumer Goods"
+    pw_mod_mantle_crucible_consumer_goods_desc: "Focusing the $pw_mantle_crucible$ on civilian industry to produce more consumer goods for our population."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"

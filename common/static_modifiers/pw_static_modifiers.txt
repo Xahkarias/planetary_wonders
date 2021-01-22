@@ -123,6 +123,16 @@ pw_mod_gaia_unstable_weather = {
 	icon_frame = 3
 }
 
+pw_mod_mantle_crucible_alloys = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_mantle_crucible_alloys.dds"
+	icon_frame = 2
+}
+
+pw_mod_mantle_crucible_consumer_goods = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_mantle_crucible_consumer_goods.dds"
+	icon_frame = 2
+}
+
 #Country modifiers:
 pw_mod_galactic_model_anomaly_sensor = {
 	ship_hyperlane_range_add = 5

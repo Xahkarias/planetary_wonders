@@ -298,3 +298,13 @@
     pw_wonder.1207.b.tooltip: "In times of peace, the Guardian Angel will be used as the center of enforcer operations in the planet, monitoring most of the criminal action here."
     pw_wonder.1207.c: "Use the fortress as a Tourist Attraction"
     pw_wonder.1207.c.tooltip: "In times of peace, the Guardian Angel will be used as a tourist attraction, which provides cultural expositions and recreational flights to visitors."
+
+    #Complete Mantle Crucible
+    pw_message_mantle_crucible_complete: "$pw_mantle_crucible$ has been constructed in $PLANET|Y$."
+    #First Time Complete Mantle Crucible (Regular Empire)
+    pw_wonder.1301.name: ""
+    pw_wonder.1301.desc: "."
+    pw_wonder.1301.a: ""
+    #First Time Complete Mantle Crucible (Gestalt)
+    pw_wonder.1302.name: "."
+    pw_wonder.1302.a: ""

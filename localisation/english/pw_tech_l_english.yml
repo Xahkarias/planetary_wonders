@@ -59,6 +59,22 @@
     pw_tech_guardian_angel: "Guardian Angel"
     pw_tech_guardian_angel_desc: "Space is full of threats, whether provoked or not, and for that we must upgrade our last lines of defense: our planets. New anti-gravity propulsion shall keep our greatest guardian in the skies of every one of our cities. We shall be protected from bombardment or invasion."
 
+    # Mantle Crucible:
+    pw_tech_planetary_mantle_production: "Planetary Mantle Production"
+    pw_tech_planetary_mantle_production_desc: "For all the resources we have obtained from the stars, we must not underestimate the ground bellow us. We can utilize increased temperatures and pressure from our planets upper mantle layer and revolutionize industrial production, at minimal cost of tectonic disturbance."
+
+    pw_mantle_crucible_upgrade: "Upgrades the $pw_mantle_crucible$"
+
+    # Titan Forge:
+    pw_tech_titan_forge: "Titan Forge"
+    pw_tech_titan_forge_desc: "With the Mantle Crucible in place we can install incredible facilities between the Crucible and the surface, ready to process its output. Great military industrial complexes within the crust itself, ready to supply the navy with ship parts and the army with dreaded assault titans."
+    pw_mantle_crucible_upgrade_forge_desc: "The $pw_titan_forge$ is an upgrade for the $pw_mantle_crucible$"
+
+    # Industrial Hearth:
+    pw_tech_industrial_hearth: "Industrial Hearth"
+    pw_tech_industrial_hearth_desc: "The Mantle Crucible gave us a new perspective on industry and industrial production. Production, art, design, urbanism, architecture and many others must be cooperative disciplines created by poly-artisans in a cybernetical chain of knowledge, connecting the mantle and crust, products and people."
+    pw_mantle_crucible_upgrade_industry_desc: "The $pw_industrial_hearth$ is an upgrade for the $pw_mantle_crucible$"
+
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

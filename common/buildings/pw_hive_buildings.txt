@@ -26,7 +26,6 @@ pw_building_solipsist_debate_hall = {
 		building_corporate_forum
 	}
 
-
 	allow = {
 		has_major_upgraded_capital = yes
 		free_district_slots > 0 # Needs a free district to occupy

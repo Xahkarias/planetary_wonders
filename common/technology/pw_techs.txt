@@ -27,36 +27,34 @@ pw_tech_planetary_mega_engineering = {
 
 	weight_modifier = {
 		factor = 0.5
+
 		modifier = {
 			factor = 1.5
-			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_industry
-				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
-				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
-				}
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
 			}
 		}
 
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ascension_perk = ap_arcology_project
-				has_ascension_perk = ap_machine_worlds
-				has_ascension_perk = ap_hive_worlds
-			}
 		}
 
 		modifier = {
@@ -69,6 +67,20 @@ pw_tech_planetary_mega_engineering = {
 		}
 
 		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_ascension_perk = ap_arcology_project
+				has_ascension_perk = ap_machine_worlds
+				has_ascension_perk = ap_hive_worlds
+			}
+		}
+
+		modifier = {
 			factor = 2
 			any_neighbor_country = {
 				has_technology = pw_tech_planetary_mega_engineering
@@ -77,7 +89,12 @@ pw_tech_planetary_mega_engineering = {
 
 		modifier = {
 			factor = 2
-			has_ascension_perk = ap_master_builders
+			has_civic = civic_functional_architecture
+		}
+
+		modifier = {
+			factor = 2
+			has_civic = civic_machine_builder
 		}
 	}
 
@@ -98,7 +115,7 @@ pw_tech_planetary_mega_engineering = {
 #Space Elevator
 pw_tech_space_elevator = {
 	area = engineering
-	cost = @tier4cost2
+	cost = @tier4cost3
 	tier = 4
 	category = { voidcraft }
 	prerequisites = { pw_tech_planetary_mega_engineering }
@@ -106,17 +123,18 @@ pw_tech_space_elevator = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = engineering
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_spark_of_genius
@@ -124,12 +142,15 @@ pw_tech_space_elevator = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -140,6 +161,21 @@ pw_tech_space_elevator = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_space_elevator }
 			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_corvee_system
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_free_traders
 		}
 	}
 
@@ -158,7 +194,7 @@ pw_tech_space_elevator = {
 # Particle Supercollider
 pw_tech_particle_supercollider = {
 	area = physics
-	cost = @tier4cost2
+	cost = @tier4cost3
 	tier = 4
 	category = { particles }
 	prerequisites = { pw_tech_planetary_mega_engineering }
@@ -166,17 +202,18 @@ pw_tech_particle_supercollider = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = physics
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_spark_of_genius
@@ -184,12 +221,15 @@ pw_tech_particle_supercollider = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -201,6 +241,17 @@ pw_tech_particle_supercollider = {
 				any_member = { has_technology = pw_tech_particle_supercollider }
 			}
 		}
+
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				species = {
+					has_trait = trait_natural_physicists
+				}
+			}
+		}
+
 	}
 
 	ai_weight = {
@@ -218,7 +269,7 @@ pw_tech_particle_supercollider = {
 # Domed City
 pw_tech_domed_city = {
 	area = society
-	cost = @tier4cost2
+	cost = @tier4cost3
 	tier = 4
 	category = { statecraft }
 	prerequisites = { pw_tech_planetary_mega_engineering }
@@ -226,17 +277,18 @@ pw_tech_domed_city = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = society
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = society
 				has_trait = leader_trait_spark_of_genius
@@ -244,12 +296,15 @@ pw_tech_domed_city = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -259,6 +314,16 @@ pw_tech_domed_city = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_domed_city }
+			}
+		}
+
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				species = {
+					has_trait = trait_natural_sociologists
+				}
 			}
 		}
 	}
@@ -278,7 +343,7 @@ pw_tech_domed_city = {
 # Abyssal Crater Test Site
 pw_tech_abyssal_crater_test_site = {
 	area = engineering
-	cost = @tier4cost2
+	cost = @tier4cost3
 	tier = 4
 	category = { propulsion }
 	prerequisites = { pw_tech_planetary_mega_engineering }
@@ -286,17 +351,18 @@ pw_tech_abyssal_crater_test_site = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = engineering
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_propulsion
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_spark_of_genius
@@ -304,12 +370,15 @@ pw_tech_abyssal_crater_test_site = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -319,6 +388,16 @@ pw_tech_abyssal_crater_test_site = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_abyssal_crater_test_site }
+			}
+		}
+
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				species = {
+					has_trait = trait_natural_engineers
+				}
 			}
 		}
 	}
@@ -349,23 +428,18 @@ pw_tech_erebus_project = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
 
 		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
-		}
-
-		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = engineering
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_spark_of_genius
@@ -373,17 +447,15 @@ pw_tech_erebus_project = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
-			has_ascension_perk = pw_ap_planetary_wonders
-		}
-
-		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -394,6 +466,17 @@ pw_tech_erebus_project = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_erebus_project }
 			}
+		}
+
+		#Can't have without the AP
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = pw_ap_planetary_wonders
 		}
 	}
 
@@ -423,23 +506,18 @@ pw_tech_helios_tower = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
 
 		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
-		}
-
-		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = physics
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_spark_of_genius
@@ -447,17 +525,15 @@ pw_tech_helios_tower = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
-			has_ascension_perk = pw_ap_planetary_wonders
-		}
-
-		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -468,6 +544,17 @@ pw_tech_helios_tower = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_helios_tower }
 			}
+		}
+
+		#Can't have without the AP
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = pw_ap_planetary_wonders
 		}
 	}
 
@@ -497,23 +584,18 @@ pw_tech_demetrius_fields = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
 
 		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
-		}
-
-		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = society
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = society
 				has_trait = leader_trait_spark_of_genius
@@ -521,17 +603,15 @@ pw_tech_demetrius_fields = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
-			has_ascension_perk = pw_ap_planetary_wonders
-		}
-
-		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
@@ -542,6 +622,17 @@ pw_tech_demetrius_fields = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_demetrius_fields }
 			}
+		}
+
+		#Can't have without the AP
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
+		}
+
+		modifier = {
+			factor = 5
+			has_ascension_perk = pw_ap_planetary_wonders
 		}
 	}
 
@@ -560,7 +651,7 @@ pw_tech_demetrius_fields = {
 #Astronomical Modeling
 pw_tech_galactic_modeling = {
 	area = society
-	cost = @tier4cost3
+	cost = @pw_tier4cost4
 	tier = 4
 	category = { statecraft }
 	prerequisites = {
@@ -578,17 +669,18 @@ pw_tech_galactic_modeling = {
 	}
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = society
-				has_trait = leader_trait_maniacal
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			research_leader = {
 				area = society
 				has_trait = leader_trait_spark_of_genius
@@ -596,22 +688,34 @@ pw_tech_galactic_modeling = {
 		}
 
 		modifier = {
-			factor = 3
-			has_ascension_perk = ap_master_builders
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
 		}
 
 		modifier = {
-			factor = 5
+			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_galactic_modeling }
+			}
+		}
+
+		modifier = {
+			factor = 2
 			has_valid_civic = civic_byzantine_bureaucracy
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = 2
 			has_valid_civic = civic_efficient_bureaucracy
 		}
 
@@ -621,28 +725,20 @@ pw_tech_galactic_modeling = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			num_owned_planets > 5
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			num_owned_planets > 6
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			num_owned_planets > 7
 		}
 
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator }
-			}
-		}
 	}
 
 	ai_weight = {
@@ -677,18 +773,29 @@ pw_tech_utilitarian_vigilance = {
 	}
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_statecraft"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
 			}
 		}
 
@@ -703,14 +810,6 @@ pw_tech_utilitarian_vigilance = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_utilitarian_vigilance }
-			}
-		}
-
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
 
@@ -732,7 +831,7 @@ pw_tech_utilitarian_vigilance = {
 		}
 
 		modifier = {
-			factor = 3
+			factor = 2
 			has_valid_civic = civic_police_state
 		}
 
@@ -742,7 +841,7 @@ pw_tech_utilitarian_vigilance = {
 		}
 
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			has_valid_civic = civic_beacon_of_liberty
 		}
 	}
@@ -753,7 +852,7 @@ pw_tech_utilitarian_vigilance = {
 			factor = 2
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -785,18 +884,29 @@ pw_tech_metaphysical_singularity = {
 	}
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_computing"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
-				}
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_computing
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_curator
 			}
 		}
 
@@ -811,14 +921,6 @@ pw_tech_metaphysical_singularity = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_metaphysical_singularity }
-			}
-		}
-
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
 			}
 		}
 
@@ -844,7 +946,7 @@ pw_tech_metaphysical_singularity = {
 			factor = 2
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_expertise_computing"
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -853,7 +955,7 @@ pw_tech_metaphysical_singularity = {
 # Solipsist Debate Hall
 pw_tech_metacognition_dialectics = {
 	area = society
-	cost = @tier5cost1
+	cost = @tier5cost2
 	tier = 5
 	category = { statecraft }
 	prerequisites = {
@@ -869,18 +971,29 @@ pw_tech_metacognition_dialectics = {
 	}
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_statecraft"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
 			}
 		}
 
@@ -895,14 +1008,6 @@ pw_tech_metacognition_dialectics = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_metaphysical_singularity }
-			}
-		}
-
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
 
@@ -938,7 +1043,7 @@ pw_tech_metacognition_dialectics = {
 			factor = 2
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -959,18 +1064,29 @@ pw_tech_guardian_angel = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.5
+		factor = 0.25
+
 		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_military_theory"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
 			}
 		}
 
@@ -985,14 +1101,6 @@ pw_tech_guardian_angel = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_guardian_angel }
-			}
-		}
-
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
 			}
 		}
 
@@ -1035,6 +1143,11 @@ pw_tech_guardian_angel = {
 			factor = 1.5
 			has_valid_civic = civic_machine_terminator
 		}
+
+		modifier = {
+			factor = 0.5
+			is_pacifist = yes
+		}
 	}
 
 	ai_weight = {
@@ -1043,7 +1156,294 @@ pw_tech_guardian_angel = {
 			factor = 2
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+# Mantle Crucible
+pw_tech_planetary_mantle_production = {
+	area = engineering
+	category = { materials }
+	tier = 4
+	cost = @tier4cost3
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_advanced_metallurgy_2
+		tech_mining_3
+	}
+	weight = @tier4weight3
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_planetary_mantle_production }
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			has_valid_civic = civic_environmentalist
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_mining_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_hive_devouring_swarm
+			is_lithoid = yes
+		}
+
+		modifier = {
+			factor = 1.25
+			is_lithoid = yes
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_machine_rockbreakers
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+# Titan Forge
+pw_tech_titan_forge = {
+	area = engineering
+	category = { materials }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		pw_tech_planetary_mantle_production
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = pw_mantle_crucible_upgrade
+			desc = pw_mantle_crucible_upgrade_forge_desc
+		}
+	}
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_titan_forge }
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			has_valid_civic = civic_environmentalist
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_mining_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_hive_devouring_swarm
+			is_lithoid = yes
+		}
+
+		modifier = {
+			factor = 1.25
+			is_lithoid = yes
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_machine_rockbreakers
+		}
+
+		modifier = {
+			factor = 2
+			has_policy_flag = economic_policy_military
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+# Industrial Hearth
+pw_tech_industrial_hearth = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		pw_tech_planetary_mantle_production
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	potential = {
+		country_uses_consumer_goods = yes
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = pw_mantle_crucible_upgrade
+			desc = pw_mantle_crucible_upgrade_industry_desc
+		}
+	}
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_industrial_hearth }
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			has_valid_civic = civic_environmentalist
+		}
+
+		modifier = {
+			factor = 2
+			NOT = { has_policy_flag = economic_policy_military }
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}

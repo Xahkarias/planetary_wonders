@@ -60,4 +60,5 @@
 # Techs
 
 #Cost:
+@pw_tier4cost4 = 28000
 @pw_enigma_tech_cost = 60000

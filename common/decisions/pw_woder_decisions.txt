@@ -188,3 +188,88 @@ pw_decision_rebuild_flying_fortress = {
 		}
 	}
 }
+
+
+
+
+
+#Change Mantle Crucible specialization:
+pw_decision_mantle_crucible_alloys = {
+	owned_planets_only = yes
+	sound = event_structural_collapse
+	enactment_time = 30
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = @pw_decision_influence_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_planetary_mantle_production
+	}
+
+	potential = {
+		has_building = pw_building_mantle_crucible
+	}
+
+	allow = {
+		NOT = { has_modifier = pw_mod_mantle_crucible_alloys }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = pw_mod_mantle_crucible_alloys
+			days = -1
+		}
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+pw_decision_mantle_crucible_consumer_goods = {
+	owned_planets_only = yes
+	sound = event_structural_collapse
+	enactment_time = 30
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = @pw_decision_influence_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_planetary_mantle_production
+	}
+
+	potential = {
+		has_building = pw_building_mantle_crucible
+	}
+
+	allow = {
+		NOT = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = pw_mod_mantle_crucible_consumer_goods
+			days = -1
+		}
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_alloys }
+			remove_modifier = pw_mod_mantle_crucible_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
