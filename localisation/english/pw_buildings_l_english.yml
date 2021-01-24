@@ -87,17 +87,17 @@
     # Mantle Crucible
     pw_mantle_crucible: "§MMantle Crucible§!"
     pw_building_mantle_crucible: "Mantle Crucible"
-    pw_building_mantle_crucible_desc: "A massive subterranean industrial complex that exploits the extreme temperature and pressure of the planet outer mantle to process a vast quantity of minerals into flexible and strong alloys and state of the art manufactured goods input."
+    pw_building_mantle_crucible_desc: "A massive subterranean industrial complex that exploits the extreme temperature and pressure of the planet outer mantle to process a vast quantity of minerals into flexible and strong alloys and state of the art manufactured goods."
 
     # Titan Forge
     pw_titan_forge: "§MTitan Forge§!"
     pw_building_titan_forge: "Titan Forge"
-    pw_building_titan_forge_desc: "."
+    pw_building_titan_forge_desc: "The industrial military complex built upon the $pw_mantle_crucible$ which has specialized underground facilities to construct dreaded War Titans for planetary assault and is able to churn out a multitude of ship components and alloys."
 
     # Industrial Hearth
     pw_industrial_hearth: "§MIndustrial Hearth§!"
     pw_building_industrial_hearth: "Industrial Hearth"
-    pw_building_industrial_hearth_desc: "."
+    pw_building_industrial_hearth_desc: "The central mesh of industrial facility, art station, design school and urbanism planner, built upon the $pw_mantle_crucible$ to enjoy its output. This multi-disciplinary factory gives birth to the $job_pw_poly_artisan$ occupation, that is able to tackle issues from a myriad of perspectives."
 
     # Machine Buildings:
 

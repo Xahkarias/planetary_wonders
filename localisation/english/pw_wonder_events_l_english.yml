@@ -302,9 +302,43 @@
     #Complete Mantle Crucible
     pw_message_mantle_crucible_complete: "$pw_mantle_crucible$ has been constructed in $PLANET|Y$."
     #First Time Complete Mantle Crucible (Regular Empire)
-    pw_wonder.1301.name: ""
-    pw_wonder.1301.desc: "."
-    pw_wonder.1301.a: ""
+    pw_wonder.1301.name: "The Fires of Creation"
+    pw_wonder.1301.desc: "There has always been a concealed natural foundry right beneath our feet, where metals revolt and crystals are born. The magma mantle of [ROOT.GetName] has remained unreached for the millennia the planetary crust protected it; until now, when we have finally drilled it.\nThe Mantle Crucible is an audacious project come to life. With it we can finally exploit the mantles extreme temperatures and pressures, the ideal conditions for producing modernized ceramic-polymer-metal alloys or artificial fabrication of rare minerals and crystals. Raw input begins processing in the lowest point we could reach of the [ROOT.GetName] upper mantle and climbs the whole facility, being subject to any required refinement in proper pressure levels.\nThis revolutionary industrial method is powerful enough to output more industrial products than any other single factory we have while being flexible enough that we may alter the production focus either to our military needs or to our civilian needs.\n\nHere weapons shall be forged and goods shall be bound."
+    pw_wonder.1301.a: "Light the fires beneath the world."
     #First Time Complete Mantle Crucible (Gestalt)
-    pw_wonder.1302.name: "."
-    pw_wonder.1302.a: ""
+    pw_wonder.1302.name: "The Fires of Creation"
+    pw_wonder.1302.desc: "There has always been a concealed natural foundry right beneath our feet, where metals revolt and crystals are born. The magma mantle of [ROOT.GetName] has remained unreached for the millennia the planetary crust protected it; until now, when we have finally drilled it.\nThe Mantle Crucible is an audacious project come to life. With it we can finally exploit the mantles extreme temperatures and pressures, the ideal conditions for producing modernized ceramic-polymer-metal alloys or artificial fabrication of rare minerals and crystals. Raw input begins processing in the lowest point we could reach of the [ROOT.GetName] upper mantle and climbs the whole facility, being subject to any required refinement in proper pressure levels.\nThis revolutionary industrial method is powerful enough to output more industrial products than any other single factory we have, maybe we will satisfy our military.\n\nHere weapons shall be forged and goods shall be bound."
+    pw_wonder.1302.a: "Light the fires beneath the world."
+    #Devastation Events:
+    pw_wonder.1305.name: "The Depths of [ROOT.GetName] Roar"
+    #Add 5 Devastation
+    pw_wonder.1305.desc: "Some tectonic disturbances in [ROOT.GetName] have provoked landslides and small floods in the surface of the planet, thankfully they caused only minor devastation. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    #Add 15 Devastation
+    pw_wonder.1306.desc: "Some tectonic disturbances in [ROOT.GetName] have caused building collapses and floods in the surface of the planet, they only caused some devastation, thankfully. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    #Add 25 Devastation
+    pw_wonder.1307.desc: "Tectonic disturbances in [ROOT.GetName] have caused building collapses and crater formations in the surface of the planet, they left some areas heavily devastated. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    #Add 30 Devastation
+    pw_wonder.1308.desc: "Major tectonic disturbances in [ROOT.GetName] have caused district collapses and volcano activities in the surface of the planet, they left heavy devastation in their wake. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+
+    #Complete Titan Forge
+    pw_message_titan_forge_complete: "$pw_titan_forge$ has been constructed in $PLANET|Y$."
+    #First Time Complete Titan Forge (Regular Empire)
+    pw_wonder.1331.name: "Birth of Titans"
+    pw_wonder.1331.desc: "The Mantle Crucible gave our engineers the proper base for the constructions of the greatest military industrial complex seen in [ROOT.OWNER.GetAdj] space and now we may witness its first fires roar.\nIncrusted beneath the surface of [ROOT.GetName] we have installed an enormous martial workshop, ready to process the alloys from The Crucible into machines of war. This has also given us the opportunity to evolve these machines into the epitome of planetary assault: the War Titan."
+    pw_wonder.1331.a: "We can hear the pneumatic hammers already falling."
+    #First Time Complete Titan Forge (Gestalt)
+    pw_wonder.1332.name: "Birth of Titans"
+    pw_wonder.1332.desc: "The Mantle Crucible gave our engineers the proper base for the constructions of the greatest military industrial complex seen in [ROOT.OWNER.GetAdj] space and now we may witness its first fires roar.\nIncrusted beneath the surface of [ROOT.GetName] we have installed an enormous martial workshop, ready to process the alloys from The Crucible into machines of war. This has also given us the opportunity to evolve these machines into the epitome of planetary assault: the War Titan."
+    pw_wonder.1332.a: "We can hear the pneumatic hammers already falling."
+    pw_wonder.1332.b: "We are perfect machines of war."
+
+    #Complete Industrial Hearth
+    pw_message_industrial_hearth_complete: "$pw_industrial_hearth$ has been constructed in $PLANET|Y$."
+    #First Time Complete Industrial Hearth (Regular Empire)
+    pw_wonder.1361.name: "Heart of Industry"
+    pw_wonder.1361.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas."
+    pw_wonder.1361.a: "A new era of industrial development."
+    #First Time Complete Industrial Hearth (Gestalt)
+    pw_wonder.1362.name: "Heart of Industry"
+    pw_wonder.1362.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas."
+    pw_wonder.1362.a: "Our trophies shall be proud of this accomplishment."

@@ -1263,7 +1263,6 @@ pw_tech_titan_forge = {
 	tier = 5
 	cost = @tier5cost1
 	prerequisites = {
-		pw_tech_planetary_mega_engineering
 		pw_tech_planetary_mantle_production
 	}
 	weight = @tier5weight1
@@ -1368,7 +1367,6 @@ pw_tech_industrial_hearth = {
 	tier = 5
 	cost = @tier5cost1
 	prerequisites = {
-		pw_tech_planetary_mega_engineering
 		pw_tech_planetary_mantle_production
 	}
 	weight = @tier5weight1

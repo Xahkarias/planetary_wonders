@@ -4,6 +4,7 @@
 @pw_building_cost = 10000 #half of an arcology
 @pw_building_cost_advanced = 500
 @pw_building_cost_rare = 100
+@pw_building_cost_rare_half = 50
 @pw_building_cost_minor_artifact = 10
 
 @pw_building_upkeep = 15

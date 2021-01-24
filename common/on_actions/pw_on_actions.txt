@@ -30,3 +30,12 @@ on_building_replaced = {
 		pw_wonder.1204
 	}
 }
+
+#An army construction has been completed
+# This = Planet
+# From = Army
+on_army_recruited = {
+	events = {
+		pw_wonder.1333
+	}
+}

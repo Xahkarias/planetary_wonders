@@ -12,3 +12,13 @@
     pw_decision_rebuild_flying_fortress: "Rebuild Flying Fortress"
     pw_decision_rebuild_flying_fortress_desc: "Our Flying fortress might have fallen from the skies, but the Guardian Angel framework is is still in place. We can rebuild it to protect the skies once more."
     pw_decision_rebuild_flying_fortress_tooltip: "Creates a Flying Fortress army to defend this planet."
+
+    pw_decision_mantle_crucible_alloys: "Mantle Crucible Focus: Military"
+    pw_decision_mantle_crucible_alloys_desc: "By disregarding some of the consumer goods production we can multiply the manufacturing of alloys for our military."
+    pw_decision_mantle_crucible_alloys_regular_tooltip: "$pw_mantle_crucible$:\n\t+3 $job_foundry$ Jobs\n\t-3 $job_artisan$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+    pw_decision_mantle_crucible_alloys_machine_tooltip: "$pw_mantle_crucible$:\n\t+3 $job_alloy_drone$ Jobs\n\t-3 $job_artisan_drone$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+
+    pw_decision_mantle_crucible_consumer_goods: "Mantle Crucible Focus: Civilian"
+    pw_decision_mantle_crucible_consumer_goods_desc: "By disregarding some of the alloy production we can increase the manufacturing of consumer goods for our population."
+    pw_decision_mantle_crucible_consumer_goods_regular_tooltip: "$pw_mantle_crucible$:\n\t-3 $job_foundry$ Jobs\n\t+3 $job_artisan$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+    pw_decision_mantle_crucible_consumer_goods_machine_tooltip: "$pw_mantle_crucible$:\n\t-3 $job_alloy_drone$ Jobs\n\t+3 $job_artisan_drone$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"

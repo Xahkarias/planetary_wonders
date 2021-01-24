@@ -189,20 +189,17 @@ pw_decision_rebuild_flying_fortress = {
 	}
 }
 
-
-
-
-
 #Change Mantle Crucible specialization:
 pw_decision_mantle_crucible_alloys = {
 	owned_planets_only = yes
 	sound = event_structural_collapse
-	enactment_time = 30
+	enactment_time = @pw_1month
 
 	resources = {
 		category = decisions
 		cost = {
 			influence = @pw_decision_influence_cost
+			volatile_motes = @pw_building_cost_rare_half
 		}
 	}
 
@@ -211,6 +208,8 @@ pw_decision_mantle_crucible_alloys = {
 	}
 
 	potential = {
+		exists = owner
+		owner = { country_uses_consumer_goods = yes }
 		has_building = pw_building_mantle_crucible
 	}
 
@@ -219,13 +218,25 @@ pw_decision_mantle_crucible_alloys = {
 	}
 
 	effect = {
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_machine_empire = no }
+			}
+			custom_tooltip = pw_decision_mantle_crucible_alloys_regular_tooltip
+		}
+		else = {
+			custom_tooltip = pw_decision_mantle_crucible_alloys_machine_tooltip
+		}
 		add_modifier = {
 			modifier = pw_mod_mantle_crucible_alloys
 			days = -1
 		}
-		if = {
-			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
-			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		hidden_effect = {
+			if = {
+				limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+				remove_modifier = pw_mod_mantle_crucible_consumer_goods
+			}
 		}
 	}
 
@@ -237,12 +248,13 @@ pw_decision_mantle_crucible_alloys = {
 pw_decision_mantle_crucible_consumer_goods = {
 	owned_planets_only = yes
 	sound = event_structural_collapse
-	enactment_time = 30
+	enactment_time = @pw_1month
 
 	resources = {
 		category = decisions
 		cost = {
 			influence = @pw_decision_influence_cost
+			rare_crystals = @pw_building_cost_rare_half
 		}
 	}
 
@@ -251,6 +263,8 @@ pw_decision_mantle_crucible_consumer_goods = {
 	}
 
 	potential = {
+		exists = owner
+		owner = { country_uses_consumer_goods = yes }
 		has_building = pw_building_mantle_crucible
 	}
 
@@ -259,13 +273,25 @@ pw_decision_mantle_crucible_consumer_goods = {
 	}
 
 	effect = {
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_machine_empire = no }
+			}
+			custom_tooltip = pw_decision_mantle_crucible_consumer_goods_regular_tooltip
+		}
+		else = {
+			custom_tooltip = pw_decision_mantle_crucible_consumer_goods_machine_tooltip
+		}
 		add_modifier = {
 			modifier = pw_mod_mantle_crucible_consumer_goods
 			days = -1
 		}
-		if = {
-			limit = { has_modifier = pw_mod_mantle_crucible_alloys }
-			remove_modifier = pw_mod_mantle_crucible_alloys
+		hidden_effect = {
+			if = {
+				limit = { has_modifier = pw_mod_mantle_crucible_alloys }
+				remove_modifier = pw_mod_mantle_crucible_alloys
+			}
 		}
 	}
 
