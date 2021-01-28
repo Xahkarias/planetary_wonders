@@ -58,7 +58,7 @@ fleet_event = {
 	id = pw_archaeology.115
 	title = pw_archaeology.115.name
 	desc = pw_archaeology.115.desc
-	picture = GFX_evt_mining_operations
+	picture = GFX_evt_erebus_project
 	show_sound = event_drilling
 
 	archaeology = yes
