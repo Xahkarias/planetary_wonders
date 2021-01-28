@@ -93,3 +93,28 @@ pw_army_war_titan = {
 		}
 	}
 }
+
+#Salvaged Titan Forge army (anomaly)
+pw_army_salvaged_war_titan = {
+	damage = 10.0
+	health = 10.0
+	has_morale = no
+	morale_damage = 3
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	has_species = no
+
+	icon_frame = 11
+
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	#Can't be built, must be spawned (by event/decision).
+	potential = {
+		always = no
+	}
+}

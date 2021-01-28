@@ -3,6 +3,10 @@ Changes:
 * Corrected anomaly text and options.
 * Added new Astronomical Model Bureau flavor events.
 * Added new Drained Paradise archaeological site.
+* Added Mantle Crucible
+* Added Titan Forge
+* Added new War Titan Anomaly
+* Added Industrial Hearth (with new events)
 
 # Version 1.2.1 (for Stellaris 2.8.1)
 Updates:

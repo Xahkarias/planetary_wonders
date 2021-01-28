@@ -196,18 +196,27 @@ planet_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = { owner = { is_gestalt = no }}
-			random_list = {
-				10 = {
-					planet_event = { id = pw_wonder.104 days = 180 random = 180 }
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					owner = { is_gestalt = yes }
 				}
-				10 = {
-					planet_event = { id = pw_wonder.105 days = 180 random = 180 }
+				planet_event = { id = pw_wonder.104 days = 180 random = 180 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					owner = { is_gestalt = yes }
 				}
-				10 = {
-					planet_event = { id = pw_wonder.106 days = 180 random = 180 }
+				planet_event = { id = pw_wonder.105 days = 180 random = 180 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					owner = { is_gestalt = yes }
 				}
+				planet_event = { id = pw_wonder.106 days = 180 random = 180 }
 			}
 		}
 	}
@@ -1925,6 +1934,30 @@ planet_event = {
 		}
 	}
 
+	option = {
+		name = pw_wonder.801.c
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_resource = {
+				unity = 2000
+			}
+		}
+		trigger = {
+			owner = { has_valid_civic = civic_byzantine_bureaucracy }
+		}
+	}
+
 	after = {
 		owner = {
 			#Recurring event ofr planet resources
@@ -3509,6 +3542,7 @@ planet_event = {
 		}
 	}
 }
+
 #Add 5 devastation
 planet_event = {
 	id = pw_wonder.1305
@@ -3554,6 +3588,7 @@ planet_event = {
 		}
 	}
 }
+
 
 #Add 25 devastation
 planet_event = {
@@ -3601,6 +3636,29 @@ planet_event = {
 	}
 }
 
+#Remove Mantle Crucible modifiers after it is removed
+planet_event = {
+	id = pw_wonder.1310
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		last_building_changed = pw_building_mantle_crucible
+		NOT = { has_building = pw_building_mantle_crucible }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_alloys }
+			remove_modifier = pw_mod_mantle_crucible_alloys
+		}
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
+	}
+}
+
 # Titan Forge -> id 1330
 
 #On Titan Forge built
@@ -3629,6 +3687,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.1331 } #Regular first time
 		planet_event = { id = pw_wonder.1332 } #Gestalt first time
+		planet_event = { id = pw_wonder.1334 } #Remove Mantle Crucible mods
 	}
 }
 
@@ -3717,6 +3776,28 @@ planet_event = {
 	}
 }
 
+#On Titan Forge completion remove Mantle Crucible modifiers
+planet_event = {
+	id = pw_wonder.1334
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_building = pw_building_mantle_crucible }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_alloys }
+			remove_modifier = pw_mod_mantle_crucible_alloys
+		}
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
+	}
+}
+
 # Industrial Hearth -> id 1360
 
 #On Industrial Hearth built
@@ -3745,6 +3826,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.1361 } #Regular first time
 		planet_event = { id = pw_wonder.1362 } #Gestalt first time
+		planet_event = { id = pw_wonder.1363 } #Remove Mantle Crucible mods
 	}
 }
 
@@ -3778,7 +3860,7 @@ planet_event = {
 	}
 }
 
-#On first time Titan Forge is built (Gestalt Empire)
+#On first time Industrial Hearth is built (Gestalt Empire)
 planet_event = {
 	id = pw_wonder.1362
 	title = pw_wonder.1362.name
@@ -3805,5 +3887,489 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1362.a
+	}
+}
+
+#On Industrial Hearth completion remove Mantle Crucible modifiers
+planet_event = {
+	id = pw_wonder.1363
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_building = pw_building_mantle_crucible }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_alloys }
+			remove_modifier = pw_mod_mantle_crucible_alloys
+		}
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
+	}
+}
+
+#Random Industrial Hearth development
+planet_event = {
+	id = pw_wonder.1364
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { has_country_flag = pw_industrial_hearth_industry_military }
+					owner = { has_technology = pw_tech_industrial_hearth_industry_military }
+				}
+				planet_event = {
+					id = pw_wonder.1365
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { has_country_flag = pw_industrial_hearth_industry_civilian }
+					owner = { has_technology = pw_tech_industrial_hearth_industry_civilian }
+				}
+				planet_event = {
+					id = pw_wonder.1366
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { has_country_flag = pw_industrial_hearth_capital }
+				}
+				planet_event = {
+					id = pw_wonder.1367
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { has_country_flag = pw_industrial_hearth_housing }
+				}
+				planet_event = {
+					id = pw_wonder.1368
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					NOT = { owner = { has_valid_civic = civic_environmentalist }}
+					owner = { has_country_flag = pw_industrial_hearth_gardens }
+					owner = { has_technology = pw_tech_industrial_hearth_gardens }
+				}
+				planet_event = {
+					id = pw_wonder.1369
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { has_country_flag = pw_industrial_hearth_design }
+					owner = { has_technology = pw_tech_industrial_hearth_design }
+				}
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { is_megacorp = yes }
+				}
+				planet_event = {
+					id = pw_wonder.1370
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { has_country_flag = pw_industrial_hearth_design }
+					owner = { has_technology = pw_tech_industrial_hearth_design_megacorp }
+				}
+				modifier = {
+					factor = 0
+					exists = owner
+					owner = { is_megacorp = no }
+				}
+				planet_event = {
+					id = pw_wonder.1371
+				}
+			}
+		}
+	}
+}
+
+#Industrial Hearth: industry military
+planet_event = {
+	id = pw_wonder.1365
+	title = pw_wonder.1365.name
+	desc = pw_wonder.1365.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_industry_military }
+	}
+
+	option = {
+		name = pw_wonder.1365.a
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_industry_military
+				progress = 0.01
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Industrial Hearth: industry civilian
+planet_event = {
+	id = pw_wonder.1366
+	title = pw_wonder.1366.name
+	desc = pw_wonder.1366.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_industry_civilian }
+	}
+
+	option = {
+		name = pw_wonder.1366.a
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_industry_civilian
+				progress = 0.01
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Industrial Hearth: capital
+planet_event = {
+	id = pw_wonder.1367
+	title = pw_wonder.1367.name
+	desc = pw_wonder.1367.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_capital }
+	}
+
+	option = {
+		name = pw_wonder.1367.a
+		enable_special_project = {
+			name = PW_PILOT_PLAN
+			owner = owner
+			location = capital_scope
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1367.b
+		owner = {
+			add_resource = {
+				influence = 50
+			}
+		}
+	}
+}
+
+#Industrial Hearth: housing
+planet_event = {
+	id = pw_wonder.1368
+	title = pw_wonder.1368.name
+	desc = pw_wonder.1368.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_housing }
+	}
+
+	option = {
+		name = pw_wonder.1368.a
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_housing
+				progress = 0.01
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1368.b
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_housing
+				progress = 0.05
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Industrial Hearth: gardens
+planet_event = {
+	id = pw_wonder.1369
+	title = pw_wonder.1369.name
+	desc = pw_wonder.1369.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_gardens }
+	}
+
+	option = {
+		name = pw_wonder.1369.a
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_gardens
+				progress = 0.01
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Industrial Hearth: design
+planet_event = {
+	id = pw_wonder.1370
+	title = pw_wonder.1370.name
+	desc = pw_wonder.1370.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_design }
+	}
+
+	option = {
+		name = pw_wonder.1370.a
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_design
+				progress = 0.01
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_industrial_hearth_egalitarian
+			days = @pw_2years
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1370.b
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_design
+				progress = 0.01
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_industrial_hearth_authoritarian
+			days = @pw_2years
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Industrial Hearth: design megacorp
+planet_event = {
+	id = pw_wonder.1371
+	title = pw_wonder.1371.name
+	desc = pw_wonder.1371.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_industrial_hearth
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_design }
+	}
+
+	option = {
+		name = pw_wonder.1371.a
+		owner = {
+			add_tech_progress = {
+				tech = pw_tech_industrial_hearth_design_megacorp
+				progress = 0.01
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Industrial Hearth: capital -> Success
+planet_event = {
+	id = pw_wonder.1372
+	title = pw_wonder.1372.name
+	desc = pw_wonder.1372.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1372.a
+		add_modifier = {
+			modifier = pw_mod_pilot_plan
+		}
 	}
 }

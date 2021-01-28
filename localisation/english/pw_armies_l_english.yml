@@ -12,3 +12,9 @@
     pw_army_war_titan_desc: "A colossal assault machine, assembled and controlled by the Titan Forge and crewed by the most valiant soldiers. The Titan can devastate cities with just just its planet fall."
     pw_army_war_titan_name: "War Titan Prime"
     pw_army_war_titan_limit: "We can only support 1 $pw_army_war_titan$ army."
+
+    #Salvaged War Titan (Titan Forge Anomaly)
+    pw_army_salvaged_war_titan: "Salvaged War Titan"
+    pw_army_salvaged_war_titan_plural: "Salvaged War Titans"
+    pw_army_salvaged_war_titan_desc: "A colossal assault machine, retrieved from its icy prison to fight once again. It is but a shadow of its former glory, but is still able to devastate armies."
+    pw_army_salvaged_war_titan_name: "Venerable War Titan"

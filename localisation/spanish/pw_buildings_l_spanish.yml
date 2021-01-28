@@ -85,3 +85,13 @@
     pw_abyssal_crater_test_site_habitat: "Â§MAPlanetary Test SiteÂ§!"
     pw_building_abyssal_crater_test_site_habitat: "APlanetary Test Site"
     pw_building_abyssal_crater_test_site_habitat_desc: "An enormous crater in the planet bellow designated as a dedicated test site for rocketry, spacecraft launch and landing, material strength testing and building patterns under multiple conditions of pressure and gravity. Given the subject, the tests conducted here demand extra alloys."
+
+    pw_mantle_crucible: "Â§MMantle CrucibleÂ§!"
+    pw_building_mantle_crucible: "Mantle Crucible"
+    pw_building_mantle_crucible_desc: "A massive subterranean industrial complex that exploits the extreme temperature and pressure of the planet outer mantle to process a vast quantity of minerals into flexible and strong alloys and state of the art manufactured goods."
+    pw_titan_forge: "Â§MTitan ForgeÂ§!"
+    pw_building_titan_forge: "Titan Forge"
+    pw_building_titan_forge_desc: "The industrial military complex built upon the $pw_mantle_crucible$ which has specialized underground facilities to construct dreaded War Titans for planetary assault and is able to churn out a multitude of ship components and alloys."
+    pw_industrial_hearth: "Â§MIndustrial HearthÂ§!"
+    pw_building_industrial_hearth: "Industrial Hearth"
+    pw_building_industrial_hearth_desc: "The central mesh of industrial facility, art station, design school and urbanism planner, built upon the $pw_mantle_crucible$ to enjoy its output. This multi-disciplinary factory gives birth to the $job_pw_poly_artisan$ occupation, that is able to tackle issues from a myriad of perspectives."

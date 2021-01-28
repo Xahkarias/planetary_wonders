@@ -20,6 +20,7 @@ on_tech_increased = {
 on_building_demolished = {
 	events = {
 		pw_wonder.1204
+		pw_wonder.1310
 	}
 }
 
@@ -28,6 +29,7 @@ on_building_demolished = {
 on_building_replaced = {
 	events = {
 		pw_wonder.1204
+		pw_wonder.1310
 	}
 }
 

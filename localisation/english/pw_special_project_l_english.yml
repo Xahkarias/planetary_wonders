@@ -9,6 +9,12 @@
     PW_FIX_ENIGMA_DRONES: "Counter Enigma Effects"
     PW_FIX_ENIGMA_DRONES_DESC: "The effects of the Enigma Engine have gone too far to be tolerated any more. We have organized a project to reverse its signals and transmit it in the entire planet, as to negate the negative effects of the Engine in our drones."
 
+    PW_PILOT_PLAN: "Pilot Plan"
+    PW_PILOT_PLAN_DESC: "The poly-artisan in the Industrial Hearth devised an urbanization reform for our capitals city centers and chambers of power that can better utilize the district space in the planet and any future expansions. When completed, the capital will not only better express our vision of power trough speaking architecture, but will give, but provide more comfortable building space in the future."
+
+    PW_POWER_FROZEN_WAR_TITAN: "Frozen Titan"
+    PW_POWER_FROZEN_WAR_TITAN_DESC: "An ancient War Titan is trapped in the ice on this desolated planet, if we are careful and lucky enough we can release it from its prison and pilot it again."
+
     PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL: "Investigate the Enigmatic Signal"
     PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL_DESC: "The erratic machine found in the asteroid field emits a cyphered signal that could contain information about its construction."
 

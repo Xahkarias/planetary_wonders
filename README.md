@@ -19,6 +19,9 @@ Wonder List:
 * Enigma Engine
 * Solipsist Debate Hall
 * Guardian Angel
+* Mantle Crucible
+** Titan Forge(upgrade)
+** Industrial Hearth(upgrade)
 
 Unlocked by Ascension Perk:
 * Erebus Project

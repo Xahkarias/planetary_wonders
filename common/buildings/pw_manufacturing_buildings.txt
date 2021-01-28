@@ -343,6 +343,10 @@ pw_building_mantle_crucible = {
 		planet_event = { id = pw_wonder.1300 }
 	}
 
+	on_destroy = {
+		planet_event = { id = pw_wonder.1310 }
+	}
+
 	ai_weight = {
 		weight = 50
 		modifier = {

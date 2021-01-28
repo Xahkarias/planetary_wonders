@@ -76,6 +76,25 @@
     pw_mantle_crucible_upgrade_industry_desc: "The $pw_industrial_hearth$ is an upgrade for the $pw_mantle_crucible$"
 
 
+    #Industrial Hearth Tech:
+    pw_tech_industrial_hearth_industry_military: "Military Industry Reform"
+    pw_tech_industrial_hearth_industry_military_desc: "With the advent of the Industrial Hearth, the poly-artisans were able to reshape former military industrial complexes into more streamlined, more efficient facilities from their design alone. now we can reform  the foundries to apply the new design."
+
+    pw_tech_industrial_hearth_industry_civilian: "Civilian Industry Reorganization"
+    pw_tech_industrial_hearth_industry_civilian_desc: "By consolidating theory and practice of industrial production, the poly-artisan weaved new plants for all of our civilian factories, increasing production all around the empire after we can apply it."
+
+    pw_tech_industrial_hearth_housing: "Urbanist Revolution"
+    pw_tech_industrial_hearth_housing_desc: "Instead of focusing in increasing housing space, the poly-artisan can devise a new urban plan for each of our cities, organizing living, work and traffic areas into more efficient configurations can provide much more space then previously expected."
+
+    pw_tech_industrial_hearth_design: "Revolutionary Product Design"
+    pw_tech_industrial_hearth_design_desc: "By abandoning outdated design decision on popular product development - such as programed obsolescence - the poly-artisans were able to set a new design school that allows much more of our population to satisfy their needs while consuming less goods."
+
+    pw_tech_industrial_hearth_design_megacorp: "Marketable Product Design"
+    pw_tech_industrial_hearth_design_megacorp_desc: "By abandoning outdated design decision on popular product development - such as consumer benefits - the poly-artisans were able to set a new design school that allows for more exploitative market strategies to increase trade value and disregard consumer rights."
+
+    pw_tech_industrial_hearth_gardens: "Urban Gardens Initiative"
+    pw_tech_industrial_hearth_gardens_desc: "No space needs to be wasted, by enacting a new Gardens Initiative proposed by the poly-artisans in the Industrial Hearth we can reduce the impact of the Mantle Crucible and derivatives and increase general habitability."
+
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"
 

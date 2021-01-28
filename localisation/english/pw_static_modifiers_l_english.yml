@@ -69,17 +69,28 @@
     pw_mod_galactic_model_anomaly_sensor: "Galactic Map"
     pw_mod_galactic_model_anomaly_sensor_desc: "We have found a sort of Galactic Map, that helps ous scientist to survey new celestial bodies and detect hyperlanes"
 
-    #Astronomical Model Bureau mods:
+    #Archaeological Sites mods:
     pw_mod_gaia_unstable_weather: "Unstable Ecosystem"
     pw_mod_gaia_unstable_weather_desc: "Constant draining of resources have left this planet bare at some point in time, and now it can not be pushed past its limits."
 
-    #Astronomical Model Bureau mods:
+    #Mantle Crucible mods:
     pw_mod_mantle_crucible_alloys: "$pw_mantle_crucible$: Alloys"
     pw_mod_mantle_crucible_alloys_desc: "Focusing the $pw_mantle_crucible$ on military industry to produce more alloys for our fleets."
 
-    #Astronomical Model Bureau mods:
     pw_mod_mantle_crucible_consumer_goods: "$pw_mantle_crucible$: Consumer Goods"
     pw_mod_mantle_crucible_consumer_goods_desc: "Focusing the $pw_mantle_crucible$ on civilian industry to produce more consumer goods for our population."
+
+    #Pilot Project (Industrial Hearth) mods:
+    pw_mod_pilot_plan: "Pilot Plant"
+    pw_mod_pilot_plan_desc: "Reforming the capital cityscape and executive center with new planed urbanist directives opened more space on the planet overall."
+
+    #Pilot Project (Industrial Hearth) mods:
+    pw_mod_industrial_hearth_egalitarian: "Designs for all"
+    pw_mod_industrial_hearth_egalitarian_desc: "The Industrial Hearth is committed to provide better designs for popular products, destined to all the population."
+
+    #Pilot Project (Industrial Hearth) mods:
+    pw_mod_industrial_hearth_authoritarian: "Designs for the elites"
+    pw_mod_industrial_hearth_authoritarian_desc: "The Industrial Hearth is committed to provide better designs for luxury products, destined to the ruling class."
 
     #Solipsist Debates:
 

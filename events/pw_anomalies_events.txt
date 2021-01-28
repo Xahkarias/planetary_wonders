@@ -434,3 +434,111 @@ ship_event = {
 		}
 	}
 }
+
+#Frozen War Titan.
+ship_event = {
+	id = pw_anomaly.130
+	title = pw_anomaly.130.name
+	desc = pw_anomaly.130.desc
+	picture = GFX_evt_crashed_station
+	show_sound = event_ship_bridge
+	is_triggered_only = yes
+	location = THIS
+
+	#If this is the first sign of life, play story event.
+	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
+
+	#Project
+	option = {
+		name = pw_anomaly.130.a
+		enable_special_project = {
+			name = PW_POWER_FROZEN_WAR_TITAN
+			location = FROM
+		}
+	}
+
+	#Science
+	option = {
+		name = pw_anomaly.130.b
+		FROM = { add_deposit = d_engineering_5 }
+	}
+
+	#Energy
+	option = {
+		name = pw_anomaly.130.c
+		owner = {
+			add_resource = {
+				energy = 500
+			}
+		}
+	}
+
+	#Leave it alone
+	option = {
+		name = pw_anomaly.130.d
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+		}
+	}
+}
+
+#Frozen War Titan -> Salvage fail.
+ship_event = {
+	id = pw_anomaly.131
+	title = pw_anomaly.131.name
+	desc = pw_anomaly.131.desc
+	picture = GFX_evt_crashed_station
+	show_sound = event_ship_bridge
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_anomaly.131.a
+		owner = {
+			random_list = {
+				1 = {
+					add_resource = {
+						engineering_research = 100
+					}
+				}
+				1 = {
+					add_resource = {
+						engineering_research = 200
+					}
+				}
+				1 = {
+					add_resource = {
+						engineering_research = 300
+					}
+				}
+			}
+		}
+	}
+}
+
+#Frozen War Titan -> Salvage success.
+ship_event = {
+	id = pw_anomaly.132
+	title = pw_anomaly.132.name
+	desc = pw_anomaly.132.desc
+	picture = GFX_evt_crashed_station
+	show_sound = event_ship_bridge
+	is_triggered_only = yes
+	location = THIS
+
+	#
+	option = {
+		name = pw_anomaly.132.a
+		create_fleet = {
+			name = pw_army_salvaged_war_titan_name
+			effect = {
+				create_army_transport = {
+					army_type = pw_army_salvaged_war_titan
+					army_name = pw_army_salvaged_war_titan_name
+				}
+			}
+		}
+	}
+}
