@@ -24,6 +24,12 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_erebus_project"
+		texturefile = "gfx/event_pictures/erebus_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_galactic_model"
 		texturefile = "gfx/event_pictures/galactic_model.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
