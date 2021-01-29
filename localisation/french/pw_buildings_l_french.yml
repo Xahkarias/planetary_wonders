@@ -20,7 +20,7 @@
     # Particle Supercollider
     pw_particle_supercollider: "§MParticle Supercollider§!"
     pw_building_particle_supercollider: "Particle Supercollider"
-    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensor with thousands of kilometers in diameter  that consume a considerable amount of power. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
+    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensors with thousands of kilometers in diameter  that consume a considerable amount of power. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
 
     # Domed City
     pw_domed_city: "§MDomed City§!"
