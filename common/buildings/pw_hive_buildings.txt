@@ -85,7 +85,7 @@ pw_building_solipsist_debate_hall = {
 
 			#Complex
 			job_patrol_drone_per_pop = @pw_job_per_20_pop
-			job_spawning_drone_per_pop = 1
+			job_spawning_drone_add = 1
 		}
 	}
 
