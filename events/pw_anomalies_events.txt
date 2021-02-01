@@ -534,9 +534,12 @@ ship_event = {
 		create_fleet = {
 			name = pw_army_salvaged_war_titan_name
 			effect = {
+				set_owner = owner
 				create_army_transport = {
+					ship_name = random
+					species = owner.species
 					army_type = pw_army_salvaged_war_titan
-					army_name = pw_army_salvaged_war_titan_name
+					# army_name = pw_army_salvaged_war_titan_name
 				}
 			}
 		}

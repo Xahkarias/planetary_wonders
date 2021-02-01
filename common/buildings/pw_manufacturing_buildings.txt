@@ -69,9 +69,16 @@ pw_building_mantle_crucible = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		pop_environment_tolerance = -0.20 #Decrease Habitability
+
 		planet_metallurgists_produces_mult = 0.10
 		planet_artisans_produces_mult = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = { #If habitability is not fixed
+			pw_is_planet_ideal = no
+		}
+		pop_environment_tolerance = -0.25 #Decrease Habitability
 	}
 
 	triggered_planet_modifier = {
@@ -425,7 +432,6 @@ pw_building_titan_forge = {
 	base_buildtime = @pw_building_buildtime
 	add_to_first_building_slot = yes
 	category = manufacturing
-	base_cap_amount = 1
 	can_be_ruined = no
 	can_build = no #Only upgrades
 
@@ -472,8 +478,14 @@ pw_building_titan_forge = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		pop_environment_tolerance = -0.20 #Decrease Habitability
 		planet_metallurgists_produces_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = { #If habitability is not fixed
+			pw_is_planet_ideal = no
+		}
+		pop_environment_tolerance = -0.25 #Decrease Habitability
 	}
 
 	triggered_planet_modifier = {
@@ -630,7 +642,6 @@ pw_building_industrial_hearth = {
 	base_buildtime = @pw_building_buildtime
 	add_to_first_building_slot = yes
 	category = manufacturing
-	base_cap_amount = 1
 	can_be_ruined = no
 	can_build = no #Only upgrades
 
@@ -683,8 +694,14 @@ pw_building_industrial_hearth = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		pop_environment_tolerance = -0.20 #Decrease Habitability
 		planet_jobs_consumer_goods_produces_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = { #If habitability is not fixed
+			pw_is_planet_ideal = no
+		}
+		pop_environment_tolerance = -0.25 #Decrease Habitability
 	}
 
 	triggered_planet_modifier = {
@@ -733,7 +750,7 @@ pw_building_industrial_hearth = {
 			exists = owner
 			owner = { is_gestalt = no }
 		}
-		text = job_artisan_effect_desc
+		text = job_pw_poly_artisan_effect_desc
 	}
 
 	triggered_desc = {
@@ -749,7 +766,7 @@ pw_building_industrial_hearth = {
 			exists = owner
 			owner = { is_machine_empire = yes }
 		}
-		text = job_artisan_drone_effect_desc
+		text = job_pw_poly_artisan_drone_effect_desc
 	}
 
 	triggered_desc = {

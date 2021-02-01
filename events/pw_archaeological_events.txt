@@ -77,9 +77,9 @@ fleet_event = {
 		name = pw_archaeology.115.a
 		small_artifact_reward = yes
 		allow = {
-			controller = { has_resource = { type = minerals amount > 1500 }}
+			owner = { has_resource = { type = minerals amount > 1500 }}
 		}
-		controller = {
+		owner = {
 			add_resource = { minerals = -1500 }
 		}
 	}
@@ -109,12 +109,13 @@ fleet_event = {
 		name = CONTINUE
 		small_artifact_reward = yes
 		allow = {
-			controller = { has_resource = { type = energy amount > 1500 }}
+			owner = { has_resource = { type = energy amount > 1500 }}
 		}
-		controller = {
+		owner = {
 			add_resource = {
 				energy = -1500
 			}
+			add_research_option = tech_terrestrial_sculpting
 			add_tech_progress = {
 				tech = tech_terrestrial_sculpting
 				progress = 0.05
@@ -147,15 +148,16 @@ fleet_event = {
 		name = pw_archaeology.125.a
 		small_artifact_reward = yes
 		trigger = {
-			controller = { country_uses_food = yes }
+			owner = { country_uses_food = yes }
 		}
 		allow = {
-			controller = { has_resource = { type = food amount > 1500 }}
+			owner = { has_resource = { type = food amount > 1500 }}
 		}
-		controller = {
+		owner = {
 			add_resource = {
 				food = -1500
 			}
+			add_research_option = tech_ecological_adaptation
 			add_tech_progress = {
 				tech = tech_ecological_adaptation
 				progress = 0.05
@@ -167,15 +169,16 @@ fleet_event = {
 		name = pw_archaeology.125.b
 		small_artifact_reward = yes
 		trigger = {
-			controller = { country_uses_food = no }
+			owner = { country_uses_food = no }
 		}
 		allow = {
-			controller = { has_resource = { type = energy amount > 1500 }}
+			owner = { has_resource = { type = energy amount > 1500 }}
 		}
-		controller = {
+		owner = {
 			add_resource = {
 				energy = -1500
 			}
+			add_research_option = tech_ecological_adaptation
 			add_tech_progress = {
 				tech = tech_ecological_adaptation
 				progress = 0.05
@@ -207,7 +210,8 @@ fleet_event = {
 	option = {
 		name = FANTASTIC
 		small_artifact_reward = yes
-		controller = {
+		owner = {
+			add_research_option = tech_climate_restoration
 			add_tech_progress = {
 				tech = tech_climate_restoration
 				progress = 0.05

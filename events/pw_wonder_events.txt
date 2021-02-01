@@ -242,16 +242,22 @@ planet_event = {
 	option = {
 		name = pw_wonder.104.a
 		owner = {
-			add_resource = {
-				consumer_goods = 1000
+			add_monthly_resource_mult = {
+				resource = consumer_goods
+				value = @tier3materialreward
+				min = @tier3materialmin
+				max = @tier3materialmax
 			}
 		}
 	}
 	option = {
 		name = pw_wonder.104.b
 		owner = {
-			add_resource = {
-				energy = 2500
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier3materialreward
+				min = @tier3materialmin
+				max = @tier3materialmax
 			}
 		}
 	}
@@ -311,34 +317,39 @@ planet_event = {
 			species = owner
 		}
 	}
-	# option = {
-	# 	name = pw_wonder.106.b
-	# 	create_fleet = {
-	# 		name = "Stowaways"
-	# 		effect = {
-	# 			set_owner = owner
-	# 			set_location = {
-	# 				target = THIS
-	# 				distance = 5
-	# 				angle = random
-	# 			}
-	# 			create_ship = {
-	# 				name = random
-	# 				design = colonizer
-	# 				#random_existing_design = colonizer
-	# 				colonizer_species = owner_main_species
-	# 				prefix = yes
-	# 				upgradable = yes
-	# 			}
-	# 		}
-	# 	}
-	# }
+	option = {
+		name = pw_wonder.106.b
+		create_fleet = {
+			name = "Stowaways"
+			effect = {
+				set_owner = owner
+				set_location = {
+					target = THIS
+					distance = 5
+					angle = random
+				}
+				create_ship = {
+					name = random
+					design = "NAME_colonizer"
+					#random_existing_design = colonizer
+					colonizer_species = owner_main_species
+					prefix = yes
+					upgradable = yes
+				}
+			}
+		}
+	}
 	option = {
 		name = pw_wonder.106.c
 		owner = {
-			add_resource = {
-				influence = 100
+			owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
 			}
+		}
 		}
 	}
 }
@@ -1289,56 +1300,36 @@ planet_event = {
 
 	immediate = {
 		set_planet_flag = pw_cloud_seeding_event_triggered
-		if = {
-			limit = { #Machine and Hive planets can't have Atmospheric Aphrodisiacs mod.
-				OR = {
-					is_planet_class = pc_machine
-					is_planet_class = pc_hive
+		random_list = {
+			10 = {
+				planet_event = {
+					id = pw_wonder.604
+					days = 60
+					random = 30
 				}
 			}
-			random_list = {
-				10 = {
-					planet_event = {
-						id = pw_wonder.604
-						days = 60
-						random = 30
-					}
+			10 = {
+				planet_event = {
+					id = pw_wonder.605
+					days = 60
+					random = 30
 				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.605
-						days = 60
-						random = 30
-					}
-				}
-				5 = {}
 			}
-		}
-		else = {
-			random_list = {
-				10 = {
-					planet_event = {
-						id = pw_wonder.604
-						days = 60
-						random = 30
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						is_planet_class = pc_machine
+						is_planet_class = pc_hive
 					}
 				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.605
-						days = 60
-						random = 30
-					}
+				planet_event = {
+					id = pw_wonder.606
+					days = 60
+					random = 30
 				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.606
-						days = 60
-						random = 30
-					}
-				}
-				5 = {}
 			}
+			5 = {}
 		}
 	}
 }
@@ -1572,81 +1563,47 @@ planet_event = {
 
 	immediate = {
 		set_planet_flag = pw_predatory_harvesting_event_triggered
-		if = {
-			limit = { #Hive planets can't have Natural Beauty mod.
-				is_planet_class = pc_hive
+		random_list = {
+			10 = {
+				planet_event = {
+					id = pw_wonder.704
+					days = 60
+					random = 30
+				}
 			}
-			random_list = {
-				10 = {
-					planet_event = {
-						id = pw_wonder.704
-						days = 60
-						random = 30
-					}
+			10 = {
+				planet_event = {
+					id = pw_wonder.705
+					days = 60
+					random = 30
 				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.705
-						days = 60
-						random = 30
-					}
-				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.706
-						days = 60
-						random = 30
-					}
-				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.707
-						days = 60
-						random = 30
-					}
-				}
-				5 = {}
 			}
-		}
-		else = {
-			random_list = {
-				10 = {
-					planet_event = {
-						id = pw_wonder.704
-						days = 60
-						random = 30
-					}
+			10 = {
+				planet_event = {
+					id = pw_wonder.706
+					days = 60
+					random = 30
 				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.705
-						days = 60
-						random = 30
-					}
-				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.706
-						days = 60
-						random = 30
-					}
-				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.707
-						days = 60
-						random = 30
-					}
-				}
-				10 = {
-					planet_event = {
-						id = pw_wonder.708
-						days = 60
-						random = 30
-					}
-				}
-				5 = {}
 			}
+			10 = {
+				planet_event = {
+					id = pw_wonder.707
+					days = 60
+					random = 30
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0 #Hive planets can't have Natural Beauty mod.
+					is_planet_class = pc_hive
+				}
+				planet_event = {
+					id = pw_wonder.708
+					days = 60
+					random = 30
+				}
+			}
+			5 = {}
 		}
 	}
 }
@@ -1876,7 +1833,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.801 }
 		planet_event = { id = pw_wonder.802 }
-		planet_event = { id = pw_wonder.803 days = 90 random = 30 }
+		planet_event = { id = pw_wonder.803 days = 90 random = 30 } #Event chain begin
 	}
 }
 
@@ -1949,8 +1906,11 @@ planet_event = {
 			}
 		}
 		owner = {
-			add_resource = {
-				unity = 2000
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
 			}
 		}
 		trigger = {
@@ -1960,7 +1920,7 @@ planet_event = {
 
 	after = {
 		owner = {
-			#Recurring event ofr planet resources
+			#Recurring event for planet resources
 			country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
 		}
 	}
@@ -2019,7 +1979,7 @@ planet_event = {
 
 	after = {
 		owner = {
-			#Recurring event ofr planet resources
+			#Recurring event for planet resources
 			country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
 		}
 	}
@@ -2090,9 +2050,17 @@ country_event = {
 
 	option = {
 		name = pw_wonder.804.a
-		add_resource = {
-			unity = 1000
-			engineering_research = 1000
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
 		}
 		hidden_effect = {
 			#Next event in AMB chain
@@ -2168,21 +2136,21 @@ country_event = {
 
 	option = {
 		name = pw_wonder.806.a
-		add_resource = {
-			unity = 1500
-			engineering_research = 1000
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
 		}
-		random_list = {
-			1 = {
-				add_resource = { rare_crystals = 250 }
-			}
-			1 = {
-				add_resource = { exotic_gases = 250 }
-			}
-			1 = {
-				add_resource = { volatile_motes = 250 }
-			}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier4researchreward
+			min = @tier4researchmin
+			max = @tier4researchmax
 		}
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
+		add_resource = { volatile_motes = 100 }
 		# hidden_effect = {
 		# 	#Next event in AMB chain
 		# 	country_event = { id = pw_wonder.805 days = 180 random = 180 }
@@ -2218,13 +2186,55 @@ country_event = {
 					is_planet_class = pc_gas_giant
 				}
 			}
-			planet_event = { id = pw_wonder.821 }
+			save_event_target_as = pw_resource_planet
 		}
+		random_list = {
+			40 = { #Add Minerals
+				country_event = { id = pw_wonder.821 }
+			}
+			40 = { #Add Energy
+				country_event = { id = pw_wonder.822 }
+			}
+			40 = { #Add Trade Value
+				modifier = {
+					factor = 0
+					can_generate_trade_value = no
+				}
+				country_event = { id = pw_wonder.823 }
+			}
+			20 = { #Add Alloys
+				country_event = { id = pw_wonder.824 }
+			}
+			10 = { #Add Crystals
+				country_event = { id = pw_wonder.825 }
+			}
+			10 = { #Add Gases
+				country_event = { id = pw_wonder.826 }
+			}
+			10 = { #Add Motes
+				country_event = { id = pw_wonder.827 }
+			}
+			1 = { #Add Dark Matter
+				country_event = { id = pw_wonder.828 }
+			}
+			1 = { #Add Living Metal
+				country_event = { id = pw_wonder.829 }
+			}
+			1 = { #Add Zro
+				modifier = {
+					factor = 0
+					is_materialist = yes
+				}
+				country_event = { id = pw_wonder.830 }
+			}
+		}
+
+		country_event = { id = pw_wonder.821 }
 	}
 }
 
-#Add a random deposit to planet which has not.
-planet_event = {
+#Add Minerals
+country_event = {
 	id = pw_wonder.821
 	title = pw_wonder.821.name
 	desc = pw_wonder.821.desc
@@ -2235,34 +2245,218 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.821.a
-		random_list = {
-			30 = {
-				add_deposit = d_rare_crystals_1
-			}
-			30 = {
-				add_deposit = d_exotic_gases_1
-			}
-			30 = {
-				add_deposit = d_volatile_motes_1
-			}
-			3 = {
-				add_deposit = d_dark_matter_deposit_1
-			}
-			3 = {
-				add_deposit = d_living_metal_deposit
-			}
-			3 = {
-				modifier = {
-					factor = 0
-					controller = {
-						is_materialist = yes
-					}
-				}
-				add_deposit = d_zro_deposit_1
-			}
+		event_target:pw_resource_planet = {
+			add_deposit = d_minerals_3
 		}
 		hidden_effect = {
-			controller = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Energy
+country_event = {
+	id = pw_wonder.822
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_energy_3
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Trade Value
+country_event = {
+	id = pw_wonder.823
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_trade_value_5
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Alloys
+country_event = {
+	id = pw_wonder.824
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_alloys_2
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Crystals
+country_event = {
+	id = pw_wonder.825
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_rare_crystals_1
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Gases
+country_event = {
+	id = pw_wonder.826
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_exotic_gases_1
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Motes
+country_event = {
+	id = pw_wonder.827
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_volatile_motes_1
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Dark Matter
+country_event = {
+	id = pw_wonder.828
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_dark_matter_deposit_1
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Living Matter
+country_event = {
+	id = pw_wonder.829
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_living_metal_deposit
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			}
+		}
+	}
+}
+
+#Add Zro
+country_event = {
+	id = pw_wonder.830
+	title = pw_wonder.821.name
+	desc = pw_wonder.821.desc
+	picture = GFX_evt_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.821.a
+		event_target:pw_resource_planet = {
+			add_deposit = d_zro_deposit_1
+		}
+		hidden_effect = {
+			FROM = {
 				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
 			}
 		}
@@ -2445,8 +2639,11 @@ country_event = {
 	}
 	option = {
 		name = pw_wonder.903.b
-		add_resource = {
-			energy = 1000
+		add_monthly_resource_mult = {
+			resource = energy
+			value = @tier3materialreward
+			min = @tier3materialmin
+			max = @tier3materialmax
 		}
 		event_target:PWEmpireWithCorruptLeader = {
 			add_opinion_modifier = {
@@ -2730,10 +2927,23 @@ country_event = {
 	}
 	option = {
 		name = pw_wonder.1007.b
-		add_resource = {
-			society_research = 5000
-			physics_research = 5000
-			engineering_research = 5000
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier5researchreward
+			min = @tier5researchmin
+			max = @tier5researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier5researchreward
+			min = @tier5researchmin
+			max = @tier5researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier5researchreward
+			min = @tier5researchmin
+			max = @tier5researchmax
 		}
 	}
 	option = {
@@ -3500,36 +3710,52 @@ planet_event = {
 				}
 			}
 			random_list = {
-				30 = {
+				40 = { #Add 5 devastation
 					modifier = {
 						factor = 0
 						exists = owner
 						owner = { is_machine_empire = yes }
 					}
+					modifier = {
+						factor = 0.5
+						pw_is_planet_ideal = yes
+					}
 					planet_event = {
 						id = pw_wonder.1305
 					}
 				}
-				20 = {
+				25 = { #Add 15 devastation
 					modifier = {
 						factor = 0.5
 						exists = owner
 						owner = { is_machine_empire = yes }
 					}
+					modifier = {
+						factor = 0.75
+						pw_is_planet_ideal = yes
+					}
 					planet_event = {
 						id = pw_wonder.1306
 					}
 				}
-				10 = {
+				10 = { #Add 25 devastation
+					modifier = {
+						factor = 1.5
+						pw_is_planet_ideal = yes
+					}
 					planet_event = {
 						id = pw_wonder.1307
 					}
 				}
-				10 = {
+				5 = { #Add 30 devastation
 					modifier = {
 						factor = 1.5
 						exists = owner
 						owner = { is_machine_empire = yes }
+					}
+					modifier = {
+						factor = 2
+						pw_is_planet_ideal = yes
 					}
 					planet_event = {
 						id = pw_wonder.1308
@@ -3827,6 +4053,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1361 } #Regular first time
 		planet_event = { id = pw_wonder.1362 } #Gestalt first time
 		planet_event = { id = pw_wonder.1363 } #Remove Mantle Crucible mods
+		planet_event = { id = pw_wonder.1364 days = @pw_1year random = @pw_halfYear } #Development Events
 	}
 }
 
@@ -4045,10 +4272,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1365.a
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_industry_military
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_industry_military
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4086,10 +4310,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1366.a
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_industry_civilian
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_industry_civilian
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4126,10 +4347,12 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1367.a
-		enable_special_project = {
-			name = PW_PILOT_PLAN
-			owner = owner
-			location = capital_scope
+		capital_scope = {
+			enable_special_project = {
+				name = PW_PILOT_PLAN
+				owner = owner
+				location = this
+			}
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4176,10 +4399,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1368.a
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_housing
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_housing
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4193,10 +4413,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1368.b
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_housing
-				progress = 0.05
-			}
+			add_research_option = pw_tech_industrial_hearth_housing
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4234,10 +4451,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1369.a
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_gardens
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_gardens
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4275,10 +4489,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1370.a
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_design
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_design
 		}
 		add_modifier = {
 			modifier = pw_mod_industrial_hearth_egalitarian
@@ -4296,10 +4507,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1370.b
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_design
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_design
 		}
 		add_modifier = {
 			modifier = pw_mod_industrial_hearth_authoritarian
@@ -4341,10 +4549,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1371.a
 		owner = {
-			add_tech_progress = {
-				tech = pw_tech_industrial_hearth_design_megacorp
-				progress = 0.01
-			}
+			add_research_option = pw_tech_industrial_hearth_design_megacorp
 		}
 		hidden_effect = {
 			planet_event = {

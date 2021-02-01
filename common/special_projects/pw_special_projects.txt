@@ -80,7 +80,7 @@ special_project = {
 	cost = 20000
 	tech_department = engineering_technology
 	picture = GFX_evt_city_planet
-	location = yes
+	location = no
 
 	event_scope = planet_event
 

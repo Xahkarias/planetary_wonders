@@ -86,6 +86,16 @@ pw_is_wonder_empire_unique = {
 	}
 }
 
+pw_is_planet_ideal = {
+	OR = {
+		is_planet_class = pc_gaia
+		is_planet_class = pc_city
+		is_planet_class = pc_ringworld_habitable
+		is_planet_class = pc_hive
+		is_homeworld = yes
+	}
+}
+
 # Scope: Pop
 pw_sentient_worker_job_check_trigger = {
 	worker_job_check_trigger = yes
