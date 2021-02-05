@@ -99,6 +99,23 @@
     pw_building_industrial_hearth: "Industrial Hearth"
     pw_building_industrial_hearth_desc: "The central mesh of industrial facility, art station, design school and urbanism planner, built upon the $pw_mantle_crucible$ to enjoy its output. This multi-disciplinary factory gives birth to the $job_pw_poly_artisan$ occupation, that is able to tackle issues from a myriad of perspectives."
 
+    #Unity Buildings:
+
+    # Pavilion of Wonders
+    pw_pavilion_of_wonders: "§MPavilion of Wonders§!"
+    pw_building_pavilion_of_wonders: "Pavilion of Wonders"
+    pw_building_pavilion_of_wonders_desc: "An expansive and open pavilion dedicated to every art movement and form that flourish in our civilization evolution. Here constant displays of wonderful art pieces, ephemeral experiences, architectural movements, that reflect the main tenets of our culture, are hosted, and dedicated planetary exhibitions can be organized."
+
+    # Fair of Worlds
+    pw_fair_of_worlds: "§MFair of Worlds§!"
+    pw_building_fair_of_worlds: "Fair of Worlds"
+    pw_building_fair_of_worlds_desc: "More than expressing our own vision of the galaxy, the Fair of Worlds provides an entire district to exhibition of xeno art and culture exchange, allowing all to see the strength in unity and diversity, rather than in alienation and otherness."
+
+    # Museum of the Grotesque
+    pw_museum_of_the_grotesque: "§MMuseum of the Grotesque§!"
+    pw_building_museum_of_the_grotesque: "Museum of the Grotesque"
+    pw_building_museum_of_the_grotesque_desc: "Lower and foreign art has no place in our society, by exposing them as examples to be mocked in the expansive Museum of the Grotesque we can make sure this ridiculousness xenos call culture stays away from our prideful mainstream."
+
     # Machine Buildings:
 
     # Enigma Engine

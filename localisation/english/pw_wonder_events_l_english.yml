@@ -337,8 +337,9 @@
     pw_message_industrial_hearth_complete: "$pw_industrial_hearth$ has been constructed in $PLANET|Y$."
     #First Time Complete Industrial Hearth (Regular Empire)
     pw_wonder.1361.name: "Heart of Industry"
-    pw_wonder.1361.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas."
-    pw_wonder.1361.a: "A new era of industrial development."
+    pw_wonder.1361.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas.\n\nBit by bit the pieces fit."
+    pw_wonder.1361.a: "The [ROOT.OWNER.GetAdj] machine advances!"
+    pw_wonder.1361.b: "A new era of industrial development."
     #First Time Complete Industrial Hearth (Gestalt)
     pw_wonder.1362.name: "Heart of Industry"
     pw_wonder.1362.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas."
@@ -378,3 +379,24 @@
     pw_wonder.1372.name: "Capital Reforms"
     pw_wonder.1372.desc: "Our capital has been reformed according to the director plan set by the most skilled poly-artisans. In a first moment, the capital itself became a \"Fantasy Island\", an utopian center in and ocean of displaced people and buildings. But soon its surroundings were encompassed in the pilot plan and changed to the benefit of its population, and now the whole planet enjoys better mobility and urban features. All future developments shall follow this plan and we will have more space than originally projected."
     pw_wonder.1372.a: "To rule is indeed to build districts."
+
+    #Complete Pavilion of Wonders
+    pw_message_pavilion_of_wonders_complete: "$pw_pavilion_of_wonders$ has been constructed in $PLANET|Y$."
+    #First Time Complete Pavilion of Wonders (Regular Empire)
+    pw_wonder.1401.name: ""
+    pw_wonder.1401.desc: "."
+    pw_wonder.1401.a: "."
+
+    #Complete Fair of Worlds
+    pw_message_fair_of_worlds_complete: "$pw_fair_of_worlds$ has been constructed in $PLANET|Y$."
+    #First Time Complete Fair of Worlds (Regular Empire)
+    pw_wonder.1431.name: ""
+    pw_wonder.1431.desc: "."
+    pw_wonder.1431.a: "."
+
+    #Complete Museum of the Grotesque
+    pw_message_museum_of_the_grotesque_complete: "$pw_museum_of_the_grotesque$ has been constructed in $PLANET|Y$."
+    #First Time Complete Museum of the Grotesque (Regular Empire)
+    pw_wonder.1461.name: ""
+    pw_wonder.1461.desc: "."
+    pw_wonder.1461.a: "."

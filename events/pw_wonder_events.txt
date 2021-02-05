@@ -51,7 +51,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -365,7 +364,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -508,7 +506,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -690,7 +687,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -871,7 +867,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -1195,7 +1190,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -1458,7 +1452,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -1815,7 +1808,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -2473,7 +2465,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -2682,7 +2673,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -3076,7 +3066,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -3327,7 +3316,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -3567,7 +3555,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -3601,8 +3588,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
-		is_ai = no
 	}
 
 	trigger = {
@@ -3643,8 +3628,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
-		is_ai = no
 	}
 
 	trigger = {
@@ -3895,7 +3878,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -3929,8 +3911,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
-		is_ai = no
 	}
 
 	trigger = {
@@ -3959,8 +3939,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
-		is_ai = no
 	}
 
 	trigger = {
@@ -4034,7 +4012,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
 	}
 
 	immediate = {
@@ -4069,8 +4046,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
-		is_ai = no
 	}
 
 	trigger = {
@@ -4084,6 +4059,10 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1361.a
+	}
+
+	option = {
+		name = pw_wonder.1361.b
 	}
 }
 
@@ -4099,8 +4078,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_occupied_flag = no
-		is_ai = no
 	}
 
 	trigger = {
@@ -4576,5 +4553,185 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_pilot_plan
 		}
+	}
+}
+
+# Pavilion of Wonders -> id 1400
+
+#On Pavilion of Wonders built
+planet_event = {
+	id = pw_wonder.1400
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_pavilion_of_wonders_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1401 } #Regular first time
+	}
+}
+
+#On first time Pavilion of Wonders is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1401
+	title = pw_wonder.1401.name
+	desc = pw_wonder.1401.desc
+	picture = GFX_evt_galactic_community
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pavilion_of_wonders_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pavilion_of_wonders_built }
+	}
+
+	option = {
+		name = pw_wonder.1401.a
+		if = {
+			limit = {
+				has_modifier = pw_mod_wonder_built_recently_happiness
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+	}
+}
+
+# Fair of Worlds -> id 1430
+
+#On Fair of Worlds built
+planet_event = {
+	id = pw_wonder.1430
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_fair_of_worlds_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1431 } #Regular first time
+	}
+}
+
+#On first time Fair of Worlds is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1431
+	title = pw_wonder.1431.name
+	desc = pw_wonder.1431.desc
+	picture = GFX_evt_galactic_community
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = fair_of_worlds_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = fair_of_worlds_built }
+	}
+
+	option = {
+		name = pw_wonder.1431.a
+	}
+}
+
+# Museum of the Grotesque -> id 1460
+
+#On Museum of the Grotesque built
+planet_event = {
+	id = pw_wonder.1460
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_museum_of_the_grotesque_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1461 } #Regular first time
+	}
+}
+
+#On first time Museum of the Grotesque is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1461
+	title = pw_wonder.1461.name
+	desc = pw_wonder.1461.desc
+	picture = GFX_evt_galactic_community
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = museum_of_the_grotesque_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = museum_of_the_grotesque_built }
+	}
+
+	option = {
+		name = pw_wonder.1461.a
 	}
 }

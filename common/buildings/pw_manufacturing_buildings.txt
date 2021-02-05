@@ -48,6 +48,15 @@ pw_building_mantle_crucible = {
 			energy = @pw_building_upkeep
 			volatile_motes = @pw_building_upkeep_rare
 		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { country_uses_consumer_goods = yes }
+				NOT = { has_modifier = pw_mod_mantle_crucible_alloys }
+				NOT = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+			}
+			energy = @pw_building_upkeep
+		}
 	}
 
 	destroy_trigger = {
@@ -458,6 +467,7 @@ pw_building_titan_forge = {
 		category = planet_buildings
 		cost = {
 			minerals = @pw_building_cost
+			volatile_motes = @pw_building_cost_rare
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
@@ -669,6 +679,7 @@ pw_building_industrial_hearth = {
 		category = planet_buildings
 		cost = {
 			minerals = @pw_building_cost
+			rare_crystals = @pw_building_cost_rare
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive

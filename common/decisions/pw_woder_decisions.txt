@@ -299,3 +299,90 @@ pw_decision_mantle_crucible_consumer_goods = {
 		weight = 0
 	}
 }
+
+#Art exhibitions:
+pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
+	owned_planets_only = yes
+	sound =
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = @pw_decision_influence_cost
+			unity =
+		}
+	}
+
+	prerequisites = {
+		pw_tech_great_art_exhibition
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_building = pw_building_pavilion_of_wonders
+	}
+
+	allow = {
+		NOT = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_mantle_crucible_consumer_goods_regular_tooltip
+		hidden_effect = {
+			planet_event = {
+
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
+	owned_planets_only = yes
+	sound =
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = @pw_decision_influence_cost
+			unity =
+		}
+	}
+
+	prerequisites = {
+		pw_tech_great_art_exhibition
+	}
+
+	potential = {
+		exists = owner
+		owner = { country_uses_consumer_goods = yes }
+		has_building = pw_building_pavilion_of_wonders
+		owner = {
+			any_owner_planet = {
+				NOT = { is_planet = ROOT }
+				has_building = pw_building_pavilion_of_wonders
+			}
+		}
+	}
+
+	allow = {
+
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_mantle_crucible_consumer_goods_regular_tooltip
+		hidden_effect = {
+			country_event = { id =  }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

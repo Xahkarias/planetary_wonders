@@ -75,6 +75,22 @@
     pw_tech_industrial_hearth_desc: "The Mantle Crucible gave us a new perspective on industry and industrial production. Production, art, design, urbanism, architecture and many others must be cooperative disciplines created by poly-artisans in a cybernetical chain of knowledge, connecting the mantle and crust, products and people."
     pw_mantle_crucible_upgrade_industry_desc: "The $pw_industrial_hearth$ is an upgrade for the $pw_mantle_crucible$"
 
+    # Pavilion of Wonders:
+    pw_tech_great_art_exhibition: "Universal Arts Exhibition"
+    pw_tech_great_art_exhibition_desc: "We have witness countless artistic movements of a myriad of forms, some more influential than others, develope in the evolution of our civilization. Now it is time to collect them in a absolute museum and organize exhibitions of this cultural trove."
+
+    pw_tech_great_art_exhibition_upgrade: "Upgrades the $pw_building_pavilion_of_wonders$"
+
+    # Fair of Worlds:
+    pw_tech_xeno_art_integration: "Universal Art Integration"
+    pw_tech_xeno_art_integration_desc: "Our $pw_building_pavilion_of_wonders$ has seen many foreign visitor and indeed has hosted many exotic exhibitions, this has opened an opportunity to integrate this different perspectives on art in a single, multifaceted Fair of many Worlds."
+    pw_tech_great_art_exhibition_integration_desc: "The $pw_building_fair_of_worlds$ is an upgrade for the $pw_building_pavilion_of_wonders$"
+
+    # Museum of the Grotesque:
+    pw_tech_xeno_art_alienation: "Universal Art Alienation"
+    pw_tech_xeno_art_alienation_desc: "Exhibitions in the $pw_building_pavilion_of_wonders$ have increased our national interest in art that reflect our empires values. But that is not enough. Pernicious pieces that keep challenging good taste are still produced, specially from foreign influences, these pieces must be collected in an anti-museum that will teach all what high art is actually about."
+    pw_tech_great_art_exhibition_alienation_desc: "The $pw_building_museum_of_the_grotesque$ is an upgrade for the $pw_building_pavilion_of_wonders$"
+
 
     #Industrial Hearth Tech:
     pw_tech_industrial_hearth_industry_military: "Military Industry Reform"
