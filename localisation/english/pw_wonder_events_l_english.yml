@@ -333,6 +333,19 @@
     pw_wonder.1332.a: "We can hear the pneumatic hammers already falling."
     pw_wonder.1332.b: "We are perfect machines of war."
 
+    #Titan Forge Tech Events:
+    pw_wonder.1340.name: "Crystal Polishing"
+    pw_wonder.1340.desc: "The exploration of the planets mantle, that was expanded with our Titan Forge, has sparked new experiments of the manufacturing and polishing of rare crystals that can increase the overall production of this rare resource. Now we only need to pursue those techniques, and see if they are worth the research."
+    pw_wonder.1340.a: "Send it to our researchers."
+
+    pw_wonder.1341.name: "Gases Extraction"
+    pw_wonder.1341.desc: "Further exploration of the planets mantle in the Titan Forge has yielded more insights on the pressurization of exotic gases, with new techniques that could cut our transportation loses. We only need to dedicate some scientists into industrial usage to increase our overall production."
+    pw_wonder.1341.a: "Send it to our researchers."
+
+    pw_wonder.1342.name: "Motes Stabilization"
+    pw_wonder.1342.desc: "Even further exploration of the planetary mantle in the titan forge has suggested mora stabilization techniques, that can facilitate this dangerous process and increase motes production overall. Once again, we only need more research to formalize this discoveries and expand them to industrial scale."
+    pw_wonder.1342.a: "Send it to our researchers."
+
     #Complete Industrial Hearth
     pw_message_industrial_hearth_complete: "$pw_industrial_hearth$ has been constructed in $PLANET|Y$."
     #First Time Complete Industrial Hearth (Regular Empire)

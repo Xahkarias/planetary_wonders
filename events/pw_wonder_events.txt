@@ -3925,6 +3925,12 @@ planet_event = {
 	option = {
 		name = pw_wonder.1331.a
 	}
+
+	after = {
+		owner = {
+			country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
+		}
+	}
 }
 
 #On first time Titan Forge is built (Gestalt Empire)
@@ -3964,6 +3970,12 @@ planet_event = {
 			}
 		}
 	}
+
+	after = {
+		owner = {
+			country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
+		}
+	}
 }
 
 #On War Titan construction completes, remove the flag
@@ -3999,6 +4011,58 @@ planet_event = {
 			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
 			remove_modifier = pw_mod_mantle_crucible_consumer_goods
 		}
+	}
+}
+
+#Titan Forge tech events:
+country_event = {
+	id = pw_wonder.1340
+	title = pw_wonder.1340.name
+	desc = pw_wonder.1340.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1340.a
+		add_research_option = pw_tech_titan_forge_crystals
+		hidden_effect = {
+			country_event = { id = pw_wonder.1341 days = @pw_1year random = @pw_halfYear }
+		}
+	}
+}
+
+country_event = {
+	id = pw_wonder.1341
+	title = pw_wonder.1341.name
+	desc = pw_wonder.1341.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1341.a
+		add_research_option = pw_tech_titan_forge_gases
+		hidden_effect = {
+			country_event = { id = pw_wonder.1341 days = @pw_1year random = @pw_halfYear }
+		}
+	}
+}
+
+country_event = {
+	id = pw_wonder.1342
+	title = pw_wonder.1342.name
+	desc = pw_wonder.1342.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1342.a
+		add_research_option = pw_tech_titan_forge_motes
 	}
 }
 

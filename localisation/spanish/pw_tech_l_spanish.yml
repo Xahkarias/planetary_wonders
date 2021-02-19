@@ -124,3 +124,10 @@
     pw_tech_great_art_exhibition_alienation_desc: "The $pw_building_museum_of_the_grotesque$ is an upgrade for the $pw_building_pavilion_of_wonders$"
     pw_tech_cultural_hegemony_studies: "Cultural Hegemony Studies"
     pw_tech_cultural_hegemony_studies_desc: "By hosting art exhibitions dedicated to the exploitation of different cultures in the $pw_building_museum_of_the_grotesque$ we can study ways of better reproaching those culture in diplomatic situations, and gaining the better hand for ourselves."
+
+    pw_tech_titan_forge_crystals: "High Temperature Crystal Polishing"
+    pw_tech_titan_forge_crystals_desc: "Techniques for polishing and manufacturing rare crystals in the Titan Forge allow us to increase the production."
+    pw_tech_titan_forge_gases: "Pressurized Gases Extraction"
+    pw_tech_titan_forge_gases_desc: "By extracting and transporting exotic gases in pressures reached in the Titan Forge we can cut our loses and increase production."
+    pw_tech_titan_forge_motes: "Mantle Motes Stabilization"
+    pw_tech_titan_forge_motes_desc: "Planetary mantle experiments can allow us to stabilize more volatile motes with less loses in the long run."

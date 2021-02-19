@@ -345,3 +345,13 @@
     pw_wonder.1461.a: "A shame xenos will not see how they failed."
 
     pw_wonder.1461.desc: "Who should be afraid of degenerated art?\nEveryone.\n\nThe lack of moral expression, the mockery of our traditions and the influence of foreign movements, those will be the downfall of our culture. Thankfully the national heroes of our species have devised a counterblow to this unashamed degeneracy of our glorious art: The Museum of the Grotesque. This is not a place of contemplation of our values, this is a place where we put the most despicable pieces of the most deranged artists to be thoroughly rejected and hated by the visiting public. And hate is encouraged, by informing the exorbitant price each work would sell for in a galactic auction and tours detailing explicitly how our own art is and must always be superior."
+
+    pw_wonder.1340.name: "Crystal Polishing"
+    pw_wonder.1340.desc: "The exploration of the planets mantle, that was expanded with our Titan Forge, has sparked new experiments of the manufacturing and polishing of rare crystals that can increase the overall production of this rare resource. Now we only need to pursue those techniques, and see if they are worth the research."
+    pw_wonder.1340.a: "Send it to our researchers."
+    pw_wonder.1341.name: "Gases Extraction"
+    pw_wonder.1341.desc: "Further exploration of the planets mantle in the Titan Forge has yielded more insights on the pressurization of exotic gases, with new techniques that could cut our transportation loses. We only need to dedicate some scientists into industrial usage to increase our overall production."
+    pw_wonder.1341.a: "Send it to our researchers."
+    pw_wonder.1342.name: "Motes Stabilization"
+    pw_wonder.1342.desc: "Even further exploration of the planetary mantle in the titan forge has suggested mora stabilization techniques, that can facilitate this dangerous process and increase motes production overall. Once again, we only need more research to formalize this discoveries and expand them to industrial scale."
+    pw_wonder.1342.a: "Send it to our researchers."
