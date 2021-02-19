@@ -394,10 +394,10 @@
     pw_wonder.1431.desc: "Courage call for courage everywhere, as we have just concluded turning a simple pavilion of arts into the heart of diversity and community: the Fair of Worlds. Here artists of the most remote species and alien cultures can come to not only expose their work, but show our welcoming population a silver of their values and traditions.\nWe can still carry out the same exhibitions we had in the Pavilion of Wonders, but now we will gather the myriad of ways in which foreign cultures interpret and express these themes."
     pw_wonder.1431.a: "Is it naive to hope that art unites the galaxy?"
     #Diversity Studies
-    pw_wonder.1431.name: "Diversity Studies"
-    pw_wonder.1431.desc: "With the recent inauguration of the Fair of Worlds already we are hosting and receiving foreign and exotic artist. However it is in our interest to make such artists, and therefore the culture they represent, respected and valuable in our own discourse. Some sociology and anthropology researches believe they can help us approach different culture with focused studies in the art exhibitions of the very same Fair of Worlds."
-    pw_wonder.1431.a: "They can begin the study when they are ready."
-    pw_wonder.1431.b: "We have no need for this."
+    pw_wonder.1432.name: "Diversity Studies"
+    pw_wonder.1432.desc: "With the recent inauguration of the Fair of Worlds already we are hosting and receiving foreign and exotic artist. However it is in our interest to make such artists, and therefore the culture they represent, respected and valuable in our own discourse. Some sociology and anthropology researches believe they can help us approach different culture with focused studies in the art exhibitions of the very same Fair of Worlds."
+    pw_wonder.1432.a: "They can begin the study when they are ready."
+    pw_wonder.1432.b: "We have no need for this."
 
     #Complete Museum of the Grotesque
     pw_message_museum_of_the_grotesque_complete: "$pw_museum_of_the_grotesque$ has been constructed in $PLANET|Y$."
@@ -406,8 +406,8 @@
     pw_wonder.1461.desc: "Who should be afraid of degenerated art?\nEveryone.\n\nThe lack of moral expression, the mockery of our traditions and the influence of foreign movements, those will be the downfall of our culture. Thankfully the national heroes of our species have devised a counterblow to this unashamed degeneracy of our glorious art: The Museum of the Grotesque. This is not a place of contemplation of our values, this is a place where we put the most despicable pieces of the most deranged artists to be thoroughly rejected and hated by the visiting public. And hate is encouraged, by informing the exorbitant price each work would sell for in a galactic auction and tours detailing explicitly how our own art is and must always be superior."
     pw_wonder.1461.a: "A shame xenos will not see how they failed."
     #Hegemony Studies
-    pw_wonder.1461.name: "Hegemony Studies"
-    pw_wonder.1461.desc: "With the recent inauguration of the Museum of the Grotesque already we are curating and exposing works that defy morals and traditions, specially those from foreign nations. The exposed works can function to channel much of the disgust of the population into our xeno enemies and to help upcoming artists not to make the same mistakes of their delusional predecessor, but it can also help find refine our external politics. Researchers request a study with foreign art to improve our diplomatic articulation."
-    pw_wonder.1461.a: "They can begin the study when they are ready."
-    pw_wonder.1461.b: "The least we interact with xenos the better."
-    pw_wonder.1461.c: "We have no need for this."
+    pw_wonder.1462.name: "Hegemony Studies"
+    pw_wonder.1462.desc: "With the recent inauguration of the Museum of the Grotesque already we are curating and exposing works that defy morals and traditions, specially those from foreign nations. The exposed works can function to channel much of the disgust of the population into our xeno enemies and to help upcoming artists not to make the same mistakes of their delusional predecessor, but it can also help find refine our external politics. Researchers request a study with foreign art to improve our diplomatic articulation."
+    pw_wonder.1462.a: "They can begin the study when they are ready."
+    pw_wonder.1462.b: "The least we interact with xenos the better."
+    pw_wonder.1462.c: "We have no need for this."
