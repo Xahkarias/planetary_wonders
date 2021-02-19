@@ -4792,9 +4792,15 @@ planet_event = {
 			days = @pw_1year
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1462 days = @pw_halfYear random = @pw_halfYear }
+		}
+	}
 }
 
-#Museum of the Grotesque: more rivals
+#Museum of the Grotesque: more envoys
 planet_event = {
 	id = pw_wonder.1462
 	title = pw_wonder.1462.name

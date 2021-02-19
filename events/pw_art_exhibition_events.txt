@@ -823,7 +823,11 @@ country_event = {
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
 		trigger = {
-			is_megacorp = yes
+			OR ={
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
 		}
 		every_owned_planet = {
 			limit = {
@@ -1277,7 +1281,11 @@ country_event = {
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
 		trigger = {
-			is_megacorp = yes
+			OR ={
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
 		}
 		every_owned_planet = {
 			limit = {
@@ -2378,7 +2386,11 @@ country_event = {
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
 		trigger = {
-			is_megacorp = yes
+			OR ={
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
 		}
 		every_owned_planet = {
 			limit = {
@@ -2908,7 +2920,11 @@ country_event = {
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
 		trigger = {
-			is_megacorp = yes
+			OR ={
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
 		}
 		every_owned_planet = {
 			limit = {
@@ -4029,7 +4045,11 @@ country_event = {
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
 		trigger = {
-			is_megacorp = yes
+			OR ={
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
 		}
 		every_owned_planet = {
 			limit = {
@@ -4559,7 +4579,11 @@ country_event = {
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
 		trigger = {
-			is_megacorp = yes
+			OR ={
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
 		}
 		every_owned_planet = {
 			limit = {
