@@ -1813,6 +1813,40 @@ pw_tech_xeno_art_integration = {
 	}
 }
 
+# Cultural Diversity Studies
+pw_tech_cultural_diversity_studies = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_xeno_art_integration
+	}
+	weight = 0 #Only available with event.
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+		is_xenophile = yes
+	}
+
+	modifier = {
+		envoys_add = 1
+		envoy_improve_relations_mult = 0.25
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
 # Museum of the Grotesque
 pw_tech_xeno_art_alienation = {
 	area = society
@@ -1923,6 +1957,40 @@ pw_tech_xeno_art_alienation = {
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+# Cultural Hegemony Studies
+pw_tech_cultural_hegemony_studies = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_xeno_art_alienation
+	}
+	weight = 0 #Only available with event.
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+		is_xenophobe = yes
+	}
+
+	modifier = {
+		envoys_add = 1
+		envoy_harm_relations_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}

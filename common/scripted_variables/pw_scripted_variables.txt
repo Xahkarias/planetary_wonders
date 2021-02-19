@@ -52,11 +52,16 @@
 @pw_decision_influence_cost = 25
 @pw_decision_resource_cost = 1000
 @pw_decision_devastation = 25
+@pw_decision_exhibition_cost_1 = 10000
+@pw_decision_exhibition_cost_2 = 20000
+@pw_decision_exhibition_cost_3 = 30000
+@pw_decision_exhibition_cost_4 = 40000
+@pw_decision_exhibition_cost_5 = 50000
 
 #Effect:
 @pw_decision_resource_mod = 0.15
-@pw_decision_duration = 1800 # 5 years
-
+@pw_decision_duration = 3600 # 10 years
+@pw_art_exhibition_duration = 1800 # 5 years
 
 # Techs
 

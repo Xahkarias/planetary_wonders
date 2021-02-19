@@ -154,6 +154,20 @@ pw_mod_industrial_hearth_authoritarian = {
 	pop_cat_ruler_political_power = 0.1
 }
 
+pw_mod_fair_of_worlds_recently_built = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.05
+	pop_ethic_xenophile_attraction_mult = 0.05
+}
+
+pw_mod_museum_of_the_grotesque_recently_build = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.05
+	pop_ethic_xenophobe_attraction_mult = 0.05
+}
+
 #Country modifiers:
 pw_mod_galactic_model_anomaly_sensor = {
 	ship_hyperlane_range_add = 5

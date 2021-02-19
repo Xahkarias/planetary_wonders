@@ -88,6 +88,7 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
+	#Priests
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -120,6 +121,7 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
+	#Death Priests
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -155,6 +157,7 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
+	#Death Chroniclers
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -187,6 +190,7 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
+	#Tourists
 	triggered_planet_modifier = {
 		potential = {
 			has_modifier = resort_colony
@@ -218,6 +222,7 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
+	#Entertainers
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -242,6 +247,7 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
+	#Stability
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -521,6 +527,7 @@ pw_building_fair_of_worlds = {
 		}
 	}
 
+	#Priests
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -553,6 +560,7 @@ pw_building_fair_of_worlds = {
 		}
 	}
 
+	#Death priests
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -562,7 +570,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_death_priest_add = 3
+			job_death_priest_add = 2
 		}
 	}
 
@@ -573,7 +581,7 @@ pw_building_fair_of_worlds = {
 			NOT = { owner = { has_valid_civic = civic_death_cult }}
 		}
 		modifier = {
-			job_culture_worker_add = 3
+			job_culture_worker_add = 2
 		}
 	}
 
@@ -584,17 +592,18 @@ pw_building_fair_of_worlds = {
 			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 		}
 		modifier = {
-			job_manager_add = 3
+			job_manager_add = 2
 		}
 	}
 
+	#Death Chroniclers
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { has_valid_civic = civic_memorialist }
 		}
 		modifier = {
-			job_death_chronicler_add = 3
+			job_death_chronicler_add = 2
 		}
 	}
 
@@ -605,7 +614,7 @@ pw_building_fair_of_worlds = {
 			NOT = { owner = { has_valid_civic = civic_memorialist }}
 		}
 		modifier = {
-			job_culture_worker_add = 3
+			job_culture_worker_add = 2
 		}
 	}
 
@@ -616,10 +625,11 @@ pw_building_fair_of_worlds = {
 			NOT = { owner = { has_valid_civic = civic_memorialist }}
 		}
 		modifier = {
-			job_manager_add = 3
+			job_manager_add = 2
 		}
 	}
 
+	#Tourists
 	triggered_planet_modifier = {
 		potential = {
 			has_modifier = resort_colony
@@ -651,6 +661,7 @@ pw_building_fair_of_worlds = {
 		}
 	}
 
+	#Entertainers
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -675,6 +686,159 @@ pw_building_fair_of_worlds = {
 		}
 	}
 
+	#Curators of Diversity (Envoys, max 5)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 0
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 1
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 2
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 3
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 4
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	#Curators of Diversity (Federation, max 5)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 0 }
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 1 }
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 2 }
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 3 }
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 4 }
+			}
+		}
+		modifier = {
+			job_pw_diversity_curator_add = 1
+		}
+	}
+
+	#Stability from ambition
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -691,6 +855,10 @@ pw_building_fair_of_worlds = {
 
 	triggered_desc = {
 		text = pw_empire_unique_lb
+	}
+
+	triggered_desc = {
+		text = pw_building_fair_of_worlds_tooltip
 	}
 
 	triggered_desc = {
@@ -761,6 +929,21 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		text = job_duelist_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				OR = {
+					has_federation = yes
+					any_envoy = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+		}
+		text = job_pw_diversity_curator_effect_desc
 	}
 
 	on_built = {
@@ -943,6 +1126,7 @@ pw_building_museum_of_the_grotesque = {
 		}
 	}
 
+	#Priests
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -975,6 +1159,7 @@ pw_building_museum_of_the_grotesque = {
 		}
 	}
 
+	#Death priests
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -984,7 +1169,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_death_priest_add = 3
+			job_death_priest_add = 2
 		}
 	}
 
@@ -995,7 +1180,7 @@ pw_building_museum_of_the_grotesque = {
 			NOT = { owner = { has_valid_civic = civic_death_cult }}
 		}
 		modifier = {
-			job_culture_worker_add = 3
+			job_culture_worker_add = 2
 		}
 	}
 
@@ -1006,17 +1191,18 @@ pw_building_museum_of_the_grotesque = {
 			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 		}
 		modifier = {
-			job_manager_add = 3
+			job_manager_add = 2
 		}
 	}
 
+	#Death Chroniclers
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { has_valid_civic = civic_memorialist }
 		}
 		modifier = {
-			job_death_chronicler_add = 3
+			job_death_chronicler_add = 2
 		}
 	}
 
@@ -1027,7 +1213,7 @@ pw_building_museum_of_the_grotesque = {
 			NOT = { owner = { has_valid_civic = civic_memorialist }}
 		}
 		modifier = {
-			job_culture_worker_add = 3
+			job_culture_worker_add = 2
 		}
 	}
 
@@ -1038,10 +1224,11 @@ pw_building_museum_of_the_grotesque = {
 			NOT = { owner = { has_valid_civic = civic_memorialist }}
 		}
 		modifier = {
-			job_manager_add = 3
+			job_manager_add = 2
 		}
 	}
 
+	#Tourists
 	triggered_planet_modifier = {
 		potential = {
 			has_modifier = resort_colony
@@ -1073,6 +1260,7 @@ pw_building_museum_of_the_grotesque = {
 		}
 	}
 
+	#Entertainers
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1097,6 +1285,193 @@ pw_building_museum_of_the_grotesque = {
 		}
 	}
 
+	#Curators of Degeneracy (Envoys, max 5)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 0
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 1
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 2
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 3
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_envoy = {
+					count > 4
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	#Curators of Degeneracy (Federation, max 5 -> max 3 in vanilla)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_rival_country = {
+					count > 0
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_rival_country = {
+					count > 1
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_rival_country = {
+					count > 2
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_rival_country = {
+					count > 3
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				count_rival_country = {
+					count > 4
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 1
+		}
+	}
+
+	#Curators of Degeneracy (war)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 2
+		}
+	}
+
+	#Curators of Degeneracy (no diplomacy)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+		}
+		modifier = {
+			job_pw_degeneracy_curator_add = 3
+		}
+	}
+
+	#Stability from ambition
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1113,6 +1488,32 @@ pw_building_museum_of_the_grotesque = {
 
 	triggered_desc = {
 		text = pw_empire_unique_lb
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+		}
+		text = pw_building_museum_of_the_grotesque_tooltip
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+		}
+		text = pw_building_museum_of_the_grotesque_tooltip_no_diplomacy
 	}
 
 	triggered_desc = {
@@ -1183,6 +1584,24 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		text = job_duelist_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				OR = {
+					is_at_war = yes
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+					count_rival_country = { count > 0 }
+					any_envoy = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+		}
+		text = job_pw_degeneracy_curator_effect_desc
 	}
 
 	on_built = {

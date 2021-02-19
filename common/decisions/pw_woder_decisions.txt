@@ -303,14 +303,14 @@ pw_decision_mantle_crucible_consumer_goods = {
 #Art exhibitions:
 pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 	owned_planets_only = yes
-	sound =
+	sound = event_cityscape
 	enactment_time = @pw_1month
 
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
-			unity =
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
 		}
 	}
 
@@ -322,36 +322,121 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 		exists = owner
 		owner = { is_gestalt = no }
 		has_building = pw_building_pavilion_of_wonders
+		#Replace with xenophile version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					has_building = pw_building_fair_of_worlds
+				}
+			}
+		}
+		#Replace with xenophobe version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					has_building = pw_building_museum_of_the_grotesque
+				}
+			}
+		}
+		#Replace with interstellar version
+		owner = {
+			NOR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+		#Replace with interplanetary version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					NOT = { is_planet = ROOT }
+					has_building = pw_building_pavilion_of_wonders
+				}
+			}
+		}
 	}
 
 	allow = {
-		NOT = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
 	}
 
 	effect = {
-		custom_tooltip = pw_decision_mantle_crucible_consumer_goods_regular_tooltip
+		custom_tooltip = pw_decision_pavilion_of_wonders_planetary_art_exhibition_tooltip
 		hidden_effect = {
 			planet_event = {
-
+				id = pw_art_exhibition.1
 			}
 		}
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 5
 	}
 }
 
 pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 	owned_planets_only = yes
-	sound =
+	sound = event_cityscape
 	enactment_time = @pw_1month
 
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
-			unity =
+			trigger = {
+				owner = {
+					num_owned_planets < 10
+				}
+			}
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 10
+					num_owned_planets < 20
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 20
+					num_owned_planets < 30
+				}
+			}
+			unity = @pw_decision_exhibition_cost_3
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 30
+					num_owned_planets < 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_4
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_5
+			energy = @pw_decision_resource_cost
 		}
 	}
 
@@ -361,28 +446,772 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 
 	potential = {
 		exists = owner
-		owner = { country_uses_consumer_goods = yes }
+		owner = { is_gestalt = no }
 		has_building = pw_building_pavilion_of_wonders
 		owner = {
-			any_owner_planet = {
+			any_owned_planet = {
 				NOT = { is_planet = ROOT }
 				has_building = pw_building_pavilion_of_wonders
+			}
+		}
+		#Replace with xenophile version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					has_building = pw_building_fair_of_worlds
+				}
+			}
+		}
+		#Replace with xenophobe version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					has_building = pw_building_museum_of_the_grotesque
+				}
+			}
+		}
+		#Replace with interstellar version
+		owner = {
+			NOR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
 			}
 		}
 	}
 
 	allow = {
-
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
 	}
 
 	effect = {
-		custom_tooltip = pw_decision_mantle_crucible_consumer_goods_regular_tooltip
+		custom_tooltip = pw_decision_pavilion_of_wonders_interplanetary_art_exhibition_tooltip
 		hidden_effect = {
-			country_event = { id =  }
+			owner = {
+				country_event = {
+					id = pw_art_exhibition.2
+				}
+			}
 		}
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 10
+	}
+}
+
+pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets < 20
+				}
+			}
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 20
+					num_owned_planets < 30
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 30
+					num_owned_planets < 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_3
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 40
+					num_owned_planets < 50
+				}
+			}
+			unity = @pw_decision_exhibition_cost_4
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 50
+				}
+			}
+			unity = @pw_decision_exhibition_cost_5
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		tech_mega_art
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_building = pw_building_pavilion_of_wonders
+		#Replace with xenophile version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					has_building = pw_building_fair_of_worlds
+				}
+			}
+		}
+		#Replace with xenophobe version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					has_building = pw_building_museum_of_the_grotesque
+				}
+			}
+		}
+
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_pavilion_of_wonders_interstellar_art_exhibition_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_art_exhibition.3
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 15
+	}
+}
+
+#Art exhibitions (xenophile):
+pw_decision_fair_of_worlds_planetary_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_xeno_art_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_building = pw_building_fair_of_worlds
+		#Replace with interstellar version
+		owner = {
+			NOR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+		#Replace with interplanetary version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					NOT = { is_planet = ROOT }
+					has_building = pw_building_pavilion_of_wonders
+
+				}
+			}
+		}
+	}
+
+	allow = {
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fair_of_worlds_planetary_art_exhibition_tooltip
+		hidden_effect = {
+			planet_event = {
+				id = pw_art_exhibition.4
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets < 10
+				}
+			}
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 10
+					num_owned_planets < 20
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 20
+					num_owned_planets < 30
+				}
+			}
+			unity = @pw_decision_exhibition_cost_3
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 30
+					num_owned_planets < 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_4
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_5
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_xeno_art_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		OR = {
+			AND = { #Has Pavilion here and Fair elsewhere
+				has_building = pw_building_pavilion_of_wonders
+				owner = {
+					any_owned_planet = {
+						NOT = { is_planet = ROOT }
+						has_building = pw_building_fair_of_worlds
+					}
+				}
+			}
+			AND = { #Has Fair here and Pavilion elsewhere
+				has_building = pw_building_fair_of_worlds
+				owner = {
+					any_owned_planet = {
+						NOT = { is_planet = ROOT }
+						has_building = pw_building_pavilion_of_wonders
+					}
+				}
+			}
+		}
+		#Replace with interstellar version
+		owner = {
+			NOR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+	}
+
+	allow = {
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fair_of_worlds_interplanetary_art_exhibition_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_art_exhibition.5
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 12
+	}
+}
+
+pw_decision_fair_of_worlds_interstellar_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets < 20
+				}
+			}
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 20
+					num_owned_planets < 30
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 30
+					num_owned_planets < 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_3
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 40
+					num_owned_planets < 50
+				}
+			}
+			unity = @pw_decision_exhibition_cost_4
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 50
+				}
+			}
+			unity = @pw_decision_exhibition_cost_5
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		tech_mega_art
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		OR = {
+			has_building = pw_building_pavilion_of_wonders
+			has_building = pw_building_fair_of_worlds
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fair_of_worlds_interstellar_art_exhibition_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_art_exhibition.6
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 17
+	}
+}
+
+#Art exhibitions (xenophobe):
+pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_xeno_art_alienation
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_building = pw_building_museum_of_the_grotesque
+		#Replace with interstellar version
+		owner = {
+			NOR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+		#Replace with interplanetary version
+		owner = {
+			NOT = {
+				any_owned_planet = {
+					NOT = { is_planet = ROOT }
+					has_building = pw_building_pavilion_of_wonders
+				}
+			}
+		}
+	}
+
+	allow = {
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_museum_of_the_grotesque_planetary_art_exhibition_tooltip
+		hidden_effect = {
+			planet_event = {
+				id = pw_art_exhibition.7
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets < 10
+				}
+			}
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 10
+					num_owned_planets < 20
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 20
+					num_owned_planets < 30
+				}
+			}
+			unity = @pw_decision_exhibition_cost_3
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 30
+					num_owned_planets < 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_4
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_5
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_xeno_art_alienation
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		OR = {
+			AND = { #Has Pavilion here and Museum elsewhere
+				has_building = pw_building_pavilion_of_wonders
+				owner = {
+					any_owned_planet = {
+						NOT = { is_planet = ROOT }
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+			}
+			AND = { #Has Museum here and Pavilion elsewhere
+				has_building = pw_building_museum_of_the_grotesque
+				owner = {
+					any_owned_planet = {
+						NOT = { is_planet = ROOT }
+						has_building = pw_building_pavilion_of_wonders
+					}
+				}
+			}
+		}
+		#Replace with interstellar version
+		owner = {
+			NOR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+	}
+
+	allow = {
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_art_exhibition.8
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 12
+	}
+}
+
+pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
+	owned_planets_only = yes
+	sound = event_cityscape
+	enactment_time = @pw_1month
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets < 20
+				}
+			}
+			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 20
+					num_owned_planets < 30
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 30
+					num_owned_planets < 40
+				}
+			}
+			unity = @pw_decision_exhibition_cost_3
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 40
+					num_owned_planets < 50
+				}
+			}
+			unity = @pw_decision_exhibition_cost_4
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 50
+				}
+			}
+			unity = @pw_decision_exhibition_cost_5
+			energy = @pw_decision_resource_cost
+		}
+	}
+
+	prerequisites = {
+		tech_mega_art
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		OR = {
+			has_building = pw_building_pavilion_of_wonders
+			has_building = pw_building_museum_of_the_grotesque
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+		custom_tooltip_fail = {
+			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
+			hidden_trigger = {
+				owner = {
+					NOT = { has_country_flag = pw_ongoing_art_exhibition }
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_museum_of_the_grotesque_interstellar_art_exhibition_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_art_exhibition.9
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 17
 	}
 }

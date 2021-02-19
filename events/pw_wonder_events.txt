@@ -342,13 +342,13 @@ planet_event = {
 		name = pw_wonder.106.c
 		owner = {
 			owner = {
-			add_monthly_resource_mult = {
-				resource = influence
-				value = @tier2influencereward
-				min = @tier2influencemin
-				max = @tier2influencemax
+				add_monthly_resource_mult = {
+					resource = influence
+					value = @tier2influencereward
+					min = @tier2influencemin
+					max = @tier2influencemax
+				}
 			}
-		}
 		}
 	}
 }
@@ -4676,6 +4676,60 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1431.a
+		add_modifier = {
+			modifier = pw_mod_fair_of_worlds_recently_built
+			days = @pw_1year
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1432 days = @pw_halfYear random = @pw_halfYear }
+		}
+	}
+}
+
+#Fair of Worlds: more envoys tech
+planet_event = {
+	id = pw_wonder.1432
+	title = pw_wonder.1432.name
+	desc = pw_wonder.1432.desc
+	picture = GFX_evt_diplomatic_visit
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_fair_of_worlds
+		is_xenophile = yes
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_design }
+	}
+
+	option = {
+		name = pw_wonder.1432.a
+		owner = {
+			add_research_option = pw_tech_cultural_diversity_studies
+		}
+	}
+
+	option = {
+		name = pw_wonder.1432.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+		}
 	}
 }
 
@@ -4733,5 +4787,85 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1461.a
+		add_modifier = {
+			modifier = pw_mod_museum_of_the_grotesque_recently_build
+			days = @pw_1year
+		}
+	}
+}
+
+#Museum of the Grotesque: more rivals
+planet_event = {
+	id = pw_wonder.1462
+	title = pw_wonder.1462.name
+	desc = pw_wonder.1462.desc
+	picture = GFX_evt_diplomatic_visit
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+	}
+
+	trigger = {
+		has_building = pw_building_fair_of_worlds
+		is_xenophile = yes
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_industrial_hearth_design }
+	}
+
+	option = {
+		name = pw_wonder.1462.a
+		allow = {
+			owner = {
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_inwards_perfection }
+			}
+		}
+		owner = {
+			add_research_option = pw_tech_cultural_hegemony_studies
+		}
+	}
+
+	option = {
+		name = pw_wonder.1462.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1462.c
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+		}
 	}
 }

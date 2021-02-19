@@ -1,0 +1,230 @@
+#Check if the target already has modifiers before adding it.
+pw_add_unique_modifier = {
+	if = {
+		limit = { NOT = { has_modifier = $MODIFIER$ }}
+		add_modifier = {
+			modifier = $MODIFIER$
+			days = $DURATION|-1$
+		}
+	}
+	if = { #Never happens, only here so that CWTools wont complain of "DURATION"
+		limit = { always = no }
+		log = $DURATION$
+	}
+}
+
+#Art exhibitions event choice (country scope):
+pw_trigger_art_generic_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.500 }
+		}
+		1 = {
+			modifier = {
+				factor = 0
+				is_egalitarian = yes
+			}
+			country_event = { id = pw_art_exhibition.501 }
+		}
+		1 = {
+			modifier = {
+				factor = 0
+				is_authoritarian = yes
+			}
+			country_event = { id = pw_art_exhibition.502 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.503 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.504 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.505 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.506 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.507 }
+		}
+		1 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					any_owned_planet = {
+						has_building = pw_building_fair_of_worlds
+					}
+					any_neighbor_country = {
+						opinion_level = {
+							who = PREV
+							level >= neutral
+						}
+					}
+				}
+			}
+			country_event = { id = pw_art_exhibition.508 }
+		}
+		1 = {
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_planet = {
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+			}
+			country_event = { id = pw_art_exhibition.509 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Military (country scope):
+pw_trigger_art_militaristic_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.510 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.511 }
+		}
+		1 = {
+			modifier = {
+				factor = 0
+				NOT = { any_owned_leader = {
+					OR = {
+						leader_class = admiral
+						leader_class = general
+					}
+				}}
+			}
+			country_event = { id = pw_art_exhibition.512 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.514 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.515 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Pacifist (country scope):
+pw_trigger_art_pacifist_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.521 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.522 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.523 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.524 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Spiritualist (country scope):
+pw_trigger_art_spiritualist_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.530 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.531 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.532 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.533 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Materialist (country scope):
+pw_trigger_art_materialist_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.540 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.541 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.542 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.543 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Authoritarian (country scope):
+pw_trigger_art_authoritarian_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.550 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.551 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.552 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.553 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Egalitarian (country scope):
+pw_trigger_art_egalitarian_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.560 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.561 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.562 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.563 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.564 }
+		}
+	}
+}
+
+#Art exhibitions event choice: Megacorp (country scope):
+pw_trigger_art_megacorp_events = {
+	random_list = {
+		1 = {
+			country_event = { id = pw_art_exhibition.570 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.571 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.572 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.573 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.574 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.575 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.576 }
+		}
+	}
+}
