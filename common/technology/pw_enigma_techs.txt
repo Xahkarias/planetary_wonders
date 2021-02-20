@@ -21,7 +21,7 @@ pw_enigma_tech_micro_graviton_equipment = {
 	}
 
 	modifier = {
-		planet_jobs_simple_drone_produces_mult = 0.2
+		planet_jobs_simple_drone_produces_mult = 0.15
 	}
 
 	weight_modifier = {
@@ -95,7 +95,7 @@ pw_enigma_tech_absolute_processor_cooling = {
 	}
 
 	modifier = {
-		planet_jobs_complex_drone_produces_mult = 0.2
+		planet_jobs_complex_drone_produces_mult = 0.15
 	}
 
 	weight_modifier = {
@@ -169,7 +169,7 @@ pw_enigma_tech_non_euclidean_building = {
 	}
 
 	modifier = {
-		planet_housing_mult = 0.5
+		planet_housing_mult = 0.1
 	}
 
 	weight_modifier = {
@@ -214,6 +214,81 @@ pw_enigma_tech_non_euclidean_building = {
 
 	ai_weight = {
 		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+pw_enigma_tech_impossible_architecture = {
+	area = engineering
+	category = { industry }
+	cost = @pw_enigma_tech_cost_extra
+	tier = 5
+	prerequisites = {
+		pw_tech_metaphysical_singularity
+		pw_enigma_tech_non_euclidean_building
+		tech_engineering_3
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_enigma_engine
+		}
+	}
+
+	modifier = {
+		planet_housing_mult = 0.1
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			OR = {
+				research_leader = {
+					area = engineering
+					has_trait = leader_trait_expertise_industry
+				}
+				research_leader = {
+					area = engineering
+					has_trait = leader_trait_curator
+				}
+				research_leader = {
+					area = engineering
+					has_trait = leader_trait_maniacal
+				}
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_enigma_tech_impossible_architecture }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 15
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -469,7 +544,7 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 	}
 
 	modifier = {
-		country_rare_crystals_produces_mult = 0.2
+		country_rare_crystals_produces_mult = 0.05
 	}
 
 	weight_modifier = {
@@ -524,6 +599,81 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 	}
 }
 
+pw_enigma_tech_hypersonic_frequency_harmony = {
+	area = physics
+	category = { particles }
+	cost = @pw_enigma_tech_cost_extra
+	tier = 5
+	prerequisites = {
+		pw_tech_metaphysical_singularity
+		pw_enigma_tech_hypersonic_frequency_tuning
+		tech_physics_3
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_enigma_engine
+		}
+	}
+
+	modifier = {
+		country_rare_crystals_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			OR = {
+				research_leader = {
+					area = physics
+					has_trait = leader_trait_expertise_particles
+				}
+				research_leader = {
+					area = physics
+					has_trait = leader_trait_curator
+				}
+				research_leader = {
+					area = physics
+					has_trait = leader_trait_maniacal
+				}
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_enigma_tech_hypersonic_frequency_harmony }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_particles
+			}
+		}
+	}
+}
+
 pw_enigma_tech_hyper_stabilization_fields = {
 	area = physics
 	category = { field_manipulation }
@@ -543,7 +693,7 @@ pw_enigma_tech_hyper_stabilization_fields = {
 	}
 
 	modifier = {
-		country_volatile_motes_produces_mult = 0.2
+		country_volatile_motes_produces_mult = 0.05
 	}
 
 	weight_modifier = {
@@ -582,6 +732,81 @@ pw_enigma_tech_hyper_stabilization_fields = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_enigma_tech_hyper_stabilization_fields }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+pw_enigma_tech_complete_stabilization_fields = {
+	area = physics
+	category = { field_manipulation }
+	cost = @pw_enigma_tech_cost_extra
+	tier = 5
+	prerequisites = {
+		pw_tech_metaphysical_singularity
+		pw_enigma_tech_hyper_stabilization_fields
+		tech_physics_3
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_enigma_engine
+		}
+	}
+
+	modifier = {
+		country_volatile_motes_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			OR = {
+				research_leader = {
+					area = physics
+					has_trait = leader_trait_expertise_field_manipulation
+				}
+				research_leader = {
+					area = physics
+					has_trait = leader_trait_curator
+				}
+				research_leader = {
+					area = physics
+					has_trait = leader_trait_maniacal
+				}
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_enigma_tech_complete_stabilization_fields }
 			}
 		}
 	}
@@ -691,8 +916,8 @@ pw_enigma_tech_atomic_transistor_substrate = {
 	}
 
 	modifier = {
-		planet_researchers_produces_mult = 0.25
-		planet_evaluators_produces_mult = 0.25
+		planet_researchers_produces_mult = 0.2
+		planet_evaluators_produces_mult = 0.2
 	}
 
 	weight_modifier = {
@@ -920,7 +1145,81 @@ pw_enigma_tech_gas_molecular_sculpting = {
 	}
 
 	modifier = {
-		country_exotic_gases_produces_mult = 0.2
+		country_exotic_gases_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			OR = {
+				research_leader = {
+					area = society
+					has_trait = leader_trait_expertise_biology
+				}
+				research_leader = {
+					area = society
+					has_trait = leader_trait_curator
+				}
+				research_leader = {
+					area = society
+					has_trait = leader_trait_maniacal
+				}
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_enigma_tech_gas_molecular_sculpting }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_biology
+			}
+		}
+	}
+}
+
+pw_enigma_tech_gas_molecular_generation = {
+	area = society
+	category = { biology }
+	cost = @pw_enigma_tech_cost
+	tier = 5
+	prerequisites = {
+		pw_tech_metaphysical_singularity
+		tech_society_3
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_enigma_engine
+		}
+	}
+
+	modifier = {
+		country_exotic_gases_produces_mult = 0.05
 	}
 
 	weight_modifier = {

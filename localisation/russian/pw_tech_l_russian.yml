@@ -131,3 +131,12 @@
     pw_tech_titan_forge_gases_desc: "By extracting and transporting exotic gases in pressures reached in the Titan Forge we can cut our loses and increase production."
     pw_tech_titan_forge_motes: "Mantle Motes Stabilization"
     pw_tech_titan_forge_motes_desc: "Planetary mantle experiments can allow us to stabilize more volatile motes with less loses in the long run."
+
+    pw_enigma_tech_impossible_architecture: "$pw_enigma_tech$ Impossible Architecture"
+    pw_enigma_tech_impossible_architecture_desc: "Expanding upon previous non euclidean designs for our drone storages yields incomprehensible architectural phenomena that increases space where it would be impossible before."
+    pw_enigma_tech_hypersonic_frequency_harmony: "$pw_enigma_tech$ Hypersonic Frequency Harmony"
+    pw_enigma_tech_hypersonic_frequency_harmony_desc: "Further studies in harmonic frequency patters of the Enigma Engine can allow us to increase even more production of Rare Crystals."
+    pw_enigma_tech_complete_stabilization_fields: "$pw_enigma_tech$ Complete Stabilization Fields"
+    pw_enigma_tech_complete_stabilization_fields_desc: "The magnetic fields produced by the Enigma Engine can be further combine with our own internal fields, produced by our memory units, to completely stabilize Volatile Motes losing even less in the process."
+    pw_enigma_tech_gas_molecular_generation: "$pw_enigma_tech$ Gas Molecular Generation"
+    pw_enigma_tech_gas_molecular_generation_desc: "By converging our research of bio materials we can replicate Exotic Gas generation trough a mesh of organic and artificial precesses."

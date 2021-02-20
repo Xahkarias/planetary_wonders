@@ -139,6 +139,9 @@
     pw_enigma_tech_non_euclidean_building: "$pw_enigma_tech$ Non Euclidean Building"
     pw_enigma_tech_non_euclidean_building_desc: "Building our drone storages with an esoteric design, deciphered from the Enigma Engine, gives them the unintelligible property of being bigger on the inside than on the outside."
 
+    pw_enigma_tech_impossible_architecture: "$pw_enigma_tech$ Impossible Architecture"
+    pw_enigma_tech_impossible_architecture_desc: "Expanding upon previous non euclidean designs for our drone storages yields incomprehensible architectural phenomena that increases space where it would be impossible before."
+
     pw_enigma_tech_quantum_movement: "$pw_enigma_tech$ Quantum Movement"
     pw_enigma_tech_quantum_movement_desc: "Using the vacuous energy between planets and breaching the Principle of Uncertainty we can have our ships achieve FTL capabilities in brief jumps outside of the Hyperlane system."
 
@@ -148,8 +151,14 @@
     pw_enigma_tech_hypersonic_frequency_tuning: "$pw_enigma_tech$ Hypersonic Frequency Tuning"
     pw_enigma_tech_hypersonic_frequency_tuning_desc: "Simple crystalline formations when exposed to certain frequency patters of the Enigma Engine transmute to fabled Rare Crystals. We can try to isolate and replicate those frequencies."
 
+    pw_enigma_tech_hypersonic_frequency_harmony: "$pw_enigma_tech$ Hypersonic Frequency Harmony"
+    pw_enigma_tech_hypersonic_frequency_harmony_desc: "Further studies in harmonic frequency patters of the Enigma Engine can allow us to increase even more production of Rare Crystals."
+
     pw_enigma_tech_hyper_stabilization_fields: "$pw_enigma_tech$ Hyper Stabilization Fields"
     pw_enigma_tech_hyper_stabilization_fields_desc: "The magnetic fields produced by the Enigma Engine harbors their own secrets. Erratic and useless substances subjected to the field can be stabilized into useful Volatile Motes."
+
+    pw_enigma_tech_complete_stabilization_fields: "$pw_enigma_tech$ Complete Stabilization Fields"
+    pw_enigma_tech_complete_stabilization_fields_desc: "The magnetic fields produced by the Enigma Engine can be further combine with our own internal fields, produced by our memory units, to completely stabilize Volatile Motes losing even less in the process."
 
     pw_enigma_tech_breach_of_thermodynamic_law: "$pw_enigma_tech$ Breach Of Thermodynamic Law"
     pw_enigma_tech_breach_of_thermodynamic_law_desc: "The Enigma Engine seems to be aligned with the entropy of this galaxy and it trough its study we can understand this inexorable movement. Unfortunately it would seem we could only influence it in a micro scale, should be useful for drone energy conservation. It is possible that we are draining energy from somewhere else in the universe."
@@ -162,6 +171,9 @@
 
     pw_enigma_tech_gas_molecular_sculpting: "$pw_enigma_tech$ Gas Molecular Sculpting"
     pw_enigma_tech_gas_molecular_sculpting_desc: "It is now clear to us that Exotic Gasses follow a molecular structure close to rare space-born organisms. This realization allows us to use bio molecular sculpting to manufacture those Gasses."
+
+    pw_enigma_tech_gas_molecular_generation: "$pw_enigma_tech$ Gas Molecular Generation"
+    pw_enigma_tech_gas_molecular_generation_desc: "By converging our research of bio materials we can replicate Exotic Gas generation trough a mesh of organic and artificial precesses."
 
     pw_enigma_tech_exoteric_predictions_system: "$pw_enigma_tech$ Esoteric Predictions System"
     pw_enigma_tech_exoteric_predictions_system_desc: "Following our Deciphers example we should increased the range of all the sensor in our decision networks giving deciding weight to variables thought as spurious before. This can lead to an increased accuracy in prediction, specially for chaotic models."
