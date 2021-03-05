@@ -228,3 +228,106 @@ pw_trigger_art_megacorp_events = {
 		}
 	}
 }
+
+#Holy reliquary navigation events (country scope):
+pw_holy_reliquary_leave = {
+	custom_tooltip = pw_holy_reliquary_leave_tooltip
+	hidden_effect = {
+		remove_country_flag = pw_is_in_holy_reliquary
+	}
+}
+
+pw_holy_reliquary_return_to_hub = {
+	custom_tooltip = pw_holy_reliquary_return_to_hub_tooltip
+	hidden_effect = {
+		country_event = {
+			id = pw_holy_reliquary.1
+		}
+	}
+}
+
+#Holy Reliquary sanctify cost (country scope):
+pw_holy_reliquary_pay_sanctify_cost = {
+	if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 0
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_0
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 1
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 2
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_2
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 3
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_3
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 4
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 5
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_5
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 6
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_6
+		}
+	}
+	else = {
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_7
+		}
+	}
+}

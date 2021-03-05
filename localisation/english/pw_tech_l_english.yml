@@ -70,10 +70,39 @@
     pw_tech_titan_forge_desc: "With the Mantle Crucible in place we can install incredible facilities between the Crucible and the surface, ready to process its output. Great military industrial complexes within the crust itself, ready to supply the navy with ship parts and the army with dreaded assault titans."
     pw_mantle_crucible_upgrade_forge_desc: "The $pw_titan_forge$ is an upgrade for the $pw_mantle_crucible$"
 
+    #Titan Forge Event Techs:
+    pw_tech_titan_forge_crystals: "High Temperature Crystal Polishing"
+    pw_tech_titan_forge_crystals_desc: "Techniques for polishing and manufacturing rare crystals in the Titan Forge allow us to increase the production."
+
+    pw_tech_titan_forge_gases: "Pressurized Gases Extraction"
+    pw_tech_titan_forge_gases_desc: "By extracting and transporting exotic gases in pressures reached in the Titan Forge we can cut our loses and increase production."
+
+    pw_tech_titan_forge_motes: "Mantle Motes Stabilization"
+    pw_tech_titan_forge_motes_desc: "Planetary mantle experiments can allow us to stabilize more volatile motes with less loses in the long run."
+
     # Industrial Hearth:
     pw_tech_industrial_hearth: "Industrial Hearth"
     pw_tech_industrial_hearth_desc: "The Mantle Crucible gave us a new perspective on industry and industrial production. Production, art, design, urbanism, architecture and many others must be cooperative disciplines created by poly-artisans in a cybernetical chain of knowledge, connecting the mantle and crust, products and people."
     pw_mantle_crucible_upgrade_industry_desc: "The $pw_industrial_hearth$ is an upgrade for the $pw_mantle_crucible$"
+
+    #Industrial Hearth Event Techs:
+    pw_tech_industrial_hearth_industry_military: "Military Industry Reform"
+    pw_tech_industrial_hearth_industry_military_desc: "With the advent of the Industrial Hearth, the poly-artisans were able to reshape former military industrial complexes into more streamlined, more efficient facilities from their design alone. now we can reform  the foundries to apply the new design."
+
+    pw_tech_industrial_hearth_industry_civilian: "Civilian Industry Reorganization"
+    pw_tech_industrial_hearth_industry_civilian_desc: "By consolidating theory and practice of industrial production, the poly-artisan weaved new plants for all of our civilian factories, increasing production all around the empire after we can apply it."
+
+    pw_tech_industrial_hearth_housing: "Urbanist Revolution"
+    pw_tech_industrial_hearth_housing_desc: "Instead of focusing in increasing housing space, the poly-artisan can devise a new urban plan for each of our cities, organizing living, work and traffic areas into more efficient configurations can provide much more space then previously expected."
+
+    pw_tech_industrial_hearth_design: "Revolutionary Product Design"
+    pw_tech_industrial_hearth_design_desc: "By abandoning outdated design decision on popular product development - such as programed obsolescence - the poly-artisans were able to set a new design school that allows much more of our population to satisfy their needs while consuming less goods."
+
+    pw_tech_industrial_hearth_design_megacorp: "Marketable Product Design"
+    pw_tech_industrial_hearth_design_megacorp_desc: "By abandoning outdated design decision on popular product development - such as consumer benefits - the poly-artisans were able to set a new design school that allows for more exploitative market strategies to increase trade value and disregard consumer rights."
+
+    pw_tech_industrial_hearth_gardens: "Urban Gardens Initiative"
+    pw_tech_industrial_hearth_gardens_desc: "No space needs to be wasted, by enacting a new Gardens Initiative proposed by the poly-artisans in the Industrial Hearth we can reduce the impact of the Mantle Crucible and derivatives and increase general habitability."
 
     # Pavilion of Wonders:
     pw_tech_great_art_exhibition: "Universal Arts Exhibition"
@@ -97,35 +126,10 @@
     pw_tech_cultural_hegemony_studies: "Cultural Hegemony Studies"
     pw_tech_cultural_hegemony_studies_desc: "By hosting art exhibitions dedicated to the exploitation of different cultures in the $pw_building_museum_of_the_grotesque$ we can study ways of better reproaching those culture in diplomatic situations, and gaining the better hand for ourselves."
 
-    #Titan Forge Techs:
-    pw_tech_titan_forge_crystals: "High Temperature Crystal Polishing"
-    pw_tech_titan_forge_crystals_desc: "Techniques for polishing and manufacturing rare crystals in the Titan Forge allow us to increase the production."
+    # Holy Reliquary:
+    pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"
+    pw_tech_spiritual_artifacts_studies_desc: "Our culture is filled with sacral and ceremonial objects with great spiritual value invested into them. With our arrival onto the galactic scene, these relics were mostly forgotten, but now their true power - be it spiritual, social or actual - can be revived if they are sanctified once again."
 
-    pw_tech_titan_forge_gases: "Pressurized Gases Extraction"
-    pw_tech_titan_forge_gases_desc: "By extracting and transporting exotic gases in pressures reached in the Titan Forge we can cut our loses and increase production."
-
-    pw_tech_titan_forge_motes: "Mantle Motes Stabilization"
-    pw_tech_titan_forge_motes_desc: "Planetary mantle experiments can allow us to stabilize more volatile motes with less loses in the long run."
-
-
-    #Industrial Hearth Tech:
-    pw_tech_industrial_hearth_industry_military: "Military Industry Reform"
-    pw_tech_industrial_hearth_industry_military_desc: "With the advent of the Industrial Hearth, the poly-artisans were able to reshape former military industrial complexes into more streamlined, more efficient facilities from their design alone. now we can reform  the foundries to apply the new design."
-
-    pw_tech_industrial_hearth_industry_civilian: "Civilian Industry Reorganization"
-    pw_tech_industrial_hearth_industry_civilian_desc: "By consolidating theory and practice of industrial production, the poly-artisan weaved new plants for all of our civilian factories, increasing production all around the empire after we can apply it."
-
-    pw_tech_industrial_hearth_housing: "Urbanist Revolution"
-    pw_tech_industrial_hearth_housing_desc: "Instead of focusing in increasing housing space, the poly-artisan can devise a new urban plan for each of our cities, organizing living, work and traffic areas into more efficient configurations can provide much more space then previously expected."
-
-    pw_tech_industrial_hearth_design: "Revolutionary Product Design"
-    pw_tech_industrial_hearth_design_desc: "By abandoning outdated design decision on popular product development - such as programed obsolescence - the poly-artisans were able to set a new design school that allows much more of our population to satisfy their needs while consuming less goods."
-
-    pw_tech_industrial_hearth_design_megacorp: "Marketable Product Design"
-    pw_tech_industrial_hearth_design_megacorp_desc: "By abandoning outdated design decision on popular product development - such as consumer benefits - the poly-artisans were able to set a new design school that allows for more exploitative market strategies to increase trade value and disregard consumer rights."
-
-    pw_tech_industrial_hearth_gardens: "Urban Gardens Initiative"
-    pw_tech_industrial_hearth_gardens_desc: "No space needs to be wasted, by enacting a new Gardens Initiative proposed by the poly-artisans in the Industrial Hearth we can reduce the impact of the Mantle Crucible and derivatives and increase general habitability."
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

@@ -1,0 +1,552 @@
+namespace = pw_holy_reliquary
+
+#Holy Reliquary Hub Event
+country_event = {
+	id = pw_holy_reliquary.1
+	title = pw_holy_reliquary.1.name
+	desc = {
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_mirror
+			has_country_flag = pw_holy_reliquary_sanctified_scepter
+			has_country_flag = pw_holy_reliquary_sanctified_codex
+		}
+		text = pw_holy_reliquary.1.all.desc
+	}
+	desc = {
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_sanctified_mirror
+				has_country_flag = pw_holy_reliquary_sanctified_scepter
+				has_country_flag = pw_holy_reliquary_sanctified_codex
+			}
+			NAND = {
+				has_country_flag = pw_holy_reliquary_sanctified_mirror
+				has_country_flag = pw_holy_reliquary_sanctified_scepter
+				has_country_flag = pw_holy_reliquary_sanctified_codex
+			}
+		}
+		text = pw_holy_reliquary.1.some.desc
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = pw_holy_reliquary_sanctified_mirror
+				has_country_flag = pw_holy_reliquary_sanctified_scepter
+				has_country_flag = pw_holy_reliquary_sanctified_codex
+			}
+		}
+		text = pw_holy_reliquary.1.none.desc
+	}
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = pw_is_in_holy_reliquary
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_is_in_holy_reliquary
+	}
+
+	#Discovery: Codex of the Ages
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.discovery.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_codex }
+		}
+		allow = {
+			pw_has_unity_to_sanctify_artifact = yes
+			has_tradition = discovery_finisher
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.700
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.discovery.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_codex
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.705
+			}
+		}
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Discovery Artifact (Codex of the Ages) -> 700
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.700
+	title = pw_holy_reliquary.700.name
+	desc = pw_holy_reliquary.700.desc
+	picture = GFX_evt_ancient_records
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.700.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_codex }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.701 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.701
+	title = pw_holy_reliquary.701.name
+	desc = pw_holy_reliquary.701.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_codex
+	}
+
+	#Codex of Past Ages
+	option = {
+		name = pw_holy_reliquary.701.a
+		custom_tooltip = pw_holy_reliquary.701.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_discovery_codex_of_past_ages
+		}
+		hidden_effect = {
+			random_list = {
+				1 = { #Ruler
+					modifier = {
+						factor = 0
+						ruler = {
+							has_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+						}
+					}
+					country_event = { id = pw_holy_reliquary.710 }
+				}
+				1 = { #Governor
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = governor
+								NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.711 }
+				}
+				1 = { #Scientist
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = scientist
+								NOT = { has_trait = pw_leader_trait_scientist_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.712 }
+				}
+				1 = { #Admiral
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = admiral
+								NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.713 }
+				}
+				1 = { #General
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = general
+								NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.714 }
+				}
+			}
+		}
+	}
+	#Codex of Future Ages
+	option = {
+		name = pw_holy_reliquary.701.b
+		custom_tooltip = pw_holy_reliquary.701.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_discovery_codex_of_future_ages
+		}
+		hidden_effect = {
+			random_list = {
+				1 = {
+					country_event = { id = pw_holy_reliquary.720 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.721 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.722 }
+				}
+			}
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.705
+	title = pw_holy_reliquary.705.name
+	desc = pw_holy_reliquary.705.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Codex of Past Ages
+	option = {
+		name = pw_holy_reliquary.701.a
+		custom_tooltip = pw_holy_reliquary.701.a.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_discovery_codex_of_past_ages }
+			has_resource = {
+				type = influence
+				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_discovery_codex_of_past_ages
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_discovery_codex_of_future_ages
+			}
+			remove_modifier = pw_holy_reliquary_discovery_codex_of_future_ages
+		}
+		hidden_effect = {
+			random_list = {
+				1 = { #Ruler
+					modifier = {
+						factor = 0
+						ruler = {
+							has_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+						}
+					}
+					country_event = { id = pw_holy_reliquary.710 }
+				}
+				1 = { #Governor
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = governor
+								NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.711 }
+				}
+				1 = { #Scientist
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = scientist
+								NOT = { has_trait = pw_leader_trait_scientist_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.712 }
+				}
+				1 = { #Admiral
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = admiral
+								NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.713 }
+				}
+				1 = { #General
+					modifier = {
+						factor = 0
+						NOT = {
+							any_owned_leader = {
+								leader_class = general
+								NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
+							}
+						}
+					}
+					country_event = { id = pw_holy_reliquary.714 }
+				}
+			}
+		}
+	}
+
+	#Codex of Future Ages
+	option = {
+		name = pw_holy_reliquary.701.b
+		custom_tooltip = pw_holy_reliquary.701.b.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_discovery_codex_of_future_ages }
+			has_resource = {
+				type = influence
+				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_discovery_codex_of_future_ages
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_discovery_codex_of_past_ages
+			}
+			remove_modifier = pw_holy_reliquary_discovery_codex_of_past_ages
+		}
+		hidden_effect = {
+			random_list = {
+				1 = {
+					country_event = { id = pw_holy_reliquary.720 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.721 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.722 }
+				}
+			}
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Effects Description:
+#Codex of the Past Ages (Ruler)
+country_event = {
+	id = pw_holy_reliquary.710
+	title = pw_holy_reliquary.710.name
+	desc = pw_holy_reliquary.710.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.710.a
+		ruler = {
+			add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+			add_experience = 100
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Past Ages (Governor)
+country_event = {
+	id = pw_holy_reliquary.711
+	title = pw_holy_reliquary.711.name
+	desc = pw_holy_reliquary.711.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.710.a
+		random_owned_leader = {
+			limit = {
+				leader_class = governor
+				NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
+			}
+			add_trait = pw_leader_trait_governor_codex_of_past_ages
+			add_experience = 100
+			hidden_effect = {
+				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Past Ages (Scientist)
+country_event = {
+	id = pw_holy_reliquary.712
+	title = pw_holy_reliquary.712.name
+	desc = pw_holy_reliquary.712.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.710.a
+		random_owned_leader = {
+			limit = {
+				leader_class = scientist
+				NOT = { has_trait = pw_leader_trait_scientist_codex_of_past_ages }
+			}
+			add_trait = pw_leader_trait_scientist_codex_of_past_ages
+			add_experience = 100
+			hidden_effect = {
+				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Past Ages (Admiral)
+country_event = {
+	id = pw_holy_reliquary.713
+	title = pw_holy_reliquary.713.name
+	desc = pw_holy_reliquary.713.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.710.a
+		random_owned_leader = {
+			limit = {
+				leader_class = admiral
+				NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
+			}
+			add_trait = pw_leader_trait_admiral_codex_of_past_ages
+			add_experience = 100
+			hidden_effect = {
+				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Past Ages (General)
+country_event = {
+	id = pw_holy_reliquary.714
+	title = pw_holy_reliquary.714.name
+	desc = pw_holy_reliquary.714.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.710.a
+		random_owned_leader = {
+			limit = {
+				leader_class = general
+				NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
+			}
+			add_trait = pw_leader_trait_general_codex_of_past_ages
+			add_experience = 100
+			hidden_effect = {
+				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Future Ages (Physics)
+country_event = {
+	id = pw_holy_reliquary.720
+	title = pw_holy_reliquary.720.name
+	desc = pw_holy_reliquary.720.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.720.a
+		add_random_research_option = {
+			area = physics
+			add_progress = 0.10
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Future Ages (Society)
+country_event = {
+	id = pw_holy_reliquary.721
+	title = pw_holy_reliquary.721.name
+	desc = pw_holy_reliquary.721.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.720.a
+		add_random_research_option = {
+			area = society
+			add_progress = 0.10
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Codex of the Future Ages (Engineering)
+country_event = {
+	id = pw_holy_reliquary.722
+	title = pw_holy_reliquary.722.name
+	desc = pw_holy_reliquary.722.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.720.a
+		add_random_research_option = {
+			area = engineering
+			add_progress = 0.10
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}

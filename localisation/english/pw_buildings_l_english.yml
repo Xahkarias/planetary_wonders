@@ -119,6 +119,12 @@
     pw_building_museum_of_the_grotesque_tooltip: "§SGenerates 1 $job_pw_degeneracy_curator$ job per envoy harming relations, 1 $job_pw_degeneracy_curator$ job per each empire declared as our rival and 2 $job_pw_degeneracy_curator$ jobs if we are at war.§!"
     pw_building_museum_of_the_grotesque_tooltip_no_diplomacy: "§SGenerates 1 $job_pw_degeneracy_curator$ job per envoy harming relations and 2 $job_pw_degeneracy_curator$ jobs if we are at war.§!"
 
+    # Holy Reliquary
+    pw_holy_reliquary: "§MHoly Reliquary§!"
+    pw_building_holy_reliquary: "Holy Reliquary"
+    pw_building_holy_reliquary_desc: "The revered collection of artifacts sacred to our faith, kept where it can be conserved, studied and prayed upon."
+    pw_building_holy_reliquary_tooltip: "§SAllows us to sanctify holy artifacts.§!"
+
     # Machine Buildings:
 
     # Enigma Engine

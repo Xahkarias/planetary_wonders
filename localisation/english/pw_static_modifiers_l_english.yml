@@ -100,6 +100,16 @@
     pw_mod_museum_of_the_grotesque_recently_build: "Degeneracy Exposed"
     pw_mod_museum_of_the_grotesque_recently_build_desc: "All can now behold the immoral works of alien culture on the newly opened Museum of the Grotesque and thus value even more art of our own making."
 
+    # Museum of the Grotesque Event mods:
+    pw_mod_holy_reliquary_recently_build: "Revival of Hallowed Relics"
+    pw_mod_holy_reliquary_recently_build_desc: "The expectation of reviving ancient holy artifacts that brought about with the $pw_holy_reliquary$ is inspiring to our populace."
+
+    pw_holy_reliquary_discovery_codex_of_past_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Past Ages"
+    pw_holy_reliquary_discovery_codex_of_past_ages_desc: "By looking for answers in past experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can better prepare the leaders of our blessed country."
+
+    pw_holy_reliquary_discovery_codex_of_future_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Future Ages"
+    pw_holy_reliquary_discovery_codex_of_future_ages_desc: "By deciphering future experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can explore different research alternatives, as the prophets have stated long ago."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"

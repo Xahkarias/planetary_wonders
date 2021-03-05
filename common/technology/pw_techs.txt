@@ -1373,7 +1373,7 @@ pw_tech_titan_forge_crystals = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = titan_forge_built
+		has_country_flag = pw_titan_forge_built
 	}
 
 	modifier = {
@@ -1397,7 +1397,7 @@ pw_tech_titan_forge_gases = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = titan_forge_built
+		has_country_flag = pw_titan_forge_built
 	}
 
 	modifier = {
@@ -1421,7 +1421,7 @@ pw_tech_titan_forge_motes = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = titan_forge_built
+		has_country_flag = pw_titan_forge_built
 	}
 
 	modifier = {
@@ -1533,7 +1533,7 @@ pw_tech_industrial_hearth_industry_military = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = industrial_hearth_built
+		has_country_flag = pw_industrial_hearth_built
 	}
 
 	modifier = {
@@ -1557,7 +1557,7 @@ pw_tech_industrial_hearth_industry_civilian = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = industrial_hearth_built
+		has_country_flag = pw_industrial_hearth_built
 	}
 
 	modifier = {
@@ -1581,7 +1581,7 @@ pw_tech_industrial_hearth_housing = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = industrial_hearth_built
+		has_country_flag = pw_industrial_hearth_built
 	}
 
 	modifier = {
@@ -1605,7 +1605,7 @@ pw_tech_industrial_hearth_design = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = industrial_hearth_built
+		has_country_flag = pw_industrial_hearth_built
 	}
 
 	modifier = {
@@ -1629,7 +1629,7 @@ pw_tech_industrial_hearth_design_megacorp = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = industrial_hearth_built
+		has_country_flag = pw_industrial_hearth_built
 	}
 
 	modifier = {
@@ -1653,7 +1653,7 @@ pw_tech_industrial_hearth_gardens = {
 	is_rare = yes
 
 	potential = {
-		has_country_flag = industrial_hearth_built
+		has_country_flag = pw_industrial_hearth_built
 	}
 
 	modifier = {
@@ -1843,7 +1843,7 @@ pw_tech_xeno_art_integration = {
 		modifier = {
 			factor = 0.05
 			NOT = {
-				has_country_flag = pavilion_of_wonders_built
+				has_country_flag = pw_pavilion_of_wonders_built
 			}
 		}
 
@@ -1992,7 +1992,7 @@ pw_tech_xeno_art_alienation = {
 		modifier = {
 			factor = 0.05
 			NOT = {
-				has_country_flag = pavilion_of_wonders_built
+				has_country_flag = pw_pavilion_of_wonders_built
 			}
 		}
 
@@ -2055,6 +2055,106 @@ pw_tech_cultural_hegemony_studies = {
 	modifier = {
 		envoys_add = 1
 		envoy_harm_relations_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+# Holy Reliquary
+pw_tech_spiritual_artifacts_studies = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier4cost3
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+	}
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_spiritual_artifacts_studies }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_spiritualist = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_consecrated_worlds
+		}
+
+		modifier = {
+			factor = 1.5
+			num_owned_relics > 1
+		}
+
+		modifier = {
+			factor = 2
+			num_owned_relics > 2
+		}
+
+		modifier = {
+			factor = 2
+			num_owned_relics > 3
+		}
 	}
 
 	ai_weight = {

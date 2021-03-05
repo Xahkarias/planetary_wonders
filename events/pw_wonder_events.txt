@@ -3591,12 +3591,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = mantle_crucible_built }}
+		NOT = {owner = { has_country_flag = pw_mantle_crucible_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = mantle_crucible_built }
+		owner = { set_country_flag = pw_mantle_crucible_built }
 	}
 
 	option = {
@@ -3631,12 +3631,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = mantle_crucible_built }}
+		NOT = {owner = { has_country_flag = pw_mantle_crucible_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = mantle_crucible_built }
+		owner = { set_country_flag = pw_mantle_crucible_built }
 	}
 
 	option = {
@@ -3914,12 +3914,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = titan_forge_built }}
+		NOT = {owner = { has_country_flag = pw_titan_forge_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = titan_forge_built }
+		owner = { set_country_flag = pw_titan_forge_built }
 	}
 
 	option = {
@@ -3948,12 +3948,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = titan_forge_built }}
+		NOT = {owner = { has_country_flag = pw_titan_forge_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = titan_forge_built }
+		owner = { set_country_flag = pw_titan_forge_built }
 	}
 
 	option = {
@@ -4113,12 +4113,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = industrial_hearth_built }}
+		NOT = {owner = { has_country_flag = pw_industrial_hearth_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = industrial_hearth_built }
+		owner = { set_country_flag = pw_industrial_hearth_built }
 	}
 
 	option = {
@@ -4145,12 +4145,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = industrial_hearth_built }}
+		NOT = {owner = { has_country_flag = pw_industrial_hearth_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = industrial_hearth_built }
+		owner = { set_country_flag = pw_industrial_hearth_built }
 	}
 
 	option = {
@@ -4664,12 +4664,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = pavilion_of_wonders_built }}
+		NOT = {owner = { has_country_flag = pw_pavilion_of_wonders_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = pavilion_of_wonders_built }
+		owner = { set_country_flag = pw_pavilion_of_wonders_built }
 	}
 
 	option = {
@@ -4730,12 +4730,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = fair_of_worlds_built }}
+		NOT = {owner = { has_country_flag = pw_fair_of_worlds_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = fair_of_worlds_built }
+		owner = { set_country_flag = pw_fair_of_worlds_built }
 	}
 
 	option = {
@@ -4841,12 +4841,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = museum_of_the_grotesque_built }}
+		NOT = {owner = { has_country_flag = pw_museum_of_the_grotesque_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = museum_of_the_grotesque_built }
+		owner = { set_country_flag = pw_museum_of_the_grotesque_built }
 	}
 
 	option = {
@@ -4936,6 +4936,67 @@ planet_event = {
 				min = @tier3influencemin
 				max = @tier3influencemax
 			}
+		}
+	}
+}
+
+# Holy Reliquary -> id 1500
+
+#On Holy Reliquary built
+planet_event = {
+	id = pw_wonder.1500
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_holy_reliquary_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1501 } #Regular first time
+	}
+}
+
+#On first time Holy Reliquary is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1501
+	title = pw_wonder.1501.name
+	desc = pw_wonder.1501.desc
+	picture = GFX_evt_ancient_records
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_holy_reliquary_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_holy_reliquary_built }
+	}
+
+	option = {
+		name = pw_wonder.1501.a
+		add_modifier = {
+			modifier = pw_mod_holy_reliquary_recently_build
+			days = @pw_2years
 		}
 	}
 }

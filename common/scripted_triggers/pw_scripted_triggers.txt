@@ -52,6 +52,8 @@ pw_has_any_planetary_wonder = {
 		has_building_construction = pw_building_fair_of_worlds
 		has_building = pw_building_museum_of_the_grotesque
 		has_building_construction = pw_building_museum_of_the_grotesque
+		has_building = pw_building_holy_reliquary
+		has_building_construction = pw_building_holy_reliquary
 	}
 }
 
@@ -70,12 +72,13 @@ pw_has_build_any_planetary_wonder = {
 		has_country_flag = enigma_engine_built
 		has_country_flag = solipsist_debate_hall_built
 		has_country_flag = guardian_angel_built
-		has_country_flag = mantle_crucible_built
-		has_country_flag = titan_forge_built
-		has_country_flag = industrial_hearth_built
-		has_country_flag = pavilion_of_wonders_built
-		has_country_flag = fair_of_worlds_built
-		has_country_flag = museum_of_the_grotesque_built
+		has_country_flag = pw_mantle_crucible_built
+		has_country_flag = pw_titan_forge_built
+		has_country_flag = pw_industrial_hearth_built
+		has_country_flag = pw_pavilion_of_wonders_built
+		has_country_flag = pw_fair_of_worlds_built
+		has_country_flag = pw_museum_of_the_grotesque_built
+		has_country_flag = pw_holy_reliquary_built
 	}
 }
 
@@ -138,5 +141,104 @@ pw_last_increased_tech_was_enigma_tech = {
 		last_increased_tech = pw_enigma_tech_exoteric_predictions_system
 		last_increased_tech = pw_enigma_tech_bio_frequency_emitters
 		last_increased_tech = pw_enigma_tech_exoteric_fleet_pattern
+	}
+}
+
+pw_has_unity_to_sanctify_artifact = {
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 0
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_0
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 1
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_1
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 2
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_2
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 3
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_3
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 4
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_4
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 5
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_5
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value = 6
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_6
+		}
+	}
+	conditional_tooltip = {
+		trigger = {
+			check_variable = {
+				which = pw_sanctified_artifacts_count
+				value > 6 #Shouldn't happen, but just to make sure.
+			}
+		}
+		has_resource = {
+			type = unity
+			amount >= @pw_holy_reliquary_sanctify_cost_check_7
+		}
 	}
 }

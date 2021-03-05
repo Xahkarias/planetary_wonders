@@ -69,3 +69,26 @@
 @pw_tier4cost4 = 28000
 @pw_enigma_tech_cost = 60000
 @pw_enigma_tech_cost_extra = 80000
+
+
+#Holy Reliquary artifacts cost check:
+@pw_holy_reliquary_sanctify_cost_check_0 = 20000
+@pw_holy_reliquary_sanctify_cost_check_1 = 25000
+@pw_holy_reliquary_sanctify_cost_check_2 = 30000
+@pw_holy_reliquary_sanctify_cost_check_3 = 40000
+@pw_holy_reliquary_sanctify_cost_check_4 = 50000
+@pw_holy_reliquary_sanctify_cost_check_5 = 75000
+@pw_holy_reliquary_sanctify_cost_check_6 = 100000
+@pw_holy_reliquary_sanctify_cost_check_7 = 125000 #Should be unused
+#Holy Reliquary artifacts cost (SHOULD BE EQUAL BUT NEGATIVE):
+@pw_holy_reliquary_sanctify_cost_0 = -20000
+@pw_holy_reliquary_sanctify_cost_1 = -25000
+@pw_holy_reliquary_sanctify_cost_2 = -30000
+@pw_holy_reliquary_sanctify_cost_3 = -40000
+@pw_holy_reliquary_sanctify_cost_4 = -50000
+@pw_holy_reliquary_sanctify_cost_5 = -75000
+@pw_holy_reliquary_sanctify_cost_6 = -100000
+@pw_holy_reliquary_sanctify_cost_7 = -125000 #Should be unused
+#Holy Reliquary change modifier influence cost
+@pw_holy_reliquary_change_artifact_cost_check = 150
+@pw_holy_reliquary_change_artifact_cost = -150

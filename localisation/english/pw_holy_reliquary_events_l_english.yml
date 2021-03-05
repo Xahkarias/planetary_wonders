@@ -1,0 +1,61 @@
+﻿l_english:
+
+    #Scripted triggers tooltips:
+    pw_holy_reliquary_leave_tooltip: "You can return to the $pw_holy_reliquary$ via edict or planetary decision where it is build."
+    pw_holy_reliquary_return_to_hub_tooltip: "Return to the Holy Reliquary hub."
+
+    #Enter the Holy Reliquary (initial):
+    pw_holy_reliquary.1.name: "Holy Reliquary"
+    pw_holy_reliquary.1.all.desc: "."
+    pw_holy_reliquary.1.some.desc: "."
+    pw_holy_reliquary.1.none.desc: "The empty halls and vacant pedestals of the Holy Reliquary eager to house spiritual artifacts from our ancient history. Eventually this large building can become a treasure trove of cultural and religious relics, that reflect our values and ways to interpret the universe, but for now, the silence of the building is only broken by the some priests in visit.\n\nThere are many myths - some of them real - trougthout our history from which we can draw relics of the past, aligned with our beliefs and Traditions. We only need to choose an artifact from one of them to begin the holy assemblage."
+
+    #Navigation:
+    pw_holy_reliquary.leave: "Leave the Holy Reliquary"
+    pw_holy_reliquary.return: "Return"
+    pw_holy_reliquary.sanctify: "§YSanctify:§!"
+
+    #Discovery: Codex of the Ages -> 700
+    pw_holy_reliquary.codex_of_the_ages: "§BCodex of the Ages§!"
+    pw_holy_reliquary.1.discovery.sanctify: "$pw_holy_reliquary.sanctify$ $pw_holy_reliquary.codex_of_the_ages$"
+    pw_holy_reliquary.1.discovery.access: "$pw_holy_reliquary.codex_of_the_ages$"
+
+    pw_holy_reliquary.700.name: "The Codex of the Ages"
+    pw_holy_reliquary.700.desc: ""
+    pw_holy_reliquary.700.a: "Sanctify the $pw_holy_reliquary.codex_of_the_ages$"
+
+    pw_holy_reliquary.701.name: "Technologies of the Self"
+    pw_holy_reliquary.701.desc: ""
+    pw_holy_reliquary.701.a: "Pursue secrets of past ages"
+    pw_holy_reliquary.701.a.tooltip: "One of our holy leaders shall be graced with knowledge from the past, contained in the Codex."
+    pw_holy_reliquary.701.b: "Pursue secrets of future ages"
+    pw_holy_reliquary.701.b.tooltip: "The Codex shall show the way for our researcher with the secrets of future technologies it holds."
+
+    pw_holy_reliquary.705.name: "Technologies of the Self"
+    pw_holy_reliquary.705.desc: ""
+
+    pw_holy_reliquary.710.name: "Guidance of History: On Ruling"
+    pw_holy_reliquary.710.desc: ""
+
+    pw_holy_reliquary.711.name: "Guidance of History: On Governing"
+    pw_holy_reliquary.711.desc: ""
+
+    pw_holy_reliquary.712.name: "Guidance of History: On Discovering"
+    pw_holy_reliquary.712.desc: ""
+
+    pw_holy_reliquary.713.name: "Guidance of History: On War"
+    pw_holy_reliquary.713.desc: ""
+
+    pw_holy_reliquary.714.name: "Guidance of History: On Battle"
+    pw_holy_reliquary.714.desc: ""
+    pw_holy_reliquary.710.a: "May the knowledge of the ages guide us all."
+
+    pw_holy_reliquary.720.name: ""
+    pw_holy_reliquary.720.desc: ""
+
+    pw_holy_reliquary.721.name: ""
+    pw_holy_reliquary.721.desc: ""
+
+    pw_holy_reliquary.722.name: ""
+    pw_holy_reliquary.722.desc: ""
+    pw_holy_reliquary.720.a: "May the future be reveled to the faithful."
