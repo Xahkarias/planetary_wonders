@@ -6,3 +6,7 @@
     pw_edict_panspectron_tooltip: "Adds 1 Big Brother job to the Panopticon."
     edict_pw_edict_hive_debate: "Solipsist Debate"
     edict_pw_edict_hive_debate_desc: "Initiate a discussion on the Solipsist Debate Hall, where the Hive can lucubrate over abstract topics such as Love, Freedom or play 5D-Chess."
+
+    edict_pw_holy_reliquary_visit_the_reliquary: "Visit the $pw_holy_reliquary$"
+    edict_pw_holy_reliquary_visit_the_reliquary_desc: "Visit the halls and chambers housing our sanctified artifacts."
+    edict_pw_holy_reliquary_visit_the_reliquary_tooltip: "Launch an event that acts as the hub for the $pw_holy_reliquary$, where we can sanctify artifacts and activate some of their abilities."

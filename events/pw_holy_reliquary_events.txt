@@ -51,6 +51,35 @@ country_event = {
 		set_country_flag = pw_is_in_holy_reliquary
 	}
 
+	#Domination: Scepter of the Solar-Regent -> 200
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.domination.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_scepter }
+		}
+		allow = {
+			pw_has_unity_to_sanctify_artifact = yes
+			has_tradition = tr_domination_finish
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.200
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.domination.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_scepter
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.205
+			}
+		}
+	}
+
 	#Discovery: Codex of the Ages
 	option = { #Sanctify
 		name = pw_holy_reliquary.1.discovery.sanctify
@@ -59,7 +88,7 @@ country_event = {
 		}
 		allow = {
 			pw_has_unity_to_sanctify_artifact = yes
-			has_tradition = discovery_finisher
+			has_tradition = tr_discovery_finish
 		}
 		hidden_effect = {
 			country_event = {
@@ -87,13 +116,226 @@ country_event = {
 	}
 }
 
+#Domination Artifact (Scepter of the Solar-Regent) -> 200
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.200
+	title = pw_holy_reliquary.200.name
+	desc = pw_holy_reliquary.200.desc
+	picture = GFX_evt_scepter_of_the_solar_regent
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.200.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_scepter }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.201 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.201
+	title = pw_holy_reliquary.201.name
+	desc = pw_holy_reliquary.201.desc
+	picture = GFX_evt_scepter_of_the_solar_regent
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_scepter
+	}
+
+	#Way of the Solar-Regent
+	option = {
+		name = pw_holy_reliquary.201.a
+		custom_tooltip = pw_holy_reliquary.201.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_domination_way_of_the_solar_regent
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.210
+			}
+		}
+	}
+
+	#Way of the Void-Speakers
+	option = {
+		name = pw_holy_reliquary.201.b
+		custom_tooltip = pw_holy_reliquary.201.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_domination_way_of_the_void_speakers
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.220
+			}
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.205
+	title = pw_holy_reliquary.205.name
+	desc = pw_holy_reliquary.205.desc
+	picture = GFX_evt_scepter_of_the_solar_regent
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Way of the Solar-Regent
+	option = {
+		name = pw_holy_reliquary.201.a
+		custom_tooltip = pw_holy_reliquary.201.a.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_domination_way_of_the_solar_regent }
+			has_resource = {
+				type = influence
+				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_domination_way_of_the_solar_regent
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_domination_way_of_the_void_speakers
+			}
+			remove_modifier = pw_holy_reliquary_domination_way_of_the_void_speakers
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.210
+			}
+		}
+	}
+
+	#Way of the Void-Speakers
+	option = {
+		name = pw_holy_reliquary.201.b
+		custom_tooltip = pw_holy_reliquary.201.b.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_domination_way_of_the_void_speakers }
+			has_resource = {
+				type = influence
+				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_domination_way_of_the_void_speakers
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_domination_way_of_the_solar_regent
+			}
+			remove_modifier = pw_holy_reliquary_domination_way_of_the_solar_regent
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.220
+			}
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Effects Description:
+#Way of the Solar-Regent (shrine)
+country_event = {
+	id = pw_holy_reliquary.210
+	title = pw_holy_reliquary.210.name
+	desc = pw_holy_reliquary.210.desc
+	picture = GFX_evt_scepter_of_the_solar_regent
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOT = { has_deposit = pw_d_monument_to_the_solar_regent }
+				NOT = { has_deposit = pw_d_parliament_of_the_void_speakers }
+			}
+			save_event_target_as = pw_holy_reliquary_shrine_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.210.a
+		event_target:pw_holy_reliquary_shrine_planet = {
+			add_deposit = pw_d_monument_to_the_solar_regent
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Way of the Void-Speakers (shrine)
+country_event = {
+	id = pw_holy_reliquary.220
+	title = pw_holy_reliquary.220.name
+	desc = pw_holy_reliquary.220.desc
+	picture = GFX_evt_scepter_of_the_solar_regent
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOT = { has_deposit = pw_d_monument_to_the_solar_regent }
+				NOT = { has_deposit = pw_d_parliament_of_the_void_speakers }
+			}
+			save_event_target_as = pw_holy_reliquary_shrine_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.220.a
+		event_target:pw_holy_reliquary_shrine_planet = {
+			add_deposit = pw_d_parliament_of_the_void_speakers
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
 #Discovery Artifact (Codex of the Ages) -> 700
 #Sanctify:
 country_event = {
 	id = pw_holy_reliquary.700
 	title = pw_holy_reliquary.700.name
 	desc = pw_holy_reliquary.700.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	is_triggered_only = yes
 
 	#Sanctify
@@ -120,7 +362,7 @@ country_event = {
 	id = pw_holy_reliquary.701
 	title = pw_holy_reliquary.701.name
 	desc = pw_holy_reliquary.701.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -199,6 +441,11 @@ country_event = {
 					country_event = { id = pw_holy_reliquary.714 }
 				}
 			}
+			country_event = {
+				id = pw_holy_reliquary.750
+				days = @pw_2years
+				random = @pw_1year
+			}
 		}
 	}
 	#Codex of Future Ages
@@ -220,6 +467,11 @@ country_event = {
 					country_event = { id = pw_holy_reliquary.722 }
 				}
 			}
+			country_event = {
+				id = pw_holy_reliquary.750
+				days = @pw_2years
+				random = @pw_1year
+			}
 		}
 	}
 }
@@ -229,7 +481,7 @@ country_event = {
 	id = pw_holy_reliquary.705
 	title = pw_holy_reliquary.705.name
 	desc = pw_holy_reliquary.705.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -376,7 +628,7 @@ country_event = {
 	id = pw_holy_reliquary.710
 	title = pw_holy_reliquary.710.name
 	desc = pw_holy_reliquary.710.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -395,7 +647,7 @@ country_event = {
 	id = pw_holy_reliquary.711
 	title = pw_holy_reliquary.711.name
 	desc = pw_holy_reliquary.711.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -421,7 +673,7 @@ country_event = {
 	id = pw_holy_reliquary.712
 	title = pw_holy_reliquary.712.name
 	desc = pw_holy_reliquary.712.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -447,7 +699,7 @@ country_event = {
 	id = pw_holy_reliquary.713
 	title = pw_holy_reliquary.713.name
 	desc = pw_holy_reliquary.713.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -473,7 +725,7 @@ country_event = {
 	id = pw_holy_reliquary.714
 	title = pw_holy_reliquary.714.name
 	desc = pw_holy_reliquary.714.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -499,7 +751,7 @@ country_event = {
 	id = pw_holy_reliquary.720
 	title = pw_holy_reliquary.720.name
 	desc = pw_holy_reliquary.720.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -508,6 +760,14 @@ country_event = {
 		add_random_research_option = {
 			area = physics
 			add_progress = 0.10
+			fail_effects = {
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
 	}
@@ -518,7 +778,7 @@ country_event = {
 	id = pw_holy_reliquary.721
 	title = pw_holy_reliquary.721.name
 	desc = pw_holy_reliquary.721.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -527,6 +787,14 @@ country_event = {
 		add_random_research_option = {
 			area = society
 			add_progress = 0.10
+			fail_effects = {
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
 	}
@@ -537,7 +805,7 @@ country_event = {
 	id = pw_holy_reliquary.722
 	title = pw_holy_reliquary.722.name
 	desc = pw_holy_reliquary.722.desc
-	picture = GFX_evt_ancient_records
+	picture = GFX_evt_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -546,7 +814,53 @@ country_event = {
 		add_random_research_option = {
 			area = engineering
 			add_progress = 0.10
+			fail_effects = {
+				add_monthly_resource_mult = {
+					resource = engineering_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Flavour Random Events:
+#Apocryphal Writings
+country_event = {
+	id = pw_holy_reliquary.750
+	title = pw_holy_reliquary.750.name
+	desc = pw_holy_reliquary.750.desc
+	picture = GFX_evt_codex_of_the_ages
+	is_triggered_only = yes
+
+	#Canonize the texts
+	option = {
+		name = pw_holy_reliquary.750.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+	}
+	#Burn the heretic texts
+	option = {
+		name = pw_holy_reliquary.750.b
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier3influencereward
+			min = @tier3influencemin
+			max = @tier3influencemax
+		}
+	}
+	#Concede them to ruler
+	option = {
+		name = pw_holy_reliquary.750.c
+		ruler = {
+			add_experience = 300
+		}
 	}
 }

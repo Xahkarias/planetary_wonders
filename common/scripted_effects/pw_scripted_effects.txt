@@ -240,6 +240,7 @@ pw_holy_reliquary_leave = {
 pw_holy_reliquary_return_to_hub = {
 	custom_tooltip = pw_holy_reliquary_return_to_hub_tooltip
 	hidden_effect = {
+		remove_country_flag = pw_is_in_holy_reliquary
 		country_event = {
 			id = pw_holy_reliquary.1
 		}

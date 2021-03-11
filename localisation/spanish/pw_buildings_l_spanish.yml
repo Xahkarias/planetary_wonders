@@ -108,3 +108,8 @@
     pw_building_museum_of_the_grotesque_desc: "Lower and foreign art has no place in our society, by exposing them as examples to be mocked in the expansive Museum of the Grotesque we can make sure this ridiculousness xenos call culture stays away from our prideful mainstream."
     pw_building_museum_of_the_grotesque_tooltip: "Â§SGenerates 1 $job_pw_degeneracy_curator$ job per envoy harming relations, 1 $job_pw_degeneracy_curator$ job per each empire declared as our rival and 2 $job_pw_degeneracy_curator$ jobs if we are at war.Â§!"
     pw_building_museum_of_the_grotesque_tooltip_no_diplomacy: "Â§SGenerates 1 $job_pw_degeneracy_curator$ job per envoy harming relations and 2 $job_pw_degeneracy_curator$ jobs if we are at war.Â§!"
+
+    pw_holy_reliquary: "Â§MHoly ReliquaryÂ§!"
+    pw_building_holy_reliquary: "Holy Reliquary"
+    pw_building_holy_reliquary_desc: "The revered collection of artifacts sacred to our faith, kept where it can be conserved, studied and prayed upon."
+    pw_building_holy_reliquary_tooltip: "Â§SAllows us to sanctify holy artifacts.Â§!"

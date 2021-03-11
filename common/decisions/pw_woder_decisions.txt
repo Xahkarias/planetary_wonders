@@ -1215,3 +1215,34 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		weight = 17
 	}
 }
+
+#Visit the Holy Reliquary
+pw_decision_holy_reliquary_visit_the_reliquary = {
+	owned_planets_only = yes
+	sound = event_mystic_reveal
+
+	prerequisites = {
+		pw_tech_spiritual_artifacts_studies
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_building = pw_building_holy_reliquary
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_holy_reliquary_visit_the_reliquary_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_holy_reliquary.1
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

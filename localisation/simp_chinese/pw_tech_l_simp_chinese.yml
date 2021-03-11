@@ -140,3 +140,6 @@
     pw_enigma_tech_complete_stabilization_fields_desc: "The magnetic fields produced by the Enigma Engine can be further combine with our own internal fields, produced by our memory units, to completely stabilize Volatile Motes losing even less in the process."
     pw_enigma_tech_gas_molecular_generation: "$pw_enigma_tech$ Gas Molecular Generation"
     pw_enigma_tech_gas_molecular_generation_desc: "By converging our research of bio materials we can replicate Exotic Gas generation trough a mesh of organic and artificial precesses."
+
+    pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"
+    pw_tech_spiritual_artifacts_studies_desc: "Our culture is filled with sacral and ceremonial objects with great spiritual value invested into them. With our arrival onto the galactic scene, these relics were mostly forgotten, but now their true power - be it spiritual, social or actual - can be revived if they are sanctified once again."

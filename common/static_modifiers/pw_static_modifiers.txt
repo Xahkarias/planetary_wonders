@@ -186,7 +186,22 @@ pw_mod_galactic_model_anomaly_sensor = {
 #Holy Reliquary Artifacts Modifiers:
 
 #Codex of the Ages: Codex of Past Ages
+pw_holy_reliquary_domination_way_of_the_solar_regent = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	pop_cat_specialist_political_power = 0.20
+	planet_jobs_specialist_produces_mult = 0.15
+}
+
+#Codex of the Ages: Codex of Ages Past
+pw_holy_reliquary_domination_way_of_the_void_speakers = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	pop_cat_worker_political_power = 0.20
+	planet_jobs_worker_produces_mult = 0.15
+}
+
+#Codex of the Ages: Codex of Past Ages
 pw_holy_reliquary_discovery_codex_of_past_ages = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	country_leader_pool_size = 1
 	species_leader_exp_gain = 0.25
 	leaders_upkeep_mult = -0.15
@@ -194,6 +209,7 @@ pw_holy_reliquary_discovery_codex_of_past_ages = {
 
 #Codex of the Ages: Codex of Ages Past
 pw_holy_reliquary_discovery_codex_of_future_ages = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	num_tech_alternatives_add = 1
 	station_researchers_produces_mult = 0.20
 	all_technology_research_speed = 0.10

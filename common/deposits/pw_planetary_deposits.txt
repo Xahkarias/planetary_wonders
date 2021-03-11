@@ -99,3 +99,52 @@ pw_d_ancient_mining_project = {
 		}
 	}
 }
+
+pw_d_monument_to_the_solar_regent = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_monument
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	planet_modifier = {
+		country_unity_produces_add = 15
+		pop_cat_ruler_happiness = 0.05
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 2
+		}
+	}
+}
+
+pw_d_parliament_of_the_void_speakers = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	icon = d_ruins_small
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	planet_modifier = {
+		country_unity_produces_add = 15
+		pop_cat_worker_happiness = 0.05
+		pop_cat_slave_happiness = 0.05
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 2
+		}
+	}
+}

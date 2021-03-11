@@ -5,7 +5,7 @@ pw_can_build_planetary_wonder = {
 		fail_text = pw_planet_wonder_limit
 
 		OR = {
-			owner = {has_edict = pw_ambition_monumentality}
+			owner = { has_edict = pw_ambition_monumentality }
 			pw_has_any_planetary_wonder = no
 		}
 	}

@@ -6,6 +6,12 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_codex_of_the_ages"
+		texturefile = "gfx/event_pictures/codex_of_the_ages.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_demetrius_cornucopia"
 		texturefile = "gfx/event_pictures/demetrius_cornucopia.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
@@ -38,6 +44,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_helios_tower"
 		texturefile = "gfx/event_pictures/helios_tower.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_scepter_of_the_solar_regent"
+		texturefile = "gfx/event_pictures/scepter_of_the_solar_regent.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}

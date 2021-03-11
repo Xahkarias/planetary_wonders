@@ -1718,7 +1718,7 @@ pw_building_holy_reliquary = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		pw_is_wonder_empire_unique = { WONDER = pw_building_solipsist_debate_hall }
+		pw_is_wonder_empire_unique = { WONDER = pw_building_holy_reliquary }
 	}
 
 	resources = {

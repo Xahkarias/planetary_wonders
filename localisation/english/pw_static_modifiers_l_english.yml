@@ -104,11 +104,18 @@
     pw_mod_holy_reliquary_recently_build: "Revival of Hallowed Relics"
     pw_mod_holy_reliquary_recently_build_desc: "The expectation of reviving ancient holy artifacts that brought about with the $pw_holy_reliquary$ is inspiring to our populace."
 
+    #Holy Reliquary mods:
     pw_holy_reliquary_discovery_codex_of_past_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Past Ages"
     pw_holy_reliquary_discovery_codex_of_past_ages_desc: "By looking for answers in past experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can better prepare the leaders of our blessed country."
 
     pw_holy_reliquary_discovery_codex_of_future_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Future Ages"
     pw_holy_reliquary_discovery_codex_of_future_ages_desc: "By deciphering future experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can explore different research alternatives, as the prophets have stated long ago."
+
+    pw_holy_reliquary_domination_way_of_the_solar_regent: "$pw_holy_reliquary.scepter_of_the_solar_regent$: Way of the Solar-Regent"
+    pw_holy_reliquary_domination_way_of_the_solar_regent_desc: "By embracing the way of the Solar-Regent from the legend of the $pw_holy_reliquary.scepter_of_the_solar_regent$ we reinforce the power and importance of specialists and rulers."
+
+    pw_holy_reliquary_domination_way_of_the_void_speakers: "$pw_holy_reliquary.scepter_of_the_solar_regent$: Way of the Void-Speakers"
+    pw_holy_reliquary_domination_way_of_the_void_speakers_desc: "By embracing the way of the Void-Speakers from the legend of the $pw_holy_reliquary.scepter_of_the_solar_regent$ we reinforce the power and importance of common workers."
 
     #Solipsist Debates:
 
