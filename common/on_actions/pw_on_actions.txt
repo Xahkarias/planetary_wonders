@@ -33,6 +33,17 @@ on_building_replaced = {
 	}
 }
 
+# A building construction has been completed, which is an upgrade of previous building.
+# This = Planet
+on_building_upgraded = {
+	events = {
+		pw_wonder.1330 #Titan Forge
+		pw_wonder.1360 #Industrial Hearth
+		pw_wonder.1430 #Fair of Worlds
+		pw_wonder.1460 #Museum of the Grotesque
+	}
+}
+
 #An army construction has been completed
 # This = Planet
 # From = Army

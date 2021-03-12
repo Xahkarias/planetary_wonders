@@ -27,7 +27,7 @@
     pw_decision_pavilion_of_wonders_planetary_art_exhibition: "Organize Planetary Exhibition"
     pw_decision_pavilion_of_wonders_planetary_art_exhibition_desc: "A grand exhibition in the Pavilion of Wonders, gathering many artist from our empire and all who whish to marvel at their creations."
     pw_decision_pavilion_of_wonders_planetary_art_exhibition_tooltip: "Launches an event to organize a thematic exhibition in this planet that can shift popular perception or give other bonuses."
-    pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing: "An exhibition is already being hosted. We can only host 1 exhibition at a time."
+    pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing: "An exhibition is already being hosted.\n§RWe can only host 1 exhibition at a time.§!"
 
     pw_decision_pavilion_of_wonders_interplanetary_art_exhibition: "Organize Interplanetary Exhibition"
     pw_decision_pavilion_of_wonders_interplanetary_art_exhibition_desc: "A combined exhibition on all of our Pavilions of Wonders, promoting interplanetary cultural exchange all around the empire."
@@ -62,6 +62,8 @@
     pw_decision_museum_of_the_grotesque_interstellar_art_exhibition: "Organize Interstellar Exhibition"
     pw_decision_museum_of_the_grotesque_interstellar_art_exhibition_desc: "A combined exhibition on all of our Pavilions of Wonders, Museum of the Grotesque and Mega Art Installation, promoting interstellar degeneracy purging and honor our moral high standards of art across the whole empire."
     pw_decision_museum_of_the_grotesque_interstellar_art_exhibition_tooltip: "Launches an event to organize a thematic exhibition upholds cultural superiority in all our planets that have more than 10 pops. This exhibition can shift popular perception or give other bonuses."
+
+    pw_decision_has_mega_arts_exhibition_tooltip: "§RRequires a fully operations Mega Arts Installation Megastructure.§!"
 
     pw_decision_holy_reliquary_visit_the_reliquary: "Visit the $pw_holy_reliquary$"
     pw_decision_holy_reliquary_visit_the_reliquary_desc: "Visit the halls and chambers housing our sanctified artifacts."

@@ -118,7 +118,7 @@ pw_mod_enigma_engine_art = {
 }
 
 pw_mod_gaia_unstable_weather = {
-	planet_jobs_complex_drone_produces_mult = -0.25
+	planet_jobs_produces_mult = -0.10
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 	icon_frame = 3
 }

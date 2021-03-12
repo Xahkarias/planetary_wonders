@@ -460,7 +460,7 @@ pw_building_titan_forge = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		pw_is_wonder_empire_unique = { WONDER = pw_building_solipsist_debate_hall }
+		pw_is_wonder_empire_unique = { WONDER = pw_building_titan_forge }
 	}
 
 	resources = {
@@ -589,7 +589,8 @@ pw_building_titan_forge = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1330 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.1330 }
 	}
 
 	ai_weight = {
@@ -672,7 +673,7 @@ pw_building_industrial_hearth = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		pw_is_wonder_empire_unique = { WONDER = pw_building_solipsist_debate_hall }
+		pw_is_wonder_empire_unique = { WONDER = pw_building_industrial_hearth }
 	}
 
 	resources = {
@@ -789,7 +790,8 @@ pw_building_industrial_hearth = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1360 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.1360 }
 	}
 
 	ai_weight = {

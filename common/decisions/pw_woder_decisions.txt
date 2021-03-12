@@ -393,10 +393,20 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets < 10
+					num_owned_planets < 5
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 5
+					num_owned_planets < 10
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
@@ -406,7 +416,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 					num_owned_planets < 20
 				}
 			}
-			unity = @pw_decision_exhibition_cost_2
+			unity = @pw_decision_exhibition_cost_3
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
@@ -416,23 +426,13 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 					num_owned_planets < 30
 				}
 			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 30
-					num_owned_planets < 40
-				}
-			}
 			unity = @pw_decision_exhibition_cost_4
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 40
+					num_owned_planets > 30
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
@@ -518,7 +518,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets < 20
+					num_owned_planets < 5
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
@@ -527,8 +527,8 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 20
-					num_owned_planets < 30
+					num_owned_planets > 5
+					num_owned_planets < 10
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
@@ -537,8 +537,8 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 30
-					num_owned_planets < 40
+					num_owned_planets > 10
+					num_owned_planets < 15
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
@@ -547,8 +547,8 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 40
-					num_owned_planets < 50
+					num_owned_planets > 15
+					num_owned_planets < 20
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
@@ -557,7 +557,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 50
+					num_owned_planets > 20
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
@@ -589,18 +589,13 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 				}
 			}
 		}
-
+		owner = {
+			has_technology = tech_mega_art
+		}
 	}
 
 	allow = {
-		owner = {
-			OR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
-		}
+		pw_decision_has_mega_arts_exhibition = yes
 		custom_tooltip_fail = {
 			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
 			hidden_trigger = {
@@ -705,10 +700,20 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets < 10
+					num_owned_planets < 5
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 5
+					num_owned_planets < 10
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
@@ -718,7 +723,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 					num_owned_planets < 20
 				}
 			}
-			unity = @pw_decision_exhibition_cost_2
+			unity = @pw_decision_exhibition_cost_3
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
@@ -728,23 +733,13 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 					num_owned_planets < 30
 				}
 			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 30
-					num_owned_planets < 40
-				}
-			}
 			unity = @pw_decision_exhibition_cost_4
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 40
+					num_owned_planets > 30
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
@@ -827,7 +822,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets < 20
+					num_owned_planets < 5
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
@@ -836,8 +831,8 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 20
-					num_owned_planets < 30
+					num_owned_planets > 5
+					num_owned_planets < 10
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
@@ -846,8 +841,8 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 30
-					num_owned_planets < 40
+					num_owned_planets > 10
+					num_owned_planets < 15
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
@@ -856,8 +851,8 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 40
-					num_owned_planets < 50
+					num_owned_planets > 15
+					num_owned_planets < 20
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
@@ -866,7 +861,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 50
+					num_owned_planets > 20
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
@@ -881,21 +876,22 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
+		owner = {
+			has_technology = tech_mega_art
+		}
 		OR = {
-			has_building = pw_building_pavilion_of_wonders
 			has_building = pw_building_fair_of_worlds
+			has_building = pw_building_pavilion_of_wonders
+		}
+		owner = {
+			any_owned_planet = {
+				has_building = pw_building_fair_of_worlds
+			}
 		}
 	}
 
 	allow = {
-		owner = {
-			OR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
-		}
+		pw_decision_has_mega_arts_exhibition = yes
 		custom_tooltip_fail = {
 			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
 			hidden_trigger = {
@@ -999,10 +995,20 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets < 10
+					num_owned_planets < 5
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
+			energy = @pw_decision_resource_cost
+		}
+		cost = {
+			trigger = {
+				owner = {
+					num_owned_planets > 5
+					num_owned_planets < 10
+				}
+			}
+			unity = @pw_decision_exhibition_cost_2
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
@@ -1012,7 +1018,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 					num_owned_planets < 20
 				}
 			}
-			unity = @pw_decision_exhibition_cost_2
+			unity = @pw_decision_exhibition_cost_3
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
@@ -1022,23 +1028,13 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 					num_owned_planets < 30
 				}
 			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 30
-					num_owned_planets < 40
-				}
-			}
 			unity = @pw_decision_exhibition_cost_4
 			energy = @pw_decision_resource_cost
 		}
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 40
+					num_owned_planets > 30
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
@@ -1121,7 +1117,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets < 20
+					num_owned_planets < 5
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
@@ -1130,8 +1126,8 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 20
-					num_owned_planets < 30
+					num_owned_planets > 5
+					num_owned_planets < 10
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
@@ -1140,8 +1136,8 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 30
-					num_owned_planets < 40
+					num_owned_planets > 10
+					num_owned_planets < 15
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
@@ -1150,8 +1146,8 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 40
-					num_owned_planets < 50
+					num_owned_planets > 15
+					num_owned_planets < 20
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
@@ -1160,7 +1156,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		cost = {
 			trigger = {
 				owner = {
-					num_owned_planets > 50
+					num_owned_planets > 20
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
@@ -1175,21 +1171,22 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
+		owner = {
+			has_technology = tech_mega_art
+		}
 		OR = {
-			has_building = pw_building_pavilion_of_wonders
 			has_building = pw_building_museum_of_the_grotesque
+			has_building = pw_building_pavilion_of_wonders
+		}
+		owner = {
+			any_owned_planet = {
+				has_building = pw_building_museum_of_the_grotesque
+			}
 		}
 	}
 
 	allow = {
-		owner = {
-			OR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
-		}
+		pw_decision_has_mega_arts_exhibition = yes
 		custom_tooltip_fail = {
 			text = pw_decision_pavilion_of_wonders_planetary_art_exhibition_ongoing
 			hidden_trigger = {

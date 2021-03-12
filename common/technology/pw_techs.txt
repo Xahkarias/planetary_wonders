@@ -1377,7 +1377,7 @@ pw_tech_titan_forge_crystals = {
 	}
 
 	modifier = {
-		country_rare_crystals_produces_mult = 0.15
+		country_rare_crystals_produces_mult = 0.1
 	}
 
 	ai_weight = {
@@ -1401,7 +1401,7 @@ pw_tech_titan_forge_gases = {
 	}
 
 	modifier = {
-		country_exotic_gases_produces_mult = 0.15
+		country_exotic_gases_produces_mult = 0.1
 	}
 
 	ai_weight = {
@@ -1425,7 +1425,7 @@ pw_tech_titan_forge_motes = {
 	}
 
 	modifier = {
-		country_volatile_motes_produces_mult = 0.15
+		country_volatile_motes_produces_mult = 0.1
 	}
 
 	ai_weight = {

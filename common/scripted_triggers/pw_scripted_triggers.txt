@@ -144,6 +144,22 @@ pw_last_increased_tech_was_enigma_tech = {
 	}
 }
 
+#Scope: Planet
+pw_decision_has_mega_arts_exhibition = {
+	custom_tooltip = {
+		fail_text = pw_decision_has_mega_arts_exhibition_tooltip
+		owner = {
+			OR = {
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+			}
+		}
+	}
+}
+
+#Scope: Country
 pw_has_unity_to_sanctify_artifact = {
 	conditional_tooltip = {
 		trigger = {

@@ -3880,6 +3880,11 @@ planet_event = {
 		has_owner = yes
 	}
 
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_titan_forge
+	}
+
 	immediate = {
 		create_message = {
 			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
@@ -3924,11 +3929,11 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1331.a
-	}
 
-	after = {
-		owner = {
-			country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
+		hidden_effect = {
+			owner = {
+				country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
+			}
 		}
 	}
 }
@@ -3972,8 +3977,10 @@ planet_event = {
 	}
 
 	after = {
-		owner = {
-			country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
+		hidden_effect = {
+			owner = {
+				country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
+			}
 		}
 	}
 }
@@ -4046,7 +4053,7 @@ country_event = {
 		name = pw_wonder.1341.a
 		add_research_option = pw_tech_titan_forge_gases
 		hidden_effect = {
-			country_event = { id = pw_wonder.1341 days = @pw_1year random = @pw_halfYear }
+			country_event = { id = pw_wonder.1342 days = @pw_1year random = @pw_halfYear }
 		}
 	}
 }
@@ -4076,6 +4083,11 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4225,7 +4237,7 @@ planet_event = {
 					exists = owner
 					OR = {
 						owner = { has_country_flag = pw_industrial_hearth_capital }
-						capital_scope = {
+						owner.capital_scope = {
 							is_planet_class = pc_ringworld_habitable
 						}
 					}
@@ -4703,6 +4715,11 @@ planet_event = {
 		has_owner = yes
 	}
 
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_fair_of_worlds
+	}
+
 	immediate = {
 		create_message = {
 			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
@@ -4775,7 +4792,7 @@ planet_event = {
 
 	trigger = {
 		has_building = pw_building_fair_of_worlds
-		is_xenophile = yes
+		owner = { is_xenophile = yes }
 	}
 
 	immediate = {
@@ -4812,6 +4829,11 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_museum_of_the_grotesque
 	}
 
 	immediate = {
@@ -4886,7 +4908,7 @@ planet_event = {
 
 	trigger = {
 		has_building = pw_building_fair_of_worlds
-		is_xenophile = yes
+		owner = { is_xenophile = yes }
 	}
 
 	immediate = {

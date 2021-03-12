@@ -4,13 +4,14 @@ pw_add_unique_modifier = {
 		limit = { NOT = { has_modifier = $MODIFIER$ }}
 		add_modifier = {
 			modifier = $MODIFIER$
-			days = $DURATION|-1$
+			# days = $DURATION|-1$
+			days = $DURATION$
 		}
 	}
-	if = { #Never happens, only here so that CWTools wont complain of "DURATION"
-		limit = { always = no }
-		log = $DURATION$
-	}
+	# if = { #Never happens, only here so that CWTools wont complain of "DURATION"
+	# 	limit = { always = no }
+	# 	log = $DURATION$
+	# }
 }
 
 #Art exhibitions event choice (country scope):

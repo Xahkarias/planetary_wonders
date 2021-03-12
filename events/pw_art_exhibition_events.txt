@@ -571,7 +571,7 @@ country_event = {
 				}
 			}
 			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyl
+				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
 			}
 		}
@@ -1065,7 +1065,7 @@ country_event = {
 				num_pops > 10
 			}
 			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyl
+				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
 			}
 		}
@@ -2094,7 +2094,7 @@ country_event = {
 				}
 			}
 			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyl
+				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
 			}
 		}
@@ -2664,7 +2664,7 @@ country_event = {
 				num_pops > 10
 			}
 			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyl
+				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
 			}
 		}
@@ -3753,7 +3753,7 @@ country_event = {
 				}
 			}
 			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyl
+				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
 			}
 		}
@@ -4323,7 +4323,7 @@ country_event = {
 				num_pops > 10
 			}
 			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyl
+				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
 			}
 		}
@@ -4797,7 +4797,7 @@ country_event = {
 	}
 }
 
-#Finish agrarian idyl exhibition
+#Finish agrarian idyll exhibition
 country_event = {
 	id = pw_art_exhibition.22
 	hide_window = yes
@@ -5160,7 +5160,7 @@ country_event = {
 				pw_trigger_art_materialist_events = yes
 			}
 			1 ={
-				country_event = { id = pw_art_exhibition.600 }
+				country_event = { id = pw_art_exhibition.610 }
 			}
 		}
 	}
@@ -5659,7 +5659,7 @@ country_event = {
 	}
 }
 
-#Agrarian Idyl.
+#Agrarian Idyll.
 country_event = {
 	#Pastoral Utopia
 	id = pw_art_exhibition.525

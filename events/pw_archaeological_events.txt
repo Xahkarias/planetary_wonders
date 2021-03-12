@@ -217,7 +217,7 @@ fleet_event = {
 				progress = 0.05
 			}
 		}
-		planet = {
+		from.planet = {
 			change_pc = pc_gaia
 			hidden_effect = {
 				reroll_deposits = yes

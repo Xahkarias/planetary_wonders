@@ -484,7 +484,7 @@ pw_building_fair_of_worlds = {
 			}
 			AND = {
 				exists = owner
-				NOT = { owner = { is_xenophile = yes }}
+				owner = { is_xenophile = no }
 			}
 		}
 	}
@@ -947,7 +947,8 @@ pw_building_fair_of_worlds = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1430 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.1430 }
 	}
 
 	ai_weight = {
@@ -1083,7 +1084,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 			AND = {
 				exists = owner
-				NOT = { owner = { is_xenophobe = yes }}
+				owner = { is_xenophobe = no }
 			}
 		}
 	}
@@ -1605,7 +1606,8 @@ pw_building_museum_of_the_grotesque = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1460 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.1460 }
 	}
 
 	ai_weight = {
