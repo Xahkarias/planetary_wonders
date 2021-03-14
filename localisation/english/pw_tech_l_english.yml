@@ -108,6 +108,9 @@
     pw_tech_great_art_exhibition: "Universal Arts Exhibition"
     pw_tech_great_art_exhibition_desc: "We have witness countless artistic movements of a myriad of forms, some more influential than others, develope in the evolution of our civilization. Now it is time to collect them in a absolute museum and organize exhibitions of this cultural trove."
 
+    pw_tech_artistic_dissemination: "Artistic Dissemination"
+    pw_tech_artistic_dissemination_desc: "In order for the new exhibitions of the $pw_pavilion_of_wonders$ to have maximum reach we should find ways to stimulate artistic desires in our population trough art campaigns."
+
     pw_tech_great_art_exhibition_upgrade: "Upgrades the $pw_building_pavilion_of_wonders$"
 
     # Fair of Worlds:
@@ -118,13 +121,19 @@
     pw_tech_cultural_diversity_studies: "Cultural Diversity Studies"
     pw_tech_cultural_diversity_studies_desc: "By hosting art exhibitions dedicated to different cultures in the $pw_building_fair_of_worlds$ we can study ways of better approaching those culture in diplomatic situations."
 
+    pw_tech_artistic_exaltation: "Artistic Exaltation"
+    pw_tech_artistic_exaltation_desc: "We can further instigate our population into arts creation and consumption by valorizing xeno art in directed campaigns."
+
     # Museum of the Grotesque:
     pw_tech_xeno_art_alienation: "Universal Art Alienation"
     pw_tech_xeno_art_alienation_desc: "Exhibitions in the $pw_building_pavilion_of_wonders$ have increased our national interest in art that reflect our empires values. But that is not enough. Pernicious pieces that keep challenging good taste are still produced, specially from foreign influences, these pieces must be collected in an anti-museum that will teach all what high art is actually about."
     pw_tech_great_art_exhibition_alienation_desc: "The $pw_museum_of_the_grotesque$ is an upgrade for the $pw_pavilion_of_wonders$"
 
-    pw_tech_cultural_hegemony_studies: "Cultural Hegemony Studies"
-    pw_tech_cultural_hegemony_studies_desc: "By hosting art exhibitions dedicated to the exploitation of different cultures in the $pw_building_museum_of_the_grotesque$ we can study ways of better reproaching those culture in diplomatic situations, and gaining the better hand for ourselves."
+    pw_tech_artistic_defamation: "Cultural Hegemony Studies"
+    pw_tech_artistic_defamation_desc: "By hosting art exhibitions dedicated to the exploitation of different cultures in the $pw_building_museum_of_the_grotesque$ we can study ways of better reproaching those culture in diplomatic situations, and gaining the better hand for ourselves."
+
+    pw_tech_cultural_hegemony_studies: "Artistic Defamation"
+    pw_tech_cultural_hegemony_studies_desc: "We can further instigate our population into arts creation and consumption by denouncing xeno art in directed campaigns."
 
     # Holy Reliquary:
     pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"

@@ -143,3 +143,10 @@
 
     pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"
     pw_tech_spiritual_artifacts_studies_desc: "Our culture is filled with sacral and ceremonial objects with great spiritual value invested into them. With our arrival onto the galactic scene, these relics were mostly forgotten, but now their true power - be it spiritual, social or actual - can be revived if they are sanctified once again."
+
+    pw_tech_artistic_dissemination: "Artistic Dissemination"
+    pw_tech_artistic_dissemination_desc: "In order for the new exhibitions of the $pw_pavilion_of_wonders$ to have maximum reach we should find ways to stimulate artistic desires in our population trough art campaigns."
+    pw_tech_artistic_exaltation: "Artistic Exaltation"
+    pw_tech_artistic_exaltation_desc: "We can further instigate our population into arts creation and consumption by valorizing xeno art in directed campaigns."
+    pw_tech_artistic_defamation: "Cultural Hegemony Studies"
+    pw_tech_artistic_defamation_desc: "By hosting art exhibitions dedicated to the exploitation of different cultures in the $pw_building_museum_of_the_grotesque$ we can study ways of better reproaching those culture in diplomatic situations, and gaining the better hand for ourselves."

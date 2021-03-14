@@ -9,7 +9,21 @@
     edict_pw_edict_hive_debate: "Solipsist Debate"
     edict_pw_edict_hive_debate_desc: "Initiate a discussion on the Solipsist Debate Hall, where the Hive can lucubrate over abstract topics such as Love, Freedom or play 5D-Chess."
 
-    #Initiate Hive debate:
+    #Visit the Holy Reliquary:
     edict_pw_holy_reliquary_visit_the_reliquary: "Visit the $pw_holy_reliquary$"
     edict_pw_holy_reliquary_visit_the_reliquary_desc: "Visit the halls and chambers housing our sanctified artifacts."
     edict_pw_holy_reliquary_visit_the_reliquary_tooltip: "Launch an event that acts as the hub for the $pw_holy_reliquary$, where we can sanctify artifacts and activate some of their abilities."
+
+    # Campaigns
+
+    #Visit the Holy Reliquary:
+    edict_pw_artistic_dissemination_campaign: "Artistic Dissemination Campaign"
+    edict_pw_artistic_dissemination_campaign_desc: "Directed campaigns to involve our population with artistic production and consumption, made to increase our culture production and demand."
+
+    #Visit the Holy Reliquary:
+    edict_pw_artistic_exaltation_campaign: "Artistic Exaltation Campaign"
+    edict_pw_artistic_exaltation_campaign_desc: "Art campaigns that focus on discovering and exalting foreign artistic works and involve us better in the Galactic Community at large."
+
+    #Visit the Holy Reliquary:
+    edict_pw_artistic_defamation_campaign: "Artistic Defamation Campaign"
+    edict_pw_artistic_defamation_campaign_desc: "Art campaigns that focus on censoring and denouncing foreign artistic works in order to better secure our galactic position."
