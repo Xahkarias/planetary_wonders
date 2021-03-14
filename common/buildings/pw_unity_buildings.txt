@@ -1745,7 +1745,7 @@ pw_building_holy_reliquary = {
 			}
 			AND = {
 				exists = owner
-				NOT = { owner = { is_spiritualist =  yes }}
+				owner = { is_spiritualist =  no }
 			}
 		}
 	}
