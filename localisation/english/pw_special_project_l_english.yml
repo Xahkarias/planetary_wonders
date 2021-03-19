@@ -26,3 +26,53 @@
 
     PW_DISCOVER_SDH_SECRETS: "Discover the secrets of the Solipsist Debate Hall"
     PW_DISCOVER_SDH_SECRETS_DESC: "The contents found on the alien device in this ruined Solipsist Debate Hall piqued the interest of the Hive Mind. Perhaps we can study this ancient Hall and attempt to construct such a wonder for our own metaphysical needs."
+
+    #Grand Archive assemble projects:
+
+    PW_ARK_PROJECT_SEED_BANK: "Seed Bank"
+    PW_ARK_PROJECT_SEED_BANK_DESC: "There have been reports of a seed bank in this planet, a project which intended to preserve the seeds of many endangered arboreal species, but has been abandoned. With any luck we will find uncatalogued species by exploring this preserve."
+
+    PW_ARK_PROJECT_FROZEN_SPECIMEN: "Frozen Specimen"
+    PW_ARK_PROJECT_FROZEN_SPECIMEN_DESC: "Adventurous explores have encountered signs of long lost specimens in this frozen planet. If we can find and account for them, their genes will be great additions to our collection."
+
+    PW_ARK_PROJECT_UNCHARTED_BIOSPHERE: "Uncharted Biosphere"
+    PW_ARK_PROJECT_UNCHARTED_BIOSPHERE_DESC: "The life in this planet is so specially diverse, over half of its species has not been catalogued. Our scientific team can provide the effort we need to account for all of them."
+
+    PW_ARK_PROJECT: "Assemble ARK Project"
+    PW_ARK_PROJECT_DESC: "The ARK Project requires a sample, copy or projection of the genome chain of every species in the galaxy, even the extinct ones. We may need to investigate already explored places and search into obscure databases to obtain the genes we seek."
+
+    PW_LIBRARY_OF_BABEL: "Assemble the Library of Babel"
+    PW_LIBRARY_OF_BABEL_DESC: "Man in our population argue that the memory and culture of our country lives among al of its non-digital artifacts, such as books, paintings and toys. Such cultural artifacts have ever lived scattered, in galleries and museum, or hidden in lost attics. All of those and even beyond shall be gathered for the Library of Babel."
+
+    PW_CRADLE_INITIATIVE_WET_PLANET: "Wet Planets Survey"
+    PW_CRADLE_INITIATIVE_WET_PLANET_DESC: "As part of the Cradle Initiative we must find and thoroughly analyse planets with high water concentration in their atmosphere and discover in what ways are they unique to bear life."
+
+    PW_CRADLE_INITIATIVE_WET_PLANET_REPLACED: "Wet Planets Simulation"
+    PW_CRADLE_INITIATIVE_WET_PLANET_REPLACED_DESC: "As part of the Cradle Initiative we must simulate the atmosphere, temperature and life cycle of planets with high water concentration in their atmosphere and determine in what ways are they unique to bear life."
+
+    PW_CRADLE_INITIATIVE_COLD_PLANET: "Cold Planets Survey"
+    PW_CRADLE_INITIATIVE_COLD_PLANET_DESC: "As part of the Cradle Initiative we must find and thoroughly analyse planets with low temperatures, that still allow for the development of living organisms, and discover in what ways are they unique to bear livings."
+
+    PW_CRADLE_INITIATIVE_COLD_PLANET_REPLACED: "Cold Planets Simulation"
+    PW_CRADLE_INITIATIVE_COLD_PLANET_REPLACED_DESC: "As part of the Cradle Initiative we must simulate the atmosphere, temperature and life cycle of planets with low temperatures, that still allow for the development of living organisms, and determine in what ways are they unique to bear life."
+
+    PW_CRADLE_INITIATIVE_DRY_PLANET: "Dry Planets Survey"
+    PW_CRADLE_INITIATIVE_DRY_PLANET_DESC: "As part of the Cradle Initiative we must find and thoroughly analyse planets with low water concentration in their atmosphere and discover in what ways are they unique to bear life."
+
+    PW_CRADLE_INITIATIVE_DRY_PLANET_REPLACED: "Dry Planets Simulation"
+    PW_CRADLE_INITIATIVE_DRY_PLANET_REPLACED_DESC: "As part of the Cradle Initiative we must simulate the atmosphere, temperature and life cycle of planets with low water concentration in their atmosphere and determine in what ways are they unique to bear life."
+
+    PW_CRADLE_INITIATIVE_EXOTIC_PLANET: "Exotic Planets Survey"
+    PW_CRADLE_INITIATIVE_EXOTIC_PLANET_DESC: "As part of the Cradle Initiative we must find and thoroughly analyse planets with exotic conditions, such as lush environments or irradiated atmosphere and discover in what ways are they unique to bear life, or are hostile to it."
+
+    PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED: "Exotic Planets Simulation"
+    PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED_DESC: "As part of the Cradle Initiative we must simulate the atmosphere, temperature and life cycle of planets with exotic conditions, such as lush environments or irradiated atmosphere and determine in what ways are they unique to bear life, or are hostile to it."
+
+    #Event Chains:
+    pw_assemble_ARK_project_chain_title: "Assemble ARK Project"
+    pw_assemble_ARK_project_chain_desc: "The ARK Project requires a sample, copy or projection of the genome chain of every species in the galaxy, even the extinct ones. We may need to investigate already explored places and search into obscure databases to obtain the genes we seek."
+    pw_gene_sources_found: "Gene sources found"
+
+    pw_assemble_cradle_initiative_chain_title: "Assemble Cradle Initiative"
+    pw_assemble_cradle_initiative_chain_desc: "The Cradle Initiative requires that we review much of our knowledge of habitation and habitable planets in order to replicate it. We may need to revisit explored planets and record more data on atmosphere, temperature and biosphere, but also microclimates, condition variation and exotic gravity profiles."
+    pw_habitable_data_collected: "Habitable data collected"

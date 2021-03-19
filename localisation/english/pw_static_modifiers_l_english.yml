@@ -100,11 +100,11 @@
     pw_mod_museum_of_the_grotesque_recently_build: "Degeneracy Exposed"
     pw_mod_museum_of_the_grotesque_recently_build_desc: "All can now behold the immoral works of alien culture on the newly opened Museum of the Grotesque and thus value even more art of our own making."
 
-    # Museum of the Grotesque Event mods:
+    # Holy Reliquary:
     pw_mod_holy_reliquary_recently_build: "Revival of Hallowed Relics"
     pw_mod_holy_reliquary_recently_build_desc: "The expectation of reviving ancient holy artifacts that brought about with the $pw_holy_reliquary$ is inspiring to our populace."
 
-    #Holy Reliquary mods:
+    #Holy Reliquary artifacts mods:
     pw_holy_reliquary_discovery_codex_of_past_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Past Ages"
     pw_holy_reliquary_discovery_codex_of_past_ages_desc: "By looking for answers in past experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can better prepare the leaders of our blessed country."
 
@@ -116,6 +116,10 @@
 
     pw_holy_reliquary_domination_way_of_the_void_speakers: "$pw_holy_reliquary.scepter_of_the_solar_regent$: Way of the Void-Speakers"
     pw_holy_reliquary_domination_way_of_the_void_speakers_desc: "By embracing the way of the Void-Speakers from the legend of the $pw_holy_reliquary.scepter_of_the_solar_regent$ we reinforce the power and importance of common workers."
+
+    # Grand Archive:
+    pw_mod_grand_archive_recently_build: "Studies of Material History"
+    pw_mod_grand_archive_recently_build_desc: "The recording and revisiting of our entire history in such a big project as $pw_building_grand_archive$ brings good expectations for our future."
 
     #Solipsist Debates:
 

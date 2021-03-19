@@ -1,0 +1,1193 @@
+namespace = pw_grand_archive
+
+#Grand Archive Hub Event
+country_event = {
+	id = pw_grand_archive.1
+	title = pw_grand_archive.1.name
+	desc = pw_grand_archive.1.desc
+	picture = GFX_evt_ancient_databank
+	# show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = pw_is_in_grand_archive
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_is_in_grand_archive
+		random_owned_planet = {
+			limit = {
+				has_building = pw_building_grand_archive
+			}
+			save_event_target_as = pw_grand_archive_planet
+		}
+	}
+
+	#Society: ARK Project -> 100
+	option = { #Access
+		name = pw_grand_archive.ARK_project
+		hidden_effect = {
+			country_event = {
+				id = pw_grand_archive.100
+			}
+		}
+	}
+
+	#Society: Library of Babel -> 200
+	option = { #Access
+		name = pw_grand_archive.library_of_babel
+		hidden_effect = {
+			country_event = {
+				id = pw_grand_archive.200
+			}
+		}
+	}
+
+	#Society: Cradle Initiative -> 300
+	option = { #Access
+		name = pw_grand_archive.cradle_initiative
+		hidden_effect = {
+			country_event = {
+				id = pw_grand_archive.300
+			}
+		}
+	}
+
+	#Leave the archive
+	option = {
+		name = pw_grand_archive.leave
+		pw_grand_archive_leave = yes
+	}
+}
+
+#Society: ARK Project -> 100
+#Access:
+country_event = {
+	id = pw_grand_archive.100
+	title = pw_grand_archive.100.name
+	desc = pw_grand_archive.100.desc
+	picture = GFX_evt_society_research
+	is_triggered_only = yes
+
+	#Assemble
+	option = {
+		name = pw_grand_archive.ARK_project.assemble
+		trigger = {
+			NOT = {
+				has_country_flag = pw_grand_archive_ARK_project_started
+			}
+		}
+		allow = {
+			pw_has_unity_to_assemble_archive = yes
+		}
+		pw_grand_archive_pay_assemble_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_grand_archive.101 }
+		}
+	}
+
+	#Delve
+	option = {
+		name = pw_grand_archive.ARK_project.delve
+		trigger = {
+			NOT = {
+				has_country_flag = pw_grand_archive_ARK_project_secrets
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = pw_grand_archive.ARK_project.delve.complete_project
+				has_country_flag = pw_grand_archive_ARK_project_completed
+			}
+			has_resource = {
+				type = influence
+				amount = @pw_grand_archive_secrets_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_grand_archive_secrets_cost
+		}
+		hidden_effect = {
+			country_event = { id = pw_grand_archive.120 }
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_grand_archive.return
+		pw_grand_archive_return_to_hub = yes
+	}
+}
+
+#Assemble Project:
+country_event = {
+	id = pw_grand_archive.101
+	title = pw_grand_archive.101.name
+	desc = pw_grand_archive.101.desc
+	picture = GFX_evt_society_research
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_archives_assembled_count
+			value = 1
+		}
+		set_country_flag = pw_grand_archive_ARK_project_started
+	}
+
+	#Primary project
+	option = {
+		name = pw_grand_archive.continue_to_project
+
+		trigger = {
+			#Seed Bank
+			any_owned_planet = {
+				NOT = {
+					has_building = pw_building_grand_archive
+				}
+				is_capital = no
+			}
+			#Frozen Specimens
+			any_system = {
+				any_system_planet = {
+					is_surveyed = {
+						who = ROOT
+						status = yes
+					}
+					OR = {
+						is_planet_class = pc_barren_cold
+						is_planet_class = pc_frozen
+						is_planet_class = pc_ice_asteroid
+					}
+					solar_system = {
+						OR = {
+							NOT = { exists = space_owner }
+							AND = {
+								exists = space_owner
+								space_owner = {
+									is_country = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+			#Uncharted Biosphere
+			any_system = {
+				any_system_planet = {
+					is_surveyed = {
+						who = ROOT
+						status = yes
+					}
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+						is_planet_class = pc_gaia
+					}
+					solar_system = {
+						OR = {
+							NOT = { exists = space_owner }
+							AND = {
+								exists = space_owner
+								space_owner = {
+									is_country = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		begin_event_chain = {
+			event_chain = pw_assemble_ARK_project_chain
+			target = ROOT
+		}
+		hidden_effect = {
+			#Seed Bank
+			random_owned_planet = {
+				limit = {
+					NOT = {
+						has_building = pw_building_grand_archive
+					}
+					is_capital = no
+				}
+				enable_special_project = {
+					name = PW_ARK_PROJECT_SEED_BANK
+					location = THIS
+					owner = ROOT
+				}
+			}
+			#Frozen Specimens
+			random_planet = {
+				limit = {
+					is_surveyed = {
+						who = ROOT
+						status = yes
+					}
+					OR = {
+						is_planet_class = pc_barren_cold
+						is_planet_class = pc_frozen
+						is_planet_class = pc_ice_asteroid
+					}
+					solar_system = {
+						OR = {
+							NOT = { exists = space_owner }
+							AND = {
+								exists = space_owner
+								space_owner = {
+									is_country = ROOT
+								}
+							}
+						}
+					}
+				}
+				enable_special_project = {
+					name = PW_ARK_PROJECT_FROZEN_SPECIMEN
+					location = THIS
+					owner = ROOT
+				}
+			}
+			#Uncharted Biosphere
+			random_planet = {
+				limit = {
+					is_surveyed = {
+						who = ROOT
+						status = yes
+					}
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_ocean
+						is_planet_class = pc_tropical
+						is_planet_class = pc_gaia
+					}
+					solar_system = {
+						OR = {
+							NOT = { exists = space_owner }
+							AND = {
+								exists = space_owner
+								space_owner = {
+									is_country = ROOT
+								}
+							}
+						}
+					}
+				}
+				enable_special_project = {
+					name = PW_ARK_PROJECT_UNCHARTED_BIOSPHERE
+					location = THIS
+					owner = ROOT
+				}
+			}
+		}
+	}
+
+	#Replacement project (not all conditions set)
+	option = {
+		name = pw_grand_archive.continue_to_project
+		default_hide_option = yes
+		enable_special_project = {
+			name = PW_ARK_PROJECT
+			location = event_target:pw_grand_archive_planet
+			owner = ROOT
+		}
+	}
+}
+
+#Complete seed bank:
+planet_event = {
+	id = pw_grand_archive.105
+	title = pw_grand_archive.105.name
+	desc = pw_grand_archive.105.desc
+	picture = GFX_evt_society_research
+	show_sound = event_alien_nature
+	location = THIS
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_ARK_project_chain
+				counter = pw_gene_sources_found
+				amount = 1
+			}
+			random_owned_leader = {
+				limit = {
+					is_researching_area = society
+				}
+				add_experience = 300
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_ARK_project_chain
+							counter = pw_gene_sources_found
+						}
+					}
+					country_event = { id = pw_grand_archive.110 }
+				}
+			}
+		}
+	}
+}
+
+#Completed Frozen Specimen:
+ship_event = {
+	id = pw_grand_archive.106
+	title = pw_grand_archive.106.name
+	desc = pw_grand_archive.106.desc
+	picture = GFX_evt_frozen
+	show_sound = event_alien_nature
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_ARK_project_chain
+				counter = pw_gene_sources_found
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_ARK_project_chain
+							counter = pw_gene_sources_found
+						}
+					}
+					country_event = { id = pw_grand_archive.110 }
+				}
+			}
+		}
+	}
+}
+
+#Completed Uncharted Biosphere:
+ship_event = {
+	id = pw_grand_archive.107
+	title = pw_grand_archive.107.name
+	desc = pw_grand_archive.107.desc
+	picture = GFX_evt_aggressive_flora
+	show_sound = event_alien_nature
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_ARK_project_chain
+				counter = pw_gene_sources_found
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_ARK_project_chain
+							counter = pw_gene_sources_found
+						}
+					}
+					country_event = { id = pw_grand_archive.110 }
+				}
+			}
+		}
+	}
+}
+
+#Completed Project:
+country_event = {
+	id = pw_grand_archive.110
+	title = pw_grand_archive.110.name
+	desc = pw_grand_archive.110.desc
+	picture = GFX_evt_society_research
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = pw_grand_archive_ARK_project_completed
+	}
+
+	option = {
+		name = pw_grand_archive.OK
+		event_target:pw_grand_archive_planet = {
+			add_deposit = pw_d_ark_project
+		}
+	}
+}
+
+#Delve Into Secrets:
+country_event = {
+	id = pw_grand_archive.120
+	title = pw_grand_archive.120.name
+	desc = pw_grand_archive.120.desc
+	picture = GFX_evt_society_research
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	option = {
+		name = pw_grand_archive.delve_into_secrets
+		add_research_option = pw_tech_grand_archive_genetic_secrets
+		hidden_effect = {
+			set_country_flag = pw_grand_archive_ARK_project_secrets
+		}
+		pw_grand_archive_return_to_hub =yes
+	}
+}
+
+#Society: Library of Babel -> 200
+#Access:
+country_event = {
+	id = pw_grand_archive.200
+	title = pw_grand_archive.200.name
+	desc = pw_grand_archive.200.desc
+	picture = GFX_evt_resource_cache
+	is_triggered_only = yes
+
+	#Assemble
+	option = {
+		name = pw_grand_archive.library_of_babel.assemble
+		trigger = {
+			NOT = {
+				has_country_flag = pw_grand_archive_library_of_babel_started
+			}
+		}
+		allow = {
+			pw_has_unity_to_assemble_archive = yes
+		}
+		pw_grand_archive_pay_assemble_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_grand_archive.201 }
+		}
+	}
+
+	#Delve
+	option = {
+		name = pw_grand_archive.library_of_babel.delve
+		trigger = {
+			NOT = {
+				has_country_flag = pw_grand_archive_library_of_babel_secrets
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = pw_grand_archive.library_of_babel.delve.complete_project
+				has_country_flag = pw_grand_archive_library_of_babel_completed
+			}
+			has_resource = {
+				type = influence
+				amount = @pw_grand_archive_secrets_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_grand_archive_secrets_cost
+		}
+		hidden_effect = {
+			country_event = { id = pw_grand_archive.220 }
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_grand_archive.return
+		pw_grand_archive_return_to_hub = yes
+	}
+}
+
+#Assemble Project:
+country_event = {
+	id = pw_grand_archive.201
+	title = pw_grand_archive.201.name
+	desc = pw_grand_archive.201.desc
+	picture = GFX_evt_resource_cache
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_archives_assembled_count
+			value = 1
+		}
+		set_country_flag = pw_grand_archive_library_of_babel_started
+	}
+
+	#Primary project
+	option = {
+		name = pw_grand_archive.continue_to_project
+
+		event_target:pw_grand_archive_planet = {
+			enable_special_project = {
+				name = PW_LIBRARY_OF_BABEL
+				location = THIS
+				owner = ROOT
+			}
+		}
+	}
+}
+
+#Completed Project:
+country_event = {
+	id = pw_grand_archive.210
+	title = pw_grand_archive.210.name
+	desc = pw_grand_archive.210.desc
+	picture = GFX_evt_resource_cache
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = pw_grand_archive_library_of_babel_completed
+	}
+
+	option = {
+		name = pw_grand_archive.OK
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		event_target:pw_grand_archive_planet = {
+			add_deposit = pw_d_library_of_babel
+		}
+	}
+}
+
+#Delve Into Secrets:
+country_event = {
+	id = pw_grand_archive.220
+	title = pw_grand_archive.220.name
+	desc = pw_grand_archive.220.desc
+	picture = GFX_evt_resource_cache
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	option = {
+		name = pw_grand_archive.delve_into_secrets
+		add_research_option = pw_tech_grand_archive_lost_state_secrets
+		hidden_effect = {
+			set_country_flag = pw_grand_archive_library_of_babel_secrets
+		}
+		pw_grand_archive_return_to_hub = yes
+	}
+}
+
+#Society: Cradle Initiative -> 300
+#Access:
+country_event = {
+	id = pw_grand_archive.300
+	title = pw_grand_archive.300.name
+	desc = pw_grand_archive.300.desc
+	picture = GFX_evt_gaia
+	is_triggered_only = yes
+
+	#Assemble
+	option = {
+		name = pw_grand_archive.cradle_initiative.assemble
+		trigger = {
+			NOT = {
+				has_country_flag = pw_grand_archive_cradle_initiative_started
+			}
+		}
+		allow = {
+			pw_has_unity_to_assemble_archive = yes
+		}
+		pw_grand_archive_pay_assemble_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_grand_archive.301 }
+		}
+	}
+
+	#Delve
+	option = {
+		name = pw_grand_archive.cradle_initiative.delve
+		trigger = {
+			NOT = {
+				has_country_flag = pw_grand_archive_cradle_initiative_secrets
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = pw_grand_archive.cradle_initiative.delve.complete_project
+				has_country_flag = pw_grand_archive_cradle_initiative_completed
+			}
+			has_resource = {
+				type = influence
+				amount = @pw_grand_archive_secrets_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_grand_archive_secrets_cost
+		}
+		hidden_effect = {
+			country_event = { id = pw_grand_archive.320 }
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_grand_archive.return
+		pw_grand_archive_return_to_hub = yes
+	}
+}
+
+#Assemble Project:
+country_event = {
+	id = pw_grand_archive.301
+	title = pw_grand_archive.301.name
+	desc = pw_grand_archive.301.desc
+	picture = GFX_evt_gaia
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_archives_assembled_count
+			value = 1
+		}
+		set_country_flag = pw_grand_archive_cradle_initiative_started
+	}
+
+	option = {
+		name = pw_grand_archive.continue_to_project
+
+		begin_event_chain = {
+			event_chain = pw_assemble_cradle_initiative_chain
+			target = ROOT
+		}
+		hidden_effect = {
+			#Wet
+			if = {
+				limit = {
+					any_planet_within_border = {
+						is_wet = yes
+						is_capital = no
+					}
+				}
+				random_planet_within_border = {
+					limit = {
+						is_wet = yes
+						is_capital = no
+					}
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_WET_PLANET
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			else = {
+				event_target:pw_grand_archive_planet = {
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_WET_PLANET_REPLACED
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			#Cold
+			if = {
+				limit = {
+					any_planet_within_border = {
+						is_cold = yes
+						is_capital = no
+					}
+				}
+				random_planet_within_border = {
+					limit = {
+						is_cold = yes
+						is_capital = no
+					}
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_COLD_PLANET
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			else = {
+				event_target:pw_grand_archive_planet = {
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_COLD_PLANET_REPLACED
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			#Dry
+			if = {
+				limit = {
+					any_planet_within_border = {
+						is_dry = yes
+						is_capital = no
+					}
+				}
+				random_planet_within_border = {
+					limit = {
+						is_dry = yes
+						is_capital = no
+					}
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_DRY_PLANET
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			else = {
+				event_target:pw_grand_archive_planet = {
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_DRY_PLANET_REPLACED
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			#Exotic
+			if = {
+				limit = {
+					any_planet_within_border = {
+						is_planet_class = pc_nuked
+						is_planet_class = pc_gaia
+						is_planet_class = pc_toxic
+						is_capital = no
+					}
+				}
+				random_planet_within_border = {
+					limit = {
+						is_planet_class = pc_nuked
+						is_planet_class = pc_gaia
+						is_planet_class = pc_toxic
+						is_capital = no
+					}
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_EXOTIC_PLANET
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+			else = {
+				event_target:pw_grand_archive_planet = {
+					enable_special_project = {
+						name = PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED
+						location = THIS
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+#Complete wet planet:
+ship_event = {
+	id = pw_grand_archive.305
+	title = pw_grand_archive.305.name
+	desc = pw_grand_archive.305.desc
+	picture = GFX_evt_continental
+	show_sound = event_alien_nature
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete wet planet (replaced):
+planet_event = {
+	id = pw_grand_archive.306
+	title = pw_grand_archive.305.name
+	desc = pw_grand_archive.305.desc
+	picture = GFX_evt_continental
+	show_sound = event_alien_nature
+	location = THIS
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete cold planet:
+ship_event = {
+	id = pw_grand_archive.307
+	title = pw_grand_archive.307.name
+	desc = pw_grand_archive.307.desc
+	picture = GFX_evt_tundra
+	show_sound = event_alien_nature
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete cold planet (replaced):
+planet_event = {
+	id = pw_grand_archive.308
+	title = pw_grand_archive.307.name
+	desc = pw_grand_archive.307.desc
+	picture = GFX_evt_tundra
+	show_sound = event_alien_nature
+	location = THIS
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete dry planet:
+ship_event = {
+	id = pw_grand_archive.309
+	title = pw_grand_archive.309.name
+	desc = pw_grand_archive.309.desc
+	picture = GFX_evt_desert
+	show_sound = event_alien_nature
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete dry planet (replaced):
+planet_event = {
+	id = pw_grand_archive.310
+	title = pw_grand_archive.309.name
+	desc = pw_grand_archive.309.desc
+	picture = GFX_evt_desert
+	show_sound = event_alien_nature
+	location = THIS
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete exotic planet:
+ship_event = {
+	id = pw_grand_archive.311
+	title = pw_grand_archive.311.name
+	desc = pw_grand_archive.311.desc
+	picture = GFX_evt_toxic
+	show_sound = event_alien_nature
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Complete exotic planet (replaced):
+planet_event = {
+	id = pw_grand_archive.312
+	title = pw_grand_archive.311.name
+	desc = pw_grand_archive.311.desc
+	picture = GFX_evt_toxic
+	show_sound = event_alien_nature
+	location = THIS
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+		owner = {
+			add_event_chain_counter = {
+				event_chain = pw_assemble_cradle_initiative_chain
+				counter = pw_habitable_data_collected
+				amount = 1
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = pw_assemble_cradle_initiative_chain
+							counter = pw_habitable_data_collected
+						}
+					}
+					country_event = { id = pw_grand_archive.315 }
+				}
+			}
+		}
+	}
+}
+
+#Completed Project:
+country_event = {
+	id = pw_grand_archive.315
+	title = pw_grand_archive.315.name
+	desc = pw_grand_archive.315.desc
+	picture = GFX_evt_gaia
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = pw_grand_archive_cradle_initiative_completed
+	}
+
+	option = {
+		name = pw_grand_archive.OK
+		event_target:pw_grand_archive_planet = {
+			add_deposit = pw_d_cradle_initiative
+		}
+	}
+}
+
+#Delve Into Secrets:
+country_event = {
+	id = pw_grand_archive.320
+	title = pw_grand_archive.320.name
+	desc = pw_grand_archive.320.desc
+	picture = GFX_evt_gaia
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+
+	option = {
+		name = pw_grand_archive.delve_into_secrets
+		trigger = {
+			any_planet_within_border = {
+				uninhabitable_regular_planet = yes
+				NOT = { has_modifier = terraforming_candidate }
+			}
+		}
+		random_planet_within_border = {
+			limit = {
+				uninhabitable_regular_planet = yes
+				NOT = { has_modifier = terraforming_candidate }
+			}
+			add_modifier = {
+				modifier = terraforming_candidate
+			}
+		}
+		hidden_effect = {
+			set_country_flag = pw_grand_archive_cradle_initiative_secrets
+		}
+		pw_grand_archive_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_grand_archive.delve_into_secrets
+		default_hide_option = yes
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+	}
+}

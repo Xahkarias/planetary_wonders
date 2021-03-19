@@ -242,3 +242,272 @@ special_project = {
 	on_fail = {
 	}
 }
+
+
+# Grand Archive Assemble Projects:
+
+#ARK Project (Seed Bank, any owned planet)
+special_project = {
+	key = PW_ARK_PROJECT_SEED_BANK
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = society_technology
+	picture = GFX_evt_society_research
+	event_chain = pw_assemble_ARK_project_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.105 }
+	}
+
+	on_fail = {
+	}
+}
+#ARK Project (Frozen specimen, any barren cold or frozen planet)
+special_project = {
+	key = PW_ARK_PROJECT_FROZEN_SPECIMEN
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = society_technology
+	picture = GFX_evt_society_research
+	event_chain = pw_assemble_ARK_project_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.106 }
+	}
+}
+#ARK Project (Uncharted Biosphere, any habitable world)
+special_project = {
+	key = PW_ARK_PROJECT_UNCHARTED_BIOSPHERE
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = society_technology
+	picture = GFX_evt_society_research
+	event_chain = pw_assemble_ARK_project_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.107 }
+	}
+}
+#ARK Project Replacement
+special_project = {
+	key = PW_ARK_PROJECT
+	cost = @pw_grand_archive_project_cost
+	tech_department = society_technology
+	picture = GFX_evt_society_research
+	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
+	location = no
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.110 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Library of Babel
+special_project = {
+	key = PW_LIBRARY_OF_BABEL
+	cost = @pw_grand_archive_project_cost
+	tech_department = society_technology
+	picture = GFX_evt_resource_cache
+	icon = "gfx/interface/icons/situation_log/situation_log_modification.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.210 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Cradle Initiative (Wet planet)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_WET_PLANET
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = society_technology
+	picture = GFX_evt_continental
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.305 }
+	}
+}
+
+#Cradle Initiative (Wet planet, replaced)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_WET_PLANET_REPLACED
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = society_technology
+	picture = GFX_evt_continental
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.306 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Cradle Initiative (Cold planet)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_COLD_PLANET
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = society_technology
+	picture = GFX_evt_tundra
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.307 }
+	}
+}
+
+#Cradle Initiative (Cold planet, replaced)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_COLD_PLANET_REPLACED
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = society_technology
+	picture = GFX_evt_tundra
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.308 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Cradle Initiative (Dry planet)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_DRY_PLANET
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = society_technology
+	picture = GFX_evt_desert
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.309 }
+	}
+}
+
+#Cradle Initiative (Dry planet, replaced)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_DRY_PLANET_REPLACED
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = society_technology
+	picture = GFX_evt_desert
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.310 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Cradle Initiative (Exotic planet)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_EXOTIC_PLANET
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = society_technology
+	picture = GFX_evt_toxic
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.311 }
+	}
+}
+
+#Cradle Initiative (Exotic planet, replaced)
+special_project = {
+	key = PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = society_technology
+	picture = GFX_evt_toxic
+	event_chain = pw_assemble_cradle_initiative_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.312 }
+	}
+
+	on_fail = {
+	}
+}

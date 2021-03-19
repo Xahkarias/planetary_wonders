@@ -139,6 +139,38 @@
     pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"
     pw_tech_spiritual_artifacts_studies_desc: "Our culture is filled with sacral and ceremonial objects with great spiritual value invested into them. With our arrival onto the galactic scene, these relics were mostly forgotten, but now their true power - be it spiritual, social or actual - can be revived if they are sanctified once again."
 
+    # The Grand Archive:
+    pw_tech_materialist_archiving: "Materialist Archiving"
+    pw_tech_materialist_archiving_desc: "We have lived trough enough of History to understand that it repeats itself, that it only surprises those who don't study it and that there is no room for divine manipulation. To continue these studies we must collect and preserve the the History of Everything in a single, modular Archive."
+
+    pw_tech_grand_archive_genetic_secrets: "Genetic Secrets"
+    pw_tech_grand_archive_genetic_secrets_desc: "Delve into the hidden secrets of the ARK Project to emerge with the revolutionary ideas it might hold for the field of biology."
+
+    pw_tech_grand_archive_lost_state_secrets: "Lost States Secrets"
+    pw_tech_grand_archive_lost_state_secrets_desc: "Delve into the hidden secrets of the Library of Babel to emerge with lost-to-time statecraft and military techniques."
+
+    pw_tech_grand_archive_subspace_particle_secrets: "Subspace Particles Secrets"
+    pw_tech_grand_archive_subspace_particle_secrets_desc: "Delve into the hidden secrets of the Particle Museum to emerge with the veiled ideas it might hold for subspace travel."
+
+    pw_tech_grand_archive_omnidatabase_secrets: "Omnidatabase Secrets"
+    pw_tech_grand_archive_omnidatabase_secrets_desc: "Delve into the hidden secrets of the Omnidatabase to emerge with the encrypted ideas it might hold for the entire field of computing and research."
+
+    pw_tech_grand_archive_stellar_secrets: "Stellar Secrets"
+    pw_tech_grand_archive_stellar_secrets_desc: "Delve into the hidden secrets of the Stellarium to emerge with the revolutionary ideas it might hold for many stellars bodies and their properties."
+
+    pw_tech_grand_archive_zero_g_building_secrets: "Zero-G Building Secrets"
+    pw_tech_grand_archive_zero_g_building_secrets_desc: "Delve into the hidden secrets of the Zero-G Exposition to emerge with the revolutionary ideas it might hold for extreme void construction."
+
+    pw_tech_grand_archive_mechanist_secrets: "Mechanist Secrets"
+    pw_tech_grand_archive_mechanist_secrets_desc: "Delve into the hidden secrets of the Mechanist Collection to emerge with the revolutionary ideas it might hold for the field of robotics."
+
+    pw_tech_grand_archive_architectural_secrets: "Architectural Secrets"
+    pw_tech_grand_archive_architectural_secrets_desc: "Delve into the hidden secrets of the Meta-Architectural Complex to emerge with the revolutionary ideas it might hold for planetary building materials and techniques."
+
+    pw_tech_grand_archive_our_lost_secrets: "Our Lost Secrets"
+    pw_tech_grand_archive_our_lost_secrets_desc: "Delve into the lost secrets of our empire, collected in the assembling of $pw_building_grand_archive$ and present in the Holoarchive. Our past holds the key for the future."
+
+
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

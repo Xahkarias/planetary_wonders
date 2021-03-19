@@ -100,6 +100,7 @@ pw_d_ancient_mining_project = {
 	}
 }
 
+# Holy Reliquary Features
 pw_d_monument_to_the_solar_regent = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
@@ -145,6 +146,248 @@ pw_d_parliament_of_the_void_speakers = {
 		}
 		modifier = {
 			job_priest_add = 2
+		}
+	}
+}
+
+# Grand Archive Features
+
+# ARK Project (Society/Biology)
+pw_d_ark_project = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_biology_research_speed_mult = 0.15
+		bio_pop_growth_speed = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Library of Babel (Society/Statecraft or Military Theory)
+pw_d_library_of_babel = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_statecraft_research_speed_mult = 0.15
+		category_military_theory_research_speed_mult = 0.15
+		country_unity_produces_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Cradle Initiative (Society/New Worlds)
+pw_d_cradle_initiative = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_new_worlds_research_speed_mult = 0.15
+		pop_environment_tolerance = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Particle Museum (Physics/Particles)
+pw_d_particle_museum = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_particles_research_speed_mult = 0.15
+		weapon_type_energy_weapon_fire_rate_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Omnidatabase (Physics/Computing)
+pw_d_omnidatabase = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_computing_research_speed_mult = 0.15
+		station_researchers_produces_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Stellarium (Physics/Field Manipulation)
+pw_d_stellarium = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_field_manipulation_research_speed_mult = 0.15
+		country_energy_produces_mult = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Zero-G Exposition (Engineering/Voidcraft or Propulsion)
+pw_d_zero_g_exposition = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_voidcraft_research_speed_mult = 0.15
+		category_propulsion_research_speed_mult = 0.15
+		starbase_upgrade_speed_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Mechanist Collection (Engineering/Industry)
+pw_d_mechanist_collection = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_industry_research_speed_mult = 0.15
+		pop_assembly_speed = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Meta-Architectural Complex (Engineering/Materials)
+pw_d_meta_architectural_complex = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		category_materials_research_speed_mult = 0.15
+		planet_building_build_speed_mult = 0.2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 1
+		}
+	}
+}
+
+# Holoarchive (all)
+pw_d_holoarchive = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	country_modifier = {
+		all_technology_research_speed = 0.2
+		bio_pop_growth_speed = 0.15
+		country_unity_produces_mult = 0.15
+		pop_environment_tolerance = 0.10
+		weapon_type_energy_weapon_fire_rate_mult = 0.15
+		station_researchers_produces_mult = 0.15
+		country_energy_produces_mult = 0.1
+		starbase_upgrade_speed_mult = 0.15
+		pop_assembly_speed = 0.15
+		planet_building_build_speed_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = pw_building_grand_archive
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 9
 		}
 	}
 }

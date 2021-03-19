@@ -302,7 +302,7 @@ pw_holy_reliquary_pay_sanctify_cost = {
 			}
 		}
 		add_resource = {
-			unity = @pw_holy_reliquary_sanctify_cost_1
+			unity = @pw_holy_reliquary_sanctify_cost_4
 		}
 	}
 	else_if = {
@@ -330,6 +330,132 @@ pw_holy_reliquary_pay_sanctify_cost = {
 	else = {
 		add_resource = {
 			unity = @pw_holy_reliquary_sanctify_cost_7
+		}
+	}
+}
+
+#Grand Archive navigation events (country scope):
+pw_grand_archive_leave = {
+	custom_tooltip = pw_grand_archive_leave_tooltip
+	hidden_effect = {
+		remove_country_flag = pw_is_in_grand_archive
+	}
+}
+
+pw_grand_archive_return_to_hub = {
+	custom_tooltip = pw_grand_archive_return_to_hub_tooltip
+	hidden_effect = {
+		remove_country_flag = pw_is_in_grand_archive
+		country_event = {
+			id = pw_grand_archive.1
+		}
+	}
+}
+
+#Grand Archive assemble cost (country scope):
+pw_grand_archive_pay_assemble_cost = {
+	if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 0
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_0
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 1
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 2
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_2
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 3
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_3
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 4
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_4
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 5
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_5
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 6
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_6
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 7
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_7
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = pw_archives_assembled_count
+				value = 8
+			}
+		}
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_8
+		}
+	}
+	else = {
+		add_resource = {
+			unity = @pw_grand_archive_assemble_cost_final
 		}
 	}
 }

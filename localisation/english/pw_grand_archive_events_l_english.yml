@@ -1,0 +1,111 @@
+﻿l_english:
+
+    #Scripted triggers tooltips:
+    pw_grand_archive_leave_tooltip: "You can return to the $pw_grand_archive$ via edict or planetary decision where it is build."
+    pw_grand_archive_return_to_hub_tooltip: "Return to The Grand Archive hub."
+
+    #Enter the Grand Archive (initial):
+    pw_grand_archive.1.name: "The Grand Archive"
+    pw_grand_archive.1.desc: ""
+
+    #Navigation:
+    pw_grand_archive.leave: "Leave The Grand Archive"
+    pw_grand_archive.return: "Return"
+    pw_grand_archive.assemble: "§YAssemble:§!"
+    pw_grand_archive.continue_to_project: "Continue to Project."
+    pw_grand_archive.OK: "Another one for the Collection."
+    pw_grand_archive.delve_into_secrets: "We shall solve the mysteries our past holds."
+
+    #Society: ARK Project -> 100
+    pw_grand_archive.ARK_project: "§BARK Project§!"
+    pw_grand_archive.ARK_project.assemble: "$pw_grand_archive.assemble$ $pw_grand_archive.ARK_project$."
+    pw_grand_archive.ARK_project.delve: "Delve into the secrets of the $pw_grand_archive.ARK_project$."
+    pw_grand_archive.ARK_project.delve.complete_project: "We must complete the $pw_grand_archive.ARK_project$ Special Project before we can delve into its secrets."
+
+    #Access:
+    pw_grand_archive.100.name: "The $pw_grand_archive.ARK_project$"
+    pw_grand_archive.100.desc: ""
+
+    #Assemble Project:
+    pw_grand_archive.101.name: "$pw_grand_archive.ARK_project$ Preparations"
+    pw_grand_archive.101.desc: "Our archivists have gathered all the genetic information our databases could provide and organized it as preparation for the $pw_grand_archive.ARK_project$. But there is still much information missing from this entries, our researcher will be employed to gather the missing gene maps and track down the long lost species we require."
+
+    #Complete seed bank:
+    pw_grand_archive.105.name: "$pw_grand_archive.ARK_project$: Seed Bank"
+    pw_grand_archive.105.desc: "The Seed Bank turned out to be a treasured trove of rare and genetically modified plant species, we have filled many blanks of our databases and retrieved seed samples for the project as well. There was so many available samples that each team member could take one seed home, as a token of their contribution to this colossal project."
+
+    #Completed Frozen Specimen:
+    pw_grand_archive.106.name: "$pw_grand_archive.ARK_project$: Frozen Specimen"
+    pw_grand_archive.106.desc: "The frozen lakes of [FROMFROM.GetName] were tricky to navigate, even for the more experience explorers in the ship. Even so, many months of probing and excavations led our team to what they were searching: a group of unrecorded mammals, preserved by the ice. Many gene samples were secured, and even some preserved body parts could be obtained."
+
+    #Completed Uncharted Biosphere:
+    pw_grand_archive.107.name: "$pw_grand_archive.ARK_project$: Uncharted Biosphere"
+    pw_grand_archive.107.desc: "In the lush vegetation and unexplored waterways of [FROMFROM.GetName] we have found many new species of insects and simple organisms. Their genetic chains have been catalogued and registered for the project. The entomologists of the future will be in forever debt to our science team."
+
+    #Completed Project:
+    pw_grand_archive.110.name: "The Complete $pw_grand_archive.ARK_project$"
+    pw_grand_archive.110.desc: "Months of cataloguing and double checking countless species, both plentiful and rare, and hunting for genetic information on long dead specimens have finally concluded. We can now open the $pw_grand_archive.ARK_project$ for all that wish to investigate genome mappings of any king of life.\n\nHowever, it is only finished for now, at least. New species are created - naturally or otherwise - all the time, and those too shall be hastily added to our collection. What we have is an absolute map of the genetic past, that shall guide us to our future."
+
+    #Delve Into Secrets:
+    pw_grand_archive.120.name: "Secrets of The $pw_grand_archive.ARK_project$"
+    pw_grand_archive.120.desc: "Many secrets lie hidden in the genetic code of exotic life forms, and even in our own genes. Who knows what a dedicated research team might find scattered in those helixes?"
+
+    #Society: Library of Babel -> 200
+    pw_grand_archive.library_of_babel: "§BLibrary of Babel§!"
+    pw_grand_archive.library_of_babel.assemble: "$pw_grand_archive.assemble$ $pw_grand_archive.library_of_babel$."
+    pw_grand_archive.library_of_babel.delve: "Delve into the secrets of the $pw_grand_archive.library_of_babel$."
+    pw_grand_archive.library_of_babel.delve.complete_project: "We must complete the $pw_grand_archive.library_of_babel$ Special Project before we can delve into its secrets."
+
+    #Access:
+    pw_grand_archive.200.name: "The $pw_grand_archive.library_of_babel$"
+    pw_grand_archive.200.desc: ""
+
+    #Assemble Project:
+    pw_grand_archive.201.name: "$pw_grand_archive.library_of_babel$ Preparations"
+    pw_grand_archive.201.desc: "Our archivists have prepared a guiding compendium for all the the media the science team shall seek, scouring every museum, gallery and library in constant search of every written text or produced image from our past, and from our pasts past. Great chambers to accommodate all of this information were planned as well. These chamber are designed as hexagons connected to each other like a beehive, and spawning several floors filled with shelves. Now we only need to fill them with what we find."
+
+    #Completed Project:
+    pw_grand_archive.210.name: "The Complete $pw_grand_archive.library_of_babel$"
+    pw_grand_archive.210.desc: "Many months of searching and cataloguing have culminated to a point where the Library of Babel can be opened to the scholar public. There will be forever work ofr the archivist here as new texts are continuously produced, but they have enough to boast complete collections of lost works and find hidden secrets in the writings.\n\nAn interesting idea for future proofing was pitched, but disregarded: have a section of the library containing every possible book that can be written preemptively, by including every possible combination of letters and spaces those books could hold. This was deemed too much work to hold too much gibberish, but remained in the annals as curiosity - and an idea for the future."
+
+    #Delve Into Secrets:
+    pw_grand_archive.220.name: "Secrets of The $pw_grand_archive.library_of_babel$"
+    pw_grand_archive.220.desc: "Many secrets lie hidden in the enigmatic library, and even in texts it has not yet received. Who knows what a dedicated research team might find scattered in those hexagons of unending texts?\n\nEverything, perhaps.\nBut most importantly: long lost secrets."
+
+    #Society: Cradle Initiative -> 300
+    pw_grand_archive.cradle_initiative: "§BCradle Initiative§!"
+    pw_grand_archive.cradle_initiative.assemble: "$pw_grand_archive.assemble$ $pw_grand_archive.cradle_initiative$."
+    pw_grand_archive.cradle_initiative.delve: "Delve into the secrets of the $pw_grand_archive.cradle_initiative$."
+    pw_grand_archive.cradle_initiative.delve.complete_project: "We must complete the $pw_grand_archive.cradle_initiative$ Special Project before we can delve into its secrets."
+
+    #Access:
+    pw_grand_archive.300.name: "The $pw_grand_archive.cradle_initiative$"
+    pw_grand_archive.300.desc: ""
+
+    #Assemble Project:
+    pw_grand_archive.301.name: "$pw_grand_archive.cradle_initiative$ Preparations"
+    pw_grand_archive.301.desc: "Our archivists have gathered much of our accumulated information on habitability and habitable planets, but there is still much to discover from special analyses of already surveyed planets. Peculiar temperature phenomenon, microclimate analysis and unique evolution developments can be review, catalogued and better understood by our science team tasked with revisiting those life bearing planets."
+
+    #Complete Wet:
+    pw_grand_archive.305.name: "$pw_grand_archive.cradle_initiative$: Wet Planets"
+    pw_grand_archive.305.desc: "."
+
+    #Completed Cold:
+    pw_grand_archive.307.name: "$pw_grand_archive.cradle_initiative$: Cold Planets"
+    pw_grand_archive.307.desc: "."
+
+    #Completed Dry:
+    pw_grand_archive.309.name: "$pw_grand_archive.cradle_initiative$: Dry Planets"
+    pw_grand_archive.309.desc: "."
+
+    #Completed Exotic:
+    pw_grand_archive.311.name: "$pw_grand_archive.cradle_initiative$: Exotic Planets"
+    pw_grand_archive.311.desc: "."
+
+    #Completed Project:
+    pw_grand_archive.315.name: "The Complete $pw_grand_archive.cradle_initiative$"
+    pw_grand_archive.315.desc: "."
+
+    #Delve Into Secrets:
+    pw_grand_archive.320.name: "Secrets of The $pw_grand_archive.cradle_initiative$"
+    pw_grand_archive.320.desc: "Many secrets lie hidden in the making of habitable worlds, or in how to better survive the more exotic planets. Who knows what a dedicated research team might find floating in the atmosphere?"

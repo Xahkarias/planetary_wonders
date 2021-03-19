@@ -389,7 +389,7 @@ planet_event = {
 	id = pw_wonder.201
 	title = pw_wonder.201.name
 	desc = pw_wonder.201.desc
-	picture = GFX_evt_ancient_databank
+	picture = GFX_evt_physics_research
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
@@ -449,7 +449,7 @@ planet_event = {
 	id = pw_wonder.202
 	title = pw_wonder.202.name
 	desc = pw_wonder.202.desc
-	picture = GFX_evt_ancient_databank
+	picture = GFX_evt_physics_research
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
@@ -5032,6 +5032,85 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_holy_reliquary_recently_build
 			days = @pw_1year
+		}
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+		}
+	}
+}
+
+# Grand Archive -> id 1600
+
+#On Grand Archive built
+planet_event = {
+	id = pw_wonder.1600
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_grand_archive_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1601 } #Regular first time
+	}
+}
+
+#On first time Grand Archive is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1601
+	title = pw_wonder.1601.name
+	desc = pw_wonder.1601.desc
+	picture = GFX_evt_ancient_databank
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_grand_archive_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_grand_archive_built }
+	}
+
+	option = {
+		name = pw_wonder.1601.a
+		add_modifier = {
+			modifier = pw_mod_grand_archive_recently_build
+			days = @pw_2years
+		}
+	}
+
+	option = {
+		name = pw_wonder.1601.b
+		add_modifier = {
+			modifier = pw_mod_grand_archive_recently_build
+			days = @pw_1year
+		}
+		owner = {
+			add_resource = {
+				influence = 25
+			}
 		}
 	}
 }

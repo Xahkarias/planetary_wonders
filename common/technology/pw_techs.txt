@@ -1370,7 +1370,6 @@ pw_tech_titan_forge_crystals = {
 		pw_tech_titan_forge
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_titan_forge_built
@@ -1394,7 +1393,6 @@ pw_tech_titan_forge_gases = {
 		pw_tech_titan_forge
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_titan_forge_built
@@ -1418,7 +1416,6 @@ pw_tech_titan_forge_motes = {
 		pw_tech_titan_forge
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_titan_forge_built
@@ -1530,7 +1527,6 @@ pw_tech_industrial_hearth_industry_military = {
 		pw_tech_industrial_hearth
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_industrial_hearth_built
@@ -1554,7 +1550,6 @@ pw_tech_industrial_hearth_industry_civilian = {
 		pw_tech_industrial_hearth
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_industrial_hearth_built
@@ -1578,7 +1573,6 @@ pw_tech_industrial_hearth_housing = {
 		pw_tech_industrial_hearth
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_industrial_hearth_built
@@ -1602,7 +1596,6 @@ pw_tech_industrial_hearth_design = {
 		pw_tech_industrial_hearth
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_industrial_hearth_built
@@ -1626,7 +1619,6 @@ pw_tech_industrial_hearth_design_megacorp = {
 		pw_tech_industrial_hearth
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_industrial_hearth_built
@@ -1650,7 +1642,6 @@ pw_tech_industrial_hearth_gardens = {
 		pw_tech_industrial_hearth
 	}
 	weight = 0
-	is_rare = yes
 
 	potential = {
 		has_country_flag = pw_industrial_hearth_built
@@ -2491,5 +2482,337 @@ pw_tech_spiritual_artifacts_studies = {
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
+	}
+}
+
+# The Grand Archive
+pw_tech_materialist_archiving = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier4cost3
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+	}
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_spiritual_artifacts_studies }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_materialist = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_transcendent_learning
+		}
+
+		modifier = {
+			factor = 1.5
+			num_owned_relics > 1
+		}
+
+		modifier = {
+			factor = 2
+			num_owned_relics > 2
+		}
+
+		modifier = {
+			factor = 2
+			num_owned_relics > 3
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+# The Grand Archive -> Delve into secrets techs
+pw_tech_grand_archive_genetic_secrets = {
+	area = society
+	category = { biology }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		BIOLOGICAL_species_trait_points_add = 1
+		modify_species_cost_mult = -0.2
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_lost_state_secrets = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		country_leader_pool_size = 1
+		country_naval_cap_add = 20
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_subspace_particle_secrets = {
+	area = physics
+	category = { particles }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.15
+		ship_jumpdrive_cooldown_mult = -0.15
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_omnidatabase_secrets = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		num_tech_alternatives_add = 1
+		all_technology_research_speed = 0.05
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_stellar_secrets = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		country_sr_dark_matter_produces_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_zero_g_building_secrets = {
+	area = engineering
+	category = { voidcraft }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		megastructure_build_speed_mult = 0.15
+		country_megastructure_build_cap_add = 1
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_mechanist_secrets = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		ROBOT_species_trait_points_add = 1
+		modify_species_cost_mult = -0.2
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_architectural_secrets = {
+	area = engineering
+	category = { materials }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		planet_buildings_cost_mult = -0.15
+		planet_max_buildings_add = 1
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+pw_tech_grand_archive_our_lost_secrets = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @pw_grand_archive_cost_final
+	prerequisites = {
+		pw_tech_grand_archive_genetic_secrets
+		pw_tech_grand_archive_lost_state_secrets
+		pw_tech_grand_archive_subspace_particle_secrets
+		pw_tech_grand_archive_omnidatabase_secrets
+		pw_tech_grand_archive_stellar_secrets
+		pw_tech_grand_archive_zero_g_building_secrets
+		pw_tech_grand_archive_mechanist_secrets
+		pw_tech_grand_archive_architectural_secrets
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		country_government_civic_points_add = 1
+		pop_government_ethic_attraction = 0.15
+	}
+
+	ai_weight = {
+		factor = 20
 	}
 }
