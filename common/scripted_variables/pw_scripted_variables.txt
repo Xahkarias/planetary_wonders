@@ -33,6 +33,10 @@
 @pw_building_research_mod = 0.1
 #@pw_building_resource_mod = 0.15
 
+#Deposits
+@pw_deposits_upkeep_common = 2
+@pw_deposits_upkeep_advanced = 1
+
 
 #Jobs
 

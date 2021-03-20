@@ -1,5 +1,7 @@
 ﻿l_english:
 
+    #Drained Paradise Deposits
+
     pw_d_ancient_cornucopia: "Ancient Cornucopia"
     pw_d_ancient_cornucopia_desc: "This ancient farming project can still be used for our own food needs."
 
@@ -8,6 +10,17 @@
 
     pw_d_ancient_mining_project: "Ancient Mining Project"
     pw_d_ancient_mining_project_desc: "The old tunnels that permeate this planet surface can still be used to extract the minerals we need."
+
+    #Guardian Angel Deposits
+
+    pw_d_guardian_angel_training: "Guardian Training Grounds"
+    pw_d_guardian_angel_training_desc: "Deployment troops for any kind of assault operation, from mass occupation to spec ops, can be better prepared and hastily trained while the $pw_guardian_angel$ is not engaged in conflict. It also serves as barracks for soldiers in service."
+
+    pw_d_guardian_angel_police_operations: "Guardian Enforcer Center"
+    pw_d_guardian_angel_police_operations_desc: "The $pw_guardian_angel$ can provide a monitoring center for the whole planet and assist local law enforcement with major operations while not engaged in conflict. I also provides accommodation for officers and investigators and mobile prison cells."
+
+    pw_d_guardian_angel_tourist_attraction: "Guardian Tourist Attraction"
+    pw_d_guardian_angel_tourist_attraction_desc: "People come from all over the empire to take a cruise over the entire planet surface aboard the $pw_guardian_angel$, stopping at the most famous landmarks. Provided we are not involved in conflict. The vessel makes several luxury hotel suites available for those lucky to be hosted here."
 
     #Holy Reliquary Features
 

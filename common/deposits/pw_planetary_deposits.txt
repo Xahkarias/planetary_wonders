@@ -100,6 +100,88 @@ pw_d_ancient_mining_project = {
 	}
 }
 
+# Guardian Angle choice features:
+pw_d_guardian_angel_training = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_at_war = no }
+			has_building = pw_building_guardian_angel
+		}
+		modifier = {
+			planet_army_build_speed_mult = 0.25
+			planet_housing_add = 2
+		}
+	}
+}
+
+pw_d_guardian_angel_police_operations = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_at_war = no }
+			has_building = pw_building_guardian_angel
+		}
+		modifier = {
+			planet_crime_add = -20
+			planet_housing_add = 2
+		}
+	}
+}
+
+pw_d_guardian_angel_tourist_attraction = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_at_war = no }
+			has_building = pw_building_guardian_angel
+		}
+		modifier = {
+			trade_value_add = 20
+			planet_housing_add = 2
+		}
+	}
+}
+
 # Holy Reliquary Features
 pw_d_monument_to_the_solar_regent = {
 	is_for_colonizeable = yes
@@ -110,8 +192,19 @@ pw_d_monument_to_the_solar_regent = {
 	potential = { always = no }
 
 	planet_modifier = {
-		country_unity_produces_add = 15
+		pop_cat_specialist_happiness = 0.05
 		pop_cat_ruler_happiness = 0.05
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+		produces = {
+			influence = 0.25
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -134,9 +227,19 @@ pw_d_parliament_of_the_void_speakers = {
 	potential = { always = no }
 
 	planet_modifier = {
-		country_unity_produces_add = 15
 		pop_cat_worker_happiness = 0.05
 		pop_cat_slave_happiness = 0.05
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+		produces = {
+			unity = 15
+		}
 	}
 
 	triggered_planet_modifier = {

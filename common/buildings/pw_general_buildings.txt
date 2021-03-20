@@ -744,12 +744,11 @@ pw_building_guardian_angel = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		planet_orbital_bombardment_damage = -0.25
-		planet_housing_add = 3
+		planet_orbital_bombardment_damage = -0.1
 	}
 
 	army_modifier = {
-		army_starting_experience_add = 100
+		army_starting_experience_add = 200
 	}
 
 	triggered_planet_modifier = {
@@ -802,7 +801,7 @@ pw_building_guardian_angel = {
 			owner = { has_ascension_perk = ap_mind_over_matter }
 		}
 		modifier = {
-			job_telepath_add = 3
+			job_telepath_add = 2
 		}
 	}
 
@@ -833,40 +832,6 @@ pw_building_guardian_angel = {
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
-		}
-	}
-
-	#Choice based modifiers:
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_planet_flag = pw_guardian_angel_train
-			owner = { is_at_war = no }
-		}
-		modifier = {
-			planet_army_build_speed_mult = 0.2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_planet_flag = pw_guardian_angel_police_operations
-			owner = { is_at_war = no }
-		}
-		modifier = {
-			planet_crime_mult = -0.25
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_planet_flag = pw_guardian_angel_attraction
-			owner = { is_at_war = no }
-		}
-		modifier = {
-			trade_value_add = 15
 		}
 	}
 
