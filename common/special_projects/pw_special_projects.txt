@@ -511,3 +511,212 @@ special_project = {
 	on_fail = {
 	}
 }
+
+#Particle Museum
+special_project = {
+	key = PW_PARTICLE_MUSEUM
+	cost = @pw_grand_archive_project_cost
+	tech_department = physics_technology
+	picture = GFX_evt_physics_research
+	icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.410 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Omnidatabase
+special_project = {
+	key = PW_OMNIDATABASE
+	cost = @pw_grand_archive_project_cost
+	tech_department = physics_technology
+	picture = GFX_evt_glitchy_matrix
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.510 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+
+#Stellarium (Star)
+special_project = {
+	key = PW_STELLARIUM_STAR
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = physics_technology
+	picture = GFX_evt_binary_stars
+	event_chain = pw_assemble_stellarium_chain
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.605 }
+	}
+}
+
+#Stellarium (Simulation)
+special_project = {
+	key = PW_STELLARIUM_SIMULATION
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = physics_technology
+	picture = GFX_evt_star_pulsar
+	event_chain = pw_assemble_stellarium_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.606 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Zero-g Exposition
+special_project = {
+	key = PW_ZERO_G_EXPOSITION
+	cost = 0
+	days_to_research = @pw_grand_archive_project_duration
+	tech_department = engineering_technology
+	picture = GFX_evt_engineering_research
+	location = yes
+
+	event_scope = ship_event
+
+	requirements = {
+		fleet_power = 1500
+	}
+
+	on_success = {
+		ship_event = { id = pw_grand_archive.710 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Mechanist Collection
+special_project = {
+	key = PW_MECHANIST_COLLECTION
+	cost = @pw_grand_archive_project_cost
+	tech_department = engineering_technology
+	picture = GFX_evt_robot_assembly_plant
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.810 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Meta-Architectural Complex(replace)
+special_project = {
+	key = PW_META_ARCHITECTURAL_COMPLEX
+	cost = @pw_grand_archive_project_cost
+	tech_department = engineering_technology
+	picture = GFX_evt_busy_spaceport
+	icon = "gfx/interface/icons/situation_log/situation_log_debris.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.910 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Meta-Architectural Complex(Space Elevator)
+special_project = {
+	key = PW_META_ARCHITECTURAL_COMPLEX_SPACE_ELEVATOR
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = engineering_technology
+	event_chain = pw_assemble_meta_architectural_complex_chain
+	picture = GFX_evt_space_elevator
+	icon = "gfx/interface/icons/situation_log/situation_log_debris.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.905 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Meta-Architectural Complex(Astronomical Model Bureau)
+special_project = {
+	key = PW_META_ARCHITECTURAL_COMPLEX_GALACTIC_MODEL
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = engineering_technology
+	event_chain = pw_assemble_meta_architectural_complex_chain
+	picture = GFX_evt_galactic_model
+	icon = "gfx/interface/icons/situation_log/situation_log_debris.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.906 }
+	}
+
+	on_fail = {
+	}
+}
+
+#Meta-Architectural Complex(Guardian Angel)
+special_project = {
+	key = PW_META_ARCHITECTURAL_COMPLEX_GUARDIAN_ANGEL
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = engineering_technology
+	event_chain = pw_assemble_meta_architectural_complex_chain
+	picture = GFX_evt_landing_ship_2
+	icon = "gfx/interface/icons/situation_log/situation_log_debris.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		planet_event = { id = pw_grand_archive.907 }
+	}
+
+	on_fail = {
+	}
+}

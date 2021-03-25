@@ -125,6 +125,6 @@
 @pw_grand_archive_secrets_cost_check = 100
 @pw_grand_archive_secrets_cost = -100
 #Grand Archive Projects:
-@pw_grand_archive_project_cost = 10000
-@pw_grand_archive_project_cost_sub = 5000
+@pw_grand_archive_project_cost = 25000
+@pw_grand_archive_project_cost_sub = 7500
 @pw_grand_archive_project_duration = 360

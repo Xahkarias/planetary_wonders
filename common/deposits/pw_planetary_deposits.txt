@@ -263,6 +263,14 @@ pw_d_ark_project = {
 	#Can't occur naturally
 	potential = { always = no }
 
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
+
 	country_modifier = {
 		category_biology_research_speed_mult = 0.15
 		bio_pop_growth_speed = 0.15
@@ -285,6 +293,14 @@ pw_d_library_of_babel = {
 
 	#Can't occur naturally
 	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
 
 	country_modifier = {
 		category_statecraft_research_speed_mult = 0.15
@@ -310,6 +326,14 @@ pw_d_cradle_initiative = {
 	#Can't occur naturally
 	potential = { always = no }
 
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
+
 	country_modifier = {
 		category_new_worlds_research_speed_mult = 0.15
 		pop_environment_tolerance = 0.10
@@ -332,6 +356,14 @@ pw_d_particle_museum = {
 
 	#Can't occur naturally
 	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
 
 	country_modifier = {
 		category_particles_research_speed_mult = 0.15
@@ -356,6 +388,14 @@ pw_d_omnidatabase = {
 	#Can't occur naturally
 	potential = { always = no }
 
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
+
 	country_modifier = {
 		category_computing_research_speed_mult = 0.15
 		station_researchers_produces_mult = 0.15
@@ -379,6 +419,14 @@ pw_d_stellarium = {
 	#Can't occur naturally
 	potential = { always = no }
 
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
+
 	country_modifier = {
 		category_field_manipulation_research_speed_mult = 0.15
 		country_energy_produces_mult = 0.1
@@ -401,6 +449,14 @@ pw_d_zero_g_exposition = {
 
 	#Can't occur naturally
 	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
 
 	country_modifier = {
 		category_voidcraft_research_speed_mult = 0.15
@@ -426,6 +482,14 @@ pw_d_mechanist_collection = {
 	#Can't occur naturally
 	potential = { always = no }
 
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
+
 	country_modifier = {
 		category_industry_research_speed_mult = 0.15
 		pop_assembly_speed = 0.15
@@ -449,6 +513,14 @@ pw_d_meta_architectural_complex = {
 	#Can't occur naturally
 	potential = { always = no }
 
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+			consumer_goods = @pw_deposits_upkeep_advanced
+		}
+	}
+
 	country_modifier = {
 		category_materials_research_speed_mult = 0.15
 		planet_building_build_speed_mult = 0.2
@@ -471,6 +543,14 @@ pw_d_holoarchive = {
 
 	#Can't occur naturally
 	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 20
+			consumer_goods = 10
+		}
+	}
 
 	country_modifier = {
 		all_technology_research_speed = 0.2

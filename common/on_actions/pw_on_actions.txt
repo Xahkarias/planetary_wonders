@@ -12,6 +12,10 @@ on_tech_increased = {
 		pw_wonder.1002 #Enigma Engine
 		pw_wonder.1102 #Solipsist Debate Hall
 		pw_wonder.1004 #Check for Enigma Tech
+
+		pw_grand_archive.321 #Grand Archive - New Worlds Secrets
+		pw_grand_archive.621 #Grand Archive - Stellar Secrets
+		pw_grand_archive.821 #Grand Archive - Mechanist Secrets
 	}
 }
 

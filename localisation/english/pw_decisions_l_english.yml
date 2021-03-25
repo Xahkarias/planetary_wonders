@@ -68,3 +68,7 @@
     pw_decision_holy_reliquary_visit_the_reliquary: "Visit the $pw_holy_reliquary$"
     pw_decision_holy_reliquary_visit_the_reliquary_desc: "Visit the halls and chambers housing our sanctified artifacts."
     pw_decision_holy_reliquary_visit_the_reliquary_tooltip: "Launch an event that acts as the hub for the $pw_holy_reliquary$, where we can sanctify artifacts and activate some of their abilities."
+
+    pw_decision_grand_archive_visit_the_archive: "Visit $pw_grand_archive$"
+    pw_decision_grand_archive_visit_the_archive_desc: "Visit the museums and collections that tell the tale of the universe and all its secrets."
+    pw_decision_grand_archive_visit_the_archive_tooltip: "Launch an event that acts as the hub for $pw_grand_archive$, where we can assemble special collections and delve into their secrets."

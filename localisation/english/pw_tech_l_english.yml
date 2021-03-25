@@ -149,6 +149,9 @@
     pw_tech_grand_archive_lost_state_secrets: "Lost States Secrets"
     pw_tech_grand_archive_lost_state_secrets_desc: "Delve into the hidden secrets of the Library of Babel to emerge with lost-to-time statecraft and military techniques."
 
+    pw_tech_grand_archive_crucible_of_worlds_secrets: "Crucible of Worlds Secrets"
+    pw_tech_grand_archive_crucible_of_worlds_secrets_desc: "Delve into the hidden secrets of the Cradle Initiative to emerge with the illusive secrets of habitable new worlds."
+
     pw_tech_grand_archive_subspace_particle_secrets: "Subspace Particles Secrets"
     pw_tech_grand_archive_subspace_particle_secrets_desc: "Delve into the hidden secrets of the Particle Museum to emerge with the veiled ideas it might hold for subspace travel."
 
@@ -158,11 +161,14 @@
     pw_tech_grand_archive_stellar_secrets: "Stellar Secrets"
     pw_tech_grand_archive_stellar_secrets_desc: "Delve into the hidden secrets of the Stellarium to emerge with the revolutionary ideas it might hold for many stellars bodies and their properties."
 
-    pw_tech_grand_archive_zero_g_building_secrets: "Zero-G Building Secrets"
-    pw_tech_grand_archive_zero_g_building_secrets_desc: "Delve into the hidden secrets of the Zero-G Exposition to emerge with the revolutionary ideas it might hold for extreme void construction."
+    pw_tech_grand_archive_void_construction_secrets: "Void Constructions Secrets"
+    pw_tech_grand_archive_void_construction_secrets_desc: "Delve into the hidden secrets of the Zero-G Exposition to emerge with the revolutionary ideas it might hold for extreme void construction."
 
     pw_tech_grand_archive_mechanist_secrets: "Mechanist Secrets"
     pw_tech_grand_archive_mechanist_secrets_desc: "Delve into the hidden secrets of the Mechanist Collection to emerge with the revolutionary ideas it might hold for the field of robotics."
+
+    pw_tech_grand_archive_original_mechanist_secrets: "Original Mechanist Secrets"
+    pw_tech_grand_archive_original_mechanist_secrets_desc: "The mysteries of mechanical assemble have accompanied us even before our ascension to the galactic podium. We know that we can delve even further into the hidden secrets of the Mechanist Collection and still expect to find answers."
 
     pw_tech_grand_archive_architectural_secrets: "Architectural Secrets"
     pw_tech_grand_archive_architectural_secrets_desc: "Delve into the hidden secrets of the Meta-Architectural Complex to emerge with the revolutionary ideas it might hold for planetary building materials and techniques."

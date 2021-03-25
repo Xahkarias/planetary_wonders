@@ -3451,6 +3451,9 @@ planet_event = {
 		planet_event = {
 			id = pw_wonder.1205
 		}
+		planet_event = {
+			id = pw_wonder.1208
+		}
 	}
 }
 
@@ -3540,6 +3543,38 @@ planet_event = {
 		add_deposit = pw_d_guardian_angel_tourist_attraction
 		hidden_effect = {
 			set_planet_flag = pw_guardian_angel_choice
+		}
+	}
+}
+
+# -> remove Peace Choices
+planet_event = {
+	id = pw_wonder.1208
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { has_building = pw_building_guardian_angel }
+		OR = {
+			has_deposit = pw_d_guardian_angel_training
+			has_deposit = pw_d_guardian_angel_police_operations
+			has_deposit = pw_d_guardian_angel_tourist_attraction
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_training }
+			remove_deposit = pw_d_guardian_angel_training
+		}
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_police_operations }
+			remove_deposit = pw_d_guardian_angel_police_operations
+		}
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_tourist_attraction }
+			remove_deposit = pw_d_guardian_angel_tourist_attraction
 		}
 	}
 }
@@ -5066,6 +5101,7 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1601 } #Regular first time
+		planet_event = { id = pw_wonder.1602 } #Second Time onwards
 	}
 }
 
@@ -5109,6 +5145,163 @@ planet_event = {
 		owner = {
 			add_resource = {
 				influence = 25
+			}
+		}
+	}
+}
+
+#On second (and onwards) time Grand Archive is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1602
+	title = pw_wonder.1602.name
+	desc = pw_wonder.1602.desc
+	picture = GFX_evt_ancient_databank
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+			has_country_flag = pw_grand_archive_built
+			OR = {
+				has_country_flag = pw_grand_archive_holoarchive_unified
+				has_country_flag = pw_grand_archive_ARK_project_completed
+				has_country_flag = pw_grand_archive_cradle_initiative_completed
+				has_country_flag = pw_grand_archive_library_of_babel_completed
+				has_country_flag = pw_grand_archive_particle_museum_completed
+				has_country_flag = pw_grand_archive_omnidatabase_completed
+				has_country_flag = pw_grand_archive_stellarium_completed
+				has_country_flag = pw_grand_archive_zero_g_exposition_completed
+				has_country_flag = pw_grand_archive_mechanist_collection_completed
+				has_country_flag = pw_grand_archive_meta_architectural_complex_completed
+			}
+			any_owned_planet = {
+				NOT = { is_planet = PREVPREV }
+				OR = {
+					has_deposit = pw_d_ark_project
+					has_deposit = pw_d_particle_museum
+					has_deposit = pw_d_cradle_initiative
+					has_deposit = pw_d_library_of_babel
+					has_deposit = pw_d_omnidatabase
+					has_deposit = pw_d_stellarium
+					has_deposit = pw_d_zero_g_exposition
+					has_deposit = pw_d_mechanist_collection
+					has_deposit = pw_d_meta_architectural_complex
+					has_deposit = pw_d_holoarchive
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1602.a
+
+		owner = {
+			every_owned_planet = {
+				limit = {
+					NOT = { is_planet = PREVPREV }
+					OR = {
+						has_deposit = pw_d_ark_project
+						has_deposit = pw_d_cradle_initiative
+						has_deposit = pw_d_library_of_babel
+						has_deposit = pw_d_particle_museum
+						has_deposit = pw_d_omnidatabase
+						has_deposit = pw_d_stellarium
+						has_deposit = pw_d_zero_g_exposition
+						has_deposit = pw_d_mechanist_collection
+						has_deposit = pw_d_meta_architectural_complex
+						has_deposit = pw_d_holoarchive
+					}
+				}
+				if = {
+					limit = { has_deposit = pw_d_ark_project }
+					remove_deposit = pw_d_ark_project
+				}
+				if = {
+					limit = { has_deposit = pw_d_cradle_initiative }
+					remove_deposit = pw_d_cradle_initiative
+				}
+				if = {
+					limit = { has_deposit = pw_d_library_of_babel }
+					remove_deposit = pw_d_library_of_babel
+				}
+				if = {
+					limit = { has_deposit = pw_d_particle_museum }
+					remove_deposit = pw_d_particle_museum
+				}
+				if = {
+					limit = { has_deposit = pw_d_omnidatabase }
+					remove_deposit = pw_d_omnidatabase
+				}
+				if = {
+					limit = { has_deposit = pw_d_stellarium }
+					remove_deposit = pw_d_stellarium
+				}
+				if = {
+					limit = { has_deposit = pw_d_zero_g_exposition }
+					remove_deposit = pw_d_zero_g_exposition
+				}
+				if = {
+					limit = { has_deposit = pw_d_mechanist_collection }
+					remove_deposit = pw_d_mechanist_collection
+				}
+				if = {
+					limit = { has_deposit = pw_d_meta_architectural_complex }
+					remove_deposit = pw_d_meta_architectural_complex
+				}
+				if = {
+					limit = { has_deposit = pw_d_holoarchive }
+					remove_deposit = pw_d_holoarchive
+				}
+			}
+		}
+
+		if = {
+			limit = { owner = { has_country_flag = pw_grand_archive_holoarchive_unified }}
+			add_deposit = pw_d_holoarchive
+		}
+		else = {
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_ARK_project_completed }}
+				add_deposit = pw_d_ark_project
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_cradle_initiative_completed }}
+				add_deposit = pw_d_cradle_initiative
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_library_of_babel_completed }}
+				add_deposit = pw_d_library_of_babel
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_particle_museum_completed }}
+				add_deposit = pw_d_particle_museum
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_omnidatabase_completed }}
+				add_deposit = pw_d_omnidatabase
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_stellarium_completed }}
+				add_deposit = pw_d_stellarium
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_zero_g_exposition_completed }}
+				add_deposit = pw_d_zero_g_exposition
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_mechanist_collection_completed }}
+				add_deposit = pw_d_mechanist_collection
+			}
+			if = {
+				limit = { owner = { has_country_flag = pw_grand_archive_meta_architectural_complex_completed }}
+				add_deposit = pw_d_meta_architectural_complex
 			}
 		}
 	}

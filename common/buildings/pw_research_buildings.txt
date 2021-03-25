@@ -1075,10 +1075,13 @@ pw_building_grand_archive = {
 		job_pw_grand_archivist_add = 6
 	}
 
+	#Master Archivist
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-
+			owner = {
+				has_country_flag = pw_grand_archive_holoarchive_master_archivist_appointed
+			}
 		}
 		modifier = {
 			job_pw_master_archivist_add = 1

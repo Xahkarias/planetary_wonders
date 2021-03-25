@@ -17,3 +17,7 @@
     edict_pw_artistic_exaltation_campaign_desc: "Art campaigns that focus on discovering and exalting foreign artistic works and involve us better in the Galactic Community at large."
     edict_pw_artistic_defamation_campaign: "Artistic Defamation Campaign"
     edict_pw_artistic_defamation_campaign_desc: "Art campaigns that focus on censoring and denouncing foreign artistic works in order to better secure our galactic position."
+
+    edict_pw_grand_archive_visit_the_archive: "Visit $pw_grand_archive$"
+    edict_pw_grand_archive_visit_the_archive_desc: "Visit the museums and collections that tell the tale of the universe and all its secrets."
+    edict_pw_grand_archive_visit_the_archive_tooltip: "Launch an event that acts as the hub for $pw_grand_archive$, where we can assemble special collections and delve into their secrets."

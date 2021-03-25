@@ -1243,3 +1243,34 @@ pw_decision_holy_reliquary_visit_the_reliquary = {
 		weight = 0
 	}
 }
+
+#Visit the Grand Archive
+pw_decision_grand_archive_visit_the_archive = {
+	owned_planets_only = yes
+	sound = event_laboratory_sound
+
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_building = pw_building_grand_archive
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_grand_archive_visit_the_archive_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_grand_archive.1
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

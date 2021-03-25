@@ -29,3 +29,23 @@ pw_assemble_cradle_initiative_chain = {
 		}
 	}
 }
+
+pw_assemble_stellarium_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_binary_stars
+	counter = {
+		pw_stellar_data_collected = {
+			max = 5
+		}
+	}
+}
+
+pw_assemble_meta_architectural_complex_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_busy_spaceport
+	counter = {
+		pw_architectural_data_collected = {
+			max = 3
+		}
+	}
+}

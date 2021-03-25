@@ -42,7 +42,7 @@
     PW_ARK_PROJECT_DESC: "The ARK Project requires a sample, copy or projection of the genome chain of every species in the galaxy, even the extinct ones. We may need to investigate already explored places and search into obscure databases to obtain the genes we seek."
 
     PW_LIBRARY_OF_BABEL: "Assemble the Library of Babel"
-    PW_LIBRARY_OF_BABEL_DESC: "Man in our population argue that the memory and culture of our country lives among al of its non-digital artifacts, such as books, paintings and toys. Such cultural artifacts have ever lived scattered, in galleries and museum, or hidden in lost attics. All of those and even beyond shall be gathered for the Library of Babel."
+    PW_LIBRARY_OF_BABEL_DESC: "Many in our population argue that the memory and culture of our country lives among al of its non-digital artifacts, such as books, paintings and toys. Such cultural artifacts have ever lived scattered, in galleries and museum, or hidden in lost attics. All of those and even beyond shall be gathered for the Library of Babel."
 
     PW_CRADLE_INITIATIVE_WET_PLANET: "Wet Planets Survey"
     PW_CRADLE_INITIATIVE_WET_PLANET_DESC: "As part of the Cradle Initiative we must find and thoroughly analyse planets with high water concentration in their atmosphere and discover in what ways are they unique to bear life."
@@ -68,6 +68,36 @@
     PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED: "Exotic Planets Simulation"
     PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED_DESC: "As part of the Cradle Initiative we must simulate the atmosphere, temperature and life cycle of planets with exotic conditions, such as lush environments or irradiated atmosphere and determine in what ways are they unique to bear life, or are hostile to it."
 
+    PW_PARTICLE_MUSEUM: "Assemble the Particle Museum"
+    PW_PARTICLE_MUSEUM_DESC: "The greatest mysteries of the universe still remain in two frameworks: the galactic big and the particle small. For the Particle Museum we intend to explore and gather the most data for future studies of atomic and subatomic particles, that even now withhold secrets from us."
+
+    PW_OMNIDATABASE: "Assemble the Omnidatabase"
+    PW_OMNIDATABASE_DESC: "A technical project as much as a investigative one. The science team is tasked with creating a hardware and software solution to holding and displaying an indefinite and dynamic amount of data, where all of the digital artifacts of our empire can be store. With triple redundancy, of course."
+
+    PW_STELLARIUM_STAR: "Analyse Star"
+    PW_STELLARIUM_STAR_DESC: "This star holds secrets beyond what initial analysis determined, that will be vital for the construction of our Stellarium."
+
+    PW_STELLARIUM_SIMULATION: "Analyse Star Data"
+    PW_STELLARIUM_SIMULATION_DESC: "Stellar data must be reviewed in a almost perfect simulation in order to provide the correct techniques to build the Stellarium."
+
+    PW_ZERO_G_EXPOSITION: "Assemble a Zero-G Exposition"
+    PW_ZERO_G_EXPOSITION_DESC: "In order to build the Zero-G Exposition, to show our great engineering works in space, we require a fleet with enough ships to be decommissioned so that the individuals ships can be put on display on artificial anti-gravitational fields.\n\n§RWARNING: When the project is completed, the entire fleet will be decommissioned and will not be further available!§!"
+
+    PW_MECHANIST_COLLECTION: "Assemble the Mechanist Collection"
+    PW_MECHANIST_COLLECTION_DESC: "From gears and joints to fully fledged automata, because of our researchers passion for engines, cyborgs and robots there is a lot to recover and catalogue to assemble a Mechanist Collection that we would be proud of."
+
+    PW_META_ARCHITECTURAL_COMPLEX: "Assemble the Meta-Architectural Complex"
+    PW_META_ARCHITECTURAL_COMPLEX_DESC: "The buildings and districts that cover the surfaces of our planets are ever-present on the day to day lives of our population, each of those constructions build in a specific style to suit their location and function. We must study our country blending of styles and the effects that mixture produces."
+
+    PW_META_ARCHITECTURAL_COMPLEX_SPACE_ELEVATOR: "Analyse the Space Elevator"
+    PW_META_ARCHITECTURAL_COMPLEX_SPACE_ELEVATOR_DESC: "The architectural and engineering techniques used to complete the Space Elevator are well documented, but the way the have been adapted to fit the cultural landscape of [THIS.GetName] are worth a second look. This will provide a great deal of information to complete the Meta-Architectural Complex."
+
+    PW_META_ARCHITECTURAL_COMPLEX_GALACTIC_MODEL: "Analyse the Astronomical Model Bureau"
+    PW_META_ARCHITECTURAL_COMPLEX_GALACTIC_MODEL_DESC: "It is only fitting that we examine the architectural techniques used to bring the planets and stars of the Astronomical Model Bureau to incorporate in the Complex, since eventually the Galactic Model shall also contain the Meta-Architectural Complex. This will provide a great deal of information to complete it."
+
+    PW_META_ARCHITECTURAL_COMPLEX_GUARDIAN_ANGEL: "Analyse the Guardian Angel"
+    PW_META_ARCHITECTURAL_COMPLEX_GUARDIAN_ANGEL_DESC: "Still wondering and intimidating to our citizens of [THIS.GetName], the Guardian Angel displays many different architectural techniques applied singularly in a building that defies gravity. Analysis of the engineering challenges of such building to the visual design of the fortress can be of use to us. We must study our country blending of styles and the effects that mixture produces."
+
     #Event Chains:
     pw_assemble_ARK_project_chain_title: "Assemble ARK Project"
     pw_assemble_ARK_project_chain_desc: "The ARK Project requires a sample, copy or projection of the genome chain of every species in the galaxy, even the extinct ones. We may need to investigate already explored places and search into obscure databases to obtain the genes we seek."
@@ -76,3 +106,11 @@
     pw_assemble_cradle_initiative_chain_title: "Assemble Cradle Initiative"
     pw_assemble_cradle_initiative_chain_desc: "The Cradle Initiative requires that we review much of our knowledge of habitation and habitable planets in order to replicate it. We may need to revisit explored planets and record more data on atmosphere, temperature and biosphere, but also microclimates, condition variation and exotic gravity profiles."
     pw_habitable_data_collected: "Habitable data collected"
+
+    pw_assemble_stellarium_chain_title: "Assemble Stellarium"
+    pw_assemble_stellarium_chain_desc: "The stars that surround us are the eyes of the galaxy, and they hold many secrets to the origin of the universe, as well as its future. We must gather data from a number of stars round our country, os run simulations if we can't reach them."
+    pw_stellar_data_collected: "Stellar data collected"
+
+    pw_assemble_meta_architectural_complex_chain_title: "Assemble Meta-Architectural Complex"
+    pw_assemble_meta_architectural_complex_chain_desc: "Our Wonders have marveled the habitants of every planet they we them build upon, but what goes unseen by many is the elegant synthesis of form and function that their architectural development employed. A closer analysis of the techniques used in the constructions of various Planetary Wonders and their resulting impact in operation and cityscape is essential to complete the Meta-Architectural Complex properly."
+    pw_architectural_data_collected: "Architectural data collected"

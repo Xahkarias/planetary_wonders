@@ -113,3 +113,8 @@
     pw_building_holy_reliquary: "Holy Reliquary"
     pw_building_holy_reliquary_desc: "The revered collection of artifacts sacred to our faith, kept where it can be conserved, studied and prayed upon."
     pw_building_holy_reliquary_tooltip: "Â§SAllows us to sanctify holy artifacts.Â§!"
+
+    pw_grand_archive: "Â§MThe Grand ArchiveÂ§!"
+    pw_building_grand_archive: "The Grand Archive"
+    pw_building_grand_archive_desc: "A collection of collections. A centralized archive for all that can be catalogued, with room for any future development of exploration, history and research. A repository for data, all the data."
+    pw_building_grand_archive_tooltip: "Â§SAllows us to start archiving projects.Â§!"

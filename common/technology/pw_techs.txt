@@ -2636,6 +2636,31 @@ pw_tech_grand_archive_lost_state_secrets = {
 	}
 }
 
+pw_tech_grand_archive_crucible_of_worlds_secrets = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_materialist_archiving
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+	}
+
+	modifier = {
+		terraform_speed_mult = 0.25
+		terraforming_cost_mult = -0.25
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
 pw_tech_grand_archive_subspace_particle_secrets = {
 	area = physics
 	category = { particles }
@@ -2710,7 +2735,7 @@ pw_tech_grand_archive_stellar_secrets = {
 	}
 }
 
-pw_tech_grand_archive_zero_g_building_secrets = {
+pw_tech_grand_archive_void_construction_secrets = {
 	area = engineering
 	category = { voidcraft }
 	tier = 5
@@ -2760,6 +2785,32 @@ pw_tech_grand_archive_mechanist_secrets = {
 	}
 }
 
+pw_tech_grand_archive_original_mechanist_secrets = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @pw_grand_archive_cost
+	prerequisites = {
+		pw_tech_grand_archive_mechanist_secrets
+	}
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		has_country_flag = pw_grand_archive_built
+		has_origin = origin_mechanists
+	}
+
+	modifier = {
+		pop_assembly_speed = 0.15
+		planet_pop_assemblers_upkeep_mult = -0.15
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
 pw_tech_grand_archive_architectural_secrets = {
 	area = engineering
 	category = { materials }
@@ -2796,7 +2847,7 @@ pw_tech_grand_archive_our_lost_secrets = {
 		pw_tech_grand_archive_subspace_particle_secrets
 		pw_tech_grand_archive_omnidatabase_secrets
 		pw_tech_grand_archive_stellar_secrets
-		pw_tech_grand_archive_zero_g_building_secrets
+		pw_tech_grand_archive_void_construction_secrets
 		pw_tech_grand_archive_mechanist_secrets
 		pw_tech_grand_archive_architectural_secrets
 	}

@@ -91,6 +91,7 @@ pw_holy_reliquary_visit_the_reliquary = {
 	icon = "GFX_edict_type_policy"
 
 	effect = {
+		custom_tooltip = edict_pw_holy_reliquary_visit_the_reliquary_tooltip
 		country_event = {
 			id = pw_holy_reliquary.1
 		}
@@ -109,6 +110,38 @@ pw_holy_reliquary_visit_the_reliquary = {
 	allow = {
 		any_owned_planet = {
 			has_building = pw_building_holy_reliquary
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+pw_grand_archive_visit_the_archive = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	effect = {
+		custom_tooltip = edict_pw_grand_archive_visit_the_archive_tooltip
+		country_event = {
+			id = pw_grand_archive.1
+		}
+	}
+
+	prerequisites = {
+		pw_tech_spiritual_artifacts_studies
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_grand_archive
+		}
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_building = pw_building_grand_archive
 		}
 	}
 
