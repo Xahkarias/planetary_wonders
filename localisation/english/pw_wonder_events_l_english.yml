@@ -314,12 +314,19 @@
     pw_wonder.1305.name: "The Depths of [ROOT.GetName] Roar"
     #Add 5 Devastation
     pw_wonder.1305.desc: "Some tectonic disturbances in [ROOT.GetName] have provoked landslides and small floods in the surface of the planet, thankfully they caused only minor devastation. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    pw_message_mantle_crucible_devastation_5: "Operations of the $pw_mantle_crucible$ inflicted §R5§! devastation on $PLANET|Y$."
     #Add 15 Devastation
     pw_wonder.1306.desc: "Some tectonic disturbances in [ROOT.GetName] have caused building collapses and floods in the surface of the planet, they only caused some devastation, thankfully. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    pw_message_mantle_crucible_devastation_15: "Operations of the $pw_mantle_crucible$ inflicted §R15§! devastation on $PLANET|Y$."
     #Add 25 Devastation
     pw_wonder.1307.desc: "Tectonic disturbances in [ROOT.GetName] have caused building collapses and crater formations in the surface of the planet, they left some areas heavily devastated. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    pw_message_mantle_crucible_devastation_25: "Operations of the $pw_mantle_crucible$ inflicted §R25§! devastation on $PLANET|Y$."
     #Add 30 Devastation
     pw_wonder.1308.desc: "Major tectonic disturbances in [ROOT.GetName] have caused district collapses and volcano activities in the surface of the planet, they left heavy devastation in their wake. Many researchers point to the exploitation of the planets mantle as the most probable cause."
+    pw_message_mantle_crucible_devastation_30: "Operations of the $pw_mantle_crucible$ inflicted §R30§! devastation on $PLANET|Y$."
+    #Hide Events Options:
+    pw_wonder.mantle_crucible.hide_devastation_events: "Disasters happen, send a short report next time."
+    pw_wonder.mantle_crucible.hide_devastation_events.tooltip: "Stop showing the events of Devastation and replace tem with notifications."
 
     #Complete Titan Forge
     pw_message_titan_forge_complete: "$pw_titan_forge$ has been constructed in $PLANET|Y$."

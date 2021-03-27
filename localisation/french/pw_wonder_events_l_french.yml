@@ -369,3 +369,10 @@
     pw_wonder.1602.name: "First As Tragedy, Then As Farce"
     pw_wonder.1602.desc: "As $pw_building_grand_archive$ is built once more, the secrets and knowledge of the collections that we left behind, shall not been forgotten. We may transfer every bit of data involved in the assembly of those lost collections and rebuild them in [THIS.GetName], along with the Archive.\n\nNothing will be lost time, and we may resume the assemblage from wherever we have stopped."
     pw_wonder.1602.a: "Transfer the knowledge, the archive lives on."
+
+    pw_message_mantle_crucible_devastation_5: "Operations of the $pw_mantle_crucible$ inflicted Â§R5Â§! devastation on $PLANET|Y$."
+    pw_message_mantle_crucible_devastation_15: "Operations of the $pw_mantle_crucible$ inflicted Â§R15Â§! devastation on $PLANET|Y$."
+    pw_message_mantle_crucible_devastation_25: "Operations of the $pw_mantle_crucible$ inflicted Â§R25Â§! devastation on $PLANET|Y$."
+    pw_message_mantle_crucible_devastation_30: "Operations of the $pw_mantle_crucible$ inflicted Â§R30Â§! devastation on $PLANET|Y$."
+    pw_wonder.mantle_crucible.hide_devastation_events: "Disasters happen, send a short report next time."
+    pw_wonder.mantle_crucible.hide_devastation_events.tooltip: "Stop showing the events of Devastation and replace tem with notifications."

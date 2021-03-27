@@ -3737,8 +3737,25 @@ planet_event = {
 						factor = 0.5
 						pw_is_planet_ideal = yes
 					}
-					planet_event = {
-						id = pw_wonder.1305
+					modifier = {
+						factor = 1.25
+						exists = owner
+						owner = { has_valid_civic = civic_environmentalist }
+					}
+					if = {
+						limit = {
+							owner = {
+								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
+							}
+						}
+						planet_event = {
+							id = pw_wonder.1305
+						}
+					}
+					else = {
+						planet_event = {
+							id = pw_wonder.1315
+						}
 					}
 				}
 				25 = { #Add 15 devastation
@@ -3751,8 +3768,25 @@ planet_event = {
 						factor = 0.75
 						pw_is_planet_ideal = yes
 					}
-					planet_event = {
-						id = pw_wonder.1306
+					modifier = {
+						factor = 1.25
+						exists = owner
+						owner = { has_valid_civic = civic_environmentalist }
+					}
+					if = {
+						limit = {
+							owner = {
+								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
+							}
+						}
+						planet_event = {
+							id = pw_wonder.1306
+						}
+					}
+					else = {
+						planet_event = {
+							id = pw_wonder.1316
+						}
 					}
 				}
 				10 = { #Add 25 devastation
@@ -3760,8 +3794,20 @@ planet_event = {
 						factor = 1.5
 						pw_is_planet_ideal = yes
 					}
-					planet_event = {
-						id = pw_wonder.1307
+					if = {
+						limit = {
+							owner = {
+								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
+							}
+						}
+						planet_event = {
+							id = pw_wonder.1307
+						}
+					}
+					else = {
+						planet_event = {
+							id = pw_wonder.1317
+						}
 					}
 				}
 				5 = { #Add 30 devastation
@@ -3774,8 +3820,20 @@ planet_event = {
 						factor = 2
 						pw_is_planet_ideal = yes
 					}
-					planet_event = {
-						id = pw_wonder.1308
+					if = {
+						limit = {
+							owner = {
+								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
+							}
+						}
+						planet_event = {
+							id = pw_wonder.1308
+						}
+					}
+					else = {
+						planet_event = {
+							id = pw_wonder.1318
+						}
 					}
 				}
 			}
@@ -3802,7 +3860,23 @@ planet_event = {
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
-				days = @pw_5years
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.mantle_crucible.hide_devastation_events
+		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		add_planet_devastation = 5
+		hidden_effect = {
+			owner = {
+				set_country_flag = pw_mantle_crucible_hide_devastation_events
+			}
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
 				random = @pw_2years
 			}
 		}
@@ -3825,7 +3899,23 @@ planet_event = {
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
-				days = @pw_5years
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.mantle_crucible.hide_devastation_events
+		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		add_planet_devastation = 15
+		hidden_effect = {
+			owner = {
+				set_country_flag = pw_mantle_crucible_hide_devastation_events
+			}
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
 				random = @pw_2years
 			}
 		}
@@ -3849,7 +3939,23 @@ planet_event = {
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
-				days = @pw_5years
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.mantle_crucible.hide_devastation_events
+		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		add_planet_devastation = 25
+		hidden_effect = {
+			owner = {
+				set_country_flag = pw_mantle_crucible_hide_devastation_events
+			}
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
 				random = @pw_2years
 			}
 		}
@@ -3872,7 +3978,23 @@ planet_event = {
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
-				days = @pw_5years
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.mantle_crucible.hide_devastation_events
+		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		add_planet_devastation = 30
+		hidden_effect = {
+			owner = {
+				set_country_flag = pw_mantle_crucible_hide_devastation_events
+			}
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
 				random = @pw_2years
 			}
 		}
@@ -3898,6 +4020,126 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
 			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
+	}
+}
+
+#Add 5 devastation (hidden)
+planet_event = {
+	id = pw_wonder.1315
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		add_planet_devastation = 5
+		create_message = {
+			type = PLANET_DESTROYED
+			localization = pw_message_mantle_crucible_devastation_5
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+}
+
+#Add 15 devastation (hidden)
+planet_event = {
+	id = pw_wonder.1316
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		add_planet_devastation = 15
+		create_message = {
+			type = PLANET_DESTROYED
+			localization = pw_message_mantle_crucible_devastation_15
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+}
+
+#Add 25 devastation (hidden)
+planet_event = {
+	id = pw_wonder.1317
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		add_planet_devastation = 25
+		create_message = {
+			type = PLANET_DESTROYED
+			localization = pw_message_mantle_crucible_devastation_25
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
+				random = @pw_2years
+			}
+		}
+	}
+}
+
+#Add 30 devastation (hidden)
+planet_event = {
+	id = pw_wonder.1318
+	hide_window = yes
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		add_planet_devastation = 30
+		create_message = {
+			type = PLANET_DESTROYED
+			localization = pw_message_mantle_crucible_devastation_30
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1304
+				days = @pw_10years
+				random = @pw_2years
+			}
 		}
 	}
 }
