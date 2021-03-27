@@ -1,7 +1,7 @@
 ﻿l_english:
 
     #Scripted triggers tooltips:
-    pw_grand_archive_leave_tooltip: "You can return to $pw_grand_archive$ via edict or planetary decision where it is build."
+    pw_grand_archive_leave_tooltip: "You can return to $pw_grand_archive$ via edict or £decision£ planetary decision where it is constructed."
     pw_grand_archive_return_to_hub_tooltip: "Return to The Grand Archive hub."
 
     #Enter the Grand Archive (initial):
