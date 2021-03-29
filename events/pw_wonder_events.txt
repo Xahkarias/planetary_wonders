@@ -5548,3 +5548,146 @@ planet_event = {
 		}
 	}
 }
+
+# Transplanetary Logistic Network -> id 1700
+
+#On Transplanetary Logistic Network built
+planet_event = {
+	id = pw_wonder.1700
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_transplanetary_logistics_network_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1701 } #Regular first time
+	}
+}
+
+#On first time Transplanetary Logistic Network is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1701
+	title = pw_wonder.1701.name
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_habitat }
+		}
+		text = pw_wonder.1701.desc
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_habitat
+		}
+		text = pw_wonder.1701.desc.habitat
+	}
+	picture = GFX_evt_city_planet
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_transplanetary_logistics_network_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_transplanetary_logistics_network_built }
+		planet_event = { id = pw_wonder.1702 days = @pw_2years random = @pw_1year } #Shared Burden
+	}
+
+	option = {
+		name = pw_wonder.1701.a
+		add_modifier = {
+			modifier = pw_mod_transplanetary_logistics_network_recently_build
+			days = @pw_2years
+		}
+	}
+}
+
+#Unlocks Shared Burdens tech:
+planet_event = {
+	id = pw_wonder.1702
+	title = pw_wonder.1702.name
+	desc = pw_wonder.1702.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		exists = owner
+		owner = { has_valid_civic = civic_shared_burden }
+	}
+
+	option = {
+		name = pw_wonder.1702.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+			add_research_option = pw_tech_burdens_of_all
+		}
+	}
+
+	option = {
+		name = pw_wonder.1702.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+		}
+	}
+}
+
+#When any Infrastructure development is completed:
+planet_event = {
+	id = pw_wonder.1705
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_tls_infrastructure_completed
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+	}
+}

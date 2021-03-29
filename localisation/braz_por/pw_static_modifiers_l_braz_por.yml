@@ -218,3 +218,6 @@
 
     pw_mod_grand_archive_recently_build: "Studies of Material History"
     pw_mod_grand_archive_recently_build_desc: "The recording and revisiting of our entire history in such a big project as $pw_building_grand_archive$ brings good expectations for our future."
+
+    pw_mod_transplanetary_logistics_network_recently_build: "Equality of Provision"
+    pw_mod_transplanetary_logistics_network_recently_build_desc: "The recent construction of a system of equal distribution such as the $pw_transplanetary_logistics_network$ brings hope that the needs of our population shall forever be met. From each according to their ability to each according to their need."

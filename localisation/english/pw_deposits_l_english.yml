@@ -61,3 +61,53 @@
 
     pw_d_holoarchive: "Holoarchive"
     pw_d_holoarchive_desc: "The ultimate repository for any kind of information, unifying all of the assembled archives we have collected: $pw_d_ark_project$, $pw_d_library_of_babel$, $pw_d_cradle_initiative$, $pw_d_particle_museum$, $pw_d_omnidatabase$, $pw_d_stellarium$, $pw_d_zero_g_exposition$, $pw_d_mechanist_collection$ and $pw_d_meta_architectural_complex$."
+
+    pw_transplanetary_logistics_network.infrastructure: "§BInfrastructure:§!"
+
+    pw_d_infrastructure_food_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Food Distribution"
+    pw_d_infrastructure_food_distribution_desc: "Water, food for organics and minerals for lithoids are all essential for life. This infrastructure, based on the framework provided by the $pw_transplanetary_logistics_network$, ensures that those needs are met most efficiently and without waste."
+
+    pw_d_infrastructure_energy_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Energy Distribution"
+    pw_d_infrastructure_energy_distribution_desc: "The provision of power and network access is necessary for our modern way of live and can be built upon the previous food distribution. This infrastructure, based on the framework provided by the $pw_transplanetary_logistics_network$, ensures that those needs are met most efficiently and without waste."
+
+    pw_d_infrastructure_goods_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Goods Distribution"
+    pw_d_infrastructure_goods_distribution_desc: "Access to domestic goods is vital for the development of a comfortable life, and can be provided via the already established power distribution. This infrastructure, based on the framework provided by the $pw_transplanetary_logistics_network$, ensures that those needs are met most efficiently and without waste."
+
+    pw_d_infrastructure_luxury_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Luxury Distribution"
+    pw_d_infrastructure_luxury_distribution_desc: "By incorporating the $pw_space_elevator$ in our logistics network we can provide luxury and exotic goods for all, along the food, power and basic goods already available. This infrastructure, based on the framework provided by the $pw_transplanetary_logistics_network$, ensures that those needs are met most efficiently and without waste."
+
+    pw_d_infrastructure_medical_posts: "$pw_transplanetary_logistics_network.infrastructure$ Medical Posts"
+    pw_d_infrastructure_medical_posts_desc: "The framework of the $pw_transplanetary_logistics_network$ allows us to settle medical posts for preventive and responsive treatment anywhere in the planet, improving greatly the wellbeing of the population."
+
+    pw_d_infrastructure_habitation_support: "$pw_transplanetary_logistics_network.infrastructure$ Habitation Support"
+    pw_d_infrastructure_habitation_support_desc: "The framework of the $pw_transplanetary_logistics_network$ allows us to develop habitation pods and atmospheric balancing to ensure good living conditions in any climate of the planet, improving greatly the wellbeing of the population."
+
+    pw_d_infrastructure_emergency_services: "$pw_transplanetary_logistics_network.infrastructure$ Emergency Services"
+    pw_d_infrastructure_emergency_services_desc: "The framework of the $pw_transplanetary_logistics_network$ allows us to provide emergency aid everywhere on the planet ro assist any individual or community that may require it, improving greatly the wellbeing of the population."
+
+    pw_d_infrastructure_crisis_responders: "$pw_transplanetary_logistics_network.infrastructure$ Crisis Responders"
+    pw_d_infrastructure_crisis_responders_desc: "The framework of the $pw_transplanetary_logistics_network$ in combination with the mobility of the $pw_guardian_angel$ allows us to dispatch crisis teams to protect the population of the planet in the event of any catastrophe, providing maximum security and comfort for the population."
+
+    pw_d_infrastructure_public_agoras: "$pw_transplanetary_logistics_network.infrastructure$ Public Agoras"
+    pw_d_infrastructure_public_agoras_desc: "Public points of the $pw_transplanetary_logistics_network$ have been organized to stimulate cultural development and communal sentiment of the population. This takes the form of public forums where the citizens can discuss freely their issues, from their day-to-day life or their philosophical conundrums."
+
+    pw_d_infrastructure_local_administration: "$pw_transplanetary_logistics_network.infrastructure$ Local Administration"
+    pw_d_infrastructure_local_administration_desc: "Public points of the $pw_transplanetary_logistics_network$ have been organized to stimulate political development and communal sentiment of the population. This takes the form of public parliaments where local communities are encouraged to self administrate and share the burdens of bureaucracy."
+
+    pw_d_infrastructure_distributed_education: "$pw_transplanetary_logistics_network.infrastructure$ Distributed Education"
+    pw_d_infrastructure_distributed_education_desc: "Public points of the $pw_transplanetary_logistics_network$ have been organized to stimulate educational development and communal sentiment of the population. This takes the form of public schools and universities, where everyone is encouraged to share their expertise, no subject is too banal."
+
+    pw_d_infrastructure_arts_installations: "$pw_transplanetary_logistics_network.infrastructure$ Arts Installations"
+    pw_d_infrastructure_arts_installations_desc: "Public points of the $pw_transplanetary_logistics_network$ have been organized to stimulate artistic development and communal sentiment in conjunction with the $pw_pavilion_of_wonders$. This takes the form of public arts installations where local artists and artistic communities are encouraged to publish and perform their work with full institutional support."
+
+    pw_d_infrastructure_public_markets: "$pw_transplanetary_logistics_network.infrastructure$ Public Markets"
+    pw_d_infrastructure_public_markets_desc: "The $pw_transplanetary_logistics_network$ provides circulation and distribution of custom made goods and services that can better service the needs of our population by tackling unique problems in their communities."
+
+    pw_d_infrastructure_inventions_fair: "$pw_transplanetary_logistics_network.infrastructure$ Inventions Fair"
+    pw_d_infrastructure_inventions_fair_desc: "The $pw_transplanetary_logistics_network$ provides infrastructure to cultivate new inventions, ideas and designs for peculiar problems in varied communities, that anyone can contribute and benefit from. This lets new ideas develop without the hinderance of returning a profit."
+
+    pw_d_infrastructure_cooperatives_manufacturers: "$pw_transplanetary_logistics_network.infrastructure$ Cooperatives Manufacturers"
+    pw_d_infrastructure_cooperatives_manufacturers_desc: "The $pw_transplanetary_logistics_network$ provides cooperative industrial spaces for manufacturing of custom made goods, designs come from the Inventions Fairs and finished products are distributed in Open Markets"
+
+    pw_d_infrastructure_industrial_unions: "$pw_transplanetary_logistics_network.infrastructure$ Industrial Unions"
+    pw_d_infrastructure_industrial_unions_desc: "The $pw_transplanetary_logistics_network$ in conjunction with the $pw_mantle_crucible$ are able to provide full, open and safe factory environments for cooperatives and unions, leading to the manufacture and distribution of more efficient products in every industrial area."

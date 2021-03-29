@@ -176,6 +176,26 @@
     pw_tech_grand_archive_our_lost_secrets: "Our Lost Secrets"
     pw_tech_grand_archive_our_lost_secrets_desc: "Delve into the lost secrets of our empire, collected in the assembling of $pw_building_grand_archive$ and present in the Holoarchive. Our past holds the key for the future."
 
+    # Transplanetary Logistics Network
+    pw_tech_transplanetary_logistics: "Transplanetary Logistics"
+    pw_tech_transplanetary_logistics_desc: "True equality among our population can only be achieved by providing equally to all. To accomplish this a revolutionary distribution system must be developed and implemented."
+
+    pw_tech_egalitarian_distribution_services: "Egalitarian Distribution Services"
+    pw_tech_egalitarian_distribution_services_desc: "Development of distribution services of food, power, network and goods composing the infrastructure of the $pw_transplanetary_logistics_network$ is paramount to improve the wellbeing of our population."
+
+    pw_tech_egalitarian_emergency_services: "Egalitarian Emergency Services"
+    pw_tech_egalitarian_emergency_services_desc: "Development of medical, emergency and crisis responders composing the infrastructure of the $pw_transplanetary_logistics_network$ is paramount to guarantee the safety and proper development of our population."
+
+    pw_tech_egalitarian_cultural_development: "Egalitarian Cultural Development"
+    pw_tech_egalitarian_cultural_development_desc: "Communal development of culture, education and artistic sharing facilities composing the infrastructure of the $pw_transplanetary_logistics_network$ is paramount to guarantee the personal and societal development of our population."
+
+    pw_tech_egalitarian_industrial_development: "Egalitarian Industrial Development"
+    pw_tech_egalitarian_industrial_development_desc: "Communal development and distribution of industrial manufacturing and their design, that compose the infrastructure of the $pw_transplanetary_logistics_network$, is paramount to provide our population with the most pertinent product to their needs while avoiding waste."
+
+    pw_tech_burdens_of_all: "Burdens of All"
+    pw_tech_burdens_of_all_desc: "In each of the planets where the $pw_transplanetary_logistics_network$ was constructed, our population has bound together and shared the burdens of the distribution system, making it much more efficient and satisfying more completely their needs."
+    pw_tech_burdens_of_all_tooltip_title: "Shared Burdens, Shared Wealth"
+    pw_tech_burdens_of_all_tooltip_desc: "§Y-50%§! Resource upkeep for $pw_transplanetary_logistics_network$ §BInfrastructure§! planetary features."
 
 
     #Enigma tech:

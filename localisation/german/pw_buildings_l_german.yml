@@ -118,3 +118,10 @@
     pw_building_grand_archive: "The Grand Archive"
     pw_building_grand_archive_desc: "A collection of collections. A centralized archive for all that can be catalogued, with room for any future development of exploration, history and research. A repository for data, all the data."
     pw_building_grand_archive_tooltip: "Â§SAllows us to start archiving projects.Â§!"
+
+    pw_transplanetary_logistics_network: "Â§MTransplanetary Logistics NetworkÂ§!"
+    pw_building_transplanetary_logistics_network: "Transplanetary Logistics Network"
+    pw_building_transplanetary_logistics_network_desc: "A system of tunnels, roads, tubes, cables and ducts that are able to provide necessary and supplementary resources equally to the population of the planet. Individuals and communities can settle anywhere as the the Network can reach the steepest mountain or the deepest sea."
+    pw_transplanetary_logistics_network_tooltip: "Â§SAllows us to develop planetary infrastructure.Â§!\n"
+    pw_building_transhabitat_logistics_network: "Transhabitat Logistics Network"
+    pw_building_transhabitat_logistics_network_desc: "A system of tunnels, tubes, cables ducts and zero-g passageways that are able to provide necessary and supplementary resources equally to the population of the habitat. Individuals and communities can settle further into space as the the Network can reach the into the cold void."

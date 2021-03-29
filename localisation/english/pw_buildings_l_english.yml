@@ -22,7 +22,7 @@
     pw_galactic_model: "§MAstronomical Model Bureau§!"
     pw_building_galactic_model: "Astronomical Model Bureau"
     pw_building_galactic_model_desc: "A wondrous physical model, representing the entirety of the known galaxy in a reduced - yet colossal - scale. Dynamic and ever-changing, it allows us to chart, maintain and project all of our administrative plans: logistics, military, diplomacy, commerce and any other aspect that needs holographic analysis."
-    pw_building_galactic_model_policy_tooltip: "Allows our empire to select Policies of Expansion.\n"
+    pw_building_galactic_model_policy_tooltip: "§SAllows our empire to select Policies of Expansion.§!\n"
 
     # Panopticon
     pw_panopticon: "§MPanopticon§!"
@@ -33,7 +33,15 @@
     pw_guardian_angel: "§MGuardian Angel§!"
     pw_building_guardian_angel: "Guardian Angel"
     pw_building_guardian_angel_desc: "A floating bastion that watches over our cities. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform. When out of conflict it provides training drills for our recruits."
-    pw_guardian_angel_tooltip: "Creates a Flying Fortress army to defend the planet."
+    pw_guardian_angel_tooltip: "§SCreates a Flying Fortress army to defend the planet.§!\n"
+
+    # Transplanetary Logistics Network
+    pw_transplanetary_logistics_network: "§MTransplanetary Logistics Network§!"
+    pw_building_transplanetary_logistics_network: "Transplanetary Logistics Network"
+    pw_building_transplanetary_logistics_network_desc: "A system of tunnels, roads, tubes, cables and ducts that are able to provide necessary and supplementary resources equally to the population of the planet. Individuals and communities can settle anywhere as the the Network can reach the steepest mountain or the deepest sea."
+    pw_transplanetary_logistics_network_tooltip: "§SAllows us to develop planetary infrastructure.§!\n"
+    pw_building_transhabitat_logistics_network: "Transhabitat Logistics Network"
+    pw_building_transhabitat_logistics_network_desc: "A system of tunnels, tubes, cables ducts and zero-g passageways that are able to provide necessary and supplementary resources equally to the population of the habitat. Individuals and communities can settle further into space as the the Network can reach the into the cold void."
 
     # Research Buildings:
 
