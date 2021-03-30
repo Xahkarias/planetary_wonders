@@ -1140,6 +1140,10 @@ pw_building_transplanetary_logistics_network = {
 		planet_event = { id = pw_wonder.1700 }
 	}
 
+	on_destroy = {
+		planet_event = { id = pw_wonder.1703 }
+	}
+
 	ai_weight = {
 		weight = 50
 		modifier = {
@@ -1361,6 +1365,10 @@ pw_building_transhabitat_logistics_network = {
 
 	on_built = {
 		planet_event = { id = pw_wonder.1700 }
+	}
+
+	on_destroy = {
+		planet_event = { id = pw_wonder.1703 }
 	}
 
 	ai_weight = {

@@ -221,3 +221,14 @@
 
     pw_mod_transplanetary_logistics_network_recently_build: "Equality of Provision"
     pw_mod_transplanetary_logistics_network_recently_build_desc: "The recent construction of a system of equal distribution such as the $pw_transplanetary_logistics_network$ brings hope that the needs of our population shall forever be met. From each according to their ability to each according to their need."
+
+    pw_mod_TLN_productive_leisure: "Productive Leisure"
+    pw_mod_TLN_productive_leisure_desc: "Recent constructions of planetary infrastructure has allowed much of our population to dedicate themselves to individual development and the pursue of culture and science by reducing work hours."
+    pw_mod_TLN_path_to_progress: "Path To Progress"
+    pw_mod_TLN_path_to_progress_desc: "Inspired and fulled by developments of planetary infrastructure, that are able to provide for the population, many of of workers have taken to push themselves in building the path to progress, in detriment of their free time."
+    pw_mod_TLN_mutual_aid: "Mutual Aid"
+    pw_mod_TLN_mutual_aid_desc: "The developments of planetary infrastructure has inspired our population to broaden their communal senses and amplify their ingroup, leading to aid exchange between our pops that benefit all."
+    pw_mod_TLN_inspired_militia: "Inspired Militia"
+    pw_mod_TLN_inspired_militia_desc: "Many citizens, inspired by the defense systems installed in the infrastructure, have started training in organized militia along side the planetary defense armies, determined to defend their communities in case of invasion."
+    pw_mod_TLN_inspiring_peace: "Inspiring Peace"
+    pw_mod_TLN_inspiring_peace_desc: "The construction of egalitarian infrastructure has brought upon the planet a period of peace and stability, where less and less people see sense or purpose in committing crimes and communities thrive together."

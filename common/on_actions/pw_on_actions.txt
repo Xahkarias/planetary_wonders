@@ -23,8 +23,9 @@ on_tech_increased = {
 # This = Planet
 on_building_demolished = {
 	events = {
-		pw_wonder.1204
-		pw_wonder.1310
+		pw_wonder.1204 #Guardian Angel
+		pw_wonder.1310 #Mantle Crucible
+		pw_wonder.1703 #Transplanetary Logistics Network
 	}
 }
 
@@ -32,8 +33,9 @@ on_building_demolished = {
 # This = Planet
 on_building_replaced = {
 	events = {
-		pw_wonder.1204
-		pw_wonder.1310
+		pw_wonder.1204 #Guardian Angel
+		pw_wonder.1310 #Mantle Crucible
+		pw_wonder.1703 #Transplanetary Logistics Network
 	}
 }
 

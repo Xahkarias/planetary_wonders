@@ -5667,6 +5667,118 @@ planet_event = {
 	}
 }
 
+#When the TLN is destroyed/replaces -> demolish Infrastructure
+planet_event = {
+	id = pw_wonder.1703
+	title = pw_wonder.1703.name
+	desc = pw_wonder.1703.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_collapsing_ruins
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		OR = {
+			last_building_changed = pw_building_transplanetary_logistics_network
+			last_building_changed = pw_building_transhabitat_logistics_network
+		}
+		NOR = { #Does not has the building:
+			has_building = pw_building_transplanetary_logistics_network
+			has_building = pw_building_transhabitat_logistics_network
+		}
+		OR = { #But has one of the deposits:
+			has_deposit = pw_d_infrastructure_food_distribution
+			has_deposit = pw_d_infrastructure_energy_distribution
+			has_deposit = pw_d_infrastructure_goods_distribution
+			has_deposit = pw_d_infrastructure_luxury_distribution
+			has_deposit = pw_d_infrastructure_medical_posts
+			has_deposit = pw_d_infrastructure_habitation_support
+			has_deposit = pw_d_infrastructure_emergency_services
+			has_deposit = pw_d_infrastructure_crisis_responders
+			has_deposit = pw_d_infrastructure_public_agoras
+			has_deposit = pw_d_infrastructure_local_administration
+			has_deposit = pw_d_infrastructure_distributed_education
+			has_deposit = pw_d_infrastructure_arts_installations
+			has_deposit = pw_d_infrastructure_public_markets
+			has_deposit = pw_d_infrastructure_inventions_fair
+			has_deposit = pw_d_infrastructure_cooperatives_manufacturers
+			has_deposit = pw_d_infrastructure_industrial_unions
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = { has_deposit = pw_d_infrastructure_food_distribution }
+			remove_deposit = pw_d_infrastructure_food_distribution
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_energy_distribution }
+			remove_deposit = pw_d_infrastructure_energy_distribution
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_goods_distribution }
+			remove_deposit = pw_d_infrastructure_goods_distribution
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_luxury_distribution }
+			remove_deposit = pw_d_infrastructure_luxury_distribution
+		}
+		if = {
+			limit = { has_deposit = pw_d_infrastructure_medical_posts }
+			remove_deposit = pw_d_infrastructure_medical_posts
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_habitation_support }
+			remove_deposit = pw_d_infrastructure_habitation_support
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_emergency_services }
+			remove_deposit = pw_d_infrastructure_emergency_services
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_crisis_responders }
+			remove_deposit = pw_d_infrastructure_crisis_responders
+		}
+		if = {
+			limit = { has_deposit = pw_d_infrastructure_public_agoras }
+			remove_deposit = pw_d_infrastructure_public_agoras
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_local_administration }
+			remove_deposit = pw_d_infrastructure_local_administration
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_distributed_education }
+			remove_deposit = pw_d_infrastructure_distributed_education
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_arts_installations }
+			remove_deposit = pw_d_infrastructure_arts_installations
+		}
+		if = {
+			limit = { has_deposit = pw_d_infrastructure_public_markets }
+			remove_deposit = pw_d_infrastructure_public_markets
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_inventions_fair }
+			remove_deposit = pw_d_infrastructure_inventions_fair
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_cooperatives_manufacturers }
+			remove_deposit = pw_d_infrastructure_cooperatives_manufacturers
+		}
+		else_if = {
+			limit = { has_deposit = pw_d_infrastructure_industrial_unions }
+			remove_deposit = pw_d_infrastructure_industrial_unions
+		}
+	}
+}
+
 #When any Infrastructure development is completed:
 planet_event = {
 	id = pw_wonder.1705
@@ -5687,6 +5799,352 @@ planet_event = {
 				type = name
 				localization = PLANET
 				scope = ROOT
+			}
+		}
+		planet_event = {
+			id = pw_wonder.1706
+			days = 30
+			random = 30
+		}
+	}
+}
+
+#After Development random events:
+planet_event = {
+	id = pw_wonder.1706
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOT = { has_planet_flag = pw_TLN_event }
+	}
+
+	immediate = {
+		set_timed_planet_flag = {
+			flag = pw_TLN_event
+			days = @pw_20years
+		}
+		random_list = {
+			20 = {} #Mostly nothing happens
+			1 = {
+				planet_event = { id = pw_wonder.1707 }
+			}
+			1 =  {
+				planet_event = { id = pw_wonder.1708 }
+			}
+			1 = {
+				planet_event = { id = pw_wonder.1709 }
+			}
+			1 =  {
+				modifier = {
+					factor = 2
+					owner = {
+						is_militarist = yes
+					}
+				}
+				planet_event = { id = pw_wonder.1710 }
+			}
+			1 = {
+				modifier = {
+					factor = 2
+					owner = {
+						is_pacifist = yes
+					}
+				}
+				planet_event = { id = pw_wonder.1711 }
+			}
+			1 = {
+				planet_event = { id = pw_wonder.1712 }
+			}
+		}
+	}
+}
+
+#The right to be lazy
+planet_event = {
+	id = pw_wonder.1707
+	title = pw_wonder.1707.name
+	desc = pw_wonder.1707.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_announcement
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_TLN_lazy }}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_TLN_lazy
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1707.a
+		add_modifier = {
+			modifier = pw_mod_TLN_productive_leisure
+			days = @pw_10years
+		}
+	}
+
+	#Influence
+	option = {
+		name = pw_wonder.1707.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+	}
+}
+
+#Path to progress
+planet_event = {
+	id = pw_wonder.1708
+	title = pw_wonder.1708.name
+	desc = pw_wonder.1708.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_announcement
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_TLN_progress }}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_TLN_progress
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1708.a
+		add_modifier = {
+			modifier = pw_mod_TLN_path_to_progress
+			days = @pw_10years
+		}
+	}
+
+	#Unity
+	option = {
+		name = pw_wonder.1708.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+}
+
+#Mutual Aid
+planet_event = {
+	id = pw_wonder.1709
+	title = pw_wonder.1709.name
+	desc = pw_wonder.1709.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_announcement
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_TLN_aid }}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_TLN_aid
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1709.a
+		add_modifier = {
+			modifier = pw_mod_TLN_mutual_aid
+			days = @pw_10years
+		}
+	}
+}
+
+#Inspired Militia
+planet_event = {
+	id = pw_wonder.1710
+	title = pw_wonder.1710.name
+	desc = pw_wonder.1710.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_announcement
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_TLN_militia }}
+		OR = {
+			has_deposit = pw_d_infrastructure_crisis_responders
+			has_deposit = pw_d_infrastructure_emergency_services
+			has_deposit = pw_d_infrastructure_habitation_support
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_TLN_militia
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1710.a
+		add_modifier = {
+			modifier = pw_mod_TLN_inspired_militia
+			days = @pw_10years
+		}
+	}
+
+	#Influence
+	option = {
+		name = pw_wonder.1710.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+	}
+}
+
+#Inspired peace
+planet_event = {
+	id = pw_wonder.1711
+	title = pw_wonder.1711.name
+	desc = pw_wonder.1711.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_announcement
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_TLN_peace }}
+		OR = {
+			has_deposit = pw_d_infrastructure_public_agoras
+			has_deposit = pw_d_infrastructure_distributed_education
+			has_deposit = pw_d_infrastructure_local_administration
+			has_deposit = pw_d_infrastructure_arts_installations
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_TLN_peace
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1711.a
+		add_modifier = {
+			modifier = pw_mod_TLN_inspiring_peace
+			days = @pw_10years
+		}
+	}
+}
+
+#Surprising Inventions
+planet_event = {
+	id = pw_wonder.1712
+	title = pw_wonder.1712.name
+	desc = pw_wonder.1712.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_announcement
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_TLN_inventions }}
+		OR = {
+			has_deposit = pw_d_infrastructure_public_agoras
+			has_deposit = pw_d_infrastructure_distributed_education
+			has_deposit = pw_d_infrastructure_inventions_fair
+			has_deposit = pw_d_infrastructure_public_markets
+			has_deposit = pw_d_infrastructure_arts_installations
+			has_deposit = pw_d_infrastructure_cooperatives_manufacturers
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_TLN_inventions
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1712.a
+		owner = {
+			add_random_research_option = {
+				add_progress = 0.075
+				tier < 4
+				fail_effects = {
+					add_monthly_resource_mult = {
+						resource = society_research
+						value = @tier2researchreward
+						min = @tier2researchmin
+						max = @tier2researchmax
+					}
+					add_monthly_resource_mult = {
+						resource = physics_research
+						value = @tier2researchreward
+						min = @tier2researchmin
+						max = @tier2researchmax
+					}
+					add_monthly_resource_mult = {
+						resource = engineering_research
+						value = @tier2researchreward
+						min = @tier2researchmin
+						max = @tier2researchmax
+					}
+				}
 			}
 		}
 	}

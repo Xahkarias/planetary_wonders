@@ -12,6 +12,7 @@
 @pw_EdictPerpetual = -1
 
 #Days to Years Conversion:
+@pw_20years = 7200
 @pw_10years = 3600
 @pw_5years  = 1800
 @pw_2years = 720
