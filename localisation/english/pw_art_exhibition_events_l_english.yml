@@ -108,7 +108,7 @@
 
     #General Events (only with Museum of the Grotesque):
     pw_art_exhibition.509.name: "Attack of Outrage"
-    pw_art_exhibition.509.desc: "On the latest art exhibition a foreign work of \"art\" was exposed in a section dedicated to the falls of morality and as examples of degeneracy. It appears as the exposition generated the visceral reaction we expected when constructed the Museum of the Grotesque, as one of the attendees has stabbed and slashed one of the foreign tapestry in exposition claiming it was an insult to our morality. The attendee has fled into the crowd and could not be apprehended for questioning, not that much effort was put into capturing them. But now we a destroyed wall carpet and two options: either we ourselves repair the piece and maintain the exhibition as it was before, or we let the piece as it is, as an assertion of our cultural hegemony."
+    pw_art_exhibition.509.desc: "On the latest art exhibition a foreign work of \"art\" was exposed in a section dedicated to the falls of morality and as examples of degeneracy. It appears as the exposition generated the visceral reaction we expected when constructed the Museum of the Grotesque, as one of the attendees has stabbed and slashed one of the foreign tapestry in exposition claiming it was an insult to our morality. The attendee has fled into the crowd and could not be apprehended for questioning, not that much effort was put into capturing them. But now we have a destroyed wall carpet and two options: either we ourselves repair the piece and maintain the exhibition as it was before, or we let the piece as it is, as an assertion of our cultural hegemony."
     pw_art_exhibition.509.a: "Replace the piece."
     pw_art_exhibition.509.b: "Leave it as an example."
 
@@ -130,7 +130,7 @@
 
     #Militarist Events (Warrior Culture):
     pw_art_exhibition.516.name: "Ornate Arms"
-    pw_art_exhibition.516.desc: "As our military culture was the focus of the latest art exhibition, many artists collaborated to redesign our army weapons, vehicles and navy ships, representing our values as we launch into battle. Now many of our commanding officers shall land assault bearing decorative pre-industrial weapons, to inspire all our troops."
+    pw_art_exhibition.516.desc: "As our military culture was the focus of the latest art exhibition, many artists collaborated to redesign our army weapons, vehicles and navy ships, representing our values as we launch into battle. Now many of our commanding officers shall land assaults bearing decorative pre-industrial weapons, to inspire all our troops."
 
     #Militarist Events (Nationalistic Zeal):
     pw_art_exhibition.517.name: "Art of Speechcraft"
@@ -157,8 +157,8 @@
     pw_art_exhibition.525.desc: "The latest art exhibition was flooded by new pieces detailing agrarian utopias in a myriad of mediums: paintings of pastoral fields, placid and quiet games set on the countryside, poems about afternoons as the color of water trough leaves. This left much of our population in search of landscapes like the ones depicted which generally increased immigration."
 
     #Pacifist Events (Agrarian Idyll):
-    pw_art_exhibition.526.name: "Cottage Core Fever"
-    pw_art_exhibition.526.desc: "Many new interior decor, dresses and architecture displayed in the latest art exhibition represented a rural aesthetics revival and had dominated the fair. This recreated an idyllic zeitgeist and produced a new urban exodus towards our rural planets."
+    pw_art_exhibition.526.name: "Cottagecore Fever"
+    pw_art_exhibition.526.desc: "Many new interior decor, dresses and architecture displayed in the latest art exhibition represented a rural aesthetics revival and dominated the fair. This recreated an idyllic zeitgeist and produced a new urban exodus towards our rural planets."
 
     #Spiritualist Events:
     pw_art_exhibition.530.name: "Religious Sculpture Study"
@@ -189,7 +189,7 @@
     pw_art_exhibition.541.desc: "By the end of our latest art exhibition, a new wave of synthesized music and tunes has resurged with the materialist theme prevalence. Now thats is the new popular genre that our population can listen to everywhere."
 
     pw_art_exhibition.542.name: "Anthropophagy Manifesto"
-    pw_art_exhibition.542.desc: "The highlight of the latest art exhibition was the publishing and spread of a text called \"Anthropophagy Manifesto\" where the author, a vanguardist artist, studies and embraces the cycles of reappropriation of artistic themes, characters and motifs. This has solidified our understanding of art production and pushed many artists to more outlandish works, reaching a great part of the galaxy, one way of another."
+    pw_art_exhibition.542.desc: "The highlight of the latest art exhibition was the publishing and spread of a text called \"Anthropophagy Manifesto\" where the author, a vanguardist artist, studies and embraces the cycles of reappropriation of artistic themes, characters and motifs. This has solidified our understanding of art production and pushed many artists to more outlandish works, reaching a great part of the galaxy, one way or another."
 
     pw_art_exhibition.543.name: "Science Fiction Installation"
     pw_art_exhibition.543.desc: "The latest art exhibition has seen a great installation of popular science fiction worlds that brought much more attention to the operations and mechanics of this stories, bringing new ideas to current technologies being researched."
@@ -229,7 +229,7 @@
     pw_art_exhibition.563.desc: "A widespread and well received idea in the latest art exhibition has bore fruits today. Many new installations of urban art were constructed all over the country, such as statues, graffiti and projection shows in famous landmarks. These monuments are meant to represent the collaborative work of all our population in the building of the future and were executed using a combination of technical knowledge from many different artisans and engineers."
 
     pw_art_exhibition.564.name: "Political Art"
-    pw_art_exhibition.564.desc: "A focus of the latest art exhibition was on the express political aspect of art, such as seeking governmental change withing the machinations of fiction and the explorations of systemic issues in multiplayer games, where all this issues can correlate to challenges in game. This has lead to further interest in the relationship between by one of our scientists."
+    pw_art_exhibition.564.desc: "A focus of the latest art exhibition was on the express political aspect of art, such as seeking governmental change withing the machinations of fiction and the explorations of systemic issues in multiplayer games, where all this issues can correlate to challenges in game. This has lead to further interest in the relationship between arts and politics by one of our scientists."
 
     #Egalitarian Events (Shared Burdens):
     pw_art_exhibition.565.name: "Shared Wealth"
@@ -243,7 +243,7 @@
     pw_art_exhibition.571.desc: "The latest art exhibition saw a sharp focus on discreet marketing in media pieces, which instilled the values of that media into the products. This in turn, created more crave for merchandise than their usefulness would suggest."
 
     pw_art_exhibition.572.name: "Consumer Addiction"
-    pw_art_exhibition.572.desc: "The latest art exhibition saw lengthy studies in product and media design that manipulate natural and socials behaviors related to addiction in order to sell more products adn trap consumers in ongoing services."
+    pw_art_exhibition.572.desc: "The latest art exhibition saw lengthy studies in product and media design that manipulate natural and socials behaviors related to addiction in order to sell more products and trap consumers in ongoing services."
 
     pw_art_exhibition.573.name: "Pop Industry"
     pw_art_exhibition.573.desc: "The latest art exhibition saw the establishment and popularity of a new brand of pop industries, complete with its own aesthetic and idols. This shall provide great entertainment for the new fans, and great profits for the new CEO."
@@ -263,7 +263,7 @@
 
     #Fanatic Purifier Events:
     pw_art_exhibition.590.name: "Scientific Xenophobia"
-    pw_art_exhibition.590.desc: "The latest exhibition of the purest arts ends today. This edition has seen a selected section on xeno biology and an exposition on desiccated samples of purified creatures from our history. That kind of exposition has brought together our most regarded phrenologists and eugenists in an healthy debate over biological supremacy and general purification of sentient beings. This contribute to asserting our values and pushing more scientists onto the pursuit of those themes."
+    pw_art_exhibition.590.desc: "The latest exhibition of the purest arts ends today. This edition has seen a selected section on xeno biology and an exposition on desiccated samples of purified creatures from our history. That kind of exposition has brought together our most regarded phrenologists and eugenists in a healthy debate over biological supremacy and general purification of sentient beings. This contribute to asserting our values and pushing more scientists onto the pursuit of those themes."
 
     #Barbaric Despoilers Events:
     pw_art_exhibition.600.name: "Loot Appraising"
