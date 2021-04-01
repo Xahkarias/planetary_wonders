@@ -1,8 +1,10 @@
 ﻿l_english:
 
     #Scripted triggers tooltips:
-    pw_holy_reliquary_leave_tooltip: "You can return to the $pw_holy_reliquary$ via edict or £decision£ planetary decision where it is build."
+    pw_holy_reliquary_leave_tooltip: "You can return to the $pw_holy_reliquary$ via Edict or £decision£ Planetary Decision where it is build."
     pw_holy_reliquary_return_to_hub_tooltip: "Return to the Holy Reliquary hub."
+    pw_holy_reliquary.finish_more_traditions: "Finish one more tradition tree to sanctify another artifact."
+    pw_holy_reliquary.has_sanctified_all_relics: "Every Artifact has been sanctified."
 
     #Enter the Holy Reliquary (initial):
     pw_holy_reliquary.1.name: "Holy Reliquary"
@@ -103,3 +105,26 @@
     pw_holy_reliquary.750.a: "Canonize the texts."
     pw_holy_reliquary.750.b: "Burn the heretic writings."
     pw_holy_reliquary.750.c: "They will be safer with the [THIS.GetRulerTitle]."
+
+    #Appoint Relic Keeper:
+    pw_holy_reliquary.1.appoint_relic_keeper: "Appoint Relic Keeper"
+    pw_holy_reliquary.800.name: "Keeper of Relics"
+    pw_holy_reliquary.800.desc: "The harmony of our $pw_holy_reliquary$ is almost fulfilled with all the artifacts we have sanctified. Each shard of our history, each piece of history each component of our philosophy must be finally guarded by a trusted theologian. Holy the most versed in our myths and legend, the most pious and the most holy of our devotees in the Reliquary shall be chosen to maintain and carry forward the spirit of our faith."
+    pw_holy_reliquary.800.a.tooltip: "$pw_holy_reliquary$: §G+1§! $mod_job_pw_relic_keeper_add$."
+
+    #Venerate Tradition:
+    pw_holy_reliquary.1.venerate_tradition: "Venerate Our Tradition"
+    pw_holy_reliquary.900.name: "Venerable Traditions"
+    pw_holy_reliquary.900.desc: "As the final artifact of our Reliquary is sanctified we can finally, holistically, understand how the lessons from the past, that form the traditions we cultivate, enlighten the path to the future. There are mysteries that need not to be understood, but we must have faith in the answers provided.\n\nWe can open the $pw_holy_reliquary$ to our priests and researchers and let them encounter the way to better organize our government, our people and our faith in the mystic histories it holds."
+    pw_holy_reliquary.900.a: "Let faith guide us to the future."
+
+    #Change Tradition Philosophy
+    pw_holy_reliquary.1.change_tradition_philosophy: "Change Tradition Philosophy"
+    pw_holy_reliquary.1.change_tradition_philosophy.tooltip: "Investigate the ways we correlate tradition with the artifacts we sanctify.\n§YIf you are using mods that change, add or remove traditions, it is better to use the Alternate Tradition Philosophy option.§!"
+    pw_holy_reliquary.1000.name: "Tradition of Philosophy"
+    pw_holy_reliquary.1000.desc: "The way we face the past is ever-changing with the way the present mutates and evolves. So too the way we draw lessons and strength from that past changes, as we tread into the future. There is no reason to keep a close mind for some aspects of our traditions, specially when the relics we sanctify are supposed to bring light to present.\n\nHere we can change the way the artifacts we seek relate to our own accomplishments. We can opt to make them interlocked with our advancements, and let each artifact correlate with each specific unlocked tradition, as it was intended. Alternatively we can free the artifacts from those burdens, and unlock a new one with any new tradition we may have finished adopting."
+    pw_holy_reliquary.1000.a: "Use the Original Tradition Philosophy."
+    pw_holy_reliquary.1000.a.tooltip: "With this option, in order to sanctify an artifact we must finish the respective tradition tree first."
+    pw_holy_reliquary.1000.b: "Use the Alternate Tradition Philosophy."
+    pw_holy_reliquary.1000.b.tooltip: "With this option, we may sanctify as much artifacts as traditions trees we have finished, regardless of which tree were completed.\n§YRecommended option if you are using mods that change, add or remove traditions.§!"
+    pw_holy_reliquary.1000.tooltip: "This option is already selected."

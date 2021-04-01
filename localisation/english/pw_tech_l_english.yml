@@ -139,6 +139,10 @@
     pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"
     pw_tech_spiritual_artifacts_studies_desc: "Our culture is filled with sacral and ceremonial objects with great spiritual value invested into them. With our arrival onto the galactic scene, these relics were mostly forgotten, but now their true power - be it spiritual, social or actual - can be revived if they are sanctified once again."
 
+    # Holy Reliquary:
+    pw_tech_holy_reliquary_venerable_tradition: "Venerable Tradition"
+    pw_tech_holy_reliquary_venerable_tradition_desc: "After exploring the origins and legends of our relics housed in the $pw_holy_reliquary$ our theologians can find new meaning for the traditions and morals of our empire. They are able to find guidance for the future in the lessons of the past, that can completely change the present of our population."
+
     # The Grand Archive:
     pw_tech_materialist_archiving: "Materialist Archiving"
     pw_tech_materialist_archiving_desc: "We have lived trough enough of History to understand that it repeats itself, that it only surprises those who don't study it and that there is no room for divine manipulation. To continue these studies we must collect and preserve the the History of Everything in a single, modular Archive."

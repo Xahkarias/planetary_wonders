@@ -140,3 +140,11 @@
     mod_job_pw_master_archivist_add: "$job_pw_master_archivist$ Jobs"
     mod_job_pw_master_archivist_per_pop: "Â§G+1Â§! $job_pw_master_archivist$ Job per $VALUE$ Pops"
     mod_job_pw_master_archivist_per_pop_short: "\nÂ§G+1Â§! Â£job_researcherÂ£ per $VALUE$ Â£popÂ£"
+
+    job_pw_relic_keeper: "Relic Keeper"
+    job_pw_relic_keeper_plural: "Relic Keepers"
+    job_pw_relic_keeper_desc: "Only the most wise and dedicated theologians can become $job_pw_relic_keeper_plural$, each extremely well versed in our traditions and in the legends of the relics housed in the $pw_building_holy_reliquary$."
+    job_pw_relic_keeper_effect_desc: "Â£job_researcherÂ£ $job_pw_relic_keeper_plural$ turn Â£consumer_goodsÂ£ Â§Y$consumer_goods$Â§! into Â£societyÂ£ Â§Y$society_research$Â§!, Â£mod_planet_stability_addÂ£ Â§Y$PLANET_STABILITY_TITLE$Â§! and Â£unityÂ£ Â§Y$unity$Â§!."
+    mod_job_pw_relic_keeper_add: "$job_pw_relic_keeper$ Jobs"
+    mod_job_pw_relic_keeper_per_pop: "Â§G+1Â§! $job_pw_relic_keeper$ Job per $VALUE$ Pops"
+    mod_job_pw_relic_keeper_per_pop_short: "\nÂ§G+1Â§! Â£job_researcherÂ£ per $VALUE$ Â£popÂ£"

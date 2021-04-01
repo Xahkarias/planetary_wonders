@@ -58,8 +58,13 @@ country_event = {
 			NOT = { has_country_flag = pw_holy_reliquary_sanctified_scepter }
 		}
 		allow = {
-			pw_has_unity_to_sanctify_artifact = yes
-			has_tradition = tr_domination_finish
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				has_tradition = tr_domination_finish
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
 		}
 		hidden_effect = {
 			country_event = {
@@ -87,8 +92,13 @@ country_event = {
 			NOT = { has_country_flag = pw_holy_reliquary_sanctified_codex }
 		}
 		allow = {
-			pw_has_unity_to_sanctify_artifact = yes
-			has_tradition = tr_discovery_finish
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				has_tradition = tr_discovery_finish
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
 		}
 		hidden_effect = {
 			country_event = {
@@ -105,6 +115,56 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.705
+			}
+		}
+	}
+
+	#Appoint Relic Keeper (all relics):
+	option = {
+		name = pw_holy_reliquary.1.appoint_relic_keeper
+
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_relic_keeper_appointed }
+		}
+
+		allow = {
+			pw_has_sanctified_all_relics = yes
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.800
+			}
+		}
+	}
+
+	#Venerate Tradition (all relics):
+	option = {
+		name = pw_holy_reliquary.1.venerate_tradition
+
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_venerated_tradition }
+		}
+
+		allow = {
+			pw_has_sanctified_all_relics = yes
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.900
+			}
+		}
+	}
+
+	#Change Tradition Philosophy
+	option = {
+		name = pw_holy_reliquary.1.change_tradition_philosophy
+		custom_tooltip = pw_holy_reliquary.1.change_tradition_philosophy.tooltip
+
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.1000
 			}
 		}
 	}
@@ -862,5 +922,150 @@ country_event = {
 		ruler = {
 			add_experience = 300
 		}
+	}
+}
+
+#Appoint Relic Keeper
+country_event = {
+	id = pw_holy_reliquary.800
+	title = pw_holy_reliquary.800.name
+	desc = pw_holy_reliquary.800.desc
+	picture = GFX_evt_psionics
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+
+	#Appoint
+	option = {
+		name = pw_holy_reliquary.1.appoint_relic_keeper
+		custom_tooltip = pw_holy_reliquary.800.a.tooltip
+		allow = {
+			has_resource = {
+				type = influence
+				amount = 50
+			}
+		}
+		add_resource = {
+			influence = -50
+		}
+		hidden_effect = {
+			set_country_flag = pw_holy_reliquary_relic_keeper_appointed
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Venerate Tradition
+country_event = {
+	id = pw_holy_reliquary.900
+	title = pw_holy_reliquary.900.name
+	desc = pw_holy_reliquary.900.desc
+	picture = GFX_evt_unity_symbol
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Tech
+	option = {
+		name = pw_holy_reliquary.900.a
+		allow = {
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		add_research_option = pw_tech_holy_reliquary_venerable_tradition
+		hidden_effect = {
+			set_country_flag = pw_holy_reliquary_venerated_tradition
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Change Tradition Philosophy
+country_event = {
+	id = pw_holy_reliquary.1000
+	title = pw_holy_reliquary.1000.name
+	desc = pw_holy_reliquary.1000.desc
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+
+	#Original
+	option = {
+		name = pw_holy_reliquary.1000.a
+		custom_tooltip = pw_holy_reliquary.1000.a.tooltip
+		allow = {
+			custom_tooltip = {
+				fail_text = pw_holy_reliquary.1000.tooltip
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+			}
+			has_resource = {
+				type = influence
+				amount = 25
+			}
+		}
+		add_resource = {
+			influence = 25
+		}
+		hidden_effect = {
+			remove_country_flag = pw_holy_reliquary_alternate_traditions
+			country_event = { id = pw_holy_reliquary.1000 }
+		}
+	}
+
+	#Alternative
+	option = {
+		name = pw_holy_reliquary.1000.b
+		custom_tooltip = pw_holy_reliquary.1000.b.tooltip
+		allow = {
+			custom_tooltip = {
+				fail_text = pw_holy_reliquary.1000.tooltip
+				NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }
+			}
+			has_resource = {
+				type = influence
+				amount = 25
+			}
+		}
+		add_resource = {
+			influence = 25
+		}
+		hidden_effect = {
+			set_country_flag = pw_holy_reliquary_alternate_traditions
+			country_event = { id = pw_holy_reliquary.1000 }
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
 	}
 }

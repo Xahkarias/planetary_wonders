@@ -266,6 +266,95 @@ pw_has_unity_to_sanctify_artifact = {
 }
 
 #Scope: Country
+pw_alternate_tradition_can_sanctify_relic = {
+	custom_tooltip = {
+		fail_text = pw_holy_reliquary.finish_more_traditions
+		if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 0
+				}
+			}
+			num_ascension_perk_slots > 0
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 1
+				}
+			}
+			num_ascension_perk_slots > 1
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 2
+				}
+			}
+			num_ascension_perk_slots > 2
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 3
+				}
+			}
+			num_ascension_perk_slots > 3
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 4
+				}
+			}
+			num_ascension_perk_slots > 4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 5
+				}
+			}
+			num_ascension_perk_slots > 5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 6
+				}
+			}
+			num_ascension_perk_slots > 6
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_sanctified_artifacts_count
+					value = 7
+				}
+			}
+			num_ascension_perk_slots > 7
+		}
+	}
+}
+
+#Scope: Country
+pw_has_sanctified_all_relics = {
+	custom_tooltip = {
+		text = pw_holy_reliquary.has_sanctified_all_relics
+		has_country_flag = pw_holy_reliquary_sanctified_mirror
+		has_country_flag = pw_holy_reliquary_sanctified_scepter
+		has_country_flag = pw_holy_reliquary_sanctified_codex
+	}
+}
+
+#Scope: Country
 pw_has_unity_to_assemble_archive = {
 	conditional_tooltip = {
 		trigger = {

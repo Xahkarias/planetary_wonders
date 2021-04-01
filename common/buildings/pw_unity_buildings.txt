@@ -1766,6 +1766,20 @@ pw_building_holy_reliquary = {
 
 	#Reminder: Cannot be Gestalt and must be spiritualist!
 
+	#Relic Keeper
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+			owner = {
+				has_country_flag = pw_holy_reliquary_relic_keeper_appointed
+			}
+		}
+		modifier = {
+			job_pw_relic_keeper_add = 1
+		}
+	}
+
 	#Priests
 	triggered_planet_modifier = {
 		potential = {
@@ -1774,7 +1788,7 @@ pw_building_holy_reliquary = {
 		}
 		modifier = {
 			job_high_priest_add = @pw_building_ruler_jobs
-			job_priest_add = 8
+			job_priest_add = 6
 		}
 	}
 
