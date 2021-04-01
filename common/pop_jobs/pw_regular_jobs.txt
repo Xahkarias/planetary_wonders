@@ -320,13 +320,12 @@ pw_domed_city_test_subject = {
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
-		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
 	}
 
 	possible = {
-		pw_sentient_worker_job_check_trigger = yes #Only sentient machines
+		complex_worker_job_check_trigger = yes
 	}
 
 	resources = {
