@@ -139,7 +139,13 @@
     pw_tech_spiritual_artifacts_studies: "Spiritual Artifacts Studies"
     pw_tech_spiritual_artifacts_studies_desc: "Our culture is filled with sacral and ceremonial objects with great spiritual value invested into them. With our arrival onto the galactic scene, these relics were mostly forgotten, but now their true power - be it spiritual, social or actual - can be revived if they are sanctified once again."
 
-    # Holy Reliquary:
+    pw_tech_holy_reliquary_inward_expansion: "Inward Expansion"
+    pw_tech_holy_reliquary_inward_expansion_desc: "Reflections of the $pw_holy_reliquary.stargazing_mirror$ have revealed us holy truths of our developments: the state of the outside echos inside. We must model our cities and planets as we wish it to reflect within us."
+
+    pw_tech_holy_reliquary_revealed_destiny: "Revealed Destiny"
+    pw_tech_holy_reliquary_revealed_destiny_desc: "We must answer the call of our holy fate, revealed to us in the placid water of the $pw_holy_reliquary.stargazing_mirror$, and wield our rightful dominion over the stars."
+
+    # Holy Reliquary (final):
     pw_tech_holy_reliquary_venerable_tradition: "Venerable Tradition"
     pw_tech_holy_reliquary_venerable_tradition_desc: "After exploring the origins and legends of our relics housed in the $pw_holy_reliquary$ our theologians can find new meaning for the traditions and morals of our empire. They are able to find guidance for the future in the lessons of the past, that can completely change the present of our population."
 

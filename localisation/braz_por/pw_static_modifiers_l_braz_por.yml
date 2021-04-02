@@ -232,3 +232,12 @@
     pw_mod_TLN_inspired_militia_desc: "Many citizens, inspired by the defense systems installed in the infrastructure, have started training in organized militia along side the planetary defense armies, determined to defend their communities in case of invasion."
     pw_mod_TLN_inspiring_peace: "Inspiring Peace"
     pw_mod_TLN_inspiring_peace_desc: "The construction of egalitarian infrastructure has brought upon the planet a period of peace and stability, where less and less people see sense or purpose in committing crimes and communities thrive together."
+
+    pw_holy_reliquary_expansion_reflective_meditation: "Reflective Meditation"
+    pw_holy_reliquary_expansion_reflective_meditation_desc: "The population of the planet is commonly taken by sudden meditation, which leads them to better preserve themselves, search of self improvement and consider new ideological positions. This is thought to be provoked by the sanctification fo the $pw_holy_reliquary.stargazing_mirror$."
+    pw_holy_reliquary_expansion_peregrination_pathways: "Peregrination Pathways"
+    pw_holy_reliquary_expansion_peregrination_pathways_desc: "Is has become a tradition that the spiritualist people of the country visit this planet at least once in their lifetime, bringing many to stay. A new interest in peregrination is thought to be provoked by the sanctification fo the $pw_holy_reliquary.stargazing_mirror$."
+    pw_holy_reliquary_expansion_introspective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Introspective Gaze"
+    pw_holy_reliquary_expansion_introspective_gaze_desc: "The $pw_holy_reliquary.stargazing_mirror$ inspires us to look inward, to reflect upon our place in the galaxy and a wave of reflective thought spreads in our population."
+    pw_holy_reliquary_expansion_extrospective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Extrospective Gaze"
+    pw_holy_reliquary_expansion_extrospective_gaze_desc: "The $pw_holy_reliquary.stargazing_mirror$ inspires us to look outward, there is a growing feeling that the exploration age will never be over, that there is always more to see out in the galaxy, that our place is where the novelty is."

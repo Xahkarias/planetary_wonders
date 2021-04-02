@@ -225,6 +225,22 @@ pw_mod_TLN_inspiring_peace = {
 	planet_stability_add = 5
 }
 
+#Stargazing Mirror effect: Reflective Meditation
+pw_holy_reliquary_expansion_reflective_meditation = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_growth_speed = 0.10
+	pop_ethics_shift_speed_mult = 0.25
+}
+
+#Stargazing Mirror effect: Peregrination Pathways
+pw_holy_reliquary_expansion_peregrination_pathways = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_expel_population.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_immigration_pull_mult = 0.20
+	pop_growth_from_immigration = 0.20
+}
+
 #Country modifiers:
 pw_mod_galactic_model_anomaly_sensor = {
 	ship_hyperlane_range_add = 5
@@ -235,14 +251,28 @@ pw_mod_galactic_model_anomaly_sensor = {
 
 #Holy Reliquary Artifacts Modifiers:
 
-#Codex of the Ages: Codex of Past Ages
+#Stargazing Mirror: Introspective Gaze
+pw_holy_reliquary_expansion_introspective_gaze = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	empire_size_pops_mult = -0.10
+	empire_size_systems_mult = -0.15
+}
+
+#Stargazing Mirror: Extrospective Gaze
+pw_holy_reliquary_expansion_extrospective_gaze = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	colony_start_num_pops_add = 1
+	planet_colony_development_speed_mult = 0.50
+}
+
+#Scepter of the Sun-Regent: Way of the Solar Regent
 pw_holy_reliquary_domination_way_of_the_solar_regent = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	pop_cat_specialist_political_power = 0.20
 	planet_jobs_specialist_produces_mult = 0.15
 }
 
-#Codex of the Ages: Codex of Ages Past
+#Scepter of the Sun-Regent: Way of the Void Speakers
 pw_holy_reliquary_domination_way_of_the_void_speakers = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	pop_cat_worker_political_power = 0.20

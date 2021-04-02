@@ -51,6 +51,40 @@ country_event = {
 		set_country_flag = pw_is_in_holy_reliquary
 	}
 
+	#Expansion: Stargazing Mirror -> 100
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.expansion.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_mirror }
+		}
+		allow = {
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				has_tradition = tr_expansion_finish
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.100
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.expansion.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_mirror
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.105
+			}
+		}
+	}
+
 	#Domination: Scepter of the Solar-Regent -> 200
 	option = { #Sanctify
 		name = pw_holy_reliquary.1.domination.sanctify
@@ -173,6 +207,288 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.leave
 		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Expansion Artifact (Stargazing Mirror) -> 100
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.100
+	title = pw_holy_reliquary.100.name
+	desc = pw_holy_reliquary.100.desc
+	picture = GFX_evt_stargazing_mirror
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.100.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_mirror }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.101 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.101
+	title = pw_holy_reliquary.101.name
+	desc = pw_holy_reliquary.101.desc
+	picture = GFX_evt_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_mirror
+	}
+
+	#Introspective Gaze
+	option = {
+		name = pw_holy_reliquary.101.a
+		custom_tooltip = pw_holy_reliquary.101.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_expansion_introspective_gaze
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.110
+			}
+		}
+	}
+
+	#Extrospective Gaze
+	option = {
+		name = pw_holy_reliquary.101.b
+		custom_tooltip = pw_holy_reliquary.101.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_expansion_extrospective_gaze
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.120
+			}
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.105
+	title = pw_holy_reliquary.105.name
+	desc = pw_holy_reliquary.105.desc
+	picture = GFX_evt_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Introspective Gaze
+	option = {
+		name = pw_holy_reliquary.101.a
+		custom_tooltip = pw_holy_reliquary.101.a.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_expansion_introspective_gaze }
+			has_resource = {
+				type = influence
+				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_expansion_introspective_gaze
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_expansion_extrospective_gaze
+			}
+			remove_modifier = pw_holy_reliquary_expansion_extrospective_gaze
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.110
+			}
+		}
+	}
+
+	#Way of the Void-Speakers
+	option = {
+		name = pw_holy_reliquary.201.b
+		custom_tooltip = pw_holy_reliquary.201.b.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+			has_resource = {
+				type = influence
+				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_expansion_extrospective_gaze
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_expansion_introspective_gaze
+			}
+			remove_modifier = pw_holy_reliquary_expansion_introspective_gaze
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.120
+			}
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Effects Description:
+#Introspective Gaze (modifier)
+country_event = {
+	id = pw_holy_reliquary.110
+	title = pw_holy_reliquary.110.name
+	desc = pw_holy_reliquary.110.desc
+	picture = GFX_evt_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_expansion_reflective_meditation
+					has_modifier = pw_holy_reliquary_expansion_peregrination_pathways
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_modifier_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.110.a
+		event_target:pw_holy_reliquary_modifier_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_expansion_reflective_meditation
+				days = @pw_5years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.111
+				days = @pw_1year
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Introspective Gaze (tech)
+country_event = {
+	id = pw_holy_reliquary.111
+	title = pw_holy_reliquary.111.name
+	desc = pw_holy_reliquary.111.desc
+	picture = GFX_evt_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_tech_option = pw_tech_holy_reliquary_inward_expansion
+			has_technology = pw_tech_holy_reliquary_inward_expansion
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.111.a
+		add_research_option = pw_tech_holy_reliquary_inward_expansion
+	}
+}
+
+#Extrospective Gaze (modifier)
+country_event = {
+	id = pw_holy_reliquary.120
+	title = pw_holy_reliquary.120.name
+	desc = pw_holy_reliquary.120.desc
+	picture = GFX_evt_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_expansion_reflective_meditation
+					has_modifier = pw_holy_reliquary_expansion_peregrination_pathways
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_modifier_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.120.a
+		event_target:pw_holy_reliquary_modifier_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_expansion_peregrination_pathways
+				days = @pw_5years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.121
+				days = @pw_1year
+				random = @pw_1year
+			}
+		}
+	}
+}
+
+#Extrospective Gaze (tech)
+country_event = {
+	id = pw_holy_reliquary.121
+	title = pw_holy_reliquary.121.name
+	desc = pw_holy_reliquary.121.desc
+	picture = GFX_evt_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_tech_option = pw_tech_holy_reliquary_revealed_destiny
+			has_technology = pw_tech_holy_reliquary_revealed_destiny
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.121.a
+		add_research_option = pw_tech_holy_reliquary_revealed_destiny
 	}
 }
 

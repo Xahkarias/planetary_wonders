@@ -104,18 +104,31 @@
     pw_mod_holy_reliquary_recently_build: "Revival of Hallowed Relics"
     pw_mod_holy_reliquary_recently_build_desc: "The expectation of reviving ancient holy artifacts that brought about with the $pw_holy_reliquary$ is inspiring to our populace."
 
-    #Holy Reliquary artifacts mods:
-    pw_holy_reliquary_discovery_codex_of_past_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Past Ages"
-    pw_holy_reliquary_discovery_codex_of_past_ages_desc: "By looking for answers in past experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can better prepare the leaders of our blessed country."
+    pw_holy_reliquary_expansion_reflective_meditation: "Reflective Meditation"
+    pw_holy_reliquary_expansion_reflective_meditation_desc: "The population of the planet is commonly taken by sudden meditation, which leads them to better preserve themselves, search of self improvement and consider new ideological positions. This is thought to be provoked by the sanctification fo the $pw_holy_reliquary.stargazing_mirror$."
 
-    pw_holy_reliquary_discovery_codex_of_future_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Future Ages"
-    pw_holy_reliquary_discovery_codex_of_future_ages_desc: "By deciphering future experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can explore different research alternatives, as the prophets have stated long ago."
+    pw_holy_reliquary_expansion_peregrination_pathways: "Peregrination Pathways"
+    pw_holy_reliquary_expansion_peregrination_pathways_desc: "Is has become a tradition that the spiritualist people of the country visit this planet at least once in their lifetime, bringing many to stay. A new interest in peregrination is thought to be provoked by the sanctification fo the $pw_holy_reliquary.stargazing_mirror$."
+
+    #Holy Reliquary artifacts mods:
+
+    pw_holy_reliquary_expansion_introspective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Introspective Gaze"
+    pw_holy_reliquary_expansion_introspective_gaze_desc: "The $pw_holy_reliquary.stargazing_mirror$ inspires us to look inward, to reflect upon our place in the galaxy and a wave of reflective thought spreads in our population."
+
+    pw_holy_reliquary_expansion_extrospective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Extrospective Gaze"
+    pw_holy_reliquary_expansion_extrospective_gaze_desc: "The $pw_holy_reliquary.stargazing_mirror$ inspires us to look outward, there is a growing feeling that the exploration age will never be over, that there is always more to see out in the galaxy, that our place is where the novelty is."
 
     pw_holy_reliquary_domination_way_of_the_solar_regent: "$pw_holy_reliquary.scepter_of_the_solar_regent$: Way of the Solar-Regent"
     pw_holy_reliquary_domination_way_of_the_solar_regent_desc: "By embracing the way of the Solar-Regent from the legend of the $pw_holy_reliquary.scepter_of_the_solar_regent$ we reinforce the power and importance of specialists and rulers."
 
     pw_holy_reliquary_domination_way_of_the_void_speakers: "$pw_holy_reliquary.scepter_of_the_solar_regent$: Way of the Void-Speakers"
     pw_holy_reliquary_domination_way_of_the_void_speakers_desc: "By embracing the way of the Void-Speakers from the legend of the $pw_holy_reliquary.scepter_of_the_solar_regent$ we reinforce the power and importance of common workers."
+
+    pw_holy_reliquary_discovery_codex_of_past_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Past Ages"
+    pw_holy_reliquary_discovery_codex_of_past_ages_desc: "By looking for answers in past experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can better prepare the leaders of our blessed country."
+
+    pw_holy_reliquary_discovery_codex_of_future_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Future Ages"
+    pw_holy_reliquary_discovery_codex_of_future_ages_desc: "By deciphering future experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can explore different research alternatives, as the prophets have stated long ago."
 
     # Grand Archive:
     pw_mod_grand_archive_recently_build: "Studies of Material History"

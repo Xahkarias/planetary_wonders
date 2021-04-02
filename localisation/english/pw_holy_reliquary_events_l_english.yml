@@ -17,6 +17,48 @@
     pw_holy_reliquary.return: "Return"
     pw_holy_reliquary.sanctify: "§YSanctify:§!"
 
+    #Expansion: Stargazing Mirror -> 100
+    pw_holy_reliquary.stargazing_mirror: "§BStargazing Mirror§!"
+    pw_holy_reliquary.1.expansion.sanctify: "$pw_holy_reliquary.sanctify$ $pw_holy_reliquary.stargazing_mirror$"
+    pw_holy_reliquary.1.expansion.access: "$pw_holy_reliquary.stargazing_mirror$"
+
+    #Sanctify:
+    pw_holy_reliquary.100.name: "The $pw_holy_reliquary.stargazing_mirror$"
+    pw_holy_reliquary.100.desc: "From the dawn of times to end of days, as the legend states, the $pw_holy_reliquary.stargazing_mirror$ has accompanied and guided us into every major expansion event in our history. The conquest of the stars is no exception. From maneuvering us trough uncharted lands in our home planet to guiding our leaders and people in moments of reflection and grand societal changes, the Mirror has been there. We have always looked upon the stars for holy guidance.\n\nThe Mirror itself consist of a large bowl made of bronze, detailed with stripes of gold on the outside and trees of silver on the inside. The water it holds is usually blessed and allow us to gaze at the skies in pursue of a path thought the stars, or to see ourselves reflected in the water and search for answers inward.\n\nTo see where else the Mirror may guide us to, we must only recognize its holy influence."
+    pw_holy_reliquary.100.a: "Sanctify the $pw_holy_reliquary.stargazing_mirror$"
+
+    #Just Sanctified:
+    pw_holy_reliquary.101.name: "Cosmovision"
+    pw_holy_reliquary.101.desc: "As our theologians inspect the $pw_holy_reliquary.stargazing_mirror$ its holy purpose becomes clear. As they gaze up thought the Mirror, they report, in ecstasy, to be staring into the dark, at the eyes of a million tiny gods. They chant and describe that as they stare upon the universe, the universe stares back and they can see themselves in such reflection. In the $pw_holy_reliquary.stargazing_mirror$ one can see more than any looking glass would allow.\n\nIt seems only a few individuals share these experiences, and none of them can be proven. But faith requires no proof; in fact, it rejects any proof.\n\nWe will sanctify this holy Mirror. The only question left is where should we cast our gaze in order to search for answers?"
+    pw_holy_reliquary.101.a: "Gaze within oneself."
+    pw_holy_reliquary.101.a.tooltip: "Incite our population to reflect and meditate is search for self improvement."
+    pw_holy_reliquary.101.b: "Gaze upon the stars."
+    pw_holy_reliquary.101.b.tooltip: "Incite our population to explore the stars and seek new places beyond their home planet."
+
+    #Access Chamber:
+    pw_holy_reliquary.105.name: "Cosmovision"
+    pw_holy_reliquary.105.desc: "The chamber of the $pw_holy_reliquary.stargazing_mirror$ draws the eyes of the visitors to the celling, where a skylight invites all to look trough the Mirror into the dark universe. It also holds the legend of the artifact in stained glass:\n\nDepictions of our first planetary expansions, guided by the stars; of past revolutions and evolutions, where meditation and certainty were paramount; and finally of our arrival at the stars themselves.\n\nThe Mirror itself consist of a large bowl made of bronze, detailed with stripes of gold on the outside and trees of silver on the inside. The water it holds is usually blessed and allow us to gaze at the skies in pursue of a path thought the stars, or to see ourselves reflected in the water and search for answers inward.\n\nHere we may cast our gaze elsewhere, in search of answers in unseen places."
+
+    #Result of option 1: Introspective Gaze
+    pw_holy_reliquary.110.name: "Revelations Within"
+    pw_holy_reliquary.110.desc: "As we search for answers within ourselves, many in our population follow that example in meditation. It has become common practice in [pw_holy_reliquary_modifier_planet.GetName] to stop for a few moments every day and reflect upon ones choices and their impact in ones life. The entire planet now takes better care of itself."
+    pw_holy_reliquary.110.a: "It is by looking inside that we see outside."
+
+    #Event for option 1: Introspective Gaze Tech
+    pw_holy_reliquary.111.name: "Inward Expansion"
+    pw_holy_reliquary.111.desc: "With the many reflections we have collectively had with the $pw_holy_reliquary.stargazing_mirror$, many things became more clear to us all. We have concluded that the we construct the environment we live in and in turn it shapes us, so we must improve the planets we live if we are to improve our life upon them. With that holy purpose we have devised a new expansion project that our scientist can review."
+    pw_holy_reliquary.111.a: "We shall reflect upon this project."
+
+    #Result of option 2: Extrospective Gaze
+    pw_holy_reliquary.120.name: "Eyes of the Gods"
+    pw_holy_reliquary.120.desc: "As we search for answers within the stars, many in our population follow that example in expedition. [pw_holy_reliquary_modifier_planet.GetName] has become a welcoming center for travelers and peregrins in search fo their own answers elsewhere, for many it is now tradition to seek this planet at least once in their lifetime."
+    pw_holy_reliquary.120.a: "The faithful shall be welcomed anywhere."
+
+    #Event for option 2: Extrospective Gaze Tech
+    pw_holy_reliquary.121.name: "Our Holy Destine, Revealed"
+    pw_holy_reliquary.121.desc: "In our constant search in the stars provided by the $pw_holy_reliquary.stargazing_mirror$ a shard of our holy destine has finally been reveled to us: our rightful place among the stellar sky. To fulfil such important fate, we must push out and secure those systems as guardians of the stars. The scientist can figure how this should be accomplished, as they must."
+    pw_holy_reliquary.121.a: "We will hold our stellar ground."
+
     #Domination: Scepter of the Solar-Regent -> 200
     pw_holy_reliquary.scepter_of_the_solar_regent: "§BScepter of the Solar-Regent§!"
     pw_holy_reliquary.1.domination.sanctify: "$pw_holy_reliquary.sanctify$ $pw_holy_reliquary.scepter_of_the_solar_regent$"
