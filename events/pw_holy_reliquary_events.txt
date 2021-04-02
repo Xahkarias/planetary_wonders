@@ -263,6 +263,7 @@ country_event = {
 			modifier = pw_holy_reliquary_expansion_introspective_gaze
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			country_event = {
 				id = pw_holy_reliquary.110
 			}
@@ -277,6 +278,7 @@ country_event = {
 			modifier = pw_holy_reliquary_expansion_extrospective_gaze
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			country_event = {
 				id = pw_holy_reliquary.120
 			}
@@ -317,6 +319,7 @@ country_event = {
 			remove_modifier = pw_holy_reliquary_expansion_extrospective_gaze
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			country_event = {
 				id = pw_holy_reliquary.110
 			}
@@ -347,6 +350,7 @@ country_event = {
 			remove_modifier = pw_holy_reliquary_expansion_introspective_gaze
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			country_event = {
 				id = pw_holy_reliquary.120
 			}
@@ -599,6 +603,7 @@ country_event = {
 			remove_modifier = pw_holy_reliquary_domination_way_of_the_void_speakers
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			country_event = {
 				id = pw_holy_reliquary.210
 			}
@@ -629,6 +634,7 @@ country_event = {
 			remove_modifier = pw_holy_reliquary_domination_way_of_the_solar_regent
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			country_event = {
 				id = pw_holy_reliquary.220
 			}
@@ -758,6 +764,7 @@ country_event = {
 			modifier = pw_holy_reliquary_discovery_codex_of_past_ages
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			random_list = {
 				1 = { #Ruler
 					modifier = {
@@ -832,6 +839,7 @@ country_event = {
 			modifier = pw_holy_reliquary_discovery_codex_of_future_ages
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			random_list = {
 				1 = {
 					country_event = { id = pw_holy_reliquary.720 }
@@ -885,6 +893,7 @@ country_event = {
 			remove_modifier = pw_holy_reliquary_discovery_codex_of_future_ages
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			random_list = {
 				1 = { #Ruler
 					modifier = {
@@ -971,6 +980,7 @@ country_event = {
 			remove_modifier = pw_holy_reliquary_discovery_codex_of_past_ages
 		}
 		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
 			random_list = {
 				1 = {
 					country_event = { id = pw_holy_reliquary.720 }
@@ -1383,5 +1393,284 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.leave
 		pw_holy_reliquary_leave = yes
+	}
+}
+
+#General Random Events:
+#Random event choice:
+country_event = {
+	id = pw_holy_reliquary.1009
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			5 = {}
+			1 = {
+				country_event = {
+					id = pw_holy_reliquary.1010
+					days = @pw_halfYear
+					random = @pw_halfYear
+				}
+			}
+			1 = {
+				country_event = {
+					id = pw_holy_reliquary.1011
+					days = @pw_halfYear
+					random = @pw_halfYear
+				}
+			}
+		}
+	}
+}
+
+#Peregrination Overflow (after 3 relics are sanctified)
+country_event = {
+	id = pw_holy_reliquary.1010
+	title = pw_holy_reliquary.1010.name
+	desc = pw_holy_reliquary.1010.desc
+	picture = GFX_evt_alien_propaganda
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_planet
+
+	trigger = {
+		NOT = { has_country_flag = pw_holy_reliquary_peregrination_event }
+		check_variable = {
+			which = pw_sanctified_artifacts_count
+			value > 2
+		}
+		any_owned_planet = {
+			has_building = pw_building_holy_reliquary
+		}
+	}
+
+	immediate = {
+		#Get the planet with Holy Reliquary
+		random_owned_planet = {
+			limit = {
+				has_building = pw_building_holy_reliquary
+			}
+			save_event_target_as = pw_holy_reliquary_planet
+		}
+		set_timed_country_flag = {
+			flag = pw_holy_reliquary_peregrination_event
+			days = @pw_10years
+		}
+	}
+
+	#Provide accommodation
+	option = {
+		name = pw_holy_reliquary.1010.a
+		allow = {
+			has_resource = {
+				type = consumer_goods
+				amount = 1000
+			}
+			has_resource = {
+				type = energy
+				amount = 1500
+			}
+		}
+		add_resource = {
+			consumer_goods = -1000
+			energy = -1500
+		}
+		event_target:pw_holy_reliquary_planet = {
+			create_pop = {
+				species = owner
+			}
+		}
+	}
+
+	#Prevent them from coming
+	option = {
+		name = pw_holy_reliquary.1010.b
+		allow = {
+			has_resource = {
+				type = influence
+				amount = 25
+			}
+		}
+		add_resource = {
+			influence = -25
+		}
+	}
+
+	#Unfortunate
+	option = {
+		name = pw_holy_reliquary.1010.c
+		event_target:pw_holy_reliquary_planet = {
+			add_deposit = d_decrepit_dwellings
+		}
+	}
+}
+
+#Love Celebration
+country_event = {
+	id = pw_holy_reliquary.1011
+	title = pw_holy_reliquary.1011.name
+	desc = pw_holy_reliquary.1011.desc
+	picture = GFX_evt_diplomatic_visit
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_planet
+
+	trigger = {
+		NOT = { has_country_flag = pw_holy_reliquary_marriage_event }
+		check_variable = {
+			which = pw_sanctified_artifacts_count
+			value > 2
+		}
+		any_owned_planet = {
+			has_building = pw_building_holy_reliquary
+		}
+		any_owned_leader = {
+			NOR = {
+				has_trait = leader_trait_governor_gray
+				has_trait = leader_trait_governor_oracle
+				has_trait = leader_trait_paranoid
+			}
+		}
+	}
+
+	immediate = {
+		#Get the planet with Holy Reliquary
+		random_owned_planet = {
+			limit = {
+				has_building = pw_building_holy_reliquary
+			}
+			save_event_target_as = pw_holy_reliquary_planet
+		}
+		#Get leader
+		random_owned_leader = {
+			limit = {
+				NOR = {
+					has_trait = leader_trait_governor_gray
+					has_trait = leader_trait_governor_oracle
+					has_trait = leader_trait_paranoid
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_marriage_leader
+		}
+		set_timed_country_flag = {
+			flag = pw_holy_reliquary_marriage_event
+			days = @pw_10years
+		}
+	}
+
+	#Approve the ceremony
+	option = {
+		name = pw_holy_reliquary.1011.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier4unityreward
+			min = @tier4unitymin
+			max = @tier4unitymax
+		}
+	}
+
+	#Send Gifts
+	option = {
+		name = pw_holy_reliquary.1011.b
+		allow = {
+			has_resource = {
+				type = consumer_goods
+				amount = 500
+			}
+		}
+		add_resource = {
+			consumer_goods = -500
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier4unityreward
+			min = @tier4unitymin
+			max = @tier4unitymax
+		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier3influencereward
+			min = @tier3influencemin
+			max = @tier3influencemax
+		}
+	}
+
+	#Disapprove the Ceremony
+	option = {
+		name = pw_holy_reliquary.1011.c
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier2influencereward
+			min = @tier2influencemin
+			max = @tier2influencemax
+		}
+	}
+}
+
+#Leader Death
+country_event = {
+	id = pw_holy_reliquary.1012
+	title = pw_holy_reliquary.1012.name
+	desc = pw_holy_reliquary.1012.desc
+	picture = GFX_evt_conclave
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_planet
+
+	trigger = {
+		NOT = { has_country_flag = pw_holy_reliquary_death_event }
+		any_owned_planet = {
+			has_building = pw_building_holy_reliquary
+		}
+		FROM = {
+			NOR = {
+				has_trait = leader_trait_corrupt
+				has_trait = leader_trait_substance_abuser
+				has_trait = leader_trait_paranoid
+			}
+		}
+		check_variable = {
+			which = pw_sanctified_artifacts_count
+			value > 2
+		}
+		any_owned_planet = {
+			has_building = pw_building_holy_reliquary
+		}
+	}
+
+	immediate = {
+		#Get the planet with Holy Reliquary
+		random_owned_planet = {
+			limit = {
+				has_building = pw_building_holy_reliquary
+			}
+			save_event_target_as = pw_holy_reliquary_planet
+		}
+		set_timed_country_flag = {
+			flag = pw_holy_reliquary_death_event
+			days = @pw_10years
+		}
+	}
+
+	#Approve the ceremony
+	option = {
+		name = pw_holy_reliquary.1012.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier4unityreward
+			min = @tier4unitymin
+			max = @tier4unitymax
+		}
+	}
+
+	#Find another place
+	option = {
+		name = pw_holy_reliquary.1012.b
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier3influencereward
+			min = @tier3influencemin
+			max = @tier3influencemax
+		}
 	}
 }

@@ -58,3 +58,12 @@ on_army_recruited = {
 		pw_wonder.1333
 	}
 }
+
+# Executed as a leader has died
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		pw_holy_reliquary.1012
+	}
+}
