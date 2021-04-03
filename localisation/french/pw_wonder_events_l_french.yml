@@ -411,3 +411,11 @@
     pw_wonder.1712.name: "Surprising Discoveries"
     pw_wonder.1712.desc: "The $pw_transplanetary_logistics_network$ educational infrastructure has surprised our researchers since a simple and elegant solution to one of our open problems was proposed by a clerk worker, who enjoyed discussions on our public agoras and contributed greatly to the local education development. He claims that he is not interested in working with formal research, only working on open problems as a hobby. Either way, we welcome this contribution."
     pw_wonder.1712.a: "The immortal science of the worker!"
+
+    pw_message_forbidden_city_complete: "$pw_forbidden_city$ has been constructed in $PLANET|Y$."
+    pw_wonder.1801.name: "A Ruler Chooses, A Slave Obeys"
+    pw_wonder.1801.desc: "There is nothing more catastrophic for an empire than the incompetence of the masses in power. To safeguard the importance of the institutions and maintain necessary control over the population a central hub of governance must be established and protected. However, such centralized administration is quickly corrupted by bad apples and lesser management, that lead to questions in authority and challenges to the hierarchy.\n\nThat is why we require the Forbidden City, a place where the rulers and the elite can live and work with upmost comfort without ever being bother by the unwashed public; where unscrupulous deal can be made without public unrest; where the manager is free of the burden of the managed. All protected by a wall as high as the enforcers can maintain.\n\nThere is still much infrastructure to be constructed in the City in order to establish it as the complete and centralized seat of power, but we have many workers ready to build it for us."
+    pw_wonder.1801.a: "All shall gaze upon my work and despair!"
+    pw_wonder.1803.name: "Crumbling of Authority"
+    pw_wonder.1803.desc: "Without the support of the $pw_forbidden_city$, the infrastructure constructed on [THIS.GetName] can no longer be maintained and will be demolished. In the future we will have to rebuild the City and develop the infrastructure once again."
+    pw_message_fc_infrastructure_completed: "An Â§BInfrastructure DevelopmentÂ§! for the $pw_forbidden_city$ has been completed in $PLANET|Y$."
