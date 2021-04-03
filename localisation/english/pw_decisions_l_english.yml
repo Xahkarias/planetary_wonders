@@ -126,3 +126,70 @@
 
     pw_decision_tls_infrastructure_industrial_4: "$pw_decision_tls.develop_infrastructure$ Industrial Unions"
     pw_decision_tls_infrastructure_industrial_4_desc: "Integrate the $pw_mantle_crucible$ with the $pw_transplanetary_logistics_network$ to improve the current industrial system by promoting manufacturing unions and granting full, open and safe access to the massive factory spaces we have set up in the Planetary Mantle."
+
+    #Forbidden City
+    pw_decision_fc_infrastructure_tooltip: "Improve the $pw_forbidden_city$ by §GUpgrading§! existing §BInfrastructure§!\nRemoved deposits will be upgraded into added deposits."
+    pw_decision_fc.develop_infrastructure: "§BDevelop Infrastructure:§!"
+
+    pw_decision_fc_infrastructure_capital_1: "$pw_decision_fc.develop_infrastructure$ Planetary Command"
+    pw_decision_fc_infrastructure_capital_1_desc: "Use the $pw_forbidden_city$ to establish a water a centralized planetary management office, in direct connection to the capital."
+
+    pw_decision_fc_infrastructure_capital_2: "$pw_decision_fc.develop_infrastructure$ Governor's Mansion"
+    pw_decision_fc_infrastructure_capital_2_desc: "Use the $pw_forbidden_city$ to improve the current planetary capital to house this sectors governor, and allow for more complex policies to be enacted."
+
+    pw_decision_fc_infrastructure_capital_seat_of_power: "$pw_decision_fc.develop_infrastructure$ Seat of Power"
+    pw_decision_fc_infrastructure_capital_seat_of_power_desc: "Use the $pw_forbidden_city$ to improve the current system capital to hold the head of the whole empire, where our leaders can discuss interstellar affairs."
+
+    pw_decision_fc_infrastructure_capital_throne_room: "$pw_decision_fc.develop_infrastructure$ Throne Room"
+    pw_decision_fc_infrastructure_capital_throne_room_desc: "Use the $pw_forbidden_city$ to improve the current system capital to hold the head of the whole empire, the throne room of the emperor, the maximum authority."
+
+    pw_decision_fc_infrastructure_capital_resort: "$pw_decision_fc.develop_infrastructure$ Luxury Retreat"
+    pw_decision_fc_infrastructure_capital_resort_desc: "Use the $pw_forbidden_city$ to stablish an isolated retreat, where the wealthy and powerful elite of the empire can find peace of mind, among their laborious life of management."
+
+    pw_decision_fc_infrastructure_capital_penal: "$pw_decision_fc.develop_infrastructure$ Wardens Directorate"
+    pw_decision_fc_infrastructure_capital_penal_desc: "Use the $pw_forbidden_city$ to stablish a privy council of penal director needed to properly manage this prison-planet and better allocate prisoners for work, where they can be eluded with reduced sentences in exchange for hard work."
+
+    pw_decision_fc_infrastructure_capital_slave: "$pw_decision_fc.develop_infrastructure$ Overseers Ring"
+    pw_decision_fc_infrastructure_capital_slave_desc: "Use the $pw_forbidden_city$ to stablish a facsimile of a secret elitist society gathering, designs to pretend to cede power and influence to this planets overseers, in order to keep them loyal among their slave peers; and the planet under control."
+
+    pw_decision_fc_infrastructure_emergency_1: "$pw_decision_fc.develop_infrastructure$ Palatial Physicians"
+    pw_decision_fc_infrastructure_emergency_1_desc: "Use the $pw_forbidden_city$ to stablish a last generation health center operated by reference professionals, made available anytime for the elite."
+
+    pw_decision_fc_infrastructure_emergency_2: "$pw_decision_fc.develop_infrastructure$ City Defenders"
+    pw_decision_fc_infrastructure_emergency_2_desc: "Improve the $pw_forbidden_city$ to stablish a center of operations and barracks for the forbidden city guardians, forming an elite urban defense force for the wealthy."
+
+    pw_decision_fc_infrastructure_emergency_3: "$pw_decision_fc.develop_infrastructure$ Crisis Bunker"
+    pw_decision_fc_infrastructure_emergency_3_desc: "Improve the $pw_forbidden_city$ to stablish a luxurious and completely bombardment-proof subterrane bunker, designed to harbor the ruling class and indispensable resources in times os crisis."
+
+    pw_decision_fc_infrastructure_emergency_4: "$pw_decision_fc.develop_infrastructure$ Personal Guardian"
+    pw_decision_fc_infrastructure_emergency_4_desc: "Improve the $pw_forbidden_city$ to stablish the $pw_forbidden_city$ as a Personal Angel to the ruling class, and a constant reminder of their authority roaming over the City"
+
+    pw_decision_fc_infrastructure_power_1: "$pw_decision_fc.develop_infrastructure$ Central of Disinformation"
+    pw_decision_fc_infrastructure_power_1_desc: "Use the $pw_forbidden_city$ to stablish an official source of approved planetary information, curated and sanitized to maintain our population complicity and the authoritarian machine lubricated."
+
+    pw_decision_fc_infrastructure_power_2: "$pw_decision_fc.develop_infrastructure$ Center of Justice"
+    pw_decision_fc_infrastructure_power_2_desc: "Improve the $pw_forbidden_city$ to stablish a planetary court of law and legislative chamber, here is where the officials of justice judge and condemn conspirators against our empire."
+
+    pw_decision_fc_infrastructure_power_3: "$pw_decision_fc.develop_infrastructure$ Central Treasury"
+    pw_decision_fc_infrastructure_power_3_desc: "Improve the $pw_forbidden_city$ to stablish a central ledger and imperial exchequer, where every transaction in the planet in processed and properly taxed and where they can be securely contained."
+
+    pw_decision_fc_infrastructure_power_4: "$pw_decision_fc.develop_infrastructure$ Galactic Bureau"
+    pw_decision_fc_infrastructure_power_4_desc: "Improve the $pw_forbidden_city$ to stablish a direct connection with the $pw_galactic_model$ to insert this planet into its place within the administrative machinations of the empire."
+
+    pw_decision_fc_infrastructure_ambassador_chambers: "$pw_decision_fc.develop_infrastructure$ Ambassador Chambers"
+    pw_decision_fc_infrastructure_ambassador_chambers: "Use the $pw_forbidden_city$ to stablish the primary residents of foreign representatives in the planet, outfitted to serve their habitation needs."
+
+    pw_decision_fc_infrastructure_internal_affairs: "$pw_decision_fc.develop_infrastructure$ Internal Affairs"
+    pw_decision_fc_infrastructure_internal_affairs: "Use the $pw_forbidden_city$ to stablish central of planetary internal processing, where the operation is outmost secrecy for foreign observers."
+
+    pw_decision_fc_infrastructure_intellectual_circles: "$pw_decision_fc.develop_infrastructure$ Intellectual Circles"
+    pw_decision_fc_infrastructure_intellectual_circles: "Use the $pw_forbidden_city$ to stablish an ambient of free academic discussion and research where intellectuals can speak without concern for popular anxieties."
+
+    pw_decision_fc_infrastructure_holy_tribunal: "$pw_decision_fc.develop_infrastructure$ Holy Tribunal"
+    pw_decision_fc_infrastructure_holy_tribunal: "Use the $pw_forbidden_city$ to stablish a hall of holy justice, where the heretics can be judged and punished for their crimes."
+
+    pw_decision_fc_infrastructure_ballroom: "$pw_decision_fc.develop_infrastructure$ Ballroom"
+    pw_decision_fc_infrastructure_ballroom: "Use the $pw_forbidden_city$ to stablish the center of all social exchange of the ruling elite, where they can unwind form work, or continue to forge alliances with their social capital."
+
+    pw_decision_fc_infrastructure_war_room: "$pw_decision_fc.develop_infrastructure$ War Room"
+    pw_decision_fc_infrastructure_war_room: "Use the $pw_forbidden_city$ to stablish the centralized control of planetary military operation, ready to dispatch defenses or support our fleets."

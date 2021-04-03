@@ -241,3 +241,6 @@
     pw_holy_reliquary_expansion_introspective_gaze_desc: "The $pw_holy_reliquary.stargazing_mirror$ inspires us to look inward, to reflect upon our place in the galaxy and a wave of reflective thought spreads in our population."
     pw_holy_reliquary_expansion_extrospective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Extrospective Gaze"
     pw_holy_reliquary_expansion_extrospective_gaze_desc: "The $pw_holy_reliquary.stargazing_mirror$ inspires us to look outward, there is a growing feeling that the exploration age will never be over, that there is always more to see out in the galaxy, that our place is where the novelty is."
+
+    pw_mod_forbidden_city_recently_build: "Authority in Power"
+    pw_mod_forbidden_city_recently_build_desc: "The recent construction of a the $pw_forbidden_city$, a bastion of power and centralized administration brings trust to or population. Trust that the system works adn that the hierarchy is maintained."

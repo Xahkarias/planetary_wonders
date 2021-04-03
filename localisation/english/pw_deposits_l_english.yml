@@ -62,6 +62,7 @@
     pw_d_holoarchive: "Holoarchive"
     pw_d_holoarchive_desc: "The ultimate repository for any kind of information, unifying all of the assembled archives we have collected: $pw_d_ark_project$, $pw_d_library_of_babel$, $pw_d_cradle_initiative$, $pw_d_particle_museum$, $pw_d_omnidatabase$, $pw_d_stellarium$, $pw_d_zero_g_exposition$, $pw_d_mechanist_collection$ and $pw_d_meta_architectural_complex$."
 
+    #Transplanetary Logistics Network infrastructure deposits:
     pw_transplanetary_logistics_network.infrastructure: "§BInfrastructure:§!"
 
     pw_d_infrastructure_food_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Food Distribution"
@@ -111,3 +112,69 @@
 
     pw_d_infrastructure_industrial_unions: "$pw_transplanetary_logistics_network.infrastructure$ Industrial Unions"
     pw_d_infrastructure_industrial_unions_desc: "The $pw_transplanetary_logistics_network$ in conjunction with the $pw_mantle_crucible$ are able to provide full, open and safe factory environments for cooperatives and unions, leading to the manufacture and distribution of more efficient products in every industrial area."
+
+    #Forbidden City infrastructure deposits:
+    pw_forbidden_city.infrastructure: "§BInfrastructure:§!"
+
+    pw_d_infrastructure_planetary_command: "$pw_forbidden_city.infrastructure$ Planetary Command"
+    pw_d_infrastructure_planetary_command_desc: "Administration center that bridges the operation between the planetary capital and the $pw_forbidden_city$, lubricating the exchanges of power within the ruling classes."
+
+    pw_d_infrastructure_governor_mansion: "$pw_forbidden_city.infrastructure$ Governor's Mansion"
+    pw_d_infrastructure_governor_mansion_desc: "Center of administration for the entire sector where the governor can conference with the planetary rulers and manage interplanetary affairs."
+
+    pw_d_infrastructure_seat_of_power: "$pw_forbidden_city.infrastructure$ Seat of Power"
+    pw_d_infrastructure_seat_of_power_desc: "The central point from where power emanates on the empire, from here our leaders rule and decide on matters that affect the lives of all."
+
+    pw_d_infrastructure_throne_room: "$pw_forbidden_city.infrastructure$ Throne Room"
+    pw_d_infrastructure_throne_room_desc: "The central point from where power emanates on the empire, the absolute symbol of the authority of the emperor, from where orders for every major designation are issued."
+
+    pw_d_infrastructure_luxury_retreat: "$pw_forbidden_city.infrastructure$ Luxury Retreat"
+    pw_d_infrastructure_luxury_retreat_desc: "An isolated retreat, where the wealthy and powerful elite of the empire can find peace of mind, among their laborious life of management."
+
+    pw_d_infrastructure_wardens_directorate: "$pw_forbidden_city.infrastructure$ Wardens Directorate"
+    pw_d_infrastructure_wardens_directorate_desc: "The privy council of penal director needed to properly manage this prison-planet and better allocate prisoners for work, where they can be eluded with reduced sentences in exchange for hard work."
+
+    pw_d_infrastructure_overseers_ring: "$pw_forbidden_city.infrastructure$ Overseers Ring"
+    pw_d_infrastructure_overseers_ring_desc: "A facsimile of a secret elitist society gathering, designs to pretend to cede power and influence to this planets overseers, in order to keep them loyal among their slave peers; and the planet under control."
+
+    pw_d_infrastructure_palatial_physicians: "$pw_forbidden_city.infrastructure$ Palatial Physicians"
+    pw_d_infrastructure_palatial_physicians_desc: "Last generation health center operated by reference professionals, all made available anytime for the elite of the planet, or anyone that can pay their fee."
+
+    pw_d_infrastructure_city_defenders: "$pw_forbidden_city.infrastructure$ City Defenders"
+    pw_d_infrastructure_city_defenders_desc: "A center of operations and barracks for the forbidden city guardians, an elite urban defense force, equipped with state-of-the-art anti-personal gear, ready to repress any protest that may arise."
+
+    pw_d_infrastructure_crisis_bunker: "$pw_forbidden_city.infrastructure$ Crisis Bunker"
+    pw_d_infrastructure_crisis_bunker_desc: "The most modern development of personal shelter. A luxurious and completely bombardment-proof subterrane bunker, perfect to harbor the ruling class and indispensable resources. Enjoy a drink while the world burns around you."
+
+    pw_d_infrastructure_personal_guardian: "$pw_forbidden_city.infrastructure$ Personal Guardian"
+    pw_d_infrastructure_personal_guardian_desc: "By allocating the $pw_guardian_angel$ harbor within the $pw_forbidden_city$ we can make sure it is available at all times to defend the city in times of crisis, providing a Personal Angel to the ruling class, and a constant reminder of their authority roaming over the City."
+
+    pw_d_infrastructure_central_of_disinformation: "$pw_forbidden_city.infrastructure$ Central of Disinformation"
+    pw_d_infrastructure_central_of_disinformation_desc: "The only official source of every approved planetary information, curated and sanitized to maintain our population complicity and the authoritarian machine lubricated."
+
+    pw_d_infrastructure_center_of_justice: "$pw_forbidden_city.infrastructure$ Center of Justice"
+    pw_d_infrastructure_center_of_justice_desc: "Planetary court of law and legislative chamber, here is where the officials of justice judge and condemn conspirators against our empire."
+
+    pw_d_infrastructure_central_treasury: "$pw_forbidden_city.infrastructure$ Central Treasury"
+    pw_d_infrastructure_central_treasury_desc: "Central ledger and imperial exchequer, where every transaction in the planet in processed and properly taxed. It also houses the planetary funds in protected containment."
+
+    pw_d_infrastructure_galactic_bureau: "$pw_forbidden_city.infrastructure$ Galactic Bureau"
+    pw_d_infrastructure_galactic_bureau_desc: "Planetary bureaucratic office, in direct communication with the $pw_galactic_model$, it allows the $pw_forbidden_city$ to fit into its place within the machinations of the empire, so that our administration operates as one."
+
+    pw_d_infrastructure_ambassador_chambers: "$pw_forbidden_city.infrastructure$ Ambassador Chambers"
+    pw_d_infrastructure_ambassador_chambers_desc: "The primary residents of foreign representatives in the planet, outfitted to serve their habitation needs. In many occasions, allowing foreign representatives into privy meetings can represent a benefit for both empires, specially if we control what they hear."
+
+    pw_d_infrastructure_internal_affairs: "$pw_forbidden_city.infrastructure$ Internal Affairs"
+    pw_d_infrastructure_internal_affairs_desc: "Central of planetary internal processing, where the operation is outmost secrecy for foreign observers. Empires of the galaxy do not understand our natural superiority over them, so many internal affairs must be dealt with in complete secrecy and only by experts in our own culture."
+
+    pw_d_infrastructure_intellectual_circles: "$pw_forbidden_city.infrastructure$ Intellectual Circles"
+    pw_d_infrastructure_intellectual_circles_desc: "Ambients of free academic discussion and research where intellectuals can talk free of popular anxieties. In order to attain scientific progress, sacrifices must made. The sacrifice of test subjects and discussion of controversial practices also need a place of discussion, away from morality."
+
+    pw_d_infrastructure_holy_tribunal: "$pw_forbidden_city.infrastructure$ Holy Tribunal"
+    pw_d_infrastructure_holy_tribunal_desc: "A hall of holy justice, where the heretics can be judged and punished for their crimes. The strength of our faith relies on the authority of our moral. Priests requires a place to deliberate and judge the laws of such moral."
+
+    pw_d_infrastructure_ballroom: "$pw_forbidden_city.infrastructure$ Ballroom"
+    pw_d_infrastructure_ballroom_desc: "The center of all social exchange of the ruling elite, where they can unwind form work, or continue to forge alliances with their social capital. The elite requires refuge from the conflicts of the universe to maintain their duties. What would be a better retreat than a masquerade?"
+
+    pw_d_infrastructure_war_room: "$pw_forbidden_city.infrastructure$ War Room"
+    pw_d_infrastructure_war_room_desc: "The centralized control of planetary military operation, ready to dispatch defenses or support our fleets. Soldiers, like people, require strict authority to perform well. The military too requires a central council to plan defense and assault operations."

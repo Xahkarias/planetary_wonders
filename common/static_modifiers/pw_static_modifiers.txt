@@ -225,6 +225,14 @@ pw_mod_TLN_inspiring_peace = {
 	planet_stability_add = 5
 }
 
+#Forbidden City:
+pw_mod_forbidden_city_recently_build = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.1
+	pop_ethic_authoritarian_attraction_mult = 0.05
+}
+
 #Stargazing Mirror effect: Reflective Meditation
 pw_holy_reliquary_expansion_reflective_meditation = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"

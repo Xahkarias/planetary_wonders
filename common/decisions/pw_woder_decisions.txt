@@ -1281,12 +1281,12 @@ pw_decision_tls_infrastructure_distribution_1 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_start
 
-	enactment_time = @pw_transplanetary_tls_time_1
+	enactment_time = @pw_tls_time_1
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_1
-			food = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_1
+			food = @pw_tls_resource_cost
 		}
 	}
 
@@ -1376,12 +1376,12 @@ pw_decision_tls_infrastructure_distribution_2 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_2
+	enactment_time = @pw_tls_time_2
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_2
-			energy = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_2
+			energy = @pw_tls_resource_cost
 		}
 	}
 
@@ -1468,13 +1468,13 @@ pw_decision_tls_infrastructure_distribution_3 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_3
+	enactment_time = @pw_tls_time_3
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_3
-			consumer_goods = @pw_transplanetary_tls_resource_cost
-			rare_crystals = @pw_transplanetary_tls_rare_cost_3
+			minerals = @pw_tls_mineral_cost_3
+			consumer_goods = @pw_tls_resource_cost
+			rare_crystals = @pw_tls_rare_cost_3
 		}
 	}
 
@@ -1565,13 +1565,13 @@ pw_decision_tls_infrastructure_distribution_4 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_4
+	enactment_time = @pw_tls_time_4
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_4
-			influence = @pw_transplanetary_tls_influence_cost
-			rare_crystals = @pw_transplanetary_tls_rare_cost_4
+			minerals = @pw_tls_mineral_cost_4
+			influence = @pw_tls_influence_cost
+			rare_crystals = @pw_tls_rare_cost_4
 		}
 	}
 
@@ -1663,12 +1663,12 @@ pw_decision_tls_infrastructure_emergency_1 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_start
 
-	enactment_time = @pw_transplanetary_tls_time_1
+	enactment_time = @pw_tls_time_1
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_1
-			food = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_1
+			food = @pw_tls_resource_cost
 		}
 	}
 
@@ -1758,12 +1758,12 @@ pw_decision_tls_infrastructure_emergency_2 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_2
+	enactment_time = @pw_tls_time_2
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_2
-			energy = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_2
+			energy = @pw_tls_resource_cost
 		}
 	}
 
@@ -1850,13 +1850,13 @@ pw_decision_tls_infrastructure_emergency_3 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_3
+	enactment_time = @pw_tls_time_3
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_3
-			consumer_goods = @pw_transplanetary_tls_resource_cost
-			exotic_gases = @pw_transplanetary_tls_rare_cost_3
+			minerals = @pw_tls_mineral_cost_3
+			consumer_goods = @pw_tls_resource_cost
+			exotic_gases = @pw_tls_rare_cost_3
 		}
 	}
 
@@ -1947,13 +1947,13 @@ pw_decision_tls_infrastructure_emergency_4 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_4
+	enactment_time = @pw_tls_time_4
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_4
-			influence = @pw_transplanetary_tls_influence_cost
-			exotic_gases = @pw_transplanetary_tls_rare_cost_4
+			minerals = @pw_tls_mineral_cost_4
+			influence = @pw_tls_influence_cost
+			exotic_gases = @pw_tls_rare_cost_4
 		}
 	}
 
@@ -2045,12 +2045,12 @@ pw_decision_tls_infrastructure_culture_1 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_start
 
-	enactment_time = @pw_transplanetary_tls_time_1
+	enactment_time = @pw_tls_time_1
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_1
-			unity = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_1
+			unity = @pw_tls_resource_cost
 		}
 	}
 
@@ -2140,12 +2140,12 @@ pw_decision_tls_infrastructure_culture_2 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_2
+	enactment_time = @pw_tls_time_2
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_2
-			energy = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_2
+			energy = @pw_tls_resource_cost
 		}
 	}
 
@@ -2232,13 +2232,13 @@ pw_decision_tls_infrastructure_culture_3 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_3
+	enactment_time = @pw_tls_time_3
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_3
-			consumer_goods = @pw_transplanetary_tls_resource_cost
-			exotic_gases = @pw_transplanetary_tls_rare_cost_3
+			minerals = @pw_tls_mineral_cost_3
+			consumer_goods = @pw_tls_resource_cost
+			exotic_gases = @pw_tls_rare_cost_3
 		}
 	}
 
@@ -2329,13 +2329,13 @@ pw_decision_tls_infrastructure_culture_4 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_4
+	enactment_time = @pw_tls_time_4
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_4
-			influence = @pw_transplanetary_tls_influence_cost
-			exotic_gases = @pw_transplanetary_tls_rare_cost_4
+			minerals = @pw_tls_mineral_cost_4
+			influence = @pw_tls_influence_cost
+			exotic_gases = @pw_tls_rare_cost_4
 		}
 	}
 
@@ -2431,12 +2431,12 @@ pw_decision_tls_infrastructure_industrial_1 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_start
 
-	enactment_time = @pw_transplanetary_tls_time_1
+	enactment_time = @pw_tls_time_1
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_1
-			energy = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_1
+			energy = @pw_tls_resource_cost
 		}
 	}
 
@@ -2526,12 +2526,12 @@ pw_decision_tls_infrastructure_industrial_2 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_2
+	enactment_time = @pw_tls_time_2
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_2
-			unity = @pw_transplanetary_tls_resource_cost
+			minerals = @pw_tls_mineral_cost_2
+			unity = @pw_tls_resource_cost
 		}
 	}
 
@@ -2618,13 +2618,13 @@ pw_decision_tls_infrastructure_industrial_3 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_3
+	enactment_time = @pw_tls_time_3
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_3
-			consumer_goods = @pw_transplanetary_tls_resource_cost
-			volatile_motes = @pw_transplanetary_tls_rare_cost_3
+			minerals = @pw_tls_mineral_cost_3
+			consumer_goods = @pw_tls_resource_cost
+			volatile_motes = @pw_tls_rare_cost_3
 		}
 	}
 
@@ -2715,13 +2715,13 @@ pw_decision_tls_infrastructure_industrial_4 = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
-	enactment_time = @pw_transplanetary_tls_time_4
+	enactment_time = @pw_tls_time_4
 	resources = {
 		category = decisions
 		cost = {
-			minerals = @pw_transplanetary_tls_mineral_cost_4
-			influence = @pw_transplanetary_tls_influence_cost
-			volatile_motes = @pw_transplanetary_tls_rare_cost_4
+			minerals = @pw_tls_mineral_cost_4
+			influence = @pw_tls_influence_cost
+			volatile_motes = @pw_tls_rare_cost_4
 		}
 	}
 
@@ -2808,6 +2808,1873 @@ pw_decision_tls_infrastructure_industrial_4 = {
 		modifier = {
 			factor = 2
 			num_pops > 150
+		}
+	}
+}
+
+
+#Forbidden City Development:
+#Capital: Planetary Command
+pw_decision_fc_infrastructure_capital_1 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_1
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_1
+			influence = @pw_fc_influence_cost_1
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_planetary_command
+			has_deposit = pw_d_infrastructure_governor_mansion
+			has_deposit = pw_d_infrastructure_seat_of_power
+			has_deposit = pw_d_infrastructure_throne_room
+
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_planetary_command
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Capital: Governor's Mansion
+pw_decision_fc_infrastructure_capital_2 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_planetary_command
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = resort_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_governor_mansion
+		remove_deposit = pw_d_infrastructure_planetary_command
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Capital: Seat of Power (not Imperial)
+pw_decision_fc_infrastructure_capital_seat_of_power = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_complete
+
+	enactment_time = @pw_fc_time_4
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_4
+			influence = @pw_fc_influence_cost_3
+			rare_crystals = @pw_fc_rare_cost_3
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			NOT = { has_authority = auth_imperial }
+		}
+		has_deposit = pw_d_infrastructure_governor_mansion
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = resort_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_seat_of_power
+		remove_deposit = pw_d_infrastructure_governor_mansion
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Capital: Throne Room (requires Imperial)
+pw_decision_fc_infrastructure_capital_seat_of_power = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_4
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_4
+			influence = @pw_fc_influence_cost_4
+			rare_crystals = @pw_fc_rare_cost_3
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			has_authority = auth_imperial
+		}
+		has_deposit = pw_d_infrastructure_governor_mansion
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = resort_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_throne_room
+		remove_deposit = pw_d_infrastructure_governor_mansion
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Capital: Luxury Retreat
+pw_decision_fc_infrastructure_capital_resort = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments_luxury_retreat
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		NOT = { has_deposit = pw_d_infrastructure_luxury_retreat }
+		has_modifier = resort_colony
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_luxury_retreat
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+	}
+}
+
+#Capital: Wardens Directorate
+pw_decision_fc_infrastructure_capital_penal = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments_wardens_directorate
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		NOT = { has_deposit = pw_d_infrastructure_wardens_directorate }
+		has_modifier = penal_colony
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_wardens_directorate
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+	}
+}
+
+#Capital: Overseers Ring
+pw_decision_fc_infrastructure_capital_slave = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_capital_developments_overseers_ring
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		NOT = { has_deposit = pw_d_infrastructure_overseers_ring }
+		has_modifier = slave_colony
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_overseers_ring
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+	}
+}
+
+#Emergency: Palatial Physicians
+pw_decision_fc_infrastructure_emergency_1 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_1
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_1
+			food = @pw_fc_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_emergency_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_palatial_physicians
+			has_deposit = pw_d_infrastructure_city_defenders
+			has_deposit = pw_d_infrastructure_crisis_bunker
+			has_deposit = pw_d_infrastructure_personal_guardian
+
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_palatial_physicians
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Emergency: City Defenders
+pw_decision_fc_infrastructure_emergency_2 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			consumer_goods = @pw_fc_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_emergency_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_palatial_physicians
+		NOT = { has_modifier = slave_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_city_defenders
+		remove_deposit = pw_d_infrastructure_palatial_physicians
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Emergency: Crisis Bunker
+pw_decision_fc_infrastructure_emergency_3 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_3
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_3
+			alloys = @pw_fc_resource_cost
+			volatile_motes = @pw_fc_rare_cost_3
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_emergency_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_city_defenders
+		NOT = { has_modifier = slave_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_crisis_bunker
+		remove_deposit = pw_d_infrastructure_city_defenders
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Emergency: Personal Guardian (requires Guardian Angel)
+pw_decision_fc_infrastructure_emergency_4 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_4
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_4
+			alloys = @pw_fc_resource_cost
+			volatile_motes = @pw_fc_rare_cost_4
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_emergency_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_crisis_bunker
+		NOT = { has_modifier = slave_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+		has_building = pw_building_guardian_angel
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_personal_guardian
+		remove_deposit = pw_d_infrastructure_crisis_bunker
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Power: Central of Disinformation
+pw_decision_fc_infrastructure_power_1 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_1
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_1
+			unity = @pw_fc_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_power_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_central_of_disinformation
+			has_deposit = pw_d_infrastructure_center_of_justice
+			has_deposit = pw_d_infrastructure_central_treasury
+			has_deposit = pw_d_infrastructure_galactic_bureau
+
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_central_of_disinformation
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Power: Center of Justice
+pw_decision_fc_infrastructure_power_2 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			consumer_goods = @pw_fc_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_power_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_central_of_disinformation
+		NOT = { has_modifier = resort_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_center_of_justice
+		remove_deposit = pw_d_infrastructure_central_of_disinformation
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Power: Central Treasury
+pw_decision_fc_infrastructure_power_3 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_3
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_3
+			energy = @pw_fc_resource_cost
+			exotic_gases = @pw_fc_rare_cost_3
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_power_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_center_of_justice
+		NOT = { has_modifier = resort_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_central_treasury
+		remove_deposit = pw_d_infrastructure_center_of_justice
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+#Power: Galactic Bureau (Requires Galactic Modeling Bureau somewhere)
+pw_decision_fc_infrastructure_power_4 = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_fc_time_4
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_4
+			influence = @pw_fc_influence_cost_3
+			volatile_motes = @pw_fc_rare_cost_4
+		}
+	}
+
+	prerequisites = {
+		pw_tech_centralized_power_developments
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+		}
+		has_deposit = pw_d_infrastructure_central_treasury
+		NOT = { has_modifier = resort_colony }
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+		owner = {
+			any_owned_planet = {
+				has_building = pw_building_galactic_model
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_decision_fc_infrastructure_tooltip
+		add_deposit = pw_d_infrastructure_galactic_bureau
+		remove_deposit = pw_d_infrastructure_central_treasury
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.75
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_aristocratic_elite }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_technocracy }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+
+		modifier = {
+			factor = 1.25
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Central Council: Ambassador Chambers
+pw_decision_fc_infrastructure_ambassador_chambers = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_central_council_ambassador_chambers
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			is_xenophile = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_ambassador_chambers
+
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_ambassador_chambers
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_public_relations_specialists }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_diplomatic_corps }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_merchant_guilds }
+		}
+	}
+}
+
+# Central Council: Internal Affairs
+pw_decision_fc_infrastructure_internal_affairs = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_central_council_internal_affairs
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			is_xenophobe = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_internal_affairs
+
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_internal_affairs
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_inwards_perfection }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_fanatic_purifiers }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_barbaric_despoilers }
+		}
+	}
+}
+
+# Central Council: Intellectual Circles
+pw_decision_fc_infrastructure_intellectual_circles = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_central_council_intellectual_circles
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			is_materialist = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_intellectual_circles
+
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_intellectual_circles
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		modifier = {
+			factor = 3
+			owner = { has_valid_civic = civic_technocracy }
+		}
+	}
+}
+
+# Central Council: Holy Tribunal
+pw_decision_fc_infrastructure_holy_tribunal = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_central_council_holy_tribunal
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			is_spiritualist = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_holy_tribunal
+
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_holy_tribunal
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		modifier = {
+			factor = 2
+			owner = { has_valid_civic = civic_exalted_priesthood }
+		}
+		modifier = {
+			factor = 2
+			owner = { has_valid_civic = civic_imperial_cult }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_death_cult }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_gospel_of_the_masses }
+		}
+	}
+}
+
+# Central Council: Ballroom
+pw_decision_fc_infrastructure_ballroom = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_central_council_ballroom
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			is_pacifist = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_ballroom
+
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_ballroom
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_ethic = ethic_fanatic_pacifist }
+		}
+		modifier = {
+			factor = 2
+			owner = { has_valid_civic = civic_inwards_perfection }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+	}
+}
+
+# Central Council: War Room
+pw_decision_fc_infrastructure_war_room = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_start
+
+	enactment_time = @pw_fc_time_2
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_fc_mineral_cost_2
+			influence = @pw_fc_influence_cost_2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_central_council_war_room
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_authoritarian = yes
+			is_militarist = yes
+		}
+		NOR = {
+			has_deposit = pw_d_infrastructure_war_room
+
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+		has_building = pw_building_forbidden_city
+	}
+
+	effect = {
+		add_deposit = pw_d_infrastructure_war_room
+		hidden_effect = {
+			planet_event = { id = pw_wonder.1805 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = consumer_goods
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_ethic = ethic_fanatic_militarist }
+		}
+		modifier = {
+			factor = 2
+			owner = { has_valid_civic = civic_warrior_culture }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_nationalistic_zeal }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_private_military_companies }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { has_valid_civic = civic_naval_contractors }
 		}
 	}
 }

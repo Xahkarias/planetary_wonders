@@ -131,18 +131,40 @@
 
 
 #Transplanetary Logistics Network Infrastructure decisions:
-@pw_transplanetary_tls_time_1 = 180 #1/2 year
-@pw_transplanetary_tls_time_2 = 360 #1 year
-@pw_transplanetary_tls_time_3 = 540 #3/2 years
-@pw_transplanetary_tls_time_4 = 720 #2 years
+@pw_tls_time_1 = 180 #1/2 year
+@pw_tls_time_2 = 360 #1 year
+@pw_tls_time_3 = 540 #3/2 years
+@pw_tls_time_4 = 720 #2 years
 
-@pw_transplanetary_tls_mineral_cost_1 = 500
-@pw_transplanetary_tls_mineral_cost_2 = 1000
-@pw_transplanetary_tls_mineral_cost_3 = 1500
-@pw_transplanetary_tls_mineral_cost_4 = 2000
+@pw_tls_mineral_cost_1 = 500
+@pw_tls_mineral_cost_2 = 1000
+@pw_tls_mineral_cost_3 = 1500
+@pw_tls_mineral_cost_4 = 2000
 
-@pw_transplanetary_tls_rare_cost_3 = 200
-@pw_transplanetary_tls_rare_cost_4 = 400
+@pw_tls_rare_cost_3 = 200
+@pw_tls_rare_cost_4 = 400
 
-@pw_transplanetary_tls_resource_cost = 1000
-@pw_transplanetary_tls_influence_cost = 50
+@pw_tls_resource_cost = 1000
+@pw_tls_influence_cost = 50
+
+
+#Forbidden City Infrastructure decisions:
+@pw_fc_time_1 = 180 #1/2 year
+@pw_fc_time_2 = 360 #1 year
+@pw_fc_time_3 = 540 #3/2 years
+@pw_fc_time_4 = 720 #2 years
+
+@pw_fc_mineral_cost_1 = 500
+@pw_fc_mineral_cost_2 = 1000
+@pw_fc_mineral_cost_3 = 1500
+@pw_fc_mineral_cost_4 = 2000
+
+@pw_fc_influence_cost_1 = 25
+@pw_fc_influence_cost_2 = 50
+@pw_fc_influence_cost_3 = 100
+@pw_fc_influence_cost_4 = 125
+
+@pw_fc_rare_cost_3 = 200
+@pw_fc_rare_cost_4 = 400
+
+@pw_fc_resource_cost = 1000

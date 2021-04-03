@@ -3563,3 +3563,1297 @@ pw_tech_burdens_of_all = {
 		}
 	}
 }
+
+# Forbidden City
+pw_tech_elitist_urbanism = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_elitist_urbanism }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.25
+			has_valid_civic = civic_corvee_system
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_imperial_cult
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_slaver_guilds
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_indentured_assets
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_authority = auth_dictatorial
+		}
+
+		modifier = {
+			factor = 2
+			has_authority = auth_imperial
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+# Forbidden City (Infrastructure Techs):
+
+#Capital Developments
+pw_tech_capital_developments = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_centralized_emergency_developments }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Capital Developments -> Luxury Retreat
+pw_tech_capital_developments_luxury_retreat = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_capital_developments
+		tech_resort_colonies
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				any_owned_planet = {
+					has_modifier = resort_colony
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_modifier = resort_colony
+			}
+		}
+	}
+}
+
+#Capital Developments -> Wardens Directorate
+pw_tech_capital_developments_wardens_directorate = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_capital_developments
+		tech_penal_colonies
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				any_owned_planet = {
+					has_modifier = penal_colony
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_modifier = penal_colony
+			}
+		}
+	}
+}
+
+#Capital Developments -> Overseers Ring
+pw_tech_capital_developments_overseers_ring = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_capital_developments
+		tech_slave_colonies
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = {
+				any_owned_planet = {
+					has_modifier = slave_colony
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_modifier = slave_colony
+			}
+		}
+	}
+}
+
+#Centralized Emergency Developments
+pw_tech_centralized_emergency_developments = {
+	area = society
+	category = { new_worlds }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_centralized_emergency_developments }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Centralized Power Developments
+pw_tech_centralized_power_developments = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_centralized_emergency_developments }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Central Council -> Ambassador Chambers
+pw_tech_central_council_ambassador_chambers = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+		is_xenophile = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_public_relations_specialists
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_diplomatic_corps
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_merchant_guilds
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Central Council -> Internal Affairs
+pw_tech_central_council_internal_affairs = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+		is_xenophobe = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophobe
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_inwards_perfection
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_fanatic_purifiers
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_barbaric_despoilers
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Central Council -> Intellectual Circles
+pw_tech_central_council_intellectual_circles = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+		is_materialist = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_materialist
+		}
+
+		modifier = {
+			factor = 3
+			has_valid_civic = civic_technocracy
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Central Council -> Holy Tribunal
+pw_tech_central_council_holy_tribunal = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+		is_spiritualist = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_spiritualist
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_imperial_cult
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_death_cult
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_gospel_of_the_masses
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Central Council -> Ballroom
+pw_tech_central_council_ballroom = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+		is_pacifist = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_pacifist
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_inwards_perfection
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_agrarian_idyll
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}
+
+#Central Council -> War Room
+pw_tech_central_council_war_room = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_elitist_urbanism
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_authoritarian = yes
+		is_militarist = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_authoritarian = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_warrior_culture
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_nationalistic_zeal
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_private_military_companies
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_naval_contractors
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				has_building = pw_building_forbidden_city
+			}
+		}
+	}
+}

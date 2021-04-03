@@ -125,3 +125,8 @@
     pw_transplanetary_logistics_network_tooltip: "Â§SAllows us to develop planetary infrastructure.Â§!\n"
     pw_building_transhabitat_logistics_network: "Transhabitat Logistics Network"
     pw_building_transhabitat_logistics_network_desc: "A system of tunnels, tubes, cables ducts and zero-g passageways that are able to provide necessary and supplementary resources equally to the population of the habitat. Individuals and communities can settle further into space as the the Network can reach the into the cold void."
+
+    pw_forbidden_city: "Â§MForbidden CityÂ§!"
+    pw_building_forbidden_city: "Forbidden City"
+    pw_building_forbidden_city_desc: "A secure city district dedicated to administration and governance, isolated and protected from the masses. Here is where the central powers of the planet come to congregate, conspire and rule. With enough city infrastructure, every political matter in the planet can be concentrated here."
+    pw_forbidden_city_tooltip: "Â§SAllows us to develop centralized infrastructure.Â§!\n"

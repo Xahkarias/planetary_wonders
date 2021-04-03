@@ -153,6 +153,10 @@
     pw_mod_TLN_inspiring_peace: "Inspiring Peace"
     pw_mod_TLN_inspiring_peace_desc: "The construction of egalitarian infrastructure has brought upon the planet a period of peace and stability, where less and less people see sense or purpose in committing crimes and communities thrive together."
 
+    # Transplanetary Logistics Network:
+    pw_mod_forbidden_city_recently_build: "Authority in Power"
+    pw_mod_forbidden_city_recently_build_desc: "The recent construction of a the $pw_forbidden_city$, a bastion of power and centralized administration brings trust to or population. Trust that the system works adn that the hierarchy is maintained."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"
