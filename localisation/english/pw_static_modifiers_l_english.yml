@@ -153,9 +153,21 @@
     pw_mod_TLN_inspiring_peace: "Inspiring Peace"
     pw_mod_TLN_inspiring_peace_desc: "The construction of egalitarian infrastructure has brought upon the planet a period of peace and stability, where less and less people see sense or purpose in committing crimes and communities thrive together."
 
-    # Transplanetary Logistics Network:
+    # Forbidden City:
     pw_mod_forbidden_city_recently_build: "Authority in Power"
     pw_mod_forbidden_city_recently_build_desc: "The recent construction of a the $pw_forbidden_city$, a bastion of power and centralized administration brings trust to or population. Trust that the system works adn that the hierarchy is maintained."
+
+    pw_mod_FC_food_for_the_people: "Food for the People"
+    pw_mod_FC_food_for_the_people_desc: "The people here enjoy a better share of food, given to them by their benevolent elite."
+
+    pw_mod_FC_goods_for_the_people: "Goods for the People"
+    pw_mod_FC_goods_for_the_people_desc: "The people here enjoy a better share of modern consumer goods, given to them by their benevolent elite."
+
+    pw_mod_FC_orderly_place: "In Their Orderly Place"
+    pw_mod_FC_orderly_place_desc: "Deliberate use of workplace propaganda for justification of established hierarchies maintains the working population of the planet in control."
+
+    pw_mod_FC_repression: "Authoritarian Oppression"
+    pw_mod_FC_repression_desc: "The people here are being repressed by daring to stand against their rulers."
 
     #Solipsist Debates:
 

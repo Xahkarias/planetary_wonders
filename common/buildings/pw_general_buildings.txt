@@ -1766,7 +1766,7 @@ pw_building_forbidden_city = {
 	}
 
 	on_destroy = {
-		planet_event = { id = pw_wonder.1803 }
+		planet_event = { id = pw_wonder.1802 }
 	}
 
 	ai_weight = {

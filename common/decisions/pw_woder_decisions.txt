@@ -3045,6 +3045,7 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 		remove_deposit = pw_d_infrastructure_governor_mansion
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1805 }
+			planet_event = { id = pw_wonder.1803 } #Destroy the previous Seat of Power
 		}
 	}
 
@@ -3100,7 +3101,7 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 }
 
 #Capital: Throne Room (requires Imperial)
-pw_decision_fc_infrastructure_capital_seat_of_power = {
+pw_decision_fc_infrastructure_capital_throne_room = {
 	owned_planets_only = yes
 	sound = event_ringworld_build_upgrade
 
@@ -3140,6 +3141,7 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 		remove_deposit = pw_d_infrastructure_governor_mansion
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1805 }
+			planet_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
 		}
 	}
 

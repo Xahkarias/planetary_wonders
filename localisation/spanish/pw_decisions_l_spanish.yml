@@ -135,3 +135,10 @@
     pw_decision_fc_infrastructure_holy_tribunal: "Use the $pw_forbidden_city$ to stablish a hall of holy justice, where the heretics can be judged and punished for their crimes."
     pw_decision_fc_infrastructure_ballroom: "Use the $pw_forbidden_city$ to stablish the center of all social exchange of the ruling elite, where they can unwind form work, or continue to forge alliances with their social capital."
     pw_decision_fc_infrastructure_war_room: "Use the $pw_forbidden_city$ to stablish the centralized control of planetary military operation, ready to dispatch defenses or support our fleets."
+
+    pw_decision_fc_infrastructure_ambassador_chambers_desc: "Use the $pw_forbidden_city$ to stablish the primary residents of foreign representatives in the planet, outfitted to serve their habitation needs."
+    pw_decision_fc_infrastructure_internal_affairs_desc: "Use the $pw_forbidden_city$ to stablish central of planetary internal processing, where the operation is outmost secrecy for foreign observers."
+    pw_decision_fc_infrastructure_intellectual_circles_desc: "Use the $pw_forbidden_city$ to stablish an ambient of free academic discussion and research where intellectuals can speak without concern for popular anxieties."
+    pw_decision_fc_infrastructure_holy_tribunal_desc: "Use the $pw_forbidden_city$ to stablish a hall of holy justice, where the heretics can be judged and punished for their crimes."
+    pw_decision_fc_infrastructure_ballroom_desc: "Use the $pw_forbidden_city$ to stablish the center of all social exchange of the ruling elite, where they can unwind form work, or continue to forge alliances with their social capital."
+    pw_decision_fc_infrastructure_war_room_desc: "Use the $pw_forbidden_city$ to stablish the centralized control of planetary military operation, ready to dispatch defenses or support our fleets."

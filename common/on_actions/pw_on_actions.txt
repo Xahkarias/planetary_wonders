@@ -26,7 +26,7 @@ on_building_demolished = {
 		pw_wonder.1204 #Guardian Angel
 		pw_wonder.1310 #Mantle Crucible
 		pw_wonder.1703 #Transplanetary Logistics Network
-		pw_wonder.1803 #Forbidden City
+		pw_wonder.1802 #Forbidden City
 	}
 }
 
@@ -37,7 +37,7 @@ on_building_replaced = {
 		pw_wonder.1204 #Guardian Angel
 		pw_wonder.1310 #Mantle Crucible
 		pw_wonder.1703 #Transplanetary Logistics Network
-		pw_wonder.1803 #Forbidden City
+		pw_wonder.1802 #Forbidden City
 	}
 }
 

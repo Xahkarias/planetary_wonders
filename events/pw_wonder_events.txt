@@ -6150,7 +6150,6 @@ planet_event = {
 	}
 }
 
-
 # Forbidden City -> id 1800
 
 #On Forbidden City built
@@ -6214,9 +6213,9 @@ planet_event = {
 
 #When the FC is destroyed/replaces -> demolish Infrastructure
 planet_event = {
-	id = pw_wonder.1803
-	title = pw_wonder.1803.name
-	desc = pw_wonder.1803.desc
+	id = pw_wonder.1802
+	title = pw_wonder.1802.name
+	desc = pw_wonder.1802.desc
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
@@ -6228,7 +6227,7 @@ planet_event = {
 
 	trigger = {
 		last_building_changed = pw_building_forbidden_city
-		has_building = pw_building_forbidden_city #Does not has the building
+		NOT = { has_building = pw_building_forbidden_city } #Does not has the building
 		OR = { #But has one of the deposits:
 			has_deposit = pw_d_infrastructure_planetary_command
 			has_deposit = pw_d_infrastructure_governor_mansion
@@ -6343,6 +6342,102 @@ planet_event = {
 	}
 }
 
+#When the Seat of Power is completed, destroy the old one
+planet_event = {
+	id = pw_wonder.1803
+	title = pw_wonder.1803.name
+	desc = pw_wonder.1803.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_factions
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_capital = yes
+	}
+
+	trigger = {
+		has_building = pw_building_forbidden_city
+		has_deposit = pw_d_infrastructure_seat_of_power
+		exists = owner
+		owner = {
+			any_owned_planet = {
+				NOT = { is_planet = THIS }
+				has_deposit = pw_d_infrastructure_seat_of_power
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1803.a
+		owner = {
+			every_owned_planet = {
+				limit = {
+					NOT = { is_planet = ROOT }
+					has_deposit = pw_d_infrastructure_seat_of_power
+				}
+				remove_deposit = pw_d_infrastructure_seat_of_power
+				if = {
+					limit = { is_sector_capital = yes }
+					add_deposit = pw_d_infrastructure_governor_mansion
+				}
+				else = {
+					add_deposit = pw_d_infrastructure_planetary_command
+				}
+			}
+		}
+	}
+}
+
+#When the Throne Room is completed, destroy the old one
+planet_event = {
+	id = pw_wonder.1804
+	title = pw_wonder.1804.name
+	desc = pw_wonder.1804.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_factions
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_capital = yes
+	}
+
+	trigger = {
+		has_building = pw_building_forbidden_city
+		has_deposit = pw_d_infrastructure_throne_room
+		exists = owner
+		owner = {
+			any_owned_planet = {
+				NOT = { is_planet = THIS }
+				has_deposit = pw_d_infrastructure_throne_room
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1804.a
+		owner = {
+			every_owned_planet = {
+				limit = {
+					NOT = { is_planet = ROOT }
+					has_deposit = pw_d_infrastructure_throne_room
+				}
+				remove_deposit = pw_d_infrastructure_throne_room
+				if = {
+					limit = { is_sector_capital = yes }
+					add_deposit = pw_d_infrastructure_governor_mansion
+				}
+				else = {
+					add_deposit = pw_d_infrastructure_planetary_command
+				}
+			}
+		}
+	}
+}
+
 #When any Infrastructure development is completed:
 planet_event = {
 	id = pw_wonder.1805
@@ -6365,10 +6460,390 @@ planet_event = {
 				scope = ROOT
 			}
 		}
-		# planet_event = {
-		# 	id = pw_wonder.1806
-		# 	days = 30
-		# 	random = 30
-		# }
+		planet_event = {
+			id = pw_wonder.1806
+			days = 30
+			random = 30
+		}
+	}
+}
+
+#After Development random events:
+planet_event = {
+	id = pw_wonder.1806
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_ai = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOT = { has_planet_flag = pw_FC_event }
+	}
+
+	immediate = {
+		set_timed_planet_flag = {
+			flag = pw_FC_event
+			days = @pw_20years
+		}
+		random_list = {
+			20 = {} #Mostly nothing happens
+			1 = {
+				planet_event = { id = pw_wonder.1807 }
+			}
+			1 =  {
+				planet_event = { id = pw_wonder.1808 }
+			}
+			1 = {
+				planet_event = { id = pw_wonder.1809 }
+			}
+			1 = {
+				planet_event = { id = pw_wonder.1810 }
+			}
+		}
+	}
+}
+
+#Hunger Protests
+planet_event = {
+	id = pw_wonder.1807
+	title = pw_wonder.1807.name
+	desc = pw_wonder.1807.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_public_unrest
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_FC_hunger_protest }}
+		owner = { country_uses_food = yes }
+		OR = {
+			planet_stability < 60
+			planet_crime > 10
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_FC_hunger_protest
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Let them eat
+	option = {
+		name = pw_wonder.1807.a
+		add_modifier = {
+			modifier = pw_mod_FC_food_for_the_people
+			days = @pw_10years
+		}
+	}
+
+	#Deliver food
+	option = {
+		name = pw_wonder.1807.b
+		allow = {
+			owner = {
+				has_resource = {
+					type = food
+					amount = 1500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				food = -1500
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+	}
+
+	#Brutally Repress
+	option = {
+		name = pw_wonder.1807.c
+		add_modifier = {
+			modifier = pw_mod_FC_food_for_the_people
+			days = @pw_5years
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+	}
+}
+
+#Their orderly Place
+planet_event = {
+	id = pw_wonder.1808
+	title = pw_wonder.1808.name
+	desc = pw_wonder.1808.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_public_unrest
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_FC_work_protest }}
+		owner = { country_uses_consumer_goods = yes }
+		OR = {
+			planet_stability < 60
+			planet_crime > 10
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_FC_work_protest
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Cede to demands
+	option = {
+		name = pw_wonder.1808.a
+		add_modifier = {
+			modifier = pw_mod_FC_goods_for_the_people
+			days = @pw_10years
+		}
+	}
+
+	#Invest in propaganda
+	option = {
+		name = pw_wonder.1808.b
+		allow = {
+			owner = {
+				has_resource = {
+					type = energy
+					amount = 1000
+				}
+				has_resource = {
+					type = influence
+					amount = 25
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+				influence = 25
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_FC_orderly_place
+			days = @pw_10years
+		}
+	}
+
+	#Brutally Repress
+	option = {
+		name = pw_wonder.1808.c
+		add_modifier = {
+			modifier = pw_mod_FC_food_for_the_people
+			days = @pw_5years
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+	}
+}
+
+#Humble Donations
+planet_event = {
+	id = pw_wonder.1809
+	title = pw_wonder.1809.name
+	desc = pw_wonder.1809.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_FC_donation }}
+		planet_stability > 60
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_FC_donation
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Take Belongings
+	option = {
+		name = pw_wonder.1809.a
+		owner = {
+			add_resource = {
+				consumer_goods = 250
+			}
+		}
+	}
+
+	#Accept Donations
+	option = {
+		name = pw_wonder.1809.b
+		owner = {
+			add_resource = {
+				energy = 750
+			}
+		}
+	}
+
+	#Take both
+	option = {
+		name = pw_wonder.1809.c
+		allow = {
+			owner = {
+				has_resource = {
+					type = influence
+					amount = 50
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = 750
+				consumer_goods = 250
+				influence = -50
+			}
+		}
+	}
+
+
+	#Politely Refuse
+	option = {
+		name = pw_wonder.1809.d
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+		}
+	}
+}
+
+#Ruler Visit
+planet_event = {
+	id = pw_wonder.1810
+	title = pw_wonder.1810.name
+	desc = pw_wonder.1810.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		is_capital = no
+	}
+
+	trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = pw_FC_visit }}
+		owner = { is_at_war = no }
+		planet_stability > 60
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_FC_visit
+				days = @pw_20years
+			}
+		}
+	}
+
+	#Immerse in local culture
+	option = {
+		name = pw_wonder.1810.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+		}
+	}
+
+	#Share the Banquet with the people
+	option = {
+		name = pw_wonder.1810.b
+		trigger = {
+			ruler = {
+				NOT = { has_ruler_trait = trait_ruler_champion_of_the_people }
+			}
+		}
+		allow = {
+			owner = {
+				has_resource = {
+					type = food
+					amount = 1500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				food = -1500
+			}
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+		ruler = {
+			add_trait = trait_ruler_champion_of_the_people
+		}
+	}
+
+	#Make a Speach
+	option = {
+		name = pw_wonder.1810.c
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+		ruler = {
+			add_experience = 300
+		}
 	}
 }
