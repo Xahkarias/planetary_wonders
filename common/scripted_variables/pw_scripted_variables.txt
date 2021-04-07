@@ -111,8 +111,8 @@
 @pw_grand_archive_assemble_cost_check_8 = 90000
 @pw_grand_archive_assemble_cost_check_final = 100000
 #Grand Archive assemble archive (SHOULD BE EQUAL BUT NEGATIVE):
-@pw_grand_archive_assemble_cost_0 = -25000
-@pw_grand_archive_assemble_cost_1 = -20000
+@pw_grand_archive_assemble_cost_0 = -20000
+@pw_grand_archive_assemble_cost_1 = -25000
 @pw_grand_archive_assemble_cost_2 = -30000
 @pw_grand_archive_assemble_cost_3 = -40000
 @pw_grand_archive_assemble_cost_4 = -50000

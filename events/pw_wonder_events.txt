@@ -353,7 +353,6 @@ planet_event = {
 	}
 }
 
-
 # Particle Supercollider -> id 200
 
 #On Particle Supercollider built
@@ -3335,6 +3334,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1202 } #Gestalt first time
 		planet_event = { id = pw_wonder.1203 } #Add flying fortress army
 		planet_event = { id = pw_wonder.1207 days = 60 random = 30 } #Guardian Angel Peace Choice.
+		planet_event = { id = pw_wonder.1203 days = @pw_halfYear } #Recursive check event
 	}
 }
 
@@ -3436,23 +3436,40 @@ planet_event = {
 
 }
 
-#On Guardian Angel destroyed/replaced ->
+#Check if Guardian Angel was destroyed/replaced (recursive)
 planet_event = {
 	id = pw_wonder.1204
 	hide_window = yes
 	is_triggered_only = yes
 	location = THIS
 
-	trigger = {
-		last_building_changed = pw_building_guardian_angel
-	}
-
 	immediate = {
-		planet_event = {
-			id = pw_wonder.1205
+		if = {
+			limit = { #Doesn't have the Guardian Angel building
+				NOT = { has_building = pw_building_guardian_angel }
+				OR = {
+					any_planet_army = { #Has the Flying Fortress
+						army_type = pw_army_flying_fortress
+					}
+					#Has any os the deposits
+					has_deposit = pw_d_guardian_angel_training
+					has_deposit = pw_d_guardian_angel_police_operations
+					has_deposit = pw_d_guardian_angel_tourist_attraction
+				}
+			}
+			planet_event = { #Remove the Fortress
+				id = pw_wonder.1205
+			}
+			planet_event = { #Remove the Deposits
+				id = pw_wonder.1208
+				days = 30 #Different days, to spread the events
+			}
 		}
-		planet_event = {
-			id = pw_wonder.1208
+		else = {
+			planet_event = { #Recursive event
+				id = pw_wonder.1204
+				days = @pw_halfYear
+			}
 		}
 	}
 }
@@ -3460,7 +3477,9 @@ planet_event = {
 # -> remove Flying Fortress
 planet_event = {
 	id = pw_wonder.1205
-	hide_window = yes
+	title = pw_wonder.1205.name
+	desc = pw_wonder.1205.desc
+	picture = GFX_evt_landing_ship_2
 	is_triggered_only = yes
 	location = THIS
 
@@ -3471,7 +3490,8 @@ planet_event = {
 		}
 	}
 
-	immediate = {
+	option = {
+		name = UNFORTUNATE
 		every_planet_army = {
 			limit = { army_type = pw_army_flying_fortress }
 			remove_army = yes
@@ -3550,7 +3570,9 @@ planet_event = {
 # -> remove Peace Choices
 planet_event = {
 	id = pw_wonder.1208
-	hide_window = yes
+	title = pw_wonder.1208.name
+	desc = pw_wonder.1208.desc
+	picture = GFX_evt_landing_ship_2
 	is_triggered_only = yes
 	location = THIS
 
@@ -3563,7 +3585,8 @@ planet_event = {
 		}
 	}
 
-	immediate = {
+	option = {
+		name = UNFORTUNATE
 		if = {
 			limit = { has_deposit = pw_d_guardian_angel_training }
 			remove_deposit = pw_d_guardian_angel_training
@@ -3607,6 +3630,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1301 } #Regular first time
 		planet_event = { id = pw_wonder.1302 } #Gestalt first time
 		planet_event = { id = pw_wonder.1303 } #Crucible Mantle Devastation
+		planet_event = { id = pw_wonder.1310 days = @pw_halfYear } #Recursive check event
 	}
 }
 
@@ -4001,15 +4025,41 @@ planet_event = {
 	}
 }
 
-#Remove Mantle Crucible modifiers after it is removed
+#Check if Mantle Crucible was destroyed/replaced (recursive)
 planet_event = {
 	id = pw_wonder.1310
 	hide_window = yes
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_building = pw_building_mantle_crucible }
+				OR = {
+					has_modifier = pw_mod_mantle_crucible_alloys
+					has_modifier = pw_mod_mantle_crucible_consumer_goods
+				}
+			}
+			planet_event = { id = pw_wonder.1311 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.1310 days = @pw_halfYear }
+		}
+	}
+}
+
+#Remove Mantle Crucible modifiers after it is removed
+planet_event = {
+	id = pw_wonder.1311
+	hide_window = yes
+	is_triggered_only = yes
+
 	trigger = {
-		last_building_changed = pw_building_mantle_crucible
 		NOT = { has_building = pw_building_mantle_crucible }
+		OR = {
+			has_modifier = pw_mod_mantle_crucible_alloys
+			has_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
 	}
 
 	immediate = {
@@ -5042,9 +5092,6 @@ planet_event = {
 			modifier = pw_mod_fair_of_worlds_recently_built
 			days = @pw_1year
 		}
-	}
-
-	after = {
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1432 days = @pw_halfYear random = @pw_halfYear }
 		}
@@ -5069,10 +5116,6 @@ planet_event = {
 	trigger = {
 		has_building = pw_building_fair_of_worlds
 		owner = { is_xenophile = yes }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_design }
 	}
 
 	option = {
@@ -5158,9 +5201,6 @@ planet_event = {
 			modifier = pw_mod_museum_of_the_grotesque_recently_build
 			days = @pw_1year
 		}
-	}
-
-	after = {
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1462 days = @pw_halfYear random = @pw_halfYear }
 		}
@@ -5183,20 +5223,18 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_fair_of_worlds
-		owner = { is_xenophile = yes }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_design }
+		has_building = pw_building_museum_of_the_grotesque
+		owner = { is_xenophobe = yes }
 	}
 
 	option = {
 		name = pw_wonder.1462.a
 		allow = {
 			owner = {
-				NOT = { has_valid_civic = civic_fanatic_purifiers }
-				NOT = { has_valid_civic = civic_inwards_perfection }
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
 			}
 		}
 		owner = {
@@ -5293,6 +5331,7 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = pw_holy_reliquary_built }
+		owner = { country_event = { id = pw_holy_reliquary.1101 days = @pw_1year }} #AI simulate relics
 	}
 
 	option = {
@@ -5368,6 +5407,7 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = pw_grand_archive_built }
+		planet_event = { id = pw_grand_archive.1101 days = @pw_1year } #AI simulate deposits
 	}
 
 	option = {
@@ -5575,6 +5615,7 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1701 } #Regular first time
+		planet_event = { id = pw_wonder.1720 days = @pw_halfYear } #Recursive check
 	}
 }
 
@@ -5682,10 +5723,6 @@ planet_event = {
 	}
 
 	trigger = {
-		OR = {
-			last_building_changed = pw_building_transplanetary_logistics_network
-			last_building_changed = pw_building_transhabitat_logistics_network
-		}
 		NOR = { #Does not has the building:
 			has_building = pw_building_transplanetary_logistics_network
 			has_building = pw_building_transhabitat_logistics_network
@@ -5826,20 +5863,28 @@ planet_event = {
 	}
 
 	immediate = {
-		set_timed_planet_flag = {
-			flag = pw_TLN_event
-			days = @pw_20years
-		}
 		random_list = {
 			20 = {} #Mostly nothing happens
 			1 = {
 				planet_event = { id = pw_wonder.1707 }
+				set_timed_planet_flag = {
+					flag = pw_TLN_event
+					days = @pw_20years
+				}
 			}
 			1 =  {
 				planet_event = { id = pw_wonder.1708 }
+				set_timed_planet_flag = {
+					flag = pw_TLN_event
+					days = @pw_20years
+				}
 			}
 			1 = {
 				planet_event = { id = pw_wonder.1709 }
+				set_timed_planet_flag = {
+					flag = pw_TLN_event
+					days = @pw_20years
+				}
 			}
 			1 =  {
 				modifier = {
@@ -5849,6 +5894,10 @@ planet_event = {
 					}
 				}
 				planet_event = { id = pw_wonder.1710 }
+				set_timed_planet_flag = {
+					flag = pw_TLN_event
+					days = @pw_20years
+				}
 			}
 			1 = {
 				modifier = {
@@ -5858,9 +5907,17 @@ planet_event = {
 					}
 				}
 				planet_event = { id = pw_wonder.1711 }
+				set_timed_planet_flag = {
+					flag = pw_TLN_event
+					days = @pw_20years
+				}
 			}
 			1 = {
 				planet_event = { id = pw_wonder.1712 }
+				set_timed_planet_flag = {
+					flag = pw_TLN_event
+					days = @pw_20years
+				}
 			}
 		}
 	}
@@ -5875,6 +5932,11 @@ planet_event = {
 	show_sound = event_announcement
 	is_triggered_only = yes
 	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
 
 	trigger = {
 		exists = owner
@@ -5923,6 +5985,11 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
+
 	trigger = {
 		exists = owner
 		owner = { NOT = { has_country_flag = pw_TLN_progress }}
@@ -5970,6 +6037,11 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
+
 	trigger = {
 		exists = owner
 		owner = { NOT = { has_country_flag = pw_TLN_aid }}
@@ -6003,6 +6075,10 @@ planet_event = {
 	show_sound = event_announcement
 	is_triggered_only = yes
 	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+	}
 
 	trigger = {
 		exists = owner
@@ -6056,6 +6132,11 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
+
 	trigger = {
 		exists = owner
 		owner = { NOT = { has_country_flag = pw_TLN_peace }}
@@ -6095,6 +6176,11 @@ planet_event = {
 	show_sound = event_announcement
 	is_triggered_only = yes
 	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
 
 	trigger = {
 		exists = owner
@@ -6150,6 +6236,82 @@ planet_event = {
 	}
 }
 
+#Street Carnival
+planet_event = {
+	id = pw_wonder.1713
+	title = pw_wonder.1713.name
+	desc = pw_wonder.1713.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
+
+	trigger = {
+		NOT = { has_planet_flag = pw_TLN_event }
+	}
+
+	immediate = {
+		set_timed_planet_flag = {
+			flag = pw_TLN_event
+			days = @pw_10years
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1713.a
+		add_modifier = {
+			modifier = pw_mod_TLN_street_carnival
+			days = @pw_2years
+		}
+	}
+}
+
+#Check if TLS was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.1720
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOR = { #Does not has the building:
+					has_building = pw_building_transplanetary_logistics_network
+					has_building = pw_building_transhabitat_logistics_network
+				}
+				OR = { #But has one of the deposits:
+					has_deposit = pw_d_infrastructure_food_distribution
+					has_deposit = pw_d_infrastructure_energy_distribution
+					has_deposit = pw_d_infrastructure_goods_distribution
+					has_deposit = pw_d_infrastructure_luxury_distribution
+					has_deposit = pw_d_infrastructure_medical_posts
+					has_deposit = pw_d_infrastructure_habitation_support
+					has_deposit = pw_d_infrastructure_emergency_services
+					has_deposit = pw_d_infrastructure_crisis_responders
+					has_deposit = pw_d_infrastructure_public_agoras
+					has_deposit = pw_d_infrastructure_local_administration
+					has_deposit = pw_d_infrastructure_distributed_education
+					has_deposit = pw_d_infrastructure_arts_installations
+					has_deposit = pw_d_infrastructure_public_markets
+					has_deposit = pw_d_infrastructure_inventions_fair
+					has_deposit = pw_d_infrastructure_cooperatives_manufacturers
+					has_deposit = pw_d_infrastructure_industrial_unions
+				}
+			}
+			planet_event = { id = pw_wonder.1703 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.1720 days = @pw_halfYear }
+		}
+	}
+}
+
 # Forbidden City -> id 1800
 
 #On Forbidden City built
@@ -6176,6 +6338,7 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1801 } #Regular first time
+		planet_event = { id = pw_wonder.1820 days = @pw_halfYear } #Recursive Check
 	}
 }
 
@@ -6226,7 +6389,6 @@ planet_event = {
 	}
 
 	trigger = {
-		last_building_changed = pw_building_forbidden_city
 		NOT = { has_building = pw_building_forbidden_city } #Does not has the building
 		OR = { #But has one of the deposits:
 			has_deposit = pw_d_infrastructure_planetary_command
@@ -6363,8 +6525,14 @@ planet_event = {
 		exists = owner
 		owner = {
 			any_owned_planet = {
-				NOT = { is_planet = THIS }
-				has_deposit = pw_d_infrastructure_seat_of_power
+				OR = {
+					AND = { #Seat of Power is somewhere else
+						NOT = { is_planet = THIS }
+						has_deposit = pw_d_infrastructure_seat_of_power
+					}
+					#Throne Room is somewhere.
+					has_deposit = pw_d_infrastructure_throne_room
+				}
 			}
 		}
 	}
@@ -6378,6 +6546,19 @@ planet_event = {
 					has_deposit = pw_d_infrastructure_seat_of_power
 				}
 				remove_deposit = pw_d_infrastructure_seat_of_power
+				if = {
+					limit = { is_sector_capital = yes }
+					add_deposit = pw_d_infrastructure_governor_mansion
+				}
+				else = {
+					add_deposit = pw_d_infrastructure_planetary_command
+				}
+			}
+			every_owned_planet = {
+				limit = {
+					has_deposit = pw_d_infrastructure_throne_room
+				}
+				remove_deposit = pw_d_infrastructure_throne_room
 				if = {
 					limit = { is_sector_capital = yes }
 					add_deposit = pw_d_infrastructure_governor_mansion
@@ -6411,8 +6592,14 @@ planet_event = {
 		exists = owner
 		owner = {
 			any_owned_planet = {
-				NOT = { is_planet = THIS }
-				has_deposit = pw_d_infrastructure_throne_room
+				OR = {
+					AND = { #Seat of Power is somewhere else
+						NOT = { is_planet = THIS }
+						has_deposit = pw_d_infrastructure_throne_room
+					}
+					#Throne Room is somewhere.
+					has_deposit = pw_d_infrastructure_seat_of_power
+				}
 			}
 		}
 	}
@@ -6426,6 +6613,19 @@ planet_event = {
 					has_deposit = pw_d_infrastructure_throne_room
 				}
 				remove_deposit = pw_d_infrastructure_throne_room
+				if = {
+					limit = { is_sector_capital = yes }
+					add_deposit = pw_d_infrastructure_governor_mansion
+				}
+				else = {
+					add_deposit = pw_d_infrastructure_planetary_command
+				}
+			}
+			every_owned_planet = {
+				limit = {
+					has_deposit = pw_d_infrastructure_seat_of_power
+				}
+				remove_deposit = pw_d_infrastructure_seat_of_power
 				if = {
 					limit = { is_sector_capital = yes }
 					add_deposit = pw_d_infrastructure_governor_mansion
@@ -6485,23 +6685,36 @@ planet_event = {
 	}
 
 	immediate = {
-		set_timed_planet_flag = {
-			flag = pw_FC_event
-			days = @pw_20years
-		}
+
 		random_list = {
 			20 = {} #Mostly nothing happens
 			1 = {
 				planet_event = { id = pw_wonder.1807 }
+				set_timed_planet_flag = {
+					flag = pw_FC_event
+					days = @pw_20years
+				}
 			}
 			1 =  {
 				planet_event = { id = pw_wonder.1808 }
+				set_timed_planet_flag = {
+					flag = pw_FC_event
+					days = @pw_20years
+				}
 			}
 			1 = {
 				planet_event = { id = pw_wonder.1809 }
+				set_timed_planet_flag = {
+					flag = pw_FC_event
+					days = @pw_20years
+				}
 			}
 			1 = {
 				planet_event = { id = pw_wonder.1810 }
+				set_timed_planet_flag = {
+					flag = pw_FC_event
+					days = @pw_20years
+				}
 			}
 		}
 	}
@@ -6516,6 +6729,11 @@ planet_event = {
 	show_sound = event_public_unrest
 	is_triggered_only = yes
 	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
 
 	trigger = {
 		exists = owner
@@ -6552,7 +6770,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = food
-					amount = 1500
+					amount > 1500
 				}
 			}
 		}
@@ -6579,7 +6797,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1807.c
 		add_modifier = {
-			modifier = pw_mod_FC_food_for_the_people
+			modifier = pw_mod_FC_repression
 			days = @pw_5years
 		}
 		owner = {
@@ -6602,6 +6820,11 @@ planet_event = {
 	show_sound = event_public_unrest
 	is_triggered_only = yes
 	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
 
 	trigger = {
 		exists = owner
@@ -6638,11 +6861,11 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = energy
-					amount = 1000
+					amount > 1000
 				}
 				has_resource = {
 					type = influence
-					amount = 25
+					amount > 25
 				}
 			}
 		}
@@ -6662,7 +6885,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.1808.c
 		add_modifier = {
-			modifier = pw_mod_FC_food_for_the_people
+			modifier = pw_mod_FC_repression
 			days = @pw_5years
 		}
 		owner = {
@@ -6685,6 +6908,11 @@ planet_event = {
 	show_sound = event_celebration
 	is_triggered_only = yes
 	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
 
 	trigger = {
 		exists = owner
@@ -6728,7 +6956,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = influence
-					amount = 50
+					amount > 50
 				}
 			}
 		}
@@ -6768,6 +6996,8 @@ planet_event = {
 
 	pre_triggers = {
 		is_capital = no
+		is_occupied_flag = no
+		has_ground_combat = no
 	}
 
 	trigger = {
@@ -6811,7 +7041,7 @@ planet_event = {
 			owner = {
 				has_resource = {
 					type = food
-					amount = 1500
+					amount > 1500
 				}
 			}
 		}
@@ -6831,7 +7061,7 @@ planet_event = {
 		}
 	}
 
-	#Make a Speach
+	#Make a Speech
 	option = {
 		name = pw_wonder.1810.c
 		owner = {
@@ -6844,6 +7074,84 @@ planet_event = {
 		}
 		ruler = {
 			add_experience = 300
+		}
+	}
+}
+
+#Masquerade
+planet_event = {
+	id = pw_wonder.1811
+	title = pw_wonder.1811.name
+	desc = pw_wonder.1811.desc
+	picture = GFX_evt_medieval_alien_civilization
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		is_occupied_flag = no
+		has_ground_combat = no
+	}
+
+	trigger = {
+		NOT = { has_planet_flag = pw_FC_event }
+	}
+
+	immediate = {
+		set_timed_planet_flag = {
+			flag = pw_FC_event
+			days = @pw_10years
+		}
+	}
+
+	#Modifier
+	option = {
+		name = pw_wonder.1811.a
+		add_modifier = {
+			modifier = pw_mod_FC_masquerade
+			days = @pw_2years
+		}
+	}
+}
+
+#Check if FC was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.1820
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_building = pw_building_forbidden_city } #Does not has the building
+				OR = { #But has one of the deposits:
+					has_deposit = pw_d_infrastructure_planetary_command
+					has_deposit = pw_d_infrastructure_governor_mansion
+					has_deposit = pw_d_infrastructure_seat_of_power
+					has_deposit = pw_d_infrastructure_throne_room
+					has_deposit = pw_d_infrastructure_luxury_retreat
+					has_deposit = pw_d_infrastructure_wardens_directorate
+					has_deposit = pw_d_infrastructure_overseers_ring
+					has_deposit = pw_d_infrastructure_palatial_physicians
+					has_deposit = pw_d_infrastructure_city_defenders
+					has_deposit = pw_d_infrastructure_crisis_bunker
+					has_deposit = pw_d_infrastructure_personal_guardian
+					has_deposit = pw_d_infrastructure_central_of_disinformation
+					has_deposit = pw_d_infrastructure_center_of_justice
+					has_deposit = pw_d_infrastructure_central_treasury
+					has_deposit = pw_d_infrastructure_galactic_bureau
+					has_deposit = pw_d_infrastructure_ambassador_chambers
+					has_deposit = pw_d_infrastructure_internal_affairs
+					has_deposit = pw_d_infrastructure_intellectual_circles
+					has_deposit = pw_d_infrastructure_holy_tribunal
+					has_deposit = pw_d_infrastructure_ballroom
+					has_deposit = pw_d_infrastructure_war_room
+				}
+			}
+			planet_event = { id = pw_wonder.1802 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.1820 days = @pw_halfYear }
 		}
 	}
 }

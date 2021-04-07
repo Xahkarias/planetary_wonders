@@ -290,6 +290,11 @@
     pw_wonder.1202.name: "Thrice Happy Those Whose Fortresses Already Rises"
     pw_wonder.1202.desc: "All drones of [ROOT.GetName] witness the ascension of the newly built Guardian Angel, to take to its first and perpetual flight. Now every drone of [ROOT.GetName] can look up to see Our wingless protector, and Our enemies can look down and despair in their doomed invasion.\nThis magnificent platform uses anti-gravity propulsion technology to patrol the skies over our major cities. It is equipped with anti-orbital battery firing lines, to deter any fleet who plans to bombard this defended planet, and a host of diligent warriors and vehicles, ready to deploy, should any dare to enact a direct invasion.\nIn times of relative peace, this bastion can serve as training ground for expeditionary forces and assault troops. As well as fortify the contingency of planetary patrols, but its simple presence already dissimulates organized deviant activities.\n\nOur tremendous vigilant already safeguards our skies."
     pw_wonder.1202.a: "The sword that fights evil, dies with a dull blade"
+
+    #Guardian Angel destroy Flying Fortress
+    pw_wonder.1205.name: "Fallen Fortress"
+    pw_wonder.1205.desc: "Without the support of the Guardian Angel, the Flying Fortress defending [THIS.GetName] can no longer be supported and will be decommissioned. It can come back to defending our planet whenever we rebuild the Guardian Angel."
+
     #Guardian Angel Decision on peace times
     pw_wonder.1207.name: "Courage in Times of Peace?"
     pw_wonder.1207.desc: "After taking its glorious flight, the Guardian Angel has been a symbol of hope and security to the population of [ROOT.GetName]. As we are not presently at war, this should be a wonderful time to decide what shall be made of the Guardian during its years in peace, when defending the planet from our enemies is not a pressing matter."
@@ -299,6 +304,10 @@
     pw_wonder.1207.b.tooltip: "In times of peace, the Guardian Angel will be used as the center of enforcer operations in the planet, monitoring most of the criminal action here."
     pw_wonder.1207.c: "Use the fortress as a Tourist Attraction"
     pw_wonder.1207.c.tooltip: "In times of peace, the Guardian Angel will be used as a tourist attraction, which provides cultural expositions and recreational flights to visitors."
+
+    #Guardian Angel destroy Deposits
+    pw_wonder.1208.name: "No More Angels"
+    pw_wonder.1208.desc: "Without the support of the Guardian Angel, the functions it performed during peace times on [THIS.GetName] can no longer be supported and the services will be dismantled. We can come back to promote them again, if we rebuild the Guardian Angel."
 
     #Complete Mantle Crucible
     pw_message_mantle_crucible_complete: "$pw_mantle_crucible$ has been constructed in $PLANET|Y$."
@@ -503,6 +512,11 @@
     pw_wonder.1712.desc: "The $pw_transplanetary_logistics_network$ educational infrastructure has surprised our researchers since a simple and elegant solution to one of our open problems was proposed by a clerk worker, who enjoyed discussions on our public agoras and contributed greatly to the local education development. He claims that he is not interested in working with formal research, only working on open problems as a hobby. Either way, we welcome this contribution."
     pw_wonder.1712.a: "The immortal science of the worker!"
 
+    #Street Carnival
+    pw_wonder.1713.name: "Street Carnival"
+    pw_wonder.1713.desc: "The construction of the Arts Installation in the $pw_transplanetary_logistics_network$ has been market by a grand urban party, a street festival that attracts and welcomes all to the streets in order to celebrate."
+    pw_wonder.1713.a: "Wonderful!"
+
     #Complete Forbidden City
     pw_message_forbidden_city_complete: "$pw_forbidden_city$ has been constructed in $PLANET|Y$."
     #First Time Complete Forbidden City (Regular Empire)
@@ -552,3 +566,8 @@
     pw_wonder.1810.a: "Immerse in local culture."
     pw_wonder.1810.b: "Throw a banquet for the more prominent locals."
     pw_wonder.1810.c: "Make a speech from the wall of the City."
+
+    #Elite Masquerade
+    pw_wonder.1811.name: "Elite Masquerade"
+    pw_wonder.1811.desc: "The construction of the Ballroom in the $pw_forbidden_city$ has been market by a grand elite party, a masked ball to which the richest and most influent elite of the planet were invited."
+    pw_wonder.1811.a: "Wonderful!"

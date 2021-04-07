@@ -825,9 +825,6 @@ pw_diversity_curator = {
 
 	planet_modifier = {
 		planet_amenities_add = 8
-	}
-
-	country_modifier = {
 		pop_ethic_xenophile_attraction_mult = 0.05
 	}
 
@@ -980,9 +977,6 @@ pw_degeneracy_curator = {
 
 	planet_modifier = {
 		planet_amenities_add = 8
-	}
-
-	country_modifier = {
 		pop_ethic_xenophobe_attraction_mult = 0.05
 	}
 

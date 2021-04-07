@@ -130,7 +130,7 @@ pw_grand_archive_visit_the_archive = {
 	}
 
 	prerequisites = {
-		pw_tech_spiritual_artifacts_studies
+		pw_tech_materialist_archiving
 	}
 
 	potential = {

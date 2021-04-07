@@ -192,6 +192,15 @@ pw_trigger_art_egalitarian_events = {
 			country_event = { id = pw_art_exhibition.561 }
 		}
 		1 = {
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_leader = {
+						leader_class = governor
+						NOT = { has_trait = leader_trait_architectural_interest }
+					}
+				}
+			}
 			country_event = { id = pw_art_exhibition.562 }
 		}
 		1 = {

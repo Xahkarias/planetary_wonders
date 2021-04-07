@@ -23,10 +23,10 @@ on_tech_increased = {
 # This = Planet
 on_building_demolished = {
 	events = {
-		pw_wonder.1204 #Guardian Angel
-		pw_wonder.1310 #Mantle Crucible
-		pw_wonder.1703 #Transplanetary Logistics Network
-		pw_wonder.1802 #Forbidden City
+		#pw_wonder.1204 #Guardian Angel
+		#pw_wonder.1310 #Mantle Crucible
+		#pw_wonder.1703 #Transplanetary Logistics Network
+		#pw_wonder.1802 #Forbidden City
 	}
 }
 
@@ -34,10 +34,10 @@ on_building_demolished = {
 # This = Planet
 on_building_replaced = {
 	events = {
-		pw_wonder.1204 #Guardian Angel
-		pw_wonder.1310 #Mantle Crucible
-		pw_wonder.1703 #Transplanetary Logistics Network
-		pw_wonder.1802 #Forbidden City
+		#pw_wonder.1204 #Guardian Angel
+		#pw_wonder.1310 #Mantle Crucible
+		#pw_wonder.1703 #Transplanetary Logistics Network
+		#pw_wonder.1802 #Forbidden City
 	}
 }
 

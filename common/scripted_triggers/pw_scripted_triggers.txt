@@ -94,16 +94,16 @@ pw_has_build_any_planetary_wonder = {
 # Scope: Planet
 pw_is_wonder_empire_unique = {
 	custom_tooltip = {
-		success_text = {
-			text = pw_empire_unique_tooltip
+		fail_text = pw_empire_unique_tooltip
+		owner = {
+			any_owned_planet = {
+				NOT = { is_planet = ROOT } #Ignores the triggering planet so it does not mess up upgrades.
+				OR = {
+					has_building = $WONDER$
+					has_building_construction = $WONDER$
+				}
+			}
 		}
-		fail_text = {
-			text = pw_empire_unique_tooltip
-		}
-		owner = { any_owned_planet = { OR = {
-			has_building = $WONDER$
-			has_building_construction = $WONDER$
-		}}}
 	}
 }
 

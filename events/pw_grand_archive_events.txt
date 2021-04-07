@@ -204,7 +204,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -303,11 +303,11 @@ country_event = {
 				}
 			}
 		}
-
 		begin_event_chain = {
 			event_chain = pw_assemble_ARK_project_chain
 			target = ROOT
 		}
+		pw_grand_archive_return_to_hub = yes
 		hidden_effect = {
 			#Seed Bank
 			random_owned_planet = {
@@ -390,7 +390,69 @@ country_event = {
 	#Replacement project (not all conditions set)
 	option = {
 		name = pw_grand_archive.continue_to_project
-		default_hide_option = yes
+		trigger = {
+			NAND = { #Reverse of the above
+				#Seed Bank
+				any_owned_planet = {
+					NOT = {
+						has_building = pw_building_grand_archive
+					}
+					is_capital = no
+				}
+				#Frozen Specimens
+				any_system = {
+					any_system_planet = {
+						is_surveyed = {
+							who = ROOT
+							status = yes
+						}
+						OR = {
+							is_planet_class = pc_barren_cold
+							is_planet_class = pc_frozen
+							is_planet_class = pc_ice_asteroid
+						}
+						solar_system = {
+							OR = {
+								NOT = { exists = space_owner }
+								AND = {
+									exists = space_owner
+									space_owner = {
+										is_country = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+				#Uncharted Biosphere
+				any_system = {
+					any_system_planet = {
+						is_surveyed = {
+							who = ROOT
+							status = yes
+						}
+						OR = {
+							is_planet_class = pc_continental
+							is_planet_class = pc_ocean
+							is_planet_class = pc_tropical
+							is_planet_class = pc_gaia
+						}
+						solar_system = {
+							OR = {
+								NOT = { exists = space_owner }
+								AND = {
+									exists = space_owner
+									space_owner = {
+										is_country = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		pw_grand_archive_return_to_hub = yes
 		enable_special_project = {
 			name = PW_ARK_PROJECT
 			location = event_target:pw_grand_archive_planet
@@ -534,6 +596,13 @@ country_event = {
 
 	option = {
 		name = pw_grand_archive.OK
+
+		if = {
+			limit = {
+				has_event_chain = pw_assemble_ARK_project_chain
+			}
+			end_event_chain = pw_assemble_ARK_project_chain
+		}
 		event_target:pw_grand_archive_planet = {
 			add_deposit = pw_d_ark_project
 		}
@@ -611,7 +680,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -649,7 +718,6 @@ country_event = {
 	#Primary project
 	option = {
 		name = pw_grand_archive.continue_to_project
-
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_LIBRARY_OF_BABEL
@@ -657,6 +725,7 @@ country_event = {
 				owner = ROOT
 			}
 		}
+		pw_grand_archive_return_to_hub = yes
 	}
 }
 
@@ -758,7 +827,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -795,11 +864,11 @@ country_event = {
 
 	option = {
 		name = pw_grand_archive.continue_to_project
-
 		begin_event_chain = {
 			event_chain = pw_assemble_cradle_initiative_chain
 			target = ROOT
 		}
+		pw_grand_archive_return_to_hub = yes
 		hidden_effect = {
 			#Wet
 			if = {
@@ -1257,6 +1326,12 @@ country_event = {
 
 	option = {
 		name = pw_grand_archive.OK
+		if = {
+			limit = {
+				has_event_chain = pw_assemble_cradle_initiative_chain
+			}
+			end_event_chain = pw_assemble_cradle_initiative_chain
+		}
 		event_target:pw_grand_archive_planet = {
 			add_deposit = pw_d_cradle_initiative
 		}
@@ -1295,7 +1370,10 @@ country_event = {
 	trigger = {
 		last_increased_tech = pw_tech_grand_archive_crucible_of_worlds_secrets
 		any_planet_within_border = {
-			uninhabitable_regular_planet = yes
+			OR = {
+				is_planet_class = pc_barren_cold
+				is_planet_class = pc_barren
+			}
 			NOT = { has_modifier = terraforming_candidate }
 		}
 	}
@@ -1303,7 +1381,10 @@ country_event = {
 	immediate = {
 		random_planet_within_border = {
 			limit = {
-				uninhabitable_regular_planet = yes
+				OR = {
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_barren
+				}
 				NOT = { has_modifier = terraforming_candidate }
 			}
 			save_event_target_as = PWNewTerraformingCandidate
@@ -1372,7 +1453,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -1410,7 +1491,6 @@ country_event = {
 	#Primary project
 	option = {
 		name = pw_grand_archive.continue_to_project
-
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_PARTICLE_MUSEUM
@@ -1418,6 +1498,7 @@ country_event = {
 				owner = ROOT
 			}
 		}
+		pw_grand_archive_return_to_hub = yes
 	}
 }
 
@@ -1519,7 +1600,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -1557,7 +1638,6 @@ country_event = {
 	#Primary project
 	option = {
 		name = pw_grand_archive.continue_to_project
-
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_OMNIDATABASE
@@ -1565,6 +1645,7 @@ country_event = {
 				owner = ROOT
 			}
 		}
+		pw_grand_archive_return_to_hub = yes
 	}
 }
 
@@ -1666,7 +1747,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -1708,6 +1789,7 @@ country_event = {
 			event_chain = pw_assemble_stellarium_chain
 			target = ROOT
 		}
+		pw_grand_archive_return_to_hub = yes
 		hidden_effect = {
 			while = {
 				count = 4
@@ -1853,6 +1935,12 @@ country_event = {
 			min = @tier3unitymin
 			max = @tier3unitymax
 		}
+		if = {
+			limit = {
+				has_event_chain = pw_assemble_stellarium_chain
+			}
+			end_event_chain = pw_assemble_stellarium_chain
+		}
 		event_target:pw_grand_archive_planet = {
 			add_deposit = pw_d_stellarium
 		}
@@ -1967,7 +2055,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2012,6 +2100,7 @@ country_event = {
 				owner = ROOT
 			}
 		}
+		pw_grand_archive_return_to_hub = yes
 	}
 }
 
@@ -2033,13 +2122,13 @@ ship_event = {
 
 	option = {
 		name = pw_grand_archive.710.a
-		owner = {
-			fleet = {
-				delete_fleet = {
-					target = THIS
-					kill_leader = no
-				}
+		fleet = {
+			delete_fleet = {
+				target = THIS
+				kill_leader = no
 			}
+		}
+		owner = {
 			add_monthly_resource_mult = {
 				resource = alloys
 				value = @tier2materialreward
@@ -2130,7 +2219,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2175,6 +2264,7 @@ country_event = {
 				owner = ROOT
 			}
 		}
+		pw_grand_archive_return_to_hub = yes
 	}
 }
 
@@ -2298,7 +2388,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2356,6 +2446,7 @@ country_event = {
 			event_chain = pw_assemble_meta_architectural_complex_chain
 			target = ROOT
 		}
+		pw_grand_archive_return_to_hub = yes
 
 		hidden_effect = {
 			#Space Elevator
@@ -2397,12 +2488,28 @@ country_event = {
 	#Replacement project (not all conditions set)
 	option = {
 		name = pw_grand_archive.continue_to_project
-		default_hide_option = yes
+		trigger = {
+			NAND = {#Reverse of the above
+				#Space Elevator
+				any_owned_planet = {
+					has_building = pw_building_space_elevator
+				}
+				#Astronomical Model Bureau
+				any_owned_planet = {
+					has_building = pw_building_galactic_model
+				}
+				#Guardian Angel
+				any_owned_planet = {
+					has_building = pw_building_guardian_angel
+				}
+			}
+		}
 		enable_special_project = {
 			name = PW_META_ARCHITECTURAL_COMPLEX
 			location = event_target:pw_grand_archive_planet
 			owner = ROOT
 		}
+		pw_grand_archive_return_to_hub = yes
 	}
 }
 
@@ -2548,6 +2655,12 @@ country_event = {
 				min = @tier2unitymin
 				max = @tier2unitymax
 			}
+			if = {
+				limit = {
+					has_event_chain = pw_assemble_meta_architectural_complex_chain
+				}
+				end_event_chain = pw_assemble_meta_architectural_complex_chain
+			}
 			event_target:pw_grand_archive_planet = {
 				add_deposit = pw_d_meta_architectural_complex
 			}
@@ -2605,7 +2718,7 @@ country_event = {
 		allow = {
 			has_resource = {
 				type = unity
-				amount = 100000
+				amount > 100000
 			}
 		}
 		add_resource = {
@@ -2627,7 +2740,7 @@ country_event = {
 		allow = {
 			has_resource = {
 				type = influence
-				amount = 25
+				amount > 25
 			}
 		}
 		add_resource = {
@@ -2653,7 +2766,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = @pw_grand_archive_secrets_cost_check
+				amount > @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2786,6 +2899,241 @@ country_event = {
 		custom_tooltip = pw_grand_archive.return
 		hidden_effect = {
 			country_event = { id = pw_grand_archive.1000 }
+		}
+	}
+}
+
+#Add deposits for AI -> 1101
+planet_event = {
+	id = pw_grand_archive.1101
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_ark_project }}
+			add_deposit = pw_d_ark_project
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1102
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1102
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_cradle_initiative }}
+			add_deposit = pw_d_cradle_initiative
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1103
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1103
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_library_of_babel }}
+			add_deposit = pw_d_library_of_babel
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1104
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1104
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_particle_museum }}
+			add_deposit = pw_d_particle_museum
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1105
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1105
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_omnidatabase }}
+			add_deposit = pw_d_omnidatabase
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1106
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1106
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_stellarium }}
+			add_deposit = pw_d_stellarium
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1107
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1107
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_zero_g_exposition }}
+			add_deposit = pw_d_zero_g_exposition
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1108
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1108
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_mechanist_collection }}
+			add_deposit = pw_d_mechanist_collection
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1109
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1109
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_deposit = pw_d_meta_architectural_complex }}
+			add_deposit = pw_d_meta_architectural_complex
+		}
+
+		planet_event = {
+			id = pw_grand_archive.1110
+			days = @pw_5years
+		}
+	}
+}
+
+planet_event = {
+	id = pw_grand_archive.1110
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_deposit = pw_d_ark_project
+				has_deposit = pw_d_cradle_initiative
+				has_deposit = pw_d_library_of_babel
+				has_deposit = pw_d_particle_museum
+				has_deposit = pw_d_omnidatabase
+				has_deposit = pw_d_stellarium
+				has_deposit = pw_d_zero_g_exposition
+				has_deposit = pw_d_mechanist_collection
+				has_deposit = pw_d_meta_architectural_complex
+			}
+			remove_deposit = pw_d_ark_project
+			remove_deposit = pw_d_particle_museum
+			remove_deposit = pw_d_cradle_initiative
+			remove_deposit = pw_d_library_of_babel
+			remove_deposit = pw_d_omnidatabase
+			remove_deposit = pw_d_stellarium
+			remove_deposit = pw_d_zero_g_exposition
+			remove_deposit = pw_d_mechanist_collection
+			remove_deposit = pw_d_meta_architectural_complex
+			add_deposit = pw_d_holoarchive
 		}
 	}
 }

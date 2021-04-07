@@ -497,22 +497,11 @@ ship_event = {
 	option = {
 		name = pw_anomaly.131.a
 		owner = {
-			random_list = {
-				1 = {
-					add_resource = {
-						engineering_research = 100
-					}
-				}
-				1 = {
-					add_resource = {
-						engineering_research = 200
-					}
-				}
-				1 = {
-					add_resource = {
-						engineering_research = 300
-					}
-				}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
 			}
 		}
 	}

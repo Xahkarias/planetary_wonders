@@ -455,23 +455,24 @@ country_event = {
 
 	option = { #War Propaganda
 		name = pw_art_exhibition.militarist
+		custom_tooltip = pw_art_exhibition.militarist.tooltip
 		trigger = {
 			is_pacifist = no
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_militarist
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_militarist
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.10
 				days = @pw_art_exhibition_duration
@@ -481,23 +482,24 @@ country_event = {
 
 	option = { #Martial Arts
 		name = pw_art_exhibition.warrior_culture
+		custom_tooltip = pw_art_exhibition.warrior_culture.tooltip
 		trigger = {
 			has_valid_civic = civic_warrior_culture
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_warrior_culture
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_warrior_culture
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.12
 				days = @pw_art_exhibition_duration
@@ -507,23 +509,24 @@ country_event = {
 
 	option = { #Romantic Nationalism
 		name = pw_art_exhibition.nationalistic_zeal
+		custom_tooltip = pw_art_exhibition.nationalistic_zeal.tooltip
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_nationalistic_zeal
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_nationalistic_zeal
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.14
 				days = @pw_art_exhibition_duration
@@ -533,23 +536,24 @@ country_event = {
 
 	option = { #Bucolism
 		name = pw_art_exhibition.pacifist
+		custom_tooltip = pw_art_exhibition.pacifist.tooltip
 		trigger = {
 			is_militarist = no
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_pacifist
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_pacifist
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.20
 				days = @pw_art_exhibition_duration
@@ -559,23 +563,24 @@ country_event = {
 
 	option = { #Arcadianism
 		name = pw_art_exhibition.agrarian_idyll
+		custom_tooltip = pw_art_exhibition.agrarian_idyll.tooltip
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_agrarian_idyll
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyll
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.22
 				days = @pw_art_exhibition_duration
@@ -585,23 +590,24 @@ country_event = {
 
 	option = { #Religious art
 		name = pw_art_exhibition.spiritualist
+		custom_tooltip = pw_art_exhibition.spiritualist.tooltip
 		trigger = {
 			is_materialist = no
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_spiritualist
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_spiritualist
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.30
 				days = @pw_art_exhibition_duration
@@ -611,23 +617,24 @@ country_event = {
 
 	option = { #Sacral art
 		name = pw_art_exhibition.exalted_priesthood
+		custom_tooltip = pw_art_exhibition.exalted_priesthood.tooltip
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_exalted_priesthood
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_exalted_priesthood
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.32
 				days = @pw_art_exhibition_duration
@@ -637,26 +644,27 @@ country_event = {
 
 	option = { #Decadentism
 		name = pw_art_exhibition.death_cult
+		custom_tooltip = pw_art_exhibition.death_cult.tooltip
 		trigger = {
 			OR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
 			}
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_death_cult
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_death_cult
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.34
 				days = @pw_art_exhibition_duration
@@ -666,23 +674,24 @@ country_event = {
 
 	option = { #Modernism
 		name = pw_art_exhibition.materialist
+		custom_tooltip = pw_art_exhibition.materialist.tooltip
 		trigger = {
 			is_spiritualist = no
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_materialist
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_materialist
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.40
 				days = @pw_art_exhibition_duration
@@ -692,23 +701,24 @@ country_event = {
 
 	option = { #Futurism
 		name = pw_art_exhibition.technocracy
+		custom_tooltip = pw_art_exhibition.technocracy.tooltip
 		trigger = {
 			has_valid_civic = civic_technocracy
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_technocracy
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_technocracy
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.42
 				days = @pw_art_exhibition_duration
@@ -718,23 +728,24 @@ country_event = {
 
 	option = { #Baroque
 		name = pw_art_exhibition.authoritarian
+		custom_tooltip = pw_art_exhibition.authoritarian.tooltip
 		trigger = {
 			is_egalitarian = no
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_authoritarian
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_authoritarian
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.50
 				days = @pw_art_exhibition_duration
@@ -744,23 +755,24 @@ country_event = {
 
 	option = { #Rococo
 		name = pw_art_exhibition.aristocratic_elite
+		custom_tooltip = pw_art_exhibition.aristocratic_elite.tooltip
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_aristocratic_elite
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_aristocratic_elite
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.52
 				days = @pw_art_exhibition_duration
@@ -770,23 +782,24 @@ country_event = {
 
 	option = { #Realism
 		name = pw_art_exhibition.egalitarian
+		custom_tooltip = pw_art_exhibition.egalitarian.tooltip
 		trigger = {
 			is_authoritarian = no
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_egalitarian
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_egalitarian
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.60
 				days = @pw_art_exhibition_duration
@@ -796,23 +809,24 @@ country_event = {
 
 	option = { #Social Realism
 		name = pw_art_exhibition.shared_burden
+		custom_tooltip = pw_art_exhibition.shared_burden.tooltip
 		trigger = {
 			has_valid_civic = civic_shared_burden
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_shared_burden
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_shared_burden
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.62
 				days = @pw_art_exhibition_duration
@@ -822,6 +836,7 @@ country_event = {
 
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
+		custom_tooltip = pw_art_exhibition.megacorp.tooltip
 		trigger = {
 			OR ={
 				is_megacorp = yes
@@ -829,20 +844,20 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_megacorp
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_megacorp
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.70
 				days = @pw_art_exhibition_duration
@@ -852,23 +867,24 @@ country_event = {
 
 	option = { #Imperious art
 		name = pw_art_exhibition.imperial_cult
+		custom_tooltip = pw_art_exhibition.imperial_cult.tooltip
 		trigger = {
 			has_valid_civic = civic_imperial_cult
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_imperial_cult
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_imperial_cult
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.80
 				days = @pw_art_exhibition_duration
@@ -878,23 +894,24 @@ country_event = {
 
 	option = { #Purity Exposition
 		name = pw_art_exhibition.fanatic_purifiers
+		custom_tooltip = pw_art_exhibition.fanatic_purifiers.tooltip
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_fanatic_purifiers
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_fanatic_purifiers
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.90
 				days = @pw_art_exhibition_duration
@@ -904,23 +921,24 @@ country_event = {
 
 	option = { #Spoils Exposition
 		name = pw_art_exhibition.barbaric_despoilers
+		custom_tooltip = pw_art_exhibition.barbaric_despoilers.tooltip
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_barbaric_despoilers
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_barbaric_despoilers
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.100
 				days = @pw_art_exhibition_duration
@@ -930,23 +948,24 @@ country_event = {
 
 	option = { #Still Life
 		name = pw_art_exhibition.memorialist
+		custom_tooltip = pw_art_exhibition.memorialist.tooltip
 		trigger = {
 			has_valid_civic = civic_memorialist
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_memorialist
+					DURATION = @pw_art_exhibition_duration
 				}
 			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_memorialist
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
-		hidden_effect = {
 			country_event = {
 				id = pw_art_exhibition.110
 				days = @pw_art_exhibition_duration
@@ -969,19 +988,20 @@ country_event = {
 
 	option = { #War Propaganda
 		name = pw_art_exhibition.militarist
+		custom_tooltip = pw_art_exhibition.militarist.tooltip
 		trigger = {
 			is_pacifist = no
 		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_militarist
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_militarist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.10
 				days = @pw_art_exhibition_duration
@@ -991,19 +1011,20 @@ country_event = {
 
 	option = { #Martial Arts
 		name = pw_art_exhibition.warrior_culture
+		custom_tooltip = pw_art_exhibition.warrior_culture.tooltip
 		trigger = {
 			has_valid_civic = civic_warrior_culture
 		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_warrior_culture
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_warrior_culture
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.12
 				days = @pw_art_exhibition_duration
@@ -1013,6 +1034,7 @@ country_event = {
 
 	option = { #Romantic Nationalism
 		name = pw_art_exhibition.nationalistic_zeal
+		custom_tooltip = pw_art_exhibition.nationalistic_zeal.tooltip
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
 		}
@@ -1035,6 +1057,7 @@ country_event = {
 
 	option = { #Bucolism
 		name = pw_art_exhibition.pacifist
+		custom_tooltip = pw_art_exhibition.pacifist.tooltip
 		trigger = {
 			is_militarist = no
 		}
@@ -1057,6 +1080,7 @@ country_event = {
 
 	option = { #Arcadianism
 		name = pw_art_exhibition.agrarian_idyll
+		custom_tooltip = pw_art_exhibition.agrarian_idyll.tooltip
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
 		}
@@ -1079,6 +1103,7 @@ country_event = {
 
 	option = { #Religious art
 		name = pw_art_exhibition.spiritualist
+		custom_tooltip = pw_art_exhibition.spiritualist.tooltip
 		trigger = {
 			is_materialist = no
 		}
@@ -1101,6 +1126,7 @@ country_event = {
 
 	option = { #Sacral art
 		name = pw_art_exhibition.exalted_priesthood
+		custom_tooltip = pw_art_exhibition.exalted_priesthood.tooltip
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
 		}
@@ -1123,6 +1149,7 @@ country_event = {
 
 	option = { #Decadentism
 		name = pw_art_exhibition.death_cult
+		custom_tooltip = pw_art_exhibition.death_cult.tooltip
 		trigger = {
 			OR = {
 				has_valid_civic = civic_death_cult
@@ -1148,6 +1175,7 @@ country_event = {
 
 	option = { #Modernism
 		name = pw_art_exhibition.materialist
+		custom_tooltip = pw_art_exhibition.materialist.tooltip
 		trigger = {
 			is_spiritualist = no
 		}
@@ -1170,6 +1198,7 @@ country_event = {
 
 	option = { #Futurism
 		name = pw_art_exhibition.technocracy
+		custom_tooltip = pw_art_exhibition.technocracy.tooltip
 		trigger = {
 			has_valid_civic = civic_technocracy
 		}
@@ -1192,6 +1221,7 @@ country_event = {
 
 	option = { #Baroque
 		name = pw_art_exhibition.authoritarian
+		custom_tooltip = pw_art_exhibition.authoritarian.tooltip
 		trigger = {
 			is_egalitarian = no
 		}
@@ -1214,6 +1244,7 @@ country_event = {
 
 	option = { #Rococo
 		name = pw_art_exhibition.aristocratic_elite
+		custom_tooltip = pw_art_exhibition.aristocratic_elite.tooltip
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
 		}
@@ -1236,6 +1267,7 @@ country_event = {
 
 	option = { #Realism
 		name = pw_art_exhibition.egalitarian
+		custom_tooltip = pw_art_exhibition.egalitarian.tooltip
 		trigger = {
 			is_authoritarian = no
 		}
@@ -1258,6 +1290,7 @@ country_event = {
 
 	option = { #Social Realism
 		name = pw_art_exhibition.shared_burden
+		custom_tooltip = pw_art_exhibition.shared_burden.tooltip
 		trigger = {
 			has_valid_civic = civic_shared_burden
 		}
@@ -1280,6 +1313,7 @@ country_event = {
 
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
+		custom_tooltip = pw_art_exhibition.megacorp.tooltip
 		trigger = {
 			OR ={
 				is_megacorp = yes
@@ -1306,6 +1340,7 @@ country_event = {
 
 	option = { #Imperious art
 		name = pw_art_exhibition.imperial_cult
+		custom_tooltip = pw_art_exhibition.imperial_cult.tooltip
 		trigger = {
 			has_valid_civic = civic_imperial_cult
 		}
@@ -1328,6 +1363,7 @@ country_event = {
 
 	option = { #Purity Exposition
 		name = pw_art_exhibition.fanatic_purifiers
+		custom_tooltip = pw_art_exhibition.fanatic_purifiers.tooltip
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
 		}
@@ -1350,6 +1386,7 @@ country_event = {
 
 	option = { #Spoils Exposition
 		name = pw_art_exhibition.barbaric_despoilers
+		custom_tooltip = pw_art_exhibition.barbaric_despoilers.tooltip
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
 		}
@@ -1372,6 +1409,7 @@ country_event = {
 
 	option = { #Still Life
 		name = pw_art_exhibition.memorialist
+		custom_tooltip = pw_art_exhibition.memorialist.tooltip
 		trigger = {
 			has_valid_civic = civic_memorialist
 		}
@@ -1962,27 +2000,28 @@ country_event = {
 
 	option = { #War Propaganda
 		name = pw_art_exhibition.militarist
+		custom_tooltip = pw_art_exhibition.militarist.tooltip
 		trigger = {
 			is_pacifist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_militarist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_militarist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.10
 				days = @pw_art_exhibition_duration
@@ -1992,27 +2031,28 @@ country_event = {
 
 	option = { #Martial Arts
 		name = pw_art_exhibition.warrior_culture
+		custom_tooltip = pw_art_exhibition.warrior_culture.tooltip
 		trigger = {
 			has_valid_civic = civic_warrior_culture
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_warrior_culture
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_warrior_culture
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.12
 				days = @pw_art_exhibition_duration
@@ -2022,27 +2062,28 @@ country_event = {
 
 	option = { #Romantic Nationalism
 		name = pw_art_exhibition.nationalistic_zeal
+		custom_tooltip = pw_art_exhibition.nationalistic_zeal.tooltip
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_nationalistic_zeal
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_nationalistic_zeal
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.14
 				days = @pw_art_exhibition_duration
@@ -2052,27 +2093,28 @@ country_event = {
 
 	option = { #Bucolism
 		name = pw_art_exhibition.pacifist
+		custom_tooltip = pw_art_exhibition.pacifist.tooltip
 		trigger = {
 			is_militarist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_pacifist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_pacifist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.20
 				days = @pw_art_exhibition_duration
@@ -2082,27 +2124,28 @@ country_event = {
 
 	option = { #Arcadianism
 		name = pw_art_exhibition.agrarian_idyll
+		custom_tooltip = pw_art_exhibition.agrarian_idyll.tooltip
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyll
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_agrarian_idyll
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.22
 				days = @pw_art_exhibition_duration
@@ -2112,27 +2155,28 @@ country_event = {
 
 	option = { #Religious art
 		name = pw_art_exhibition.spiritualist
+		custom_tooltip = pw_art_exhibition.spiritualist.tooltip
 		trigger = {
 			is_materialist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_spiritualist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_spiritualist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.30
 				days = @pw_art_exhibition_duration
@@ -2142,27 +2186,28 @@ country_event = {
 
 	option = { #Sacral art
 		name = pw_art_exhibition.exalted_priesthood
+		custom_tooltip = pw_art_exhibition.exalted_priesthood.tooltip
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_exalted_priesthood
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_exalted_priesthood
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.32
 				days = @pw_art_exhibition_duration
@@ -2172,23 +2217,11 @@ country_event = {
 
 	option = { #Decadentism
 		name = pw_art_exhibition.death_cult
+		custom_tooltip = pw_art_exhibition.death_cult.tooltip
 		trigger = {
 			OR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_death_cult
-				DURATION = @pw_art_exhibition_duration
 			}
 		}
 		pw_add_unique_modifier = {
@@ -2196,6 +2229,19 @@ country_event = {
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_death_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.34
 				days = @pw_art_exhibition_duration
@@ -2205,27 +2251,28 @@ country_event = {
 
 	option = { #Modernism
 		name = pw_art_exhibition.materialist
+		custom_tooltip = pw_art_exhibition.materialist.tooltip
 		trigger = {
 			is_spiritualist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_materialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_materialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.40
 				days = @pw_art_exhibition_duration
@@ -2235,27 +2282,28 @@ country_event = {
 
 	option = { #Futurism
 		name = pw_art_exhibition.technocracy
+		custom_tooltip = pw_art_exhibition.technocracy.tooltip
 		trigger = {
 			has_valid_civic = civic_technocracy
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_technocracy
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_technocracy
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.42
 				days = @pw_art_exhibition_duration
@@ -2265,27 +2313,28 @@ country_event = {
 
 	option = { #Baroque
 		name = pw_art_exhibition.authoritarian
+		custom_tooltip = pw_art_exhibition.authoritarian.tooltip
 		trigger = {
 			is_egalitarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_authoritarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_authoritarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.50
 				days = @pw_art_exhibition_duration
@@ -2295,27 +2344,28 @@ country_event = {
 
 	option = { #Rococo
 		name = pw_art_exhibition.aristocratic_elite
+		custom_tooltip = pw_art_exhibition.aristocratic_elite.tooltip
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_aristocratic_elite
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_aristocratic_elite
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.52
 				days = @pw_art_exhibition_duration
@@ -2325,27 +2375,28 @@ country_event = {
 
 	option = { #Realism
 		name = pw_art_exhibition.egalitarian
+		custom_tooltip = pw_art_exhibition.egalitarian.tooltip
 		trigger = {
 			is_authoritarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_egalitarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_egalitarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.60
 				days = @pw_art_exhibition_duration
@@ -2355,27 +2406,28 @@ country_event = {
 
 	option = { #Social Realism
 		name = pw_art_exhibition.shared_burden
+		custom_tooltip = pw_art_exhibition.shared_burden.tooltip
 		trigger = {
 			has_valid_civic = civic_shared_burden
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_shared_burden
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_shared_burden
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.62
 				days = @pw_art_exhibition_duration
@@ -2385,6 +2437,7 @@ country_event = {
 
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
+		custom_tooltip = pw_art_exhibition.megacorp.tooltip
 		trigger = {
 			OR ={
 				is_megacorp = yes
@@ -2392,24 +2445,24 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_megacorp
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_megacorp
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.70
 				days = @pw_art_exhibition_duration
@@ -2419,27 +2472,28 @@ country_event = {
 
 	option = { #Imperious art
 		name = pw_art_exhibition.imperial_cult
+		custom_tooltip = pw_art_exhibition.imperial_cult.tooltip
 		trigger = {
 			has_valid_civic = civic_imperial_cult
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_imperial_cult
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_imperial_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.80
 				days = @pw_art_exhibition_duration
@@ -2449,27 +2503,28 @@ country_event = {
 
 	option = { #Purity Exposition
 		name = pw_art_exhibition.fanatic_purifiers
+		custom_tooltip = pw_art_exhibition.fanatic_purifiers.tooltip
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_fanatic_purifiers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_fanatic_purifiers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.90
 				days = @pw_art_exhibition_duration
@@ -2479,27 +2534,28 @@ country_event = {
 
 	option = { #Spoils Exposition
 		name = pw_art_exhibition.barbaric_despoilers
+		custom_tooltip = pw_art_exhibition.barbaric_despoilers.tooltip
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_barbaric_despoilers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_barbaric_despoilers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.100
 				days = @pw_art_exhibition_duration
@@ -2509,27 +2565,28 @@ country_event = {
 
 	option = { #Still Life
 		name = pw_art_exhibition.memorialist
+		custom_tooltip = pw_art_exhibition.memorialist.tooltip
 		trigger = {
 			has_valid_civic = civic_memorialist
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_memorialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_memorialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.110
 				days = @pw_art_exhibition_duration
@@ -2552,23 +2609,24 @@ country_event = {
 
 	option = { #War Propaganda
 		name = pw_art_exhibition.militarist
+		custom_tooltip = pw_art_exhibition.militarist.tooltip
 		trigger = {
 			is_pacifist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_militarist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_militarist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.10
 				days = @pw_art_exhibition_duration
@@ -2578,23 +2636,24 @@ country_event = {
 
 	option = { #Martial Arts
 		name = pw_art_exhibition.warrior_culture
+		custom_tooltip = pw_art_exhibition.warrior_culture.tooltip
 		trigger = {
 			has_valid_civic = civic_warrior_culture
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_warrior_culture
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_warrior_culture
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.12
 				days = @pw_art_exhibition_duration
@@ -2604,23 +2663,24 @@ country_event = {
 
 	option = { #Romantic Nationalism
 		name = pw_art_exhibition.nationalistic_zeal
+		custom_tooltip = pw_art_exhibition.nationalistic_zeal.tooltip
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_nationalistic_zeal
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_nationalistic_zeal
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.14
 				days = @pw_art_exhibition_duration
@@ -2630,23 +2690,24 @@ country_event = {
 
 	option = { #Bucolism
 		name = pw_art_exhibition.pacifist
+		custom_tooltip = pw_art_exhibition.pacifist.tooltip
 		trigger = {
 			is_militarist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_pacifist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_pacifist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.20
 				days = @pw_art_exhibition_duration
@@ -2656,23 +2717,24 @@ country_event = {
 
 	option = { #Arcadianism
 		name = pw_art_exhibition.agrarian_idyll
+		custom_tooltip = pw_art_exhibition.agrarian_idyll.tooltip
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyll
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_agrarian_idyll
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.22
 				days = @pw_art_exhibition_duration
@@ -2682,23 +2744,24 @@ country_event = {
 
 	option = { #Religious art
 		name = pw_art_exhibition.spiritualist
+		custom_tooltip = pw_art_exhibition.spiritualist.tooltip
 		trigger = {
 			is_materialist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_spiritualist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_spiritualist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.30
 				days = @pw_art_exhibition_duration
@@ -2708,23 +2771,24 @@ country_event = {
 
 	option = { #Sacral art
 		name = pw_art_exhibition.exalted_priesthood
+		custom_tooltip = pw_art_exhibition.exalted_priesthood.tooltip
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_exalted_priesthood
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_exalted_priesthood
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.32
 				days = @pw_art_exhibition_duration
@@ -2734,19 +2798,11 @@ country_event = {
 
 	option = { #Decadentism
 		name = pw_art_exhibition.death_cult
+		custom_tooltip = pw_art_exhibition.death_cult.tooltip
 		trigger = {
 			OR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_death_cult
-				DURATION = @pw_art_exhibition_duration
 			}
 		}
 		pw_add_unique_modifier = {
@@ -2754,6 +2810,15 @@ country_event = {
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_death_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.34
 				days = @pw_art_exhibition_duration
@@ -2763,23 +2828,24 @@ country_event = {
 
 	option = { #Modernism
 		name = pw_art_exhibition.materialist
+		custom_tooltip = pw_art_exhibition.materialist.tooltip
 		trigger = {
 			is_spiritualist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_materialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_materialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.40
 				days = @pw_art_exhibition_duration
@@ -2789,23 +2855,24 @@ country_event = {
 
 	option = { #Futurism
 		name = pw_art_exhibition.technocracy
+		custom_tooltip = pw_art_exhibition.technocracy.tooltip
 		trigger = {
 			has_valid_civic = civic_technocracy
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_technocracy
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_technocracy
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.42
 				days = @pw_art_exhibition_duration
@@ -2815,23 +2882,24 @@ country_event = {
 
 	option = { #Baroque
 		name = pw_art_exhibition.authoritarian
+		custom_tooltip = pw_art_exhibition.authoritarian.tooltip
 		trigger = {
 			is_egalitarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_authoritarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_authoritarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.50
 				days = @pw_art_exhibition_duration
@@ -2841,23 +2909,24 @@ country_event = {
 
 	option = { #Rococo
 		name = pw_art_exhibition.aristocratic_elite
+		custom_tooltip = pw_art_exhibition.aristocratic_elite.tooltip
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_aristocratic_elite
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_aristocratic_elite
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.52
 				days = @pw_art_exhibition_duration
@@ -2867,23 +2936,24 @@ country_event = {
 
 	option = { #Realism
 		name = pw_art_exhibition.egalitarian
+		custom_tooltip = pw_art_exhibition.egalitarian.tooltip
 		trigger = {
 			is_authoritarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_egalitarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_egalitarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.60
 				days = @pw_art_exhibition_duration
@@ -2893,23 +2963,24 @@ country_event = {
 
 	option = { #Social Realism
 		name = pw_art_exhibition.shared_burden
+		custom_tooltip = pw_art_exhibition.shared_burden.tooltip
 		trigger = {
 			has_valid_civic = civic_shared_burden
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_shared_burden
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_shared_burden
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.62
 				days = @pw_art_exhibition_duration
@@ -2919,6 +2990,7 @@ country_event = {
 
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
+		custom_tooltip = pw_art_exhibition.megacorp.tooltip
 		trigger = {
 			OR ={
 				is_megacorp = yes
@@ -2926,20 +2998,20 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_megacorp
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_megacorp
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.70
 				days = @pw_art_exhibition_duration
@@ -2949,23 +3021,24 @@ country_event = {
 
 	option = { #Imperious art
 		name = pw_art_exhibition.imperial_cult
+		custom_tooltip = pw_art_exhibition.imperial_cult.tooltip
 		trigger = {
 			has_valid_civic = civic_imperial_cult
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_imperial_cult
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_imperial_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.80
 				days = @pw_art_exhibition_duration
@@ -2975,23 +3048,24 @@ country_event = {
 
 	option = { #Purity Exposition
 		name = pw_art_exhibition.fanatic_purifiers
+		custom_tooltip = pw_art_exhibition.fanatic_purifiers.tooltip
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_fanatic_purifiers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_fanatic_purifiers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.90
 				days = @pw_art_exhibition_duration
@@ -3001,23 +3075,24 @@ country_event = {
 
 	option = { #Spoils Exposition
 		name = pw_art_exhibition.barbaric_despoilers
+		custom_tooltip = pw_art_exhibition.barbaric_despoilers.tooltip
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_barbaric_despoilers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_barbaric_despoilers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.100
 				days = @pw_art_exhibition_duration
@@ -3027,23 +3102,24 @@ country_event = {
 
 	option = { #Still Life
 		name = pw_art_exhibition.memorialist
+		custom_tooltip = pw_art_exhibition.memorialist.tooltip
 		trigger = {
 			has_valid_civic = civic_memorialist
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_memorialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_memorialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.110
 				days = @pw_art_exhibition_duration
@@ -3621,27 +3697,28 @@ country_event = {
 
 	option = { #War Propaganda
 		name = pw_art_exhibition.militarist
+		custom_tooltip = pw_art_exhibition.militarist.tooltip
 		trigger = {
 			is_pacifist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_militarist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_militarist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.10
 				days = @pw_art_exhibition_duration
@@ -3651,27 +3728,28 @@ country_event = {
 
 	option = { #Martial Arts
 		name = pw_art_exhibition.warrior_culture
+		custom_tooltip = pw_art_exhibition.warrior_culture.tooltip
 		trigger = {
 			has_valid_civic = civic_warrior_culture
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_warrior_culture
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_warrior_culture
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.12
 				days = @pw_art_exhibition_duration
@@ -3681,27 +3759,28 @@ country_event = {
 
 	option = { #Romantic Nationalism
 		name = pw_art_exhibition.nationalistic_zeal
+		custom_tooltip = pw_art_exhibition.nationalistic_zeal.tooltip
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_nationalistic_zeal
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_nationalistic_zeal
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.14
 				days = @pw_art_exhibition_duration
@@ -3711,27 +3790,28 @@ country_event = {
 
 	option = { #Bucolism
 		name = pw_art_exhibition.pacifist
+		custom_tooltip = pw_art_exhibition.pacifist.tooltip
 		trigger = {
 			is_militarist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_pacifist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_pacifist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.20
 				days = @pw_art_exhibition_duration
@@ -3741,27 +3821,28 @@ country_event = {
 
 	option = { #Arcadianism
 		name = pw_art_exhibition.agrarian_idyll
+		custom_tooltip = pw_art_exhibition.agrarian_idyll.tooltip
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyll
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_agrarian_idyll
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.22
 				days = @pw_art_exhibition_duration
@@ -3771,27 +3852,28 @@ country_event = {
 
 	option = { #Religious art
 		name = pw_art_exhibition.spiritualist
+		custom_tooltip = pw_art_exhibition.spiritualist.tooltip
 		trigger = {
 			is_materialist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_spiritualist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_spiritualist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.30
 				days = @pw_art_exhibition_duration
@@ -3801,27 +3883,28 @@ country_event = {
 
 	option = { #Sacral art
 		name = pw_art_exhibition.exalted_priesthood
+		custom_tooltip = pw_art_exhibition.exalted_priesthood.tooltip
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_exalted_priesthood
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_exalted_priesthood
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.32
 				days = @pw_art_exhibition_duration
@@ -3831,23 +3914,11 @@ country_event = {
 
 	option = { #Decadentism
 		name = pw_art_exhibition.death_cult
+		custom_tooltip = pw_art_exhibition.death_cult.tooltip
 		trigger = {
 			OR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_death_cult
-				DURATION = @pw_art_exhibition_duration
 			}
 		}
 		pw_add_unique_modifier = {
@@ -3855,6 +3926,19 @@ country_event = {
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_death_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.34
 				days = @pw_art_exhibition_duration
@@ -3864,27 +3948,28 @@ country_event = {
 
 	option = { #Modernism
 		name = pw_art_exhibition.materialist
+		custom_tooltip = pw_art_exhibition.materialist.tooltip
 		trigger = {
 			is_spiritualist = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_materialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_materialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.40
 				days = @pw_art_exhibition_duration
@@ -3894,27 +3979,28 @@ country_event = {
 
 	option = { #Futurism
 		name = pw_art_exhibition.technocracy
+		custom_tooltip = pw_art_exhibition.technocracy.tooltip
 		trigger = {
 			has_valid_civic = civic_technocracy
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_technocracy
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_technocracy
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.42
 				days = @pw_art_exhibition_duration
@@ -3924,27 +4010,28 @@ country_event = {
 
 	option = { #Baroque
 		name = pw_art_exhibition.authoritarian
+		custom_tooltip = pw_art_exhibition.authoritarian.tooltip
 		trigger = {
 			is_egalitarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_authoritarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_authoritarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.50
 				days = @pw_art_exhibition_duration
@@ -3954,27 +4041,28 @@ country_event = {
 
 	option = { #Rococo
 		name = pw_art_exhibition.aristocratic_elite
+		custom_tooltip = pw_art_exhibition.aristocratic_elite.tooltip
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_aristocratic_elite
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_aristocratic_elite
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.52
 				days = @pw_art_exhibition_duration
@@ -3984,27 +4072,28 @@ country_event = {
 
 	option = { #Realism
 		name = pw_art_exhibition.egalitarian
+		custom_tooltip = pw_art_exhibition.egalitarian.tooltip
 		trigger = {
 			is_authoritarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_egalitarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_egalitarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.60
 				days = @pw_art_exhibition_duration
@@ -4014,27 +4103,28 @@ country_event = {
 
 	option = { #Social Realism
 		name = pw_art_exhibition.shared_burden
+		custom_tooltip = pw_art_exhibition.shared_burden.tooltip
 		trigger = {
 			has_valid_civic = civic_shared_burden
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_shared_burden
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_shared_burden
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.62
 				days = @pw_art_exhibition_duration
@@ -4044,6 +4134,7 @@ country_event = {
 
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
+		custom_tooltip = pw_art_exhibition.megacorp.tooltip
 		trigger = {
 			OR ={
 				is_megacorp = yes
@@ -4051,24 +4142,24 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_megacorp
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_megacorp
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.70
 				days = @pw_art_exhibition_duration
@@ -4078,27 +4169,28 @@ country_event = {
 
 	option = { #Imperious art
 		name = pw_art_exhibition.imperial_cult
+		custom_tooltip = pw_art_exhibition.imperial_cult.tooltip
 		trigger = {
 			has_valid_civic = civic_imperial_cult
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_imperial_cult
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_imperial_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.80
 				days = @pw_art_exhibition_duration
@@ -4108,27 +4200,28 @@ country_event = {
 
 	option = { #Purity Exposition
 		name = pw_art_exhibition.fanatic_purifiers
+		custom_tooltip = pw_art_exhibition.fanatic_purifiers.tooltip
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_fanatic_purifiers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_fanatic_purifiers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.90
 				days = @pw_art_exhibition_duration
@@ -4138,27 +4231,28 @@ country_event = {
 
 	option = { #Spoils Exposition
 		name = pw_art_exhibition.barbaric_despoilers
+		custom_tooltip = pw_art_exhibition.barbaric_despoilers.tooltip
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_barbaric_despoilers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_barbaric_despoilers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.100
 				days = @pw_art_exhibition_duration
@@ -4168,27 +4262,28 @@ country_event = {
 
 	option = { #Still Life
 		name = pw_art_exhibition.memorialist
+		custom_tooltip = pw_art_exhibition.memorialist.tooltip
 		trigger = {
 			has_valid_civic = civic_memorialist
-		}
-		every_owned_planet = {
-			limit = {
-				OR = {
-					has_building = pw_building_pavilion_of_wonders
-					has_building = pw_building_fair_of_worlds
-					has_building = pw_building_museum_of_the_grotesque
-				}
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_memorialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_building = pw_building_pavilion_of_wonders
+						has_building = pw_building_fair_of_worlds
+						has_building = pw_building_museum_of_the_grotesque
+					}
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_memorialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.110
 				days = @pw_art_exhibition_duration
@@ -4211,23 +4306,24 @@ country_event = {
 
 	option = { #War Propaganda
 		name = pw_art_exhibition.militarist
+		custom_tooltip = pw_art_exhibition.militarist.tooltip
 		trigger = {
 			is_pacifist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_militarist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_militarist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.10
 				days = @pw_art_exhibition_duration
@@ -4237,23 +4333,24 @@ country_event = {
 
 	option = { #Martial Arts
 		name = pw_art_exhibition.warrior_culture
+		custom_tooltip = pw_art_exhibition.warrior_culture.tooltip
 		trigger = {
 			has_valid_civic = civic_warrior_culture
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_warrior_culture
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_warrior_culture
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.12
 				days = @pw_art_exhibition_duration
@@ -4263,23 +4360,24 @@ country_event = {
 
 	option = { #Romantic Nationalism
 		name = pw_art_exhibition.nationalistic_zeal
+		custom_tooltip = pw_art_exhibition.nationalistic_zeal.tooltip
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_nationalistic_zeal
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_nationalistic_zeal
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.14
 				days = @pw_art_exhibition_duration
@@ -4289,23 +4387,24 @@ country_event = {
 
 	option = { #Bucolism
 		name = pw_art_exhibition.pacifist
+		custom_tooltip = pw_art_exhibition.pacifist.tooltip
 		trigger = {
 			is_militarist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_pacifist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_pacifist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.20
 				days = @pw_art_exhibition_duration
@@ -4315,23 +4414,24 @@ country_event = {
 
 	option = { #Arcadianism
 		name = pw_art_exhibition.agrarian_idyll
+		custom_tooltip = pw_art_exhibition.agrarian_idyll.tooltip
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_agrarian_idyll
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_agrarian_idyll
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.22
 				days = @pw_art_exhibition_duration
@@ -4341,23 +4441,24 @@ country_event = {
 
 	option = { #Religious art
 		name = pw_art_exhibition.spiritualist
+		custom_tooltip = pw_art_exhibition.spiritualist.tooltip
 		trigger = {
 			is_materialist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_spiritualist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_spiritualist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.30
 				days = @pw_art_exhibition_duration
@@ -4367,23 +4468,24 @@ country_event = {
 
 	option = { #Sacral art
 		name = pw_art_exhibition.exalted_priesthood
+		custom_tooltip = pw_art_exhibition.exalted_priesthood.tooltip
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_exalted_priesthood
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_exalted_priesthood
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.32
 				days = @pw_art_exhibition_duration
@@ -4393,19 +4495,11 @@ country_event = {
 
 	option = { #Decadentism
 		name = pw_art_exhibition.death_cult
+		custom_tooltip = pw_art_exhibition.death_cult.tooltip
 		trigger = {
 			OR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_death_cult
-				DURATION = @pw_art_exhibition_duration
 			}
 		}
 		pw_add_unique_modifier = {
@@ -4413,6 +4507,15 @@ country_event = {
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_death_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.34
 				days = @pw_art_exhibition_duration
@@ -4422,23 +4525,24 @@ country_event = {
 
 	option = { #Modernism
 		name = pw_art_exhibition.materialist
+		custom_tooltip = pw_art_exhibition.materialist.tooltip
 		trigger = {
 			is_spiritualist = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_materialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_materialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.40
 				days = @pw_art_exhibition_duration
@@ -4448,23 +4552,24 @@ country_event = {
 
 	option = { #Futurism
 		name = pw_art_exhibition.technocracy
+		custom_tooltip = pw_art_exhibition.technocracy.tooltip
 		trigger = {
 			has_valid_civic = civic_technocracy
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_technocracy
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_technocracy
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.42
 				days = @pw_art_exhibition_duration
@@ -4474,23 +4579,24 @@ country_event = {
 
 	option = { #Baroque
 		name = pw_art_exhibition.authoritarian
+		custom_tooltip = pw_art_exhibition.authoritarian.tooltip
 		trigger = {
 			is_egalitarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_authoritarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_authoritarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.50
 				days = @pw_art_exhibition_duration
@@ -4500,23 +4606,24 @@ country_event = {
 
 	option = { #Rococo
 		name = pw_art_exhibition.aristocratic_elite
+		custom_tooltip = pw_art_exhibition.aristocratic_elite.tooltip
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_aristocratic_elite
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_aristocratic_elite
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.52
 				days = @pw_art_exhibition_duration
@@ -4526,23 +4633,24 @@ country_event = {
 
 	option = { #Realism
 		name = pw_art_exhibition.egalitarian
+		custom_tooltip = pw_art_exhibition.egalitarian.tooltip
 		trigger = {
 			is_authoritarian = no
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_egalitarian
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_egalitarian
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.60
 				days = @pw_art_exhibition_duration
@@ -4552,23 +4660,24 @@ country_event = {
 
 	option = { #Social Realism
 		name = pw_art_exhibition.shared_burden
+		custom_tooltip = pw_art_exhibition.shared_burden.tooltip
 		trigger = {
 			has_valid_civic = civic_shared_burden
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_shared_burden
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_shared_burden
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.62
 				days = @pw_art_exhibition_duration
@@ -4578,6 +4687,7 @@ country_event = {
 
 	option = { #Cultural Industry
 		name = pw_art_exhibition.megacorp
+		custom_tooltip = pw_art_exhibition.megacorp.tooltip
 		trigger = {
 			OR ={
 				is_megacorp = yes
@@ -4585,20 +4695,20 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_megacorp
-				DURATION = @pw_art_exhibition_duration
-			}
-		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_megacorp
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.70
 				days = @pw_art_exhibition_duration
@@ -4608,23 +4718,24 @@ country_event = {
 
 	option = { #Imperious art
 		name = pw_art_exhibition.imperial_cult
+		custom_tooltip = pw_art_exhibition.imperial_cult.tooltip
 		trigger = {
 			has_valid_civic = civic_imperial_cult
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_imperial_cult
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_imperial_cult
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.80
 				days = @pw_art_exhibition_duration
@@ -4634,23 +4745,24 @@ country_event = {
 
 	option = { #Purity Exposition
 		name = pw_art_exhibition.fanatic_purifiers
+		custom_tooltip = pw_art_exhibition.fanatic_purifiers.tooltip
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_fanatic_purifiers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_fanatic_purifiers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.90
 				days = @pw_art_exhibition_duration
@@ -4660,23 +4772,24 @@ country_event = {
 
 	option = { #Spoils Exposition
 		name = pw_art_exhibition.barbaric_despoilers
+		custom_tooltip = pw_art_exhibition.barbaric_despoilers.tooltip
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_barbaric_despoilers
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_barbaric_despoilers
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.100
 				days = @pw_art_exhibition_duration
@@ -4686,23 +4799,24 @@ country_event = {
 
 	option = { #Still Life
 		name = pw_art_exhibition.memorialist
+		custom_tooltip = pw_art_exhibition.memorialist.tooltip
 		trigger = {
 			has_valid_civic = civic_memorialist
-		}
-		every_owned_planet = {
-			limit = {
-				num_pops > 10
-			}
-			pw_add_unique_modifier = {
-				MODIFIER = pw_art_mod_memorialist
-				DURATION = @pw_art_exhibition_duration
-			}
 		}
 		pw_add_unique_modifier = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					num_pops > 10
+				}
+				pw_add_unique_modifier = {
+					MODIFIER = pw_art_mod_memorialist
+					DURATION = @pw_art_exhibition_duration
+				}
+			}
 			country_event = {
 				id = pw_art_exhibition.110
 				days = @pw_art_exhibition_duration

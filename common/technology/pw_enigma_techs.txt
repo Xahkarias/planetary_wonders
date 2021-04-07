@@ -1207,6 +1207,7 @@ pw_enigma_tech_gas_molecular_generation = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
+		pw_enigma_tech_gas_molecular_sculpting
 		tech_society_3
 	}
 	weight = @tier5weight2

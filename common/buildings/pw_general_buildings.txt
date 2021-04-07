@@ -914,9 +914,9 @@ pw_building_guardian_angel = {
 		planet_event = { id = pw_wonder.1200 }
 	}
 
-	on_destroy = {
-		planet_event = { id = pw_wonder.1205 }
-	}
+	# on_destroy = {
+	# 	planet_event = { id = pw_wonder.1205 }
+	# }
 
 	ai_weight = {
 		weight = 20
@@ -1140,9 +1140,9 @@ pw_building_transplanetary_logistics_network = {
 		planet_event = { id = pw_wonder.1700 }
 	}
 
-	on_destroy = {
-		planet_event = { id = pw_wonder.1703 }
-	}
+	# on_destroy = {
+	# 	planet_event = { id = pw_wonder.1703 }
+	# }
 
 	ai_weight = {
 		weight = 50
@@ -1367,9 +1367,9 @@ pw_building_transhabitat_logistics_network = {
 		planet_event = { id = pw_wonder.1700 }
 	}
 
-	on_destroy = {
-		planet_event = { id = pw_wonder.1703 }
-	}
+	# on_destroy = {
+	# 	planet_event = { id = pw_wonder.1703 }
+	# }
 
 	ai_weight = {
 		weight = 50
@@ -1765,9 +1765,9 @@ pw_building_forbidden_city = {
 		planet_event = { id = pw_wonder.1800 }
 	}
 
-	on_destroy = {
-		planet_event = { id = pw_wonder.1802 }
-	}
+	# on_destroy = {
+	# 	planet_event = { id = pw_wonder.1802 }
+	# }
 
 	ai_weight = {
 		weight = 50

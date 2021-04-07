@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
 
-    
+
     pw_holy_reliquary_leave_tooltip: "You can return to the $pw_holy_reliquary$ via edict or planetary decision where it is build."
     pw_holy_reliquary_return_to_hub_tooltip: "Return to the Holy Reliquary hub."
     pw_holy_reliquary.1.name: "Holy Reliquary"
@@ -63,7 +63,7 @@
     pw_holy_reliquary.722.desc: "As many of our theologians scan and interpret the meaning of cryptic passages in the $pw_holy_reliquary.codex_of_the_ages$, they are struck with slivers of revelations. At first they do not appear to contain meaning, but when put together, the strange messages each priest received combine into a glimpse of the future. This revelation seem to delve into the inner workings of impossible buildings and machine structures that could bring new pathways for our engineering researchers to explore."
     pw_holy_reliquary.720.a: "May the future be reveled to the faithful."
     pw_holy_reliquary.750.name: "Apocryphal Writings"
-    pw_holy_reliquary.750.desc: "Since we have sanctified the $pw_holy_reliquary.codex_of_the_ages$ in the $pw_holy_reliquary$, may new texts have surfaced that claim to be lost additions to the Codex. Some were dismissed as clear attempts of some dishonest priests of attaining influence with false texts. However, due to the cryptic nature of the artifact, many of the received writings were . We could canonize the works and integrate it in the chamber of the $pw_holy_reliquary.codex_of_the_ages$, or we can show our commitment to tradition and burn these new texts.\n\nAlternatively, [THIS.GetRulerTitle] [THIS.GetRulerName] has requested the new texts for [THIS.Leader.GetHerHis] personal collection, assuring all that it is the best way to solve the problem."
+    pw_holy_reliquary.750.desc: "Since we have sanctified the $pw_holy_reliquary.codex_of_the_ages$ in the $pw_holy_reliquary$, may new texts have surfaced that claim to be lost additions to the Codex. Some were dismissed as clear attempts of some dishonest priests of attaining influence with false texts. However, due to the cryptic nature of the artifact, many of the received writings could be considered legitimate lost texts. We could canonize the works and integrate it in the chamber of the $pw_holy_reliquary.codex_of_the_ages$, or we can show our commitment to tradition and burn these new texts.\n\nAlternatively, [THIS.GetRulerTitle] [THIS.GetRulerName] has requested the new texts for [THIS.Leader.GetHerHis] personal collection, assuring all that it is the best way to solve the problem."
     pw_holy_reliquary.750.a: "Canonize the texts."
     pw_holy_reliquary.750.b: "Burn the heretic writings."
     pw_holy_reliquary.750.c: "They will be safer with the [THIS.GetRulerTitle]."
@@ -126,6 +126,6 @@
     pw_holy_reliquary.1011.b: "Send gifts and open the Reliquary for the ceremony."
     pw_holy_reliquary.1011.c: "Absolutely no, this will be a desecration of the Reliquary."
     pw_holy_reliquary.1012.name: "A Funeral for [FROM.GetName]"
-    pw_holy_reliquary.1012.desc: "The recent passing of [FROM.GetName] caused great commotion in our population, specially regarding [FROM.GetHerHis] devotion and piousness. A general desire has been growing in the wake of this tragedy: to host a funerary wake in the $pw_holy_reliquary$ in [FROM.GetHerHis] honor."
+    pw_holy_reliquary.1012.desc: "The recent passing of [FROM.GetName] caused great commotion in our population, specially regarding [FROM.GetHerHis] devotion and piousness. A general desire has been growing in the aftermath of this tragedy: to host a funerary wake in the $pw_holy_reliquary$ in [FROM.GetHerHis] honor."
     pw_holy_reliquary.1012.a: "[FROM.GetSheHeCap] will be missed, have the funeral in the Reliquary."
     pw_holy_reliquary.1012.b: "[FROM.GetSheHeCap] would not appreciate this breach of protocol."

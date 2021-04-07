@@ -6,11 +6,11 @@
 
     #Organize Planetary Exhibition (Interplanetary):
     pw_art_exhibition.2.name: "Grand Arts Exhibition"
-    pw_art_exhibition.2.desc: "A marvelous art showing that will gather the population of all our artistic planets into cultural production and appreciation is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population."
+    pw_art_exhibition.2.desc: "A marvelous art showing that will gather the population of all our artistic planets into cultural production and appreciation is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population.\n\n§YThe selected exhibitions will be hosted in every planet with a Pavilion of Wonders, Fair of Worlds or Museum of the Grotesque.§!"
 
     #Organize Planetary Exhibition (Interstellar):
     pw_art_exhibition.3.name: "Mega Arts Exhibition"
-    pw_art_exhibition.3.desc: "An enormous art showing that will gather all of our developed planets into cultural production and appreciation is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population."
+    pw_art_exhibition.3.desc: "An enormous art showing that will gather all of our developed planets into cultural production and appreciation is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops.§!"
 
     #Organize Planetary Exhibition (Xenophile - Planetary):
     pw_art_exhibition.4.name: "Great Arts Exchange"
@@ -18,11 +18,11 @@
 
     #Organize Planetary Exhibition (Xenophile - Interplanetary):
     pw_art_exhibition.5.name: "Grand Arts Exchange"
-    pw_art_exhibition.5.desc: "A marvelous art showing that will gather the population of all our artistic planets into cultural production, appreciation and exchange is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather artists from many species and cultures that relate to that theme."
+    pw_art_exhibition.5.desc: "A marvelous art showing that will gather the population of all our artistic planets into cultural production, appreciation and exchange is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather artists from many species and cultures that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with a Pavilion of Wonders or Fair of Worlds.§!"
 
     #Organize Planetary Exhibition (Xenophile - Interstellar):
     pw_art_exhibition.6.name: "Mega Arts Exchange"
-    pw_art_exhibition.6.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and exchange is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather artists from many species and cultures that relate to that theme."
+    pw_art_exhibition.6.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and exchange is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather artists from many species and cultures that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops."
 
     #Organize Planetary Exhibition (Xenophobe - Planetary):
     pw_art_exhibition.7.name: "Great Arts Hegemony"
@@ -30,11 +30,11 @@
 
     #Organize Planetary Exhibition (Xenophobe - Interplanetary):
     pw_art_exhibition.8.name: "Grand Arts Hegemony"
-    pw_art_exhibition.8.desc: "A marvelous art showing that will gather the population of all our artistic planets into cultural production, appreciation and and upholding of our moral values is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather the most important artists of our species that relate to that theme."
+    pw_art_exhibition.8.desc: "A marvelous art showing that will gather the population of all our artistic planets into cultural production, appreciation and and upholding of our moral values is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather the most important artists of our species that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with a Pavilion of Wonders or Museum of the Grotesque.§!"
 
     #Organize Planetary Exhibition (Xenophobe - Interstellar):
     pw_art_exhibition.9.name: "Mega Arts Hegemony"
-    pw_art_exhibition.9.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and and upholding of our moral values is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather the most important artists of our species that relate to that theme."
+    pw_art_exhibition.9.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and and upholding of our moral values is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather the most important artists of our species that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops."
 
     #Exhibitions focus options:
     pw_art_exhibition.militarist: "War propaganda"

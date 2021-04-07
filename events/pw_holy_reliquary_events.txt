@@ -1267,7 +1267,7 @@ country_event = {
 		allow = {
 			has_resource = {
 				type = influence
-				amount = 50
+				amount > 50
 			}
 		}
 		add_resource = {
@@ -1348,7 +1348,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = 25
+				amount > 25
 			}
 		}
 		add_resource = {
@@ -1371,7 +1371,7 @@ country_event = {
 			}
 			has_resource = {
 				type = influence
-				amount = 25
+				amount > 25
 			}
 		}
 		add_resource = {
@@ -1465,11 +1465,11 @@ country_event = {
 		allow = {
 			has_resource = {
 				type = consumer_goods
-				amount = 1000
+				amount > 1000
 			}
 			has_resource = {
 				type = energy
-				amount = 1500
+				amount > 1500
 			}
 		}
 		add_resource = {
@@ -1489,7 +1489,7 @@ country_event = {
 		allow = {
 			has_resource = {
 				type = influence
-				amount = 25
+				amount > 25
 			}
 		}
 		add_resource = {
@@ -1576,7 +1576,7 @@ country_event = {
 		allow = {
 			has_resource = {
 				type = consumer_goods
-				amount = 500
+				amount > 500
 			}
 		}
 		add_resource = {
@@ -1671,6 +1671,205 @@ country_event = {
 			value = @tier3influencereward
 			min = @tier3influencemin
 			max = @tier3influencemax
+		}
+	}
+}
+
+#Ai Events to simulate usage -> 1101
+#Expansion
+country_event = {
+	id = pw_holy_reliquary.1101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		}
+
+		if = {
+			limit = {
+				NOR = {
+					has_tech_option = pw_tech_holy_reliquary_inward_expansion
+					has_technology = pw_tech_holy_reliquary_inward_expansion
+				}
+			}
+			add_research_option = pw_tech_holy_reliquary_inward_expansion
+		}
+
+		random_owned_planet = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_expansion_reflective_meditation }
+			}
+			add_modifier = {
+				modifier = pw_holy_reliquary_expansion_reflective_meditation
+				days = @pw_5years
+			}
+		}
+
+		country_event = {
+			id = pw_holy_reliquary.1102
+			days = @pw_5years
+		}
+	}
+}
+
+#Domination
+country_event = {
+	id = pw_holy_reliquary.1102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_domination_way_of_the_solar_regent }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_domination_way_of_the_solar_regent }
+		}
+
+		random_owned_planet = {
+			limit = {
+				NOT = { has_deposit = pw_d_monument_to_the_solar_regent }
+				NOT = { has_deposit = pw_d_parliament_of_the_void_speakers }
+			}
+			add_deposit = pw_d_monument_to_the_solar_regent
+		}
+
+		country_event = {
+			id = pw_holy_reliquary.1103
+			days = @pw_5years
+		}
+	}
+}
+
+#Prosperity
+country_event = {
+	id = pw_holy_reliquary.1103
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# 	}
+		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# }
+
+		country_event = {
+			id = pw_holy_reliquary.1104
+			days = @pw_5years
+		}
+	}
+}
+
+#Harmony
+country_event = {
+	id = pw_holy_reliquary.1104
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# 	}
+		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# }
+
+		country_event = {
+			id = pw_holy_reliquary.1105
+			days = @pw_5years
+		}
+	}
+}
+
+#Supremacy
+country_event = {
+	id = pw_holy_reliquary.1105
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# 	}
+		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# }
+
+		country_event = {
+			id = pw_holy_reliquary.1106
+			days = @pw_5years
+		}
+	}
+}
+
+#Diplomacy
+country_event = {
+	id = pw_holy_reliquary.1106
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# 	}
+		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
+		# }
+
+		country_event = {
+			id = pw_holy_reliquary.1107
+			days = @pw_5years
+		}
+	}
+}
+
+#Discovery
+country_event = {
+	id = pw_holy_reliquary.1107
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_discovery_codex_of_future_ages }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_discovery_codex_of_future_ages }
 		}
 	}
 }
