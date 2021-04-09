@@ -7150,8 +7150,409 @@ planet_event = {
 			}
 			planet_event = { id = pw_wonder.1802 }
 		}
-		else = {
+		else_if = {
+			limit = { has_building = pw_building_forbidden_city }
 			planet_event = { id = pw_wonder.1820 days = @pw_halfYear }
 		}
+	}
+}
+
+
+# Festival Plaza -> id 1900
+
+#On Festival Plaza built
+planet_event = {
+	id = pw_wonder.1900
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_festival_plaza_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1901 } #Regular first time
+		planet_event = { id = pw_wonder.1905 days = @pw_halfYear } #Recursive Check
+	}
+}
+
+#On first time Festival Plaza is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.1901
+	title = pw_wonder.1901.name
+	desc = pw_wonder.1901.desc
+	picture = GFX_evt_galactic_market
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_festival_plaza_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_festival_plaza_built }
+	}
+
+	option = {
+		name = pw_wonder.1901.a
+		add_modifier = {
+			modifier = pw_mod_festival_plaza_recently_build
+			days = @pw_2years
+		}
+	}
+
+	option = {
+		name = pw_wonder.1901.b
+		add_modifier = {
+			modifier = pw_mod_festival_plaza_recently_build
+			days = @pw_1year
+		}
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+		}
+	}
+}
+
+#Check if FP was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.1905
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_building = pw_building_festival_plaza } #Does not has the building
+				OR = { #But has one of the modifiers:
+					has_modifier = pw_mod_FP_festivities_of_plenitude
+					has_modifier = pw_mod_FP_fertility_bacchanal
+					has_modifier = pw_mod_FP_cultivate_peace
+					has_modifier = pw_mod_FP_harvest_festival
+					has_modifier = pw_mod_FP_commemorate_perfection
+				}
+			}
+			planet_event = { id = pw_wonder.1906 }
+		}
+		else_if = {
+			limit = { has_building = pw_building_festival_plaza }
+			planet_event = { id = pw_wonder.1905 days = @pw_halfYear }
+		}
+	}
+}
+
+#When the FP is destroyed/replaces -> remove modifiers
+planet_event = {
+	id = pw_wonder.1906
+	title = pw_wonder.1906.name
+	desc = pw_wonder.1906.desc
+	picture = GFX_evt_galactic_market
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = { has_building = pw_building_festival_plaza } #Does not has the building
+		OR = { #But has one of the modifiers:
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = { has_modifier = pw_mod_FP_festivities_of_plenitude }
+			remove_modifier = pw_mod_FP_festivities_of_plenitude
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_fertility_bacchanal }
+			remove_modifier = pw_mod_FP_fertility_bacchanal
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_cultivate_peace }
+			remove_modifier = pw_mod_FP_cultivate_peace
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_harvest_festival }
+			remove_modifier = pw_mod_FP_harvest_festival
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
+			remove_modifier = pw_mod_FP_commemorate_perfection
+		}
+		pw_determine_peace_stability_modifier = yes
+	}
+}
+
+#When this country enters a war
+country_event = {
+	id = pw_wonder.1910
+	title = pw_wonder.1910.name
+	desc = pw_wonder.1910.desc
+	picture = GFX_evt_galactic_market
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_modifier = pw_mod_FP_peace_stability_1
+			has_modifier = pw_mod_FP_peace_stability_2
+			has_modifier = pw_mod_FP_peace_stability_3
+			has_modifier = pw_mod_FP_peace_stability_4
+			has_modifier = pw_mod_FP_peace_stability_5
+			has_modifier = pw_mod_FP_peace_stability_6
+			has_modifier = pw_mod_FP_peace_stability_7
+			has_modifier = pw_mod_FP_peace_stability_8
+			has_modifier = pw_mod_FP_peace_stability_9
+			has_modifier = pw_mod_FP_peace_stability_10
+		}
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				OR = { #Has one of the modifiers:
+					has_modifier = pw_mod_FP_festivities_of_plenitude
+					has_modifier = pw_mod_FP_fertility_bacchanal
+					has_modifier = pw_mod_FP_cultivate_peace
+					has_modifier = pw_mod_FP_harvest_festival
+					has_modifier = pw_mod_FP_commemorate_perfection
+				}
+			}
+			#Remove the planetary modifiers:
+			planet_event = { id = pw_wonder.1911 }
+		}
+	}
+
+	option = {
+		name = pw_wonder.1910.a
+		pw_remove_current_peace_stability_modifier = yes
+		hidden_effect = {
+			set_country_flag = pw_FP_had_peace_stability_modifier
+		}
+	}
+}
+
+#Remove festivities from planets
+planet_event = {
+	id = pw_wonder.1911
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { #But has one of the modifiers:
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pw_mod_FP_festivities_of_plenitude }
+			remove_modifier = pw_mod_FP_festivities_of_plenitude
+			set_planet_flag = pw_FP_has_festivities_of_plenitude_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_fertility_bacchanal }
+			remove_modifier = pw_mod_FP_fertility_bacchanal
+			set_planet_flag = pw_FP_has_fertility_bacchanal_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_cultivate_peace }
+			remove_modifier = pw_mod_FP_cultivate_peace
+			set_planet_flag = pw_FP_has_cultivate_peace_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_harvest_festival }
+			remove_modifier = pw_mod_FP_harvest_festival
+			set_planet_flag = pw_FP_has_harvest_festival_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
+			remove_modifier = pw_mod_FP_commemorate_perfection
+			set_planet_flag = pw_FP_has_commemorate_perfection_mod
+		}
+	}
+}
+
+#When a war ends
+event = {
+	id = pw_wonder.1920
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				has_country_flag = pw_FP_had_peace_stability_modifier
+				is_at_war = no
+				# NOR = {
+				# 	has_modifier = pw_mod_FP_peace_stability_1
+				# 	has_modifier = pw_mod_FP_peace_stability_2
+				# 	has_modifier = pw_mod_FP_peace_stability_3
+				# 	has_modifier = pw_mod_FP_peace_stability_4
+				# 	has_modifier = pw_mod_FP_peace_stability_5
+				# 	has_modifier = pw_mod_FP_peace_stability_6
+				# 	has_modifier = pw_mod_FP_peace_stability_7
+				# 	has_modifier = pw_mod_FP_peace_stability_8
+				# 	has_modifier = pw_mod_FP_peace_stability_9
+				# 	has_modifier = pw_mod_FP_peace_stability_10
+				# }
+			}
+			country_event = { id = pw_wonder.1921 }
+		}
+	}
+}
+
+#When this country exists a war (and has the needed flag)
+country_event = {
+	id = pw_wonder.1921
+	title = pw_wonder.1921.name
+	desc = pw_wonder.1921.desc
+	picture = GFX_evt_galactic_market
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = pw_FP_had_peace_stability_modifier
+		is_at_war = no
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				OR = { #Has one of the flags:
+					has_planet_flag = pw_FP_has_festivities_of_plenitude_mod
+					has_planet_flag = pw_FP_has_fertility_bacchanal_mod
+					has_planet_flag = pw_FP_has_cultivate_peace_mod
+					has_planet_flag = pw_FP_has_harvest_festival_mod
+					has_planet_flag = pw_FP_has_commemorate_perfection_mod
+				}
+			}
+			#Remove the planetary modifiers:
+			planet_event = { id = pw_wonder.1922 }
+		}
+	}
+
+	option = {
+		name = pw_wonder.1921.a
+		pw_determine_peace_stability_modifier = yes
+		hidden_effect = {
+			remove_country_flag = pw_FP_had_peace_stability_modifier
+			country_event = { id = pw_wonder.1922 days = 30 }#1 month to reset every modifier to planets
+		}
+	}
+}
+
+#Reset the festivities to the planets
+planet_event = {
+	id = pw_wonder.1922
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { #Has one of the flags:
+			has_planet_flag = pw_FP_has_festivities_of_plenitude_mod
+			has_planet_flag = pw_FP_has_fertility_bacchanal_mod
+			has_planet_flag = pw_FP_has_cultivate_peace_mod
+			has_planet_flag = pw_FP_has_harvest_festival_mod
+			has_planet_flag = pw_FP_has_commemorate_perfection_mod
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_planet_flag = pw_FP_has_festivities_of_plenitude_mod }
+			remove_planet_flag = pw_FP_has_festivities_of_plenitude_mod
+			if = {
+				limit = { has_building = pw_building_festival_plaza }
+				add_modifier = {
+					modifier = pw_mod_FP_festivities_of_plenitude
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_FP_has_fertility_bacchanal_mod }
+			remove_planet_flag = pw_FP_has_fertility_bacchanal_mod
+			if = {
+				limit = { has_building = pw_building_festival_plaza }
+				add_modifier = {
+					modifier = pw_mod_FP_fertility_bacchanal
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_FP_has_cultivate_peace_mod }
+			remove_planet_flag = pw_FP_has_cultivate_peace_mod
+			if = {
+				limit = { has_building = pw_building_festival_plaza }
+				add_modifier = {
+					modifier = pw_mod_FP_cultivate_peace
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_FP_has_harvest_festival_mod }
+			remove_planet_flag = pw_FP_has_harvest_festival_mod
+			if = {
+				limit = { has_building = pw_building_festival_plaza }
+				add_modifier = {
+					modifier = pw_mod_FP_harvest_festival
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_FP_has_commemorate_perfection_mod }
+			remove_planet_flag = pw_FP_has_commemorate_perfection_mod
+			if = {
+				limit = { has_building = pw_building_festival_plaza }
+				add_modifier = {
+					modifier = pw_mod_FP_commemorate_perfection
+					clear_on_owner_change = yes
+				}
+			}
+		}
+	}
+}
+
+#Recalculate the country modifier:
+country_event = {
+	id = pw_wonder.1922
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		pw_determine_peace_stability_modifier = yes
 	}
 }

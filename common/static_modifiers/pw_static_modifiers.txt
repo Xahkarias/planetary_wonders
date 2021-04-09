@@ -232,6 +232,14 @@ pw_mod_TLN_street_carnival = {
 	planet_jobs_unity_produces_mult = 0.20
 }
 
+#Forbidden City:
+pw_mod_forbidden_city_recently_build = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.1
+	pop_ethic_authoritarian_attraction_mult = 0.05
+}
+
 pw_mod_FC_food_for_the_people = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
 	icon_frame = @pw_icon_frame_green
@@ -267,12 +275,12 @@ pw_mod_FC_masquerade = {
 	planet_jobs_unity_produces_mult = 0.15
 }
 
-#Forbidden City:
-pw_mod_forbidden_city_recently_build = {
+#Festival Plaza
+pw_mod_festival_plaza_recently_build = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_happiness = 0.1
-	pop_ethic_authoritarian_attraction_mult = 0.05
+	pop_happiness = 0.15
+	pop_ethic_pacifist_attraction_mult = 0.05
 }
 
 #Stargazing Mirror effect: Reflective Meditation

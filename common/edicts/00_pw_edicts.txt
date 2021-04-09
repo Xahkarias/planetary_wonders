@@ -149,3 +149,112 @@ pw_grand_archive_visit_the_archive = {
 		weight = 0
 	}
 }
+
+pw_festival_plaza_brace_for_the_worst = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	prerequisites = {
+		pw_tech_peace_manipulation
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_festival_plaza_brace_for_the_worst }
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_festival_plaza_brace_for_the_worst
+			}
+			influence = 50
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_decreases_peace_stability
+		pw_determine_peace_stability_modifier = yes
+	}
+
+	modifier = {
+		country_war_exhaustion_mult = -0.25
+		starbase_building_capacity_add = 2
+		ship_home_territory_fire_rate_mult = 0.20
+		starbases_upkeep_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = @EdictLowPrio
+	}
+}
+
+pw_festival_plaza_justified_conflicts = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	prerequisites = {
+		pw_tech_peace_manipulation
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_festival_plaza_justified_conflicts }
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_festival_plaza_justified_conflicts
+			}
+			influence = 50
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+	}
+
+	allow = {
+		NOT = { has_ethic = ethic_fanatic_pacifist }
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_decreases_peace_stability
+		pw_determine_peace_stability_modifier = yes
+	}
+
+	modifier = {
+		country_war_exhaustion_mult = -0.25
+		country_naval_cap_mult = 0.10
+		starbase_shipyard_build_speed_mult = 0.15
+		ships_upkeep_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = @EdictLowPrio
+	}
+}

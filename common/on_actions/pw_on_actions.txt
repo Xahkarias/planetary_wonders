@@ -19,6 +19,7 @@ on_tech_increased = {
 	}
 }
 
+#[UNRELIABLE]
 # A building construction has demolished.
 # This = Planet
 on_building_demolished = {
@@ -30,6 +31,7 @@ on_building_demolished = {
 	}
 }
 
+#[UNRELIABLE]
 # A building construction has finished, replacing another building.
 # This = Planet
 on_building_replaced = {
@@ -67,5 +69,23 @@ on_army_recruited = {
 on_leader_death = {
 	events = {
 		pw_holy_reliquary.1012
+	}
+}
+
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+		pw_wonder.1910
+	}
+}
+
+# A war has ended
+# Root = Loser
+# From = Main Winner
+on_war_ended = {
+	events = {
+		pw_wonder.1920
 	}
 }

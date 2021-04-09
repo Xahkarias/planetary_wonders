@@ -193,3 +193,24 @@
 
     pw_decision_fc_infrastructure_war_room: "$pw_decision_fc.develop_infrastructure$ War Room"
     pw_decision_fc_infrastructure_war_room_desc: "Use the $pw_forbidden_city$ to stablish the centralized control of planetary military operation, ready to dispatch defenses or support our fleets."
+
+    #Festival Plaza peace decisions
+    pw_decision_FP.festival: "§BHost Festival:§!"
+
+    pw_decision_festivities_of_plenitude: "$pw_decision_FP.festival$ Festivities Of Plenitude"
+    pw_decision_festivities_of_plenitude_desc: "Host a public celebration of peace and love that boasts our harmonious ways for the galaxy and contribute to peace stability of our entire country."
+
+    pw_decision_fertility_bacchanal: "$pw_decision_FP.festival$ Fertility Bacchanal"
+    pw_decision_fertility_bacchanal_desc: "Host a celebration of life, reproduction and bountifulness, where the generation of new life is encouraged and the care for the young is increased."
+
+    pw_decision_cultivate_peace: "$pw_decision_FP.festival$ Cultivate Peace"
+    pw_decision_cultivate_peace_desc: "Host a planet-wide cultural festival that, in its heart, cultivate the peace we strive for and build great stability in our country"
+
+    pw_decision_harvest_festival: "$pw_decision_FP.festival$ Harvest Festival"
+    pw_decision_harvest_festival_desc: "Host rural festivals during the many harvests in the planet, to celebrate the land we cultivate and share the bounties that land provides in return, further strengthening our values."
+
+    pw_decision_commemorate_perfection: "$pw_decision_FP.festival$ Commemorate Perfection"
+    pw_decision_commemorate_perfection_desc: "Host a celebration of our achievement in the peaceful purist of perfection, strengthening our unity and independence of foreign forces. This will value our peaceful ways and the purity we maintain."
+
+    pw_decision_cancel_festivities: "Cancel Festivities"
+    pw_decision_cancel_festivities_desc: "End current peace festivities, hopefully to host a new one and not because a war approaches."

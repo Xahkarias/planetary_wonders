@@ -468,3 +468,216 @@ pw_grand_archive_pay_assemble_cost = {
 		}
 	}
 }
+
+#Festival Square determines and adds peace stability modifier (Country Scope)
+pw_determine_peace_stability_modifier = {
+	custom_tooltip =  pw_FP_add_peace_stability_modifier
+	hidden_effect = {
+		#Reset Variable
+		set_variable = {
+			which = pw_peace_stability_count
+			value = 0
+		}
+
+		#Add Stability - Wonder
+		if = {
+			limit = { has_ethic = ethic_fanatic_pacifist }
+			change_variable = {
+				which = pw_peace_stability_count
+				value = 1
+			}
+		}
+		#Add Stability - Fanatic Pacifist
+		if = {
+			limit = { has_country_flag = pw_festival_plaza_built }
+			change_variable = {
+				which = pw_peace_stability_count
+				value = 1
+			}
+		}
+		#Add Stability - Festivals
+		every_owned_planet = {
+			limit = {
+				OR = {
+					has_modifier = pw_mod_FP_festivities_of_plenitude
+					has_modifier = pw_mod_FP_fertility_bacchanal
+					has_modifier = pw_mod_FP_cultivate_peace
+					has_modifier = pw_mod_FP_harvest_festival
+					has_modifier = pw_mod_FP_commemorate_perfection
+				}
+			}
+			owner = {
+				change_variable = {
+					which = pw_peace_stability_count
+					value = 1
+				}
+			}
+		}
+		#Remove Stability - Edicts
+		if = {
+			limit = { has_edict = pw_festival_plaza_brace_for_the_worst }
+			change_variable = {
+				which = pw_peace_stability_count
+				value = -1
+			}
+		}
+		if = {
+			limit = { has_edict = pw_festival_plaza_justified_conflicts }
+			change_variable = {
+				which = pw_peace_stability_count
+				value = -1
+			}
+		}
+		#Add Country Modifier:
+		if = {
+			limit = { is_at_war = no }
+			if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value <= 1
+					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_1 }
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 2
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 3
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_3 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 4
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_4 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 5
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_5 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 6
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_6 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 7
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_7 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 8
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_8 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value = 9
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_9 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = pw_peace_stability_count
+						value >= 10
+					}
+				}
+				pw_remove_current_peace_stability_modifier = yes
+				add_modifier = { modifier = pw_mod_FP_peace_stability_10 }
+			}
+		}
+		else = {
+			pw_remove_current_peace_stability_modifier = yes
+		}
+	}
+}
+
+pw_remove_current_peace_stability_modifier = {
+	if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_1 }
+		remove_modifier = pw_mod_FP_peace_stability_1
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_2 }
+		remove_modifier = pw_mod_FP_peace_stability_2
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_3 }
+		remove_modifier = pw_mod_FP_peace_stability_3
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_4 }
+		remove_modifier = pw_mod_FP_peace_stability_4
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_5 }
+		remove_modifier = pw_mod_FP_peace_stability_5
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_6 }
+		remove_modifier = pw_mod_FP_peace_stability_6
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_7 }
+		remove_modifier = pw_mod_FP_peace_stability_7
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_8 }
+		remove_modifier = pw_mod_FP_peace_stability_8
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_9 }
+		remove_modifier = pw_mod_FP_peace_stability_9
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_FP_peace_stability_10 }
+		remove_modifier = pw_mod_FP_peace_stability_10
+	}
+}

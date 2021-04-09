@@ -173,6 +173,7 @@ pw_decision_rebuild_flying_fortress = {
 		create_army = {
 			name = pw_army_flying_fortress_name
 			owner = THIS.owner
+			species = THIS.owner.owner_species
 			type = pw_army_flying_fortress
 		}
 		hidden_effect = {
@@ -5298,5 +5299,522 @@ pw_decision_fc_infrastructure_war_room = {
 			factor = 1.5
 			owner = { has_valid_civic = civic_naval_contractors }
 		}
+	}
+}
+
+#Festival Plaza Decisions
+
+#Festivities of Plenitude
+pw_decision_festivities_of_plenitude = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				num_pops < 10
+			}
+			energy = 1000
+			unity = 1000
+		}
+		cost = {
+			trigger = {
+				num_pops >= 20
+				num_pops < 30
+			}
+			energy = 1400
+			unity = 1400
+		}
+		cost = {
+			trigger = {
+				num_pops >= 40
+				num_pops < 50
+			}
+			energy = 1800
+			unity = 1800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 60
+				num_pops < 70
+			}
+			energy = 2200
+			unity = 2200
+		}
+		cost = {
+			trigger = {
+				num_pops >= 100
+			}
+			energy = 2800
+			unity = 2800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 150
+			}
+			energy = 3000
+			unity = 3000
+		}
+	}
+
+	prerequisites = {
+		pw_tech_festivals_of_harmony
+	}
+
+	potential = {
+		has_building = pw_building_festival_plaza
+	}
+
+	allow = {
+		is_at_war = no
+		NOR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_increases_peace_stability
+		add_modifier = {
+			modifier = pw_mod_FP_festivities_of_plenitude
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 1.5
+	}
+}
+
+#Fertility Bacchanal
+pw_decision_fertility_bacchanal = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				num_pops < 10
+			}
+			energy = 1000
+			unity = 1000
+		}
+		cost = {
+			trigger = {
+				num_pops >= 20
+				num_pops < 30
+			}
+			energy = 1400
+			unity = 1400
+		}
+		cost = {
+			trigger = {
+				num_pops >= 40
+				num_pops < 50
+			}
+			energy = 1800
+			unity = 1800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 60
+				num_pops < 70
+			}
+			energy = 2200
+			unity = 2200
+		}
+		cost = {
+			trigger = {
+				num_pops >= 100
+			}
+			energy = 2800
+			unity = 2800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 150
+			}
+			energy = 3000
+			unity = 3000
+		}
+	}
+
+	prerequisites = {
+		pw_tech_festivals_of_harmony
+	}
+
+	potential = {
+		has_building = pw_building_festival_plaza
+	}
+
+	allow = {
+		is_at_war = no
+		NOR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_increases_peace_stability
+		add_modifier = {
+			modifier = pw_mod_FP_fertility_bacchanal
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 2.5
+	}
+}
+
+#Cultivate Peace
+pw_decision_cultivate_peace = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				num_pops < 10
+			}
+			energy = 1000
+			unity = 1000
+		}
+		cost = {
+			trigger = {
+				num_pops >= 20
+				num_pops < 30
+			}
+			energy = 1400
+			unity = 1400
+		}
+		cost = {
+			trigger = {
+				num_pops >= 40
+				num_pops < 50
+			}
+			energy = 1800
+			unity = 1800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 60
+				num_pops < 70
+			}
+			energy = 2200
+			unity = 2200
+		}
+		cost = {
+			trigger = {
+				num_pops >= 100
+			}
+			energy = 2800
+			unity = 2800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 150
+			}
+			energy = 3000
+			unity = 3000
+		}
+	}
+
+	prerequisites = {
+		pw_tech_festivals_of_harmony
+	}
+
+	potential = {
+		has_building = pw_building_festival_plaza
+	}
+
+	allow = {
+		is_at_war = no
+		NOR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_increases_peace_stability
+		add_modifier = {
+			modifier = pw_mod_FP_cultivate_peace
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+#Harvest Festival
+pw_decision_harvest_festival = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				num_pops < 10
+			}
+			energy = 1000
+			unity = 1000
+		}
+		cost = {
+			trigger = {
+				num_pops >= 20
+				num_pops < 30
+			}
+			energy = 1400
+			unity = 1400
+		}
+		cost = {
+			trigger = {
+				num_pops >= 40
+				num_pops < 50
+			}
+			energy = 1800
+			unity = 1800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 60
+				num_pops < 70
+			}
+			energy = 2200
+			unity = 2200
+		}
+		cost = {
+			trigger = {
+				num_pops >= 100
+			}
+			energy = 2800
+			unity = 2800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 150
+			}
+			energy = 3000
+			unity = 3000
+		}
+	}
+
+	prerequisites = {
+		pw_tech_harvest_festival
+	}
+
+	potential = {
+		has_building = pw_building_festival_plaza
+	}
+
+	allow = {
+		is_at_war = no
+		NOR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_increases_peace_stability
+		add_modifier = {
+			modifier = pw_mod_FP_harvest_festival
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 2.5
+	}
+}
+
+#Commemorate Perfection
+pw_decision_commemorate_perfection = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				num_pops < 10
+			}
+			energy = 1000
+			unity = 1000
+		}
+		cost = {
+			trigger = {
+				num_pops >= 20
+				num_pops < 30
+			}
+			energy = 1400
+			unity = 1400
+		}
+		cost = {
+			trigger = {
+				num_pops >= 40
+				num_pops < 50
+			}
+			energy = 1800
+			unity = 1800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 60
+				num_pops < 70
+			}
+			energy = 2200
+			unity = 2200
+		}
+		cost = {
+			trigger = {
+				num_pops >= 100
+			}
+			energy = 2800
+			unity = 2800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 150
+			}
+			energy = 3000
+			unity = 3000
+		}
+	}
+
+	prerequisites = {
+		pw_tech_commemorate_perfection
+	}
+
+	potential = {
+		has_building = pw_building_festival_plaza
+	}
+
+	allow = {
+		is_at_war = no
+		NOR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_increases_peace_stability
+		add_modifier = {
+			modifier = pw_mod_FP_commemorate_perfection
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 2.5
+	}
+}
+
+#Cancel festivities
+pw_decision_cancel_festivities = {
+	owned_planets_only = yes
+	sound = event_default
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+		has_building = pw_building_festival_plaza
+		is_at_war = no
+		OR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = pw_mod_FP_festivities_of_plenitude }
+			remove_modifier = pw_mod_FP_festivities_of_plenitude
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_fertility_bacchanal }
+			remove_modifier = pw_mod_FP_fertility_bacchanal
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_cultivate_peace }
+			remove_modifier = pw_mod_FP_cultivate_peace
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_harvest_festival }
+			remove_modifier = pw_mod_FP_harvest_festival
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
+			remove_modifier = pw_mod_FP_commemorate_perfection
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }

@@ -49,6 +49,12 @@
     pw_building_forbidden_city_desc: "A secure city district dedicated to administration and governance, isolated and protected from the masses. Here is where the central powers of the planet come to congregate, conspire and rule. With enough city infrastructure, every political matter in the planet can be concentrated here."
     pw_forbidden_city_tooltip: "§SAllows us to develop centralized infrastructure.§!\n"
 
+    # Festival Plaza
+    pw_festival_plaza: "§MFestival Plaza§!"
+    pw_building_festival_plaza: "Festival Plaza"
+    pw_building_festival_plaza_desc: "A massive pavilion of festivities where our jubilation with life and peace can be celebrated and we all can be reminded of the pleasures of a life without conflict. It is also a place of preparation, respite and unity, in case war is proven inescapable."
+    pw_festival_plaza_tooltip: "§SAllows us to host Celebrations of Harmony.§!\n"
+
     # Research Buildings:
 
     # Particle Supercollider

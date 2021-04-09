@@ -175,6 +175,10 @@
     pw_mod_FC_masquerade: "Masquerade"
     pw_mod_FC_masquerade_desc: "The inauguration of the Ballroom in the Forbidden City was marked by a inebriating masked ball, with the fanciest foods and music for the pleasure of the elite."
 
+    # Festival Plaza:
+    pw_mod_festival_plaza_recently_build: "Peace in Our Time"
+    pw_mod_festival_plaza_recently_build_desc: "The recent construction of a the $pw_festival_plaza$ brings joy to the population of this planet, with the expectation of grand peace celebrations that will occur."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"
@@ -363,3 +367,57 @@
 
     pw_art_mod_union_busting: "Union Busting"
     pw_art_mod_union_busting_desc: "Enough propaganda instilled in many art pieces in the latest exhibition have demonized worker unions, making laborer work the same with less upkeep."
+
+    #Peace Festivals Modifiers (Planet)
+
+    pw_mod_FP_festivities_of_plenitude: "Festivities Of Plenitude"
+    pw_mod_FP_festivities_of_plenitude_desc: "Almost every month this planet hosts a public celebration of peace and love that boasts our harmonious ways for the galaxy. With it we build stability in our community. \n$pw_FP_increases_peace_stability$"
+
+    pw_mod_FP_fertility_bacchanal: "Fertility Bacchanal"
+    pw_mod_FP_fertility_bacchanal_desc: "Almost every month this planet hosts a celebration of life, reproduction and bountifulness, the generation of new life is encouraged and the care for the young is increased.\n$pw_FP_increases_peace_stability$"
+
+    pw_mod_FP_cultivate_peace: "Cultivate Peace"
+    pw_mod_FP_cultivate_peace_desc: "It is very common for this planet to host planet-wide culturally engaging festivals that, in their heart, cultivate the peace we strive for and build great stability in our country.\n$pw_FP_increases_peace_stability$"
+
+    pw_mod_FP_harvest_festival: "Harvest Festival"
+    pw_mod_FP_harvest_festival_desc: "Annually, the entire planet joins in the efforts and benefits of a grand harvest, at an appropriate time of year for each region, that strengthen our idyllic and agrarian values.\n$pw_FP_increases_peace_stability$"
+
+    pw_mod_FP_commemorate_perfection: "Commemorate Perfection"
+    pw_mod_FP_commemorate_perfection_desc: "Almost every month this planet hosts a celebration of our achievement in the peaceful purist of perfection, strengthening our unity and independence of foreign forces.\n$pw_FP_increases_peace_stability$"
+
+    #Peace stability tooltips:
+    pw_FP_add_peace_stability_modifier: "§BSet a new Peace Stability country modifier.§!"
+    pw_FP_increases_peace_stability: "§GIncreases peace stability.§!"
+    pw_FP_decreases_peace_stability: "§RDecreases peace stability.§!"
+
+
+    #Peace Stability (Country)
+    pw_mod_FP_peace_stability_1: "Peace Stability I"
+    pw_mod_FP_peace_stability_1_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_2: "Peace Stability II"
+    pw_mod_FP_peace_stability_2_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_3: "Peace Stability III"
+    pw_mod_FP_peace_stability_3_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_4: "Peace Stability IV"
+    pw_mod_FP_peace_stability_4_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_5: "Peace Stability V"
+    pw_mod_FP_peace_stability_5_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_6: "Peace Stability VI"
+    pw_mod_FP_peace_stability_6_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_7: "Peace Stability VII"
+    pw_mod_FP_peace_stability_7_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_8: "Peace Stability VIII"
+    pw_mod_FP_peace_stability_8_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_9: "Peace Stability IX"
+    pw_mod_FP_peace_stability_9_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_mod_FP_peace_stability_10: "Peace Stability X (Maximum)"
+    pw_mod_FP_peace_stability_10_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
