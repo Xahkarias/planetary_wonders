@@ -108,6 +108,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_space_elevator_xenophile
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -128,6 +129,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_space_elevator_xenophobe
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 }
@@ -329,11 +331,8 @@ planet_event = {
 				}
 				create_ship = {
 					name = random
-					design = "NAME_colonizer"
-					#random_existing_design = colonizer
+					design = "NAME_Colonizer"
 					colonizer_species = owner_main_species
-					prefix = yes
-					upgradable = yes
 				}
 			}
 		}
@@ -410,6 +409,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_particle_supercollider_materialist
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -430,6 +430,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_particle_supercollider_spiritualist
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -580,6 +581,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_domed_city_egalitarian
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -600,6 +602,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_domed_city_authoritarian
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -760,6 +763,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_abyssal_test_crater_pacifist
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -780,6 +784,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_abyssal_test_crater_militarist
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -2019,7 +2024,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.803.b
 		allow = {
-			owner = { has_resource = { type = influence amount > 50 }}
+			owner = { resource_stockpile_compare = { resource = influence value >= 50 }}
 		}
 		owner = {
 			add_resource = {
@@ -2105,7 +2110,7 @@ country_event = {
 	option = {
 		name = pw_wonder.805.b
 		allow = {
-			owner = { has_resource = { type = influence amount > 100 }}
+			owner = { resource_stockpile_compare = { resource = influence value >= 100 }}
 		}
 		owner = {
 			add_resource = {
@@ -2965,6 +2970,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_energy
 			days = -1
+			clear_on_owner_change = yes
 		}
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1011 days = 180 random = 30 }
@@ -2990,6 +2996,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_housing
 			days = -1
+			clear_on_owner_change = yes
 		}
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1012 days = 180 random = 30 }
@@ -3015,6 +3022,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_art
 			days = -1
+			clear_on_owner_change = yes
 		}
 		enable_special_project = {
 			name = PW_FIX_ENIGMA_DRONES
@@ -3027,8 +3035,16 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_enigma_engine_art
 			days = -1
+			clear_on_owner_change = yes
 		}
-		owner = { add_100_unity_per_year_passed = yes }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier4unityreward
+				min = @tier4unitymin
+				max = @tier4unitymax
+			}
+		}
 	}
 }
 
@@ -3285,6 +3301,7 @@ country_event = {
 		add_modifier = {
 			modifier = pw_debate_mod_syncretic
 			days = @pw_1year
+			clear_on_owner_change = yes
 		}
 	}
 	option = {
@@ -3292,6 +3309,7 @@ country_event = {
 		add_modifier = {
 			modifier = pw_debate_mod_deviancy
 			days = @pw_1year
+			clear_on_owner_change = yes
 		}
 	}
 	option = {
@@ -3430,6 +3448,7 @@ planet_event = {
 		create_army = {
 			name = pw_army_flying_fortress_name
 			owner = THIS.owner
+			species = THIS.owner_main_species
 			type = pw_army_flying_fortress
 		}
 	}
@@ -4878,6 +4897,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_industrial_hearth_egalitarian
 			days = @pw_2years
+			clear_on_owner_change = yes
 		}
 		hidden_effect = {
 			planet_event = {
@@ -4896,6 +4916,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_industrial_hearth_authoritarian
 			days = @pw_2years
+			clear_on_owner_change = yes
 		}
 		hidden_effect = {
 			planet_event = {
@@ -5958,6 +5979,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_TLN_productive_leisure
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -6010,6 +6032,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_TLN_path_to_progress
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -6062,6 +6085,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_TLN_mutual_aid
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 }
@@ -6105,6 +6129,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_TLN_inspired_militia
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -6163,6 +6188,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_TLN_inspiring_peace
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 }
@@ -6268,6 +6294,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_TLN_street_carnival
 			days = @pw_2years
+			clear_on_owner_change = yes
 		}
 	}
 }
@@ -6760,6 +6787,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_FC_food_for_the_people
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -6768,10 +6796,7 @@ planet_event = {
 		name = pw_wonder.1807.b
 		allow = {
 			owner = {
-				has_resource = {
-					type = food
-					amount > 1500
-				}
+				resource_stockpile_compare = { resource = food value >= 1500 }
 			}
 		}
 		owner = {
@@ -6799,6 +6824,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_FC_repression
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 		owner = {
 			add_monthly_resource_mult = {
@@ -6851,6 +6877,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_FC_goods_for_the_people
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -6859,14 +6886,8 @@ planet_event = {
 		name = pw_wonder.1808.b
 		allow = {
 			owner = {
-				has_resource = {
-					type = energy
-					amount > 1000
-				}
-				has_resource = {
-					type = influence
-					amount > 25
-				}
+				resource_stockpile_compare = { resource = energy value >= 1000 }
+				resource_stockpile_compare = { resource = influence value >= 25 }
 			}
 		}
 		owner = {
@@ -6878,6 +6899,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_FC_orderly_place
 			days = @pw_10years
+			clear_on_owner_change = yes
 		}
 	}
 
@@ -6887,6 +6909,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_FC_repression
 			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 		owner = {
 			add_monthly_resource_mult = {
@@ -6954,10 +6977,7 @@ planet_event = {
 		name = pw_wonder.1809.c
 		allow = {
 			owner = {
-				has_resource = {
-					type = influence
-					amount > 50
-				}
+				resource_stockpile_compare = { resource = influence value >= 50 }
 			}
 		}
 		owner = {
@@ -7039,10 +7059,7 @@ planet_event = {
 		}
 		allow = {
 			owner = {
-				has_resource = {
-					type = food
-					amount > 1500
-				}
+				resource_stockpile_compare = { resource = food value > 1500 }
 			}
 		}
 		owner = {
@@ -7110,6 +7127,7 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_FC_masquerade
 			days = @pw_2years
+			clear_on_owner_change = yes
 		}
 	}
 }

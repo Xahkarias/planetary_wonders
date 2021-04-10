@@ -301,9 +301,9 @@ country_event = {
 		custom_tooltip = pw_holy_reliquary.101.a.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_expansion_introspective_gaze }
-			has_resource = {
-				type = influence
-				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
 			}
 		}
 		add_resource = {
@@ -332,9 +332,9 @@ country_event = {
 		custom_tooltip = pw_holy_reliquary.201.b.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-			has_resource = {
-				type = influence
-				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
 			}
 		}
 		add_resource = {
@@ -386,6 +386,13 @@ country_event = {
 				NOR = {
 					has_modifier = pw_holy_reliquary_expansion_reflective_meditation
 					has_modifier = pw_holy_reliquary_expansion_peregrination_pathways
+				}
+			}
+			weights = {
+				base = 1
+				modifier = {
+					mult = 3
+					num_pops > 50
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_modifier_planet
@@ -449,6 +456,13 @@ country_event = {
 				NOR = {
 					has_modifier = pw_holy_reliquary_expansion_reflective_meditation
 					has_modifier = pw_holy_reliquary_expansion_peregrination_pathways
+				}
+			}
+			weights = {
+				base = 1
+				modifier = {
+					mult = 3
+					num_pops > 50
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_modifier_planet
@@ -585,9 +599,9 @@ country_event = {
 		custom_tooltip = pw_holy_reliquary.201.a.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_domination_way_of_the_solar_regent }
-			has_resource = {
-				type = influence
-				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
 			}
 		}
 		add_resource = {
@@ -616,9 +630,9 @@ country_event = {
 		custom_tooltip = pw_holy_reliquary.201.b.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_domination_way_of_the_void_speakers }
-			has_resource = {
-				type = influence
-				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
 			}
 		}
 		add_resource = {
@@ -670,6 +684,13 @@ country_event = {
 				NOT = { has_deposit = pw_d_monument_to_the_solar_regent }
 				NOT = { has_deposit = pw_d_parliament_of_the_void_speakers }
 			}
+			weights = {
+				base = 1
+				modifier = {
+					mult = 3
+					num_pops > 50
+				}
+			}
 			save_event_target_as = pw_holy_reliquary_shrine_planet
 		}
 	}
@@ -697,6 +718,13 @@ country_event = {
 			limit = {
 				NOT = { has_deposit = pw_d_monument_to_the_solar_regent }
 				NOT = { has_deposit = pw_d_parliament_of_the_void_speakers }
+			}
+			weights = {
+				base = 1
+				modifier = {
+					mult = 3
+					num_pops > 50
+				}
 			}
 			save_event_target_as = pw_holy_reliquary_shrine_planet
 		}
@@ -875,9 +903,9 @@ country_event = {
 		custom_tooltip = pw_holy_reliquary.701.a.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_discovery_codex_of_past_ages }
-			has_resource = {
-				type = influence
-				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
 			}
 		}
 		add_resource = {
@@ -962,9 +990,9 @@ country_event = {
 		custom_tooltip = pw_holy_reliquary.701.b.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_discovery_codex_of_future_ages }
-			has_resource = {
-				type = influence
-				amount >= @pw_holy_reliquary_change_artifact_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
 			}
 		}
 		add_resource = {
@@ -1265,9 +1293,9 @@ country_event = {
 		name = pw_holy_reliquary.1.appoint_relic_keeper
 		custom_tooltip = pw_holy_reliquary.800.a.tooltip
 		allow = {
-			has_resource = {
-				type = influence
-				amount > 50
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 50
 			}
 		}
 		add_resource = {
@@ -1346,9 +1374,9 @@ country_event = {
 				fail_text = pw_holy_reliquary.1000.tooltip
 				has_country_flag = pw_holy_reliquary_alternate_traditions
 			}
-			has_resource = {
-				type = influence
-				amount > 25
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 25
 			}
 		}
 		add_resource = {
@@ -1369,9 +1397,9 @@ country_event = {
 				fail_text = pw_holy_reliquary.1000.tooltip
 				NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }
 			}
-			has_resource = {
-				type = influence
-				amount > 25
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 25
 			}
 		}
 		add_resource = {
@@ -1463,13 +1491,13 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.1010.a
 		allow = {
-			has_resource = {
-				type = consumer_goods
-				amount > 1000
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 1000
 			}
-			has_resource = {
-				type = energy
-				amount > 1500
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1500
 			}
 		}
 		add_resource = {
@@ -1487,9 +1515,9 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.1010.b
 		allow = {
-			has_resource = {
-				type = influence
-				amount > 25
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 25
 			}
 		}
 		add_resource = {
@@ -1574,9 +1602,9 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.1011.b
 		allow = {
-			has_resource = {
-				type = consumer_goods
-				amount > 500
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 500
 			}
 		}
 		add_resource = {

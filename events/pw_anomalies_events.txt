@@ -517,7 +517,7 @@ ship_event = {
 	is_triggered_only = yes
 	location = THIS
 
-	#
+	#Test option 1
 	option = {
 		name = pw_anomaly.132.a
 		create_fleet = {
@@ -526,11 +526,32 @@ ship_event = {
 				set_owner = owner
 				create_army_transport = {
 					ship_name = random
-					species = owner.species
+					species = owner_main_species
 					army_type = "pw_army_salvaged_war_titan"
-					# army_name = pw_army_salvaged_war_titan_name
 				}
 			}
+		}
+	}
+
+	#Test option 2
+	option = {
+		name = pw_anomaly.132.a
+		create_army_transport = {
+			species = owner_main_species
+			army_type = "pw_army_salvaged_war_titan"
+			effect = {
+				set_owner = PREV.owner
+			}
+		}
+	}
+
+	#Test Option 3
+	option = {
+		name = pw_anomaly.132.a
+		create_army = {
+			owner = THIS.owner
+			type = pw_army_salvaged_war_titan
+			species = owner_main_species
 		}
 	}
 }

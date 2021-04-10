@@ -640,10 +640,6 @@ pw_tourist = {
 			owner = { is_fallen_empire = yes }
 		}
 		modifier = {
-			factor = 5
-			has_migration_control = no
-		}
-		modifier = {
 			factor = 2
 			has_citizenship_rights = yes
 		}

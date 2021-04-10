@@ -609,26 +609,24 @@ pw_d_infrastructure_food_distribution = {
 	#Food
 	triggered_planet_modifier = {
 		potential = {
-			any_pop = {
-				is_lithoid = yes
+			owner_main_species = {
+				is_lithoid = no
 			}
 		}
 		modifier = {
-			planet_pops_organics_minerals_upkeep_mult = -0.05
+			planet_pops_organics_food_upkeep_mult = -0.05
 		}
 	}
 
 	#Minerals
 	triggered_planet_modifier = {
 		potential = {
-			NOT = {
-				any_pop = {
-					is_lithoid = yes
-				}
+			owner_main_species = {
+				is_lithoid = yes
 			}
 		}
 		modifier = {
-			planet_pops_organics_food_upkeep_mult = -0.05
+			planet_pops_organics_minerals_upkeep_mult = -0.05
 		}
 	}
 }
@@ -666,10 +664,8 @@ pw_d_infrastructure_energy_distribution = {
 	#Food
 	triggered_planet_modifier = {
 		potential = {
-			NOT = {
-				any_pop = {
-					is_lithoid = yes
-				}
+			owner_main_species = {
+				is_lithoid = no
 			}
 		}
 		modifier = {
@@ -680,7 +676,7 @@ pw_d_infrastructure_energy_distribution = {
 	#Minerals
 	triggered_planet_modifier = {
 		potential = {
-			any_pop = {
+			owner_main_species = {
 				is_lithoid = yes
 			}
 		}
@@ -726,10 +722,8 @@ pw_d_infrastructure_goods_distribution = {
 	#Food
 	triggered_planet_modifier = {
 		potential = {
-			NOT = {
-				any_pop = {
-					is_lithoid = yes
-				}
+			owner_main_species = {
+				is_lithoid = no
 			}
 		}
 		modifier = {
@@ -740,7 +734,7 @@ pw_d_infrastructure_goods_distribution = {
 	#Minerals
 	triggered_planet_modifier = {
 		potential = {
-			any_pop = {
+			owner_main_species = {
 				is_lithoid = yes
 			}
 		}
@@ -786,10 +780,8 @@ pw_d_infrastructure_luxury_distribution = {
 	#Food
 	triggered_planet_modifier = {
 		potential = {
-			NOT = {
-				any_pop = {
-					is_lithoid = yes
-				}
+			owner_main_species = {
+				is_lithoid = no
 			}
 		}
 		modifier = {
@@ -800,7 +792,7 @@ pw_d_infrastructure_luxury_distribution = {
 	#Minerals
 	triggered_planet_modifier = {
 		potential = {
-			any_pop = {
+			owner_main_species = {
 				is_lithoid = yes
 			}
 		}

@@ -202,9 +202,9 @@ country_event = {
 				fail_text = pw_grand_archive.ARK_project.delve.complete_project
 				has_country_flag = pw_grand_archive_ARK_project_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -324,7 +324,7 @@ country_event = {
 				}
 			}
 			#Frozen Specimens
-			random_planet = {
+			random_galaxy_planet = {
 				limit = {
 					is_surveyed = {
 						who = ROOT
@@ -354,7 +354,7 @@ country_event = {
 				}
 			}
 			#Uncharted Biosphere
-			random_planet = {
+			random_galaxy_planet = {
 				limit = {
 					is_surveyed = {
 						who = ROOT
@@ -678,9 +678,9 @@ country_event = {
 				fail_text = pw_grand_archive.library_of_babel.delve.complete_project
 				has_country_flag = pw_grand_archive_library_of_babel_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -825,9 +825,9 @@ country_event = {
 				fail_text = pw_grand_archive.cradle_initiative.delve.complete_project
 				has_country_flag = pw_grand_archive_cradle_initiative_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -1451,9 +1451,9 @@ country_event = {
 				fail_text = pw_grand_archive.particle_museum.delve.complete_project
 				has_country_flag = pw_grand_archive_particle_museum_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -1598,9 +1598,9 @@ country_event = {
 				fail_text = pw_grand_archive.omnidatabase.delve.complete_project
 				has_country_flag = pw_grand_archive_omnidatabase_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -1745,9 +1745,9 @@ country_event = {
 				fail_text = pw_grand_archive.stellarium.delve.complete_project
 				has_country_flag = pw_grand_archive_stellarium_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2053,9 +2053,9 @@ country_event = {
 				fail_text = pw_grand_archive.zero_g_exposition.delve.complete_project
 				has_country_flag = pw_grand_archive_zero_g_exposition_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2217,9 +2217,9 @@ country_event = {
 				fail_text = pw_grand_archive.mechanist_collection.delve.complete_project
 				has_country_flag = pw_grand_archive_mechanist_collection_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2386,9 +2386,9 @@ country_event = {
 				fail_text = pw_grand_archive.meta_architectural_complex.delve.complete_project
 				has_country_flag = pw_grand_archive_meta_architectural_complex_completed
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {
@@ -2716,9 +2716,9 @@ country_event = {
 			}
 		}
 		allow = {
-			has_resource = {
-				type = unity
-				amount > 100000
+			resource_stockpile_compare = {
+				resource = unity
+				value >= 100000
 			}
 		}
 		add_resource = {
@@ -2738,9 +2738,9 @@ country_event = {
 			}
 		}
 		allow = {
-			has_resource = {
-				type = influence
-				amount > 25
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 25
 			}
 		}
 		add_resource = {
@@ -2764,9 +2764,9 @@ country_event = {
 				fail_text = pw_grand_archive.holoarchive.delve.unified
 				has_country_flag = pw_grand_archive_holoarchive_unified
 			}
-			has_resource = {
-				type = influence
-				amount > @pw_grand_archive_secrets_cost_check
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_grand_archive_secrets_cost_check
 			}
 		}
 		add_resource = {

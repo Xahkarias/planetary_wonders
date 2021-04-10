@@ -5467,7 +5467,7 @@ country_event = {
 	option = { #Replace it.
 		name = pw_art_exhibition.509.a
 		trigger = {
-			owner = { has_resource = { type = energy amount > 200 }}
+			owner = { resource_stockpile_compare = { resource = energy value >= 200 }}
 		}
 		add_resource = {
 			energy = -200

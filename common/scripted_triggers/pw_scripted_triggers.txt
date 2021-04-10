@@ -180,9 +180,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 0
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_0
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_0
 		}
 	}
 	conditional_tooltip = {
@@ -192,9 +192,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 1
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_1
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_1
 		}
 	}
 	conditional_tooltip = {
@@ -204,9 +204,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 2
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_2
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_2
 		}
 	}
 	conditional_tooltip = {
@@ -216,9 +216,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 3
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_3
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_3
 		}
 	}
 	conditional_tooltip = {
@@ -228,9 +228,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 4
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_4
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_4
 		}
 	}
 	conditional_tooltip = {
@@ -240,9 +240,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 5
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_5
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_5
 		}
 	}
 	conditional_tooltip = {
@@ -252,9 +252,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value = 6
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_6
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_6
 		}
 	}
 	conditional_tooltip = {
@@ -264,9 +264,9 @@ pw_has_unity_to_sanctify_artifact = {
 				value > 6 #Shouldn't happen, but just to make sure.
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_holy_reliquary_sanctify_cost_check_7
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_holy_reliquary_sanctify_cost_check_7
 		}
 	}
 }
@@ -369,9 +369,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 0
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_0
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_0
 		}
 	}
 	conditional_tooltip = {
@@ -381,9 +381,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 1
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_1
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_1
 		}
 	}
 	conditional_tooltip = {
@@ -393,9 +393,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 2
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_2
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_2
 		}
 	}
 	conditional_tooltip = {
@@ -405,9 +405,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 3
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_3
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_3
 		}
 	}
 	conditional_tooltip = {
@@ -417,9 +417,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 4
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_4
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_4
 		}
 	}
 	conditional_tooltip = {
@@ -429,9 +429,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 5
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_5
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_5
 		}
 	}
 	conditional_tooltip = {
@@ -441,9 +441,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 6
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_6
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_6
 		}
 	}
 	conditional_tooltip = {
@@ -453,9 +453,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 7
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_7
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_7
 		}
 	}
 	conditional_tooltip = {
@@ -465,9 +465,9 @@ pw_has_unity_to_assemble_archive = {
 				value = 8
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_8
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_8
 		}
 	}
 	conditional_tooltip = {
@@ -477,9 +477,9 @@ pw_has_unity_to_assemble_archive = {
 				value > 8
 			}
 		}
-		has_resource = {
-			type = unity
-			amount >= @pw_grand_archive_assemble_cost_check_final
+		resource_stockpile_compare = {
+			resource = unity
+			value >= @pw_grand_archive_assemble_cost_check_final
 		}
 	}
 }
