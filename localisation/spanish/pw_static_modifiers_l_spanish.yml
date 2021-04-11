@@ -294,3 +294,6 @@
     pw_mod_FP_peace_stability_9_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
     pw_mod_FP_peace_stability_10: "Peace Stability X (Maximum)"
     pw_mod_FP_peace_stability_10_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    pw_holy_reliquary_prosperity_coin_of_fortune: "$pw_holy_reliquary.coin_of_fortune$."
+    pw_holy_reliquary_prosperity_coin_of_fortune_desc: "The $pw_holy_reliquary.coin_of_fortune$ brings us its luck in many ways, but mostly it provides good trade deals, bountiful harvests and unexpected mineral finds."

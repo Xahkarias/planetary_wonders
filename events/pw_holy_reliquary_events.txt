@@ -8,6 +8,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_mirror
 			has_country_flag = pw_holy_reliquary_sanctified_scepter
+			has_country_flag = pw_holy_reliquary_sanctified_coin
 			has_country_flag = pw_holy_reliquary_sanctified_codex
 		}
 		text = pw_holy_reliquary.1.all.desc
@@ -17,11 +18,13 @@ country_event = {
 			OR = {
 				has_country_flag = pw_holy_reliquary_sanctified_mirror
 				has_country_flag = pw_holy_reliquary_sanctified_scepter
+				has_country_flag = pw_holy_reliquary_sanctified_coin
 				has_country_flag = pw_holy_reliquary_sanctified_codex
 			}
 			NAND = {
 				has_country_flag = pw_holy_reliquary_sanctified_mirror
 				has_country_flag = pw_holy_reliquary_sanctified_scepter
+				has_country_flag = pw_holy_reliquary_sanctified_coin
 				has_country_flag = pw_holy_reliquary_sanctified_codex
 			}
 		}
@@ -32,6 +35,7 @@ country_event = {
 			NOR = {
 				has_country_flag = pw_holy_reliquary_sanctified_mirror
 				has_country_flag = pw_holy_reliquary_sanctified_scepter
+				has_country_flag = pw_holy_reliquary_sanctified_coin
 				has_country_flag = pw_holy_reliquary_sanctified_codex
 			}
 		}
@@ -115,6 +119,40 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.205
+			}
+		}
+	}
+
+	#Prosperity: Coin of Fortune -> 300
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.prosperity.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_coin }
+		}
+		allow = {
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				has_tradition = tr_prosperity_finish
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.300
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.prosperity.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_coin
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.305
 			}
 		}
 	}
@@ -734,6 +772,883 @@ country_event = {
 		name = pw_holy_reliquary.220.a
 		event_target:pw_holy_reliquary_shrine_planet = {
 			add_deposit = pw_d_parliament_of_the_void_speakers
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Prosperity Artifact (Coin of Fortune) -> 300
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.300
+	title = pw_holy_reliquary.300.name
+	desc = pw_holy_reliquary.300.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.300.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_coin }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.301 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.301
+	title = pw_holy_reliquary.301.name
+	desc = pw_holy_reliquary.301.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_coin
+	}
+
+	#Just Sanctify
+	option = {
+		name = pw_holy_reliquary.301.a
+		custom_tooltip = pw_holy_reliquary.301.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_prosperity_coin_of_fortune
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Sanctify and Flip it
+	option = {
+		name = pw_holy_reliquary.301.b
+		custom_tooltip = pw_holy_reliquary.301.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_prosperity_coin_of_fortune
+		}
+		pw_holy_reliquary_flip_coin = yes
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.305
+	title = pw_holy_reliquary.305.name
+	desc = pw_holy_reliquary.305.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Flip the coin
+	option = {
+		name = pw_holy_reliquary.305.a
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 25
+			}
+		}
+		add_resource = {
+			influence = -25
+		}
+		pw_holy_reliquary_flip_coin = yes
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Flip coin effects Description:
+#Good luck -> 330:
+
+#Nothing
+country_event = {
+	id = pw_holy_reliquary.330
+	title = pw_holy_reliquary.330.title
+	desc = pw_holy_reliquary.330.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.330.a
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Food
+country_event = {
+	id = pw_holy_reliquary.331
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			food = 1000
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Minerals
+country_event = {
+	id = pw_holy_reliquary.332
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			minerals = 1000
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Energy
+country_event = {
+	id = pw_holy_reliquary.333
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			energy = 1000
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Alloys
+country_event = {
+	id = pw_holy_reliquary.334
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			alloys = 500
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Consumer Goods
+country_event = {
+	id = pw_holy_reliquary.335
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			consumer_goods = 500
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Exotic Gases
+country_event = {
+	id = pw_holy_reliquary.337
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			exotic_gases = 250
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Rare Crystals
+country_event = {
+	id = pw_holy_reliquary.339
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			rare_crystals = 250
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Motes
+country_event = {
+	id = pw_holy_reliquary.340
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			volatile_motes = 250
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Zro
+country_event = {
+	id = pw_holy_reliquary.341
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			sr_zro = 100
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Living metal
+country_event = {
+	id = pw_holy_reliquary.342
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			sr_living_metal = 100
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Dark Matter
+country_event = {
+	id = pw_holy_reliquary.343
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.331.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_resource = {
+			sr_dark_matter = 150
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Terraforming candidate
+country_event = {
+	id = pw_holy_reliquary.344
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.344.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_controlled_planet = {
+			limit = {
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+				}
+				has_deposit = no
+				NOT = { has_modifier = terraforming_candidate }
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_modifier = {
+				modifier = terraforming_candidate
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Natural Beauty
+country_event = {
+	id = pw_holy_reliquary.345
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.345.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				is_artificial = no
+				NOT = { has_modifier = natural_beauty }
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_modifier = {
+				modifier = natural_beauty
+				days = @pw_5years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Betharian Fields
+country_event = {
+	id = pw_holy_reliquary.346
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.346.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				is_artificial = no
+				NOT = { has_deposit = d_betharian_deposit }
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_betharian_deposit
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Isolated Valley
+country_event = {
+	id = pw_holy_reliquary.347
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.347.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				is_artificial = no
+				NOT = { has_deposit = d_alien_pets_deposit }
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_alien_pets_deposit
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Eremite joins
+country_event = {
+	id = pw_holy_reliquary.348
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.348.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		capital_scope = {
+			while = {
+				count = 2
+				create_pop = {
+					ethos = {
+						ethic = ethic_spiritualist
+					}
+					species = THIS.owner_main_species
+				}
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Random tech
+country_event = {
+	id = pw_holy_reliquary.349
+	title = pw_holy_reliquary.good_luck.title
+	desc = pw_holy_reliquary.349.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.good_luck.a
+		add_random_research_option = {
+			add_progress = 0.1
+			fail_effects = {
+				add_resource = {
+					engineering_research = 500
+					society_research = 500
+					physics_research = 500
+				}
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Bad Luck -> 360:
+
+#Nothing
+country_event = {
+	id = pw_holy_reliquary.360
+	title = pw_holy_reliquary.360.title
+	desc = pw_holy_reliquary.360.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.360.a
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Food
+country_event = {
+	id = pw_holy_reliquary.361
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			food = -1000
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Minerals
+country_event = {
+	id = pw_holy_reliquary.362
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			minerals = -1000
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Energy
+country_event = {
+	id = pw_holy_reliquary.363
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			energy = -1000
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Alloys
+country_event = {
+	id = pw_holy_reliquary.364
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			alloys = -500
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Consumer Goods
+country_event = {
+	id = pw_holy_reliquary.365
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			consumer_goods = -500
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Exotic Gases
+country_event = {
+	id = pw_holy_reliquary.367
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			exotic_gases = -250
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Rare Crystals
+country_event = {
+	id = pw_holy_reliquary.369
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			rare_crystals = -250
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Motes
+country_event = {
+	id = pw_holy_reliquary.370
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			volatile_motes = -250
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Zro
+country_event = {
+	id = pw_holy_reliquary.371
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			sr_zro = -100
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Living metal
+country_event = {
+	id = pw_holy_reliquary.372
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			sr_living_metal = -100
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Lose Dark Matter
+country_event = {
+	id = pw_holy_reliquary.373
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.361.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		add_resource = {
+			sr_dark_matter = -150
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Deep sinkhole
+country_event = {
+	id = pw_holy_reliquary.374
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.374.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				is_artificial = no
+				free_district_slots > 0
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_deep_sinkhole
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Dangerous Wildlife
+country_event = {
+	id = pw_holy_reliquary.375
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.375.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				free_district_slots > 0
+				is_artificial = no
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_dangerous_wildlife_blocker
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Toxic kelp
+country_event = {
+	id = pw_holy_reliquary.376
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.376.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				free_district_slots > 0
+				is_wet = yes
+				is_artificial = no
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_toxic_kelp
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Noxious Swamp
+country_event = {
+	id = pw_holy_reliquary.377
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.377.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				free_district_slots > 0
+				is_artificial = no
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_noxious_swamp
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Active Volcano
+country_event = {
+	id = pw_holy_reliquary.378
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.378.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				free_district_slots > 0
+				is_artificial = no
+			}
+			save_event_target_as = pw_holy_reliquary_fortune_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		event_target:pw_holy_reliquary_fortune_planet = {
+			add_deposit = d_active_volcano
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Active Volcano
+country_event = {
+	id = pw_holy_reliquary.379
+	title = pw_holy_reliquary.bad_luck.title
+	desc = pw_holy_reliquary.379.desc
+	picture = GFX_evt_pw_coin_of_fortune
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_fortune_planet
+
+	option = {
+		name = pw_holy_reliquary.bad_luck.a
+		capital_scope = {
+			random_owned_pop = {
+				kill_pop = yes
+			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
 	}

@@ -48,6 +48,12 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_pw_coin_of_fortune"
+		texturefile = "gfx/event_pictures/pw_coin_of_fortune.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_scepter_of_the_solar_regent"
 		texturefile = "gfx/event_pictures/scepter_of_the_solar_regent.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
