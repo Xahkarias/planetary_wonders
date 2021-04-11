@@ -7,7 +7,7 @@ fleet_event = {
 	id = pw_archaeology.105
 	title = pw_archaeology.105.name
 	desc = pw_archaeology.105.desc
-	picture = GFX_evt_demetrius_cornucopia
+	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_ghost_town
 	is_triggered_only = yes
 
@@ -32,7 +32,7 @@ fleet_event = {
 	id = pw_archaeology.110
 	title = pw_archaeology.110.name
 	desc = pw_archaeology.110.desc
-	picture = GFX_evt_helios_tower
+	picture = GFX_evt_pw_helios_tower
 	show_sound = event_machinery
 
 	archaeology = yes
@@ -58,7 +58,7 @@ fleet_event = {
 	id = pw_archaeology.115
 	title = pw_archaeology.115.name
 	desc = pw_archaeology.115.desc
-	picture = GFX_evt_erebus_project
+	picture = GFX_evt_pw_erebus_project
 	show_sound = event_drilling
 
 	archaeology = yes

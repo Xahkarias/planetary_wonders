@@ -254,7 +254,7 @@ country_event = {
 	id = pw_holy_reliquary.100
 	title = pw_holy_reliquary.100.name
 	desc = pw_holy_reliquary.100.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	is_triggered_only = yes
 
 	#Sanctify
@@ -281,7 +281,7 @@ country_event = {
 	id = pw_holy_reliquary.101
 	title = pw_holy_reliquary.101.name
 	desc = pw_holy_reliquary.101.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -329,7 +329,7 @@ country_event = {
 	id = pw_holy_reliquary.105
 	title = pw_holy_reliquary.105.name
 	desc = pw_holy_reliquary.105.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -414,7 +414,7 @@ country_event = {
 	id = pw_holy_reliquary.110
 	title = pw_holy_reliquary.110.name
 	desc = pw_holy_reliquary.110.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -462,7 +462,7 @@ country_event = {
 	id = pw_holy_reliquary.111
 	title = pw_holy_reliquary.111.name
 	desc = pw_holy_reliquary.111.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -484,7 +484,7 @@ country_event = {
 	id = pw_holy_reliquary.120
 	title = pw_holy_reliquary.120.name
 	desc = pw_holy_reliquary.120.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -531,7 +531,7 @@ country_event = {
 	id = pw_holy_reliquary.121
 	title = pw_holy_reliquary.121.name
 	desc = pw_holy_reliquary.121.desc
-	picture = GFX_evt_stargazing_mirror
+	picture = GFX_evt_pw_stargazing_mirror
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -554,7 +554,7 @@ country_event = {
 	id = pw_holy_reliquary.200
 	title = pw_holy_reliquary.200.name
 	desc = pw_holy_reliquary.200.desc
-	picture = GFX_evt_scepter_of_the_solar_regent
+	picture = GFX_evt_pw_scepter_of_the_solar_regent
 	is_triggered_only = yes
 
 	#Sanctify
@@ -581,7 +581,7 @@ country_event = {
 	id = pw_holy_reliquary.201
 	title = pw_holy_reliquary.201.name
 	desc = pw_holy_reliquary.201.desc
-	picture = GFX_evt_scepter_of_the_solar_regent
+	picture = GFX_evt_pw_scepter_of_the_solar_regent
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -627,7 +627,7 @@ country_event = {
 	id = pw_holy_reliquary.205
 	title = pw_holy_reliquary.205.name
 	desc = pw_holy_reliquary.205.desc
-	picture = GFX_evt_scepter_of_the_solar_regent
+	picture = GFX_evt_pw_scepter_of_the_solar_regent
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -712,7 +712,7 @@ country_event = {
 	id = pw_holy_reliquary.210
 	title = pw_holy_reliquary.210.name
 	desc = pw_holy_reliquary.210.desc
-	picture = GFX_evt_scepter_of_the_solar_regent
+	picture = GFX_evt_pw_scepter_of_the_solar_regent
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -747,7 +747,7 @@ country_event = {
 	id = pw_holy_reliquary.220
 	title = pw_holy_reliquary.220.name
 	desc = pw_holy_reliquary.220.desc
-	picture = GFX_evt_scepter_of_the_solar_regent
+	picture = GFX_evt_pw_scepter_of_the_solar_regent
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -1660,7 +1660,7 @@ country_event = {
 	id = pw_holy_reliquary.700
 	title = pw_holy_reliquary.700.name
 	desc = pw_holy_reliquary.700.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	is_triggered_only = yes
 
 	#Sanctify
@@ -1687,7 +1687,7 @@ country_event = {
 	id = pw_holy_reliquary.701
 	title = pw_holy_reliquary.701.name
 	desc = pw_holy_reliquary.701.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -1808,7 +1808,7 @@ country_event = {
 	id = pw_holy_reliquary.705
 	title = pw_holy_reliquary.705.name
 	desc = pw_holy_reliquary.705.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -1957,7 +1957,7 @@ country_event = {
 	id = pw_holy_reliquary.710
 	title = pw_holy_reliquary.710.name
 	desc = pw_holy_reliquary.710.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -1976,7 +1976,7 @@ country_event = {
 	id = pw_holy_reliquary.711
 	title = pw_holy_reliquary.711.name
 	desc = pw_holy_reliquary.711.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2002,7 +2002,7 @@ country_event = {
 	id = pw_holy_reliquary.712
 	title = pw_holy_reliquary.712.name
 	desc = pw_holy_reliquary.712.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2028,7 +2028,7 @@ country_event = {
 	id = pw_holy_reliquary.713
 	title = pw_holy_reliquary.713.name
 	desc = pw_holy_reliquary.713.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2054,7 +2054,7 @@ country_event = {
 	id = pw_holy_reliquary.714
 	title = pw_holy_reliquary.714.name
 	desc = pw_holy_reliquary.714.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2080,7 +2080,7 @@ country_event = {
 	id = pw_holy_reliquary.720
 	title = pw_holy_reliquary.720.name
 	desc = pw_holy_reliquary.720.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2107,7 +2107,7 @@ country_event = {
 	id = pw_holy_reliquary.721
 	title = pw_holy_reliquary.721.name
 	desc = pw_holy_reliquary.721.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2134,7 +2134,7 @@ country_event = {
 	id = pw_holy_reliquary.722
 	title = pw_holy_reliquary.722.name
 	desc = pw_holy_reliquary.722.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
@@ -2162,7 +2162,7 @@ country_event = {
 	id = pw_holy_reliquary.750
 	title = pw_holy_reliquary.750.name
 	desc = pw_holy_reliquary.750.desc
-	picture = GFX_evt_codex_of_the_ages
+	picture = GFX_evt_pw_codex_of_the_ages
 	is_triggered_only = yes
 
 	#Canonize the texts

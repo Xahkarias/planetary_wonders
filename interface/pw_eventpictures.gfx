@@ -1,49 +1,13 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_evt_abyssal_crater_test_site"
-		texturefile = "gfx/event_pictures/abyssal_crater_test_site.dds"
+		name = "GFX_evt_pw_abyssal_crater_test_site"
+		texturefile = "gfx/event_pictures/pw_abyssal_crater_test_site.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_codex_of_the_ages"
-		texturefile = "gfx/event_pictures/codex_of_the_ages.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_evt_demetrius_cornucopia"
-		texturefile = "gfx/event_pictures/demetrius_cornucopia.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_evt_domed_city"
-		texturefile = "gfx/event_pictures/domed_city.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_evt_enigma_engine"
-		texturefile = "gfx/event_pictures/enigma_engine.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_evt_erebus_project"
-		texturefile = "gfx/event_pictures/erebus_project.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_evt_galactic_model"
-		texturefile = "gfx/event_pictures/galactic_model.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
-		name = "GFX_evt_helios_tower"
-		texturefile = "gfx/event_pictures/helios_tower.dds"
+		name = "GFX_evt_pw_codex_of_the_ages"
+		texturefile = "gfx/event_pictures/pw_codex_of_the_ages.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
@@ -54,20 +18,56 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_scepter_of_the_solar_regent"
-		texturefile = "gfx/event_pictures/scepter_of_the_solar_regent.dds"
+		name = "GFX_evt_pw_demetrius_cornucopia"
+		texturefile = "gfx/event_pictures/pw_demetrius_cornucopia.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_space_elevator"
-		texturefile = "gfx/event_pictures/space_elevator.dds"
+		name = "GFX_evt_pw_domed_city"
+		texturefile = "gfx/event_pictures/pw_domed_city.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_stargazing_mirror"
-		texturefile = "gfx/event_pictures/stargazing_mirror.dds"
+		name = "GFX_evt_pw_enigma_engine"
+		texturefile = "gfx/event_pictures/pw_enigma_engine.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_erebus_project"
+		texturefile = "gfx/event_pictures/pw_erebus_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_galactic_model"
+		texturefile = "gfx/event_pictures/pw_galactic_model.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_helios_tower"
+		texturefile = "gfx/event_pictures/pw_helios_tower.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_scepter_of_the_solar_regent"
+		texturefile = "gfx/event_pictures/pw_scepter_of_the_solar_regent.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_space_elevator"
+		texturefile = "gfx/event_pictures/pw_space_elevator.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_stargazing_mirror"
+		texturefile = "gfx/event_pictures/pw_stargazing_mirror.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}

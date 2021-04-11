@@ -2518,7 +2518,7 @@ planet_event = {
 	id = pw_grand_archive.905
 	title = pw_grand_archive.905.name
 	desc = pw_grand_archive.905.desc
-	picture = GFX_evt_space_elevator
+	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	location = THIS
 
@@ -2558,7 +2558,7 @@ planet_event = {
 	id = pw_grand_archive.906
 	title = pw_grand_archive.906.name
 	desc = pw_grand_archive.906.desc
-	picture = GFX_evt_galactic_model
+	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	location = THIS
 
