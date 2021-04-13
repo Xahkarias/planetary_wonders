@@ -7568,3 +7568,486 @@ country_event = {
 		pw_determine_peace_stability_modifier = yes
 	}
 }
+
+
+# Martial Avenue -> id 2000
+
+#On Martial Avenue built
+planet_event = {
+	id = pw_wonder.2000
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_martial_avenue_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2001 } #Regular first time
+		planet_event = { id = pw_wonder.2005 days = @pw_halfYear } #Recursive Check
+	}
+}
+
+#On first time Martial Avenue is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2001
+	title = pw_wonder.2001.name
+	desc = pw_wonder.2001.desc
+	picture = GFX_evt_victorious_army
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_martial_avenue_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_martial_avenue_built }
+	}
+
+	option = {
+		name = pw_wonder.2001.a
+		add_modifier = {
+			modifier = pw_mod_martial_avenue_recently_build
+			days = @pw_2years
+		}
+	}
+
+	option = {
+		name = pw_wonder.2001.b
+		add_modifier = {
+			modifier = pw_mod_martial_avenue_recently_build
+			days = @pw_1year
+		}
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+		}
+	}
+}
+
+#First time added war drive with negative modifier
+country_event = {
+	id = pw_wonder.2002
+	title = pw_wonder.2002.name
+	desc = pw_wonder.2002.desc
+	picture = GFX_evt_victorious_army
+	show_sound = event_public_unrest
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {has_country_flag = pw_martial_avenue_malus_mod_alert }
+	}
+
+	immediate = {
+		set_country_flag = pw_martial_avenue_malus_mod_alert
+	}
+
+	option = {
+		name = pw_wonder.2002.a
+	}
+
+	option = {
+		name = pw_wonder.2002.b
+	}
+}
+
+#Check if MA was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.2005
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_building = pw_building_martial_avenue } #Does not has the building
+				OR = { #But has one of the modifiers:
+					has_modifier =pw_mod_MA_military_parade
+					has_modifier =pw_mod_MA_do_your_own_part
+					has_modifier =pw_mod_MA_enemies_at_the_gate
+					has_modifier =pw_mod_MA_flight_of_the_corvettes
+					has_modifier =pw_mod_MA_national_march
+					has_modifier =pw_mod_MA_combat_demonstrations
+					has_modifier =pw_mod_MA_merchants_of_war
+				}
+			}
+			planet_event = { id = pw_wonder.2006 }
+		}
+		else_if = {
+			limit = { has_building = pw_building_martial_avenue }
+			planet_event = { id = pw_wonder.2005 days = @pw_halfYear }
+		}
+	}
+}
+
+#When the MA is destroyed/replaces -> remove modifiers
+planet_event = {
+	id = pw_wonder.2006
+	title = pw_wonder.2006.name
+	desc = pw_wonder.2006.desc
+	picture = GFX_evt_victorious_army
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = { has_building = pw_building_martial_avenue } #Does not has the building
+		OR = { #But has one of the modifiers:
+			has_modifier =pw_mod_MA_military_parade
+			has_modifier =pw_mod_MA_do_your_own_part
+			has_modifier =pw_mod_MA_enemies_at_the_gate
+			has_modifier =pw_mod_MA_flight_of_the_corvettes
+			has_modifier =pw_mod_MA_national_march
+			has_modifier =pw_mod_MA_combat_demonstrations
+			has_modifier =pw_mod_MA_merchants_of_war
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = { has_modifier =pw_mod_MA_military_parade }
+			remove_modifier = pw_mod_MA_military_parade
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_do_your_own_part }
+			remove_modifier = pw_mod_MA_do_your_own_part
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_enemies_at_the_gate }
+			remove_modifier = pw_mod_MA_enemies_at_the_gate
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_flight_of_the_corvettes }
+			remove_modifier = pw_mod_MA_flight_of_the_corvettes
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_national_march }
+			remove_modifier = pw_mod_MA_national_march
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_combat_demonstrations }
+			remove_modifier = pw_mod_MA_combat_demonstrations
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_merchants_of_war }
+			remove_modifier = pw_mod_MA_merchants_of_war
+		}
+		pw_determine_war_drive_modifier = yes
+	}
+}
+
+
+#When this country enters a war
+country_event = {
+	id = pw_wonder.2010
+	title = pw_wonder.2010.name
+	desc = pw_wonder.2010.desc
+	picture = GFX_evt_fleet_from_surface
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_modifier = pw_mod_MA_war_drive_1
+			has_modifier = pw_mod_MA_war_drive_2
+			has_modifier = pw_mod_MA_war_drive_3
+			has_modifier = pw_mod_MA_war_drive_4
+			has_modifier = pw_mod_MA_war_drive_5
+			has_modifier = pw_mod_MA_war_drive_6
+			has_modifier = pw_mod_MA_war_drive_7
+			has_modifier = pw_mod_MA_war_drive_8
+			has_modifier = pw_mod_MA_war_drive_9
+			has_modifier = pw_mod_MA_war_drive_10
+		}
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				OR = { #Has one of the modifiers:
+					has_modifier = pw_mod_MA_military_parade
+					has_modifier = pw_mod_MA_flight_of_the_corvettes
+					has_modifier = pw_mod_MA_national_march
+					has_modifier = pw_mod_MA_combat_demonstrations
+					has_modifier = pw_mod_MA_merchants_of_war
+				}
+			}
+			#Remove the planetary modifiers:
+			planet_event = { id = pw_wonder.2011 }
+		}
+	}
+
+	option = {
+		name = pw_wonder.2010.a
+		custom_tooltip = pw_wonder.2010.a.tooltip
+		hidden_effect = {
+			pw_determine_war_drive_modifier = yes
+		}
+	}
+}
+
+#Remove parades from planets
+planet_event = {
+	id = pw_wonder.2011
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { #But has one of the modifiers:
+			has_modifier = pw_mod_MA_military_parade
+			has_modifier = pw_mod_MA_flight_of_the_corvettes
+			has_modifier = pw_mod_MA_national_march
+			has_modifier = pw_mod_MA_combat_demonstrations
+			has_modifier = pw_mod_MA_merchants_of_war
+		}
+	}
+
+	immediate = {
+		#Remove previous modifier:
+		if = {
+			limit = { has_modifier = pw_mod_MA_military_parade }
+			remove_modifier = pw_mod_MA_military_parade
+			set_planet_flag = pw_MA_has_military_parade_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_flight_of_the_corvettes }
+			remove_modifier = pw_mod_MA_flight_of_the_corvettes
+			set_planet_flag = pw_MA_has_flight_of_the_corvettes_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_national_march }
+			remove_modifier = pw_mod_MA_national_march
+			set_planet_flag = pw_MA_has_national_march_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_combat_demonstrations }
+			remove_modifier = pw_mod_MA_combat_demonstrations
+			set_planet_flag = pw_MA_has_combat_demonstrations_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_merchants_of_war }
+			remove_modifier = pw_mod_MA_merchants_of_war
+			set_planet_flag = pw_MA_has_merchants_of_war_mod
+		}
+		#Add next modifier:
+		if = {
+			limit = {
+				OR = {
+					has_designation = col_fortress
+					has_designation = col_habitat_fortress
+					is_in_frontier_space = yes
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_MA_enemies_at_the_gate
+				clear_on_owner_change = yes
+			}
+		}
+		else ={
+			add_modifier = {
+				modifier = pw_mod_MA_do_your_own_part
+				clear_on_owner_change = yes
+			}
+		}
+	}
+}
+
+#When a war ends
+event = {
+	id = pw_wonder.2020
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				OR = {
+					has_modifier = pw_mod_MA_war_lust_1
+					has_modifier = pw_mod_MA_war_lust_2
+					has_modifier = pw_mod_MA_war_lust_3
+					has_modifier = pw_mod_MA_war_lust_4
+					has_modifier = pw_mod_MA_war_lust_5
+					has_modifier = pw_mod_MA_war_lust_6
+					has_modifier = pw_mod_MA_war_lust_7
+					has_modifier = pw_mod_MA_war_lust_8
+					has_modifier = pw_mod_MA_war_lust_9
+					has_modifier = pw_mod_MA_war_lust_10
+					has_country_flag = pw_martial_avenue_built
+				}
+				#Important to check if there is no other war going on
+				is_at_war = no
+			}
+			country_event = { id = pw_wonder.2021 }
+		}
+	}
+}
+
+#When this country exists a war (and has the needed flag)
+country_event = {
+	id = pw_wonder.2021
+	title = pw_wonder.2021.name
+	desc = pw_wonder.2021.desc
+	picture = GFX_evt_victorious_army
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_modifier = pw_mod_MA_war_lust_1
+			has_modifier = pw_mod_MA_war_lust_2
+			has_modifier = pw_mod_MA_war_lust_3
+			has_modifier = pw_mod_MA_war_lust_4
+			has_modifier = pw_mod_MA_war_lust_5
+			has_modifier = pw_mod_MA_war_lust_6
+			has_modifier = pw_mod_MA_war_lust_7
+			has_modifier = pw_mod_MA_war_lust_8
+			has_modifier = pw_mod_MA_war_lust_9
+			has_modifier = pw_mod_MA_war_lust_10
+			has_country_flag = pw_martial_avenue_built
+		}
+		#Important to check if there is no other war going on
+		is_at_war = no
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				OR = { #Has one of the flags:
+					has_planet_flag = pw_MA_has_military_parade_mod
+					has_planet_flag = pw_MA_has_flight_of_the_corvettes_mod
+					has_planet_flag = pw_MA_has_national_march_mod
+					has_planet_flag = pw_MA_has_combat_demonstrations_mod
+					has_planet_flag = pw_MA_has_merchants_of_war_mod
+				}
+			}
+			#Remove the planetary modifiers:
+			planet_event = { id = pw_wonder.2022 }
+		}
+	}
+
+	option = {
+		name = pw_wonder.2021.a
+		custom_tooltip = pw_wonder.2010.a.tooltip
+		hidden_effect = {
+			pw_determine_war_drive_modifier = yes
+			country_event = { id = pw_wonder.2023 days = 30 }#1 month to reset every modifier to planets
+		}
+	}
+}
+
+#Reset the parades to the planets
+planet_event = {
+	id = pw_wonder.2022
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { #Has one of the flags:
+			has_planet_flag = pw_MA_has_military_parade_mod
+			has_planet_flag = pw_MA_has_flight_of_the_corvettes_mod
+			has_planet_flag = pw_MA_has_national_march_mod
+			has_planet_flag = pw_MA_has_combat_demonstrations_mod
+			has_planet_flag = pw_MA_has_merchants_of_war_mod
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pw_mod_MA_do_your_own_part }
+			remove_modifier = pw_mod_MA_do_your_own_part
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_enemies_at_the_gate }
+			remove_modifier = pw_mod_MA_enemies_at_the_gate
+		}
+
+		if = {
+			limit = { has_planet_flag = pw_MA_has_military_parade_mod }
+			remove_planet_flag = pw_MA_has_military_parade_mod
+			if = {
+				limit = { has_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_military_parade
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_MA_has_flight_of_the_corvettes_mod }
+			remove_planet_flag = pw_MA_has_flight_of_the_corvettes_mod
+			if = {
+				limit = { has_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_flight_of_the_corvettes
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_MA_has_national_march_mod }
+			remove_planet_flag = pw_MA_has_national_march_mod
+			if = {
+				limit = { has_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_national_march
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_MA_has_combat_demonstrations_mod }
+			remove_planet_flag = pw_MA_has_combat_demonstrations_mod
+			if = {
+				limit = { has_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_combat_demonstrations
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_MA_has_merchants_of_war_mod }
+			remove_planet_flag = pw_MA_has_merchants_of_war_mod
+			if = {
+				limit = { has_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_merchants_of_war
+					clear_on_owner_change = yes
+				}
+			}
+		}
+	}
+}
+
+#Recalculate the country modifier (just to make sure that 1 month after a war all is OK):
+country_event = {
+	id = pw_wonder.2023
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		pw_determine_war_drive_modifier = yes
+	}
+}

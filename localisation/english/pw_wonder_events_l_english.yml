@@ -582,7 +582,7 @@
 
     #When the FP is destroyed:
     pw_wonder.1906.name: "Party is Over"
-    pw_wonder.1906.desc: "Without the support of the $pw_festival_plaza$, the celebrations being hosted on [THIS.GetName] can no longer be continue and will cease. In the future we will have to rebuild the Plaza and host new celebrations."
+    pw_wonder.1906.desc: "Without the support of the $pw_festival_plaza$, the celebrations being hosted on [THIS.GetName] can no longer continue and will cease. In the future we will have to rebuild the Plaza and host new celebrations."
 
     #When the country enters a war
     pw_wonder.1910.name: "Cruel Wars"
@@ -593,3 +593,33 @@
     pw_wonder.1921.name: "Peace Prevails"
     pw_wonder.1921.desc: "As we leave the barbaric conflicts behind we can resume every festivity we were forced to halt during wartime. Talks of peace and progress already return to public circles and we can mend what was ripped. Celebration in our planets are already returning and the peace stability we have built will not be wasted, it will return in no time."
     pw_wonder.1921.a: "For a future brighter then our past!"
+
+    #Complete Martial Avenue
+    pw_message_martial_avenue_complete: "$pw_martial_avenue$ has been constructed in $PLANET|Y$."
+    #First Time Complete Martial Avenue (Regular Empire)
+    pw_wonder.2001.name: "The Joys of Peace"
+    pw_wonder.2001.desc: "From the Compass of Chor, to the Terminal Egress, the [OWNER.GetAdj] army is the strongest of all. We can put mettle behind those words as we show our might in imperious military parades on the Martial Avenue. Let our tanks and troops take the streets of [THIS.GetName] and every other planet and show our population what defends them, and what they should support in future war efforts.\n\nThe Avenue servers two important purposes in the parades it will host: to instill a warring sentiment in our population, that shall increase the War Drive of the country and diminish the negative public consequences of future wars; while at the same time, our display of strength will stablish our martial superiority over any who dares to bring conflict unto us. Beware, however, should we promise blood for our people and not deliver the one from our enemies, they shall seek it elsewhere."
+    pw_wonder.2001.a: "Courage is not measured in times of peace."
+    pw_wonder.2001.b: "War is but a mean to an end."
+
+    #When the AM is destroyed:
+    pw_wonder.2002.name: "Drive for Blood"
+    pw_wonder.2002.desc: "Our population has been enticed because of our efforts to promote a War Drive to lead them into war. So much so, in fact that if we are not fighting a war, many of our citizens will attack each other in search of combat. Further increases in the War Drive of our empire will improve its benefits, but will also bring worse this situation, making our population more and more aggressive."
+    pw_wonder.2002.a: "More blood! Keep increasing the War Drive."
+    pw_wonder.2002.b: "We need enemies, control the parades until a war arrives."
+
+    #When the AM is destroyed:
+    pw_wonder.2006.name: "No More Marches"
+    pw_wonder.2006.desc: "Without the support of the $pw_martial_avenue$, the military parades being hosted on [THIS.GetName] can no longer continue and will cease. In the future we will have to rebuild the Avenue and host new parades."
+
+    #When the country enters a war
+    pw_wonder.2010.name: "War Never Changes"
+    pw_wonder.2010.desc: "As glorious combat is at our doorsteps, the encouraged spirits of our population, raised by our military parades, turns into bloodlust and unquestioned support for our cause. All parades will cease as we rearrange our troops to battle and the Martial Avenues shall be used as centers to receive support for the war effort form our population. No more shall we complain of lack of combat and seek blood among ourselves, while the war lasts we see only red in our enemies."
+    pw_wonder.2010.a: "To glory!"
+    pw_wonder.2010.a.tooltip: "Remove the War Drive modifiers (positive and negative) and add a corresponding War Lust modifier, that is only positive and will last as long as we are at war."
+
+    #When the country is no longer at war
+    pw_wonder.2021.name: "Enemies? We Need Enemies!"
+    pw_wonder.2021.desc: "Now the that the dust settles for this war, we tend to our wounded and mourn our dead, we count our losses and celebrate our victories. For now, there is no more war for us, the country calms down as the lust for war diminished. Soon our parades will recommence, as the soldiers return home. Grief, however, can be easily turned into rage, given the right public manipulation, in no time our population will be ready for another war."
+    pw_wonder.2021.a: "Rest for now, later we shall continue our conquest."
+    pw_wonder.2021.a.tooltip: "Remove the War Lust modifiers and add a corresponding War Drive modifier, that may be also negative and will remain until our next war."

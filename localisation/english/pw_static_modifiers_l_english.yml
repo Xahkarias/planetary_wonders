@@ -182,6 +182,10 @@
     pw_mod_festival_plaza_recently_build: "Peace in Our Time"
     pw_mod_festival_plaza_recently_build_desc: "The recent construction of a the $pw_festival_plaza$ brings joy to the population of this planet, with the expectation of grand peace celebrations that will occur."
 
+    # Martial Avenue:
+    pw_mod_martial_avenue_recently_build: "Drums of War"
+    pw_mod_martial_avenue_recently_build_desc: "The recent construction of a the $pw_martial_avenue$ brings assures our people that glorious combat is upon us, and allows ou military to show our supremacy, for all to see."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"
@@ -424,3 +428,94 @@
 
     pw_mod_FP_peace_stability_10: "Peace Stability X (Maximum)"
     pw_mod_FP_peace_stability_10_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
+
+    #Military Parade Modifiers (Planet)
+
+    pw_mod_MA_military_parade: "Military Parade"
+    pw_mod_MA_military_parade_desc: "Almost every month this planet hosts a military parade across every urban center. This shows off our military strength and unites our people against our rivals.\n$pw_MA_increases_war_drive$"
+
+    pw_mod_MA_do_your_own_part: "Do Your Own Part"
+    pw_mod_MA_do_your_own_part_desc: "While we are remain at war, the $pw_martial_avenue$ here serves a center for our population to train and help with provision to our assault troops. The parades we promoted have instilled a sense of duty that manifests in these times of war."
+
+    pw_mod_MA_enemies_at_the_gate: "Enemies At The Gate"
+    pw_mod_MA_enemies_at_the_gate_desc: "While we are remain at war, the $pw_martial_avenue$ here serves a center for our population to train and take shelter against possible invading forces. The parades we promoted have instilled a sense of duty that manifests in these times of war."
+
+    pw_mod_MA_flight_of_the_corvettes: "Flight of the Corvettes"
+    pw_mod_MA_flight_of_the_corvettes_desc: "Almost every month this planet hosts a military parade across every urban center that shows off the skills of our most decorated pilots in difficult low orbit corvette smoke flights.\n$pw_MA_increases_war_drive$"
+
+    pw_mod_MA_national_march: "National March"
+    pw_mod_MA_national_march_desc: "Almost every month this planet hosts a military parade across every urban center that bolsters national unity and strength honoring national heroes and historical battles.\n$pw_MA_increases_war_drive$"
+
+    pw_mod_MA_combat_demonstrations: "Combat Demonstrations"
+    pw_mod_MA_combat_demonstrations_desc: "Almost every month this planet hosts a military combat demonstration, reviving every historical battle in our country in spectacular duels. This increases the interest of our population in warfare and preserves our martial culture and tradition. \n$pw_MA_increases_war_drive$"
+
+    pw_mod_MA_merchants_of_war: "Merchants of War"
+    pw_mod_MA_merchants_of_war_desc: "Almost every month this planet hosts a military parade across every urban center with great focus in the private military complex that sponsors the event. From missile factories to mercenary contractors all have an opportunity to shine here.\n$pw_MA_increases_war_drive$"
+
+    #War Drive tooltips:
+    pw_MA_add_war_drive_modifier: "§BSet a new War Drive country modifier.§!"
+    pw_MA_increases_war_drive: "§GIncreases war drive.§!"
+    pw_MA_decreases_war_drive: "§RDecreases war drive.§!"
+
+
+    #War Drive (Country)
+    pw_mod_MA_war_drive_1: "War Drive I"
+    pw_mod_MA_war_drive_1_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_2: "War Drive II"
+    pw_mod_MA_war_drive_2_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_3: "War Drive III"
+    pw_mod_MA_war_drive_3_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_4: "War Drive IV"
+    pw_mod_MA_war_drive_4_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_5: "War Drive V"
+    pw_mod_MA_war_drive_5_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_6: "War Drive VI"
+    pw_mod_MA_war_drive_6_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_7: "War Drive VII"
+    pw_mod_MA_war_drive_7_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_8: "War Drive VIII"
+    pw_mod_MA_war_drive_8_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_9: "War Drive IX"
+    pw_mod_MA_war_drive_9_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    pw_mod_MA_war_drive_10: "War Drive X (Maximum)"
+    pw_mod_MA_war_drive_10_desc: "We have cultivated a desire for war and conflict among our population, when it comes, we will be ready for anything. Beware, if the push this desire too much and there is no war to release it, our population may turn hostile towards itself."
+
+    #War Lust (Country)
+    pw_mod_MA_war_lust_1: "War Lust I"
+    pw_mod_MA_war_lust_1_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_2: "War Lust II"
+    pw_mod_MA_war_lust_2_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_3: "War Lust III"
+    pw_mod_MA_war_lust_3_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_4: "War Lust IV"
+    pw_mod_MA_war_lust_4_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_5: "War Lust V"
+    pw_mod_MA_war_lust_5_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_6: "War Lust VI"
+    pw_mod_MA_war_lust_6_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_7: "War Lust VII"
+    pw_mod_MA_war_lust_7_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_8: "War Lust VIII"
+    pw_mod_MA_war_lust_8_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_9: "War Lust IX"
+    pw_mod_MA_war_lust_9_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    pw_mod_MA_war_lust_10: "War Lust X (Maximum)"
+    pw_mod_MA_war_lust_10_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"

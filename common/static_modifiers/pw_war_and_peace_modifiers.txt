@@ -45,50 +45,36 @@ pw_mod_FP_commemorate_perfection = {
 #Festival Plaza: Peace Stability (Country Scope)
 
 pw_mod_FP_peace_stability_1 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.05
 }
 
 pw_mod_FP_peace_stability_2 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.10
 }
 
 pw_mod_FP_peace_stability_3 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.15
 	country_unity_produces_mult = 0.05
 }
 
 pw_mod_FP_peace_stability_4 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.20
 	country_unity_produces_mult = 0.10
 }
 
 pw_mod_FP_peace_stability_5 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.25
 	country_unity_produces_mult = 0.15
 	country_influence_produces_add = 0.2
 }
 
 pw_mod_FP_peace_stability_6 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.30
 	country_unity_produces_mult = 0.20
 	country_influence_produces_add = 0.4
 }
 
 pw_mod_FP_peace_stability_7 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.35
 	country_unity_produces_mult = 0.25
 	country_influence_produces_add = 0.6
@@ -96,8 +82,6 @@ pw_mod_FP_peace_stability_7 = {
 }
 
 pw_mod_FP_peace_stability_8 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.40
 	country_unity_produces_mult = 0.30
 	country_influence_produces_add = 0.8
@@ -105,8 +89,6 @@ pw_mod_FP_peace_stability_8 = {
 }
 
 pw_mod_FP_peace_stability_9 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.45
 	country_unity_produces_mult = 0.40
 	country_influence_produces_add = 1.2
@@ -115,12 +97,212 @@ pw_mod_FP_peace_stability_9 = {
 }
 
 pw_mod_FP_peace_stability_10 = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
-	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.50
 	country_unity_produces_mult = 0.45
 	country_influence_produces_add = 1.5
 	planet_jobs_worker_produces_mult = 0.50
 	planet_jobs_specialist_produces_mult = 0.25
+	planet_stability_add = 10
+}
+
+#Martial Avenue: Local Modifiers (Planet Scope)
+
+#Military Parade (not at war)
+pw_mod_MA_military_parade = {
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.10
+	planet_stability_add = 5
+	pop_ethic_militarist_attraction_mult = 0.10
+}
+
+#Do your own part (at war)
+pw_mod_MA_do_your_own_part = {
+	icon_frame = @pw_icon_frame_green
+	planet_army_build_speed_mult = 0.50
+	armies_cost_mult = -0.25
+	pop_ethic_militarist_attraction_mult = 0.10
+}
+
+#Enemies at the gate (at war)
+pw_mod_MA_enemies_at_the_gate = {
+	icon_frame = @pw_icon_frame_green
+	planet_orbital_bombardment_damage = -0.05
+	pop_defense_armies_add = 4
+	pop_ethic_militarist_attraction_mult = 0.10
+}
+
+#Flight of the Corvettes (not at war, Naval Contractors and Distinguished Admiralty)
+pw_mod_MA_flight_of_the_corvettes = {
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.15
+	planet_stability_add = 5
+	pop_ethic_militarist_attraction_mult = 0.15
+}
+
+#National March (not at war, Nationalistic Zeal)
+pw_mod_MA_national_march = {
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.10
+	planet_stability_add = 10
+	pop_ethic_militarist_attraction_mult = 0.15
+}
+
+#Combat Demonstrations (not at war, Warrior Culture)
+pw_mod_MA_combat_demonstrations = {
+	icon_frame = @pw_icon_frame_green
+	planet_amenities_add = 20
+	planet_jobs_unity_produces_mult = 0.25
+	pop_ethic_militarist_attraction_mult = 0.15
+}
+
+#Merchants of War (not at war, Private Military Companies)
+pw_mod_MA_merchants_of_war = {
+	icon_frame = @pw_icon_frame_green
+	trade_value_add = 10
+	planet_jobs_alloys_produces_mult = 0.10
+	pop_ethic_militarist_attraction_mult = 0.15
+}
+
+
+#Martial Avenue: War Drive (Country Scope)
+
+pw_mod_MA_war_drive_1 = {
+	country_naval_cap_add = 5
+}
+
+pw_mod_MA_war_drive_2 = {
+	country_naval_cap_add = 10
+}
+
+pw_mod_MA_war_drive_3 = {
+	country_naval_cap_add = 15
+	country_influence_produces_mult = 0.05
+}
+
+pw_mod_MA_war_drive_4 = {
+	country_naval_cap_add = 20
+	country_influence_produces_mult = 0.10
+}
+
+pw_mod_MA_war_drive_5 = {
+	country_naval_cap_add = 25
+	country_influence_produces_mult = 0.15
+	country_alloys_produces_mult = 0.05
+	pop_happiness = -0.05
+}
+
+pw_mod_MA_war_drive_6 = {
+	country_naval_cap_add = 30
+	country_influence_produces_mult = 0.20
+	country_alloys_produces_mult = 0.05
+	pop_happiness = -0.05
+	planet_crime = 5
+}
+
+pw_mod_MA_war_drive_7 = {
+	country_naval_cap_add = 35
+	country_influence_produces_mult = 0.25
+	country_alloys_produces_mult = 0.10
+	pop_happiness = -0.10
+	planet_crime = 10
+}
+
+pw_mod_MA_war_drive_8 = {
+	country_naval_cap_add = 40
+	country_influence_produces_mult = 0.30
+	country_alloys_produces_mult = 0.10
+	pop_happiness = -0.20
+	planet_crime = 10
+}
+
+pw_mod_MA_war_drive_9 = {
+	country_naval_cap_add = 45
+	country_influence_produces_mult = 0.40
+	country_alloys_produces_mult = 0.15
+	pop_happiness = -0.40
+	planet_crime = 20
+	country_unity_produces_mult = -0.10
+}
+
+pw_mod_MA_war_drive_10 = {
+	country_naval_cap_add = 50
+	country_influence_produces_mult = 0.50
+	country_alloys_produces_mult = 0.15
+	pop_happiness = -0.50
+	planet_crime = 30
+	country_unity_produces_mult = -0.20
+	planet_stability_add = -10
+}
+
+#Martial Avenue: War Lust (Country Scope)
+
+pw_mod_MA_war_lust_1 = {
+	country_naval_cap_add = 5
+	country_war_exhaustion_mult = -0.05
+}
+
+pw_mod_MA_war_lust_2 = {
+	country_naval_cap_add = 10
+	country_war_exhaustion_mult = -0.10
+}
+
+pw_mod_MA_war_lust_3 = {
+	country_naval_cap_add = 15
+	country_war_exhaustion_mult = -0.15
+	ship_speed_mult = 0.05
+}
+
+pw_mod_MA_war_lust_4 = {
+	country_naval_cap_add = 20
+	country_war_exhaustion_mult = -0.20
+	ship_speed_mult = 0.05
+}
+
+pw_mod_MA_war_lust_5 = {
+	country_naval_cap_add = 25
+	country_war_exhaustion_mult = -0.25
+	ship_speed_mult = 0.10
+	army_attack_damage_mult = 0.05
+}
+
+pw_mod_MA_war_lust_6 = {
+	country_naval_cap_add = 30
+	country_war_exhaustion_mult = -0.30
+	ship_speed_mult = 0.10
+	army_attack_damage_mult = 0.10
+}
+
+pw_mod_MA_war_lust_7 = {
+	country_naval_cap_add = 35
+	country_war_exhaustion_mult = -0.35
+	ship_speed_mult = 0.20
+	army_attack_damage_mult = 0.20
+	ship_fire_rate_mult = 0.05
+}
+
+pw_mod_MA_war_lust_8 = {
+	country_naval_cap_add = 40
+	country_war_exhaustion_mult = -0.40
+	ship_speed_mult = 0.20
+	army_attack_damage_mult = 0.30
+	ship_fire_rate_mult = 0.10
+}
+
+pw_mod_MA_war_lust_9 = {
+	country_naval_cap_add = 45
+	country_war_exhaustion_mult = -0.45
+	ship_speed_mult = 0.30
+	army_attack_damage_mult = 0.40
+	ship_fire_rate_mult = 0.20
+	ship_armor_damage_mult = 0.1
+}
+
+pw_mod_MA_war_lust_10 = {
+	country_naval_cap_add = 50
+	country_war_exhaustion_mult = -0.50
+	ship_speed_mult = 0.30
+	army_attack_damage_mult = 0.50
+	ship_fire_rate_mult = 0.30
+	ship_armor_damage_mult = 0.2
 	planet_stability_add = 10
 }

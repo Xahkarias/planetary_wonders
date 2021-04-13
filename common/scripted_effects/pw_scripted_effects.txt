@@ -681,6 +681,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 2
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_2 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_2 }
@@ -691,6 +692,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 3
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_3 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_3 }
@@ -701,6 +703,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 4
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_4 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_4 }
@@ -711,6 +714,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 5
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_5 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_5 }
@@ -721,6 +725,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 6
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_6 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_6 }
@@ -731,6 +736,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 7
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_7 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_7 }
@@ -741,6 +747,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 8
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_8 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_8 }
@@ -751,6 +758,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value = 9
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_9 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_9 }
@@ -761,6 +769,7 @@ pw_determine_peace_stability_modifier = {
 						which = pw_peace_stability_count
 						value >= 10
 					}
+					NOT = { has_modifier = pw_mod_FP_peace_stability_10 }
 				}
 				pw_remove_current_peace_stability_modifier = yes
 				add_modifier = { modifier = pw_mod_FP_peace_stability_10 }
@@ -812,5 +821,423 @@ pw_remove_current_peace_stability_modifier = {
 	else_if = {
 		limit = { has_modifier = pw_mod_FP_peace_stability_10 }
 		remove_modifier = pw_mod_FP_peace_stability_10
+	}
+}
+
+#Martial Avenue determines and adds war drive/war lust modifier (Country Scope)
+pw_determine_war_drive_modifier = {
+	custom_tooltip =  pw_MA_add_war_drive_modifier
+	hidden_effect = {
+		#Reset Variable
+		set_variable = {
+			which = pw_war_drive_count
+			value = 0
+		}
+
+		#Add Drive - Fanatic Militarist
+		if = {
+			limit = { has_ethic = ethic_fanatic_militarist }
+			change_variable = {
+				which = pw_war_drive_count
+				value = 1
+			}
+		}
+		#Add Drive - Wonder
+		if = {
+			limit = { has_country_flag = pw_martial_avenue_built }
+			change_variable = {
+				which = pw_war_drive_count
+				value = 1
+			}
+		}
+		#Add Drive - Festivals
+		every_owned_planet = {
+			limit = {
+				OR = {
+					has_modifier = pw_mod_MA_military_parade
+					has_modifier = pw_mod_MA_do_your_own_part
+					has_modifier = pw_mod_MA_enemies_at_the_gate
+					has_modifier = pw_mod_MA_flight_of_the_corvettes
+					has_modifier = pw_mod_MA_national_march
+					has_modifier = pw_mod_MA_combat_demonstrations
+					has_modifier = pw_mod_MA_merchants_of_war
+				}
+			}
+			owner = {
+				change_variable = {
+					which = pw_war_drive_count
+					value = 1
+				}
+			}
+		}
+		#Add Drive - Rivals
+		if = {
+			limit = {
+				num_rivals > 0
+			}
+			change_variable = {
+				which = pw_war_drive_count
+				value = 1
+			}
+		}
+		#Remove Drive - Edicts
+		if = {
+			limit = { has_edict = pw_martial_avenue_soldier_side }
+			change_variable = {
+				which = pw_war_drive_count
+				value = -1
+			}
+		}
+		if = {
+			limit = { has_edict = pw_martial_avenue_something_to_return }
+			change_variable = {
+				which = pw_war_drive_count
+				value = -1
+			}
+		}
+
+		#Add Country Modifier:
+		if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value <= 1
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_1 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_1 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_1 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_1 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 2
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_2 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_2 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_2 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_2 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 3
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_3 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_3 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_3 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_3 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 4
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_4 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_4 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_4 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_4 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 5
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_5 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_5 }
+					country_event = { id = pw_wonder.2002 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_5 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_5 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 6
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_6 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_6 }
+					country_event = { id = pw_wonder.2002 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_6 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_6 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 7
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_7 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_7 }
+					country_event = { id = pw_wonder.2002 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_7 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_7 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 8
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_8 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_8 }
+					country_event = { id = pw_wonder.2002 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_8 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_8 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value = 9
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_9 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_9 }
+					country_event = { id = pw_wonder.2002 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_9 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_9 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = pw_war_drive_count
+					value >= 10
+				}
+			}
+			if = {
+				limit = { is_at_war = no }
+				pw_remove_current_war_lust_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_drive_10 }}
+					pw_remove_current_war_drive_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_drive_10 }
+					country_event = { id = pw_wonder.2002 }
+				}
+			}
+			else = {
+				pw_remove_current_war_drive_modifier = yes
+				if = {
+					limit = {NOT = { has_modifier = pw_mod_MA_war_lust_10 }}
+					pw_remove_current_war_lust_modifier = yes
+					add_modifier = { modifier = pw_mod_MA_war_lust_10 }
+				}
+			}
+		}
+	}
+}
+
+pw_remove_current_war_drive_modifier = {
+	if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_1 }
+		remove_modifier = pw_mod_MA_war_drive_1
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_2 }
+		remove_modifier = pw_mod_MA_war_drive_2
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_3 }
+		remove_modifier = pw_mod_MA_war_drive_3
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_4 }
+		remove_modifier = pw_mod_MA_war_drive_4
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_5 }
+		remove_modifier = pw_mod_MA_war_drive_5
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_6 }
+		remove_modifier = pw_mod_MA_war_drive_6
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_7 }
+		remove_modifier = pw_mod_MA_war_drive_7
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_8 }
+		remove_modifier = pw_mod_MA_war_drive_8
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_9 }
+		remove_modifier = pw_mod_MA_war_drive_9
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_drive_10 }
+		remove_modifier = pw_mod_MA_war_drive_10
+	}
+}
+
+pw_remove_current_war_lust_modifier = {
+	if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_1 }
+		remove_modifier = pw_mod_MA_war_lust_1
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_2 }
+		remove_modifier = pw_mod_MA_war_lust_2
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_3 }
+		remove_modifier = pw_mod_MA_war_lust_3
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_4 }
+		remove_modifier = pw_mod_MA_war_lust_4
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_5 }
+		remove_modifier = pw_mod_MA_war_lust_5
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_6 }
+		remove_modifier = pw_mod_MA_war_lust_6
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_7 }
+		remove_modifier = pw_mod_MA_war_lust_7
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_8 }
+		remove_modifier = pw_mod_MA_war_lust_8
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_9 }
+		remove_modifier = pw_mod_MA_war_lust_9
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_MA_war_lust_10 }
+		remove_modifier = pw_mod_MA_war_lust_10
 	}
 }

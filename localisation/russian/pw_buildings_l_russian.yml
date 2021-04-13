@@ -135,3 +135,8 @@
     pw_building_festival_plaza: "Festival Plaza"
     pw_building_festival_plaza_desc: "A massive pavilion of festivities where our jubilation with life and peace can be celebrated and we all can be reminded of the pleasures of a life without conflict. It is also a place of preparation, respite and unity, in case war is proven inescapable."
     pw_festival_plaza_tooltip: "Â§SAllows us to host Celebrations of Harmony.Â§!\n"
+
+    pw_martial_avenue: "Â§MMartial AvenueÂ§!"
+    pw_building_martial_avenue: "Martial Avenue"
+    pw_building_martial_avenue_desc: "A gigantic avenue designated for vehicle and infantry dislocation that crosses the greatest urban areas of the planet. Here we can display our great military force in marvelous martial parades and let our might unite our people towards the next war. Some parade can even be seen from space, in order to strike fear in the heart of our enemies."
+    pw_martial_avenue_tooltip: "Â§SAllows us to perform Military Parades.Â§!\n"

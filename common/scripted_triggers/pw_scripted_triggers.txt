@@ -62,6 +62,8 @@ pw_has_any_planetary_wonder = {
 		has_building_construction = pw_building_forbidden_city
 		has_building = pw_building_festival_plaza
 		has_building_construction = pw_building_festival_plaza
+		has_building = pw_building_martial_avenue
+		has_building_construction = pw_building_martial_avenue
 	}
 }
 
@@ -91,6 +93,7 @@ pw_has_build_any_planetary_wonder = {
 		has_country_flag = pw_transplanetary_logistics_network_built
 		has_country_flag = pw_forbidden_city_built
 		has_country_flag = pw_festival_plaza_built
+		has_country_flag = pw_martial_avenue_built
 	}
 }
 

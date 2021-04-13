@@ -5165,3 +5165,477 @@ pw_tech_peace_manipulation = {
 		}
 	}
 }
+
+
+#Martial Avenue:
+pw_tech_parades_of_supremacy = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+	}
+
+	weight_modifier = {
+		factor = 0.25
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_parades_of_supremacy }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_nationalistic_zeal
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_warrior_culture
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_distinguished_admiralty
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_private_military_companies
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_naval_contractors
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 10
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+#Naval Contractors or Distinguished Admiralty decision:
+pw_tech_flight_of_the_corvettes = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_parades_of_supremacy
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+		OR = {
+			has_valid_civic = civic_naval_contractors
+			has_valid_civic = civic_distinguished_admiralty
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_planet = {
+				has_building = pw_building_martial_avenue
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+#Nationalistic Zeal decision:
+pw_tech_national_march = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_parades_of_supremacy
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+		has_valid_civic = civic_nationalistic_zeal
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_planet = {
+				has_building = pw_building_martial_avenue
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+#Warrior Culture decision:
+pw_tech_combat_demonstrations = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_parades_of_supremacy
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+		has_valid_civic = civic_warrior_culture
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_planet = {
+				has_building = pw_building_martial_avenue
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+#Private Military Contractors decision:
+pw_tech_merchants_of_war = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_parades_of_supremacy
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+		has_valid_civic = civic_private_military_companies
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_planet = {
+				has_building = pw_building_martial_avenue
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+#War Edicts:
+pw_tech_vision_beyond_war = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost2
+	prerequisites = {
+		pw_tech_parades_of_supremacy
+	}
+	weight = @tier4weight1
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_nationalistic_zeal
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_warrior_culture
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_distinguished_admiralty
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_private_military_companies
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_naval_contractors
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				has_building = pw_building_martial_avenue
+			}
+		}
+
+		modifier = {
+			factor = 5
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
