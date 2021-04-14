@@ -429,6 +429,13 @@
     pw_mod_FP_peace_stability_10: "Peace Stability X (Maximum)"
     pw_mod_FP_peace_stability_10_desc: "We have cultivated great stability and progress as a result of our many planetary peace festivals. A shame it will disappear we the war comes."
 
+    #Black letter day modifier:
+    pw_mod_FP_black_letters_peace: "Black Letters: Denounce Wars"
+    pw_mod_FP_black_letters_peace_desc: "At the end of the last Black letters Day we have denounced every past and foreign conflicts, creating an anti-war sentiment among the population."
+
+    pw_mod_FP_black_letters_war: "Black Letters: Inspire Wars"
+    pw_mod_FP_black_letters_war_desc: "At the end of the last Black letters Day we have instigated revenge for past conflicts, placing a seed of pro-war sentiment in our population."
+
     #Military Parade Modifiers (Planet)
 
     pw_mod_MA_military_parade: "Military Parade"
@@ -519,3 +526,15 @@
 
     pw_mod_MA_war_lust_10: "War Lust X (Maximum)"
     pw_mod_MA_war_lust_10_desc: "The War Drive we have been brewing along the years has finally paid off, as we enter in conflict now with increased vigor and desire to fight. We have the full support of our population in any war that arrives"
+
+    #Black letters modifiers
+
+    pw_mod_MA_black_letters_peace: "Black Letters: Mourne the Dead"
+    pw_mod_MA_black_letters_peace_desc: "At the end of the last Black letters Day we have taken time to mourne the fallen in previous conflicts, honoring their memory, but creating a small anti-war sentiment in our population."
+
+    pw_mod_MA_black_letters_war: "Black Letters: Avenge the Dead"
+    pw_mod_MA_black_letters_war_desc: "At the end of the last Black letters Day we have instigated our people to avenge the fallen of past conflicts, instigating war supporting sentiments in our population."
+
+    #Crisis modifier:
+    pw_mod_damage_against_end_game_crisis: "Damage against End Game Crisis"
+    pw_mod_damage_against_end_game_crisis_desc: "Modifies damage against End Game Crisis."

@@ -105,6 +105,23 @@ pw_mod_FP_peace_stability_10 = {
 	planet_stability_add = 10
 }
 
+#Black letters modifiers (planet scope):
+pw_mod_FP_black_letters_peace = {
+	icon_frame = @pw_icon_frame_green
+	custom_tooltip = pw_FP_increases_peace_stability
+	planet_jobs_unity_produces_mult = 0.5
+	pop_happiness = 0.05
+	pop_ethic_pacifist_attraction_mult = 0.10
+}
+
+pw_mod_FP_black_letters_war = {
+	icon_frame = @pw_icon_frame_green
+	custom_tooltip = pw_FP_decreases_peace_stability
+	planet_jobs_unity_produces_mult = 0.10
+	pop_happiness = 0.10
+	pop_ethic_pacifist_attraction_mult = -0.10
+}
+
 #Martial Avenue: Local Modifiers (Planet Scope)
 
 #Military Parade (not at war)
@@ -305,4 +322,31 @@ pw_mod_MA_war_lust_10 = {
 	ship_fire_rate_mult = 0.30
 	ship_armor_damage_mult = 0.2
 	planet_stability_add = 10
+}
+
+#Black letters modifiers (planet scope):
+pw_mod_MA_black_letters_peace = {
+	icon_frame = @pw_icon_frame_green
+	custom_tooltip = pw_MA_decreases_war_drive
+	planet_jobs_unity_produces_mult = 0.5
+	pop_happiness = 0.05
+	pop_ethic_militarist_attraction_mult = -0.10
+}
+
+pw_mod_MA_black_letters_war = {
+	icon_frame = @pw_icon_frame_green
+	custom_tooltip = pw_MA_increases_war_drive
+	planet_jobs_unity_produces_mult = 0.05
+	pop_happiness = 0.05
+	pop_ethic_militarist_attraction_mult = 0.10
+}
+
+#Crisis modifier (Country Scope, to be applied with float factor):
+
+pw_mod_damage_against_end_game_crisis = {
+	damage_vs_country_type_swarm_mult = 1
+	damage_vs_country_type_extradimensional_mult = 1
+	damage_vs_country_type_extradimensional_2_mult = 1
+	damage_vs_country_type_extradimensional_3_mult = 1
+	damage_vs_country_type_ai_empire_mult = 1
 }

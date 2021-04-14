@@ -7203,6 +7203,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.1901 } #Regular first time
 		planet_event = { id = pw_wonder.1905 days = @pw_halfYear } #Recursive Check
+		planet_event = { id = pw_wonder.1930 days = @pw_2years } #Black Letters Days
 	}
 }
 
@@ -7569,6 +7570,68 @@ country_event = {
 	}
 }
 
+#Black Letter Day decision (Peaceful)
+planet_event = {
+	id = pw_wonder.1930
+	title = pw_wonder.1930.name
+	desc = pw_wonder.1930.desc
+	picture = GFX_evt_galactic_market
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		has_building = pw_building_festival_plaza
+		NOT = {owner = { has_country_flag = pw_festival_plaza_black_letter_day }}
+		owner = {
+			is_at_war = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_festival_plaza_black_letter_day
+				days = @pw_10years
+			}
+		}
+	}
+
+	#Promote Peace
+	option = {
+		name = pw_wonder.1930.a
+		add_modifier = {
+			modifier = pw_mod_FP_black_letters_peace
+			clear_on_owner_change = yes
+			days = @pw_1year
+		}
+	}
+
+	#Promote War
+	option = {
+		name = pw_wonder.1930.b
+		add_modifier = {
+			modifier = pw_mod_FP_black_letters_war
+			clear_on_owner_change = yes
+			days = @pw_1year
+		}
+	}
+
+	#Leave them to it
+	option = {
+		name = pw_wonder.1930.c
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+		}
+	}
+}
 
 # Martial Avenue -> id 2000
 
@@ -7597,6 +7660,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.2001 } #Regular first time
 		planet_event = { id = pw_wonder.2005 days = @pw_halfYear } #Recursive Check
+		planet_event = { id = pw_wonder.2030 days = @pw_2years } #Black Letters Days
 	}
 }
 
@@ -8049,5 +8113,69 @@ country_event = {
 
 	immediate = {
 		pw_determine_war_drive_modifier = yes
+	}
+}
+
+
+#Black Letter Day decision (Militarist)
+planet_event = {
+	id = pw_wonder.2030
+	title = pw_wonder.2030.name
+	desc = pw_wonder.2030.desc
+	picture = GFX_evt_galactic_market
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		has_building = pw_building_martial_avenue
+		NOT = {owner = { has_country_flag = pw_martial_avenue_black_letter_day }}
+		owner = {
+			is_at_war = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = pw_martial_avenue_black_letter_day
+				days = @pw_10years
+			}
+		}
+	}
+
+	#Promote Peace
+	option = {
+		name = pw_wonder.2030.a
+		add_modifier = {
+			modifier = pw_mod_MA_black_letters_peace
+			clear_on_owner_change = yes
+			days = @pw_1year
+		}
+	}
+
+	#Promote War
+	option = {
+		name = pw_wonder.2030.b
+		add_modifier = {
+			modifier = pw_mod_MA_black_letters_war
+			clear_on_owner_change = yes
+			days = @pw_1year
+		}
+	}
+
+	#Leave them to it
+	option = {
+		name = pw_wonder.2030.c
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+		}
 	}
 }

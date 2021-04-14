@@ -27,6 +27,14 @@
     edict_pw_festival_plaza_justified_conflicts: "Justified Conflicts"
     edict_pw_festival_plaza_justified_conflicts_desc: "The roaring river is known as violent, but none calls violent the margins that arrest it. Some conflicts require that we lift our peaceful ways in order to strike first and guarantee peace in the future."
 
+    #Brace Against the storm (Festival Plaza):
+
+    pw_festival_plaza_this_too_shall_pass: "This Too Shall Pass"
+    pw_festival_plaza_this_too_shall_pass_desc: "Wars and catastrophes have besieged us many times before, and peace has always prevailed. We will not let this crisis break our unity or change our ways."
+
+    pw_festival_plaza_inexorable_peace: "Inexorable Peace"
+    pw_festival_plaza_inexorable_peace_desc: "Peace is absolutely unnegotiable, even in the face of such dreaded foes. If we must, we will refuse to fight. There is always a way to remain harmonious."
+
     #Vision Beyond War (Martial Avenue):
 
     edict_pw_martial_avenue_soldier_side: "Soldier Side"
@@ -34,6 +42,15 @@
 
     edict_pw_martial_avenue_something_to_return: "Something to Return"
     edict_pw_martial_avenue_something_to_return_desc: "How long could we maintain a perpetual war, without considering the end for which the conflict is the mean? We must build our homeland if we want our soldiers to die for something that is worthy of their lives."
+
+    #Into the Storm (Martial Avenue):
+
+    pw_martial_avenue_our_greatest_foe: "Our Greatest Foe"
+    pw_martial_avenue_our_greatest_foe_desc: "This crisis that stands against the galaxy is just another foe in our path to victory. It centenary prove itself a great challenge, but one we will overcome. Our thirst for glory will never be quenched."
+
+    pw_martial_avenue_bring_us_a_challenge: "Bring Us A Challenge"
+    pw_martial_avenue_bring_us_a_challenge_desc: "Long have we walked unbeaten over this galaxy, long we have desire a threat worthy of our navy. If this coming crisis is as dangerous as it is heralded, we will welcome it, the hardest way possible. Glory or death!"
+
 
     # Campaigns
 

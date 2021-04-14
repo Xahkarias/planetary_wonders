@@ -637,12 +637,47 @@ pw_determine_peace_stability_modifier = {
 					has_modifier = pw_mod_FP_cultivate_peace
 					has_modifier = pw_mod_FP_harvest_festival
 					has_modifier = pw_mod_FP_commemorate_perfection
+					has_modifier = pw_mod_FP_black_letters_peace
+					has_modifier = pw_mod_FP_black_letters_war
 				}
 			}
-			owner = {
-				change_variable = {
-					which = pw_peace_stability_count
-					value = 1
+			if = {
+				limit = {
+					OR = {
+						has_modifier = pw_mod_FP_festivities_of_plenitude
+						has_modifier = pw_mod_FP_fertility_bacchanal
+						has_modifier = pw_mod_FP_cultivate_peace
+						has_modifier = pw_mod_FP_harvest_festival
+						has_modifier = pw_mod_FP_commemorate_perfection
+					}
+				}
+				owner = {
+					change_variable = {
+						which = pw_peace_stability_count
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = pw_mod_FP_black_letters_peace
+				}
+				owner = {
+					change_variable = {
+						which = pw_peace_stability_count
+						value = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_modifier = pw_mod_FP_black_letters_war
+				}
+				owner = {
+					change_variable = {
+						which = pw_peace_stability_count
+						value = -1
+					}
 				}
 			}
 		}
@@ -861,12 +896,45 @@ pw_determine_war_drive_modifier = {
 					has_modifier = pw_mod_MA_national_march
 					has_modifier = pw_mod_MA_combat_demonstrations
 					has_modifier = pw_mod_MA_merchants_of_war
+					has_modifier = pw_mod_MA_black_letters_peace
+					has_modifier = pw_mod_MA_black_letters_war
 				}
 			}
-			owner = {
-				change_variable = {
-					which = pw_war_drive_count
-					value = 1
+			if = {
+				limit = {
+					OR = {
+						has_modifier = pw_mod_MA_military_parade
+						has_modifier = pw_mod_MA_do_your_own_part
+						has_modifier = pw_mod_MA_enemies_at_the_gate
+						has_modifier = pw_mod_MA_flight_of_the_corvettes
+						has_modifier = pw_mod_MA_national_march
+						has_modifier = pw_mod_MA_combat_demonstrations
+						has_modifier = pw_mod_MA_merchants_of_war
+					}
+				}
+				owner = {
+					change_variable = {
+						which = pw_war_drive_count
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = { has_modifier = pw_mod_MA_black_letters_peace }
+				owner = {
+					change_variable = {
+						which = pw_war_drive_count
+						value = -1
+					}
+				}
+			}
+			else_if = {
+				limit = { has_modifier = pw_mod_MA_black_letters_war }
+				owner = {
+					change_variable = {
+						which = pw_war_drive_count
+						value = 1
+					}
 				}
 			}
 		}

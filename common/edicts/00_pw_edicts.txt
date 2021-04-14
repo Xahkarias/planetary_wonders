@@ -150,6 +150,8 @@ pw_grand_archive_visit_the_archive = {
 	}
 }
 
+#Festival PLaza Edicts:
+
 pw_festival_plaza_brace_for_the_worst = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
@@ -259,6 +261,115 @@ pw_festival_plaza_justified_conflicts = {
 	}
 }
 
+#Peace Crisis edicts:
+pw_festival_plaza_this_too_shall_pass = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_brace_against_the_storm
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_festival_plaza_this_too_shall_pass }
+			}
+			influence = 250
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_festival_plaza_this_too_shall_pass
+			}
+			influence = 50
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+	}
+
+	allow = {
+		is_pacifist = yes
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+		NOT = {
+			has_edict = pw_festival_plaza_inexorable_peace
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = 0.25
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+		modifier = {
+			factor = 2
+			OR = {
+				has_global_flag = galactic_crisis_happened
+				has_global_flag = gray_goo_crisis_active
+			}
+		}
+	}
+}
+
+pw_festival_plaza_inexorable_peace = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_brace_against_the_storm
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_festival_plaza_inexorable_peace }
+			}
+			influence = 250
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_festival_plaza_inexorable_peace
+			}
+			influence = 50
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+	}
+
+	allow = {
+		is_pacifist = yes
+		any_owned_planet = {
+			has_building = pw_building_festival_plaza
+		}
+		NOT = {
+			has_edict = pw_festival_plaza_this_too_shall_pass
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = -0.50
+		country_unity_produces_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#Martial Avenue Edicts:
+
 pw_martial_avenue_soldier_side = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
@@ -365,5 +476,119 @@ pw_martial_avenue_something_to_return = {
 
 	ai_weight = {
 		weight = @EdictLowPrio
+	}
+}
+
+#War Crisis edicts:
+pw_martial_avenue_our_greatest_foe = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_into_the_storm
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_martial_avenue_our_greatest_foe }
+			}
+			influence = 250
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_martial_avenue_our_greatest_foe
+			}
+			influence = 50
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_martial_avenue
+		}
+	}
+
+	allow = {
+		is_pacifist = yes
+		any_owned_planet = {
+			has_building = pw_building_martial_avenue
+		}
+		NOT = {
+			has_edict = pw_martial_avenue_bring_us_a_challenge
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = 0.25
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+		modifier = {
+			factor = 2
+			OR = {
+				has_global_flag = galactic_crisis_happened
+				has_global_flag = gray_goo_crisis_active
+			}
+		}
+	}
+}
+
+pw_martial_avenue_bring_us_a_challenge = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_into_the_storm
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_martial_avenue_bring_us_a_challenge }
+			}
+			influence = 250
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_martial_avenue_bring_us_a_challenge
+			}
+			influence = 50
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_building = pw_building_martial_avenue
+		}
+	}
+
+	allow = {
+		is_pacifist = yes
+		any_owned_planet = {
+			has_building = pw_building_martial_avenue
+		}
+		NOT = {
+			has_edict = pw_martial_avenue_our_greatest_foe
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = -0.50
+		country_unity_produces_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+		modifier = {
+			factor = 2
+			OR = {
+				has_global_flag = galactic_crisis_happened
+				has_global_flag = gray_goo_crisis_active
+			}
+		}
 	}
 }
