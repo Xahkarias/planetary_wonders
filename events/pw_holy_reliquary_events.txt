@@ -9,6 +9,9 @@ country_event = {
 			has_country_flag = pw_holy_reliquary_sanctified_mirror
 			has_country_flag = pw_holy_reliquary_sanctified_scepter
 			has_country_flag = pw_holy_reliquary_sanctified_coin
+			has_country_flag = pw_holy_reliquary_sanctified_scale
+			has_country_flag = pw_holy_reliquary_sanctified_sword
+			has_country_flag = pw_holy_reliquary_sanctified_ring
 			has_country_flag = pw_holy_reliquary_sanctified_codex
 		}
 		text = pw_holy_reliquary.1.all.desc
@@ -19,12 +22,18 @@ country_event = {
 				has_country_flag = pw_holy_reliquary_sanctified_mirror
 				has_country_flag = pw_holy_reliquary_sanctified_scepter
 				has_country_flag = pw_holy_reliquary_sanctified_coin
+				has_country_flag = pw_holy_reliquary_sanctified_scale
+				has_country_flag = pw_holy_reliquary_sanctified_sword
+				has_country_flag = pw_holy_reliquary_sanctified_ring
 				has_country_flag = pw_holy_reliquary_sanctified_codex
 			}
 			NAND = {
 				has_country_flag = pw_holy_reliquary_sanctified_mirror
 				has_country_flag = pw_holy_reliquary_sanctified_scepter
 				has_country_flag = pw_holy_reliquary_sanctified_coin
+				has_country_flag = pw_holy_reliquary_sanctified_scale
+				has_country_flag = pw_holy_reliquary_sanctified_sword
+				has_country_flag = pw_holy_reliquary_sanctified_ring
 				has_country_flag = pw_holy_reliquary_sanctified_codex
 			}
 		}
@@ -36,6 +45,9 @@ country_event = {
 				has_country_flag = pw_holy_reliquary_sanctified_mirror
 				has_country_flag = pw_holy_reliquary_sanctified_scepter
 				has_country_flag = pw_holy_reliquary_sanctified_coin
+				has_country_flag = pw_holy_reliquary_sanctified_scale
+				has_country_flag = pw_holy_reliquary_sanctified_sword
+				has_country_flag = pw_holy_reliquary_sanctified_ring
 				has_country_flag = pw_holy_reliquary_sanctified_codex
 			}
 		}
@@ -157,7 +169,112 @@ country_event = {
 		}
 	}
 
-	#Discovery: Codex of the Ages
+	#Harmony: Scale of Balance -> 400
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.harmony.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_scale }
+		}
+		allow = {
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				has_tradition = tr_harmony_finish
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.400
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.harmony.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_scale
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.405
+			}
+		}
+	}
+
+	#Supremacy: Defender of the Faith -> 500
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.supremacy.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_sword }
+		}
+		allow = {
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				has_tradition = tr_supremacy_finish
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.500
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.supremacy.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_sword
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.505
+			}
+		}
+	}
+
+	#Diplomacy: Signet Ring -> 600
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.diplomacy.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_ring }
+		}
+		allow = {
+			if = {
+				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
+				OR = {
+					has_tradition = tr_diplomacy_finish
+					has_swapped_tradition = tr_adaptability_finish
+				}
+			}
+			else = {
+				pw_alternate_tradition_can_sanctify_relic = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.600
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.diplomacy.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_ring
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.605
+			}
+		}
+	}
+
+	#Discovery: Codex of the Ages -> 700
 	option = { #Sanctify
 		name = pw_holy_reliquary.1.discovery.sanctify
 		trigger = {
@@ -1654,6 +1771,1317 @@ country_event = {
 	}
 }
 
+#Harmony Artifact (Scale of Balance) -> 400
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.400
+	title = pw_holy_reliquary.400.name
+	desc = pw_holy_reliquary.400.desc
+	picture = GFX_evt_pw_scale_of_balance
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.400.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_scale }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.401 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.401
+	title = pw_holy_reliquary.401.name
+	desc = pw_holy_reliquary.401.desc
+	picture = GFX_evt_pw_scale_of_balance
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_scale
+	}
+
+	#Just Sanctify
+	option = {
+		name = pw_holy_reliquary.401.a
+		custom_tooltip = pw_holy_reliquary.401.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_harmony_scale_of_balance
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Sanctify and Tip it
+	option = {
+		name = pw_holy_reliquary.401.b
+		custom_tooltip = pw_holy_reliquary.401.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_harmony_scale_of_balance
+		}
+		random_list = {
+			1 = {
+				country_event = { id = pw_holy_reliquary.410 }
+			}
+			1 = {
+				country_event = { id = pw_holy_reliquary.411 }
+			}
+			1 = {
+				country_event = { id = pw_holy_reliquary.412 }
+			}
+			1 = {
+				country_event = { id = pw_holy_reliquary.413 }
+			}
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.405
+	title = pw_holy_reliquary.405.name
+	desc = pw_holy_reliquary.405.desc
+	picture = GFX_evt_pw_scale_of_balance
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Tip the balance
+	option = {
+		name = pw_holy_reliquary.405.a
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 50
+			}
+		}
+		add_resource = {
+			influence = -50
+		}
+		random_list = {
+			1 = {
+				country_event = { id = pw_holy_reliquary.410 }
+			}
+			1 = {
+				country_event = { id = pw_holy_reliquary.411 }
+			}
+			1 = {
+				country_event = { id = pw_holy_reliquary.412 }
+			}
+			1 = {
+				country_event = { id = pw_holy_reliquary.413 }
+			}
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Effects Description:
+
+#Pop effect
+country_event = {
+	id = pw_holy_reliquary.410
+	title = pw_holy_reliquary.410.name
+	desc = pw_holy_reliquary.410.desc
+	picture = GFX_evt_pw_scale_of_balance
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_balance_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_pop
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_worker
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_specialist
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_happiness
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_balance_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.410.a
+		event_target:pw_holy_reliquary_balance_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_harmony_tipped_balance_pop
+				clear_on_owner_change = yes
+				days = @pw_2years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Worker effect
+country_event = {
+	id = pw_holy_reliquary.411
+	title = pw_holy_reliquary.410.name
+	desc = pw_holy_reliquary.410.desc
+	picture = GFX_evt_pw_scale_of_balance
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_balance_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_pop
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_worker
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_specialist
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_happiness
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_balance_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.410.a
+		event_target:pw_holy_reliquary_balance_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_harmony_tipped_balance_worker
+				clear_on_owner_change = yes
+				days = @pw_2years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Specialist effect
+country_event = {
+	id = pw_holy_reliquary.412
+	title = pw_holy_reliquary.410.name
+	desc = pw_holy_reliquary.410.desc
+	picture = GFX_evt_pw_scale_of_balance
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_balance_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_pop
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_worker
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_specialist
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_happiness
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_balance_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.410.a
+		event_target:pw_holy_reliquary_balance_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_harmony_tipped_balance_specialist
+				clear_on_owner_change = yes
+				days = @pw_2years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Specialist effect
+country_event = {
+	id = pw_holy_reliquary.413
+	title = pw_holy_reliquary.410.name
+	desc = pw_holy_reliquary.410.desc
+	picture = GFX_evt_pw_scale_of_balance
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_balance_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_pop
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_worker
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_specialist
+					has_modifier = pw_holy_reliquary_harmony_tipped_balance_happiness
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_balance_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.410.a
+		event_target:pw_holy_reliquary_balance_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_harmony_tipped_balance_happiness
+				clear_on_owner_change = yes
+				days = @pw_2years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Supremacy Artifact (Defender of the Faith) -> 500
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.500
+	title = pw_holy_reliquary.500.name
+	desc = pw_holy_reliquary.500.desc
+	picture = GFX_evt_pw_defender_of_the_faith
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.500.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_sword }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.501 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.501
+	title = pw_holy_reliquary.501.name
+	desc = pw_holy_reliquary.501.desc
+	picture = GFX_evt_pw_defender_of_the_faith
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_sword
+	}
+
+	#Holy Might
+	option = {
+		name = pw_holy_reliquary.501.a
+		custom_tooltip = pw_holy_reliquary.501.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_supremacy_holy_might
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.510 }
+		}
+	}
+
+	#Holy Defense
+	option = {
+		name = pw_holy_reliquary.501.b
+		custom_tooltip = pw_holy_reliquary.501.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_supremacy_holy_defense
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.520 }
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.505
+	title = pw_holy_reliquary.505.name
+	desc = pw_holy_reliquary.505.desc
+	picture = GFX_evt_pw_defender_of_the_faith
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Holy Might
+	option = {
+		name = pw_holy_reliquary.501.a
+		custom_tooltip = pw_holy_reliquary.501.a.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_supremacy_holy_might }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_supremacy_holy_might
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_supremacy_holy_defense
+			}
+			remove_modifier = pw_holy_reliquary_supremacy_holy_defense
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.510 }
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+		}
+	}
+
+	#Holy Defense
+	option = {
+		name = pw_holy_reliquary.501.b
+		custom_tooltip = pw_holy_reliquary.501.b.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_supremacy_holy_defense }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_supremacy_holy_defense
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_supremacy_holy_might
+			}
+			remove_modifier = pw_holy_reliquary_supremacy_holy_might
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.520 }
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Effects Description:
+#Holy Might
+country_event = {
+	id = pw_holy_reliquary.510
+	title = pw_holy_reliquary.510.name
+	desc = pw_holy_reliquary.510.desc
+	picture = GFX_evt_pw_defender_of_the_faith
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+	location = event_target:pw_holy_reliquary_call_to_arms_planet
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				NOR = {
+					has_modifier = pw_holy_reliquary_supremacy_call_to_arms
+					has_modifier = pw_holy_reliquary_supremacy_religious_persecution
+				}
+			}
+			save_event_target_as = pw_holy_reliquary_call_to_arms_planet
+		}
+	}
+
+	option = {
+		name = pw_holy_reliquary.510.a
+		event_target:pw_holy_reliquary_call_to_arms_planet = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_supremacy_call_to_arms
+				clear_on_owner_change = yes
+				days = @pw_5years
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Holy Defense
+country_event = {
+	id = pw_holy_reliquary.520
+	title = pw_holy_reliquary.520.name
+	desc = pw_holy_reliquary.520.desc
+	picture = GFX_evt_pw_defender_of_the_faith
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = pw_holy_reliquary_religious_persecution_available
+	}
+
+	option = {
+		name = pw_holy_reliquary.520.a
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Diplomacy Artifact (Signet Ring) -> 600
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.600
+	title = pw_holy_reliquary.600.name
+	desc = pw_holy_reliquary.600.desc
+	picture = GFX_evt_pw_signet_ring
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.600.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_ring }}
+			pw_has_unity_to_sanctify_artifact = yes
+		}
+		pw_holy_reliquary_pay_sanctify_cost = yes
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.601 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.601
+	title = pw_holy_reliquary.601.name
+	desc = pw_holy_reliquary.601.desc
+	picture = GFX_evt_pw_signet_ring
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		change_variable = {
+			which = pw_sanctified_artifacts_count
+			value = 1
+		}
+		set_country_flag = pw_holy_reliquary_sanctified_ring
+	}
+
+	#Population
+	option = {
+		name = pw_holy_reliquary.601.a
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_unity_of_people
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#Navy
+	option = {
+		name = pw_holy_reliquary.601.b
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_might_of_fleet
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#Economy
+	option = {
+		name = pw_holy_reliquary.601.c
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_abundance_of_riches
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#Tech
+	option = {
+		name = pw_holy_reliquary.601.d
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_advancement_of_tech
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#No Diplo
+	option = {
+		name = pw_holy_reliquary.601.e
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				NOT = { has_tradition = tr_diplomacy_finish }
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.620 } #No Diplo Opinion Modifier
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.605
+	title = pw_holy_reliquary.605.name
+	desc = pw_holy_reliquary.605.desc
+	picture = GFX_evt_pw_signet_ring
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	#Population
+	option = {
+		name = pw_holy_reliquary.601.a
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_unity_of_people
+		}
+		#Remove other modifiers
+		if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_might_of_fleet }
+			remove_modifier = pw_holy_reliquary_diplomacy_might_of_fleet
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches }
+			remove_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech }
+			remove_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak }
+			remove_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#Navy
+	option = {
+		name = pw_holy_reliquary.601.b
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_diplomacy_might_of_fleet }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_might_of_fleet
+		}
+		#Remove other modifiers
+		if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+			remove_modifier = pw_holy_reliquary_diplomacy_unity_of_people
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches }
+			remove_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech }
+			remove_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak }
+			remove_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#Economy
+	option = {
+		name = pw_holy_reliquary.601.c
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_abundance_of_riches
+		}
+		#Remove other modifiers
+		if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+			remove_modifier = pw_holy_reliquary_diplomacy_unity_of_people
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_might_of_fleet }
+			remove_modifier = pw_holy_reliquary_diplomacy_might_of_fleet
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech }
+			remove_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak }
+			remove_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#Tech
+	option = {
+		name = pw_holy_reliquary.601.d
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				has_tradition = tr_diplomacy_finish
+			}
+		}
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_advancement_of_tech
+		}
+		#Remove other modifiers
+		if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+			remove_modifier = pw_holy_reliquary_diplomacy_unity_of_people
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_might_of_fleet }
+			remove_modifier = pw_holy_reliquary_diplomacy_might_of_fleet
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches }
+			remove_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak }
+			remove_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.610 } #Regular Opinion Modifier
+		}
+	}
+
+	#No Diplo
+	option = {
+		name = pw_holy_reliquary.601.e
+		trigger = {
+			OR = {
+				has_country_flag = pw_holy_reliquary_alternate_traditions
+				NOT = { has_tradition = tr_diplomacy_finish }
+			}
+		}
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak
+		}
+		if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+			remove_modifier = pw_holy_reliquary_diplomacy_unity_of_people
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_might_of_fleet }
+			remove_modifier = pw_holy_reliquary_diplomacy_might_of_fleet
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches }
+			remove_modifier = pw_holy_reliquary_diplomacy_abundance_of_riches
+		}
+		else_if = {
+			limit = { has_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech }
+			remove_modifier = pw_holy_reliquary_diplomacy_advancement_of_tech
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			country_event = { id = pw_holy_reliquary.620 } #No Diplo Opinion Modifier
+		}
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Effects Description:
+
+#Select Country for diplomatic gain
+country_event = {
+	id = pw_holy_reliquary.610
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_playable_country = {
+					has_communications = root
+					is_homicidal = no
+					OR = {
+						is_fallen_empire = no
+						is_fallen_empire_spiritualist = yes
+						is_fallen_empire_materialist = yes
+					}
+					NOR = {
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+					}
+					NOT = { is_at_war_with = root }
+					opinion = {
+						who = ROOT
+						value > -400
+					}
+				}
+			}
+			random_playable_country = {
+				limit = {
+					has_communications = root
+					is_homicidal = no
+					OR = {
+						is_fallen_empire = no
+						is_fallen_empire_spiritualist = yes
+						is_fallen_empire_materialist = yes
+					}
+					NOR = {
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+					}
+					NOT = { is_at_war_with = root }
+					opinion = {
+						who = ROOT
+						value > -400
+					}
+				}
+				save_event_target_as = pw_holy_reliquary_diplomacy_country
+				if = {
+					limit = {
+						is_spiritualist = yes
+						is_fallen_empire = no
+					}
+					country_event = { id = pw_holy_reliquary.611 }
+				}
+				else_if = {
+					limit = {
+						is_fallen_empire_spiritualist = yes
+					}
+					country_event = { id = pw_holy_reliquary.612 }
+				}
+				else_if = {
+					limit = {
+						is_spiritualist = no
+						is_materialist = no
+						is_fallen_empire = no
+					}
+					country_event = { id = pw_holy_reliquary.613 }
+				}
+				else_if = {
+					limit = {
+						is_materialist = yes
+						is_fallen_empire = no
+					}
+					country_event = { id = pw_holy_reliquary.614 }
+				}
+				else_if = {
+					limit = {
+						is_fallen_empire_materialist = yes
+					}
+					country_event = { id = pw_holy_reliquary.615 }
+				}
+				else = {
+					country_event = { id = pw_holy_reliquary.616 }
+				}
+			}
+		}
+		else = {
+			country_event = { id = pw_holy_reliquary.616 }
+		}
+	}
+}
+
+#Regular Spiritualist
+country_event = {
+	id = pw_holy_reliquary.611
+	title = pw_holy_reliquary.611.name
+	desc = pw_holy_reliquary.611.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:pw_holy_reliquary_diplomacy_country
+		planet_background = event_target:pw_holy_reliquary_diplomacy_country
+		graphical_culture = event_target:pw_holy_reliquary_diplomacy_country
+		city_level = event_target:pw_holy_reliquary_diplomacy_country
+		room = event_target:pw_holy_reliquary_diplomacy_country.ruler
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.a
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_holy_visitation
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.b
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Fallen Spiritualist
+country_event = {
+	id = pw_holy_reliquary.612
+	title = pw_holy_reliquary.611.name
+	desc = pw_holy_reliquary.612.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:pw_holy_reliquary_diplomacy_country
+		planet_background = event_target:pw_holy_reliquary_diplomacy_country
+		graphical_culture = event_target:pw_holy_reliquary_diplomacy_country
+		city_level = event_target:pw_holy_reliquary_diplomacy_country
+		room = event_target:pw_holy_reliquary_diplomacy_country.ruler
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.a
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_impressing_devotion
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.b
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Regular Not materialist/Spiritualist:
+country_event = {
+	id = pw_holy_reliquary.613
+	title = pw_holy_reliquary.611.name
+	desc = pw_holy_reliquary.613.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:pw_holy_reliquary_diplomacy_country
+		planet_background = event_target:pw_holy_reliquary_diplomacy_country
+		graphical_culture = event_target:pw_holy_reliquary_diplomacy_country
+		city_level = event_target:pw_holy_reliquary_diplomacy_country
+		room = event_target:pw_holy_reliquary_diplomacy_country.ruler
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.a
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_hallowed_meeting
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.b
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Regular Materialist:
+country_event = {
+	id = pw_holy_reliquary.614
+	title = pw_holy_reliquary.611.name
+	desc = pw_holy_reliquary.614.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:pw_holy_reliquary_diplomacy_country
+		planet_background = event_target:pw_holy_reliquary_diplomacy_country
+		graphical_culture = event_target:pw_holy_reliquary_diplomacy_country
+		city_level = event_target:pw_holy_reliquary_diplomacy_country
+		room = event_target:pw_holy_reliquary_diplomacy_country.ruler
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.a
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_intriguing_beliefs
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.b
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Fallen Materialist:
+country_event = {
+	id = pw_holy_reliquary.615
+	title = pw_holy_reliquary.611.name
+	desc = pw_holy_reliquary.615.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:pw_holy_reliquary_diplomacy_country
+		planet_background = event_target:pw_holy_reliquary_diplomacy_country
+		graphical_culture = event_target:pw_holy_reliquary_diplomacy_country
+		city_level = event_target:pw_holy_reliquary_diplomacy_country
+		room = event_target:pw_holy_reliquary_diplomacy_country.ruler
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.a
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_studying_our_faith
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.611.b
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#No Country Left:
+country_event = {
+	id = pw_holy_reliquary.616
+	title = pw_holy_reliquary.616.name
+	desc = pw_holy_reliquary.616.desc
+	picture = GFX_evt_pw_signet_ring
+	show_sound = event_celebration
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.616.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier5unityreward
+			min = @tier5unitymin
+			max = @tier5unitymax
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Select Country for diplomatic gain (for not diplomatic)
+country_event = {
+	id = pw_holy_reliquary.620
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_playable_country = {
+					has_communications = root
+					is_homicidal = no
+					OR = {
+						is_fallen_empire = yes
+					}
+					NOR = {
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+					}
+					NOT = { is_at_war_with = root }
+				}
+			}
+			random_playable_country = {
+				limit = {
+					has_communications = root
+					is_homicidal = no
+					OR = {
+						is_fallen_empire = yes
+					}
+					NOR = {
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+					}
+					NOT = { is_at_war_with = root }
+				}
+				save_event_target_as = pw_holy_reliquary_diplomacy_country
+				country_event = { id = pw_holy_reliquary.621 }
+			}
+		}
+		else = {
+			country_event = { id = pw_holy_reliquary.622 }
+		}
+	}
+}
+
+#Any Fallen:
+country_event = {
+	id = pw_holy_reliquary.621
+	title = pw_holy_reliquary.621.name
+	desc = pw_holy_reliquary.621.desc
+	show_sound = diplomatic_notification
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:pw_holy_reliquary_diplomacy_country
+		planet_background = event_target:pw_holy_reliquary_diplomacy_country
+		graphical_culture = event_target:pw_holy_reliquary_diplomacy_country
+		city_level = event_target:pw_holy_reliquary_diplomacy_country
+		room = event_target:pw_holy_reliquary_diplomacy_country.ruler
+	}
+
+	option = {
+		name = pw_holy_reliquary.621.a
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_attempted_to_understand
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.621.b
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_attempted_to_understand
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	option = {
+		name = pw_holy_reliquary.621.c
+		event_target:pw_holy_reliquary_diplomacy_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
+			}
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#No Country Left:
+country_event = {
+	id = pw_holy_reliquary.622
+	title = pw_holy_reliquary.622.name
+	desc = pw_holy_reliquary.622.desc
+	picture = GFX_evt_pw_signet_ring
+	show_sound = event_celebration
+	is_triggered_only = yes
+
+	option = {
+		name = pw_holy_reliquary.622.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier5unityreward
+			min = @tier5unitymin
+			max = @tier5unitymax
+		}
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
 #Discovery Artifact (Codex of the Ages) -> 700
 #Sanctify:
 country_event = {
@@ -2708,12 +4136,12 @@ country_event = {
 	}
 
 	immediate = {
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# 	}
-		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# }
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_prosperity_coin_of_fortune }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_prosperity_coin_of_fortune }
+		}
 
 		country_event = {
 			id = pw_holy_reliquary.1104
@@ -2733,12 +4161,12 @@ country_event = {
 	}
 
 	immediate = {
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# 	}
-		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# }
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_harmony_scale_of_balance }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_harmony_scale_of_balance }
+		}
 
 		country_event = {
 			id = pw_holy_reliquary.1105
@@ -2758,12 +4186,12 @@ country_event = {
 	}
 
 	immediate = {
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# 	}
-		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# }
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_supremacy_holy_might }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_supremacy_holy_might }
+		}
 
 		country_event = {
 			id = pw_holy_reliquary.1106
@@ -2783,12 +4211,12 @@ country_event = {
 	}
 
 	immediate = {
-		# if = {
-		# 	limit = {
-		# 		NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# 	}
-		# 	add_modifier = { modifier = pw_holy_reliquary_expansion_extrospective_gaze }
-		# }
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+			}
+			add_modifier = { modifier = pw_holy_reliquary_diplomacy_unity_of_people }
+		}
 
 		country_event = {
 			id = pw_holy_reliquary.1107

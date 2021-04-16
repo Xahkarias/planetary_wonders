@@ -325,7 +325,7 @@ pw_domed_city_test_subject = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 	}
 
 	resources = {
@@ -599,7 +599,7 @@ pw_tourist = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 	}
 
 	planet_modifier = {

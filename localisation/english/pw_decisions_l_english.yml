@@ -70,6 +70,14 @@
     pw_decision_holy_reliquary_visit_the_reliquary_desc: "Visit the halls and chambers housing our sanctified artifacts."
     pw_decision_holy_reliquary_visit_the_reliquary_tooltip: "Launch an event that acts as the hub for the $pw_holy_reliquary$, where we can sanctify artifacts and activate some of their abilities."
 
+    #Supremacy: defense of the faith
+    pw_decision_religious_persecution: "Enact Religious Persecution"
+    pw_decision_religious_persecution_desc: "Use the divine right of the $pw_holy_reliquary.defender_of_the_faith$ to enact a religious persecution to all who would be a threat to our faith, heretics and disbelievers alike."
+
+    pw_decision_end_religious_persecution: "End Religious Persecution"
+    pw_decision_end_religious_persecution_desc: "Our population has suffered enough, it is time to end this religious persecution."
+
+
     #Grand Archive
     pw_decision_grand_archive_visit_the_archive: "Visit $pw_grand_archive$"
     pw_decision_grand_archive_visit_the_archive_desc: "Visit the museums and collections that tell the tale of the universe and all its secrets."

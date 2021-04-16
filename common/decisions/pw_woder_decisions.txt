@@ -6457,3 +6457,57 @@ pw_decision_cancel_parades = {
 		weight = 0
 	}
 }
+
+#Holy Reliquary supremacy decisions
+pw_decision_religious_persecution = {
+	owned_planets_only = yes
+	sound = event_air_raid_siren
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+
+	potential = {
+		owner = { has_country_flag = pw_holy_reliquary_religious_persecution_available }
+		NOT = { has_modifier = pw_holy_reliquary_supremacy_religious_persecution }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = pw_holy_reliquary_supremacy_religious_persecution
+			clear_on_owner_change = yes
+			days = @pw_2years
+		}
+		hidden_effect = {
+			remove_country_flag = pw_holy_reliquary_religious_persecution_available
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+pw_decision_end_religious_persecution = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = pw_holy_reliquary_supremacy_religious_persecution
+	}
+
+	effect = {
+		remove_modifier = pw_holy_reliquary_supremacy_religious_persecution
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

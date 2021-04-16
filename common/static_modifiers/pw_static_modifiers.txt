@@ -307,9 +307,55 @@ pw_holy_reliquary_expansion_peregrination_pathways = {
 	pop_growth_from_immigration = 0.20
 }
 
+#Scale of Balance: Tipped balance effects
+pw_holy_reliquary_harmony_tipped_balance_pop = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_growth_speed = 0.10
+	pop_environment_tolerance = 0.10
+}
+
+pw_holy_reliquary_harmony_tipped_balance_worker = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_worker_produces_mult = 0.20
+}
+
+pw_holy_reliquary_harmony_tipped_balance_specialist = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_specialist_produces_mult = 0.15
+}
+
+pw_holy_reliquary_harmony_tipped_balance_happiness = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_amenities_mult = 0.10
+	pop_happiness = 0.10
+}
+
+#Defender of the Faith effect: Call to Arms
+pw_holy_reliquary_supremacy_call_to_arms = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_martial_law.dds"
+	icon_frame = @pw_icon_frame_green
+	custom_tooltip = pw_holy_reliquary_supremacy_call_to_arms.tooltip
+	planet_army_build_speed_mult = 0.25
+	pop_ethic_spiritualist_attraction_mult = 0.10
+}
+
+#Defender of the Faith effect: Religious Persecution
+pw_holy_reliquary_supremacy_religious_persecution = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_martial_law.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = -0.15
+	planet_stability_add = 5
+	pop_ethic_spiritualist_attraction_mult = 0.20
+	job_enforcer_add = 2
+}
+
 #Country modifiers:
 pw_mod_galactic_model_anomaly_sensor = {
-	ship_hyperlane_range_add = 5
+	ship_hyperlane_range_add = 3
 	science_ship_survey_speed = 0.25
 	icon = "gfx/interface/icons/modifiers/mod_planet_sensor_range_mult.dds"
 	icon_frame = 3
@@ -350,6 +396,65 @@ pw_holy_reliquary_prosperity_coin_of_fortune = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	trade_value_mult = 0.20
 	planet_jobs_worker_produces_mult = 0.10
+}
+
+#Scale of Balance
+pw_holy_reliquary_harmony_scale_of_balance = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	planet_stability_add = 5
+	empire_size_pops_mult = -0.25
+}
+
+#Defender of the Faith: Holy Might
+pw_holy_reliquary_supremacy_holy_might = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	ship_fire_rate_mult = 0.10
+	army_attack_damage_mult = 0.25
+	army_morale_damage_mult = 0.25
+}
+
+#Defender of the Faith: Holy Defense
+pw_holy_reliquary_supremacy_holy_defense = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	shipclass_starbase_damage_mult = 0.15
+	army_defense_damage_mult = 0.25
+	army_defense_morale_mult = 0.25
+}
+
+#Signet Ring: The Unity of Our People
+pw_holy_reliquary_diplomacy_unity_of_people = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	diplo_weight_pops_mult = 0.20
+	country_unity_produces_mult = 0.10
+}
+
+#Signet Ring: The Might of Our Fleets
+pw_holy_reliquary_diplomacy_might_of_fleet = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	diplo_weight_naval_mult = 0.20
+	ships_upkeep_mult = -0.10
+}
+
+#Signet Ring: The Abundance of Our Riches
+pw_holy_reliquary_diplomacy_abundance_of_riches = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	diplo_weight_economy_mult = 0.20
+	trade_value_mult = 0.10
+}
+
+#Signet Ring: The Advancement of Our Techs
+pw_holy_reliquary_diplomacy_advancement_of_tech = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	diplo_weight_technology_mult = 0.20
+	num_tech_alternatives_add = 1
+}
+
+#Signet Ring: Diplomacy is for the weak
+pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	diplo_weight_mult = -0.10
+	country_naval_cap_mult = 0.15
+	country_unity_produces_mult = 0.20
 }
 
 #Codex of the Ages: Codex of Past Ages

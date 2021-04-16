@@ -105,10 +105,29 @@
     pw_mod_holy_reliquary_recently_build_desc: "The expectation of reviving ancient holy artifacts that brought about with the $pw_holy_reliquary$ is inspiring to our populace."
 
     pw_holy_reliquary_expansion_reflective_meditation: "Reflective Meditation"
-    pw_holy_reliquary_expansion_reflective_meditation_desc: "The population of the planet is commonly taken by sudden meditation, which leads them to better preserve themselves, search of self improvement and consider new ideological positions. This is thought to be provoked by the sanctification fo the $pw_holy_reliquary.stargazing_mirror$."
+    pw_holy_reliquary_expansion_reflective_meditation_desc: "The population of the planet is commonly taken by sudden meditation, which leads them to better preserve themselves, search of self improvement and consider new ideological positions. This is thought to be provoked by the sanctification of the $pw_holy_reliquary.stargazing_mirror$."
 
     pw_holy_reliquary_expansion_peregrination_pathways: "Peregrination Pathways"
-    pw_holy_reliquary_expansion_peregrination_pathways_desc: "Is has become a tradition that the spiritualist people of the country visit this planet at least once in their lifetime, bringing many to stay. A new interest in peregrination is thought to be provoked by the sanctification fo the $pw_holy_reliquary.stargazing_mirror$."
+    pw_holy_reliquary_expansion_peregrination_pathways_desc: "Is has become a tradition that the spiritualist people of the country visit this planet at least once in their lifetime, bringing many to stay. A new interest in peregrination is thought to be provoked by the sanctification of the $pw_holy_reliquary.stargazing_mirror$."
+
+    pw_holy_reliquary_harmony_tipped_balance_pop: "Tipped Universal Balance"
+    pw_holy_reliquary_harmony_tipped_balance_pop_desc: "The sacred balance of the universe has been tipped in our favor, manifesting in strange ways in this planet. We should enjoy it before the universe corrects itself."
+
+    pw_holy_reliquary_harmony_tipped_balance_worker: "Tipped Universal Balance"
+    pw_holy_reliquary_harmony_tipped_balance_worker_desc: "The sacred balance of the universe has been tipped in our favor, manifesting in strange ways in this planet. We should enjoy it before the universe corrects itself."
+
+    pw_holy_reliquary_harmony_tipped_balance_specialist: "Tipped Universal Balance"
+    pw_holy_reliquary_harmony_tipped_balance_specialist_desc: "The sacred balance of the universe has been tipped in our favor, manifesting in strange ways in this planet. We should enjoy it before the universe corrects itself."
+
+    pw_holy_reliquary_harmony_tipped_balance_happiness: "Tipped Universal Balance"
+    pw_holy_reliquary_harmony_tipped_balance_happiness_desc: "The sacred balance of the universe has been tipped in our favor, manifesting in strange ways in this planet. We should enjoy it before the universe corrects itself."
+
+    pw_holy_reliquary_supremacy_religious_persecution: "Religious Persecution"
+    pw_holy_reliquary_supremacy_religious_persecution_desc: "The heretics and morally deprived elements of this planet are being persecuted and cleaned, all in the name of the $pw_holy_reliquary.defender_of_the_faith$."
+
+    pw_holy_reliquary_supremacy_call_to_arms: "Call to Arms"
+    pw_holy_reliquary_supremacy_call_to_arms_desc: "The $pw_holy_reliquary.defender_of_the_faith$ has inspired many believers on this planet to take up arms and defend our Faith from any who would threaten it."
+    pw_holy_reliquary_supremacy_call_to_arms.tooltip: "§GAllows us to recruit Assault Acolytes from this planet§!."
 
     #Holy Reliquary artifacts mods:
 
@@ -126,6 +145,30 @@
 
     pw_holy_reliquary_prosperity_coin_of_fortune: "$pw_holy_reliquary.coin_of_fortune$."
     pw_holy_reliquary_prosperity_coin_of_fortune_desc: "The $pw_holy_reliquary.coin_of_fortune$ brings us its luck in many ways, but mostly it provides good trade deals, bountiful harvests and unexpected mineral finds."
+
+    pw_holy_reliquary_harmony_scale_of_balance: "$pw_holy_reliquary.scale_of_balance$."
+    pw_holy_reliquary_harmony_scale_of_balance_desc: "The $pw_holy_reliquary.scale_of_balance$ assures that our people is in complete harmony with the universe itself, providing plenitude in live for all."
+
+    pw_holy_reliquary_supremacy_holy_might: "$pw_holy_reliquary.defender_of_the_faith$: Holy Might"
+    pw_holy_reliquary_supremacy_holy_might: "Inspired by the blessed charges told in the legend of the $pw_holy_reliquary.defender_of_the_faith$ our armies and navy dedicate themselves to much better assaults."
+
+    pw_holy_reliquary_supremacy_holy_defense: "$pw_holy_reliquary.defender_of_the_faith$: Holy Defense"
+    pw_holy_reliquary_supremacy_holy_defense: "Inspired by the miraculous defenses told in the legend of the $pw_holy_reliquary.defender_of_the_faith$ our planetary defense forces and starbase crews stand in stalwart defense against our enemies."
+
+    pw_holy_reliquary_diplomacy_unity_of_people: "$pw_holy_reliquary.signet_ring$: Unity of our People"
+    pw_holy_reliquary_diplomacy_unity_of_people_desc: "With the sanctification of the $pw_holy_reliquary.signet_ring$ we make obvious to other nations in the galaxy that we are proud of our people and invest in it to be so."
+
+    pw_holy_reliquary_diplomacy_might_of_fleet: "$pw_holy_reliquary.signet_ring$: Might of our Fleet"
+    pw_holy_reliquary_diplomacy_might_of_fleet_desc: "With the sanctification of the $pw_holy_reliquary.signet_ring$ we make obvious to other nations in the galaxy that we are proud of our navy and invest in it to be so."
+
+    pw_holy_reliquary_diplomacy_abundance_of_riches: "$pw_holy_reliquary.signet_ring$: Abundance of our Riches"
+    pw_holy_reliquary_diplomacy_abundance_of_riches_desc: "With the sanctification of the $pw_holy_reliquary.signet_ring$ we make obvious to other nations in the galaxy that we are proud of our resources and invest in it to be so."
+
+    pw_holy_reliquary_diplomacy_advancement_of_tech: "$pw_holy_reliquary.signet_ring$: Progress of our Tech"
+    pw_holy_reliquary_diplomacy_advancement_of_tech_desc: "With the sanctification of the $pw_holy_reliquary.signet_ring$ we make obvious to other nations in the galaxy that we are proud of our research and invest in it to be so."
+
+    pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak: "$pw_holy_reliquary.signet_ring$: Diplomacy is for the weak"
+    pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak_desc: "We make sure to let other empire know we care little for their ways of diplomacy. We are enough for ourselves."
 
     pw_holy_reliquary_discovery_codex_of_past_ages: "$pw_holy_reliquary.codex_of_the_ages$: Codex of Past Ages"
     pw_holy_reliquary_discovery_codex_of_past_ages_desc: "By looking for answers in past experiences transcribed in the $pw_holy_reliquary.codex_of_the_ages$ we can better prepare the leaders of our blessed country."

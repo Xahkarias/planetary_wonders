@@ -118,3 +118,56 @@ pw_army_salvaged_war_titan = {
 		always = no
 	}
 }
+
+# Assault Acolyte
+pw_assault_acolyte = {
+	damage = 1.25
+	morale_damage = 1.5
+	health = 0.75
+	morale = 1.5
+	collateral_damage = 1.0
+	war_exhaustion = 0.75
+	time = 60
+	icon_frame = 9
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			unity = 100
+		}
+		upkeep = {
+			energy = 0.5
+		}
+	}
+
+	allow = {
+		any_owned_pop = {
+			OR = {
+				pop_has_ethic = ethic_spiritualist
+				pop_has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+	}
+
+	potential = {
+		has_modifier = pw_holy_reliquary_supremacy_call_to_arms
+		owner = {
+			is_spiritualist = yes
+			any_owned_pop = {
+				OR = {
+					pop_has_ethic = ethic_spiritualist
+					pop_has_ethic = ethic_fanatic_spiritualist
+				}
+				is_same_species = from
+			}
+		}
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+	}
+}

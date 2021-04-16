@@ -18,6 +18,12 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_pw_defender_of_the_faith"
+		texturefile = "gfx/event_pictures/pw_defender_of_the_faith.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_pw_demetrius_cornucopia"
 		texturefile = "gfx/event_pictures/pw_demetrius_cornucopia.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
@@ -54,8 +60,20 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_pw_scale_of_balance"
+		texturefile = "gfx/event_pictures/pw_scale_of_balance.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_pw_scepter_of_the_solar_regent"
 		texturefile = "gfx/event_pictures/pw_scepter_of_the_solar_regent.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pw_signet_ring"
+		texturefile = "gfx/event_pictures/pw_signet_ring.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}

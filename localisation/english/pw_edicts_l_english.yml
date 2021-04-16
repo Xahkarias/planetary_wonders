@@ -29,11 +29,11 @@
 
     #Brace Against the storm (Festival Plaza):
 
-    pw_festival_plaza_this_too_shall_pass: "This Too Shall Pass"
-    pw_festival_plaza_this_too_shall_pass_desc: "Wars and catastrophes have besieged us many times before, and peace has always prevailed. We will not let this crisis break our unity or change our ways."
+    edict_pw_festival_plaza_this_too_shall_pass: "This Too Shall Pass"
+    edict_pw_festival_plaza_this_too_shall_pass_desc: "Wars and catastrophes have besieged us many times before, and peace has always prevailed. We will not let this crisis break our unity or change our ways."
 
-    pw_festival_plaza_inexorable_peace: "Inexorable Peace"
-    pw_festival_plaza_inexorable_peace_desc: "Peace is absolutely unnegotiable, even in the face of such dreaded foes. If we must, we will refuse to fight. There is always a way to remain harmonious."
+    edict_pw_festival_plaza_inexorable_peace: "Inexorable Peace"
+    edict_pw_festival_plaza_inexorable_peace_desc: "Peace is absolutely unnegotiable, even in the face of such dreaded foes. If we must, we will refuse to fight. There is always a way to remain harmonious."
 
     #Vision Beyond War (Martial Avenue):
 
@@ -45,11 +45,11 @@
 
     #Into the Storm (Martial Avenue):
 
-    pw_martial_avenue_our_greatest_foe: "Our Greatest Foe"
-    pw_martial_avenue_our_greatest_foe_desc: "This crisis that stands against the galaxy is just another foe in our path to victory. It centenary prove itself a great challenge, but one we will overcome. Our thirst for glory will never be quenched."
+    edict_pw_martial_avenue_our_greatest_foe: "Our Greatest Foe"
+    edict_pw_martial_avenue_our_greatest_foe_desc: "This crisis that stands against the galaxy is just another foe in our path to victory. It centenary prove itself a great challenge, but one we will overcome. Our thirst for glory will never be quenched."
 
-    pw_martial_avenue_bring_us_a_challenge: "Bring Us A Challenge"
-    pw_martial_avenue_bring_us_a_challenge_desc: "Long have we walked unbeaten over this galaxy, long we have desire a threat worthy of our navy. If this coming crisis is as dangerous as it is heralded, we will welcome it, the hardest way possible. Glory or death!"
+    edict_pw_martial_avenue_bring_us_a_challenge: "Bring Us A Challenge"
+    edict_pw_martial_avenue_bring_us_a_challenge_desc: "Long have we walked unbeaten over this galaxy, long we have desire a threat worthy of our navy. If this coming crisis is as dangerous as it is heralded, we will welcome it, the hardest way possible. Glory or death!"
 
 
     # Campaigns
