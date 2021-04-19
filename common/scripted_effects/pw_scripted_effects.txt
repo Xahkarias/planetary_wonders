@@ -54,7 +54,7 @@ pw_trigger_art_generic_events = {
 				factor = 0
 				NOR = {
 					any_owned_planet = {
-						has_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_fair_of_worlds
 					}
 					any_neighbor_country = {
 						opinion_level = {
@@ -71,7 +71,7 @@ pw_trigger_art_generic_events = {
 				factor = 0
 				NOT = {
 					any_owned_planet = {
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 			}
@@ -698,7 +698,10 @@ pw_determine_peace_stability_modifier = {
 		}
 		#Add Country Modifier:
 		if = {
-			limit = { is_at_war = no }
+			limit = {
+				is_at_war = no
+				is_pacifist = yes
+			}
 			if = {
 				limit = {
 					check_variable = {

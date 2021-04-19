@@ -193,7 +193,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_building = pw_building_space_elevator
+		has_active_building = pw_building_space_elevator
 	}
 
 	immediate = {
@@ -235,7 +235,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_104 }}
-		has_building = pw_building_space_elevator
+		has_active_building = pw_building_space_elevator
 	}
 	immediate = {
 		owner = { set_country_flag = pw_wonder_event_104 }
@@ -276,7 +276,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_105 }}
-		has_building = pw_building_space_elevator
+		has_active_building = pw_building_space_elevator
 	}
 	immediate = {
 		owner = { set_country_flag = pw_wonder_event_105 }
@@ -307,7 +307,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_106 }}
-		has_building = pw_building_space_elevator
+		has_active_building = pw_building_space_elevator
 	}
 	immediate = {
 		owner = { set_country_flag = pw_wonder_event_106 }
@@ -320,19 +320,18 @@ planet_event = {
 	}
 	option = {
 		name = pw_wonder.106.b
-		create_fleet = {
-			name = "Stowaways"
-			effect = {
-				set_owner = owner
-				set_location = {
-					target = THIS
-					distance = 5
-					angle = random
-				}
-				create_ship = {
-					name = random
-					design = "NAME_Colonizer"
-					colonizer_species = owner_main_species
+		custom_tooltip = pw_wonder.106.b.tooltip
+		owner = {
+			create_fleet = {
+				name = "Stowaways"
+				effect = {
+					set_owner = ROOT.owner
+					set_location = ROOT
+					create_ship = {
+						name = random
+						design = "NAME_Colonizer"
+						colonizer_species = ROOT.owner.owner_species
+					}
 				}
 			}
 		}
@@ -1024,7 +1023,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	immediate = {
 		if = {
@@ -1051,7 +1050,7 @@ planet_event = {
 		set_planet_flag = pw_aggressive_prospecting_crystal
 	}
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	option = {
 		name = pw_wonder.505.a
@@ -1071,7 +1070,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	immediate = {
 		if = {
@@ -1098,7 +1097,7 @@ planet_event = {
 		set_planet_flag = pw_aggressive_prospecting_motes
 	}
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	option = {
 		name = pw_wonder.507.a
@@ -1118,7 +1117,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	immediate = {
 		if = {
@@ -1145,7 +1144,7 @@ planet_event = {
 		set_planet_flag = pw_aggressive_prospecting_gases
 	}
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	option = {
 		name = pw_wonder.509.a
@@ -1168,7 +1167,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_erebus_project
+		has_active_building = pw_building_erebus_project
 	}
 	immediate = {
 		set_planet_flag = pw_aggressive_prospecting_event_triggered
@@ -1344,7 +1343,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = hazardous_weather }
-		has_building = pw_building_helios_tower
+		has_active_building = pw_building_helios_tower
 	}
 	option = {
 		name = pw_wonder.604.a
@@ -1382,7 +1381,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = wild_storms }
-		has_building = pw_building_helios_tower
+		has_active_building = pw_building_helios_tower
 	}
 	option = {
 		name = pw_wonder.605.a
@@ -1420,7 +1419,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = atmospheric_aphrodisiac }
-		has_building = pw_building_helios_tower
+		has_active_building = pw_building_helios_tower
 	}
 	option = {
 		name = pw_wonder.606.a
@@ -1617,7 +1616,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = lush_planet }
-		has_building = pw_building_demetrius_fields
+		has_active_building = pw_building_demetrius_fields
 	}
 	option = {
 		name = pw_wonder.704.a
@@ -1655,7 +1654,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = bleak_planet }
-		has_building = pw_building_demetrius_fields
+		has_active_building = pw_building_demetrius_fields
 	}
 	option = {
 		name = pw_wonder.705.a
@@ -1700,7 +1699,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = dangerous_wildlife }
-		has_building = pw_building_demetrius_fields
+		has_active_building = pw_building_demetrius_fields
 	}
 	option = {
 		name = pw_wonder.706.a
@@ -1738,7 +1737,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = titanic_life }
-		has_building = pw_building_demetrius_fields
+		has_active_building = pw_building_demetrius_fields
 	}
 	option = {
 		name = pw_wonder.707.a
@@ -1776,7 +1775,7 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = natural_beauty }
-		has_building = pw_building_demetrius_fields
+		has_active_building = pw_building_demetrius_fields
 	}
 	option = {
 		name = pw_wonder.708.a
@@ -1992,7 +1991,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_galactic_model
+		has_active_building = pw_building_galactic_model
 		NOT = { owner = { has_country_flag = galactic_model_tow_asteroid }}
 		owner = {
 			any_planet_within_border = {
@@ -2077,7 +2076,7 @@ country_event = {
 
 	trigger = {
 		any_owned_planet = {
-			has_building = pw_building_galactic_model
+			has_active_building = pw_building_galactic_model
 		}
 		NOT = { owner = { has_country_flag = galactic_model_move_mountain }}
 		owner = {
@@ -2225,7 +2224,7 @@ country_event = {
 			}
 		}
 
-		country_event = { id = pw_wonder.821 }
+		country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
 	}
 }
 
@@ -2550,7 +2549,7 @@ country_event = {
 		is_at_war = no
 		is_ai = no
 		any_owned_planet = {
-			has_building = pw_building_panopticon
+			has_active_building = pw_building_panopticon
 		}
 		any_country = {
 			any_neighbor_country = {
@@ -2606,7 +2605,7 @@ country_event = {
 
 	trigger = {
 		any_owned_planet = {
-			has_building = pw_building_panopticon
+			has_active_building = pw_building_panopticon
 		}
 	}
 	picture_event_data = {
@@ -2822,7 +2821,7 @@ country_event = {
 		is_at_war = no
 		is_ai = no
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 		any_country = {
 			is_country_type = fallen_empire
@@ -2959,7 +2958,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_enigma_engine
+		has_active_building = pw_building_enigma_engine
 		owner = { NOT = { has_country_flag = pw_enigma_engine_deviant_events }}
 	}
 	immediate = {
@@ -2989,7 +2988,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_enigma_engine
+		has_active_building = pw_building_enigma_engine
 	}
 	option = {
 		name = pw_wonder.1011.a
@@ -3015,7 +3014,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_enigma_engine
+		has_active_building = pw_building_enigma_engine
 	}
 	option = {
 		name = pw_wonder.1012.a
@@ -3197,7 +3196,7 @@ country_event = {
 		is_at_war = no
 		is_ai = no
 		any_owned_planet = {
-			has_building = pw_building_solipsist_debate_hall
+			has_active_building = pw_building_solipsist_debate_hall
 		}
 		any_country = {
 			is_country_type = fallen_empire
@@ -3316,7 +3315,7 @@ country_event = {
 		name = pw_wonder.1106.c
 		random_owned_planet = {
 			limit = {
-				has_building = pw_building_solipsist_debate_hall
+				has_active_building = pw_building_solipsist_debate_hall
 			}
 			random_owned_pop = { kill_pop = yes }
 		}
@@ -3352,7 +3351,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1202 } #Gestalt first time
 		planet_event = { id = pw_wonder.1203 } #Add flying fortress army
 		planet_event = { id = pw_wonder.1207 days = 60 random = 30 } #Guardian Angel Peace Choice.
-		planet_event = { id = pw_wonder.1203 days = @pw_halfYear } #Recursive check event
+		planet_event = { id = pw_wonder.1204 days = @pw_halfYear } #Recursive check event
 	}
 }
 
@@ -3436,7 +3435,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_building = pw_building_guardian_angel
+		has_active_building = pw_building_guardian_angel
 		NOT = {
 			any_planet_army = {
 				army_type = pw_army_flying_fortress
@@ -3465,7 +3464,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = { #Doesn't have the Guardian Angel building
-				NOT = { has_building = pw_building_guardian_angel }
+				NOT = { has_active_building = pw_building_guardian_angel }
 				OR = {
 					any_planet_army = { #Has the Flying Fortress
 						army_type = pw_army_flying_fortress
@@ -3503,7 +3502,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = { has_building = pw_building_guardian_angel }
+		NOT = { has_active_building = pw_building_guardian_angel }
 		any_planet_army = {
 			army_type = pw_army_flying_fortress
 		}
@@ -3596,7 +3595,7 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = { has_building = pw_building_guardian_angel }
+		NOT = { has_active_building = pw_building_guardian_angel }
 		OR = {
 			has_deposit = pw_d_guardian_angel_training
 			has_deposit = pw_d_guardian_angel_police_operations
@@ -3764,9 +3763,9 @@ planet_event = {
 			limit = {
 				has_planet_flag = pw_mantle_crucible_devastation_event
 				OR ={
-					has_building = pw_building_mantle_crucible
-					has_building = pw_building_titan_forge
-					has_building = pw_building_industrial_hearth
+					has_active_building = pw_building_mantle_crucible
+					has_active_building = pw_building_titan_forge
+					has_active_building = pw_building_industrial_hearth
 				}
 			}
 			random_list = {
@@ -4053,7 +4052,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_building = pw_building_mantle_crucible }
+				NOT = { has_active_building = pw_building_mantle_crucible }
 				OR = {
 					has_modifier = pw_mod_mantle_crucible_alloys
 					has_modifier = pw_mod_mantle_crucible_consumer_goods
@@ -4074,7 +4073,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_building = pw_building_mantle_crucible }
+		NOT = { has_active_building = pw_building_mantle_crucible }
 		OR = {
 			has_modifier = pw_mod_mantle_crucible_alloys
 			has_modifier = pw_mod_mantle_crucible_consumer_goods
@@ -4274,6 +4273,18 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1331.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
 
 		hidden_effect = {
 			owner = {
@@ -4308,6 +4319,18 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1332.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
 	}
 
 	option = {
@@ -4317,6 +4340,15 @@ planet_event = {
 			OR  ={
 				owner = { has_valid_civic = civic_machine_warbots }
 				owner = { has_valid_civic = civic_machine_terminator }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_wonder_built_recently_unity }
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
 			}
 		}
 	}
@@ -4351,7 +4383,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_building = pw_building_mantle_crucible }
+		NOT = { has_active_building = pw_building_mantle_crucible }
 	}
 
 	immediate = {
@@ -4480,10 +4512,28 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1361.a
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_wonder_built_recently_happiness }
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
 	}
 
 	option = {
 		name = pw_wonder.1361.b
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_wonder_built_recently_happiness }
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
 	}
 }
 
@@ -4522,7 +4572,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_building = pw_building_mantle_crucible }
+		NOT = { has_active_building = pw_building_mantle_crucible }
 	}
 
 	immediate = {
@@ -4549,7 +4599,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4665,7 +4715,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4703,7 +4753,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4741,7 +4791,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4750,7 +4800,7 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1367.a
-		capital_scope = {
+		owner.capital_scope = {
 			enable_special_project = {
 				name = PW_PILOT_PLAN
 				owner = owner
@@ -4792,7 +4842,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4844,7 +4894,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4882,7 +4932,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -4944,7 +4994,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_industrial_hearth
+		has_active_building = pw_building_industrial_hearth
 	}
 
 	immediate = {
@@ -5040,7 +5090,7 @@ planet_event = {
 		name = pw_wonder.1401.a
 		if = {
 			limit = {
-				has_modifier = pw_mod_wonder_built_recently_happiness
+				NOT = { has_modifier = pw_mod_wonder_built_recently_happiness }
 			}
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_happiness
@@ -5135,7 +5185,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_fair_of_worlds
+		has_active_building = pw_building_fair_of_worlds
 		owner = { is_xenophile = yes }
 	}
 
@@ -5244,7 +5294,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_museum_of_the_grotesque
+		has_active_building = pw_building_museum_of_the_grotesque
 		owner = { is_xenophobe = yes }
 	}
 
@@ -5745,8 +5795,8 @@ planet_event = {
 
 	trigger = {
 		NOR = { #Does not has the building:
-			has_building = pw_building_transplanetary_logistics_network
-			has_building = pw_building_transhabitat_logistics_network
+			has_active_building = pw_building_transplanetary_logistics_network
+			has_active_building = pw_building_transhabitat_logistics_network
 		}
 		OR = { #But has one of the deposits:
 			has_deposit = pw_d_infrastructure_food_distribution
@@ -6309,8 +6359,8 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = { #Does not has the building:
-					has_building = pw_building_transplanetary_logistics_network
-					has_building = pw_building_transhabitat_logistics_network
+					has_active_building = pw_building_transplanetary_logistics_network
+					has_active_building = pw_building_transhabitat_logistics_network
 				}
 				OR = { #But has one of the deposits:
 					has_deposit = pw_d_infrastructure_food_distribution
@@ -6416,7 +6466,7 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = { has_building = pw_building_forbidden_city } #Does not has the building
+		NOT = { has_active_building = pw_building_forbidden_city } #Does not has the building
 		OR = { #But has one of the deposits:
 			has_deposit = pw_d_infrastructure_planetary_command
 			has_deposit = pw_d_infrastructure_governor_mansion
@@ -6547,7 +6597,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_forbidden_city
+		has_active_building = pw_building_forbidden_city
 		has_deposit = pw_d_infrastructure_seat_of_power
 		exists = owner
 		owner = {
@@ -6614,7 +6664,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_forbidden_city
+		has_active_building = pw_building_forbidden_city
 		has_deposit = pw_d_infrastructure_throne_room
 		exists = owner
 		owner = {
@@ -7141,7 +7191,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_building = pw_building_forbidden_city } #Does not has the building
+				NOT = { has_active_building = pw_building_forbidden_city } #Does not has the building
 				OR = { #But has one of the deposits:
 					has_deposit = pw_d_infrastructure_planetary_command
 					has_deposit = pw_d_infrastructure_governor_mansion
@@ -7169,7 +7219,7 @@ planet_event = {
 			planet_event = { id = pw_wonder.1802 }
 		}
 		else_if = {
-			limit = { has_building = pw_building_forbidden_city }
+			limit = { has_active_building = pw_building_forbidden_city }
 			planet_event = { id = pw_wonder.1820 days = @pw_halfYear }
 		}
 	}
@@ -7261,7 +7311,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_building = pw_building_festival_plaza } #Does not has the building
+				NOT = { has_active_building = pw_building_festival_plaza } #Does not has the building
 				OR = { #But has one of the modifiers:
 					has_modifier = pw_mod_FP_festivities_of_plenitude
 					has_modifier = pw_mod_FP_fertility_bacchanal
@@ -7273,7 +7323,7 @@ planet_event = {
 			planet_event = { id = pw_wonder.1906 }
 		}
 		else_if = {
-			limit = { has_building = pw_building_festival_plaza }
+			limit = { has_active_building = pw_building_festival_plaza }
 			planet_event = { id = pw_wonder.1905 days = @pw_halfYear }
 		}
 	}
@@ -7293,7 +7343,7 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = { has_building = pw_building_festival_plaza } #Does not has the building
+		NOT = { has_active_building = pw_building_festival_plaza } #Does not has the building
 		OR = { #But has one of the modifiers:
 			has_modifier = pw_mod_FP_festivities_of_plenitude
 			has_modifier = pw_mod_FP_fertility_bacchanal
@@ -7325,7 +7375,9 @@ planet_event = {
 			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
 			remove_modifier = pw_mod_FP_commemorate_perfection
 		}
-		pw_determine_peace_stability_modifier = yes
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
 	}
 }
 
@@ -7366,6 +7418,8 @@ country_event = {
 			#Remove the planetary modifiers:
 			planet_event = { id = pw_wonder.1911 }
 		}
+		#Start recurring peace check:
+		country_event = { id = pw_wonder.1915 days = @pw_halfYear }
 	}
 
 	option = {
@@ -7422,7 +7476,24 @@ planet_event = {
 	}
 }
 
-#When a war ends
+#Recursive check for when a war ends:
+country_event = {
+	id = pw_wonder.1915
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { is_at_war = yes }
+			country_event = { id = pw_wonder.1915 days = @pw_halfYear }
+		}
+		else = {
+			country_event = { id = pw_wonder.1921 }
+		}
+	}
+}
+
+#When a war ends (UNUSED!)
 event = {
 	id = pw_wonder.1920
 	hide_window = yes
@@ -7451,6 +7522,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		exists = THIS
 		OR = {
 			has_country_flag = pw_FP_had_peace_stability_modifier
 			has_country_flag = pw_festival_plaza_built
@@ -7505,7 +7577,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_FP_has_festivities_of_plenitude_mod }
 			remove_planet_flag = pw_FP_has_festivities_of_plenitude_mod
 			if = {
-				limit = { has_building = pw_building_festival_plaza }
+				limit = { has_active_building = pw_building_festival_plaza }
 				add_modifier = {
 					modifier = pw_mod_FP_festivities_of_plenitude
 					clear_on_owner_change = yes
@@ -7516,7 +7588,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_FP_has_fertility_bacchanal_mod }
 			remove_planet_flag = pw_FP_has_fertility_bacchanal_mod
 			if = {
-				limit = { has_building = pw_building_festival_plaza }
+				limit = { has_active_building = pw_building_festival_plaza }
 				add_modifier = {
 					modifier = pw_mod_FP_fertility_bacchanal
 					clear_on_owner_change = yes
@@ -7527,7 +7599,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_FP_has_cultivate_peace_mod }
 			remove_planet_flag = pw_FP_has_cultivate_peace_mod
 			if = {
-				limit = { has_building = pw_building_festival_plaza }
+				limit = { has_active_building = pw_building_festival_plaza }
 				add_modifier = {
 					modifier = pw_mod_FP_cultivate_peace
 					clear_on_owner_change = yes
@@ -7538,7 +7610,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_FP_has_harvest_festival_mod }
 			remove_planet_flag = pw_FP_has_harvest_festival_mod
 			if = {
-				limit = { has_building = pw_building_festival_plaza }
+				limit = { has_active_building = pw_building_festival_plaza }
 				add_modifier = {
 					modifier = pw_mod_FP_harvest_festival
 					clear_on_owner_change = yes
@@ -7549,7 +7621,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_FP_has_commemorate_perfection_mod }
 			remove_planet_flag = pw_FP_has_commemorate_perfection_mod
 			if = {
-				limit = { has_building = pw_building_festival_plaza }
+				limit = { has_active_building = pw_building_festival_plaza }
 				add_modifier = {
 					modifier = pw_mod_FP_commemorate_perfection
 					clear_on_owner_change = yes
@@ -7586,7 +7658,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_festival_plaza
+		has_active_building = pw_building_festival_plaza
 		NOT = {owner = { has_country_flag = pw_festival_plaza_black_letter_day }}
 		owner = {
 			is_at_war = no
@@ -7744,7 +7816,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_building = pw_building_martial_avenue } #Does not has the building
+				NOT = { has_active_building = pw_building_martial_avenue } #Does not has the building
 				OR = { #But has one of the modifiers:
 					has_modifier =pw_mod_MA_military_parade
 					has_modifier =pw_mod_MA_do_your_own_part
@@ -7758,7 +7830,7 @@ planet_event = {
 			planet_event = { id = pw_wonder.2006 }
 		}
 		else_if = {
-			limit = { has_building = pw_building_martial_avenue }
+			limit = { has_active_building = pw_building_martial_avenue }
 			planet_event = { id = pw_wonder.2005 days = @pw_halfYear }
 		}
 	}
@@ -7778,7 +7850,7 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = { has_building = pw_building_martial_avenue } #Does not has the building
+		NOT = { has_active_building = pw_building_martial_avenue } #Does not has the building
 		OR = { #But has one of the modifiers:
 			has_modifier =pw_mod_MA_military_parade
 			has_modifier =pw_mod_MA_do_your_own_part
@@ -7862,6 +7934,8 @@ country_event = {
 			#Remove the planetary modifiers:
 			planet_event = { id = pw_wonder.2011 }
 		}
+		#Start recurring peace check:
+		country_event = { id = pw_wonder.2015 days = @pw_halfYear }
 	}
 
 	option = {
@@ -7939,7 +8013,24 @@ planet_event = {
 	}
 }
 
-#When a war ends
+#Recursive check for when a war ends:
+country_event = {
+	id = pw_wonder.2015
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { is_at_war = yes }
+			country_event = { id = pw_wonder.2015 days = @pw_halfYear }
+		}
+		else = {
+			country_event = { id = pw_wonder.2021 }
+		}
+	}
+}
+
+#When a war ends (UNUSED!)
 event = {
 	id = pw_wonder.2020
 	hide_window = yes
@@ -7989,6 +8080,16 @@ country_event = {
 			has_modifier = pw_mod_MA_war_lust_8
 			has_modifier = pw_mod_MA_war_lust_9
 			has_modifier = pw_mod_MA_war_lust_10
+			has_modifier = pw_mod_MA_war_drive_1
+			has_modifier = pw_mod_MA_war_drive_2
+			has_modifier = pw_mod_MA_war_drive_3
+			has_modifier = pw_mod_MA_war_drive_4
+			has_modifier = pw_mod_MA_war_drive_5
+			has_modifier = pw_mod_MA_war_drive_6
+			has_modifier = pw_mod_MA_war_drive_7
+			has_modifier = pw_mod_MA_war_drive_8
+			has_modifier = pw_mod_MA_war_drive_9
+			has_modifier = pw_mod_MA_war_drive_10
 			has_country_flag = pw_martial_avenue_built
 		}
 		#Important to check if there is no other war going on
@@ -8013,7 +8114,7 @@ country_event = {
 
 	option = {
 		name = pw_wonder.2021.a
-		custom_tooltip = pw_wonder.2010.a.tooltip
+		custom_tooltip = pw_wonder.2021.a.tooltip
 		hidden_effect = {
 			pw_determine_war_drive_modifier = yes
 			country_event = { id = pw_wonder.2023 days = 30 }#1 month to reset every modifier to planets
@@ -8051,7 +8152,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_MA_has_military_parade_mod }
 			remove_planet_flag = pw_MA_has_military_parade_mod
 			if = {
-				limit = { has_building = pw_building_martial_avenue }
+				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_military_parade
 					clear_on_owner_change = yes
@@ -8062,7 +8163,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_MA_has_flight_of_the_corvettes_mod }
 			remove_planet_flag = pw_MA_has_flight_of_the_corvettes_mod
 			if = {
-				limit = { has_building = pw_building_martial_avenue }
+				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_flight_of_the_corvettes
 					clear_on_owner_change = yes
@@ -8073,7 +8174,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_MA_has_national_march_mod }
 			remove_planet_flag = pw_MA_has_national_march_mod
 			if = {
-				limit = { has_building = pw_building_martial_avenue }
+				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_national_march
 					clear_on_owner_change = yes
@@ -8084,7 +8185,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_MA_has_combat_demonstrations_mod }
 			remove_planet_flag = pw_MA_has_combat_demonstrations_mod
 			if = {
-				limit = { has_building = pw_building_martial_avenue }
+				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_combat_demonstrations
 					clear_on_owner_change = yes
@@ -8095,7 +8196,7 @@ planet_event = {
 			limit = { has_planet_flag = pw_MA_has_merchants_of_war_mod }
 			remove_planet_flag = pw_MA_has_merchants_of_war_mod
 			if = {
-				limit = { has_building = pw_building_martial_avenue }
+				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_merchants_of_war
 					clear_on_owner_change = yes
@@ -8133,7 +8234,7 @@ planet_event = {
 	}
 
 	trigger = {
-		has_building = pw_building_martial_avenue
+		has_active_building = pw_building_martial_avenue
 		NOT = {owner = { has_country_flag = pw_martial_avenue_black_letter_day }}
 		owner = {
 			is_at_war = no

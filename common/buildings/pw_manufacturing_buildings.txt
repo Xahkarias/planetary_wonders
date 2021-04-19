@@ -1,6 +1,6 @@
 pw_building_mantle_crucible = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = manufacturing
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -379,7 +379,7 @@ pw_building_mantle_crucible = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_mantle_crucible }
+			NOT = { has_active_building = pw_building_mantle_crucible }
 			NOT = { has_building_construction = pw_building_mantle_crucible }
 		}
 		modifier = {
@@ -393,13 +393,13 @@ pw_building_mantle_crucible = {
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_foundry_1
-				has_building = building_foundry_2
-				has_building = building_foundry_3
+				has_active_building = building_foundry_1
+				has_active_building = building_foundry_2
+				has_active_building = building_foundry_3
 
-				has_building = building_factory_1
-				has_building = building_factory_2
-				has_building = building_factory_3
+				has_active_building = building_factory_1
+				has_active_building = building_factory_2
+				has_active_building = building_factory_3
 			}
 		}
 		modifier = {
@@ -439,7 +439,7 @@ pw_building_mantle_crucible = {
 
 pw_building_titan_forge = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = manufacturing
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -455,9 +455,8 @@ pw_building_titan_forge = {
 	}
 
 	allow = {
+		#Upgrade Wonders don't check for districts or availability
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
-		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
 		pw_is_wonder_empire_unique = { WONDER = pw_building_titan_forge }
@@ -609,7 +608,7 @@ pw_building_titan_forge = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_titan_forge }
+			NOT = { has_active_building = pw_building_titan_forge }
 			NOT = { has_building_construction = pw_building_titan_forge }
 		}
 		modifier = {
@@ -622,9 +621,9 @@ pw_building_titan_forge = {
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_foundry_1
-				has_building = building_foundry_2
-				has_building = building_foundry_3
+				has_active_building = building_foundry_1
+				has_active_building = building_foundry_2
+				has_active_building = building_foundry_3
 			}
 		}
 		modifier = {
@@ -651,7 +650,7 @@ pw_building_titan_forge = {
 
 pw_building_industrial_hearth = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = manufacturing
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -668,9 +667,8 @@ pw_building_industrial_hearth = {
 	}
 
 	allow = {
+		#Upgrade Wonders don't check for districts or availability
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
-		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
 		pw_is_wonder_empire_unique = { WONDER = pw_building_industrial_hearth }
@@ -810,15 +808,15 @@ pw_building_industrial_hearth = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_industrial_hearth }
+			NOT = { has_active_building = pw_building_industrial_hearth }
 			NOT = { has_building_construction = pw_building_industrial_hearth }
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_factory_1
-				has_building = building_factory_2
-				has_building = building_factory_3
+				has_active_building = building_factory_1
+				has_active_building = building_factory_2
+				has_active_building = building_factory_3
 			}
 		}
 		modifier = {

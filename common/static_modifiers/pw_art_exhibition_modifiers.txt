@@ -201,7 +201,7 @@ pw_art_mod_memorialist = {
 
 	pop_government_ethic_attraction = 0.3
 	planet_amenities_mult = 0.15
-	planet_jobs_consumer_goods_upkeep_mult = -0.15
+	planet_jobs_upkeep_mult = -0.10
 }
 
 pw_art_mod_cottage_core = {

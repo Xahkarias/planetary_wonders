@@ -20,9 +20,10 @@ pw_edict_panspectron = {
 	}
 
 	modifier = {
-		pop_ethic_authoritarian_attraction_mult = 0.5
 		pop_government_ethic_attraction = 0.5
 		pop_cat_worker_political_power = -0.25
+		pop_happiness = -0.25
+		intel_encryption_add = 1
 		job_enforcer_per_pop = @pw_job_per_50_pop
 	}
 
@@ -36,7 +37,7 @@ pw_edict_panspectron = {
 
 	allow = {
 		any_owned_planet = {
-			has_building = pw_building_panopticon
+			has_active_building = pw_building_panopticon
 		}
 	}
 
@@ -77,7 +78,7 @@ pw_edict_hive_debate = {
 
 	allow = {
 		any_owned_planet = {
-			has_building = pw_building_solipsist_debate_hall
+			has_active_building = pw_building_solipsist_debate_hall
 		}
 	}
 
@@ -103,13 +104,13 @@ pw_holy_reliquary_visit_the_reliquary = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_holy_reliquary
+			has_active_building = pw_building_holy_reliquary
 		}
 	}
 
 	allow = {
 		any_owned_planet = {
-			has_building = pw_building_holy_reliquary
+			has_active_building = pw_building_holy_reliquary
 		}
 	}
 
@@ -135,13 +136,13 @@ pw_grand_archive_visit_the_archive = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 	}
 
 	allow = {
 		any_owned_planet = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 	}
 
@@ -179,13 +180,13 @@ pw_festival_plaza_brace_for_the_worst = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 	}
 
 	allow = {
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 	}
 
@@ -233,14 +234,14 @@ pw_festival_plaza_justified_conflicts = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 	}
 
 	allow = {
 		NOT = { has_ethic = ethic_fanatic_pacifist }
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 	}
 
@@ -288,14 +289,14 @@ pw_festival_plaza_this_too_shall_pass = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 	}
 
 	allow = {
 		is_pacifist = yes
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 		NOT = {
 			has_edict = pw_festival_plaza_inexorable_peace
@@ -344,14 +345,14 @@ pw_festival_plaza_inexorable_peace = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 	}
 
 	allow = {
 		is_pacifist = yes
 		any_owned_planet = {
-			has_building = pw_building_festival_plaza
+			has_active_building = pw_building_festival_plaza
 		}
 		NOT = {
 			has_edict = pw_festival_plaza_this_too_shall_pass
@@ -397,13 +398,13 @@ pw_martial_avenue_soldier_side = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 	}
 
 	allow = {
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 	}
 
@@ -451,14 +452,14 @@ pw_martial_avenue_something_to_return = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 	}
 
 	allow = {
 		NOT = { has_ethic = ethic_fanatic_militarist }
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 	}
 
@@ -506,14 +507,14 @@ pw_martial_avenue_our_greatest_foe = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 	}
 
 	allow = {
-		is_pacifist = yes
+		is_militarist = yes
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 		NOT = {
 			has_edict = pw_martial_avenue_bring_us_a_challenge
@@ -562,14 +563,14 @@ pw_martial_avenue_bring_us_a_challenge = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 	}
 
 	allow = {
-		is_pacifist = yes
+		is_militarist = yes
 		any_owned_planet = {
-			has_building = pw_building_martial_avenue
+			has_active_building = pw_building_martial_avenue
 		}
 		NOT = {
 			has_edict = pw_martial_avenue_our_greatest_foe

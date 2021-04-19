@@ -821,7 +821,6 @@ pw_diversity_curator = {
 
 	planet_modifier = {
 		planet_amenities_add = 8
-		pop_ethic_xenophile_attraction_mult = 0.05
 	}
 
 	triggered_planet_modifier = {
@@ -973,7 +972,6 @@ pw_degeneracy_curator = {
 
 	planet_modifier = {
 		planet_amenities_add = 8
-		pop_ethic_xenophobe_attraction_mult = 0.05
 	}
 
 	triggered_planet_modifier = {

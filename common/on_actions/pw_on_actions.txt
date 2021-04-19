@@ -22,26 +22,26 @@ on_tech_increased = {
 #[UNRELIABLE]
 # A building construction has demolished.
 # This = Planet
-on_building_demolished = {
-	events = {
-		#pw_wonder.1204 #Guardian Angel
-		#pw_wonder.1310 #Mantle Crucible
-		#pw_wonder.1703 #Transplanetary Logistics Network
-		#pw_wonder.1802 #Forbidden City
-	}
-}
+# on_building_demolished = {
+# 	events = {
+# 		pw_wonder.1204 #Guardian Angel
+# 		pw_wonder.1310 #Mantle Crucible
+# 		pw_wonder.1703 #Transplanetary Logistics Network
+# 		pw_wonder.1802 #Forbidden City
+# 	}
+# }
 
 #[UNRELIABLE]
 # A building construction has finished, replacing another building.
 # This = Planet
-on_building_replaced = {
-	events = {
-		#pw_wonder.1204 #Guardian Angel
-		#pw_wonder.1310 #Mantle Crucible
-		#pw_wonder.1703 #Transplanetary Logistics Network
-		#pw_wonder.1802 #Forbidden City
-	}
-}
+# on_building_replaced = {
+# 	events = {
+# 		pw_wonder.1204 #Guardian Angel
+# 		pw_wonder.1310 #Mantle Crucible
+# 		pw_wonder.1703 #Transplanetary Logistics Network
+# 		pw_wonder.1802 #Forbidden City
+# 	}
+# }
 
 # A building construction has been completed, which is an upgrade of previous building.
 # This = Planet
@@ -77,15 +77,16 @@ on_leader_death = {
 # From = War
 on_war_beginning = {
 	events = {
-		pw_wonder.1910
+		pw_wonder.1910 #Festival Plaza
+		pw_wonder.2010 #Martial Avenue
 	}
 }
 
 # A war has ended
 # Root = Loser
 # From = Main Winner
-on_war_ended = {
-	events = {
-		pw_wonder.1920
-	}
-}
+# on_war_ended = {
+# 	events = {
+# 		pw_wonder.1920
+# 	}
+# }

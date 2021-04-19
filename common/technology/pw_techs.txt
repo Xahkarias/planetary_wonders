@@ -1776,7 +1776,7 @@ pw_tech_artistic_dissemination = {
 	potential = {
 		is_gestalt = no
 		any_owned_planet = {
-			has_building = pw_building_pavilion_of_wonders
+			has_active_building = pw_building_pavilion_of_wonders
 		}
 	}
 
@@ -2040,7 +2040,7 @@ pw_tech_artistic_exaltation = {
 		is_gestalt = no
 		is_xenophile = yes
 		any_owned_planet = {
-			has_building = pw_building_fair_of_worlds
+			has_active_building = pw_building_fair_of_worlds
 		}
 	}
 
@@ -2303,7 +2303,7 @@ pw_tech_artistic_defamation = {
 		is_gestalt = no
 		is_xenophobe = yes
 		any_owned_planet = {
-			has_building = pw_building_museum_of_the_grotesque
+			has_active_building = pw_building_museum_of_the_grotesque
 		}
 	}
 
@@ -2825,7 +2825,7 @@ pw_tech_grand_archive_omnidatabase_secrets = {
 
 	modifier = {
 		num_tech_alternatives_add = 1
-		all_technology_research_speed = 0.05
+		intel_decryption_add = 2
 	}
 
 	ai_weight = {
@@ -2835,7 +2835,7 @@ pw_tech_grand_archive_omnidatabase_secrets = {
 
 pw_tech_grand_archive_stellar_secrets = {
 	area = physics
-	category = { computing }
+	category = { field_manipulation }
 	tier = 5
 	cost = @pw_grand_archive_cost
 	prerequisites = {
@@ -2849,7 +2849,7 @@ pw_tech_grand_archive_stellar_secrets = {
 	}
 
 	modifier = {
-		country_sr_dark_matter_produces_mult = 0.15
+		station_gatherers_produces_mult = 0.50
 	}
 
 	ai_weight = {
@@ -3186,7 +3186,7 @@ pw_tech_egalitarian_distribution_services = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3203,7 +3203,7 @@ pw_tech_egalitarian_distribution_services = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3292,7 +3292,7 @@ pw_tech_egalitarian_emergency_services = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3309,7 +3309,7 @@ pw_tech_egalitarian_emergency_services = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3398,7 +3398,7 @@ pw_tech_egalitarian_cultural_development = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3415,7 +3415,7 @@ pw_tech_egalitarian_cultural_development = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3504,7 +3504,7 @@ pw_tech_egalitarian_industrial_development = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3521,7 +3521,7 @@ pw_tech_egalitarian_industrial_development = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_transplanetary_logistics_network
+				has_active_building = pw_building_transplanetary_logistics_network
 			}
 		}
 	}
@@ -3780,7 +3780,7 @@ pw_tech_capital_developments = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -3797,7 +3797,7 @@ pw_tech_capital_developments = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -3867,7 +3867,7 @@ pw_tech_capital_developments_luxury_retreat = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 
@@ -3893,7 +3893,7 @@ pw_tech_capital_developments_luxury_retreat = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 		modifier = {
@@ -3969,7 +3969,7 @@ pw_tech_capital_developments_wardens_directorate = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 
@@ -3995,7 +3995,7 @@ pw_tech_capital_developments_wardens_directorate = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 		modifier = {
@@ -4071,7 +4071,7 @@ pw_tech_capital_developments_overseers_ring = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 
@@ -4097,7 +4097,7 @@ pw_tech_capital_developments_overseers_ring = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 		modifier = {
@@ -4111,8 +4111,8 @@ pw_tech_capital_developments_overseers_ring = {
 
 #Centralized Emergency Developments
 pw_tech_centralized_emergency_developments = {
-	area = society
-	category = { new_worlds }
+	area = engineering
+	category = { industry }
 	tier = 4
 	cost = @tier5cost2
 	prerequisites = {
@@ -4129,15 +4129,15 @@ pw_tech_centralized_emergency_developments = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_new_worlds
+				area = engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = leader_trait_spark_of_genius
 			}
 		}
@@ -4145,7 +4145,7 @@ pw_tech_centralized_emergency_developments = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = leader_trait_curator
 			}
 		}
@@ -4202,7 +4202,7 @@ pw_tech_centralized_emergency_developments = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4212,14 +4212,14 @@ pw_tech_centralized_emergency_developments = {
 		modifier = {
 			factor = 2
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_new_worlds
+				area = engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4227,8 +4227,8 @@ pw_tech_centralized_emergency_developments = {
 
 #Centralized Power Developments
 pw_tech_centralized_power_developments = {
-	area = society
-	category = { statecraft }
+	area = physics
+	category = { computing }
 	tier = 4
 	cost = @tier5cost2
 	prerequisites = {
@@ -4245,15 +4245,15 @@ pw_tech_centralized_power_developments = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+				area = physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
+				area = physics
 				has_trait = leader_trait_spark_of_genius
 			}
 		}
@@ -4261,7 +4261,7 @@ pw_tech_centralized_power_developments = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
+				area = physics
 				has_trait = leader_trait_curator
 			}
 		}
@@ -4318,7 +4318,7 @@ pw_tech_centralized_power_developments = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4328,14 +4328,14 @@ pw_tech_centralized_power_developments = {
 		modifier = {
 			factor = 2
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+				area = physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4405,7 +4405,7 @@ pw_tech_central_council_ambassador_chambers = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4422,7 +4422,7 @@ pw_tech_central_council_ambassador_chambers = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4492,7 +4492,7 @@ pw_tech_central_council_internal_affairs = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4509,7 +4509,7 @@ pw_tech_central_council_internal_affairs = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4517,8 +4517,8 @@ pw_tech_central_council_internal_affairs = {
 
 #Central Council -> Intellectual Circles
 pw_tech_central_council_intellectual_circles = {
-	area = society
-	category = { statecraft }
+	area = physics
+	category = { computing }
 	tier = 4
 	cost = @tier5cost2
 	prerequisites = {
@@ -4536,8 +4536,8 @@ pw_tech_central_council_intellectual_circles = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+				area = physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 
@@ -4569,7 +4569,7 @@ pw_tech_central_council_intellectual_circles = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4579,14 +4579,14 @@ pw_tech_central_council_intellectual_circles = {
 		modifier = {
 			factor = 2
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+				area = physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4661,7 +4661,7 @@ pw_tech_central_council_holy_tribunal = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4678,7 +4678,7 @@ pw_tech_central_council_holy_tribunal = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4743,7 +4743,7 @@ pw_tech_central_council_ballroom = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4760,7 +4760,7 @@ pw_tech_central_council_ballroom = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4769,7 +4769,7 @@ pw_tech_central_council_ballroom = {
 #Central Council -> War Room
 pw_tech_central_council_war_room = {
 	area = society
-	category = { statecraft }
+	category = { military_theory }
 	tier = 4
 	cost = @tier5cost2
 	prerequisites = {
@@ -4788,7 +4788,7 @@ pw_tech_central_council_war_room = {
 			factor = 1.5
 			research_leader = {
 				area = society
-				has_trait = leader_trait_expertise_statecraft
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 
@@ -4835,7 +4835,7 @@ pw_tech_central_council_war_room = {
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -4846,13 +4846,13 @@ pw_tech_central_council_war_room = {
 			factor = 2
 			research_leader = {
 				area = society
-				has_trait = leader_trait_expertise_statecraft
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 		modifier = {
 			factor = 5
 			any_owned_planet = {
-				has_building = pw_building_forbidden_city
+				has_active_building = pw_building_forbidden_city
 			}
 		}
 	}
@@ -5003,7 +5003,7 @@ pw_tech_harvest_festival = {
 		modifier = {
 			factor = 3
 			any_owned_planet = {
-				has_building = pw_building_festival_plaza
+				has_active_building = pw_building_festival_plaza
 			}
 		}
 
@@ -5069,7 +5069,7 @@ pw_tech_commemorate_perfection = {
 		modifier = {
 			factor = 3
 			any_owned_planet = {
-				has_building = pw_building_festival_plaza
+				has_active_building = pw_building_festival_plaza
 			}
 		}
 
@@ -5144,7 +5144,7 @@ pw_tech_peace_manipulation = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_festival_plaza
+				has_active_building = pw_building_festival_plaza
 			}
 		}
 
@@ -5246,7 +5246,7 @@ pw_tech_brace_against_the_storm = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_festival_plaza
+				has_active_building = pw_building_festival_plaza
 			}
 		}
 	}
@@ -5427,7 +5427,7 @@ pw_tech_flight_of_the_corvettes = {
 		modifier = {
 			factor = 3
 			any_owned_planet = {
-				has_building = pw_building_martial_avenue
+				has_active_building = pw_building_martial_avenue
 			}
 		}
 
@@ -5493,7 +5493,7 @@ pw_tech_national_march = {
 		modifier = {
 			factor = 3
 			any_owned_planet = {
-				has_building = pw_building_martial_avenue
+				has_active_building = pw_building_martial_avenue
 			}
 		}
 
@@ -5559,7 +5559,7 @@ pw_tech_combat_demonstrations = {
 		modifier = {
 			factor = 3
 			any_owned_planet = {
-				has_building = pw_building_martial_avenue
+				has_active_building = pw_building_martial_avenue
 			}
 		}
 
@@ -5625,7 +5625,7 @@ pw_tech_merchants_of_war = {
 		modifier = {
 			factor = 3
 			any_owned_planet = {
-				has_building = pw_building_martial_avenue
+				has_active_building = pw_building_martial_avenue
 			}
 		}
 
@@ -5715,7 +5715,7 @@ pw_tech_vision_beyond_war = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_martial_avenue
+				has_active_building = pw_building_martial_avenue
 			}
 		}
 
@@ -5817,7 +5817,7 @@ pw_tech_into_the_storm = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				has_building = pw_building_martial_avenue
+				has_active_building = pw_building_martial_avenue
 			}
 		}
 	}

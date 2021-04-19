@@ -19,7 +19,7 @@ country_event = {
 		set_country_flag = pw_is_in_grand_archive
 		random_owned_planet = {
 			limit = {
-				has_building = pw_building_grand_archive
+				has_active_building = pw_building_grand_archive
 			}
 			save_event_target_as = pw_grand_archive_planet
 		}
@@ -247,7 +247,7 @@ country_event = {
 			#Seed Bank
 			any_owned_planet = {
 				NOT = {
-					has_building = pw_building_grand_archive
+					has_active_building = pw_building_grand_archive
 				}
 				is_capital = no
 			}
@@ -313,7 +313,7 @@ country_event = {
 			random_owned_planet = {
 				limit = {
 					NOT = {
-						has_building = pw_building_grand_archive
+						has_active_building = pw_building_grand_archive
 					}
 					is_capital = no
 				}
@@ -395,7 +395,7 @@ country_event = {
 				#Seed Bank
 				any_owned_planet = {
 					NOT = {
-						has_building = pw_building_grand_archive
+						has_active_building = pw_building_grand_archive
 					}
 					is_capital = no
 				}
@@ -2430,15 +2430,15 @@ country_event = {
 		trigger = { #Has all three!
 			#Space Elevator
 			any_owned_planet = {
-				has_building = pw_building_space_elevator
+				has_active_building = pw_building_space_elevator
 			}
 			#Astronomical Model Bureau
 			any_owned_planet = {
-				has_building = pw_building_galactic_model
+				has_active_building = pw_building_galactic_model
 			}
 			#Guardian Angel
 			any_owned_planet = {
-				has_building = pw_building_guardian_angel
+				has_active_building = pw_building_guardian_angel
 			}
 		}
 
@@ -2452,7 +2452,7 @@ country_event = {
 			#Space Elevator
 			random_owned_planet = {
 				limit = {
-					has_building = pw_building_space_elevator
+					has_active_building = pw_building_space_elevator
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_SPACE_ELEVATOR
@@ -2463,7 +2463,7 @@ country_event = {
 			#Astronomical Model Bureau
 			random_owned_planet = {
 				limit = {
-					has_building = pw_building_galactic_model
+					has_active_building = pw_building_galactic_model
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_GALACTIC_MODEL
@@ -2474,7 +2474,7 @@ country_event = {
 			#Guardian Angel
 			random_owned_planet = {
 				limit = {
-					has_building = pw_building_guardian_angel
+					has_active_building = pw_building_guardian_angel
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_GUARDIAN_ANGEL
@@ -2492,15 +2492,15 @@ country_event = {
 			NAND = {#Reverse of the above
 				#Space Elevator
 				any_owned_planet = {
-					has_building = pw_building_space_elevator
+					has_active_building = pw_building_space_elevator
 				}
 				#Astronomical Model Bureau
 				any_owned_planet = {
-					has_building = pw_building_galactic_model
+					has_active_building = pw_building_galactic_model
 				}
 				#Guardian Angel
 				any_owned_planet = {
-					has_building = pw_building_guardian_angel
+					has_active_building = pw_building_guardian_angel
 				}
 			}
 		}

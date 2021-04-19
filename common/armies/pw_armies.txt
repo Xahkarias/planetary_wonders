@@ -58,7 +58,7 @@ pw_army_war_titan = {
 		custom_tooltip = {
 			text = pw_army_war_titan_limit
 			planet = {
-				has_building = pw_building_titan_forge
+				has_active_building = pw_building_titan_forge
 			}
 		}
 	}
@@ -129,24 +129,17 @@ pw_assault_acolyte = {
 	war_exhaustion = 0.75
 	time = 60
 	icon_frame = 9
+	prerequisites = { "tech_assault_armies" }
+	show_tech_unlock_if = { always = no }
 
 	resources = {
 		category = armies
 		cost = {
-			minerals = 100
-			unity = 100
+			minerals = 75
+			#unity = 100
 		}
 		upkeep = {
 			energy = 0.5
-		}
-	}
-
-	allow = {
-		any_owned_pop = {
-			OR = {
-				pop_has_ethic = ethic_spiritualist
-				pop_has_ethic = ethic_fanatic_spiritualist
-			}
 		}
 	}
 
@@ -154,13 +147,6 @@ pw_assault_acolyte = {
 		has_modifier = pw_holy_reliquary_supremacy_call_to_arms
 		owner = {
 			is_spiritualist = yes
-			any_owned_pop = {
-				OR = {
-					pop_has_ethic = ethic_spiritualist
-					pop_has_ethic = ethic_fanatic_spiritualist
-				}
-				is_same_species = from
-			}
 		}
 		from = {
 			NOR = {

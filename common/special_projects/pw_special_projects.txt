@@ -221,7 +221,7 @@ special_project = {
 				}
 				ship_event = { id = pw_anomaly.131 }
 			}
-			10 = { #Success
+			0 = { #Success (UNUSED!)
 				modifier = {
 					factor = 2
 					leader = {

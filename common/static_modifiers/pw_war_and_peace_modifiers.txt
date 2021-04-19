@@ -2,6 +2,7 @@
 
 #Festivities of Plenitude
 pw_mod_FP_festivities_of_plenitude = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_festivities_of_plenitude.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.05
 	planet_stability_add = 5
@@ -10,6 +11,7 @@ pw_mod_FP_festivities_of_plenitude = {
 
 #Fertility Bacchanal
 pw_mod_FP_fertility_bacchanal = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_fertility_bacchanal.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.05
 	planet_stability_add = 5
@@ -18,6 +20,7 @@ pw_mod_FP_fertility_bacchanal = {
 
 #Cultivate Peace
 pw_mod_FP_cultivate_peace = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_cultivate_peace.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.05
 	planet_stability_add = 5
@@ -26,6 +29,7 @@ pw_mod_FP_cultivate_peace = {
 
 #Harvest Festival
 pw_mod_FP_harvest_festival = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_harvest_festival.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.10
 	planet_stability_add = 5
@@ -34,6 +38,7 @@ pw_mod_FP_harvest_festival = {
 
 #Commemorate Perfection
 pw_mod_FP_commemorate_perfection = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_commemorate_perfection.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.10
 	planet_stability_add = 5
@@ -45,36 +50,43 @@ pw_mod_FP_commemorate_perfection = {
 #Festival Plaza: Peace Stability (Country Scope)
 
 pw_mod_FP_peace_stability_1 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_1.dds"
 	pop_happiness = 0.05
 }
 
 pw_mod_FP_peace_stability_2 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_2.dds"
 	pop_happiness = 0.10
 }
 
 pw_mod_FP_peace_stability_3 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_3.dds"
 	pop_happiness = 0.15
 	country_unity_produces_mult = 0.05
 }
 
 pw_mod_FP_peace_stability_4 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_4.dds"
 	pop_happiness = 0.20
 	country_unity_produces_mult = 0.10
 }
 
 pw_mod_FP_peace_stability_5 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_5.dds"
 	pop_happiness = 0.25
 	country_unity_produces_mult = 0.15
 	country_influence_produces_add = 0.2
 }
 
 pw_mod_FP_peace_stability_6 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_6.dds"
 	pop_happiness = 0.30
 	country_unity_produces_mult = 0.20
 	country_influence_produces_add = 0.4
 }
 
 pw_mod_FP_peace_stability_7 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_7.dds"
 	pop_happiness = 0.35
 	country_unity_produces_mult = 0.25
 	country_influence_produces_add = 0.6
@@ -82,6 +94,7 @@ pw_mod_FP_peace_stability_7 = {
 }
 
 pw_mod_FP_peace_stability_8 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_8.dds"
 	pop_happiness = 0.40
 	country_unity_produces_mult = 0.30
 	country_influence_produces_add = 0.8
@@ -89,6 +102,7 @@ pw_mod_FP_peace_stability_8 = {
 }
 
 pw_mod_FP_peace_stability_9 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_9.dds"
 	pop_happiness = 0.45
 	country_unity_produces_mult = 0.40
 	country_influence_produces_add = 1.2
@@ -97,6 +111,7 @@ pw_mod_FP_peace_stability_9 = {
 }
 
 pw_mod_FP_peace_stability_10 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_FP_peace_stability_10.dds"
 	pop_happiness = 0.50
 	country_unity_produces_mult = 0.45
 	country_influence_produces_add = 1.5
@@ -107,6 +122,7 @@ pw_mod_FP_peace_stability_10 = {
 
 #Black letters modifiers (planet scope):
 pw_mod_FP_black_letters_peace = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_commemorate_perfection.dds"
 	icon_frame = @pw_icon_frame_green
 	custom_tooltip = pw_FP_increases_peace_stability
 	planet_jobs_unity_produces_mult = 0.5
@@ -115,6 +131,7 @@ pw_mod_FP_black_letters_peace = {
 }
 
 pw_mod_FP_black_letters_war = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_national_march.dds"
 	icon_frame = @pw_icon_frame_green
 	custom_tooltip = pw_FP_decreases_peace_stability
 	planet_jobs_unity_produces_mult = 0.10
@@ -126,6 +143,7 @@ pw_mod_FP_black_letters_war = {
 
 #Military Parade (not at war)
 pw_mod_MA_military_parade = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_military_parade.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.10
 	planet_stability_add = 5
@@ -134,6 +152,7 @@ pw_mod_MA_military_parade = {
 
 #Do your own part (at war)
 pw_mod_MA_do_your_own_part = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_do_your_own_part.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_army_build_speed_mult = 0.50
 	armies_cost_mult = -0.25
@@ -142,6 +161,7 @@ pw_mod_MA_do_your_own_part = {
 
 #Enemies at the gate (at war)
 pw_mod_MA_enemies_at_the_gate = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_enemies_at_the_gate.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_orbital_bombardment_damage = -0.05
 	pop_defense_armies_add = 4
@@ -150,6 +170,7 @@ pw_mod_MA_enemies_at_the_gate = {
 
 #Flight of the Corvettes (not at war, Naval Contractors and Distinguished Admiralty)
 pw_mod_MA_flight_of_the_corvettes = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_flight_of_the_corvettes.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.15
 	planet_stability_add = 5
@@ -158,6 +179,7 @@ pw_mod_MA_flight_of_the_corvettes = {
 
 #National March (not at war, Nationalistic Zeal)
 pw_mod_MA_national_march = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_national_march.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.10
 	planet_stability_add = 10
@@ -166,6 +188,7 @@ pw_mod_MA_national_march = {
 
 #Combat Demonstrations (not at war, Warrior Culture)
 pw_mod_MA_combat_demonstrations = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_combat_demonstrations.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_amenities_add = 20
 	planet_jobs_unity_produces_mult = 0.25
@@ -174,6 +197,7 @@ pw_mod_MA_combat_demonstrations = {
 
 #Merchants of War (not at war, Private Military Companies)
 pw_mod_MA_merchants_of_war = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_merchants_of_war.dds"
 	icon_frame = @pw_icon_frame_green
 	trade_value_add = 10
 	planet_jobs_alloys_produces_mult = 0.10
@@ -184,24 +208,29 @@ pw_mod_MA_merchants_of_war = {
 #Martial Avenue: War Drive (Country Scope)
 
 pw_mod_MA_war_drive_1 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_1.dds"
 	country_naval_cap_add = 5
 }
 
 pw_mod_MA_war_drive_2 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_2.dds"
 	country_naval_cap_add = 10
 }
 
 pw_mod_MA_war_drive_3 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_3.dds"
 	country_naval_cap_add = 15
 	country_influence_produces_mult = 0.05
 }
 
 pw_mod_MA_war_drive_4 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_4.dds"
 	country_naval_cap_add = 20
 	country_influence_produces_mult = 0.10
 }
 
 pw_mod_MA_war_drive_5 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_5.dds"
 	country_naval_cap_add = 25
 	country_influence_produces_mult = 0.15
 	country_alloys_produces_mult = 0.05
@@ -209,6 +238,7 @@ pw_mod_MA_war_drive_5 = {
 }
 
 pw_mod_MA_war_drive_6 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_6.dds"
 	country_naval_cap_add = 30
 	country_influence_produces_mult = 0.20
 	country_alloys_produces_mult = 0.05
@@ -217,6 +247,7 @@ pw_mod_MA_war_drive_6 = {
 }
 
 pw_mod_MA_war_drive_7 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_7.dds"
 	country_naval_cap_add = 35
 	country_influence_produces_mult = 0.25
 	country_alloys_produces_mult = 0.10
@@ -225,6 +256,7 @@ pw_mod_MA_war_drive_7 = {
 }
 
 pw_mod_MA_war_drive_8 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_8.dds"
 	country_naval_cap_add = 40
 	country_influence_produces_mult = 0.30
 	country_alloys_produces_mult = 0.10
@@ -233,6 +265,7 @@ pw_mod_MA_war_drive_8 = {
 }
 
 pw_mod_MA_war_drive_9 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_9.dds"
 	country_naval_cap_add = 45
 	country_influence_produces_mult = 0.40
 	country_alloys_produces_mult = 0.15
@@ -242,6 +275,7 @@ pw_mod_MA_war_drive_9 = {
 }
 
 pw_mod_MA_war_drive_10 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_drive_10.dds"
 	country_naval_cap_add = 50
 	country_influence_produces_mult = 0.50
 	country_alloys_produces_mult = 0.15
@@ -254,28 +288,33 @@ pw_mod_MA_war_drive_10 = {
 #Martial Avenue: War Lust (Country Scope)
 
 pw_mod_MA_war_lust_1 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_1.dds"
 	country_naval_cap_add = 5
 	country_war_exhaustion_mult = -0.05
 }
 
 pw_mod_MA_war_lust_2 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_2.dds"
 	country_naval_cap_add = 10
 	country_war_exhaustion_mult = -0.10
 }
 
 pw_mod_MA_war_lust_3 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_3.dds"
 	country_naval_cap_add = 15
 	country_war_exhaustion_mult = -0.15
 	ship_speed_mult = 0.05
 }
 
 pw_mod_MA_war_lust_4 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_4.dds"
 	country_naval_cap_add = 20
 	country_war_exhaustion_mult = -0.20
 	ship_speed_mult = 0.05
 }
 
 pw_mod_MA_war_lust_5 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_5.dds"
 	country_naval_cap_add = 25
 	country_war_exhaustion_mult = -0.25
 	ship_speed_mult = 0.10
@@ -283,6 +322,7 @@ pw_mod_MA_war_lust_5 = {
 }
 
 pw_mod_MA_war_lust_6 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_6.dds"
 	country_naval_cap_add = 30
 	country_war_exhaustion_mult = -0.30
 	ship_speed_mult = 0.10
@@ -290,6 +330,7 @@ pw_mod_MA_war_lust_6 = {
 }
 
 pw_mod_MA_war_lust_7 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_7.dds"
 	country_naval_cap_add = 35
 	country_war_exhaustion_mult = -0.35
 	ship_speed_mult = 0.20
@@ -298,6 +339,7 @@ pw_mod_MA_war_lust_7 = {
 }
 
 pw_mod_MA_war_lust_8 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_8.dds"
 	country_naval_cap_add = 40
 	country_war_exhaustion_mult = -0.40
 	ship_speed_mult = 0.20
@@ -306,6 +348,7 @@ pw_mod_MA_war_lust_8 = {
 }
 
 pw_mod_MA_war_lust_9 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_9.dds"
 	country_naval_cap_add = 45
 	country_war_exhaustion_mult = -0.45
 	ship_speed_mult = 0.30
@@ -315,6 +358,7 @@ pw_mod_MA_war_lust_9 = {
 }
 
 pw_mod_MA_war_lust_10 = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_MA_war_lust_10.dds"
 	country_naval_cap_add = 50
 	country_war_exhaustion_mult = -0.50
 	ship_speed_mult = 0.30
@@ -326,6 +370,7 @@ pw_mod_MA_war_lust_10 = {
 
 #Black letters modifiers (planet scope):
 pw_mod_MA_black_letters_peace = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_commemorate_perfection.dds"
 	icon_frame = @pw_icon_frame_green
 	custom_tooltip = pw_MA_decreases_war_drive
 	planet_jobs_unity_produces_mult = 0.5
@@ -334,6 +379,7 @@ pw_mod_MA_black_letters_peace = {
 }
 
 pw_mod_MA_black_letters_war = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_national_march.dds"
 	icon_frame = @pw_icon_frame_green
 	custom_tooltip = pw_MA_increases_war_drive
 	planet_jobs_unity_produces_mult = 0.05

@@ -53,7 +53,6 @@
     # Enigma Engines Event mods:
     pw_mod_enigma_engine_energy: "Enigmatic Taste"
     pw_mod_enigma_engine_energy_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of taste, that makes them consume more power."
-    planet_pops_robotics_energy_upkeep_mult: "Robotic Pop Energy Upkeep"
     pw_mod_enigma_engine_housing: "Enigmatic Privacy"
     pw_mod_enigma_engine_housing_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of privacy, which increases the need for housing."
     pw_mod_enigma_engine_art: "Enigmatic Art"

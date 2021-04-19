@@ -507,7 +507,7 @@ ship_event = {
 	}
 }
 
-#Frozen War Titan -> Salvage success.
+#Frozen War Titan -> Salvage success. (UNUSED!)
 ship_event = {
 	id = pw_anomaly.132
 	title = pw_anomaly.132.name
@@ -523,35 +523,39 @@ ship_event = {
 		create_fleet = {
 			name = pw_army_salvaged_war_titan_name
 			effect = {
-				set_owner = owner
+				set_owner = ROOT.owner
 				create_army_transport = {
 					ship_name = random
-					species = owner_main_species
+					species = ROOT.owner.owner_species
 					army_type = "pw_army_salvaged_war_titan"
 				}
 			}
 		}
 	}
 
-	#Test option 2
-	option = {
-		name = pw_anomaly.132.a
-		create_army_transport = {
-			species = owner_main_species
-			army_type = "pw_army_salvaged_war_titan"
-			effect = {
-				set_owner = PREV.owner
-			}
-		}
-	}
+	# #Test option 2
+	# option = {
+	# 	name = pw_anomaly.132.a
+	# 	FROM = {
+	# 		create_army_transport = {
+	# 			species = owner_main_species
+	# 			army_type = "pw_army_salvaged_war_titan"
+	# 			effect = {
+	# 				set_owner = ROOT.owner
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	#Test Option 3
-	option = {
-		name = pw_anomaly.132.a
-		create_army = {
-			owner = THIS.owner
-			type = pw_army_salvaged_war_titan
-			species = owner_main_species
-		}
-	}
+	# #Test Option 3
+	# option = {
+	# 	name = pw_anomaly.132.a
+	# 	FROM = {
+	# 		create_army = {
+	# 			owner = PREV.owner
+	# 			type = pw_army_salvaged_war_titan
+	# 			species = owner_main_species
+	# 		}
+	# 	}
+	# }
 }

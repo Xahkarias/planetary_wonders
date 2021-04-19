@@ -447,7 +447,6 @@ country_event = {
 	title = pw_holy_reliquary.105.name
 	desc = pw_holy_reliquary.105.desc
 	picture = GFX_evt_pw_stargazing_mirror
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Introspective Gaze
@@ -745,7 +744,6 @@ country_event = {
 	title = pw_holy_reliquary.205.name
 	desc = pw_holy_reliquary.205.desc
 	picture = GFX_evt_pw_scepter_of_the_solar_regent
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Way of the Solar-Regent
@@ -966,7 +964,6 @@ country_event = {
 	title = pw_holy_reliquary.305.name
 	desc = pw_holy_reliquary.305.desc
 	picture = GFX_evt_pw_coin_of_fortune
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Flip the coin
@@ -1833,18 +1830,20 @@ country_event = {
 		add_modifier = {
 			modifier = pw_holy_reliquary_harmony_scale_of_balance
 		}
-		random_list = {
-			1 = {
-				country_event = { id = pw_holy_reliquary.410 }
-			}
-			1 = {
-				country_event = { id = pw_holy_reliquary.411 }
-			}
-			1 = {
-				country_event = { id = pw_holy_reliquary.412 }
-			}
-			1 = {
-				country_event = { id = pw_holy_reliquary.413 }
+		hidden_effect = {
+			random_list = {
+				1 = {
+					country_event = { id = pw_holy_reliquary.410 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.411 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.412 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.413 }
+				}
 			}
 		}
 	}
@@ -1856,7 +1855,6 @@ country_event = {
 	title = pw_holy_reliquary.405.name
 	desc = pw_holy_reliquary.405.desc
 	picture = GFX_evt_pw_scale_of_balance
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Tip the balance
@@ -1871,18 +1869,20 @@ country_event = {
 		add_resource = {
 			influence = -50
 		}
-		random_list = {
-			1 = {
-				country_event = { id = pw_holy_reliquary.410 }
-			}
-			1 = {
-				country_event = { id = pw_holy_reliquary.411 }
-			}
-			1 = {
-				country_event = { id = pw_holy_reliquary.412 }
-			}
-			1 = {
-				country_event = { id = pw_holy_reliquary.413 }
+		hidden_effect = {
+			random_list = {
+				1 = {
+					country_event = { id = pw_holy_reliquary.410 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.411 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.412 }
+				}
+				1 = {
+					country_event = { id = pw_holy_reliquary.413 }
+				}
 			}
 		}
 	}
@@ -2128,7 +2128,6 @@ country_event = {
 	title = pw_holy_reliquary.505.name
 	desc = pw_holy_reliquary.505.desc
 	picture = GFX_evt_pw_defender_of_the_faith
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Holy Might
@@ -2246,10 +2245,6 @@ country_event = {
 	picture = GFX_evt_pw_defender_of_the_faith
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
-
-	immediate = {
-		set_country_flag = pw_holy_reliquary_religious_persecution_available
-	}
 
 	option = {
 		name = pw_holy_reliquary.520.a
@@ -2399,7 +2394,6 @@ country_event = {
 	title = pw_holy_reliquary.605.name
 	desc = pw_holy_reliquary.605.desc
 	picture = GFX_evt_pw_signet_ring
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Population
@@ -2691,43 +2685,53 @@ country_event = {
 					}
 				}
 				save_event_target_as = pw_holy_reliquary_diplomacy_country
-				if = {
-					limit = {
+			}
+			if = {
+				limit = {
+					event_target:pw_holy_reliquary_diplomacy_country = {
 						is_spiritualist = yes
 						is_fallen_empire = no
 					}
-					country_event = { id = pw_holy_reliquary.611 }
 				}
-				else_if = {
-					limit = {
+				country_event = { id = pw_holy_reliquary.611 }
+			}
+			else_if = {
+				limit = {
+					event_target:pw_holy_reliquary_diplomacy_country = {
 						is_fallen_empire_spiritualist = yes
 					}
-					country_event = { id = pw_holy_reliquary.612 }
 				}
-				else_if = {
-					limit = {
+				country_event = { id = pw_holy_reliquary.612 }
+			}
+			else_if = {
+				limit = {
+					event_target:pw_holy_reliquary_diplomacy_country = {
 						is_spiritualist = no
 						is_materialist = no
 						is_fallen_empire = no
 					}
-					country_event = { id = pw_holy_reliquary.613 }
 				}
-				else_if = {
-					limit = {
+				country_event = { id = pw_holy_reliquary.613 }
+			}
+			else_if = {
+				limit = {
+					event_target:pw_holy_reliquary_diplomacy_country = {
 						is_materialist = yes
 						is_fallen_empire = no
 					}
-					country_event = { id = pw_holy_reliquary.614 }
 				}
-				else_if = {
-					limit = {
+				country_event = { id = pw_holy_reliquary.614 }
+			}
+			else_if = {
+				limit = {
+					event_target:pw_holy_reliquary_diplomacy_country = {
 						is_fallen_empire_materialist = yes
 					}
-					country_event = { id = pw_holy_reliquary.615 }
 				}
-				else = {
-					country_event = { id = pw_holy_reliquary.616 }
-				}
+				country_event = { id = pw_holy_reliquary.615 }
+			}
+			else = {
+				country_event = { id = pw_holy_reliquary.616 }
 			}
 		}
 		else = {
@@ -3001,8 +3005,8 @@ country_event = {
 					NOT = { is_at_war_with = root }
 				}
 				save_event_target_as = pw_holy_reliquary_diplomacy_country
-				country_event = { id = pw_holy_reliquary.621 }
 			}
+			country_event = { id = pw_holy_reliquary.621 }
 		}
 		else = {
 			country_event = { id = pw_holy_reliquary.622 }
@@ -3237,7 +3241,6 @@ country_event = {
 	title = pw_holy_reliquary.705.name
 	desc = pw_holy_reliquary.705.desc
 	picture = GFX_evt_pw_codex_of_the_ages
-	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
 
 	#Codex of Past Ages
@@ -3812,7 +3815,7 @@ country_event = {
 			value > 2
 		}
 		any_owned_planet = {
-			has_building = pw_building_holy_reliquary
+			has_active_building = pw_building_holy_reliquary
 		}
 	}
 
@@ -3820,7 +3823,7 @@ country_event = {
 		#Get the planet with Holy Reliquary
 		random_owned_planet = {
 			limit = {
-				has_building = pw_building_holy_reliquary
+				has_active_building = pw_building_holy_reliquary
 			}
 			save_event_target_as = pw_holy_reliquary_planet
 		}
@@ -3894,7 +3897,7 @@ country_event = {
 			value > 2
 		}
 		any_owned_planet = {
-			has_building = pw_building_holy_reliquary
+			has_active_building = pw_building_holy_reliquary
 		}
 		any_owned_leader = {
 			NOR = {
@@ -3909,7 +3912,7 @@ country_event = {
 		#Get the planet with Holy Reliquary
 		random_owned_planet = {
 			limit = {
-				has_building = pw_building_holy_reliquary
+				has_active_building = pw_building_holy_reliquary
 			}
 			save_event_target_as = pw_holy_reliquary_planet
 		}
@@ -3991,7 +3994,7 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = pw_holy_reliquary_death_event }
 		any_owned_planet = {
-			has_building = pw_building_holy_reliquary
+			has_active_building = pw_building_holy_reliquary
 		}
 		FROM = {
 			NOR = {
@@ -4005,7 +4008,7 @@ country_event = {
 			value > 2
 		}
 		any_owned_planet = {
-			has_building = pw_building_holy_reliquary
+			has_active_building = pw_building_holy_reliquary
 		}
 	}
 
@@ -4013,7 +4016,7 @@ country_event = {
 		#Get the planet with Holy Reliquary
 		random_owned_planet = {
 			limit = {
-				has_building = pw_building_holy_reliquary
+				has_active_building = pw_building_holy_reliquary
 			}
 			save_event_target_as = pw_holy_reliquary_planet
 		}

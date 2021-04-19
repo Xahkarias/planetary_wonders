@@ -101,7 +101,7 @@
 
     #Sanctify:
     pw_holy_reliquary.300.name: "The $pw_holy_reliquary.coin_of_fortune$"
-    pw_holy_reliquary.300.desc: "It is among or population beliefs that fortune and faith walk side by side, that there is a force of equilibrium in the universe that attempts to balance good and bad deeds as well as good and bad fortunes. The legend of the $pw_holy_reliquary.coin_of_fortune$ seem to rely heavily on that principle, it tells of many powerful individuals that possessed the coin throughout history. Not that they had it because they were powerful, but rather that they were powerful because they carried the Coin. Some tales also describe how misfortune followed those who bear it, specially how the it was constantly robbed to disappear and only resurface years later.\n\nThe Coin itself is an old and shining piece of gold, of ancient and mysterious making. The markings on both sides bear resemblance with a long dead alphabet and translation will require study.\n\nShall the fortune favor the bold who houses such artifact in the $pw_holy_reliquary$?"
+    pw_holy_reliquary.300.desc: "It is among or population beliefs that fortune and faith walk side by side, that there is a force of equilibrium in the universe that attempts to balance good and bad deeds as well as good and bad fortunes. The legend of the $pw_holy_reliquary.coin_of_fortune$ seem to rely heavily on that principle, it tells of many powerful individuals that possessed the coin throughout history. Not that they had it because they were powerful, but rather that they were powerful because they carried the Coin. Some tales also describe how misfortune followed those who bear it, specially how it was constantly robbed to disappear and only resurface years later.\n\nThe Coin itself is an old and shining piece of gold, of ancient and mysterious making. The markings on both sides bear resemblance with a long dead alphabet and translation will require study.\n\nShall the fortune favor the bold who houses such artifact in the $pw_holy_reliquary$?"
     pw_holy_reliquary.300.a: "Sanctify the $pw_holy_reliquary.coin_of_fortune$"
 
     #Just Sanctified:
@@ -114,7 +114,7 @@
 
     #Access Chamber:
     pw_holy_reliquary.305.name: "Alea Jacta Est"
-    pw_holy_reliquary.305.desc: "The legend of the $pw_holy_reliquary.coin_of_fortune$ draws heavily from the belief that fortune and faith walk side by side, that there is a force of equilibrium in the universe that attempts to balance good and bad deeds as well as good and bad fortunes. It is believed that luck, for better of for worst, falls upon those who activate the Coin by simply flipping it; having faith in fortune is said to help with the outcome.\n\nThe Coin itself is an old and shining piece of gold, of ancient and mysterious making. The markings on both sides bear resemblance with a long dead alphabet and have been partially translated, they read \"Empress\" in one side and \"World\" on the other.\n\nThe chamber is open for the public and invites any who whish to test their fate to activate the Coin. If we are feeling lucky, we may flip it ourselves, on behalf of the country."
+    pw_holy_reliquary.305.desc: "The legend of the $pw_holy_reliquary.coin_of_fortune$ draws heavily from the belief that fortune and faith walk side by side, that there is a force of equilibrium in the universe that attempts to balance good and bad deeds as well as good and bad fortunes. It is believed that luck, for better or for worse, falls upon those who activate the Coin by simply flipping it; having faith in fortune is said to help with the outcome.\n\nThe Coin itself is an old and shining piece of gold, of ancient and mysterious making. The markings on both sides bear resemblance with a long dead alphabet and have been partially translated, they read \"Empress\" in one side and \"World\" on the other.\n\nThe chamber is open for the public and invites any who whish to test their fate to activate the Coin. If we are feeling lucky, we may flip it ourselves, on behalf of the country."
     pw_holy_reliquary.305.a: "Flip the $pw_holy_reliquary.coin_of_fortune$."
 
     #Luck events (good luck -> 330):
@@ -379,7 +379,7 @@
     pw_holy_reliquary.1000.a: "Use the Original Tradition Philosophy."
     pw_holy_reliquary.1000.a.tooltip: "With this option, in order to sanctify an artifact we must finish the respective tradition tree first."
     pw_holy_reliquary.1000.b: "Use the Alternate Tradition Philosophy."
-    pw_holy_reliquary.1000.b.tooltip: "With this option, we may sanctify as much artifacts as traditions trees we have finished, regardless of which tree were completed.\n§YRecommended option if you are using mods that change, add or remove traditions.§!"
+    pw_holy_reliquary.1000.b.tooltip: "With this option, we may sanctify as much artifacts as Ascension Perks we have activated, regardless of which tradition trees were completed.\n§YRecommended option if you are using mods that change, add or remove traditions.§!"
     pw_holy_reliquary.1000.tooltip: "This option is already selected."
 
     #General Random Events:

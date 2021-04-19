@@ -1,6 +1,6 @@
 pw_building_enigma_engine = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 85
 	base_cap_amount = 1
 	can_be_ruined = no
 

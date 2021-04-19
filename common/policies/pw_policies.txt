@@ -1,7 +1,7 @@
 pw_policy_expansion = {
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_galactic_model
+			has_active_building = pw_building_galactic_model
 		}
 	}
 

@@ -15,7 +15,7 @@
 @pw_building_buildtime = 1800 #5 years
 
 #Resource Production
-@pw_stability_production = 3
+@pw_stability_production = 2
 #@pw_influence_production = 0.1
 
 #Regular Jobs:

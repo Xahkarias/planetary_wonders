@@ -1,6 +1,6 @@
 pw_building_space_elevator = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 50
 	base_cap_amount = 1
 	can_be_ruined = no
 
@@ -180,39 +180,39 @@ pw_building_space_elevator = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_space_elevator }
+			NOT = { has_active_building = pw_building_space_elevator }
 			NOT = { has_building_construction = pw_building_space_elevator }
 		}
 		modifier = {
 			factor = 2
-			has_building = building_commercial_zone
+			has_active_building = building_commercial_zone
 		}
 		modifier = {
 			factor = 2.5
-			has_building = building_commercial_megaplex
+			has_active_building = building_commercial_megaplex
 		}
 		modifier = {
 			factor = 1.25
 			OR = {
-				has_building = building_holo_theatres
-				has_building = building_temple
-				has_building = building_temple_of_prosperity
-				has_building = building_sacrificial_temple_1
+				has_active_building = building_holo_theatres
+				has_active_building = building_temple
+				has_active_building = building_temple_of_prosperity
+				has_active_building = building_sacrificial_temple_1
 			}
 		}
 		modifier = {
 			factor = 1.75
 			OR = {
-				has_building = building_hyper_entertainment_forum
-				has_building = building_holotemple
-				has_building = building_sacrificial_temple_2
+				has_active_building = building_hyper_entertainment_forum
+				has_active_building = building_holotemple
+				has_active_building = building_sacrificial_temple_2
 			}
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_sacred_nexus
-				has_building = building_sacrificial_temple_3
+				has_active_building = building_sacred_nexus
+				has_active_building = building_sacrificial_temple_3
 			}
 		}
 		modifier = {
@@ -239,7 +239,7 @@ pw_building_space_elevator = {
 
 pw_building_galactic_model = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 
@@ -419,7 +419,7 @@ pw_building_galactic_model = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_galactic_model }
+			NOT = { has_active_building = pw_building_galactic_model }
 			NOT = { has_building_construction = pw_building_galactic_model }
 		}
 		modifier = {
@@ -444,11 +444,11 @@ pw_building_galactic_model = {
 		}
 		modifier = {
 			factor = 1.5
-			has_building = building_bureaucratic_1
+			has_active_building = building_bureaucratic_1
 		}
 		modifier = {
 			factor = 2
-			has_building = building_bureaucratic_2
+			has_active_building = building_bureaucratic_2
 		}
 		modifier = {
 			factor = 0.75
@@ -463,7 +463,7 @@ pw_building_galactic_model = {
 
 pw_building_panopticon = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 
@@ -508,7 +508,7 @@ pw_building_panopticon = {
 
 	country_modifier = {
 		planet_crime_mult = -0.2
-		# intel_encryption_add = 2
+		intel_encryption_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -656,7 +656,7 @@ pw_building_panopticon = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_panopticon }
+			NOT = { has_active_building = pw_building_panopticon }
 			NOT = { has_building_construction = pw_building_panopticon }
 		}
 		modifier = {
@@ -715,7 +715,7 @@ pw_building_panopticon = {
 
 pw_building_guardian_angel = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 150
 	planetary_ftl_inhibitor = yes
 	base_cap_amount = 1
 
@@ -935,7 +935,7 @@ pw_building_guardian_angel = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_guardian_angel }
+			NOT = { has_active_building = pw_building_guardian_angel }
 			NOT = { has_building_construction = pw_building_guardian_angel }
 		}
 		modifier = {
@@ -974,7 +974,7 @@ pw_building_guardian_angel = {
 
 pw_building_transplanetary_logistics_network = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = amenity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -1180,7 +1180,7 @@ pw_building_transplanetary_logistics_network = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_transplanetary_logistics_network }
+			NOT = { has_active_building = pw_building_transplanetary_logistics_network }
 			NOT = { has_building_construction = pw_building_transplanetary_logistics_network }
 		}
 		modifier = {
@@ -1193,7 +1193,7 @@ pw_building_transplanetary_logistics_network = {
 
 pw_building_transhabitat_logistics_network = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = amenity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -1407,7 +1407,7 @@ pw_building_transhabitat_logistics_network = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_transplanetary_logistics_network }
+			NOT = { has_active_building = pw_building_transplanetary_logistics_network }
 			NOT = { has_building_construction = pw_building_transplanetary_logistics_network }
 		}
 		modifier = {
@@ -1420,7 +1420,7 @@ pw_building_transhabitat_logistics_network = {
 
 pw_building_forbidden_city = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = government
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -1805,7 +1805,7 @@ pw_building_forbidden_city = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_forbidden_city }
+			NOT = { has_active_building = pw_building_forbidden_city }
 			NOT = { has_building_construction = pw_building_forbidden_city }
 		}
 		modifier = {
@@ -1826,7 +1826,7 @@ pw_building_forbidden_city = {
 
 pw_building_festival_plaza = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = amenity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -2135,7 +2135,7 @@ pw_building_festival_plaza = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_festival_plaza }
+			NOT = { has_active_building = pw_building_festival_plaza }
 			NOT = { has_building_construction = pw_building_festival_plaza }
 		}
 		modifier = {
@@ -2150,11 +2150,11 @@ pw_building_festival_plaza = {
 		}
 		modifier = {
 			factor = 1.25
-			has_valid_civic = civic_inwards_perfection
+			owner = { has_valid_civic = civic_inwards_perfection }
 		}
 		modifier = {
 			factor = 1.25
-			has_valid_civic = civic_agrarian_idyll
+			owner = { has_valid_civic = civic_agrarian_idyll }
 		}
 		modifier = {
 			factor = 0.1
@@ -2171,7 +2171,7 @@ pw_building_festival_plaza = {
 
 pw_building_martial_avenue = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 125
 	category = army
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -2518,7 +2518,7 @@ pw_building_martial_avenue = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_martial_avenue }
+			NOT = { has_active_building = pw_building_martial_avenue }
 			NOT = { has_building_construction = pw_building_martial_avenue }
 		}
 		modifier = {
@@ -2543,23 +2543,23 @@ pw_building_martial_avenue = {
 		}
 		modifier = {
 			factor = 1.15
-			has_valid_civic = civic_warrior_culture
+			owner = { has_valid_civic = civic_warrior_culture }
 		}
 		modifier = {
 			factor = 1.15
-			has_valid_civic = civic_nationalistic_zeal
+			owner = { has_valid_civic = civic_nationalistic_zeal }
 		}
 		modifier = {
 			factor = 1.15
-			has_valid_civic = civic_distinguished_admiralty
+			owner = { has_valid_civic = civic_distinguished_admiralty }
 		}
 		modifier = {
 			factor = 1.15
-			has_valid_civic = civic_private_military_companies
+			owner = { has_valid_civic = civic_private_military_companies }
 		}
 		modifier = {
 			factor = 1.15
-			has_valid_civic = civic_naval_contractors
+			owner = { has_valid_civic = civic_naval_contractors }
 		}
 		modifier = {
 			factor = 2

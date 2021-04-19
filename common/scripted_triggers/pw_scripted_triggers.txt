@@ -102,11 +102,16 @@ pw_is_wonder_empire_unique = {
 	custom_tooltip = {
 		fail_text = pw_empire_unique_tooltip
 		owner = {
-			any_owned_planet = {
-				NOT = { is_planet = ROOT } #Ignores the triggering planet so it does not mess up upgrades.
-				OR = {
-					has_building = $WONDER$
-					has_building_construction = $WONDER$
+			count_owned_planet = {
+				count = all #Every owned planet
+				limit = {
+					OR = {
+						is_planet = ROOT #Ignores the triggering planet so it does not mess up upgrades.
+						NOR = { #Cannot have or be constructing this wonder
+							has_building = $WONDER$
+							has_building_construction = $WONDER$
+						}
+					}
 				}
 			}
 		}

@@ -463,9 +463,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -490,9 +490,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -517,9 +517,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -544,9 +544,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -571,9 +571,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -598,9 +598,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -625,9 +625,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -655,9 +655,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -682,9 +682,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -709,9 +709,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -736,9 +736,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -763,9 +763,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -790,9 +790,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -817,9 +817,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -848,9 +848,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -875,9 +875,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -902,9 +902,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -929,9 +929,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -956,9 +956,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2012,9 +2012,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2043,9 +2043,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2074,9 +2074,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2105,9 +2105,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2136,9 +2136,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2167,9 +2167,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2198,9 +2198,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2232,9 +2232,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2263,9 +2263,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2294,9 +2294,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2325,9 +2325,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2356,9 +2356,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2387,9 +2387,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2418,9 +2418,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2453,9 +2453,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2484,9 +2484,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2515,9 +2515,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2546,9 +2546,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -2577,9 +2577,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3709,9 +3709,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3740,9 +3740,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3771,9 +3771,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3802,9 +3802,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3833,9 +3833,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3864,9 +3864,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3895,9 +3895,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3929,9 +3929,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3960,9 +3960,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -3991,9 +3991,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4022,9 +4022,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4053,9 +4053,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4084,9 +4084,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4115,9 +4115,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4150,9 +4150,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4181,9 +4181,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4212,9 +4212,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4243,9 +4243,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {
@@ -4274,9 +4274,9 @@ country_event = {
 			every_owned_planet = {
 				limit = {
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 				pw_add_unique_modifier = {

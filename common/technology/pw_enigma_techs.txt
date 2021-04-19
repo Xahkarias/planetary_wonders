@@ -16,7 +16,7 @@ pw_enigma_tech_micro_graviton_equipment = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -90,7 +90,7 @@ pw_enigma_tech_absolute_processor_cooling = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -164,7 +164,7 @@ pw_enigma_tech_non_euclidean_building = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -239,7 +239,7 @@ pw_enigma_tech_impossible_architecture = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -313,7 +313,7 @@ pw_enigma_tech_quantum_movement = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -387,7 +387,7 @@ pw_enigma_tech_harmonic_aligning_magnets = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -463,7 +463,7 @@ pw_enigma_tech_virtual_conscience = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -539,7 +539,7 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -614,7 +614,7 @@ pw_enigma_tech_hypersonic_frequency_harmony = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -688,7 +688,7 @@ pw_enigma_tech_hyper_stabilization_fields = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -763,7 +763,7 @@ pw_enigma_tech_complete_stabilization_fields = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -837,7 +837,7 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -911,7 +911,7 @@ pw_enigma_tech_atomic_transistor_substrate = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -988,7 +988,7 @@ pw_enigma_tech_reflex_arc_emulators = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -1064,7 +1064,7 @@ pw_enigma_tech_atomic_clock_synchronization = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -1140,7 +1140,7 @@ pw_enigma_tech_gas_molecular_sculpting = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -1215,7 +1215,7 @@ pw_enigma_tech_gas_molecular_generation = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -1289,7 +1289,7 @@ pw_enigma_tech_exoteric_predictions_system = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -1363,7 +1363,7 @@ pw_enigma_tech_bio_frequency_emitters = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 
@@ -1450,7 +1450,7 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 
 	potential = {
 		any_owned_planet = {
-			has_building = pw_building_enigma_engine
+			has_active_building = pw_building_enigma_engine
 		}
 	}
 

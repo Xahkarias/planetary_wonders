@@ -1,6 +1,6 @@
 pw_building_pavilion_of_wonders = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = unity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -371,7 +371,7 @@ pw_building_pavilion_of_wonders = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_pavilion_of_wonders }
+			NOT = { has_active_building = pw_building_pavilion_of_wonders }
 			NOT = { has_building_construction = pw_building_pavilion_of_wonders }
 		}
 		modifier = {
@@ -409,9 +409,9 @@ pw_building_pavilion_of_wonders = {
 				any_owned_planet = {
 					NOT = { is_planet = root }
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 			}
@@ -434,7 +434,7 @@ pw_building_pavilion_of_wonders = {
 
 pw_building_fair_of_worlds = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = unity
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -454,11 +454,9 @@ pw_building_fair_of_worlds = {
 	}
 
 	allow = {
+		#Upgrade Wonders don't check for districts or availability
 		owner = { is_xenophile = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
-		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
-
 		# Empire Unique:
 		pw_is_wonder_empire_unique = { WONDER = pw_building_fair_of_worlds }
 	}
@@ -490,8 +488,8 @@ pw_building_fair_of_worlds = {
 	}
 
 	convert_to = {
-		pw_building_museum_of_the_grotesque
 		pw_building_pavilion_of_wonders
+		pw_building_museum_of_the_grotesque
 		building_heritage_site
 		building_holotemple
 		building_simulation_2
@@ -986,7 +984,7 @@ pw_building_fair_of_worlds = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_fair_of_worlds }
+			NOT = { has_active_building = pw_building_fair_of_worlds }
 			NOT = { has_building_construction = pw_building_fair_of_worlds }
 		}
 		modifier = {
@@ -1009,9 +1007,9 @@ pw_building_fair_of_worlds = {
 				any_owned_planet = {
 					NOT = { is_planet = root }
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 			}
@@ -1034,7 +1032,7 @@ pw_building_fair_of_worlds = {
 
 pw_building_museum_of_the_grotesque = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	category = unity
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -1054,10 +1052,9 @@ pw_building_museum_of_the_grotesque = {
 	}
 
 	allow = {
+		#Upgrade Wonders don't check for districts or availability
 		owner = { is_xenophobe = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
-		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
 		pw_is_wonder_empire_unique = { WONDER = pw_building_museum_of_the_grotesque }
@@ -1090,8 +1087,8 @@ pw_building_museum_of_the_grotesque = {
 	}
 
 	convert_to = {
-		pw_building_fair_of_worlds
 		pw_building_pavilion_of_wonders
+		pw_building_fair_of_worlds
 		building_heritage_site
 		building_holotemple
 		building_simulation_2
@@ -1645,7 +1642,7 @@ pw_building_museum_of_the_grotesque = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_museum_of_the_grotesque }
+			NOT = { has_active_building = pw_building_museum_of_the_grotesque }
 			NOT = { has_building_construction = pw_building_museum_of_the_grotesque }
 		}
 		modifier = {
@@ -1668,9 +1665,9 @@ pw_building_museum_of_the_grotesque = {
 				any_owned_planet = {
 					NOT = { is_planet = root }
 					OR = {
-						has_building = pw_building_pavilion_of_wonders
-						has_building = pw_building_fair_of_worlds
-						has_building = pw_building_museum_of_the_grotesque
+						has_active_building = pw_building_pavilion_of_wonders
+						has_active_building = pw_building_fair_of_worlds
+						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
 			}
@@ -1693,7 +1690,7 @@ pw_building_museum_of_the_grotesque = {
 
 pw_building_holy_reliquary = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 85
 	category = unity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -1978,7 +1975,7 @@ pw_building_holy_reliquary = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_holy_reliquary }
+			NOT = { has_active_building = pw_building_holy_reliquary }
 			NOT = { has_building_construction = pw_building_holy_reliquary }
 		}
 		modifier = {

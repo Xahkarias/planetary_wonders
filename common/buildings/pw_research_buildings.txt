@@ -1,6 +1,6 @@
 pw_building_particle_supercollider = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 
@@ -165,18 +165,18 @@ pw_building_particle_supercollider = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_particle_supercollider }
+			NOT = { has_active_building = pw_building_particle_supercollider }
 			NOT = { has_building_construction = pw_building_particle_supercollider }
 		}
 		modifier = {
 			factor = 2
-			has_building = building_research_lab_1
+			has_active_building = building_research_lab_1
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
+				has_active_building = building_research_lab_2
+				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
 				jobs_any_research = yes
@@ -195,7 +195,7 @@ pw_building_particle_supercollider = {
 
 pw_building_domed_city = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 
@@ -382,18 +382,18 @@ pw_building_domed_city = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_domed_city }
+			NOT = { has_active_building = pw_building_domed_city }
 			NOT = { has_building_construction = pw_building_domed_city }
 		}
 		modifier = {
 			factor = 2
-			has_building = building_research_lab_1
+			has_active_building = building_research_lab_1
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
+				has_active_building = building_research_lab_2
+				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
 				jobs_any_research = yes
@@ -412,7 +412,7 @@ pw_building_domed_city = {
 
 pw_building_secluded_sector = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 	icon = pw_building_domed_city
@@ -593,18 +593,18 @@ pw_building_secluded_sector = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_secluded_sector }
+			NOT = { has_active_building = pw_building_secluded_sector }
 			NOT = { has_building_construction = pw_building_secluded_sector }
 		}
 		modifier = {
 			factor = 2
-			has_building = building_research_lab_1
+			has_active_building = building_research_lab_1
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
+				has_active_building = building_research_lab_2
+				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
 				jobs_any_research = yes
@@ -623,7 +623,7 @@ pw_building_secluded_sector = {
 
 pw_building_abyssal_crater_test_site = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 
@@ -786,18 +786,18 @@ pw_building_abyssal_crater_test_site = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_abyssal_crater_test_site }
+			NOT = { has_active_building = pw_building_abyssal_crater_test_site }
 			NOT = { has_building_construction = pw_building_abyssal_crater_test_site }
 		}
 		modifier = {
 			factor = 2
-			has_building = building_research_lab_1
+			has_active_building = building_research_lab_1
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
+				has_active_building = building_research_lab_2
+				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
 				jobs_any_research = yes
@@ -816,7 +816,7 @@ pw_building_abyssal_crater_test_site = {
 
 pw_building_abyssal_crater_test_site_habitat = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 75
 	base_cap_amount = 1
 	can_be_ruined = no
 	icon = pw_building_abyssal_crater_test_site
@@ -973,18 +973,18 @@ pw_building_abyssal_crater_test_site_habitat = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_abyssal_crater_test_site_habitat }
+			NOT = { has_active_building = pw_building_abyssal_crater_test_site_habitat }
 			NOT = { has_building_construction = pw_building_abyssal_crater_test_site_habitat }
 		}
 		modifier = {
 			factor = 2
-			has_building = building_research_lab_1
+			has_active_building = building_research_lab_1
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
+				has_active_building = building_research_lab_2
+				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
 				jobs_any_research = yes
@@ -1003,7 +1003,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 
 pw_building_grand_archive = {
 	base_buildtime = @pw_building_buildtime
-	add_to_first_building_slot = yes
+	position_priority = 85
 	category = unity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -1149,7 +1149,7 @@ pw_building_grand_archive = {
 			pw_has_any_planetary_wonder = yes
 			exists = owner
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_building = pw_building_grand_archive }
+			NOT = { has_active_building = pw_building_grand_archive }
 			NOT = { has_building_construction = pw_building_grand_archive }
 		}
 		modifier = {

@@ -100,7 +100,7 @@ pw_mod_abyssal_test_crater_militarist = {
 }
 
 pw_mod_enigma_engine_energy = {
-	planet_pops_robotics_energy_upkeep_mult = 0.5
+	planet_pops_robotics_upkeep_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
 	icon_frame = 3
 }
@@ -426,6 +426,7 @@ pw_holy_reliquary_diplomacy_unity_of_people = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	diplo_weight_pops_mult = 0.20
 	country_unity_produces_mult = 0.10
+	envoys_add = 1
 }
 
 #Signet Ring: The Might of Our Fleets
@@ -433,6 +434,7 @@ pw_holy_reliquary_diplomacy_might_of_fleet = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	diplo_weight_naval_mult = 0.20
 	ships_upkeep_mult = -0.10
+	envoys_add = 1
 }
 
 #Signet Ring: The Abundance of Our Riches
@@ -440,6 +442,7 @@ pw_holy_reliquary_diplomacy_abundance_of_riches = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	diplo_weight_economy_mult = 0.20
 	trade_value_mult = 0.10
+	envoys_add = 1
 }
 
 #Signet Ring: The Advancement of Our Techs
@@ -447,6 +450,7 @@ pw_holy_reliquary_diplomacy_advancement_of_tech = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	diplo_weight_technology_mult = 0.20
 	num_tech_alternatives_add = 1
+	envoys_add = 1
 }
 
 #Signet Ring: Diplomacy is for the weak
@@ -455,6 +459,7 @@ pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak = {
 	diplo_weight_mult = -0.10
 	country_naval_cap_mult = 0.15
 	country_unity_produces_mult = 0.20
+	intel_encryption_add = 1
 }
 
 #Codex of the Ages: Codex of Past Ages

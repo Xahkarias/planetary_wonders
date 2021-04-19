@@ -30,7 +30,7 @@ pw_leader_trait_governor_codex_of_past_ages = {
 	}
 	modifier = {
 		planet_stability_add = 10
-		planet_jobs_consumer_goods_upkeep_mult = -0.15
+		planet_jobs_upkeep_mult = -0.10
 	}
 	leader_trait = { governor }
 	leader_class = { governor }

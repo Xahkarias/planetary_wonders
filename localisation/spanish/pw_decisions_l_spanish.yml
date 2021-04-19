@@ -170,3 +170,8 @@
     pw_decision_merchants_of_war_desc: "War is business. When two sides launch missiles at each other, the one who wins is whomever sold them the weapons. Host a military parade across every urban center with great focus in the private military complex that sponsors the event, from missile factories to mercenary contractors."
     pw_decision_cancel_parades: "pw_decision_cancel_parades"
     pw_decision_cancel_parades_desc: "End current military parades or war effort, hopefully to host a new one and not because a our people started turning on each other with uncontrolled bloodlust."
+
+    pw_decision_religious_persecution: "Enact Religious Persecution"
+    pw_decision_religious_persecution_desc: "Use the divine right of the $pw_holy_reliquary.defender_of_the_faith$ to enact a religious persecution to all who would be a threat to our faith, heretics and disbelievers alike."
+    pw_decision_end_religious_persecution: "End Religious Persecution"
+    pw_decision_end_religious_persecution_desc: "Our population has suffered enough, it is time to end this religious persecution."

@@ -119,7 +119,7 @@ pw_d_guardian_angel_training = {
 		potential = {
 			exists = owner
 			owner = { is_at_war = no }
-			has_building = pw_building_guardian_angel
+			has_active_building = pw_building_guardian_angel
 		}
 		modifier = {
 			planet_army_build_speed_mult = 0.25
@@ -146,7 +146,7 @@ pw_d_guardian_angel_police_operations = {
 		potential = {
 			exists = owner
 			owner = { is_at_war = no }
-			has_building = pw_building_guardian_angel
+			has_active_building = pw_building_guardian_angel
 		}
 		modifier = {
 			planet_crime_add = -20
@@ -173,7 +173,7 @@ pw_d_guardian_angel_tourist_attraction = {
 		potential = {
 			exists = owner
 			owner = { is_at_war = no }
-			has_building = pw_building_guardian_angel
+			has_active_building = pw_building_guardian_angel
 		}
 		modifier = {
 			trade_value_add = 20
@@ -278,7 +278,7 @@ pw_d_ark_project = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -310,7 +310,7 @@ pw_d_library_of_babel = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -341,7 +341,7 @@ pw_d_cradle_initiative = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -372,7 +372,7 @@ pw_d_particle_museum = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -403,7 +403,7 @@ pw_d_omnidatabase = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -434,7 +434,7 @@ pw_d_stellarium = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -466,7 +466,7 @@ pw_d_zero_g_exposition = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -497,7 +497,7 @@ pw_d_mechanist_collection = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -528,7 +528,7 @@ pw_d_meta_architectural_complex = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -567,7 +567,7 @@ pw_d_holoarchive = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_building = pw_building_grand_archive
+			has_active_building = pw_building_grand_archive
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 9
@@ -657,7 +657,7 @@ pw_d_infrastructure_energy_distribution = {
 	}
 
 	planet_modifier = {
-		planet_buildings_energy_upkeep_mult = -0.10
+		planet_buildings_upkeep_mult = -0.10
 		planet_housing_add = 2
 	}
 
@@ -715,7 +715,7 @@ pw_d_infrastructure_goods_distribution = {
 
 	planet_modifier = {
 		planet_pops_consumer_goods_upkeep_mult = -0.15
-		planet_buildings_energy_upkeep_mult = -0.15
+		planet_buildings_upkeep_mult = -0.15
 		planet_housing_add = 3
 	}
 
@@ -773,7 +773,7 @@ pw_d_infrastructure_luxury_distribution = {
 
 	planet_modifier = {
 		planet_pops_consumer_goods_upkeep_mult = -0.20
-		planet_buildings_energy_upkeep_mult = -0.20
+		planet_buildings_upkeep_mult = -0.20
 		planet_housing_add = 4
 	}
 
@@ -1802,13 +1802,14 @@ pw_d_infrastructure_central_of_disinformation = {
 
 	resources = {
 		category = planet_deposits
-		produces = {
-			unity = 5
-		}
 		upkeep = {
 			energy = 2
 			consumer_goods = 1
 		}
+	}
+
+	country_modifier = {
+		country_counter_espionage_mult = 0.05
 	}
 
 	planet_modifier = {
@@ -1842,13 +1843,14 @@ pw_d_infrastructure_center_of_justice = {
 
 	resources = {
 		category = planet_deposits
-		produces = {
-			unity = 5
-		}
 		upkeep = {
 			energy = 4
 			consumer_goods = 2
 		}
+	}
+
+	country_modifier = {
+		country_counter_espionage_mult = 0.10
 	}
 
 	planet_modifier = {
@@ -1899,14 +1901,15 @@ pw_d_infrastructure_central_treasury = {
 
 	resources = {
 		category = planet_deposits
-		produces = {
-			unity = 5
-		}
 		upkeep = {
 			energy = 6
 			consumer_goods = 3
 			exotic_gases = 1
 		}
+	}
+
+	country_modifier = {
+		country_counter_espionage_mult = 0.15
 	}
 
 	planet_modifier = {
@@ -1959,14 +1962,15 @@ pw_d_infrastructure_galactic_bureau = {
 
 	resources = {
 		category = planet_deposits
-		produces = {
-			unity = 5
-		}
 		upkeep = {
 			energy = 10
 			consumer_goods = 5
 			exotic_gases = 2
 		}
+	}
+
+	country_modifier = {
+		country_counter_espionage_mult = 0.20
 	}
 
 	planet_modifier = {
@@ -2058,7 +2062,7 @@ pw_d_infrastructure_internal_affairs = {
 	}
 
 	country_modifier = {
-		edict_length_mult = 0.05
+		counter_intel_gain_speed = -0.05
 	}
 }
 
