@@ -104,6 +104,7 @@ pw_d_ancient_mining_project = {
 pw_d_guardian_angel_training = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -131,6 +132,7 @@ pw_d_guardian_angel_training = {
 pw_d_guardian_angel_police_operations = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -158,6 +160,7 @@ pw_d_guardian_angel_police_operations = {
 pw_d_guardian_angel_tourist_attraction = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -186,6 +189,7 @@ pw_d_guardian_angel_tourist_attraction = {
 pw_d_monument_to_the_solar_regent = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 	icon = d_monument
 
 	#Can't occur naturally
@@ -221,6 +225,7 @@ pw_d_monument_to_the_solar_regent = {
 pw_d_parliament_of_the_void_speakers = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 	icon = d_ruins_small
 
 	#Can't occur naturally
@@ -259,6 +264,7 @@ pw_d_parliament_of_the_void_speakers = {
 pw_d_ark_project = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -290,6 +296,7 @@ pw_d_ark_project = {
 pw_d_library_of_babel = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -322,6 +329,7 @@ pw_d_library_of_babel = {
 pw_d_cradle_initiative = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -353,6 +361,7 @@ pw_d_cradle_initiative = {
 pw_d_particle_museum = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -384,6 +393,7 @@ pw_d_particle_museum = {
 pw_d_omnidatabase = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -415,6 +425,7 @@ pw_d_omnidatabase = {
 pw_d_stellarium = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -446,6 +457,7 @@ pw_d_stellarium = {
 pw_d_zero_g_exposition = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -478,6 +490,7 @@ pw_d_zero_g_exposition = {
 pw_d_mechanist_collection = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -509,6 +522,7 @@ pw_d_mechanist_collection = {
 pw_d_meta_architectural_complex = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -540,6 +554,7 @@ pw_d_meta_architectural_complex = {
 pw_d_holoarchive = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -581,6 +596,7 @@ pw_d_holoarchive = {
 pw_d_infrastructure_food_distribution = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -635,6 +651,7 @@ pw_d_infrastructure_food_distribution = {
 pw_d_infrastructure_energy_distribution = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -690,6 +707,7 @@ pw_d_infrastructure_energy_distribution = {
 pw_d_infrastructure_goods_distribution = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -748,6 +766,7 @@ pw_d_infrastructure_goods_distribution = {
 pw_d_infrastructure_luxury_distribution = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -819,6 +838,7 @@ pw_d_infrastructure_luxury_distribution = {
 pw_d_infrastructure_medical_posts = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -851,6 +871,7 @@ pw_d_infrastructure_medical_posts = {
 pw_d_infrastructure_habitation_support = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -884,6 +905,7 @@ pw_d_infrastructure_habitation_support = {
 pw_d_infrastructure_emergency_services = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -919,6 +941,7 @@ pw_d_infrastructure_emergency_services = {
 pw_d_infrastructure_crisis_responders = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -955,6 +978,7 @@ pw_d_infrastructure_crisis_responders = {
 pw_d_infrastructure_public_agoras = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1012,6 +1036,7 @@ pw_d_infrastructure_public_agoras = {
 pw_d_infrastructure_local_administration = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1070,6 +1095,7 @@ pw_d_infrastructure_local_administration = {
 pw_d_infrastructure_distributed_education = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1131,6 +1157,7 @@ pw_d_infrastructure_distributed_education = {
 pw_d_infrastructure_arts_installations = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1219,6 +1246,7 @@ pw_d_infrastructure_arts_installations = {
 pw_d_infrastructure_public_markets = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1263,6 +1291,7 @@ pw_d_infrastructure_public_markets = {
 pw_d_infrastructure_inventions_fair = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1309,6 +1338,7 @@ pw_d_infrastructure_inventions_fair = {
 pw_d_infrastructure_cooperatives_manufacturers = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1370,6 +1400,7 @@ pw_d_infrastructure_cooperatives_manufacturers = {
 pw_d_infrastructure_industrial_unions = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1435,6 +1466,7 @@ pw_d_infrastructure_industrial_unions = {
 pw_d_infrastructure_planetary_command = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1458,6 +1490,7 @@ pw_d_infrastructure_planetary_command = {
 pw_d_infrastructure_governor_mansion = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1485,6 +1518,7 @@ pw_d_infrastructure_governor_mansion = {
 pw_d_infrastructure_seat_of_power = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1517,6 +1551,7 @@ pw_d_infrastructure_seat_of_power = {
 pw_d_infrastructure_throne_room = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1549,6 +1584,7 @@ pw_d_infrastructure_throne_room = {
 pw_d_infrastructure_luxury_retreat = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1576,6 +1612,7 @@ pw_d_infrastructure_luxury_retreat = {
 pw_d_infrastructure_wardens_directorate = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1603,6 +1640,7 @@ pw_d_infrastructure_wardens_directorate = {
 pw_d_infrastructure_overseers_ring = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1631,6 +1669,7 @@ pw_d_infrastructure_overseers_ring = {
 pw_d_infrastructure_palatial_physicians = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1654,6 +1693,7 @@ pw_d_infrastructure_palatial_physicians = {
 pw_d_infrastructure_city_defenders = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1697,6 +1737,7 @@ pw_d_infrastructure_city_defenders = {
 pw_d_infrastructure_crisis_bunker = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1746,6 +1787,7 @@ pw_d_infrastructure_crisis_bunker = {
 pw_d_infrastructure_personal_guardian = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1796,6 +1838,7 @@ pw_d_infrastructure_personal_guardian = {
 pw_d_infrastructure_central_of_disinformation = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1837,6 +1880,7 @@ pw_d_infrastructure_central_of_disinformation = {
 pw_d_infrastructure_center_of_justice = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1895,6 +1939,7 @@ pw_d_infrastructure_center_of_justice = {
 pw_d_infrastructure_central_treasury = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -1956,6 +2001,7 @@ pw_d_infrastructure_central_treasury = {
 pw_d_infrastructure_galactic_bureau = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -2018,6 +2064,7 @@ pw_d_infrastructure_galactic_bureau = {
 pw_d_infrastructure_ambassador_chambers = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -2044,6 +2091,7 @@ pw_d_infrastructure_ambassador_chambers = {
 pw_d_infrastructure_internal_affairs = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -2070,6 +2118,7 @@ pw_d_infrastructure_internal_affairs = {
 pw_d_infrastructure_intellectual_circles = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -2096,6 +2145,7 @@ pw_d_infrastructure_intellectual_circles = {
 pw_d_infrastructure_holy_tribunal = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -2135,6 +2185,7 @@ pw_d_infrastructure_holy_tribunal = {
 pw_d_infrastructure_ballroom = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
@@ -2161,6 +2212,7 @@ pw_d_infrastructure_ballroom = {
 pw_d_infrastructure_war_room = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
 
 	#Can't occur naturally
 	potential = { always = no }
