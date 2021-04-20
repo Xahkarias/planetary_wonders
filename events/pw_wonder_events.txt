@@ -1916,7 +1916,7 @@ planet_event = {
 	after = {
 		owner = {
 			#Recurring event for planet resources
-			country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			country_event = { id = pw_wonder.820 days = @pw_10years random = @pw_5years }
 		}
 	}
 }
@@ -1975,7 +1975,7 @@ planet_event = {
 	after = {
 		owner = {
 			#Recurring event for planet resources
-			country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+			country_event = { id = pw_wonder.820 days = @pw_10years random = @pw_5years }
 		}
 	}
 }
@@ -2162,24 +2162,26 @@ country_event = {
 	trigger = {
 		is_ai = no
 		any_planet_within_border = {
-			has_deposit = no
+			NOT = { has_deposit = yes }
 			OR = {
 				is_asteroid = yes
 				uninhabitable_regular_planet = yes
 				is_planet_class = pc_gas_giant
 			}
+			NOT = { is_planet = event_target:pw_resource_planet }
 		}
 	}
 
 	immediate = {
 		random_planet_within_border = {
 			limit = {
-				has_deposit = no
+				NOT = { has_deposit = yes }
 				OR = {
 					is_asteroid = yes
 					uninhabitable_regular_planet = yes
 					is_planet_class = pc_gas_giant
 				}
+				NOT = { is_planet = event_target:pw_resource_planet }
 			}
 			save_event_target_as = pw_resource_planet
 		}
@@ -2223,8 +2225,7 @@ country_event = {
 				country_event = { id = pw_wonder.830 }
 			}
 		}
-
-		country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		country_event = {  id = pw_wonder.820 days = @pw_10years random = @pw_5years }
 	}
 }
 
@@ -2238,14 +2239,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_minerals_3
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_minerals_2
 			}
 		}
 	}
@@ -2261,14 +2270,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_energy_3
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_energy_2
 			}
 		}
 	}
@@ -2284,14 +2301,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_trade_value_5
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_trade_value_3
 			}
 		}
 	}
@@ -2307,14 +2332,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_alloys_2
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_alloys_1
 			}
 		}
 	}
@@ -2330,14 +2363,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_rare_crystals_1
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_rare_crystals_1
 			}
 		}
 	}
@@ -2353,14 +2394,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_exotic_gases_1
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_exotic_gases_1
 			}
 		}
 	}
@@ -2376,14 +2425,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_volatile_motes_1
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_volatile_motes_1
 			}
 		}
 	}
@@ -2399,14 +2456,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_dark_matter_deposit_1
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_dark_matter_deposit_1
 			}
 		}
 	}
@@ -2422,14 +2487,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_living_metal_deposit
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_living_metal_deposit
 			}
 		}
 	}
@@ -2445,14 +2518,22 @@ country_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		event_target:pw_resource_planet = {
+			NOT = { has_deposit = yes }
+		}
+	}
+
 	option = {
 		name = pw_wonder.821.a
-		event_target:pw_resource_planet = {
-			add_deposit = d_zro_deposit_1
-		}
-		hidden_effect = {
-			FROM = {
-				country_event = {  id = pw_wonder.820 days = @pw_5years random = @pw_5years }
+		if = {
+			limit = {
+				event_target:pw_resource_planet = {
+					NOT = { has_deposit = yes }
+				}
+			}
+			event_target:pw_resource_planet = {
+				add_deposit = d_zro_deposit_1
 			}
 		}
 	}
