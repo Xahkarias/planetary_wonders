@@ -1914,9 +1914,11 @@ planet_event = {
 	}
 
 	after = {
-		owner = {
-			#Recurring event for planet resources
-			country_event = { id = pw_wonder.820 days = @pw_10years random = @pw_5years }
+		hidden_effect = {
+			owner = {
+				#Recurring event for planet resources
+				country_event = { id = pw_wonder.820 days = @pw_10years random = @pw_5years }
+			}
 		}
 	}
 }
@@ -1973,9 +1975,11 @@ planet_event = {
 	}
 
 	after = {
-		owner = {
-			#Recurring event for planet resources
-			country_event = { id = pw_wonder.820 days = @pw_10years random = @pw_5years }
+		hidden_effect = {
+			owner = {
+				#Recurring event for planet resources
+				country_event = { id = pw_wonder.820 days = @pw_10years random = @pw_5years }
+			}
 		}
 	}
 }
@@ -2237,7 +2241,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2268,7 +2272,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2299,7 +2303,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2330,7 +2334,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2361,7 +2365,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2392,7 +2396,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2423,7 +2427,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2454,7 +2458,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2485,7 +2489,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -2516,7 +2520,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = event_target:pw_resource_planet
 
 	trigger = {
 		event_target:pw_resource_planet = {
@@ -5535,6 +5539,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.1601 } #Regular first time
 		planet_event = { id = pw_wonder.1602 } #Second Time onwards
+		planet_event = { id = pw_wonder.1620 days = @pw_halfYear } #Recursive check
 	}
 }
 
@@ -5615,21 +5620,6 @@ planet_event = {
 				has_country_flag = pw_grand_archive_mechanist_collection_completed
 				has_country_flag = pw_grand_archive_meta_architectural_complex_completed
 			}
-			any_owned_planet = {
-				NOT = { is_planet = PREVPREV }
-				OR = {
-					has_deposit = pw_d_ark_project
-					has_deposit = pw_d_particle_museum
-					has_deposit = pw_d_cradle_initiative
-					has_deposit = pw_d_library_of_babel
-					has_deposit = pw_d_omnidatabase
-					has_deposit = pw_d_stellarium
-					has_deposit = pw_d_zero_g_exposition
-					has_deposit = pw_d_mechanist_collection
-					has_deposit = pw_d_meta_architectural_complex
-					has_deposit = pw_d_holoarchive
-				}
-			}
 		}
 	}
 
@@ -5695,6 +5685,207 @@ planet_event = {
 				}
 			}
 		}
+
+		if = {
+			limit = {
+				owner = { has_country_flag = pw_grand_archive_holoarchive_unified }
+				NOT = { has_deposit = pw_d_holoarchive }
+			}
+			add_deposit = pw_d_holoarchive
+		}
+		else = {
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_ARK_project_completed }
+					NOT = { has_deposit = pw_d_ark_project }
+				}
+				add_deposit = pw_d_ark_project
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_cradle_initiative_completed }
+					NOT = { has_deposit = pw_d_cradle_initiative }
+				}
+				add_deposit = pw_d_cradle_initiative
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_library_of_babel_completed }
+					NOT = { has_deposit = pw_d_library_of_babel }
+				}
+				add_deposit = pw_d_library_of_babel
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_particle_museum_completed }
+					NOT = { has_deposit = pw_d_particle_museum }
+				}
+				add_deposit = pw_d_particle_museum
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_omnidatabase_completed }
+					NOT = { has_deposit = pw_d_omnidatabase }
+				}
+				add_deposit = pw_d_omnidatabase
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_stellarium_completed }
+					NOT = { has_deposit = pw_d_stellarium }
+				}
+				add_deposit = pw_d_stellarium
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_zero_g_exposition_completed }
+					NOT = { has_deposit = pw_d_zero_g_exposition }
+				}
+				add_deposit = pw_d_zero_g_exposition
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_mechanist_collection_completed }
+					NOT = { has_deposit = pw_d_mechanist_collection }
+				}
+				add_deposit = pw_d_mechanist_collection
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pw_grand_archive_meta_architectural_complex_completed }
+					NOT = { has_deposit = pw_d_meta_architectural_complex }
+				}
+				add_deposit = pw_d_meta_architectural_complex
+			}
+		}
+	}
+}
+
+#Check if The Grand Archive has the needed deposits (recursive)
+planet_event = {
+	id = pw_wonder.1620
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				#Has the building:
+				has_active_building = pw_building_grand_archive
+				exists = owner
+				OR = {
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_holoarchive_unified }
+						NOT = { has_deposit = pw_d_holoarchive }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_ARK_project_completed }
+						NOT = { has_deposit = pw_d_ark_project }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_cradle_initiative_completed }
+						NOT = { has_deposit = pw_d_cradle_initiative }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_library_of_babel_completed }
+						NOT = { has_deposit = pw_d_library_of_babel }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_particle_museum_completed }
+						NOT = { has_deposit = pw_d_particle_museum }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_omnidatabase_completed }
+						NOT = { has_deposit = pw_d_omnidatabase }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_stellarium_completed }
+						NOT = { has_deposit = pw_d_stellarium }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_zero_g_exposition_completed }
+						NOT = { has_deposit = pw_d_zero_g_exposition }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_mechanist_collection_completed }
+						NOT = { has_deposit = pw_d_mechanist_collection }
+					}
+					AND = {
+						owner = { has_country_flag = pw_grand_archive_meta_architectural_complex_completed }
+						NOT = { has_deposit = pw_d_meta_architectural_complex }
+					}
+				}
+			}
+			planet_event = { id = pw_wonder.1621 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.1620 days = @pw_halfYear }
+		}
+	}
+}
+
+planet_event = {
+	id = pw_wonder.1621
+	title = pw_wonder.1621.name
+	desc = pw_wonder.1621.desc
+	picture = GFX_evt_ancient_databank
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#Has the building:
+		has_active_building = pw_building_grand_archive
+		OR = { #Has the flag, but not the deposit
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_holoarchive_unified }
+				NOT = { has_deposit = pw_d_holoarchive }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_ARK_project_completed }
+				NOT = { has_deposit = pw_d_ark_project }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_cradle_initiative_completed }
+				NOT = { has_deposit = pw_d_cradle_initiative }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_library_of_babel_completed }
+				NOT = { has_deposit = pw_d_library_of_babel }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_particle_museum_completed }
+				NOT = { has_deposit = pw_d_particle_museum }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_omnidatabase_completed }
+				NOT = { has_deposit = pw_d_omnidatabase }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_stellarium_completed }
+				NOT = { has_deposit = pw_d_stellarium }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_zero_g_exposition_completed }
+				NOT = { has_deposit = pw_d_zero_g_exposition }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_mechanist_collection_completed }
+				NOT = { has_deposit = pw_d_mechanist_collection }
+			}
+			AND = {
+				owner = { has_country_flag = pw_grand_archive_meta_architectural_complex_completed }
+				NOT = { has_deposit = pw_d_meta_architectural_complex }
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1621.a
 
 		if = {
 			limit = { owner = { has_country_flag = pw_grand_archive_holoarchive_unified }}
