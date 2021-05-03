@@ -140,3 +140,10 @@
     pw_building_martial_avenue: "Martial Avenue"
     pw_building_martial_avenue_desc: "A gigantic avenue designated for vehicle and infantry dislocation that crosses the greatest urban areas of the planet. Here we can display our great military force in marvelous martial parades and let our might unite our people towards the next war. Some parade can even be seen from space, in order to strike fear in the heart of our enemies."
     pw_martial_avenue_tooltip: "Â§SAllows us to perform Military Parades.Â§!\n"
+
+    pw_living_spire: "Â§MLiving SpireÂ§!"
+    pw_building_living_spire: "Living Spire"
+    pw_building_living_spire_desc: "."
+    pw_conduit_of_unity: "Â§MConduit of UnityÂ§!"
+    pw_building_conduit_of_unity: "Conduit of Unity"
+    pw_building_conduit_of_unity_desc: "."

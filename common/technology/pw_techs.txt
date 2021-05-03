@@ -468,12 +468,6 @@ pw_tech_erebus_project = {
 			}
 		}
 
-		#Can't have without the AP
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
-		}
-
 		modifier = {
 			factor = 5
 			has_ascension_perk = pw_ap_planetary_wonders
@@ -546,12 +540,6 @@ pw_tech_helios_tower = {
 			}
 		}
 
-		#Can't have without the AP
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
-		}
-
 		modifier = {
 			factor = 5
 			has_ascension_perk = pw_ap_planetary_wonders
@@ -622,12 +610,6 @@ pw_tech_demetrius_fields = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = pw_tech_demetrius_fields }
 			}
-		}
-
-		#Can't have without the AP
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = pw_ap_planetary_wonders }
 		}
 
 		modifier = {
