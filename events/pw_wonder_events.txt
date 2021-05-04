@@ -83,12 +83,12 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = {owner = {has_country_flag = space_elevator_built }}
+		NOT = {owner = {has_country_flag = pw_space_elevator_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = space_elevator_built }
+		owner = { set_country_flag = pw_space_elevator_built }
 	}
 
 	option = {
@@ -177,12 +177,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = space_elevator_built }}
+		NOT = {owner = {has_country_flag = pw_space_elevator_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = space_elevator_built }
+		owner = { set_country_flag = pw_space_elevator_built }
 	}
 }
 
@@ -434,12 +434,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = particle_supercollider_built }}
+		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = particle_supercollider_built }
+		owner = { set_country_flag = pw_particle_supercollider_built }
 	}
 }
 
@@ -486,12 +486,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = particle_supercollider_built }}
+		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = particle_supercollider_built }
+		owner = { set_country_flag = pw_particle_supercollider_built }
 	}
 }
 
@@ -606,12 +606,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = domed_city_built }}
+		NOT = {owner = {has_country_flag = pw_domed_city_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = domed_city_built }
+		owner = { set_country_flag = pw_domed_city_built }
 	}
 }
 
@@ -669,12 +669,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = {has_country_flag = domed_city_built }}
+		NOT = {owner = {has_country_flag = pw_domed_city_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = domed_city_built }
+		owner = { set_country_flag = pw_domed_city_built }
 	}
 }
 
@@ -788,12 +788,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = abyssal_crater_test_site_built }}
+		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = abyssal_crater_test_site_built }
+		owner = { set_country_flag = pw_abyssal_crater_test_site_built }
 	}
 }
 
@@ -851,12 +851,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = abyssal_crater_test_site_built }}
+		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = abyssal_crater_test_site_built }
+		owner = { set_country_flag = pw_abyssal_crater_test_site_built }
 	}
 }
 
@@ -917,12 +917,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = erebus_project_built }}
+		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = erebus_project_built }
+		owner = { set_country_flag = pw_erebus_project_built }
 	}
 }
 
@@ -953,12 +953,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = erebus_project_built }}
+		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = erebus_project_built }
+		owner = { set_country_flag = pw_erebus_project_built }
 	}
 }
 
@@ -1240,12 +1240,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = helios_tower_built }}
+		NOT = {owner = { has_country_flag = pw_helios_tower_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = helios_tower_built }
+		owner = { set_country_flag = pw_helios_tower_built }
 	}
 }
 
@@ -1276,12 +1276,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = helios_tower_built }}
+		NOT = {owner = { has_country_flag = pw_helios_tower_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = helios_tower_built }
+		owner = { set_country_flag = pw_helios_tower_built }
 	}
 }
 
@@ -1502,12 +1502,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = demetrius_fields_built }}
+		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = demetrius_fields_built }
+		owner = { set_country_flag = pw_demetrius_fields_built }
 	}
 }
 
@@ -1538,12 +1538,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = demetrius_fields_built }}
+		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = demetrius_fields_built }
+		owner = { set_country_flag = pw_demetrius_fields_built }
 	}
 }
 
@@ -1843,12 +1843,12 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = {owner = { has_country_flag = galactic_model_built }}
+		NOT = {owner = { has_country_flag = pw_galactic_model_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = galactic_model_built }
+		owner = { set_country_flag = pw_galactic_model_built }
 	}
 
 	option = {
@@ -1934,12 +1934,12 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = {owner = { has_country_flag = galactic_model_built }}
+		NOT = {owner = { has_country_flag = pw_galactic_model_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = galactic_model_built }
+		owner = { set_country_flag = pw_galactic_model_built }
 	}
 
 	option = {
@@ -2616,11 +2616,11 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = panopticon_built }}
+		NOT = {owner = { has_country_flag = pw_panopticon_built }}
 	}
 
 	immediate = {
-		owner = { set_country_flag = panopticon_built }
+		owner = { set_country_flag = pw_panopticon_built }
 	}
 }
 
@@ -2824,11 +2824,11 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = enigma_engine_built }}
+		NOT = {owner = { has_country_flag = pw_enigma_engine_built }}
 	}
 
 	immediate = {
-		owner = { set_country_flag = enigma_engine_built }
+		owner = { set_country_flag = pw_enigma_engine_built }
 	}
 }
 
@@ -3216,11 +3216,11 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = solipsist_debate_hall_built }}
+		NOT = {owner = { has_country_flag = pw_solipsist_debate_hall_built }}
 	}
 
 	immediate = {
-		owner = { set_country_flag = solipsist_debate_hall_built }
+		owner = { set_country_flag = pw_solipsist_debate_hall_built }
 	}
 }
 
@@ -3467,12 +3467,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = guardian_angel_built }}
+		NOT = {owner = { has_country_flag = pw_guardian_angel_built }}
 		owner = { is_gestalt = no }
 	}
 
 	immediate = {
-		owner = { set_country_flag = guardian_angel_built }
+		owner = { set_country_flag = pw_guardian_angel_built }
 	}
 }
 
@@ -3503,12 +3503,12 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = {owner = { has_country_flag = guardian_angel_built }}
+		NOT = {owner = { has_country_flag = pw_guardian_angel_built }}
 		owner = { is_gestalt = yes }
 	}
 
 	immediate = {
-		owner = { set_country_flag = guardian_angel_built }
+		owner = { set_country_flag = pw_guardian_angel_built }
 	}
 }
 
