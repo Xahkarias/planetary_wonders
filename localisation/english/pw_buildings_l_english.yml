@@ -7,11 +7,11 @@
 
     pw_empire_unique: "§SEmpire Unique§!"
     pw_empire_unique_lb: "§SEmpire Unique§!\n"
-    pw_empire_unique_tooltip: "§ROnly one allowed in the empire.§!"
+    pw_empire_unique_tooltip: "£trigger_no£ §ROnly one allowed in the empire.§!"
 
     #Tooltips:
     pw_planet_wonder_limit_warning: "§YNotice:§! Planets can only support a single $pw_planet_wonder$ of any type."
-    pw_planet_wonder_limit: "§R[This.Planet.GetName] already has another $pw_planet_wonder$.§!"
+    pw_planet_wonder_limit: "£trigger_no£ §R[This.Planet.GetName] already has another $pw_planet_wonder$.§!"
 
     # Space Elevator
     pw_space_elevator: "§MSpace Elevator§!"

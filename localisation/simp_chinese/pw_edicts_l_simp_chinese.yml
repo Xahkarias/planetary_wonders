@@ -53,3 +53,7 @@
     edict_pw_ambition_monumentality: "$unity_ambition$ Monumentality"
     edict_pw_ambition_monumentality_desc: "You never should let such things as planetary limitations and laws of physics stand in the way of our constructions. We will find ways to erect our marvelous structures."
     pw_ambition_monumentality_tooltip: "Each $pw_planet_wonder$ produces Â§Y+3Â§! Â£stabilityÂ£ $PLANET_STABILITY_TITLE$."
+
+    edict_pw_ambition_wonders_beyond_ambition: "$unity_ambition$ Wonders Beyond Ambition"
+    edict_pw_ambition_wonders_beyond_ambition_desc: "In our hubris, would we dare to push even further the capabilities of our $pw_planet_wonders$? The edge of possibility has never been so close to our grasp."
+    pw_ambition_wonders_beyond_ambition_tooltip: "Each $pw_planet_wonder$ grants an additional Â§Gspecial bonusÂ§!."
