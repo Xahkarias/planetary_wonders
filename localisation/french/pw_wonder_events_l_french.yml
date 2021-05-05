@@ -509,3 +509,7 @@
     pw_wonder.1621.name: "First As Tragedy, Then As Farce"
     pw_wonder.1621.desc: "For any reason, the knowledge exhibited in the  $pw_building_grand_archive$, on its collections, is no longer available. Perhaps it was lost on the reorganization of the planet. This does not mean that those assemblies are lost, as we can use the recorded data we kept to reconstruct them along side the Archive.\n\nNothing will be lost time, and we may resume the assemblage from wherever we have stopped."
     pw_wonder.1621.a: "The archive lives on."
+
+    pw_wonder.1373.name: "Polytechnic Developments: Integrated Industry"
+    pw_wonder.1373.desc: "By integrating different parts of our industry, logistic chains of production and consumption can be made more efficient. The Poly-Artisans of the Industrial Hearth have devised an innovative plan to combine industrial byproducts in elaborate feedback loops together with a complete reform of our logistics of production and distribution. This will allow us to produce much more overall, with minimal losses."
+    pw_wonder.1373.a: "Send the project plans to our researches."

@@ -104,6 +104,9 @@
     pw_tech_industrial_hearth_gardens: "Urban Gardens Initiative"
     pw_tech_industrial_hearth_gardens_desc: "No space needs to be wasted, by enacting a new Gardens Initiative proposed by the poly-artisans in the Industrial Hearth we can reduce the impact of the Mantle Crucible and derivatives and increase general habitability."
 
+    pw_tech_industrial_hearth_production: "Integrated Industry"
+    pw_tech_industrial_hearth_production_desc: "When production and consumption chains are conceived in a holistic project, innovative logistics designs can be arranged and much more can be extracted from the same industrial machine."
+
     # Pavilion of Wonders:
     pw_tech_great_art_exhibition: "Universal Arts Exhibition"
     pw_tech_great_art_exhibition_desc: "We have witness countless artistic movements of a myriad of forms, some more influential than others, develope in the evolution of our civilization. Now it is time to collect them in a absolute museum and organize exhibitions of this cultural trove."

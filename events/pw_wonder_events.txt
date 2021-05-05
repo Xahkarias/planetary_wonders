@@ -4693,23 +4693,23 @@ planet_event = {
 				modifier = {
 					factor = 0
 					exists = owner
-					owner = { has_country_flag = pw_industrial_hearth_industry_military }
-					owner = { has_technology = pw_tech_industrial_hearth_industry_military }
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_industry_military }
+						owner = { has_tech_option = pw_tech_industrial_hearth_industry_military }
+					}
 				}
-				planet_event = {
-					id = pw_wonder.1365
-				}
+				planet_event = { id = pw_wonder.1365	}
 			}
 			10 = {
 				modifier = {
 					factor = 0
 					exists = owner
-					owner = { has_country_flag = pw_industrial_hearth_industry_civilian }
-					owner = { has_technology = pw_tech_industrial_hearth_industry_civilian }
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_industry_civilian }
+						owner = { has_tech_option = pw_tech_industrial_hearth_industry_civilian }
+					}
 				}
-				planet_event = {
-					id = pw_wonder.1366
-				}
+				planet_event = { id = pw_wonder.1366	}
 			}
 			10 = {
 				modifier = {
@@ -4722,63 +4722,73 @@ planet_event = {
 						}
 					}
 				}
-				planet_event = {
-					id = pw_wonder.1367
-				}
+				planet_event = { id = pw_wonder.1367	}
 			}
 			10 = {
 				modifier = {
 					factor = 0
 					exists = owner
-					owner = { has_country_flag = pw_industrial_hearth_housing }
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_housing }
+						owner = { has_tech_option = pw_tech_industrial_hearth_housing }
+					}
 				}
-				planet_event = {
-					id = pw_wonder.1368
-				}
+				planet_event = { id = pw_wonder.1368	}
 			}
 			10 = {
 				modifier = {
 					factor = 0
 					exists = owner
 					NOT = { owner = { has_valid_civic = civic_environmentalist }}
-					owner = { has_country_flag = pw_industrial_hearth_gardens }
-					owner = { has_technology = pw_tech_industrial_hearth_gardens }
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_gardens }
+						owner = { has_tech_option = pw_tech_industrial_hearth_gardens }
+					}
 				}
-				planet_event = {
-					id = pw_wonder.1369
-				}
+				planet_event = { id = pw_wonder.1369	}
 			}
 			10 = {
 				modifier = {
 					factor = 0
 					exists = owner
-					owner = { has_country_flag = pw_industrial_hearth_design }
-					owner = { has_technology = pw_tech_industrial_hearth_design }
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_design }
+						owner = { has_tech_option = pw_tech_industrial_hearth_design }
+					}
 				}
 				modifier = {
 					factor = 0
 					exists = owner
 					owner = { is_megacorp = yes }
 				}
-				planet_event = {
-					id = pw_wonder.1370
-				}
+				planet_event = { id = pw_wonder.1370	}
 			}
 			10 = {
 				modifier = {
 					factor = 0
 					exists = owner
-					owner = { has_country_flag = pw_industrial_hearth_design }
-					owner = { has_technology = pw_tech_industrial_hearth_design_megacorp }
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_design_megacorp }
+						owner = { has_tech_option = pw_tech_industrial_hearth_design_megacorp }
+					}
 				}
 				modifier = {
 					factor = 0
 					exists = owner
 					owner = { is_megacorp = no }
 				}
-				planet_event = {
-					id = pw_wonder.1371
+				planet_event = { id = pw_wonder.1371	}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					exists = owner
+					OR = {
+						owner = { has_technology = pw_tech_industrial_hearth_production }
+						owner = { has_tech_option = pw_tech_industrial_hearth_production }
+					}
 				}
+				planet_event = { id = pw_wonder.1373 }
 			}
 		}
 	}
@@ -4796,15 +4806,10 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
 		has_active_building = pw_building_industrial_hearth
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_industry_military }
 	}
 
 	option = {
@@ -4834,15 +4839,10 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
 		has_active_building = pw_building_industrial_hearth
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_industry_civilian }
 	}
 
 	option = {
@@ -4872,7 +4872,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
@@ -4923,15 +4922,10 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
 		has_active_building = pw_building_industrial_hearth
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_housing }
 	}
 
 	option = {
@@ -4975,15 +4969,10 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
 		has_active_building = pw_building_industrial_hearth
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_gardens }
 	}
 
 	option = {
@@ -5013,15 +5002,10 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
 		has_active_building = pw_building_industrial_hearth
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_industrial_hearth_design }
 	}
 
 	option = {
@@ -5075,7 +5059,6 @@ planet_event = {
 
 	pre_triggers = {
 		has_owner = yes
-		is_ai = no
 	}
 
 	trigger = {
@@ -5115,6 +5098,39 @@ planet_event = {
 		name = pw_wonder.1372.a
 		add_modifier = {
 			modifier = pw_mod_pilot_plan
+		}
+	}
+}
+
+#Industrial Hearth: Jobs production/upkeep
+planet_event = {
+	id = pw_wonder.1373
+	title = pw_wonder.1373.name
+	desc = pw_wonder.1373.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_active_building = pw_building_industrial_hearth
+	}
+
+	option = {
+		name = pw_wonder.1373.a
+		owner = {
+			add_research_option = pw_tech_industrial_hearth_production
+		}
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1364
+				days = @pw_5years
+				random = @pw_1year
+			}
 		}
 	}
 }

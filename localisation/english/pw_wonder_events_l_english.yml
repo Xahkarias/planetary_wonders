@@ -409,6 +409,10 @@
     pw_wonder.1372.name: "Capital Reforms"
     pw_wonder.1372.desc: "Our capital has been reformed according to the director plan set by the most skilled poly-artisans. In a first moment, the capital itself became a \"Fantasy Island\", an utopian center in and ocean of displaced people and buildings. But soon its surroundings were encompassed in the pilot plan and changed to the benefit of its population, and now the whole planet enjoys better mobility and urban features. All future developments shall follow this plan and we will have more space than originally projected."
     pw_wonder.1372.a: "To rule is indeed to build districts."
+    #Industrial Hearth Development: Production
+    pw_wonder.1373.name: "Polytechnic Developments: Integrated Industry"
+    pw_wonder.1373.desc: "By integrating different parts of our industry, logistic chains of production and consumption can be made more efficient. The Poly-Artisans of the Industrial Hearth have devised an innovative plan to combine industrial byproducts in elaborate feedback loops together with a complete reform of our logistics of production and distribution. This will allow us to produce much more overall, with minimal losses."
+    pw_wonder.1373.a: "Send the project plans to our researches."
 
     #Complete Pavilion of Wonders
     pw_message_pavilion_of_wonders_complete: "$pw_pavilion_of_wonders$ has been constructed in $PLANET|Y$."
