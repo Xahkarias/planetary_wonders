@@ -161,6 +161,15 @@ pw_last_increased_tech_was_enigma_tech = {
 		last_increased_tech = pw_enigma_tech_exoteric_predictions_system
 		last_increased_tech = pw_enigma_tech_bio_frequency_emitters
 		last_increased_tech = pw_enigma_tech_exoteric_fleet_pattern
+		last_increased_tech = pw_enigma_tech_impossible_architecture
+		last_increased_tech = pw_enigma_tech_one_with_the_machine
+		last_increased_tech = pw_enigma_tech_hypersonic_frequency_harmony
+		last_increased_tech = pw_enigma_tech_complete_stabilization_fields
+		last_increased_tech = pw_enigma_tech_simultaneous_prime_analysis
+		last_increased_tech = pw_enigma_tech_unintelligible_data_organization
+		last_increased_tech = pw_enigma_tech_gas_molecular_generation
+		last_increased_tech = pw_enigma_tech_societal_overclock_regime
+		last_increased_tech = pw_enigma_tech_simulations_within_simulations
 	}
 }
 
