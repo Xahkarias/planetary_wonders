@@ -1,3 +1,30 @@
+# Techs
+
+#Regular Tech Cost
+@pw_tech_cost_0 = 22000 #Base Tech
+@pw_tech_cost_1 = 25000 #Regular Wonders
+@pw_tech_cost_2 = 30000 #Ethics Wonders
+@pw_tech_cost_3 = 32000 #Unique Wonders
+@pw_tech_cost_4 = 35000 #Upgrade Wonders
+@pw_tech_cost_5 = 45000 #A lot
+
+#Enigma Techs Cost
+@pw_enigma_tech_cost_1 = 60000
+@pw_enigma_tech_cost_2 = 80000
+
+#GradArchive Tech Cost
+@pw_grand_archive_tech_cost = 75000
+@pw_grand_archive_tech_cost_final = 125000
+
+#Infrastructure (TLN & FC)
+@pw_tech_cost_infra = 42000
+
+#Base Weight modifier
+@pw_tech_weight_mod = 0.25 #Mostly Rare Techs
+
+#Base AI Weight
+@pw_tech_ai_weight = 5 #Very likely to be picked
+
 #Buildings
 
 #Resource Cost:
@@ -66,15 +93,6 @@
 @pw_decision_resource_mod = 0.20
 @pw_decision_duration = 3600 # 10 years
 @pw_art_exhibition_duration = 1800 # 5 years
-
-# Techs
-
-#Cost:
-@pw_tier4cost4 = 28000
-@pw_enigma_tech_cost = 60000
-@pw_enigma_tech_cost_extra = 80000
-@pw_grand_archive_cost = 75000
-@pw_grand_archive_cost_final = 125000
 
 
 #Holy Reliquary artifacts cost check:

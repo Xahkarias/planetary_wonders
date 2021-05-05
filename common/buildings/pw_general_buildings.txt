@@ -481,7 +481,7 @@ pw_building_panopticon = {
 	destroy_trigger = {
 		NOR = {
 			has_modifier = penal_colony
-			owner = { has_civic = civic_police_state }
+			owner = { has_valid_civic = civic_police_state }
 		}
 	}
 

@@ -3,11 +3,11 @@
 pw_tech_planetary_mega_engineering = {
 	area = engineering
 	category = { industry }
-	cost = @tier4cost2
+	cost = @pw_tech_cost_0
 	tier = 4
 	prerequisites = {
 		tech_housing_1
-		tech_construction_templates
+		tech_starbase_4
 		tech_galactic_administration
 	}
 	weight = @tier4weight2
@@ -21,8 +21,8 @@ pw_tech_planetary_mega_engineering = {
 	}
 
 	modifier = {
-		country_resource_max_add = 5000
-		planet_building_build_speed_mult = 0.50
+		country_resource_max_add = 10000
+		planet_building_build_speed_mult = 0.25
 	}
 
 	weight_modifier = {
@@ -89,17 +89,22 @@ pw_tech_planetary_mega_engineering = {
 
 		modifier = {
 			factor = 2
-			has_civic = civic_functional_architecture
+			has_valid_civic = civic_functional_architecture
 		}
 
 		modifier = {
 			factor = 2
-			has_civic = civic_machine_builder
+			has_valid_civic = civic_machine_builder
+		}
+
+		modifier = {
+			factor = 5
+			has_edict = pw_ambition_monumentality
 		}
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -115,7 +120,7 @@ pw_tech_planetary_mega_engineering = {
 #Space Elevator
 pw_tech_space_elevator = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { voidcraft }
 	prerequisites = { pw_tech_planetary_mega_engineering }
@@ -123,7 +128,7 @@ pw_tech_space_elevator = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -180,7 +185,7 @@ pw_tech_space_elevator = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -194,15 +199,18 @@ pw_tech_space_elevator = {
 # Particle Supercollider
 pw_tech_particle_supercollider = {
 	area = physics
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { particles }
-	prerequisites = { pw_tech_planetary_mega_engineering }
-	weight = @tier4weight2
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_engineering_3
+	}
+	weight = @tier4weight3
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -255,7 +263,7 @@ pw_tech_particle_supercollider = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -269,15 +277,18 @@ pw_tech_particle_supercollider = {
 # Domed City
 pw_tech_domed_city = {
 	area = society
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { statecraft }
-	prerequisites = { pw_tech_planetary_mega_engineering }
-	weight = @tier4weight2
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_society_3
+	}
+	weight = @tier4weight3
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -329,7 +340,7 @@ pw_tech_domed_city = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -343,15 +354,18 @@ pw_tech_domed_city = {
 # Abyssal Crater Test Site
 pw_tech_abyssal_crater_test_site = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { propulsion }
-	prerequisites = { pw_tech_planetary_mega_engineering }
-	weight = @tier4weight2
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_physics_3
+	}
+	weight = @tier4weight3
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -403,7 +417,7 @@ pw_tech_abyssal_crater_test_site = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -417,7 +431,7 @@ pw_tech_abyssal_crater_test_site = {
 # Erebus Project
 pw_tech_erebus_project = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { industry }
 	prerequisites = {
@@ -428,7 +442,7 @@ pw_tech_erebus_project = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -469,13 +483,16 @@ pw_tech_erebus_project = {
 		}
 
 		modifier = {
-			factor = 5
-			has_ascension_perk = pw_ap_planetary_wonders
+			factor = 2
+			OR = {
+				has_valid_civic = civic_machine_rockbreakers
+				has_valid_civic = civic_mining_guilds
+			}
 		}
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -489,7 +506,7 @@ pw_tech_erebus_project = {
 # Helios Tower
 pw_tech_helios_tower = {
 	area = physics
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { field_manipulation }
 	prerequisites = {
@@ -500,7 +517,7 @@ pw_tech_helios_tower = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -541,13 +558,16 @@ pw_tech_helios_tower = {
 		}
 
 		modifier = {
-			factor = 5
-			has_ascension_perk = pw_ap_planetary_wonders
+			factor = 2
+			OR = {
+				is_megacorp = yes
+				is_machine_empire = yes
+			}
 		}
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -561,7 +581,7 @@ pw_tech_helios_tower = {
 # Demetrius Cornucopia
 pw_tech_demetrius_fields = {
 	area = society
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { biology }
 	prerequisites = {
@@ -572,7 +592,7 @@ pw_tech_demetrius_fields = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -613,13 +633,24 @@ pw_tech_demetrius_fields = {
 		}
 
 		modifier = {
-			factor = 5
-			has_ascension_perk = pw_ap_planetary_wonders
+			factor = 2
+			OR = {
+				has_valid_civic = civic_agrarian_idyll
+				is_hive_empire = yes
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_ascension_perk = ap_synthetic_evolution
+			}
 		}
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -633,14 +664,14 @@ pw_tech_demetrius_fields = {
 #Astronomical Modeling
 pw_tech_galactic_modeling = {
 	area = society
-	cost = @pw_tier4cost4
-	tier = 4
+	cost = @pw_tech_cost_3
+	tier = 5
 	category = { statecraft }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
 		tech_galactic_bureaucracy
 	}
-	weight = @tier4weight2
+	weight = @tier5weight1
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -651,7 +682,7 @@ pw_tech_galactic_modeling = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -713,18 +744,18 @@ pw_tech_galactic_modeling = {
 
 		modifier = {
 			factor = 1.25
-			num_owned_planets > 6
+			num_owned_planets > 8
 		}
 
 		modifier = {
 			factor = 1.25
-			num_owned_planets > 7
+			num_owned_planets > 12
 		}
 
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -738,7 +769,7 @@ pw_tech_galactic_modeling = {
 # Panopticon
 pw_tech_utilitarian_vigilance = {
 	area = society
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	tier = 4
 	category = { statecraft }
 	prerequisites = {
@@ -755,7 +786,7 @@ pw_tech_utilitarian_vigilance = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -796,7 +827,7 @@ pw_tech_utilitarian_vigilance = {
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.25
 			is_authoritarian = yes
 		}
 
@@ -818,6 +849,11 @@ pw_tech_utilitarian_vigilance = {
 		}
 
 		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_cutthroat_politics
+		}
+
+		modifier = {
 			factor = 0
 			has_valid_civic = civic_criminal_heritage
 		}
@@ -829,7 +865,7 @@ pw_tech_utilitarian_vigilance = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -843,7 +879,7 @@ pw_tech_utilitarian_vigilance = {
 # Enigma Engine
 pw_tech_metaphysical_singularity = {
 	area = physics
-	cost = @tier5cost3
+	cost = @pw_tech_cost_5
 	tier = 5
 	category = { computing }
 	prerequisites = {
@@ -866,7 +902,7 @@ pw_tech_metaphysical_singularity = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -923,7 +959,7 @@ pw_tech_metaphysical_singularity = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -937,7 +973,7 @@ pw_tech_metaphysical_singularity = {
 # Solipsist Debate Hall
 pw_tech_metacognition_dialectics = {
 	area = society
-	cost = @tier5cost2
+	cost = @pw_tech_cost_4
 	tier = 5
 	category = { statecraft }
 	prerequisites = {
@@ -953,7 +989,7 @@ pw_tech_metacognition_dialectics = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1020,7 +1056,7 @@ pw_tech_metacognition_dialectics = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1034,7 +1070,7 @@ pw_tech_metacognition_dialectics = {
 # Guardian Angel
 pw_tech_guardian_angel = {
 	area = society
-	cost = @tier4cost3
+	cost = @pw_tech_cost_2
 	tier = 4
 	category = { military_theory }
 	prerequisites = {
@@ -1046,7 +1082,7 @@ pw_tech_guardian_angel = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1130,10 +1166,15 @@ pw_tech_guardian_angel = {
 			factor = 0.5
 			is_pacifist = yes
 		}
+
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1149,7 +1190,7 @@ pw_tech_planetary_mantle_production = {
 	area = engineering
 	category = { materials }
 	tier = 4
-	cost = @tier4cost3
+	cost = @pw_tech_cost_2
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
 		tech_advanced_metallurgy_2
@@ -1159,7 +1200,7 @@ pw_tech_planetary_mantle_production = {
 	is_rare = yes
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1200,6 +1241,15 @@ pw_tech_planetary_mantle_production = {
 		}
 
 		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_world_shaper
+				has_ascension_perk = ap_hive_worlds
+				has_ascension_perk = ap_machine_worlds
+			}
+		}
+
+		modifier = {
 			factor = 0.5
 			has_valid_civic = civic_environmentalist
 		}
@@ -1227,7 +1277,7 @@ pw_tech_planetary_mantle_production = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1243,11 +1293,12 @@ pw_tech_titan_forge = {
 	area = engineering
 	category = { materials }
 	tier = 5
-	cost = @tier5cost1
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_planetary_mantle_production
+		tech_alloys_2
 	}
-	weight = @tier5weight1
+	weight = @tier5weight2
 	is_rare = yes
 
 	prereqfor_desc = {
@@ -1258,7 +1309,7 @@ pw_tech_titan_forge = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1331,7 +1382,7 @@ pw_tech_titan_forge = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1347,7 +1398,7 @@ pw_tech_titan_forge_crystals = {
 	area = engineering
 	category = { materials }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_titan_forge
 	}
@@ -1362,7 +1413,7 @@ pw_tech_titan_forge_crystals = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = 10
 	}
 }
 
@@ -1370,7 +1421,7 @@ pw_tech_titan_forge_gases = {
 	area = engineering
 	category = { materials }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_titan_forge
 	}
@@ -1385,7 +1436,7 @@ pw_tech_titan_forge_gases = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = 10
 	}
 }
 
@@ -1393,7 +1444,7 @@ pw_tech_titan_forge_motes = {
 	area = physics
 	category = { particles }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_titan_forge
 	}
@@ -1408,7 +1459,7 @@ pw_tech_titan_forge_motes = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = 10
 	}
 }
 
@@ -1417,11 +1468,11 @@ pw_tech_industrial_hearth = {
 	area = engineering
 	category = { industry }
 	tier = 5
-	cost = @tier5cost1
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_planetary_mantle_production
 	}
-	weight = @tier5weight1
+	weight = @tier5weight2
 	is_rare = yes
 
 	potential = {
@@ -1436,7 +1487,7 @@ pw_tech_industrial_hearth = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1488,7 +1539,7 @@ pw_tech_industrial_hearth = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1504,7 +1555,7 @@ pw_tech_industrial_hearth_industry_military = {
 	area = engineering
 	category = { materials }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -1527,7 +1578,7 @@ pw_tech_industrial_hearth_industry_civilian = {
 	area = engineering
 	category = { industry }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -1550,7 +1601,7 @@ pw_tech_industrial_hearth_housing = {
 	area = engineering
 	category = { industry }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -1561,7 +1612,7 @@ pw_tech_industrial_hearth_housing = {
 	}
 
 	modifier = {
-		planet_housing_mult = 0.25
+		planet_housing_mult = 0.10
 	}
 
 	ai_weight = {
@@ -1573,7 +1624,7 @@ pw_tech_industrial_hearth_design = {
 	area = physics
 	category = { computing }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -1596,7 +1647,7 @@ pw_tech_industrial_hearth_design_megacorp = {
 	area = physics
 	category = { computing }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -1619,7 +1670,7 @@ pw_tech_industrial_hearth_gardens = {
 	area = society
 	category = { new_worlds }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -1643,11 +1694,11 @@ pw_tech_great_art_exhibition = {
 	area = society
 	category = { statecraft }
 	tier = 4
-	cost = @tier4cost3
+	cost = @pw_tech_cost_1
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
 	}
-	weight = @tier5weight1
+	weight = @tier4weight2
 	is_rare = yes
 
 	potential = {
@@ -1655,7 +1706,7 @@ pw_tech_great_art_exhibition = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1707,18 +1758,22 @@ pw_tech_great_art_exhibition = {
 
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-			}
+			is_pacifist = yes
+		}
+
+		modifier = {
+			factor = 2
+			is_xenophobe = yes
+		}
+
+		modifier = {
+			factor = 2
+			is_xenophile = yes
 		}
 
 		modifier = {
@@ -1730,10 +1785,22 @@ pw_tech_great_art_exhibition = {
 			factor = 5
 			has_ascension_perk = ap_one_vision
 		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = mega_art_installation_restored
+				has_megastructure = mega_art_installation_restored_2
+				has_megastructure = mega_art_installation_1
+				has_megastructure = mega_art_installation_2
+				has_megastructure = mega_art_installation_3
+				has_megastructure = mega_art_installation_4
+			}
+		}
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1748,12 +1815,12 @@ pw_tech_great_art_exhibition = {
 pw_tech_artistic_dissemination = {
 	area = society
 	category = { statecraft }
-	tier = 5
-	cost = @tier5cost2
+	tier = 4
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_great_art_exhibition
 	}
-	weight = @tier5weight2
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -1763,7 +1830,7 @@ pw_tech_artistic_dissemination = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -1815,18 +1882,22 @@ pw_tech_artistic_dissemination = {
 
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-			}
+			is_pacifist = yes
+		}
+
+		modifier = {
+			factor = 2
+			is_xenophobe = yes
+		}
+
+		modifier = {
+			factor = 2
+			is_xenophile = yes
 		}
 
 		modifier = {
@@ -1841,7 +1912,7 @@ pw_tech_artistic_dissemination = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1852,12 +1923,12 @@ pw_tech_artistic_dissemination = {
 	}
 }
 
-# Diversity Fair
+# Fair of Worlds
 pw_tech_xeno_art_integration = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost1
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_great_art_exhibition
 	}
@@ -1962,7 +2033,7 @@ pw_tech_xeno_art_integration = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -1978,7 +2049,7 @@ pw_tech_cultural_diversity_studies = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_xeno_art_integration
 	}
@@ -1996,7 +2067,7 @@ pw_tech_cultural_diversity_studies = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -2012,11 +2083,11 @@ pw_tech_artistic_exaltation = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_xeno_art_integration
 	}
-	weight = @tier5weight2
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -2027,7 +2098,7 @@ pw_tech_artistic_exaltation = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -2105,7 +2176,7 @@ pw_tech_artistic_exaltation = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -2121,7 +2192,7 @@ pw_tech_xeno_art_alienation = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost1
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_great_art_exhibition
 	}
@@ -2226,7 +2297,7 @@ pw_tech_xeno_art_alienation = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -2242,7 +2313,7 @@ pw_tech_cultural_hegemony_studies = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_xeno_art_alienation
 	}
@@ -2260,7 +2331,7 @@ pw_tech_cultural_hegemony_studies = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -2275,11 +2346,11 @@ pw_tech_artistic_defamation = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_xeno_art_alienation
 	}
-	weight = @tier5weight2
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -2290,7 +2361,7 @@ pw_tech_artistic_defamation = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -2368,7 +2439,7 @@ pw_tech_artistic_defamation = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -2383,12 +2454,13 @@ pw_tech_artistic_defamation = {
 pw_tech_spiritual_artifacts_studies = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost1
+	tier = 5
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
+		tech_transcendent_faith
 	}
-	weight = @tier5weight1
+	weight = @tier5weight2
 	is_rare = yes
 
 	potential = {
@@ -2397,7 +2469,7 @@ pw_tech_spiritual_artifacts_studies = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -2487,7 +2559,7 @@ pw_tech_spiritual_artifacts_studies = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -2503,7 +2575,7 @@ pw_tech_holy_reliquary_inward_expansion = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @pw_grand_archive_cost_final
+	cost = @pw_grand_archive_tech_cost_final
 	prerequisites = {
 		pw_tech_spiritual_artifacts_studies
 	}
@@ -2527,7 +2599,7 @@ pw_tech_holy_reliquary_revealed_destiny = {
 	area = society
 	category = { new_worlds }
 	tier = 5
-	cost = @pw_grand_archive_cost_final
+	cost = @pw_grand_archive_tech_cost_final
 	prerequisites = {
 		pw_tech_spiritual_artifacts_studies
 	}
@@ -2552,7 +2624,7 @@ pw_tech_holy_reliquary_venerable_tradition = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @pw_grand_archive_cost_final
+	cost = @pw_grand_archive_tech_cost_final
 	prerequisites = {
 		pw_tech_spiritual_artifacts_studies
 	}
@@ -2575,14 +2647,15 @@ pw_tech_holy_reliquary_venerable_tradition = {
 
 # The Grand Archive
 pw_tech_materialist_archiving = {
-	area = society
-	category = { statecraft }
-	tier = 4
-	cost = @tier5cost1
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
+		tech_global_research_initiative
 	}
-	weight = @tier5weight1
+	weight = @tier5weight2
 	is_rare = yes
 
 	potential = {
@@ -2591,20 +2664,20 @@ pw_tech_materialist_archiving = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+				area = physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
+				area = physics
 				has_trait = leader_trait_spark_of_genius
 			}
 		}
@@ -2612,7 +2685,7 @@ pw_tech_materialist_archiving = {
 		modifier = {
 			factor = 1.5
 			research_leader = {
-				area = society
+				area = physics
 				has_trait = leader_trait_curator
 			}
 		}
@@ -2678,12 +2751,12 @@ pw_tech_materialist_archiving = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+				area = physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -2694,7 +2767,7 @@ pw_tech_grand_archive_genetic_secrets = {
 	area = society
 	category = { biology }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2707,11 +2780,11 @@ pw_tech_grand_archive_genetic_secrets = {
 
 	modifier = {
 		BIOLOGICAL_species_trait_points_add = 1
-		modify_species_cost_mult = -0.2
+		modify_species_cost_mult = -0.25
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2719,7 +2792,7 @@ pw_tech_grand_archive_lost_state_secrets = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2732,11 +2805,11 @@ pw_tech_grand_archive_lost_state_secrets = {
 
 	modifier = {
 		country_leader_pool_size = 1
-		country_naval_cap_add = 20
+		country_naval_cap_add = 30
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2744,7 +2817,7 @@ pw_tech_grand_archive_crucible_of_worlds_secrets = {
 	area = society
 	category = { new_worlds }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2761,7 +2834,7 @@ pw_tech_grand_archive_crucible_of_worlds_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2769,7 +2842,7 @@ pw_tech_grand_archive_subspace_particle_secrets = {
 	area = physics
 	category = { particles }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2786,7 +2859,7 @@ pw_tech_grand_archive_subspace_particle_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2794,7 +2867,7 @@ pw_tech_grand_archive_omnidatabase_secrets = {
 	area = physics
 	category = { computing }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2807,11 +2880,11 @@ pw_tech_grand_archive_omnidatabase_secrets = {
 
 	modifier = {
 		num_tech_alternatives_add = 1
-		intel_decryption_add = 2
+		intel_decryption_add = 1
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2819,7 +2892,7 @@ pw_tech_grand_archive_stellar_secrets = {
 	area = physics
 	category = { field_manipulation }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2835,7 +2908,7 @@ pw_tech_grand_archive_stellar_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2843,7 +2916,7 @@ pw_tech_grand_archive_void_construction_secrets = {
 	area = engineering
 	category = { voidcraft }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2860,7 +2933,7 @@ pw_tech_grand_archive_void_construction_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2868,7 +2941,7 @@ pw_tech_grand_archive_mechanist_secrets = {
 	area = engineering
 	category = { industry }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2881,11 +2954,11 @@ pw_tech_grand_archive_mechanist_secrets = {
 
 	modifier = {
 		ROBOT_species_trait_points_add = 1
-		modify_species_cost_mult = -0.2
+		modify_species_cost_mult = -0.25
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2893,7 +2966,7 @@ pw_tech_grand_archive_original_mechanist_secrets = {
 	area = engineering
 	category = { industry }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_grand_archive_mechanist_secrets
 	}
@@ -2911,7 +2984,7 @@ pw_tech_grand_archive_original_mechanist_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2919,7 +2992,7 @@ pw_tech_grand_archive_architectural_secrets = {
 	area = engineering
 	category = { materials }
 	tier = 5
-	cost = @pw_grand_archive_cost
+	cost = @pw_grand_archive_tech_cost
 	prerequisites = {
 		pw_tech_materialist_archiving
 	}
@@ -2936,7 +3009,7 @@ pw_tech_grand_archive_architectural_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2944,7 +3017,7 @@ pw_tech_grand_archive_our_lost_secrets = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @pw_grand_archive_cost_final
+	cost = @pw_grand_archive_tech_cost_final
 	prerequisites = {
 		pw_tech_grand_archive_genetic_secrets
 		pw_tech_grand_archive_lost_state_secrets
@@ -2968,7 +3041,7 @@ pw_tech_grand_archive_our_lost_secrets = {
 	}
 
 	ai_weight = {
-		factor = 20
+		factor = @pw_tech_ai_weight
 	}
 }
 
@@ -2976,10 +3049,12 @@ pw_tech_grand_archive_our_lost_secrets = {
 pw_tech_transplanetary_logistics = {
 	area = society
 	category = { new_worlds }
-	tier = 4
-	cost = @tier5cost1
+	tier = 5
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
+		tech_planetary_infrastructure_2
+		tech_capital_productivity_3
 	}
 	weight = @tier5weight1
 	is_rare = yes
@@ -2990,7 +3065,7 @@ pw_tech_transplanetary_logistics = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -3072,7 +3147,7 @@ pw_tech_transplanetary_logistics = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3089,12 +3164,12 @@ pw_tech_transplanetary_logistics = {
 pw_tech_egalitarian_distribution_services = {
 	area = physics
 	category = { computing }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_transplanetary_logistics
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3174,7 +3249,7 @@ pw_tech_egalitarian_distribution_services = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3195,12 +3270,12 @@ pw_tech_egalitarian_distribution_services = {
 pw_tech_egalitarian_emergency_services = {
 	area = society
 	category = { new_worlds }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_transplanetary_logistics
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3280,7 +3355,7 @@ pw_tech_egalitarian_emergency_services = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3301,12 +3376,12 @@ pw_tech_egalitarian_emergency_services = {
 pw_tech_egalitarian_cultural_development = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_transplanetary_logistics
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3386,7 +3461,7 @@ pw_tech_egalitarian_cultural_development = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3407,12 +3482,12 @@ pw_tech_egalitarian_cultural_development = {
 pw_tech_egalitarian_industrial_development = {
 	area = engineering
 	category = { industry }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_transplanetary_logistics
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3492,7 +3567,7 @@ pw_tech_egalitarian_industrial_development = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3514,7 +3589,7 @@ pw_tech_burdens_of_all = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost2
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_transplanetary_logistics
 	}
@@ -3535,7 +3610,7 @@ pw_tech_burdens_of_all = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3550,10 +3625,12 @@ pw_tech_burdens_of_all = {
 pw_tech_elitist_urbanism = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost1
+	tier = 5
+	cost = @pw_tech_cost_4
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
+		tech_planetary_infrastructure_2
+		tech_capital_productivity_3
 	}
 	weight = @tier5weight1
 	is_rare = yes
@@ -3564,7 +3641,7 @@ pw_tech_elitist_urbanism = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -3656,7 +3733,7 @@ pw_tech_elitist_urbanism = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3673,12 +3750,12 @@ pw_tech_elitist_urbanism = {
 pw_tech_capital_developments = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3768,7 +3845,7 @@ pw_tech_capital_developments = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3795,7 +3872,7 @@ pw_tech_capital_developments_luxury_retreat = {
 		pw_tech_capital_developments
 		tech_resort_colonies
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3864,7 +3941,7 @@ pw_tech_capital_developments_luxury_retreat = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3897,7 +3974,7 @@ pw_tech_capital_developments_wardens_directorate = {
 		pw_tech_capital_developments
 		tech_penal_colonies
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -3966,7 +4043,7 @@ pw_tech_capital_developments_wardens_directorate = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -3999,7 +4076,7 @@ pw_tech_capital_developments_overseers_ring = {
 		pw_tech_capital_developments
 		tech_slave_colonies
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4068,7 +4145,7 @@ pw_tech_capital_developments_overseers_ring = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4095,12 +4172,12 @@ pw_tech_capital_developments_overseers_ring = {
 pw_tech_centralized_emergency_developments = {
 	area = engineering
 	category = { industry }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4190,7 +4267,7 @@ pw_tech_centralized_emergency_developments = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4211,12 +4288,12 @@ pw_tech_centralized_emergency_developments = {
 pw_tech_centralized_power_developments = {
 	area = physics
 	category = { computing }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4306,7 +4383,7 @@ pw_tech_centralized_power_developments = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4327,12 +4404,12 @@ pw_tech_centralized_power_developments = {
 pw_tech_central_council_ambassador_chambers = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4393,7 +4470,7 @@ pw_tech_central_council_ambassador_chambers = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4414,12 +4491,12 @@ pw_tech_central_council_ambassador_chambers = {
 pw_tech_central_council_internal_affairs = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4480,7 +4557,7 @@ pw_tech_central_council_internal_affairs = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4501,12 +4578,12 @@ pw_tech_central_council_internal_affairs = {
 pw_tech_central_council_intellectual_circles = {
 	area = physics
 	category = { computing }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4557,7 +4634,7 @@ pw_tech_central_council_intellectual_circles = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4578,12 +4655,12 @@ pw_tech_central_council_intellectual_circles = {
 pw_tech_central_council_holy_tribunal = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4649,7 +4726,7 @@ pw_tech_central_council_holy_tribunal = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4670,12 +4747,12 @@ pw_tech_central_council_holy_tribunal = {
 pw_tech_central_council_ballroom = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4731,7 +4808,7 @@ pw_tech_central_council_ballroom = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4752,12 +4829,12 @@ pw_tech_central_council_ballroom = {
 pw_tech_central_council_war_room = {
 	area = society
 	category = { military_theory }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_infra
 	prerequisites = {
 		pw_tech_elitist_urbanism
 	}
-	weight = @tier4weight1
+	weight = @tier4weight3
 
 	potential = {
 		is_gestalt = no
@@ -4823,7 +4900,7 @@ pw_tech_central_council_war_room = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4845,11 +4922,12 @@ pw_tech_festivals_of_harmony = {
 	area = society
 	category = { statecraft }
 	tier = 4
-	cost = @tier5cost1
+	cost = @pw_tech_cost_2
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
+		tech_hyper_entertainment_forum
 	}
-	weight = @tier5weight1
+	weight = @tier4weight3
 	is_rare = yes
 
 	potential = {
@@ -4858,7 +4936,7 @@ pw_tech_festivals_of_harmony = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -4930,7 +5008,7 @@ pw_tech_festivals_of_harmony = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -4945,12 +5023,12 @@ pw_tech_festivals_of_harmony = {
 pw_tech_harvest_festival = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_festivals_of_harmony
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -4996,7 +5074,7 @@ pw_tech_harvest_festival = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5011,12 +5089,12 @@ pw_tech_harvest_festival = {
 pw_tech_commemorate_perfection = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_festivals_of_harmony
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -5062,7 +5140,7 @@ pw_tech_commemorate_perfection = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5077,12 +5155,12 @@ pw_tech_commemorate_perfection = {
 pw_tech_peace_manipulation = {
 	area = society
 	category = { statecraft }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_festivals_of_harmony
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -5137,7 +5215,7 @@ pw_tech_peace_manipulation = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5153,7 +5231,7 @@ pw_tech_brace_against_the_storm = {
 	area = society
 	category = { statecraft }
 	tier = 5
-	cost = @tier5cost3
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_festivals_of_harmony
 		pw_tech_peace_manipulation
@@ -5234,7 +5312,7 @@ pw_tech_brace_against_the_storm = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5251,9 +5329,10 @@ pw_tech_parades_of_supremacy = {
 	area = society
 	category = { military_theory }
 	tier = 4
-	cost = @tier5cost1
+	cost = @pw_tech_cost_2
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
+		tech_hyper_entertainment_forum
 	}
 	weight = @tier5weight1
 	is_rare = yes
@@ -5264,7 +5343,7 @@ pw_tech_parades_of_supremacy = {
 	}
 
 	weight_modifier = {
-		factor = 0.25
+		factor = @pw_tech_weight_mod
 
 		modifier = {
 			factor = 1.5
@@ -5351,7 +5430,7 @@ pw_tech_parades_of_supremacy = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5366,12 +5445,13 @@ pw_tech_parades_of_supremacy = {
 pw_tech_flight_of_the_corvettes = {
 	area = society
 	category = { military_theory }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_parades_of_supremacy
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
+
 
 	potential = {
 		is_gestalt = no
@@ -5420,7 +5500,7 @@ pw_tech_flight_of_the_corvettes = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5435,12 +5515,12 @@ pw_tech_flight_of_the_corvettes = {
 pw_tech_national_march = {
 	area = society
 	category = { military_theory }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_parades_of_supremacy
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -5486,7 +5566,7 @@ pw_tech_national_march = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5501,12 +5581,12 @@ pw_tech_national_march = {
 pw_tech_combat_demonstrations = {
 	area = society
 	category = { military_theory }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_parades_of_supremacy
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -5552,7 +5632,7 @@ pw_tech_combat_demonstrations = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5567,12 +5647,12 @@ pw_tech_combat_demonstrations = {
 pw_tech_merchants_of_war = {
 	area = society
 	category = { military_theory }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_parades_of_supremacy
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -5618,7 +5698,7 @@ pw_tech_merchants_of_war = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5633,12 +5713,12 @@ pw_tech_merchants_of_war = {
 pw_tech_vision_beyond_war = {
 	area = society
 	category = { military_theory }
-	tier = 4
-	cost = @tier5cost2
+	tier = 5
+	cost = @pw_tech_cost_3
 	prerequisites = {
 		pw_tech_parades_of_supremacy
 	}
-	weight = @tier4weight1
+	weight = @tier5weight1
 
 	potential = {
 		is_gestalt = no
@@ -5708,7 +5788,7 @@ pw_tech_vision_beyond_war = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
@@ -5724,7 +5804,7 @@ pw_tech_into_the_storm = {
 	area = society
 	category = { military_theory }
 	tier = 5
-	cost = @tier5cost3
+	cost = @pw_tech_cost_5
 	prerequisites = {
 		pw_tech_parades_of_supremacy
 		pw_tech_vision_beyond_war
@@ -5805,7 +5885,7 @@ pw_tech_into_the_storm = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 2
 			research_leader = {
