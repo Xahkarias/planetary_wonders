@@ -900,6 +900,15 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_erebus_project_built }
+	}
+
 	option = {
 		name = pw_wonder.501.a
 		if = {
@@ -916,13 +925,47 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
-		owner = { is_gestalt = no }
+	option = {
+		name = pw_wonder.501.b
+		trigger = {
+			owner = {
+				has_valid_civic = civic_mining_guilds
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
 	}
 
-	immediate = {
-		owner = { set_country_flag = pw_erebus_project_built }
+	option = {
+		name = pw_wonder.501.c
+		trigger = {
+			owner = {
+				is_lithoid = yes
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_happiness
+			days = @pw_5years
+			multiplier = 2
+		}
 	}
 }
 
@@ -935,6 +978,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_erebus_project_built }
+	}
 
 	option = {
 		name = pw_wonder.502.a
@@ -952,13 +1004,71 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
-		owner = { is_gestalt = yes }
+	option = {
+		name = pw_wonder.502.b
+		trigger = {
+			owner = {
+				has_valid_civic = civic_machine_rockbreakers
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
 	}
 
-	immediate = {
-		owner = { set_country_flag = pw_erebus_project_built }
+	option = {
+		name = pw_wonder.502.c
+		trigger = {
+			owner = {
+				is_lithoid = yes
+				NOT = { has_civic = civic_hive_devouring_swarm }
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_unity
+			days = @pw_5years
+			multiplier = 2
+		}
+	}
+
+	option = {
+		name = pw_wonder.502.d
+		trigger = {
+			owner = {
+				is_lithoid = yes
+				has_civic = civic_hive_devouring_swarm
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_wonder_built_recently_unity
+			days = @pw_5years
+			multiplier = 2
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
 	}
 }
 
@@ -1223,6 +1333,15 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_helios_tower_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_helios_tower_built }
+	}
+
 	option = {
 		name = pw_wonder.601.a
 		if = {
@@ -1239,13 +1358,27 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_helios_tower_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_helios_tower_built }
+	option = {
+		name = pw_wonder.601.b
+		trigger = {
+			OR = {
+				is_megacorp = yes
+				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_merchant_guilds
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_10years
+			}
+		}
 	}
 }
 
@@ -1485,6 +1618,15 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_demetrius_fields_built }
+	}
+
 	option = {
 		name = pw_wonder.701.a
 		if = {
@@ -1501,13 +1643,33 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_demetrius_fields_built }
+	option = {
+		name = pw_wonder.701.b
+		trigger = {
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_10years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
 	}
 }
 
@@ -1520,6 +1682,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_demetrius_fields_built }
+	}
 
 	option = {
 		name = pw_wonder.702.a
@@ -1537,13 +1708,48 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
-		owner = { is_gestalt = yes }
+	option = {
+		name = pw_wonder.702.b
+		trigger = {
+			owner = {
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_10years
+				multiplier = 2
+			}
+		}
 	}
 
-	immediate = {
-		owner = { set_country_flag = pw_demetrius_fields_built }
+	option = {
+		name = pw_wonder.702.c
+		trigger = {
+			owner = {
+				has_valid_civic = civic_machine_servitor
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_10years
+				multiplier = 2
+			}
+		}
 	}
 }
 

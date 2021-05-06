@@ -513,3 +513,13 @@
     pw_wonder.1373.name: "Polytechnic Developments: Integrated Industry"
     pw_wonder.1373.desc: "By integrating different parts of our industry, logistic chains of production and consumption can be made more efficient. The Poly-Artisans of the Industrial Hearth have devised an innovative plan to combine industrial byproducts in elaborate feedback loops together with a complete reform of our logistics of production and distribution. This will allow us to produce much more overall, with minimal losses."
     pw_wonder.1373.a: "Send the project plans to our researches."
+
+    pw_wonder.501.b: "The guilds revel with this project!"
+    pw_wonder.501.c: "Begin the Grand Harvest!"
+    pw_wonder.502.b: "Engage drills. Initiate excavation protocols."
+    pw_wonder.502.c: "Begin the Grand Harvest!"
+    pw_wonder.502.d: "A taste of the banquet to come."
+    pw_wonder.601.b: "Money does grow on towers."
+    pw_wonder.701.b: "A harvest like never seen before!"
+    pw_wonder.702.b: "The more we feed, the more food we require!"
+    pw_wonder.702.c: "Bio-Trophy sustenance status update: Acquired."

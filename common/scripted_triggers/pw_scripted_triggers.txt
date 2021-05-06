@@ -67,6 +67,38 @@ pw_has_any_planetary_wonder = {
 	}
 }
 
+#Scope: Planet
+#Check if there is another Wonder in the same planet beyond the one passed.
+pw_has_any_additional_planetary_wonder = {
+	calc_true_if = {
+		amount > 1
+		has_building = pw_building_particle_supercollider
+		has_building = pw_building_domed_city
+		has_building = pw_building_abyssal_crater_test_site
+		has_building = pw_building_abyssal_crater_test_site_habitat
+		has_building = pw_building_erebus_project
+		has_building = pw_building_helios_tower
+		has_building = pw_building_demetrius_fields
+		has_building = pw_building_galactic_model
+		has_building = pw_building_panopticon
+		has_building = pw_building_enigma_engine
+		has_building = pw_building_solipsist_debate_hall
+		has_building = pw_building_guardian_angel
+		has_building = pw_building_mantle_crucible
+		has_building = pw_building_titan_forge
+		has_building = pw_building_industrial_hearth
+		has_building = pw_building_pavilion_of_wonders
+		has_building = pw_building_fair_of_worlds
+		has_building = pw_building_museum_of_the_grotesque
+		has_building = pw_building_holy_reliquary
+		has_building = pw_building_grand_archive
+		has_building = pw_building_transplanetary_logistics_network
+		has_building = pw_building_forbidden_city
+		has_building = pw_building_festival_plaza
+		has_building = pw_building_martial_avenue
+	}
+}
+
 #Scope: Country
 pw_has_build_any_planetary_wonder = {
 	OR = {
@@ -143,6 +175,7 @@ pw_sentient_worker_job_check_trigger = {
 	}
 }
 
+#Scope: Country
 pw_last_increased_tech_was_enigma_tech = {
 	OR = {
 		last_increased_tech = pw_enigma_tech_micro_graviton_equipment

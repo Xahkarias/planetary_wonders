@@ -119,7 +119,7 @@ pw_building_solipsist_debate_hall = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 

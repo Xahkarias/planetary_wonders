@@ -31,14 +31,14 @@ pw_building_mantle_crucible = {
 				has_modifier = pw_mod_mantle_crucible_alloys
 			}
 			energy = @pw_building_upkeep
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 		upkeep = {
 			trigger = {
 				has_modifier = pw_mod_mantle_crucible_consumer_goods
 			}
 			energy = @pw_building_upkeep
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 		upkeep = {
 			trigger = {
@@ -46,7 +46,7 @@ pw_building_mantle_crucible = {
 				owner = { country_uses_consumer_goods = no }
 			}
 			energy = @pw_building_upkeep
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 		upkeep = {
 			trigger = {
@@ -470,7 +470,7 @@ pw_building_titan_forge = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -682,7 +682,7 @@ pw_building_industrial_hearth = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 	}
 

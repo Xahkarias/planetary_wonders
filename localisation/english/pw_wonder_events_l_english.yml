@@ -82,10 +82,15 @@
     pw_wonder.501.name: "Down in the deep of [ROOT.GetName]"
     pw_wonder.501.desc: "The tunnels are secured and excavated, the terrain has been prospected the equipment is prepared; we are ready to start exploiting the bowels of [ROOT.GetName] in search of valuable and constantly needed minerals.\nThe Erebus Project now offers a multitude of tunnels and passageways deep in the underground of the planet, all populated with the infrastructure and materials needed for the extraction and transportation of mineral resources: from common rock to rare ore. New storage facilities in the surface were also installed to deal with the increase in production.\n\nWe have ventured deep into space, now it is time to venture equally deep into the earth."
     pw_wonder.501.a: "The minerals must flow!"
+    pw_wonder.501.b: "The guilds revel with this project!"
+    pw_wonder.501.c: "Begin the Grand Harvest!"
     #First Time Complete Erebus Project (Gestalt)
     pw_wonder.502.name: "Down in the deep of [ROOT.GetName]"
     pw_wonder.502.desc: "The tunnels are secured and excavated, the terrain has been prospected the equipment is prepared; we are ready to start exploiting the bowels of [ROOT.GetName] in search of valuable and constantly needed minerals.\nThe Erebus Project now offers a multitude of tunnels and passageways deep in the underground of the planet, all populated with the infrastructure and materials needed for the extraction and transportation of mineral resources: from common rock to rare ore. New storage facilities in the surface were also installed to deal with the increase in production.\n\nWe have ventured deep into space, now it is time to venture equally deep into the earth."
     pw_wonder.502.a: "The minerals must flow!"
+    pw_wonder.502.b: "Engage drills. Initiate excavation protocols."
+    pw_wonder.502.c: "Begin the Grand Harvest!"
+    pw_wonder.502.d: "A taste of the banquet to come."
     #Add Crystals after Aggressive Prospecting.
     pw_wonder.505.name: "Prospecting for Crystals"
     pw_wonder.505.desc: "During our current Aggressive Prospecting of the mines of [ROOT.GetName], which increases greatly the output of the Erebus Project in the planet we have struck a deposit of valuable crystals, that could be safely extracted in the mining process. This is a great boon that this land has provided us, but we should be wary, as continuing to extract minerals from it could exhaust the rock completely."
@@ -109,6 +114,7 @@
     pw_wonder.601.name: "A Blazing Spire Is Born"
     pw_wonder.601.desc: "A field the size of a city of automated mirror arrays calibrated to converge a chunk of the energy of [ROOT.GetStarName] that hits the surface of [ROOT.GetName] to a central spire. The Helios Tower possess the most advanced energy conversion technology and is now ready to supplement any of our country's need for power.\n\nPerhaps we could also iterate on the design and maybe even trap a star in the future."
     pw_wonder.601.a: "Brilliant!"
+    pw_wonder.601.b: "Money does grow on towers."
     #First Time Complete Helios Tower (Gestalt)
     pw_wonder.602.name: "A Blazing Spire Is Born"
     pw_wonder.602.desc: "A field the size of a city of automated mirror arrays calibrated to converge a chunk of the energy of [ROOT.GetStarName] that hits the surface of [ROOT.GetName] to a central spire. The Helios Tower possess the most advanced energy conversion technology and is now ready to supplement any of our country's need for power.\n\nPerhaps we could also iterate on the design and maybe even trap a star in the future."
@@ -135,10 +141,13 @@
     pw_wonder.701.name: "Feed The World"
     pw_wonder.701.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Any lacking species or nutrient can be readily supplemented from local gene banks Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
     pw_wonder.701.a: "Seed the earth!"
+    pw_wonder.701.b: "A harvest like never seen before!"
     #First Time Complete Demetrius Cornucopia (Gestalt)
     pw_wonder.702.name: "Feed The World"
     pw_wonder.702.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
     pw_wonder.702.a: "We hunger!"
+    pw_wonder.702.b: "The more we feed, the more food we require!"
+    pw_wonder.702.c: "Bio-Trophy sustenance status update: Acquired."
     #Add Lush after predatory harvest.
     pw_wonder.704.name: "Lush Harvest"
     pw_wonder.704.desc: "During the current Predatory Harvest in [ROOT.GetName], to boost the production of the Demetrius Cornucopia new experiments in life cycles and vegetal proliferation opened the opportunity to improve the entire biosphere of the planet. A great boon to life can be had here, if we can spare the necessary nutrients to maintain this new sprawling of lifeforms as a permanent change."

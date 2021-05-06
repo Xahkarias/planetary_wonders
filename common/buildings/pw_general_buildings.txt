@@ -279,7 +279,7 @@ pw_building_galactic_model = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -844,7 +844,7 @@ pw_building_guardian_angel = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1006,7 +1006,7 @@ pw_building_transplanetary_logistics_network = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1234,7 +1234,7 @@ pw_building_transhabitat_logistics_network = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1453,7 +1453,7 @@ pw_building_forbidden_city = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1859,7 +1859,7 @@ pw_building_festival_plaza = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -2204,7 +2204,7 @@ pw_building_martial_avenue = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 	}
 

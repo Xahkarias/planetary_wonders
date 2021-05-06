@@ -147,3 +147,10 @@
     pw_conduit_of_unity: "Â§MConduit of UnityÂ§!"
     pw_building_conduit_of_unity: "Conduit of Unity"
     pw_building_conduit_of_unity_desc: "."
+
+    pw_erebus_project_jobs_add_regular: "Provides Â§G+1Â§! Â£job_minerÂ£ Â§Y$job_miner$Â§! job for each Â§Y$district_mining$Â§! on the planet (to a maximum of 15)."
+    pw_erebus_project_jobs_add_gestalt: "Provides Â§G+1Â§! Â£job_mining_droneÂ£ Â§Y$job_mining_drone$Â§! job for each Â§Y$district_mining$Â§! on the planet (to a maximum of 20)."
+    pw_helios_tower_jobs_add_regular: "Provides Â§G+1Â§! Â£job_technicianÂ£ Â§Y$job_technician$Â§! job for each Â§Y$district_generator$Â§! on the planet (to a maximum of 15)."
+    pw_helios_tower_jobs_add_gestalt: "Provides Â§G+1Â§! Â£job_technician_droneÂ£ Â§Y$job_technician_drone$Â§! job for each Â§Y$district_generator$Â§! on the planet (to a maximum of 20)."
+    pw_demetrius_fields_jobs_add_regular: "Provides Â§G+1Â§! Â£job_farmerÂ£ Â§Y$job_farmer$Â§! job for each Â§Y$district_farming$Â§! on the planet (to a maximum of 15)."
+    pw_demetrius_fields_jobs_add_gestalt: "Provides Â§G+1Â§! Â£job_agri_droneÂ£ Â§Y$job_agri_drone$Â§! job for each Â§Y$district_farming$Â§! on the planet (to a maximum of 20)."

@@ -83,7 +83,7 @@ pw_building_particle_supercollider = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -284,7 +284,7 @@ pw_building_domed_city = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -495,7 +495,7 @@ pw_building_secluded_sector = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -704,7 +704,7 @@ pw_building_abyssal_crater_test_site = {
 		upkeep = {
 			energy = @pw_building_upkeep
 			alloys = @pw_building_upkeep_extra
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -891,7 +891,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		upkeep = {
 			energy = @pw_building_upkeep
 			alloys = @pw_building_upkeep_extra
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1041,7 +1041,7 @@ pw_building_grand_archive = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 

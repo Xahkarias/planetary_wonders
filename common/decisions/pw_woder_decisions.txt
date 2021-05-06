@@ -6,8 +6,8 @@ pw_decision_erebus_prospecting = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
-			energy = @pw_decision_resource_cost
+			influence = @pw_decision_resource_influence_cost
+			volatile_motes = @pw_decision_resource_rare_resource_cost
 		}
 	}
 
@@ -24,10 +24,10 @@ pw_decision_erebus_prospecting = {
 	}
 
 	effect = {
-		add_planet_devastation = @pw_decision_devastation
+		add_planet_devastation = @pw_decision_resource_devastation
 		add_modifier = {
 			modifier = pw_mod_erebus_prospecting
-			days = @pw_decision_duration
+			days = @pw_decision_resource_duration
 		}
 		hidden_effect = {
 			planet_event = {
@@ -53,8 +53,8 @@ pw_decision_helios_seeding = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
-			energy = @pw_decision_resource_cost
+			influence = @pw_decision_resource_influence_cost
+			rare_crystals = @pw_decision_resource_rare_resource_cost
 		}
 	}
 
@@ -71,10 +71,10 @@ pw_decision_helios_seeding = {
 	}
 
 	effect = {
-		add_planet_devastation = @pw_decision_devastation
+		add_planet_devastation = @pw_decision_resource_devastation
 		add_modifier = {
 			modifier = pw_mod_helios_seeding
-			days = @pw_decision_duration
+			days = @pw_decision_resource_duration
 		}
 		hidden_effect = {
 			planet_event = {
@@ -100,8 +100,8 @@ pw_decision_demetrius_harvesting = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
-			energy = @pw_decision_resource_cost
+			influence = @pw_decision_resource_influence_cost
+			exotic_gases = @pw_decision_resource_rare_resource_cost
 		}
 	}
 
@@ -118,10 +118,10 @@ pw_decision_demetrius_harvesting = {
 	}
 
 	effect = {
-		add_planet_devastation = @pw_decision_devastation
+		add_planet_devastation = @pw_decision_resource_devastation
 		add_modifier = {
 			modifier = pw_mod_demetrius_harvesting
-			days = @pw_decision_duration
+			days = @pw_decision_resource_duration
 		}
 		hidden_effect = {
 			planet_event = {
@@ -150,8 +150,8 @@ pw_decision_rebuild_flying_fortress = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
-			minerals = @pw_decision_resource_cost
+			influence = 25
+			minerals = 1000
 		}
 	}
 
@@ -199,7 +199,7 @@ pw_decision_mantle_crucible_alloys = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
+			influence = @pw_decision_resource_influence_cost
 			volatile_motes = @pw_building_cost_rare_half
 		}
 	}
@@ -254,7 +254,7 @@ pw_decision_mantle_crucible_consumer_goods = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_influence_cost
+			influence = @pw_decision_resource_influence_cost
 			rare_crystals = @pw_building_cost_rare_half
 		}
 	}
@@ -311,7 +311,7 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 		category = decisions
 		cost = {
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -398,7 +398,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -408,7 +408,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -418,7 +418,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -428,7 +428,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -437,7 +437,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -523,7 +523,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -533,7 +533,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -543,7 +543,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -553,7 +553,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -562,7 +562,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -633,7 +633,7 @@ pw_decision_fair_of_worlds_planetary_art_exhibition = {
 		category = decisions
 		cost = {
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -705,7 +705,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -715,7 +715,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -725,7 +725,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -735,7 +735,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -744,7 +744,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -827,7 +827,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -837,7 +837,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -847,7 +847,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -857,7 +857,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -866,7 +866,7 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -929,7 +929,7 @@ pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
 		category = decisions
 		cost = {
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -1000,7 +1000,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1010,7 +1010,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1020,7 +1020,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1030,7 +1030,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1039,7 +1039,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 
@@ -1122,7 +1122,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1132,7 +1132,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1142,7 +1142,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1152,7 +1152,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 		cost = {
 			trigger = {
@@ -1161,7 +1161,7 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 				}
 			}
 			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_resource_cost
+			energy = @pw_decision_exhibition_cost_energy
 		}
 	}
 

@@ -33,7 +33,7 @@ pw_building_pavilion_of_wonders = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep
-			exotic_gases = @pw_building_upkeep_rare
+			exotic_gases = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -469,7 +469,7 @@ pw_building_fair_of_worlds = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1068,7 +1068,7 @@ pw_building_museum_of_the_grotesque = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			volatile_motes = @pw_building_upkeep_rare
+			volatile_motes = @pw_building_upkeep_rare_1
 		}
 	}
 
@@ -1728,7 +1728,7 @@ pw_building_holy_reliquary = {
 		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
-			rare_crystals = @pw_building_upkeep_rare
+			rare_crystals = @pw_building_upkeep_rare_1
 		}
 	}
 
