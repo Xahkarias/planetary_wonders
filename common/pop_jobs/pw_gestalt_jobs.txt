@@ -269,7 +269,7 @@ pw_enigma_decipher = {
 					has_edict = research_subsidies
 				}
 			}
-			energy = 1
+			energy = 2
 		}
 	}
 
@@ -279,7 +279,7 @@ pw_enigma_decipher = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 50
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite

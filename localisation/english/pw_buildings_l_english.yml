@@ -39,7 +39,7 @@
     pw_transplanetary_logistics_network: "§MTransplanetary Logistics Network§!"
     pw_building_transplanetary_logistics_network: "Transplanetary Logistics Network"
     pw_building_transplanetary_logistics_network_desc: "A system of tunnels, roads, tubes, cables and ducts that are able to provide necessary and supplementary resources equally to the population of the planet. Individuals and communities can settle anywhere as the the Network can reach the steepest mountain or the deepest sea."
-    pw_transplanetary_logistics_network_tooltip: "§SAllows us to develop planetary infrastructure.§!\n"
+    pw_transplanetary_logistics_network_tooltip: "§YAllows us to develop planetary infrastructure.§!\n"
     pw_building_transhabitat_logistics_network: "Transhabitat Logistics Network"
     pw_building_transhabitat_logistics_network_desc: "A system of tunnels, tubes, cables ducts and zero-g passageways that are able to provide necessary and supplementary resources equally to the population of the habitat. Individuals and communities can settle further into space as the the Network can reach the into the cold void."
 
@@ -47,19 +47,19 @@
     pw_forbidden_city: "§MForbidden City§!"
     pw_building_forbidden_city: "Forbidden City"
     pw_building_forbidden_city_desc: "A secure city district dedicated to administration and governance, isolated and protected from the masses. Here is where the central powers of the planet come to congregate, conspire and rule. With enough city infrastructure, every political matter in the planet can be concentrated here."
-    pw_forbidden_city_tooltip: "§SAllows us to develop centralized infrastructure.§!\n"
+    pw_forbidden_city_tooltip: "§YAllows us to develop centralized infrastructure.§!\n"
 
     # Festival Plaza
     pw_festival_plaza: "§MFestival Plaza§!"
     pw_building_festival_plaza: "Festival Plaza"
     pw_building_festival_plaza_desc: "A massive pavilion of festivities where our jubilation with life and peace can be celebrated and we all can be reminded of the pleasures of a life without conflict. It is also a place of preparation, respite and unity, in case war is proven inescapable."
-    pw_festival_plaza_tooltip: "§SAllows us to host Celebrations of Harmony.§!\n"
+    pw_festival_plaza_tooltip: "§YAllows us to host Celebrations of Harmony.§!\n"
 
     # Martial Avenue
     pw_martial_avenue: "§MMartial Avenue§!"
     pw_building_martial_avenue: "Martial Avenue"
     pw_building_martial_avenue_desc: "A gigantic avenue designated for vehicle and infantry dislocation that crosses the greatest urban areas of the planet. Here we can display our great military force in marvelous martial parades and let our might unite our people towards the next war. Some parade can even be seen from space, in order to strike fear in the heart of our enemies."
-    pw_martial_avenue_tooltip: "§SAllows us to perform Military Parades.§!\n"
+    pw_martial_avenue_tooltip: "§YAllows us to perform Military Parades.§!\n"
 
     # Research Buildings:
 
@@ -155,13 +155,13 @@
     pw_holy_reliquary: "§MHoly Reliquary§!"
     pw_building_holy_reliquary: "Holy Reliquary"
     pw_building_holy_reliquary_desc: "The revered collection of artifacts sacred to our faith and important to our traditions, kept where it can be conserved, studied and prayed upon."
-    pw_building_holy_reliquary_tooltip: "§SAllows us to sanctify holy artifacts.§!"
+    pw_building_holy_reliquary_tooltip: "§YAllows us to sanctify holy artifacts.§!"
 
     # The Grand Archive
     pw_grand_archive: "§MThe Grand Archive§!"
     pw_building_grand_archive: "The Grand Archive"
     pw_building_grand_archive_desc: "A collection of collections. A centralized archive for all that can be catalogued, with room for any future development of exploration, history and research. A repository for data, all the data."
-    pw_building_grand_archive_tooltip: "§SAllows us to start archiving projects.§!"
+    pw_building_grand_archive_tooltip: "§YAllows us to start archiving projects.§!"
 
     # Living Spire
     pw_living_spire: "§MLiving Spire§!"
@@ -181,7 +181,7 @@
     pw_enigma_engine: "§MEnigma Engine§!"
     pw_building_enigma_engine: "Enigma Engine"
     pw_building_enigma_engine_desc: "A machine. Built by ignoring logical output and following but the most basic directives. We do not fully understand how it works, only that it consumes a great quantity of power and incorporates other machinery to remain in constant motion. its gears spin, its pulleys pull and we try to decipher it."
-    pw_enigma_engine_tooltip: "Allows us to research $pw_enigma$ technologies."
+    pw_enigma_engine_tooltip: "§YAllows us to research $pw_enigma$ technologies.§!"
 
     # Hive Buildings:
 
@@ -189,4 +189,4 @@
     pw_solipsist_debate_hall: "§MSolipsist Debate Hall§!"
     pw_building_solipsist_debate_hall: "Solipsist Debate Hall"
     pw_building_solipsist_debate_hall_desc: "The Agora for one that is many. An enormous Debate Hall with many chambers for many subjects, each built in such a way that all voices within can be projected to all. It contains holodecks for expositions, battle arenas for combat demonstrations and a supercomputer terminal to test our skills in 5D chess."
-    pw_solipsist_debate_hall_tooltip: "Allows us to deliberate with ourselves over certain subjects."
+    pw_solipsist_debate_hall_tooltip: "§YAllows us to deliberate with ourselves over certain subjects.§!"

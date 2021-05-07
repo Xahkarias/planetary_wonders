@@ -84,11 +84,6 @@
 @pw_job_director_resource_amenities = 3
 @pw_job_director_resource_mult = 0.25
 
-#Per pop count
-@pw_job_per_50_pop = 0.02
-@pw_job_per_25_pop = 0.04
-@pw_job_per_20_pop = 0.05
-
 
 #Decisions
 

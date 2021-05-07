@@ -3,23 +3,16 @@ pw_building_enigma_engine = {
 	position_priority = 85
 	base_cap_amount = 1
 	can_be_ruined = no
-
 	category = research
+
+	prerequisites = {
+		pw_tech_metaphysical_singularity
+	}
 
 	potential = {
 		owner = {
 			is_machine_empire = yes
 		}
-	}
-
-	destroy_trigger = {
-		NOT = {
-			is_planet_class = pc_machine
-		}
-	}
-
-	convert_to = {
-		building_research_lab_3
 	}
 
 	allow = {
@@ -32,34 +25,14 @@ pw_building_enigma_engine = {
 		pw_is_wonder_empire_unique = { WONDER = pw_building_enigma_engine }
 	}
 
-	prerequisites = {
-		pw_tech_metaphysical_singularity
-	}
-
-	planet_modifier = {
-		planet_max_districts_add = -1
-		planet_researchers_produces_mult = @pw_building_research_mod
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			job_pw_enigma_decipher_add = 10
-			job_pw_enigma_decipher_per_pop = @pw_job_per_25_pop
+	destroy_trigger = {
+		NOT = {
+			is_planet_class = pc_machine
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
-		}
-		modifier = {
-			planet_stability_add = @pw_stability_production
-		}
+	convert_to = {
+		building_research_lab_3
 	}
 
 	resources = {
@@ -79,9 +52,85 @@ pw_building_enigma_engine = {
 			minerals = @pw_building_cost
 			alloys = @pw_building_cost_advanced
 		}
+		cost = {
+			trigger = {
+				pw_has_any_planetary_wonder = yes
+			}
+			minerals = @pw_building_cost_extra
+		}
+		cost = {
+			trigger = {
+				has_designation = col_capital_machine
+			}
+			minerals = -500
+		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
 			alloys = @pw_building_upkeep
+		}
+		upkeep = {
+			trigger = {
+				pw_has_any_additional_planetary_wonder = yes
+			}
+			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				has_designation = col_capital_machine
+			}
+			energy = @pw_building_upkeep_discount
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_pw_enigma_decipher_add = 5
+			job_pw_enigma_decipher_per_pop = @pw_job_per_25_pop
+		}
+	}
+
+	#Stability Bonus
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = pw_ambition_monumentality }
+		}
+		modifier = {
+			planet_stability_add = @pw_stability_production
+		}
+	}
+
+	#Bonus from Ambition
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_ambition_wonders_beyond_ambition
+			}
+		}
+		modifier = {
+			planet_researchers_produces_mult = 0.10
+		}
+	}
+	#Bonus from Ambition (Galactic Emperor)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_ambition_wonders_beyond_ambition
+				has_valid_civic = civic_galactic_sovereign
+			}
+		}
+		modifier = {
+			planet_stability_add = 5
 		}
 	}
 

@@ -66,7 +66,7 @@
     pw_enigma_engine: "§MEnigma Engine§!"
     pw_building_enigma_engine: "Enigma Engine"
     pw_building_enigma_engine_desc: "A machine. Built by ignoring logical output and following but the most basic directives. We do not fully understand how it works, only that it consumes a great quantity of power and incorporates other machinery to remain in constant motion. its gears spin, its pulleys pull and we try to decipher it."
-    pw_enigma_engine_tooltip: "Allows us to research $pw_enigma$ technologies."
+    pw_enigma_engine_tooltip: "§YAllows us to research $pw_enigma$ technologies.§!"
 
     pw_guardian_angel: "MGuardian Angel§!"
     pw_building_guardian_angel: "Guardian Angel"
@@ -75,7 +75,7 @@
     pw_solipsist_debate_hall: "MSolipsist Debate Hall§!"
     pw_building_solipsist_debate_hall: "Solipsist Debate Hall"
     pw_building_solipsist_debate_hall_desc: "The Agora for one that is many. An enormous Debate Hall with many chambers for many subjects, each built in such a way that all voices within can be projected to all. It contains holodecks for expositions, battle arenas for combat demonstrations and a supercomputer terminal to test our skills in 5D chess."
-    pw_solipsist_debate_hall_tooltip: "Allows us to deliberate with ourselves over certain subjects."
+    pw_solipsist_debate_hall_tooltip: "§YAllows us to deliberate with ourselves over certain subjects.§!"
 
     pw_empire_unique_tooltip: "£trigger_no£ §ROnly one allowed in the empire.§!"
 
