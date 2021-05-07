@@ -1,6 +1,6 @@
 ﻿l_russian:
 
-    
+
     pw_d_ancient_cornucopia: "Ancient Cornucopia"
     pw_d_ancient_cornucopia_desc: "This ancient farming project can still be used for our own food needs."
     pw_d_ancient_solar_tower: "Ancient Solar Tower"
@@ -40,7 +40,7 @@
     pw_d_holoarchive: "Holoarchive"
     pw_d_holoarchive_desc: "The ultimate repository for any kind of information, unifying all of the assembled archives we have collected: $pw_d_ark_project$, $pw_d_library_of_babel$, $pw_d_cradle_initiative$, $pw_d_particle_museum$, $pw_d_omnidatabase$, $pw_d_stellarium$, $pw_d_zero_g_exposition$, $pw_d_mechanist_collection$ and $pw_d_meta_architectural_complex$."
 
-    pw_transplanetary_logistics_network.infrastructure: "Â§BInfrastructure:Â§!"
+    pw_transplanetary_logistics_network.infrastructure: "§BInfrastructure:§!"
     pw_d_infrastructure_food_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Food Distribution"
     pw_d_infrastructure_food_distribution_desc: "Water, food for organics and minerals for lithoids are all essential for life. This infrastructure, based on the framework provided by the $pw_transplanetary_logistics_network$, ensures that those needs are met most efficiently and without waste."
     pw_d_infrastructure_energy_distribution: "$pw_transplanetary_logistics_network.infrastructure$ Energy Distribution"
@@ -74,7 +74,7 @@
     pw_d_infrastructure_industrial_unions: "$pw_transplanetary_logistics_network.infrastructure$ Industrial Unions"
     pw_d_infrastructure_industrial_unions_desc: "The $pw_transplanetary_logistics_network$ in conjunction with the $pw_mantle_crucible$ are able to provide full, open and safe factory environments for cooperatives and unions, leading to the manufacture and distribution of more efficient products in every industrial area."
 
-    pw_forbidden_city.infrastructure: "Â§BInfrastructure:Â§!"
+    pw_forbidden_city.infrastructure: "§BInfrastructure:§!"
     pw_d_infrastructure_planetary_command: "$pw_forbidden_city.infrastructure$ Planetary Command"
     pw_d_infrastructure_planetary_command_desc: "Administration center that bridges the operation between the planetary capital and the $pw_forbidden_city$, lubricating the exchanges of power within the ruling classes."
     pw_d_infrastructure_governor_mansion: "$pw_forbidden_city.infrastructure$ Governor's Mansion"

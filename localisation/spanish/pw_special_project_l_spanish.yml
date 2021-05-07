@@ -57,7 +57,7 @@
     PW_STELLARIUM_SIMULATION: "Analyse Star Data"
     PW_STELLARIUM_SIMULATION_DESC: "Stellar data must be reviewed in a almost perfect simulation in order to provide the correct techniques to build the Stellarium."
     PW_ZERO_G_EXPOSITION: "Assemble a Zero-G Exposition"
-    PW_ZERO_G_EXPOSITION_DESC: "In order to build the Zero-G Exposition, to show our great engineering works in space, we require a fleet with enough ships to be decommissioned so that the individuals ships can be put on display on artificial anti-gravitational fields.\n\nÂ§RWARNING: When the project is completed, the entire fleet will be decommissioned and will not be further available!Â§!"
+    PW_ZERO_G_EXPOSITION_DESC: "In order to build the Zero-G Exposition, to show our great engineering works in space, we require a fleet with enough ships to be decommissioned so that the individuals ships can be put on display on artificial anti-gravitational fields.\n\n§RWARNING: When the project is completed, the entire fleet will be decommissioned and will not be further available!§!"
     PW_MECHANIST_COLLECTION: "Assemble the Mechanist Collection"
     PW_MECHANIST_COLLECTION_DESC: "From gears and joints to fully fledged automata, because of our researchers passion for engines, cyborgs and robots there is a lot to recover and catalogue to assemble a Mechanist Collection that we would be proud of."
     PW_META_ARCHITECTURAL_COMPLEX: "Assemble the Meta-Architectural Complex"
