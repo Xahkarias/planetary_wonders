@@ -15,7 +15,10 @@ pw_building_erebus_project = {
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		OR = {
 			NOT = { is_planet_class = pc_habitat }
-			owner = { has_ascension_perk = ap_voidborn }
+			AND = {
+				owner = { has_ascension_perk = ap_voidborn }
+				has_planet_flag = mining_habitat
+			}
 		}
 	}
 
@@ -1043,7 +1046,10 @@ pw_building_helios_tower = {
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		OR = {
 			NOT = { is_planet_class = pc_habitat }
-			owner = { has_ascension_perk = ap_voidborn }
+			AND = {
+				owner = { has_ascension_perk = ap_voidborn }
+				has_planet_flag = energy_habitat
+			}
 		}
 	}
 
@@ -2064,10 +2070,7 @@ pw_building_demetrius_fields = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { is_planet_class = pc_machine }
-		OR = {
-			NOT = { is_planet_class = pc_habitat }
-			owner = { has_ascension_perk = ap_voidborn }
-		}
+		NOT = { is_planet_class = pc_habitat }
 	}
 
 	destroy_trigger = {
@@ -2939,9 +2942,7 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 			NOR  = {
-				is_planet_class = pc_habitat
 				is_planet_class = pc_hive
-				is_planet_class = pc_ringworld_habitable
 			}
 		}
 		modifier = {
