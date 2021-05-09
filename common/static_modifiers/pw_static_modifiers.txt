@@ -360,6 +360,11 @@ pw_mod_galactic_model_anomaly_sensor = {
 	icon_frame = 3
 }
 
+
+pw_mod_grand_archive_omnidatabase_secured = {
+	intel_encryption_add = 2
+}
+
 #Holy Reliquary Artifacts Modifiers:
 
 #Stargazing Mirror: Introspective Gaze

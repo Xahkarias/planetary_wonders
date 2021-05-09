@@ -74,6 +74,9 @@
     PW_OMNIDATABASE: "Assemble the Omnidatabase"
     PW_OMNIDATABASE_DESC: "A technical project as much as a investigative one. The science team is tasked with creating a hardware and software solution to holding and displaying an indefinite and dynamic amount of data, where all of the digital artifacts of our empire can be store. With triple redundancy, of course."
 
+    PW_SECURE_OMNIDATABASE: "Secure the Omnidatabase"
+    PW_SECURE_OMNIDATABASE_DESC: "Information is currency and the Omnidatabase holds a lot of information. As any other valuable it has to be protected at all costs, new security procedures need to be develop to assure us that our data is safe."
+
     PW_STELLARIUM_STAR: "Analyse Star"
     PW_STELLARIUM_STAR_DESC: "This star holds secrets beyond what initial analysis determined, that will be vital for the construction of our Stellarium."
 

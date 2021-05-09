@@ -182,3 +182,11 @@
     pw_grand_archive.1002.d: "We will select a $job_pw_master_archivist|Y$ another time."
     pw_grand_archive.1003.name: "Secrets of The $pw_grand_archive.holoarchive$"
     pw_grand_archive.1003.desc: "If a second look trough our collections of knowledge have yielded such deep lost practices for our country and technology, it will be no surprise if the $pw_grand_archive.holoarchive$ reveals its own fair share of useful secrets. Our science team is looking forward to the time they will have to delve into them.\n\nFor what we know, it may already contain our future within it.\"What shall be, was\", after all."
+
+    pw_grand_archive.521.name: "Secure The $pw_grand_archive.omnidatabase$"
+    pw_grand_archive.521.desc: "Now that we have discovered the hidden secrets that our $pw_grand_archive.omnidatabase$ holds, many Grand Archivists have issued concerns with the cybersecurity of the whole Archive. They believe that, while the security of information in our country is adequate, the importance of the data hosted in the Grand Archive demands the need for stronger encryption. A project with knowledge collect from the $pw_grand_archive.omnidatabase$ itself has been prepared to remedy the situation."
+    pw_grand_archive.521.a: "An important initiative for all of us."
+    pw_grand_archive.521.b: "We are secure enough as it is."
+    pw_grand_archive.522.name: "The Sealed $pw_grand_archive.omnidatabase$"
+    pw_grand_archive.522.desc: "With the implementation of new and improved security protocols and encryption for the $pw_grand_archive.omnidatabase$, our most precious data is safe for now. Besides, we can extend these procedures to other vital data streams in the empire, improving security overall. Snooping empires will think twice about trying to spy on us."
+    pw_grand_archive.522.a: "Our secrets will remain ours."

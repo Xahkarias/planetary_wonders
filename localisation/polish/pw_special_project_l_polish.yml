@@ -80,3 +80,6 @@
     pw_assemble_meta_architectural_complex_chain_title: "Assemble Meta-Architectural Complex"
     pw_assemble_meta_architectural_complex_chain_desc: "Our Wonders have marveled the habitants of every planet they we them build upon, but what goes unseen by many is the elegant synthesis of form and function that their architectural development employed. A closer analysis of the techniques used in the constructions of various Planetary Wonders and their resulting impact in operation and cityscape is essential to complete the Meta-Architectural Complex properly."
     pw_architectural_data_collected: "Architectural data collected"
+
+    PW_SECURE_OMNIDATABASE: "Secure the Omnidatabase"
+    PW_SECURE_OMNIDATABASE_DESC: "Information is currency and the Omnidatabase holds a lot of information. As any other valuable it has to be protected at all costs, new security procedures need to be develop to assure us that our data is safe."

@@ -554,6 +554,27 @@ special_project = {
 	}
 }
 
+#Secure the Omnidatabase
+special_project = {
+	key = PW_SECURE_OMNIDATABASE
+	cost = @pw_grand_archive_project_cost_sub
+	tech_department = physics_technology
+	picture = GFX_evt_glitchy_matrix
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_grand_archive.522 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
 
 #Stellarium (Star)
 special_project = {

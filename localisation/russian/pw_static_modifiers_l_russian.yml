@@ -395,3 +395,6 @@
     pw_holy_reliquary_diplomacy_advancement_of_tech_desc: "With the sanctification of the $pw_holy_reliquary.signet_ring$ we make obvious to other nations in the galaxy that we are proud of our research and invest in it to be so."
     pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak: "$pw_holy_reliquary.signet_ring$: Diplomacy is for the weak"
     pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak_desc: "We make sure to let other empire know we care little for their ways of diplomacy. We are enough for ourselves."
+
+    pw_mod_grand_archive_omnidatabase_secured: "Secure Omnidatabase"
+    pw_mod_grand_archive_omnidatabase_secured_desc: "The importance of data in the Omnidatabase is too great to ignore, security procedures have been improved all around the empire in order to ensure our information is safe."

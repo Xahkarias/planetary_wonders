@@ -165,6 +165,16 @@
     pw_grand_archive.520.name: "Secrets of The $pw_grand_archive.omnidatabase$"
     pw_grand_archive.520.desc: "The $pw_grand_archive.omnidatabase$ is perhaps the greatest gathering of hidden secrets our empire possess. Who knows what a dedicated research team might find stalking among those ones and zeroes?"
 
+    #Secure the Omnidatabase:
+    pw_grand_archive.521.name: "Secure The $pw_grand_archive.omnidatabase$"
+    pw_grand_archive.521.desc: "Now that we have discovered the hidden secrets that our $pw_grand_archive.omnidatabase$ holds, many Grand Archivists have issued concerns with the cybersecurity of the whole Archive. They believe that, while the security of information in our country is adequate, the importance of the data hosted in the Grand Archive demands the need for stronger encryption. A project with knowledge collect from the $pw_grand_archive.omnidatabase$ itself has been prepared to remedy the situation."
+    pw_grand_archive.521.a: "An important initiative for all of us."
+    pw_grand_archive.521.b: "We are secure enough as it is."
+
+    pw_grand_archive.522.name: "The Sealed $pw_grand_archive.omnidatabase$"
+    pw_grand_archive.522.desc: "With the implementation of new and improved security protocols and encryption for the $pw_grand_archive.omnidatabase$, our most precious data is safe for now. Besides, we can extend these procedures to other vital data streams in the empire, improving security overall. Snooping empires will think twice about trying to spy on us."
+    pw_grand_archive.522.a: "Our secrets will remain ours."
+
     #Physics: Stellarium -> 600
     pw_grand_archive.stellarium: "§BStellarium§!"
     pw_grand_archive.stellarium.assemble: "$pw_grand_archive.assemble$ $pw_grand_archive.stellarium$."
