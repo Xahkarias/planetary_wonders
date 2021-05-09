@@ -349,7 +349,7 @@ pw_holy_reliquary_supremacy_religious_persecution = {
 	pop_happiness = -0.15
 	planet_stability_add = 5
 	pop_ethic_spiritualist_attraction_mult = 0.20
-	job_enforcer_add = 2
+	job_enforcer_add = 1
 }
 
 #Country modifiers:
@@ -373,6 +373,7 @@ pw_holy_reliquary_expansion_introspective_gaze = {
 pw_holy_reliquary_expansion_extrospective_gaze = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	colony_start_num_pops_add = 1
+	empire_size_colonies_mult = -0.20
 	planet_colony_development_speed_mult = 0.50
 }
 
@@ -401,7 +402,7 @@ pw_holy_reliquary_prosperity_coin_of_fortune = {
 pw_holy_reliquary_harmony_scale_of_balance = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	planet_stability_add = 5
-	empire_size_pops_mult = -0.25
+	empire_size_pops_mult = -0.20
 }
 
 #Defender of the Faith: Holy Might
@@ -423,7 +424,7 @@ pw_holy_reliquary_supremacy_holy_defense = {
 #Signet Ring: The Unity of Our People
 pw_holy_reliquary_diplomacy_unity_of_people = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	diplo_weight_pops_mult = 0.20
+	diplo_weight_pops_mult = 0.15
 	country_unity_produces_mult = 0.10
 	envoys_add = 1
 }
@@ -431,7 +432,7 @@ pw_holy_reliquary_diplomacy_unity_of_people = {
 #Signet Ring: The Might of Our Fleets
 pw_holy_reliquary_diplomacy_might_of_fleet = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	diplo_weight_naval_mult = 0.20
+	diplo_weight_naval_mult = 0.15
 	ships_upkeep_mult = -0.10
 	envoys_add = 1
 }
@@ -439,7 +440,7 @@ pw_holy_reliquary_diplomacy_might_of_fleet = {
 #Signet Ring: The Abundance of Our Riches
 pw_holy_reliquary_diplomacy_abundance_of_riches = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	diplo_weight_economy_mult = 0.20
+	diplo_weight_economy_mult = 0.15
 	trade_value_mult = 0.10
 	envoys_add = 1
 }
@@ -447,7 +448,7 @@ pw_holy_reliquary_diplomacy_abundance_of_riches = {
 #Signet Ring: The Advancement of Our Techs
 pw_holy_reliquary_diplomacy_advancement_of_tech = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	diplo_weight_technology_mult = 0.20
+	diplo_weight_technology_mult = 0.15
 	num_tech_alternatives_add = 1
 	envoys_add = 1
 }
@@ -455,7 +456,7 @@ pw_holy_reliquary_diplomacy_advancement_of_tech = {
 #Signet Ring: Diplomacy is for the weak
 pw_holy_reliquary_diplomacy_diplomacy_is_for_the_weak = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	diplo_weight_mult = -0.10
+	diplo_weight_mult = -0.20
 	country_naval_cap_mult = 0.15
 	country_unity_produces_mult = 0.20
 	intel_encryption_add = 1
@@ -473,6 +474,6 @@ pw_holy_reliquary_discovery_codex_of_past_ages = {
 pw_holy_reliquary_discovery_codex_of_future_ages = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	num_tech_alternatives_add = 1
-	station_researchers_produces_mult = 0.20
+	station_researchers_produces_mult = 0.10
 	all_technology_research_speed = 0.10
 }

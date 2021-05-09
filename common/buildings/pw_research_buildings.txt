@@ -1576,9 +1576,21 @@ pw_building_grand_archive = {
 			minerals = @pw_building_cost
 			exotic_gases = @pw_building_cost_rare
 		}
+		cost = {
+			trigger = {
+				pw_has_any_planetary_wonder = yes
+			}
+			minerals = @pw_building_cost_extra
+		}
 		upkeep = {
 			energy = @pw_building_upkeep_expensive
 			exotic_gases = @pw_building_upkeep_rare_1
+		}
+		upkeep = {
+			trigger = {
+				pw_has_any_additional_planetary_wonder = yes
+			}
+			energy = @pw_building_upkeep_extra
 		}
 	}
 
@@ -1636,6 +1648,17 @@ pw_building_grand_archive = {
 		}
 	}
 
+	#Ambition Bonus
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+		}
+		modifier = {
+			planet_researchers_upkeep_mult = -0.20
+		}
+	}
+
 	triggered_desc = {
 		text = pw_planet_wonder_lb
 	}
@@ -1649,11 +1672,15 @@ pw_building_grand_archive = {
 	}
 
 	triggered_desc = {
+		text = job_pw_grand_archivist_effect_desc
+	}
+
+	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_spiritualist = yes }
+			owner = { has_country_flag = pw_grand_archive_holoarchive_master_archivist_appointed }
 		}
-		text = job_priest_effect_desc
+		text = job_pw_master_archivist_effect_desc
 	}
 
 	on_built = {

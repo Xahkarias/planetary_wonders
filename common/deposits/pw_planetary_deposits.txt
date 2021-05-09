@@ -279,7 +279,7 @@ pw_d_ark_project = {
 
 	country_modifier = {
 		category_biology_research_speed_mult = 0.15
-		bio_pop_growth_speed = 0.15
+		bio_pop_growth_speed = 0.10
 	}
 
 	triggered_planet_modifier = {
@@ -408,7 +408,7 @@ pw_d_omnidatabase = {
 
 	country_modifier = {
 		category_computing_research_speed_mult = 0.15
-		station_researchers_produces_mult = 0.15
+		station_researchers_produces_mult = 0.20
 	}
 
 	triggered_planet_modifier = {
@@ -440,7 +440,7 @@ pw_d_stellarium = {
 
 	country_modifier = {
 		category_field_manipulation_research_speed_mult = 0.15
-		country_energy_produces_mult = 0.1
+		country_energy_produces_mult = 0.10
 	}
 
 	triggered_planet_modifier = {
@@ -473,7 +473,7 @@ pw_d_zero_g_exposition = {
 	country_modifier = {
 		category_voidcraft_research_speed_mult = 0.15
 		category_propulsion_research_speed_mult = 0.15
-		starbase_upgrade_speed_mult = 0.15
+		starbase_upgrade_speed_mult = 0.20
 	}
 
 	triggered_planet_modifier = {
@@ -537,7 +537,7 @@ pw_d_meta_architectural_complex = {
 
 	country_modifier = {
 		category_materials_research_speed_mult = 0.15
-		planet_building_build_speed_mult = 0.2
+		planet_building_build_speed_mult = 0.25
 	}
 
 	triggered_planet_modifier = {
@@ -569,15 +569,15 @@ pw_d_holoarchive = {
 
 	country_modifier = {
 		all_technology_research_speed = 0.20
-		bio_pop_growth_speed = 0.15
+		bio_pop_growth_speed = 0.10
 		country_unity_produces_mult = 0.15
 		pop_environment_tolerance = 0.10
 		weapon_type_energy_weapon_fire_rate_mult = 0.15
-		station_researchers_produces_mult = 0.15
-		country_energy_produces_mult = 0.1
-		starbase_upgrade_speed_mult = 0.15
+		station_researchers_produces_mult = 0.20
+		country_energy_produces_mult = 0.10
+		starbase_upgrade_speed_mult = 0.20
 		pop_assembly_speed = 0.15
-		planet_building_build_speed_mult = 0.15
+		planet_building_build_speed_mult = 0.25
 	}
 
 	triggered_planet_modifier = {
