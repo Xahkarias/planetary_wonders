@@ -97,27 +97,27 @@ pw_mod_abyssal_test_crater_militarist = {
 }
 
 pw_mod_enigma_engine_energy = {
-	planet_pops_robotics_upkeep_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
 	icon_frame = 3
+	planet_pops_robotics_upkeep_mult = 0.25
 }
 
 pw_mod_enigma_engine_housing = {
-	pop_housing_usage_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = 3
+	pop_housing_usage_mult = 0.25
 }
 
 pw_mod_enigma_engine_art = {
-	planet_jobs_complex_drone_produces_mult = -0.25
+	planet_jobs_complex_drone_produces_mult = -0.10
 	icon = "gfx/interface/icons/planet_modifiers/pm_museum.dds"
 	icon_frame = 3
 }
 
 pw_mod_gaia_unstable_weather = {
-	planet_jobs_produces_mult = -0.10
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 	icon_frame = 3
+	planet_jobs_produces_mult = -0.10
 }
 
 pw_mod_mantle_crucible_alloys = {

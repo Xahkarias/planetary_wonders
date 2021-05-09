@@ -32,24 +32,20 @@
 #Resource Cost:
 @pw_building_cost = 10000 #Base build cost
 @pw_building_cost_extra = 5000 #Additional build cost for additional wonder
-@pw_building_cost_discount = -2000 #Discount cost for designation planets
+@pw_building_cost_discount = -1000 #Discount cost for designation planets
 
 @pw_building_cost_advanced = 1000 #Alloys in some cases
 @pw_building_cost_rare = 500 #Rare resources cost
 @pw_building_cost_minor_artifact = 10 #Minos Artifacts
+@pw_building_cost_rare_half = 250 #Specialization cost
 
 @pw_building_upkeep = 20 #Building base Upkeep
+@pw_building_upkeep_expensive = 30 #More expensive for better wonders
 @pw_building_upkeep_extra = 10 #Additional upkeep for additional wonder
 @pw_building_upkeep_discount = -4 #Discount upkeep for designation planets
 
 @pw_building_upkeep_rare_1 = 1
 @pw_building_upkeep_rare_2 = 2
-
-
-@pw_building_cost_rare_half = 250
-@pw_building_upkeep_expensive = 30
-@pw_building_upkeep_extra = 5 # Consumer goods or alloys in special cases
-
 
 #Resource Production
 @pw_stability_production = 3
@@ -67,7 +63,7 @@
 @pw_building_complex_jobs = 12
 
 #Modifiers production:
-@pw_building_research_mod = 0.1
+@pw_building_research_mod = 0.15
 #@pw_building_resource_mod = 0.15
 
 
