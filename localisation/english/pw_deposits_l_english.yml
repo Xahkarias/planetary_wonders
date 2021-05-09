@@ -14,13 +14,13 @@
     #Guardian Angel Deposits
 
     pw_d_guardian_angel_training: "Guardian Training Grounds"
-    pw_d_guardian_angel_training_desc: "Deployment troops for any kind of assault operation, from mass occupation to spec ops, can be better prepared and hastily trained while the $pw_guardian_angel$ is not engaged in conflict. It also serves as barracks for soldiers in service."
+    pw_d_guardian_angel_training_desc: "Deployment troops for any kind of assault operation, from mass occupation to spec ops, can be better prepared and hastily trained while the $pw_guardian_angel$ is not requested for war efforts. It also serves as barracks for soldiers in service."
 
     pw_d_guardian_angel_police_operations: "Guardian Enforcer Center"
-    pw_d_guardian_angel_police_operations_desc: "The $pw_guardian_angel$ can provide a monitoring center for the whole planet and assist local law enforcement with major operations while not engaged in conflict. I also provides accommodation for officers and investigators and mobile prison cells."
+    pw_d_guardian_angel_police_operations_desc: "The $pw_guardian_angel$ can provide a monitoring center for the whole planet and assist local law enforcement with major operations while not requested for war efforts. I also provides accommodation for officers and investigators and mobile prison cells."
 
     pw_d_guardian_angel_tourist_attraction: "Guardian Tourist Attraction"
-    pw_d_guardian_angel_tourist_attraction_desc: "People come from all over the empire to take a cruise over the entire planet surface aboard the $pw_guardian_angel$, stopping at the most famous landmarks. Provided we are not involved in conflict. The vessel makes several luxury hotel suites available for those lucky to be hosted here."
+    pw_d_guardian_angel_tourist_attraction_desc: "People come from all over the empire to take a cruise over the entire planet surface aboard the $pw_guardian_angel$, stopping at the most famous landmarks. Provided we are not engaged in war. The vessel makes several luxury hotel suites available for those lucky to be hosted here."
 
     #Holy Reliquary Features
 
@@ -126,7 +126,7 @@
     pw_d_infrastructure_seat_of_power_desc: "The central point from where power emanates on the empire, from here our leaders rule and decide on matters that affect the lives of all."
 
     pw_d_infrastructure_throne_room: "$pw_forbidden_city.infrastructure$ Throne Room"
-    pw_d_infrastructure_throne_room_desc: "The central point from where power emanates on the empire, the absolute symbol of the authority of the emperor, from where orders for every major designation are issued."
+    pw_d_infrastructure_throne_room_desc: "The central point from where power emanates on the empire, the absolute symbol of the authority of the emperor, from where orders of major importance are issued."
 
     pw_d_infrastructure_luxury_retreat: "$pw_forbidden_city.infrastructure$ Luxury Retreat"
     pw_d_infrastructure_luxury_retreat_desc: "An isolated retreat, where the wealthy and powerful elite of the empire can find peace of mind, among their laborious life of management."
@@ -138,7 +138,7 @@
     pw_d_infrastructure_overseers_ring_desc: "A facsimile of a secret elitist society gathering, designs to pretend to cede power and influence to this planets overseers, in order to keep them loyal among their slave peers; and the planet under control."
 
     pw_d_infrastructure_palatial_physicians: "$pw_forbidden_city.infrastructure$ Palatial Physicians"
-    pw_d_infrastructure_palatial_physicians_desc: "Last generation health center operated by reference professionals, all made available anytime for the elite of the planet, or anyone that can pay their fee."
+    pw_d_infrastructure_palatial_physicians_desc: "Last generation health center operated by specialized professionals, all made available anytime for the elite of the planet, or anyone that can pay their fee."
 
     pw_d_infrastructure_city_defenders: "$pw_forbidden_city.infrastructure$ City Defenders"
     pw_d_infrastructure_city_defenders_desc: "A center of operations and barracks for the forbidden city guardians, an elite urban defense force, equipped with state-of-the-art anti-personal gear, ready to repress any protest that may arise."
