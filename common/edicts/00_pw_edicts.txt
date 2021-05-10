@@ -15,16 +15,16 @@ pw_edict_panspectron = {
 			trigger = {
 				has_edict = pw_edict_panspectron
 			}
-			influence = 100
+			influence = 50
 		}
 	}
 
 	modifier = {
-		pop_government_ethic_attraction = 0.5
+		job_enforcer_add = 2
+		intel_encryption_add = 1
+		pop_government_ethic_attraction = 0.50
 		pop_cat_worker_political_power = -0.25
 		pop_happiness = -0.25
-		intel_encryption_add = 1
-		job_enforcer_per_pop = @pw_job_per_50_pop
 	}
 
 	effect = {

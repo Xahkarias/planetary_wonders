@@ -604,7 +604,7 @@ pw_big_brother = {
 					has_valid_civic = civic_police_state
 				}
 			}
-			unity = +5
+			unity = 5
 		}
 		upkeep = {
 			energy = 10
@@ -617,7 +617,7 @@ pw_big_brother = {
 					has_modifier = anticrime_campaign
 				}
 			}
-			energy = +5
+			energy = 5
 		}
 	}
 

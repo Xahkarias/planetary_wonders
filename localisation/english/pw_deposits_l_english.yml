@@ -92,7 +92,7 @@
     pw_d_infrastructure_public_agoras: "$pw_transplanetary_logistics_network.infrastructure$ Public Agoras"
     pw_d_infrastructure_public_agoras_desc: "Public points of the $pw_transplanetary_logistics_network$ have been organized to stimulate cultural development and communal sentiment of the population. This takes the form of public forums where the citizens can discuss freely their issues, from their day-to-day life or their philosophical conundrums."
 
-    pw_d_infrastructure_local_administration: "$pw_transplanetary_logistics_network.infrastructure$ Local Administration"
+    pw_d_infrastructure_local_administration: "$pw_transplanetary_logistics_network.infrastructure$ Dual Power Structure"
     pw_d_infrastructure_local_administration_desc: "Public points of the $pw_transplanetary_logistics_network$ have been organized to stimulate political development and communal sentiment of the population. This takes the form of public parliaments where local communities are encouraged to self administrate and share the burdens of bureaucracy."
 
     pw_d_infrastructure_distributed_education: "$pw_transplanetary_logistics_network.infrastructure$ Distributed Education"
@@ -150,7 +150,7 @@
     pw_d_infrastructure_personal_guardian_desc: "By allocating the $pw_guardian_angel$ harbor within the $pw_forbidden_city$ we can make sure it is available at all times to defend the city in times of crisis, providing a Personal Angel to the ruling class, and a constant reminder of their authority roaming over the City."
 
     pw_d_infrastructure_central_of_disinformation: "$pw_forbidden_city.infrastructure$ Central of Disinformation"
-    pw_d_infrastructure_central_of_disinformation_desc: "The only official source of every approved planetary information, curated and sanitized to maintain our population complicity and the authoritarian machine lubricated."
+    pw_d_infrastructure_central_of_disinformation_desc: "The only official source of every approved planetary information, curated and sanitized to maintain our population complicity and the authoritarian machine lubricated. Also promotes selected entertainers to keep the masses in line. Promotes selected entertainers to keep the masses in line."
 
     pw_d_infrastructure_center_of_justice: "$pw_forbidden_city.infrastructure$ Center of Justice"
     pw_d_infrastructure_center_of_justice_desc: "Planetary court of law and legislative chamber, here is where the officials of justice judge and condemn conspirators against our empire."
