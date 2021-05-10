@@ -899,6 +899,7 @@ pw_determine_war_drive_modifier = {
 					has_modifier = pw_mod_MA_national_march
 					has_modifier = pw_mod_MA_combat_demonstrations
 					has_modifier = pw_mod_MA_merchants_of_war
+					has_modifier = pw_mod_MA_march_of_the_dead
 					has_modifier = pw_mod_MA_black_letters_peace
 					has_modifier = pw_mod_MA_black_letters_war
 				}
@@ -913,6 +914,7 @@ pw_determine_war_drive_modifier = {
 						has_modifier = pw_mod_MA_national_march
 						has_modifier = pw_mod_MA_combat_demonstrations
 						has_modifier = pw_mod_MA_merchants_of_war
+						has_modifier = pw_mod_MA_march_of_the_dead
 					}
 				}
 				owner = {

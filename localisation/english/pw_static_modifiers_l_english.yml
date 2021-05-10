@@ -504,6 +504,9 @@
     pw_mod_MA_merchants_of_war: "Merchants of War"
     pw_mod_MA_merchants_of_war_desc: "Almost every month this planet hosts a military parade across every urban center with great focus in the private military complex that sponsors the event. From missile factories to mercenary contractors all have an opportunity to shine here.\n$pw_MA_increases_war_drive$"
 
+    pw_mod_MA_march_of_the_dead: "March of the Dead"
+    pw_mod_MA_march_of_the_dead_desc: "Almost every month this planet hosts a military parade across every urban center with a morbid display from our most experienced necromancers. The fallen from previous conflicts rise once again to march, showing our population that they are safe, and that our enemies have no escape.\n$pw_MA_increases_war_drive$"
+
     #War Drive tooltips:
     pw_MA_add_war_drive_modifier: "§BSet a new War Drive country modifier.§!"
     pw_MA_increases_war_drive: "§GIncreases war drive.§!"

@@ -8319,6 +8319,7 @@ planet_event = {
 					has_modifier =pw_mod_MA_national_march
 					has_modifier =pw_mod_MA_combat_demonstrations
 					has_modifier =pw_mod_MA_merchants_of_war
+					has_modifier =pw_mod_MA_march_of_the_dead
 				}
 			}
 			planet_event = { id = pw_wonder.2006 }
@@ -8353,6 +8354,7 @@ planet_event = {
 			has_modifier =pw_mod_MA_national_march
 			has_modifier =pw_mod_MA_combat_demonstrations
 			has_modifier =pw_mod_MA_merchants_of_war
+			has_modifier =pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -8385,6 +8387,10 @@ planet_event = {
 		else_if = {
 			limit = { has_modifier =pw_mod_MA_merchants_of_war }
 			remove_modifier = pw_mod_MA_merchants_of_war
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_march_of_the_dead }
+			remove_modifier = pw_mod_MA_march_of_the_dead
 		}
 		pw_determine_war_drive_modifier = yes
 	}
@@ -8423,6 +8429,7 @@ country_event = {
 					has_modifier = pw_mod_MA_national_march
 					has_modifier = pw_mod_MA_combat_demonstrations
 					has_modifier = pw_mod_MA_merchants_of_war
+					has_modifier = pw_mod_MA_march_of_the_dead
 				}
 			}
 			#Remove the planetary modifiers:
@@ -8454,6 +8461,7 @@ planet_event = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -8483,6 +8491,11 @@ planet_event = {
 			limit = { has_modifier = pw_mod_MA_merchants_of_war }
 			remove_modifier = pw_mod_MA_merchants_of_war
 			set_planet_flag = pw_MA_has_merchants_of_war_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_march_of_the_dead }
+			remove_modifier = pw_mod_MA_march_of_the_dead
+			set_planet_flag = pw_MA_has_march_of_the_dead_mod
 		}
 		#Add next modifier:
 		if = {
@@ -8599,6 +8612,7 @@ country_event = {
 					has_planet_flag = pw_MA_has_national_march_mod
 					has_planet_flag = pw_MA_has_combat_demonstrations_mod
 					has_planet_flag = pw_MA_has_merchants_of_war_mod
+					has_planet_flag = pw_MA_has_march_of_the_dead_mod
 				}
 			}
 			#Remove the planetary modifiers:
@@ -8629,6 +8643,7 @@ planet_event = {
 			has_planet_flag = pw_MA_has_national_march_mod
 			has_planet_flag = pw_MA_has_combat_demonstrations_mod
 			has_planet_flag = pw_MA_has_merchants_of_war_mod
+			has_planet_flag = pw_MA_has_march_of_the_dead_mod
 		}
 	}
 
@@ -8693,6 +8708,17 @@ planet_event = {
 				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_merchants_of_war
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_MA_has_march_of_the_dead_mod }
+			remove_planet_flag = pw_MA_has_march_of_the_dead_mod
+			if = {
+				limit = { has_active_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_march_of_the_dead
 					clear_on_owner_change = yes
 				}
 			}

@@ -241,5 +241,8 @@
     pw_decision_merchants_of_war: "$pw_decision_MA.parade$ Merchants Of War"
     pw_decision_merchants_of_war_desc: "War is business. When two sides launch missiles at each other, the one who wins is whomever sold them the weapons. Host a military parade across every urban center with great focus in the private military complex that sponsors the event, from missile factories to mercenary contractors."
 
+    pw_decision_march_of_the_dead: "$pw_decision_MA.parade$ March Of The Dead"
+    pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe.."
+
     pw_decision_cancel_parades: "Cancel Parades"
     pw_decision_cancel_parades_desc: "End current military parades or war effort, hopefully to host a new one and not because a our people started turning on each other with uncontrolled bloodlust."

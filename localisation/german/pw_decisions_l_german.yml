@@ -175,3 +175,6 @@
     pw_decision_religious_persecution_desc: "Use the divine right of the $pw_holy_reliquary.defender_of_the_faith$ to enact a religious persecution to all who would be a threat to our faith, heretics and disbelievers alike."
     pw_decision_end_religious_persecution: "End Religious Persecution"
     pw_decision_end_religious_persecution_desc: "Our population has suffered enough, it is time to end this religious persecution."
+
+    pw_decision_march_of_the_dead: "$pw_decision_MA.parade$ March Of The Dead"
+    pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe.."

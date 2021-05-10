@@ -206,6 +206,16 @@ pw_mod_MA_merchants_of_war = {
 	pop_ethic_militarist_attraction_mult = 0.15
 }
 
+#March of the dead (not at war, Risen Armies)
+pw_mod_MA_march_of_the_dead = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_march_of_the_dead.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.05
+	planet_amenities_add = 10
+	planet_pops_upkeep_mult = -0.10
+	pop_ethic_militarist_attraction_mult = 0.15
+}
+
 
 #Martial Avenue: War Drive (Country Scope)
 

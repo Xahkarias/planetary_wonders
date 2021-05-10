@@ -5894,6 +5894,7 @@ pw_decision_military_parade = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -6009,6 +6010,7 @@ pw_decision_flight_of_the_corvettes = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -6124,6 +6126,7 @@ pw_decision_national_march = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -6239,6 +6242,7 @@ pw_decision_combat_demonstrations = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -6354,6 +6358,7 @@ pw_decision_merchants_of_war = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -6361,6 +6366,122 @@ pw_decision_merchants_of_war = {
 		custom_tooltip = pw_MA_increases_war_drive
 		add_modifier = {
 			modifier = pw_mod_MA_merchants_of_war
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_war_drive_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 1.75
+		modifier = {
+			factor = 0.75
+			OR = {
+				owner = { has_modifier = pw_mod_MA_war_drive_5 }
+				owner = { has_modifier = pw_mod_MA_war_drive_6 }
+				owner = { has_modifier = pw_mod_MA_war_drive_7 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				owner = { has_modifier = pw_mod_MA_war_drive_8 }
+				owner = { has_modifier = pw_mod_MA_war_drive_9 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				owner = { has_modifier = pw_mod_MA_war_drive_10 }
+			}
+		}
+	}
+}
+
+#March of the Dead
+pw_decision_march_of_the_dead = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				num_pops < 10
+			}
+			energy = 1000
+			unity = 1000
+		}
+		cost = {
+			trigger = {
+				num_pops >= 20
+				num_pops < 30
+			}
+			energy = 1400
+			unity = 1400
+		}
+		cost = {
+			trigger = {
+				num_pops >= 40
+				num_pops < 50
+			}
+			energy = 1800
+			unity = 1800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 60
+				num_pops < 70
+			}
+			energy = 2200
+			unity = 2200
+		}
+		cost = {
+			trigger = {
+				num_pops >= 100
+			}
+			energy = 2800
+			unity = 2800
+		}
+		cost = {
+			trigger = {
+				num_pops >= 150
+			}
+			energy = 3000
+			unity = 3000
+		}
+	}
+
+	prerequisites = {
+		pw_tech_march_of_the_dead
+	}
+
+	potential = {
+		has_active_building = pw_building_martial_avenue
+	}
+
+	allow = {
+		owner = { is_at_war = no }
+		NOR = {
+			has_modifier = pw_mod_MA_military_parade
+			has_modifier = pw_mod_MA_do_your_own_part
+			has_modifier = pw_mod_MA_enemies_at_the_gate
+			has_modifier = pw_mod_MA_flight_of_the_corvettes
+			has_modifier = pw_mod_MA_national_march
+			has_modifier = pw_mod_MA_combat_demonstrations
+			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_MA_increases_war_drive
+		add_modifier = {
+			modifier = pw_mod_MA_march_of_the_dead
 			clear_on_owner_change = yes
 		}
 		owner = {
@@ -6416,6 +6537,7 @@ pw_decision_cancel_parades = {
 			has_modifier = pw_mod_MA_national_march
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
 		}
 	}
 
@@ -6447,6 +6569,10 @@ pw_decision_cancel_parades = {
 		else_if = {
 			limit = { has_modifier = pw_mod_MA_merchants_of_war }
 			remove_modifier = pw_mod_MA_merchants_of_war
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_march_of_the_dead }
+			remove_modifier = pw_mod_MA_march_of_the_dead
 		}
 		owner = {
 			pw_determine_war_drive_modifier = yes
