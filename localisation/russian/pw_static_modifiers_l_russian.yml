@@ -406,3 +406,8 @@
     pw_holy_reliquary_appeased_iconoclasts_desc: "Other vision of faith are welcomed in the $pw_holy_reliquary$ and many groups now exchange culture and enlighten all."
     pw_holy_reliquary_controlled_iconoclasts: "Controlled Iconoclast"
     pw_holy_reliquary_controlled_iconoclasts_desc: "Iconoclast groups have been controlled and will not express their wrong vision of our faith. Our faith remains united."
+
+    pw_art_mod_cultivated_identity: "Cultivated Identity"
+    pw_art_mod_cultivated_identity_desc: "Our art exhibitions have seen an increase in franchised multimedia, devised to gather fans that identify deeply with the narratives being told. These franchises exploit consumption habits to legitimize their own fandom and create manufactured conflicts with other franchise to boost sales even further."
+    pw_art_mod_prosumer_culture: "Prosumer Culture"
+    pw_art_mod_prosumer_culture_desc: "With clever exploitation of social networks, corporations have brewed a culture of user-created content consumption, moving production costs to the users themselves while not losing on sales."

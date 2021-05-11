@@ -361,3 +361,13 @@ pw_art_mod_union_busting = {
 	icon = "gfx/interface/icons/modifiers/mod_pop_resource_output.dds"
 	planet_jobs_upkeep_mult = -0.15
 }
+
+pw_art_mod_cultivated_identity = {
+	trade_value_mult = 0.05
+	country_unity_produces_mult = 0.05
+}
+
+pw_art_mod_prosumer_culture = {
+	trade_value_mult = 0.05
+	country_unity_produces_mult = 0.05
+}

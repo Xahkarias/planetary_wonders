@@ -236,6 +236,12 @@ pw_trigger_art_megacorp_events = {
 		1 = {
 			country_event = { id = pw_art_exhibition.576 }
 		}
+		1 = {
+			country_event = { id = pw_art_exhibition.577 }
+		}
+		1 = {
+			country_event = { id = pw_art_exhibition.578 }
+		}
 	}
 }
 

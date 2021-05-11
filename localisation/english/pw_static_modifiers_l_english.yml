@@ -426,6 +426,12 @@
     pw_art_mod_union_busting: "Union Busting"
     pw_art_mod_union_busting_desc: "Enough propaganda instilled in many art pieces in the latest exhibition have demonized worker unions, making laborer work the same with less upkeep."
 
+    pw_art_mod_cultivated_identity: "Cultivated Identity"
+    pw_art_mod_cultivated_identity_desc: "Our art exhibitions have seen an increase in franchised multimedia, devised to gather fans that identify deeply with the narratives being told. These franchises exploit consumption habits to legitimize their own fandom and create manufactured conflicts with other franchise to boost sales even further."
+
+    pw_art_mod_prosumer_culture: "Prosumer Culture"
+    pw_art_mod_prosumer_culture_desc: "With clever exploitation of social networks, corporations have brewed a culture of user-created content consumption, moving production costs to the users themselves while not losing on sales."
+
     #Peace Festivals Modifiers (Planet)
 
     pw_mod_FP_festivities_of_plenitude: "Festivities Of Plenitude"
