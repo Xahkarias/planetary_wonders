@@ -352,6 +352,22 @@ pw_holy_reliquary_supremacy_religious_persecution = {
 	job_enforcer_add = 1
 }
 
+#Event: Happy Iconoclast
+pw_holy_reliquary_appeased_iconoclasts = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_unity_symbol.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.10
+	planet_priests_produces_mult = 0.10
+}
+
+#Event: Controlled Iconoclast
+pw_holy_reliquary_controlled_iconoclasts = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_unity_symbol.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = -0.05
+	planet_priests_produces_mult = 0.15
+}
+
 #Country modifiers:
 pw_mod_galactic_model_anomaly_sensor = {
 	ship_hyperlane_range_add = 3

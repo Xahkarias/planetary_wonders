@@ -128,6 +128,12 @@
     pw_holy_reliquary_supremacy_call_to_arms_desc: "The $pw_holy_reliquary.defender_of_the_faith$ has inspired many believers on this planet to take up arms and defend our Faith from any who would threaten it."
     pw_holy_reliquary_supremacy_call_to_arms.tooltip: "§GAllows us to recruit Assault Acolytes from this planet§!."
 
+    pw_holy_reliquary_appeased_iconoclasts: "Appeased Iconoclast"
+    pw_holy_reliquary_appeased_iconoclasts_desc: "Other vision of faith are welcomed in the $pw_holy_reliquary$ and many groups now exchange culture and enlighten all."
+
+    pw_holy_reliquary_controlled_iconoclasts: "Controlled Iconoclast"
+    pw_holy_reliquary_controlled_iconoclasts_desc: "Iconoclast groups have been controlled and will not express their wrong vision of our faith. Our faith remains united."
+
     #Holy Reliquary artifacts mods:
 
     pw_holy_reliquary_expansion_introspective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Introspective Gaze"
