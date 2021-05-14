@@ -8800,3 +8800,456 @@ planet_event = {
 		}
 	}
 }
+
+# Living Spire -> id 2100
+
+#On Living Spire 0 built
+planet_event = {
+	id = pw_wonder.2100
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_living_spire_0_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2110 } #Regular first time
+	}
+}
+
+#On Living Spire 1 built
+planet_event = {
+	id = pw_wonder.2101
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_living_spire_1
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_living_spire_1_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2111 } #Regular first time
+	}
+}
+
+#On Living Spire 2 built
+planet_event = {
+	id = pw_wonder.2102
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_living_spire_2
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_living_spire_2_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2112 } #Regular first time
+	}
+}
+
+#On Living Spire 3 built (final)
+planet_event = {
+	id = pw_wonder.2103
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_living_spire_3
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_living_spire_3_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2113 } #Regular first time
+		planet_event = { id = pw_wonder.2114 } #Second time onwards
+	}
+}
+
+#On first time Living Spire 0 is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2110
+	title = pw_wonder.2110.name
+	desc = pw_wonder.2110.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_living_spire_0_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_living_spire_0_built }
+	}
+
+	option = {
+		name = pw_wonder.2110.a
+		add_modifier = {
+			modifier = pw_mod_living_spire_recently_build
+			days = @pw_2years
+		}
+	}
+}
+
+#On first time Living Spire 1 is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2111
+	title = pw_wonder.2111.name
+	desc = pw_wonder.2111.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_living_spire_1_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_living_spire_1_built }
+	}
+
+	option = {
+		name = pw_wonder.2111.a
+	}
+}
+
+#On first time Living Spire 2 is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2112
+	title = pw_wonder.2112.name
+	desc = pw_wonder.2112.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_living_spire_2_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_living_spire_2_built }
+	}
+
+	option = {
+		name = pw_wonder.2112.a
+	}
+}
+
+#On first time Living Spire 3 is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2113
+	title = pw_wonder.2113.name
+	desc = pw_wonder.2113.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_living_spire_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_living_spire_built }
+	}
+
+	option = {
+		name = pw_wonder.2113.a
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.2120
+				days = 10
+			}
+		}
+	}
+}
+
+#On second time onwards Living Spire 3 is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2114
+	title = pw_wonder.2114.name
+	desc = pw_wonder.2114.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		owner = { has_country_flag = pw_living_spire_built }
+		owner = { is_gestalt = no }
+	}
+
+	option = {
+		name = pw_wonder.2114.a
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.2120
+				days = 10
+			}
+		}
+	}
+}
+
+#Choose a designation for the Spire
+planet_event = {
+	id = pw_wonder.2120
+	title = pw_wonder.2120.name
+	desc = pw_wonder.2120.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_default
+			}
+			remove_modifier = pw_pm_living_spire_designation_default
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_imperial
+			}
+			remove_modifier = pw_pm_living_spire_designation_imperial
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_commerce
+			}
+			remove_modifier = pw_pm_living_spire_designation_commerce
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_pleasure
+			}
+			remove_modifier = pw_pm_living_spire_designation_pleasure
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_progress
+			}
+			remove_modifier = pw_pm_living_spire_designation_progress
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_industry
+			}
+			remove_modifier = pw_pm_living_spire_designation_industry
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_tradition
+			}
+			remove_modifier = pw_pm_living_spire_designation_tradition
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_administration
+			}
+			remove_modifier = pw_pm_living_spire_designation_administration
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_death_cult
+			}
+			remove_modifier = pw_pm_living_spire_designation_death_cult
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_death_necro
+			}
+			remove_modifier = pw_pm_living_spire_designation_death_necro
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.default
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_default
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.imperial
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			has_active_building = building_imperial_capital
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_imperial
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.commerce
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_commerce
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.pleasure
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_pleasure
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.progress
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_progress
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.industry
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_industry
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.tradition
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_tradition
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.administration
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_administration
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.death
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			OR = {
+				owner = { has_valid_civic = civic_death_cult }
+				owner = { has_valid_civic = civic_death_cult_corporate }
+			}
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_death_cult
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.death
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			owner = {
+				has_origin = origin_necrophage
+			}
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_death_necro
+		}
+	}
+}

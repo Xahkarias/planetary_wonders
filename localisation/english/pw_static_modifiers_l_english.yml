@@ -134,6 +134,37 @@
     pw_holy_reliquary_controlled_iconoclasts: "Controlled Iconoclast"
     pw_holy_reliquary_controlled_iconoclasts_desc: "Iconoclast groups have been controlled and will not express their wrong vision of our faith. Our faith remains united."
 
+    pw_pm_living_spire_designation_default: "Living Spire"
+    pw_pm_living_spire_designation_default_desc: "The entire planet is inspired by the presence of the Living Spire, all who live there are in comfort, and all who don't wish they did."
+
+    pw_pm_living_spire_designation_imperial: "Imperial Spire"
+    pw_pm_living_spire_designation_imperial_desc: "As the central seat of power in the galaxy, the entire planet demonstrates its imperious presence, and the Living Spire is not different. Everything in its architecture exhales the power of the Emperor, for all to see."
+
+    pw_pm_living_spire_designation_commerce: "Spire of Commerce"
+    pw_pm_living_spire_designation_commerce_desc: "The Living Spire here is designated as the central trade hub of the planet - and neighboring systems. Merchants, traders, caravansery, all have their dedicated chambers here; to live and to trade."
+
+    pw_pm_living_spire_designation_pleasure: "Spire of Pleasure"
+    pw_pm_living_spire_designation_pleasure_desc: "The Living Spire here is designated as a palace of pleasure, a place where all desires, all wishes can become reality; where all who hear the stories come to experience their own wildest dreams in the flesh."
+
+    pw_pm_living_spire_designation_progress: "Spire of Progress"
+    pw_pm_living_spire_designation_progress_desc: "The Living Spire here is designated as the central support of scientists, researchers and all kinds of academics. Here they will find the perfect accommodations, conference rooms and debate halls; the perfect assistance to this most prestigious life of discovery."
+
+    pw_pm_living_spire_designation_industry: "Spire of Industry"
+    pw_pm_living_spire_designation_industry_desc: "The Living Spire here is designated as the central hub of industrial production, dedicating most of its housing space and life support to the brave, who sacrifice themselves to maintain the machines of our empire running."
+
+    pw_pm_living_spire_designation_tradition: "Spire of Tradition"
+    pw_pm_living_spire_designation_tradition_desc: "The Living Spire here is designated as the central congregation of artists and cultural workers of every kind: all who keep our traditions alive and our culture flourishing. The Spire provides them with a home, comforts and, above all, inspiration."
+
+    pw_pm_living_spire_designation_administration: "Spire of Administration"
+    pw_pm_living_spire_designation_administration_desc: "The Living Spire here is designated as the central hub of administration of the planet, where all the bureaucrats, administrators and manages can find the perfect space to live and perform their vital duties of maintaining our empire in operation."
+
+    pw_pm_living_spire_designation_death_cult: "Death Spire"
+    pw_pm_living_spire_designation_death_cult_desc: "The Living Spire here is a Spire of Death, dedicate to its worshiping. Where our death priests can find the perfect space for adoration and where our mortal initiates can remain in absolute comfort before their final days."
+
+    pw_pm_living_spire_designation_death_necro: "Death Spire"
+    pw_pm_living_spire_designation_death_necro_desc: "The Living Spire here is a Spire of Death, providing the perfect space for our necrophytes to live both before and after their ascension."
+
+
     #Holy Reliquary artifacts mods:
 
     pw_holy_reliquary_expansion_introspective_gaze: "$pw_holy_reliquary.stargazing_mirror$: Introspective Gaze"
@@ -236,6 +267,10 @@
     # Martial Avenue:
     pw_mod_martial_avenue_recently_build: "Drums of War"
     pw_mod_martial_avenue_recently_build_desc: "The recent construction of a the $pw_martial_avenue$ brings assures our people that glorious combat is upon us, and allows ou military to show our supremacy, for all to see."
+
+    # Living Spires:
+    pw_mod_living_spire_recently_build: "The Rise of the Spire"
+    pw_mod_living_spire_recently_build_desc: "The recent construction of the foundations of the Living Spire leaves a promise for the future of this planet. All are eager to see this Wonder completed."
 
     #Solipsist Debates:
 

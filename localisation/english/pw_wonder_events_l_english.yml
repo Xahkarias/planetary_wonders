@@ -655,3 +655,48 @@
     pw_wonder.2030.a: "Give a speech lamenting death in previous conflicts."
     pw_wonder.2030.b: "Instigate future revenge and conflict for the fallen."
     pw_wonder.2030.c: "Forgo of politics in the speech, simply comfort people."
+
+    #Complete Living Spire 0
+    pw_message_living_spire_0_complete: "$pw_building_living_spire_0$ has been constructed in $PLANET|Y$. The construction may continue."
+    #First Time Complete Living Spire 0 (Regular Empire)
+    pw_wonder.2110.name: "A Strong Foundation"
+    pw_wonder.2110.desc: "The first step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Every structure that aims to reach heights of this scale needs a solid foundation; and the ones we have built are the deepest and strongest we have ever planted. The alloy bones of the Spire will stand on the depths of [THIS.GetName] and support its skies.\n\nWith a strong base, we can now continue to build this Living Wonder."
+    pw_wonder.2110.a: "Let the construction continue."
+
+    #Complete Living Spire 1
+    pw_message_living_spire_1_complete: "$pw_building_living_spire_1$ has been constructed in $PLANET|Y$. The construction may continue."
+    #First Time Complete Living Spire 1 (Regular Empire)
+    pw_wonder.2111.name: "A Space for Life"
+    pw_wonder.2111.desc: "The second step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Already many may call this massive - yet incomplete - structure their home. Rooms upon rooms, connected by vertical plazas, service corridors and supplied with the basic needs of modern life, can now house those who wish to come to live at the Spire.\n\nThere is much still to build, many services to be provided here and many lives to be made whole."
+    pw_wonder.2111.a: "Let the construction continue."
+
+    #Complete Living Spire 2
+    pw_message_living_spire_2_complete: "$pw_building_living_spire_2$ has been constructed in $PLANET|Y$. The construction may continue."
+    #First Time Complete Living Spire 2 (Regular Empire)
+    pw_wonder.2112.name: "A Place to Call Home"
+    pw_wonder.2112.desc: "The third step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Work facilities have been constructed, everything that the inhabitants of the Spire need shall be provided to them: food and goods, sanitation, entertainment, education, culture, exercise, security and political power.\n\nNow only the final details remain to be added, the final spires and decoration needed to consolidate the image of the Living Spire."
+    pw_wonder.2112.a: "Let the construction continue."
+
+    #Complete Living Spire 3
+    pw_message_living_spire_3_complete: "$pw_building_living_spire_3$ has been completed on $PLANET|Y$."
+    #First Time Complete Living Spire (Regular Empire)
+    pw_wonder.2113.name: "Housing Zenith"
+    pw_wonder.2113.desc: "Finally, the $pw_living_spire$ on [THIS.GetName] reaches its zenith and can be proclaimed complete. The corridors and plazas already are bustling with the new inhabitants looking for their new homes. All the details are in place, all of the infrastructure is working, all is in harmony."
+    pw_wonder.2113.a: "The great vertical city is completed!"
+    #Second Time onwards Complete Living Spire (Regular Empire)
+    pw_wonder.2114.name: "Another Reaches Zenith"
+    pw_wonder.2114.desc: "Finally, another $pw_living_spire$, this one on [THIS.GetName], reaches its zenith as its sisters and can be proclaimed complete. The corridors and plazas already are bustling with the new inhabitants looking for their new homes. All the details are in place, all of the infrastructure is working, all is in harmony."
+    pw_wonder.2114.a: "Another great vertical city is completed!"
+
+    pw_wonder.2120.name: "A Worthy Name for the Spire"
+    pw_wonder.2120.desc: "The $pw_living_spire$ reaches the clouds of [THIS.GetName] and all who live here thrive.\nBut what should be its focus?\nWho should be allowed to live here?\nHow should it be designated?"
+    pw_wonder.2120.default: "The Living Spire"
+    pw_wonder.2120.imperial: "The Imperial Spire"
+    pw_wonder.2120.commerce: "The Spire of Commerce"
+    pw_wonder.2120.pleasure: "The Spire of Pleasure"
+    pw_wonder.2120.progress: "The Spire of Progress"
+    pw_wonder.2120.industry: "The Spire of Industry"
+    pw_wonder.2120.tradition: "The Spire of Tradition"
+    pw_wonder.2120.administration: "The Spire of Administration"
+    pw_wonder.2120.death: "The Death Spire"
+    pw_wonder.2120.tooltip: "Designation can be changed in the future by enacting a planetary decision."

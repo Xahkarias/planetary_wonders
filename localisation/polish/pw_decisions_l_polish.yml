@@ -178,3 +178,6 @@
 
     pw_decision_march_of_the_dead: "$pw_decision_MA.parade$ March Of The Dead"
     pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe.."
+
+    pw_decision_living_spire_change_designation: "Change $pw_living_spire$ Designation"
+    pw_decision_living_spire_change_designation_desc: "Change the current designation of the Living Spire, diverting the comforts provided to a specific class in order to gain a bonus."

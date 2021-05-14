@@ -142,8 +142,7 @@
     pw_martial_avenue_tooltip: "§SAllows us to perform Military Parades.§!\n"
 
     pw_living_spire: "§MLiving Spire§!"
-    pw_building_living_spire: "Living Spire"
-    pw_building_living_spire_desc: "."
+
     pw_conduit_of_unity: "§MConduit of Unity§!"
     pw_building_conduit_of_unity: "Conduit of Unity"
     pw_building_conduit_of_unity_desc: "."
@@ -154,3 +153,12 @@
     pw_helios_tower_jobs_add_gestalt: "Provides §G+1§! £job_technician_drone£ §Y$job_technician_drone$§! job for each §Y$district_generator$§! on the planet (to a maximum of 20)."
     pw_demetrius_fields_jobs_add_regular: "Provides §G+1§! £job_farmer£ §Y$job_farmer$§! job for each §Y$district_farming$§! on the planet (to a maximum of 15)."
     pw_demetrius_fields_jobs_add_gestalt: "Provides §G+1§! £job_agri_drone£ §Y$job_agri_drone$§! job for each §Y$district_farming$§! on the planet (to a maximum of 20)."
+
+    pw_building_living_spire_0: "$pw_living_spire$: Foundation"
+    pw_building_living_spire_0_desc: "Every tree that aims to thrive needs strong roots planted deep into the ground. If the Living Spire is to reach the stars, its foundation needs to be solid."
+    pw_building_living_spire_1: "$pw_living_spire$: Living Quarters"
+    pw_building_living_spire_1_desc: "While far from finished, many already call the Living Spire their home as much of the living space is complete. As the mighty vertical city gains form many seek a place here to live, a life of ultimate comfort."
+    pw_building_living_spire_2: "$pw_living_spire$: Living Services"
+    pw_building_living_spire_2_desc: "The promises of comforts in the Living Spire are fulfilled as more and more services are provided in a scale never seen before. The tip of the spire already reaches the lower atmosphere and from there to its very bottom, harmony reigns."
+    pw_building_living_spire_3: "$pw_living_spire$: Zenith"
+    pw_building_living_spire_3_desc: "A vertical city reaching the skies. The perfect living space, that satisfies every desire of its inhabitants. A place where you can live the rest of your life, without ever seeing the outside world, and never miss anything."

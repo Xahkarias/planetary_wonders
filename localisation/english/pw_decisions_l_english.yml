@@ -246,3 +246,6 @@
 
     pw_decision_cancel_parades: "Cancel Parades"
     pw_decision_cancel_parades_desc: "End current military parades or war effort, hopefully to host a new one and not because a our people started turning on each other with uncontrolled bloodlust."
+
+    pw_decision_living_spire_change_designation: "Change $pw_living_spire$ Designation"
+    pw_decision_living_spire_change_designation_desc: "Change the current designation of the Living Spire, diverting the comforts provided to a specific class in order to gain a bonus."

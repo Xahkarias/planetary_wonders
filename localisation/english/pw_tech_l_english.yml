@@ -291,6 +291,11 @@
     pw_tech_into_the_storm: "Into The Storm"
     pw_tech_into_the_storm_desc: "A storm is upon the galaxy, the most destructive crisis we have ever seen, but we will triumph over it. This may be our greatest foe. This might be our greatest challenge. We will beat it like we have beaten every other one. Glory shall be ours."
 
+    pw_tech_living_spire: "Living Spire"
+    pw_tech_living_spire_desc: "If you were to ask anyone in the whole country where would they dream of living, it would be difficult to choose only one place inside the Living Spire."
+    pw_tech_living_spire_tooltip: "§Unlocks Planetary Construction:§! Living Spire."
+    pw_tech_living_spire_tooltip_desc: "The Living Spire is a $pw_planet_wonder$ constructed in four stages, each adding more benefits to its inhabitants."
+
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

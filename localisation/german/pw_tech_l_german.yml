@@ -269,3 +269,8 @@
 
     pw_tech_march_of_the_dead: "March Of The Dead"
     pw_tech_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe."
+
+    pw_tech_living_spire: "Living Spire"
+    pw_tech_living_spire_desc: "If you were to ask anyone in the whole country where would they dream of living, it would be difficult to choose only one place inside the Living Spire."
+    pw_tech_living_spire_tooltip: "§Unlocks Planetary Construction:§! Living Spire."
+    pw_tech_living_spire_tooltip_desc: "The Living Spire is a $pw_planet_wonder$ constructed in four stages, each adding more benefits to its inhabitants."
