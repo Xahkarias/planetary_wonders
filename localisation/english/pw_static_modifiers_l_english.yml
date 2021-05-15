@@ -243,7 +243,7 @@
 
     # Forbidden City:
     pw_mod_forbidden_city_recently_build: "Authority in Power"
-    pw_mod_forbidden_city_recently_build_desc: "The recent construction of a the $pw_forbidden_city$, a bastion of power and centralized administration brings trust to or population. Trust that the system works adn that the hierarchy is maintained."
+    pw_mod_forbidden_city_recently_build_desc: "The recent construction of a the $pw_forbidden_city$, a bastion of power and centralized administration brings trust to or population. Trust that the system works and that the hierarchy is maintained."
 
     pw_mod_FC_food_for_the_people: "Food for the People"
     pw_mod_FC_food_for_the_people_desc: "The people here enjoy a better share of food, given to them by their benevolent elite."
