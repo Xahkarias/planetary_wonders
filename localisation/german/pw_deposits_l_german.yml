@@ -117,3 +117,6 @@
     pw_d_infrastructure_ballroom_desc: "The center of all social exchange of the ruling elite, where they can unwind form work, or continue to forge alliances with their social capital. The elite requires refuge from the conflicts of the universe to maintain their duties. What would be a better retreat than a masquerade?"
     pw_d_infrastructure_war_room: "$pw_forbidden_city.infrastructure$ War Room"
     pw_d_infrastructure_war_room_desc: "The centralized control of planetary military operation, ready to dispatch defenses or support our fleets. Soldiers, like people, require strict authority to perform well. The military too requires a central council to plan defense and assault operations."
+
+    pw_d_infrastructure_imperial_holy_throne: "$pw_forbidden_city.infrastructure$ imperial Holy Throne"
+    pw_d_infrastructure_imperial_holy_throne_desc: "The central point from where the divine power of the emperor emanates, the absolute symbol of holy authority, where the most devout subject can gather to pray for imperial mercy."

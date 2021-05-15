@@ -434,3 +434,8 @@
     pw_pm_living_spire_designation_death_necro_desc: "The Living Spire here is a Spire of Death, providing the perfect space for our necrophytes to live both before and after their ascension."
     pw_mod_living_spire_recently_build: "The Rise of the Spire"
     pw_mod_living_spire_recently_build_desc: "The recent construction of the foundations of the Living Spire leaves a promise for the future of this planet. All are eager to see this Wonder completed."
+
+    pw_holy_reliquary_holy_throne_iron_fist: "Emperor's Iron Fist"
+    pw_holy_reliquary_holy_throne_iron_fist_desc: "A crown of iron, a fist of iron. The God-Emperor sits upon the $pw_holy_reliquary.holy_throne$ demanding absolute obedience and extending imperial mercy only to those worthy of such blessing."
+    pw_holy_reliquary_holy_throne_giving_hand: "Emperor's Giving Hand"
+    pw_holy_reliquary_holy_throne_giving_hand_desc: "A firm hand, a kind hand. The God-Emperor sits upon the $pw_holy_reliquary.holy_throne$ and extends the imperial grace to all the subjects in the empire. Adoration sustains the Throne in place."

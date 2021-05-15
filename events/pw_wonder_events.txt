@@ -6966,6 +6966,7 @@ planet_event = {
 			has_deposit = pw_d_infrastructure_governor_mansion
 			has_deposit = pw_d_infrastructure_seat_of_power
 			has_deposit = pw_d_infrastructure_throne_room
+			has_deposit = pw_d_infrastructure_imperial_holy_throne
 			has_deposit = pw_d_infrastructure_luxury_retreat
 			has_deposit = pw_d_infrastructure_wardens_directorate
 			has_deposit = pw_d_infrastructure_overseers_ring
@@ -7003,6 +7004,10 @@ planet_event = {
 		if = {
 			limit = { has_deposit = pw_d_infrastructure_throne_room }
 			remove_deposit = pw_d_infrastructure_throne_room
+		}
+		if = {
+			limit = { has_deposit = pw_d_infrastructure_imperial_holy_throne }
+			remove_deposit = pw_d_infrastructure_imperial_holy_throne
 		}
 		if = {
 			limit = { has_deposit = pw_d_infrastructure_luxury_retreat }
@@ -7101,8 +7106,11 @@ planet_event = {
 						NOT = { is_planet = THIS }
 						has_deposit = pw_d_infrastructure_seat_of_power
 					}
-					#Throne Room is somewhere.
-					has_deposit = pw_d_infrastructure_throne_room
+					OR = {
+						#Throne Room is somewhere.
+						has_deposit = pw_d_infrastructure_throne_room
+						has_deposit = pw_d_infrastructure_imperial_holy_throne
+					}
 				}
 			}
 		}
@@ -7127,9 +7135,18 @@ planet_event = {
 			}
 			every_owned_planet = {
 				limit = {
-					has_deposit = pw_d_infrastructure_throne_room
+					OR = {
+						has_deposit = pw_d_infrastructure_throne_room
+						has_deposit = pw_d_infrastructure_imperial_holy_throne
+					}
 				}
-				remove_deposit = pw_d_infrastructure_throne_room
+				if = {
+					limit = { has_deposit = pw_d_infrastructure_throne_room }
+					remove_deposit = pw_d_infrastructure_throne_room
+				}
+				else = {
+					remove_deposit = pw_d_infrastructure_imperial_holy_throne
+				}
 				if = {
 					limit = { is_sector_capital = yes }
 					add_deposit = pw_d_infrastructure_governor_mansion
@@ -7159,14 +7176,20 @@ planet_event = {
 
 	trigger = {
 		has_active_building = pw_building_forbidden_city
-		has_deposit = pw_d_infrastructure_throne_room
+		OR = {
+			has_deposit = pw_d_infrastructure_throne_room
+			has_deposit = pw_d_infrastructure_imperial_holy_throne
+		}
 		exists = owner
 		owner = {
 			any_owned_planet = {
 				OR = {
 					AND = { #Seat of Power is somewhere else
 						NOT = { is_planet = THIS }
-						has_deposit = pw_d_infrastructure_throne_room
+						OR = {
+							has_deposit = pw_d_infrastructure_throne_room
+							has_deposit = pw_d_infrastructure_imperial_holy_throne
+						}
 					}
 					#Throne Room is somewhere.
 					has_deposit = pw_d_infrastructure_seat_of_power
@@ -7181,9 +7204,18 @@ planet_event = {
 			every_owned_planet = {
 				limit = {
 					NOT = { is_planet = ROOT }
-					has_deposit = pw_d_infrastructure_throne_room
+					OR = {
+						has_deposit = pw_d_infrastructure_throne_room
+						has_deposit = pw_d_infrastructure_imperial_holy_throne
+					}
 				}
-				remove_deposit = pw_d_infrastructure_throne_room
+				if = {
+					limit = { has_deposit = pw_d_infrastructure_throne_room }
+					remove_deposit = pw_d_infrastructure_throne_room
+				}
+				else = {
+					remove_deposit = pw_d_infrastructure_imperial_holy_throne
+				}
 				if = {
 					limit = { is_sector_capital = yes }
 					add_deposit = pw_d_infrastructure_governor_mansion
@@ -7691,6 +7723,7 @@ planet_event = {
 					has_deposit = pw_d_infrastructure_governor_mansion
 					has_deposit = pw_d_infrastructure_seat_of_power
 					has_deposit = pw_d_infrastructure_throne_room
+					has_deposit = pw_d_infrastructure_imperial_holy_throne
 					has_deposit = pw_d_infrastructure_luxury_retreat
 					has_deposit = pw_d_infrastructure_wardens_directorate
 					has_deposit = pw_d_infrastructure_overseers_ring

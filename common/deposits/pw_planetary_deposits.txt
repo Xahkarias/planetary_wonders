@@ -1297,6 +1297,40 @@ pw_d_infrastructure_throne_room = {
 	}
 }
 
+# Imperial Holy Throne (Capital, Sanctified the Holy Throne)
+pw_d_infrastructure_imperial_holy_throne = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			influence = 1.5
+		}
+		upkeep = {
+			energy = 10
+			consumer_goods = 6
+			rare_crystals = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+		planet_stability_add = 5
+		planet_amenities_add = 15
+		planet_jobs_ruler_produces_mult = 0.25
+		planet_jobs_upkeep_mult = 0.25
+	}
+
+	country_modifier = {
+		country_edict_cap_add = 2
+	}
+}
+
 # Luxury Retreat (Resort)
 pw_d_infrastructure_luxury_retreat = {
 	is_for_colonizeable = yes

@@ -308,6 +308,32 @@ country_event = {
 		}
 	}
 
+	#Bonus: Holy Throne -> 850
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.holy_throne.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_throne }
+			has_valid_civic = civic_imperial_cult
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.850
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.holy_throne.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_throne
+		}
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.855
+			}
+		}
+	}
+
 	#Appoint Relic Keeper (all relics):
 	option = {
 		name = pw_holy_reliquary.1.appoint_relic_keeper
@@ -3651,6 +3677,157 @@ country_event = {
 			set_country_flag = pw_holy_reliquary_relic_keeper_appointed
 		}
 		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Bonus Artifact (Holy Throne) -> 850
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.850
+	title = pw_holy_reliquary.850.name
+	desc = pw_holy_reliquary.850.desc
+	picture = GFX_evt_khan_throne_room
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.850.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_throne }}
+			resource_stockpile_compare = {
+				resource = unity
+				value >= @pw_holy_reliquary_sanctify_cost_check_3
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_3
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.851 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.851
+	title = pw_holy_reliquary.851.name
+	desc = pw_holy_reliquary.851.desc
+	picture = GFX_evt_khan_throne_room
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = pw_holy_reliquary_sanctified_throne
+	}
+
+	#Iron Hand
+	option = {
+		name = pw_holy_reliquary.851.a
+		custom_tooltip = pw_holy_reliquary.851.a.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_holy_throne_iron_fist
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
+	}
+	#Giving Hand
+	option = {
+		name = pw_holy_reliquary.851.b
+		custom_tooltip = pw_holy_reliquary.851.b.tooltip
+		add_modifier = {
+			modifier = pw_holy_reliquary_holy_throne_giving_hand
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.855
+	title = pw_holy_reliquary.855.name
+	desc = pw_holy_reliquary.855.desc
+	picture = GFX_evt_pw_codex_of_the_ages
+	is_triggered_only = yes
+
+	#Iron Hand
+	option = {
+		name = pw_holy_reliquary.851.a
+		custom_tooltip = pw_holy_reliquary.851.a.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_holy_throne_iron_fist }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_holy_throne_iron_fist
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_holy_throne_giving_hand
+			}
+			remove_modifier = pw_holy_reliquary_holy_throne_giving_hand
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
+	}
+
+	#Codex of Future Ages
+	option = {
+		name = pw_holy_reliquary.851.b
+		custom_tooltip = pw_holy_reliquary.851.b.tooltip
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_holy_throne_giving_hand }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_holy_throne_giving_hand
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_holy_throne_iron_fist
+			}
+			remove_modifier = pw_holy_reliquary_holy_throne_iron_fist
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
 	}
 
 	#Return

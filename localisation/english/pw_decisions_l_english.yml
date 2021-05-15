@@ -151,6 +151,9 @@
     pw_decision_fc_infrastructure_capital_throne_room: "$pw_decision_fc.develop_infrastructure$ Throne Room"
     pw_decision_fc_infrastructure_capital_throne_room_desc: "Use the $pw_forbidden_city$ to improve the current system capital to hold the head of the whole empire, the throne room of the emperor, the maximum authority."
 
+    pw_decision_fc_infrastructure_capital_holy_throne: "$pw_decision_fc.develop_infrastructure$ Imperial Holy Throne"
+    pw_decision_fc_infrastructure_capital_holy_throne_desc: "Use the $pw_forbidden_city$ to improve the current system capital to hold the holy head of the empire, the blessed throne room of the emperor, the maximum divine authority."
+
     pw_decision_fc_infrastructure_capital_resort: "$pw_decision_fc.develop_infrastructure$ Luxury Retreat"
     pw_decision_fc_infrastructure_capital_resort_desc: "Use the $pw_forbidden_city$ to establish an isolated retreat, where the wealthy and powerful elite of the empire can find peace of mind, among their laborious life of management."
 
