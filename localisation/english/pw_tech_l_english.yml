@@ -296,6 +296,23 @@
     pw_tech_living_spire_tooltip: "§Unlocks Planetary Construction:§! Living Spire."
     pw_tech_living_spire_tooltip_desc: "The Living Spire is a $pw_planet_wonder$ constructed in four stages, each adding more benefits to its inhabitants."
 
+    pw_tech_conduit_of_unity: "Conduit of Unity"
+    pw_tech_conduit_of_unity_desc: "We are one. We must be one with where we live. We must maintain coordination, unity and harmony to remain as one. The Conduit of Unity will allow us to maintain cohesion between ourselves, the planets we live and the stars we travel."
+    pw_tech_conduit_of_unity_tooltip: "§Unlocks Planetary Construction:§! Conduit of Unity."
+    pw_tech_conduit_of_unity_tooltip_desc: "The Conduit of Unity is a $pw_planet_wonder$ constructed in 2 stages, foundation and completion, when completed it unlocks decisions that add Planetary Integration Deposits, providing housing, jobs and other bonuses."
+
+    pw_tech_drone_integration: "Drone Integration"
+    pw_tech_drone_integration_desc: "The Conduit of Unity is the perfect avenue towards perfect cohesion between our drones and the planets we inhabit."
+
+    pw_tech_communication_integration: "Communication Integration"
+    pw_tech_communication_integration_desc: "The Conduit of Unity is the perfect avenue towards absolute communication and organization between our drones."
+
+    pw_tech_shard_of_enigma: "Shard Of Enigma"
+    pw_tech_shard_of_enigma_desc: "Echos of the Enigma Engine reach all the corners of the galaxy and the Conduit of Unity is able to conduct this signal as well."
+
+    pw_tech_chamber_of_reflection: "Chamber Of Reflection"
+    pw_tech_chamber_of_reflection_desc: "Discussion from the Solipsist Debate Hall remain in the Hive Mind after they are done, by expanding the Hall to include chambers in our Conduits of Unity we cn extend the debate far over what we could imagine."
+
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

@@ -162,3 +162,8 @@
     pw_building_living_spire_2_desc: "The promises of comforts in the Living Spire are fulfilled as more and more services are provided in a scale never seen before. The tip of the spire already reaches the lower atmosphere and from there to its very bottom, harmony reigns."
     pw_building_living_spire_3: "$pw_living_spire$: Zenith"
     pw_building_living_spire_3_desc: "A vertical city reaching the skies. The perfect living space, that satisfies every desire of its inhabitants. A place where you can live the rest of your life, without ever seeing the outside world, and never miss anything."
+
+    pw_building_conduit_of_unity_0: "$pw_conduit_of_unity$: Foundation"
+    pw_building_conduit_of_unity_0_desc: "Two things are indispensible for the complete coordination of our drones: regular maintenance and a solid infrastructure. This is the foundation of the latter, the fist step of shaping this planet to our specific needs."
+    pw_building_conduit_of_unity_1: "$pw_conduit_of_unity$: Integration"
+    pw_building_conduit_of_unity_1_desc: "Total integration of the planet into the inner workings of the Gestalt, providing regular maintenance of every kind to our drones and ample room to expand, should our needs require it. The land and us are one."

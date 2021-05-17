@@ -279,6 +279,10 @@
     pw_mod_living_spire_recently_build: "The Rise of the Spire"
     pw_mod_living_spire_recently_build_desc: "The recent construction of the foundations of the Living Spire leaves a promise for the future of this planet. All are eager to see this Wonder completed."
 
+    # Conduit of Unity:
+    pw_mod_conduit_of_unity_recently_build: "Unity in Cohesion"
+    pw_mod_conduit_of_unity_recently_build_desc: "The recent construction of the foundations of the Conduit of Unity already triggers connections within the Gestalt that improve coordination, allowing us to continue the construction in record time."
+
     #Solipsist Debates:
 
     pw_debate: "§HDebate: §!"

@@ -56,6 +56,8 @@ on_building_upgraded = {
 		pw_wonder.2101 #Living Spire 1
 		pw_wonder.2102 #Living Spire 2
 		pw_wonder.2103 #Living Spire 3
+
+		pw_wonder.2201 #Conduit of Unity 1
 	}
 }
 

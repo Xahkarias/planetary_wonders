@@ -8957,6 +8957,7 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.2113 } #Regular first time
 		planet_event = { id = pw_wonder.2114 } #Second time onwards
+		planet_event = { id = pw_wonder.2105 days = @pw_1year } #Recursive check if destroyed
 	}
 }
 
@@ -9108,6 +9109,114 @@ planet_event = {
 				id = pw_wonder.2120
 				days = 10
 			}
+		}
+	}
+}
+
+#Check if LS was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.2105
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				#Does not has the building:
+				NOT = { has_active_building = pw_building_living_spire_3 }
+				OR = { #But has one of the deposits:
+					has_modifier = pw_pm_living_spire_designation_default
+					has_modifier = pw_pm_living_spire_designation_imperial
+					has_modifier = pw_pm_living_spire_designation_commerce
+					has_modifier = pw_pm_living_spire_designation_pleasure
+					has_modifier = pw_pm_living_spire_designation_progress
+					has_modifier = pw_pm_living_spire_designation_industry
+					has_modifier = pw_pm_living_spire_designation_tradition
+					has_modifier = pw_pm_living_spire_designation_administration
+					has_modifier = pw_pm_living_spire_designation_death_cult
+					has_modifier = pw_pm_living_spire_designation_death_necro
+				}
+			}
+			planet_event = { id = pw_wonder.2106 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.2105 days = @pw_halfYear }
+		}
+	}
+}
+
+#When the LS is destroyed/replaces -> demolish Integrations
+planet_event = {
+	id = pw_wonder.2106
+	title = pw_wonder.2106.name
+	desc = pw_wonder.2106.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_collapsing_ruins
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#Does not has the building:
+		NOT = { has_active_building = pw_building_conduit_of_unity_1 }
+		OR = { #But has one of the modifiers:
+			has_modifier = pw_pm_living_spire_designation_default
+			has_modifier = pw_pm_living_spire_designation_imperial
+			has_modifier = pw_pm_living_spire_designation_commerce
+			has_modifier = pw_pm_living_spire_designation_pleasure
+			has_modifier = pw_pm_living_spire_designation_progress
+			has_modifier = pw_pm_living_spire_designation_industry
+			has_modifier = pw_pm_living_spire_designation_tradition
+			has_modifier = pw_pm_living_spire_designation_administration
+			has_modifier = pw_pm_living_spire_designation_death_cult
+			has_modifier = pw_pm_living_spire_designation_death_necro
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_default }
+			remove_modifier = pw_pm_living_spire_designation_default
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_imperial }
+			remove_modifier = pw_pm_living_spire_designation_imperial
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_commerce }
+			remove_modifier = pw_pm_living_spire_designation_commerce
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_pleasure }
+			remove_modifier = pw_pm_living_spire_designation_pleasure
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_progress }
+			remove_modifier = pw_pm_living_spire_designation_progress
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_industry }
+			remove_modifier = pw_pm_living_spire_designation_industry
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_tradition }
+			remove_modifier = pw_pm_living_spire_designation_tradition
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_administration }
+			remove_modifier = pw_pm_living_spire_designation_administration
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_death_cult }
+			remove_modifier = pw_pm_living_spire_designation_death_cult
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_death_necro }
+			remove_modifier = pw_pm_living_spire_designation_death_necro
 		}
 	}
 }
@@ -9284,5 +9393,248 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_pm_living_spire_designation_death_necro
 		}
+	}
+}
+
+# Conduit of Unity -> id 2200
+
+#On Conduit of Unity 0 built
+planet_event = {
+	id = pw_wonder.2200
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_conduit_of_unity_0_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2210 } #Regular first time
+	}
+}
+
+#On Conduit of Unity 1 built
+planet_event = {
+	id = pw_wonder.2201
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_conduit_of_unity_1
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_conduit_of_unity_1_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.2211 } #Gestalt first time
+		planet_event = { id = pw_wonder.2202 days = @pw_1year } #Recursive check for CoU destroyed
+	}
+}
+
+#Check if CoU was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.2202
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				#Does not has the building:
+				NOT = { has_active_building = pw_building_conduit_of_unity_1 }
+				OR = { #But has one of the deposits:
+					has_deposit = pw_d_integration_cyber_pylon
+					has_deposit = pw_d_integration_CARE_facility
+					has_deposit = pw_d_integration_coordination_center
+					has_deposit = pw_d_integration_xeno_accommodation
+					has_deposit = pw_d_integration_drone_surveillance
+					has_deposit = pw_d_integration_integrated_replication
+					has_deposit = pw_d_integration_shard_of_enigma
+					has_deposit = pw_d_integration_chamber_of_reflection
+				}
+			}
+			planet_event = { id = pw_wonder.2203 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.2202 days = @pw_halfYear }
+		}
+	}
+}
+
+#When the CoU is destroyed/replaces -> demolish Integrations
+planet_event = {
+	id = pw_wonder.2203
+	title = pw_wonder.2203.name
+	desc = pw_wonder.2203.desc
+	picture = GFX_evt_alien_city
+	show_sound = event_collapsing_ruins
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#Does not has the building:
+		NOT = { has_active_building = pw_building_conduit_of_unity_1 }
+		OR = { #But has one of the deposits:
+			has_deposit = pw_d_integration_cyber_pylon
+			has_deposit = pw_d_integration_CARE_facility
+			has_deposit = pw_d_integration_coordination_center
+			has_deposit = pw_d_integration_xeno_accommodation
+			has_deposit = pw_d_integration_drone_surveillance
+			has_deposit = pw_d_integration_integrated_replication
+			has_deposit = pw_d_integration_shard_of_enigma
+			has_deposit = pw_d_integration_chamber_of_reflection
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = { has_deposit = pw_d_integration_cyber_pylon }
+			remove_deposit = pw_d_integration_cyber_pylon
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_CARE_facility }
+			remove_deposit = pw_d_integration_CARE_facility
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_coordination_center }
+			remove_deposit = pw_d_integration_coordination_center
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_xeno_accommodation }
+			remove_deposit = pw_d_integration_xeno_accommodation
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_drone_surveillance }
+			remove_deposit = pw_d_integration_drone_surveillance
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_integrated_replication }
+			remove_deposit = pw_d_integration_integrated_replication
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_shard_of_enigma }
+			remove_deposit = pw_d_integration_shard_of_enigma
+		}
+		if = {
+			limit = { has_deposit = pw_d_integration_chamber_of_reflection }
+			remove_deposit = pw_d_integration_chamber_of_reflection
+		}
+	}
+}
+
+#On Conduit of Unity Integration is completed
+planet_event = {
+	id = pw_wonder.2205
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			localization = pw_message_conduit_of_unity_integration_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+	}
+}
+
+#On first time Conduit of Unity 0 is built (Gestalt Empire)
+planet_event = {
+	id = pw_wonder.2210
+	title = pw_wonder.2210.name
+	desc = pw_wonder.2210.desc
+	picture = GFX_evt_alien_city
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_conduit_of_unity_0_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_conduit_of_unity_0_built }
+	}
+
+	option = {
+		name = pw_wonder.2210.a
+		add_modifier = {
+			modifier = pw_mod_conduit_of_unity_recently_build
+			days = @pw_2years
+		}
+	}
+}
+
+#On first time Conduit of Unity 1 is built (Gestalt Empire)
+planet_event = {
+	id = pw_wonder.2211
+	title = pw_wonder.2211.name
+	desc = pw_wonder.2211.desc
+	picture = GFX_evt_alien_city
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_conduit_of_unity_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_conduit_of_unity_built }
+	}
+
+	option = {
+		name = pw_wonder.2211.a
 	}
 }

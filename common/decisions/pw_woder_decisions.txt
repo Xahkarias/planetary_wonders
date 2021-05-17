@@ -6796,3 +6796,818 @@ pw_decision_living_spire_change_designation = {
 		weight = 0
 	}
 }
+
+#Conduit of Unity Integrations
+
+# Cyber Pylon
+pw_decision_cu_cyber_pylon = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			rare_crystals = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				OR = {
+					owner = { is_machine_empire = yes }
+					owner = {
+						is_hive_empire = yes
+						is_lithoid = yes
+					}
+				}
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_communication_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		NOT = { has_deposit = pw_d_integration_cyber_pylon }
+	}
+
+	allow = {
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_cyber_pylon
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = rare_crystals
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# CARE Facility
+pw_decision_cu_CARE_facility = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			volatile_motes = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				OR = {
+					owner = { is_machine_empire = yes }
+					owner = {
+						is_hive_empire = yes
+						is_lithoid = yes
+					}
+				}
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_drone_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		NOT = { has_deposit = pw_d_integration_CARE_facility }
+	}
+
+	allow = {
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_CARE_facility
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = volatile_motes
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Coordination Center
+pw_decision_cu_coordination_center = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			volatile_motes = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				OR = {
+					owner = { is_machine_empire = yes }
+					owner = {
+						is_hive_empire = yes
+						is_lithoid = yes
+					}
+				}
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_communication_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		NOT = { has_deposit = pw_d_integration_coordination_center }
+	}
+
+	allow = {
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_coordination_center
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = volatile_motes
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Xeno Accommodation (requires Capital)
+pw_decision_cu_xeno_accommodation = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			rare_crystals = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				OR = {
+					owner = { is_machine_empire = yes }
+					owner = {
+						is_hive_empire = yes
+						is_lithoid = yes
+					}
+				}
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_communication_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		NOT = { has_deposit = pw_d_integration_xeno_accommodation }
+	}
+
+	allow = {
+		is_capital = yes
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_xeno_accommodation
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = rare_crystals
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Drone Surveillance (requires Capital)
+pw_decision_cu_drone_surveillance = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			exotic_gases = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				OR = {
+					owner = { is_machine_empire = yes }
+					owner = {
+						is_hive_empire = yes
+						is_lithoid = yes
+					}
+				}
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_drone_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		NOT = { has_deposit = pw_d_integration_drone_surveillance }
+	}
+
+	allow = {
+		is_capital = yes
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_drone_surveillance
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = exotic_gases
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Integrated Replication (Hive or Machine Planet)
+pw_decision_cu_integrated_replication = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			exotic_gases = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				OR = {
+					owner = { is_machine_empire = yes }
+					owner = {
+						is_hive_empire = yes
+						is_lithoid = yes
+					}
+				}
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_drone_integration
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+		}
+		NOT = { has_deposit = pw_d_integration_integrated_replication }
+	}
+
+	allow = {
+		OR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_hive
+		}
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_integrated_replication
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = exotic_gases
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Shard of Enigma (Enigma Engine somewhere)
+pw_decision_cu_shard_of_enigma = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			exotic_gases = @pw_cu_integration_rare_cost
+			energy = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_shard_of_enigma
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_machine_empire = yes
+		}
+		NOT = { has_deposit = pw_d_integration_shard_of_enigma }
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_active_building = pw_building_enigma_engine
+		}
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_shard_of_enigma
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = exotic_gases
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}
+
+# Chamber of Reflection (SDH somewhere)
+pw_decision_cu_chamber_of_reflection = {
+	owned_planets_only = yes
+	sound = event_ringworld_build_upgrade
+
+	enactment_time = @pw_cu_integration_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_cu_integration_mineral_cost
+			exotic_gases = @pw_cu_integration_rare_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid = no }
+			}
+			food = @pw_cu_integration_resource_cost
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid = yes }
+			}
+			energy = @pw_cu_integration_resource_cost
+		}
+	}
+
+	prerequisites = {
+		pw_tech_chamber_of_reflection
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+		NOT = { has_deposit = pw_d_integration_chamber_of_reflection }
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_active_building = pw_building_solipsist_debate_hall
+		}
+		has_active_building = pw_building_conduit_of_unity_1
+	}
+
+	effect = {
+		add_deposit = pw_d_integration_chamber_of_reflection
+		hidden_effect = {
+			planet_event = { id = pw_wonder.2205 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+					has_monthly_income = {
+						resource = exotic_gases
+						value < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 3
+			is_capital = yes
+		}
+	}
+}

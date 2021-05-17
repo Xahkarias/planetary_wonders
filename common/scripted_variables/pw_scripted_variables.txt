@@ -183,3 +183,9 @@
 @pw_fc_rare_cost_4 = 400
 
 @pw_fc_resource_cost = 1000
+
+#Conduit of Unity Integration decisions
+@pw_cu_integration_time = 540 #3/2 years
+@pw_cu_integration_mineral_cost = 1500
+@pw_cu_integration_resource_cost = 1000
+@pw_cu_integration_rare_cost = 250

@@ -181,3 +181,30 @@
 
     pw_d_infrastructure_war_room: "$pw_forbidden_city.infrastructure$ War Room"
     pw_d_infrastructure_war_room_desc: "The centralized control of planetary military operation, ready to dispatch defenses or support our fleets. Soldiers, like people, require strict authority to perform well. The military too requires a central council to plan defense and assault operations."
+
+    #Conduit of Unity Integrations:
+    pw_conduit_of_unity.integration: "§BIntegration:§!"
+
+    pw_d_integration_cyber_pylon: "$pw_conduit_of_unity.integration$ Cyber Pylon"
+    pw_d_integration_cyber_pylon_desc: "Pylons scattered throughout the planet are able to tap into the communication system of the Gestalt in order to reinforce our cohesion and unity."
+
+    pw_d_integration_CARE_facility: "$pw_conduit_of_unity.integration$ CARE Facility"
+    pw_d_integration_CARE_facility_desc: "Integrated checkup facilities and preservation protocols allows for better maintenance of our drones."
+
+    pw_d_integration_coordination_center: "$pw_conduit_of_unity.integration$ Coordination Center"
+    pw_d_integration_coordination_center_desc: "By dividing work coordination in different scopes and scattering drone management, with the the support of a planetary communication network, we can boost production everywhere."
+
+    pw_d_integration_xeno_accommodation: "$pw_conduit_of_unity.integration$ Xeno Accommodation"
+    pw_d_integration_xeno_accommodation_desc: "Planetary accommodations to welcome alien species representatives allowing the Gestalt to better understand galactic politics and strengthen diplomatic ties with more receptive empires."
+
+    pw_d_integration_drone_surveillance: "$pw_conduit_of_unity.integration$ Drone Surveillance"
+    pw_d_integration_drone_surveillance_desc: "Deviancy is the downfall of any system. A monitoring system integrated into the planetary infrastructure allows the Gestalt to correct deviations before they even happen."
+
+    pw_d_integration_integrated_replication: "$pw_conduit_of_unity.integration$ Integrated Replication"
+    pw_d_integration_integrated_replication_desc: "Scattered planetary replication facilities expands the assembly of drones, who spawn faster and more readily equipped for specialized labor."
+
+    pw_d_integration_shard_of_enigma: "$pw_conduit_of_unity.integration$ Shard Of Enigma"
+    pw_d_integration_shard_of_enigma_desc: "Pulses fo the $pw_enigma_engine$ can be picked up by sensors all around the galaxy. Here a small gathering of drones can dedicate themselves to its deciphering."
+
+    pw_d_integration_chamber_of_reflection: "$pw_conduit_of_unity.integration$ Chamber Of Reflection"
+    pw_d_integration_chamber_of_reflection_desc: "Fresh perspectives are always welcome on the $pw_solipsist_debate_hall$. Here drones from this planet can gather and contribute to any ongoing discussion."

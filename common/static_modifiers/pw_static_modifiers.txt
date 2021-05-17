@@ -298,6 +298,14 @@ pw_mod_living_spire_recently_build = {
 	planet_building_build_speed_mult = 0.10
 }
 
+#Conduit of Unity
+pw_mod_conduit_of_unity_recently_build = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_amenities_mult = 0.10
+	planet_building_build_speed_mult = 0.10
+}
+
 #Stargazing Mirror effect: Reflective Meditation
 pw_holy_reliquary_expansion_reflective_meditation = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
