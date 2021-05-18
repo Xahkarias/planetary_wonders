@@ -52,15 +52,19 @@ pw_building_erebus_project = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_mining
-					has_designation = col_habitat_mining
+				planet = {
+					OR = {
+						has_designation = col_mining
+						has_designation = col_habitat_mining
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -70,15 +74,19 @@ pw_building_erebus_project = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_mining
-					has_designation = col_habitat_mining
+				planet = {
+					OR = {
+						has_designation = col_mining
+						has_designation = col_habitat_mining
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1083,15 +1091,19 @@ pw_building_helios_tower = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_generator
-					has_designation = col_habitat_energy
+				planet = {
+					OR = {
+						has_designation = col_generator
+						has_designation = col_habitat_energy
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1101,15 +1113,19 @@ pw_building_helios_tower = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_mining
-					has_designation = col_habitat_mining
+				planet = {
+					OR = {
+						has_designation = col_mining
+						has_designation = col_habitat_mining
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -2107,15 +2123,19 @@ pw_building_demetrius_fields = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_mining
-					has_designation = col_habitat_mining
+				planet = {
+					OR = {
+						has_designation = col_mining
+						has_designation = col_habitat_mining
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -2125,15 +2145,19 @@ pw_building_demetrius_fields = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_mining
-					has_designation = col_habitat_mining
+				planet = {
+					OR = {
+						has_designation = col_mining
+						has_designation = col_habitat_mining
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount

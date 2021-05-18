@@ -152,7 +152,7 @@
     pw_tech_artistic_defamation_desc: "By hosting art exhibitions dedicated to the exploitation of different cultures in the $pw_building_museum_of_the_grotesque$ we can study ways of better reproaching those culture in diplomatic situations, and gaining the better hand for ourselves."
 
     pw_tech_materialist_archiving: "Materialist Archiving"
-    pw_tech_materialist_archiving_desc: "We have lived trough enough of History to understand that it repeats itself, that it only surprises those who don't study it and that there is no room for divine manipulation. To continue these studies we must collect and preserve the the History of Everything in a single, modular Archive."
+    pw_tech_materialist_archiving_desc: "We have lived trough enough of History to understand that it repeats itself, that it only surprises those who don't study it and that there is no room for divine manipulation. To continue these studies we must collect and preserve the History of Everything in a single, modular Archive."
     pw_tech_grand_archive_genetic_secrets: "Genetic Secrets"
     pw_tech_grand_archive_genetic_secrets_desc: "Delve into the hidden secrets of the ARK Project to emerge with the revolutionary ideas it might hold for the field of biology."
     pw_tech_grand_archive_lost_state_secrets: "Lost States Secrets"
@@ -272,12 +272,12 @@
 
     pw_tech_living_spire: "Living Spire"
     pw_tech_living_spire_desc: "If you were to ask anyone in the whole country where would they dream of living, it would be difficult to choose only one place inside the Living Spire."
-    pw_tech_living_spire_tooltip: "§Unlocks Planetary Construction:§! Living Spire."
+    pw_tech_living_spire_tooltip: "§EUnlocks Planetary Construction:§! Living Spire."
     pw_tech_living_spire_tooltip_desc: "The Living Spire is a $pw_planet_wonder$ constructed in four stages, each adding more benefits to its inhabitants."
 
     pw_tech_conduit_of_unity: "Conduit of Unity"
     pw_tech_conduit_of_unity_desc: "We are one. We must be one with where we live. We must maintain coordination, unity and harmony to remain as one. The Conduit of Unity will allow us to maintain cohesion between ourselves, the planets we live and the stars we travel."
-    pw_tech_conduit_of_unity_tooltip: "§Unlocks Planetary Construction:§! Conduit of Unity."
+    pw_tech_conduit_of_unity_tooltip: "§EUnlocks Planetary Construction:§! Conduit of Unity."
     pw_tech_conduit_of_unity_tooltip_desc: "The Conduit of Unity is a $pw_planet_wonder$ constructed in 2 stages, foundation and completion, when completed it unlocks decisions that add Planetary Integration Deposits, providing housing, jobs and other bonuses."
     pw_tech_drone_integration: "Drone Integration"
     pw_tech_drone_integration_desc: "The Conduit of Unity is the perfect avenue towards perfect cohesion between our drones and the planets we inhabit."

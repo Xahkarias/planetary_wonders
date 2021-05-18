@@ -28,7 +28,9 @@ pw_building_mantle_crucible = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -65,7 +67,9 @@ pw_building_mantle_crucible = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -517,18 +521,22 @@ pw_building_titan_forge = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_foundry
-					has_designation = col_ecu_foundry
-					has_designation = col_hiv_foundry
-					has_designation = col_mac_foundry
-					has_designation = col_habitat_foundry
+				planet = {
+					OR = {
+						has_designation = col_foundry
+						has_designation = col_ecu_foundry
+						has_designation = col_hiv_foundry
+						has_designation = col_mac_foundry
+						has_designation = col_habitat_foundry
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -539,18 +547,22 @@ pw_building_titan_forge = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_foundry
-					has_designation = col_ecu_foundry
-					has_designation = col_hiv_foundry
-					has_designation = col_mac_foundry
-					has_designation = col_habitat_foundry
+				planet = {
+					OR = {
+						has_designation = col_foundry
+						has_designation = col_ecu_foundry
+						has_designation = col_hiv_foundry
+						has_designation = col_mac_foundry
+						has_designation = col_habitat_foundry
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -632,7 +644,7 @@ pw_building_titan_forge = {
 		}
 		modifier = {
 			planet_metallurgists_produces_mult = 0.15
-			planet_metallurgists_alloys_upkeep_mult = 0.10
+			planet_metallurgists_upkeep_mult = 0.10
 		}
 	}
 
@@ -779,17 +791,21 @@ pw_building_industrial_hearth = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_factory
-					has_designation = col_ecu_factory
-					has_designation = col_mac_factory
-					has_designation = col_habitat_factory
+				planet = {
+					OR = {
+						has_designation = col_factory
+						has_designation = col_ecu_factory
+						has_designation = col_mac_factory
+						has_designation = col_habitat_factory
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -800,17 +816,21 @@ pw_building_industrial_hearth = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_factory
-					has_designation = col_ecu_factory
-					has_designation = col_mac_factory
-					has_designation = col_habitat_factory
+				planet = {
+					OR = {
+						has_designation = col_factory
+						has_designation = col_ecu_factory
+						has_designation = col_mac_factory
+						has_designation = col_habitat_factory
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -893,7 +913,7 @@ pw_building_industrial_hearth = {
 		}
 		modifier = {
 			planet_artisans_produces_mult = 0.15
-			planet_artisans_alloys_upkeep_mult = 0.10
+			planet_artisans_upkeep_mult = 0.10
 		}
 	}
 

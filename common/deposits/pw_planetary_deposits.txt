@@ -2226,7 +2226,7 @@ pw_d_integration_drone_surveillance = {
 
 	planet_modifier = {
 		planet_housing_add = 2
-		drone_deviancy = -20
+		planet_crime_no_happiness_add = -20
 	}
 }
 
@@ -2351,7 +2351,7 @@ pw_d_integration_chamber_of_reflection = {
 
 	planet_modifier = {
 		planet_housing_add = 2
-		planet_synapse_drones_produces_mult = 0.10
+		planet_jobs_complex_drone_produces_mult = 0.10
 		job_brain_drone_add = 2
 	}
 }

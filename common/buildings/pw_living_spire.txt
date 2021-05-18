@@ -60,7 +60,9 @@ pw_building_living_spire_0 = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra_half
 		}
@@ -69,7 +71,9 @@ pw_building_living_spire_0 = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra_half
 		}
@@ -201,7 +205,9 @@ pw_building_living_spire_1 = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra_half
 		}
@@ -211,7 +217,9 @@ pw_building_living_spire_1 = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra_half
 		}
@@ -493,7 +501,9 @@ pw_building_living_spire_2 = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -504,7 +514,9 @@ pw_building_living_spire_2 = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -909,7 +921,9 @@ pw_building_living_spire_3 = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -921,7 +935,9 @@ pw_building_living_spire_3 = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}

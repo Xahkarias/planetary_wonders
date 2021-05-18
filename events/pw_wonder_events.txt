@@ -1362,9 +1362,9 @@ planet_event = {
 		name = pw_wonder.601.b
 		trigger = {
 			OR = {
-				is_megacorp = yes
-				has_valid_civic = civic_corporate_dominion
-				has_valid_civic = civic_merchant_guilds
+				owner = { is_megacorp = yes }
+				owner = { has_valid_civic = civic_corporate_dominion }
+				owner = { has_valid_civic = civic_merchant_guilds }
 			}
 		}
 		if = {
@@ -8425,7 +8425,9 @@ planet_event = {
 			limit = { has_modifier =pw_mod_MA_march_of_the_dead }
 			remove_modifier = pw_mod_MA_march_of_the_dead
 		}
-		pw_determine_war_drive_modifier = yes
+		owner = {
+			pw_determine_war_drive_modifier = yes
+		}
 	}
 }
 
@@ -8955,8 +8957,18 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_wonder.2113 } #Regular first time
-		planet_event = { id = pw_wonder.2114 } #Second time onwards
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					has_country_flag = pw_living_spire_built
+				}
+			}
+			planet_event = { id = pw_wonder.2114 } #Second time onwards
+		}
+		else = {
+			planet_event = { id = pw_wonder.2113 } #Regular first time
+		}
 		planet_event = { id = pw_wonder.2105 days = @pw_1year } #Recursive check if destroyed
 	}
 }

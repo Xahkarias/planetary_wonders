@@ -3769,7 +3769,7 @@ country_event = {
 	id = pw_holy_reliquary.855
 	title = pw_holy_reliquary.855.name
 	desc = pw_holy_reliquary.855.desc
-	picture = GFX_evt_pw_codex_of_the_ages
+	picture = GFX_evt_khan_throne_room
 	is_triggered_only = yes
 
 	#Iron Hand

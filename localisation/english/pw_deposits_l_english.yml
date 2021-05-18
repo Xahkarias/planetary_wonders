@@ -192,7 +192,7 @@
     pw_d_integration_CARE_facility_desc: "Integrated checkup facilities and preservation protocols allows for better maintenance of our drones."
 
     pw_d_integration_coordination_center: "$pw_conduit_of_unity.integration$ Coordination Center"
-    pw_d_integration_coordination_center_desc: "By dividing work coordination in different scopes and scattering drone management, with the the support of a planetary communication network, we can boost production everywhere."
+    pw_d_integration_coordination_center_desc: "By dividing work coordination in different scopes and scattering drone management, with the support of a planetary communication network, we can boost production everywhere."
 
     pw_d_integration_xeno_accommodation: "$pw_conduit_of_unity.integration$ Xeno Accommodation"
     pw_d_integration_xeno_accommodation_desc: "Planetary accommodations to welcome alien species representatives allowing the Gestalt to better understand galactic politics and strengthen diplomatic ties with more receptive empires."

@@ -263,7 +263,7 @@
     pw_decision_cu_CARE_facility_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate checkup facilities and preservation protocols that allow for better maintenance of our drones."
 
     pw_decision_cu_coordination_center: "$pw_decision_cu.integrate$ Coordination Center"
-    pw_decision_cu_coordination_center_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate work coordination and scatter drone management that, with the the support of a planetary communication network, is able to boost production everywhere."
+    pw_decision_cu_coordination_center_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate work coordination and scatter drone management that, with the support of a planetary communication network, is able to boost production everywhere."
 
     pw_decision_cu_xeno_accommodation: "$pw_decision_cu.integrate$ Xeno Accommodation"
     pw_decision_cu_xeno_accommodation_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate accommodations for alien species representatives, allowing the Gestalt to better understand galactic politics and strengthen diplomatic ties with more receptive empires"

@@ -33,15 +33,19 @@ pw_building_pavilion_of_wonders = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_resort
-					has_designation = col_habitat_leisure
+				planet = {
+					OR = {
+						has_designation = col_resort
+						has_designation = col_habitat_leisure
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -52,15 +56,19 @@ pw_building_pavilion_of_wonders = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_resort
-					has_designation = col_habitat_leisure
+				planet = {
+					OR = {
+						has_designation = col_resort
+						has_designation = col_habitat_leisure
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -93,7 +101,6 @@ pw_building_pavilion_of_wonders = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		planet_jobs_unity_produces_mult = 0.10
 	}
 
 	#Reminder: Cannot be Gestalt!
@@ -227,7 +234,7 @@ pw_building_pavilion_of_wonders = {
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_amenities_mult = 0.10
+			planet_jobs_unity_produces_mult = 0.10
 		}
 	}
 
@@ -451,15 +458,19 @@ pw_building_fair_of_worlds = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_resort
-					has_designation = col_habitat_leisure
+				planet = {
+					OR = {
+						has_designation = col_resort
+						has_designation = col_habitat_leisure
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -470,15 +481,19 @@ pw_building_fair_of_worlds = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_resort
-					has_designation = col_habitat_leisure
+				planet = {
+					OR = {
+						has_designation = col_resort
+						has_designation = col_habitat_leisure
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -512,7 +527,6 @@ pw_building_fair_of_worlds = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		planet_jobs_unity_produces_mult = 0.20
 	}
 
 	#Reminder: Cannot be Gestalt and must be xenophile!
@@ -798,7 +812,7 @@ pw_building_fair_of_worlds = {
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_amenities_mult = 0.20
+			planet_jobs_unity_produces_mult = 0.20
 		}
 	}
 
@@ -1031,15 +1045,19 @@ pw_building_museum_of_the_grotesque = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_resort
-					has_designation = col_habitat_leisure
+				planet = {
+					OR = {
+						has_designation = col_resort
+						has_designation = col_habitat_leisure
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1050,15 +1068,19 @@ pw_building_museum_of_the_grotesque = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_resort
-					has_designation = col_habitat_leisure
+				planet = {
+					OR = {
+						has_designation = col_resort
+						has_designation = col_habitat_leisure
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1092,7 +1114,6 @@ pw_building_museum_of_the_grotesque = {
 
 	planet_modifier = {
 		planet_max_districts_add = -1
-		planet_jobs_unity_produces_mult = 0.20
 	}
 
 	#Reminder: Cannot be Gestalt and must be xenophobe!
@@ -1412,7 +1433,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_amenities_mult = 0.20
+			planet_jobs_unity_produces_mult = 0.20
 		}
 	}
 
@@ -1672,7 +1693,9 @@ pw_building_holy_reliquary = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -1682,7 +1705,9 @@ pw_building_holy_reliquary = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}

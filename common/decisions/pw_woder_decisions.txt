@@ -7457,8 +7457,10 @@ pw_decision_cu_shard_of_enigma = {
 	}
 
 	allow = {
-		any_owned_planet = {
-			has_active_building = pw_building_enigma_engine
+		owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_enigma_engine
+			}
 		}
 		has_active_building = pw_building_conduit_of_unity_1
 	}
@@ -7555,8 +7557,10 @@ pw_decision_cu_chamber_of_reflection = {
 	}
 
 	allow = {
-		any_owned_planet = {
-			has_active_building = pw_building_solipsist_debate_hall
+		owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_solipsist_debate_hall
+			}
 		}
 		has_active_building = pw_building_conduit_of_unity_1
 	}

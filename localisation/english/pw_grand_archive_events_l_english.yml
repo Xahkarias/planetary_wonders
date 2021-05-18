@@ -65,7 +65,7 @@
 
     #Assemble Project:
     pw_grand_archive.201.name: "$pw_grand_archive.library_of_babel$ Preparations"
-    pw_grand_archive.201.desc: "Our archivists have prepared a guiding compendium for all the the media the science team shall seek, scouring every museum, gallery and library in constant search of every written text or produced image from our past, and from before. Great chambers to accommodate all of this information were planned as well. These chamber are designed as hexagons connected to each other like a beehive, and spawning several floors filled with shelves. Now we only need to fill them with what we find."
+    pw_grand_archive.201.desc: "Our archivists have prepared a guiding compendium for all the media the science team shall seek, scouring every museum, gallery and library in constant search of every written text or produced image from our past, and from before. Great chambers to accommodate all of this information were planned as well. These chamber are designed as hexagons connected to each other like a beehive, and spawning several floors filled with shelves. Now we only need to fill them with what we find."
 
     #Completed Project:
     pw_grand_archive.210.name: "The Complete $pw_grand_archive.library_of_babel$"

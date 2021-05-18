@@ -27,7 +27,7 @@
 
 #Buildings
 
-@pw_building_buildtime = 2000 #5 years
+@pw_building_buildtime = 2000 #+/-5 years
 
 #Resource Cost:
 @pw_building_cost = 10000 #Base build cost

@@ -37,23 +37,27 @@ pw_building_space_elevator = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_capital
-					has_designation = col_capital_hive
-					has_designation = col_capital_machine
-					has_designation = col_city
-					has_designation = col_hive
-					has_designation = col_nexus
-					has_designation = col_ring_trade
-					has_designation = col_habitat_trade
-					has_designation = col_ecu_mix
-					has_designation = col_resort
+				planet = {
+					OR = {
+						has_designation = col_capital
+						has_designation = col_capital_hive
+						has_designation = col_capital_machine
+						has_designation = col_city
+						has_designation = col_hive
+						has_designation = col_nexus
+						has_designation = col_ring_trade
+						has_designation = col_habitat_trade
+						has_designation = col_ecu_mix
+						has_designation = col_resort
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -63,23 +67,27 @@ pw_building_space_elevator = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_capital
-					has_designation = col_capital_hive
-					has_designation = col_capital_machine
-					has_designation = col_city
-					has_designation = col_hive
-					has_designation = col_nexus
-					has_designation = col_ring_trade
-					has_designation = col_habitat_trade
-					has_designation = col_ecu_mix
-					has_designation = col_resort
+				planet = {
+					OR = {
+						has_designation = col_capital
+						has_designation = col_capital_hive
+						has_designation = col_capital_machine
+						has_designation = col_city
+						has_designation = col_hive
+						has_designation = col_nexus
+						has_designation = col_ring_trade
+						has_designation = col_habitat_trade
+						has_designation = col_ecu_mix
+						has_designation = col_resort
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -100,7 +108,7 @@ pw_building_space_elevator = {
 		}
 		modifier = {
 			trade_value_mult = 0.15
-			job_merchant_per_pop = 1
+			job_merchant_add = 1
 			job_clerk_add = 10
 			job_enforcer_add = 1
 		}
@@ -223,7 +231,7 @@ pw_building_space_elevator = {
 		trigger = {
 			exists = owner
 			owner = { is_regular_empire = no }
-			has_designation = col_resort
+			planet = { has_designation = col_resort }
 		}
 		text = job_pw_tourist_effect_desc
 	}
@@ -383,17 +391,21 @@ pw_building_galactic_model = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_bureau
-					has_designation = col_capital
-					has_designation = col_capital_hive
-					has_designation = col_capital_machine
+				planet = {
+					OR = {
+						has_designation = col_bureau
+						has_designation = col_capital
+						has_designation = col_capital_hive
+						has_designation = col_capital_machine
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -404,17 +416,21 @@ pw_building_galactic_model = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_bureau
-					has_designation = col_capital
-					has_designation = col_capital_hive
-					has_designation = col_capital_machine
+				planet = {
+					OR = {
+						has_designation = col_bureau
+						has_designation = col_capital
+						has_designation = col_capital_hive
+						has_designation = col_capital_machine
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -670,15 +686,15 @@ pw_building_panopticon = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_penal
-				}
+				planet = { has_designation = col_penal }
 			}
 			minerals = @pw_building_cost_discount
 		}
@@ -687,15 +703,15 @@ pw_building_panopticon = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_penal
-				}
+				planet = { has_designation = col_penal }
 			}
 			energy = @pw_building_upkeep_discount
 		}
@@ -976,15 +992,19 @@ pw_building_guardian_angel = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_fortress
-					has_designation = col_habitat_fortress
+				planet = {
+					OR = {
+						has_designation = col_fortress
+						has_designation = col_habitat_fortress
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -995,15 +1015,19 @@ pw_building_guardian_angel = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_fortress
-					has_designation = col_habitat_fortress
+				planet = {
+					OR = {
+						has_designation = col_fortress
+						has_designation = col_habitat_fortress
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1263,7 +1287,9 @@ pw_building_transplanetary_logistics_network = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -1273,7 +1299,9 @@ pw_building_transplanetary_logistics_network = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -1505,7 +1533,9 @@ pw_building_transhabitat_logistics_network = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -1515,7 +1545,9 @@ pw_building_transhabitat_logistics_network = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -1740,7 +1772,9 @@ pw_building_forbidden_city = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -1750,7 +1784,9 @@ pw_building_forbidden_city = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -2115,17 +2151,21 @@ pw_building_festival_plaza = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		upkeep = {
-			energy = @pw_building_upkeep_expensive
+			energy = @pw_building_upkeep
 			rare_crystals = @pw_building_upkeep_rare_1
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -2409,17 +2449,21 @@ pw_building_martial_avenue = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		upkeep = {
-			energy = @pw_building_upkeep_expensive
+			energy = @pw_building_upkeep
 			volatile_motes = @pw_building_upkeep_rare_1
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}

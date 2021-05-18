@@ -83,7 +83,8 @@ pw_has_any_planetary_wonder = {
 #Check if there is another Wonder in the same planet beyond the one passed.
 pw_has_any_additional_planetary_wonder = {
 	calc_true_if = {
-		amount > 1
+		amount >= 2
+		has_building = pw_building_space_elevator
 		has_building = pw_building_particle_supercollider
 		has_building = pw_building_domed_city
 		has_building = pw_building_abyssal_crater_test_site

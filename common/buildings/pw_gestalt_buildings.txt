@@ -35,7 +35,7 @@ pw_building_conduit_of_unity_0 = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			owner = { is_gestalt = yes }
+			owner = { is_gestalt = no }
 			owner = {NOT = { has_technology = pw_tech_conduit_of_unity }}
 		}
 	}
@@ -59,7 +59,9 @@ pw_building_conduit_of_unity_0 = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra_half
 		}
@@ -68,7 +70,9 @@ pw_building_conduit_of_unity_0 = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra_half
 		}
@@ -175,7 +179,7 @@ pw_building_conduit_of_unity_1 = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			owner = { is_gestalt = yes }
+			owner = { is_gestalt = no }
 			owner = {NOT = { has_technology = pw_tech_conduit_of_unity }}
 		}
 	}
@@ -196,7 +200,9 @@ pw_building_conduit_of_unity_1 = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -206,7 +212,9 @@ pw_building_conduit_of_unity_1 = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
@@ -292,7 +300,8 @@ pw_building_conduit_of_unity_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			is_machine_empire = yes
-			has_ascension_perk = ap_synthetic_age
+			exists = owner
+			owner = { has_ascension_perk = ap_synthetic_age }
 		}
 		modifier = {
 			job_replicator_add = 1
@@ -314,7 +323,8 @@ pw_building_conduit_of_unity_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			is_hive_empire = yes
-			has_ascension_perk = ap_evolutionary_mastery
+			exists = owner
+			owner = { has_ascension_perk = ap_evolutionary_mastery }
 		}
 		modifier = {
 			job_spawning_drone_add = 1
@@ -507,13 +517,17 @@ pw_building_enigma_engine = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				has_designation = col_capital_machine
+				planet = {
+					has_designation = col_capital_machine
+				}
 			}
 			minerals = -500
 		}
@@ -523,13 +537,17 @@ pw_building_enigma_engine = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				has_designation = col_capital_machine
+				planet = {
+					has_designation = col_capital_machine
+				}
 			}
 			energy = @pw_building_upkeep_discount
 		}
@@ -699,13 +717,17 @@ pw_building_solipsist_debate_hall = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				has_designation = col_capital_hive
+				planet = {
+					has_designation = col_capital_hive
+				}
 			}
 			minerals = -500
 		}
@@ -715,13 +737,17 @@ pw_building_solipsist_debate_hall = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				has_designation = col_capital_hive
+				planet = {
+					has_designation = col_capital_hive
+				}
 			}
 			energy = @pw_building_upkeep_discount
 		}

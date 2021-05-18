@@ -47,17 +47,21 @@ pw_building_particle_supercollider = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -68,17 +72,21 @@ pw_building_particle_supercollider = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -352,17 +360,21 @@ pw_building_domed_city = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -373,17 +385,21 @@ pw_building_domed_city = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -665,17 +681,21 @@ pw_building_secluded_sector = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -686,17 +706,21 @@ pw_building_secluded_sector = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -988,17 +1012,21 @@ pw_building_abyssal_crater_test_site = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1009,17 +1037,21 @@ pw_building_abyssal_crater_test_site = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1282,17 +1314,21 @@ pw_building_abyssal_crater_test_site_habitat = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
 		cost = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1303,17 +1339,21 @@ pw_building_abyssal_crater_test_site_habitat = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_designation = col_research
-					has_designation = col_ecu_research
-					has_designation = col_ring_research
-					has_designation = col_habitat_research
+				planet = {
+					OR = {
+						has_designation = col_research
+						has_designation = col_ecu_research
+						has_designation = col_ring_research
+						has_designation = col_habitat_research
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1578,7 +1618,9 @@ pw_building_grand_archive = {
 		}
 		cost = {
 			trigger = {
-				pw_has_any_planetary_wonder = yes
+				planet = {
+					pw_has_any_planetary_wonder = yes
+				}
 			}
 			minerals = @pw_building_cost_extra
 		}
@@ -1588,7 +1630,9 @@ pw_building_grand_archive = {
 		}
 		upkeep = {
 			trigger = {
-				pw_has_any_additional_planetary_wonder = yes
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
 			}
 			energy = @pw_building_upkeep_extra
 		}
