@@ -68,6 +68,27 @@
     pw_mod_galactic_model_anomaly_sensor: "Galactic Map"
     pw_mod_galactic_model_anomaly_sensor_desc: "We have found a sort of Galactic Map, that helps ous scientist to survey new celestial bodies and detect hyperlanes"
 
+    pw_mod_PW_translated_alien_poetry: "Translated Alien Poetry"
+    pw_mod_PW_translated_alien_poetry_desc: "The many abstract alien poetry we have translated helps us with complex alien grammar in future first contacts."
+
+    pw_mod_PW_colored_atmosphere: "Colorful Atmosphere"
+    pw_mod_PW_colored_atmosphere_desc: "A special gas has been released in the atmosphere, coloring the skies and marveling the population."
+
+    pw_mod_MG_exposition_of_hate: "Exposition of Hate"
+    pw_mod_MG_exposition_of_hate_desc: "We have followed the example of the rare wise xenos by displaying an exhibition dedicated to the mockery and hate of foreign cultures, using the very same art pieces we have found."
+
+    pw_mod_FW_exotic_exhibition: "Alien Clothing Exhibition"
+    pw_mod_FW_exotic_exhibition_desc: "We have stayed true to the lost exhibition and brought here to value alien cultures of every kind."
+
+    pw_mod_TF_integrated_titan_production: "Integrated Alien Production"
+    pw_mod_TF_integrated_titan_production_desc: "By studying an alien Titanic Forge, we were able to integrate their complex production methods into our own industry."
+
+    pw_mod_IH_integrated_maintenance_protocols: "Integrated Maintenance Protocols"
+    pw_mod_IH_integrated_maintenance_protocols_desc: "By studying an alien Industrial Hearth, the collective was able to incorporate alien maintenance protocol into our own subroutines."
+
+    pw_mod_IH_consumerism_investigation: "Investigated Alien Consumerism"
+    pw_mod_IH_consumerism_investigation_desc: "By studying an alien Industrial Hearth from a particularly consumerist society, we could incorporate production techniques used to boosts revenue that can be of use."
+
     #Archaeological Sites mods:
     pw_mod_gaia_unstable_weather: "Unstable Ecosystem"
     pw_mod_gaia_unstable_weather_desc: "Constant draining of resources have left this planet bare at some point in time, and now it can not be pushed past its limits."

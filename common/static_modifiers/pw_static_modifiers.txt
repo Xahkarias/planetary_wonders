@@ -470,6 +470,41 @@ pw_mod_grand_archive_omnidatabase_secured = {
 	intel_encryption_add = 2
 }
 
+pw_mod_PW_translated_alien_poetry = {
+	first_contact_speed_mult = 0.25
+	first_contact_clues_add = 2
+}
+
+pw_mod_PW_colored_atmosphere = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_aphrodisiac.dds"
+	pop_happiness = 0.05
+	planet_jobs_unity_produces_mult = 0.05
+}
+
+pw_mod_MG_exposition_of_hate = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_artist_monument_erected.dds"
+	pop_happiness = 0.05
+	pop_ethic_xenophobe_attraction_mult = 0.20
+}
+
+pw_mod_FW_exotic_exhibition = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_artist_monument_erected.dds"
+	pop_happiness = 0.05
+	pop_ethic_xenophile_attraction_mult = 0.20
+}
+
+pw_mod_TF_integrated_titan_production = {
+	country_alloys_produces_mult = 0.05
+}
+
+pw_mod_IH_integrated_maintenance_protocols = {
+	planet_amenities_no_happiness_mult = 0.05
+}
+
+pw_mod_IH_consumerism_investigation = {
+	trade_value_mult = 0.05
+}
+
 #Holy Reliquary Artifacts Modifiers:
 
 #Stargazing Mirror: Introspective Gaze
