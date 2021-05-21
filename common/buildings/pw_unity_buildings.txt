@@ -1,6 +1,6 @@
 pw_building_pavilion_of_wonders = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 120
 	category = unity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -422,7 +422,7 @@ pw_building_pavilion_of_wonders = {
 
 pw_building_fair_of_worlds = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 110
 	category = unity
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -1009,7 +1009,7 @@ pw_building_fair_of_worlds = {
 
 pw_building_museum_of_the_grotesque = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 110
 	category = unity
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -1655,7 +1655,7 @@ pw_building_museum_of_the_grotesque = {
 
 pw_building_holy_reliquary = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 85
+	position_priority = 95
 	category = unity
 	base_cap_amount = 1
 	can_be_ruined = no

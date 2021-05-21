@@ -1,6 +1,6 @@
 pw_building_mantle_crucible = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 120
 	category = manufacturing
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -490,7 +490,7 @@ pw_building_mantle_crucible = {
 
 pw_building_titan_forge = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 100
 	category = manufacturing
 	can_be_ruined = no
 	can_build = no #Only upgrades
@@ -759,7 +759,7 @@ pw_building_titan_forge = {
 
 pw_building_industrial_hearth = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 100
 	category = manufacturing
 	can_be_ruined = no
 	can_build = no #Only upgrades

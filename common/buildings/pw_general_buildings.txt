@@ -1,6 +1,6 @@
 pw_building_space_elevator = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 50
+	position_priority = 85
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = trade
@@ -348,7 +348,7 @@ pw_building_space_elevator = {
 
 pw_building_galactic_model = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 100
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = government
@@ -950,7 +950,7 @@ pw_building_panopticon = {
 
 pw_building_guardian_angel = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 150
+	position_priority = 50
 	planetary_ftl_inhibitor = yes
 	base_cap_amount = 1
 	category = army
@@ -1492,7 +1492,7 @@ pw_building_transplanetary_logistics_network = {
 
 pw_building_transhabitat_logistics_network = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 120
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = amenity
@@ -1739,7 +1739,7 @@ pw_building_transhabitat_logistics_network = {
 
 pw_building_forbidden_city = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 85
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = government
@@ -2118,7 +2118,7 @@ pw_building_forbidden_city = {
 
 pw_building_festival_plaza = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 75
+	position_priority = 120
 	category = amenity
 	base_cap_amount = 1
 	can_be_ruined = no
@@ -2416,7 +2416,7 @@ pw_building_festival_plaza = {
 
 pw_building_martial_avenue = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 125
+	position_priority = 75
 	category = army
 	base_cap_amount = 1
 	can_be_ruined = no

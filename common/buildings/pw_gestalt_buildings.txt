@@ -463,7 +463,7 @@ pw_building_conduit_of_unity_1 = {
 #Machine Buildings
 pw_building_enigma_engine = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 85
+	position_priority = 95
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = research

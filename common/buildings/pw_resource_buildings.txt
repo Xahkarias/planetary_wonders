@@ -1,6 +1,6 @@
 pw_building_erebus_project = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 50
+	position_priority = 120
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = resource
@@ -1039,7 +1039,7 @@ pw_building_erebus_project = {
 
 pw_building_helios_tower = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 50
+	position_priority = 120
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = resource
@@ -2073,7 +2073,7 @@ pw_building_helios_tower = {
 
 pw_building_demetrius_fields = {
 	base_buildtime = @pw_building_buildtime
-	position_priority = 50
+	position_priority = 120
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = resource
