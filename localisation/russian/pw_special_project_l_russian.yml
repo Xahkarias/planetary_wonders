@@ -83,3 +83,8 @@
 
     PW_SECURE_OMNIDATABASE: "Secure the Omnidatabase"
     PW_SECURE_OMNIDATABASE_DESC: "Information is currency and the Omnidatabase holds a lot of information. As any other valuable it has to be protected at all costs, new security procedures need to be develop to assure us that our data is safe."
+
+    PW_TRANSLATE_POETRY: "Translate Alien Poetry"
+    PW_TRANSLATE_POETRY_DESC: "The cache of poetry texts we have found contains increasingly abstract and complex grammatical construction and semantics. It requires a dedicated team to fully translate the texts and absorb their meaning."
+    PW_RECOVER_THRONE: "Recover the Surviving Throne"
+    PW_RECOVER_THRONE_DESC: "We have discovered a millenary throne still intact inside an alien palatial complex. Given the preserved state in which the structure was found and the imperious design, it is certainly fit for a great leader. We must recover and outfit it to be the imperial throne of our own empire."

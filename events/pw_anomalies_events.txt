@@ -663,7 +663,7 @@ ship_event = {
 
 	#Integrate their design productions
 	option = {
-		name = pw_anomaly.133.b
+		name = pw_anomaly.133.c
 		owner = {
 			add_modifier = {
 				modifier = pw_mod_TF_integrated_titan_production
@@ -806,7 +806,11 @@ ship_event = {
 				has_ancrel = yes
 			}
 		}
-		FROM = { add_deposit = d_alloys_1 }
+		owner = {
+			add_resource = {
+				minor_artifacts = 10
+			}
+		}
 	}
 
 	#Influence
@@ -913,8 +917,8 @@ ship_event = {
 	id = pw_anomaly.143
 	title = pw_anomaly.143.name
 	desc = pw_anomaly.143.desc
-	picture = GFX_evt_decryption
-	show_sound = event_encrypted_comms
+	picture = GFX_evt_atmospheric_flight
+	show_sound = event_ghost_town
 	is_triggered_only = yes
 	location = THIS
 
@@ -924,6 +928,11 @@ ship_event = {
 	#Launch in capital
 	option = {
 		name = pw_anomaly.143.a
+		trigger = {
+			owner ={
+				is_gestalt = no
+			}
+		}
 		owner = {
 			random_owned_planet = {
 				limit = {
@@ -982,7 +991,7 @@ ship_event = {
 		name = pw_anomaly.144.a
 		trigger = {
 			owner = {
-				is_xenophile = no
+				is_xenophobe = yes
 			}
 		}
 		owner = {

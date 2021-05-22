@@ -3007,7 +3007,7 @@ planet_event = {
 				}
 			}
 			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
+				modifier = pw_mod_wonder_built_recently_unity
 				days = @pw_5years
 			}
 		}
@@ -3023,7 +3023,7 @@ planet_event = {
 				}
 			}
 			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
+				modifier = pw_mod_wonder_built_recently_unity
 				days = @pw_5years
 			}
 		}
@@ -3415,7 +3415,7 @@ planet_event = {
 				}
 			}
 			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
+				modifier = pw_mod_wonder_built_recently_unity
 				days = @pw_5years
 			}
 		}

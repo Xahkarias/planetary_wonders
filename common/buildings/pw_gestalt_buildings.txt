@@ -256,7 +256,10 @@ pw_building_conduit_of_unity_1 = {
 	#Ecu
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_city
+			OR = {
+				is_planet_class = pc_machine
+				is_planet_class = pc_hive
+			}
 		}
 		modifier = {
 			planet_housing_add = 16

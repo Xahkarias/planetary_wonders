@@ -895,26 +895,14 @@ pw_building_erebus_project = {
 			exists = owner
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 			NOR  = {
+				is_planet_class = pc_ringworld_habitable
 				is_planet_class = pc_habitat
 				is_planet_class = pc_machine
 				is_planet_class = pc_hive
 			}
 		}
 		modifier = {
-			district_mining_max = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
-			NOR  = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
-		}
-		modifier = {
-			district_mining_max = 1
+			district_mining_max = 2
 		}
 	}
 
@@ -1056,7 +1044,10 @@ pw_building_helios_tower = {
 			NOT = { is_planet_class = pc_habitat }
 			AND = {
 				owner = { has_ascension_perk = ap_voidborn }
-				has_planet_flag = energy_habitat
+				OR = {
+					has_planet_flag = energy_habitat
+					owner = { is_gestalt = yes }
+				}
 			}
 		}
 	}
@@ -1934,26 +1925,14 @@ pw_building_helios_tower = {
 			exists = owner
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 			NOR  = {
+				is_planet_class = pc_ringworld_habitable
 				is_planet_class = pc_habitat
 				is_planet_class = pc_machine
 				is_planet_class = pc_hive
 			}
 		}
 		modifier = {
-			district_generator_max = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
-			NOR  = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
-		}
-		modifier = {
-			district_generator_max = 1
+			district_generator_max = 2
 		}
 	}
 
@@ -2966,24 +2945,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 			NOR  = {
-				is_planet_class = pc_hive
-			}
-		}
-		modifier = {
-			district_farming_max = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
-			NOT = {
-				is_planet_class = pc_hive
 				is_planet_class = pc_ringworld_habitable
+				is_planet_class = pc_habitat
+				is_planet_class = pc_hive
 			}
 		}
 		modifier = {
-			district_farming_max = 1
+			district_farming_max = 2
 		}
 	}
 
