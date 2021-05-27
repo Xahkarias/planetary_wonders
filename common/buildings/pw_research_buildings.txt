@@ -335,7 +335,7 @@ pw_building_domed_city = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		OR = {
+		AND = {
 			pw_is_wonder_empire_unique = { WONDER = pw_building_domed_city }
 			hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_secluded_sector }}
 		}
@@ -667,7 +667,7 @@ pw_building_secluded_sector = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		OR = {
+		AND = {
 			pw_is_wonder_empire_unique = { WONDER = pw_building_domed_city }
 			hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_secluded_sector }}
 		}
@@ -987,7 +987,7 @@ pw_building_abyssal_crater_test_site = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		OR = {
+		AND = {
 			pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site }
 			hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site_habitat }}
 		}
@@ -1300,7 +1300,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
-		OR = {
+		AND = {
 			pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site }
 			hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site_habitat }}
 		}

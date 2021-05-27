@@ -85,7 +85,7 @@
 
     # Abyssal Crater Test Site (Habitat)
     pw_abyssal_crater_test_site_habitat: "§MPlanetary Test Site§!"
-    pw_building_abyssal_crater_test_site_habitat: "APlanetary Test Site"
+    pw_building_abyssal_crater_test_site_habitat: "Planetary Test Site"
     pw_building_abyssal_crater_test_site_habitat_desc: "An enormous crater in the planet bellow designated as a dedicated test site for rocketry, spacecraft launch and landing, material strength testing and building patterns under multiple conditions of pressure and gravity. Given the subject, the tests conducted here demand extra alloys."
 
     #Resource Buildings:
