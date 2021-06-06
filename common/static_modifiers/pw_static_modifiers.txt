@@ -459,6 +459,12 @@ pw_pm_living_spire_designation_death_necro = {
 }
 
 #Country modifiers:
+
+#Added by Ambition
+pw_mod_ambition_monumentality = {
+	planet_max_buildings_add = 1
+}
+
 pw_mod_galactic_model_anomaly_sensor = {
 	ship_hyperlane_range_add = 3
 	science_ship_survey_speed = 0.25

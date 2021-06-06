@@ -2142,7 +2142,7 @@ planet_event = {
 							counter = pw_stellar_data_collected
 						}
 					}
-					country_event = { id = pw_grand_archive.315 }
+					country_event = { id = pw_grand_archive.610 }
 				}
 			}
 		}
