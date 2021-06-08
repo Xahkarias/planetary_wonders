@@ -231,3 +231,240 @@ fleet_event = {
 		}
 	}
 }
+
+
+## Archaeology: Lunar Archive. -> 200
+
+# Stage 1 - Particle Museum
+fleet_event = {
+	id = pw_archaeology.205
+	title = pw_archaeology.205.name
+	desc = pw_archaeology.205.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_solar_fusion
+	is_triggered_only = yes
+
+	archaeology = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOUS
+		small_artifact_reward = yes
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+	}
+}
+
+# Stage 2 - Library of Babel
+fleet_event = {
+	id = pw_archaeology.210
+	title = pw_archaeology.210.name
+	desc = pw_archaeology.210.desc
+	picture = GFX_evt_resource_cache
+	show_sound = event_laboratory_sound
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = INTERESTING
+		small_artifact_reward = yes
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+	}
+}
+
+# Stage 3 - Mechanist Collection
+fleet_event = {
+	id = pw_archaeology.215
+	title = pw_archaeology.215.name
+	desc = pw_archaeology.215.desc
+	picture = GFX_evt_robot_assembly_plant
+	show_sound = event_robot_encounter
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = INTERESTING
+		small_artifact_reward = yes
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+	}
+}
+
+# Stage 4 - Cradle Initiative
+fleet_event = {
+	id = pw_archaeology.220
+	title = pw_archaeology.220.name
+	desc = pw_archaeology.220.desc
+	picture = GFX_evt_gaia
+	show_sound = ui_queuing_terraforming
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = INTERESTING
+		medium_artifact_reward = yes
+		if = {
+			limit = {
+				from.planet.solar_system = {
+					any_system_planet = {
+						uninhabitable_regular_planet = yes
+						NOT = { has_modifier = terraforming_candidate }
+					}
+				}
+			}
+			from.planet.solar_system = {
+				random_system_planet = {
+					add_modifier = {
+						modifier = terraforming_candidate
+					}
+				}
+			}
+		}
+		else = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+		}
+	}
+}
+
+# Stage 5 - Holoarchive
+fleet_event = {
+	id = pw_archaeology.225
+	title = pw_archaeology.225.name
+	desc = pw_archaeology.225.desc
+	picture = GFX_evt_ancient_databank
+	show_sound = event_mystic_reveal
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = FASCINATING
+		medium_artifact_reward = yes
+		from.planet = {
+			add_modifier = { modifier = pw_pm_lunar_archive }
+			add_deposit = d_physics_5
+			add_deposit = d_society_5
+			add_deposit = d_engineering_5
+		}
+		from.planet.orbit = {
+			add_deposit = pw_d_lunar_archive
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_archaeology.230
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
+}
+
+#Add Grand Archive tech
+country_event = {
+	id = pw_archaeology.230
+	title = pw_archaeology.230.name
+	desc = pw_archaeology.230.desc
+	picture = GFX_evt_ancient_databank
+	is_triggered_only = yes
+
+	trigger = {
+		is_materialist = yes
+		NOT = { has_technology = pw_tech_materialist_archiving }
+	}
+
+	#Add the tech
+	option = {
+		name = pw_archaeology.230.a
+		if = {
+			limit = { NOT = { has_tech_option = pw_tech_materialist_archiving } }
+			add_research_option = pw_tech_materialist_archiving
+			add_tech_progress = {
+				tech = pw_tech_materialist_archiving
+				progress = 0.10
+			}
+		}
+		else = {
+			add_tech_progress = {
+				tech = pw_tech_materialist_archiving
+				progress = 0.25
+			}
+		}
+	}
+
+	#No need for such thing
+	option = {
+		name = pw_archaeology.230.b
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier2influencereward
+			min = @tier2influencemin
+			max = @tier2influencemax
+		}
+	}
+}

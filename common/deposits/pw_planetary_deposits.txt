@@ -590,6 +590,103 @@ pw_d_holoarchive = {
 	}
 }
 
+# Lunar Archive (Added by Archaeology)
+pw_d_lunar_archive = {
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+	icon = pw_d_integration_drone_surveillance
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+	}
+
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_pw_lunar_archivist_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_upgraded_capital = yes
+		}
+		modifier = {
+			job_pw_lunar_archivist_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_fully_upgraded_capital = yes
+		}
+		modifier = {
+			job_pw_lunar_archivist_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_pw_lunar_archivist_gestalt_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_upgraded_capital = yes
+		}
+		modifier = {
+			job_pw_lunar_archivist_gestalt_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_fully_upgraded_capital = yes
+		}
+		modifier = {
+			job_pw_lunar_archivist_gestalt_add = 1
+		}
+	}
+}
+
 # Transplanetary Logistics Network Infrastructure
 
 # Food & Water Distribution

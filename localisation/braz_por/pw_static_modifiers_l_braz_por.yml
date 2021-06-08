@@ -460,3 +460,6 @@
 
     pw_mod_ambition_monumentality: "Monumentality"
     pw_mod_ambition_monumentality_desc: "Nothing can stand in the way of our Wonders, there shall be space for everything or we will make the space we require."
+
+    pw_pm_lunar_archive: "Lunar Archive"
+    pw_pm_lunar_archive_desc: "This moon has been use as a massive archive of information by an ancient alien species."

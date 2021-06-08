@@ -458,6 +458,12 @@ pw_pm_living_spire_designation_death_necro = {
 	job_necro_apprentice_add = 3
 }
 
+pw_pm_lunar_archive = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_researchers_produces_mult = 0.10
+}
+
 #Country modifiers:
 
 #Added by Ambition
