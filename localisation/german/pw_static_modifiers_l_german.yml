@@ -463,3 +463,6 @@
 
     pw_pm_lunar_archive: "Lunar Archive"
     pw_pm_lunar_archive_desc: "This moon has been use as a massive archive of information by an ancient alien species."
+
+    pw_art_mod_imperial_cult_country: "$pw_exhibition$ Imperious art."
+    pw_art_mod_imperial_cult_country_desc: "The art exhibitions dedicated to the glory of the imperial dynasty consolidate the power of the throne and increases the strength of our promulgations."

@@ -424,6 +424,10 @@
     pw_art_mod_xenophobe: "$pw_exhibition$ Cultural Hegemony"
     pw_art_mod_xenophobe_desc: "Our ongoing art exhibition is firmly based on rejecting, mocking and despising foreign culture and reinforcing our own values finding what makes us strong alone."
 
+    #Imperial Cult country mod
+    pw_art_mod_imperial_cult_country: "$pw_exhibition$ Imperious art."
+    pw_art_mod_imperial_cult_country_desc: "The art exhibitions dedicated to the glory of the imperial dynasty consolidate the power of the throne and increases the strength of our promulgations."
+
     #Events after exhibition:
     pw_art_mod_painted_skies: "Painted Skies"
     pw_art_mod_painted_skies_desc: "After a fabulous demonstration in our latest art exhibition, sky painters have recolored all of our colonies atmospheres to show new, brilliant colors."
