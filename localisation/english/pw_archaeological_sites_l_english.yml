@@ -57,10 +57,10 @@
     pw_site_living_reliquary_desc: "Upon one of the rocks drifting along this asteroid field, lies a titanic skeleton of some long-dead voidborn creature, similar in appearance to descriptions of the fabled Ether Drake. The carcass itself would make excellent archaeologic material, but readings also show signs of artificial constructions among the remains."
     #Stage 1 - Leviathan Description
     pw_archaeology.305.name: "Bal'Fu Pilgrims"
-    pw_archaeology.305.desc: "In a primary exploration of the titanic remains found drifting along the asteroid field, the archaeological team found scraps of several personal goods, such as clothing, jewelry and furniture. The objects seem to be arranged for use, as if some group employed the corpse of this Leviathan as shelter, after its demise.\n\nA closer look on surviving records of these inhabitants shows us that they called themselves \"The Bal'Fu Pilgrims\" and that they placed significant spiritual value on the dead creature.\n\nThere are no apparent signs to suggest a cause of death for this space leviathan."
+    pw_archaeology.305.desc: "In a primary exploration of the titanic remains found drifting along the asteroid field, the archaeological team found scraps of several personal goods, such as clothing, jewelry and furniture. The objects seem to be arranged for use, as if some group employed the corpse of this Leviathan as shelter, after its demise.\n\nA closer look on surviving records of these inhabitants shows us that they called themselves \"The Bal'Fu Pilgrims\" and that they placed significant spiritual value on the dead creature.\n\nThere are no apparent signs to suggest a cause of death for this space Leviathan."
     #Stage 2 - Codex of the Ages
     pw_archaeology.310.name: "Codex of the Ages"
-    pw_archaeology.310.desc: "Further exploration of the life inside this titanic beast shows that the Bal'Fu Pilgrims not only considered this ancient creature divine, but were very spiritual in general. There are pedestals for many of their holy relics all around the insides of the leviathan, but very few still remain.\n\nOur archaeological team has manage to recover what is left of one of these relics: a worn leather-bound ancient codex with most of its pages missing. According to the inscriptions found on the pedestal, the Pilgrims believed this book held a description of everything that was and everything that will be.\n\nLead archeologist §H[Root.GetLeaderName]§! believes that examination of the book could yield good results, but warns us that, according to legends, it must be done with purpose: either looking for the future or looking for the past."
+    pw_archaeology.310.desc: "Further exploration of the life inside this titanic beast shows that the Bal'Fu Pilgrims not only considered this ancient creature divine, but were very spiritual in general. There are pedestals for many of their holy relics all around the insides of the Leviathan, but very few still remain.\n\nOur archaeological team has manage to recover what is left of one of these relics: a worn leather-bound ancient codex with most of its pages missing. According to the inscriptions found on the pedestal, the Pilgrims believed this book held a description of everything that was and everything that will be.\n\nLead archeologist §H[Root.GetLeaderName]§! believes that examination of the book could yield good results, but warns us that, according to legends, it must be done with purpose: either looking for the future or looking for the past."
     pw_archaeology.310.a: "Verify what the Codex says about the past."
     pw_archaeology.310.b: "Peek at what the Codex tells of the future."
     pw_archaeology.310.c: "We have no time for spiritual nonsense, analyse it properly."
@@ -73,14 +73,30 @@
     pw_archaeology.312.desc: "As §H[Root.GetLeaderName]§! carefully decipher fragments of the Codex found in the titanic reliquary, left behind by the Bal'Fu, [Root.Leader.GetSheHe] contacts some of [Root.Leader.GetHerHis] colleagues occupied with research in other fields. While skeptical at first, our research leaders confirm that, with the information [Root.Leader.GetSheHe] shared with them, they can conduct innovative experiments in their ares, unlocking new paths for our advancement."
     pw_archaeology.312.a: "So this is what the future was holding for us."
     #Stage 2 (option 3 random) - Only unity
-    pw_archaeology.312.name: "Codex of Lost Ages"
-    pw_archaeology.312.desc: "As §H[Root.GetLeaderName]§! carefully decipher texts of the Codex found in the titanic reliquary, left behind by the Bal'Fu, [Root.Leader.GetSheHe] realizes that the remaining fragments are not enoughs to make sense of the texts. Unfortunately, we can never know what knowledge this ancient book held in its time."
-    pw_archaeology.312.a: "At least we can have a glimpse of their traditions."
+    pw_archaeology.313.name: "Codex of Lost Ages"
+    pw_archaeology.313.desc: "As §H[Root.GetLeaderName]§! carefully decipher texts of the Codex found in the titanic reliquary, left behind by the Bal'Fu, [Root.Leader.GetSheHe] realizes that the remaining fragments are not enoughs to make sense of the texts. Unfortunately, we can never know what knowledge this ancient book held in its time."
+    pw_archaeology.313.a: "At least we can have a glimpse of their traditions."
     #Stage 3 - Stargazing Mirror
     pw_archaeology.315.name: "Stargazing Mirror"
-    pw_archaeology.315.desc: "The archaeological team investigating the ancient Bal'Fu has found another of their surviving relics: a cracked metal bowl that used to aid astronomers by reflecting the stars. While heavily damaged, science officer §H[Root.GetLeaderName]§! speculates that the mirror can be used one last time, however, once again, legends states that looking into the mirror must be done with purpose: either searching for answers inside or searching for them outside. Whatever that means."
+    pw_archaeology.315.desc: "The archaeological team investigating the ancient Bal'Fu has found another of their surviving relics: a cracked metal bowl that used to aid astronomers by reflecting the stars. Ancient records describe how the Bal'Fu used this Stargazing Mirror to search for self enlightenment, until one of their prophets received a vision of the Leviathan in the mirror, which caused them to scour the galaxy in search of this promised saviour.\n\nWhile heavily damaged, science officer §H[Root.GetLeaderName]§! speculates that a ritual to gaze into the mirror can be performed as the records describe. However, once again, legends states that looking into the mirror must be done with purpose: \"One must be searching for answers inside or searching for salvation outside\". Whatever that means."
     pw_archaeology.315.a: "Attempt to search... inside?"
     pw_archaeology.315.b: "...Look for answers outside?"
+    pw_archaeology.315.c: "Don't waste time, simply catalogue the findings."
+    #Stage 3 (option 1) - Introspective Gaze
+    pw_archaeology.316.name: "Introspective Gaze"
+    pw_archaeology.316.desc: "By looking through the Stargazing Mirror, the science team excavating the remains of the fallen Leviathan could better understand the cultural rituals the ancient Bal'Fu used in search of self enlightenment."
+    pw_archaeology.316.a: "An interesting reflection of the past."
+    #Stage 3 (option 2) - Extrospective Gaze
+    pw_archaeology.317.name: "Extrospective Gaze"
+    pw_archaeology.317.desc: "Study of the Stargazing Mirror by the science team excavating the remains of the fallen Leviathan has given the science team valuable insights on political manipulation, specially directed to establishing a presence in space. There is still doubt regarding the origin of this knowledge, but our empire can certainly reap its benefits"
+    pw_archaeology.317.a: "Look forward and outward."
     #Stage 4 - Heart of the Leviathan
-    pw_archaeology.320.name: ""
-    pw_archaeology.320.desc: "."
+    pw_archaeology.320.name: "Heart of the Leviathan"
+    pw_archaeology.320.desc: "Finally, the archaeological team has reached the center of the fallen Leviathan, where they have determined that the heart of the creature should be. And it is still here!\n\nSurrounded by the skeletal remains of the Bal'Fu, a dark reflective irregular rock sits at the center of the thoracic cavity of the titanic beast. The corpses are the first specimens of the Bal'Fu we have encountered and they seem to have congregated here at the time of their deaths. In fact, new analyses show that both the Pilgrims and the Leviathan perished at about the same time, which points to a new hypothesis that the Bal'Fu lived inside the Leviathan while it was still alive!\n\nReadings show strange energy emissions coming the heart of the Leviathan, we can respect the ancient traditions of the Bal'Fu Pilgrims and maintain the heart here, studying the remains of their conclave or take the heart to be analyzed in our labs."
+    pw_archaeology.320.a: "Preserve the Heart here for study and pilgrimage."
+    pw_archaeology.320.b: "Take the Heart to a laboratory for study."
+    #After 30~60 days: add the tech
+    pw_archaeology.330.name: "A Reliquary of Our Own"
+    pw_archaeology.330.desc: "After the recent excavation of the Living Reliquary, our theologians and scholars have been discussing the possibility of organizing such project for own faith: a place where we can sanctify the relics of our past that define our culture, much like the ones found inside the dead Leviathan.\n\nWhile the prospect of finding a void creature to house our artifacts is amusing, we should construct a building for that task. Specially if that building is to be a wonder to behold."
+    pw_archaeology.330.a: "A blessed project for our future."
+    pw_archaeology.330.b: "Our faith requires no such gimmicks."

@@ -652,3 +652,18 @@ pw_holy_reliquary_holy_throne_giving_hand = {
 	planet_jobs_upkeep_mult = -0.10
 	pop_happiness = 0.10
 }
+
+#HR Archaeology heart of the leviathan: preserved
+pw_holy_reliquary_heart_of_the_leviathan_preserved = {
+	icon = "gfx/interface/icons/modifiers/pw_holy_reliquary_heart_of_the_leviathan.dds"
+	country_unity_produces_mult = 0.05
+	pop_ethic_spiritualist_attraction_mult = 0.05
+}
+
+#HR Archaeology heart of the leviathan: study
+pw_holy_reliquary_heart_of_the_leviathan_study = {
+	icon = "gfx/interface/icons/modifiers/pw_holy_reliquary_heart_of_the_leviathan.dds"
+	country_society_research_produces_add = 3
+	country_physics_research_produces_add = 3
+	country_energy_produces_mult = 0.05
+}

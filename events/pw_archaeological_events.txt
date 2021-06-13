@@ -522,6 +522,10 @@ fleet_event = {
 		hidden_effect = {
 			random_list = {
 				40 = {
+					modifier = {
+						factor = 0
+						is_gestalt = yes
+					}
 					fleet_event = {
 						id = pw_archaeology.311
 						days = 10
@@ -543,6 +547,10 @@ fleet_event = {
 		hidden_effect = {
 			random_list = {
 				40 = {
+					modifier = {
+						factor = 0
+						is_gestalt = yes
+					}
 					fleet_event = {
 						id = pw_archaeology.312
 						days = 10
@@ -695,7 +703,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = pw_archaeology.310.c
+		name = pw_archaeology.315.c
 		small_artifact_reward = yes
 		add_monthly_resource_mult = {
 			resource = society_research
@@ -773,9 +781,35 @@ fleet_event = {
 	}
 
 	option = {
-		name = FASCINATING
+		name = pw_archaeology.320.a
 		medium_artifact_reward = yes
+		owner = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_heart_of_the_leviathan_preserved
+			}
+		}
+		from.planet = {
+			add_deposit = d_society_5
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = pw_archaeology.330
+					days = 30
+					random = 30
+				}
+			}
+		}
+	}
 
+	option = {
+		name = pw_archaeology.320.b
+		medium_artifact_reward = yes
+		owner = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_heart_of_the_leviathan_study
+			}
+		}
 		hidden_effect = {
 			owner = {
 				country_event = {

@@ -246,6 +246,12 @@
     pw_holy_reliquary_holy_throne_giving_hand: "Emperor's Giving Hand"
     pw_holy_reliquary_holy_throne_giving_hand_desc: "A firm hand, a kind hand. The God-Emperor sits upon the $pw_holy_reliquary.holy_throne$ and extends the imperial grace to all the subjects in the empire. Adoration sustains the Throne in place."
 
+    pw_holy_reliquary_heart_of_the_leviathan_preserved: "Heart of the Leviathan: Preserved"
+    pw_holy_reliquary_heart_of_the_leviathan_preserved_desc: "We have preserved the Heart of the Leviathan worshiped by the late Bal'Fu and now it attracts many to study their customs anf faith."
+
+    pw_holy_reliquary_heart_of_the_leviathan_study: "Heart of the Leviathan: Study"
+    pw_holy_reliquary_heart_of_the_leviathan_study_desc: "We have taken the the Heart of the Leviathan worshiped by the late Bal'Fu for detailed study of the creatures biology and the strange energies emitted by the organ."
+
 
     # Grand Archive:
     pw_mod_grand_archive_recently_build: "Studies of Material History"
