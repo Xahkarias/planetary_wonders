@@ -856,6 +856,19 @@ pw_d_infrastructure_medical_posts = {
 		pop_environment_tolerance = 0.05
 		planet_pops_upkeep_mult = 0.05
 	}
+
+	#Robot Assembly
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			pop_assembly_speed = 0.05
+		}
+	}
 }
 
 # Habitation Support
@@ -890,6 +903,19 @@ pw_d_infrastructure_habitation_support = {
 		planet_amenities_add = 10
 		planet_pops_upkeep_mult = 0.10
 	}
+
+	#Robot Assembly
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			pop_assembly_speed = 0.05
+		}
+	}
 }
 
 # Emergency Services
@@ -923,8 +949,33 @@ pw_d_infrastructure_emergency_services = {
 		planet_housing_add = 3
 		pop_environment_tolerance = 0.15
 		planet_amenities_add = 15
-		pop_growth_speed = 0.10
 		planet_pops_upkeep_mult = 0.15
+	}
+
+	#Pop growth
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.10
+		}
+	}
+
+	#Robot Assembly
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			pop_assembly_speed = 0.10
+		}
 	}
 }
 
@@ -959,9 +1010,34 @@ pw_d_infrastructure_crisis_responders = {
 		planet_housing_add = 4
 		pop_environment_tolerance = 0.20
 		planet_amenities_add = 20
-		pop_growth_speed = 0.15
 		pop_defense_armies_add = 4
 		planet_pops_upkeep_mult = 0.20
+	}
+
+	#Pop growth
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.15
+		}
+	}
+
+	#Robot Assembly
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			pop_assembly_speed = 0.20
+		}
 	}
 }
 
@@ -1534,8 +1610,33 @@ pw_d_infrastructure_palatial_physicians = {
 
 	planet_modifier = {
 		planet_housing_add = 1
-		job_healthcare_add = 1
 		planet_pops_upkeep_mult = 0.05
+	}
+
+	#Medic workers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+			}
+		}
+		modifier = {
+			job_healthcare_add = 1
+		}
+	}
+
+	#Robot Assemblers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 }
 
@@ -1558,8 +1659,33 @@ pw_d_infrastructure_city_defenders = {
 
 	planet_modifier = {
 		planet_housing_add = 2
-		job_healthcare_add = 1
 		planet_pops_upkeep_mult = 0.10
+	}
+
+	#Medic workers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+			}
+		}
+		modifier = {
+			job_healthcare_add = 1
+		}
+	}
+
+	#Robot Assemblers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 
 	#Enforcer
@@ -1607,9 +1733,34 @@ pw_d_infrastructure_crisis_bunker = {
 
 	planet_modifier = {
 		planet_housing_add = 3
-		job_healthcare_add = 1
 		planet_orbital_bombardment_damage = -0.05
 		planet_pops_upkeep_mult = 0.15
+	}
+
+	#Medic workers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+			}
+		}
+		modifier = {
+			job_healthcare_add = 1
+		}
+	}
+
+	#Robot Assemblers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 
 	#Enforcer
@@ -1657,10 +1808,35 @@ pw_d_infrastructure_personal_guardian = {
 
 	planet_modifier = {
 		planet_housing_add = 4
-		job_healthcare_add = 1
 		planet_orbital_bombardment_damage = -0.10
 		planet_amenities_add = 10
 		planet_pops_upkeep_mult = 0.20
+	}
+
+	#Medic workers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+			}
+		}
+		modifier = {
+			job_healthcare_add = 1
+		}
+	}
+
+	#Robot Assemblers
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 
 	#Enforcer
