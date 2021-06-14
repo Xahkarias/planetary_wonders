@@ -75,6 +75,15 @@ pw_building_space_elevator = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		upkeep = {
+			trigger = {
 				planet = {
 					OR = {
 						has_designation = col_capital
@@ -424,6 +433,15 @@ pw_building_galactic_model = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		upkeep = {
+			trigger = {
 				planet = {
 					OR = {
 						has_designation = col_bureau
@@ -708,6 +726,15 @@ pw_building_panopticon = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 		upkeep = {
 			trigger = {
@@ -1023,6 +1050,15 @@ pw_building_guardian_angel = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		upkeep = {
+			trigger = {
 				planet = {
 					OR = {
 						has_designation = col_fortress
@@ -1305,6 +1341,15 @@ pw_building_transplanetary_logistics_network = {
 			}
 			energy = @pw_building_upkeep_extra
 		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
 	}
 
 	destroy_trigger = {
@@ -1551,6 +1596,15 @@ pw_building_transhabitat_logistics_network = {
 			}
 			energy = @pw_building_upkeep_extra
 		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
 	}
 
 	destroy_trigger = {
@@ -1789,6 +1843,15 @@ pw_building_forbidden_city = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 	}
 
@@ -2169,6 +2232,15 @@ pw_building_festival_plaza = {
 			}
 			energy = @pw_building_upkeep_extra
 		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
 	}
 
 	destroy_trigger = {
@@ -2466,6 +2538,15 @@ pw_building_martial_avenue = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 	}
 

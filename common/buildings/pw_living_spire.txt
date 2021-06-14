@@ -77,6 +77,15 @@ pw_building_living_spire_0 = {
 			}
 			energy = @pw_building_upkeep_extra_half
 		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
 	}
 
 	planet_modifier = {
@@ -222,6 +231,15 @@ pw_building_living_spire_1 = {
 				}
 			}
 			energy = @pw_building_upkeep_extra_half
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 	}
 
@@ -519,6 +537,15 @@ pw_building_living_spire_2 = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 	}
 
@@ -940,6 +967,15 @@ pw_building_living_spire_3 = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 	}
 

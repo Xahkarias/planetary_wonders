@@ -64,6 +64,15 @@ pw_building_pavilion_of_wonders = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		upkeep = {
+			trigger = {
 				planet = {
 					OR = {
 						has_designation = col_resort
@@ -486,6 +495,15 @@ pw_building_fair_of_worlds = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 		upkeep = {
 			trigger = {
@@ -1073,6 +1091,15 @@ pw_building_museum_of_the_grotesque = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 		upkeep = {
 			trigger = {
@@ -1710,6 +1737,15 @@ pw_building_holy_reliquary = {
 				}
 			}
 			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_ambition_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
 		}
 	}
 

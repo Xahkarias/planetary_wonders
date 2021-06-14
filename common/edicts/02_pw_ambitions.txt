@@ -65,7 +65,7 @@ pw_ambition_wonders_beyond_ambition = {
 	}
 
 	modifier = {
-		planet_buildings_upkeep_mult = 0.50
+		custom_tooltip = pw_ambition_wonders_beyond_ambition_upkeep_tooltip
 	}
 
 	ai_weight = {
