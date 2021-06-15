@@ -257,11 +257,13 @@ fleet_event = {
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
-		add_monthly_resource_mult = {
-			resource = physics_research
-			value = @tier3researchreward
-			min = @tier3researchmin
-			max = @tier3researchmax
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
 		}
 	}
 }
@@ -289,11 +291,13 @@ fleet_event = {
 	option = {
 		name = INTERESTING
 		small_artifact_reward = yes
-		add_monthly_resource_mult = {
-			resource = society_research
-			value = @tier3researchreward
-			min = @tier3researchmin
-			max = @tier3researchmax
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
 		}
 	}
 }
@@ -321,11 +325,13 @@ fleet_event = {
 	option = {
 		name = INTERESTING
 		small_artifact_reward = yes
-		add_monthly_resource_mult = {
-			resource = engineering_research
-			value = @tier3researchreward
-			min = @tier3researchmin
-			max = @tier3researchmax
+		owner = {
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
 		}
 	}
 }
@@ -371,11 +377,13 @@ fleet_event = {
 			}
 		}
 		else = {
-			add_monthly_resource_mult = {
-				resource = society_research
-				value = @tier3researchreward
-				min = @tier3researchmin
-				max = @tier3researchmax
+			owner = {
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
 			}
 		}
 	}
@@ -569,11 +577,13 @@ fleet_event = {
 	option = {
 		name = pw_archaeology.310.c
 		small_artifact_reward = yes
-		add_monthly_resource_mult = {
-			resource = society_research
-			value = @tier2researchreward
-			min = @tier2researchmin
-			max = @tier2researchmax
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
 		}
 	}
 }
@@ -705,11 +715,13 @@ fleet_event = {
 	option = {
 		name = pw_archaeology.315.c
 		small_artifact_reward = yes
-		add_monthly_resource_mult = {
-			resource = society_research
-			value = @tier2researchreward
-			min = @tier2researchmin
-			max = @tier2researchmax
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
 		}
 	}
 }
