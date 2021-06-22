@@ -60,6 +60,33 @@ pw_mod_space_elevator_105_c = {
 	planet_stability_add = 15
 }
 
+pw_mod_space_elevator_kessler_effect = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ship_in_orbit.dds"
+	icon_frame = @pw_icon_frame_red
+	pop_environment_tolerance = -0.05
+	planet_amenities_mult = -0.10
+	trade_value_mult = -0.10
+}
+
+pw_mod_space_elevator_kessler_effect_no_happiness = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ship_in_orbit.dds"
+	icon_frame = @pw_icon_frame_red
+	pop_environment_tolerance = -0.05
+	planet_amenities_no_happiness_mult = -0.15
+}
+
+pw_mod_space_elevator_aided_development_colonization = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_assist_research.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_colony_development_speed_mult = 0.50
+}
+
+pw_mod_space_elevator_aided_development_established = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_assist_research.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_growth_speed = 0.10
+}
+
 pw_mod_particle_supercollider_materialist = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green

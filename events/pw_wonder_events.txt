@@ -219,6 +219,9 @@ planet_event = {
 				}
 				planet_event = { id = pw_wonder.106 days = 180 random = 180 }
 			}
+			10 = {
+				planet_event = { id = pw_wonder.107 days = 180 random = 180 }
+			}
 		}
 	}
 }
@@ -238,7 +241,7 @@ planet_event = {
 		has_active_building = pw_building_space_elevator
 	}
 	immediate = {
-		owner = { set_country_flag = pw_wonder_event_104 }
+		owner = { set_timed_country_flag = { flag = pw_wonder_event_104 days = @pw_5years }}
 	}
 	option = {
 		name = pw_wonder.104.a
@@ -279,7 +282,7 @@ planet_event = {
 		has_active_building = pw_building_space_elevator
 	}
 	immediate = {
-		owner = { set_country_flag = pw_wonder_event_105 }
+		owner = { set_timed_country_flag = { flag = pw_wonder_event_105 days = @pw_5years }}
 	}
 	option = {
 		name = pw_wonder.105.a
@@ -310,7 +313,7 @@ planet_event = {
 		has_active_building = pw_building_space_elevator
 	}
 	immediate = {
-		owner = { set_country_flag = pw_wonder_event_106 }
+		owner = { set_timed_country_flag = { flag = pw_wonder_event_106 days = @pw_5years }}
 	}
 	option = {
 		name = pw_wonder.106.a
@@ -347,6 +350,173 @@ planet_event = {
 					max = @tier2influencemax
 				}
 			}
+		}
+	}
+}
+
+#Kessler Effect
+planet_event = {
+	id = pw_wonder.107
+	title = pw_wonder.107.name
+	desc = pw_wonder.107.desc
+	picture = GFX_evt_pw_space_elevator
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = { owner = { has_country_flag = pw_wonder_event_107 }}
+		has_active_building = pw_building_space_elevator
+	}
+	immediate = {
+		owner = { set_timed_country_flag = { flag = pw_wonder_event_107 days = @pw_5years }}
+	}
+
+	option = {
+		name = pw_wonder.107.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -2000
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.107.b
+		if = {
+			limit = {
+				owner = { is_gestalt = yes }
+			}
+			add_modifier = {
+				modifier = pw_mod_space_elevator_kessler_effect_no_happiness
+				days = @pw_5years
+			}
+		}
+		else ={
+			add_modifier = {
+				modifier = pw_mod_space_elevator_kessler_effect
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.107.c
+		trigger = {
+			owner = { is_gestalt = no }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 25
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -25
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_space_elevator_kessler_effect
+			days = @pw_2years
+		}
+	}
+}
+
+#Help Development
+planet_event = {
+	id = pw_wonder.110
+	title = pw_wonder.110.name
+	desc = pw_wonder.110.desc
+	picture = GFX_evt_pw_space_elevator
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		solar_system = {
+			NOT = { has_star_flag = pw_wonder_event_110 }
+			any_system_planet = {
+				has_active_building = pw_building_space_elevator
+			}
+		}
+	}
+
+	immediate = {
+		solar_system = {
+			set_timed_star_flag = { flag = pw_wonder_event_110 days = @pw_5years }
+			random_system_planet = {
+				limit = { has_active_building = pw_building_space_elevator }
+			}
+			save_event_target_as = pw_space_elevator_aid_dev_planet
+		}
+	}
+
+	option = {
+		name = pw_wonder.110.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 500
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -500
+				minerals = -500
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_space_elevator_aided_development_colonization
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.110.b
+	}
+}
+
+#Help Development (Finish Colonization)
+planet_event = {
+	id = pw_wonder.111
+	title = pw_wonder.111.name
+	desc = pw_wonder.111.desc
+	picture = GFX_evt_pw_space_elevator
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_modifier = pw_mod_space_elevator_aided_development_colonization
+	}
+
+	option = {
+		name = pw_wonder.111.a
+		if = {
+			limit = { has_modifier = pw_mod_space_elevator_aided_development_colonization }
+			remove_modifier = pw_mod_space_elevator_aided_development_colonization
+		}
+		add_modifier = {
+			modifier = pw_mod_space_elevator_aided_development_established
+			days = @pw_5years
+			clear_on_owner_change = yes
 		}
 	}
 }

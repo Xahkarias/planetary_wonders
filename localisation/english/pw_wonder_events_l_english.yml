@@ -30,6 +30,21 @@
     pw_wonder.106.b: "We could find them a home... elsewhere."
     pw_wonder.106.b.tooltip: "Create a colony ship with the stowaways."
     pw_wonder.106.c: "There is not much we can do. Keep them in bureaucratic purgatory."
+    #Kessler Effect
+    pw_wonder.107.name: "Kessler Effect"
+    pw_wonder.107.desc: "The operation of the Space Elevator at [ROOT.GetName] has exacerbated the process of debris generation around the orbit of the planet beyond control of regular destruction. It has come to a point where new satellites can only operate for a few weeks before they need to be replace, accelerating even further the concentration of trash in orbit.\n\nSome measure must be taken now to avoid several years of hampered orbital travel and construction."
+    pw_wonder.107.a: "Do what it takes to clear the debris."
+    pw_wonder.107.b: "There is nothing we can do."
+    pw_wonder.107.c: "Invest in propaganda to clear it faster."
+    #Aid Development
+    pw_wonder.110.name: "Aid Development"
+    pw_wonder.110.desc: "As the colonization process of [THIS.GetName] begins, intrepid engineers on [pw_space_elevator_aid_dev_planet.GetName] have drew plans to utilize their Space Elevator in order to aid the development of the new colony in the system. Pre-fab facilities, perishable materials and specialized work can be readily arranged and dispatched to the forming colony, greatly increasing its development speed."
+    pw_wonder.110.a: "A great plan, put it in march."
+    pw_wonder.110.b: "The colonists can take care of themselves."
+    #Aid Development (finished)
+    pw_wonder.111.name: "A Colony Ready For Colonists"
+    pw_wonder.111.desc: "The aided development provided by the Space Elevator for the colony in [THIS.GetName] has been of great help. Now, with the new structures in place in record time, the infrastructure of the planet is better prepared for the first generation of colonists and the population here is expected to grow more rapidly in its first few years."
+    pw_wonder.111.a: "Great news!"
 
     #Complete Particle Supercollider
     pw_message_particle_supercollider_complete: "§MParticle Supercollider§! has been constructed in $PLANET|Y$."

@@ -31,6 +31,14 @@
     pw_mod_space_elevator_105_b_desc: "Substances are legalized, but taxed in such a way that only the elites may buy it."
     pw_mod_space_elevator_105_c: "Space Elevator: Banned Substances"
     pw_mod_space_elevator_105_c_desc: "All illegal substances are banned and completely controlled. Crime rises, but stability is kept in check too."
+    pw_mod_space_elevator_kessler_effect: "Kessler Effect"
+    pw_mod_space_elevator_kessler_effect_desc: "Space debris and general remains have accumulated around the orbit of this planet making off-world travel much more difficult and continually damaging artificial satellites."
+    pw_mod_space_elevator_kessler_effect_no_happiness: "Kessler Effect"
+    pw_mod_space_elevator_kessler_effect_no_happiness_desc: "Space debris and general remains have accumulated around the orbit of this planet making off-world travel much more difficult and continually damaging artificial satellites."
+    pw_mod_space_elevator_aided_development_colonization: "Aided Development"
+    pw_mod_space_elevator_aided_development_colonization_desc: "The Space Elevator at another planet in this system is helping the development of this colony."
+    pw_mod_space_elevator_aided_development_established: "Aided Development"
+    pw_mod_space_elevator_aided_development_established_desc: "The Space Elevator at another planet in this system helped develop this colony and now the population has better support to grow."
 
     #Particle Supercollider
     pw_mod_particle_supercollider_materialist: "Particle Supercollider: Veil of theory"
