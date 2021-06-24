@@ -10,6 +10,21 @@
     pw_tech_space_elevator: "Space Elevator"
     pw_tech_space_elevator_desc: "A marvel of logistics engineering, a device capable of transportation of goods and people to and from space with minimal consumption of energy."
 
+    pw_tech_space_elevator_orbital_commerce: "Orbital Commerce"
+    pw_tech_space_elevator_orbital_commerce_desc: "With the establishment of a solid logistic network provided by the Space Elevators we have constructed we can dedicate facilities and offices for specific commercial functions."
+    pw_tech_space_elevator_orbital_commerce_policy: "§SUnlocks Policy:§! §SOrbital Commerce§!."
+    pw_tech_space_elevator_orbital_commerce_policy_desc: "Allows us to set orbital commerce facilities to improve the functionalities of our $pw_building_space_elevator$"
+    pw_tech_space_elevator_orbital_commerce_merchants: "$pw_space_elevator$ provides §G+1§! $job_merchant$ Job per 50 Pops."
+
+    pw_tech_space_elevator_orbital_logistics_machine: "Orbital Logistics"
+    pw_tech_space_elevator_orbital_logistics_machine_desc: "With the establishment of a solid logistic network provided by the Space Elevators we have constructed the Gestalt can dedicate facilities for specific drone functions."
+    pw_tech_space_elevator_orbital_logistics_hive: "Orbital Logistics"
+    pw_tech_space_elevator_orbital_logistics_hive_desc: "With the establishment of a solid logistic network provided by the Space Elevators we have constructed the Gestalt can dedicate facilities for specific drone functions."
+    pw_tech_space_elevator_orbital_logistics_policy: "§SUnlocks Policy:§! §SOrbital Logistics§!."
+    pw_tech_space_elevator_orbital_logistics_policy_desc: "Allows the Gestalt to set orbital logistic facilities to improve the functionalities of our $pw_building_space_elevator$"
+    pw_tech_space_elevator_orbital_logistics_jobs_machine: "$pw_space_elevator$ provides §G+1§! $job_coordinator$ Job per 50 Pops."
+    pw_tech_space_elevator_orbital_logistics_jobs_hive: "$pw_space_elevator$ provides §G+1§! $job_synapse_drone$ Job per 50 Pops."
+
     # Particle Supercollider:
     pw_tech_particle_supercollider: "Particle Supercollider"
     pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with an array of state of the art sensors."

@@ -471,3 +471,12 @@
     pw_holy_reliquary_heart_of_the_leviathan_preserved_desc: "We have preserved the Heart of the Leviathan worshiped by the late Bal'Fu and now it attracts many to study their customs anf faith."
     pw_holy_reliquary_heart_of_the_leviathan_study: "Heart of the Leviathan: Study"
     pw_holy_reliquary_heart_of_the_leviathan_study_desc: "We have taken the the Heart of the Leviathan worshiped by the late Bal'Fu for detailed study of the creatures biology and the strange energies emitted by the organ."
+
+    pw_mod_space_elevator_kessler_effect: "Kessler Effect"
+    pw_mod_space_elevator_kessler_effect_desc: "Space debris and general remains have accumulated around the orbit of this planet making off-world travel much more difficult and continually damaging artificial satellites."
+    pw_mod_space_elevator_kessler_effect_no_happiness: "Kessler Effect"
+    pw_mod_space_elevator_kessler_effect_no_happiness_desc: "Space debris and general remains have accumulated around the orbit of this planet making off-world travel much more difficult and continually damaging artificial satellites."
+    pw_mod_space_elevator_aided_development_colonization: "Aided Development"
+    pw_mod_space_elevator_aided_development_colonization_desc: "The Space Elevator at another planet in this system is helping the development of this colony."
+    pw_mod_space_elevator_aided_development_established: "Aided Development"
+    pw_mod_space_elevator_aided_development_established_desc: "The Space Elevator at another planet in this system helped develop this colony and now the population has better support to grow."

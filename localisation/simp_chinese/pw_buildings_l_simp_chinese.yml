@@ -170,3 +170,5 @@
 
     mod_planet_jobs_minerals_upkeep_mult: "Mineral Upkeep for Jobs"
     mod_planet_buildings_energy_upkeep_mult: "Energy Upkeep for Buildings"
+
+    pw_building_space_elevator_plural: "Space Elevators"

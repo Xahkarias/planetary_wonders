@@ -1,3 +1,4 @@
+#Galactic Model:
 pw_policy_expansion = {
 	potential = {
 		any_owned_planet = {
@@ -84,6 +85,219 @@ pw_policy_expansion = {
 				factor = 2
 				num_owned_planets > 80
 			}
+		}
+	}
+}
+
+#Space Elevator (non Gestalt)
+pw_policy_orbital_commerce = {
+	potential = {
+		has_technology = pw_tech_space_elevator_orbital_commerce
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_active_building = pw_building_space_elevator
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_interplanetary_customhouses
+
+		valid = {
+			can_generate_trade_value = yes
+		}
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_interplanetary_customhouses }
+
+		ai_weight = {
+			weight = 10
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_exotic_goods_importer
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_exotic_goods_importer }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_cultural_agencies
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_cultural_agencies }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_border_control
+
+		valid = {
+			NOT = { has_valid_civic = civic_criminal_heritage }
+		}
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_border_control }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_relocation_offices
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_relocation_offices }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_migration_bureau
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_migration_bureau }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_foreign_traders
+
+		potential = {
+			is_megacorp = yes
+		}
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_foreign_traders }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_commerce_smuggling_contacts
+
+		potential = {
+			has_valid_civic = civic_criminal_heritage
+		}
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_commerce_smuggling_contacts }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+}
+
+#Space Elevator (Gestalt)
+pw_policy_orbital_logistics = {
+	potential = {
+		OR = {
+			has_technology = pw_tech_space_elevator_orbital_logistics_hive
+			has_technology = pw_tech_space_elevator_orbital_logistics_machine
+		}
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_active_building = pw_building_space_elevator
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_logistics_drone_care
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_logistics_drone_care }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_logistics_drone_scan
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_logistics_drone_scan }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_logistics_gestalt_pylon
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_logistics_gestalt_pylon }
+
+		ai_weight = {
+			weight = 0
+		}
+	}
+
+	option = {
+		name = pw_policy_orbital_logistics_production_supply
+
+		on_enabled = {
+			custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
+		}
+
+		policy_flags = { pw_policy_orbital_logistics_production_supply }
+
+		ai_weight = {
+			weight = 10
 		}
 	}
 }

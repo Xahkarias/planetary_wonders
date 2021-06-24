@@ -16,6 +16,7 @@
     # Space Elevator
     pw_space_elevator: "§MSpace Elevator§!"
     pw_building_space_elevator: "Space Elevator"
+    pw_building_space_elevator_plural: "Space Elevators"
     pw_building_space_elevator_desc: "A truly babylonian tower that extends to the skies and constantly moves freight and travelers. The space elevator provides many logistics jobs and facilitates the transposition of our population."
 
     # Astronomical Model Bureau
