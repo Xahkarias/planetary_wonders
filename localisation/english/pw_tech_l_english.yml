@@ -25,6 +25,11 @@
     pw_tech_space_elevator_orbital_logistics_jobs_machine: "$pw_space_elevator$ provides §G+1§! $job_coordinator$ Job per 50 Pops."
     pw_tech_space_elevator_orbital_logistics_jobs_hive: "$pw_space_elevator$ provides §G+1§! $job_synapse_drone$ Job per 50 Pops."
 
+    pw_tech_space_elevator_planetary_orbital_logistics: "Planetary-Orbital Logistics"
+    pw_tech_space_elevator_planetary_orbital_logistics_desc: "There is no logistic challenge more pernicious and more prevalent in our stellar expansion than leaving the gravitational pull of our planets simply and cheaply."
+    pw_tech_space_elevator_orbital_planetary_logistics: "Orbital-Planetary Logistics"
+    pw_tech_space_elevator_orbital_planetary_logistics_desc: "It is only natural to look for ways to expand the operations of the Space Elevator, both on the planet surface and our orbital stations."
+
     # Particle Supercollider:
     pw_tech_particle_supercollider: "Particle Supercollider"
     pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with an array of state of the art sensors."

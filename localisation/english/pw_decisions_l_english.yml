@@ -9,6 +9,12 @@
     pw_decision_demetrius_harvesting: "Predatory Harvesting"
     pw_decision_demetrius_harvesting_desc: "Push the soil to its limits and extract just enough food from all the sources to keep the biosphere in balance, take all the surplus. The planet will suffer, but we will thrive."
 
+    #Space Elevator Logistics:
+    pw_decision_SE_install_space_ramp: "Install a §BSpace Ramp§!"
+    pw_decision_SE_install_space_ramp_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing Space Ramp stations, allowing for rocket-powered sled launches from maglev rails. This will provide better and cheaper mobility for our pops and goods."
+    pw_decision_SE_install_skyhook: "Install a §BSkyhook§!"
+    pw_decision_SE_install_skyhook_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing a Skyhook satellite to usher outgoing ships from low orbit to space, and steering incoming ships from space back to low orbit. Utilizing a tether system, this structure can manipulate its orbital momentum to accelerate and decelerate ships, saving on fuel and boosting transportation efficiency."
+
     pw_decision_rebuild_flying_fortress: "Rebuild Flying Fortress"
     pw_decision_rebuild_flying_fortress_desc: "Our Flying fortress might have fallen from the skies, but the Guardian Angel framework is still in place. We can rebuild it to protect the skies once more."
     pw_decision_rebuild_flying_fortress_tooltip: "Creates a Flying Fortress army to defend this planet."

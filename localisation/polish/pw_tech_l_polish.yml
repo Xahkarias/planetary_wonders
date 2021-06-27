@@ -301,3 +301,8 @@
     pw_tech_space_elevator_orbital_logistics_policy_desc: "Allows the Gestalt to set orbital logistic facilities to improve the functionalities of our $pw_building_space_elevator$"
     pw_tech_space_elevator_orbital_logistics_jobs_machine: "$pw_space_elevator$ provides §G+1§! $job_coordinator$ Job per 50 Pops."
     pw_tech_space_elevator_orbital_logistics_jobs_hive: "$pw_space_elevator$ provides §G+1§! $job_synapse_drone$ Job per 50 Pops."
+
+    pw_tech_space_elevator_planetary_orbital_logistics: "Planetary-Orbital Logistics"
+    pw_tech_space_elevator_planetary_orbital_logistics_desc: "There is no logistic challenge more pernicious and more prevalent in our stellar expansion than leaving the gravitational pull of our planets simply and cheaply."
+    pw_tech_space_elevator_orbital_planetary_logistics: "Orbital-Planetary Logistics"
+    pw_tech_space_elevator_orbital_planetary_logistics_desc: "It is only natural to look for ways to expand the operations of the Space Elevator, both on the planet surface and our orbital stations."

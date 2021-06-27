@@ -583,3 +583,7 @@
     pw_wonder.111.name: "A Colony Ready For Colonists"
     pw_wonder.111.desc: "The aided development provided by the Space Elevator for the colony in [THIS.GetName] has been of great help. Now, with the new structures in place in record time, the infrastructure of the planet is better prepared for the first generation of colonists and the population here is expected to grow more rapidly in its first few years."
     pw_wonder.111.a: "Great news!"
+
+    pw_wonder.120.name: "Nothing Between Heaven and Earth"
+    pw_wonder.120.desc: "Never before leaving the surface of [THIS.GetName] to reach the outer space has been so simple, fast and cheap. Now with the Space Ramp and the Skyhook both functioning in tandem with each other, and in complement to the $pw_building_space_elevator$, surface-orbit logistics operate at maximum efficiency.\n\nWe can already see the results of such synergy blossom: the people of [THIS.GetName] have ready access to goods they need and its industry never runs out of supply or suffers from overproduction."
+    pw_wonder.120.a: "A giant leap now turned into a small step."

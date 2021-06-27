@@ -202,3 +202,8 @@
     pw_decision_cu_shard_of_enigma_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate spaces for small gatherings of drones that can dedicate themselves to the deciphering of the signal from the $pw_enigma_engine$."
     pw_decision_cu_chamber_of_reflection: "$pw_decision_cu.integrate$ Chamber Of Reflection"
     pw_decision_cu_chamber_of_reflection_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate chambers where drones from this planet can gather and contribute to any ongoing discussion on the $pw_solipsist_debate_hall$."
+
+    pw_decision_SE_install_space_ramp: "Install a §BSpace Ramp§!"
+    pw_decision_SE_install_space_ramp_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing Space Ramp stations, allowing for rocket-powered sled launches from maglev rails. This will provide better and cheaper mobility for our pops and goods."
+    pw_decision_SE_install_skyhook: "Install a §BSkyhook§!"
+    pw_decision_SE_install_skyhook_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing a Skyhook satellite to usher outgoing ships from low orbit to space, and steering incoming ships from space back to low orbit. Utilizing a tether system, this structure can manipulate its orbital momentum to accelerate and decelerate ships, saving on fuel and boosting transportation efficiency."

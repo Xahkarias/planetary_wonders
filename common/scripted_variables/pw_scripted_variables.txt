@@ -84,6 +84,12 @@
 @pw_decision_resource_mod = 0.20
 @pw_decision_resource_duration = 3600 # 10 years
 
+#Space Elevator Infrastructure
+@pw_se_infrastructure_time = 360 #1 year
+@pw_se_infrastructure_cost = 1500
+@pw_se_infrastructure_cost_extra = 500
+@pw_se_infrastructure_influence_cost = 25
+
 @pw_decision_exhibition_cost_energy = 1000
 @pw_decision_exhibition_cost_1 = 10000
 @pw_decision_exhibition_cost_2 = 20000
