@@ -207,7 +207,6 @@ pw_tech_space_elevator_orbital_commerce = {
 		tech_galactic_markets
 	}
 	weight = @tier4weight2
-	is_rare = yes
 
 	potential = {
 		is_gestalt = no
@@ -225,8 +224,6 @@ pw_tech_space_elevator_orbital_commerce = {
 	}
 
 	weight_modifier = {
-		factor = @pw_tech_weight_mod
-
 		modifier = {
 			factor = 0
 			count_owned_planet = {
@@ -242,36 +239,6 @@ pw_tech_space_elevator_orbital_commerce = {
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = leader_trait_spark_of_genius
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = leader_trait_curator
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator }
 			}
 		}
 
@@ -321,7 +288,6 @@ pw_tech_space_elevator_orbital_logistics_machine = {
 	category = { statecraft }
 	prerequisites = { pw_tech_space_elevator }
 	weight = @tier4weight2
-	is_rare = yes
 
 	potential = {
 		is_machine_empire = yes
@@ -339,8 +305,6 @@ pw_tech_space_elevator_orbital_logistics_machine = {
 	}
 
 	weight_modifier = {
-		factor = @pw_tech_weight_mod
-
 		modifier = {
 			factor = 0
 			count_owned_planet = {
@@ -356,36 +320,6 @@ pw_tech_space_elevator_orbital_logistics_machine = {
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = leader_trait_spark_of_genius
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = leader_trait_curator
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator }
 			}
 		}
 
@@ -418,7 +352,6 @@ pw_tech_space_elevator_orbital_logistics_hive = {
 	category = { statecraft }
 	prerequisites = { pw_tech_space_elevator }
 	weight = @tier4weight2
-	is_rare = yes
 
 	potential = {
 		is_hive_empire = yes
@@ -436,8 +369,6 @@ pw_tech_space_elevator_orbital_logistics_hive = {
 	}
 
 	weight_modifier = {
-		factor = @pw_tech_weight_mod
-
 		modifier = {
 			factor = 0
 			count_owned_planet = {
@@ -453,36 +384,6 @@ pw_tech_space_elevator_orbital_logistics_hive = {
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = leader_trait_spark_of_genius
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = leader_trait_curator
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator }
 			}
 		}
 
@@ -520,15 +421,10 @@ pw_tech_space_elevator_planetary_orbital_logistics = {
 	cost = @pw_tech_cost_2
 	tier = 4
 	category = { voidcraft }
-	prerequisites = {
-		pw_tech_space_elevator
-	}
+	prerequisites = { pw_tech_space_elevator }
 	weight = @tier4weight2
-	is_rare = yes
 
 	weight_modifier = {
-		factor = @pw_tech_weight_mod
-
 		modifier = {
 			factor = 0
 			count_owned_planet = {
@@ -544,36 +440,6 @@ pw_tech_space_elevator_planetary_orbital_logistics = {
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_spark_of_genius
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_curator
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator }
 			}
 		}
 
@@ -636,15 +502,10 @@ pw_tech_space_elevator_orbital_planetary_logistics = {
 	cost = @pw_tech_cost_2
 	tier = 4
 	category = { voidcraft }
-	prerequisites = {
-		pw_tech_space_elevator
-	}
+	prerequisites = { pw_tech_space_elevator }
 	weight = @tier4weight2
-	is_rare = yes
 
 	weight_modifier = {
-		factor = @pw_tech_weight_mod
-
 		modifier = {
 			factor = 0
 			count_owned_planet = {
@@ -660,36 +521,6 @@ pw_tech_space_elevator_orbital_planetary_logistics = {
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_spark_of_genius
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_curator
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator }
 			}
 		}
 
@@ -731,6 +562,241 @@ pw_tech_space_elevator_orbital_planetary_logistics = {
 		modifier = {
 			factor = 1.5
 			has_valid_civic = civic_hive_empath
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+	}
+}
+
+#Space Elevator - Orbital Districts
+pw_tech_space_elevator_orbital_districts = {
+	area = engineering
+	cost = @pw_tech_cost_4
+	tier = 5
+	category = { voidcraft }
+	prerequisites = {
+		tech_habitat_1
+		pw_tech_space_elevator
+	}
+	weight = @tier5weight1
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			count_owned_planet = {
+				count < 1
+				limit = {
+					has_active_building = pw_building_space_elevator
+					has_moon = no
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_mastery_of_nature
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_inwards_perfection
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+	}
+}
+
+#Space Elevator - Moon Colony Expansion
+pw_tech_space_elevator_moon_colony_expansion = {
+	area = engineering
+	cost = @pw_tech_cost_4
+	tier = 5
+	category = { voidcraft }
+	prerequisites = {
+		tech_habitat_1
+		pw_tech_space_elevator
+	}
+	weight = @tier5weight1
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			count_owned_planet = {
+				count < 1
+				limit = {
+					has_active_building = pw_building_space_elevator
+					has_moon = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_mastery_of_nature
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_inwards_perfection
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+	}
+}
+
+#Space Elevator - Habitat
+pw_tech_space_elevator_counterweight_habitat = {
+	area = engineering
+	cost = @pw_tech_cost_5
+	tier = 5
+	category = { voidcraft }
+	is_rare = yes
+	prerequisites = {
+		tech_habitat_2
+		pw_tech_space_elevator_orbital_districts
+	}
+	weight = @tier5weight2
+
+	weight_modifier = {
+		factor = @pw_tech_weight_mod
+
+		modifier = {
+			factor = 0
+			count_owned_planet = {
+				count < 1
+				limit = {
+					has_active_building = pw_building_space_elevator
+					habitable_structure = no
+				}
+			}
+		}
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				is_planet_class = pc_habitat
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_space_elevator_counterweight_habitat }
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_master_builders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_mastery_of_nature
+		}
+
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_inwards_perfection
 		}
 	}
 

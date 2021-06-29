@@ -207,3 +207,10 @@
     pw_decision_SE_install_space_ramp_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing Space Ramp stations, allowing for rocket-powered sled launches from maglev rails. This will provide better and cheaper mobility for our pops and goods."
     pw_decision_SE_install_skyhook: "Install a §BSkyhook§!"
     pw_decision_SE_install_skyhook_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing a Skyhook satellite to usher outgoing ships from low orbit to space, and steering incoming ships from space back to low orbit. Utilizing a tether system, this structure can manipulate its orbital momentum to accelerate and decelerate ships, saving on fuel and boosting transportation efficiency."
+
+    pw_decision_SE_moon_colony_expansion: "Create Moon Colony"
+    pw_decision_SE_moon_colony_expansion_desc: "Use the Space Elevator to provide proper infrastructure in the colonization of the moon orbiting this planet. The more moons the planet has, the more space we have to expand."
+    pw_decision_SE_orbital_districts: "Create Orbital Districts"
+    pw_decision_SE_orbital_districts_desc: "Use the Space Elevator to provide proper infrastructure for the construction of orbital districts around this planet."
+    pw_decision_SE_counterweight_habitat: "Create Counterweight Habitat"
+    pw_decision_SE_counterweight_habitat_desc: "Expand the orbital districts of this planet by constructing an orbital habitat as the counterweight of the Space Elevator of this planet."

@@ -87,6 +87,46 @@ pw_mod_space_elevator_aided_development_established = {
 	pop_growth_speed = 0.10
 }
 
+pw_mod_space_elevator_moon_colony_expansion_1 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_max_districts_add = 2
+	planet_districts_upkeep_mult = 0.10
+	planet_max_buildings_add = 1
+}
+
+pw_mod_space_elevator_moon_colony_expansion_2 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_max_districts_add = 3
+	planet_districts_upkeep_mult = 0.10
+	planet_max_buildings_add = 1
+}
+
+pw_mod_space_elevator_moon_colony_expansion_3 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_land_appropriated.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_max_districts_add = 4
+	planet_districts_upkeep_mult = 0.10
+	planet_max_buildings_add = 2
+}
+
+pw_mod_space_elevator_orbital_districts = {
+	icon = "gfx/interface/icons/planet_modifiers/capital.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_max_districts_add = 4
+	planet_districts_upkeep_mult = 0.20
+}
+
+pw_mod_space_elevator_counterweight_habitat = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ship_in_orbit.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_colony_development_speed_mult = 1.50
+	planet_max_districts_add = 2
+	planet_max_buildings_add = 1
+	planet_amenities_mult = 0.10
+}
+
 pw_mod_particle_supercollider_materialist = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green

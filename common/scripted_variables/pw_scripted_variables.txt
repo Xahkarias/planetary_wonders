@@ -90,6 +90,12 @@
 @pw_se_infrastructure_cost_extra = 500
 @pw_se_infrastructure_influence_cost = 25
 
+#Space Elevator Expansion
+@pw_se_expansion_time = 720 #2 years
+@pw_se_expansion_cost = 1500
+@pw_se_expansion_cost_extra = 1000
+@pw_se_expansion_influence_cost = 50
+
 @pw_decision_exhibition_cost_energy = 1000
 @pw_decision_exhibition_cost_1 = 10000
 @pw_decision_exhibition_cost_2 = 20000
