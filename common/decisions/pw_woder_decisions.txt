@@ -653,6 +653,176 @@ pw_decision_SE_counterweight_habitat = {
 	}
 }
 
+pw_decision_SE_open_for_galactic_market = {
+	owned_planets_only = yes
+	sound = evn_galactic_market_01
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+			influence = 25
+		}
+	}
+
+	prerequisites = {
+		pw_tech_space_elevator_intergalactic_assets_concession
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_galactic_community_member = yes
+		}
+		NOT = { has_planet_flag = pw_SE_is_choosing_market_bonus }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_free_assets_concession }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_free_assets_concession_gestalt }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism_gestalt }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_intergalactic_unions }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_intergalactic_unions_gestalt }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides_gestalt }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_local_content_requirements }
+		NOT = { has_modifier = pw_mod_space_elevator_open_market_local_content_requirements_gestalt }
+	}
+
+	allow = {
+		has_active_building = pw_building_space_elevator
+		owner = { OR = {
+			is_active_resolution = resolution_commerce_underdeveloped_system_utilization
+			hidden_trigger = {
+				is_active_resolution = resolution_commerce_holistic_asset_coordination
+				is_active_resolution = resolution_commerce_profit_maximization_engines
+			}
+		}}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				owner = {
+					is_gestalt = no
+					NOT = { has_modifier = pw_mod_space_elevator_open_market }
+				}
+			}
+			add_modifier = { modifier = pw_mod_space_elevator_open_market }
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_gestalt = yes
+					NOT = { has_modifier = pw_mod_space_elevator_open_market_gestalt }
+				}
+			}
+			add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }
+		}
+		hidden_effect = {
+			set_planet_flag = pw_SE_is_choosing_market_bonus
+		}
+		planet_event = {
+			id = pw_wonder.130
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+
+		modifier = {
+			factor = 0.5
+			is_gestalt = no
+		}
+
+		modifier = {
+			factor = 2
+			OR = {
+				is_megacorp = yes
+				has_valid_civic = civic_merchant_guilds
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			is_xenophile = yes
+		}
+	}
+}
+
+pw_decision_SE_change_galactic_market_bonus = {
+	owned_planets_only = yes
+	sound = evn_galactic_market_01
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+			influence = 25
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_galactic_community_member = yes
+		}
+		NOT = { has_planet_flag = pw_SE_is_choosing_market_bonus }
+		OR = {
+			has_modifier = pw_mod_space_elevator_open_market_free_assets_concession
+			has_modifier = pw_mod_space_elevator_open_market_free_assets_concession_gestalt
+			has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism
+			has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism_gestalt
+			has_modifier = pw_mod_space_elevator_open_market_intergalactic_unions
+			has_modifier = pw_mod_space_elevator_open_market_intergalactic_unions_gestalt
+			has_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides
+			has_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides_gestalt
+			has_modifier = pw_mod_space_elevator_open_market_local_content_requirements
+			has_modifier = pw_mod_space_elevator_open_market_local_content_requirements_gestalt
+		}
+	}
+
+	allow = {
+		has_active_building = pw_building_space_elevator
+		owner = { OR = {
+			is_active_resolution = resolution_commerce_underdeveloped_system_utilization
+			hidden_trigger = {
+				is_active_resolution = resolution_commerce_holistic_asset_coordination
+				is_active_resolution = resolution_commerce_profit_maximization_engines
+			}
+		}}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				owner = {
+					is_gestalt = no
+					NOT = { has_modifier = pw_mod_space_elevator_open_market }
+				}
+			}
+			add_modifier = { modifier = pw_mod_space_elevator_open_market }
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_gestalt = yes
+					NOT = { has_modifier = pw_mod_space_elevator_open_market_gestalt }
+				}
+			}
+			add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }
+		}
+		planet_event = {
+			id = pw_wonder.130
+		}
+		hidden_effect = {
+			set_planet_flag = pw_SE_is_choosing_market_bonus
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 #If the Flying fortress is destroyed, but Guardian Angels still stands.
 pw_decision_rebuild_flying_fortress = {
 	owned_planets_only = yes

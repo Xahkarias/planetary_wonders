@@ -587,3 +587,12 @@
     pw_wonder.120.name: "Nothing Between Heaven and Earth"
     pw_wonder.120.desc: "Never before leaving the surface of [THIS.GetName] to reach the outer space has been so simple, fast and cheap. Now with the Space Ramp and the Skyhook both functioning in tandem with each other, and in complement to the $pw_building_space_elevator$, surface-orbit logistics operate at maximum efficiency.\n\nWe can already see the results of such synergy blossom: the people of [THIS.GetName] have ready access to goods they need and its industry never runs out of supply or suffers from overproduction."
     pw_wonder.120.a: "A giant leap now turned into a small step."
+
+    pw_wonder.130.name: "Open Economy Guidelines"
+    pw_wonder.130.desc: "There is a lot of profit to be made, even in ways different than raw Trade Value, from the opening of the local economy of this planet for the Galactic Market. With the help of the Space Elevator, a great deal of production here can be directed to intergalactic needs and investment, with no loss due to logistics.\n\nHowever, this political negotiation may also trigger a sacrifice of domestic supply in favor of foreign demands, which will be exacerbated the more production is conceded to external control. For this reason, we must decide how assets of [THIS.GetName] will be open to offworld influences.\nShould we follow protective or permissive guidelines?"
+    pw_wonder.130.tooltip: "This modifier can be changed at any time via a Planetary Decision."
+    pw_wonder.130.a: "$pw_mod_space_elevator_open_market_free_assets_concession$"
+    pw_wonder.130.b: "$pw_mod_space_elevator_open_market_industrial_protectionism$"
+    pw_wonder.130.c: "$pw_mod_space_elevator_open_market_intergalactic_unions$"
+    pw_wonder.130.d: "$pw_mod_space_elevator_open_market_local_extraction_subsides$"
+    pw_wonder.130.e: "$pw_mod_space_elevator_open_market_local_content_requirements$"

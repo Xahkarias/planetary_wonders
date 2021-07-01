@@ -30,6 +30,9 @@
     pw_tech_space_elevator_orbital_planetary_logistics: "Orbital-Planetary Logistics"
     pw_tech_space_elevator_orbital_planetary_logistics_desc: "It is only natural to look for ways to expand the operations of the Space Elevator, both on the planet surface and our orbital stations."
 
+    pw_tech_space_elevator_intergalactic_assets_concession: "Intergalactic Assets Concession"
+    pw_tech_space_elevator_intergalactic_assets_concession_desc: "The perfect vicious cycle: foreign debt and foreign investments oblige us to multiply exports that they themselves devour."
+
     pw_tech_space_elevator_orbital_districts: "Orbital Districts"
     pw_tech_space_elevator_orbital_districts_desc: "It is only natural to cut the middle man of the Space Elevator and establishing infrastructure at the top of the elevator."
     pw_tech_space_elevator_moon_colony_expansion: "Moon Colony Expansion"

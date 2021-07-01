@@ -127,6 +127,88 @@ pw_mod_space_elevator_counterweight_habitat = {
 	planet_amenities_mult = 0.10
 }
 
+#Space elevator Open Market decision:
+pw_mod_space_elevator_open_market = {
+	trade_value_mult = 0.05
+}
+pw_mod_space_elevator_open_market_gestalt = {
+	country_energy_produces_mult = 0.05
+}
+
+pw_mod_space_elevator_open_market_free_assets_concession = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	trade_value_mult = 0.10
+	planet_pops_upkeep_mult = 0.05
+}
+
+pw_mod_space_elevator_open_market_free_assets_concession_gestalt = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_upkeep_mult = -0.05
+	planet_pops_upkeep_mult = 0.05
+}
+
+pw_mod_space_elevator_open_market_industrial_protectionism = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_alloys_produces_mult = 0.05
+	planet_jobs_consumer_goods_produces_mult = 0.05
+	trade_value_mult = -0.05
+}
+
+pw_mod_space_elevator_open_market_industrial_protectionism_gestalt = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_alloys_produces_mult = 0.05
+	planet_jobs_upkeep_mult = 0.05
+}
+
+pw_mod_space_elevator_open_market_intergalactic_unions = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_cat_worker_political_power = 0.10
+	planet_jobs_worker_produces_mult = 0.05
+	pop_amenities_usage_mult = 0.05
+}
+
+pw_mod_space_elevator_open_market_intergalactic_unions_gestalt = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_simple_drone_produces_mult = 0.05
+	pop_amenities_usage_no_happiness_mult = 0.05
+}
+
+pw_mod_space_elevator_open_market_local_extraction_subsides = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_food_produces_mult = 0.10
+	planet_jobs_minerals_produces_mult = 0.10
+	trade_value_mult = -0.05
+}
+
+pw_mod_space_elevator_open_market_local_extraction_subsides_gestalt = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_food_produces_mult = 0.10
+	planet_jobs_minerals_produces_mult = 0.10
+	pop_amenities_usage_no_happiness_mult = 0.10
+}
+
+pw_mod_space_elevator_open_market_local_content_requirements = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_researchers_produces_mult = 0.05
+	trade_value_mult = -0.05
+}
+
+pw_mod_space_elevator_open_market_local_content_requirements_gestalt = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_researchers_produces_mult = 0.05
+	planet_researchers_upkeep_mult = 0.10
+}
+
 pw_mod_particle_supercollider_materialist = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
