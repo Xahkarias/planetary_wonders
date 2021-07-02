@@ -1,5 +1,7 @@
 ﻿l_english:
 
+    PW_MESSAGE_WONDER_COMPLETED: "Wonder Completed"
+
     #Complete Space Elevator message
     pw_message_space_elevator_complete: "§MSpace Elevator§! has been constructed in $PLANET|Y$."
     #First Time Complete Space Elevator (Regular Empire)
@@ -359,6 +361,7 @@
     pw_wonder.1302.desc: "There has always been a concealed natural foundry right beneath our feet, where metals revolt and crystals are born. The magma mantle of [ROOT.GetName] has remained unreached for the millennia the planetary crust protected it; until now, when we have finally drilled it.\nThe Mantle Crucible is an audacious project come to life. With it we can finally exploit the mantles extreme temperatures and pressures, the ideal conditions for producing modernized ceramic-polymer-metal alloys or artificial fabrication of rare minerals and crystals. Raw input begins processing in the lowest point we could reach of the [ROOT.GetName] upper mantle and climbs the whole facility, being subject to any required refinement in proper pressure levels.\nThis revolutionary industrial method is powerful enough to output more industrial products than any other single factory we have, maybe we will satisfy our military.\n\nHere weapons shall be forged and goods shall be bound."
     pw_wonder.1302.a: "Light the fires beneath the world."
     #Devastation Events:
+    PW_MESSAGE_MANTLE_DEVASTATION: "Mantle Crucible Devastation"
     pw_wonder.1305.name: "The Depths of [ROOT.GetName] Roar"
     #Add 5 Devastation
     pw_wonder.1305.desc: "Some tectonic disturbances in [ROOT.GetName] have provoked landslides and small floods in the surface of the planet, thankfully they caused only minor devastation. Many researchers point to the exploitation of the planets mantle as the most probable cause."
@@ -375,6 +378,26 @@
     #Hide Events Options:
     pw_wonder.mantle_crucible.hide_devastation_events: "Disasters happen, send a short report next time."
     pw_wonder.mantle_crucible.hide_devastation_events.tooltip: "Stop showing the events of Devastation and replace tem with notifications."
+
+    #Start project to prevent devastation
+    pw_wonder.1320.name: "The Final Straw"
+    pw_wonder.1320.desc: "Particularly severe disturbances beneath the surface of [THIS.GetName] have destroyed one of the urban areas of the planet, killing several of the inhabitants and leaving the terrain heavily scarred.\n\nSeismologists have concluded that the cause must be the exploitation of the planetary mantle by our industrial buildings, specially the Mantle Crucible. They are already working on new manufacturing techniques to avoid further disasters while maintaining production levels."
+    pw_wonder.1320.a: "We must develop a solution for this."
+    #Complete project to prevent devastation
+    pw_wonder.1321.name: "No More Disasters"
+    pw_wonder.1321.desc: "With the help of our seismologists and environmentalists, our engineers have formulated new industrial techniques, that align the operation of the Mantle Crucible with the ebb and flow of magma beneath the surface of our planets. These industrial facilities have been moved to more appropriate tectonic lines in order to minimize the devastation they cause.\n\nAll of the measures we have taken should prevent any future disasters caused by this type of industrial production from affecting our planets."
+    pw_wonder.1321.a: "Our industry is safer now."
+    pw_wonder.1321.b: "That kind of exploitation was unsustainable."
+
+    #Start project to remove habitability mod
+    pw_wonder.1322.name: "Harm Reduction"
+    pw_wonder.1322.desc: "With new techniques developed to avoid the devastation caused from our industrial exploitation of the planetary mantle, our scientists prepared a research project to prevent event more ecological impacts of these buildings. With this they hope to eradicate habitability damage cause by the Mantle Crucible, Titan Forge, Industrial Hearth."
+    pw_wonder.1322.a: "Get on with the project."
+    pw_wonder.1322.b: "We have no need for this."
+    #Complete project to prevent devastation
+    pw_wonder.1323.name: "Industrial Impact Reduction"
+    pw_wonder.1323.desc: "Our researchers have drawn new directive plans for industrial development and new production machines for the planetary mantle that greatly reduce the impact of their exploitation on the habitability of the planet. Now living near the industrial production is at least bearable."
+    pw_wonder.1323.a: "Great news for our pops."
 
     #Complete Titan Forge
     pw_message_titan_forge_complete: "$pw_titan_forge$ has been constructed in $PLANET|Y$."

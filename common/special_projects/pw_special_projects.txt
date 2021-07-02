@@ -92,6 +92,48 @@ special_project = {
 	}
 }
 
+#Remove mantle Crucible devastation
+special_project = {
+	key = PW_MANTLE_CRUCIBLE_STOP_DEVASTATION
+	cost = 25000
+	tech_department = engineering_technology
+	picture = GFX_evt_underground_city
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		owner = {
+			country_event = { id = pw_wonder.1321 }
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+#Remove Mantle Crucible habitability modifier
+special_project = {
+	key = PW_MANTLE_CRUCIBLE_REMOVE_HABITABILITY_MOD
+	cost = 30000
+	tech_department = society_technology
+	picture = GFX_evt_underground_civilization
+	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
+	location = yes
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = { id = pw_wonder.1323 }
+	}
+
+	on_fail = {
+	}
+}
+
+##Anomaly Projects
+
 #Anomaly: Investigate Enigma Engine Debris
 special_project = {
 	key = PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL

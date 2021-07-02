@@ -23,7 +23,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_space_elevator_complete
 			days = 30
 			target = THIS
@@ -55,7 +55,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_space_elevator_complete
 			days = 30
 			target = THIS
@@ -743,7 +743,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_particle_supercollider_complete
 			days = 30
 			target = THIS
@@ -889,7 +889,7 @@ planet_event = {
 		if = {
 			limit = { is_planet_class = pc_habitat }
 			create_message = {
-				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				type = PW_WONDER_COMPLETED
 				localization = pw_message_secluded_sector_complete
 				days = 30
 				target = THIS
@@ -902,7 +902,7 @@ planet_event = {
 		}
 		else = {
 			create_message = {
-				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				type = PW_WONDER_COMPLETED
 				localization = pw_message_domed_city_complete
 				days = 30
 				target = THIS
@@ -1072,7 +1072,7 @@ planet_event = {
 		if = {
 			limit = { is_planet_class = pc_habitat }
 			create_message = {
-				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				type = PW_WONDER_COMPLETED
 				localization = pw_message_abyssal_crater_test_site_habitat_complete
 				days = 30
 				target = THIS
@@ -1085,7 +1085,7 @@ planet_event = {
 		}
 		else = {
 			create_message = {
-				type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+				type = PW_WONDER_COMPLETED
 				localization = pw_message_abyssal_crater_test_site_complete
 				days = 30
 				target = THIS
@@ -1252,7 +1252,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_erebus_project_complete
 			days = 30
 			target = THIS
@@ -1685,7 +1685,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_helios_tower_complete
 			days = 30
 			target = THIS
@@ -1970,7 +1970,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_demetrius_fields_complete
 			days = 30
 			target = THIS
@@ -2399,7 +2399,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_galactic_model_complete
 			days = 30
 			target = THIS
@@ -3141,7 +3141,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_panopticon_complete
 			days = 30
 			target = THIS
@@ -3349,7 +3349,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_enigma_engine_complete
 			days = 30
 			target = THIS
@@ -3753,7 +3753,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_solipsist_debate_hall_complete
 			days = 30
 			target = THIS
@@ -4005,7 +4005,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_guardian_angel_complete
 			days = 30
 			target = THIS
@@ -4303,7 +4303,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_mantle_crucible_complete
 			days = 30
 			target = THIS
@@ -4430,6 +4430,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
+				owner = { NOT = { has_country_flag = pw_mantle_crucible_end_devastation_project_complete }}
 				has_planet_flag = pw_mantle_crucible_devastation_event
 				OR ={
 					has_active_building = pw_building_mantle_crucible
@@ -4438,7 +4439,7 @@ planet_event = {
 				}
 			}
 			random_list = {
-				40 = { #Add 5 devastation
+				30 = { #Add 5 devastation
 					modifier = {
 						factor = 0
 						exists = owner
@@ -4459,14 +4460,10 @@ planet_event = {
 								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
 							}
 						}
-						planet_event = {
-							id = pw_wonder.1305
-						}
+						planet_event = { id = pw_wonder.1305 }
 					}
 					else = {
-						planet_event = {
-							id = pw_wonder.1315
-						}
+						planet_event = { id = pw_wonder.1315 }
 					}
 				}
 				25 = { #Add 15 devastation
@@ -4490,17 +4487,13 @@ planet_event = {
 								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
 							}
 						}
-						planet_event = {
-							id = pw_wonder.1306
-						}
+						planet_event = { id = pw_wonder.1306 }
 					}
 					else = {
-						planet_event = {
-							id = pw_wonder.1316
-						}
+						planet_event = { id = pw_wonder.1316 }
 					}
 				}
-				10 = { #Add 25 devastation
+				15 = { #Add 25 devastation
 					modifier = {
 						factor = 1.5
 						pw_is_planet_ideal = yes
@@ -4511,14 +4504,10 @@ planet_event = {
 								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
 							}
 						}
-						planet_event = {
-							id = pw_wonder.1307
-						}
+						planet_event = { id = pw_wonder.1307 }
 					}
 					else = {
-						planet_event = {
-							id = pw_wonder.1317
-						}
+						planet_event = { id = pw_wonder.1317 }
 					}
 				}
 				5 = { #Add 30 devastation
@@ -4537,20 +4526,96 @@ planet_event = {
 								NOT = { has_country_flag = pw_mantle_crucible_hide_devastation_events }
 							}
 						}
-						planet_event = {
-							id = pw_wonder.1308
-						}
+						planet_event = { id = pw_wonder.1308 }
 					}
 					else = {
-						planet_event = {
-							id = pw_wonder.1318
+						planet_event = { id = pw_wonder.1318 }
+					}
+				}
+				0 = { #Solves the Devastation
+					modifier = {
+						add = 10
+						owner = { is_variable_set = pw_mantle_crucible_devastation_count }
+					}
+					modifier = {
+						factor = 2
+						owner = {
+							is_variable_set = pw_mantle_crucible_devastation_count
+							check_variable = {
+								which = pw_mantle_crucible_devastation_count
+								value > 1
+							}
 						}
 					}
+					modifier = {
+						factor = 1.5
+						owner = {
+							is_variable_set = pw_mantle_crucible_devastation_count
+							check_variable = {
+								which = pw_mantle_crucible_devastation_count
+								value > 2
+							}
+						}
+					}
+					modifier = {
+						factor = 1.5
+						owner = {
+							is_variable_set = pw_mantle_crucible_devastation_count
+							check_variable = {
+								which = pw_mantle_crucible_devastation_count
+								value > 3
+							}
+						}
+					}
+					modifier = {
+						factor = 1.5
+						owner = {
+							is_variable_set = pw_mantle_crucible_devastation_count
+							check_variable = {
+								which = pw_mantle_crucible_devastation_count
+								value > 4
+							}
+						}
+					}
+					modifier = {
+						factor = 1.5
+						owner = {
+							is_variable_set = pw_mantle_crucible_devastation_count
+							check_variable = {
+								which = pw_mantle_crucible_devastation_count
+								value > 5
+							}
+						}
+					}
+					modifier = {
+						factor = 0
+						owner = { has_country_flag = pw_mantle_crucible_end_devastation_project_begin }
+					}
+					owner = { set_country_flag = pw_mantle_crucible_end_devastation_project_begin }
+					planet_event = { id = pw_wonder.1320 }
 				}
 			}
 		}
 		else = {
 			remove_planet_flag = pw_mantle_crucible_devastation_event
+		}
+	}
+
+	after = {
+		owner = {
+			if = {
+				limit = {
+					NOT = { is_variable_set = pw_mantle_crucible_devastation_count }
+				}
+				set_variable = {
+					which = pw_mantle_crucible_devastation_count
+					value = 0
+				}
+			}
+			change_variable = {
+				which = pw_mantle_crucible_devastation_count
+				value = 1
+			}
 		}
 	}
 }
@@ -4771,7 +4836,7 @@ planet_event = {
 	immediate = {
 		add_planet_devastation = 5
 		create_message = {
-			type = PLANET_DESTROYED
+			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_5
 			days = 30
 			target = THIS
@@ -4801,7 +4866,7 @@ planet_event = {
 	immediate = {
 		add_planet_devastation = 15
 		create_message = {
-			type = PLANET_DESTROYED
+			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_15
 			days = 30
 			target = THIS
@@ -4831,7 +4896,7 @@ planet_event = {
 	immediate = {
 		add_planet_devastation = 25
 		create_message = {
-			type = PLANET_DESTROYED
+			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_25
 			days = 30
 			target = THIS
@@ -4861,7 +4926,7 @@ planet_event = {
 	immediate = {
 		add_planet_devastation = 30
 		create_message = {
-			type = PLANET_DESTROYED
+			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_30
 			days = 30
 			target = THIS
@@ -4877,6 +4942,137 @@ planet_event = {
 				days = @pw_10years
 				random = @pw_2years
 			}
+		}
+	}
+}
+
+#Final Straw on devastation events:
+planet_event = {
+	id = pw_wonder.1320
+	title = pw_wonder.1320.name
+	desc = pw_wonder.1320.desc
+	picture = GFX_evt_underground_civilization
+	show_sound = event_air_raid_siren
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1320.a
+		add_planet_devastation = 20
+		random_owned_pop = { kill_pop = yes }
+		add_deposit = d_deep_sinkhole
+		enable_special_project = {
+			name = PW_MANTLE_CRUCIBLE_STOP_DEVASTATION
+			owner = owner
+			location = this
+		}
+	}
+}
+
+#Completed Mantle Crucible
+country_event = {
+	id = pw_wonder.1321
+	title = pw_wonder.1321.name
+	desc = pw_wonder.1321.desc
+	picture = GFX_evt_underground_civilization
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		set_country_flag = pw_mantle_crucible_end_devastation_project_complete
+	}
+
+	option = {
+		name = pw_wonder.1321.a
+		trigger = {
+			NOT = { has_valid_civic = civic_environmentalist }
+		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier1influencereward
+			min = @tier1influencemin
+			max = @tier1influencemax
+		}
+	}
+
+	option = {
+		name = pw_wonder.1321.b
+		trigger = {
+			has_valid_civic = civic_environmentalist
+		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier1influencereward
+			min = @tier1influencemin
+			max = @tier1influencemax
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = pw_wonder.1322
+				days = 30
+			}
+		}
+	}
+}
+
+#Propose Project to remove habitability debuff
+country_event = {
+	id = pw_wonder.1322
+	title = pw_wonder.1322.name
+	desc = pw_wonder.1322.desc
+	picture = GFX_evt_underground_civilization
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		is_machine_empire = no
+	}
+
+	option = {
+		name = pw_wonder.1322.a
+		enable_special_project = {
+			name = PW_MANTLE_CRUCIBLE_REMOVE_HABITABILITY_MOD
+		}
+	}
+
+	#No need for project
+	option = {
+		name = pw_wonder.1322.b
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier1influencereward
+			min = @tier1influencemin
+			max = @tier1influencemax
+		}
+	}
+}
+
+#Complete Project to remove habitability debuff
+country_event = {
+	id = pw_wonder.1323
+	title = pw_wonder.1323.name
+	desc = pw_wonder.1323.desc
+	picture = GFX_evt_underground_civilization
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1323.a
+		add_modifier = {
+			modifier = pw_mod_mantle_crucible_habitability
+		}
+		hidden_effect = {
+			set_country_flag = pw_mantle_crucible_habitability_project_completed
 		}
 	}
 }
@@ -4900,7 +5096,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_titan_forge_complete
 			days = 30
 			target = THIS
@@ -5138,7 +5334,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_industrial_hearth_complete
 			days = 30
 			target = THIS
@@ -5733,7 +5929,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_pavilion_of_wonders_complete
 			days = 30
 			target = THIS
@@ -5804,7 +6000,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_fair_of_worlds_complete
 			days = 30
 			target = THIS
@@ -5913,7 +6109,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_museum_of_the_grotesque_complete
 			days = 30
 			target = THIS
@@ -6051,7 +6247,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_holy_reliquary_complete
 			days = 30
 			target = THIS
@@ -6126,7 +6322,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_grand_archive_complete
 			days = 30
 			target = THIS
@@ -6576,7 +6772,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_transplanetary_logistics_network_complete
 			days = 30
 			target = THIS
@@ -6801,7 +6997,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_tls_infrastructure_completed
 			days = 30
 			target = THIS
@@ -7305,7 +7501,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_forbidden_city_complete
 			days = 30
 			target = THIS
@@ -7661,7 +7857,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_fc_infrastructure_completed
 			days = 30
 			target = THIS
@@ -8175,7 +8371,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_festival_plaza_complete
 			days = 30
 			target = THIS
@@ -8654,7 +8850,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_martial_avenue_complete
 			days = 30
 			target = THIS
@@ -9258,7 +9454,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_0_complete
 			days = 30
 			target = THIS
@@ -9290,7 +9486,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_1_complete
 			days = 30
 			target = THIS
@@ -9322,7 +9518,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_2_complete
 			days = 30
 			target = THIS
@@ -9354,7 +9550,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_3_complete
 			days = 30
 			target = THIS
@@ -9830,7 +10026,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_conduit_of_unity_0_complete
 			days = 30
 			target = THIS
@@ -9862,7 +10058,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_conduit_of_unity_1_complete
 			days = 30
 			target = THIS
@@ -9986,7 +10182,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = BUILDING_CONSTRUCTION_MESSAGE_TYPE
+			type = PW_WONDER_COMPLETED
 			localization = pw_message_conduit_of_unity_integration_complete
 			days = 30
 			target = THIS

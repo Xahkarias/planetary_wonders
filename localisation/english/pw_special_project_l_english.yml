@@ -12,6 +12,14 @@
     PW_PILOT_PLAN: "Pilot Plan"
     PW_PILOT_PLAN_DESC: "The poly-artisan in the Industrial Hearth devised an urbanization reform for our capitals city centers and chambers of power that can better utilize the district space in the planet and any future expansions. When completed, the capital will not only better express our vision of power trough speaking architecture, but will give, but provide more comfortable building space in the future."
 
+    PW_MANTLE_CRUCIBLE_STOP_DEVASTATION: "Prevent Mantle Crucible Devastation"
+    PW_MANTLE_CRUCIBLE_STOP_DEVASTATION_DESC: "Exploitation of the planetary mantle by our Mantle Crucibles, Titan Forge and Industrial Hearth have caused too much devastation on our planets. We must develop new techniques in order to align the operation of these industrial behemoths with the natural flow of energy beneath the surface."
+
+    PW_MANTLE_CRUCIBLE_REMOVE_HABITABILITY_MOD: "Integrate Mantle Crucible Habitability"
+    PW_MANTLE_CRUCIBLE_REMOVE_HABITABILITY_MOD_DESC: "Our planets and pops do not need to suffer from the effects of industrial production if we are able to elaborate ecological integrations for the Mantle Crucible."
+
+    #Anomaly Projects:
+
     PW_POWER_FROZEN_WAR_TITAN: "Frozen Titan"
     PW_POWER_FROZEN_WAR_TITAN_DESC: "An ancient War Titan is trapped in the ice on this desolated planet, if we are careful and lucky enough we can release it from its prison and pilot it again."
 

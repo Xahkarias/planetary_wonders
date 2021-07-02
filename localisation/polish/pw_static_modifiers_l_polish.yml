@@ -516,3 +516,6 @@
     pw_mod_space_elevator_open_market_local_content_requirements_desc: "Even with market access to the Space Elevator, local production is required to use domestic technology to stimulate research advancement."
     pw_mod_space_elevator_open_market_local_content_requirements_gestalt: "Local Content Requirements"
     pw_mod_space_elevator_open_market_local_content_requirements_gestalt_desc: "Even with market access to the Space Elevator, the Gestalt favors its own technology in local production."
+
+    pw_mod_mantle_crucible_habitability: "Ecologically Integrated Industries"
+    pw_mod_mantle_crucible_habitability_desc: "Our researchers have developed several industrial techniques and machines that allow us to minimize the general impact of habitation across our worlds."

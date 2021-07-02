@@ -283,6 +283,10 @@ pw_mod_mantle_crucible_consumer_goods = {
 	planet_artisans_upkeep_mult = 0.05
 }
 
+pw_mod_mantle_crucible_habitability = {
+	pop_environment_tolerance = 0.05
+}
+
 pw_mod_pilot_plan = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
 	icon_frame = 1
