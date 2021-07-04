@@ -605,6 +605,18 @@ pw_building_galactic_model = {
 		}
 	}
 
+	#Bureaucrats from tech
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+		}
+		modifier = {
+			job_bureaucrat_per_pop = @pw_job_per_25_pop
+		}
+	}
+
 	#Hive Jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -613,6 +625,18 @@ pw_building_galactic_model = {
 		}
 		modifier = {
 			job_synapse_drone_add = 10
+		}
+	}
+
+	#Synapse from tech
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
+		}
+		modifier = {
+			job_synapse_drone_per_pop = @pw_job_per_25_pop
 		}
 	}
 
@@ -625,6 +649,18 @@ pw_building_galactic_model = {
 		modifier = {
 			job_coordinator_add = 8
 			job_evaluator_add = 2
+		}
+	}
+
+	#Coordinator from tech
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
+		}
+		modifier = {
+			job_coordinator_per_pop = @pw_job_per_25_pop
 		}
 	}
 
@@ -646,8 +682,8 @@ pw_building_galactic_model = {
 			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
 		}
 		modifier = {
-			diplomacy_upkeep_mult = -0.10
-			job_bureaucrat_per_pop = @pw_job_per_25_pop
+			diplomacy_upkeep_mult = -0.25
+			planet_bureaucrats_upkeep_mult = -0.10
 		}
 	}
 

@@ -67,8 +67,20 @@
     # Astronomical Modeling:
     pw_tech_galactic_modeling: "Astronomical Modeling"
     pw_tech_galactic_modeling_desc: "There comes a time in our stellar expansion that classic bureaucracy is simply not enough. We need a centralized model of our galaxy to coordinate our empire."
-    pw_prereq_galactic_modeling: "§SUnlocks Policy:§! Expansion."
-    pw_prereq_galactic_modeling_desc: "Allows us to set expansion policies after building the $pw_building_galactic_model$"
+
+    pw_tech_galactic_model_expanding_bureaucracy: "An Expanding Bureaucracy"
+    pw_tech_galactic_model_expanding_bureaucracy_desc: "Even if we have reached the epitome of galactic coordination, modeling and logistics, bureaucracy always finds a way to expand."
+    pw_prereq_galactic_modeling: "§SUnlocks Policy:§! Modeling Focus."
+    pw_prereq_galactic_modeling_desc: "Allows us to set a focus for the galactic modeling being performed at the $pw_building_galactic_model$"
+    pw_tech_galactic_model_expanding_bureaucracy_bureaucrats: "$pw_galactic_model$ provides §G+1§! $job_bureaucrat$ Job per 25 Pops."
+
+    pw_tech_galactic_model_expanding_bureaucracy_hive: "An Expanding Neural Network"
+    pw_tech_galactic_model_expanding_bureaucracy_hive_desc: "Even if the Mind has reached the epitome of galactic coordination, modeling and logistics, our Neural Network always finds a way to expand in complexity."
+    pw_tech_galactic_model_expanding_bureaucracy_synapse_drones: "$pw_galactic_model$ provides §G+1§! $job_synapse_drone$ Job per 25 Pops."
+
+    pw_tech_galactic_model_expanding_bureaucracy_machine: "An Expanding Coordination"
+    pw_tech_galactic_model_expanding_bureaucracy_machine_desc: "Even if our calculators have reached the epitome of galactic coordination, modeling and logistics, software always finds a way to expand and occupy as much hardware as it can."
+    pw_tech_galactic_model_expanding_bureaucracy_coordinator: "$pw_galactic_model$ provides §G+1§! $job_coordinator$ Job per 25 Pops."
 
     # Panopticon:
     pw_tech_utilitarian_vigilance: "Utilitarian Vigilance"

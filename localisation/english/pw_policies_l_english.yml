@@ -13,6 +13,22 @@
     pw_expansion_policy_scattered_expansion_name: "Scattered Expansion"
     pw_expansion_policy_scattered_expansion_desc: "Quantity is better than quality. We must occupy every planet suitable or else our neighbors will take them from us.\nThe bureaucracy shall be skewed to new worlds and give less priority to big colonies."
 
+    #Policy: Modeling Focus
+    policy_pw_policy_modeling_focus: "Modeling Focus"
+    policy_pw_policy_modeling_focus_desc: "Even in the encompassing $pw_building_galactic_model$, the galaxy is far too complex to be fully understood without guidelines to focus our modeling efforts."
+    pw_policy_modeling_focus_unfocused_modeling: "Unfocused Modeling"
+    pw_policy_modeling_focus_unfocused_modeling_desc: "The galaxy lives and breathes, we should let the analysts of the Galactic Model decide the focus of their modeling and utilize what information we can."
+    pw_policy_modeling_focus_growth_projection: "Growth Projection"
+    pw_policy_modeling_focus_growth_projection_desc: "By focusing our model analysis on growth projection we can avoid unforeseen setbacks and greatly reduce penalities of our sprawling dominion."
+    pw_policy_modeling_focus_domestic_surveillance: "Domestic Surveillance and Logistics"
+    pw_policy_modeling_focus_domestic_surveillance_desc: "By focusing the modeling of our administration in domestic surveillance and reinforcing logistics lines we can protect both valuable information and established cities infrastructure."
+    pw_policy_modeling_focus_drone_surveillance: "Drone Surveillance and Logistics"
+    pw_policy_modeling_focus_drone_surveillance_desc: "By focusing the modeling of our administration in surveillance or our drones and reinforcing logistics lines we can protect both valuable information for the Gestalt and established operational infrastructure"
+    pw_policy_modeling_focus_diplomatic_behavior_modeling: "Diplomatic Behavior Modeling"
+    pw_policy_modeling_focus_diplomatic_behavior_modeling_desc: "By utilizing what information we have to predict and model alien behavior we can gain a crucial advantage in diplomatic actions, dominating the galactic scene with information they could not possibly know we have."
+    pw_policy_modeling_focus_foreign_assets_support: "Foreign Assets Support"
+    pw_policy_modeling_focus_foreign_assets_support_desc: "By feeding our undercover operators with intelligence gathered from analysis of the Galactic Model, we can streamline espionage actions, guaranteeing the best possible outcome and reliable intel."
+
     #Policy: Orbital Commerce
     policy_pw_policy_orbital_commerce: "Orbital Commerce"
     policy_pw_policy_orbital_commerce_desc: "The establishment of surface-orbit trade networks provided by our $pw_building_space_elevator_plural$ creates an unprecedented logistics endeavour and we must determine which institutions will take priority in this system."

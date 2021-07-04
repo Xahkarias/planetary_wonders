@@ -86,8 +86,8 @@
     pw_enigma_tech_exoteric_fleet_pattern: "$pw_enigma_tech$ Esoteric Fleet Pattern"
     pw_enigma_tech_exoteric_fleet_pattern_desc: "With a chaotic fleet flight pattern, that considers the influence of hyperspace bends, we can organize our command matrixes to expand the capacity of each fleet beyond current levels."
 
-    pw_prereq_galactic_modeling: "§SUnlocks Policy:§! Expansion."
-    pw_prereq_galactic_modeling_desc: "Allows us to set expansion policies after building the $pw_building_galactic_model$"
+    pw_prereq_galactic_modeling: "§SUnlocks Policy:§! Modeling Focus."
+    pw_prereq_galactic_modeling_desc: "Allows us to set a focus for the galactic modeling being performed at the $pw_building_galactic_model$"
 
     pw_tech_planetary_mantle_production: "Planetary Mantle Production"
     pw_tech_planetary_mantle_production_desc: "For all the resources we have obtained from the stars, we must not underestimate the ground bellow us. We can utilize increased temperatures and pressure from our planets upper mantle layer and revolutionize industrial production, at minimal cost of tectonic disturbance."
@@ -316,3 +316,13 @@
 
     pw_tech_space_elevator_intergalactic_assets_concession: "Intergalactic Assets Concession"
     pw_tech_space_elevator_intergalactic_assets_concession_desc: "The perfect vicious cycle: foreign debt and foreign investments oblige us to multiply exports that they themselves devour."
+
+    pw_tech_galactic_model_expanding_bureaucracy: "An Expanding Bureaucracy"
+    pw_tech_galactic_model_expanding_bureaucracy_desc: "Even if we have reached the epitome of galactic coordination, modeling and logistics, bureaucracy always finds a way to expand."
+    pw_tech_galactic_model_expanding_bureaucracy_bureaucrats: "$pw_galactic_model$ provides §G+1§! $job_bureaucrat$ Job per 25 Pops."
+    pw_tech_galactic_model_expanding_bureaucracy_hive: "An Expanding Neural Network"
+    pw_tech_galactic_model_expanding_bureaucracy_hive_desc: "Even if the Mind has reached the epitome of galactic coordination, modeling and logistics, our Neural Network always finds a way to expand in complexity."
+    pw_tech_galactic_model_expanding_bureaucracy_synapse_drones: "$pw_galactic_model$ provides §G+1§! $job_synapse_drone$ Job per 25 Pops."
+    pw_tech_galactic_model_expanding_bureaucracy_machine: "An Expanding Coordination"
+    pw_tech_galactic_model_expanding_bureaucracy_machine_desc: "Even if our calculators have reached the epitome of galactic coordination, modeling and logistics, software always finds a way to expand and occupy as much hardware as it can."
+    pw_tech_galactic_model_expanding_bureaucracy_coordinator: "$pw_galactic_model$ provides §G+1§! $job_coordinator$ Job per 25 Pops."
