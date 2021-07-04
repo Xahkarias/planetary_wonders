@@ -140,21 +140,11 @@ pw_building_space_elevator = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 10
-			job_patrol_drone_add = 2
+			job_pw_logistics_drone_add = 5
+			job_maintenance_drone_add = 3
+			job_patrol_drone_add = 1
+			job_synapse_drone_add = 1
 			planet_amenities_no_happiness_mult = 0.05
-		}
-	}
-
-	#Synapse from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_technology = pw_tech_space_elevator_orbital_logistics_hive }
-		}
-		modifier = {
-			job_synapse_drone_per_pop = @pw_job_per_50_pop
 		}
 	}
 
@@ -165,21 +155,22 @@ pw_building_space_elevator = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 10
-			job_patrol_drone_add = 2
+			job_pw_logistics_drone_add = 5
+			job_maintenance_drone_add = 3
+			job_patrol_drone_add = 1
+			job_coordinator_add = 1
 			planet_amenities_no_happiness_mult = 0.05
 		}
 	}
 
-	#Coordinator from tech
+	#Logistics Drones from tech
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_technology = pw_tech_space_elevator_orbital_logistics_machine }
+			owner = { has_technology = pw_tech_space_elevator_orbital_logistics }
 		}
 		modifier = {
-			job_coordinator_per_pop = @pw_job_per_50_pop
+			job_pw_logistics_drone_per_pop = @pw_job_per_50_pop
 		}
 	}
 
@@ -378,8 +369,15 @@ pw_building_space_elevator = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_pw_logistics_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
 			owner = { is_hive_empire = yes }
-			owner = { has_technology = pw_tech_space_elevator_orbital_logistics_hive }
 		}
 		text = job_synapse_drone_effect_desc
 	}
@@ -388,7 +386,6 @@ pw_building_space_elevator = {
 		trigger = {
 			exists = owner
 			owner = { is_machine_empire = yes }
-			owner = { has_technology = pw_tech_space_elevator_orbital_logistics_machine }
 		}
 		text = job_coordinator_effect_desc
 	}

@@ -355,10 +355,7 @@ pw_policy_orbital_commerce = {
 #Space Elevator (Gestalt)
 pw_policy_orbital_logistics = {
 	potential = {
-		OR = {
-			has_technology = pw_tech_space_elevator_orbital_logistics_hive
-			has_technology = pw_tech_space_elevator_orbital_logistics_machine
-		}
+		has_technology = pw_tech_space_elevator_orbital_logistics
 	}
 
 	allow = {

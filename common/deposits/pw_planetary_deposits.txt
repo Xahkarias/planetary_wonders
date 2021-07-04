@@ -122,6 +122,7 @@ pw_d_SE_space_ramp = {
 		pop_resettlement_cost_mult = -0.50
 	}
 
+	#Non Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -133,27 +134,15 @@ pw_d_SE_space_ramp = {
 		}
 	}
 
+	#Gestalt jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { can_generate_trade_value = no }
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 1
-			job_maintenance_drone_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { can_generate_trade_value = no }
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			job_coordinator_add = 1
-			job_maintenance_drone_add = 1
+			job_pw_logistics_drone_add = 1
 		}
 	}
 
@@ -206,6 +195,7 @@ pw_d_SE_skyhook = {
 		empire_size_pops_mult = -0.10
 	}
 
+	#Non Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -217,6 +207,7 @@ pw_d_SE_skyhook = {
 		}
 	}
 
+	#Gestalt jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -224,20 +215,7 @@ pw_d_SE_skyhook = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 1
-			job_maintenance_drone_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { can_generate_trade_value = no }
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			job_coordinator_add = 1
-			job_maintenance_drone_add = 1
+			job_pw_logistics_drone_add = 1
 		}
 	}
 
