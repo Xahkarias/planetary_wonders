@@ -935,7 +935,7 @@ pw_building_panopticon = {
 			NOT = { owner = { has_ascension_perk = ap_mind_over_matter }}
 		}
 		modifier = {
-			job_enforcer_add = 8
+			job_enforcer_add = 5
 		}
 	}
 
@@ -947,7 +947,7 @@ pw_building_panopticon = {
 			owner = { has_ascension_perk = ap_mind_over_matter }
 		}
 		modifier = {
-			job_telepath_add = 8
+			job_telepath_add = 5
 		}
 	}
 
@@ -970,7 +970,7 @@ pw_building_panopticon = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 8
+			job_patrol_drone_add = 5
 		}
 	}
 
@@ -981,7 +981,81 @@ pw_building_panopticon = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 8
+			job_patrol_drone_add = 5
+		}
+	}
+
+	#Tech Added bonuses (Based on Ethics)
+	#Authoritarian
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_authoritarian = yes }
+			owner = { has_technology = pw_tech_panopticon_penal_industries }
+		}
+		modifier = {
+			job_foundry_add = 1
+			job_artisan_add = 1
+		}
+	}
+
+	#Egalitarian
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
+		}
+		modifier = {
+			job_culture_worker_add = 2
+		}
+	}
+
+	#Pacifist
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_pacifist = yes }
+			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+		}
+		modifier = {
+			job_bureaucrat_add = 2
+		}
+	}
+
+	#Militarist
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_militarist = yes }
+			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
+		}
+		modifier = {
+			job_soldier_add = 2
+		}
+	}
+
+	#Spiritualist
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+			owner = { has_technology = pw_tech_panopticon_repentance_preaching }
+		}
+		modifier = {
+			job_priest_add = 2
+		}
+	}
+
+	#Materialist
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_materialist = yes }
+			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
+		}
+		modifier = {
+			job_researcher_add = 1
 		}
 	}
 

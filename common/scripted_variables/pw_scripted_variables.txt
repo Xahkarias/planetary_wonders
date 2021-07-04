@@ -16,6 +16,9 @@
 @pw_grand_archive_tech_cost = 75000
 @pw_grand_archive_tech_cost_final = 125000
 
+#Panopticon Tech Cost
+@pw_panopticon_tech_cost = 12000
+
 #Infrastructure (TLN & FC)
 @pw_tech_cost_infra = 42000
 
