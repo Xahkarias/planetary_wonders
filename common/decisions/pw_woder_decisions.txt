@@ -140,6 +140,106 @@ pw_decision_demetrius_harvesting = {
 	}
 }
 
+#Resource Wonders Land Repurposing
+pw_decision_manage_land_repurposing = {
+	owned_planets_only = yes
+	sound = event_alien_nature
+
+	enactment_time = 10
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = { has_ascension_perk = ap_mastery_of_nature }
+			}
+			influence = -25
+		}
+	}
+
+	prerequisites = {
+		pw_tech_resource_land_repurposing_1
+	}
+
+	potential = {
+		uses_district_set = standard
+	}
+
+	allow = {
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_helios_tower
+			has_active_building = pw_building_demetrius_fields
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { is_ai = no }
+			planet_event = { id = pw_wonder.750 }
+		}
+		else = {
+			if = {
+				limit = {
+					has_designation = col_mining
+				}
+				add_modifier = {
+					modifier = pw_mod_extra_mining_district_extra
+					clear_on_owner_change = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_designation = col_mining
+				}
+				add_modifier = {
+					modifier = pw_mod_extra_generator_district_extra
+					clear_on_owner_change = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_designation = col_mining
+				}
+				add_modifier = {
+					modifier = pw_mod_extra_farming_district_extra
+					clear_on_owner_change = yes
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_mod_extra_generator_district_extra
+					clear_on_owner_change = yes
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 10
+			OR = {
+				has_designation = col_mining
+				has_designation = col_generator
+				has_designation = col_farming
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_modifier = pw_mod_extra_mining_district_extra
+				has_modifier = pw_mod_extra_generator_district_extra
+				has_modifier = pw_mod_extra_farming_district_extra
+			}
+		}
+	}
+}
+
 #Space Elevator logistics decisions
 #Planet-Orbit (Space Ramp)
 pw_decision_SE_install_space_ramp = {

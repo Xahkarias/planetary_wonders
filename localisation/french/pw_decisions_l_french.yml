@@ -219,3 +219,6 @@
     pw_decision_SE_open_for_galactic_market_desc: "Open the local production for foreign investments of the Galactic Market, allowing us to select the guidelines that will be followed."
     pw_decision_SE_change_galactic_market_bonus: "Change Open Market Guidelines"
     pw_decision_SE_change_galactic_market_bonus_desc: "Choose a new guideline that the Space Elevator will follow here regarding oppening the economy for the Galactic Market."
+
+    pw_decision_manage_land_repurposing: "Manage Land Repurposing"
+    pw_decision_manage_land_repurposing_desc: "Manage what usage we can have from resources of this planet, adding more space for districts, by sacrificing existing natural reserves that we have no need for and increasing infrastructure costs."

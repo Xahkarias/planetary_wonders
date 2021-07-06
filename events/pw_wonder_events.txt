@@ -2385,6 +2385,258 @@ planet_event = {
 	}
 }
 
+#Land Repurposing decision Event (every resource wonder)
+planet_event = {
+	id = pw_wonder.750
+	title = pw_wonder.750.name
+	desc = pw_wonder.750.desc
+	picture = GFX_evt_drilling_for_gas
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_helios_tower
+			has_active_building = pw_building_demetrius_fields
+		}
+		NOT = { has_planet_flag = pw_is_managing_land_purpose }
+	}
+
+	immediate = {
+		set_planet_flag = pw_is_managing_land_purpose
+	}
+
+	option = {
+		name = pw_wonder.750.mining
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 500
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_mining_district }
+		}
+		owner = {
+			add_resource = { energy = -500 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_mining_district
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.mining_extra
+		trigger = {
+			owner = { has_technology = pw_tech_resource_land_repurposing_2 }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_mining_district_extra }
+		}
+		owner = {
+			add_resource = { energy = -1000 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_mining_district_extra
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.mining_max
+		trigger = {
+			owner = { has_technology = pw_tech_resource_land_repurposing_3 }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_mining_district_max }
+		}
+		owner = {
+			add_resource = { energy = -2000 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_mining_district_max
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.generator
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 500
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_generator_district }
+		}
+		owner = {
+			add_resource = { energy = -500 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_generator_district
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.generator_extra
+		trigger = {
+			owner = { has_technology = pw_tech_resource_land_repurposing_2 }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_generator_district_extra }
+		}
+		owner = {
+			add_resource = { energy = -1000 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_generator_district_extra
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.generator_max
+		trigger = {
+			owner = { has_technology = pw_tech_resource_land_repurposing_3 }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_generator_district_max }
+		}
+		owner = {
+			add_resource = { energy = -2000 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_generator_district_max
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.farming
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 500
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_farming_district }
+		}
+		owner = {
+			add_resource = { energy = -500 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_farming_district
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.farming_extra
+		trigger = {
+			owner = { has_technology = pw_tech_resource_land_repurposing_2 }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_farming_district_extra }
+		}
+		owner = {
+			add_resource = { energy = -1000 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_farming_district_extra
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.farming_max
+		trigger = {
+			owner = { has_technology = pw_tech_resource_land_repurposing_3 }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+			NOT = { has_modifier = pw_mod_extra_farming_district_max }
+		}
+		owner = {
+			add_resource = { energy = -2000 }
+		}
+		pw_remove_land_repurposing_modifiers = yes
+		add_modifier = {
+			modifier = pw_mod_extra_farming_district_max
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.750.leave
+		owner = {
+			if = {
+				limit = { has_ascension_perk = ap_mastery_of_nature }
+				owner = {
+					add_resource = { influence = 25 }
+				}
+			}
+			else = {
+				owner = {
+					add_resource = { influence = 50 }
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = { remove_planet_flag = pw_is_managing_land_purpose }
+	}
+}
+
 # Astronomical Model Bureau -> id 800
 
 #On Astronomical Model Bureau built

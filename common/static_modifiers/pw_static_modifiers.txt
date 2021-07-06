@@ -11,24 +11,6 @@ pw_mod_wonder_built_recently_unity = {
 	planet_jobs_unity_produces_mult = 0.05
 }
 
-pw_mod_erebus_prospecting = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_rich.dds"
-	icon_frame = @pw_icon_frame_green
-	planet_miners_produces_mult = @pw_decision_resource_mod
-}
-
-pw_mod_helios_seeding = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
-	icon_frame = @pw_icon_frame_green
-	planet_technician_produces_mult = @pw_decision_resource_mod
-}
-
-pw_mod_demetrius_harvesting = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_lush.dds"
-	icon_frame = @pw_icon_frame_green
-	planet_farmers_produces_mult = @pw_decision_resource_mod
-}
-
 pw_mod_space_elevator_xenophile = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green

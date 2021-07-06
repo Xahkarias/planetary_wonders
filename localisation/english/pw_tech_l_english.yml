@@ -61,6 +61,18 @@
     pw_tech_demetrius_fields: "Demetrius Cornucopia"
     pw_tech_demetrius_fields_desc: "A planetary ecosystem facility that boosts plant, animal or fungi growth and harvest in ideal conditions.\nIt is just the cycle of life, really."
 
+    #Land repurposing
+    pw_tech_resource_land_repurposing_1: "Natural Repurposing"
+    pw_tech_resource_land_repurposing_1_desc: "The needs of the country cannot be bound by natural availability."
+    pw_tech_resource_land_repurposing_2: "Natural Remodeling"
+    pw_tech_resource_land_repurposing_2_desc: "Even if the land suffers from our exploitation we will model it to suit our needs."
+    pw_tech_resource_land_repurposing_2_tooltip: "Expanded Extraction"
+    pw_tech_resource_land_repurposing_2_tooltip_desc: "Unlocks expanded options for the $pw_decision_manage_land_repurposing$ £decision£ Planetary Decision."
+    pw_tech_resource_land_repurposing_3: "Natural Mastery"
+    pw_tech_resource_land_repurposing_3_desc: "Nature shall bow to our needs."
+    pw_tech_resource_land_repurposing_3_tooltip: "Maximize Extraction"
+    pw_tech_resource_land_repurposing_3_tooltip_desc: "Unlocks maximized options for the $pw_decision_manage_land_repurposing$ £decision£ Planetary Decision."
+
     # Astronomical Modeling:
     pw_tech_galactic_modeling: "Astronomical Modeling"
     pw_tech_galactic_modeling_desc: "There comes a time in our stellar expansion that classic bureaucracy is simply not enough. We need a centralized model of our galaxy to coordinate our empire."

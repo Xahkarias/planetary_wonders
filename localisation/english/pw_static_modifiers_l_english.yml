@@ -20,6 +20,26 @@
     pw_mod_demetrius_harvesting: "Harvesting Predatorily"
     pw_mod_demetrius_harvesting_desc: "Thorough extraction of the planetary bio resources to the brink of unbalance allows us to reap the benefits of a grand harvest."
 
+    #Land Repurposed:
+    pw_mod_extra_mining_district: "Land Repurposed: Mining"
+    pw_mod_extra_mining_district_desc: "We have remodeled nature to suite our mineral needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_mining_district_extra: "Land Repurposed: Extra Mining"
+    pw_mod_extra_mining_district_extra_desc: "We have remodeled nature to further suite our mineral needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_mining_district_max: "Land Repurposed: Max Mining"
+    pw_mod_extra_mining_district_max_desc: "We have remodeled nature to completely suite our mineral needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_generator_district: "Land Repurposed: Generator"
+    pw_mod_extra_generator_district_desc: "We have remodeled nature to suite our energetic needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_generator_district_extra: "Land Repurposed: Extra Generator"
+    pw_mod_extra_generator_district_extra_desc: "We have remodeled nature to further suite our energetic needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_generator_district_max: "Land Repurposed: Max Generator"
+    pw_mod_extra_generator_district_max_desc: "We have remodeled nature to completely suite our energetic needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_farming_district: "Land Repurposed: Farming"
+    pw_mod_extra_farming_district_desc: "We have remodeled nature to suite our nutritional needs, sacrificing other resources and increase infrastructural costs"
+    pw_mod_extra_farming_district_extra: "Land Repurposed: Extra Farming"
+    pw_mod_extra_farming_district_extra_desc: "We have remodeled nature to further suite our nutritional needs, sacrificing other resources and increase infrastructural costs."
+    pw_mod_extra_farming_district_max: "Land Repurposed: Max Farming"
+    pw_mod_extra_farming_district_max_desc: "We have remodeled nature to completely suite our nutritional needs, sacrificing other resources and increase infrastructural costs."
+
     # Space Elevator Event mods:
     pw_mod_space_elevator_xenophile: "Space Elevator: Welcome"
     pw_mod_space_elevator_xenophile_desc: "The Space Elevator is open to the galaxy, and welcomes all."

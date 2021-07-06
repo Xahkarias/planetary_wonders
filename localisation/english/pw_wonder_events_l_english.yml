@@ -205,6 +205,20 @@
     pw_wonder.708.a: "Give those plants what they need to grow."
     pw_wonder.708.b: "There is no need for that."
 
+    #Land Repurposing Decision
+    pw_wonder.750.name: "Manage Land Repurposing"
+    pw_wonder.750.desc: "If nature should stand in the way of our needs, we will remodel and repurpose it as we see fit.\n\nWith the help of the Wonders we have constructed here, we can expand the extraction area of a specific resource, while sacrificing natural availability of other resources.\nThis operation will increase costs of future constructions."
+    pw_wonder.750.mining: "Increase extraction of £minerals£ §P$minerals$§!."
+    pw_wonder.750.mining_extra: "Expand extraction of £minerals£ §P$minerals$§!."
+    pw_wonder.750.mining_max: "Maximize extraction of £minerals£ §P$minerals$§!."
+    pw_wonder.750.generator: "Increase extraction of £energy£ §Y$energy$§!."
+    pw_wonder.750.generator_extra: "Expand extraction of £energy£ §Y$energy$§!."
+    pw_wonder.750.generator_max: "Maximize extraction of £energy£ §Y$energy$§!."
+    pw_wonder.750.farming: "Increase extraction of £food£ §G$food$§!."
+    pw_wonder.750.farming_extra: "Expand extraction of £food£ §G$food$§!."
+    pw_wonder.750.farming_max: "Maximize extraction of £food£ §G$food$§!."
+    pw_wonder.750.leave: "Leave the land as it is."
+
     #Complete Astronomical Model Bureau
     pw_message_galactic_model_complete: "$pw_galactic_model$ has been constructed in $PLANET|Y$."
     #First Time Complete Astronomical Model Bureau (Regular Empire)

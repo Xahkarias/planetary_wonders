@@ -9,6 +9,9 @@
     pw_decision_demetrius_harvesting: "Predatory Harvesting"
     pw_decision_demetrius_harvesting_desc: "Push the soil to its limits and extract just enough food from all the sources to keep the biosphere in balance, take all the surplus. The planet will suffer, but we will thrive."
 
+    pw_decision_manage_land_repurposing: "Manage Land Repurposing"
+    pw_decision_manage_land_repurposing_desc: "Manage what usage we can have from resources of this planet, adding more space for districts, by sacrificing existing natural reserves that we have no need for and increasing infrastructure costs."
+
     #Space Elevator Logistics:
     pw_decision_SE_install_space_ramp: "Install a §BSpace Ramp§!"
     pw_decision_SE_install_space_ramp_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing Space Ramp stations, allowing for rocket-powered sled launches from maglev rails. This will provide better and cheaper mobility for our pops and goods."
