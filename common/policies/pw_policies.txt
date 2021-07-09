@@ -181,8 +181,8 @@ pw_policy_modeling_focus = {
 		modifier = {
 			diplomacy_upkeep_mult = -0.25
 			envoys_add = 1
-			diplo_weight_mult = 0.10
-			country_admin_cap_mult = -0.10
+			diplo_weight_pops_mult = 0.10
+			country_admin_cap_mult = -0.15
 		}
 
 		ai_weight = {
@@ -202,7 +202,7 @@ pw_policy_modeling_focus = {
 			add_base_country_intel = 10
 			envoys_add = 1
 			intel_decryption_add = 1
-			country_admin_cap_mult = -0.10
+			country_admin_cap_mult = -0.15
 		}
 
 		ai_weight = {
