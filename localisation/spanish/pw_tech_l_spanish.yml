@@ -357,3 +357,10 @@
     pw_tech_resource_land_repurposing_3_desc: "Nature shall bow to our needs."
     pw_tech_resource_land_repurposing_3_tooltip: "Maximize Extraction"
     pw_tech_resource_land_repurposing_3_tooltip_desc: "Unlocks maximized options for the $pw_decision_manage_land_repurposing$ £decision£ Planetary Decision."
+
+    pw_tech_fallen_empire_experiments_physics: "Fallen Empire Experiment Analysis"
+    pw_tech_fallen_empire_experiments_physics_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_particle_supercollider$, we can discover secrets of remote dimensions."
+    pw_tech_fallen_empire_experiments_society: "Fallen Empire Experiment Analysis"
+    pw_tech_fallen_empire_experiments_society_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_domed_city$, we can discover secrets of population management and control."
+    pw_tech_fallen_empire_experiments_engineering: "Fallen Empire Experiment Analysis"
+    pw_tech_fallen_empire_experiments_engineering_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_abyssal_crater_test_site$, we can discover secrets of population management and control."

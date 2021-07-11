@@ -1,0 +1,1329 @@
+namespace = pw_research
+
+#General Events (0 - 999)
+
+##Particle Supercollider Events (1000 - 1999)
+
+#Spiritualist Empire requests Collider
+country_event = {
+	id = pw_research.1000
+	title = pw_research.1000.name
+	desc = pw_research.1000.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	trigger = {
+		is_at_war = no
+		is_ai = no
+		NOR = {
+			has_valid_civic = civic_machine_terminator
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_fanatic_purifiers
+		}
+		any_owned_planet = {
+			has_active_building = pw_building_particle_supercollider
+		}
+		any_country = {
+			is_country_type = fallen_empire
+			is_fallen_empire_spiritualist = yes
+			is_at_war = no
+			has_communications = root
+			opinion = {
+				who = THIS
+				value > -70
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_fallen_empire_spiritualist = yes
+				is_at_war = no
+				has_communications = root
+				opinion = {
+					who = THIS
+					value > -70
+				}
+			}
+			save_event_target_as = PWFallenEmpirePC
+		}
+		random_owned_planet = {
+			limit = {
+				has_active_building = pw_building_particle_supercollider
+			}
+			save_event_target_as = PWFallenEmpirePCPlanet
+		}
+	}
+
+	#Let them
+	option = {
+		name = pw_research.1000.a
+		event_target:PWFallenEmpirePCPlanet = {
+			add_modifier = {
+				modifier = pw_mod_particle_supercollider_research_in_use
+				days = @pw_halfYear
+				clear_on_owner_change = yes
+			}
+		}
+		hidden_effect = {
+			event_target:PWFallenEmpirePC = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.1002 } #OK
+			country_event = { id = pw_research.1004 days = 90 } #At war
+			country_event = { id = pw_research.1005 days = 90 }	#Not at war
+		}
+	}
+
+	#Ask what they want with it
+	option = {
+		name = pw_research.1000.b
+		hidden_effect = {
+			country_event = { id = pw_research.1001 }
+		}
+	}
+
+	#Deny
+	option = {
+		name = pw_research.1000.c
+		hidden_effect = {
+			country_event = { id = pw_research.1003 }
+			event_target:PWFallenEmpirePC = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#More information
+country_event = {
+	id = pw_research.1001
+	title = pw_research.1001.name
+	desc = pw_research.1001.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.1001.a
+		event_target:PWFallenEmpirePCPlanet = {
+			add_modifier = {
+				modifier = pw_mod_particle_supercollider_research_in_use
+				days = @pw_halfYear
+				clear_on_owner_change = yes
+			}
+		}
+		hidden_effect = {
+			event_target:PWFallenEmpirePC = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.1002 } #OK
+			country_event = { id = pw_research.1004 days = 90 } #At war
+			country_event = { id = pw_research.1005 days = 90 }	#Not at war
+		}
+	}
+
+	#Deny
+	option = {
+		name = pw_research.1000.c
+		hidden_effect = {
+			country_event = { id = pw_research.1003 }
+			event_target:PWFallenEmpirePC = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#Accept
+country_event = {
+	id = pw_research.1002
+	title = pw_research.1002.name
+	desc = pw_research.1002.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.1002.a
+	}
+}
+
+#Deny
+country_event = {
+	id = pw_research.1003
+	title = pw_research.1003.name
+	desc = pw_research.1003.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.1003.a
+	}
+}
+
+#Fallen Empire at war
+country_event = {
+	id = pw_research.1004
+	title = pw_research.1004.name
+	desc = pw_research.1004.desc
+	picture = GFX_evt_physics_research
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+
+	trigger = {
+		OR = {
+			NOT = { exists = event_target:PWFallenEmpirePC }
+			event_target:PWFallenEmpirePC = {
+				is_at_war = yes
+			}
+		}
+	}
+
+	#OK
+	option = {
+		name = pw_research.1004.a
+		event_target:PWFallenEmpirePCPlanet = {
+			if = {
+				limit = { has_modifier = pw_mod_particle_supercollider_research_in_use }
+				remove_modifier = pw_mod_particle_supercollider_research_in_use
+			}
+		}
+	}
+}
+
+#Sudden Energy Drain
+country_event = {
+	id = pw_research.1005
+	title = pw_research.1005.name
+	desc = pw_research.1005.desc
+	picture = GFX_evt_physics_research
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = event_energy_field
+
+	trigger = {
+		exists = event_target:PWFallenEmpirePC
+		event_target:PWFallenEmpirePC = {
+			is_at_war = no
+		}
+	}
+
+	#Contact them
+	option = {
+		name = pw_research.1005.a
+		add_resource = {
+			energy = -500
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.1006 }
+		}
+	}
+
+	#Let them
+	option = {
+		name = pw_research.1005.b
+		add_resource = {
+			energy = -500
+			influence = 25
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.1004 days = 90 }	#At war
+			country_event = { id = pw_research.1009 days = 90 }
+		}
+	}
+}
+
+#Sudden Energy Drain - Contact
+country_event = {
+	id = pw_research.1006
+	title = pw_research.1006.name
+	desc = pw_research.1006.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#Continue
+	option = {
+		name = pw_research.1006.a
+
+		hidden_effect = {
+			event_target:PWFallenEmpirePC = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.1004 days = 90 }	#At war
+			country_event = { id = pw_research.1009 days = 90 }
+			country_event = { id = pw_research.1007 }
+		}
+	}
+
+	#Leave
+	option = {
+		name = pw_research.1006.b
+		event_target:PWFallenEmpirePCPlanet = {
+			if = {
+				limit = { has_modifier = pw_mod_particle_supercollider_research_in_use }
+				remove_modifier = pw_mod_particle_supercollider_research_in_use
+			}
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.1008 }
+			event_target:PWFallenEmpirePC = { remove_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request } }
+			event_target:PWFallenEmpirePC = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#Sudden Energy Drain - Continue
+country_event = {
+	id = pw_research.1007
+	title = pw_research.1007.name
+	desc = pw_research.1007.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.1007.a
+	}
+}
+
+#Sudden Energy Drain - Stop
+country_event = {
+	id = pw_research.1008
+	title = pw_research.1008.name
+	desc = pw_research.1008.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.1008.a
+	}
+}
+
+#Finish event
+country_event = {
+	id = pw_research.1009
+	title = pw_research.1009.name
+	desc = pw_research.1009.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	trigger = {
+		exists = event_target:PWFallenEmpirePC
+		event_target:PWFallenEmpirePC = {
+			is_at_war = no
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
+	}
+
+	#GOOD
+	option = {
+		name = pw_research.1009.a
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+		event_target:PWFallenEmpirePCPlanet = {
+			add_modifier = {
+				modifier = pw_mod_particle_supercollider_energy_surges
+				days = 90
+				clear_on_owner_change = yes
+			}
+			if = {
+				limit = {
+					has_modifier = pw_mod_particle_supercollider_research_in_use
+				}
+				remove_modifier = pw_mod_particle_supercollider_research_in_use
+			}
+		}
+		add_research_option = pw_tech_fallen_empire_experiments_physics
+	}
+}
+
+
+##Domed City Events (2000 - 2999)
+
+
+#Xenophile Empire requests Collider
+country_event = {
+	id = pw_research.2000
+	title = pw_research.2000.name
+	desc = pw_research.2000.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	trigger = {
+		is_at_war = no
+		is_ai = no
+		NOR = {
+			has_valid_civic = civic_machine_terminator
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_fanatic_purifiers
+		}
+		any_owned_planet = {
+			pw_planet_has_domed_city = yes
+		}
+		any_country = {
+			is_country_type = fallen_empire
+			is_fallen_empire_xenophile = yes
+			is_at_war = no
+			has_communications = root
+			opinion = {
+				who = THIS
+				value > -70
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_fallen_empire_xenophile = yes
+				is_at_war = no
+				has_communications = root
+				opinion = {
+					who = THIS
+					value > -70
+				}
+			}
+			save_event_target_as = PWFallenEmpireDC
+		}
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_domed_city = yes
+			}
+			save_event_target_as = PWFallenEmpireDCPlanet
+		}
+	}
+
+	#Let them
+	option = {
+		name = pw_research.2000.a
+		event_target:PWFallenEmpireDCPlanet = {
+			add_modifier = {
+				modifier = pw_mod_domed_city_research_in_use
+				days = @pw_halfYear
+				clear_on_owner_change = yes
+			}
+		}
+		hidden_effect = {
+			event_target:PWFallenEmpireDC = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.2002 } #OK
+			country_event = { id = pw_research.2004 days = 90 } #At war
+			country_event = { id = pw_research.2005 days = 90 }	#Not at war
+		}
+	}
+
+	#Ask what they want with it
+	option = {
+		name = pw_research.2000.b
+		hidden_effect = {
+			country_event = { id = pw_research.2001 }
+		}
+	}
+
+	#Deny
+	option = {
+		name = pw_research.2000.c
+		hidden_effect = {
+			country_event = { id = pw_research.2003 }
+			event_target:PWFallenEmpireDC = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#More information
+country_event = {
+	id = pw_research.2001
+	title = pw_research.2001.name
+	desc = pw_research.2001.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.2001.a
+		event_target:PWFallenEmpireDCPlanet = {
+			add_modifier = {
+				modifier = pw_mod_domed_city_research_in_use
+				days = @pw_halfYear
+				clear_on_owner_change = yes
+			}
+		}
+		hidden_effect = {
+			event_target:PWFallenEmpireDC = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.2002 } #OK
+			country_event = { id = pw_research.2004 days = 90 } #At war
+			country_event = { id = pw_research.2005 days = 90 }	#Not at war
+		}
+	}
+
+	#Deny
+	option = {
+		name = pw_research.2000.c
+		hidden_effect = {
+			country_event = { id = pw_research.2003 }
+			event_target:PWFallenEmpireDC = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#Accept
+country_event = {
+	id = pw_research.2002
+	title = pw_research.2002.name
+	desc = pw_research.2002.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.2002.a
+	}
+}
+
+#Deny
+country_event = {
+	id = pw_research.2003
+	title = pw_research.2003.name
+	desc = pw_research.2003.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.2003.a
+	}
+}
+
+#Fallen Empire at war
+country_event = {
+	id = pw_research.2004
+	title = pw_research.2004.name
+	desc = pw_research.2004.desc
+	picture = GFX_evt_pw_domed_city
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+
+	trigger = {
+		OR = {
+			NOT = { exists = event_target:PWFallenEmpireDC }
+			event_target:PWFallenEmpireDC = {
+				is_at_war = yes
+			}
+		}
+	}
+
+	#OK
+	option = {
+		name = pw_research.2004.a
+		event_target:PWFallenEmpireDCPlanet = {
+			if = {
+				limit = { has_modifier = pw_mod_domed_city_research_in_use }
+				remove_modifier = pw_mod_domed_city_research_in_use
+			}
+		}
+	}
+}
+
+#Intergalactic Transmission
+country_event = {
+	id = pw_research.2005
+	title = pw_research.2005.name
+	desc = pw_research.2005.desc
+	picture = GFX_evt_pw_domed_city
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = event_energy_field
+
+	trigger = {
+		exists = event_target:PWFallenEmpireDC
+		event_target:PWFallenEmpireDC = {
+			is_at_war = no
+		}
+	}
+
+	#Contact them
+	option = {
+		name = pw_research.2005.a
+		add_resource = {
+			influence = -50
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.2006 }
+		}
+	}
+
+	#Let them
+	option = {
+		name = pw_research.2005.b
+		add_resource = {
+			influence = -30
+			unity = 500
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.2004 days = 90 }	#At war
+			country_event = { id = pw_research.2009 days = 90 }
+		}
+	}
+}
+
+#Intergalactic Transmission - Contact
+country_event = {
+	id = pw_research.2006
+	title = pw_research.2006.name
+	desc = pw_research.2006.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#Continue
+	option = {
+		name = pw_research.2006.a
+
+		hidden_effect = {
+			event_target:PWFallenEmpireDC = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.2004 days = 90 }	#At war
+			country_event = { id = pw_research.2009 days = 90 }
+			country_event = { id = pw_research.2007 }
+		}
+	}
+
+	#Leave
+	option = {
+		name = pw_research.2006.b
+		event_target:PWFallenEmpireDCPlanet = {
+			if = {
+				limit = { has_modifier = pw_mod_domed_city_research_in_use }
+				remove_modifier = pw_mod_domed_city_research_in_use
+			}
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.2008 }
+			event_target:PWFallenEmpireDC = { remove_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request } }
+			event_target:PWFallenEmpireDC = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#Intergalactic Transmission - Continue
+country_event = {
+	id = pw_research.2007
+	title = pw_research.2007.name
+	desc = pw_research.2007.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.2007.a
+	}
+}
+
+#Intergalactic Transmission - Stop
+country_event = {
+	id = pw_research.2008
+	title = pw_research.2008.name
+	desc = pw_research.2008.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.2008.a
+	}
+}
+
+#Finish event
+country_event = {
+	id = pw_research.2009
+	title = pw_research.2009.name
+	desc = pw_research.2009.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	trigger = {
+		exists = event_target:PWFallenEmpireDC
+		event_target:PWFallenEmpireDC = {
+			is_at_war = no
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
+	}
+
+	#GOOD
+	option = {
+		name = pw_research.2009.a
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+		event_target:PWFallenEmpireDCPlanet = {
+			if = {
+				limit = {
+					has_modifier = pw_mod_domed_city_research_in_use
+				}
+				remove_modifier = pw_mod_domed_city_research_in_use
+			}
+		}
+		add_research_option = pw_tech_fallen_empire_experiments_society
+	}
+}
+
+#Prompt Domed City transmission program
+country_event = {
+	id = pw_research.2010
+	title = pw_research.2010.name
+	desc = pw_research.2010.desc
+	picture = GFX_evt_pw_domed_city
+	is_triggered_only = yes
+	location = event_target:PWDCPlanet
+	show_sound = event_laboratory_sound
+
+	trigger = {
+		is_gestalt = no
+		NOT = { has_valid_civic = civic_fanatic_purifiers }
+		any_owned_planet = {
+			pw_planet_has_domed_city = yes
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_domed_city = yes
+			}
+			save_event_target_as = PWDCPlanet
+		}
+	}
+
+	#Regular Reality show
+	option = {
+		name = pw_research.2010.a
+		add_modifier = {
+			modifier = pw_mod_domed_city_transmitted_experiments_unity
+		}
+	}
+
+	#Megacorp Reality show
+	option = {
+		name = pw_research.2010.b
+		trigger = {
+			is_megacorp = yes
+		}
+		add_modifier = {
+			modifier = pw_mod_domed_city_transmitted_experiments_megacorp
+		}
+	}
+
+	#Media Conglomerate Reality show
+	option = {
+		name = pw_research.2010.c
+		trigger = {
+			has_valid_civic = civic_media_conglomerate
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		add_modifier = {
+			modifier = pw_mod_domed_city_transmitted_experiments_megacorp
+		}
+	}
+
+	#Materialist - archive
+	option = {
+		name = pw_research.2010.d
+		trigger = {
+			is_materialist = yes
+		}
+		add_modifier = {
+			modifier = pw_mod_domed_city_transmitted_experiments_research
+		}
+	}
+
+	#No
+	option = {
+		name = pw_research.2010.e
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier3influencereward
+			min = @tier3influencemin
+			max = @tier3influencemax
+		}
+	}
+}
+
+##Abyssal Crater Test Site Events (3000 - 3999)
+
+#Materialist Empire requests Test Site
+country_event = {
+	id = pw_research.3000
+	title = pw_research.3000.name
+	desc = pw_research.3000.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	trigger = {
+		is_at_war = no
+		is_ai = no
+		NOR = {
+			has_valid_civic = civic_machine_terminator
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_fanatic_purifiers
+		}
+		any_owned_planet = {
+			pw_planet_has_abyssal_test_crater = yes
+		}
+		any_country = {
+			is_country_type = fallen_empire
+			is_fallen_empire_materialist = yes
+			is_at_war = no
+			has_communications = root
+			opinion = {
+				who = THIS
+				value > -70
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_fallen_empire_materialist = yes
+				is_at_war = no
+				has_communications = root
+				opinion = {
+					who = THIS
+					value > -70
+				}
+			}
+			save_event_target_as = PWFallenEmpireACTS
+		}
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_abyssal_test_crater = yes
+			}
+			save_event_target_as = PWFallenEmpireACTSPlanet
+		}
+	}
+
+	#Let them
+	option = {
+		name = pw_research.3000.a
+		event_target:PWFallenEmpireACTSPlanet = {
+			add_modifier = {
+				modifier = pw_mod_abyssal_test_crater_research_in_use
+				days = @pw_halfYear
+				clear_on_owner_change = yes
+			}
+		}
+		hidden_effect = {
+			event_target:PWFallenEmpireACTS = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.3002 } #OK
+			country_event = { id = pw_research.3004 days = 90 } #At war
+			country_event = { id = pw_research.3005 days = 90 }	#Not at war
+		}
+	}
+
+	#Ask what they want with it
+	option = {
+		name = pw_research.3000.b
+		hidden_effect = {
+			country_event = { id = pw_research.3001 }
+		}
+	}
+
+	#Deny
+	option = {
+		name = pw_research.3000.c
+		hidden_effect = {
+			country_event = { id = pw_research.3003 }
+			event_target:PWFallenEmpireACTS = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#More information
+country_event = {
+	id = pw_research.3001
+	title = pw_research.3001.name
+	desc = pw_research.3001.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.3001.a
+		event_target:PWFallenEmpireACTSPlanet = {
+			add_modifier = {
+				modifier = pw_mod_abyssal_test_crater_research_in_use
+				days = @pw_halfYear
+				clear_on_owner_change = yes
+			}
+		}
+		hidden_effect = {
+			event_target:PWFallenEmpireACTS = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.3002 } #OK
+			country_event = { id = pw_research.3004 days = 90 } #At war
+			country_event = { id = pw_research.3005 days = 90 }	#Not at war
+		}
+	}
+
+	#Deny
+	option = {
+		name = pw_research.3000.c
+		hidden_effect = {
+			country_event = { id = pw_research.3003 }
+			event_target:PWFallenEmpireACTS = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#Accept
+country_event = {
+	id = pw_research.3002
+	title = pw_research.3002.name
+	desc = pw_research.3002.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.3002.a
+	}
+}
+
+#Deny
+country_event = {
+	id = pw_research.3003
+	title = pw_research.3003.name
+	desc = pw_research.3003.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.3003.a
+	}
+}
+
+#Fallen Empire at war
+country_event = {
+	id = pw_research.3004
+	title = pw_research.3004.name
+	desc = pw_research.3004.desc
+	picture = GFX_evt_pw_abyssal_crater_test_site
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+
+	trigger = {
+		OR = {
+			NOT = { exists = event_target:PWFallenEmpireACTS }
+			event_target:PWFallenEmpireACTS = {
+				is_at_war = yes
+			}
+		}
+	}
+
+	#OK
+	option = {
+		name = pw_research.3004.a
+		event_target:PWFallenEmpireACTSPlanet = {
+			if = {
+				limit = { has_modifier = pw_mod_abyssal_test_crater_research_in_use }
+				remove_modifier = pw_mod_abyssal_test_crater_research_in_use
+			}
+		}
+	}
+}
+
+#Devastation from bombardment
+country_event = {
+	id = pw_research.3005
+	title = pw_research.3005.name
+	desc = pw_research.3005.desc
+	picture = GFX_evt_pw_abyssal_crater_test_site
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = event_energy_field
+
+	trigger = {
+		exists = event_target:PWFallenEmpireACTS
+		event_target:PWFallenEmpireACTS = {
+			is_at_war = no
+		}
+	}
+
+	#Contact them
+	option = {
+		name = pw_research.3005.a
+		event_target:PWFallenEmpireACTSPlanet = {
+			add_planet_devastation = 25
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.3006 }
+		}
+	}
+
+	#Par for the Course
+	option = {
+		name = pw_research.3005.b
+		event_target:PWFallenEmpireACTSPlanet = {
+			add_planet_devastation = 25
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.3004 days = 90 }	#At war
+			country_event = { id = pw_research.3009 days = 90 }
+		}
+	}
+}
+
+#Sudden Energy Drain - Contact
+country_event = {
+	id = pw_research.3006
+	title = pw_research.3006.name
+	desc = pw_research.3006.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#Continue
+	option = {
+		name = pw_research.3006.a
+
+		hidden_effect = {
+			event_target:PWFallenEmpireACTS = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}
+			country_event = { id = pw_research.3004 days = 90 }	#At war
+			country_event = { id = pw_research.3009 days = 90 }
+			country_event = { id = pw_research.3007 }
+		}
+	}
+
+	#Leave
+	option = {
+		name = pw_research.3006.b
+		event_target:PWFallenEmpireACTSPlanet = {
+			if = {
+				limit = { has_modifier = pw_mod_abyssal_test_crater_research_in_use }
+				remove_modifier = pw_mod_abyssal_test_crater_research_in_use
+			}
+		}
+		hidden_effect = {
+			country_event = { id = pw_research.3008 }
+			event_target:PWFallenEmpireACTS = { remove_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request } }
+			event_target:PWFallenEmpireACTS = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request }}
+		}
+	}
+}
+
+#Sudden Energy Drain - Continue
+country_event = {
+	id = pw_research.3007
+	title = pw_research.3007.name
+	desc = pw_research.3007.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.3007.a
+	}
+}
+
+#Sudden Energy Drain - Stop
+country_event = {
+	id = pw_research.3008
+	title = pw_research.3008.name
+	desc = pw_research.3008.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#OK
+	option = {
+		name = pw_research.3008.a
+	}
+}
+
+#Finish event
+country_event = {
+	id = pw_research.3009
+	title = pw_research.3009.name
+	desc = pw_research.3009.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	trigger = {
+		exists = event_target:PWFallenEmpireACTS
+		event_target:PWFallenEmpireACTS = {
+			is_at_war = no
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
+	}
+
+	#GOOD
+	option = {
+		name = pw_research.3009.a
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+		add_resource = {
+			rare_crystals = 200
+			minerals = 500
+		}
+		event_target:PWFallenEmpireACTSPlanet = {
+			if = {
+				limit = {
+					has_modifier = pw_mod_abyssal_test_crater_research_in_use
+				}
+				remove_modifier = pw_mod_abyssal_test_crater_research_in_use
+			}
+		}
+		add_research_option = pw_tech_fallen_empire_experiments_engineering
+	}
+}

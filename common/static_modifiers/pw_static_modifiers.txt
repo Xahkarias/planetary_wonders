@@ -191,6 +191,7 @@ pw_mod_space_elevator_open_market_local_content_requirements_gestalt = {
 	planet_researchers_upkeep_mult = 0.10
 }
 
+#Particle Supercollider:
 pw_mod_particle_supercollider_materialist = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
@@ -203,6 +204,20 @@ pw_mod_particle_supercollider_spiritualist = {
 	pop_ethic_spiritualist_attraction_mult = 0.1
 }
 
+pw_mod_particle_supercollider_research_in_use = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = @pw_icon_frame_red
+	planet_jobs_physics_research_produces_mult = -1
+}
+
+pw_mod_particle_supercollider_energy_surges = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_wormhole.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_energy_produces_mult = 0.15
+	planet_buildings_energy_upkeep_mult = 0.10
+}
+
+#Domed City:
 pw_mod_domed_city_egalitarian = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
@@ -215,6 +230,29 @@ pw_mod_domed_city_authoritarian = {
 	pop_ethic_authoritarian_attraction_mult = 0.1
 }
 
+pw_mod_domed_city_research_in_use = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = @pw_icon_frame_red
+	planet_jobs_society_research_produces_mult = -1
+}
+
+pw_mod_domed_city_transmitted_experiments_unity = {
+	#Country Mod
+	country_unity_produces_mult = 0.05
+}
+
+pw_mod_domed_city_transmitted_experiments_megacorp = {
+	#Country Mod
+	trade_value_mult = 0.05
+	country_unity_produces_mult = 0.05
+}
+
+pw_mod_domed_city_transmitted_experiments_research = {
+	#Country Mod
+	country_society_research_produces_mult = 0.05
+}
+
+#Abyssal Test Crater:
 pw_mod_abyssal_test_crater_pacifist = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
@@ -225,6 +263,12 @@ pw_mod_abyssal_test_crater_militarist = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_ethic_militarist_attraction_mult = 0.1
+}
+
+pw_mod_abyssal_test_crater_research_in_use = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = @pw_icon_frame_red
+	planet_jobs_engineering_research_produces_mult = -1
 }
 
 pw_mod_enigma_engine_energy = {

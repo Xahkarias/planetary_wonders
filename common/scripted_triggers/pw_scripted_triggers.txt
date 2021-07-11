@@ -554,3 +554,19 @@ pw_has_unity_to_assemble_archive = {
 		}
 	}
 }
+
+#Planet Scope
+pw_planet_has_domed_city = {
+	OR = {
+		has_active_building = pw_building_domed_city
+		hidden_trigger = { has_active_building = pw_building_secluded_sector }
+	}
+}
+
+#Planet Scope
+pw_planet_has_abyssal_test_crater = {
+	OR = {
+		has_active_building = pw_building_abyssal_crater_test_site
+		hidden_trigger = { has_active_building = pw_building_abyssal_crater_test_site_habitat }
+	}
+}

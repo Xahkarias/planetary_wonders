@@ -17,7 +17,12 @@
 @pw_grand_archive_tech_cost_final = 125000
 
 #Panopticon Tech Cost
-@pw_panopticon_tech_cost = 12000
+@pw_panopticon_tech_cost = 15000
+
+#Research Wonders events Tech Cost
+@pw_research_tech_cost_1 = 50000 #Tier 1
+@pw_research_tech_cost_2 = 60000 #Tier 2
+@pw_research_tech_cost_3 = 75000 #Tier 3
 
 #Infrastructure (TLN & FC)
 @pw_tech_cost_infra = 42000

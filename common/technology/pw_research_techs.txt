@@ -1,0 +1,106 @@
+# Research techs: technology related to the Research Wonder Event chains (experiments)
+
+
+#Physics tech:
+
+pw_tech_fallen_empire_experiments_physics = {
+	area = physics
+	category = { field_manipulation }
+	cost = @pw_research_tech_cost_1
+	tier = 5
+	prerequisites = { pw_tech_particle_supercollider }
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_particle_supercollider
+		}
+	}
+
+	modifier = {
+		planet_technician_energy_produces_mult = 0.15
+		starbase_constructions_energy_produces_mult = 0.15
+		planet_researchers_physics_research_produces_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+#Society tech:
+
+pw_tech_fallen_empire_experiments_society = {
+	area = society
+	category = { statecraft }
+	cost = @pw_research_tech_cost_1
+	tier = 5
+	prerequisites = { pw_tech_domed_city }
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_domed_city
+		}
+	}
+
+	modifier = {
+		country_influence_produces_mult = 0.10
+		planet_researchers_society_research_produces_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+#Engineering tech:
+
+pw_tech_fallen_empire_experiments_engineering = {
+	area = engineering
+	category = { propulsion }
+	cost = @pw_research_tech_cost_1
+	tier = 5
+	prerequisites = { pw_tech_abyssal_crater_test_site }
+	weight = 0
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			pw_planet_has_abyssal_test_crater = yes
+		}
+	}
+
+	modifier = {
+		ship_orbital_bombardment_mult = 0.15
+		planet_orbital_bombardment_damage = -0.05
+		planet_researchers_engineering_research_produces_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_propulsion
+			}
+		}
+	}
+}

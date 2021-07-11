@@ -769,6 +769,15 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_particle_supercollider_built }
+	}
+
 	option = {
 		name = pw_wonder.201.a
 		if = {
@@ -811,13 +820,16 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_particle_supercollider_built }
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = { #Fallen Empire Event
+					id = pw_research.1000
+					days = 30
+					random = 30
+				}
+			}
+		}
 	}
 }
 
@@ -830,6 +842,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_particle_supercollider_built }
+	}
 
 	option = {
 		name = pw_wonder.202.a
@@ -863,13 +884,16 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
-		owner = { is_gestalt = yes }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_particle_supercollider_built }
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = { #Fallen Empire Event
+					id = pw_research.1000
+					days = 30
+					random = 30
+				}
+			}
+		}
 	}
 }
 
@@ -941,6 +965,15 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		NOT = {owner = {has_country_flag = pw_domed_city_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_domed_city_built }
+	}
+
 	option = {
 		name = pw_wonder.301.a
 		if = {
@@ -983,13 +1016,20 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = {has_country_flag = pw_domed_city_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_domed_city_built }
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = { #Fallen Empire Event
+					id = pw_research.2000
+					days = 30
+					random = 30
+				}
+				country_event = { #Hyper-Reality Show
+					id = pw_research.2010
+					days = 300
+				}
+			}
+		}
 	}
 }
 
@@ -1013,6 +1053,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = {has_country_flag = pw_domed_city_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_domed_city_built }
+	}
 
 	option = {
 		name = pw_wonder.302.a
@@ -1046,13 +1095,16 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = {has_country_flag = pw_domed_city_built }}
-		owner = { is_gestalt = yes }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_domed_city_built }
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = { #Fallen Empire Event
+					id = pw_research.2000
+					days = 30
+					random = 30
+				}
+			}
+		}
 	}
 }
 
@@ -1123,6 +1175,15 @@ planet_event = {
 	is_triggered_only = yes
 	location = THIS
 
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_abyssal_crater_test_site_built }
+	}
+
 	option = {
 		name = pw_wonder.401.a
 		if = {
@@ -1165,13 +1226,16 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
-		owner = { is_gestalt = no }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_abyssal_crater_test_site_built }
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = { #Fallen Empire Event
+					id = pw_research.3000
+					days = 30
+					random = 30
+				}
+			}
+		}
 	}
 }
 
@@ -1195,6 +1259,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_abyssal_crater_test_site_built }
+	}
 
 	option = {
 		name = pw_wonder.402.a
@@ -1228,13 +1301,16 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
-		owner = { is_gestalt = yes }
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_abyssal_crater_test_site_built }
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = { #Fallen Empire Event
+					id = pw_research.3000
+					days = 30
+					random = 30
+				}
+			}
+		}
 	}
 }
 

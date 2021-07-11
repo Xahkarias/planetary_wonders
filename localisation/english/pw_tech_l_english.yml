@@ -465,3 +465,16 @@
 
     pw_enigma_tech_simulations_within_simulations: "$pw_enigma_tech$ Simulations Within Simulations"
     pw_enigma_tech_simulations_within_simulations_desc: "When we were able to perform perfect simulations of the galaxy, our analogue evaluators were quick to star their own simulations within. Inside these simulations, only the Enigma Engine can guide us back into reality, as we know it."
+
+    ##Research Wonders Chain Techs
+    #Physics
+    pw_tech_fallen_empire_experiments_physics: "Fallen Empire Experiment Analysis"
+    pw_tech_fallen_empire_experiments_physics_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_particle_supercollider$, we can discover secrets of remote dimensions."
+
+    #Society
+    pw_tech_fallen_empire_experiments_society: "Fallen Empire Experiment Analysis"
+    pw_tech_fallen_empire_experiments_society_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_domed_city$, we can discover secrets of population management and control."
+
+    #Engineering
+    pw_tech_fallen_empire_experiments_engineering: "Fallen Empire Experiment Analysis"
+    pw_tech_fallen_empire_experiments_engineering_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_abyssal_crater_test_site$, we can discover secrets of population management and control."
