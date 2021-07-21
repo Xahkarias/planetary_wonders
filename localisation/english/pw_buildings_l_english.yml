@@ -67,7 +67,11 @@
     # Particle Supercollider
     pw_particle_supercollider: "§MParticle Supercollider§!"
     pw_building_particle_supercollider: "Particle Supercollider"
-    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensors with thousands of kilometers in diameter  that consume a considerable amount of power. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
+    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensors with thousands of kilometers in diameter that consume a considerable amount of power. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
+
+    pw_interdimensional_collider: "§MInterdimensional Collider§!"
+    pw_building_interdimensional_collider: "Interdimensional Collider"
+    pw_building_interdimensional_collider_desc: "A massive Particle Collider retrofitted for interdimensional experimentation and exploration, allowing us to puncture and weave reality in order to understand it."
 
     # Domed City
     pw_domed_city: "§MDomed City§!"
@@ -79,6 +83,10 @@
     pw_building_secluded_sector: "Secluded Sector"
     pw_building_secluded_sector_desc: "A habitat sector completely enclosed by a sphere, with no contact with the outside world save for an enormous team of researches constantly observing, probing and testing the unknowing space inhabitants. Many social experiments can be performed here as every aspect of these subjects life is controlled, from the minute detail to the sector atmospheric simulation, at some extra cost of consumer goods."
 
+    pw_psionic_observatory: "§MPsionic Observatory§!"
+    pw_building_psionic_observatory: "Psionic Observatory"
+    pw_building_psionic_observatory_desc: "A city completely enclosed by a dome, with no contact with the outside world save for an enormous team of researches constantly observing, probing and testing the psionic population inside, whose power is constantly catalyzed by zro applications, breaching the barrier of science and faith."
+
     # Abyssal Crater Test Site
     pw_abyssal_crater_test_site: "§MAbyssal Crater Test Site§!"
     pw_building_abyssal_crater_test_site: "Abyssal Crater Test Site"
@@ -88,6 +96,10 @@
     pw_abyssal_crater_test_site_habitat: "§MPlanetary Test Site§!"
     pw_building_abyssal_crater_test_site_habitat: "Planetary Test Site"
     pw_building_abyssal_crater_test_site_habitat_desc: "An enormous crater in the planet bellow designated as a dedicated test site for rocketry, spacecraft launch and landing, material strength testing and building patterns under multiple conditions of pressure and gravity. Given the subject, the tests conducted here demand extra alloys."
+
+    pw_metal_vivarium: "§MMetal Vivarium§!"
+    pw_building_metal_vivarium: "Metal Vivarium"
+    pw_building_metal_vivarium_desc: "An abysmal crater turned into perfect testing grounds for Living Metal, because of the constant bombardment with exotic ordinance in past experiments; where industrial and military experiments with the substance can safely go out of control."
 
     #Resource Buildings:
 

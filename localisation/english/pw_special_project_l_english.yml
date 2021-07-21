@@ -131,3 +131,41 @@
     pw_assemble_meta_architectural_complex_chain_title: "Assemble Meta-Architectural Complex"
     pw_assemble_meta_architectural_complex_chain_desc: "Our Wonders have marveled the habitants of every planet they we them build upon, but what goes unseen by many is the elegant synthesis of form and function that their architectural development employed. A closer analysis of the techniques used in the constructions of various Planetary Wonders and their resulting impact in operation and cityscape is essential to complete the Meta-Architectural Complex properly."
     pw_architectural_data_collected: "Architectural data collected"
+
+    #Research Event Chains
+
+    pw_particle_supercollider_experiment_chain_title: "$pw_particle_supercollider$ Experiments"
+    pw_particle_supercollider_experiment_chain_desc: "From the infinitesimally small to the infinitely large, the mysteries of theoretical physics still remain shrouded from our understanding. By employing strict guidelines to physics experiments on the $pw_building_particle_supercollider$ we can at least crack some of these enigmas."
+
+    pw_domed_city_experiment_chain_title: "$pw_domed_city$ Experiments"
+    pw_domed_city_experiment_chain_desc: "Life is inherently social. Event the organization of a Hive Mind or the coordination of autonomous robots can be view with the lenses of social sciences. We are not able to fully understand the relationships of communities, Gestalts and individuals without clear and precise experimentation on the $pw_building_domed_city$."
+
+    pw_abyssal_crater_test_Site_experiment_chain_title: "$pw_abyssal_crater_test_site$ Experiments"
+    pw_abyssal_crater_test_Site_experiment_chain_desc: "There was a time when the advancements of engineering were considered magic by many, since it requires knowledge of both practice and theory combined. Now we have a free space to fabricate theory into practice, but if experiments at the $pw_building_abyssal_crater_test_site$ are not bound by protocol, results would be disastrous."
+
+    PW_PHYSICS_PARTICLE_EXPERIMENTS: "Particle Experiments"
+    PW_PHYSICS_PARTICLE_EXPERIMENTS_DESC: "Acceleration and collision. Seems simple, but to understand every process involved in the creation and manipulation of particles, it requires an extensive array of sensors and a lot of data analysis. Who knows what secrets can be revealed in the $pw_building_particle_supercollider$?"
+
+    PW_PHYSICS_COMPUTING_EXPERIMENTS: "Computing Experiments"
+    PW_PHYSICS_COMPUTING_EXPERIMENTS_DESC: "Experiments with quantum computing and interdimensional analysis can help us understand the origins of dark matter and make sense of the trans-dimensional influences."
+
+    PW_PHYSICS_FIELD_THEORY_EXPERIMENTS: "Extra Dimensional Experimentation"
+    PW_PHYSICS_FIELD_THEORY_EXPERIMENTS_DESC: "With the processes of reality breaching by particle collision understood and a computational system ready for navigation, we can explore the observed foreign dimensions, expanding even further our realm of science."
+
+    PW_SOCIETY_HAZARD_ENVIRONMENTS_EXPERIMENTS: "Hazard Environments Experiments"
+    PW_SOCIETY_HAZARD_ENVIRONMENTS_EXPERIMENTS_DESC: "Manipulation of climate and atmospheric properties inside the dome can allow us to observe evolution of both individuals and societies within extreme conditions."
+
+    PW_SOCIETY_GOVERNMENTAL_EXPERIMENTS: "Governmental Experiments"
+    PW_SOCIETY_GOVERNMENTAL_EXPERIMENTS_DESC: "By allowing societies to develop in unusual circumstances, we can better grasp its internal mechanisms and manipulate them as we please."
+
+    PW_SOCIETY_EXOTIC_SUBSTANCES_EXPERIMENTS: "Exotic Substances Experiments"
+    PW_SOCIETY_EXOTIC_SUBSTANCES_EXPERIMENTS_DESC: "Distributing and monitoring the injection of exotic substances withing a controlled environment can produce much more insightful results over their usage and effects. Both in the scope of an individual and of a community."
+
+    PW_ENGINEERING_WEAPONS_EXPERIMENTS: "Weapons Experiments"
+    PW_ENGINEERING_WEAPONS_EXPERIMENTS_DESC: "Preliminary experiments with a diversity of weapon calibers may produce new models to satisfy our war industry, for now."
+
+    PW_ENGINEERING_STRUCTURAL_EXPERIMENTS: "Structural Experiments"
+    PW_ENGINEERING_STRUCTURAL_EXPERIMENTS_DESC: "No only should we research how to cause damage, but more importantly, how to sustain operational structures and building that endure it."
+
+    PW_ENGINEERING_PRODUCTION_EXPERIMENTS: "Living Production Experiments"
+    PW_ENGINEERING_PRODUCTION_EXPERIMENTS_DESC: "The discovery, production and programing of Living Metal may represent the next industrial revolution if we can master this art within the Crater Test Site."

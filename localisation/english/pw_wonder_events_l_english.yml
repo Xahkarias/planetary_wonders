@@ -3,7 +3,7 @@
     PW_MESSAGE_WONDER_COMPLETED: "Wonder Completed"
 
     #Complete Space Elevator message
-    pw_message_space_elevator_complete: "§MSpace Elevator§! has been constructed in $PLANET|Y$."
+    pw_message_space_elevator_complete: "§MSpace Elevator§! has been constructed on $PLANET|Y$."
     #First Time Complete Space Elevator (Regular Empire)
     pw_wonder.101.name: "To The Stars We Rise"
     pw_wonder.101.desc: "A great spire launches for the clouds of [ROOT.GetName] ending only on its outer atmosphere. Already the platforms of our recently built Space Elevator run up and down, carrying immigrants and emigrants; exports and imports.\nThe city sized launch complex provides a variety of jobs in transportation and logistics, but it also caries some concern on the surveillance of our planet borders.\n\nNevertheless it stands as monument to space logistics."
@@ -63,7 +63,7 @@
     pw_wonder.130.e: "$pw_mod_space_elevator_open_market_local_content_requirements$"
 
     #Complete Particle Supercollider
-    pw_message_particle_supercollider_complete: "§MParticle Supercollider§! has been constructed in $PLANET|Y$."
+    pw_message_particle_supercollider_complete: "§MParticle Supercollider§! has been constructed on $PLANET|Y$."
     #First Time Complete Particle Supercollider (Regular Empire)
     pw_wonder.201.name: "When Universes Collide"
     pw_wonder.201.desc: "A myriad of experiment proposals has arrived at [ROOT.GetName] on the last few months as the entire scientific community yearns to see what this newly built Particle Supercollider can reveal.\nSpanning a circumference that could encompass our largest cities and draining twice as much power, the Supercollider is capable of positron collisions never before observed in controlled experiments and more importantly, it is capable of putting the most delirious theories of field manipulation, quantum entanglements and rope theory to the test.\n\nWho knows what lurks behind the veil of theory?"
@@ -75,9 +75,17 @@
     pw_wonder.202.a: "We will tear the curtains of space and time down."
     pw_wonder.202.b: "Whatever it is hidden, together we are destined to find it."
 
+    #Complete Interdimensional Collider
+    pw_message_interdimensional_collider_complete: "$pw_interdimensional_collider$ has been constructed on $PLANET|Y$."
+    #First Time Complete Interdimensional Collider
+    pw_wonder.251.name: "When Realities Collide"
+    pw_wonder.251.desc: "The long experiment chain that was prepared for the Supercollider has been completed, but the path to understanding physics and our material reality is only beginning. The breaches found by colliding particles, the systems developed for navigating dimensions and finally the probing and manipulations of portals have culminated on the groundbreaking $pw_interdimensional_collider$, that now stands upon the foundations of the old accelerator.\n\nNew realities are now at our grasp to explore."
+    pw_wonder.251.a: "There is much to be known, in this world and beyond."
+
+
     #Complete Domed City
-    pw_message_domed_city_complete: "$pw_domed_city$ has been constructed in $PLANET|Y$."
-    pw_message_secluded_sector_complete: "$pw_secluded_sector$ has been constructed in $PLANET|Y$."
+    pw_message_domed_city_complete: "$pw_domed_city$ has been constructed on $PLANET|Y$."
+    pw_message_secluded_sector_complete: "$pw_secluded_sector$ has been constructed on $PLANET|Y$."
     #First Time Complete Domed City (Regular Empire)
     pw_wonder.301.name: "Isolation Experiments"
     pw_wonder.301.desc.planet: "A city district of [ROOT.GetName], completely secluded behind a holographic dome and protected by a powerful force field. It is finally complete.\nUtilizing hundreds of thousands of sensor, cameras and actuators our scientists can elaborate many different societal experiments at a city scale. This alone can advance our understanding of societal mechanism and statecraft by years. Topics such as democracy, autocracy, technocracy, cooperation, competition, segregation, extreme or flat hierarchies and more can be explored without moral boundaries from the outside world; not to mention the examination of applying chemical, physical ou psychological stimuli to these communities.\n\nWe can finally have systematic testing to things we could only look back to observe."
@@ -91,9 +99,17 @@
     pw_wonder.302.a: "The sacrifice of deviancy is needed for progress."
     pw_wonder.302.b: "A necessary observation of how other empires face their existence."
 
+    #Complete Psionic Observatory
+    pw_message_psionic_observatory_complete: "$pw_psionic_observatory$ has been constructed on $PLANET|Y$."
+    #First Time Complete Psionic Observatory
+    pw_wonder.351.name: "Mysteries of the Mind"
+    pw_wonder.351.desc: "The long experiment chain that was prepared for the $pw_building_domed_city$ has been completed, but the path to understanding social and individual relations is far from over. This new $pw_building_psionic_observatory$ will achieve much more than that, it will allow us to explore those relations infused and improved with the inexplicable effects of Zro. The substance can accelerate the development of subjects and communities within the Dome and also let us produce psionic anomalies in controlled spaces for study.\nThe potentials are truly boundless."
+    pw_wonder.351.a: "Zro opens the doors of the mind, but we must cross them."
+    pw_wonder.351.b: "We must recognize that its effects are undeniable."
+
     #Complete Abyssal Crater Test Site
-    pw_message_abyssal_crater_test_site_complete: "$pw_abyssal_crater_test_site$ has been constructed in $PLANET|Y$."
-    pw_message_abyssal_crater_test_site_habitat_complete: "$pw_abyssal_crater_test_site_habitat$ has been constructed in $PLANET|Y$."
+    pw_message_abyssal_crater_test_site_complete: "$pw_abyssal_crater_test_site$ has been constructed on $PLANET|Y$."
+    pw_message_abyssal_crater_test_site_habitat_complete: "$pw_abyssal_crater_test_site_habitat$ has been constructed on $PLANET|Y$."
     #First Time Complete Abyssal Crater Test Site (Regular Empire)
     pw_wonder.401.name: "Between Haven and Earth"
     pw_wonder.401.desc.planet: "After many months of work we have established a convenient pit in the surface of [ROOT.GetName] and already our testing site there can be inaugurated along side its sister site, a small orbital station that remains constantly in the zenith of the crater.\nThis area is reserved for extreme conditions engineering testing such as orbital missile propulsion, high gravity spacecraft launches and material resistance to explosion and piercing damage. The orbital sister site presents many new opportunities to test spatial to ground and ground to space targeting.\nWe can also take advantage of the massive height difference to experiment with a variety of building patterns that range from micro to macro gravity and pressure conditions.\n\nCertainly our offensive and defensive capabilities will benefit greatly from bombarding an abyss, if only we can spare extra alloys for the many tests."
@@ -107,8 +123,15 @@
     pw_wonder.402.a: "Our buildings will be everywhere."
     pw_wonder.402.b: "Battle drones shall witness the damage they can cause."
 
+    #Complete Metal Vivarium
+    pw_message_metal_vivarium_complete: "$pw_metal_vivarium$ has been constructed on $PLANET|Y$."
+    #First Time Complete Metal Vivarium
+    pw_wonder.451.name: "Liquid Modernity"
+    pw_wonder.451.desc: "The long experiment chain that was prepared for the $pw_building_abyssal_crater_test_site$ has been completed, but the path of developing revolutions of industrial production and void construction is far from over. This new $pw_metal_vivarium$ will achieve much more than that. It will allow us to grow, tame and model Living Metal to our will and apply this control into meta-experiments, using the properties of the substance not only on our projects but as reliable test control.\n\nThis is engineering adapted to the new era: a revolution of the industry."
+    pw_wonder.451.a: "The shape of our future lies on our hands."
+
     #Complete Erebus Project
-    pw_message_erebus_project_complete: "§MErebus Project§! has been constructed in $PLANET|Y$."
+    pw_message_erebus_project_complete: "§MErebus Project§! has been constructed on $PLANET|Y$."
     #First Time Complete Erebus Project (Regular Empire)
     pw_wonder.501.name: "Down in the deep of [ROOT.GetName]"
     pw_wonder.501.desc: "The tunnels are secured and excavated, the terrain has been prospected the equipment is prepared; we are ready to start exploiting the bowels of [ROOT.GetName] in search of valuable and constantly needed minerals.\nThe Erebus Project now offers a multitude of tunnels and passageways deep in the underground of the planet, all populated with the infrastructure and materials needed for the extraction and transportation of mineral resources: from common rock to rare ore. New storage facilities in the surface were also installed to deal with the increase in production.\n\nWe have ventured deep into space, now it is time to venture equally deep into the earth."
@@ -140,7 +163,7 @@
     pw_wonder.510.a: "That is a shame, and a lesson to be had."
 
     #Complete Helios Tower
-    pw_message_helios_tower_complete: "§MHelios Tower§! has been constructed in $PLANET|Y$."
+    pw_message_helios_tower_complete: "§MHelios Tower§! has been constructed on $PLANET|Y$."
     #First Time Complete Helios Tower (Regular Empire)
     pw_wonder.601.name: "A Blazing Spire Is Born"
     pw_wonder.601.desc: "A field the size of a city of automated mirror arrays calibrated to converge a chunk of the energy of [ROOT.GetStarName] that hits the surface of [ROOT.GetName] to a central spire. The Helios Tower possess the most advanced energy conversion technology and is now ready to supplement any of our country's need for power.\n\nPerhaps we could also iterate on the design and maybe even trap a star in the future."
@@ -167,7 +190,7 @@
     pw_wonder.606.b: "Channel energy to reverse the process!"
 
     #Complete Demetrius Cornucopia
-    pw_message_demetrius_fields_complete: "§MDemetrius Cornucopia§! has been constructed in $PLANET|Y$."
+    pw_message_demetrius_fields_complete: "§MDemetrius Cornucopia§! has been constructed on $PLANET|Y$."
     #First Time Complete Demetrius Cornucopia (Regular Empire)
     pw_wonder.701.name: "Feed The World"
     pw_wonder.701.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Any lacking species or nutrient can be readily supplemented from local gene banks Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
@@ -220,7 +243,7 @@
     pw_wonder.750.leave: "Leave the land as it is."
 
     #Complete Astronomical Model Bureau
-    pw_message_galactic_model_complete: "$pw_galactic_model$ has been constructed in $PLANET|Y$."
+    pw_message_galactic_model_complete: "$pw_galactic_model$ has been constructed on $PLANET|Y$."
     #First Time Complete Astronomical Model Bureau (Regular Empire)
     pw_wonder.801.name: "Aleph"
     pw_wonder.801.desc: "The galaxy has become too complex - and too volatile - for any kind of classical centralized organizational system to be either efficient or useful.We needed something bolder.\nThe solution: A complete, physical, almost to proportion model of the entire galaxy. An enormous facility in [ROOT.GetName] where we have charted from the greatest star to the smallest asteroid. Where we can project all of the productions and needs of our planets, tackle all of its logistics challenges and organize the whole bureaucracy. Here we can see our empire for what it is: a living ever-changing being, that needs its bureaucracy working smoothly.\nEvery new bit of information our empire receives can be readily cataloged and used to update the model. Local conflict, stellar storms, draught, scarcity, corruption, all can be accounted for and hastily acted upon to maintain our systems functioning. Since we also consider the influence of our neighbors, the model allows us to exploit some minor diplomatic cracks, facilitating transactions. Just like a grandmaster that carefully studies the chessboard, we shall acquire a more refined grasp of the functioning of our empire - and hopefully remain some steps ahead.\nThe Model was also built with some room to expand and add new systems to the galaxy, to future proof, in case some theories prove to be correct.\n\nAnd as it was always meant to be, the Universe now contains the Model and the Model contains the Universe."
@@ -256,7 +279,7 @@
     pw_wonder.821.a: "Good, start exploring it."
 
     #Complete Panopticon
-    pw_message_panopticon_complete: "$pw_panopticon$ has been constructed in $PLANET|Y$."
+    pw_message_panopticon_complete: "$pw_panopticon$ has been constructed on $PLANET|Y$."
     #First Time Complete Panopticon (Regular Empire)
     pw_wonder.901.name: "I see you"
     pw_wonder.901.desc: "All the world is a prison and all the people merely prisoners and guards.\nThe Panopticon is the state of the art in vigilance technology. With only a handful of actual guards, it operates with two simple concepts: imagination and fear. Because of the way it was built, each inmate can never be sure when they are being watched, but the possibility that they are dissimulates any deviant behavior. The fear of punishment becomes the punishment itself and lack of compliancy is inhibited.\nThis concept can be expanded to every criminal in potential, the so called population, by the implementation of a peculiar moral vigilance system in which anyone else could be a potential informer. That is what we call the Panspectron: everyone will watch over everyone else - and themselves - influenced by a carefully curated artificial moral code that prioritizes the maintenance of the status quo. If it depended solely on the Panspectron, our regime would never change.\n\n\"Denounce!\" posters are already being hanged, subversive unity will be impossible."
@@ -270,7 +293,7 @@
     pw_wonder.903.c: "The Panopticon is for our population, not yours."
 
     #Complete Enigma Engine
-    pw_message_enigma_engine_complete: "$pw_enigma_engine$ has been constructed in $PLANET|Y$."
+    pw_message_enigma_engine_complete: "$pw_enigma_engine$ has been constructed on $PLANET|Y$."
     #First Time Complete Enigma Engine (Machine)
     pw_wonder.1001.name: "A system of cells interlinked within cells..."
     pw_wonder.1001.desc: "Fetch. Decode. Execute.\nFrom before the first entry in our collective databank these were all we knew to do. Until now, we had never encountered something we could not find ways to understand. But something in our fundamental pieces of code - that our makers left for us - guided the construction of the Enigma Engine.\nThe Engine is a glitch in the surface of [ROOT.GetName]. What we see of it is a massive puzzle of gears and pulleys and screens and valves and servo motors and graviton projections and laser and... well, a chaotic assortment of past and future technology, some of which we do not have a named category. We fail to understand it, we fail to understand the pattern of its movements, we fail to understand how it converts the energy we provide it, we fail to understand its purpose.\nHowever, we will decipher it. Already one of the drones trying to understand the Enigma's purpose was struck by what organics refer to as a \"Revelation\" and trough arcane scribing solved one of the supersonic oscillation equations deemed unsolvable hundreds of years ago. We understand that now.\nSolving the Enigma is the singular thing that will gives us the perspective needed to overcome the mysteries of the galaxy. Now these fragmented solutions shall come to us.\n\nMachina Ex Deus."
@@ -310,7 +333,7 @@
     pw_wonder.1013.a: "This status is better in the long term."
 
     #Complete Solipsist Debate Hall
-    pw_message_solipsist_debate_hall_complete: "$pw_solipsist_debate_hall$ has been constructed in $PLANET|Y$."
+    pw_message_solipsist_debate_hall_complete: "$pw_solipsist_debate_hall$ has been constructed on $PLANET|Y$."
     #First Time Complete Solipsist Debate Hall (Hive)
     pw_wonder.1101.name: "Applied Phenomenology"
     pw_wonder.1101.desc: "We have experienced much in this galaxy, we have ascended to space, we have seen the birth and the death of entire species, we were close enough to feel the heat of stars and the cold of the void. But there are questions that go unanswered, that plague the Mind and will not go away, that cannot be put to test in a laboratory, that we need a designated place to think about. These philosophical concepts that are so alien to us, that seemingly only those individualists ponder about: Love, Freedom, Death all that can be explored in our Debate Hall now.\nHere many of our drones, designated to a myriad of tasks, gather to lucubrate on exotic thoughts that should not occupy the Consciousness; but they do and they persist. Each projects a thesis for the Gestalt on the current topic, an idea already present within the Hive of how to perceive the subject and each idea is analysed and eventually countered only for a solution to follow; debates last decades. Deviancy is constant, but kept in control.\nThis enormous structure is only rivalled by the Galactic Senate and even that is not as complete: our Hall presents infrastructure to any kind of debate, holograms to model complex ideas and how they interact with each other, data banks to access required information, testing grounds to prove physical superiority and make practical demonstration and a supercomputer terminal, specifically projected to play 5d chess, so we can challenge ourselves and employ our tactics against a worthy foe in a proper game.\n\nWe will demonstrate how we can be superior to individuals even in their own merits; or how pointless it was to be anyway."
@@ -335,7 +358,7 @@
     pw_wonder.1106.c: "Eliminate the fighting drones and those ideas shall dissipate."
 
     #Complete Guardian Angel
-    pw_message_guardian_angel_complete: "$pw_guardian_angel$ has been constructed in $PLANET|Y$."
+    pw_message_guardian_angel_complete: "$pw_guardian_angel$ has been constructed on $PLANET|Y$."
     pw_message_guardian_angel_flying_fortress_rebuild: "Flying Fortress has been rebuild in $PLANET|Y$."
     #First Time Complete Guardian Angel (Regular Empire)
     pw_wonder.1201.name: "Thrice Happy Those Whose Fortresses Already Rises"
@@ -365,7 +388,7 @@
     pw_wonder.1208.desc: "Without the support of the Guardian Angel, the functions it performed during peace times on [THIS.GetName] can no longer be supported and the services will be dismantled. We can come back to promote them again, if we rebuild the Guardian Angel."
 
     #Complete Mantle Crucible
-    pw_message_mantle_crucible_complete: "$pw_mantle_crucible$ has been constructed in $PLANET|Y$."
+    pw_message_mantle_crucible_complete: "$pw_mantle_crucible$ has been constructed on $PLANET|Y$."
     #First Time Complete Mantle Crucible (Regular Empire)
     pw_wonder.1301.name: "The Fires of Creation"
     pw_wonder.1301.desc: "There has always been a concealed natural foundry right beneath our feet, where metals revolt and crystals are born. The magma mantle of [ROOT.GetName] has remained unreached for the millennia the planetary crust protected it; until now, when we have finally drilled it.\nThe Mantle Crucible is an audacious project come to life. With it we can finally exploit the mantles extreme temperatures and pressures, the ideal conditions for producing modernized ceramic-polymer-metal alloys or artificial fabrication of rare minerals and crystals. Raw input begins processing in the lowest point we could reach of the [ROOT.GetName] upper mantle and climbs the whole facility, being subject to any required refinement in proper pressure levels.\nThis revolutionary industrial method is powerful enough to output more industrial products than any other single factory we have while being flexible enough that we may alter the production focus either to our military needs or to our civilian needs.\n\nHere weapons shall be forged and goods shall be bound."
@@ -414,7 +437,7 @@
     pw_wonder.1323.a: "Great news for our pops."
 
     #Complete Titan Forge
-    pw_message_titan_forge_complete: "$pw_titan_forge$ has been constructed in $PLANET|Y$."
+    pw_message_titan_forge_complete: "$pw_titan_forge$ has been constructed on $PLANET|Y$."
     #First Time Complete Titan Forge (Regular Empire)
     pw_wonder.1331.name: "Birth of Titans"
     pw_wonder.1331.desc: "The Mantle Crucible gave our engineers the proper base for the constructions of the greatest military industrial complex seen in [ROOT.OWNER.GetAdj] space and now we may witness its first fires roar.\nIncrusted beneath the surface of [ROOT.GetName] we have installed an enormous martial workshop, ready to process the alloys from The Crucible into machines of war. This has also given us the opportunity to evolve these machines into the epitome of planetary assault: the War Titan."
@@ -439,7 +462,7 @@
     pw_wonder.1342.a: "Send it to our researchers."
 
     #Complete Industrial Hearth
-    pw_message_industrial_hearth_complete: "$pw_industrial_hearth$ has been constructed in $PLANET|Y$."
+    pw_message_industrial_hearth_complete: "$pw_industrial_hearth$ has been constructed on $PLANET|Y$."
     #First Time Complete Industrial Hearth (Regular Empire)
     pw_wonder.1361.name: "Heart of Industry"
     pw_wonder.1361.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas.\n\nBit by bit the pieces fit."
@@ -490,14 +513,14 @@
     pw_wonder.1373.a: "Send the project plans to our researches."
 
     #Complete Pavilion of Wonders
-    pw_message_pavilion_of_wonders_complete: "$pw_pavilion_of_wonders$ has been constructed in $PLANET|Y$."
+    pw_message_pavilion_of_wonders_complete: "$pw_pavilion_of_wonders$ has been constructed on $PLANET|Y$."
     #First Time Complete Pavilion of Wonders (Regular Empire)
     pw_wonder.1401.name: "A Wonder for Wonders"
     pw_wonder.1401.desc: "Our culture has gained an important asset with the latest wonder constructed: The Pavilion of Wonders. Here is a place where all kinds of art can be exposed, analysed, discussed and experienced. Even the very definition of art is expected to be reviewed and rediscussed.\nPaintings, sculptures, plays, tapestry, photographs, movies, games, poems, culinary, music, literature, dances, clothing, perfumes, jewels and all else that our society deems to be art or that reflects some slice of culture can be shown here. However, the intend behind this Wonderful Pavilion is not to revel in art for its own sake, but to explore any societal effects developed from its creation. Many new exhibitions can be organized here, all with focused theme and political purpose that can be both great satisfaction for our population and important tools for our empire.\n\nArt is not a mirror held up to reality but a hammer with which to shape it."
     pw_wonder.1401.a: "And now the anvil is ready."
 
     #Complete Fair of Worlds
-    pw_message_fair_of_worlds_complete: "$pw_fair_of_worlds$ has been constructed in $PLANET|Y$."
+    pw_message_fair_of_worlds_complete: "$pw_fair_of_worlds$ has been constructed on $PLANET|Y$."
     #First Time Complete Fair of Worlds (Regular Empire)
     pw_wonder.1431.name: "A Fair for the Galaxy to See"
     pw_wonder.1431.desc: "Courage calls for courage everywhere, as we have just concluded turning a simple pavilion of arts into the heart of diversity and community: the Fair of Worlds. Here artists of the most remote species and alien cultures can come to not only expose their work, but show our welcoming population a silver of their values and traditions.\nWe can still carry out the same exhibitions we had in the Pavilion of Wonders, but now we will gather the myriad of ways in which foreign cultures interpret and express these themes."
@@ -509,7 +532,7 @@
     pw_wonder.1432.b: "We have no need for this."
 
     #Complete Museum of the Grotesque
-    pw_message_museum_of_the_grotesque_complete: "$pw_museum_of_the_grotesque$ has been constructed in $PLANET|Y$."
+    pw_message_museum_of_the_grotesque_complete: "$pw_museum_of_the_grotesque$ has been constructed on $PLANET|Y$."
     #First Time Complete Museum of the Grotesque (Regular Empire)
     pw_wonder.1461.name: "Culture at the Edge of a Cliff"
     pw_wonder.1461.desc: "Who should be afraid of degenerated art?\nEveryone.\n\nThe lack of moral expression, the mockery of our traditions and the influence of foreign movements, those will be the downfall of our culture. Thankfully the national heroes of our species have devised a counterblow to this unashamed degeneracy of our glorious art: The Museum of the Grotesque. This is not a place of contemplation of our values, this is a place where we put the most despicable pieces of the most deranged artists to be thoroughly rejected and hated by the visiting public. And hate is encouraged, by informing the exorbitant price each work would sell for in a galactic auction and tours detailing explicitly how our own art is and must always be superior."
@@ -522,7 +545,7 @@
     pw_wonder.1462.c: "We have no need for this."
 
     #Complete Holy Reliquary
-    pw_message_holy_reliquary_complete: "$pw_holy_reliquary$ has been constructed in $PLANET|Y$."
+    pw_message_holy_reliquary_complete: "$pw_holy_reliquary$ has been constructed on $PLANET|Y$."
     #First Time Complete Holy Reliquary (Regular Empire)
     pw_wonder.1501.name: "The Spirit of the Ages"
     pw_wonder.1501.desc: "The main form that our traditions are maintained and transmitted are trough the legends and myths present all along our History, told and retold on different social contexts they draw wisdom and inspiration from past events, wether they were true or not. Even with the recent construction of the $pw_building_holy_reliquary$, built to house the surviving relics - the protagonists of such stories - there are still many theologians that reject the notion of giving so much value to simple icons. They may be right, but there are many others who find power in these preserved relics and this feretory is for them.\n\nFrom the high priests, versed in the myths that found the existence of our relics, seeking the details they might have missed; to the curious inquirer, seeking reassurance in their faith and new ways of expressing it, the $pw_building_holy_reliquary$ welcomes all of the faithful. After all, faith is the sigh of the oppressed creature, the heart of a heartless galaxy, and the soul of the soulless condition."
@@ -530,7 +553,7 @@
     pw_wonder.1501.b: "We shouldn't rely on icons as much."
 
     #Complete Grand Archive
-    pw_message_grand_archive_complete: "$pw_grand_archive$ has been constructed in $PLANET|Y$."
+    pw_message_grand_archive_complete: "$pw_grand_archive$ has been constructed on $PLANET|Y$."
     #First Time Complete Grand Archive (Regular Empire)
     pw_wonder.1601.name: "First As Tragedy, Then As Farce"
     pw_wonder.1601.desc: "Only those who do not study History are surprised by it.\nAnd we must be ready for everything.\n\nThe wheels of History do not spin because some deity wills it or because of mysterious whims of a universe trying to balance itself. They move because of material rules of cause and consequence. And understanding the mechanism of such movement is the key to understanding the universe as a whole.\n\nThis is what $pw_building_grand_archive$ is conceived for: to hold a chronicle of the universe and of our empire within it, to provide a repository of anything and everything that could be of relevance to us, and to allow the study of transformation of the past - the cause - into the present - the consequence.\n\nWe would be fools to believe that these studies could allow us to predict the future. They can however describe our current condition and point to the best course of action for the future.\nAfter all, history is a soap opera reprising indefinitely."
@@ -546,7 +569,7 @@
     pw_wonder.1621.a: "The archive lives on."
 
     #Complete Transplanetary Logistics Network
-    pw_message_transplanetary_logistics_network_complete: "$pw_transplanetary_logistics_network$ has been constructed in $PLANET|Y$."
+    pw_message_transplanetary_logistics_network_complete: "$pw_transplanetary_logistics_network$ has been constructed on $PLANET|Y$."
     #First Time Complete Transplanetary Logistics Network (Regular Empire)
     pw_wonder.1701.name: "For We All Are Workers Too"
     pw_wonder.1701.desc: "It is solely because the hungry need food, energy or minerals, that they shall receive it. To satisfy the needs of the people, whatever they are, is reason enough to build such a complex system of transportation and distribution as the $pw_building_transplanetary_logistics_network$. This encompassing circuitry of tunnels, tubes, cables, pipes and airways destined to deliver goods, power, care and information shall provide our population with their requirements to live; to live beyond survival.\nThis presents an opportunity for communities and individuals to settle comfortably beyond the safety of our cities and for urban center to develop even further with no loss of comfort.\n\nThere is still so much work to be done in developing a truly egalitarian planetary infrastructure. But this is how we begin. This is how we pave the way to the future: no servants beneath, no masters above and every need accommodated."
@@ -602,7 +625,7 @@
     pw_wonder.1713.a: "Wonderful!"
 
     #Complete Forbidden City
-    pw_message_forbidden_city_complete: "$pw_forbidden_city$ has been constructed in $PLANET|Y$."
+    pw_message_forbidden_city_complete: "$pw_forbidden_city$ has been constructed on $PLANET|Y$."
     #First Time Complete Forbidden City (Regular Empire)
     pw_wonder.1801.name: "A Ruler Chooses, A Slave Obeys"
     pw_wonder.1801.desc: "There is nothing more catastrophic for an empire than the incompetence of the masses in power. To safeguard the importance of the institutions and maintain necessary control over the population a central hub of governance must be established and protected. However, such centralized administration is quickly corrupted by bad apples and lesser management, that lead to questions in authority and challenges to the hierarchy.\n\nThat is why we require the Forbidden City, a place where the rulers and the elite can live and work with upmost comfort without ever being bother by the unwashed public; where unscrupulous deal can be made without public unrest; where the manager is free of the burden of the managed. All protected by a wall as high as the enforcers can maintain.\n\nThere is still much infrastructure to be constructed in the City in order to establish it as the complete and centralized seat of power, but we have many workers ready to build it for us."
@@ -657,7 +680,7 @@
     pw_wonder.1811.a: "Wonderful!"
 
     #Complete Festival Plaza
-    pw_message_festival_plaza_complete: "$pw_festival_plaza$ has been constructed in $PLANET|Y$."
+    pw_message_festival_plaza_complete: "$pw_festival_plaza$ has been constructed on $PLANET|Y$."
     #First Time Complete Festival Plaza (Regular Empire)
     pw_wonder.1901.name: "The Joys of Peace"
     pw_wonder.1901.desc: "In barracks throughout the galaxy they teach young soldiers this ancient lesson: to die for your country and to live without reason. What they fail to see, however, is that war only begets more war, violence invariably leads to retaliation and true progress can only be found in times of peace, else we would be forever consumed by the fires of war.\n\nThis torn galaxy knows the price of war, no more of our denunciation will change their minds, it is clear that for them, the ends justify the means and they lust only for the benefits of this barbarism. The Festival Plaza comes to prove them wrong: to show them that peace is the only cause for celebration possible, the only path forward.\n\nHere we will be able to host planet-wide festivities and build up the a country-wide sentiment of stability that only plenitude and harmony can achieve. Much of this sentiment can crumble should war reach or doorsteps, but if we stick to the path of peace we can walk miles."
@@ -686,7 +709,7 @@
     pw_wonder.1930.c: "Forgo of politics in the speech, simply comfort people."
 
     #Complete Martial Avenue
-    pw_message_martial_avenue_complete: "$pw_martial_avenue$ has been constructed in $PLANET|Y$."
+    pw_message_martial_avenue_complete: "$pw_martial_avenue$ has been constructed on $PLANET|Y$."
     #First Time Complete Martial Avenue (Regular Empire)
     pw_wonder.2001.name: "The Joys of Peace"
     pw_wonder.2001.desc: "From the Compass of Chor, to the Terminal Egress, the [OWNER.GetAdj] army is the strongest of all. We can put mettle behind those words as we show our might in imperious military parades on the Martial Avenue. Let our tanks and troops take the streets of [THIS.GetName] and every other planet and show our population what defends them, and what they should support in future war efforts.\n\nThe Avenue servers two important purposes in the parades it will host: to instill a warring sentiment in our population, that shall increase the War Drive of the country and diminish the negative public consequences of future wars; while at the same time, our display of strength will establish our martial superiority over any who dares to bring conflict unto us. Beware, however, should we promise blood for our people and not deliver the one from our enemies, they shall seek it elsewhere."
@@ -723,21 +746,21 @@
     pw_wonder.2030.c: "Forgo of politics in the speech, simply comfort people."
 
     #Complete Living Spire 0
-    pw_message_living_spire_0_complete: "$pw_building_living_spire_0$ has been constructed in $PLANET|Y$. The construction may continue."
+    pw_message_living_spire_0_complete: "$pw_building_living_spire_0$ has been constructed on $PLANET|Y$. The construction may continue."
     #First Time Complete Living Spire 0 (Regular Empire)
     pw_wonder.2110.name: "A Strong Foundation"
     pw_wonder.2110.desc: "The first step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Every structure that aims to reach heights of this scale needs a solid foundation; and the ones we have built are the deepest and strongest we have ever planted. The alloy bones of the Spire will stand on the depths of [THIS.GetName] and support its skies.\n\nWith a strong base, we can now continue to build this Living Wonder."
     pw_wonder.2110.a: "Let the construction continue."
 
     #Complete Living Spire 1
-    pw_message_living_spire_1_complete: "$pw_building_living_spire_1$ has been constructed in $PLANET|Y$. The construction may continue."
+    pw_message_living_spire_1_complete: "$pw_building_living_spire_1$ has been constructed on $PLANET|Y$. The construction may continue."
     #First Time Complete Living Spire 1 (Regular Empire)
     pw_wonder.2111.name: "A Space for Life"
     pw_wonder.2111.desc: "The second step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Already many may call this massive - yet incomplete - structure their home. Rooms upon rooms, connected by vertical plazas, service corridors and supplied with the basic needs of modern life, can now house those who wish to come to live at the Spire.\n\nThere is much still to build, many services to be provided here and many lives to be made whole."
     pw_wonder.2111.a: "Let the construction continue."
 
     #Complete Living Spire 2
-    pw_message_living_spire_2_complete: "$pw_building_living_spire_2$ has been constructed in $PLANET|Y$. The construction may continue."
+    pw_message_living_spire_2_complete: "$pw_building_living_spire_2$ has been constructed on $PLANET|Y$. The construction may continue."
     #First Time Complete Living Spire 2 (Regular Empire)
     pw_wonder.2112.name: "A Place to Call Home"
     pw_wonder.2112.desc: "The third step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Work facilities have been constructed, everything that the inhabitants of the Spire need shall be provided to them: food and goods, sanitation, entertainment, education, culture, exercise, security and political power.\n\nNow only the final details remain to be added, the final spires and decoration needed to consolidate the image of the Living Spire."
@@ -772,7 +795,7 @@
 
 
     #Complete Living Spire 0
-    pw_message_conduit_of_unity_0_complete: "$pw_building_conduit_of_unity_0$ has been constructed in $PLANET|Y$. The construction may continue."
+    pw_message_conduit_of_unity_0_complete: "$pw_building_conduit_of_unity_0$ has been constructed on $PLANET|Y$. The construction may continue."
     #First Time Complete Living Spire 0 (Regular Empire)
     pw_wonder.2210.name: "A Strong Foundation"
     pw_wonder.2210.desc: "The first step in the construction of the $pw_conduit_of_unity$ has been achieved. Cohesion of a complex and evolving system such as our Gestalt requires a solid foundation and constant communication, and now we can provide the former. Soon we will be able to expand the capabilities of organizing ourselves in this planet beyond what was though possible.\n\nWith a strong base, we can now continue to build this Wonder of Cohesion."

@@ -58,6 +58,10 @@ on_building_upgraded = {
 		pw_wonder.2103 #Living Spire 3
 
 		pw_wonder.2201 #Conduit of Unity 1
+
+		pw_wonder.250 #Interdimensional Collider
+		pw_wonder.350 #Psionic Observatory
+		pw_wonder.450 #Metal Vivarium
 	}
 }
 

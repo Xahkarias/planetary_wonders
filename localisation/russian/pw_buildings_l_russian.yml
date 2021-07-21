@@ -20,7 +20,7 @@
     # Particle Supercollider
     pw_particle_supercollider: "§MParticle Supercollider§!"
     pw_building_particle_supercollider: "Particle Supercollider"
-    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensors with thousands of kilometers in diameter  that consume a considerable amount of power. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
+    pw_building_particle_supercollider_desc: "A huge circumference of cables, ducts and sensors with thousands of kilometers in diameter that consume a considerable amount of power. Here we can perform never observed particle acceleration and collisions and put the most wild theories on Field Manipulation in practice."
 
     # Domed City
     pw_domed_city: "§MDomed City§!"
@@ -172,3 +172,13 @@
     mod_planet_buildings_energy_upkeep_mult: "Energy Upkeep for Buildings"
 
     pw_building_space_elevator_plural: "Space Elevators"
+
+    pw_interdimensional_collider: "§MInterdimensional Collider§!"
+    pw_building_interdimensional_collider: "Interdimensional Collider"
+    pw_building_interdimensional_collider_desc: "A massive Particle Collider retrofitted for interdimensional experimentation and exploration, allowing us to puncture and weave reality in order to understand it."
+    pw_psionic_observatory: "§MPsionic Observatory§!"
+    pw_building_psionic_observatory: "Psionic Observatory"
+    pw_building_psionic_observatory_desc: "A city completely enclosed by a dome, with no contact with the outside world save for an enormous team of researches constantly observing, probing and testing the psionic population inside, whose power is constantly catalyzed by zro applications, breaching the barrier of science and faith."
+    pw_metal_vivarium: "§MMetal Vivarium§!"
+    pw_building_metal_vivarium: "Metal Vivarium"
+    pw_building_metal_vivarium_desc: "An abysmal crater turned into perfect testing grounds for Living Metal, because of the constant bombardment with exotic ordinance in past experiments; where industrial and military experiments with the substance can safely go out of control."

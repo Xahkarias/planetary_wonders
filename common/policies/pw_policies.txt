@@ -420,3 +420,170 @@ pw_policy_orbital_logistics = {
 		}
 	}
 }
+
+#Research Wonder Focus
+pw_policy_research_wonder_focus = {
+	potential = {
+		OR = {
+			has_technology = pw_tech_particle_supercollider_organization
+			has_technology = pw_tech_domed_city_organization
+			has_technology = pw_tech_abyssal_crater_test_site_organization
+		}
+	}
+
+	allow = {
+		any_owned_planet = {
+			OR = {
+				pw_planet_has_particle_supercollider = yes
+				pw_planet_has_domed_city = yes
+				pw_planet_has_abyssal_test_crater = yes
+			}
+		}
+	}
+
+	option = {
+		name =pw_policy_research_wonder_focus_unfocused
+
+		ai_weight = {
+			weight = 10
+		}
+	}
+
+	option = {
+		name = pw_policy_research_wonder_focus_physics
+
+		potential = {
+			any_owned_planet = {
+				pw_planet_has_particle_supercollider = yes
+			}
+		}
+
+		valid = {
+			has_technology = pw_tech_particle_supercollider_organization
+		}
+
+		modifier = {
+			country_physics_research_produces_mult = 0.10
+			country_society_research_produces_mult = -0.05
+			country_engineering_research_produces_mult = -0.05
+			planet_researchers_upkeep_mult = 0.05
+		}
+
+		ai_weight = {
+			weight = 5
+		}
+	}
+
+	option = {
+		name = pw_policy_research_wonder_focus_physics_extra
+
+		potential = {
+			any_owned_planet = {
+				has_active_building = pw_building_interdimensional_collider
+			}
+		}
+
+		modifier = {
+			country_physics_research_produces_mult = 0.15
+			country_society_research_produces_mult = -0.05
+			country_engineering_research_produces_mult = -0.05
+			planet_researchers_upkeep_mult = 0.10
+		}
+
+		ai_weight = {
+			weight = 5
+		}
+	}
+
+	option = {
+		name =pw_policy_research_wonder_focus_society
+
+		potential = {
+			any_owned_planet = {
+				pw_planet_has_domed_city = yes
+			}
+		}
+
+		valid = {
+			has_technology = pw_tech_domed_city_organization
+		}
+
+		modifier = {
+			country_society_research_produces_mult = 0.10
+			country_physics_research_produces_mult = -0.05
+			country_engineering_research_produces_mult = -0.05
+			planet_researchers_upkeep_mult = 0.05
+		}
+
+		ai_weight = {
+			weight = 5
+		}
+	}
+
+	option = {
+		name = pw_policy_research_wonder_focus_society_extra
+
+		potential = {
+			any_owned_planet = {
+				has_active_building = pw_building_psionic_observatory
+			}
+		}
+
+		modifier = {
+			country_society_research_produces_mult = 0.15
+			country_physics_research_produces_mult = -0.05
+			country_engineering_research_produces_mult = -0.05
+			planet_researchers_upkeep_mult = 0.10
+		}
+
+		ai_weight = {
+			weight = 5
+		}
+	}
+
+	option = {
+		name = pw_policy_research_wonder_focus_engineering
+
+		potential = {
+			any_owned_planet = {
+				pw_planet_has_abyssal_test_crater = yes
+			}
+		}
+
+		valid = {
+			has_technology = pw_tech_abyssal_crater_test_site_organization
+		}
+
+		modifier = {
+			country_engineering_research_produces_mult = 0.10
+			country_physics_research_produces_mult = -0.05
+			country_society_research_produces_mult = -0.05
+			planet_researchers_upkeep_mult = 0.05
+		}
+
+		ai_weight = {
+			weight = 5
+		}
+	}
+
+	option = {
+		name = pw_policy_research_wonder_focus_engineering_extra
+
+		potential = {
+			any_owned_planet = {
+				has_active_building = pw_building_metal_vivarium
+			}
+		}
+
+		modifier = {
+			country_engineering_research_produces_mult = 0.15
+			country_physics_research_produces_mult = -0.05
+			country_society_research_produces_mult = -0.05
+			planet_researchers_upkeep_mult = 0.10
+		}
+
+		ai_weight = {
+			weight = 5
+		}
+	}
+}

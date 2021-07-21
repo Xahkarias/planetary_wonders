@@ -3439,3 +3439,87 @@ pw_decision_living_spire_change_designation = {
 		weight = 0
 	}
 }
+
+pw_decision_release_sedative_gas = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			exotic_gases = 250
+		}
+	}
+
+	prerequisites = {
+		pw_tech_targeted_chemical_bliss
+	}
+
+	potential = {
+		has_technology = pw_tech_targeted_chemical_bliss
+	}
+
+	allow = {
+		NOT = { has_modifier = pw_mod_DC_targeted_chemical_bliss }
+		hidden_trigger = { NOT = { has_modifier = pw_mod_DC_targeted_chemical_bliss_gestalt }}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_gestalt = no }
+			}
+			add_modifier = {
+				modifier = pw_mod_DC_targeted_chemical_bliss
+				days = @pw_10years
+				clear_on_owner_change = yes
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = pw_mod_DC_targeted_chemical_bliss_gestalt
+				days = @pw_10years
+				clear_on_owner_change = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+pw_decision_living_metal_construction = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			sr_living_metal = 500
+		}
+	}
+
+	prerequisites = {
+		pw_tech_living_metal_districts
+	}
+
+	potential = {
+		has_technology = pw_tech_living_metal_districts
+		NOT = { has_modifier = pw_mod_abyssal_test_crater_living_metal_construction }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = pw_mod_abyssal_test_crater_living_metal_construction
+			clear_on_owner_change = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

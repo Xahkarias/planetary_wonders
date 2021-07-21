@@ -30,7 +30,15 @@
     pw_decision_SE_open_for_galactic_market: "Open Space Elevator for Galactic Market"
     pw_decision_SE_open_for_galactic_market_desc: "Open the local production for foreign investments of the Galactic Market, allowing us to select the guidelines that will be followed."
     pw_decision_SE_change_galactic_market_bonus: "Change Open Market Guidelines"
-    pw_decision_SE_change_galactic_market_bonus_desc: "Choose a new guideline that the Space Elevator will follow here regarding oppening the economy for the Galactic Market."
+    pw_decision_SE_change_galactic_market_bonus_desc: "Choose a new guideline that the Space Elevator will follow here regarding opening the economy for the Galactic Market."
+
+    #Unlocked via Domed City
+    pw_decision_release_sedative_gas: "Release Sedative Gas"
+    pw_decision_release_sedative_gas_desc: "Release a processed version of an exotic gases on the atmosphere, that has a calming and sedative effects on organics."
+
+    #Unlocked via Abyssal Crater Test Site
+    pw_decision_living_metal_construction: "Living Metal Expansion"
+    pw_decision_living_metal_construction_desc: "Employ Living Metal on the construction of new buildings and districts to allow our structures to serve multiple functions at once, increasing usable space."
 
     #Guardian Angel - Rebuild Flying Fortress
     pw_decision_rebuild_flying_fortress: "Rebuild Flying Fortress"

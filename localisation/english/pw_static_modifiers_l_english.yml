@@ -97,6 +97,9 @@
     pw_mod_space_elevator_open_market_local_content_requirements_gestalt: "Local Content Requirements"
     pw_mod_space_elevator_open_market_local_content_requirements_gestalt_desc: "Even with market access to the Space Elevator, the Gestalt favors its own technology in local production."
 
+    pw_mod_research_inspiration: "Research Inspiration"
+    pw_mod_research_inspiration_desc: "New developments of our science facilities have spawned a new wave of inspired researchers."
+
     #Particle Supercollider
     pw_mod_particle_supercollider_materialist: "$pw_building_particle_supercollider$: Veil of theory"
     pw_mod_particle_supercollider_materialist_desc: "The $pw_building_particle_supercollider$ is for all to explore the mysteries of space-time."
@@ -106,6 +109,10 @@
     pw_mod_particle_supercollider_research_in_use_desc: "The $pw_building_particle_supercollider$ and all of the physics research facilities of this planet are in use by a foreign empire and will not be employed in advancing our research."
     pw_mod_particle_supercollider_energy_surges: "Strange Energy Surges"
     pw_mod_particle_supercollider_energy_surges_desc: "After the visit of a theologian group to our $pw_building_particle_supercollider$, strange surges of power manifest randomly in this planet, damaging infrastructure in some cases. We can only hope they dissipate soon."
+    pw_mod_particle_supercollider_quantum_race_condition: "Quantum Race Conditions"
+    pw_mod_particle_supercollider_quantum_race_condition_desc: "The challenges of interdimensional computing causes constant desynchronizing of our system because of disparities in time-space processing."
+    pw_mod_particle_supercollider_reality_mapped: "Reality Mapped"
+    pw_mod_particle_supercollider_reality_mapped_desc: "Conclusion of a computational system to process interdimensional navigation allowed us to have holistic understanding of our material reality."
 
     #Domed City
     pw_mod_domed_city_egalitarian: "$pw_building_domed_city$: Volunteers"
@@ -121,6 +128,32 @@
     pw_mod_domed_city_transmitted_experiments_research: "Archived Social Experiment"
     pw_mod_domed_city_transmitted_experiments_research_desc: "Special effort is employed in archiving and tagging footage of the $pw_building_domed_city$, to help researchers confirm or disprove hypothesis."
 
+    pw_mod_domed_city_rule_from_consent: "Consensual Power"
+    pw_mod_domed_city_rule_from_consent_desc: "Our right to rule comes not from the structure of power, but from the people that entrusts us with such power."
+    pw_mod_domed_city_rule_from_coercion: "Might Makes Right"
+    pw_mod_domed_city_rule_from_coercion_desc: "Our right to rule comes from our ability to remain in power once it is conquered; kratocracy is the root of any system of power."
+    pw_mod_domed_city_rule_manufactured_consent: "Manufactured Consent"
+    pw_mod_domed_city_rule_manufactured_consent_desc: "Our right to rule is maintained by the clever fabrication of consent, and a little coercion when that fails."
+    pw_mod_domed_city_rule_gestalt: "Consensus of One"
+    pw_mod_domed_city_rule_gestalt_desc: "When the Gestalt wastes no time disagreeing so much more can be achieved."
+
+    pw_mod_domed_city_repairing_domed_city: "Repairing the $pw_building_domed_city$"
+    pw_mod_domed_city_repairing_domed_city_desc: "Recent experiments have destroyed a part of the $pw_building_domed_city$, it requires repair before work can be resumed."
+
+    pw_mod_domed_city_zro_fertility: "Zro Fertility"
+    pw_mod_domed_city_zro_fertility_desc: "Careful Zro applications can improve the fertility and early development of the population."
+    pw_mod_domed_city_zro_psionic_development: "Psionic Development"
+    pw_mod_domed_city_zro_psionic_development_desc: "Permissive usage of Zro, specially at earlier ages, can help our population develop their faculties much faster."
+    pw_mod_domed_city_zro_cloning: "Zro Cloning"
+    pw_mod_domed_city_zro_cloning_desc: "Applying Zro in our cloning process can increase the effectiveness and speed."
+    pw_mod_domed_city_zro_circuitry: "Zro Circuitry"
+    pw_mod_domed_city_zro_circuitry_desc: "Applying Zro in the circuitry of our matchings has interesting results."
+
+    pw_mod_DC_targeted_chemical_bliss: "Targeted Chemical Bliss"
+    pw_mod_DC_targeted_chemical_bliss_desc: "Careful release of a processed exotic gas in the atmosphere lifts the spirits of the population, sacrificing some production."
+    pw_mod_DC_targeted_chemical_bliss_gestalt: "Targeted Chemical Bliss"
+    pw_mod_DC_targeted_chemical_bliss_gestalt_desc: "Careful release of a processed exotic gas in drones workspace greatly increases cohesion."
+
     #Abyssal Test Crater
     pw_mod_abyssal_test_crater_pacifist: "$pw_building_abyssal_crater_test_site$: Defense in Mind"
     pw_mod_abyssal_test_crater_pacifist_desc: "The $pw_building_abyssal_crater_test_site$ tests many weapons of war, but they should only be employed in our defense from the dangers of the galaxy."
@@ -128,6 +161,11 @@
     pw_mod_abyssal_test_crater_militarist_desc: "The $pw_building_abyssal_crater_test_site$ will supply all of the military technologies we need to campaign over the galaxy."
     pw_mod_abyssal_test_crater_research_in_use: "$pw_building_abyssal_crater_test_site$ in use"
     pw_mod_abyssal_test_crater_research_in_use_desc: "The $pw_building_abyssal_crater_test_site$ and all of the engineering research facilities of this planet are in use by a foreign empire and will not be employed in advancing our research."
+
+    pw_mod_abyssal_test_crater_living_metal_construction: "Living Metal Construction"
+    pw_mod_abyssal_test_crater_living_metal_construction_desc: "Using Living Metal as construction material allows most of our buildings and districts to serve two functions at once, effectively increasing the space we have to build."
+    pw_mod_abyssal_test_crater_living_metal_plague: "Living Metal Plague"
+    pw_mod_abyssal_test_crater_living_metal_plague_desc: "Research on the $pw_building_abyssal_crater_test_site$ has been halted temporarily until researchers can combat some form of disease that plagues Living Metal."
 
     # Enigma Engines Event mods:
     pw_mod_enigma_engine_energy: "Enigmatic Taste"

@@ -828,6 +828,11 @@ planet_event = {
 					days = 30
 					random = 30
 				}
+				country_event = { #Experiments
+					id = pw_research.1100
+					days = @pw_1year
+					random = 30
+				}
 			}
 		}
 	}
@@ -892,10 +897,87 @@ planet_event = {
 					days = 30
 					random = 30
 				}
+				country_event = { #Experiments
+					id = pw_research.1100
+					days = @pw_1year
+					random = 30
+				}
 			}
 		}
 	}
 }
+
+# Interdimensional Collider -> id 250
+
+#On Interdimensional Collider built
+planet_event = {
+	id = pw_wonder.250
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_interdimensional_collider
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_interdimensional_collider_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.251 } #first time
+	}
+}
+
+#On first time Interdimensional Collider is built
+planet_event = {
+	id = pw_wonder.251
+	title = pw_wonder.251.name
+	desc = pw_wonder.251.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_interdimensional_collider_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_interdimensional_collider_built }
+	}
+
+	option = {
+		name = pw_wonder.251.a
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_research_inspiration }
+			}
+			add_modifier = {
+				modifier = pw_mod_research_inspiration
+				days = @pw_5years
+			}
+		}
+	}
+}
+
 
 # Domed City -> id 300
 
@@ -1028,6 +1110,11 @@ planet_event = {
 					id = pw_research.2010
 					days = 300
 				}
+				country_event = { #Experiments
+					id = pw_research.2100
+					days = @pw_1year
+					random = 30
+				}
 			}
 		}
 	}
@@ -1103,6 +1190,108 @@ planet_event = {
 					days = 30
 					random = 30
 				}
+				country_event = { #Experiments
+					id = pw_research.2100
+					days = @pw_1year
+					random = 30
+				}
+			}
+		}
+	}
+}
+
+# Psionic Observatory -> id 350
+
+#On Psionic Observatory built
+planet_event = {
+	id = pw_wonder.350
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_psionic_observatory
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_psionic_observatory_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.351 } #first time
+	}
+}
+
+#On first time Psionic Observatory is built
+planet_event = {
+	id = pw_wonder.351
+	title = pw_wonder.351.name
+	desc = pw_wonder.351.desc
+	picture = GFX_evt_pw_domed_city
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_psionic_observatory_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_psionic_observatory_built }
+	}
+
+	option = {
+		name = pw_wonder.351.a
+		trigger = {
+			exists = owner
+			owner = {
+				OR = {
+					is_spiritualist = yes
+					has_ascension_perk = ap_mind_over_matter
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_research_inspiration }
+			}
+			add_modifier = {
+				modifier = pw_mod_research_inspiration
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.351.b
+		trigger = {
+			exists = owner
+			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+		}
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_research_inspiration }
+			}
+			add_modifier = {
+				modifier = pw_mod_research_inspiration
+				days = @pw_5years
 			}
 		}
 	}
@@ -1234,6 +1423,11 @@ planet_event = {
 					days = 30
 					random = 30
 				}
+				country_event = { #Experiments
+					id = pw_research.3100
+					days = @pw_1year
+					random = 30
+				}
 			}
 		}
 	}
@@ -1309,10 +1503,87 @@ planet_event = {
 					days = 30
 					random = 30
 				}
+				country_event = { #Experiments
+					id = pw_research.3100
+					days = @pw_1year
+					random = 30
+				}
 			}
 		}
 	}
 }
+
+# Metal Vivarium -> id 450
+
+#On Metal Vivarium built
+planet_event = {
+	id = pw_wonder.450
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_metal_vivarium
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_metal_vivarium_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.451 } #first time
+	}
+}
+
+#On first time Metal Vivarium is built
+planet_event = {
+	id = pw_wonder.451
+	title = pw_wonder.451.name
+	desc = pw_wonder.451.desc
+	picture = GFX_evt_pw_abyssal_crater_test_site
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_metal_vivarium_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_metal_vivarium_built }
+	}
+
+	option = {
+		name = pw_wonder.451.a
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_research_inspiration }
+			}
+			add_modifier = {
+				modifier = pw_mod_research_inspiration
+				days = @pw_5years
+			}
+		}
+	}
+}
+
 
 # Erebus Project -> id 500
 

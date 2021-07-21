@@ -84,3 +84,28 @@
     pw_policy_orbital_logistics_production_supply_name: "Immediate Production Supply"
     pw_policy_orbital_logistics_production_supply_desc: "Improve the communication between the $pw_building_space_elevator$ infrastructure and production drones to guarantee supply upkeep in time and with fewer losses."
     pw_policy_orbital_logistics_production_supply_tooltip: "$pw_space_elevator$: §G-5%§! planet jobs upkeep."
+
+    #Policy: Research Focus
+    policy_pw_policy_research_wonder_focus: "Research Wonder Focus"
+    policy_pw_policy_research_wonder_focus_desc: "By dedicating more support and attention to a certain area of knowledge we can expand research in that area, while sacrificing advancements in other fields."
+
+    pw_policy_research_wonder_focus_unfocused: "Unfocused"
+    pw_policy_research_wonder_focus_unfocused_desc: "A single filed of science must not overshadow any other, progress is found in equilibrium."
+
+    pw_policy_research_wonder_focus_physics: "Physics Focus"
+    pw_policy_research_wonder_focus_physics_desc: "The $pw_building_particle_supercollider$ has brought forward many new physical problems, focus on this area is paramount to solve these mysteries of the universe."
+
+    pw_policy_research_wonder_focus_physics_extra: "Dimensional Physics Focus"
+    pw_policy_research_wonder_focus_physics_extra_desc: "The $pw_building_interdimensional_collider$ pushes event further the study of physics, incentive to pursue these studies are also further required."
+
+    pw_policy_research_wonder_focus_society: "Society Focus"
+    pw_policy_research_wonder_focus_society_desc: "The $pw_building_domed_city$ provides a novelty way to put to test social theories, focus on this area in needed to completely understand the most exotic social relations."
+
+    pw_policy_research_wonder_focus_society_extra: "Psionic Societal Focus"
+    pw_policy_research_wonder_focus_society_extra_desc: "The $pw_building_psionic_observatory$ gives our researchers a new way to look at societal problems, but that observation requires focus and additional resources."
+
+    pw_policy_research_wonder_focus_engineering: "Engineering Focus"
+    pw_policy_research_wonder_focus_engineering_desc: "Engineering needs to evolve with the times and requires focus to remain relevant, the $pw_building_abyssal_crater_test_site$ provides the perfect space to promote suc development."
+
+    pw_policy_research_wonder_focus_engineering_extra: "Moldable Engineering Focus"
+    pw_policy_research_wonder_focus_engineering_extra_desc: "The $pw_building_metal_vivarium$ provides our engineers with the most adaptable and flexible environment to develop new prototypes, but such space requires support and focus to achieve ts maximum efficiency"

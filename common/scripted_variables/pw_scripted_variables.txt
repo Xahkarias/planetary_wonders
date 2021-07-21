@@ -20,9 +20,10 @@
 @pw_panopticon_tech_cost = 15000
 
 #Research Wonders events Tech Cost
-@pw_research_tech_cost_1 = 50000 #Tier 1
-@pw_research_tech_cost_2 = 60000 #Tier 2
+@pw_research_tech_cost_1 = 40000 #Tier 1
+@pw_research_tech_cost_2 = 50000 #Tier 2
 @pw_research_tech_cost_3 = 75000 #Tier 3
+@pw_research_project_cost = 50000
 
 #Infrastructure (TLN & FC)
 @pw_tech_cost_infra = 42000
@@ -39,6 +40,7 @@
 
 #Resource Cost:
 @pw_building_cost = 10000 #Base build cost
+@pw_building_cost_upgrade = 15000 #Base build cost for upgrades (rare)
 @pw_building_cost_half = 5000
 @pw_building_cost_extra = 5000 #Additional build cost for additional wonder
 @pw_building_cost_extra_half = 2500
@@ -69,6 +71,7 @@
 
 #Modifiers production:
 @pw_building_research_mod = 0.15
+@pw_building_research_upgrade_mod = 0.10
 
 #Deposits
 @pw_deposits_upkeep_common = 2
