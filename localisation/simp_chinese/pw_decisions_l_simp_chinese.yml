@@ -227,3 +227,5 @@
     pw_decision_release_sedative_gas_desc: "Release a processed version of an exotic gases on the atmosphere, that has a calming and sedative effects on organics."
     pw_decision_living_metal_construction: "Living Metal Expansion"
     pw_decision_living_metal_construction_desc: "Employ Living Metal on the construction of new buildings and districts to allow our structures to serve multiple functions at once, increasing usable space."
+
+    pw_decision_SE_counterweight_habitat_tooltip: "Construct a Habitat orbiting this planet."

@@ -25,6 +25,7 @@
     pw_decision_SE_orbital_districts_desc: "Use the Space Elevator to provide proper infrastructure for the construction of orbital districts around this planet."
     pw_decision_SE_counterweight_habitat: "Create Counterweight Habitat"
     pw_decision_SE_counterweight_habitat_desc: "Expand the orbital districts of this planet by constructing an orbital habitat as the counterweight of the Space Elevator of this planet."
+    pw_decision_SE_counterweight_habitat_tooltip: "Construct a Habitat orbiting this planet."
 
     #Space Elevator open Galactic Market:
     pw_decision_SE_open_for_galactic_market: "Open Space Elevator for Galactic Market"

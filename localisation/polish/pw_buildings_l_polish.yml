@@ -182,3 +182,5 @@
     pw_metal_vivarium: "§MMetal Vivarium§!"
     pw_building_metal_vivarium: "Metal Vivarium"
     pw_building_metal_vivarium_desc: "An abysmal crater turned into perfect testing grounds for Living Metal, because of the constant bombardment with exotic ordinance in past experiments; where industrial and military experiments with the substance can safely go out of control."
+
+    mod_planet_synapse_drones_produces_mult: "Planet Synapse Drones Production"

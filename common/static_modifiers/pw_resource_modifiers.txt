@@ -46,7 +46,7 @@ pw_mod_extra_mining_district_max = {
 }
 
 pw_mod_extra_generator_district = {
-	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_mining_district.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_generator_district.dds"
 	icon_frame = @pw_icon_frame_green
 	district_generator_max = 1
 	district_mining_max = -1
@@ -55,7 +55,7 @@ pw_mod_extra_generator_district = {
 }
 
 pw_mod_extra_generator_district_extra = {
-	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_mining_district.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_generator_district.dds"
 	icon_frame = @pw_icon_frame_green
 	district_generator_max = 2
 	district_mining_max = -2
@@ -64,7 +64,7 @@ pw_mod_extra_generator_district_extra = {
 }
 
 pw_mod_extra_generator_district_max = {
-	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_mining_district.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_generator_district.dds"
 	icon_frame = @pw_icon_frame_green
 	district_generator_max = 4
 	district_mining_max = -4

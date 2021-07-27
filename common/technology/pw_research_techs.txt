@@ -53,8 +53,8 @@ pw_tech_nuclear_core_collision = {
 	}
 
 	modifier = {
-		starbases_energy_upkeep_mult = -0.10
-		ships_energy_upkeep_mult = -0.10
+		starbases_upkeep_mult = -0.10
+		ships_upkeep_mult = -0.05
 	}
 
 	ai_weight = {
@@ -300,7 +300,7 @@ pw_tech_fallen_empire_experiments_society = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 
@@ -332,7 +332,7 @@ pw_tech_extreme_habitation_studies = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 
@@ -364,7 +364,7 @@ pw_tech_crisis_management = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 
@@ -427,7 +427,7 @@ pw_tech_social_construction_fabrication = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 
@@ -460,7 +460,7 @@ pw_tech_military_social_values = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 
@@ -493,7 +493,7 @@ pw_tech_targeted_chemical_bliss = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 
@@ -520,7 +520,7 @@ pw_tech_mind_opening_substances = {
 
 	potential = {
 		any_owned_planet = {
-			has_active_building = pw_building_domed_city
+			pw_planet_has_domed_city = yes
 		}
 	}
 

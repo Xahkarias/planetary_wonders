@@ -122,7 +122,7 @@ pw_policy_modeling_focus = {
 			empire_size_districts_mult = -0.10
 			empire_size_pops_mult = -0.10
 			planet_districts_cost_mult = -0.10
-			starbase_outpost_influence_cost_mult = -0.10
+			country_starbase_influence_cost_mult = -0.10
 			planet_bureaucrats_upkeep_mult = 0.25
 		}
 
@@ -174,10 +174,6 @@ pw_policy_modeling_focus = {
 	option = {
 		name = pw_policy_modeling_focus_diplomatic_behavior_modeling
 
-		potential = {
-			is_gestalt = yes
-		}
-
 		modifier = {
 			diplomacy_upkeep_mult = -0.25
 			envoys_add = 1
@@ -192,10 +188,6 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_foreign_assets_support
-
-		potential = {
-			is_gestalt = yes
-		}
 
 		modifier = {
 			operations_cost_mult = -0.25
@@ -234,6 +226,10 @@ pw_policy_orbital_commerce = {
 			custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_commerce_interplanetary_customhouses }
 
 		ai_weight = {
@@ -248,6 +244,10 @@ pw_policy_orbital_commerce = {
 			custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_commerce_exotic_goods_importer }
 
 		ai_weight = {
@@ -259,6 +259,10 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_cultural_agencies
 
 		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
+		}
+
+		on_disabled = {
 			custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
 		}
 
@@ -280,6 +284,10 @@ pw_policy_orbital_commerce = {
 			custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_commerce_border_control }
 
 		ai_weight = {
@@ -294,6 +302,10 @@ pw_policy_orbital_commerce = {
 			custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_commerce_relocation_offices }
 
 		ai_weight = {
@@ -305,6 +317,10 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_migration_bureau
 
 		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
+		}
+
+		on_disabled = {
 			custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
 		}
 
@@ -326,6 +342,10 @@ pw_policy_orbital_commerce = {
 			custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_commerce_foreign_traders }
 
 		ai_weight = {
@@ -341,6 +361,10 @@ pw_policy_orbital_commerce = {
 		}
 
 		on_enabled = {
+			custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
+		}
+
+		on_disabled = {
 			custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
 		}
 
@@ -371,6 +395,10 @@ pw_policy_orbital_logistics = {
 			custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_logistics_drone_care }
 
 		ai_weight = {
@@ -382,6 +410,10 @@ pw_policy_orbital_logistics = {
 		name = pw_policy_orbital_logistics_drone_scan
 
 		on_enabled = {
+			custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
+		}
+
+		on_disabled = {
 			custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
 		}
 
@@ -399,6 +431,10 @@ pw_policy_orbital_logistics = {
 			custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
 		}
 
+		on_disabled = {
+			custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
+		}
+
 		policy_flags = { pw_policy_orbital_logistics_gestalt_pylon }
 
 		ai_weight = {
@@ -410,6 +446,10 @@ pw_policy_orbital_logistics = {
 		name = pw_policy_orbital_logistics_production_supply
 
 		on_enabled = {
+			custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
+		}
+
+		on_disabled = {
 			custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
 		}
 

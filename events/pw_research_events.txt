@@ -4,23 +4,11 @@ namespace = pw_research
 
 ##Particle Supercollider Events (1000 - 1999)
 
-#Spiritualist Empire requests Collider
+#Pre-event setup
 country_event = {
-	id = pw_research.1000
-	title = pw_research.1000.name
-	desc = pw_research.1000.desc
+	id = pw_research.999
 	is_triggered_only = yes
-	location = event_target:PWFallenEmpirePCPlanet
-	show_sound = diplomatic_notification
-	diplomatic = yes
-
-	picture_event_data = {
-		portrait = event_target:PWFallenEmpirePC
-		planet_background = event_target:PWFallenEmpirePC
-		graphical_culture = event_target:PWFallenEmpirePC
-		city_level = event_target:PWFallenEmpirePC
-		room = event_target:PWFallenEmpirePC.ruler
-	}
+	hide_window = yes
 
 	trigger = {
 		is_at_war = no
@@ -65,6 +53,29 @@ country_event = {
 			}
 			save_event_target_as = PWFallenEmpirePCPlanet
 		}
+		country_event = {
+			id = pw_research.1000
+		}
+	}
+
+}
+
+#Spiritualist Empire requests Collider
+country_event = {
+	id = pw_research.1000
+	title = pw_research.1000.name
+	desc = pw_research.1000.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpirePCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpirePC
+		planet_background = event_target:PWFallenEmpirePC
+		graphical_culture = event_target:PWFallenEmpirePC
+		city_level = event_target:PWFallenEmpirePC
+		room = event_target:PWFallenEmpirePC.ruler
 	}
 
 	#Let them
@@ -543,6 +554,15 @@ country_event = {
 	location = event_target:PWPCPlanet
 	show_sound = event_laboratory_sound
 
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_particle_supercollider = yes
+			}
+			save_event_target_as = PWPCPlanet
+		}
+	}
+
 	#Get the next tier
 	option = {
 		name = pw_research.1104.a
@@ -631,6 +651,15 @@ country_event = {
 	is_triggered_only = yes
 	location = event_target:PWPCPlanet
 	show_sound = event_encrypted_comms
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_particle_supercollider = yes
+			}
+			save_event_target_as = PWPCPlanet
+		}
+	}
 
 	#Get the next tier
 	option = {
@@ -724,7 +753,16 @@ country_event = {
 	show_sound = event_laboratory_sound
 
 	trigger = { NOT = { has_country_flag = pw_physics_experiment_done_9 }}
-	immediate = { set_country_flag = pw_physics_experiment_done_9 }
+	immediate = {
+		set_country_flag = pw_physics_experiment_done_9
+		set_country_flag = pw_particle_supercollider_experiments_started
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_particle_supercollider = yes
+			}
+			save_event_target_as = PWPCPlanet
+		}
+	}
 
 	#Get the tech
 	option = {
@@ -768,24 +806,11 @@ country_event = {
 
 ##Domed City Events (2000 - 2999)
 
-
-#Xenophile Empire requests Collider
+#Pre-event setup
 country_event = {
-	id = pw_research.2000
-	title = pw_research.2000.name
-	desc = pw_research.2000.desc
+	id = pw_research.1999
 	is_triggered_only = yes
-	location = event_target:PWFallenEmpireDCPlanet
-	show_sound = diplomatic_notification
-	diplomatic = yes
-
-	picture_event_data = {
-		portrait = event_target:PWFallenEmpireDC
-		planet_background = event_target:PWFallenEmpireDC
-		graphical_culture = event_target:PWFallenEmpireDC
-		city_level = event_target:PWFallenEmpireDC
-		room = event_target:PWFallenEmpireDC.ruler
-	}
+	hide_window = yes
 
 	trigger = {
 		is_at_war = no
@@ -830,6 +855,29 @@ country_event = {
 			}
 			save_event_target_as = PWFallenEmpireDCPlanet
 		}
+		country_event = {
+			id = pw_research.2000
+		}
+	}
+
+}
+
+#Xenophile Empire requests Collider
+country_event = {
+	id = pw_research.2000
+	title = pw_research.2000.name
+	desc = pw_research.2000.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireDCPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireDC
+		planet_background = event_target:PWFallenEmpireDC
+		graphical_culture = event_target:PWFallenEmpireDC
+		city_level = event_target:PWFallenEmpireDC
+		room = event_target:PWFallenEmpireDC.ruler
 	}
 
 	#Let them
@@ -1320,7 +1368,15 @@ country_event = {
 	show_sound = event_laboratory_sound
 
 	trigger = { NOT = { has_country_flag = pw_society_experiment_done_1 }}
-	immediate = { set_country_flag = pw_society_experiment_done_1 }
+	immediate = {
+		set_country_flag = pw_society_experiment_done_1
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_domed_city = yes
+			}
+			save_event_target_as = PWDCPlanet
+		}
+	}
 
 	#Pop dies
 	option = {
@@ -1400,6 +1456,15 @@ country_event = {
 	is_triggered_only = yes
 	location = event_target:PWDCPlanet
 	show_sound = event_laboratory_sound
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_domed_city = yes
+			}
+			save_event_target_as = PWDCPlanet
+		}
+	}
 
 	#Get the next tier
 	option = {
@@ -1546,6 +1611,15 @@ country_event = {
 	location = event_target:PWDCPlanet
 	show_sound = event_laboratory_sound
 
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_domed_city = yes
+			}
+			save_event_target_as = PWDCPlanet
+		}
+	}
+
 	#Get the next tier
 	option = {
 		name = pw_research.2114.a
@@ -1626,7 +1700,15 @@ country_event = {
 	show_sound = event_laboratory_sound
 
 	trigger = { NOT = { has_country_flag = pw_society_experiment_done_7 }}
-	immediate = { set_country_flag = pw_society_experiment_done_7 }
+	immediate = {
+		set_country_flag = pw_society_experiment_done_7
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_domed_city = yes
+			}
+			save_event_target_as = PWDCPlanet
+		}
+	}
 
 	#Get tech
 	option = {
@@ -1784,23 +1866,11 @@ country_event = {
 
 ##Abyssal Crater Test Site Events (3000 - 3999)
 
-#Materialist Empire requests Test Site
+#Pre-event setup
 country_event = {
-	id = pw_research.3000
-	title = pw_research.3000.name
-	desc = pw_research.3000.desc
+	id = pw_research.2999
 	is_triggered_only = yes
-	location = event_target:PWFallenEmpireACTSPlanet
-	show_sound = diplomatic_notification
-	diplomatic = yes
-
-	picture_event_data = {
-		portrait = event_target:PWFallenEmpireACTS
-		planet_background = event_target:PWFallenEmpireACTS
-		graphical_culture = event_target:PWFallenEmpireACTS
-		city_level = event_target:PWFallenEmpireACTS
-		room = event_target:PWFallenEmpireACTS.ruler
-	}
+	hide_window = yes
 
 	trigger = {
 		is_at_war = no
@@ -1845,6 +1915,29 @@ country_event = {
 			}
 			save_event_target_as = PWFallenEmpireACTSPlanet
 		}
+		country_event = {
+			id = pw_research.3000
+		}
+	}
+
+}
+
+#Materialist Empire requests Test Site
+country_event = {
+	id = pw_research.3000
+	title = pw_research.3000.name
+	desc = pw_research.3000.desc
+	is_triggered_only = yes
+	location = event_target:PWFallenEmpireACTSPlanet
+	show_sound = diplomatic_notification
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:PWFallenEmpireACTS
+		planet_background = event_target:PWFallenEmpireACTS
+		graphical_culture = event_target:PWFallenEmpireACTS
+		city_level = event_target:PWFallenEmpireACTS
+		room = event_target:PWFallenEmpireACTS.ruler
 	}
 
 	#Let them
@@ -2284,7 +2377,15 @@ country_event = {
 	show_sound = event_laboratory_sound
 
 	trigger = { NOT = { has_country_flag = pw_engineering_experiment_done_3 }}
-	immediate = { set_country_flag = pw_engineering_experiment_done_3 }
+	immediate = {
+		set_country_flag = pw_engineering_experiment_done_3
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_abyssal_test_crater = yes
+			}
+			save_event_target_as = PWACTSPlanet
+		}
+	}
 
 	#Devastation
 	option = {
@@ -2308,7 +2409,7 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = living_metal_found
 		}
-		event_target:PWDCPlanet = {
+		event_target:PWACTSPlanet = {
 			add_planet_devastation = 20
 		}
 		hidden_effect = {
@@ -2328,6 +2429,15 @@ country_event = {
 	is_triggered_only = yes
 	location = event_target:PWACTSPlanet
 	show_sound = event_laboratory_sound
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_abyssal_test_crater = yes
+			}
+			save_event_target_as = PWACTSPlanet
+		}
+	}
 
 	#Get the next tier
 	option = {
@@ -2429,6 +2539,15 @@ country_event = {
 	location = event_target:PWACTSPlanet
 	show_sound = event_laboratory_sound
 
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_abyssal_test_crater = yes
+			}
+			save_event_target_as = PWACTSPlanet
+		}
+	}
+
 	#Get the next tier
 	option = {
 		name = pw_research.3114.a
@@ -2476,7 +2595,15 @@ country_event = {
 	show_sound = event_laboratory_sound
 
 	trigger = { NOT = { has_country_flag = pw_engineering_experiment_done_8 }}
-	immediate = { set_country_flag = pw_engineering_experiment_done_8 }
+	immediate = {
+		set_country_flag = pw_engineering_experiment_done_8
+		random_owned_planet = {
+			limit = {
+				pw_planet_has_abyssal_test_crater = yes
+			}
+			save_event_target_as = PWACTSPlanet
+		}
+	}
 
 	#Apply modifier
 	option = {

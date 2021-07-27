@@ -82,7 +82,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.100
@@ -95,7 +95,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_mirror
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.105
@@ -118,7 +118,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.200
@@ -131,7 +131,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_scepter
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.205
@@ -154,7 +154,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.300
@@ -167,7 +167,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_coin
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.305
@@ -190,7 +190,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.400
@@ -203,7 +203,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_scale
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.405
@@ -226,7 +226,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.500
@@ -239,7 +239,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_sword
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.505
@@ -265,7 +265,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.600
@@ -278,7 +278,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_ring
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.605
@@ -301,7 +301,7 @@ country_event = {
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.700
@@ -314,7 +314,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_codex
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.705
@@ -329,7 +329,7 @@ country_event = {
 			NOT = { has_country_flag = pw_holy_reliquary_sanctified_throne }
 			has_valid_civic = civic_imperial_cult
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.850
@@ -342,7 +342,7 @@ country_event = {
 		trigger = {
 			has_country_flag = pw_holy_reliquary_sanctified_throne
 		}
-		custom_tooltip = pw_grand_archive.1.tooltip
+		custom_tooltip = pw_holy_reliquary.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = pw_holy_reliquary.855

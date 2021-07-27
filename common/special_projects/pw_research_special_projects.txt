@@ -39,7 +39,7 @@ special_project = {
 	tech_department = physics_technology
 	picture = GFX_evt_physics_research
 	icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_particle_supercollider_experiment_chain
 
@@ -71,7 +71,7 @@ special_project = {
 	tech_department = physics_technology
 	picture = GFX_evt_physics_research
 	icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_particle_supercollider_experiment_chain
 
@@ -104,7 +104,7 @@ special_project = {
 	tech_department = society_technology
 	picture = GFX_evt_society_research
 	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_domed_city_experiment_chain
 
@@ -136,7 +136,7 @@ special_project = {
 	tech_department = society_technology
 	picture = GFX_evt_society_research
 	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_domed_city_experiment_chain
 
@@ -168,7 +168,7 @@ special_project = {
 	tech_department = society_technology
 	picture = GFX_evt_society_research
 	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_domed_city_experiment_chain
 
@@ -201,7 +201,7 @@ special_project = {
 	tech_department = engineering_technology
 	picture = GFX_evt_engineering_research
 	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_abyssal_crater_test_Site_experiment_chain
 
@@ -233,7 +233,7 @@ special_project = {
 	tech_department = engineering_technology
 	picture = GFX_evt_engineering_research
 	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_abyssal_crater_test_Site_experiment_chain
 
@@ -265,7 +265,7 @@ special_project = {
 	tech_department = engineering_technology
 	picture = GFX_evt_engineering_research
 	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
-	event_scope = planet_event
+	event_scope = country_event
 
 	event_chain = pw_abyssal_crater_test_Site_experiment_chain
 

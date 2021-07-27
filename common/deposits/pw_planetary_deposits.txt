@@ -138,7 +138,7 @@ pw_d_SE_space_ramp = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { can_generate_trade_value = no }
+			owner = { NOT = { can_generate_trade_value = yes }}
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -162,7 +162,7 @@ pw_d_SE_space_ramp = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { can_generate_trade_value = no }
+			owner = { NOT = { can_generate_trade_value = yes }}
 			has_deposit = pw_d_SE_skyhook
 		}
 		modifier = {

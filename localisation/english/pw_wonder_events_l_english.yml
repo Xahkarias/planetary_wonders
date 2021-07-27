@@ -34,7 +34,7 @@
     pw_wonder.106.c: "There is not much we can do. Keep them in bureaucratic purgatory."
     #Kessler Effect
     pw_wonder.107.name: "Kessler Effect"
-    pw_wonder.107.desc: "The operation of the Space Elevator at [ROOT.GetName] has exacerbated the process of debris generation around the orbit of the planet beyond control of regular destruction. It has come to a point where new satellites can only operate for a few weeks before they need to be replace, accelerating even further the concentration of trash in orbit.\n\nSome measure must be taken now to avoid several years of hampered orbital travel and construction."
+    pw_wonder.107.desc: "The operation of the Space Elevator at [ROOT.GetName] has exacerbated the process of debris generation around the orbit of the planet beyond control of regular destruction. It has come to a point where new satellites can only operate for a few weeks before they need to be replaced, accelerating even further the concentration of trash in orbit.\n\nSome measure must be taken now to avoid several years of hampered orbital travel and construction."
     pw_wonder.107.a: "Do what it takes to clear the debris."
     pw_wonder.107.b: "There is nothing we can do."
     pw_wonder.107.c: "Invest in propaganda to clear it faster."
@@ -103,7 +103,7 @@
     pw_message_psionic_observatory_complete: "$pw_psionic_observatory$ has been constructed on $PLANET|Y$."
     #First Time Complete Psionic Observatory
     pw_wonder.351.name: "Mysteries of the Mind"
-    pw_wonder.351.desc: "The long experiment chain that was prepared for the $pw_building_domed_city$ has been completed, but the path to understanding social and individual relations is far from over. This new $pw_building_psionic_observatory$ will achieve much more than that, it will allow us to explore those relations infused and improved with the inexplicable effects of Zro. The substance can accelerate the development of subjects and communities within the Dome and also let us produce psionic anomalies in controlled spaces for study.\nThe potentials are truly boundless."
+    pw_wonder.351.desc: "The long experiment chain that was prepared for the $pw_building_domed_city$ has been completed, but the path to understanding social and individual relations is far from over. This new $pw_building_psionic_observatory$ will achieve much more than that, it will allow us to explore those relations infused and improved with the inexplicable effects of Zro. The substance can accelerate the development of subjects and communities within the Dome and also let us produce psionic anomalies in controlled spaces for study.\n\nThe potentials are truly boundless."
     pw_wonder.351.a: "Zro opens the doors of the mind, but we must cross them."
     pw_wonder.351.b: "We must recognize that its effects are undeniable."
 

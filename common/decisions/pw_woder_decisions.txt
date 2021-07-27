@@ -179,7 +179,7 @@ pw_decision_manage_land_repurposing = {
 
 	effect = {
 		if = {
-			limit = { is_ai = no }
+			limit = { owner = { is_ai = no }}
 			planet_event = { id = pw_wonder.750 }
 		}
 		else = {
@@ -598,7 +598,7 @@ pw_decision_SE_orbital_districts = {
 
 	allow = {
 		has_active_building = pw_building_space_elevator
-		has_moon = no
+		NOT = { has_moon = yes }
 	}
 
 	effect = {
@@ -699,7 +699,7 @@ pw_decision_SE_counterweight_habitat = {
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_3 }
 		NOT = { has_planet_flag = has_megastructure }
-		has_moon = no
+		NOT = { has_moon = yes }
 	}
 
 	allow = {
@@ -708,6 +708,7 @@ pw_decision_SE_counterweight_habitat = {
 	}
 
 	effect = {
+		custom_tooltip = pw_decision_SE_counterweight_habitat_tooltip
 		solar_system = {
 			spawn_megastructure = {
 				type = habitat_0
@@ -745,9 +746,11 @@ pw_decision_SE_counterweight_habitat = {
 		}
 		modifier = {
 			factor = 2
-			any_neighbor_system = {
-				exists = owner
-				is_same_value = owner.capital_scope.solar_system
+			solar_system = {
+				any_neighbor_system = {
+					exists = owner
+					is_same_value = owner.capital_scope.solar_system
+				}
 			}
 		}
 	}
@@ -755,7 +758,7 @@ pw_decision_SE_counterweight_habitat = {
 
 pw_decision_SE_open_for_galactic_market = {
 	owned_planets_only = yes
-	sound = evn_galactic_market_01
+	sound = sfx_event_galactic_community
 	enactment_time = 0
 	resources = {
 		category = decisions
@@ -791,10 +794,8 @@ pw_decision_SE_open_for_galactic_market = {
 		has_active_building = pw_building_space_elevator
 		owner = { OR = {
 			is_active_resolution = resolution_commerce_underdeveloped_system_utilization
-			hidden_trigger = {
-				is_active_resolution = resolution_commerce_holistic_asset_coordination
-				is_active_resolution = resolution_commerce_profit_maximization_engines
-			}
+			is_active_resolution = resolution_commerce_holistic_asset_coordination
+			is_active_resolution = resolution_commerce_profit_maximization_engines
 		}}
 	}
 
@@ -806,7 +807,7 @@ pw_decision_SE_open_for_galactic_market = {
 					NOT = { has_modifier = pw_mod_space_elevator_open_market }
 				}
 			}
-			add_modifier = { modifier = pw_mod_space_elevator_open_market }
+			owner = { add_modifier = { modifier = pw_mod_space_elevator_open_market }}
 		}
 		else_if = {
 			limit = {
@@ -815,10 +816,7 @@ pw_decision_SE_open_for_galactic_market = {
 					NOT = { has_modifier = pw_mod_space_elevator_open_market_gestalt }
 				}
 			}
-			add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }
-		}
-		hidden_effect = {
-			set_planet_flag = pw_SE_is_choosing_market_bonus
+			owner = { add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }}
 		}
 		planet_event = {
 			id = pw_wonder.130
@@ -836,8 +834,8 @@ pw_decision_SE_open_for_galactic_market = {
 		modifier = {
 			factor = 2
 			OR = {
-				is_megacorp = yes
-				has_valid_civic = civic_merchant_guilds
+				owner = { is_megacorp = yes }
+				owner = { has_valid_civic = civic_merchant_guilds }
 			}
 		}
 
@@ -850,7 +848,7 @@ pw_decision_SE_open_for_galactic_market = {
 
 pw_decision_SE_change_galactic_market_bonus = {
 	owned_planets_only = yes
-	sound = evn_galactic_market_01
+	sound = sfx_event_galactic_community
 	enactment_time = 0
 	resources = {
 		category = decisions
@@ -884,10 +882,8 @@ pw_decision_SE_change_galactic_market_bonus = {
 		has_active_building = pw_building_space_elevator
 		owner = { OR = {
 			is_active_resolution = resolution_commerce_underdeveloped_system_utilization
-			hidden_trigger = {
-				is_active_resolution = resolution_commerce_holistic_asset_coordination
-				is_active_resolution = resolution_commerce_profit_maximization_engines
-			}
+			is_active_resolution = resolution_commerce_holistic_asset_coordination
+			is_active_resolution = resolution_commerce_profit_maximization_engines
 		}}
 	}
 
@@ -899,7 +895,7 @@ pw_decision_SE_change_galactic_market_bonus = {
 					NOT = { has_modifier = pw_mod_space_elevator_open_market }
 				}
 			}
-			add_modifier = { modifier = pw_mod_space_elevator_open_market }
+			owner = { add_modifier = { modifier = pw_mod_space_elevator_open_market }}
 		}
 		else_if = {
 			limit = {
@@ -908,13 +904,10 @@ pw_decision_SE_change_galactic_market_bonus = {
 					NOT = { has_modifier = pw_mod_space_elevator_open_market_gestalt }
 				}
 			}
-			add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }
+			owner = { add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }}
 		}
 		planet_event = {
 			id = pw_wonder.130
-		}
-		hidden_effect = {
-			set_planet_flag = pw_SE_is_choosing_market_bonus
 		}
 	}
 
@@ -3457,7 +3450,7 @@ pw_decision_release_sedative_gas = {
 	}
 
 	potential = {
-		has_technology = pw_tech_targeted_chemical_bliss
+		owner = { has_technology = pw_tech_targeted_chemical_bliss }
 	}
 
 	allow = {
@@ -3508,7 +3501,7 @@ pw_decision_living_metal_construction = {
 	}
 
 	potential = {
-		has_technology = pw_tech_living_metal_districts
+		owner = { has_technology = pw_tech_living_metal_districts }
 		NOT = { has_modifier = pw_mod_abyssal_test_crater_living_metal_construction }
 	}
 

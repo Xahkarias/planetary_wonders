@@ -1360,3 +1360,47 @@ pw_remove_land_repurposing_modifiers = {
 		remove_modifier = pw_mod_extra_farming_district_max
 	}
 }
+
+#Remove SE Galactic Market modifiers
+pw_remove_galactic_market_modifiers = {
+	if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_free_assets_concession }
+		remove_modifier = pw_mod_space_elevator_open_market_free_assets_concession
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_free_assets_concession_gestalt }
+		remove_modifier = pw_mod_space_elevator_open_market_free_assets_concession_gestalt
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism }
+		remove_modifier = pw_mod_space_elevator_open_market_industrial_protectionism
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism_gestalt }
+		remove_modifier = pw_mod_space_elevator_open_market_industrial_protectionism_gestalt
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_intergalactic_unions }
+		remove_modifier = pw_mod_space_elevator_open_market_intergalactic_unions
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_intergalactic_unions_gestalt }
+		remove_modifier = pw_mod_space_elevator_open_market_intergalactic_unions_gestalt
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides }
+		remove_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides_gestalt }
+		remove_modifier = pw_mod_space_elevator_open_market_local_extraction_subsides_gestalt
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_local_content_requirements }
+		remove_modifier = pw_mod_space_elevator_open_market_local_content_requirements
+	}
+	else_if = {
+		limit = { has_modifier = pw_mod_space_elevator_open_market_local_content_requirements_gestalt }
+		remove_modifier = pw_mod_space_elevator_open_market_local_content_requirements_gestalt
+	}
+}

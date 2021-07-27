@@ -30,11 +30,11 @@
     pw_tech_space_elevator_intergalactic_assets_concession: "Intergalactic Assets Concession"
     pw_tech_space_elevator_intergalactic_assets_concession_desc: "The perfect vicious cycle: foreign debt and foreign investments oblige us to multiply exports that they themselves devour."
 
-    pw_tech_space_elevator_orbital_districts: "Orbital Districts"
+    pw_tech_space_elevator_orbital_districts: "$pw_space_elevator$ - Orbital Districts"
     pw_tech_space_elevator_orbital_districts_desc: "It is only natural to cut the middle man of the Space Elevator and establishing infrastructure at the top of the elevator."
-    pw_tech_space_elevator_moon_colony_expansion: "Moon Colony Expansion"
+    pw_tech_space_elevator_moon_colony_expansion: "$pw_space_elevator$ - Moon Colony Expansion"
     pw_tech_space_elevator_moon_colony_expansion_desc: "If we could already settle on barrens worlds, with the help of the Space Elevator we can establish a thriving colony on any moon orbiting a planet housing the wonder."
-    pw_tech_space_elevator_counterweight_habitat: "Counterweight Habitat"
+    pw_tech_space_elevator_counterweight_habitat: "$pw_space_elevator$ - Counterweight Habitat"
     pw_tech_space_elevator_counterweight_habitat_desc: "Historically we have used alloys and mineral as counterweight to sustain the tip of the Space elevator in orbit, but what if we were to utilize that spot for habitation support? There would be no lack of goods and infrastructure to support this endeavour."
 
     # Particle Supercollider:
@@ -115,7 +115,7 @@
     pw_tech_panopticon_prisoner_subjects_tooltip: "$pw_panopticon$: Adds §G+1§! Researcher Job."
     pw_tech_panopticon_racialized_sentencing: "$pw_panopticon$: Racialized Sentencing"
     pw_tech_panopticon_racialized_sentencing_desc: "Even if not outright banned, manipulation of laws and sentences can make alien cultural practices legally impossible."
-    pw_tech_panopticon_galpol_detention_center: "Galpol $pw_panopticon$: Detention Center"
+    pw_tech_panopticon_galpol_detention_center: "$pw_panopticon$: Galpol Detention Center"
     pw_tech_panopticon_galpol_detention_center_desc: "Even if the Galactic Police is not officially formed, we can prepare the Panopticon to house intergalactic criminals and conduct any required legal processes."
 
     # Enigma Engine:
