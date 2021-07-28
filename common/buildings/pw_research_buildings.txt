@@ -469,7 +469,7 @@ pw_building_interdimensional_collider = {
 		cost = {
 			trigger = {
 				planet = {
-					pw_has_any_planetary_wonder = yes
+					pw_has_any_additional_planetary_wonder = yes
 				}
 			}
 			minerals = @pw_building_cost_extra
@@ -693,8 +693,8 @@ pw_building_interdimensional_collider = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_active_building = pw_building_particle_supercollider }
-			NOT = { has_building_construction = pw_building_particle_supercollider }
+			NOT = { has_active_building = pw_building_interdimensional_collider }
+			NOT = { has_building_construction = pw_building_interdimensional_collider }
 		}
 		modifier = {
 			factor = 2
@@ -1662,7 +1662,7 @@ pw_building_psionic_observatory = {
 		cost = {
 			trigger = {
 				planet = {
-					pw_has_any_planetary_wonder = yes
+					pw_has_any_additional_planetary_wonder = yes
 				}
 			}
 			minerals = @pw_building_cost_extra
@@ -1905,8 +1905,8 @@ pw_building_psionic_observatory = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_active_building = pw_building_secluded_sector }
-			NOT = { has_building_construction = pw_building_secluded_sector }
+			NOT = { has_active_building = pw_building_psionic_observatory }
+			NOT = { has_building_construction = pw_building_psionic_observatory }
 		}
 		modifier = {
 			factor = 2
@@ -2836,7 +2836,7 @@ pw_building_metal_vivarium = {
 		cost = {
 			trigger = {
 				planet = {
-					pw_has_any_planetary_wonder = yes
+					pw_has_any_additional_planetary_wonder = yes
 				}
 			}
 			minerals = @pw_building_cost_extra
@@ -3060,8 +3060,8 @@ pw_building_metal_vivarium = {
 			factor = 0.25
 			pw_has_any_planetary_wonder = yes
 			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
-			NOT = { has_active_building = pw_building_abyssal_crater_test_site }
-			NOT = { has_building_construction = pw_building_abyssal_crater_test_site }
+			NOT = { has_active_building = pw_building_metal_vivarium }
+			NOT = { has_building_construction = pw_building_metal_vivarium }
 		}
 		modifier = {
 			factor = 2

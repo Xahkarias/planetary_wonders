@@ -40,6 +40,8 @@ pw_has_any_planetary_wonder = {
 		has_building_construction = pw_building_solipsist_debate_hall
 		has_building = pw_building_guardian_angel
 		has_building_construction = pw_building_guardian_angel
+		has_building = pw_building_stellar_sentinel
+		has_building_construction = pw_building_stellar_sentinel
 		has_building = pw_building_mantle_crucible
 		has_building_construction = pw_building_mantle_crucible
 		has_building = pw_building_titan_forge
@@ -103,6 +105,7 @@ pw_has_any_additional_planetary_wonder = {
 		has_building = pw_building_enigma_engine
 		has_building = pw_building_solipsist_debate_hall
 		has_building = pw_building_guardian_angel
+		has_building = pw_building_stellar_sentinel
 		has_building = pw_building_mantle_crucible
 		has_building = pw_building_titan_forge
 		has_building = pw_building_industrial_hearth
@@ -142,6 +145,7 @@ pw_has_build_any_planetary_wonder = {
 		has_country_flag = pw_enigma_engine_built
 		has_country_flag = pw_solipsist_debate_hall_built
 		has_country_flag = pw_guardian_angel_built
+		has_country_flag = pw_stellar_sentinel_built
 		has_country_flag = pw_mantle_crucible_built
 		has_country_flag = pw_titan_forge_built
 		has_country_flag = pw_industrial_hearth_built
@@ -167,6 +171,27 @@ pw_is_wonder_empire_unique = {
 	custom_tooltip = {
 		fail_text = pw_empire_unique_tooltip
 		owner = {
+			count_owned_planet = {
+				count = all #Every owned planet
+				limit = {
+					OR = {
+						is_planet = ROOT #Ignores the triggering planet so it does not mess up upgrades.
+						NOR = { #Cannot have or be constructing this wonder
+							has_building = $WONDER$
+							has_building_construction = $WONDER$
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Scope: Planet
+pw_is_wonder_sector_unique = {
+	custom_tooltip = {
+		fail_text = pw_sector_unique_tooltip
+		sector = {
 			count_owned_planet = {
 				count = all #Every owned planet
 				limit = {

@@ -264,7 +264,10 @@ pw_d_guardian_angel_training = {
 		potential = {
 			exists = owner
 			owner = { is_at_war = no }
-			has_active_building = pw_building_guardian_angel
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
 		}
 		modifier = {
 			planet_army_build_speed_mult = 0.25
@@ -320,7 +323,10 @@ pw_d_guardian_angel_tourist_attraction = {
 		potential = {
 			exists = owner
 			owner = { is_at_war = no }
-			has_active_building = pw_building_guardian_angel
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
 		}
 		modifier = {
 			trade_value_add = 20

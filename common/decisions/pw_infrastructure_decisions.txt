@@ -811,7 +811,10 @@ pw_decision_tls_infrastructure_emergency_4 = {
 			has_active_building = pw_building_transplanetary_logistics_network
 			has_active_building = pw_building_transhabitat_logistics_network
 		}
-		has_active_building = pw_building_guardian_angel
+		OR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
 	}
 
 	effect = {
@@ -3017,7 +3020,10 @@ pw_decision_fc_infrastructure_emergency_4 = {
 
 	allow = {
 		has_active_building = pw_building_forbidden_city
-		has_active_building = pw_building_guardian_angel
+		OR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
 	}
 
 	effect = {

@@ -184,3 +184,10 @@
     pw_building_metal_vivarium_desc: "An abysmal crater turned into perfect testing grounds for Living Metal, because of the constant bombardment with exotic ordinance in past experiments; where industrial and military experiments with the substance can safely go out of control."
 
     mod_planet_synapse_drones_produces_mult: "Planet Synapse Drones Production"
+
+    pw_sector_unique: "§SSector Unique§!"
+    pw_sector_unique_lb: "§SSector Unique§!\n"
+    pw_sector_unique_tooltip: "£trigger_no£ §ROnly one allowed in this sector.§!"
+    pw_stellar_sentinel: "§MStellar Sentinel§!"
+    pw_building_stellar_sentinel: "Stellar Sentinel"
+    pw_building_stellar_sentinel_desc: "Our floating bastion launched to the lower atmosphere, in eternal vigilance. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform and ship coordination center."

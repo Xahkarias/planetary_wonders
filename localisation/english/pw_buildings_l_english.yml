@@ -9,6 +9,10 @@
     pw_empire_unique_lb: "§SEmpire Unique§!\n"
     pw_empire_unique_tooltip: "£trigger_no£ §ROnly one allowed in the empire.§!"
 
+    pw_sector_unique: "§SSector Unique§!"
+    pw_sector_unique_lb: "§SSector Unique§!\n"
+    pw_sector_unique_tooltip: "£trigger_no£ §ROnly one allowed in this sector.§!"
+
     #Tooltips:
     pw_planet_wonder_limit_warning: "§YNotice:§! Planets can only support a single $pw_planet_wonder$ of any type."
     pw_planet_wonder_limit: "£trigger_no£ §R[This.Planet.GetName] already has another $pw_planet_wonder$.§!"
@@ -35,6 +39,10 @@
     pw_building_guardian_angel: "Guardian Angel"
     pw_building_guardian_angel_desc: "A floating bastion that watches over our cities. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform. When out of conflict it provides training drills for our recruits."
     pw_guardian_angel_tooltip: "§SCreates a Flying Fortress army to defend the planet.§!\n"
+    # Stellar Sentinel
+    pw_stellar_sentinel: "§MStellar Sentinel§!"
+    pw_building_stellar_sentinel: "Stellar Sentinel"
+    pw_building_stellar_sentinel_desc: "Our floating bastion launched to the lower atmosphere, in eternal vigilance. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform and ship coordination center."
 
     # Transplanetary Logistics Network
     pw_transplanetary_logistics_network: "§MTransplanetary Logistics Network§!"

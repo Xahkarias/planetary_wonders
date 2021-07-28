@@ -640,3 +640,8 @@
     pw_wonder.451.name: "Liquid Modernity"
     pw_wonder.451.desc: "The long experiment chain that was prepared for the $pw_building_abyssal_crater_test_site$ has been completed, but the path of developing revolutions of industrial production and void construction is far from over. This new $pw_metal_vivarium$ will achieve much more than that. It will allow us to grow, tame and model Living Metal to our will and apply this control into meta-experiments, using the properties of the substance not only on our projects but as reliable test control.\n\nThis is engineering adapted to the new era: a revolution of the industry."
     pw_wonder.451.a: "The shape of our future lies on our hands."
+
+    pw_message_stellar_sentinel_complete: "$pw_stellar_sentinel$ has been constructed on $PLANET|Y$."
+    pw_wonder.1251.name: "Who Guards the Guardians?"
+    pw_wonder.1251.desc: "It is from their foes, not their friends, that planets learn the lesson of building mighty fortresses. We have learned such lessons too well.\n\nUpgraded and improved, the Guardian Angel of old takes its flight to the lower atmosphere, where it can coordinate defenses and attack. With communications established with the system's starbase we connect planetary and naval commands in synchrony. Our Angel rises, known as The $pw_building_stellar_sentinel$.\n\nGarrisons stand ready, ships warm their engines and we allow ourselves to feel a little safer."
+    pw_wonder.1251.a: "We tip the scales back away from the dark abyss."

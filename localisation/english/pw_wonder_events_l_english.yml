@@ -387,6 +387,13 @@
     pw_wonder.1208.name: "No More Angels"
     pw_wonder.1208.desc: "Without the support of the Guardian Angel, the functions it performed during peace times on [THIS.GetName] can no longer be supported and the services will be dismantled. We can come back to promote them again, if we rebuild the Guardian Angel."
 
+    #Complete Stellar Sentinel
+    pw_message_stellar_sentinel_complete: "$pw_stellar_sentinel$ has been constructed on $PLANET|Y$."
+    #First Time Complete Guardian Angel (Regular Empire)
+    pw_wonder.1251.name: "Who Guards the Guardians?"
+    pw_wonder.1251.desc: "It is from their foes, not their friends, that planets learn the lesson of building mighty fortresses. We have learned such lessons too well.\n\nUpgraded and improved, the Guardian Angel of old takes its flight to the lower atmosphere, where it can coordinate defenses and attack. With communications established with the system's starbase we connect planetary and naval commands in synchrony. Our Angel rises, known as The $pw_building_stellar_sentinel$.\n\nGarrisons stand ready, ships warm their engines and we allow ourselves to feel a little safer."
+    pw_wonder.1251.a: "We tip the scales back away from the dark abyss."
+
     #Complete Mantle Crucible
     pw_message_mantle_crucible_complete: "$pw_mantle_crucible$ has been constructed on $PLANET|Y$."
     #First Time Complete Mantle Crucible (Regular Empire)

@@ -2697,7 +2697,10 @@ country_event = {
 			}
 			#Guardian Angel
 			any_owned_planet = {
-				has_active_building = pw_building_guardian_angel
+				OR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
 			}
 		}
 
@@ -2733,7 +2736,10 @@ country_event = {
 			#Guardian Angel
 			random_owned_planet = {
 				limit = {
-					has_active_building = pw_building_guardian_angel
+					OR = {
+						has_active_building = pw_building_guardian_angel
+						has_active_building = pw_building_stellar_sentinel
+					}
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_GUARDIAN_ANGEL
@@ -2759,7 +2765,10 @@ country_event = {
 				}
 				#Guardian Angel
 				any_owned_planet = {
-					has_active_building = pw_building_guardian_angel
+					OR = {
+						has_active_building = pw_building_guardian_angel
+						has_active_building = pw_building_stellar_sentinel
+					}
 				}
 			}
 		}

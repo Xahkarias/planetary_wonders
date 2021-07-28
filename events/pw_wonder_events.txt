@@ -4704,7 +4704,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_active_building = pw_building_guardian_angel
+		OR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
 		NOT = {
 			any_planet_army = {
 				army_type = pw_army_flying_fortress
@@ -4733,7 +4736,10 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = { #Doesn't have the Guardian Angel building
-				NOT = { has_active_building = pw_building_guardian_angel }
+				NOR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
 				OR = {
 					any_planet_army = { #Has the Flying Fortress
 						army_type = pw_army_flying_fortress
@@ -4771,7 +4777,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = { has_active_building = pw_building_guardian_angel }
+		NOR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
 		any_planet_army = {
 			army_type = pw_army_flying_fortress
 		}
@@ -4864,7 +4873,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		NOT = { has_active_building = pw_building_guardian_angel }
+		NOR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
 		OR = {
 			has_deposit = pw_d_guardian_angel_training
 			has_deposit = pw_d_guardian_angel_police_operations
@@ -4886,6 +4898,59 @@ planet_event = {
 			limit = { has_deposit = pw_d_guardian_angel_tourist_attraction }
 			remove_deposit = pw_d_guardian_angel_tourist_attraction
 		}
+	}
+}
+
+# Stellar Sentinel -> id 1250
+
+#On Stellar Sentinel built
+planet_event = {
+	id = pw_wonder.1250
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_stellar_sentinel_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.1251 } #Regular first time
+	}
+}
+
+#On first time Stellar Sentinel is built
+planet_event = {
+	id = pw_wonder.1251
+	title = pw_wonder.1251.name
+	desc = pw_wonder.1251.desc
+	picture = GFX_evt_landing_ship_2
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_stellar_sentinel_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_stellar_sentinel_built }
+	}
+
+	option = {
+		name = pw_wonder.1251.a
 	}
 }
 

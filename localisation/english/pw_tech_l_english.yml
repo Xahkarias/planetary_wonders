@@ -132,6 +132,9 @@
     # Guardian Angel:
     pw_tech_guardian_angel: "Guardian Angel"
     pw_tech_guardian_angel_desc: "Space is full of threats, whether provoked or not, and for that we must upgrade our last lines of defense: our planets. New anti-gravity propulsion shall keep our greatest guardian in the skies of every one of our cities. We shall be protected from bombardment or invasion."
+    # Stellar Sentinel:
+    pw_tech_stellar_sentinel: "Stellar Sentinel"
+    pw_tech_stellar_sentinel_desc: "When the protection of our Guardian is not enough, we will take it to the stars and watch over us from threats before they land."
 
     # Mantle Crucible:
     pw_tech_planetary_mantle_production: "Planetary Mantle Production"

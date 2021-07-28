@@ -48,6 +48,7 @@
 
 @pw_building_cost_advanced = 1000 #Alloys in some cases
 @pw_building_cost_rare = 500 #Rare resources cost
+@pw_building_cost_rare_upgrade = 700 #Rare resources cost
 @pw_building_cost_minor_artifact = 10 #Minos Artifacts
 @pw_building_cost_rare_half = 250 #Specialization cost
 

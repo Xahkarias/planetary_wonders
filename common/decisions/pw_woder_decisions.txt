@@ -933,7 +933,10 @@ pw_decision_rebuild_flying_fortress = {
 	}
 
 	potential = {
-		has_active_building = pw_building_guardian_angel
+		OR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
 		NOT = {
 			any_planet_army = {
 				army_type = pw_army_flying_fortress
