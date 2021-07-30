@@ -191,3 +191,13 @@
     pw_stellar_sentinel: "§MStellar Sentinel§!"
     pw_building_stellar_sentinel: "Stellar Sentinel"
     pw_building_stellar_sentinel_desc: "Our floating bastion launched to the lower atmosphere, in eternal vigilance. Equipped with anti-gravity propulsion engines, anti-orbital counter-battery fire and aircraft hangars for rapid army deployment this is the ultimate planetary defense platform and ship coordination center."
+
+    pw_erebus_fracking_plant: "§MErebus Fracking Plant§!"
+    pw_building_erebus_fracking_plant: "Erebus Fracking Plant"
+    pw_building_erebus_fracking_plant_desc: "A complex network of tunnels, miners and extractors that spreads across all of the planets subterrane, extracted minerals and chemicals are converted into usable motes, that in turn are used to delve deeper."
+    pw_helios_translucent_obelisk: "§MHelios Translucent Obelisk§!"
+    pw_building_helios_translucent_obelisk: "Helios Translucent Obelisk"
+    pw_building_helios_translucent_obelisk_desc: "A hemisphere crater filled with a moving array of crystalline mirrors, all directing the energy from this star to a central generator tower, where it is manipulated and its energy is used to realign more rare crystals."
+    pw_demetrius_chemical_garden: "§MDemetrius Chemical Garden§!"
+    pw_building_demetrius_chemical_garden: "Demetrius Chemical Garden"
+    pw_building_demetrius_chemical_garden_desc: "An entire artificial environment with controlled climate and regulated food chains design to extract the most varied of substances. Where exotic gases are used to boost production and are distilled in adjacent refineries, from organic byproducts."

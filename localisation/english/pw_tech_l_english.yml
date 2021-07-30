@@ -52,14 +52,23 @@
     # Erebus project:
     pw_tech_erebus_project: "Erebus project"
     pw_tech_erebus_project_desc: "An entire subterrane mining network.\nThe mineral are down there, we just need to go get them."
+    #Upgrade: Fracking Plant
+    pw_tech_erebus_fracking_plant: "Erebus Fracking project"
+    pw_tech_erebus_fracking_plant_desc: "Not stone shall be left unturned.\nNo mote shall be left unstable."
 
     # Helios Tower:
     pw_tech_helios_tower: "Helios Tower"
     pw_tech_helios_tower_desc: "A central generator tower surrounded with fields of mirror arrays all redirecting solar power towards to the pinnacle.\nMaybe we should encompass a star next."
+    #Upgrade: Translucent Obelisk
+    pw_tech_helios_translucent_obelisk: "Helios Translucent Obelisk"
+    pw_tech_helios_translucent_obelisk_desc: "Using crystals to manipulate solar light and the energy of that light to realign crystal is net positive process."
 
     # Demetrius Cornucopia:
     pw_tech_demetrius_fields: "Demetrius Cornucopia"
     pw_tech_demetrius_fields_desc: "A planetary ecosystem facility that boosts plant, animal or fungi growth and harvest in ideal conditions.\nIt is just the cycle of life, really."
+    #Upgrade: Chemical Garden
+    pw_tech_demetrius_chemical_garden: "Demetrius Chemical Garden"
+    pw_tech_demetrius_chemical_garden_desc: "If we are able to replicate any nutrient chain we are also able to replicate any exotic chemicals, selecting only certain properties. "
 
     #Land repurposing
     pw_tech_resource_land_repurposing_1: "Natural Repurposing"

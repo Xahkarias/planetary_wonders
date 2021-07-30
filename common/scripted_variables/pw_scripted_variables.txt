@@ -30,6 +30,7 @@
 
 #Base Weight modifier
 @pw_tech_weight_mod = 0.25 #Mostly Rare Techs
+@pw_tech_weight_mod_very_rare = 0.05 #Rare weight that needs modifiers
 
 #Base AI Weight
 @pw_tech_ai_weight = 5 #Very likely to be picked

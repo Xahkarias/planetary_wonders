@@ -1859,7 +1859,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	immediate = {
 		if = {
@@ -1886,7 +1889,10 @@ planet_event = {
 		set_planet_flag = pw_aggressive_prospecting_crystal
 	}
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	option = {
 		name = pw_wonder.505.a
@@ -1906,7 +1912,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	immediate = {
 		if = {
@@ -1933,7 +1942,10 @@ planet_event = {
 		set_planet_flag = pw_aggressive_prospecting_motes
 	}
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	option = {
 		name = pw_wonder.507.a
@@ -1953,7 +1965,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	immediate = {
 		if = {
@@ -1980,7 +1995,10 @@ planet_event = {
 		set_planet_flag = pw_aggressive_prospecting_gases
 	}
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	option = {
 		name = pw_wonder.509.a
@@ -2003,7 +2021,10 @@ planet_event = {
 	location = THIS
 
 	trigger = {
-		has_active_building = pw_building_erebus_project
+		OR = {
+			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
+		}
 	}
 	immediate = {
 		set_planet_flag = pw_aggressive_prospecting_event_triggered
@@ -2014,6 +2035,97 @@ planet_event = {
 			limit = { NOT = { has_modifier = mineral_poor }}
 			add_modifier = {
 				modifier = mineral_poor
+			}
+		}
+	}
+}
+
+# Erebus Fracking Plant -> id 550
+
+#On Erebus Fracking Plant built
+planet_event = {
+	id = pw_wonder.550
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_erebus_fracking_plant
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_erebus_fracking_plant_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.551 }
+	}
+}
+
+#On first time Erebus Fracking Plant is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.551
+	title = pw_wonder.551.name
+	desc = pw_wonder.551.desc
+	picture = GFX_evt_pw_erebus_project
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_erebus_fracking_plant_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_erebus_fracking_plant_built }
+	}
+
+	option = {
+		name = pw_wonder.551.a
+	}
+
+	option = {
+		name = pw_wonder.551.b
+		trigger = {
+			owner = {
+				has_valid_civic = civic_mining_guilds
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.551.c
+		trigger = {
+			owner = {
+				is_lithoid = yes
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
 			}
 		}
 	}
@@ -2202,7 +2314,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = hazardous_weather }
-		has_active_building = pw_building_helios_tower
+		OR = {
+			has_active_building = pw_building_helios_tower
+			has_active_building = pw_building_helios_translucent_obelisk
+		}
 	}
 	option = {
 		name = pw_wonder.604.a
@@ -2240,7 +2355,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = wild_storms }
-		has_active_building = pw_building_helios_tower
+		OR = {
+			has_active_building = pw_building_helios_tower
+			has_active_building = pw_building_helios_translucent_obelisk
+		}
 	}
 	option = {
 		name = pw_wonder.605.a
@@ -2299,6 +2417,82 @@ planet_event = {
 		owner = {
 			add_resource = {
 				energy = -1000
+			}
+		}
+	}
+}
+
+# Helios Translucent Obelisk -> id 600
+
+#On Helios Translucent Obelisk built
+planet_event = {
+	id = pw_wonder.650
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_helios_translucent_obelisk
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_helios_translucent_obelisk_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.651 }
+	}
+}
+
+#On first time Helios Translucent Obelisk is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.651
+	title = pw_wonder.651.name
+	desc = pw_wonder.651.desc
+	picture = GFX_evt_pw_helios_tower
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_helios_translucent_obelisk_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_helios_translucent_obelisk_built }
+	}
+
+	option = {
+		name = pw_wonder.651.a
+	}
+
+	option = {
+		name = pw_wonder.651.b
+		trigger = {
+			OR = {
+				owner = { is_megacorp = yes }
+				owner = { has_valid_civic = civic_corporate_dominion }
+				owner = { has_valid_civic = civic_merchant_guilds }
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier1influencereward
+				min = @tier1influencemin
+				max = @tier1influencemax
 			}
 		}
 	}
@@ -2548,7 +2742,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = lush_planet }
-		has_active_building = pw_building_demetrius_fields
+		OR = {
+			has_active_building = pw_building_demetrius_fields
+			has_active_building = pw_building_demetrius_chemical_garden
+		}
 	}
 	option = {
 		name = pw_wonder.704.a
@@ -2586,7 +2783,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = bleak_planet }
-		has_active_building = pw_building_demetrius_fields
+		OR = {
+			has_active_building = pw_building_demetrius_fields
+			has_active_building = pw_building_demetrius_chemical_garden
+		}
 	}
 	option = {
 		name = pw_wonder.705.a
@@ -2631,7 +2831,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = dangerous_wildlife }
-		has_active_building = pw_building_demetrius_fields
+		OR = {
+			has_active_building = pw_building_demetrius_fields
+			has_active_building = pw_building_demetrius_chemical_garden
+		}
 	}
 	option = {
 		name = pw_wonder.706.a
@@ -2669,7 +2872,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = titanic_life }
-		has_active_building = pw_building_demetrius_fields
+		OR = {
+			has_active_building = pw_building_demetrius_fields
+			has_active_building = pw_building_demetrius_chemical_garden
+		}
 	}
 	option = {
 		name = pw_wonder.707.a
@@ -2707,7 +2913,10 @@ planet_event = {
 
 	trigger = {
 		NOT = { has_modifier = natural_beauty }
-		has_active_building = pw_building_demetrius_fields
+		OR = {
+			has_active_building = pw_building_demetrius_fields
+			has_active_building = pw_building_demetrius_chemical_garden
+		}
 	}
 	option = {
 		name = pw_wonder.708.a
@@ -2733,11 +2942,85 @@ planet_event = {
 	}
 }
 
-#Land Repurposing decision Event (every resource wonder)
+# Demetrius Chemical Garden -> id 750
+
+#On Demetrius Chemical Garden built
 planet_event = {
 	id = pw_wonder.750
-	title = pw_wonder.750.name
-	desc = pw_wonder.750.desc
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_demetrius_chemical_garden
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_demetrius_chemical_garden_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+
+		planet_event = { id = pw_wonder.751 }
+	}
+}
+
+#On first time Demetrius Chemical Garden is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.751
+	title = pw_wonder.751.name
+	desc = pw_wonder.751.desc
+	picture = GFX_evt_pw_demetrius_cornucopia
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_demetrius_chemical_garden_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_demetrius_chemical_garden_built }
+	}
+
+	option = {
+		name = pw_wonder.751.a
+	}
+
+	option = {
+		name = pw_wonder.751.b
+		trigger = {
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+}
+
+#Land Repurposing decision Event (every resource wonder)
+planet_event = {
+	id = pw_wonder.790
+	title = pw_wonder.790.name
+	desc = pw_wonder.790.desc
 	picture = GFX_evt_drilling_for_gas
 	show_sound = event_alien_nature
 	is_triggered_only = yes
@@ -2746,8 +3029,11 @@ planet_event = {
 	trigger = {
 		OR = {
 			has_active_building = pw_building_erebus_project
+			has_active_building = pw_building_erebus_fracking_plant
 			has_active_building = pw_building_helios_tower
+			has_active_building = pw_building_helios_translucent_obelisk
 			has_active_building = pw_building_demetrius_fields
+			has_active_building = pw_building_demetrius_chemical_garden
 		}
 		NOT = { has_planet_flag = pw_is_managing_land_purpose }
 	}
@@ -2757,7 +3043,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.mining
+		name = pw_wonder.790.mining
 		allow = {
 			owner = {
 				resource_stockpile_compare = {
@@ -2778,7 +3064,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.mining_extra
+		name = pw_wonder.790.mining_extra
 		trigger = {
 			owner = { has_technology = pw_tech_resource_land_repurposing_2 }
 		}
@@ -2802,7 +3088,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.mining_max
+		name = pw_wonder.790.mining_max
 		trigger = {
 			owner = { has_technology = pw_tech_resource_land_repurposing_3 }
 		}
@@ -2826,7 +3112,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.generator
+		name = pw_wonder.790.generator
 		allow = {
 			owner = {
 				resource_stockpile_compare = {
@@ -2847,7 +3133,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.generator_extra
+		name = pw_wonder.790.generator_extra
 		trigger = {
 			owner = { has_technology = pw_tech_resource_land_repurposing_2 }
 		}
@@ -2871,7 +3157,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.generator_max
+		name = pw_wonder.790.generator_max
 		trigger = {
 			owner = { has_technology = pw_tech_resource_land_repurposing_3 }
 		}
@@ -2895,7 +3181,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.farming
+		name = pw_wonder.790.farming
 		allow = {
 			owner = {
 				resource_stockpile_compare = {
@@ -2916,7 +3202,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.farming_extra
+		name = pw_wonder.790.farming_extra
 		trigger = {
 			owner = { has_technology = pw_tech_resource_land_repurposing_2 }
 		}
@@ -2940,7 +3226,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.farming_max
+		name = pw_wonder.790.farming_max
 		trigger = {
 			owner = { has_technology = pw_tech_resource_land_repurposing_3 }
 		}
@@ -2964,7 +3250,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pw_wonder.750.leave
+		name = pw_wonder.790.leave
 		owner = {
 			if = {
 				limit = { has_ascension_perk = ap_mastery_of_nature }
@@ -4913,6 +5199,11 @@ planet_event = {
 		has_owner = yes
 	}
 
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_stellar_sentinel
+	}
+
 	immediate = {
 		create_message = {
 			type = PW_WONDER_COMPLETED
@@ -4942,7 +5233,6 @@ planet_event = {
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_stellar_sentinel_built }}
-		owner = { is_gestalt = no }
 	}
 
 	immediate = {

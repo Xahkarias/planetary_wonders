@@ -162,6 +162,15 @@
     pw_wonder.510.desc: "During our current Aggressive Prospecting of the mines of [ROOT.GetName], we have come to discover that the mining network project in the planet has completely exhausted the mineral properties of the land. Constant aggressive mining in search of valuable minerals have extracted almost all of the veins in this planet. We can keep the mineral project in place, but it will produce results much bellow average."
     pw_wonder.510.a: "That is a shame, and a lesson to be had."
 
+    #Complete Erebus Fracking Plant
+    pw_message_erebus_fracking_plant_complete: "$pw_erebus_fracking_plant$ has been constructed on $PLANET|Y$."
+    #First Time Complete Erebus Fracking Plant
+    pw_wonder.551.name: "Explosive Extraction"
+    pw_wonder.551.desc: "When we thought the depths of [THIS.GetName] had been bled dry and there was nothing more to extract, the usefulness of Volatile Motes proved us wrong. By investing heavily in explosion based extraction and fracking techniques we can maintain the rate at which we churn minerals from our mines. In conjunction to that, we have also establish chemical plants in the opened subterranean galleries to efficiently convert extraction byproducts back into unstable motes, both continuing the mining cycle and supply our need for the substance."
+    pw_wonder.551.a: "The minerals can never stop flowing!"
+    pw_wonder.551.b: "The mines have never let us down."
+    pw_wonder.551.c: "A banquet for the ages!"
+
     #Complete Helios Tower
     pw_message_helios_tower_complete: "§MHelios Tower§! has been constructed on $PLANET|Y$."
     #First Time Complete Helios Tower (Regular Empire)
@@ -188,6 +197,14 @@
     pw_wonder.606.desc: "During the current Cloud Seeding of [ROOT.GetName] to boost the power produced from the Helios Tower, some new chemical used in the process reacted with the planets atmosphere and produced an intoxicating aphrodisiac that could quickly spread to reach the entire population. In one hand we could let the process continue to the benefit of the population, at the cost of some deviating in ethics, or or we could invest resources now to stop the process before it becomes permanent."
     pw_wonder.606.a: "Don't fight it, just keep breathing."
     pw_wonder.606.b: "Channel energy to reverse the process!"
+
+    #Complete Helios Translucent Obelisk
+    pw_message_helios_translucent_obelisk_complete: "$pw_helios_translucent_obelisk$ has been constructed on $PLANET|Y$."
+    #First Time Complete Helios Translucent Obelisk
+    pw_wonder.651.name: "Tower of Crystallomancy"
+    pw_wonder.651.desc: "While we already were using some forms of crystalline manipulation of the light gathered at the $pw_building_helios_tower$, the innovative application of rare crystal configurations revolutionized the practice. With these new techniques we can filter different frequencies to increase energy production. In addition to that, we can utilize the discarded light frequencies to harmoniously align new crystal formations, supplying our other needs."
+    pw_wonder.651.a: "A brighter future lies ahead."
+    pw_wonder.651.b: "The splendor of our crystals and the abundance of our energy."
 
     #Complete Demetrius Cornucopia
     pw_message_demetrius_fields_complete: "§MDemetrius Cornucopia§! has been constructed on $PLANET|Y$."
@@ -228,19 +245,27 @@
     pw_wonder.708.a: "Give those plants what they need to grow."
     pw_wonder.708.b: "There is no need for that."
 
+    #Complete Demetrius Chemical Garden
+    pw_message_demetrius_chemical_garden_complete: "$pw_demetrius_chemical_garden$ has been constructed on $PLANET|Y$."
+    #First Time Complete Demetrius Chemical Garden
+    pw_wonder.751.name: ""
+    pw_wonder.751.desc: "It is said the we can grow and replicate any kind of nutrient, with singular flavor, within the $pw_building_demetrius_fields$. If such is true, then we can also construct any complex molecule too, be it organic or inorganic. Now installed with the proper chemical facilities, we can produce a variety of Exotic Gases, with specific properties to suit our needs. In turn, we can also apply the produced gases back into the development of produce, boosting our food production."
+    pw_wonder.751.a: "There is nothing we cannot grow."
+    pw_wonder.751.b: "Whatever we need, the land provides."
+
     #Land Repurposing Decision
-    pw_wonder.750.name: "Manage Land Repurposing"
-    pw_wonder.750.desc: "If nature should stand in the way of our needs, we will remodel and repurpose it as we see fit.\n\nWith the help of the Wonders we have constructed here, we can expand the extraction area of a specific resource, while sacrificing natural availability of other resources.\nThis operation will increase costs of future constructions."
-    pw_wonder.750.mining: "Increase extraction of £minerals£ §P$minerals$§!."
-    pw_wonder.750.mining_extra: "Expand extraction of £minerals£ §P$minerals$§!."
-    pw_wonder.750.mining_max: "Maximize extraction of £minerals£ §P$minerals$§!."
-    pw_wonder.750.generator: "Increase extraction of £energy£ §Y$energy$§!."
-    pw_wonder.750.generator_extra: "Expand extraction of £energy£ §Y$energy$§!."
-    pw_wonder.750.generator_max: "Maximize extraction of £energy£ §Y$energy$§!."
-    pw_wonder.750.farming: "Increase extraction of £food£ §G$food$§!."
-    pw_wonder.750.farming_extra: "Expand extraction of £food£ §G$food$§!."
-    pw_wonder.750.farming_max: "Maximize extraction of £food£ §G$food$§!."
-    pw_wonder.750.leave: "Leave the land as it is."
+    pw_wonder.790.name: "Manage Land Repurposing"
+    pw_wonder.790.desc: "If nature should stand in the way of our needs, we will remodel and repurpose it as we see fit.\n\nWith the help of the Wonders we have constructed here, we can expand the extraction area of a specific resource, while sacrificing natural availability of other resources.\nThis operation will increase costs of future constructions."
+    pw_wonder.790.mining: "Increase extraction of £minerals£ §P$minerals$§!."
+    pw_wonder.790.mining_extra: "Expand extraction of £minerals£ §P$minerals$§!."
+    pw_wonder.790.mining_max: "Maximize extraction of £minerals£ §P$minerals$§!."
+    pw_wonder.790.generator: "Increase extraction of £energy£ §Y$energy$§!."
+    pw_wonder.790.generator_extra: "Expand extraction of £energy£ §Y$energy$§!."
+    pw_wonder.790.generator_max: "Maximize extraction of £energy£ §Y$energy$§!."
+    pw_wonder.790.farming: "Increase extraction of £food£ §G$food$§!."
+    pw_wonder.790.farming_extra: "Expand extraction of £food£ §G$food$§!."
+    pw_wonder.790.farming_max: "Maximize extraction of £food£ §G$food$§!."
+    pw_wonder.790.leave: "Leave the land as it is."
 
     #Complete Astronomical Model Bureau
     pw_message_galactic_model_complete: "$pw_galactic_model$ has been constructed on $PLANET|Y$."

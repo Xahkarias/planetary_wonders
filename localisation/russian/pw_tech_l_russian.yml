@@ -428,3 +428,10 @@
 
     pw_tech_stellar_sentinel: "Stellar Sentinel"
     pw_tech_stellar_sentinel_desc: "When the protection of our Guardian is not enough, we will take it to the stars and watch over us from threats before they land."
+
+    pw_tech_erebus_fracking_plant: "Erebus Fracking project"
+    pw_tech_erebus_fracking_plant_desc: "Not stone shall be left unturned.\nNo mote shall be left unstable."
+    pw_tech_helios_translucent_obelisk: "Helios Translucent Obelisk"
+    pw_tech_helios_translucent_obelisk_desc: "Using crystals to manipulate solar light and the energy of that light to realign crystal is net positive process."
+    pw_tech_demetrius_chemical_garden: "Demetrius Chemical Garden"
+    pw_tech_demetrius_chemical_garden_desc: "If we are able to replicate any nutrient chain we are also able to replicate any exotic chemicals, selecting only certain properties. "

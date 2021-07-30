@@ -656,7 +656,8 @@ pw_building_interdimensional_collider = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.200 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.250 }
 	}
 
 	ai_weight = {
@@ -1868,7 +1869,8 @@ pw_building_psionic_observatory = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.300 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.350 }
 	}
 
 	ai_weight = {
@@ -3023,7 +3025,8 @@ pw_building_metal_vivarium = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.400 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.450 }
 	}
 
 	ai_weight = {

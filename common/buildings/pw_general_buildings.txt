@@ -1794,7 +1794,8 @@ pw_building_stellar_sentinel = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1250 }
+		#This is an upgrade, so on_building_upgraded triggers for this.
+		#planet_event = { id = pw_wonder.1250 }
 	}
 
 	# on_destroy = {
