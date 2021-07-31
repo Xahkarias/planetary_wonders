@@ -975,7 +975,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_chronicle_drone_per_pop = @pw_job_per_50_pop
+			job_chronicle_drone_add = 1
 		}
 	}
 	triggered_planet_modifier = {

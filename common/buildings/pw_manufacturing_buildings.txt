@@ -335,6 +335,7 @@ pw_building_mantle_crucible = {
 		potential = {
 			exists = owner
 			owner = {
+				country_uses_consumer_goods = yes
 				has_edict = pw_ambition_wonders_beyond_ambition
 			}
 		}
