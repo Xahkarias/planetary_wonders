@@ -512,6 +512,15 @@
     pw_tech_interdimensional_collider: "Interdimensional Collider"
     pw_tech_interdimensional_collider_desc: "Now, this is what it is like when dimensions collide."
 
+    pw_tech_intradimensional_matter_drawing: "Intradimensional Matter Drawing"
+    pw_tech_intradimensional_matter_drawing_desc: "With the $pw_building_interdimensional_collider$ we can improve our production by drawing Dark Matter from the vacuum of our universe."
+
+    pw_tech_interdimensional_matter_drawing: "Interdimensional Matter Drawing"
+    pw_tech_interdimensional_matter_drawing_desc: "With the $pw_building_interdimensional_collider$ we can improve our production by drawing Dark Matter from the vacuum of other universes."
+
+    pw_tech_suprareality_survey: "Suprareality Survey"
+    pw_tech_suprareality_survey_desc: "Thinking outside the box to the extreme."
+
     #Society
     pw_tech_fallen_empire_experiments_society: "Fallen Empire Experiment Analysis"
     pw_tech_fallen_empire_experiments_society_desc: "By investigating the data left behind in an experiment a fallen empire performed on our $pw_building_domed_city$, we can discover secrets of population management and control."
@@ -543,6 +552,16 @@
 
     pw_tech_psionic_observatory: "Psionic Observatory"
     pw_tech_psionic_observatory_desc: "Wether we understand the effects of Zro or not, the power of the substance is undeniable."
+
+    pw_tech_zro_refurbishing: "Zro Refurbishing"
+    pw_tech_zro_refurbishing_desc: "After learning where zro comes from, refurbishing the substance when spent is the only way of maintaining its production."
+
+    pw_tech_zro_recycling: "Zro Recycling"
+    pw_tech_zro_recycling_desc: "Zro is already recycled, in some ways."
+
+    pw_tech_psionic_social_infiltration: "Psionic Social Infiltration"
+    pw_tech_psionic_social_infiltration_desc: "Certain effects of Zro are perfect for infiltration and espionage."
+
 
     #Engineering
     pw_tech_fallen_empire_experiments_engineering: "Fallen Empire Experiment Analysis"
@@ -581,3 +600,12 @@
 
     pw_tech_metal_vivarium: "Metal Vivarium"
     pw_tech_metal_vivarium_desc: "If it lives, will it grow and breed and evolve and think?"
+
+    pw_tech_living_metal_breeding: "Living Metal Breeding"
+    pw_tech_living_metal_breeding_desc: "Letting Living Metal breed by allowing to transfer its properties to other alloys is the best way to increase our production of the substance."
+
+    pw_tech_living_metal_reproduction: "Living Metal Reproduction"
+    pw_tech_living_metal_reproduction_desc: "By developing specific ways in which Living metal interacts with other alloys, we can accelerate its breeding."
+
+    pw_tech_living_formation: "Living Metallic Formation"
+    pw_tech_living_formation_desc: "Standardizing Living Metal construction patterns allows for much faster reprogramming, increasing general industrial production."
