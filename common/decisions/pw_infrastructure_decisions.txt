@@ -3468,7 +3468,10 @@ pw_decision_fc_infrastructure_power_4 = {
 		has_active_building = pw_building_forbidden_city
 		owner = {
 			any_owned_planet = {
-				has_active_building = pw_building_galactic_model
+				OR = {
+					has_active_building = pw_building_galactic_model
+					has_active_building = pw_building_aligned_galactic_model
+				}
 			}
 		}
 	}

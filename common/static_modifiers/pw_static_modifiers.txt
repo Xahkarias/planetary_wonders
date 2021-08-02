@@ -376,6 +376,13 @@ pw_mod_abyssal_test_crater_living_metal_plague = {
 	planet_researchers_upkeep_mult = 0.25
 }
 
+pw_mod_aligned_galactic_model_tomb_world = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hunger_strike.dds"
+	icon_frame = @pw_icon_frame_red
+	planet_pops_upkeep_mult = 0.20
+	planet_jobs_society_research_produces_mult = 0.05
+}
+
 pw_mod_enigma_engine_energy = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
 	icon_frame = 3

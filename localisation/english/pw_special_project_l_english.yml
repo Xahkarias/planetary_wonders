@@ -1,10 +1,23 @@
 ﻿l_english:
 
+    #Galactic Model event chain
     PW_TOW_ASTEROID_PROJECT: "Tow Asteroid"
     PW_TOW_ASTEROID_PROJECT_DESC: "The orbit of this small asteroid is in discordance with the predictions of our Astronomical Model Bureau, and should be corrected by towing the asteroid into the correct path."
 
     PW_MOVE_MOUNTAIN_PROJECT: "Move Mountains"
     PW_MOVE_MOUNTAIN_PROJECT_DESC: "An entire mountain range in this planet is in discordance with the predictions of our Astronomical Model Bureau, and should be translated to the right location."
+
+    PW_TOW_MOON_PROJECT: "Tow Moon"
+    PW_TOW_MOON_PROJECT_DESC: "If our Galactic Model is to match reality, the orbit of this moon needs to be corrected in order to align the gravitation filed of the planet it orbits."
+
+    PW_ALIGN_MAGNETIC_FIELD_PROJECT: "Align Magnetic Field"
+    PW_ALIGN_MAGNETIC_FIELD_PROJECT_DESC: "Small magnetic disturbances have been noted across our entire Galactic Model, they all point to the magnetic field of this planet being unaligned with our projected data. Correcting it should align the entire model back to correctness."
+
+    PW_CAUSE_STELLAR_STORM_PROJECT: "Cause Stellar Storm"
+    PW_CAUSE_STELLAR_STORM_PROJECT_DESC: "Studies indicate that, if properly directed, a deliberate solar flare in this star could rearrange tha atmospheres and orbits of the planets in this system, causing them to better reflect the prediction of our Galactic Model."
+
+    PW_FINAL_ALIGNMENT_PROJECT: "Final Alignment"
+    PW_FINAL_ALIGNMENT_PROJECT_DESC: "Would it be possible to make a map of the universe on a 1 to 1 scale?\nWe can certainly try.\n\nBut the path to hyperreal alignment, an a co needs to star here, with some small adjustment to our current Model."
 
     PW_FIX_ENIGMA_DRONES: "Counter Enigma Effects"
     PW_FIX_ENIGMA_DRONES_DESC: "The effects of the Enigma Engine have gone too far to be tolerated any more. We have organized a project to reverse its signals and transmit it in the entire planet, as to negate the negative effects of the Engine in our drones."

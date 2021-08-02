@@ -3,7 +3,10 @@ pw_policy_expansion = {
 	potential = {
 		always = no
 		any_owned_planet = {
-			has_active_building = pw_building_galactic_model
+			OR = {
+				has_active_building = pw_building_galactic_model
+				has_active_building = pw_building_aligned_galactic_model
+			}
 		}
 	}
 
@@ -99,7 +102,10 @@ pw_policy_modeling_focus = {
 			has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine
 		}
 		any_owned_planet = {
-			has_active_building = pw_building_galactic_model
+			OR = {
+				has_active_building = pw_building_galactic_model
+				has_active_building = pw_building_aligned_galactic_model
+			}
 		}
 	}
 

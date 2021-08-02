@@ -118,3 +118,12 @@
     PW_ENGINEERING_STRUCTURAL_EXPERIMENTS_DESC: "No only should we research how to cause damage, but more importantly, how to sustain operational structures and building that endure it."
     PW_ENGINEERING_PRODUCTION_EXPERIMENTS: "Living Production Experiments"
     PW_ENGINEERING_PRODUCTION_EXPERIMENTS_DESC: "The discovery, production and programing of Living Metal may represent the next industrial revolution if we can master this art within the Crater Test Site."
+
+    PW_TOW_MOON_PROJECT: "Tow Moon"
+    PW_TOW_MOON_PROJECT_DESC: "If our Galactic Model is to match reality, the orbit of this moon needs to be corrected in order to align the gravitation filed of the planet it orbits."
+    PW_ALIGN_MAGNETIC_FIELD_PROJECT: "Align Magnetic Field"
+    PW_ALIGN_MAGNETIC_FIELD_PROJECT_DESC: "Small magnetic disturbances have been noted across our entire Galactic Model, they all point to the magnetic field of this planet being unaligned with our projected data. Correcting it should align the entire model back to correctness."
+    PW_CAUSE_STELLAR_STORM_PROJECT: "Cause Stellar Storm"
+    PW_CAUSE_STELLAR_STORM_PROJECT_DESC: "Studies indicate that, if properly directed, a deliberate solar flare in this star could rearrange tha atmospheres and orbits of the planets in this system, causing them to better reflect the prediction of our Galactic Model."
+    PW_FINAL_ALIGNMENT_PROJECT: "Final Alignment"
+    PW_FINAL_ALIGNMENT_PROJECT_DESC: "Would it be possible to make a map of the universe on a 1 to 1 scale?\nWe can certainly try.\n\nBut the path to hyperreal alignment, an a co needs to star here, with some small adjustment to our current Model."

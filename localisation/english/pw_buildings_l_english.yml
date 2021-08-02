@@ -29,6 +29,14 @@
     pw_building_galactic_model_desc: "A wondrous physical model, representing the entirety of the known galaxy in a reduced - yet colossal - scale. Dynamic and ever-changing, it allows us to chart, maintain and project all of our administrative plans: logistics, military, diplomacy, commerce and any other aspect that needs holographic analysis."
     pw_building_galactic_model_policy_tooltip: "§SAllows our empire to select Policies of Expansion.§!\n"
 
+    # Astronomical Model Bureau
+    pw_aligned_galactic_model: "§MAligned Galactic Model§!"
+    pw_building_aligned_galactic_model: "Aligned Galactic Model"
+    pw_building_aligned_galactic_model_desc: "A wondrous physical model, representing the entirety of the known galaxy in a yet colossal scale. A Map of the Empire whose size is that of the Empire."
+    #Bonus: Polyhedron
+    pw_building_polyhedron: "Polyhedron"
+    pw_building_polyhedron_desc: "A giant floating tower that cannot be, sticking out of the earth and suspended by unknown means, and made partially by its own blueprints."
+
     # Panopticon
     pw_panopticon: "§MPanopticon§!"
     pw_building_panopticon: "Panopticon"

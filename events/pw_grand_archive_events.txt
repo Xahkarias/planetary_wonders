@@ -2693,7 +2693,10 @@ country_event = {
 			}
 			#Astronomical Model Bureau
 			any_owned_planet = {
-				has_active_building = pw_building_galactic_model
+				OR = {
+					has_active_building = pw_building_galactic_model
+					has_active_building = pw_building_aligned_galactic_model
+				}
 			}
 			#Guardian Angel
 			any_owned_planet = {
@@ -2725,7 +2728,10 @@ country_event = {
 			#Astronomical Model Bureau
 			random_owned_planet = {
 				limit = {
-					has_active_building = pw_building_galactic_model
+					OR = {
+						has_active_building = pw_building_galactic_model
+						has_active_building = pw_building_aligned_galactic_model
+					}
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_GALACTIC_MODEL
@@ -2761,7 +2767,10 @@ country_event = {
 				}
 				#Astronomical Model Bureau
 				any_owned_planet = {
-					has_active_building = pw_building_galactic_model
+					OR = {
+						has_active_building = pw_building_galactic_model
+						has_active_building = pw_building_aligned_galactic_model
+					}
 				}
 				#Guardian Angel
 				any_owned_planet = {

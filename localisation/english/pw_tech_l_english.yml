@@ -100,6 +100,9 @@
     pw_tech_galactic_model_expanding_bureaucracy_machine_desc: "Even if our calculators have reached the epitome of galactic coordination, modeling and logistics, software always finds a way to expand and occupy as much hardware as it can."
     pw_tech_galactic_model_expanding_bureaucracy_coordinator: "$pw_galactic_model$ provides §G+1§! $job_coordinator$ Job per 25 Pops."
 
+    pw_tech_hyperreality_modeling: "Hyperreality Modeling"
+    pw_tech_hyperreality_modeling_desc: "Is the Model a map of the universe or the universe a map of the Model?"
+
     # Panopticon:
     pw_tech_utilitarian_vigilance: "Utilitarian Vigilance"
     pw_tech_utilitarian_vigilance_desc: "Vigilance should not come directly from the powers that be, rather than from the populace itself. Punishment should remain as a concept, people can project much more terrible things than we can inflict. We have always seen each member of the population as a criminal in potential, but perhaps it is high time we see them as a warden in potential."

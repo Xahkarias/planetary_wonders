@@ -167,6 +167,9 @@
     pw_mod_abyssal_test_crater_living_metal_plague: "Living Metal Plague"
     pw_mod_abyssal_test_crater_living_metal_plague_desc: "Research on the $pw_building_abyssal_crater_test_site$ has been halted temporarily until researchers can combat some form of disease that plagues Living Metal."
 
+    pw_mod_aligned_galactic_model_tomb_world: "Plague Ridden World"
+    pw_mod_aligned_galactic_model_tomb_world_desc: "This world was once habitable, but all life has succumbed to a mysterious plague long ago. The effects of this plague can still be felt on colonists, and some can even be studied."
+
     # Enigma Engines Event mods:
     pw_mod_enigma_engine_energy: "Enigmatic Taste"
     pw_mod_enigma_engine_energy_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of taste, that makes them consume more power."

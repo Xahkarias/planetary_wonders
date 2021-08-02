@@ -201,3 +201,9 @@
     pw_demetrius_chemical_garden: "§MDemetrius Chemical Garden§!"
     pw_building_demetrius_chemical_garden: "Demetrius Chemical Garden"
     pw_building_demetrius_chemical_garden_desc: "An entire artificial environment with controlled climate and regulated food chains design to extract the most varied of substances. Where exotic gases are used to boost production and are distilled in adjacent refineries, from organic byproducts."
+
+    pw_aligned_galactic_model: "§MAligned Galactic Model§!"
+    pw_building_aligned_galactic_model: "Aligned Galactic Model"
+    pw_building_aligned_galactic_model_desc: "A wondrous physical model, representing the entirety of the known galaxy in a yet colossal scale. A Map of the Empire whose size is that of the Empire."
+    pw_building_polyhedron: "Polyhedron"
+    pw_building_polyhedron_desc: "A giant floating tower that cannot be, sticking out of the earth and suspended by unknown means, and made partially by its own blueprints."

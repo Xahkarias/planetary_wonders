@@ -3299,6 +3299,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.801 }
 		planet_event = { id = pw_wonder.802 }
 		planet_event = { id = pw_wonder.803 days = 90 random = 30 } #Event chain begin
+		owner = { country_event = { id = pw_wonder.813 days = @pw_10years }} #Event chain ends (if there is any problems along the way)
 	}
 }
 
@@ -3466,7 +3467,8 @@ planet_event = {
 
 	trigger = {
 		has_active_building = pw_building_galactic_model
-		NOT = { owner = { has_country_flag = galactic_model_tow_asteroid }}
+		NOT = { owner = { has_country_flag = pw_galactic_model_tow_asteroid }}
+		NOT = { owner = { has_country_flag = pw_galactic_model_completed_corrections }}
 		owner = {
 			any_planet_within_border = {
 				is_planet_class = pc_asteroid
@@ -3475,7 +3477,7 @@ planet_event = {
 	}
 
 	immediate = {
-		owner = { set_country_flag = galactic_model_tow_asteroid }
+		owner = { set_country_flag = pw_galactic_model_tow_asteroid }
 	}
 
 	option = {
@@ -3502,6 +3504,10 @@ planet_event = {
 		owner = {
 			add_resource = {
 				influence = -50
+			}
+			hidden_effect = {
+				#Next event in AMB chain
+				country_event = { id = pw_wonder.805 days = 180 random = 90 }
 			}
 		}
 	}
@@ -3533,7 +3539,7 @@ country_event = {
 		}
 		hidden_effect = {
 			#Next event in AMB chain
-			country_event = { id = pw_wonder.805 days = 180 random = 180 }
+			country_event = { id = pw_wonder.805 days = 90 random = 30 }
 		}
 	}
 }
@@ -3552,30 +3558,27 @@ country_event = {
 		any_owned_planet = {
 			has_active_building = pw_building_galactic_model
 		}
-		NOT = { owner = { has_country_flag = galactic_model_move_mountain }}
-		owner = {
-			any_planet_within_border = {
-				uninhabitable_regular_planet = yes
-			}
+		NOT = { has_country_flag = pw_galactic_model_move_mountain }
+		NOT = { has_country_flag = pw_galactic_model_completed_corrections }
+		any_planet_within_border = {
+			uninhabitable_regular_planet = yes
 		}
 	}
 
 	immediate = {
-		owner = { set_country_flag = galactic_model_move_mountain }
+		set_country_flag = pw_galactic_model_move_mountain
 	}
 
 	option = {
 		name = pw_wonder.805.a
-		owner = {
-			random_planet_within_border = {
-				limit = {
-					uninhabitable_regular_planet = yes
-				}
-				enable_special_project = {
-					name = PW_MOVE_MOUNTAIN_PROJECT
-					location = this
-					owner = root
-				}
+		random_planet_within_border = {
+			limit = {
+				uninhabitable_regular_planet = yes
+			}
+			enable_special_project = {
+				name = PW_MOVE_MOUNTAIN_PROJECT
+				location = this
+				owner = root
 			}
 		}
 	}
@@ -3583,12 +3586,14 @@ country_event = {
 	option = {
 		name = pw_wonder.805.b
 		allow = {
-			owner = { resource_stockpile_compare = { resource = influence value >= 100 }}
+			resource_stockpile_compare = { resource = influence value >= 100 }
 		}
-		owner = {
-			add_resource = {
-				influence = -100
-			}
+		add_resource = {
+			influence = -100
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.807 days = 180 random = 90 }
 		}
 	}
 }
@@ -3620,10 +3625,330 @@ country_event = {
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
 		add_resource = { volatile_motes = 100 }
-		# hidden_effect = {
-		# 	#Next event in AMB chain
-		# 	country_event = { id = pw_wonder.805 days = 180 random = 180 }
-		# }
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.807 days = 90 random = 30 }
+		}
+	}
+}
+
+#Tow Moon
+country_event = {
+	id = pw_wonder.807
+	title = pw_wonder.807.name
+	desc = pw_wonder.807.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		any_owned_planet = {
+			has_active_building = pw_building_galactic_model
+		}
+		NOT = { has_country_flag = pw_galactic_model_tow_moon }
+		NOT = { has_country_flag = pw_galactic_model_completed_corrections }
+		any_planet_within_border = {
+			uninhabitable_regular_planet = yes
+			is_moon = yes
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_galactic_model_tow_moon
+	}
+
+	option = {
+		name = pw_wonder.807.a
+		random_planet_within_border = {
+			limit = {
+				uninhabitable_regular_planet = yes
+				is_moon = yes
+			}
+			enable_special_project = {
+				name = PW_TOW_MOON_PROJECT
+				location = this
+				owner = root
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.807.b
+		allow = {
+			resource_stockpile_compare = { resource = influence value >= 100 }
+		}
+		add_resource = {
+			influence = -100
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.809 days = 180 random = 90 }
+		}
+	}
+}
+
+#Tow Moon (success)
+country_event = {
+	id = pw_wonder.808
+	title = pw_wonder.808.name
+	desc = pw_wonder.808.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.808.a
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.809 days = 90 random = 30 }
+		}
+	}
+}
+
+#Align Magnetic Field
+country_event = {
+	id = pw_wonder.809
+	title = pw_wonder.809.name
+	desc = pw_wonder.809.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		any_owned_planet = {
+			has_active_building = pw_building_galactic_model
+		}
+		NOT = { has_country_flag = pw_galactic_model_align_magnetic_field }
+		NOT = { has_country_flag = pw_galactic_model_completed_corrections }
+		any_planet_within_border = {
+			uninhabitable_regular_planet = yes
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_galactic_model_align_magnetic_field
+	}
+
+	option = {
+		name = pw_wonder.809.a
+		random_planet_within_border = {
+			limit = {
+				uninhabitable_regular_planet = yes
+			}
+			enable_special_project = {
+				name = PW_ALIGN_MAGNETIC_FIELD_PROJECT
+				location = this
+				owner = root
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.809.b
+		allow = {
+			resource_stockpile_compare = { resource = influence value >= 100 }
+		}
+		add_resource = {
+			influence = -100
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.811 days = 180 random = 90 }
+		}
+	}
+}
+
+#Align Magnetic Field (success)
+country_event = {
+	id = pw_wonder.810
+	title = pw_wonder.810.name
+	desc = pw_wonder.810.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.810.a
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.811 days = 90 random = 30 }
+		}
+	}
+}
+
+#Cause Stellar Storm
+country_event = {
+	id = pw_wonder.811
+	title = pw_wonder.811.name
+	desc = pw_wonder.811.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		any_owned_planet = {
+			has_active_building = pw_building_galactic_model
+		}
+		NOT = { has_country_flag = pw_galactic_model_cause_stellar_storm }
+		NOT = { has_country_flag = pw_galactic_model_completed_corrections }
+		any_planet_within_border = {
+			is_star = yes
+			NOT = { is_star_class = sc_black_hole }
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_galactic_model_cause_stellar_storm
+	}
+
+	option = {
+		name = pw_wonder.811.a
+		random_planet_within_border = {
+			limit = {
+				is_star = yes
+				NOT = { is_star_class = sc_black_hole }
+			}
+			enable_special_project = {
+				name = PW_CAUSE_STELLAR_STORM_PROJECT
+				location = this
+				owner = root
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.811.b
+		allow = {
+			resource_stockpile_compare = { resource = influence value >= 100 }
+		}
+		add_resource = {
+			influence = -100
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.813 days = 180 random = 90 }
+		}
+	}
+}
+
+#Cause Stellar Storm (success)
+country_event = {
+	id = pw_wonder.812
+	title = pw_wonder.812.name
+	desc = pw_wonder.812.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.812.a
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		hidden_effect = {
+			#Next event in AMB chain
+			country_event = { id = pw_wonder.813 days = 90 random = 30 }
+		}
+	}
+}
+
+#Final Alignment
+country_event = {
+	id = pw_wonder.813
+	title = pw_wonder.813.name
+	desc = pw_wonder.813.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		any_owned_planet = { has_active_building = pw_building_galactic_model }
+		NOT = { has_country_flag = pw_galactic_model_final_alignment }
+		NOT = { has_country_flag = pw_galactic_model_completed_corrections }
+	}
+
+	immediate = {
+		set_country_flag = pw_galactic_model_final_alignment
+	}
+
+	option = {
+		name = pw_wonder.813.a
+		enable_special_project = {
+			name = PW_FINAL_ALIGNMENT_PROJECT
+			owner = THIS
+		}
+	}
+
+	option = {
+		name = pw_wonder.813.b
+		custom_tooltip = pw_wonder.813.b.tooltip
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier4influencereward
+			min = @tier4influencemin
+			max = @tier4influencemax
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Final Alignment (success)
+country_event = {
+	id = pw_wonder.814
+	title = pw_wonder.814.name
+	desc = pw_wonder.814.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	immediate = {
+		set_country_flag = pw_galactic_model_completed_corrections
+	}
+
+	option = {
+		name = pw_wonder.814.a
+		add_research_option = pw_tech_hyperreality_modeling
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
 	}
 }
 
@@ -3643,6 +3968,12 @@ country_event = {
 				is_planet_class = pc_gas_giant
 			}
 			NOT = { is_planet = event_target:pw_resource_planet }
+		}
+		any_owned_planet = {
+			OR = {
+				has_active_building = pw_building_galactic_model
+				has_active_building = pw_building_aligned_galactic_model
+			}
 		}
 	}
 
@@ -4009,6 +4340,188 @@ country_event = {
 			event_target:pw_resource_planet = {
 				add_deposit = d_zro_deposit_1
 			}
+		}
+	}
+}
+
+# Aligned Galactic Model -> id 850
+
+#On Aligned Galactic Model built
+planet_event = {
+	id = pw_wonder.850
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#This would be triggered every time a building is upgraded.
+		last_building_changed = pw_building_aligned_galactic_model
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_aligned_galactic_model_complete
+			days = 30
+			target = THIS
+			variable = {
+				type = name
+				localization = PLANET
+				scope = ROOT
+			}
+		}
+		planet_event = { id = pw_wonder.851 }
+		country_event = { id = pw_wonder.860 } #Spawn hidden system
+	}
+}
+
+#On first time Aligned Galactic Model is built
+planet_event = {
+	id = pw_wonder.851
+	title = pw_wonder.851.name
+	desc = pw_wonder.851.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_aligned_galactic_model_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_aligned_galactic_model_built }
+	}
+
+	option = {
+		name = pw_wonder.851.a
+	}
+
+	option = {
+		name = pw_wonder.851.b
+		trigger = {
+			owner = { has_valid_civic = civic_byzantine_bureaucracy }
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+		}
+
+	}
+}
+
+#Initialize Hidden System
+country_event = {
+	id = pw_wonder.860
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = pw_aligned_galactic_model_spawned_hidden_system }
+		any_owned_planet = { has_active_building = pw_building_aligned_galactic_model }
+	}
+
+	immediate = {
+		set_country_flag = pw_aligned_galactic_model_spawned_hidden_system
+
+		if = {
+			limit = { NOT = { has_global_flag = pw_aligned_galactic_model_spawned_hidden_system_unique }}
+			set_global_flag = pw_aligned_galactic_model_spawned_hidden_system_unique
+
+			#Initialize Unique System
+			random_owned_planet = {
+				limit = { has_active_building = pw_building_aligned_galactic_model }
+				solar_system = {
+					spawn_system = {
+						min_distance = 10
+						max_distance = 30
+						max_jumps = 0
+						initializer = pw_capricorns_heart_system_initializer
+					}
+					if = {
+						limit = { last_created_system = { NOT = { has_hyperlane_to = prev }}}
+						add_hyperlane = {
+							from = this
+							to = last_created_system
+						}
+					}
+					else = {
+						add_extra_hyperlane_to_spawned_system_effect = yes
+					}
+				}
+			}
+		}
+		else = {
+			#Initialize Black Hole system
+			random_owned_planet = {
+				limit = { has_active_building = pw_building_aligned_galactic_model }
+				solar_system = {
+					spawn_system = {
+						min_distance = 10
+						max_distance = 30
+						max_jumps = 0
+						initializer = special_init_01
+					}
+					if = {
+						limit = { last_created_system = { NOT = { has_hyperlane_to = prev }}}
+						add_hyperlane = {
+							from = this
+							to = last_created_system
+						}
+					}
+					else = {
+						add_extra_hyperlane_to_spawned_system_effect = yes
+					}
+				}
+			}
+		}
+
+		country_event = { id = pw_wonder.861 }
+	}
+}
+#Discover Hidden System:
+country_event = {
+	id = pw_wonder.861
+	title = pw_wonder.861.name
+	desc = pw_wonder.861.desc
+	picture = GFX_evt_pw_galactic_model
+	show_sound = event_inhabited_solar_system
+	is_triggered_only = yes
+
+	option = {
+		name = pw_wonder.861.a
+	}
+}
+
+#On Tomb World in Unique System is surveyed
+planet_event = {
+	id = pw_wonder.862
+	title = pw_wonder.862.name
+	desc = pw_wonder.862.desc
+	picture = GFX_evt_toxic
+	show_sound = event_scanner
+	is_triggered_only = yes
+	location = THIS
+
+	trigger = {
+		has_planet_flag = pw_aligned_galactic_model_tomb_world
+	}
+
+	option = {
+		name = pw_wonder.862.a
+		add_modifier = {
+			modifier = pw_mod_aligned_galactic_model_tomb_world
+		}
+		if = {
+			limit = { NOT = { has_active_building = pw_building_polyhedron }}
+			add_building = pw_building_polyhedron
 		}
 	}
 }

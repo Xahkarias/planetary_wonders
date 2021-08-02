@@ -67,6 +67,7 @@ on_building_upgraded = {
 		pw_wonder.650 #Helios Translucent Obelisk
 		pw_wonder.750 #Demetrius Chemical Garden
 
+		pw_wonder.850 #Aligned Galactic Model
 		pw_wonder.1250 #Stellar Sentinel
 	}
 }
@@ -121,5 +122,15 @@ on_colonization_started = {
 on_colonized = {
 	events = {
 		pw_wonder.111 #Space Elevator: aid development (remove modifier)
+	}
+}
+
+# A country has gained a surveyed status on a planet. Happens after "on_survey" if a science ship surveyed a planet.
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+on_planet_surveyed = {
+	events = {
+		pw_wonder.862
 	}
 }

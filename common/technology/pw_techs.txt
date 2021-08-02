@@ -2404,7 +2404,10 @@ pw_tech_galactic_model_expanding_bureaucracy = {
 			count_owned_planet = {
 				count < 1
 				limit = {
-					has_active_building = pw_building_galactic_model
+					OR = {
+						has_active_building = pw_building_galactic_model
+						has_active_building = pw_building_aligned_galactic_model
+					}
 				}
 			}
 		}
@@ -2533,7 +2536,10 @@ pw_tech_galactic_model_expanding_bureaucracy_hive = {
 			count_owned_planet = {
 				count < 1
 				limit = {
-					has_active_building = pw_building_galactic_model
+					OR = {
+						has_active_building = pw_building_galactic_model
+						has_active_building = pw_building_aligned_galactic_model
+					}
 				}
 			}
 		}
@@ -2662,7 +2668,10 @@ pw_tech_galactic_model_expanding_bureaucracy_machine = {
 			count_owned_planet = {
 				count < 1
 				limit = {
-					has_active_building = pw_building_galactic_model
+					OR = {
+						has_active_building = pw_building_galactic_model
+						has_active_building = pw_building_aligned_galactic_model
+					}
 				}
 			}
 		}
@@ -2742,6 +2751,30 @@ pw_tech_galactic_model_expanding_bureaucracy_machine = {
 		}
 
 	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+#Align Galactic model (Upgrade)
+pw_tech_hyperreality_modeling = {
+	area = society
+	cost = @pw_tech_cost_4
+	tier = 5
+	category = { statecraft }
+	prerequisites = {
+		pw_tech_galactic_modeling
+	}
+	weight = 0
+	is_rare = yes
 
 	ai_weight = {
 		factor = @pw_tech_ai_weight
