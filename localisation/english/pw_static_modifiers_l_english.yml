@@ -183,6 +183,8 @@
     pw_mod_enigma_engine_housing_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of privacy, which increases the need for housing."
     pw_mod_enigma_engine_art: "Enigmatic Art"
     pw_mod_enigma_engine_art_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed an form of artistic expression, which they exercise during their work hours, leading to decrease in production."
+    pw_mod_enigma_engine_final: "Enigmatic Apotheosis"
+    pw_mod_enigma_engine_final_desc: "The mysteries of the Enigma Engine perhaps can never be solved, but the Gestalt has fully embraced its effects, learned to adapt to its downsides and to benefit from its upsides."
 
     # Solipsist Debate Hall Event mods:
     pw_debate_mod_syncretic: "$pw_debate$ Syncretic Thoughts"

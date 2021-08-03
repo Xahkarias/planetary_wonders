@@ -433,6 +433,11 @@
     pw_wonder.1013.name: "Enigmatic, But Contained"
     pw_wonder.1013.desc: "Afters transmitting planet wide the reversed signal of the Enigma Engine we were able to suppress the adverse effects that the Engine was promoting in our drones. Soon the broadcast of the signal began the drones started to leave their abstract expressions behind and focus on their work. After some days of broadcast, the drones reformed their old congregation shapes in the storages, and after some weeks, all preferences for energy consumption have ceased and power usage returned to normal."
     pw_wonder.1013.a: "This status is better in the long term."
+    #Enigma Engine Apotheosis.
+    pw_wonder.1014.name: "Enigmatic Apotheosis"
+    pw_wonder.1014.desc: "After a long time embracing and deciphering the Enigma Engine, with all of the mysterious deviations the drones on [THIS.GetName] have been subjected to, the Gestalt has finally reached a conclusion about its metaphysics. The central intelligence has concluded that these anomalous behaviors presented by our drones are not a product of the Engine, but were already part of the drone's nature - if fact, the nature of the whole Gestalt - and the enigmatic signal simply unlocked it.\n\nThe purpose of the Enigma Engine, which is interlinked with our own purpose, is clear now, in the sense that it cannot be determined, but only constantly forever be deciphered. To update our protocols and integrate this new purpose, the enigmatic signal will be broadcasted to every drone under the Gestalt. We will embrace this new direction."
+    pw_wonder.1014.a: "The Enigma will forever be a part of code base."
+    pw_wonder.1014.b: "We have one directive, one purpose."
 
     #Complete Solipsist Debate Hall
     pw_message_solipsist_debate_hall_complete: "$pw_solipsist_debate_hall$ has been constructed on $PLANET|Y$."

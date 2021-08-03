@@ -5605,10 +5605,14 @@ planet_event = {
 		owner = {
 			add_monthly_resource_mult = {
 				resource = unity
-				value = @tier4unityreward
-				min = @tier4unitymin
-				max = @tier4unitymax
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
 			}
+		}
+		planet_event = {
+			id = pw_wonder.1014
+			days = @pw_5years
 		}
 	}
 }
@@ -5631,6 +5635,41 @@ planet_event = {
 		owner = {
 			add_resource = {
 				influence = 50
+			}
+		}
+	}
+}
+
+#Enigma Engine resolution (don't remove modifiers)
+planet_event = {
+	id = pw_wonder.1014
+	title = pw_wonder.1014.name
+	desc = pw_wonder.1014.desc
+	picture = GFX_evt_pw_enigma_engine
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	location = THIS
+
+	option = {
+		name = pw_wonder.1014.a
+		remove_modifier = pw_mod_enigma_engine_energy
+		remove_modifier = pw_mod_enigma_engine_housing
+		remove_modifier = pw_mod_enigma_engine_art
+		owner = {
+			add_modifier = {
+				modifier = pw_mod_enigma_engine_final
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.1014.b
+		remove_modifier = pw_mod_enigma_engine_energy
+		remove_modifier = pw_mod_enigma_engine_housing
+		remove_modifier = pw_mod_enigma_engine_art
+		owner = {
+			add_modifier = {
+				modifier = pw_mod_enigma_engine_final
 			}
 		}
 	}

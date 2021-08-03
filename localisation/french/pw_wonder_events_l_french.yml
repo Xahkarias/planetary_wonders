@@ -718,3 +718,8 @@
     pw_wonder.868.desc.some_asteroids: "While some of the asteroids were destroyed, the remaining ones still struck [THIS.GetName], causing major devastation and death. the damage they caused was great, but at least we avoided an extinction level event."
     pw_wonder.868.a: "The universe has no pity?"
     pw_wonder.868.a.tooltip: "The asteroids completely annihilate our colonists and leave deep scars on the surface of the planet."
+
+    pw_wonder.1014.name: "Enigmatic Apotheosis"
+    pw_wonder.1014.desc: "After a long time embracing and deciphering the Enigma Engine, with all of the mysterious deviations the drones on [THIS.GetName] have been subjected to, the Gestalt has finally reached a conclusion about its metaphysics. The central intelligence has concluded that these anomalous behaviors presented by our drones are not a product of the Engine, but were already part of the drone's nature - if fact, the nature of the whole Gestalt - and the enigmatic signal simply unlocked it.\n\nThe purpose of the Enigma Engine, which is interlinked with our own purpose, is clear now, in the sense that it cannot be determined, but only constantly forever be deciphered. To update our protocols and integrate this new purpose, the enigmatic signal will be broadcasted to every drone under the Gestalt. We will embrace this new direction."
+    pw_wonder.1014.a: "The Enigma will forever be a part of code base."
+    pw_wonder.1014.b: "We have one directive, one purpose."
