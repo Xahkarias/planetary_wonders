@@ -4526,6 +4526,504 @@ planet_event = {
 	}
 }
 
+#After 3 years Tomb World in Unique System is colonized
+planet_event = {
+	id = pw_wonder.865
+	title = pw_wonder.865.name
+	desc = pw_wonder.865.desc
+	picture = GFX_evt_asteroid_approaching_planet
+	show_sound = event_air_raid_siren
+	is_triggered_only = yes
+	location = THIS
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		num_pops > 0
+		has_planet_flag = pw_aligned_galactic_model_tomb_world
+		NOT = { has_planet_flag = pw_aligned_galactic_model_asteroid }
+	}
+
+	immediate = {
+		set_planet_flag = pw_aligned_galactic_model_asteroid
+		owner = {
+			set_country_flag = pw_aligned_galactic_model_asteroid
+		}
+
+		create_country = {
+			name = "NAME_Incoming_Asteroid"
+			type = faction
+			auto_delete = no
+			flag = {
+				icon = {
+					category = "zoological"
+					file = "flag_zoological_1.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "new_dawn.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				establish_communications_no_message = root.owner
+			}
+		}
+
+		last_created_country = {
+			set_country_flag = pw_incoming_asteroid
+
+			#Spawn 5 asteroids
+			create_fleet = {
+				name = "NAME_Asteroid"
+				effect = {
+					set_aggro_range = 0
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_owner = PREV
+					set_fleet_flag = pw_asteroid_fleet_1
+					save_event_target_as = pw_asteroid_fleet_target_1
+					create_ship = {
+						name = "NAME_pw_gerson"
+						design = "NAME_Asteroid"
+					}
+					set_location = {
+						target = ROOT
+						distance = 60
+						angle = random
+					}
+					queue_actions = {
+						move_to = ROOT
+						effect = {
+							id = "pw_wonder.865.effect.1"
+							ROOT = {
+								planet_event = { id = pw_wonder.868 }
+							}
+						}
+					}
+				}
+			}
+			create_fleet = {
+				name = "NAME_Asteroid"
+				effect = {
+					set_aggro_range = 0
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_owner = PREV
+					set_fleet_flag = pw_asteroid_fleet_2
+					save_event_target_as = pw_asteroid_fleet_target_2
+					create_ship = {
+						name = "NAME_pw_geras"
+						design = "NAME_Asteroid"
+					}
+					set_location = {
+						target = ROOT
+						distance = 60
+						angle = random
+					}
+					queue_actions = {
+						move_to = ROOT
+						effect = {
+							id = "pw_wonder.865.effect.2"
+							ROOT = {
+								planet_event = { id = pw_wonder.868 }
+							}
+						}
+					}
+				}
+			}
+			create_fleet = {
+				name = "NAME_Asteroid"
+				effect = {
+					set_aggro_range = 0
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_owner = PREV
+					set_fleet_flag = pw_asteroid_fleet_3
+					save_event_target_as = pw_asteroid_fleet_target_3
+					create_ship = {
+						name = "NAME_pw_geraldo"
+						design = "NAME_Asteroid"
+					}
+					set_location = {
+						target = ROOT
+						distance = 60
+						angle = random
+					}
+					queue_actions = {
+						move_to = ROOT
+						effect = {
+							id = "pw_wonder.865.effect.3"
+							ROOT = {
+								planet_event = { id = pw_wonder.868 }
+							}
+						}
+					}
+				}
+			}
+			create_fleet = {
+				name = "NAME_Asteroid"
+				effect = {
+					set_aggro_range = 0
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_owner = PREV
+					set_fleet_flag = pw_asteroid_fleet_4
+					save_event_target_as = pw_asteroid_fleet_target_4
+					create_ship = {
+						name = "NAME_pw_gervasio"
+						design = "NAME_Asteroid"
+					}
+					set_location = {
+						target = ROOT
+						distance = 60
+						angle = random
+					}
+					queue_actions = {
+						move_to = ROOT
+						effect = {
+							id = "pw_wonder.865.effect.4"
+							ROOT = {
+								planet_event = { id = pw_wonder.868 }
+							}
+						}
+					}
+				}
+			}
+			create_fleet = {
+				name = "NAME_Asteroid"
+				effect = {
+					set_aggro_range = 0
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_owner = PREV
+					set_fleet_flag = pw_asteroid_fleet_5
+					save_event_target_as = pw_asteroid_fleet_target_5
+					create_ship = {
+						name = "NAME_pw_gerere"
+						design = "NAME_Asteroid"
+					}
+					set_location = {
+						target = ROOT
+						distance = 60
+						angle = random
+					}
+					queue_actions = {
+						move_to = ROOT
+						effect = {
+							id = "pw_wonder.865.effect.5"
+							ROOT = {
+								planet_event = { id = pw_wonder.868 }
+							}
+						}
+					}
+				}
+			}
+
+			set_relation_flag = {
+				who = root.owner
+				flag = pw_asteroid_enemy
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.865.a
+		begin_event_chain = {
+			event_chain = pw_multiple_asteroid_attack
+		}
+	}
+
+	option = {
+		name = pw_wonder.865.b
+		trigger = {
+			is_spiritualist = yes
+		}
+		begin_event_chain = {
+			event_chain = pw_multiple_asteroid_attack
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+		}
+	}
+}
+
+# On 1 Asteroid Destroyed (HIDDEN)
+country_event = {
+	id = pw_wonder.866
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = from
+		from = { has_country_flag = pw_incoming_asteroid }
+	}
+
+	immediate = {
+		set_country_flag = pw_aligned_galactic_model_destroyed_asteroid
+		if = {
+			limit = {
+				has_country_flag = pw_aligned_galactic_model_asteroid
+				from = {
+					has_relation_flag = {
+						who = root
+						flag = pw_asteroid_enemy
+					}
+				}
+				any_owned_planet = { has_planet_flag = pw_aligned_galactic_model_asteroid }
+			}
+			add_event_chain_counter = {
+				event_chain = pw_multiple_asteroid_attack
+				counter = pw_asteroid_destroyed
+				amount = 1
+			}
+			random_owned_planet = {
+				limit = { has_planet_flag = pw_aligned_galactic_model_asteroid }
+				planet_event = { id = pw_wonder.867 }
+			}
+		}
+		else = {
+			random_country = {
+				limit = {
+					reverse_has_relation_flag = {
+						who = from
+						flag = pw_asteroid_enemy
+					}
+					has_country_flag = pw_aligned_galactic_model_asteroid
+					any_owned_planet = { has_planet_flag = pw_aligned_galactic_model_asteroid }
+				}
+				add_event_chain_counter = {
+					event_chain = pw_multiple_asteroid_attack
+					counter = pw_asteroid_destroyed
+					amount = 1
+				}
+				random_owned_planet = {
+					limit = { has_planet_flag = pw_aligned_galactic_model_asteroid }
+					planet_event = { id = pw_wonder.867 }
+				}
+			}
+		}
+	}
+}
+
+# All Asteroid Destroyed
+planet_event = {
+	id = pw_wonder.867
+	title = pw_wonder.867.name
+	desc = pw_wonder.867.desc
+	picture = GFX_evt_atmospheric_entry
+	show_sound = event_ship_explosion
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_event_chain_counter = {
+			event_chain = pw_multiple_asteroid_attack
+			counter = pw_asteroid_destroyed
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			remove_relation_flag = { who = root.owner flag = pw_asteroid_enemy }
+			destroy_country = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.867.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+			end_event_chain = pw_multiple_asteroid_attack
+		}
+	}
+
+	option = {
+		name = pw_wonder.867.b
+		trigger = {
+			is_materialist = yes
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+			end_event_chain = pw_multiple_asteroid_attack
+		}
+	}
+
+	option = {
+		name = pw_wonder.867.c
+		trigger = {
+			is_militarist = yes
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+			add_modifier = {
+				modifier = pw_mod_aligned_galactic_model_ready_for_asteroids
+				days = @pw_5years
+			}
+			end_event_chain = pw_multiple_asteroid_attack
+		}
+	}
+
+	option = {
+		name = pw_wonder.867.d
+		trigger = {
+			is_authoritarian = yes
+		}
+		add_modifier = {
+			modifier = pw_mod_aligned_galactic_model_suspicious_colony
+			days = @pw_5years
+			clear_on_owner_change = yes
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+
+			end_event_chain = pw_multiple_asteroid_attack
+		}
+	}
+}
+
+# Any Asteroid Impacts Planet
+planet_event = {
+	id = pw_wonder.868
+	title = pw_wonder.868.name
+	desc = {
+		trigger = { owner = { NOT = { has_country_flag = pw_aligned_galactic_model_destroyed_asteroid }}}
+		text = pw_wonder.868.desc
+	}
+	desc = {
+		trigger = { owner = { has_country_flag = pw_aligned_galactic_model_destroyed_asteroid } }
+		text = pw_wonder.868.desc.some_asteroids
+	}
+	picture = GFX_evt_nuclear_explosion
+	show_sound = event_super_explosion
+	location = ROOT
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_planet_flag = pw_aligned_galactic_model_asteroid_impacted }
+	}
+
+	immediate = {
+		set_planet_flag = pw_aligned_galactic_model_asteroid_impacted
+		owner = {
+			country_event = { id = pw_wonder.869 days = 1 }
+		}
+		add_deposit = d_crater
+		add_deposit = d_crater
+		add_deposit = d_crater
+		add_deposit = d_impact_crater
+		add_deposit = d_impact_crater
+		change_pc = pc_nuked
+		owner = { end_event_chain = pw_multiple_asteroid_attack }
+	}
+
+	option = {
+		name = pw_wonder.868.a
+
+		if = {
+			limit = { owner = { has_country_flag = pw_aligned_galactic_model_destroyed_asteroid }}
+			if = {
+				limit = {
+					num_pops < 2
+				}
+				random_owned_pop = { kill_pop = yes }
+			}
+			else_if = {
+				limit = {
+					num_pops > 2
+					num_pops < 6
+				}
+				random_owned_pop = { kill_pop = yes }
+				random_owned_pop = { kill_pop = yes }
+			}
+			else_if = {
+				limit = {
+					num_pops > 6
+				}
+				random_owned_pop = { kill_pop = yes }
+				random_owned_pop = { kill_pop = yes }
+				random_owned_pop = { kill_pop = yes }
+				random_owned_pop = { kill_pop = yes }
+			}
+			add_planet_devastation = 25
+		}
+		else = {
+			custom_tooltip = pw_wonder.868.a.tooltip
+			destroy_colony = yes
+		}
+	}
+}
+
+# Destroy Asteroid after fleet actions have completed and event fired
+country_event = {
+	id = pw_wonder.869
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_relation_flag = {
+					who = root
+					flag = pw_asteroid_enemy
+				}
+			}
+			every_owned_ship = {
+				fleet = {
+					destroy_fleet = this
+				}
+			}
+			destroy_country = yes
+		}
+	}
+}
+
 # Panopticon -> id 900
 
 #On Panopticon built

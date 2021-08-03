@@ -170,6 +170,12 @@
     pw_mod_aligned_galactic_model_tomb_world: "Plague Ridden World"
     pw_mod_aligned_galactic_model_tomb_world_desc: "This world was once habitable, but all life has succumbed to a mysterious plague long ago. The effects of this plague can still be felt on colonists, and some can even be studied."
 
+    pw_mod_aligned_galactic_model_ready_for_asteroids: "Ready for the Future"
+    pw_mod_aligned_galactic_model_ready_for_asteroids_desc: "After the recent incident with multiple asteroids menacing our empire, great efforts are employed in maintaining celerity of our ships, to respond quickly if it happens again."
+
+    pw_mod_aligned_galactic_model_suspicious_colony: "Suspicious Colony"
+    pw_mod_aligned_galactic_model_suspicious_colony_desc: "This planet has suffered so many misfortunes in its past that we have to keep a close eye on the population, to quench suspicions of foul play."
+
     # Enigma Engines Event mods:
     pw_mod_enigma_engine_energy: "Enigmatic Taste"
     pw_mod_enigma_engine_energy_desc: "Because of mysteries from the Enigma Engine, drones in this planet have developed a sense of taste, that makes them consume more power."

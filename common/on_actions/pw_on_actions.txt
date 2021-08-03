@@ -134,3 +134,19 @@ on_planet_surveyed = {
 		pw_wonder.862
 	}
 }
+
+on_colony_2_years_old = {
+	events = {
+		pw_wonder.865
+	}
+}
+
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_perp = {
+	events = {
+		pw_wonder.866
+	}
+}

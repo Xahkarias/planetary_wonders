@@ -19,6 +19,10 @@
     PW_FINAL_ALIGNMENT_PROJECT: "Final Alignment"
     PW_FINAL_ALIGNMENT_PROJECT_DESC: "Would it be possible to make a map of the universe on a 1 to 1 scale?\nWe can certainly try.\n\nBut the path to hyperreal alignment, an a co needs to star here, with some small adjustment to our current Model."
 
+    pw_multiple_asteroid_attack_title: "Multiple Asteroids Collisions"
+    pw_multiple_asteroid_attack_desc: ""
+    pw_asteroid_destroyed: "Asteroid destroyed"
+
     PW_FIX_ENIGMA_DRONES: "Counter Enigma Effects"
     PW_FIX_ENIGMA_DRONES_DESC: "The effects of the Enigma Engine have gone too far to be tolerated any more. We have organized a project to reverse its signals and transmit it in the entire planet, as to negate the negative effects of the Engine in our drones."
 

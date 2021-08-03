@@ -8,6 +8,16 @@
 
 # Localization is found in "pw_special_projects_l_[language].yml"
 
+pw_multiple_asteroid_attack = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_asteroid_approaching_planet
+	counter = {
+		pw_asteroid_destroyed = {
+			max = 5
+		}
+	}
+}
+
 # Grand Archive event chains:
 
 pw_assemble_ARK_project_chain = {

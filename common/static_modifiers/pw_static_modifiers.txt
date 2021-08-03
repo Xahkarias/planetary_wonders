@@ -383,6 +383,19 @@ pw_mod_aligned_galactic_model_tomb_world = {
 	planet_jobs_society_research_produces_mult = 0.05
 }
 
+pw_mod_aligned_galactic_model_ready_for_asteroids = {
+	#Country Modifier
+	ship_speed_mult = 0.05
+	starbase_shipyard_build_speed_mult = 0.05
+}
+
+pw_mod_aligned_galactic_model_suspicious_colony = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hunger_strike.dds"
+	icon_frame = @pw_icon_frame_yellow
+	pop_happiness = -0.05
+	planet_crime_add = -15
+}
+
 pw_mod_enigma_engine_energy = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
 	icon_frame = 3
