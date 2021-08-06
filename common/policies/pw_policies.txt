@@ -229,11 +229,11 @@ pw_policy_orbital_commerce = {
 		}
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_interplanetary_customhouses }
@@ -247,11 +247,11 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_exotic_goods_importer
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_exotic_goods_importer }
@@ -265,11 +265,11 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_cultural_agencies
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_cultural_agencies }
@@ -287,11 +287,11 @@ pw_policy_orbital_commerce = {
 		}
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_border_control }
@@ -305,11 +305,11 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_relocation_offices
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_relocation_offices }
@@ -323,11 +323,11 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_migration_bureau
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_migration_bureau }
@@ -345,11 +345,11 @@ pw_policy_orbital_commerce = {
 		}
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_foreign_traders }
@@ -367,11 +367,11 @@ pw_policy_orbital_commerce = {
 		}
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
+			# custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_commerce_smuggling_contacts }
@@ -398,11 +398,11 @@ pw_policy_orbital_logistics = {
 		name = pw_policy_orbital_logistics_drone_care
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_logistics_drone_care }
@@ -416,11 +416,11 @@ pw_policy_orbital_logistics = {
 		name = pw_policy_orbital_logistics_drone_scan
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_logistics_drone_scan }
@@ -434,11 +434,11 @@ pw_policy_orbital_logistics = {
 		name = pw_policy_orbital_logistics_gestalt_pylon
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_logistics_gestalt_pylon }
@@ -452,11 +452,11 @@ pw_policy_orbital_logistics = {
 		name = pw_policy_orbital_logistics_production_supply
 
 		on_enabled = {
-			custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
 		}
 
 		on_disabled = {
-			custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
+			# custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
 		}
 
 		policy_flags = { pw_policy_orbital_logistics_production_supply }

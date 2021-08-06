@@ -17,10 +17,10 @@
     PW_CAUSE_STELLAR_STORM_PROJECT_DESC: "Studies indicate that, if properly directed, a deliberate solar flare in this star could rearrange tha atmospheres and orbits of the planets in this system, causing them to better reflect the prediction of our Galactic Model."
 
     PW_FINAL_ALIGNMENT_PROJECT: "Final Alignment"
-    PW_FINAL_ALIGNMENT_PROJECT_DESC: "Would it be possible to make a map of the universe on a 1 to 1 scale?\nWe can certainly try.\n\nBut the path to hyperreal alignment, an a co needs to star here, with some small adjustment to our current Model."
+    PW_FINAL_ALIGNMENT_PROJECT_DESC: "Would it be possible to make a map of the universe on a 1 to 1 scale?\nWe can certainly try.\n\nBut the path to hyperreal alignment needs to star here, with some small adjustment to our current Model."
 
     pw_multiple_asteroid_attack_title: "Multiple Asteroids Collisions"
-    pw_multiple_asteroid_attack_desc: ""
+    pw_multiple_asteroid_attack_desc: "We have detected several asteroids on route to one of our planets. They must be destroyed to avoid a catastrophe."
     pw_asteroid_destroyed: "Asteroid destroyed"
 
     PW_FIX_ENIGMA_DRONES: "Counter Enigma Effects"

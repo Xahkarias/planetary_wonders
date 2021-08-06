@@ -208,7 +208,7 @@
     pw_research.2111.a: "Start that investigation."
     #50%
     pw_research.2112.name: "Governmental Experiments: Manufacturing Consent"
-    pw_research.2112.desc: "It is no mystery that politics is a creative combination of consent and coercion; the latter when the former fails. The cultivation of varied societies within the $pw_domed_city$ hs allowed us to document and study a myriad of combinations of the two, as well as processes in which consent is fabricated. If the country would define from what right does it rule, we can supply the proper techniques to maintain that right to power, using what we have discovered."
+    pw_research.2112.desc: "It is no mystery that politics is a creative combination of consent and coercion; the latter when the former fails. The cultivation of varied societies within the $pw_domed_city$ has allowed us to document and study a myriad of combinations of the two, as well as processes in which consent is fabricated. If the country would define from what right does it rule, we can supply the proper techniques to maintain that right to power, using what we have discovered."
     pw_research.2112.a: "We should manufacture consent to perpetuate our power."
     pw_research.2112.b: "Our power exists only from the consent of the people."
     pw_research.2112.c: "Our might is what makes us right."

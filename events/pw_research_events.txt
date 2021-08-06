@@ -1710,10 +1710,15 @@ country_event = {
 		}
 	}
 
-	#Get tech
+	#Get science
 	option = {
 		name = pw_research.2121.a
-		add_research_option = pw_tech_social_construction_fabrication
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
 		event_target:PWDCPlanet = {
 			add_modifier = {
 				modifier = pw_mod_domed_city_repairing_domed_city

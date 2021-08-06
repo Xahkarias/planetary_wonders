@@ -138,7 +138,6 @@ pw_d_SE_space_ramp = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { NOT = { can_generate_trade_value = yes }}
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -150,7 +149,7 @@ pw_d_SE_space_ramp = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { can_generate_trade_value = yes }
+			owner = { is_gestalt = no }
 			has_deposit = pw_d_SE_skyhook
 		}
 		modifier = {
@@ -162,7 +161,7 @@ pw_d_SE_space_ramp = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { NOT = { can_generate_trade_value = yes }}
+			owner = { is_gestalt = yes }
 			has_deposit = pw_d_SE_skyhook
 		}
 		modifier = {
@@ -211,7 +210,6 @@ pw_d_SE_skyhook = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { can_generate_trade_value = no }
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
@@ -223,7 +221,7 @@ pw_d_SE_skyhook = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { can_generate_trade_value = yes }
+			owner = { is_hive_empire = no }
 			has_deposit = pw_d_SE_space_ramp
 		}
 		modifier = {
@@ -235,7 +233,7 @@ pw_d_SE_skyhook = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { can_generate_trade_value = no }
+			owner = { is_hive_empire = yes }
 			has_deposit = pw_d_SE_space_ramp
 		}
 		modifier = {

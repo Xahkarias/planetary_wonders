@@ -4,6 +4,8 @@ A mod for the game [Stellaris](https://store.steampowered.com/app/281990/Stellar
 
 [Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2305790641)
 
+If you enjoy my work, have some spare money and would like to donate, now you can [Buy me a coffee at Ko-Fi!](https://ko-fi.com/namfoodle)
+
 ## Contents
 
 ### Wonders
@@ -11,27 +13,36 @@ All wonders are buildings that take up a district slot and provide a variety of 
 
 Wonder List:
 * Space Elevator
-* Particle Supercollider
-* Domed City
-* Abyssal Test Crater
-* Astronomical Model Bureau
+* Particle Supercollider -> Interdimensional Collider (upgrade)
+* Domed City -> Psionic Observatory (upgrade)
+* Abyssal Test Crater -> Metal Vivarium (upgrade)
+* Astronomical Model Bureau -> Aligned Galactic Model (upgrade)
+* Erebus Project -> Erebus Fracking Plant (upgrade)
+* Helios Tower -> Helios Translucent Obelisk (upgrade)
+* Demetrius Cornucopia -> Demetrius Chemical Garden (upgrade)
 * Panopticon
-* Enigma Engine
-* Solipsist Debate Hall
-* Guardian Angel
+* Enigma Engine (Machine Empire)
+* Solipsist Debate Hall (Hive Mind)
+* Guardian Angel -> Stellar Sentinel (upgrade)
 * Mantle Crucible
 ** Titan Forge(upgrade)
 ** Industrial Hearth(upgrade)
+* Pavilion of Wonders
+** Fair of Worlds(upgrade)
+** Museum of the Grotesque(upgrade)
+* Holy Reliquary (Spiritualists)
+* The Grand Archive (Materialists)
+* Transplanetary Logistics Network (Egalitarian)
+* Forbidden City (Authoritarian)
+* Festival Plaza (Pacifist)
+* Martial Avenue (Militarist)
 
-Unlocked by Ascension Perk:
-* Erebus Project
-* Helios Tower
-* Demetrius Cornucopia
+Unlocked by AP:
+* Living Spire (for Regular Empires)
+* Conduit of Unity (for Gestalts Empires)
 
 ## Planned Features
-* Event chains for all wonders
-* Wonder related anomalies
-* New archeological sites
+* New archeological sites and anomalies
 * (maybe) New precursor chain
 * More Localization (portugês & español)
 

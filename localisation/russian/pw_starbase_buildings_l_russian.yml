@@ -8,3 +8,5 @@
 
     sm_pw_sentinel_command_center: "Sentinel Command Center"
     sm_pw_sentinel_command_center_desc: "A control center in direct communication with the Stellar Sentinel, allowing for coordinated defense of every planet within the system and support for our fleets."
+
+    mod_starbase_constructions_produces_mult: "Resources from starbase constructions"

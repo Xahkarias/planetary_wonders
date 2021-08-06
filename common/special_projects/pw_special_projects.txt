@@ -144,17 +144,15 @@ special_project = {
 	key = PW_FINAL_ALIGNMENT_PROJECT
 	cost = 10000
 	tech_department = physics_technology
-	picture = GFX_evt_star_white
+	picture = GFX_evt_pw_galactic_model
 	icon = "gfx/interface/icons/situation_log/situation_log_scanning_beam.dds"
-	location = yes
+	location = no
 
-	event_scope = planet_event
+	event_scope = country_event
 
 	on_success = {
-		owner = {
-			country_event = {
-				id = pw_wonder.814
-			}
+		country_event = {
+			id = pw_wonder.814
 		}
 	}
 

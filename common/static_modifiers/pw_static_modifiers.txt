@@ -379,6 +379,7 @@ pw_mod_abyssal_test_crater_living_metal_plague = {
 pw_mod_aligned_galactic_model_tomb_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_hunger_strike.dds"
 	icon_frame = @pw_icon_frame_red
+	pop_environment_tolerance = -0.10
 	planet_pops_upkeep_mult = 0.20
 	planet_jobs_society_research_produces_mult = 0.05
 }

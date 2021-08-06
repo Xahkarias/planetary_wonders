@@ -658,7 +658,7 @@
     pw_wonder.651.a: "A brighter future lies ahead."
     pw_wonder.651.b: "The splendor of our crystals and the abundance of our energy."
     pw_message_demetrius_chemical_garden_complete: "$pw_demetrius_chemical_garden$ has been constructed on $PLANET|Y$."
-    pw_wonder.751.name: ""
+    pw_wonder.751.name: "Refined Nutrients"
     pw_wonder.751.desc: "It is said the we can grow and replicate any kind of nutrient, with singular flavor, within the $pw_building_demetrius_fields$. If such is true, then we can also construct any complex molecule too, be it organic or inorganic. Now installed with the proper chemical facilities, we can produce a variety of Exotic Gases, with specific properties to suit our needs. In turn, we can also apply the produced gases back into the development of produce, boosting our food production."
     pw_wonder.751.a: "There is nothing we cannot grow."
     pw_wonder.751.b: "Whatever we need, the land provides."
@@ -701,7 +701,7 @@
     pw_wonder.861.desc: "By constant study of our $pw_aligned_galactic_model$, our modelers have found something that was hidden just our of sight: a stellar system, unconnected to any hyperlane and concealed by unknown means. Trough manipulation of the Model, they were able to reconnect this rogue system back into the hyperlane network.\n\nEven when we taught we had seen everything, the universe still holds some surprises. We should explore this system right away."
     pw_wonder.861.a: "Contact the nearest science ship!"
     pw_wonder.862.name: "Lost in Space"
-    pw_wonder.862.desc: "The mystery of the rogue system still puzzles our scientists. After analyzing [THIS.GetName], the only planet in the system with signs of habitation, they could partially piece it together.\n\nEvidence suggests that the planet housed a civilization some time ago, as many strange constructions still decorate the planets surface. However, the rare surviving life forms carry biological indicators of some kind of plague, disease likely caused the demise of this civilization. Fortunately, it seems that whatever pathogen that caused the plague is no longer active, but its effects endure to this day."
+    pw_wonder.862.desc: "The mystery of the rogue system still puzzles our scientists. After analyzing [FROM.GetName], the only planet in the system with signs of habitation, they could partially piece it together.\n\nEvidence suggests that the planet housed a civilization some time ago, as many strange constructions still decorate the planets surface. However, the rare surviving life forms carry biological indicators of some kind of plague, disease likely caused the demise of this civilization. Fortunately, it seems that whatever pathogen that caused the plague is no longer active, but its effects endure to this day."
     pw_wonder.862.a: "Most curious."
 
     pw_wonder.865.name: "Astronomical Misfortune"

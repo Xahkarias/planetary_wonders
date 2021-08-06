@@ -512,6 +512,7 @@
     pw_tech_interdimensional_collider: "Interdimensional Collider"
     pw_tech_interdimensional_collider_desc: "Now, this is what it is like when dimensions collide."
 
+    mod_country_sr_dark_matter_produces_mult: "Dark Matter production"
     pw_tech_intradimensional_matter_drawing: "Intradimensional Matter Drawing"
     pw_tech_intradimensional_matter_drawing_desc: "With the $pw_building_interdimensional_collider$ we can improve our production by drawing Dark Matter from the vacuum of our universe."
 
@@ -553,6 +554,7 @@
     pw_tech_psionic_observatory: "Psionic Observatory"
     pw_tech_psionic_observatory_desc: "Wether we understand the effects of Zro or not, the power of the substance is undeniable."
 
+    mod_country_sr_zro_produces_mult: "Zro production"
     pw_tech_zro_refurbishing: "Zro Refurbishing"
     pw_tech_zro_refurbishing_desc: "After learning where zro comes from, refurbishing the substance when spent is the only way of maintaining its production."
 
@@ -601,6 +603,7 @@
     pw_tech_metal_vivarium: "Metal Vivarium"
     pw_tech_metal_vivarium_desc: "If it lives, will it grow and breed and evolve and think?"
 
+    mod_country_sr_living_metal_produces_mult: "Living Metal production"
     pw_tech_living_metal_breeding: "Living Metal Breeding"
     pw_tech_living_metal_breeding_desc: "Letting Living Metal breed by allowing to transfer its properties to other alloys is the best way to increase our production of the substance."
 

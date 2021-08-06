@@ -769,6 +769,7 @@ pw_decision_SE_counterweight_habitat = {
 }
 
 pw_decision_SE_open_for_galactic_market = {
+	icon = pw_decision_SE_change_galactic_market_bonus
 	owned_planets_only = yes
 	sound = sfx_event_galactic_community
 	enactment_time = 0
