@@ -4,5 +4,6 @@ New Wonder Checklist.todo
 
 *.py[cod]
 
+localisation_to_export
 screenshots/
 __pycache__/
