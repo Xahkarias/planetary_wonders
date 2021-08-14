@@ -30,7 +30,7 @@
 
     #Sudden Energy Drain
     pw_research.1005.name: "Energy Drain"
-    pw_research.1005.desc: "Sudden energy fluctuations has drained many of our reserves on [PWFallenEmpirePC.GetName]. Fortunately, no critical system were permanently damaged.\n\nReports point to the $pw_particle_supercollider$ as the epicenter of these fluctuations. It must have something to do with the group of theologians from §H[PWFallenEmpirePC.GetName]§! and their meditation there."
+    pw_research.1005.desc: "Sudden energy fluctuations have drained many of our reserves on [PWFallenEmpirePCPlanet.GetName]. Fortunately, no critical system were permanently damaged.\n\nReports point to the $pw_particle_supercollider$ as the epicenter of these fluctuations. It must have something to do with the group of theologians from §H[PWFallenEmpirePC.GetName]§! and their meditation there."
     pw_research.1005.a: "Contact them!"
     pw_research.1005.b: "We must not disturb the theologians."
 
@@ -143,25 +143,25 @@
     pw_research.2004.desc: "As the news of war reach our country, we checked on the group sent by the [PWFallenEmpireDC.GetName] only to find that they have completely vanished!\n\nWe must assume that they have returned to their country because of the current conflict, but no traces of them remain."
     pw_research.2004.a: "At least we have our research back."
 
-    #Intergalactic Transmission
-    pw_research.2005.name: "Intergalactic Transmission"
+    #Pan-Galactic Transmission
+    pw_research.2005.name: "Pan-Galactic Transmission"
     pw_research.2005.desc: "We re receiving reports from all around the galaxy that footage from inside our $pw_domed_city$ was temporarily transmitted in several wavelengths, reaching the whole galaxy. Some of those transmissions have managed to find their way into secured channels, threatening the national security of several states. The rogue transmissions have ceased for the time being, but our envoys will surely have diplomatic issues to handle.\n\nInternal investigations are already underway, but initial reports point to [PWFallenEmpireDC.GetAdj] interference in our system as the primary cause. We know they wanted surveillance data, but distributing classified information is too much."
     pw_research.2005.a: "Contact them!"
     pw_research.2005.b: "Dismiss it all as a joke."
 
-    #Intergalactic Transmission - Contact
-    pw_research.2006.name: "§H[PWFallenEmpireDC.GetName]§!: Intergalactic Transmission"
+    #Pan-Galactic Transmission - Contact
+    pw_research.2006.name: "§H[PWFallenEmpireDC.GetName]§!: Pan-Galactic Transmission"
     pw_research.2006.desc: "Hello again, [THIS.GetSpeciesNamePlural]!\n\nThe transmission you ask?\nYes, preliminary tests are promising!\n\nWhat do you mean the whole galaxy?!\n\nNo, I assure you it was not our intention. We were simply attempting to synchronize communication with our own frequencies. It is clearly a minor mistake that will not repeat itself, if you only let us continue with our work."
     pw_research.2006.a: "You may continue, but no more mistakes."
     pw_research.2006.b: "Unacceptable, take your equipment and leave."
 
-    #Intergalactic Transmission - Continue
-    pw_research.2007.name: "§H[PWFallenEmpireDC.GetName]§!: Intergalactic Transmission"
+    #Pan-Galactic Transmission - Continue
+    pw_research.2007.name: "§H[PWFallenEmpireDC.GetName]§!: Pan-Galactic Transmission"
     pw_research.2007.desc: "Fantastic!\n\nI am sure you will come around to see this experience as an opportunity, actually.\nBut let us go back to work."
     pw_research.2007.a: "An opportunity? Never mind..."
 
-    #Intergalactic Transmission - Stop
-    pw_research.2008.name: "§H[PWFallenEmpireDC.GetName]§!: Intergalactic Transmission"
+    #Pan-Galactic Transmission - Stop
+    pw_research.2008.name: "§H[PWFallenEmpireDC.GetName]§!: Pan-Galactic Transmission"
     pw_research.2008.desc: "We should have known.\nYour species does have a tendency towards egotism.\n\nSo much work gone to waste and so much data that we will not have, but alas, we will leave you alone."
     pw_research.2008.a: "Good riddance."
 
@@ -196,7 +196,7 @@
     #75%
     pw_research.2103.name: "Hazardous Environment Experiments: Crisis Management"
     pw_research.2103.desc: "By analyzing the development of a variety of communities and societies, allowed to flourish inside the $pw_domed_city$ in state of constant environmental crisis, we can establish procedures to better face those crisis ourselves.Strategies can be ranked and perfected in this real-life simulation. Additionally, some of these strategies can be employed in manufactured crisis, consolidating the power of our country."
-    pw_research.2103.a: "Develop those procedures we the experiments are done."
+    pw_research.2103.a: "Develop those procedures when the experiments are done."
     #Complete
     pw_research.2104.name: "Completed Hazardous Environment Experiments"
     pw_research.2104.desc: "We have completed the first assortment of societal experiments regarding life development on hazardous environments, and there are more themes to explore within the $pw_domed_city$. It has become clear to us that we need to expand the infrastructure of the facility in order to maintain the high quality of our results.\n\nResearcher of the Dome have also drafted the experiment collection they will explore in sequence. It will focus on governance and the manufacturing of a social body, even if that social body is composed of a single being."

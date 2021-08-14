@@ -198,6 +198,7 @@ pw_decision_manage_land_repurposing = {
 			if = {
 				limit = {
 					has_designation = col_mining
+
 				}
 				add_modifier = {
 					modifier = pw_mod_extra_mining_district_extra
@@ -206,16 +207,7 @@ pw_decision_manage_land_repurposing = {
 			}
 			else_if = {
 				limit = {
-					has_designation = col_mining
-				}
-				add_modifier = {
-					modifier = pw_mod_extra_generator_district_extra
-					clear_on_owner_change = yes
-				}
-			}
-			else_if = {
-				limit = {
-					has_designation = col_mining
+					has_designation = col_farming
 				}
 				add_modifier = {
 					modifier = pw_mod_extra_farming_district_extra
