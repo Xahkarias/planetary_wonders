@@ -56,7 +56,7 @@
     #Events
     pw_anomaly.100.name: "A Machine"
     pw_anomaly.100.desc: "Searching through the asteroid field, [Root.Leader.GetName] has found many pieces of machinery floating adrift between the rocks. Following this mechanical trail, [Root.Leader.GetSheHe] encountered a huge assortment of gears, rotors, antennas and pulleys amalgamated into a singular machine, bridging two asteroids drifting away in space. Curiously, the letters S.H.C. seem to be stamped in many of the composing parts. This appears to be the source of the signal and the movement as its wheels keep turning, even with no apparent power source.\nIt is clearly an autonomous system of some sort, but many mysteries regarding its origin remain. A special project can be prepared to investigate further details."
-    pw_anomaly.100.a: "its purpose must be determined."
+    pw_anomaly.100.a: "Its purpose must be determined."
     pw_anomaly.100.b: "It is heresy. Let the asteroids consume it."
     #Decode the signal
     pw_anomaly.101.name: "Engine of Enigma"
@@ -102,7 +102,7 @@
     pw_anomaly.130.d: "Leave the machine to its frozen prison."
     #War Titan salvage fail
     pw_anomaly.131.name: "Final Journey"
-    pw_anomaly.131.desc: "While attempting to retrieve the War Titan from its frozen prison, science officer [LEADER.GetName] planed to extract it from the closest point to the surface, the particle cannon in its left hand. However, the structural integrity of the titan was not as projected and the team was only able to retrieve the weapon before the rest of the titan sank further into the glacier. The salvage operation was called off as most of the Titan was deemed inoperable by this mistake"
+    pw_anomaly.131.desc: "While attempting to retrieve the War Titan from its frozen prison, science officer [LEADER.GetName] planed to extract it from the closest point to the surface, the particle cannon in its left hand. However, the structural integrity of the titan was not as projected and the team was only able to retrieve the weapon before the rest of the titan sank further into the glacier. The salvage operation was called off as most of the Titan was deemed inoperable by this mistake."
     pw_anomaly.131.a: "Unfortunate. At least we can study this hand cannon."
     #War Titan salvage success
     pw_anomaly.132.name: "[OWNER.GetAdj] Titan"

@@ -357,11 +357,11 @@
     #Begin The chain - Living Production
     #25%
     pw_research.3121.name: "Living Production Experiments: Adaptable Decouples"
-    pw_research.3121.desc: "By focusing the experiments conducted on $pw_abyssal_crater_test_site$ on the flexible properties of Living Metal, our researchers have elaborated new voidcraft construction techniques the expedite the assembly and retrofitting of our vessels. If made standard, we can utilize living Metal decouples to equip our ships with adaptable weapon slots, making their upgrade process much simpler."
+    pw_research.3121.desc: "By focusing the experiments conducted on $pw_abyssal_crater_test_site$ on the flexible properties of Living Metal, our researchers have elaborated new voidcraft construction techniques that expedite the assembly and retrofitting of our vessels. If made standard, we can utilize living Metal decouples to equip our ships with adaptable weapon slots, making their upgrade process much simpler."
     pw_research.3121.a: "Send the project to our shipwrights."
     #50%
     pw_research.3122.name: "Living Production Experiments: Metal Plague"
-    pw_research.3122.desc: "In our eternal quest to develop Living Metal applications, the researchers at the $pw_abyssal_crater_test_site$ have created a Living Metal-ceramic alloy with strange properties. This new breed refuses to behave as it is programmed and worst, it transmits this property to other instances of Living Metal, acting as a form of infection. Samples brought to testing grounds have already affected large quantities of the material. We must temporarily halt halt experiments on site in order to isolate and contain this rebellious breed."
+    pw_research.3122.desc: "In our eternal quest to develop Living Metal applications, the researchers at the $pw_abyssal_crater_test_site$ have created a Living Metal-ceramic alloy with strange properties. This new breed refuses to behave as it is programmed and worst, it transmits this property to other instances of Living Metal, acting as a form of infection. Samples brought to testing grounds have already affected large quantities of the material. We must temporarily halt experiments on site in order to isolate and contain this rebellious breed."
     pw_research.3122.a: "The perils of cutting edge technology."
     pw_research.3122.b: "Take more resources to accelerate the process."
     #75%

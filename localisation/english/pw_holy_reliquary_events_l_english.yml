@@ -363,7 +363,7 @@
     #Appoint Relic Keeper:
     pw_holy_reliquary.1.appoint_relic_keeper: "Appoint Relic Keeper"
     pw_holy_reliquary.800.name: "Keeper of Relics"
-    pw_holy_reliquary.800.desc: "The harmony of our $pw_holy_reliquary$ is almost fulfilled with all the artifacts we have sanctified. Each shard of our history, each piece of history each component of our philosophy must be finally guarded by a trusted theologian. Holy the most versed in our myths and legend, the most pious and the most holy of our devotees in the Reliquary shall be chosen to maintain and carry forward the spirit of our faith."
+    pw_holy_reliquary.800.desc: "The harmony of our $pw_holy_reliquary$ is almost fulfilled with all the artifacts we have sanctified. Each shard of our history, each piece of our culture, each component of our philosophy must be finally guarded by a trusted theologian. Only the most versed in our myths and legend, the most pious and the most holy of the devotees in the Reliquary shall be chosen to maintain and carry forward the spirit of our faith."
     pw_holy_reliquary.800.a.tooltip: "$pw_holy_reliquary$: §G+1§! $mod_job_pw_relic_keeper_add$."
 
     #Bonus: Holy Throne -> 850
@@ -407,7 +407,7 @@
 
     #General Random Events:
     pw_holy_reliquary.1010.name: "Overflowing Peregrinations"
-    pw_holy_reliquary.1010.desc: "The relics fo the $pw_holy_reliquary$ have attracted many of the faithful in peregrination to [pw_holy_reliquary_planet.GetName]. In fact, we so many people have come to visit - and even to stay - the planet that temporary shelters are beginning to gather outside de walls of the Reliquary, if we do not act, there will be a disorganized community there in no time."
+    pw_holy_reliquary.1010.desc: "The relics fo the $pw_holy_reliquary$ have attracted many of the faithful in peregrination to [pw_holy_reliquary_planet.GetName]. In fact, we so many people have come to visit - and even to stay - the planet that temporary shelters are beginning to gather outside the walls of the Reliquary, if we do not act, there will be a disorganized community there in no time."
     pw_holy_reliquary.1010.a: "Send aid to organize the community."
     pw_holy_reliquary.1010.b: "Institute migration controls for the Reliquary."
     pw_holy_reliquary.1010.c: "Unfortunate, but there is nothing we can do."

@@ -524,8 +524,8 @@ country_event = {
 
 	#Way of the Void-Speakers
 	option = {
-		name = pw_holy_reliquary.201.b
-		custom_tooltip = pw_holy_reliquary.201.b.tooltip
+		name = pw_holy_reliquary.101.b
+		custom_tooltip = pw_holy_reliquary.101.b.tooltip
 		allow = {
 			NOT = { has_modifier = pw_holy_reliquary_expansion_extrospective_gaze }
 			resource_stockpile_compare = {
