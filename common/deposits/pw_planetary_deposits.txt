@@ -1,6 +1,6 @@
 #Resource wonders deposits (added by Archaeology)
 pw_d_ancient_cornucopia = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_city_ruins
 
@@ -34,7 +34,7 @@ pw_d_ancient_cornucopia = {
 }
 
 pw_d_ancient_solar_tower = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_solar_array
 
@@ -68,7 +68,7 @@ pw_d_ancient_solar_tower = {
 }
 
 pw_d_ancient_mining_project = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_mining_tunnels
 
@@ -104,7 +104,7 @@ pw_d_ancient_mining_project = {
 #Space Elevator logistics deposits
 #Planet-Orbit (Space Ramp)
 pw_d_SE_space_ramp = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 
 	#Can't occur naturally
@@ -172,7 +172,7 @@ pw_d_SE_space_ramp = {
 
 #Orbit-Planet (Skyhook)
 pw_d_SE_skyhook = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 
 	#Can't occur naturally
@@ -244,7 +244,7 @@ pw_d_SE_skyhook = {
 
 # Guardian Angle choice features:
 pw_d_guardian_angel_training = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -275,7 +275,7 @@ pw_d_guardian_angel_training = {
 }
 
 pw_d_guardian_angel_police_operations = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -303,7 +303,7 @@ pw_d_guardian_angel_police_operations = {
 }
 
 pw_d_guardian_angel_tourist_attraction = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -335,7 +335,7 @@ pw_d_guardian_angel_tourist_attraction = {
 
 # Holy Reliquary Features
 pw_d_monument_to_the_solar_regent = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 	icon = d_monument
@@ -371,7 +371,7 @@ pw_d_monument_to_the_solar_regent = {
 }
 
 pw_d_parliament_of_the_void_speakers = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 	icon = d_ruins_small
@@ -410,7 +410,7 @@ pw_d_parliament_of_the_void_speakers = {
 
 # ARK Project (Society/Biology)
 pw_d_ark_project = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -427,7 +427,8 @@ pw_d_ark_project = {
 
 	country_modifier = {
 		category_biology_research_speed_mult = 0.15
-		bio_pop_growth_speed = 0.10
+		BIOLOGICAL_pop_growth_speed = 0.10
+		LITHOID_pop_growth_speed = 0.10
 	}
 
 	triggered_planet_modifier = {
@@ -442,7 +443,7 @@ pw_d_ark_project = {
 
 # Library of Babel (Society/Statecraft or Military Theory)
 pw_d_library_of_babel = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -475,7 +476,7 @@ pw_d_library_of_babel = {
 
 # Cradle Initiative (Society/New Worlds)
 pw_d_cradle_initiative = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -507,7 +508,7 @@ pw_d_cradle_initiative = {
 
 # Particle Museum (Physics/Particles)
 pw_d_particle_museum = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -539,7 +540,7 @@ pw_d_particle_museum = {
 
 # Omnidatabase (Physics/Computing)
 pw_d_omnidatabase = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -571,7 +572,7 @@ pw_d_omnidatabase = {
 
 # Stellarium (Physics/Field Manipulation)
 pw_d_stellarium = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -603,7 +604,7 @@ pw_d_stellarium = {
 
 # Zero-G Exposition (Engineering/Voidcraft or Propulsion)
 pw_d_zero_g_exposition = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -636,7 +637,7 @@ pw_d_zero_g_exposition = {
 
 # Mechanist Collection (Engineering/Industry)
 pw_d_mechanist_collection = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -668,7 +669,7 @@ pw_d_mechanist_collection = {
 
 # Meta-Architectural Complex (Engineering/Materials)
 pw_d_meta_architectural_complex = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -700,7 +701,7 @@ pw_d_meta_architectural_complex = {
 
 # Holoarchive (all)
 pw_d_holoarchive = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 
@@ -717,7 +718,8 @@ pw_d_holoarchive = {
 
 	country_modifier = {
 		all_technology_research_speed = 0.20
-		bio_pop_growth_speed = 0.10
+		BIOLOGICAL_pop_growth_speed = 0.10
+		LITHOID_pop_growth_speed = 0.10
 		country_unity_produces_mult = 0.15
 		pop_environment_tolerance = 0.10
 		weapon_type_energy_weapon_fire_rate_mult = 0.15
@@ -740,7 +742,7 @@ pw_d_holoarchive = {
 
 # Lunar Archive (Added by Archaeology)
 pw_d_lunar_archive = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	should_swap_deposit_on_terraforming = no
 	icon = pw_d_integration_drone_surveillance

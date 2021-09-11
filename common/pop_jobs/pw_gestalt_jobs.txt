@@ -699,7 +699,7 @@ pw_logistics_drone = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_synchronicity_integrated_preservation
+				has_active_tradition = tr_synchronicity_integrated_preservation
 			}
 		}
 		modifier = {
@@ -737,7 +737,7 @@ pw_logistics_drone = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_swapped_tradition = tr_synchronicity_instinctive_synchronization }
+			owner = { has_active_tradition = tr_synchronicity_instinctive_synchronization }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = 1

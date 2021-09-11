@@ -79,6 +79,7 @@ country_event = {
 				has_tradition = tr_expansion_finish
 			}
 			else = {
+
 				pw_alternate_tradition_can_sanctify_relic = yes
 			}
 		}
@@ -258,7 +259,7 @@ country_event = {
 				limit = { NOT = { has_country_flag = pw_holy_reliquary_alternate_traditions }}
 				OR = {
 					has_tradition = tr_diplomacy_finish
-					has_swapped_tradition = tr_adaptability_finish
+					has_active_tradition = tr_adaptability_finish
 				}
 			}
 			else = {
@@ -587,7 +588,7 @@ country_event = {
 			weights = {
 				base = 1
 				modifier = {
-					mult = 3
+					factor = 3
 					num_pops > 50
 				}
 			}
@@ -657,7 +658,7 @@ country_event = {
 			weights = {
 				base = 1
 				modifier = {
-					mult = 3
+					factor = 3
 					num_pops > 50
 				}
 			}
@@ -882,7 +883,7 @@ country_event = {
 			weights = {
 				base = 1
 				modifier = {
-					mult = 3
+					factor = 3
 					num_pops > 50
 				}
 			}
@@ -917,7 +918,7 @@ country_event = {
 			weights = {
 				base = 1
 				modifier = {
-					mult = 3
+					factor = 3
 					num_pops > 50
 				}
 			}

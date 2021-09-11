@@ -119,9 +119,9 @@ pw_crystal_personal_armor = {
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 1
 		modifier = {
-			weight = @EdictMedPrio
+			weight = 7
 			is_at_war = yes
 		}
 	}
@@ -161,9 +161,9 @@ pw_exotic_nerve_gas = {
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 1
 		modifier = {
-			weight = @EdictMedPrio
+			weight = 7
 			is_at_war = yes
 		}
 	}
@@ -192,9 +192,9 @@ pw_motes_portable_weapons = {
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 1
 		modifier = {
-			weight = @EdictMedPrio
+			weight = 7
 			is_at_war = yes
 		}
 	}

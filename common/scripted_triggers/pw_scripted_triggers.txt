@@ -224,6 +224,7 @@ pw_is_wonder_sector_unique = {
 	}
 }
 
+#Deprecated in favor of is_ideal_planet_class
 pw_is_planet_ideal = {
 	OR = {
 		is_planet_class = pc_gaia
@@ -406,6 +407,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 0
 				}
 			}
+
 			num_ascension_perk_slots > 0
 		}
 		else_if = {

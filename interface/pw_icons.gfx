@@ -1,5 +1,26 @@
 spriteTypes = {
 
+	## Army Types ##
+	spriteType = {
+		name = "GFX_pw_army_flying_fortress"
+		textureFile = "gfx/interface/icons/armies/pw_army_flying_fortress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pw_army_war_titan"
+		textureFile = "gfx/interface/icons/armies/pw_army_war_titan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pw_assault_acolyte"
+		textureFile = "gfx/interface/icons/armies/pw_assault_acolyte.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pw_army_living_metal_warform"
+		textureFile = "gfx/interface/icons/armies/pw_army_living_metal_warform.dds"
+	}
+
 	## Spaceport Modules ##
 
 	spriteType = {

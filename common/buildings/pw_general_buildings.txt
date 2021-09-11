@@ -488,6 +488,11 @@ pw_building_galactic_model = {
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = government
+	# empire_limit = {
+	# 	modifier = {
+	# 		add = 1
+	# 	}
+	# }
 
 	prerequisites = {
 		pw_tech_galactic_modeling

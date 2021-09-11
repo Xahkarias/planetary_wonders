@@ -108,8 +108,11 @@ pw_building_mantle_crucible = {
 	#Decrease Habitability
 	triggered_planet_modifier = {
 		potential = { #If habitability is not fixed
-			pw_is_planet_ideal = no
 			exists = owner
+			is_ideal_planet_class = {
+				who = OWNER
+				status = no
+			}
 			owner = { NOT = { has_country_flag = pw_mantle_crucible_habitability_project_completed }}
 		}
 		pop_environment_tolerance = -0.20 #Decrease Habitability
@@ -605,8 +608,11 @@ pw_building_titan_forge = {
 
 	triggered_planet_modifier = {
 		potential = { #If habitability is not fixed
-			pw_is_planet_ideal = no
 			exists = owner
+			is_ideal_planet_class = {
+				who = OWNER
+				status = no
+			}
 			owner = { NOT = { has_country_flag = pw_mantle_crucible_habitability_project_completed }}
 		}
 		pop_environment_tolerance = -0.25 #Decrease Habitability
@@ -890,8 +896,11 @@ pw_building_industrial_hearth = {
 
 	triggered_planet_modifier = {
 		potential = { #If habitability is not fixed
-			pw_is_planet_ideal = no
 			exists = owner
+			is_ideal_planet_class = {
+				who = OWNER
+				status = no
+			}
 			owner = { NOT = { has_country_flag = pw_mantle_crucible_habitability_project_completed }}
 		}
 		pop_environment_tolerance = -0.25 #Decrease Habitability
