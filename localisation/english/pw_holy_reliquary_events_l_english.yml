@@ -3,7 +3,7 @@
     #Scripted triggers tooltips:
     pw_holy_reliquary_leave_tooltip: "You can return to the $pw_holy_reliquary$ via Edict or £decision£ Planetary Decision where it is build."
     pw_holy_reliquary_return_to_hub_tooltip: "Return to the Holy Reliquary hub."
-    pw_holy_reliquary.finish_more_traditions: "Activate one more Ascension Perk to sanctify another Artifact."
+    pw_holy_reliquary.finish_more_traditions: "Complete one more Tradition Tree to sanctify another Artifact."
     pw_holy_reliquary.has_sanctified_all_relics: "Every Artifact has been sanctified."
 
     #Enter the Holy Reliquary (initial):

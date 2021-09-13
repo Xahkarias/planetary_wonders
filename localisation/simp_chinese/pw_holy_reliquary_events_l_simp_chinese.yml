@@ -68,7 +68,7 @@
     pw_holy_reliquary.750.b: "Burn the heretic writings."
     pw_holy_reliquary.750.c: "They will be safer with the [THIS.GetRulerTitle]."
 
-    pw_holy_reliquary.finish_more_traditions: "Finish one more tradition tree to sanctify another artifact."
+    pw_holy_reliquary.finish_more_traditions: "Complete one more Tradition Tree to sanctify another Artifact."
     pw_holy_reliquary.has_sanctified_all_relics: "Every Artifact has been sanctified."
     pw_holy_reliquary.1.appoint_relic_keeper: "Appoint Relic Keeper"
     pw_holy_reliquary.800.name: "Keeper of Relics"

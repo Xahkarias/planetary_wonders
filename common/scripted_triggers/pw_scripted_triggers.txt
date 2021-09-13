@@ -414,7 +414,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 				}
 			}
 
-			num_ascension_perk_slots > 0
+			num_tradition_categories > 0
 		}
 		else_if = {
 			limit = {
@@ -423,7 +423,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 1
 				}
 			}
-			num_ascension_perk_slots > 1
+			num_tradition_categories > 1
 		}
 		else_if = {
 			limit = {
@@ -432,7 +432,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 2
 				}
 			}
-			num_ascension_perk_slots > 2
+			num_tradition_categories > 2
 		}
 		else_if = {
 			limit = {
@@ -441,7 +441,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 3
 				}
 			}
-			num_ascension_perk_slots > 3
+			num_tradition_categories > 3
 		}
 		else_if = {
 			limit = {
@@ -450,7 +450,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 4
 				}
 			}
-			num_ascension_perk_slots > 4
+			num_tradition_categories > 4
 		}
 		else_if = {
 			limit = {
@@ -459,7 +459,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 5
 				}
 			}
-			num_ascension_perk_slots > 5
+			num_tradition_categories > 5
 		}
 		else_if = {
 			limit = {
@@ -468,7 +468,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 6
 				}
 			}
-			num_ascension_perk_slots > 6
+			num_tradition_categories > 6
 		}
 		else_if = {
 			limit = {
@@ -477,7 +477,7 @@ pw_alternate_tradition_can_sanctify_relic = {
 					value = 7
 				}
 			}
-			num_ascension_perk_slots > 7
+			num_tradition_categories > 7
 		}
 	}
 }
