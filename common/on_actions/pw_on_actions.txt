@@ -150,3 +150,24 @@ on_fleet_destroyed_perp = {
 		pw_wonder.866
 	}
 }
+
+# A Megastructure has been built
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+# FromFromFrom = Fleet
+on_megastructure_built = {
+	events = {
+		pw_wonder.10
+	}
+}
+
+# A Megastructure has been upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+on_megastructure_upgraded = {
+	events = {
+		pw_wonder.10
+	}
+}

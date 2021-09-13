@@ -1,0 +1,19 @@
+﻿l_simp_chinese:
+
+    
+    tradition_pw_monumentality: "Monumentality"
+    tradition_pw_monumentality_desc: "You never should let such things as limits stand in the way of your constructions. We will find ways to erect our marvelous structures."
+    tr_pw_monumentality_adopt: "Monumentality Traditions"
+    tr_pw_monumentality_adopt_desc: "$tradition_pw_monumentality_desc$"
+    tr_pw_monumentality_adopt_effect: ""
+    tr_pw_monumentality_finish: "Monumentality Traditions Finished"
+    tr_pw_monumentality_finish_tooltip: "Allows for the construction of Monument buildings."
+    tr_pw_monumentality_architecture_parlante: "Architecture Parlante"
+    tr_pw_monumentality_architecture_parlante_tooltip: "Each $pw_planet_wonder$ produces §G+5§! £unity£ §Y$unity$§!.\n"
+    tr_pw_monumentality_brutalism: "Brutalism"
+    tr_pw_monumentality_brutalism_tooltip: "Each $pw_planet_wonder$ produces §G+3§! £stability£ $PLANET_STABILITY_TITLE$.\n"
+    tr_pw_monumentality_integrated_urbanism: "Integrated Urbanism"
+    tr_pw_monumentality_integrated_urbanism_tooltip: "Unlocks planetary decision that allows for a $pw_planet_wonder$ that does not require a free District.\n"
+    tr_pw_monumentality_builders_of_worlds: "Builders of Worlds"
+    tr_pw_monumentality_celestial_monuments: "Celestial Monuments"
+    tr_pw_monumentality_celestial_monuments_tooltip: "Every time a Megastructure is upgraded it generates §G50§! £unity£ §Y$unity$§!.\n"

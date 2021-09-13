@@ -41,6 +41,33 @@ planet_event = {
 	}
 }
 
+#Added by Celestial Monuments Tradition: Gain Unity when Megastructure upgraded
+#Triggered when megastructure is build(?) or upgraded
+country_event = {
+	id = pw_wonder.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_tradition = tr_pw_monumentality_celestial_monuments
+		from = {
+			NOT = { has_megastructure_flag = pw_megastructure_gave_unity_recently }
+		}
+	}
+
+	immediate = {
+		from = {
+			set_timed_megastructure_flag = {
+				flag = pw_megastructure_gave_unity_recently
+				days = 360
+			}
+		}
+		add_resource = {
+			unity = 50
+		}
+	}
+}
+
 # Space Elevator -> id 100
 
 #On Space Elevator built

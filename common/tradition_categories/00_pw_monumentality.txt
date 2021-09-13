@@ -1,0 +1,19 @@
+tradition_pw_monumentality = {
+	# tree_template = asdad
+
+	adoption_bonus = tr_pw_monumentality_adopt
+	finish_bonus = tr_pw_monumentality_finish
+	traditions = {
+		tr_pw_monumentality_architecture_parlante
+		tr_pw_monumentality_brutalism
+		tr_pw_monumentality_integrated_urbanism
+		tr_pw_monumentality_builders_of_worlds
+		tr_pw_monumentality_celestial_monuments
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1
+		}
+	}
+}

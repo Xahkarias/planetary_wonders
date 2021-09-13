@@ -66,6 +66,7 @@
 
 #Resource Production
 @pw_stability_production = 3
+@pw_unity_production = 5
 #@pw_influence_production = 0.1
 
 #Regular Jobs:
@@ -79,6 +80,11 @@
 @pw_deposits_upkeep_common = 2
 @pw_deposits_upkeep_advanced = 1
 
+#Monuments:
+@pw_monument_cost = 1000
+@pw_monument_time = 360
+@pw_monument_unity_production = 10
+@pw_monument_upkeep = 5
 
 #Jobs
 

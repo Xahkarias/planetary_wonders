@@ -18,7 +18,10 @@ pw_building_space_elevator = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -101,10 +104,23 @@ pw_building_space_elevator = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Regular Jobs
@@ -305,7 +321,7 @@ pw_building_space_elevator = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -510,7 +526,10 @@ pw_building_galactic_model = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
@@ -592,10 +611,23 @@ pw_building_galactic_model = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	country_modifier = {
@@ -677,7 +709,7 @@ pw_building_galactic_model = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -928,10 +960,23 @@ pw_building_aligned_galactic_model = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	country_modifier = {
@@ -1016,7 +1061,7 @@ pw_building_aligned_galactic_model = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -1205,6 +1250,7 @@ pw_building_polyhedron = {
 		upkeep = {
 			energy = 5
 		}
+
 	}
 
 	planet_modifier = {
@@ -1331,7 +1377,10 @@ pw_building_panopticon = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		OR = {
@@ -1385,10 +1434,23 @@ pw_building_panopticon = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	country_modifier = {
@@ -1543,7 +1605,7 @@ pw_building_panopticon = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -1728,7 +1790,10 @@ pw_building_guardian_angel = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -1789,10 +1854,23 @@ pw_building_guardian_angel = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	army_modifier = {
@@ -1872,7 +1950,7 @@ pw_building_guardian_angel = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -2105,10 +2183,23 @@ pw_building_stellar_sentinel = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	army_modifier = {
@@ -2192,7 +2283,7 @@ pw_building_stellar_sentinel = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -2357,7 +2448,10 @@ pw_building_transplanetary_logistics_network = {
 	allow = {
 		owner = { is_egalitarian = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -2396,6 +2490,13 @@ pw_building_transplanetary_logistics_network = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -2420,8 +2521,14 @@ pw_building_transplanetary_logistics_network = {
 		building_simulation_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt and must be egalitarian!
@@ -2467,7 +2574,7 @@ pw_building_transplanetary_logistics_network = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -2612,7 +2719,10 @@ pw_building_transhabitat_logistics_network = {
 		owner = { is_egalitarian = yes }
 		owner = { has_ascension_perk = ap_voidborn }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -2651,6 +2761,13 @@ pw_building_transhabitat_logistics_network = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -2676,8 +2793,17 @@ pw_building_transhabitat_logistics_network = {
 	}
 
 	planet_modifier = {
-		planet_max_districts_add = -1
 		planet_amenities_mult = 0.1
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt and must be egalitarian!
@@ -2723,7 +2849,7 @@ pw_building_transhabitat_logistics_network = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -2860,7 +2986,10 @@ pw_building_forbidden_city = {
 	allow = {
 		owner = { is_authoritarian = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -2899,6 +3028,13 @@ pw_building_forbidden_city = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -2916,8 +3052,14 @@ pw_building_forbidden_city = {
 		building_simulation_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt and must be authoritarian!
@@ -3048,7 +3190,7 @@ pw_building_forbidden_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -3248,7 +3390,10 @@ pw_building_festival_plaza = {
 	allow = {
 		owner = { is_pacifist = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -3287,6 +3432,13 @@ pw_building_festival_plaza = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -3304,8 +3456,14 @@ pw_building_festival_plaza = {
 		building_simulation_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -3379,7 +3537,7 @@ pw_building_festival_plaza = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -3555,7 +3713,10 @@ pw_building_martial_avenue = {
 	allow = {
 		owner = { is_militarist = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -3594,6 +3755,13 @@ pw_building_martial_avenue = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -3612,8 +3780,14 @@ pw_building_martial_avenue = {
 		building_simulation_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -3716,7 +3890,7 @@ pw_building_martial_avenue = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production

@@ -17,7 +17,10 @@ pw_building_mantle_crucible = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -82,6 +85,13 @@ pw_building_mantle_crucible = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -101,8 +111,14 @@ pw_building_mantle_crucible = {
 		pw_building_industrial_hearth
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Decrease Habitability
@@ -314,7 +330,7 @@ pw_building_mantle_crucible = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -589,6 +605,13 @@ pw_building_titan_forge = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -602,8 +625,14 @@ pw_building_titan_forge = {
 		building_foundry_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -654,7 +683,7 @@ pw_building_titan_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -871,6 +900,13 @@ pw_building_industrial_hearth = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -890,8 +926,18 @@ pw_building_industrial_hearth = {
 	}
 
 	planet_modifier = {
-		planet_max_districts_add = -1
 		planet_jobs_consumer_goods_produces_mult = 0.15
+		planet_artisans_unity_produces_add = 1
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -937,7 +983,7 @@ pw_building_industrial_hearth = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production

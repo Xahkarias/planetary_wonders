@@ -21,7 +21,10 @@ pw_building_pavilion_of_wonders = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 	}
 
@@ -82,6 +85,13 @@ pw_building_pavilion_of_wonders = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -108,8 +118,14 @@ pw_building_pavilion_of_wonders = {
 		pw_building_museum_of_the_grotesque
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt!
@@ -228,7 +244,7 @@ pw_building_pavilion_of_wonders = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -516,6 +532,13 @@ pw_building_fair_of_worlds = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -543,8 +566,14 @@ pw_building_fair_of_worlds = {
 		building_galactic_memorial_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt and must be xenophile!
@@ -815,7 +844,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -1112,6 +1141,13 @@ pw_building_museum_of_the_grotesque = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -1139,8 +1175,14 @@ pw_building_museum_of_the_grotesque = {
 		building_galactic_memorial_2
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt and must be xenophobe!
@@ -1445,7 +1487,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -1705,7 +1747,10 @@ pw_building_holy_reliquary = {
 	allow = {
 		owner = { is_spiritualist = yes }
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
 		# Empire Unique:
@@ -1747,6 +1792,13 @@ pw_building_holy_reliquary = {
 			}
 			energy = @pw_building_upkeep_ambition
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	destroy_trigger = {
@@ -1773,8 +1825,14 @@ pw_building_holy_reliquary = {
 		building_corporate_site
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Reminder: Cannot be Gestalt and must be spiritualist!
@@ -1869,7 +1927,7 @@ pw_building_holy_reliquary = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production

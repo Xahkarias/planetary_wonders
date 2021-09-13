@@ -598,3 +598,7 @@
 
     pw_mod_enigma_engine_final: "Enigmatic Apotheosis"
     pw_mod_enigma_engine_final_desc: "The mysteries of the Enigma Engine perhaps can never be solved, but the Gestalt has fully embraced its effects, learned to adapt to its downsides and to benefit from its upsides."
+
+    pw_mod_integrated_monuments: "Integrated Monuments"
+    pw_mod_integrated_monuments_desc: "By integrating the constructions of our Wonders with the developments of our districts we can save space and use already constructed buildings as foundation."
+    pw_mod_integrated_monuments_tooltip: "A single $pw_planet_wonder$ can be constructed on this planet without requiring a free district slot."

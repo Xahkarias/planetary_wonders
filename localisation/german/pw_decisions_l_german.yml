@@ -229,3 +229,8 @@
     pw_decision_living_metal_construction_desc: "Employ Living Metal on the construction of new buildings and districts to allow our structures to serve multiple functions at once, increasing usable space."
 
     pw_decision_SE_counterweight_habitat_tooltip: "Construct a Habitat orbiting this planet."
+
+    pw_decision_integrated_urbanism: "Integrate Wonders"
+    pw_decision_integrated_urbanism_desc: "Integrate the construction of our Wonders with the already established districts, using present building as foundation."
+    pw_decision_remove_integrated_urbanism: "Remove Integrated Wonders"
+    pw_decision_remove_integrated_urbanism_desc: "Stop integrating the construction of our Wonders on this planet."

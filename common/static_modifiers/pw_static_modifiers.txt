@@ -1,4 +1,14 @@
 #Planetary Modifiers
+
+#Added by tradition + Decision:
+pw_mod_integrated_monuments = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	custom_tooltip = pw_mod_integrated_monuments_tooltip
+	planet_structures_cost_mult = 0.10
+	planet_structures_upkeep_mult = 0.10
+}
+
 pw_mod_wonder_built_recently_happiness = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_artist_monument_erected.dds"
 	icon_frame = @pw_icon_frame_green

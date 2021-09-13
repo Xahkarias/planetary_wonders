@@ -35,7 +35,10 @@ pw_building_erebus_project = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
@@ -104,10 +107,23 @@ pw_building_erebus_project = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Mining director
@@ -895,7 +911,7 @@ pw_building_erebus_project = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -1137,11 +1153,27 @@ pw_building_erebus_fracking_plant = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	planet_modifier = {
-		planet_max_districts_add = -1
 		planet_chemists_produces_mult = 0.05
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Mining director
@@ -1951,7 +1983,7 @@ pw_building_erebus_fracking_plant = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -2150,7 +2182,10 @@ pw_building_helios_tower = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
@@ -2219,10 +2254,23 @@ pw_building_helios_tower = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Energy director
@@ -3010,7 +3058,7 @@ pw_building_helios_tower = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -3250,11 +3298,27 @@ pw_building_helios_translucent_obelisk = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	planet_modifier = {
-		planet_max_districts_add = -1
 		planet_translucers_produces_mult = 0.05
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Energy director
@@ -4064,7 +4128,7 @@ pw_building_helios_translucent_obelisk = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -4250,7 +4314,10 @@ pw_building_demetrius_fields = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		free_district_slots > 0 # Needs a free district to occupy
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
@@ -4319,10 +4386,23 @@ pw_building_demetrius_fields = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
-	planet_modifier = {
-		planet_max_districts_add = -1
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Agriculture Director
@@ -5110,7 +5190,7 @@ pw_building_demetrius_fields = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production
@@ -5338,11 +5418,27 @@ pw_building_demetrius_chemical_garden = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
 	}
 
 	planet_modifier = {
-		planet_max_districts_add = -1
 		planet_refiners_produces_mult = 0.05
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
 	}
 
 	#Agriculture Director
@@ -6152,7 +6248,7 @@ pw_building_demetrius_chemical_garden = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_monumentality }
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
 		}
 		modifier = {
 			planet_stability_add = @pw_stability_production

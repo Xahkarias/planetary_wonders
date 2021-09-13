@@ -5,6 +5,8 @@
     pw_planet_wonders: "§MPlanetary Wonders§!"
     pw_planet_wonder_lb: "§MPlanetary Wonder§!\n"
 
+    pw_planet_has_wonder_tooltip: "£trigger_no£ §RPlanet has a $pw_planet_wonder$.§!"
+
     pw_empire_unique: "§SEmpire Unique§!"
     pw_empire_unique_lb: "§SEmpire Unique§!\n"
     pw_empire_unique_tooltip: "£trigger_no£ §ROnly one allowed in the empire.§!"
@@ -248,3 +250,25 @@
     pw_building_solipsist_debate_hall_desc: "The Agora for one that is many. An enormous Debate Hall with many chambers for many subjects, each built in such a way that all voices within can be projected to all. It contains holodecks for expositions, battle arenas for combat demonstrations and a supercomputer terminal to test our skills in 5D chess."
     pw_solipsist_debate_hall_tooltip: "§YAllows us to deliberate with ourselves over certain subjects.§!"
     mod_planet_synapse_drones_produces_mult: "Planet Synapse Drones Production"
+
+    #Monuments:
+    pw_monument_base: "Monument Foundation"
+    pw_monument_base_desc: "Every work of expression needs to start somewhere."
+
+    pw_monument_unity: "Monument to Unity"
+    pw_monument_unity_desc: "A monument symbolizing the strength of our culture: our unity.\nAnd how the galaxy should see it."
+
+    pw_monument_philosophy: "Monument to Philosophy"
+    pw_monument_philosophy_desc: "A monument honoring all who have contributed to the formation of our society with their intellectual work."
+
+    pw_monument_conquest: "Monument of Conquest"
+    pw_monument_conquest_desc: "A monument to remind the population of this planet of their conquerors and to solidify our claim to it."
+
+    pw_monument_liberation: "Monument of Liberation"
+    pw_monument_liberation_desc: "A monument to celebrate the liberation of this planet from tyrants and warmongers of the past."
+
+    pw_monument_order: "Monument of Order"
+    pw_monument_order_desc: "A monument to reinforce our control not only of the planet, but of those who inhabit it."
+
+    pw_monument_synchronicity: "Monument of Synchronicity"
+    pw_monument_synchronicity_desc: "A monument to show to the galaxy what we can accomplish when we work as one."

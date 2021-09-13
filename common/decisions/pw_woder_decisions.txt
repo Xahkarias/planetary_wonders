@@ -1,3 +1,71 @@
+#Unlocked by tradition:
+
+pw_decision_integrated_urbanism = {
+	owned_planets_only = yes
+	enactment_time = 360
+	sound = event_construction_02
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 150
+			minerals = 1000
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_tradition = tr_pw_monumentality_integrated_urbanism }
+		NOT = { has_modifier = pw_mod_integrated_monuments }
+		free_district_slots < 5
+	}
+
+	allow = {
+		NOT = {
+			pw_has_any_planetary_wonder = yes
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = pw_mod_integrated_monuments
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+pw_decision_remove_integrated_urbanism = {
+	owned_planets_only = yes
+	enactment_time = 30
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+		has_modifier = pw_mod_integrated_monuments
+	}
+
+	effect = {
+		if = {
+			limit = {
+				has_modifier = pw_mod_integrated_monuments
+			}
+			remove_modifier = pw_mod_integrated_monuments
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 #Resource Wonder exploitation decision
 pw_decision_erebus_prospecting = {
 	owned_planets_only = yes

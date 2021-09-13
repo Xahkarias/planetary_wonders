@@ -1,5 +1,12 @@
 ﻿l_english:
 
+    #Tradition:
+    pw_decision_integrated_urbanism: "Integrate Wonders"
+    pw_decision_integrated_urbanism_desc: "Integrate the construction of our Wonders with the already established districts, using present building as foundation."
+
+    pw_decision_remove_integrated_urbanism: "Remove Integrated Wonders"
+    pw_decision_remove_integrated_urbanism_desc: "Stop integrating the construction of our Wonders on this planet."
+
     pw_decision_erebus_prospecting: "Aggressive Prospection"
     pw_decision_erebus_prospecting_desc: "Squeeze every mineral from the mines, even to the detriment of the planet itself."
 
