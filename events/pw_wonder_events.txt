@@ -4,8 +4,11 @@ namespace = pw_wonder
 event = {
 	id = pw_wonder.0
 	hide_window = yes
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		NOT = { has_global_flag = pw_active }
+	}
 	immediate = { set_global_flag = pw_active }
 }
 
