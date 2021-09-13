@@ -1351,7 +1351,7 @@ pw_tech_erebus_fracking_plant = {
 
 		modifier = {
 			factor = 1.5
-			has_edict = pw_ambition_wonders_beyond_ambition
+			has_edict = pw_wonders_beyond_ambition
 		}
 
 		modifier = {
@@ -1591,7 +1591,7 @@ pw_tech_helios_translucent_obelisk = {
 
 		modifier = {
 			factor = 1.5
-			has_edict = pw_ambition_wonders_beyond_ambition
+			has_edict = pw_wonders_beyond_ambition
 		}
 
 		modifier = {
@@ -1840,7 +1840,7 @@ pw_tech_demetrius_chemical_garden = {
 
 		modifier = {
 			factor = 1.5
-			has_edict = pw_ambition_wonders_beyond_ambition
+			has_edict = pw_wonders_beyond_ambition
 		}
 
 		modifier = {
@@ -8762,7 +8762,7 @@ pw_tech_living_spire = {
 
 		modifier = {
 			factor = 1.5
-			has_edict = pw_ambition_wonders_beyond_ambition
+			has_edict = pw_wonders_beyond_ambition
 		}
 
 		modifier = {
@@ -8960,7 +8960,7 @@ pw_tech_conduit_of_unity = {
 
 		modifier = {
 			factor = 1.5
-			has_edict = pw_ambition_wonders_beyond_ambition
+			has_edict = pw_wonders_beyond_ambition
 		}
 
 		modifier = {

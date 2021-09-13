@@ -69,7 +69,7 @@ pw_building_pavilion_of_wonders = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -256,7 +256,7 @@ pw_building_pavilion_of_wonders = {
 		potential = {
 			exists = owner
 			owner = { is_megacorp = no }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_jobs_unity_produces_mult = 0.10
@@ -267,7 +267,7 @@ pw_building_pavilion_of_wonders = {
 		potential = {
 			exists = owner
 			owner = { is_megacorp = yes }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			trade_value_mult = 0.10
@@ -516,7 +516,7 @@ pw_building_fair_of_worlds = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -856,7 +856,7 @@ pw_building_fair_of_worlds = {
 		potential = {
 			exists = owner
 			owner = { is_megacorp = no }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_jobs_unity_produces_mult = 0.20
@@ -867,7 +867,7 @@ pw_building_fair_of_worlds = {
 		potential = {
 			exists = owner
 			owner = { is_megacorp = yes }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			trade_value_mult = 0.20
@@ -1125,7 +1125,7 @@ pw_building_museum_of_the_grotesque = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1499,7 +1499,7 @@ pw_building_museum_of_the_grotesque = {
 		potential = {
 			exists = owner
 			owner = { is_megacorp = no }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_jobs_unity_produces_mult = 0.20
@@ -1510,7 +1510,7 @@ pw_building_museum_of_the_grotesque = {
 		potential = {
 			exists = owner
 			owner = { is_megacorp = yes }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			trade_value_mult = 0.20
@@ -1787,7 +1787,7 @@ pw_building_holy_reliquary = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1938,7 +1938,7 @@ pw_building_holy_reliquary = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_priests_produces_mult = 0.25

@@ -81,7 +81,7 @@ pw_building_living_spire_0 = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -242,7 +242,7 @@ pw_building_living_spire_1 = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -375,7 +375,7 @@ pw_building_living_spire_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.05
@@ -561,7 +561,7 @@ pw_building_living_spire_2 = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -786,7 +786,7 @@ pw_building_living_spire_2 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.10
@@ -1004,7 +1004,7 @@ pw_building_living_spire_3 = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1229,7 +1229,7 @@ pw_building_living_spire_3 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.15

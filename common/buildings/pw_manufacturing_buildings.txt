@@ -80,7 +80,7 @@ pw_building_mantle_crucible = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -342,7 +342,7 @@ pw_building_mantle_crucible = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 			}
 		}
 		modifier = {
@@ -355,7 +355,7 @@ pw_building_mantle_crucible = {
 			exists = owner
 			owner = {
 				country_uses_consumer_goods = yes
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 			}
 		}
 		modifier = {
@@ -586,7 +586,7 @@ pw_building_titan_forge = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -695,7 +695,7 @@ pw_building_titan_forge = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 			}
 		}
 		modifier = {
@@ -882,7 +882,7 @@ pw_building_industrial_hearth = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -995,7 +995,7 @@ pw_building_industrial_hearth = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 			}
 		}
 		modifier = {

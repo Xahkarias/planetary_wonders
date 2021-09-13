@@ -1,3 +1,48 @@
+pw_wonders_beyond_ambition = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+	}
+
+	allow = {
+		pw_has_build_any_planetary_wonder = yes
+	}
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = pw_wonders_beyond_ambition }
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = pw_wonders_beyond_ambition
+			}
+			influence = 50
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_ambition_wonders_beyond_ambition_tooltip
+		hidden_effect = {
+			set_country_flag = pw_activated_ambition_wonders_beyond_ambition
+		}
+	}
+
+	modifier = {
+		custom_tooltip = pw_ambition_wonders_beyond_ambition_upkeep_tooltip
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+
 pw_edict_panspectron = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"

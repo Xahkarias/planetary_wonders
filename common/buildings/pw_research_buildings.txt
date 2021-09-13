@@ -89,7 +89,7 @@ pw_building_particle_supercollider = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -274,7 +274,7 @@ pw_building_particle_supercollider = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_physics_research_produces_mult = @pw_building_research_mod
@@ -520,7 +520,7 @@ pw_building_interdimensional_collider = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -613,7 +613,7 @@ pw_building_interdimensional_collider = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_physics_research_produces_mult = @pw_building_research_mod
@@ -867,7 +867,7 @@ pw_building_domed_city = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1055,7 +1055,7 @@ pw_building_domed_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_society_research_produces_mult = @pw_building_research_mod
@@ -1313,7 +1313,7 @@ pw_building_secluded_sector = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1501,7 +1501,7 @@ pw_building_secluded_sector = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_society_research_produces_mult = @pw_building_research_mod
@@ -1762,7 +1762,7 @@ pw_building_psionic_observatory = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1858,7 +1858,7 @@ pw_building_psionic_observatory = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_society_research_produces_mult = @pw_building_research_mod
@@ -2127,7 +2127,7 @@ pw_building_abyssal_crater_test_site = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -2312,7 +2312,7 @@ pw_building_abyssal_crater_test_site = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
@@ -2554,7 +2554,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -2740,7 +2740,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
@@ -2985,7 +2985,7 @@ pw_building_metal_vivarium = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -3078,7 +3078,7 @@ pw_building_metal_vivarium = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
@@ -3305,7 +3305,7 @@ pw_building_grand_archive = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -3386,7 +3386,7 @@ pw_building_grand_archive = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_researchers_upkeep_mult = -0.20

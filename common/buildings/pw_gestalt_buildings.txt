@@ -83,7 +83,7 @@ pw_building_conduit_of_unity_0 = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -240,7 +240,7 @@ pw_building_conduit_of_unity_1 = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -389,7 +389,7 @@ pw_building_conduit_of_unity_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.10
@@ -597,7 +597,7 @@ pw_building_enigma_engine = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -656,7 +656,7 @@ pw_building_enigma_engine = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 			}
 		}
 		modifier = {
@@ -668,7 +668,7 @@ pw_building_enigma_engine = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_galactic_sovereign
 			}
 		}
@@ -826,7 +826,7 @@ pw_building_solipsist_debate_hall = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -912,7 +912,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_ascetic
 			}
 		}
@@ -924,7 +924,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_divided_attention
 			}
 		}
@@ -936,7 +936,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_natural_neural_network
 			}
 		}
@@ -948,7 +948,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_one_mind
 			}
 		}
@@ -960,7 +960,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_pooled_knowledge
 			}
 		}
@@ -972,7 +972,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_strength_of_legions
 			}
 		}
@@ -984,7 +984,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_subspace_ephapse
 			}
 		}
@@ -996,7 +996,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_subsumed_will
 			}
 		}
@@ -1008,7 +1008,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_devouring_swarm
 			}
 		}
@@ -1020,7 +1020,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_empath
 			}
 		}
@@ -1032,7 +1032,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_memorialist
 			}
 		}
@@ -1044,7 +1044,7 @@ pw_building_solipsist_debate_hall = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = pw_ambition_wonders_beyond_ambition
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_galactic_sovereign
 			}
 		}
@@ -1119,7 +1119,7 @@ pw_building_solipsist_debate_hall = {
 		trigger = {
 			exists = owner
 			owner = { has_valid_civic = civic_hive_memorialist }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		text = job_chronicle_drone_effect_desc
 	}

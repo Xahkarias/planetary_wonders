@@ -80,7 +80,7 @@ pw_building_space_elevator = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -333,7 +333,7 @@ pw_building_space_elevator = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 
 		}
 		modifier = {
@@ -346,7 +346,7 @@ pw_building_space_elevator = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = yes }
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_amenities_no_happiness_mult = 0.05
@@ -593,7 +593,7 @@ pw_building_galactic_model = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -720,7 +720,7 @@ pw_building_galactic_model = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			diplomacy_upkeep_mult = -0.25
@@ -942,7 +942,7 @@ pw_building_aligned_galactic_model = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1072,7 +1072,7 @@ pw_building_aligned_galactic_model = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			diplomacy_upkeep_mult = -0.30
@@ -1423,7 +1423,7 @@ pw_building_panopticon = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1616,7 +1616,7 @@ pw_building_panopticon = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_jobs_produces_mult = 0.05
@@ -1838,7 +1838,7 @@ pw_building_guardian_angel = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -1961,7 +1961,7 @@ pw_building_guardian_angel = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_orbital_bombardment_damage = -0.10
@@ -2167,7 +2167,7 @@ pw_building_stellar_sentinel = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -2294,7 +2294,7 @@ pw_building_stellar_sentinel = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_orbital_bombardment_damage = -0.15
@@ -2485,7 +2485,7 @@ pw_building_transplanetary_logistics_network = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -2585,7 +2585,7 @@ pw_building_transplanetary_logistics_network = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.05
@@ -2756,7 +2756,7 @@ pw_building_transhabitat_logistics_network = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -2860,7 +2860,7 @@ pw_building_transhabitat_logistics_network = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.05
@@ -3023,7 +3023,7 @@ pw_building_forbidden_city = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -3201,7 +3201,7 @@ pw_building_forbidden_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_housing_mult = 0.05
@@ -3427,7 +3427,7 @@ pw_building_festival_plaza = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -3548,7 +3548,7 @@ pw_building_festival_plaza = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_amenities_mult = 0.10
@@ -3750,7 +3750,7 @@ pw_building_martial_avenue = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_edict = pw_ambition_wonders_beyond_ambition
+					has_edict = pw_wonders_beyond_ambition
 				}
 			}
 			energy = @pw_building_upkeep_ambition
@@ -3901,7 +3901,7 @@ pw_building_martial_avenue = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_edict = pw_ambition_wonders_beyond_ambition }
+			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
 			planet_amenities_mult = 0.10

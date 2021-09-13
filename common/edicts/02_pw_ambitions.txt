@@ -46,6 +46,7 @@ pw_ambition_wonders_beyond_ambition = {
 	is_ambition = yes # Costs Unity scaled to tradition cost
 
 	potential = {
+		always = no
 		has_technology = tech_ascension_theory
 	}
 

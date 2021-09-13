@@ -79,3 +79,6 @@
     edict_pw_translucer_abundance_desc: "Providing an overwhelming supply of minerals to the translucers of the $pw_building_helios_translucent_obelisk$, alongside increased subsides, the production of Rare Crystals can be greatly increased, at the cost of wasting some of the input."
     edict_pw_refiners_abundance: "Refinery Abundance"
     edict_pw_refiners_abundance_desc: "Providing an overwhelming supply of minerals to the gas refiners of the $pw_building_demetrius_chemical_garden$, alongside increased subsides, the production of Volatile Motes can be greatly increased, at the cost of wasting some of the input."
+
+    edict_pw_wonders_beyond_ambition: "Wonders Beyond Ambition"
+    edict_pw_wonders_beyond_ambition_desc: "In our hubris, would we dare to push even further the capabilities of our $pw_planet_wonders$? The edge of possibility has never been so close to our grasp."
