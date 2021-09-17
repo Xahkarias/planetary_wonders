@@ -3,8 +3,8 @@ pw_wonders_beyond_ambition = {
 	icon = "GFX_edict_type_policy"
 	edict_cap_usage = 1
 
-	prerequisites = {
-		pw_tech_planetary_mega_engineering
+	potential = {
+		has_tradition = tr_pw_monumentality_finish
 	}
 
 	allow = {

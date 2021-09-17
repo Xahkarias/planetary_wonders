@@ -17,7 +17,6 @@ pw_decision_integrated_urbanism = {
 		exists = owner
 		owner = { has_tradition = tr_pw_monumentality_integrated_urbanism }
 		NOT = { has_modifier = pw_mod_integrated_monuments }
-		free_district_slots < 5
 	}
 
 	allow = {

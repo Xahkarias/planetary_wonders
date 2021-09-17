@@ -38,6 +38,33 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/pw_sentinel_command_center.dds"
 	}
 
+	## Tradition Tree Assets ##
+	#GFX Name
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_pw_monumentality"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_pw_monumentality.dds"
+	}
+
+	#Background
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_pw_monumentality"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_pw_monumentality.dds"
+	}
+
+	#Tile
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_pw_monumentality"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_pw_monumentality.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	#Category Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_pw_monumentality"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_pw_monumentality.dds"
+	}
+
 	## Traditions Icons ##
 	spriteType = {
 		name = "GFX_tr_pw_monumentality_architecture_parlante"

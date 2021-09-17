@@ -1529,15 +1529,72 @@ pw_building_panopticon = {
 
 	#Tech Added bonuses (Based on Ethics)
 	#Authoritarian
+	#Authoritarian -> Alloys
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_authoritarian = yes }
-			owner = { has_technology = pw_tech_panopticon_penal_industries }
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
 		}
 		modifier = {
 			job_foundry_add = 1
+		}
+	}
+	#Authoritarian -> Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+	#Authoritarian -> CG
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				NOR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		modifier = {
 			job_artisan_add = 1
+		}
+	}
+	#Authoritarian -> Artificer
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				OR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		modifier = {
+			job_artificer_add = 1
 		}
 	}
 

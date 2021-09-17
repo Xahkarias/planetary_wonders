@@ -11,7 +11,7 @@
     # Tradition & Decision:
     pw_mod_integrated_monuments: "Integrated Monuments"
     pw_mod_integrated_monuments_desc: "By integrating the constructions of our Wonders with the developments of our districts we can save space and use already constructed buildings as foundation."
-    pw_mod_integrated_monuments_tooltip: "A single $pw_planet_wonder$ can be constructed on this planet without requiring a free district slot."
+    pw_mod_integrated_monuments_tooltip: "A single $pw_planet_wonder$ can be constructed on this planet without requiring a free district slot. Prevents the constructions of more than one $pw_planet_wonder$."
 
     # Aggressive prospecting
     pw_mod_erebus_prospecting: "Prospecting Aggressively"

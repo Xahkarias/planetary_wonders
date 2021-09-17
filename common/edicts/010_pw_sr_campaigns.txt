@@ -28,7 +28,8 @@ pw_chemist_abundance = {
 
 	modifier = {
 		planet_chemists_produces_mult = 0.15
-		planet_chemists_upkeep_mult = 0.25
+		# planet_chemists_upkeep_mult = 0.25
+		planet_jobs_minerals_upkeep_mult = 0.10
 	}
 
 	ai_weight = {
@@ -58,7 +59,8 @@ pw_translucer_abundance = {
 
 	modifier = {
 		planet_translucers_produces_mult = 0.15
-		planet_translucers_upkeep_mult = 0.25
+		# planet_translucers_upkeep_mult = 0.25
+		planet_jobs_minerals_upkeep_mult = 0.10
 	}
 
 	ai_weight = {
@@ -88,7 +90,8 @@ pw_refiners_abundance = {
 
 	modifier = {
 		planet_refiners_produces_mult = 0.15
-		planet_refiners_upkeep_mult = 0.25
+		# planet_refiners_upkeep_mult = 0.25
+		planet_jobs_minerals_upkeep_mult = 0.10
 	}
 
 	ai_weight = {
