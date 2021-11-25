@@ -3492,6 +3492,7 @@ pw_decision_living_spire_change_designation = {
 			has_modifier = pw_pm_living_spire_designation_administration
 			has_modifier = pw_pm_living_spire_designation_death_cult
 			has_modifier = pw_pm_living_spire_designation_death_necro
+			has_modifier = pw_pm_living_spire_designation_submerged
 		}
 	}
 

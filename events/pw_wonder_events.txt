@@ -2592,6 +2592,27 @@ planet_event = {
 	id = pw_wonder.701
 	title = pw_wonder.701.name
 	desc = pw_wonder.701.desc
+
+	desc = {
+		trigger = {
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+		}
+		text = pw_wonder.701.desc
+	}
+	desc = {
+		trigger = {
+			owner = { is_anglers_empire = yes }
+			is_wet = yes
+		}
+		text = pw_wonder.701.angler.desc
+	}
+
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -2628,6 +2649,36 @@ planet_event = {
 			owner = {
 				has_valid_civic = civic_agrarian_idyll
 			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_10years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.701.angler.desc.a
+		trigger = {
+			owner = {
+				is_anglers_empire = yes
+			}
+			is_wet = yes
 		}
 		if = {
 			limit = {
@@ -11823,6 +11874,7 @@ planet_event = {
 					has_modifier = pw_pm_living_spire_designation_administration
 					has_modifier = pw_pm_living_spire_designation_death_cult
 					has_modifier = pw_pm_living_spire_designation_death_necro
+					has_modifier = pw_pm_living_spire_designation_submerged
 				}
 			}
 			planet_event = { id = pw_wonder.2106 }
@@ -11861,6 +11913,7 @@ planet_event = {
 			has_modifier = pw_pm_living_spire_designation_administration
 			has_modifier = pw_pm_living_spire_designation_death_cult
 			has_modifier = pw_pm_living_spire_designation_death_necro
+			has_modifier = pw_pm_living_spire_designation_submerged
 		}
 	}
 
@@ -11905,6 +11958,10 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_living_spire_designation_death_necro }
 			remove_modifier = pw_pm_living_spire_designation_death_necro
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_submerged }
+			remove_modifier = pw_pm_living_spire_designation_submerged
 		}
 	}
 }
@@ -11983,6 +12040,12 @@ planet_event = {
 				has_modifier = pw_pm_living_spire_designation_death_necro
 			}
 			remove_modifier = pw_pm_living_spire_designation_death_necro
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_submerged
+			}
+			remove_modifier = pw_pm_living_spire_designation_submerged
 		}
 	}
 
@@ -12080,6 +12143,27 @@ planet_event = {
 		}
 		add_modifier = {
 			modifier = pw_pm_living_spire_designation_death_necro
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.aquatic
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			owner = {
+				OR = {
+					is_anglers_empire = yes
+					has_ascension_perk = ap_hydrocentric
+					has_origin = origin_ocean_paradise
+					has_trait = trait_aquatic
+				}
+			}
+		}
+		allow = {
+			is_wet = yes
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_submerged
 		}
 	}
 }
