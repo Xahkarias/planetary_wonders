@@ -242,19 +242,19 @@ pw_is_planet_ideal = {
 }
 
 # Scope: Pop
-pw_sentient_worker_job_check_trigger = {
-	worker_job_check_trigger = yes
-	hidden_trigger = {
-		exists = owner
-		OR = {
-			NOT = { has_trait = trait_mechanical }
-			AND = {
-				owner = { has_technology = tech_synthetic_workers }
-				owner = { NOT = { has_policy_flag = ai_outlawed } }
-			}
-		}
-	}
-}
+# pw_sentient_worker_job_check_trigger = {
+# 	worker_job_check_trigger = yes
+# 	hidden_trigger = {
+# 		exists = owner
+# 		OR = {
+# 			NOT = { has_trait = trait_mechanical }
+# 			AND = {
+# 				owner = { has_technology = tech_synthetic_workers }
+# 				owner = { NOT = { has_policy_flag = ai_outlawed } }
+# 			}
+# 		}
+# 	}
+# }
 
 #Scope: Country
 pw_last_increased_tech_was_enigma_tech = {

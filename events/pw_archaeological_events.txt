@@ -532,7 +532,9 @@ fleet_event = {
 				40 = {
 					modifier = {
 						factor = 0
-						is_gestalt = yes
+						owner = {
+							is_gestalt = yes
+						}
 					}
 					fleet_event = {
 						id = pw_archaeology.311
@@ -557,7 +559,9 @@ fleet_event = {
 				40 = {
 					modifier = {
 						factor = 0
-						is_gestalt = yes
+						owner = {
+							is_gestalt = yes
+						}
 					}
 					fleet_event = {
 						id = pw_archaeology.312

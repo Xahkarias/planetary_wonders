@@ -12,8 +12,10 @@ pw_mining_coordinator = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -91,8 +93,10 @@ pw_energy_coordinator = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -168,8 +172,10 @@ pw_food_coordinator = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -247,8 +253,10 @@ pw_enigma_decipher = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -331,8 +339,10 @@ pw_domed_city_subject_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -399,8 +409,10 @@ pw_poly_artisan_drone ={
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -623,8 +635,10 @@ pw_logistics_drone = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -640,23 +654,32 @@ pw_logistics_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_hive_empire = yes
-				is_lithoid = no
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = no
+				}
 			}
 			food = 3
 			energy = 3
 		}
 		upkeep = {
 			trigger = {
-				is_hive_empire = yes
-				is_lithoid = yes
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					is_lithoid = yes
+				}
 			}
 			minerals = 3
 			energy = 3
 		}
 		upkeep = {
 			trigger = {
-				is_machine_empire = yes
+				exists = owner
+				owner = {
+					is_machine_empire = yes
+				}
 			}
 			energy = 6
 		}

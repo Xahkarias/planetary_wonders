@@ -900,7 +900,9 @@ pw_decision_SE_open_for_galactic_market = {
 
 		modifier = {
 			factor = 0.5
-			is_gestalt = no
+			owner = {
+				is_gestalt = no
+			}
 		}
 
 		modifier = {
@@ -913,7 +915,9 @@ pw_decision_SE_open_for_galactic_market = {
 
 		modifier = {
 			factor = 1.5
-			is_xenophile = yes
+			owner = {
+				is_xenophile = yes
+			}
 		}
 	}
 }

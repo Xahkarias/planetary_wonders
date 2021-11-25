@@ -11,8 +11,10 @@ pw_brain_drone_particle_supercollider = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -94,8 +96,10 @@ pw_brain_drone_domed_city = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -176,8 +180,10 @@ pw_brain_drone_abyssal_crater_test_site = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -259,8 +265,10 @@ pw_calculator_particle_supercollider = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -337,8 +345,10 @@ pw_calculator_domed_city = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {
@@ -416,8 +426,10 @@ pw_calculator_abyssal_crater_test_site = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
+		# drone_job_check_trigger = yes
 	}
 
 	resources = {

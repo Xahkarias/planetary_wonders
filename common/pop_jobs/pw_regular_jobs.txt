@@ -13,8 +13,10 @@ pw_mining_director = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
+		# ruler_job_check_trigger = yes
 	}
 
 	resources = {
@@ -140,8 +142,10 @@ pw_energy_director = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
+		# ruler_job_check_trigger = yes
 	}
 
 	resources = {
@@ -268,8 +272,10 @@ pw_agriculture_director = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
+		# ruler_job_check_trigger = yes
 	}
 
 	resources = {
@@ -442,8 +448,10 @@ pw_domed_city_test_subject = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
+		# worker_job_check_trigger = yes
 	}
 
 	resources = {
@@ -588,8 +596,10 @@ pw_big_brother = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
+		# ruler_job_check_trigger = yes
 	}
 
 	resources = {
@@ -716,8 +726,10 @@ pw_tourist = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
+		# worker_job_check_trigger = yes
 	}
 
 	planet_modifier = {
@@ -787,8 +799,10 @@ pw_poly_artisan = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
+		# specialist_job_check_trigger = yes
 	}
 
 	resources = {
@@ -922,8 +936,10 @@ pw_diversity_curator = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
+		# specialist_job_check_trigger = yes
 	}
 
 	resources = {
@@ -1073,8 +1089,10 @@ pw_degeneracy_curator = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
+		# specialist_job_check_trigger = yes
 	}
 
 	resources = {
@@ -1224,6 +1242,7 @@ pw_grand_archivist = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
@@ -1390,8 +1409,10 @@ pw_master_archivist = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
+		# ruler_job_check_trigger = yes
 	}
 
 	resources = {
@@ -1582,6 +1603,7 @@ pw_lunar_archivist = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
@@ -1747,8 +1769,10 @@ pw_relic_keeper = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_ruler_job
+
 	possible = {
-		ruler_job_check_trigger = yes
+		# ruler_job_check_trigger = yes
 	}
 
 	resources = {

@@ -11,6 +11,7 @@ pw_researcher_particle_supercollider = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
@@ -145,6 +146,7 @@ pw_researcher_domed_city = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
@@ -278,6 +280,7 @@ pw_researcher_abyssal_crater_test_site = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
