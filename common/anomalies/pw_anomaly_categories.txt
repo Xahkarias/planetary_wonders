@@ -158,7 +158,7 @@ pw_anomaly_IH_abandoned_factory = {
 				is_planet_class = pc_barren
 				is_planet_class = pc_broken
 			}
-			FROM.owner = {
+			from.owner = {
 				country_uses_consumer_goods = yes
 			}
 		}
@@ -249,7 +249,7 @@ pw_anomaly_TLN_abandoned_tunnel_network = {
 		modifier = {
 			add = 0.5
 			uninhabitable_regular_planet = yes
-			FROM = {
+			from = {
 				owner = {
 					is_egalitarian = yes
 				}
@@ -272,7 +272,7 @@ pw_anomaly_FC_forgotten_throne = {
 		modifier = {
 			add = 0.5
 			uninhabitable_regular_planet = yes
-			FROM = {
+			from = {
 				owner = {
 					has_authority = auth_imperial
 				}

@@ -29,16 +29,16 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_space_elevator_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = WONDER
-				scope = FROM
+				scope = from
 			}
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 	}
@@ -91,11 +91,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_space_elevator_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -113,7 +113,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = {has_country_flag = pw_space_elevator_built }}
@@ -175,7 +175,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.102.a
@@ -267,7 +267,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_104 }}
@@ -308,7 +308,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_105 }}
@@ -339,7 +339,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_106 }}
@@ -361,12 +361,12 @@ planet_event = {
 			create_fleet = {
 				name = "Stowaways"
 				effect = {
-					set_owner = ROOT.owner
-					set_location = ROOT
+					set_owner = root.owner
+					set_location = root
 					create_ship = {
 						name = random
 						design = "NAME_Colonizer"
-						colonizer_species = ROOT.owner.owner_species
+						colonizer_species = root.owner.owner_species
 					}
 				}
 			}
@@ -395,7 +395,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { owner = { has_country_flag = pw_wonder_event_107 }}
@@ -474,7 +474,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		solar_system = {
@@ -534,7 +534,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		has_modifier = pw_mod_space_elevator_aided_development_colonization
@@ -562,7 +562,7 @@ planet_event = {
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		has_active_building = pw_building_space_elevator
@@ -597,7 +597,7 @@ planet_event = {
 	id = pw_wonder.121
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_planet_class = pc_habitat
@@ -628,7 +628,7 @@ planet_event = {
 	desc = pw_wonder.130.desc
 	picture = GFX_evt_pw_space_elevator
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		set_planet_flag = pw_SE_is_choosing_market_bonus
@@ -809,11 +809,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_particle_supercollider_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -830,7 +830,7 @@ planet_event = {
 	picture = GFX_evt_physics_research
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
@@ -909,7 +909,7 @@ planet_event = {
 	picture = GFX_evt_physics_research
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = {has_country_flag = pw_particle_supercollider_built }}
@@ -992,11 +992,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_interdimensional_collider_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -1012,7 +1012,7 @@ planet_event = {
 	picture = GFX_evt_physics_research
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -1060,11 +1060,11 @@ planet_event = {
 				type = PW_WONDER_COMPLETED
 				localization = pw_message_secluded_sector_complete
 				days = 30
-				target = THIS
+				target = this
 				variable = {
 					type = name
 					localization = PLANET
-					scope = ROOT
+					scope = root
 				}
 			}
 		}
@@ -1073,11 +1073,11 @@ planet_event = {
 				type = PW_WONDER_COMPLETED
 				localization = pw_message_domed_city_complete
 				days = 30
-				target = THIS
+				target = this
 				variable = {
 					type = name
 					localization = PLANET
-					scope = ROOT
+					scope = root
 				}
 			}
 		}
@@ -1107,7 +1107,7 @@ planet_event = {
 	picture = GFX_evt_pw_domed_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = {has_country_flag = pw_domed_city_built }}
@@ -1201,7 +1201,7 @@ planet_event = {
 	picture = GFX_evt_pw_domed_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = {has_country_flag = pw_domed_city_built }}
@@ -1284,11 +1284,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_psionic_observatory_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -1304,7 +1304,7 @@ planet_event = {
 	picture = GFX_evt_pw_domed_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -1377,11 +1377,11 @@ planet_event = {
 				type = PW_WONDER_COMPLETED
 				localization = pw_message_abyssal_crater_test_site_habitat_complete
 				days = 30
-				target = THIS
+				target = this
 				variable = {
 					type = name
 					localization = PLANET
-					scope = ROOT
+					scope = root
 				}
 			}
 		}
@@ -1390,11 +1390,11 @@ planet_event = {
 				type = PW_WONDER_COMPLETED
 				localization = pw_message_abyssal_crater_test_site_complete
 				days = 30
-				target = THIS
+				target = this
 				variable = {
 					type = name
 					localization = PLANET
-					scope = ROOT
+					scope = root
 				}
 			}
 		}
@@ -1423,7 +1423,7 @@ planet_event = {
 	picture = GFX_evt_pw_abyssal_crater_test_site
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
@@ -1513,7 +1513,7 @@ planet_event = {
 	picture = GFX_evt_pw_abyssal_crater_test_site
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_abyssal_crater_test_site_built }}
@@ -1596,11 +1596,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_metal_vivarium_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -1616,7 +1616,7 @@ planet_event = {
 	picture = GFX_evt_pw_abyssal_crater_test_site
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -1662,11 +1662,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_erebus_project_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -1683,7 +1683,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
@@ -1762,7 +1762,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_erebus_project_built }}
@@ -1915,7 +1915,7 @@ planet_event = {
 	id = pw_wonder.504
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		OR = {
@@ -1942,7 +1942,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		set_planet_flag = pw_aggressive_prospecting_crystal
@@ -1968,7 +1968,7 @@ planet_event = {
 	id = pw_wonder.506
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		OR = {
@@ -1995,7 +1995,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		set_planet_flag = pw_aggressive_prospecting_motes
@@ -2021,7 +2021,7 @@ planet_event = {
 	id = pw_wonder.508
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		OR = {
@@ -2048,7 +2048,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		set_planet_flag = pw_aggressive_prospecting_gases
@@ -2077,7 +2077,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		OR = {
@@ -2121,11 +2121,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_erebus_fracking_plant_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -2141,7 +2141,7 @@ planet_event = {
 	picture = GFX_evt_pw_erebus_project
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_erebus_fracking_plant_built }}
@@ -2207,11 +2207,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_helios_tower_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -2228,7 +2228,7 @@ planet_event = {
 	picture = GFX_evt_pw_helios_tower
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_helios_tower_built }}
@@ -2287,7 +2287,7 @@ planet_event = {
 	picture = GFX_evt_pw_helios_tower
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.602.a
@@ -2369,7 +2369,7 @@ planet_event = {
 	picture = GFX_evt_pw_helios_tower
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = hazardous_weather }
@@ -2410,7 +2410,7 @@ planet_event = {
 	picture = GFX_evt_pw_helios_tower
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = wild_storms }
@@ -2451,7 +2451,7 @@ planet_event = {
 	picture = GFX_evt_pw_helios_tower
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = atmospheric_aphrodisiac }
@@ -2503,11 +2503,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_helios_translucent_obelisk_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -2523,7 +2523,7 @@ planet_event = {
 	picture = GFX_evt_pw_helios_tower
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_helios_translucent_obelisk_built }}
@@ -2574,11 +2574,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_demetrius_fields_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -2614,7 +2614,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
@@ -2709,7 +2709,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_demetrius_fields_built }}
@@ -2846,7 +2846,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = lush_planet }
@@ -2887,7 +2887,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = bleak_planet }
@@ -2935,7 +2935,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = dangerous_wildlife }
@@ -2976,7 +2976,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = titanic_life }
@@ -3017,7 +3017,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_alien_nature
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_modifier = natural_beauty }
@@ -3072,11 +3072,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_demetrius_chemical_garden_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -3092,7 +3092,7 @@ planet_event = {
 	picture = GFX_evt_pw_demetrius_cornucopia
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_demetrius_chemical_garden_built }}
@@ -3132,7 +3132,7 @@ planet_event = {
 	picture = GFX_evt_drilling_for_gas
 	show_sound = event_alien_nature
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		OR = {
@@ -3396,11 +3396,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_galactic_model_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -3419,7 +3419,7 @@ planet_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_galactic_model_built }}
@@ -3510,7 +3510,7 @@ planet_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_galactic_model_built }}
@@ -3571,7 +3571,7 @@ planet_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		has_active_building = pw_building_galactic_model
@@ -3629,7 +3629,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.804.a
@@ -3660,7 +3660,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		any_owned_planet = {
@@ -3714,7 +3714,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.806.a
@@ -3748,7 +3748,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		any_owned_planet = {
@@ -3804,7 +3804,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.808.a
@@ -3829,7 +3829,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		any_owned_planet = {
@@ -3883,7 +3883,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.810.a
@@ -3908,7 +3908,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		any_owned_planet = {
@@ -3964,7 +3964,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.812.a
@@ -3989,7 +3989,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		any_owned_planet = { has_active_building = pw_building_galactic_model }
@@ -4005,7 +4005,7 @@ country_event = {
 		name = pw_wonder.813.a
 		enable_special_project = {
 			name = PW_FINAL_ALIGNMENT_PROJECT
-			owner = THIS
+			owner = this
 		}
 	}
 
@@ -4030,7 +4030,7 @@ country_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		set_country_flag = pw_galactic_model_completed_corrections
@@ -4474,11 +4474,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_aligned_galactic_model_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		planet_event = { id = pw_wonder.851 }
@@ -4494,7 +4494,7 @@ planet_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_aligned_galactic_model_built }}
@@ -4616,7 +4616,7 @@ ship_event = {
 	picture = GFX_evt_tomb_world
 	show_sound = event_scanner
 	is_triggered_only = yes
-	location = FROM
+	location = from
 
 	trigger = {
 		from = {
@@ -4649,7 +4649,7 @@ planet_event = {
 	picture = GFX_evt_asteroid_approaching_planet
 	show_sound = event_air_raid_siren
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -4707,7 +4707,7 @@ planet_event = {
 					set_aggro_range = 0
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
-					set_owner = PREV
+					set_owner = prev
 					set_fleet_flag = pw_asteroid_fleet_1
 					save_event_target_as = pw_asteroid_fleet_target_1
 					create_ship = {
@@ -4715,15 +4715,15 @@ planet_event = {
 						design = "NAME_Asteroid"
 					}
 					set_location = {
-						target = ROOT
+						target = root
 						distance = 60
 						angle = random
 					}
 					queue_actions = {
-						move_to = ROOT
+						move_to = root
 						effect = {
 							id = "pw_wonder.865.effect.1"
-							ROOT = {
+							root = {
 								planet_event = { id = pw_wonder.868 }
 							}
 						}
@@ -4736,7 +4736,7 @@ planet_event = {
 					set_aggro_range = 0
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
-					set_owner = PREV
+					set_owner = prev
 					set_fleet_flag = pw_asteroid_fleet_2
 					save_event_target_as = pw_asteroid_fleet_target_2
 					create_ship = {
@@ -4744,15 +4744,15 @@ planet_event = {
 						design = "NAME_Asteroid"
 					}
 					set_location = {
-						target = ROOT
+						target = root
 						distance = 60
 						angle = random
 					}
 					queue_actions = {
-						move_to = ROOT
+						move_to = root
 						effect = {
 							id = "pw_wonder.865.effect.2"
-							ROOT = {
+							root = {
 								planet_event = { id = pw_wonder.868 }
 							}
 						}
@@ -4765,7 +4765,7 @@ planet_event = {
 					set_aggro_range = 0
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
-					set_owner = PREV
+					set_owner = prev
 					set_fleet_flag = pw_asteroid_fleet_3
 					save_event_target_as = pw_asteroid_fleet_target_3
 					create_ship = {
@@ -4773,15 +4773,15 @@ planet_event = {
 						design = "NAME_Asteroid"
 					}
 					set_location = {
-						target = ROOT
+						target = root
 						distance = 60
 						angle = random
 					}
 					queue_actions = {
-						move_to = ROOT
+						move_to = root
 						effect = {
 							id = "pw_wonder.865.effect.3"
-							ROOT = {
+							root = {
 								planet_event = { id = pw_wonder.868 }
 							}
 						}
@@ -4794,7 +4794,7 @@ planet_event = {
 					set_aggro_range = 0
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
-					set_owner = PREV
+					set_owner = prev
 					set_fleet_flag = pw_asteroid_fleet_4
 					save_event_target_as = pw_asteroid_fleet_target_4
 					create_ship = {
@@ -4802,15 +4802,15 @@ planet_event = {
 						design = "NAME_Asteroid"
 					}
 					set_location = {
-						target = ROOT
+						target = root
 						distance = 60
 						angle = random
 					}
 					queue_actions = {
-						move_to = ROOT
+						move_to = root
 						effect = {
 							id = "pw_wonder.865.effect.4"
-							ROOT = {
+							root = {
 								planet_event = { id = pw_wonder.868 }
 							}
 						}
@@ -4823,7 +4823,7 @@ planet_event = {
 					set_aggro_range = 0
 					set_fleet_stance = aggressive
 					set_aggro_range_measure_from = self
-					set_owner = PREV
+					set_owner = prev
 					set_fleet_flag = pw_asteroid_fleet_5
 					save_event_target_as = pw_asteroid_fleet_target_5
 					create_ship = {
@@ -4831,15 +4831,15 @@ planet_event = {
 						design = "NAME_Asteroid"
 					}
 					set_location = {
-						target = ROOT
+						target = root
 						distance = 60
 						angle = random
 					}
 					queue_actions = {
-						move_to = ROOT
+						move_to = root
 						effect = {
 							id = "pw_wonder.865.effect.5"
-							ROOT = {
+							root = {
 								planet_event = { id = pw_wonder.868 }
 							}
 						}
@@ -4948,7 +4948,7 @@ planet_event = {
 	desc = pw_wonder.867.desc
 	picture = GFX_evt_atmospheric_entry
 	show_sound = event_ship_explosion
-	location = ROOT
+	location = root
 
 	is_triggered_only = yes
 
@@ -5057,7 +5057,7 @@ planet_event = {
 	}
 	picture = GFX_evt_nuclear_explosion
 	show_sound = event_super_explosion
-	location = ROOT
+	location = root
 	is_triggered_only = yes
 
 	trigger = {
@@ -5157,11 +5157,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_panopticon_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -5178,7 +5178,7 @@ planet_event = {
 	picture = GFX_evt_announcement
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.901.a
@@ -5282,7 +5282,7 @@ country_event = {
 	desc = pw_wonder.903.desc
 	show_sound = diplomatic_notification
 	is_triggered_only = yes
-	location = THIS
+	location = this
 	diplomatic = yes
 
 	trigger = {
@@ -5365,11 +5365,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_enigma_engine_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -5386,7 +5386,7 @@ planet_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1001.a
@@ -5511,7 +5511,7 @@ country_event = {
 			has_authority = auth_machine_intelligence
 			has_communications = root
 			opinion = {
-				who = THIS
+				who = this
 				value > -70
 			}
 		}
@@ -5525,7 +5525,7 @@ country_event = {
 				has_authority = auth_machine_intelligence
 				has_communications = root
 				opinion = {
-					who = THIS
+					who = this
 					value > -70
 				}
 			}
@@ -5541,7 +5541,7 @@ country_event = {
 	title = pw_wonder.1006.name
 	desc = pw_wonder.1006.desc
 	is_triggered_only = yes
-	location = THIS
+	location = this
 	show_sound = diplomatic_notification
 	diplomatic = yes
 
@@ -5573,7 +5573,7 @@ country_event = {
 	title = pw_wonder.1007.name
 	desc = pw_wonder.1007.desc
 	is_triggered_only = yes
-	location = THIS
+	location = this
 	show_sound = diplomatic_notification
 	diplomatic = yes
 
@@ -5637,7 +5637,7 @@ planet_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		has_active_building = pw_building_enigma_engine
@@ -5667,7 +5667,7 @@ planet_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		has_active_building = pw_building_enigma_engine
@@ -5693,7 +5693,7 @@ planet_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		has_active_building = pw_building_enigma_engine
@@ -5741,7 +5741,7 @@ planet_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1013.a
@@ -5764,7 +5764,7 @@ planet_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1014.a
@@ -5808,11 +5808,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_solipsist_debate_hall_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -5833,7 +5833,7 @@ planet_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1101.a
@@ -5929,7 +5929,7 @@ country_event = {
 			}
 			has_communications = root
 			opinion = {
-				who = THIS
+				who = this
 				value > -70
 			}
 		}
@@ -5948,7 +5948,7 @@ country_event = {
 				NOT = { has_authority = auth_machine_intelligence }
 				has_communications = root
 				opinion = {
-					who = THIS
+					who = this
 					value > -70
 				}
 			}
@@ -5964,7 +5964,7 @@ country_event = {
 	title = pw_wonder.1105.name
 	desc = pw_wonder.1105.desc
 	is_triggered_only = yes
-	location = THIS
+	location = this
 	show_sound = diplomatic_notification
 	diplomatic = yes
 
@@ -6007,7 +6007,7 @@ country_event = {
 	desc = pw_wonder.1106.desc
 	picture = GFX_evt_hive_mind
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = { has_country_flag = pw_sdh_debate_conflict }
@@ -6060,11 +6060,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_guardian_angel_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -6084,7 +6084,7 @@ planet_event = {
 	picture = GFX_evt_landing_ship_2
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1201.a
@@ -6120,7 +6120,7 @@ planet_event = {
 	picture = GFX_evt_landing_ship_2
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1202.a
@@ -6153,7 +6153,7 @@ planet_event = {
 	id = pw_wonder.1203
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		OR = {
@@ -6170,8 +6170,8 @@ planet_event = {
 	immediate = {
 		create_army = {
 			name = pw_army_flying_fortress_name
-			owner = THIS.owner
-			species = THIS.owner_main_species
+			owner = this.owner
+			species = this.owner_main_species
 			type = pw_army_flying_fortress
 		}
 	}
@@ -6183,7 +6183,7 @@ planet_event = {
 	id = pw_wonder.1204
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		if = {
@@ -6226,7 +6226,7 @@ planet_event = {
 	desc = pw_wonder.1205.desc
 	picture = GFX_evt_landing_ship_2
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOR = {
@@ -6262,11 +6262,11 @@ planet_event = {
 			type = ARMY_RECRUITMENT
 			localization = pw_message_guardian_angel_flying_fortress_rebuild
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 	}
@@ -6280,7 +6280,7 @@ planet_event = {
 	picture = GFX_evt_landing_ship_2
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		owner = { is_at_war = no }
@@ -6322,7 +6322,7 @@ planet_event = {
 	desc = pw_wonder.1208.desc
 	picture = GFX_evt_landing_ship_2
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOR = {
@@ -6375,11 +6375,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_stellar_sentinel_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -6395,7 +6395,7 @@ planet_event = {
 	picture = GFX_evt_landing_ship_2
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		NOT = {owner = { has_country_flag = pw_stellar_sentinel_built }}
@@ -6427,11 +6427,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_mantle_crucible_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -6450,7 +6450,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -6490,7 +6490,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -6749,7 +6749,7 @@ planet_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = UNFORTUNATE
@@ -6788,7 +6788,7 @@ planet_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = UNFORTUNATE
@@ -6828,7 +6828,7 @@ planet_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = UNFORTUNATE
@@ -6867,7 +6867,7 @@ planet_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = UNFORTUNATE
@@ -6952,7 +6952,7 @@ planet_event = {
 	id = pw_wonder.1315
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		add_planet_devastation = 5
@@ -6960,11 +6960,11 @@ planet_event = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_5
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		hidden_effect = {
@@ -6982,7 +6982,7 @@ planet_event = {
 	id = pw_wonder.1316
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		add_planet_devastation = 15
@@ -6990,11 +6990,11 @@ planet_event = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_15
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		hidden_effect = {
@@ -7012,7 +7012,7 @@ planet_event = {
 	id = pw_wonder.1317
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		add_planet_devastation = 25
@@ -7020,11 +7020,11 @@ planet_event = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_25
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		hidden_effect = {
@@ -7042,7 +7042,7 @@ planet_event = {
 	id = pw_wonder.1318
 	hide_window = yes
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		add_planet_devastation = 30
@@ -7050,11 +7050,11 @@ planet_event = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_30
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		hidden_effect = {
@@ -7075,7 +7075,7 @@ planet_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_air_raid_siren
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1320.a
@@ -7098,7 +7098,7 @@ country_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	immediate = {
 		set_country_flag = pw_mantle_crucible_end_devastation_project_complete
@@ -7153,7 +7153,7 @@ country_event = {
 	desc = pw_wonder.1322.desc
 	picture = GFX_evt_underground_civilization
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_machine_empire = no
@@ -7185,7 +7185,7 @@ country_event = {
 	desc = pw_wonder.1323.desc
 	picture = GFX_evt_underground_civilization
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1323.a
@@ -7220,11 +7220,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_titan_forge_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -7242,7 +7242,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7288,7 +7288,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7392,7 +7392,7 @@ country_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1340.a
@@ -7410,7 +7410,7 @@ country_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1341.a
@@ -7428,7 +7428,7 @@ country_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1342.a
@@ -7458,11 +7458,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_industrial_hearth_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -7481,7 +7481,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7531,7 +7531,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7703,7 +7703,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7736,7 +7736,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7769,7 +7769,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7819,7 +7819,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7866,7 +7866,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7899,7 +7899,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7956,7 +7956,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -7993,7 +7993,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_wonder.1372.a
@@ -8011,7 +8011,7 @@ planet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8053,11 +8053,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_pavilion_of_wonders_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -8073,7 +8073,7 @@ planet_event = {
 	picture = GFX_evt_galactic_community
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8124,11 +8124,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_fair_of_worlds_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -8144,7 +8144,7 @@ planet_event = {
 	picture = GFX_evt_galactic_community
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8179,7 +8179,7 @@ planet_event = {
 	picture = GFX_evt_diplomatic_visit
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8233,11 +8233,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_museum_of_the_grotesque_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -8253,7 +8253,7 @@ planet_event = {
 	picture = GFX_evt_galactic_community
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8288,7 +8288,7 @@ planet_event = {
 	picture = GFX_evt_diplomatic_visit
 	show_sound = event_cityscape
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8371,11 +8371,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_holy_reliquary_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -8391,7 +8391,7 @@ planet_event = {
 	picture = GFX_evt_ancient_records
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8446,11 +8446,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_grand_archive_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -8468,7 +8468,7 @@ planet_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8514,7 +8514,7 @@ planet_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8748,7 +8748,7 @@ planet_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8896,11 +8896,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_transplanetary_logistics_network_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -8928,7 +8928,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -8961,7 +8961,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -9006,7 +9006,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -9121,11 +9121,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_tls_infrastructure_completed
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		planet_event = {
@@ -9221,7 +9221,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_announcement
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9274,7 +9274,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_announcement
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9327,7 +9327,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_announcement
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9367,7 +9367,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_announcement
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9424,7 +9424,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_announcement
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9470,7 +9470,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_announcement
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9539,7 +9539,7 @@ planet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -9625,11 +9625,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_forbidden_city_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -9646,7 +9646,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -9678,7 +9678,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -9813,7 +9813,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_factions
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -9828,7 +9828,7 @@ planet_event = {
 			any_owned_planet = {
 				OR = {
 					AND = { #Seat of Power is somewhere else
-						NOT = { is_planet = THIS }
+						NOT = { is_planet = this }
 						has_deposit = pw_d_infrastructure_seat_of_power
 					}
 					OR = {
@@ -9846,7 +9846,7 @@ planet_event = {
 		owner = {
 			every_owned_planet = {
 				limit = {
-					NOT = { is_planet = ROOT }
+					NOT = { is_planet = root }
 					has_deposit = pw_d_infrastructure_seat_of_power
 				}
 				remove_deposit = pw_d_infrastructure_seat_of_power
@@ -9892,7 +9892,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_factions
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -9910,7 +9910,7 @@ planet_event = {
 			any_owned_planet = {
 				OR = {
 					AND = { #Seat of Power is somewhere else
-						NOT = { is_planet = THIS }
+						NOT = { is_planet = this }
 						OR = {
 							has_deposit = pw_d_infrastructure_throne_room
 							has_deposit = pw_d_infrastructure_imperial_holy_throne
@@ -9928,7 +9928,7 @@ planet_event = {
 		owner = {
 			every_owned_planet = {
 				limit = {
-					NOT = { is_planet = ROOT }
+					NOT = { is_planet = root }
 					OR = {
 						has_deposit = pw_d_infrastructure_throne_room
 						has_deposit = pw_d_infrastructure_imperial_holy_throne
@@ -9981,11 +9981,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_fc_infrastructure_completed
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 		planet_event = {
@@ -10056,7 +10056,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_public_unrest
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -10146,7 +10146,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_public_unrest
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -10231,7 +10231,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -10313,7 +10313,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_capital = no
@@ -10404,7 +10404,7 @@ planet_event = {
 	picture = GFX_evt_medieval_alien_civilization
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		is_occupied_flag = no
@@ -10495,11 +10495,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_festival_plaza_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -10517,7 +10517,7 @@ planet_event = {
 	picture = GFX_evt_galactic_market
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -10588,7 +10588,7 @@ planet_event = {
 	desc = pw_wonder.1906.desc
 	picture = GFX_evt_galactic_market
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -10774,7 +10774,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		exists = THIS
+		exists = this
 		OR = {
 			has_country_flag = pw_FP_had_peace_stability_modifier
 			has_country_flag = pw_festival_plaza_built
@@ -10902,7 +10902,7 @@ planet_event = {
 	picture = GFX_evt_signing
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -10974,11 +10974,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_martial_avenue_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -10996,7 +10996,7 @@ planet_event = {
 	picture = GFX_evt_victorious_army
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11096,7 +11096,7 @@ planet_event = {
 	desc = pw_wonder.2006.desc
 	picture = GFX_evt_victorious_army
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11506,7 +11506,7 @@ planet_event = {
 	picture = GFX_evt_signing
 	show_sound = event_celebration
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11578,11 +11578,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_0_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -11610,11 +11610,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_1_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -11642,11 +11642,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_2_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -11674,11 +11674,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_living_spire_3_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -11706,7 +11706,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11738,7 +11738,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11766,7 +11766,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11794,7 +11794,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11828,7 +11828,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11891,7 +11891,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -11972,7 +11972,7 @@ planet_event = {
 	picture = GFX_evt_metropolis
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -12183,11 +12183,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_conduit_of_unity_0_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -12215,11 +12215,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_conduit_of_unity_1_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 
@@ -12266,7 +12266,7 @@ planet_event = {
 	picture = GFX_evt_alien_city
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -12339,11 +12339,11 @@ planet_event = {
 			type = PW_WONDER_COMPLETED
 			localization = pw_message_conduit_of_unity_integration_complete
 			days = 30
-			target = THIS
+			target = this
 			variable = {
 				type = name
 				localization = PLANET
-				scope = ROOT
+				scope = root
 			}
 		}
 	}
@@ -12357,7 +12357,7 @@ planet_event = {
 	picture = GFX_evt_alien_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes
@@ -12389,7 +12389,7 @@ planet_event = {
 	picture = GFX_evt_alien_city
 	show_sound = event_construction
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	pre_triggers = {
 		has_owner = yes

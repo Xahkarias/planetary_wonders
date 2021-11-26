@@ -13,7 +13,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -87,7 +87,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -223,7 +223,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -260,7 +260,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -398,7 +398,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -433,7 +433,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -468,7 +468,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -503,7 +503,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_swarm_started
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -538,7 +538,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_swarm_started
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -574,7 +574,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -647,7 +647,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_swarm_started
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -705,7 +705,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -763,7 +763,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -816,7 +816,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -869,7 +869,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_swarm_started
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -915,7 +915,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -959,7 +959,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -994,7 +994,7 @@ country_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1030,7 +1030,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1153,7 +1153,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1311,7 +1311,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1468,7 +1468,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1531,7 +1531,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1570,7 +1570,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1610,7 +1610,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1673,7 +1673,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes
@@ -1736,7 +1736,7 @@ country_event = {
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	trigger = {
 		is_hive_empire = yes

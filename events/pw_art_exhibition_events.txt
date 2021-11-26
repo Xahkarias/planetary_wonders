@@ -465,7 +465,7 @@ country_event = {
 		trigger = {
 			is_pacifist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_militarist
 				DURATION = @pw_art_exhibition_duration
@@ -498,7 +498,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_warrior_culture
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_warrior_culture
 				DURATION = @pw_art_exhibition_duration
@@ -531,7 +531,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_nationalistic_zeal
 				DURATION = @pw_art_exhibition_duration
@@ -564,7 +564,7 @@ country_event = {
 		trigger = {
 			is_militarist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_pacifist
 				DURATION = @pw_art_exhibition_duration
@@ -597,7 +597,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
@@ -630,7 +630,7 @@ country_event = {
 		trigger = {
 			is_materialist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_spiritualist
 				DURATION = @pw_art_exhibition_duration
@@ -663,7 +663,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_exalted_priesthood
 				DURATION = @pw_art_exhibition_duration
@@ -699,7 +699,7 @@ country_event = {
 				has_valid_civic = civic_death_cult_corporate
 			}
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_death_cult
 				DURATION = @pw_art_exhibition_duration
@@ -732,7 +732,7 @@ country_event = {
 		trigger = {
 			is_spiritualist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_materialist
 				DURATION = @pw_art_exhibition_duration
@@ -765,7 +765,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_technocracy
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_technocracy
 				DURATION = @pw_art_exhibition_duration
@@ -798,7 +798,7 @@ country_event = {
 		trigger = {
 			is_egalitarian = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_authoritarian
 				DURATION = @pw_art_exhibition_duration
@@ -831,7 +831,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_aristocratic_elite
 				DURATION = @pw_art_exhibition_duration
@@ -864,7 +864,7 @@ country_event = {
 		trigger = {
 			is_authoritarian = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_egalitarian
 				DURATION = @pw_art_exhibition_duration
@@ -897,7 +897,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_shared_burden
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_shared_burden
 				DURATION = @pw_art_exhibition_duration
@@ -934,7 +934,7 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_megacorp
 				DURATION = @pw_art_exhibition_duration
@@ -967,7 +967,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_imperial_cult
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_imperial_cult
 				DURATION = @pw_art_exhibition_duration
@@ -1004,7 +1004,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_fanatic_purifiers
 				DURATION = @pw_art_exhibition_duration
@@ -1037,7 +1037,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_barbaric_despoilers
 				DURATION = @pw_art_exhibition_duration
@@ -1070,7 +1070,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_memorialist
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_memorialist
 				DURATION = @pw_art_exhibition_duration
@@ -1116,7 +1116,7 @@ country_event = {
 		trigger = {
 			is_pacifist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_militarist
 				DURATION = @pw_art_exhibition_duration
@@ -1145,7 +1145,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_warrior_culture
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_warrior_culture
 				DURATION = @pw_art_exhibition_duration
@@ -1174,7 +1174,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_nationalistic_zeal
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_nationalistic_zeal
 				DURATION = @pw_art_exhibition_duration
@@ -1203,7 +1203,7 @@ country_event = {
 		trigger = {
 			is_militarist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_pacifist
 				DURATION = @pw_art_exhibition_duration
@@ -1232,7 +1232,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_agrarian_idyll
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
@@ -1261,7 +1261,7 @@ country_event = {
 		trigger = {
 			is_materialist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_spiritualist
 				DURATION = @pw_art_exhibition_duration
@@ -1290,7 +1290,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_exalted_priesthood
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_exalted_priesthood
 				DURATION = @pw_art_exhibition_duration
@@ -1322,7 +1322,7 @@ country_event = {
 				has_valid_civic = civic_death_cult_corporate
 			}
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_death_cult
 				DURATION = @pw_art_exhibition_duration
@@ -1351,7 +1351,7 @@ country_event = {
 		trigger = {
 			is_spiritualist = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_materialist
 				DURATION = @pw_art_exhibition_duration
@@ -1380,7 +1380,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_technocracy
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_technocracy
 				DURATION = @pw_art_exhibition_duration
@@ -1409,7 +1409,7 @@ country_event = {
 		trigger = {
 			is_egalitarian = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_authoritarian
 				DURATION = @pw_art_exhibition_duration
@@ -1438,7 +1438,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_aristocratic_elite
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_aristocratic_elite
 				DURATION = @pw_art_exhibition_duration
@@ -1467,7 +1467,7 @@ country_event = {
 		trigger = {
 			is_authoritarian = no
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_egalitarian
 				DURATION = @pw_art_exhibition_duration
@@ -1496,7 +1496,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_shared_burden
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_shared_burden
 				DURATION = @pw_art_exhibition_duration
@@ -1529,7 +1529,7 @@ country_event = {
 				has_valid_civic = civic_merchant_guilds
 			}
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_megacorp
 				DURATION = @pw_art_exhibition_duration
@@ -1558,7 +1558,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_imperial_cult
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_imperial_cult
 				DURATION = @pw_art_exhibition_duration
@@ -1591,7 +1591,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_fanatic_purifiers
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_fanatic_purifiers
 				DURATION = @pw_art_exhibition_duration
@@ -1620,7 +1620,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_barbaric_despoilers
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_barbaric_despoilers
 				DURATION = @pw_art_exhibition_duration
@@ -1649,7 +1649,7 @@ country_event = {
 		trigger = {
 			has_valid_civic = civic_memorialist
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_memorialist
 				DURATION = @pw_art_exhibition_duration
@@ -2254,7 +2254,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_militarist
 				DURATION = @pw_art_exhibition_duration
@@ -2291,7 +2291,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_warrior_culture
 				DURATION = @pw_art_exhibition_duration
@@ -2328,7 +2328,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_nationalistic_zeal
 				DURATION = @pw_art_exhibition_duration
@@ -2365,7 +2365,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_pacifist
 				DURATION = @pw_art_exhibition_duration
@@ -2402,7 +2402,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
@@ -2439,7 +2439,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_spiritualist
 				DURATION = @pw_art_exhibition_duration
@@ -2476,7 +2476,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_exalted_priesthood
 				DURATION = @pw_art_exhibition_duration
@@ -2516,7 +2516,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_death_cult
 				DURATION = @pw_art_exhibition_duration
@@ -2553,7 +2553,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_materialist
 				DURATION = @pw_art_exhibition_duration
@@ -2590,7 +2590,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_technocracy
 				DURATION = @pw_art_exhibition_duration
@@ -2627,7 +2627,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_authoritarian
 				DURATION = @pw_art_exhibition_duration
@@ -2664,7 +2664,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_aristocratic_elite
 				DURATION = @pw_art_exhibition_duration
@@ -2701,7 +2701,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_egalitarian
 				DURATION = @pw_art_exhibition_duration
@@ -2738,7 +2738,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_shared_burden
 				DURATION = @pw_art_exhibition_duration
@@ -2779,7 +2779,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_megacorp
 				DURATION = @pw_art_exhibition_duration
@@ -2820,7 +2820,7 @@ country_event = {
 			MODIFIER = pw_art_mod_imperial_cult_country
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_imperial_cult
 				DURATION = @pw_art_exhibition_duration
@@ -2857,7 +2857,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_fanatic_purifiers
 				DURATION = @pw_art_exhibition_duration
@@ -2894,7 +2894,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_barbaric_despoilers
 				DURATION = @pw_art_exhibition_duration
@@ -2931,7 +2931,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_memorialist
 				DURATION = @pw_art_exhibition_duration
@@ -2981,7 +2981,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_militarist
 				DURATION = @pw_art_exhibition_duration
@@ -3014,7 +3014,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_warrior_culture
 				DURATION = @pw_art_exhibition_duration
@@ -3047,7 +3047,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_nationalistic_zeal
 				DURATION = @pw_art_exhibition_duration
@@ -3080,7 +3080,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_pacifist
 				DURATION = @pw_art_exhibition_duration
@@ -3113,7 +3113,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
@@ -3146,7 +3146,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_spiritualist
 				DURATION = @pw_art_exhibition_duration
@@ -3179,7 +3179,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_exalted_priesthood
 				DURATION = @pw_art_exhibition_duration
@@ -3215,7 +3215,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_death_cult
 				DURATION = @pw_art_exhibition_duration
@@ -3248,7 +3248,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_materialist
 				DURATION = @pw_art_exhibition_duration
@@ -3281,7 +3281,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_technocracy
 				DURATION = @pw_art_exhibition_duration
@@ -3314,7 +3314,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_authoritarian
 				DURATION = @pw_art_exhibition_duration
@@ -3347,7 +3347,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_aristocratic_elite
 				DURATION = @pw_art_exhibition_duration
@@ -3380,7 +3380,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_egalitarian
 				DURATION = @pw_art_exhibition_duration
@@ -3413,7 +3413,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_shared_burden
 				DURATION = @pw_art_exhibition_duration
@@ -3450,7 +3450,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_megacorp
 				DURATION = @pw_art_exhibition_duration
@@ -3487,7 +3487,7 @@ country_event = {
 			MODIFIER = pw_art_mod_imperial_cult_country
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_imperial_cult
 				DURATION = @pw_art_exhibition_duration
@@ -3520,7 +3520,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_fanatic_purifiers
 				DURATION = @pw_art_exhibition_duration
@@ -3553,7 +3553,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_barbaric_despoilers
 				DURATION = @pw_art_exhibition_duration
@@ -3586,7 +3586,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophile
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_memorialist
 				DURATION = @pw_art_exhibition_duration
@@ -4191,7 +4191,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_militarist
 				DURATION = @pw_art_exhibition_duration
@@ -4228,7 +4228,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_warrior_culture
 				DURATION = @pw_art_exhibition_duration
@@ -4265,7 +4265,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_nationalistic_zeal
 				DURATION = @pw_art_exhibition_duration
@@ -4302,7 +4302,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_pacifist
 				DURATION = @pw_art_exhibition_duration
@@ -4339,7 +4339,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
@@ -4376,7 +4376,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_spiritualist
 				DURATION = @pw_art_exhibition_duration
@@ -4413,7 +4413,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_exalted_priesthood
 				DURATION = @pw_art_exhibition_duration
@@ -4453,7 +4453,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_death_cult
 				DURATION = @pw_art_exhibition_duration
@@ -4490,7 +4490,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_materialist
 				DURATION = @pw_art_exhibition_duration
@@ -4527,7 +4527,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_technocracy
 				DURATION = @pw_art_exhibition_duration
@@ -4564,7 +4564,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_authoritarian
 				DURATION = @pw_art_exhibition_duration
@@ -4601,7 +4601,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_aristocratic_elite
 				DURATION = @pw_art_exhibition_duration
@@ -4638,7 +4638,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_egalitarian
 				DURATION = @pw_art_exhibition_duration
@@ -4675,7 +4675,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_shared_burden
 				DURATION = @pw_art_exhibition_duration
@@ -4716,7 +4716,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_megacorp
 				DURATION = @pw_art_exhibition_duration
@@ -4757,7 +4757,7 @@ country_event = {
 			MODIFIER = pw_art_mod_imperial_cult_country
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_imperial_cult
 				DURATION = @pw_art_exhibition_duration
@@ -4794,7 +4794,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_fanatic_purifiers
 				DURATION = @pw_art_exhibition_duration
@@ -4831,7 +4831,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_barbaric_despoilers
 				DURATION = @pw_art_exhibition_duration
@@ -4868,7 +4868,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_memorialist
 				DURATION = @pw_art_exhibition_duration
@@ -4918,7 +4918,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_militarist
 				DURATION = @pw_art_exhibition_duration
@@ -4951,7 +4951,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_warrior_culture
 				DURATION = @pw_art_exhibition_duration
@@ -4984,7 +4984,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_nationalistic_zeal
 				DURATION = @pw_art_exhibition_duration
@@ -5017,7 +5017,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_pacifist
 				DURATION = @pw_art_exhibition_duration
@@ -5050,7 +5050,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_agrarian_idyll
 				DURATION = @pw_art_exhibition_duration
@@ -5083,7 +5083,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_spiritualist
 				DURATION = @pw_art_exhibition_duration
@@ -5116,7 +5116,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_exalted_priesthood
 				DURATION = @pw_art_exhibition_duration
@@ -5152,7 +5152,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_death_cult
 				DURATION = @pw_art_exhibition_duration
@@ -5185,7 +5185,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_materialist
 				DURATION = @pw_art_exhibition_duration
@@ -5218,7 +5218,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_technocracy
 				DURATION = @pw_art_exhibition_duration
@@ -5251,7 +5251,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_authoritarian
 				DURATION = @pw_art_exhibition_duration
@@ -5284,7 +5284,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_aristocratic_elite
 				DURATION = @pw_art_exhibition_duration
@@ -5317,7 +5317,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_egalitarian
 				DURATION = @pw_art_exhibition_duration
@@ -5350,7 +5350,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_shared_burden
 				DURATION = @pw_art_exhibition_duration
@@ -5387,7 +5387,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_megacorp
 				DURATION = @pw_art_exhibition_duration
@@ -5424,7 +5424,7 @@ country_event = {
 			MODIFIER = pw_art_mod_imperial_cult_country
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_imperial_cult
 				DURATION = @pw_art_exhibition_duration
@@ -5457,7 +5457,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_fanatic_purifiers
 				DURATION = @pw_art_exhibition_duration
@@ -5490,7 +5490,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_barbaric_despoilers
 				DURATION = @pw_art_exhibition_duration
@@ -5523,7 +5523,7 @@ country_event = {
 			MODIFIER = pw_art_mod_xenophobe
 			DURATION = @pw_art_exhibition_duration
 		}
-		FROM = { #Trick to show the modifier on the tooltip only once
+		from = { #Trick to show the modifier on the tooltip only once
 			pw_add_unique_modifier = {
 				MODIFIER = pw_art_mod_memorialist
 				DURATION = @pw_art_exhibition_duration
@@ -6172,12 +6172,12 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				opinion_level = {
-					who = PREV
+					who = prev
 					level >= neutral
 				}
 			}
 			add_opinion_modifier = {
-				who = THIS
+				who = this
 				modifier = pw_opinion_featured_in_exhibition
 			}
 		}

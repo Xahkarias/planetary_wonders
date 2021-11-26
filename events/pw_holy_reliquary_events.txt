@@ -1402,7 +1402,7 @@ country_event = {
 					ethos = {
 						ethic = ethic_spiritualist
 					}
-					species = THIS.owner_main_species
+					species = this.owner_main_species
 				}
 			}
 		}
@@ -2696,16 +2696,16 @@ country_event = {
 						is_fallen_empire_materialist = yes
 					}
 					NOR = {
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
 					}
 					NOT = { is_at_war_with = root }
 					opinion = {
-						who = ROOT
+						who = root
 						value > -400
 					}
 				}
@@ -2720,16 +2720,16 @@ country_event = {
 						is_fallen_empire_materialist = yes
 					}
 					NOR = {
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
 					}
 					NOT = { is_at_war_with = root }
 					opinion = {
-						who = ROOT
+						who = root
 						value > -400
 					}
 				}
@@ -2810,7 +2810,7 @@ country_event = {
 		name = pw_holy_reliquary.611.a
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_holy_visitation
 			}
 		}
@@ -2821,7 +2821,7 @@ country_event = {
 		name = pw_holy_reliquary.611.b
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
 			}
 		}
@@ -2850,7 +2850,7 @@ country_event = {
 		name = pw_holy_reliquary.611.a
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_impressing_devotion
 			}
 		}
@@ -2861,7 +2861,7 @@ country_event = {
 		name = pw_holy_reliquary.611.b
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
 			}
 		}
@@ -2890,7 +2890,7 @@ country_event = {
 		name = pw_holy_reliquary.611.a
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_hallowed_meeting
 			}
 		}
@@ -2901,7 +2901,7 @@ country_event = {
 		name = pw_holy_reliquary.611.b
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
 			}
 		}
@@ -2930,7 +2930,7 @@ country_event = {
 		name = pw_holy_reliquary.611.a
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_intriguing_beliefs
 			}
 		}
@@ -2941,7 +2941,7 @@ country_event = {
 		name = pw_holy_reliquary.611.b
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
 			}
 		}
@@ -2970,7 +2970,7 @@ country_event = {
 		name = pw_holy_reliquary.611.a
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_studying_our_faith
 			}
 		}
@@ -2981,7 +2981,7 @@ country_event = {
 		name = pw_holy_reliquary.611.b
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
 			}
 		}
@@ -3026,12 +3026,12 @@ country_event = {
 						is_fallen_empire = yes
 					}
 					NOR = {
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
 					}
 					NOT = { is_at_war_with = root }
 				}
@@ -3044,12 +3044,12 @@ country_event = {
 						is_fallen_empire = yes
 					}
 					NOR = {
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_holy_visitation }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_impressing_devotion }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_studying_our_faith }
-						has_opinion_modifier = { who = ROOT modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_holy_visitation }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_impressing_devotion }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_hallowed_meeting }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_intriguing_beliefs }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_studying_our_faith }
+						has_opinion_modifier = { who = root modifier = pw_opinion_HR_diplomacy_attempted_to_understand }
 					}
 					NOT = { is_at_war_with = root }
 				}
@@ -3084,7 +3084,7 @@ country_event = {
 		name = pw_holy_reliquary.621.a
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_attempted_to_understand
 			}
 		}
@@ -3095,7 +3095,7 @@ country_event = {
 		name = pw_holy_reliquary.621.b
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_attempted_to_understand
 			}
 		}
@@ -3106,7 +3106,7 @@ country_event = {
 		name = pw_holy_reliquary.621.c
 		event_target:pw_holy_reliquary_diplomacy_country = {
 			add_opinion_modifier = {
-				who = ROOT
+				who = root
 				modifier = pw_opinion_HR_diplomacy_refuse_diplomacy
 			}
 		}
@@ -4210,7 +4210,7 @@ country_event = {
 		any_owned_planet = {
 			has_active_building = pw_building_holy_reliquary
 		}
-		FROM = {
+		from = {
 			NOR = {
 				has_trait = leader_trait_corrupt
 				has_trait = leader_trait_substance_abuser

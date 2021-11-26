@@ -27,7 +27,7 @@ country_event = {
 			is_at_war = no
 			has_communications = root
 			opinion = {
-				who = THIS
+				who = this
 				value > -70
 			}
 		}
@@ -41,7 +41,7 @@ country_event = {
 				is_at_war = no
 				has_communications = root
 				opinion = {
-					who = THIS
+					who = this
 					value > -70
 				}
 			}
@@ -460,11 +460,11 @@ country_event = {
 		name = pw_research.1100.a
 		begin_event_chain = {
 			event_chain = pw_particle_supercollider_experiment_chain
-			target = ROOT
+			target = root
 		}
 		enable_special_project = {
 			name = PW_PHYSICS_PARTICLE_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWPCPlanet
 		}
 	}
@@ -573,7 +573,7 @@ country_event = {
 		add_research_option = pw_tech_particle_supercollider_organization
 		enable_special_project = {
 			name = PW_PHYSICS_COMPUTING_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWPCPlanet
 		}
 	}
@@ -673,7 +673,7 @@ country_event = {
 		}
 		enable_special_project = {
 			name = PW_PHYSICS_FIELD_THEORY_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWPCPlanet
 		}
 	}
@@ -829,7 +829,7 @@ country_event = {
 			is_at_war = no
 			has_communications = root
 			opinion = {
-				who = THIS
+				who = this
 				value > -70
 			}
 		}
@@ -843,7 +843,7 @@ country_event = {
 				is_at_war = no
 				has_communications = root
 				opinion = {
-					who = THIS
+					who = this
 					value > -70
 				}
 			}
@@ -1348,11 +1348,11 @@ country_event = {
 		name = pw_research.2100.a
 		begin_event_chain = {
 			event_chain = pw_domed_city_experiment_chain
-			target = ROOT
+			target = root
 		}
 		enable_special_project = {
 			name = PW_SOCIETY_HAZARD_ENVIRONMENTS_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWDCPlanet
 		}
 	}
@@ -1476,7 +1476,7 @@ country_event = {
 		add_research_option = pw_tech_domed_city_organization
 		enable_special_project = {
 			name = PW_SOCIETY_GOVERNMENTAL_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWDCPlanet
 		}
 	}
@@ -1633,7 +1633,7 @@ country_event = {
 		add_research_option = pw_tech_targeted_chemical_bliss
 		enable_special_project = {
 			name = PW_SOCIETY_EXOTIC_SUBSTANCES_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWDCPlanet
 		}
 	}
@@ -1650,7 +1650,7 @@ country_event = {
 		}
 		enable_special_project = {
 			name = PW_SOCIETY_EXOTIC_SUBSTANCES_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWDCPlanet
 		}
 	}
@@ -1894,7 +1894,7 @@ country_event = {
 			is_at_war = no
 			has_communications = root
 			opinion = {
-				who = THIS
+				who = this
 				value > -70
 			}
 		}
@@ -1908,7 +1908,7 @@ country_event = {
 				is_at_war = no
 				has_communications = root
 				opinion = {
-					who = THIS
+					who = this
 					value > -70
 				}
 			}
@@ -2324,11 +2324,11 @@ country_event = {
 		name = pw_research.3100.a
 		begin_event_chain = {
 			event_chain = pw_abyssal_crater_test_Site_experiment_chain
-			target = ROOT
+			target = root
 		}
 		enable_special_project = {
 			name = PW_ENGINEERING_WEAPONS_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWACTSPlanet
 		}
 	}
@@ -2454,7 +2454,7 @@ country_event = {
 		add_research_option = pw_tech_abyssal_crater_test_site_organization
 		enable_special_project = {
 			name = PW_ENGINEERING_STRUCTURAL_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWACTSPlanet
 		}
 	}
@@ -2563,7 +2563,7 @@ country_event = {
 		add_research_option = pw_tech_living_metal_districts
 		enable_special_project = {
 			name = PW_ENGINEERING_PRODUCTION_EXPERIMENTS
-			owner = ROOT
+			owner = root
 			location = event_target:PWACTSPlanet
 		}
 	}

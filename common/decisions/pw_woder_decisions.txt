@@ -783,7 +783,7 @@ pw_decision_SE_counterweight_habitat = {
 		solar_system = {
 			spawn_megastructure = {
 				type = habitat_0
-				planet = PREV
+				planet = prev
 				owner = owner
 				init_effect = {
 					add_modifier = {
@@ -1028,8 +1028,8 @@ pw_decision_rebuild_flying_fortress = {
 		custom_tooltip = pw_decision_rebuild_flying_fortress_tooltip
 		create_army = {
 			name = pw_army_flying_fortress_name
-			owner = THIS.owner
-			species = THIS.owner.owner_species
+			owner = this.owner
+			species = this.owner.owner_species
 			type = pw_army_flying_fortress
 		}
 		hidden_effect = {
@@ -1208,7 +1208,7 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 		owner = {
 			NOT = {
 				any_owned_planet = {
-					NOT = { is_planet = ROOT }
+					NOT = { is_planet = root }
 					has_active_building = pw_building_pavilion_of_wonders
 				}
 			}
@@ -1307,7 +1307,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 		has_active_building = pw_building_pavilion_of_wonders
 		owner = {
 			any_owned_planet = {
-				NOT = { is_planet = ROOT }
+				NOT = { is_planet = root }
 				has_active_building = pw_building_pavilion_of_wonders
 			}
 		}
@@ -1514,7 +1514,7 @@ pw_decision_fair_of_worlds_planetary_art_exhibition = {
 		owner = {
 			NOT = {
 				any_owned_planet = {
-					NOT = { is_planet = ROOT }
+					NOT = { is_planet = root }
 					has_active_building = pw_building_pavilion_of_wonders
 
 				}
@@ -1616,7 +1616,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				has_active_building = pw_building_pavilion_of_wonders
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = ROOT }
+						NOT = { is_planet = root }
 						has_active_building = pw_building_fair_of_worlds
 					}
 				}
@@ -1625,7 +1625,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				has_active_building = pw_building_fair_of_worlds
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = ROOT }
+						NOT = { is_planet = root }
 						has_active_building = pw_building_pavilion_of_wonders
 					}
 				}
@@ -1810,7 +1810,7 @@ pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
 		owner = {
 			NOT = {
 				any_owned_planet = {
-					NOT = { is_planet = ROOT }
+					NOT = { is_planet = root }
 					has_active_building = pw_building_pavilion_of_wonders
 				}
 			}
@@ -1911,7 +1911,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				has_active_building = pw_building_pavilion_of_wonders
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = ROOT }
+						NOT = { is_planet = root }
 						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
@@ -1920,7 +1920,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				has_active_building = pw_building_museum_of_the_grotesque
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = ROOT }
+						NOT = { is_planet = root }
 						has_active_building = pw_building_pavilion_of_wonders
 					}
 				}

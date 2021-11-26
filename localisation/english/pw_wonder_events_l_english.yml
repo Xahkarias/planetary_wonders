@@ -210,9 +210,11 @@
     pw_message_demetrius_fields_complete: "§MDemetrius Cornucopia§! has been constructed on $PLANET|Y$."
     #First Time Complete Demetrius Cornucopia (Regular Empire)
     pw_wonder.701.name: "Feed The World"
-    pw_wonder.701.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Any lacking species or nutrient can be readily supplemented from local gene banks Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
+    pw_wonder.701.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators.\nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Any lacking species or nutrient can be readily supplemented from local gene banks. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
+    pw_wonder.701.angler.desc: "Reefs, rivers, ponds, lagoons and fish farms: a varied of pisciculture facilities scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, oxygenation, currents, surface solar exposure, mineral concentration, algae development, predators.\nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Any lacking species or nutrient can be readily supplemented from local gene banks. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
     pw_wonder.701.a: "Seed the earth!"
     pw_wonder.701.b: "A harvest like never seen before!"
+    pw_wonder.701.angler.desc.a: "You eat the dough, and I'll eat the beef!"
     #First Time Complete Demetrius Cornucopia (Gestalt)
     pw_wonder.702.name: "Feed The World"
     pw_wonder.702.desc: "Farmlands, meadows, pastures, herding and hunting grounds and varied cultivation spots scattered all about in the recently built Demetrius Cornucopia. All aspects of the environment of [ROOT.GetName] are controlled from this area to provide optimal condition for food productivity: temperature, humidity, wind effect, solar exposure, water, mineral in the soil, pollinators, predators. \nTo sustain such a huge production, variety is not neglected be it vegetal, animal of fungal: if it can feed us we can grow it here. Food processing is also done on site, so that any unused byproduct can be directly recycled into the system.\n\nFood fuels life."
@@ -902,6 +904,7 @@
     pw_wonder.2120.tradition: "The Spire of Tradition"
     pw_wonder.2120.administration: "The Spire of Administration"
     pw_wonder.2120.death: "The Death Spire"
+    pw_wonder.2120.aquatic: "The Submerged Spire"
     pw_wonder.2120.tooltip: "Designation can be changed in the future by enacting a planetary decision."
 
     pw_wonder.2106.name: "The Fall of the Spire"

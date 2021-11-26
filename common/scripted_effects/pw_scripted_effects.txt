@@ -58,7 +58,7 @@ pw_trigger_art_generic_events = {
 					}
 					any_neighbor_country = {
 						opinion_level = {
-							who = PREV
+							who = prev
 							level >= neutral
 						}
 					}

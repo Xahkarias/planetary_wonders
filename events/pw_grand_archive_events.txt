@@ -445,7 +445,7 @@ country_event = {
 			any_system = {
 				any_system_planet = {
 					is_surveyed = {
-						who = ROOT
+						who = root
 						status = yes
 					}
 					OR = {
@@ -459,7 +459,7 @@ country_event = {
 							AND = {
 								exists = space_owner
 								space_owner = {
-									is_country = ROOT
+									is_country = root
 								}
 							}
 						}
@@ -470,7 +470,7 @@ country_event = {
 			any_system = {
 				any_system_planet = {
 					is_surveyed = {
-						who = ROOT
+						who = root
 						status = yes
 					}
 					OR = {
@@ -485,7 +485,7 @@ country_event = {
 							AND = {
 								exists = space_owner
 								space_owner = {
-									is_country = ROOT
+									is_country = root
 								}
 							}
 						}
@@ -495,7 +495,7 @@ country_event = {
 		}
 		begin_event_chain = {
 			event_chain = pw_assemble_ARK_project_chain
-			target = ROOT
+			target = root
 		}
 		pw_grand_archive_return_to_hub = yes
 		hidden_effect = {
@@ -509,15 +509,15 @@ country_event = {
 				}
 				enable_special_project = {
 					name = PW_ARK_PROJECT_SEED_BANK
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 			#Frozen Specimens
 			random_galaxy_planet = {
 				limit = {
 					is_surveyed = {
-						who = ROOT
+						who = root
 						status = yes
 					}
 					OR = {
@@ -531,7 +531,7 @@ country_event = {
 							AND = {
 								exists = space_owner
 								space_owner = {
-									is_country = ROOT
+									is_country = root
 								}
 							}
 						}
@@ -539,15 +539,15 @@ country_event = {
 				}
 				enable_special_project = {
 					name = PW_ARK_PROJECT_FROZEN_SPECIMEN
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 			#Uncharted Biosphere
 			random_galaxy_planet = {
 				limit = {
 					is_surveyed = {
-						who = ROOT
+						who = root
 						status = yes
 					}
 					OR = {
@@ -562,7 +562,7 @@ country_event = {
 							AND = {
 								exists = space_owner
 								space_owner = {
-									is_country = ROOT
+									is_country = root
 								}
 							}
 						}
@@ -570,8 +570,8 @@ country_event = {
 				}
 				enable_special_project = {
 					name = PW_ARK_PROJECT_UNCHARTED_BIOSPHERE
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 		}
@@ -593,7 +593,7 @@ country_event = {
 				any_system = {
 					any_system_planet = {
 						is_surveyed = {
-							who = ROOT
+							who = root
 							status = yes
 						}
 						OR = {
@@ -607,7 +607,7 @@ country_event = {
 								AND = {
 									exists = space_owner
 									space_owner = {
-										is_country = ROOT
+										is_country = root
 									}
 								}
 							}
@@ -618,7 +618,7 @@ country_event = {
 				any_system = {
 					any_system_planet = {
 						is_surveyed = {
-							who = ROOT
+							who = root
 							status = yes
 						}
 						OR = {
@@ -633,7 +633,7 @@ country_event = {
 								AND = {
 									exists = space_owner
 									space_owner = {
-										is_country = ROOT
+										is_country = root
 									}
 								}
 							}
@@ -646,7 +646,7 @@ country_event = {
 		enable_special_project = {
 			name = PW_ARK_PROJECT
 			location = event_target:pw_grand_archive_planet
-			owner = ROOT
+			owner = root
 		}
 	}
 }
@@ -658,7 +658,7 @@ planet_event = {
 	desc = pw_grand_archive.105.desc
 	picture = GFX_evt_society_research
 	show_sound = event_alien_nature
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -913,8 +913,8 @@ country_event = {
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_LIBRARY_OF_BABEL
-				location = THIS
-				owner = ROOT
+				location = this
+				owner = root
 			}
 		}
 		pw_grand_archive_return_to_hub = yes
@@ -1060,7 +1060,7 @@ country_event = {
 		name = pw_grand_archive.continue_to_project
 		begin_event_chain = {
 			event_chain = pw_assemble_cradle_initiative_chain
-			target = ROOT
+			target = root
 		}
 		pw_grand_archive_return_to_hub = yes
 		hidden_effect = {
@@ -1079,8 +1079,8 @@ country_event = {
 					}
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_WET_PLANET
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1088,8 +1088,8 @@ country_event = {
 				event_target:pw_grand_archive_planet = {
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_WET_PLANET_REPLACED
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1108,8 +1108,8 @@ country_event = {
 					}
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_COLD_PLANET
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1117,8 +1117,8 @@ country_event = {
 				event_target:pw_grand_archive_planet = {
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_COLD_PLANET_REPLACED
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1137,8 +1137,8 @@ country_event = {
 					}
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_DRY_PLANET
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1146,8 +1146,8 @@ country_event = {
 				event_target:pw_grand_archive_planet = {
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_DRY_PLANET_REPLACED
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1168,8 +1168,8 @@ country_event = {
 					}
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_EXOTIC_PLANET
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1177,8 +1177,8 @@ country_event = {
 				event_target:pw_grand_archive_planet = {
 					enable_special_project = {
 						name = PW_CRADLE_INITIATIVE_EXOTIC_PLANET_REPLACED
-						location = THIS
-						owner = ROOT
+						location = this
+						owner = root
 					}
 				}
 			}
@@ -1233,7 +1233,7 @@ planet_event = {
 	desc = pw_grand_archive.305.desc
 	picture = GFX_evt_continental
 	show_sound = event_alien_nature
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -1313,7 +1313,7 @@ planet_event = {
 	desc = pw_grand_archive.307.desc
 	picture = GFX_evt_tundra
 	show_sound = event_alien_nature
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -1393,7 +1393,7 @@ planet_event = {
 	desc = pw_grand_archive.309.desc
 	picture = GFX_evt_desert
 	show_sound = event_alien_nature
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -1473,7 +1473,7 @@ planet_event = {
 	desc = pw_grand_archive.311.desc
 	picture = GFX_evt_toxic
 	show_sound = event_alien_nature
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -1690,8 +1690,8 @@ country_event = {
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_PARTICLE_MUSEUM
-				location = THIS
-				owner = ROOT
+				location = this
+				owner = root
 			}
 		}
 		pw_grand_archive_return_to_hub = yes
@@ -1839,8 +1839,8 @@ country_event = {
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_OMNIDATABASE
-				location = THIS
-				owner = ROOT
+				location = this
+				owner = root
 			}
 		}
 		pw_grand_archive_return_to_hub = yes
@@ -1920,8 +1920,8 @@ country_event = {
 			}
 			enable_special_project = {
 				name = PW_SECURE_OMNIDATABASE
-				location = THIS
-				owner = ROOT
+				location = this
+				owner = root
 			}
 		}
 	}
@@ -2042,7 +2042,7 @@ country_event = {
 		name = pw_grand_archive.continue_to_project
 		begin_event_chain = {
 			event_chain = pw_assemble_stellarium_chain
-			target = ROOT
+			target = root
 		}
 		pw_grand_archive_return_to_hub = yes
 		hidden_effect = {
@@ -2063,8 +2063,8 @@ country_event = {
 						set_planet_flag = pw_grand_archive_star_project
 						enable_special_project = {
 							name = PW_STELLARIUM_STAR
-							location = THIS
-							owner = ROOT
+							location = this
+							owner = root
 						}
 					}
 				}
@@ -2072,8 +2072,8 @@ country_event = {
 					event_target:pw_grand_archive_planet = {
 						enable_special_project = {
 							name = PW_STELLARIUM_SIMULATION
-							location = THIS
-							owner = ROOT
+							location = this
+							owner = root
 						}
 					}
 				}
@@ -2081,8 +2081,8 @@ country_event = {
 			event_target:pw_grand_archive_planet = {
 				enable_special_project = {
 					name = PW_STELLARIUM_SIMULATION
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 		}
@@ -2136,7 +2136,7 @@ planet_event = {
 	desc = pw_grand_archive.606.desc
 	picture = GFX_evt_star_white
 	show_sound = event_solar_fusion
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -2353,8 +2353,8 @@ country_event = {
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_ZERO_G_EXPOSITION
-				location = THIS
-				owner = ROOT
+				location = this
+				owner = root
 			}
 		}
 		pw_grand_archive_return_to_hub = yes
@@ -2375,7 +2375,7 @@ ship_event = {
 		name = pw_grand_archive.710.a
 		fleet = {
 			delete_fleet = {
-				target = THIS
+				target = this
 				kill_leader = no
 			}
 		}
@@ -2517,8 +2517,8 @@ country_event = {
 		event_target:pw_grand_archive_planet = {
 			enable_special_project = {
 				name = PW_MECHANIST_COLLECTION
-				location = THIS
-				owner = ROOT
+				location = this
+				owner = root
 			}
 		}
 		pw_grand_archive_return_to_hub = yes
@@ -2709,7 +2709,7 @@ country_event = {
 
 		begin_event_chain = {
 			event_chain = pw_assemble_meta_architectural_complex_chain
-			target = ROOT
+			target = root
 		}
 		pw_grand_archive_return_to_hub = yes
 
@@ -2721,8 +2721,8 @@ country_event = {
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_SPACE_ELEVATOR
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 			#Astronomical Model Bureau
@@ -2735,8 +2735,8 @@ country_event = {
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_GALACTIC_MODEL
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 			#Guardian Angel
@@ -2749,8 +2749,8 @@ country_event = {
 				}
 				enable_special_project = {
 					name = PW_META_ARCHITECTURAL_COMPLEX_GUARDIAN_ANGEL
-					location = THIS
-					owner = ROOT
+					location = this
+					owner = root
 				}
 			}
 		}
@@ -2784,7 +2784,7 @@ country_event = {
 		enable_special_project = {
 			name = PW_META_ARCHITECTURAL_COMPLEX
 			location = event_target:pw_grand_archive_planet
-			owner = ROOT
+			owner = root
 		}
 		pw_grand_archive_return_to_hub = yes
 	}
@@ -2797,7 +2797,7 @@ planet_event = {
 	desc = pw_grand_archive.905.desc
 	picture = GFX_evt_pw_space_elevator
 	show_sound = event_cityscape
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -2837,7 +2837,7 @@ planet_event = {
 	desc = pw_grand_archive.906.desc
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_cityscape
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 
@@ -2877,7 +2877,7 @@ planet_event = {
 	desc = pw_grand_archive.907.desc
 	picture = GFX_evt_landing_ship_2
 	show_sound = event_cityscape
-	location = THIS
+	location = this
 
 	is_triggered_only = yes
 

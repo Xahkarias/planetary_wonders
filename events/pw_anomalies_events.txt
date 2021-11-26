@@ -8,7 +8,7 @@ ship_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -16,7 +16,7 @@ ship_event = {
 	#Science
 	option = {
 		name = pw_anomaly.20.a
-		FROM = { add_deposit = d_physics_3 }
+		from = { add_deposit = d_physics_3 }
 	}
 
 	#Energy
@@ -38,7 +38,7 @@ ship_event = {
 	picture = GFX_evt_pw_domed_city
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -46,7 +46,7 @@ ship_event = {
 	#Science
 	option = {
 		name = pw_anomaly.30.a
-		FROM = { add_deposit = d_society_3 }
+		from = { add_deposit = d_society_3 }
 	}
 
 	#Trade Value
@@ -55,7 +55,7 @@ ship_event = {
 		trigger = {
 			owner = { NOT = { has_valid_civic = civic_barbaric_despoilers }}
 		}
-		FROM = { add_deposit = d_trade_value_5 }
+		from = { add_deposit = d_trade_value_5 }
 	}
 
 	#Minor Artifacts + Trade value
@@ -64,7 +64,7 @@ ship_event = {
 		trigger = {
 			owner = { has_valid_civic = civic_barbaric_despoilers }
 		}
-		FROM = { add_deposit = d_trade_value_5 }
+		from = { add_deposit = d_trade_value_5 }
 		owner = {
 			add_resource = {
 				minor_artifacts = 2
@@ -81,7 +81,7 @@ ship_event = {
 	picture = GFX_evt_pw_abyssal_crater_test_site
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -89,13 +89,13 @@ ship_event = {
 	#Science
 	option = {
 		name = pw_anomaly.40.a
-		FROM = { add_deposit = d_engineering_3 }
+		from = { add_deposit = d_engineering_3 }
 	}
 
 	#Alloys
 	option = {
 		name = pw_anomaly.40.b
-		FROM = { add_deposit = d_alloys_1 }
+		from = { add_deposit = d_alloys_1 }
 	}
 }
 
@@ -107,7 +107,7 @@ ship_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -132,7 +132,7 @@ ship_event = {
 	picture = GFX_evt_pw_galactic_model
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -143,7 +143,7 @@ ship_event = {
 		solar_system = {
 			set_surveyed = {
 				surveyed = yes
-				surveyor = ROOT.owner
+				surveyor = root.owner
 			}
 			random_system_planet = {
 				limit = {
@@ -173,7 +173,7 @@ ship_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_alien_signal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -188,7 +188,7 @@ ship_event = {
 		}
 		enable_special_project = {
 			name = PW_INVESTIGATE_ENIGMA_ENGINE_SIGNAL
-			location = FROM
+			location = from
 		}
 	}
 	#Let the asteroids have it.
@@ -210,7 +210,7 @@ ship_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_alien_signal
 	is_triggered_only = yes
-	location = FROM
+	location = from
 
 	#Science
 	option = {
@@ -249,7 +249,7 @@ ship_event = {
 	picture = GFX_evt_pw_enigma_engine
 	show_sound = event_alien_signal
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_anomaly.102.a
@@ -286,7 +286,7 @@ ship_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -294,16 +294,16 @@ ship_event = {
 	#Continue to project
 	option = {
 		name = pw_anomaly.110.a
-		FROM = { add_deposit = d_society_3 }
+		from = { add_deposit = d_society_3 }
 		enable_special_project = {
 			name = PW_DECODE_SDH_DEVICE
-			location = FROM
+			location = from
 		}
 	}
 	#Destroy device
 	option = {
 		name = pw_anomaly.110.b
-		FROM = { add_deposit = d_society_3 }
+		from = { add_deposit = d_society_3 }
 		owner = {
 			add_resource = {
 				influence = 50
@@ -320,7 +320,7 @@ ship_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#OK (regular empire)
 	option = {
@@ -455,7 +455,7 @@ ship_event = {
 	picture = GFX_evt_hive_mind
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_anomaly.112.a
@@ -485,7 +485,7 @@ ship_event = {
 	picture = GFX_evt_crashed_station
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -495,14 +495,14 @@ ship_event = {
 		name = pw_anomaly.130.a
 		enable_special_project = {
 			name = PW_POWER_FROZEN_WAR_TITAN
-			location = FROM
+			location = from
 		}
 	}
 
 	#Science
 	option = {
 		name = pw_anomaly.130.b
-		FROM = { add_deposit = d_engineering_5 }
+		from = { add_deposit = d_engineering_5 }
 	}
 
 	#Energy
@@ -534,7 +534,7 @@ ship_event = {
 	picture = GFX_evt_crashed_station
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = pw_anomaly.131.a
@@ -557,7 +557,7 @@ ship_event = {
 	picture = GFX_evt_crashed_station
 	show_sound = event_ship_bridge
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#Test option 1
 	option = {
@@ -565,10 +565,10 @@ ship_event = {
 		create_fleet = {
 			name = pw_army_salvaged_war_titan_name
 			effect = {
-				set_owner = ROOT.owner
+				set_owner = root.owner
 				create_army_transport = {
 					ship_name = random
-					species = ROOT.owner.owner_species
+					species = root.owner.owner_species
 					army_type = "pw_army_salvaged_war_titan"
 				}
 			}
@@ -578,12 +578,12 @@ ship_event = {
 	# #Test option 2
 	# option = {
 	# 	name = pw_anomaly.132.a
-	# 	FROM = {
+	# 	from = {
 	# 		create_army_transport = {
 	# 			species = owner_main_species
 	# 			army_type = "pw_army_salvaged_war_titan"
 	# 			effect = {
-	# 				set_owner = ROOT.owner
+	# 				set_owner = root.owner
 	# 			}
 	# 		}
 	# 	}
@@ -592,9 +592,9 @@ ship_event = {
 	# #Test Option 3
 	# option = {
 	# 	name = pw_anomaly.132.a
-	# 	FROM = {
+	# 	from = {
 	# 		create_army = {
-	# 			owner = PREV.owner
+	# 			owner = prev.owner
 	# 			type = pw_army_salvaged_war_titan
 	# 			species = owner_main_species
 	# 		}
@@ -610,7 +610,7 @@ ship_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_structural_collapse
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#Salvage the Weapons
 	option = {
@@ -682,7 +682,7 @@ ship_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_structural_collapse
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#Salvage the Goods
 	option = {
@@ -775,7 +775,7 @@ ship_event = {
 	picture = GFX_evt_resource_cache
 	show_sound = event_finding_loot
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -796,7 +796,7 @@ ship_event = {
 	#Society
 	option = {
 		name = pw_anomaly.140.b
-		FROM = { add_deposit = d_society_3 }
+		from = { add_deposit = d_society_3 }
 	}
 
 	#Minor Artifacts
@@ -841,7 +841,7 @@ ship_event = {
 	picture = GFX_evt_decryption
 	show_sound = event_encrypted_comms
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -851,7 +851,7 @@ ship_event = {
 		name = pw_anomaly.141.a
 		enable_special_project = {
 			name = PW_TRANSLATE_POETRY
-			location = FROM
+			location = from
 		}
 	}
 
@@ -894,7 +894,7 @@ ship_event = {
 	picture = GFX_evt_decryption
 	show_sound = event_encrypted_comms
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	option = {
 		name = GOOD
@@ -921,7 +921,7 @@ ship_event = {
 	picture = GFX_evt_atmospheric_flight
 	show_sound = event_ghost_town
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -982,7 +982,7 @@ ship_event = {
 	picture = GFX_evt_resource_cache
 	show_sound = event_finding_loot
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -1043,7 +1043,7 @@ ship_event = {
 	picture = GFX_evt_ship_offloading_cargo
 	show_sound = event_finding_loot
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -1104,7 +1104,7 @@ ship_event = {
 	picture = GFX_evt_alien_ruins
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -1183,7 +1183,7 @@ ship_event = {
 	picture = GFX_evt_alien_ruins
 	show_sound = event_collapsing_ruins
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#If this is the first sign of life, play story event.
 	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
@@ -1240,7 +1240,7 @@ ship_event = {
 		owner = {
 			enable_special_project = {
 				name = PW_RECOVER_THRONE
-				location = FROM
+				location = from
 			}
 		}
 	}
@@ -1270,7 +1270,7 @@ ship_event = {
 	picture = GFX_evt_khan_throne_room
 	show_sound = event_mystic_reveal_light
 	is_triggered_only = yes
-	location = THIS
+	location = this
 
 	#Good
 	option = {

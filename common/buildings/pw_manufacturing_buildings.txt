@@ -126,7 +126,7 @@ pw_building_mantle_crucible = {
 		potential = { #If habitability is not fixed
 			exists = owner
 			is_ideal_planet_class = {
-				who = OWNER
+				who = owner
 				status = no
 			}
 			owner = { NOT = { has_country_flag = pw_mantle_crucible_habitability_project_completed }}
@@ -1222,7 +1222,7 @@ pw_building_titan_forge = {
 		potential = { #If habitability is not fixed
 			exists = owner
 			is_ideal_planet_class = {
-				who = OWNER
+				who = owner
 				status = no
 			}
 			owner = { NOT = { has_country_flag = pw_mantle_crucible_habitability_project_completed }}
@@ -1652,7 +1652,7 @@ pw_building_industrial_hearth = {
 		potential = { #If habitability is not fixed
 			exists = owner
 			is_ideal_planet_class = {
-				who = OWNER
+				who = owner
 				status = no
 			}
 			owner = { NOT = { has_country_flag = pw_mantle_crucible_habitability_project_completed }}
