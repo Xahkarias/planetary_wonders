@@ -9,10 +9,10 @@ pw_offworld_logistics_station = {
 	}
 
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
-		}
+		# custom_tooltip = {
+		# 	fail_text = "requires_starfortress"
+		# 	has_starbase_size >= starbase_starfortress
+		# }
 		solar_system = {
 			any_system_planet = {
 				is_owned_by = from
@@ -140,7 +140,8 @@ pw_offworld_logistics_station = {
 			owner = { can_generate_trade_value = no }
 		}
 		# station_gatherers_produces_mult = 0.05
-		starbase_constructions_produces_mult = 0.05
+		# starbase_constructions_produces_mult = 0.05
+		starbase_buildings_produces_mult = 0.10
 	}
 
 
@@ -162,10 +163,10 @@ pw_station_skyhook = {
 	}
 
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
-		}
+		# custom_tooltip = {
+		# 	fail_text = "requires_starfortress"
+		# 	has_starbase_size >= starbase_starfortress
+		# }
 		solar_system = {
 			any_system_planet = {
 				is_owned_by = from
@@ -215,10 +216,10 @@ pw_sentinel_command_center = {
 	}
 
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
-		}
+		# custom_tooltip = {
+		# 	fail_text = "requires_starfortress"
+		# 	has_starbase_size >= starbase_starfortress
+		# }
 		solar_system = {
 			any_system_planet = {
 				is_owned_by = from
