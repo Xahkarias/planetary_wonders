@@ -15,10 +15,32 @@ pw_d_ancient_cornucopia = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 		}
 		modifier = {
 			job_farmer_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		modifier = {
+			job_angler_add = 2
+			job_pearl_diver_add = 1
 		}
 	}
 

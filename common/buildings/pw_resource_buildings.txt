@@ -4433,6 +4433,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 0
@@ -4455,6 +4462,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4479,6 +4493,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 2
@@ -4501,6 +4522,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4525,6 +4553,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 4
@@ -4547,6 +4582,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4571,6 +4613,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 6
@@ -4593,6 +4642,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4617,6 +4673,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 8
@@ -4639,6 +4702,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4663,6 +4733,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 10
@@ -4685,6 +4762,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4709,6 +4793,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 12
@@ -4731,6 +4822,13 @@ pw_building_demetrius_fields = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -4755,6 +4853,13 @@ pw_building_demetrius_fields = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 14
@@ -4771,6 +4876,428 @@ pw_building_demetrius_fields = {
 		}
 		modifier = {
 			job_farmer_add = 1
+		}
+	}
+
+	#Add Angler and Pearl Diver: 1 for each District (max 15)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 0
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 0
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 0
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 1
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 1
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 1
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 2
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 2
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 2
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 3
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 3
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 3
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 4
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 4
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 4
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 5
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 5
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 5
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 6
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 6
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 6
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 7
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 7
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 7
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 8
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 8
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 8
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 9
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 9
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 9
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 10
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 10
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 10
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 11
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 11
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 11
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 12
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 12
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 12
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 13
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 13
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 13
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 14
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 14
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 14
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
 		}
 	}
 
@@ -5251,9 +5778,40 @@ pw_building_demetrius_fields = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 		}
 		text = job_farmer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		text = job_aqu_angler_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		text = job_pearl_diver_effect_desc
 	}
 
 	triggered_desc = {
@@ -5491,6 +6049,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 0
@@ -5513,6 +6078,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5537,6 +6109,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 2
@@ -5559,6 +6138,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5583,6 +6169,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 4
@@ -5605,6 +6198,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5629,6 +6229,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 6
@@ -5651,6 +6258,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5675,6 +6289,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 8
@@ -5697,6 +6318,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5721,6 +6349,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 10
@@ -5743,6 +6378,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5767,6 +6409,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 12
@@ -5789,6 +6438,13 @@ pw_building_demetrius_chemical_garden = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 			OR = {
 				num_districts = {
 					type = district_farming
@@ -5813,6 +6469,13 @@ pw_building_demetrius_chemical_garden = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
+			OR = {
 				num_districts = {
 					type = district_farming
 					value > 14
@@ -5829,6 +6492,428 @@ pw_building_demetrius_chemical_garden = {
 		}
 		modifier = {
 			job_farmer_add = 1
+		}
+	}
+
+	#Add Angler and Pearl Diver: 1 for each District (max 15)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 0
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 0
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 0
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 1
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 1
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 1
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 2
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 2
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 2
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 3
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 3
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 3
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 4
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 4
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 4
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 5
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 5
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 5
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 6
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 6
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 6
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 7
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 7
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 7
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 8
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 8
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 8
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 9
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 9
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 9
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 10
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 10
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 10
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 11
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 11
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 11
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 12
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 12
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 12
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 13
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 13
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 13
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+			OR = {
+				num_districts = {
+					type = district_farming
+					value > 14
+				}
+				num_districts = {
+					type = district_rw_farming
+					value > 14
+				}
+				num_districts = {
+					type = district_farming_uncapped
+					value > 14
+				}
+			}
+		}
+		modifier = {
+			job_angler_add = 0.5
+			job_pearl_diver_add = 0.5
 		}
 	}
 
@@ -6330,9 +7415,40 @@ pw_building_demetrius_chemical_garden = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
+			}
 		}
 		text = job_farmer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		text = job_aqu_angler_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		text = job_pearl_diver_effect_desc
 	}
 
 	triggered_desc = {
