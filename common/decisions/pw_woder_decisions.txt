@@ -8,7 +8,7 @@ pw_decision_integrated_urbanism = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 150
+			influence = 75
 			minerals = 1000
 		}
 	}

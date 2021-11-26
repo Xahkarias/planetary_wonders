@@ -2591,8 +2591,6 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.701
 	title = pw_wonder.701.name
-	desc = pw_wonder.701.desc
-
 	desc = {
 		trigger = {
 			OR = {
