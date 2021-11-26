@@ -3414,7 +3414,10 @@ planet_event = {
 			remove_deposit = pw_d_zero_g_exposition
 			remove_deposit = pw_d_mechanist_collection
 			remove_deposit = pw_d_meta_architectural_complex
-			add_deposit = pw_d_holoarchive
+			if = {
+				limit = { NOT = { has_deposit = pw_d_holoarchive }}
+				add_deposit = pw_d_holoarchive
+			}
 		}
 	}
 }
