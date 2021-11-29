@@ -120,7 +120,7 @@
     PW_ENGINEERING_PRODUCTION_EXPERIMENTS_DESC: "The discovery, production and programing of Living Metal may represent the next industrial revolution if we can master this art within the Crater Test Site."
 
     PW_TOW_MOON_PROJECT: "Tow Moon"
-    PW_TOW_MOON_PROJECT_DESC: "If our Galactic Model is to match reality, the orbit of this moon needs to be corrected in order to align the gravitation filed of the planet it orbits."
+    PW_TOW_MOON_PROJECT_DESC: "If our Galactic Model is to match reality, the orbit of this moon needs to be corrected in order to align the gravitation field of the planet it orbits."
     PW_ALIGN_MAGNETIC_FIELD_PROJECT: "Align Magnetic Field"
     PW_ALIGN_MAGNETIC_FIELD_PROJECT_DESC: "Small magnetic disturbances have been noted across our entire Galactic Model, they all point to the magnetic field of this planet being unaligned with our projected data. Correcting it should align the entire model back to correctness."
     PW_CAUSE_STELLAR_STORM_PROJECT: "Cause Stellar Storm"

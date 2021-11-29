@@ -530,7 +530,7 @@
     pw_tech_extreme_habitation_studies_desc: "Studies on life and social organization on extreme conditions can better prepare us to combat those effects wherever we face them."
 
     pw_tech_crisis_management: "$pw_research_experiments$ Crisis Management"
-    pw_tech_crisis_management_desc: "What distinguishes a great pilot from a good one is its performance in an asteroid filed, not on a hyperlane."
+    pw_tech_crisis_management_desc: "What distinguishes a great pilot from a good one is its performance in an asteroid field, not on a hyperlane."
 
     pw_tech_domed_city_organization: "$pw_research_experiments$ Domed City Systematization"
     pw_tech_domed_city_organization_desc: "Science is not only made from fancy equipment. By planing and organizing experiments, control groups and analytics we can draw much more from the $pw_building_domed_city$."

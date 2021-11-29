@@ -102,7 +102,7 @@
     policy_pw_policy_research_wonder_focus_desc: "By dedicating more support and attention to a certain area of knowledge we can expand research in that area, while sacrificing advancements in other fields."
 
     pw_policy_research_wonder_focus_unfocused: "Unfocused"
-    pw_policy_research_wonder_focus_unfocused_desc: "A single filed of science must not overshadow any other, progress is found in equilibrium."
+    pw_policy_research_wonder_focus_unfocused_desc: "A single field of science must not overshadow any other, progress is found in equilibrium."
 
     pw_policy_research_wonder_focus_physics: "Physics Focus"
     pw_policy_research_wonder_focus_physics_desc: "The $pw_building_particle_supercollider$ has brought forward many new physical problems, focus on this area is paramount to solve these mysteries of the universe."
