@@ -66,7 +66,7 @@ pw_trigger_art_generic_events = {
 			}
 			country_event = { id = pw_art_exhibition.508 }
 		}
-		1 = {
+		1.5 = {
 			modifier = {
 				factor = 0
 				NOT = {
@@ -76,6 +76,38 @@ pw_trigger_art_generic_events = {
 				}
 			}
 			country_event = { id = pw_art_exhibition.509 }
+		}
+		2.5 = {
+			modifier = {
+				factor = 0
+				NOT = { has_valid_civic = civic_pompous_purists	}
+			}
+			country_event = { id = pw_art_exhibition.700 }
+		}
+		2 = {
+			modifier = {
+				factor = 0
+				NOT = { has_valid_civic = civic_idyllic_bloom }
+			}
+			modifier = {
+				factor = 1.5
+				has_ascension_perk = ap_world_shaper
+			}
+			modifier = {
+				factor = 1.5
+				has_ascension_perk = ap_mastery_of_nature
+			}
+			country_event = { id = pw_art_exhibition.701 }
+		}
+		2.5 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					has_valid_civic = civic_pleasure_seekers
+					has_valid_civic = civic_corporate_hedonism
+				}
+			}
+			country_event = { id = pw_art_exhibition.702 }
 		}
 	}
 }

@@ -296,3 +296,30 @@
 
     #After events options:
     pw_art_exhibition.OK: "The wonders of art."
+
+
+    #Generic Event (cont.)
+
+    #Pompous Purists: Pompous Diplomacy
+    pw_art_exhibition.700.name: "Pompous Diplomacy"
+    pw_art_exhibition.700.desc: "The latest art exhibition was dedicated to the history of our most esteemed art form: Speechcraft. We saw many historic depictions of treaties, retelling of ancient speeches and dramatic reenacting of our accords. Of course, everything praising our superior approach to politics and showing where we have succeeded when other countries failed.\n\nMaybe the xenos will learn something from this demonstration our great diplomacy."
+
+    #Idyllic Bloom: Terraforming Exhibition
+    pw_art_exhibition.701.name: "Terraforming Exhibition"
+    pw_art_exhibition.701.desc: "In the latest art exhibition all were surprised by a new form of art expression: Terraforming. Combining our natural abilities to mold the world around us with the new technologies we have acquired in our space venture, many of our artists were able to generate brand new atmospheres and biospheres that are not only scientifically possible but also aesthetically pleasing.\n\nThis has provoked a revolution on the the way we approach the shaping of our worlds; new techniques were already developed and our next terraforming projects have been established as truly artistic endeavors."
+
+    #Pleasure Seekers: Hedonism
+    pw_art_exhibition.702.name: "Hedonism"
+    pw_art_exhibition.702.desc: "The latest art exhibition saw a proliferation of art forms dedicated to the pursuit of pleasure. Many new visual stimulating pieces, erotic dances, psychotropic substances and auditory recreational drugs were disseminated.\n\nThis represents a new age of hedonism and decadentism, a new experimental cultural wave and overwhelming pleasure for all involved."
+
+    #Catalytic Processing: Metallic Sculptures
+    pw_art_exhibition.703.name: "Sculpture Cultivation"
+    pw_art_exhibition.703.desc: "The advanced installations present in our $pw_titan_forge$ combined with the freedom of artistic experimentation provided by the $pw_pavilion_of_wonders$ created a favorable environment for the development of new art techniques employed by our Catalytic Technicians. Marvelous new metallic sculptures grown from biological material into exotic new alloys fill our galleries.\n\nThis can be a great opportunity to use our traditional production methods to innovate our cultural production."
+    pw_art_exhibition.703.a: "Send some resources to support these artists."
+    pw_art_exhibition.703.b: "A Great development!"
+
+    #Master Crafters: Exposition of Mastery
+    pw_art_exhibition.704.name: "Exposition of Mastery"
+    pw_art_exhibition.704.desc: "Many artificers from the $pw_industrial_hearth$ have come together to organize an exposition of their masterwork crafts at the $pw_pavilion_of_wonders$. These works show more artistic then utilitarian value and represent the inclinations of our artificers during their time off of work. Some of them even reported being struck by \"strange moods\" during which they felt compelled to gather materials in order to complete their art pieces.\n\nIn any case, if we provide more resources and promote more expositions we could see our traditional crafts flourish into new works."
+    pw_art_exhibition.704.a: "We should incentivize these artists further."
+    pw_art_exhibition.704.b: "What marvelous craftsmanship!"

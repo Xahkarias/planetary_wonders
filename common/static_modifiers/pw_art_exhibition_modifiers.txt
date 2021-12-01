@@ -374,3 +374,28 @@ pw_art_mod_prosumer_culture = {
 	trade_value_mult = 0.05
 	country_unity_produces_mult = 0.05
 }
+
+pw_art_mod_diplomatic_lineage = {
+	diplo_weight_envoys_mult = 0.25
+	country_influence_produces_mult = 0.10
+}
+
+pw_art_mod_terraforming_pursuits = {
+	terraform_speed_mult = 0.15
+	terraforming_cost_mult = -0.10
+}
+
+pw_art_mod_hedonism = {
+	pop_growth_speed = 0.10
+	pop_happiness = 0.10
+}
+
+pw_art_mod_metallic_art_subsides = {
+	country_unity_produces_mult = 0.10
+	planet_metallurgists_upkeep_mult = -0.15
+}
+
+pw_art_mod_masterful_artificers = {
+	trade_value_mult = 0.10
+	planet_artisans_upkeep_mult = -0.15
+}

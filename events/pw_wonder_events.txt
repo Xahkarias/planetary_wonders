@@ -7231,6 +7231,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1331 } #Regular first time
 		planet_event = { id = pw_wonder.1332 } #Gestalt first time
 		planet_event = { id = pw_wonder.1334 } #Remove Mantle Crucible mods
+		owner = { country_event = { id = pw_art_exhibition.703 days = @pw_2years random = @pw_1year }} #Art Event
 	}
 }
 
@@ -7470,6 +7471,7 @@ planet_event = {
 		planet_event = { id = pw_wonder.1362 } #Gestalt first time
 		planet_event = { id = pw_wonder.1363 } #Remove Mantle Crucible mods
 		planet_event = { id = pw_wonder.1364 days = @pw_1year random = @pw_halfYear } #Development Events
+		owner = { country_event = { id = pw_art_exhibition.704 days = @pw_2years random = @pw_1year }} #Art Event
 	}
 }
 
@@ -8062,6 +8064,8 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1401 } #Regular first time
+		owner = { country_event = { id = pw_art_exhibition.703 days = @pw_1year random = @pw_1year }} #Titan Forge
+		owner = { country_event = { id = pw_art_exhibition.704 days = @pw_1year random = @pw_1year }} #Industrial Hearth
 	}
 }
 
@@ -8133,6 +8137,8 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1431 } #Regular first time
+		owner = { country_event = { id = pw_art_exhibition.703 days = @pw_1year random = @pw_1year }} #Titan Forge
+		owner = { country_event = { id = pw_art_exhibition.704 days = @pw_1year random = @pw_1year }} #Industrial Hearth
 	}
 }
 
@@ -8242,6 +8248,8 @@ planet_event = {
 		}
 
 		planet_event = { id = pw_wonder.1461 } #Regular first time
+		owner = { country_event = { id = pw_art_exhibition.703 days = @pw_1year random = @pw_1year }} #Titan Forge
+		owner = { country_event = { id = pw_art_exhibition.704 days = @pw_1year random = @pw_1year }} #Industrial Hearth
 	}
 }
 

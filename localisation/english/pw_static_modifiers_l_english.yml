@@ -655,6 +655,21 @@
     pw_art_mod_prosumer_culture: "Prosumer Culture"
     pw_art_mod_prosumer_culture_desc: "With clever exploitation of social networks, corporations have brewed a culture of user-created content consumption, moving production costs to the users themselves while not losing on sales."
 
+    pw_art_mod_diplomatic_lineage: "Diplomatic Lineage"
+    pw_art_mod_diplomatic_lineage_desc: "The exposition of the greatest diplomatic treaties of our history has revived the superior work of our envoys and diplomats, expanding our sphere of influence over lesser empires."
+
+    pw_art_mod_terraforming_pursuits: "Terraforming Pursuits"
+    pw_art_mod_terraforming_pursuits_desc: "Terraforming has blossomed as a new form of art during a past exhibition and with that many new revolutionary techniques of molding planets in aesthetically pleasing ways have been developed."
+
+    pw_art_mod_hedonism: "Hedonistic Pursuits"
+    pw_art_mod_hedonism_desc: "New form of stimulating pleasure discovered and disseminated on the latest art exhibition brings overwhelming indulgence to all who wish to participate."
+
+    pw_art_mod_metallic_art_subsides: "Metallic Art Subsides"
+    pw_art_mod_metallic_art_subsides_desc: "Innovative art forms involving the growth of metallic structures by artistic gifted Catalytic Technician have drawn many investments to the field."
+
+    pw_art_mod_masterful_artificers: "Masterful Artificers"
+    pw_art_mod_masterful_artificers_desc: "Incentive with exposition of crafts and friendly competition among artificers have greatly increased the value of the goods crafted and general interest on the art."
+
     #Peace Festivals Modifiers (Planet)
 
     pw_mod_FP_festivities_of_plenitude: "Festivities Of Plenitude"

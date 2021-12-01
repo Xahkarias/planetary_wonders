@@ -7318,3 +7318,200 @@ country_event = {
 		}
 	}
 }
+
+#Generic events (cont)
+#Pompous Purists
+country_event = {
+	#Pompous Diplomacy
+	id = pw_art_exhibition.700
+	title = pw_art_exhibition.700.name
+	desc = pw_art_exhibition.700.desc
+	picture = GFX_evt_galactic_community
+	is_triggered_only = yes
+
+	option = {
+		name = pw_art_exhibition.OK
+		add_modifier = {
+			modifier = pw_art_mod_diplomatic_lineage
+			days = @pw_5years
+		}
+	}
+}
+
+#Idyllic Bloom
+country_event = {
+	#Terraforming Exhibition
+	id = pw_art_exhibition.701
+	title = pw_art_exhibition.701.name
+	desc = pw_art_exhibition.701.desc
+	picture = GFX_evt_galactic_community
+	is_triggered_only = yes
+
+	option = {
+		name = pw_art_exhibition.OK
+		if = {
+			limit = {
+				OR = {
+					has_ascension_perk = ap_mastery_of_nature
+					has_ascension_perk = ap_world_shaper
+				}
+			}
+			add_modifier = {
+				modifier = pw_art_mod_terraforming_pursuits
+				days = @pw_5years
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = pw_art_mod_terraforming_pursuits
+				days = @pw_2years
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+	}
+}
+
+#Pleasure Seekers
+country_event = {
+	#Hedonism
+	id = pw_art_exhibition.702
+	title = pw_art_exhibition.702.name
+	desc = pw_art_exhibition.702.desc
+	picture = GFX_evt_galactic_community
+	is_triggered_only = yes
+
+	option = {
+		name = pw_art_exhibition.OK
+		add_modifier = {
+			modifier = pw_art_mod_terraforming_pursuits
+			days = @pw_2years
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+	}
+}
+
+#Catalytic Processing
+country_event = {
+	#Metallic Sculptures
+	id = pw_art_exhibition.703
+	title = pw_art_exhibition.703.name
+	desc = pw_art_exhibition.703.desc
+	picture = GFX_evt_underground_city
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = pw_pw_art_exhibition_703 }
+		OR = {
+			has_valid_civic = civic_catalytic_processing
+			has_valid_civic = civic_corporate_catalytic_processing
+		}
+		any_owned_planet = {
+			has_building = pw_building_titan_forge
+		}
+		any_owned_planet = {
+			OR = {
+				has_building = pw_building_museum_of_the_grotesque
+				has_building = pw_building_pavilion_of_wonders
+				has_building = pw_building_fair_of_worlds
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_pw_art_exhibition_703
+	}
+
+	#Subside the art form
+	option = {
+		name = pw_art_exhibition.703.a
+		trigger = {
+			owner = { resource_stockpile_compare = { resource = energy value >= 1500 }}
+		}
+		add_resource = {
+			energy = -1500
+		}
+		add_modifier = {
+			modifier = pw_art_mod_metallic_art_subsides
+			days = @pw_2years
+		}
+	}
+
+	#Lovely
+	option = {
+		name = pw_art_exhibition.703.b
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+	}
+}
+
+#Master Crafters
+country_event = {
+	#Crafting Exposition
+	id = pw_art_exhibition.704
+	title = pw_art_exhibition.704.name
+	desc = pw_art_exhibition.704.desc
+	picture = GFX_evt_underground_city
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = pw_pw_art_exhibition_704 }
+		OR = {
+			has_valid_civic = civic_crafters
+			has_valid_civic = civic_corporate_crafters
+		}
+		any_owned_planet = {
+			has_building = pw_building_industrial_hearth
+		}
+		any_owned_planet = {
+			OR = {
+				has_building = pw_building_museum_of_the_grotesque
+				has_building = pw_building_pavilion_of_wonders
+				has_building = pw_building_fair_of_worlds
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = pw_pw_art_exhibition_704
+	}
+
+	#Incentivize
+	option = {
+		name = pw_art_exhibition.704.a
+		trigger = {
+			owner = { resource_stockpile_compare = { resource = energy value >= 1500 }}
+		}
+		add_resource = {
+			energy = -1500
+		}
+		add_modifier = {
+			modifier = pw_art_mod_masterful_artificers
+			days = @pw_2years
+		}
+	}
+
+	#Lovely
+	option = {
+		name = pw_art_exhibition.704.b
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+	}
+}
