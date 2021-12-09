@@ -28,49 +28,8 @@ pw_offworld_logistics_station = {
 		cost = {
 			alloys = 250
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { can_generate_trade_value = no }
-			}
-			energy = 2
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { is_galactic_community_member = yes }
-				owner = { can_generate_trade_value = yes }
-				OR = {
-					is_active_resolution = resolution_commerce_underdeveloped_system_utilization
-					is_active_resolution = resolution_commerce_holistic_asset_coordination
-					is_active_resolution = resolution_commerce_profit_maximization_engines
-				}
-			}
-			energy = 2
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { is_galactic_community_member = yes }
-				owner = { can_generate_trade_value = yes }
-				OR = {
-					is_active_resolution = resolution_commerce_holistic_asset_coordination
-					is_active_resolution = resolution_commerce_profit_maximization_engines
-				}
-			}
-			energy = 2
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { is_galactic_community_member = yes }
-				owner = { can_generate_trade_value = yes }
-				is_active_resolution = resolution_commerce_profit_maximization_engines
-			}
-			energy = 2
-		}
 		upkeep = {
-			energy = 5
+			energy = 3
 			alloys = 1
 		}
 	}
@@ -84,7 +43,7 @@ pw_offworld_logistics_station = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = { can_generate_trade_value = yes }
+			owner = { is_gestalt = no }
 		}
 		starbase_trade_collection_range_add = 2
 	}
@@ -94,7 +53,7 @@ pw_offworld_logistics_station = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = { is_galactic_community_member = yes }
-			owner = { can_generate_trade_value = yes }
+			owner = { is_gestalt = no }
 			OR = {
 				is_active_resolution = resolution_commerce_underdeveloped_system_utilization
 				is_active_resolution = resolution_commerce_holistic_asset_coordination
@@ -110,7 +69,7 @@ pw_offworld_logistics_station = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = { is_galactic_community_member = yes }
-			owner = { can_generate_trade_value = yes }
+			owner = { is_gestalt = no }
 			OR = {
 				is_active_resolution = resolution_commerce_holistic_asset_coordination
 				is_active_resolution = resolution_commerce_profit_maximization_engines
@@ -125,7 +84,7 @@ pw_offworld_logistics_station = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = { is_galactic_community_member = yes }
-			owner = { can_generate_trade_value = yes }
+			owner = { is_gestalt = no }
 			is_active_resolution = resolution_commerce_profit_maximization_engines
 		}
 
@@ -137,13 +96,12 @@ pw_offworld_logistics_station = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = { can_generate_trade_value = no }
+			owner = { is_gestalt = yes }
 		}
 		# station_gatherers_produces_mult = 0.05
 		# starbase_constructions_produces_mult = 0.05
 		starbase_buildings_produces_mult = 0.10
 	}
-
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
