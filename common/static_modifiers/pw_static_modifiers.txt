@@ -1002,3 +1002,17 @@ pw_holy_reliquary_heart_of_the_leviathan_study = {
 	country_physics_research_produces_add = 3
 	country_energy_produces_mult = 0.05
 }
+
+#HR Archaeology: signet ring
+pw_holy_reliquary_archaeology_signet_ring = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	diplo_weight_mult = 0.10
+	envoy_improve_relations_mult = 0.10
+}
+
+#HF Archaeology: exhausted minerals
+pw_hidden_factory_archaeology_exhausted_minerals = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
+	district_mining_max = -2
+	planet_jobs_minerals_produces_mult = -0.15
+}

@@ -1796,7 +1796,7 @@ country_event = {
 	}
 }
 
-#Active Volcano
+#Kill Pop
 country_event = {
 	id = pw_holy_reliquary.379
 	title = pw_holy_reliquary.bad_luck.title
@@ -1804,7 +1804,7 @@ country_event = {
 	picture = GFX_evt_pw_coin_of_fortune
 	show_sound = event_slot_machine
 	is_triggered_only = yes
-	location = event_target:pw_holy_reliquary_fortune_planet
+	location = capital_scope
 
 	option = {
 		name = pw_holy_reliquary.bad_luck.a

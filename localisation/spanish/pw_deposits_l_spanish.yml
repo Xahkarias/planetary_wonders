@@ -146,3 +146,10 @@
     pw_d_SE_space_ramp_desc: "Multiple stations across this planet allow for rocket-powered sled launches from maglev rails, supported by natural or artificial geography. These are much cheaper and safe planet-orbit flights, in comparison to vertical takeoffs, and provide better mobility for our pops and goods."
     pw_d_SE_skyhook: "Skyhook"
     pw_d_SE_skyhook_desc: "By utilizing a rotating orbital tether, equipped with a cable and counterweigh, space shuttles leaving this planet can be accelerated from low orbit into space, avoiding the need to use fuel to breach the atmosphere; in the same way, arriving ships can be decelerated into low orbit so that their momentum can be used to keep the Skyhook in place. These operations bridge a multitude of logistics problems and pave the way for modern transportation."
+
+    pw_d_hidden_mantle_factory: "Hidden Mantle Factory"
+    pw_d_hidden_mantle_factory_desc: "This ancient autonomous factory was constructed before our colonization of the planet and was retrofitted to manufacture the products we require."
+    pw_d_hidden_mantle_factory_overdrive: "Hidden Mantle Factory Overdrive"
+    pw_d_hidden_mantle_factory_overdrive_desc: "This ancient autonomous factory was constructed before our colonization of the planet and was retrofitted to manufacture the products we require. By turning it into overdrive we can expand production at the expense of the planetary mantle."
+    pw_d_mantle_replicator: "Mantle Replicator"
+    pw_d_mantle_replicator_desc: "This ancient autonomous factory was constructed before our colonization of the planet and was retrofitted to manufacture the products we require and replicate our own autonomous units."

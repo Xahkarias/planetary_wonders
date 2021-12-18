@@ -514,6 +514,139 @@ pw_holy_reliquary_flip_coin = {
 	}
 }
 
+#Holy reliquary Coin of fortune flip (country scope):
+pw_coin_of_fortune_relic_flip_coin = {
+	random_list = {
+		1 ={
+			custom_tooltip = pw_holy_reliquary.good_luck
+			hidden_effect = {
+				random_list = {
+					1 = { country_event = { id = pw_archaeology.530 }}
+					1.5 = { country_event = { id = pw_archaeology.531 }}
+					1.5 = { country_event = { id = pw_archaeology.532 }}
+					1.5 = { country_event = { id = pw_archaeology.533 }}
+					1.5 = { country_event = { id = pw_archaeology.534 }}
+					1.5 = { country_event = { id = pw_archaeology.535 }}
+					1.5 = { country_event = { id = pw_archaeology.537 }}
+					1.5 = { country_event = { id = pw_archaeology.539 }}
+					1.5 = { country_event = { id = pw_archaeology.540 }}
+					1.5 = { country_event = { id = pw_archaeology.541 } modifier = { factor = 0 NOT = { has_country_flag = zro_found }}}
+					1.5 = { country_event = { id = pw_archaeology.542 } modifier = { factor = 0 NOT = { has_country_flag = living_metal_found }}}
+					1.5 = { country_event = { id = pw_archaeology.543 } modifier = { factor = 0 NOT = { has_country_flag = dark_matter_found }}}
+					0 = { country_event = { id = pw_archaeology.544 }
+						modifier = {
+							add = 1
+							any_controlled_planet = {
+								OR = {
+									is_planet_class = pc_barren
+									is_planet_class = pc_barren_cold
+								}
+								has_deposit = no
+								NOT = { has_modifier = terraforming_candidate }
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.545 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								NOT = { has_modifier = natural_beauty }
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.546 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								NOT = { has_deposit = d_betharian_deposit }
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.547 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								NOT = { has_deposit = d_alien_pets_deposit }
+							}
+						}
+					}
+					1 = { country_event = { id = pw_archaeology.548 }}
+					1 = { country_event = { id = pw_archaeology.549 }}
+				}
+			}
+		}
+		1 = {
+			custom_tooltip = pw_holy_reliquary.bad_luck
+			hidden_effect = {
+				random_list = {
+					1 = { country_event = { id = pw_archaeology.560 }}
+					1 = { country_event = { id = pw_archaeology.561 } modifier = { factor = 0 has_resource = { type = food amount < 1000 }}}
+					1 = { country_event = { id = pw_archaeology.562 } modifier = { factor = 0 has_resource = { type = minerals amount < 1000 }}}
+					1 = { country_event = { id = pw_archaeology.563 } modifier = { factor = 0 has_resource = { type = energy amount < 1000 }}}
+					1 = { country_event = { id = pw_archaeology.564 } modifier = { factor = 0 has_resource = { type = alloys amount < 500 }}}
+					1 = { country_event = { id = pw_archaeology.565 } modifier = { factor = 0 has_resource = { type = consumer_goods amount < 500 }}}
+					1 = { country_event = { id = pw_archaeology.567 } modifier = { factor = 0 has_resource = { type = exotic_gases amount < 250 }}}
+					1 = { country_event = { id = pw_archaeology.569 } modifier = { factor = 0 has_resource = { type = rare_crystals amount < 250 }}}
+					1 = { country_event = { id = pw_archaeology.570 } modifier = { factor = 0 has_resource = { type = volatile_motes amount < 250 }}}
+					1 = { country_event = { id = pw_archaeology.571 } modifier = { factor = 0 has_resource = { type = sr_zro amount < 100 }}}
+					1 = { country_event = { id = pw_archaeology.572 } modifier = { factor = 0 has_resource = { type = sr_living_metal amount < 100 }}}
+					1 = { country_event = { id = pw_archaeology.573 } modifier = { factor = 0 has_resource = { type = sr_dark_matter amount < 100 }}}
+					0 = { country_event = { id = pw_archaeology.574 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								free_district_slots > 0
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.575 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								free_district_slots > 0
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.576 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_wet = yes
+								is_artificial = no
+								free_district_slots > 0
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.577 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								free_district_slots > 0
+							}
+						}
+					}
+					0 = { country_event = { id = pw_archaeology.578 }
+						modifier = {
+							add = 1
+							any_owned_planet = {
+								is_artificial = no
+								free_district_slots > 0
+							}
+						}
+					}
+					1 = { country_event = { id = pw_archaeology.579 }}
+				}
+			}
+		}
+	}
+}
+
 #Grand Archive navigation events (country scope):
 pw_grand_archive_leave = {
 	custom_tooltip = pw_grand_archive_leave_tooltip

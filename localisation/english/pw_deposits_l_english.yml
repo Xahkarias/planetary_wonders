@@ -69,8 +69,18 @@
     pw_d_holoarchive: "Holoarchive"
     pw_d_holoarchive_desc: "The ultimate repository for any kind of information, unifying all of the assembled archives we have collected: $pw_d_ark_project$, $pw_d_library_of_babel$, $pw_d_cradle_initiative$, $pw_d_particle_museum$, $pw_d_omnidatabase$, $pw_d_stellarium$, $pw_d_zero_g_exposition$, $pw_d_mechanist_collection$ and $pw_d_meta_architectural_complex$."
 
+    #Added by archaeological site:
     pw_d_lunar_archive: "Lunar Archive"
     pw_d_lunar_archive_desc: "A moon in orbit of this planet has been turned into a massive archive for all kinds of information by an ancient alien civilization. Now we can scour this archive for anything that can aid our own research."
+
+    pw_d_hidden_mantle_factory: "Hidden Mantle Factory"
+    pw_d_hidden_mantle_factory_desc: "This ancient autonomous factory was constructed before our colonization of the planet and was retrofitted to manufacture the products we require."
+
+    pw_d_hidden_mantle_factory_overdrive: "Hidden Mantle Factory Overdrive"
+    pw_d_hidden_mantle_factory_overdrive_desc: "This ancient autonomous factory was constructed before our colonization of the planet and was retrofitted to manufacture the products we require. By turning it into overdrive we can expand production at the expense of the planetary mantle."
+
+    pw_d_mantle_replicator: "Mantle Replicator"
+    pw_d_mantle_replicator_desc: "This ancient autonomous factory was constructed before our colonization of the planet and was retrofitted to manufacture the products we require and replicate our own autonomous units."
 
     #Transplanetary Logistics Network infrastructure deposits:
     pw_transplanetary_logistics_network.infrastructure: "§BInfrastructure:§!"

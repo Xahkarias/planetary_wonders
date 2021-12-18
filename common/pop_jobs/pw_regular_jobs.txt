@@ -532,10 +532,10 @@ pw_domed_city_test_subject = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = researcher
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = researcher
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
@@ -667,7 +667,7 @@ pw_big_brother = {
 			can_take_servant_job = yes
 		}
 		modifier = {
-			factor = 10
+			factor = 5
 			has_job = pw_big_brother
 		}
 		modifier = {
@@ -866,14 +866,14 @@ pw_poly_artisan = {
 			factor = 5
 			has_job = pw_poly_artisan
 		}
-		modifier = {
-			factor = 5
-			has_job = pw_poly_artisan
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	has_job = pw_poly_artisan
+		# 	OR = {
+		# 		has_trait = trait_robust
+		# 		has_trait = trait_robot_efficient_processors
+		# 	}
+		# }
 		modifier = {
 			factor = 1.2
 			is_enslaved = yes
@@ -1168,7 +1168,7 @@ pw_degeneracy_curator = {
 		}
 		modifier = {
 			factor = 1.5
-			has_job = pw_diversity_curator
+			has_job = pw_degeneracy_curator
 		}
 		modifier = {
 			factor = 3
@@ -1689,7 +1689,7 @@ pw_lunar_archivist = {
 		}
 		modifier = {
 			factor = 1.5
-			has_job = pw_grand_archivist
+			has_job = pw_lunar_archivist
 		}
 		modifier = {
 			factor = 1.5
@@ -1853,13 +1853,13 @@ pw_relic_keeper = {
 			has_job = pw_relic_keeper
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.5
 			has_ethic = ethic_spiritualist
 		}
 		modifier = {
 			factor = 0.1
 			has_ethic = ethic_materialist
-			NOT = { has_job = priest }
+			# NOT = { has_job = priest }
 		}
 		modifier = {
 			factor = 0.65

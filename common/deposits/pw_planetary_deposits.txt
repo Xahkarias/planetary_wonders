@@ -858,3 +858,566 @@ pw_d_lunar_archive = {
 		}
 	}
 }
+
+# Hidden Mantle Factory (Added by Archaeology)
+pw_d_hidden_mantle_factory = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+	icon = d_building
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+	}
+
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+
+	#Consumer Goods
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = yes
+				NOR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		modifier = {
+			job_artisan_add = 1
+		}
+	}
+	#Artificer
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = yes
+				OR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		modifier = {
+			job_artificer_add = 1
+		}
+	}
+
+	#Alloys (no CG)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { country_uses_consumer_goods = no }
+		}
+		modifier = {
+			job_miner_add = 1
+		}
+	}
+	#Alloys (no CG)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = no
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+	#Catalytic Technician (no CG)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = no
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+
+	#Hive Mind
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 1
+		}
+	}
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				NOT = { has_valid_civic = civic_hive_catalytic_processing }
+			}
+		}
+		modifier = {
+			job_alloy_drone_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				has_valid_civic = civic_hive_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+
+	#Machine
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				NOT = { has_valid_civic = civic_machine_catalytic_processing }
+			}
+		}
+		modifier = {
+			job_fabricator_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_valid_civic = civic_machine_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+
+	#Rogue Servitor
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+			owner = { country_uses_consumer_goods = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 1
+		}
+	}
+
+	#Not Rogue Servitor
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+			owner = { country_uses_consumer_goods = no }
+		}
+		modifier = {
+			job_mining_drone_add = 1
+		}
+	}
+}
+
+# Hidden Mantle Factory Overdrive(Added by Archaeology)
+pw_d_hidden_mantle_factory_overdrive = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+	icon = d_building_complex
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+	}
+
+	planet_modifier = {
+		planet_metallurgists_produces_mult = 0.05
+		planet_metallurgists_upkeep_mult = 0.05
+		planet_artisans_produces_mult = 0.05
+		planet_artisans_upkeep_mult = 0.05
+		pop_environment_tolerance = -0.05
+	}
+
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+
+	#Consumer Goods
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = yes
+				NOR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		modifier = {
+			job_artisan_add = 1
+		}
+	}
+	#Artificer
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = yes
+				OR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		modifier = {
+			job_artificer_add = 1
+		}
+	}
+
+	#Alloys (no CG)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { country_uses_consumer_goods = no }
+		}
+		modifier = {
+			job_miner_add = 1
+		}
+	}
+	#Alloys (no CG)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = no
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+	#Catalytic Technician (no CG)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				country_uses_consumer_goods = no
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+
+	#Hive Mind
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 1
+		}
+	}
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				NOT = { has_valid_civic = civic_hive_catalytic_processing }
+			}
+		}
+		modifier = {
+			job_alloy_drone_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				has_valid_civic = civic_hive_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+
+	#Machine
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				NOT = { has_valid_civic = civic_machine_catalytic_processing }
+			}
+		}
+		modifier = {
+			job_fabricator_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_valid_civic = civic_machine_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+
+	#Rogue Servitor
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+			owner = { country_uses_consumer_goods = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 1
+		}
+	}
+
+	#Not Rogue Servitor
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+			owner = { country_uses_consumer_goods = no }
+		}
+		modifier = {
+			job_mining_drone_add = 1
+		}
+	}
+}
+
+# Mantle Replicator(Added by Archaeology)
+pw_d_mantle_replicator = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+	icon = d_building_complex
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+	}
+
+	planet_modifier = {
+		planet_pop_assembly_mult = 0.10
+	}
+
+	#Regular
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+
+	#Hive Mind
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				NOT = { has_valid_civic = civic_hive_catalytic_processing }
+			}
+		}
+		modifier = {
+			job_alloy_drone_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				has_valid_civic = civic_hive_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+
+	#Machine
+	#Replicator
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_replicator_add = 1
+		}
+	}
+	#Alloys
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				NOT = { has_valid_civic = civic_machine_catalytic_processing }
+			}
+		}
+		modifier = {
+			job_fabricator_add = 1
+		}
+	}
+	#Catalytic Technician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_valid_civic = civic_machine_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+}

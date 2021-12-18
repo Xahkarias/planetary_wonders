@@ -251,3 +251,111 @@ pw_site_translunar_network = {
 		}
 	}
 }
+
+# Forgotten Reliquary (500)
+pw_site_forgotten_reliquary = {
+	desc = pw_site_forgotten_reliquary_desc
+	picture = GFX_evt_baol_ruins
+	stages = 5
+	weight = { #Added on blocker removed
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	on_visible = {
+		country_event = { id = story.5 days = 30 }
+	}
+
+	#Entrance
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = pw_archaeology.505
+	}
+	#Signet Ring
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C2
+		event = pw_archaeology.510
+	}
+	#Scepter of the Solar Regent
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C3
+		event = pw_archaeology.515
+	}
+	#Coin of Fortune (Final)
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_C4
+		event = pw_archaeology.520
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+# Hidden Factory (600)
+pw_site_hidden_factory = {
+	desc = pw_site_hidden_factory_desc
+	picture = GFX_evt_underground_city
+	stages = 5
+	weight = { #Added on blocker removed
+		base = 0
+	}
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	on_visible = {
+		country_event = { id = story.5 days = 30 }
+	}
+
+	#Stage 1 - Entrance examination
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = pw_archaeology.605
+	}
+	#Stage 2 - Stash of Consumer Goods
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_F2
+		event = pw_archaeology.610
+	}
+	#Stage 3 - Stash of Alloys
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_F3
+		event = pw_archaeology.615
+	}
+	#Stage 4 - Exhausted Minerals
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F4
+		event = pw_archaeology.620
+	}
+	#Stage 5 - Final Choice
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_F5
+		event = pw_archaeology.625
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

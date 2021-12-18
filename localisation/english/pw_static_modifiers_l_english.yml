@@ -391,6 +391,12 @@
     pw_holy_reliquary_heart_of_the_leviathan_study: "Heart of the Leviathan: Study"
     pw_holy_reliquary_heart_of_the_leviathan_study_desc: "We have taken the the Heart of the Leviathan worshiped by the late Bal'Fu for detailed study of the creatures biology and the strange energies emitted by the organ."
 
+    pw_holy_reliquary_archaeology_signet_ring: "Relics of Diplomacy"
+    pw_holy_reliquary_archaeology_signet_ring_desc: "The forgotten relics we have found on an ancient reliquary are causing some beneficial reaction on foreign diplomats and representatives, making it much easier to enact our soft power on a galactic scale."
+
+    pw_hidden_factory_archaeology_exhausted_minerals: "Exhausted Minerals"
+    pw_hidden_factory_archaeology_exhausted_minerals_desc: "Autonomous deep crust extraction has exhausted the planet of a major part of its minerals."
+
 
     # Grand Archive:
     pw_mod_grand_archive_recently_build: "Studies of Material History"
