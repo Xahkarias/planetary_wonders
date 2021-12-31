@@ -3513,6 +3513,48 @@ pw_decision_living_spire_change_designation = {
 	}
 }
 
+#Nostalgia paradise change theme
+pw_decision_nostalgia_paradise_change_theme = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			energy = 1000
+		}
+	}
+
+	potential = {
+		OR = {
+			has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
+			has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_golden_age
+			has_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch
+			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+
+	allow = {
+		has_active_building = pw_building_nostalgia_paradise
+	}
+
+	effect = {
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.2310
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 pw_decision_release_sedative_gas = {
 	owned_planets_only = yes
 	sound = event_administrative_work

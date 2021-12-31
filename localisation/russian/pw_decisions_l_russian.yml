@@ -234,3 +234,6 @@
     pw_decision_integrated_urbanism_desc: "Integrate the construction of our Wonders with the already established districts, using present building as foundation."
     pw_decision_remove_integrated_urbanism: "Remove Integrated Wonders"
     pw_decision_remove_integrated_urbanism_desc: "Stop integrating the construction of our Wonders on this planet."
+
+    pw_decision_nostalgia_paradise_change_theme: "Change $pw_nostalgia_paradise$ Theme"
+    pw_decision_nostalgia_paradise_change_theme_desc: "Change the current theme of the Nostalgia Paradise."

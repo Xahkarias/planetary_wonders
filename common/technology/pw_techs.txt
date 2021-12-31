@@ -9401,3 +9401,132 @@ pw_tech_chamber_of_reflection = {
 		}
 	}
 }
+
+#Nostalgia Paradise:
+pw_tech_augmented_reality_resorts = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @pw_tech_cost_2
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+	}
+	weight = @tier4weight3
+	is_rare = yes
+
+	potential = {
+		OR = {
+			has_technology = tech_resort_colonies
+			has_valid_civic = civic_machine_servitor
+		}
+	}
+
+	weight_modifier = {
+		factor = @pw_tech_weight_mod
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_augmented_reality_resorts }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			NOR = {
+				any_owned_planet = {
+					has_modifier = resort_colony
+				}
+				has_valid_civic = civic_machine_servitor
+			}
+		}
+
+		modifier = {
+			factor = 0
+			num_owned_planets < 3
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_aristocratic_elite
+		}
+
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_valid_civic = civic_corporate_dominion
+				is_megacorp = yes
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_free_haven
+		}
+
+		modifier = {
+			factor = 1.75
+			has_valid_civic = civic_machine_servitor
+		}
+
+		modifier = {
+			factor = 1.75
+			OR = {
+				has_valid_civic = civic_pleasure_seekers
+				has_valid_civic = civic_corporate_hedonism
+			}
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 1.25
+			has_ascension_perk = ap_mastery_of_nature
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}

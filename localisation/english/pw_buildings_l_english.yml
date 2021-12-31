@@ -209,6 +209,11 @@
     pw_building_grand_archive_desc: "A collection of collections. A centralized archive for all that can be catalogued, with room for any future development of exploration, history and research. A repository for data, all the data."
     pw_building_grand_archive_tooltip: "§YAllows us to start archiving projects.§!"
 
+    # Nostalgia Paradise
+    pw_nostalgia_paradise: "§MNostalgia Paradise§!"
+    pw_building_nostalgia_paradise: "Nostalgia Paradise"
+    pw_building_nostalgia_paradise_desc: "An automated resort facility, where augmented reality and android servants are used to recreate an idealized version of a period of the past. Here guests can relive carefully crafted narratives set on historical backgrounds, with every thrill the old days can provide and none of their consequences."
+
     # Living Spire
     pw_living_spire: "§MLiving Spire§!"
 

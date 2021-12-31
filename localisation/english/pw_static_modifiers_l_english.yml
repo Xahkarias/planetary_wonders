@@ -295,6 +295,7 @@
     pw_holy_reliquary_controlled_iconoclasts: "Controlled Iconoclast"
     pw_holy_reliquary_controlled_iconoclasts_desc: "Iconoclast groups have been controlled and will not express their wrong vision of our faith. Our faith remains united."
 
+    #Living Spire designations:
     pw_pm_living_spire_designation_default: "Living Spire"
     pw_pm_living_spire_designation_default_desc: "The entire planet is inspired by the presence of the Living Spire, all who live there are in comfort, and all who don't wish they did."
 
@@ -327,6 +328,43 @@
 
     pw_pm_living_spire_designation_submerged: "Submerged Spire"
     pw_pm_living_spire_designation_submerged_desc: "From the depths of the oceans that cover this world, the Living Spire towers over the surface providing comfortable spaces for both aquatic and terrestrial inhabitants."
+
+    #Nostalgia Paradise themes:
+    pw_pm_nostalgia_paradise_theme_new_frontiers: "Nostalgia Paradise: New Frontiers"
+    pw_pm_nostalgia_paradise_theme_new_frontiers_desc: "Guests of the Nostalgia Paradise enjoy the exploration of harsh and barely habitable lands, where every step can lead to a new adventure and they can live their wildest fantasies at the edge of society."
+    pw_pm_nostalgia_paradise_theme_new_frontiers_other_planets: "Nostalgia Paradise: New Frontiers"
+    pw_pm_nostalgia_paradise_theme_new_frontiers_other_planets_desc: "Guests of the Nostalgia Paradise enjoy the exploration of harsh and barely habitable lands, where every step can lead to a new adventure and they can live their wildest fantasies at the edge of society."
+    pw_pm_nostalgia_paradise_theme_new_frontiers_empire_effects: "Other Empire Colonies:\n $MOD_PLANET_AMENITIES_MULT$: §G+10%§!\n $MOD_POP_HAPPINESS$: §G+5%§!"
+
+    pw_pm_nostalgia_paradise_theme_new_frontiers_machine: "Nostalgia Paradise: New Frontiers"
+    pw_pm_nostalgia_paradise_theme_new_frontiers_machine_desc: "Bio-Trophies at the Nostalgia Paradise enjoy the exploration of harsh lands, where every step can lead to a new adventure and they can live their wildest fantasies at the edge of society, mimicking planetary expansions of their prime days."
+
+    pw_pm_nostalgia_paradise_theme_golden_age: "Nostalgia Paradise: Golden Age"
+    pw_pm_nostalgia_paradise_theme_golden_age_desc: "Guests of the Nostalgia Paradise enjoy the luxuries of the greatest cultural Belle Epoch seen in our civilization. Here they can reach sublime cultural and artistic reflections, while ignoring the social tensions of the time."
+    pw_pm_nostalgia_paradise_theme_golden_age_other_planets: "Nostalgia Paradise: Golden Age"
+    pw_pm_nostalgia_paradise_theme_golden_age_other_planets_desc: "Guests of the Nostalgia Paradise enjoy the luxuries of the greatest cultural Belle Epoch seen in our civilization. There they can reach sublime cultural and artistic reflections, while ignoring the social tensions of the time."
+    pw_pm_nostalgia_paradise_theme_golden_age_empire_effects: "Other Empire Colonies:\n $MOD_PLANET_AMENITIES_MULT$: §G+10%§!\n $MOD_PLANET_JOBS_UNITY_PRODUCES_MULT$: §G+10%§!"
+
+    pw_pm_nostalgia_paradise_theme_golden_age_machine: "Nostalgia Paradise: Golden Age"
+    pw_pm_nostalgia_paradise_theme_golden_age_machine_desc: "Bio-Trophies at the Nostalgia Paradise enjoy the luxuries of the greatest cultural Belle Epoch seen in their civilization. Here they can reach sublime cultural and artistic reflections."
+
+    pw_pm_nostalgia_paradise_theme_war_epoch: "Nostalgia Paradise: War Epoch"
+    pw_pm_nostalgia_paradise_theme_war_epoch_desc: "Guests of the Nostalgia Paradise live stories of glory, adventure and love during times of historical wars. They are in no danger, of course, so they may live their fantasies without any consequences."
+    pw_pm_nostalgia_paradise_theme_war_epoch_other_planets: "Nostalgia Paradise: War Epoch"
+    pw_pm_nostalgia_paradise_theme_war_epoch_other_planets_desc: "Guests of the Nostalgia Paradise live stories of glory, adventure and love during times of historical wars. They are in no danger, of course, so they may live their fantasies without any consequences."
+    pw_pm_nostalgia_paradise_theme_war_epoch_empire_effects: "Other Empire Colonies:\n $MOD_POP_ETHIC_MILITARIST_ATTRACTION_MULT$: §G+5%§!\n $MOD_ARMY_DEFENSE_MORALE_MULT$: §G+10%§!"
+
+    pw_pm_nostalgia_paradise_theme_war_epoch_machine: "Nostalgia Paradise: War Epoch"
+    pw_pm_nostalgia_paradise_theme_war_epoch_machine_desc: "Bio-Trophies at the Nostalgia Paradise live stories of glory, adventure and love during times of historical wars. They are in no danger, of course, so they may live their fantasies without any consequences."
+
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures: "Nostalgia Paradise: Palace of Pleasures"
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures_desc: "At the Nostalgia Paradise, guests can realize their most obscure pleasures without any fear of being judged by their machine servitors."
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures_other_planets: "Nostalgia Paradise: Palace of Pleasures"
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures_other_planets_desc: "At the Nostalgia Paradise, guests can realize their most obscure pleasures without any fear of being judged by their machine servitors."
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures_empire_effects: "Other Empire Colonies:\n $MOD_PLANET_AMENITIES_MULT$: §G+10%§!\n $MOD_POP_HAPPINESS$: §G+5%§!"
+
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine: "Nostalgia Paradise: Palace of Pleasures"
+    pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine_desc: "At the Nostalgia Paradise, Bio-Trophies can realize their most obscure pleasures without any fear of being judged by their machine servitors."
 
     pw_pm_lunar_archive: "Lunar Archive"
     pw_pm_lunar_archive_desc: "This moon has been use as a massive archive of information by an ancient alien species."

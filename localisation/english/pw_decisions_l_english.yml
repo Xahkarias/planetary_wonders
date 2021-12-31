@@ -293,6 +293,9 @@
     pw_decision_living_spire_change_designation: "Change $pw_living_spire$ Designation"
     pw_decision_living_spire_change_designation_desc: "Change the current designation of the Living Spire, diverting the comforts provided to a specific class in order to gain a bonus."
 
+    pw_decision_nostalgia_paradise_change_theme: "Change $pw_nostalgia_paradise$ Theme"
+    pw_decision_nostalgia_paradise_change_theme_desc: "Change the current theme of the Nostalgia Paradise."
+
     #Conduit of Unity Integration Decisions
     pw_decision_cu.integrate: "§BIntegrate:§!"
 

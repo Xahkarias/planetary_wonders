@@ -97,6 +97,8 @@ pw_has_any_planetary_wonder = {
 			has_building_construction = pw_building_psionic_observatory
 			has_building = pw_building_metal_vivarium
 			has_building_construction = pw_building_metal_vivarium
+			has_building = pw_building_nostalgia_paradise
+			has_building_construction = pw_building_nostalgia_paradise
 		}
 	}
 }
@@ -145,6 +147,7 @@ pw_has_any_additional_planetary_wonder = {
 		has_building = pw_building_interdimensional_collider
 		has_building = pw_building_psionic_observatory
 		has_building = pw_building_metal_vivarium
+		has_building = pw_building_nostalgia_paradise
 	}
 }
 
@@ -185,6 +188,7 @@ pw_has_build_any_planetary_wonder = {
 		has_country_flag = pw_interdimensional_collider_built
 		has_country_flag = pw_psionic_observatory_built
 		has_country_flag = pw_metal_vivarium_built
+		has_country_flag = pw_nostalgia_paradise_built
 	}
 }
 

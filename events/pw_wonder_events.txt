@@ -11891,7 +11891,7 @@ planet_event = {
 	}
 }
 
-#When the LS is destroyed/replaces -> demolish Integrations
+#When the LS is destroyed/replaced -> demolish Integrations
 planet_event = {
 	id = pw_wonder.2106
 	title = pw_wonder.2106.name
@@ -11907,7 +11907,7 @@ planet_event = {
 
 	trigger = {
 		#Does not has the building:
-		NOT = { has_active_building = pw_building_conduit_of_unity_1 }
+		NOT = { has_active_building = pw_building_living_spire_3 }
 		OR = { #But has one of the modifiers:
 			has_modifier = pw_pm_living_spire_designation_default
 			has_modifier = pw_pm_living_spire_designation_imperial
@@ -12414,5 +12414,328 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.2211.a
+	}
+}
+
+# Nostalgia Paradise -> id 2300
+
+#On Nostalgia Paradise built
+planet_event = {
+	id = pw_wonder.2300
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_nostalgia_paradise_complete
+			days = 30
+			target = this
+			variable = {
+				type = name
+				localization = PLANET
+				scope = root
+			}
+		}
+
+		planet_event = { id = pw_wonder.2301 } #Regular first time
+		planet_event = { id = pw_wonder.2302 } #Servitor first time
+
+		planet_event = { id = pw_wonder.2310 days = 5 } #Select first theme
+		planet_event = { id = pw_wonder.2305 days = @pw_1year } #Recursive check if destroyed
+	}
+}
+
+#On first time Nostalgia Paradise is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2301
+	title = pw_wonder.2301.name
+	desc = pw_wonder.2301.desc
+	picture = GFX_evt_gaia
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_nostalgia_paradise_built }}
+		owner = { NOT = { has_valid_civic = civic_machine_servitor }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_nostalgia_paradise_built }
+	}
+
+	option = {
+		name = pw_wonder.2301.a
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_wonder_built_recently_happiness }
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+	}
+}
+
+#On first time Nostalgia Paradise is built (Rogue Servitors)
+planet_event = {
+	id = pw_wonder.2302
+	title = pw_wonder.2302.name
+	desc = pw_wonder.2302.desc
+	picture = GFX_evt_gaia
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_nostalgia_paradise_built }}
+		owner = { has_valid_civic = civic_machine_servitor }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_nostalgia_paradise_built }
+	}
+
+	option = {
+		name = pw_wonder.2302.a
+		if = {
+			limit = {
+				NOT = { has_modifier = pw_mod_wonder_built_recently_unity }
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+}
+
+#Check if NP was destroyed/replaced (recursive)
+planet_event = {
+	id = pw_wonder.2305
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				#Does not has the building:
+				NOT = { has_active_building = pw_building_nostalgia_paradise }
+				OR = { #But has one of the modifiers:
+					has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
+					has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
+					has_modifier = pw_pm_nostalgia_paradise_theme_golden_age
+					has_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine
+					has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch
+					has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
+					has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+					has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+				}
+			}
+			planet_event = { id = pw_wonder.2306 }
+		}
+		else = {
+			planet_event = { id = pw_wonder.2305 days = @pw_halfYear }
+		}
+	}
+}
+
+#When the NP is destroyed/replaced -> Remove Modifiers
+planet_event = {
+	id = pw_wonder.2306
+	title = pw_wonder.2306.name
+	desc = pw_wonder.2306.desc
+	picture = GFX_evt_gaia
+	show_sound = event_collapsing_ruins
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		#Does not has the building:
+		NOT = { has_active_building = pw_building_nostalgia_paradise }
+		OR = { #But has one of the modifiers:
+			has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
+			has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_golden_age
+			has_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch
+			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_golden_age }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_golden_age
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_war_epoch
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+}
+
+#Choose a theme for the Nostalgia Paradise
+planet_event = {
+	id = pw_wonder.2310
+	title = pw_wonder.2310.name
+	desc = pw_wonder.2310.desc
+	picture = GFX_evt_gaia
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_golden_age	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_golden_age
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_war_epoch
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.new_frontiers
+		custom_tooltip = pw_wonder.2120.tooltip
+		if = {
+			limit = { owner = { has_valid_civic = civic_machine_servitor }}
+			add_modifier = {
+				modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.golden_age
+		custom_tooltip = pw_wonder.2120.tooltip
+		if = {
+			limit = { owner = { has_valid_civic = civic_machine_servitor }}
+			add_modifier = {
+				modifier = pw_pm_nostalgia_paradise_theme_golden_age_machine
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = pw_pm_nostalgia_paradise_theme_golden_age
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.war_epoch
+		custom_tooltip = pw_wonder.2120.tooltip
+		if = {
+			limit = { owner = { has_valid_civic = civic_machine_servitor }}
+			add_modifier = {
+				modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = pw_pm_nostalgia_paradise_theme_war_epoch
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.palace_of_pleasures
+		trigger = {
+			owner = { has_valid_civic = civic_pleasure_seekers }
+		}
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.palace_of_pleasures
+		trigger = {
+			owner = { has_valid_civic = civic_machine_servitor }
+		}
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+		}
 	}
 }

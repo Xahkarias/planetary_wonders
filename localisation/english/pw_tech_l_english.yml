@@ -402,6 +402,10 @@
     pw_tech_chamber_of_reflection: "Chamber Of Reflection"
     pw_tech_chamber_of_reflection_desc: "Discussion from the Solipsist Debate Hall remain in the Hive Mind after they are done, by expanding the Hall to include chambers in our Conduits of Unity we cn extend the debate far over what we could imagine."
 
+    #Nostalgia Paradise
+    pw_tech_augmented_reality_resorts: "Augmented Reality Resorts"
+    pw_tech_augmented_reality_resorts_desc: "Resort Worlds and their natural beauty are not enough for the most adventurous in our empire. They need entertainment that perfectly emulates danger without any major consequences, where they can live their wildest fantasies."
+
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"
