@@ -21,6 +21,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/armies/pw_army_living_metal_warform.dds"
 	}
 
+	## Colony Types ##
+	spriteType = {
+		name = "GFX_colony_type_mausoleum"
+		textureFile = "gfx/interface/icons/colony_types/pw_colony_type_mausoleum.dds"
+	}
+
 	## Spaceport Modules ##
 
 	spriteType = {

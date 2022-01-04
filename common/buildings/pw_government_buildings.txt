@@ -741,6 +741,21 @@ pw_building_panopticon = {
 		}
 	}
 
+	allow = {
+		OR = {
+			has_modifier = penal_colony
+			owner = { has_valid_civic = civic_police_state }
+		}
+
+		#Generic triggers:
+		has_major_upgraded_capital = yes
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
+		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+	}
+
 	destroy_trigger = {
 		NOR = {
 			has_modifier = penal_colony
@@ -752,20 +767,6 @@ pw_building_panopticon = {
 		building_hall_judgment
 		building_sentinel_posts
 		building_psi_corps
-	}
-
-	allow = {
-		has_major_upgraded_capital = yes
-		OR = {
-			free_district_slots > 0 # Needs a free district to occupy
-			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
-		}
-		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
-
-		OR = {
-			has_modifier = penal_colony
-			owner = { has_valid_civic = civic_police_state }
-		}
 	}
 
 	resources = {

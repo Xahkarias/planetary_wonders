@@ -9530,3 +9530,154 @@ pw_tech_augmented_reality_resorts = {
 		}
 	}
 }
+
+# Unhallowed Necropolis
+pw_tech_worldly_mausoleums = {
+	area = society
+	category = { new_worlds }
+	tier = 4
+	cost = @pw_tech_cost_3
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_tomb_world_adaption
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		OR = {
+			#Has any of the civics:
+			has_valid_civic = civic_memorialist
+			has_valid_civic = civic_hive_memorialist
+			has_valid_civic = civic_machine_memorialist
+			has_valid_civic = civic_death_cult
+			has_valid_civic = civic_death_cult_corporate
+			has_valid_civic = civic_reanimated_armies
+
+			#Has a tomb world:
+			any_owned_planet = {
+				is_planet_class = pc_nuked
+			}
+		}
+	}
+
+	weight_modifier = {
+		factor = @pw_tech_weight_mod
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_worldly_mausoleums }
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_spiritualist
+		}
+
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_spiritualist
+		}
+
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_valid_civic = civic_memorialist
+				has_valid_civic = civic_hive_memorialist
+				has_valid_civic = civic_machine_memorialist
+				has_valid_civic = civic_death_cult
+				has_valid_civic = civic_death_cult_corporate
+				has_valid_civic = civic_reanimated_armies
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_exalted_priesthood
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_consecrated_worlds
+		}
+
+		modifier = {
+			factor = 1.2
+			count_owned_planet = {
+				count > 1
+				limit = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_owned_planet = {
+				count > 2
+				limit = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.8
+			count_owned_planet = {
+				count > 3
+				limit = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+	}
+}

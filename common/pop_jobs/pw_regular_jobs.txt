@@ -1,3 +1,4 @@
+#Added by Erebus Project
 pw_mining_director = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -127,6 +128,7 @@ pw_mining_director = {
 	}
 }
 
+#Added by Helios Tower
 pw_energy_director = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -257,6 +259,7 @@ pw_energy_director = {
 	}
 }
 
+#Added by Demetrius Cornucopia
 pw_agriculture_director = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -435,6 +438,7 @@ pw_agriculture_director = {
 	}
 }
 
+#Added by Domed City
 pw_domed_city_test_subject = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -582,6 +586,7 @@ pw_domed_city_test_subject = {
 	}
 }
 
+#Added by Panopticon
 pw_big_brother = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -711,6 +716,7 @@ pw_big_brother = {
 	}
 }
 
+#Unused
 pw_tourist = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -787,6 +793,7 @@ pw_tourist = {
 	}
 }
 
+#Added by Industrial Hearth
 pw_poly_artisan = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -924,6 +931,7 @@ pw_poly_artisan = {
 	}
 }
 
+#Added by Fair of Worlds
 pw_diversity_curator = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -1077,6 +1085,7 @@ pw_diversity_curator = {
 	}
 }
 
+#Added by Museum of the Grotesque
 pw_degeneracy_curator = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -1230,6 +1239,7 @@ pw_degeneracy_curator = {
 	}
 }
 
+#Added by The Grand Archive
 pw_grand_archivist = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -1395,6 +1405,7 @@ pw_grand_archivist = {
 	}
 }
 
+#Added by The Grand Archive
 pw_master_archivist = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -1590,6 +1601,7 @@ pw_master_archivist = {
 	}
 }
 
+#Added by archeology deposit
 pw_lunar_archivist = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -1756,6 +1768,7 @@ pw_lunar_archivist = {
 	}
 }
 
+#Added by Holy Reliquary
 pw_relic_keeper = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -1943,6 +1956,144 @@ pw_relic_keeper = {
 					is_country_type = ai_empire
 				}
 			}
+		}
+	}
+}
+
+#Added by Unhallowed Necropolis
+pw_tomb_scholar = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = pw_building_unhallowed_necropolis
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			unity = 3
+			physics_research = 4
+			society_research = 4
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_technocracy }
+			}
+			unity = 1
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 1.5
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_erudite
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_robot_logic_engines
+				has_trait = trait_intelligent
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_natural_sociologists
+				has_trait = trait_natural_physicists
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.65
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.5
+			has_job = pw_tomb_scholar
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_latent_psionic
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_psionic
+		}
+		modifier = {
+			factor = 0.1
+			has_trait = trait_enigmatic_intelligence_failed
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_enigmatic_intelligence
+				has_trait = trait_enigmatic_intelligence_poor
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_presapient_natural_intellectuals
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_void_dweller_1
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
 		}
 	}
 }

@@ -3555,6 +3555,70 @@ pw_decision_nostalgia_paradise_change_theme = {
 	}
 }
 
+#Unhallowed Necropolis -> designate Mausoleum World
+pw_decision_mausoleum_world = {
+	owned_planets_only = yes
+
+	prerequisites = {
+		pw_tech_worldly_mausoleums
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+		}
+	}
+
+	potential = {
+		is_capital = no
+		NOT = { has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness }
+		NOT = { has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world }
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = slave_colony }
+		is_planet_class = pc_nuked
+		is_artificial = no
+	}
+
+	allow = {
+		has_active_building = pw_building_unhallowed_necropolis
+		custom_tooltip = {
+			fail_text = pw_decision_mausoleum_world_only_one
+			NOT = {
+				owner = {
+					any_owned_planet = {
+						OR = {
+							has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+							has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { owner = { is_gestalt = no }}
+			add_modifier = {
+				modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+				days = -1
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+				days = -1
+			}
+		}
+		set_colony_type = col_pw_mausoleum_world
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
 pw_decision_release_sedative_gas = {
 	owned_planets_only = yes
 	sound = event_administrative_work

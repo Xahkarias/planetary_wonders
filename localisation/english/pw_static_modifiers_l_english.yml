@@ -366,6 +366,18 @@
     pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine: "Nostalgia Paradise: Palace of Pleasures"
     pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine_desc: "At the Nostalgia Paradise, Bio-Trophies can realize their most obscure pleasures without any fear of being judged by their machine servitors."
 
+    pw_pm_unhallowed_necropolis_mausoleum_world: "Mausoleum World"
+    pw_pm_unhallowed_necropolis_mausoleum_world_desc: "Once thriving with life, this world is now but a relic of entropy. We have marked it as a place of memory and study."
+    pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness: "Mausoleum World"
+    pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness_desc: "Once thriving with life, this world is now but a relic of entropy. We have marked it as a place of memory and study."
+    pw_pm_unhallowed_necropolis_mausoleum_world_other_planets: "Mausoleum World"
+    pw_pm_unhallowed_necropolis_mausoleum_world_other_planets_desc: "Once thriving with life, this world is now but a relic of entropy. We have marked it as a place of memory and study."
+    pw_pm_unhallowed_necropolis_mausoleum_world_empire_effects: "Other Empire Colonies:\n $MOD_PLANET_JOBS_UNITY_PRODUCES_MULT$: §G+15%§!"
+
+    #Mausoleum world type:
+    col_pw_mausoleum_world: "Mausoleum World"
+    col_pw_mausoleum_world_desc: "A world that stands as a monument to the death of worlds. We keep the memories from before this world became a tomb in grand necropolises across the planet, as places of study and reflection."
+
     pw_pm_lunar_archive: "Lunar Archive"
     pw_pm_lunar_archive_desc: "This moon has been use as a massive archive of information by an ancient alien species."
 

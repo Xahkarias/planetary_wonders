@@ -12739,3 +12739,318 @@ planet_event = {
 		}
 	}
 }
+
+# Unhallowed Necropolis -> id 2400
+
+#On Unhallowed Necropolis built
+planet_event = {
+	id = pw_wonder.2400
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_unhallowed_necropolis_complete
+			days = 30
+			target = this
+			variable = {
+				type = name
+				localization = PLANET
+				scope = root
+			}
+		}
+
+		planet_event = { id = pw_wonder.2401 } #Regular first time
+		planet_event = { id = pw_wonder.2402 } #Servitor first time
+	}
+}
+
+#On first time Unhallowed Necropolis is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2401
+	title = pw_wonder.2401.name
+	desc = pw_wonder.2401.desc
+	picture = GFX_evt_bone_building
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_unhallowed_necropolis_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_unhallowed_necropolis_built }
+	}
+
+	option = {
+		name = pw_wonder.2401.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2401.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+					has_origin = origin_necrophage
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2402.d
+		trigger = {
+			owner = {
+				has_valid_civic = civic_memorialist
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+}
+
+#On first time Unhallowed Necropolis is built (Gestalt)
+planet_event = {
+	id = pw_wonder.2402
+	title = pw_wonder.2402.name
+	desc = pw_wonder.2402.desc
+	picture = GFX_evt_bone_building
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_unhallowed_necropolis_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_unhallowed_necropolis_built }
+	}
+
+	option = {
+		name = pw_wonder.2402.a
+		trigger = {
+			owner = { is_hive_empire = yes }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2402.b
+		trigger = {
+			owner = { is_machine_empire = yes }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2402.c
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_machine_terminator
+					has_valid_civic = civic_hive_devouring_swarm
+					has_origin = origin_necrophage
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2402.d
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_machine_memorialist
+					has_valid_civic = civic_hive_memorialist
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+}
+
+#On planet change class to something that is not tomb (or modded necro world?)
+planet_event = {
+	id = pw_wonder.2403
+	title = pw_wonder.2403.name
+	desc = pw_wonder.2403.desc
+	picture = GFX_evt_tomb_world
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = { is_planet_class = pc_nuked }
+		OR = {
+			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+		}
+	}
+
+	option = {
+		name = pw_wonder.2403.a
+		if = {
+			limit = {
+				has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+			}
+			remove_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+			}
+			remove_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+		}
+	}
+
+	option = {
+		name = pw_wonder.2403.b
+		if = {
+			limit = {
+				has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+			}
+			remove_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+			}
+			remove_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+		}
+	}
+}

@@ -296,6 +296,10 @@
     pw_decision_nostalgia_paradise_change_theme: "Change $pw_nostalgia_paradise$ Theme"
     pw_decision_nostalgia_paradise_change_theme_desc: "Change the current theme of the Nostalgia Paradise."
 
+    pw_decision_mausoleum_world: "Create §M$col_pw_mausoleum_world$§!"
+    pw_decision_mausoleum_world_desc: "Establish this planet as a Mausoleum World, where the memory of the past can be preserved for all to visit and study."
+    pw_decision_mausoleum_world_only_one: "£trigger_no£ The §Y[Root.Owner.GetName]§! can only have one §Y$col_pw_mausoleum_world$§!."
+
     #Conduit of Unity Integration Decisions
     pw_decision_cu.integrate: "§BIntegrate:§!"
 

@@ -912,6 +912,41 @@ pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine = {
 	biological_pop_growth_speed = 0.15
 }
 
+#Unhallowed Necropolis -> Mausoleum world
+pw_pm_unhallowed_necropolis_mausoleum_world = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_unhallowed_necropolis_mausoleum_world.dds"
+	icon_frame = @pw_icon_frame_green
+	job_pw_tomb_scholar_per_pop = @pw_job_per_25_pop
+	pop_environment_tolerance = 0.10
+	planet_immigration_pull_mult = 0.10
+	planet_amenities_mult = 0.05
+
+	custom_tooltip = pw_pm_unhallowed_necropolis_mausoleum_world_empire_effects
+	show_only_custom_tooltip = no
+	# This only works on timed planet modifiers!
+	apply_modifier_to_other_planets = pw_pm_unhallowed_necropolis_mausoleum_world_other_planets
+}
+pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_unhallowed_necropolis_mausoleum_world.dds"
+	icon_frame = @pw_icon_frame_green
+	job_pw_tomb_surveyor_per_pop = @pw_job_per_25_pop
+	pop_environment_tolerance = 0.10
+	planet_immigration_pull_mult = 0.10
+	planet_amenities_no_happiness_mult = 0.05
+
+	custom_tooltip = pw_pm_unhallowed_necropolis_mausoleum_world_empire_effects
+	show_only_custom_tooltip = no
+	# This only works on timed planet modifiers!
+	apply_modifier_to_other_planets = pw_pm_unhallowed_necropolis_mausoleum_world_other_planets
+}
+
+pw_pm_unhallowed_necropolis_mausoleum_world_other_planets = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_unhallowed_necropolis_mausoleum_world.dds"
+	icon_frame = @pw_icon_frame_green
+
+	planet_jobs_unity_produces_mult = 0.15
+}
+
 #Added by archaeology:
 pw_pm_lunar_archive = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"
