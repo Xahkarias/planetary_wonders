@@ -263,6 +263,10 @@ pw_trigger_art_megacorp_events = {
 			country_event = { id = pw_art_exhibition.574 }
 		}
 		1 = {
+			modifier = {
+				factor = 0
+				is_megacorp = no #Needs branch office
+			}
 			country_event = { id = pw_art_exhibition.575 }
 		}
 		1 = {
