@@ -947,6 +947,21 @@ pw_pm_unhallowed_necropolis_mausoleum_world_other_planets = {
 	planet_jobs_unity_produces_mult = 0.15
 }
 
+#Blossoming Preserve edict temporary modifier
+pw_pm_blossoming_preserve_harmonious_blossom_gaia = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_blossoming_preserve_harmonious_blossom_gaia.dds"
+	icon_frame = @pw_icon_frame_green
+
+	pop_growth_speed = 0.10
+}
+
+pw_pm_blossoming_preserve_harmonious_blossom_hive = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_blossoming_preserve_harmonious_blossom_hive.dds"
+	icon_frame = @pw_icon_frame_green
+
+	planet_jobs_produces_mult = 0.10
+}
+
 #Added by archaeology:
 pw_pm_lunar_archive = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"

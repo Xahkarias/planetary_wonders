@@ -321,3 +321,95 @@ pw_abyssal_crater_test_site_subsidies = {
 		}
 	}
 }
+
+#Blossoming Preserve
+
+pw_blossoming_preserve_harmonious_blossom = {
+	length = 3600
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			influence = 100
+		}
+	}
+
+	prerequisites = {
+		pw_tech_cyberecology
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_blossoming_preserve
+		}
+	}
+
+	modifier = {
+		pop_environment_tolerance = 0.10
+		country_unity_produces_mult = 0.10
+		planet_amenities_mult = 0.10
+	}
+
+	effect = {
+		every_owned_planet = {
+			limit = {
+				has_active_building = pw_building_blossoming_preserve
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_hive
+				}
+				add_modifier = {
+					modifier = pw_pm_blossoming_preserve_harmonious_blossom_hive
+					days = 1800
+					clear_on_owner_change = yes
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = pw_pm_blossoming_preserve_harmonious_blossom_gaia
+					days = 1800
+					clear_on_owner_change = yes
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 2
+			resource_stockpile_compare = {
+				resource = influence
+				value > 500
+			}
+		}
+		modifier = {
+			factor = 1.2
+			count_owned_planet = {
+				count > 2
+				limit = {
+					has_active_building = pw_building_blossoming_preserve
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			count_owned_planet = {
+				count > 3
+				limit = {
+					has_active_building = pw_building_blossoming_preserve
+				}
+			}
+		}
+		modifier = {
+			factor = 1.8
+			count_owned_planet = {
+				count > 4
+				limit = {
+					has_active_building = pw_building_blossoming_preserve
+				}
+			}
+		}
+	}
+}

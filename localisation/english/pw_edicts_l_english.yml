@@ -91,6 +91,10 @@
     edict_pw_abyssal_crater_test_site_subsidies: "Abyssal Crater Test Site Subsidies"
     edict_pw_abyssal_crater_test_site_subsidies_desc: "Engineering requires models and prototypes to bring theory to life, its an area always looking for more materials to test and simulations to run."
 
+    #Blossoming Preserve
+    edict_pw_blossoming_preserve_harmonious_blossom: "Harmonious Blossom"
+    edict_pw_blossoming_preserve_harmonious_blossom_desc: "All the word employed on tending to a garden is rewarded when it blossoms and our garden expands over worlds."
+
     #Strategic Resources boost
     edict_pw_chemist_abundance: "Chemical Abundance"
     edict_pw_chemist_abundance_desc: "Providing an overwhelming supply of minerals to the chemist of the $pw_building_erebus_fracking_plant$, alongside increased subsides, the production of £volatile_motes£ §Y$volatile_motes$§! can be greatly increased, at the cost of wasting some of the input."

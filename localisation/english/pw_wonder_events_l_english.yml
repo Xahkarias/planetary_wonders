@@ -973,3 +973,16 @@
     pw_wonder.2403.desc: "Fortunately, no longer [THIS.GetName] suffers from the scars that made it a Tomb World. Unfortunately, no longer we can maintain a mausoleum where there is no tomb. Our death scholars and surveyors will leave the world for the living for now and cease their studies."
     pw_wonder.2403.a: "We can only hope the future does not erase the past."
     pw_wonder.2403.b: "Let the past rest bellow the foundations of the future."
+
+    #Complete Blossoming Preserve
+    pw_message_blossoming_preserve_complete: "$pw_blossoming_preserve$ has been constructed on $PLANET|Y$."
+    #First Time Complete Blossoming Preserve (Regular Empire)
+    pw_wonder.2501.name: "Urbanism Without Cities"
+    pw_wonder.2501.desc: "There are very few planets on this galaxy where the stars have aligned to form a paradise we call Gaia Worlds. These places are not just teeming with life, but life that coexists extraordinarily well. No matter the air it breathes - if it breathes at all - or the land it walks - if it walks at all - Gaia will provide it a home.\n\nThe mechanisms by which these worlds operate are not fully understood by our current science. Systems upon systems of complex natural relations in a planetary scale create the perfect storm for them to exist. We may even be able to replicate such networks, but we are yet to understand them.\n\nThe $pw_blossoming_preserve$ was constructed, not only to study these complex phenomena, but to develop our society as an extension of them, that operates in harmony with the planet itself."
+    pw_wonder.2501.a: "Fighting the environment is always a losing battle."
+    pw_wonder.2501.b: "Coexistence with nature is the only path forward."
+    #First Time Complete Blossoming Preserve (Gestalt)
+    pw_wonder.2502.name: "Heart of the Swarm"
+    pw_wonder.2502.desc: "There are very few planets on this galaxy where the stars have aligned to form a paradise we call Gaia Worlds. These places are not just teeming with life, but life that coexists extraordinarily well. No matter the air it breathes - if it breathes at all - or the land it walks - if it walks at all - Gaia will provide it a home.\n\nThe mechanisms by which these worlds operate are not fully understood by our current science. Systems upon systems of complex natural relations in a planetary scale create the perfect storm for them to exist. We may even be able to replicate such networks, but only the organization of the Gestalt itself comes close to rivalling it.\n\nThe $pw_blossoming_preserve$ was constructed, not only to study these complex phenomena, but to develop our consciousness as an extension of them that operates in harmony with the planet itself."
+    pw_wonder.2502.a: "The land and We are one."
+    pw_wonder.2502.b: "The planet lives and breathes as we do."

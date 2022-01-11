@@ -13054,3 +13054,177 @@ planet_event = {
 		}
 	}
 }
+
+# Blossoming Preserve -> id 2500
+
+#On Blossoming Preserve built
+planet_event = {
+	id = pw_wonder.2500
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_blossoming_preserve_complete
+			days = 30
+			target = this
+			variable = {
+				type = name
+				localization = PLANET
+				scope = root
+			}
+		}
+
+		planet_event = { id = pw_wonder.2501 } #Regular first time
+		planet_event = { id = pw_wonder.2502 } #Servitor first time
+	}
+}
+
+#On first time Blossoming Preserve is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2501
+	title = pw_wonder.2501.name
+	desc = pw_wonder.2501.desc
+	picture = GFX_evt_baol_ruins
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_blossoming_preserve_built }}
+		owner = { is_gestalt = no }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_blossoming_preserve_built }
+	}
+
+	option = {
+		name = pw_wonder.2501.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2501.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_environmentalist
+					has_valid_civic = civic_idyllic_bloom
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+}
+
+#On first time Blossoming Preserve is built (Gestalt)
+planet_event = {
+	id = pw_wonder.2502
+	title = pw_wonder.2502.name
+	desc = pw_wonder.2502.desc
+	picture = GFX_evt_baol_ruins
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_blossoming_preserve_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_blossoming_preserve_built }
+	}
+
+	option = {
+		name = pw_wonder.2502.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2502.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_hive_ascetic
+					has_valid_civic = civic_hive_idyllic_bloom
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+}

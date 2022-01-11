@@ -410,6 +410,10 @@
     pw_tech_worldly_mausoleums: "Worldly Mausoleums"
     pw_tech_worldly_mausoleums_desc: "A tomb world is always a curious find. What stories are hidden below the irradiated ruins? Some we may never discover, but we can erect monuments to honor their memory and record the past."
 
+    #Blossoming Preserve
+    pw_tech_cyberecology: "Cyberecology"
+    pw_tech_cyberecology_desc: "Not the cultivation of online spaces, Cyberecology is the study of the cybernetic nature of relationships between the environment and our complex societal systems. Unprecedented results are seen when applied to the blossoming Gaia Worlds and the peculiar Hive Worlds"
+
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

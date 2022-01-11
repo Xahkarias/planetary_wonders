@@ -9681,3 +9681,144 @@ pw_tech_worldly_mausoleums = {
 		}
 	}
 }
+
+# Unhallowed Necropolis
+pw_tech_cyberecology = {
+	area = society
+	category = { new_worlds }
+	tier = 4
+	cost = @pw_tech_cost_3
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_ecological_adaptation
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		OR = {
+			#Has a gaia or hive world:
+			any_owned_planet = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_hive
+				}
+			}
+		}
+	}
+
+	weight_modifier = {
+		factor = @pw_tech_weight_mod
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_cyberecology }
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_valid_civic = civic_environmentalist
+				has_valid_civic = civic_idyllic_bloom
+				has_valid_civic = civic_hive_ascetic
+				has_valid_civic = civic_hive_idyllic_bloom
+			}
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_world_shaper
+				has_ascension_perk = ap_hive_worlds
+			}
+		}
+
+		modifier = {
+			factor = 1.2
+			count_owned_planet = {
+				count > 1
+				limit = {
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_hive
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_owned_planet = {
+				count > 2
+				limit = {
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_hive
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.8
+			count_owned_planet = {
+				count > 3
+				limit = {
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_hive
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+	}
+}

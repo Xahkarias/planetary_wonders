@@ -378,6 +378,13 @@
     col_pw_mausoleum_world: "Mausoleum World"
     col_pw_mausoleum_world_desc: "A world that stands as a monument to the death of worlds. We keep the memories from before this world became a tomb in grand necropolises across the planet, as places of study and reflection."
 
+    #Blossoming Preserve temporary modifier:
+    pw_pm_blossoming_preserve_harmonious_blossom_gaia: "Gaia Blossoming"
+    pw_pm_blossoming_preserve_harmonious_blossom_gaia_desc: "As the $pw_blossoming_preserve$ blooms into other planets, here we can feel how the work of our Preservers allow the population to grow much more comfortably."
+
+    pw_pm_blossoming_preserve_harmonious_blossom_hive: "Hive Blossoming"
+    pw_pm_blossoming_preserve_harmonious_blossom_hive_desc: "As the $pw_blossoming_preserve$ blooms into other planets, here we can feel how the work of our Preserver Drones allow the drone population to work in much more synchrony."
+
     pw_pm_lunar_archive: "Lunar Archive"
     pw_pm_lunar_archive_desc: "This moon has been use as a massive archive of information by an ancient alien species."
 
