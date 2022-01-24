@@ -13,11 +13,7 @@ country_event = {
 	trigger = {
 		is_at_war = no
 		is_ai = no
-		NOR = {
-			has_valid_civic = civic_machine_terminator
-			has_valid_civic = civic_hive_devouring_swarm
-			has_valid_civic = civic_fanatic_purifiers
-		}
+		NOT = { is_homicidal = yes }
 		any_owned_planet = {
 			pw_planet_has_particle_supercollider = yes
 		}
@@ -815,11 +811,7 @@ country_event = {
 	trigger = {
 		is_at_war = no
 		is_ai = no
-		NOR = {
-			has_valid_civic = civic_machine_terminator
-			has_valid_civic = civic_hive_devouring_swarm
-			has_valid_civic = civic_fanatic_purifiers
-		}
+		NOT = { is_homicidal = yes }
 		any_owned_planet = {
 			pw_planet_has_domed_city = yes
 		}
@@ -1880,11 +1872,7 @@ country_event = {
 	trigger = {
 		is_at_war = no
 		is_ai = no
-		NOR = {
-			has_valid_civic = civic_machine_terminator
-			has_valid_civic = civic_hive_devouring_swarm
-			has_valid_civic = civic_fanatic_purifiers
-		}
+		NOT = { is_homicidal = yes }
 		any_owned_planet = {
 			pw_planet_has_abyssal_test_crater = yes
 		}

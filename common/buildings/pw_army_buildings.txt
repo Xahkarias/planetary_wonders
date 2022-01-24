@@ -319,11 +319,7 @@ pw_building_guardian_angel = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				owner = { has_valid_civic = civic_machine_terminator }
-				owner = { has_valid_civic = civic_hive_devouring_swarm }
-				owner = { has_valid_civic = civic_fanatic_purifiers }
-			}
+			owner = { is_homicidal = yes }
 		}
 		modifier = {
 			factor = 3
@@ -657,11 +653,7 @@ pw_building_stellar_sentinel = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				owner = { has_valid_civic = civic_machine_terminator }
-				owner = { has_valid_civic = civic_hive_devouring_swarm }
-				owner = { has_valid_civic = civic_fanatic_purifiers }
-			}
+			owner = { is_homicidal = yes }
 		}
 		modifier = {
 			factor = 3

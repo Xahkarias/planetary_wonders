@@ -1245,11 +1245,7 @@ fleet_event = {
 		name = pw_archaeology.510.a
 		trigger = {
 			owner = {
-				NOR = {
-					has_valid_civic = civic_fanatic_purifiers
-					has_valid_civic = civic_hive_devouring_swarm
-					has_valid_civic = civic_machine_terminator
-				}
+				NOT = { is_homicidal = yes }
 			}
 		}
 		small_artifact_reward = yes
@@ -2296,11 +2292,7 @@ fleet_event = {
 		name = pw_archaeology.610.b
 		trigger = {
 			owner = {
-				NOR = {
-					has_valid_civic = civic_hive_devouring_swarm
-					has_valid_civic = civic_machine_terminator
-					has_valid_civic = civic_fanatic_purifiers
-				}
+				NOT = { is_homicidal = yes }
 			}
 		}
 		small_artifact_reward = yes
