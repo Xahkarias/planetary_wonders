@@ -1055,6 +1055,30 @@ pw_building_solipsist_debate_hall = {
 			exists = owner
 			owner = {
 				has_edict = pw_wonders_beyond_ambition
+				has_valid_civic = civic_hive_catalytic_processing
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
+				has_valid_civic = civic_hive_idyllic_bloom
+			}
+		}
+		modifier = {
+			pop_environment_tolerance = 0.10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_galactic_sovereign
 			}
 		}
