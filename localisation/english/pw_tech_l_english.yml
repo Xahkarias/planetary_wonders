@@ -412,7 +412,25 @@
 
     #Blossoming Preserve
     pw_tech_cyberecology: "Cyberecology"
-    pw_tech_cyberecology_desc: "Not the cultivation of online spaces, Cyberecology is the study of the cybernetic nature of relationships between the environment and our complex societal systems. Unprecedented results are seen when applied to the blossoming Gaia Worlds and the peculiar Hive Worlds"
+    pw_tech_cyberecology_desc: "Not the cultivation of online spaces, Cyberecology is the study of the cybernetic nature of relationships between the environment and our complex societal systems. Unprecedented results are seen when applied to the blossoming Gaia Worlds and the peculiar Hive Worlds."
+
+    #Department of Xenoeconomics
+    pw_tech_xenoeconomy: "Xenoeconomy"
+    pw_tech_xenoeconomy_desc: "Maximizing profits means different things for different societies. There is always something more to exploit in xeno ethics if we are willing to give up some morality. And investor sure are willing."
+    pw_prereq_xenoeconomy: "Unlocks unique §MBranch Office Buildings§!."
+    pw_prereq_xenoeconomy_desc: "After the $pw_department_of_xenoeconomics$ Wonder is completed, we will be able to research unique branch office buildings that exploit other countries ethics."
+
+    #Extra building office
+    pw_tech_exploitation_of_belligerence: "Exploitation of Belligerence"
+    pw_tech_exploitation_of_belligerence_desc: "Pacifist and Militarist countries speak so passionately about external conflicts, almost as if they had any stake in all of them. Maybe we can extract some profit out of this passion."
+    pw_tech_exploitation_of_philosophy: "Exploitation of Philosophy"
+    pw_tech_exploitation_of_philosophy_desc: "You can sell anything to a Spiritualist if you can convince them that it will save their soul. Equally, you can sell any junk to Materialist if you can convince them it is brand new technology."
+    pw_tech_exploitation_of_diplomacy: "Exploitation of Diplomacy"
+    pw_tech_exploitation_of_diplomacy_desc: "Xenophile and Xenophobe empires never seem to value other aliens species by the actual benefits that can be extracted from them. We do not make the same mistake."
+    pw_tech_exploitation_of_hierarchy: "Exploitation of Hierarchy"
+    pw_tech_exploitation_of_hierarchy_desc: "Whether they work under the heavy boots of an Authoritarian state or among their equals on and Egalitarian workplace, they are producing value. And every bit of value can be exploited."
+    pw_tech_criminal_exploitation: "Criminal Exploitation"
+    pw_tech_criminal_exploitation_desc: "To make a profit from the blindside of a legislation is made easier when we actually study foreign laws and how to bend them."
 
 
     #Enigma tech:

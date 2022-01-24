@@ -986,3 +986,11 @@
     pw_wonder.2502.desc: "There are very few planets on this galaxy where the stars have aligned to form a paradise we call Gaia Worlds. These places are not just teeming with life, but life that coexists extraordinarily well. No matter the air it breathes - if it breathes at all - or the land it walks - if it walks at all - Gaia will provide it a home.\n\nThe mechanisms by which these worlds operate are not fully understood by our current science. Systems upon systems of complex natural relations in a planetary scale create the perfect storm for them to exist. We may even be able to replicate such networks, but only the organization of the Gestalt itself comes close to rivalling it.\n\nThe $pw_blossoming_preserve$ was constructed, not only to study these complex phenomena, but to develop our consciousness as an extension of them that operates in harmony with the planet itself."
     pw_wonder.2502.a: "The land and We are one."
     pw_wonder.2502.b: "The planet lives and breathes as we do."
+
+    #Complete Department of Xenoeconomics
+    pw_message_department_of_xenoeconomics_complete: "$pw_department_of_xenoeconomics$ has been constructed on $PLANET|Y$."
+    #First Time Complete Department of Xenoeconomics (Regular Empire)
+    pw_wonder.2601.name: "Eternal Economic Growth"
+    pw_wonder.2601.desc: "If a company wants to survive in the current state of the galaxy, it must never stop growing its profit margins. We have exhausted our domestic options of growth long ago. The only way to expand now is outwards.\n\nThe $pw_department_of_xenoeconomics$ is now the central think tank for exploiting - and creating - xeno needs in foreign countries. These galactic empires are so passionate about their morals and ethics that we can easily fabricate situations where they are satisfied - and charge a lot for that privilege. Since we can obviously see beyond ideology, we can focus on what really matters: £energy£ §YCredits§!.\n\nWe are ready to start researching new - corporate approved - ways of extracting money from our commercial partners."
+    pw_wonder.2601.a: "It's all offer and demand. We just need to create demand."
+    pw_wonder.2601.b: "It's like taking credits from a child."

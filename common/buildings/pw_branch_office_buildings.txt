@@ -1,0 +1,806 @@
+#Department of Xenoeconomics branch office buildings
+
+#Militarist: Bloodsports arena
+pw_building_bloodsports_arena = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_belligerence
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_militarist = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_militarist = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 10
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_militarist_attraction_mult = 0.20
+		job_clerk_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOT = { has_valid_civic = civic_warrior_culture }
+			}
+		}
+		modifier = {
+			job_entertainer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_valid_civic = civic_warrior_culture
+			}
+		}
+		modifier = {
+			job_duelist_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			job_soldier_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.110 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_militarist }
+		}
+	}
+}
+
+#Pacifist: Meditation Garden
+pw_building_meditation_garden = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_belligerence
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_pacifist = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_pacifist = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	country_modifier = {
+		country_admin_cap_add = 10
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_pacifist_attraction_mult = 0.20
+		job_clerk_add = 1
+		job_bureaucrat_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+		modifier = {
+			job_culture_worker_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.120 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_pacifist }
+		}
+	}
+}
+
+#Materialist: Innovation Hub
+pw_building_innovation_hub = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_philosophy
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_materialist = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_materialist = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		produces = {
+			society_research = 12
+			physics_research = 12
+			engineering_research = 12
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_materialist_attraction_mult = 0.20
+		job_clerk_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			job_researcher_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.130 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+}
+
+#Spiritualist: Salvation Shrine
+pw_building_salvation_shrine = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_philosophy
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_spiritualist = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_spiritualist = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		produces = {
+			unity = 15
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_spiritualist_attraction_mult = 0.20
+		job_clerk_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = branch_office_owner
+			branch_office_owner = {
+				has_valid_civic = civic_gospel_of_the_masses
+			}
+		}
+		modifier = {
+			job_preacher_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		modifier = {
+			job_priest_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.140 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+	}
+}
+
+#Xenophile: Exotic Beauty Center
+pw_building_exotic_beauty_center = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_diplomacy
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_xenophile = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_xenophile = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	country_modifier = {
+		diplo_weight_economy_mult = 0.05
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_xenophile_attraction_mult = 0.20
+		job_clerk_add = 1
+		job_entertainer_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+		modifier = {
+			job_culture_worker_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.150 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+	}
+}
+
+#Xenophile: National Pride Gallery
+pw_building_national_pride_gallery = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_diplomacy
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_xenophobe = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_xenophobe = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	country_modifier = {
+		country_influence_produces_add = 0.5
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_xenophobe_attraction_mult = 0.20
+		job_clerk_add = 1
+		job_entertainer_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		modifier = {
+			job_culture_worker_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.160 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+	}
+}
+
+#Authoritarian: CEO Tower
+pw_building_aristocracy_tower = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_hierarchy
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_authoritarian = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_authoritarian = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		produces = {
+			energy = 15
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_authoritarian_attraction_mult = 0.20
+		job_merchant_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.170 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+	}
+}
+
+#Egalitarian: Factory City
+pw_building_factory_city = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_exploitation_of_hierarchy
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		owner = { is_egalitarian = yes }
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_egalitarian = no }
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+		}
+		produces = {
+			consumer_goods = 5
+			alloys = 3
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		pop_ethic_egalitarian_attraction_mult = 0.20
+		job_clerk_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOT = { has_valid_civic = civic_crafters }
+			}
+		}
+		modifier = {
+			job_artisan_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_valid_civic = civic_crafters
+			}
+		}
+		modifier = {
+			job_artificer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_civic = civic_catalytic_processing }
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+		modifier = {
+			job_foundry_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_catalytic_processing
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+		modifier = {
+			job_catalytic_technician_add = 1
+		}
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.180 }
+	}
+
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = { has_ethic = ethic_fanatic_egalitarian }
+		}
+	}
+}
+
+#Criminal: Tax Haven
+pw_building_tax_haven = {
+	base_buildtime = @pw_building_branch_office_buildtime
+	base_cap_amount = 1
+	empire_limit = { base = 1 }
+	branch_office_building = yes
+
+	prerequisites = {
+		pw_tech_criminal_exploitation
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_criminal_syndicate = yes
+			any_owned_planet = {
+				has_active_building = pw_building_department_of_xenoeconomics
+			}
+		}
+	}
+
+	allow = {
+		exists = owner
+		pw_has_any_unique_branch_office_building = no
+	}
+
+	destroy_trigger = {
+		exists = owner
+		branch_office_owner = { NOT = { has_country_flag = pw_department_of_xenoeconomics_built }}
+		branch_office_owner = { NOT = { has_valid_civic = civic_criminal_heritage }}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @pw_building_branch_office_cost
+			influence = 25
+		}
+		upkeep = {
+			energy = @pw_building_branch_office_upkeep
+		}
+	}
+
+	country_modifier = {
+		intel_encryption_add = 1
+		intel_decryption_add = 1
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.15
+		planet_crime_add = 50
+		trade_value_mult = 0.10
+		job_clerk_add = 1
+		job_merchant_add = 1
+	}
+
+	triggered_desc = {
+		text = pw_branch_office_unique_lb
+	}
+
+	on_built = {
+		planet_event = { id = pw_branch_office.190 }
+	}
+
+	ai_weight = {
+		weight = 260
+	}
+}

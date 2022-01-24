@@ -38,6 +38,7 @@
 #Buildings
 
 @pw_building_buildtime = 2000 #+/-5 years
+@pw_building_branch_office_buildtime = 720 #+/-2 years
 
 #Resource Cost:
 @pw_building_cost = 10000 #Base build cost
@@ -46,6 +47,7 @@
 @pw_building_cost_extra = 5000 #Additional build cost for additional wonder
 @pw_building_cost_extra_half = 2500
 @pw_building_cost_discount = -1000 #Discount cost for designation planets
+@pw_building_branch_office_cost = 1500
 
 @pw_building_cost_advanced = 1000 #Alloys in some cases
 @pw_building_cost_rare = 500 #Rare resources cost
@@ -60,6 +62,7 @@
 @pw_building_upkeep_extra_half = 5
 @pw_building_upkeep_discount = -4 #Discount upkeep for designation planets
 @pw_building_upkeep_ambition = 10 #Additional Upkeep if the Wonders Beyond Ambition is active
+@pw_building_branch_office_upkeep = 5
 
 @pw_building_upkeep_rare_1 = 1
 @pw_building_upkeep_rare_2 = 2
