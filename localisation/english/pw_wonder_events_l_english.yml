@@ -819,7 +819,7 @@
 
     #Black Letters Days flavour event
     pw_wonder.1930.name: "Black Letters"
-    pw_wonder.1930.desc: "\t\"My Dear,\n\n\t\tBy the time you read these words, there will be no more war for me. There will be only peace.\"\n\nSo begins the first letter read in the ceremonial Black Letters Day, on the Festival Plaza. This historical event memorializes fallen soldiers and officers from past conflicts, that we could not avoid, by reading the last letters and messages they have sent home; the words they would wish to echo in the hearts of their loved ones, should they fall.\n\nThis is a national ceremony of grief, but at the end we have schedule a public pronunciation. If we wish, we may take this as an opportunity to sway public opinion one way or another in regards to future wars. Or we may let the people remember their dead as they please."
+    pw_wonder.1930.desc: "    \"My Dear,\n\n        By the time you read these words, there will be no more war for me. There will be only peace.\"\n\nSo begins the first letter read in the ceremonial Black Letters Day, on the Festival Plaza. This historical event memorializes fallen soldiers and officers from past conflicts, that we could not avoid, by reading the last letters and messages they have sent home; the words they would wish to echo in the hearts of their loved ones, should they fall.\n\nThis is a national ceremony of grief, but at the end we have schedule a public pronunciation. If we wish, we may take this as an opportunity to sway public opinion one way or another in regards to future wars. Or we may let the people remember their dead as they please."
     pw_wonder.1930.a: "Give a speech denouncing past wars, exalting peace."
     pw_wonder.1930.b: "Instigate revenge with the speech, promoting future wars."
     pw_wonder.1930.c: "Forgo of politics in the speech, simply comfort people."
@@ -856,7 +856,7 @@
 
     #Black Letters Days flavour event
     pw_wonder.2030.name: "Black Letters"
-    pw_wonder.2030.desc: "\t\"My Dear,\n\n\t\tBy the time you read these words, there will be no more war for me. There will be only peace.\"\n\nSo begins the first letter read in the ceremonial Black Letters Day, on the Martial Avenue. This historical event memorializes fallen soldiers and officers from past conflicts, in order to honor their death, by reading the last letters and messages they have sent home; the words they would wish to echo in the hearts of their loved ones, should they fall.\n\nThis is a national ceremony of grief, but at the end we have schedule a public pronunciation. If we wish, we may take this as an opportunity to sway public opinion one way or another in regards to future wars. Or we may let the people remember their dead as they please."
+    pw_wonder.2030.desc: "    \"My Dear,\n\n        By the time you read these words, there will be no more war for me. There will be only peace.\"\n\nSo begins the first letter read in the ceremonial Black Letters Day, on the Martial Avenue. This historical event memorializes fallen soldiers and officers from past conflicts, in order to honor their death, by reading the last letters and messages they have sent home; the words they would wish to echo in the hearts of their loved ones, should they fall.\n\nThis is a national ceremony of grief, but at the end we have schedule a public pronunciation. If we wish, we may take this as an opportunity to sway public opinion one way or another in regards to future wars. Or we may let the people remember their dead as they please."
     pw_wonder.2030.a: "Give a speech lamenting death in previous conflicts."
     pw_wonder.2030.b: "Instigate future revenge and conflict for the fallen."
     pw_wonder.2030.c: "Forgo of politics in the speech, simply comfort people."
@@ -952,6 +952,7 @@
     pw_wonder.2310.golden_age: "They shall experience the luxuries of a Golden Age"
     pw_wonder.2310.war_epoch: "They shall see glory and love in an Epoch of War"
     pw_wonder.2310.palace_of_pleasures: "They shall meet their desires at the Palace of Pleasures"
+    pw_wonder.2310.none: "They need no theme, an automated resort is enough."
 
     #Complete Unhallowed Necropolis
     pw_message_unhallowed_necropolis_complete: "$pw_unhallowed_necropolis$ has been constructed on $PLANET|Y$."

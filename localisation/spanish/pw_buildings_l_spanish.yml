@@ -264,3 +264,13 @@
     pw_building_factory_city_desc: "An integrated workplace and living space where any collaborator can come help produce cheap goods for the community. All that for only a small share of your surplus value!"
     pw_building_tax_haven: "Tax Haven"
     pw_building_tax_haven_desc: "A safe port for criminals away from the troubles of bureaucracy and legislation, standing outside of the area of influence from the planetary capital. Many shady transactions from around the galaxy can be funneled here for safe processing with profitable tariffs."
+
+    pw_bloodsports_arena: "§MBloodsports Arena§!"
+    pw_meditation_garden: "§MMeditation Garden§!"
+    pw_innovation_hub: "§MInnovation Hub§!"
+    pw_salvation_shrine: "§MSalvation Shrine§!"
+    pw_exotic_beauty_center: "§MExotic Beauty Center§!"
+    pw_national_pride_gallery: "§MNational Pride Gallery§!"
+    pw_aristocracy_tower: "§MAristocracy Tower§!"
+    pw_factory_city: "§MFactory City§!"
+    pw_tax_haven: "§MTax Haven§!"

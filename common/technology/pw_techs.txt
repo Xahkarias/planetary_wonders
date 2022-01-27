@@ -2802,7 +2802,7 @@ pw_tech_utilitarian_vigilance = {
 
 	potential = {
 		NOT = {
-			has_valid_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 
@@ -2876,7 +2876,7 @@ pw_tech_utilitarian_vigilance = {
 
 		modifier = {
 			factor = 0
-			has_valid_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 
 		modifier = {
@@ -10278,7 +10278,7 @@ pw_tech_criminal_exploitation = {
 	potential = {
 		is_megacorp = yes
 		num_commercial_pacts > 0
-		has_valid_civic = civic_criminal_heritage
+		is_criminal_syndicate = yes
 	}
 
 	weight_modifier = {

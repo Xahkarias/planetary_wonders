@@ -912,6 +912,14 @@ pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine = {
 	biological_pop_growth_speed = 0.15
 }
 
+pw_pm_nostalgia_paradise_theme_automated_resort = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_golden_age.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = 0.05
+	biological_pop_growth_speed = 0.10
+	planet_jobs_unity_produces_mult = 0.10
+}
+
 #Unhallowed Necropolis -> Mausoleum world
 pw_pm_unhallowed_necropolis_mausoleum_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_unhallowed_necropolis_mausoleum_world.dds"
@@ -960,6 +968,13 @@ pw_pm_blossoming_preserve_harmonious_blossom_hive = {
 	icon_frame = @pw_icon_frame_green
 
 	planet_jobs_produces_mult = 0.10
+}
+
+pw_pm_blossoming_preserve_harmonious_blossom_machine = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_blossoming_preserve_harmonious_blossom_gaia.dds"
+	icon_frame = @pw_icon_frame_green
+
+	planet_jobs_produces_mult = 0.05
 }
 
 #Added by archaeology:
@@ -1183,6 +1198,7 @@ pw_holy_reliquary_archaeology_signet_ring = {
 #HF Archaeology: exhausted minerals
 pw_hidden_factory_archaeology_exhausted_minerals = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
+	icon_frame = @pw_icon_frame_red
 	district_mining_max = -2
 	planet_jobs_minerals_produces_mult = -0.15
 }

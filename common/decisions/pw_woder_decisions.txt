@@ -3526,6 +3526,7 @@ pw_decision_nostalgia_paradise_change_theme = {
 	}
 
 	potential = {
+		has_active_building = pw_building_nostalgia_paradise
 		OR = {
 			has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers
 			has_modifier = pw_pm_nostalgia_paradise_theme_new_frontiers_machine
@@ -3535,18 +3536,13 @@ pw_decision_nostalgia_paradise_change_theme = {
 			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
 
-	allow = {
-		has_active_building = pw_building_nostalgia_paradise
-	}
-
 	effect = {
-		hidden_effect = {
-			planet_event = {
-				id = pw_wonder.2310
-			}
+		planet_event = {
+			id = pw_wonder.2310
 		}
 	}
 
@@ -3616,6 +3612,44 @@ pw_decision_mausoleum_world = {
 
 	ai_weight = {
 		weight = 10
+	}
+}
+
+#Remove designation Mausoleum World
+pw_decision_remove_mausoleum_world = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+
+	potential = {
+		OR = {
+			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+			}
+			remove_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+			}
+			remove_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
+		}
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }
 

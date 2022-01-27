@@ -5241,7 +5241,7 @@ country_event = {
 				is_homicidal = no
 				has_communications = root
 				NOT = { is_at_war_with = root }
-				NOT = { has_valid_civic = civic_criminal_heritage }
+				NOT = { is_criminal_syndicate = yes }
 				any_owned_leader = {
 					has_trait = leader_trait_corrupt
 				}
@@ -5258,7 +5258,7 @@ country_event = {
 				is_homicidal = no
 				has_communications = root
 				NOT = { is_at_war_with = root }
-				NOT = { has_valid_civic = civic_criminal_heritage }
+				NOT = { is_criminal_syndicate = yes }
 				any_owned_leader = {
 					has_trait = leader_trait_corrupt
 				}
@@ -12544,6 +12544,7 @@ planet_event = {
 					has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
 					has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 					has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+					has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 				}
 			}
 			planet_event = { id = pw_wonder.2306 }
@@ -12580,6 +12581,7 @@ planet_event = {
 			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
 
@@ -12616,6 +12618,10 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine }
 			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
 }
@@ -12666,6 +12672,10 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine	}
 			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
 
@@ -12720,11 +12730,14 @@ planet_event = {
 	option = {
 		name = pw_wonder.2310.palace_of_pleasures
 		trigger = {
-			owner = { has_valid_civic = civic_pleasure_seekers }
+			OR = {
+				owner = {has_valid_civic = civic_pleasure_seekers }
+				owner = {has_valid_civic = civic_corporate_hedonism }
+			}
 		}
 		custom_tooltip = pw_wonder.2120.tooltip
 		add_modifier = {
-			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 		}
 	}
 
@@ -12735,7 +12748,14 @@ planet_event = {
 		}
 		custom_tooltip = pw_wonder.2120.tooltip
 		add_modifier = {
-			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
+			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.none
+		add_modifier = {
+			modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
 }
@@ -13299,7 +13319,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.2601.b
 		trigger = {
-			owner = { has_valid_civic = civic_criminal_heritage }
+			owner = { is_criminal_syndicate = yes }
 		}
 		if = {
 			limit = {

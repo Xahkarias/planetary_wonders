@@ -7388,7 +7388,7 @@ country_event = {
 	option = {
 		name = pw_art_exhibition.OK
 		add_modifier = {
-			modifier = pw_art_mod_terraforming_pursuits
+			modifier = pw_art_mod_hedonism
 			days = @pw_2years
 		}
 		add_monthly_resource_mult = {

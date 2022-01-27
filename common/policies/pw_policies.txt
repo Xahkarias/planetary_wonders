@@ -283,7 +283,7 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_border_control
 
 		valid = {
-			NOT = { has_valid_civic = civic_criminal_heritage }
+			NOT = { is_criminal_syndicate = yes }
 		}
 
 		on_enabled = {
@@ -363,7 +363,7 @@ pw_policy_orbital_commerce = {
 		name = pw_policy_orbital_commerce_smuggling_contacts
 
 		potential = {
-			has_valid_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 
 		on_enabled = {

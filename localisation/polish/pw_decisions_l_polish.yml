@@ -16,12 +16,12 @@
 
     pw_decision_mantle_crucible_alloys: "Mantle Crucible Focus: Military"
     pw_decision_mantle_crucible_alloys_desc: "By disregarding some of the consumer goods production we can multiply the manufacturing of alloys for our military."
-    pw_decision_mantle_crucible_alloys_regular_tooltip: "$pw_mantle_crucible$:\n\t+3 $job_foundry$ Jobs\n\t-3 $job_artisan$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
-    pw_decision_mantle_crucible_alloys_machine_tooltip: "$pw_mantle_crucible$:\n\t+3 $job_alloy_drone$ Jobs\n\t-3 $job_artisan_drone$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+    pw_decision_mantle_crucible_alloys_regular_tooltip: "$pw_mantle_crucible$:\n    +3 $job_foundry$ Jobs\n    -3 $job_artisan$ Jobs\n    +1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+    pw_decision_mantle_crucible_alloys_machine_tooltip: "$pw_mantle_crucible$:\n    +3 $job_alloy_drone$ Jobs\n    -3 $job_artisan_drone$ Jobs\n    +1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
     pw_decision_mantle_crucible_consumer_goods: "Mantle Crucible Focus: Civilian"
     pw_decision_mantle_crucible_consumer_goods_desc: "By disregarding some of the alloy production we can increase the manufacturing of consumer goods for our population."
-    pw_decision_mantle_crucible_consumer_goods_regular_tooltip: "$pw_mantle_crucible$:\n\t-3 $job_foundry$ Jobs\n\t+3 $job_artisan$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
-    pw_decision_mantle_crucible_consumer_goods_machine_tooltip: "$pw_mantle_crucible$:\n\t-3 $job_alloy_drone$ Jobs\n\t+3 $job_artisan_drone$ Jobs\n\t+1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+    pw_decision_mantle_crucible_consumer_goods_regular_tooltip: "$pw_mantle_crucible$:\n    -3 $job_foundry$ Jobs\n    +3 $job_artisan$ Jobs\n    +1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
+    pw_decision_mantle_crucible_consumer_goods_machine_tooltip: "$pw_mantle_crucible$:\n    -3 $job_alloy_drone$ Jobs\n    +3 $job_artisan_drone$ Jobs\n    +1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
 
     pw_decision_pavilion_of_wonders_planetary_art_exhibition: "Organize Planetary Exhibition"
     pw_decision_pavilion_of_wonders_planetary_art_exhibition_desc: "A grand exhibition in the Pavilion of Wonders, gathering many artist from our empire and all who whish to marvel at their creations."
@@ -241,3 +241,6 @@
     pw_decision_mausoleum_world: "Create §M$col_pw_mausoleum_world$§!"
     pw_decision_mausoleum_world_desc: "Establish this planet as a Mausoleum World, where the memory of the past can be preserved for all to visit and study."
     pw_decision_mausoleum_world_only_one: "£trigger_no£ The §Y[Root.Owner.GetName]§! can only have one §Y$col_pw_mausoleum_world$§!."
+
+    pw_decision_remove_mausoleum_world: "Remove §M$col_pw_mausoleum_world$§!"
+    pw_decision_remove_mausoleum_world_desc: "This Tomb World is no longer of our interest, studies here shall cease. Nothing but ash remains."

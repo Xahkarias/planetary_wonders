@@ -134,7 +134,7 @@
 
     #Militarist Events (Nationalistic Zeal):
     pw_art_exhibition.517.name: "Art of Speechcraft"
-    pw_art_exhibition.517.desc: "\t\"...For this heavy heart of mine is not [THIS.GetAdj]\n\tbut [THIS.GetName] itself.\"\n\nAs patriotic zeal was the focus of the latest art exhibition, many different speeches were given during the event which evolved most of our leaders into a discussion of improving their rhetorical skills and expanding the art of speechcraft. This shall certainty improve the public addressing of these leaders and lead them to better honor our country."
+    pw_art_exhibition.517.desc: "    \"...For this heavy heart of mine is not [THIS.GetAdj]\n    but [THIS.GetName] itself.\"\n\nAs patriotic zeal was the focus of the latest art exhibition, many different speeches were given during the event which evolved most of our leaders into a discussion of improving their rhetorical skills and expanding the art of speechcraft. This shall certainty improve the public addressing of these leaders and lead them to better honor our country."
 
     #Pacifist Events:
     pw_art_exhibition.520.name: "Culinary Arts"
@@ -150,7 +150,7 @@
     pw_art_exhibition.523.desc: "The star of the latest art exhibition, which ends today, was a collection of highly detailed photographs of sunsets and horizons in uninhabited planets in our territory, never seen in such an angle and light by the public. These placid and peaceful pictures stirred a wave of tourism to these paradisiac locations, many artists want to paint or model these images and all are looking for unexplored scenery."
 
     pw_art_exhibition.524.name: "Protest Songs"
-    pw_art_exhibition.524.desc: "By the end of our latest art exhibition, many musicians gathered to compose protest songs evoking our past conflicts as cautionary tales. These have caught on and our people shall be less lenient about participating in wars in the near future.\n\n\tFor we have time for nothing\n\tBut the endeavour to balance ourselves\n\tUpon a broken world."
+    pw_art_exhibition.524.desc: "By the end of our latest art exhibition, many musicians gathered to compose protest songs evoking our past conflicts as cautionary tales. These have caught on and our people shall be less lenient about participating in wars in the near future.\n\n    For we have time for nothing\n    But the endeavour to balance ourselves\n    Upon a broken world."
 
     #Pacifist Events (Agrarian Idyll):
     pw_art_exhibition.525.name: "Pastoral Utopia"
@@ -179,7 +179,7 @@
 
     #Spiritualist Events (Death Cult):
     pw_art_exhibition.536.name: "Contemplation wave"
-    pw_art_exhibition.536.desc: "As the latest art exhibition focused in holy morbid themes, the entropy of the universe and the inevitable death of all that lives, a new wave of contemplation swiped trough our country. This wave, which stays in an equilibrium of optimism and pessimism, has brought new views to some scientific fields and can contribute to our research.\n\n\tAfter all, what lives that does not live from the death of others?"
+    pw_art_exhibition.536.desc: "As the latest art exhibition focused in holy morbid themes, the entropy of the universe and the inevitable death of all that lives, a new wave of contemplation swiped trough our country. This wave, which stays in an equilibrium of optimism and pessimism, has brought new views to some scientific fields and can contribute to our research.\n\n    After all, what lives that does not live from the death of others?"
 
     #Materialist Events:
     pw_art_exhibition.540.name: "Great Scientific Debate"
@@ -292,7 +292,7 @@
     pw_art_exhibition.610.desc: "The latest art exhibition has collected and exposed the memories of the dead we have gathered along the many years we have roamed the galaxy in a grand still life showing. This dialog of life and death has piqued the interest of some scientists into the study of entropy and elaboration of more abstract physics  problems."
 
     pw_art_exhibition.611.name: "Tales of the Dead"
-    pw_art_exhibition.611.desc: "The latest art exhibition has collected and exposed the memories of the dead we have gathered along the many years we have roamed the galaxy in a grand still life showing. It hosted many detailed moribund tales and memoirs describing important figures trajectories and the circumstances of their death. Such tales have brought new lessons from the past to some of our leaders.\n\n\tArt is what resists death.\n\tArt is what resists."
+    pw_art_exhibition.611.desc: "The latest art exhibition has collected and exposed the memories of the dead we have gathered along the many years we have roamed the galaxy in a grand still life showing. It hosted many detailed moribund tales and memoirs describing important figures trajectories and the circumstances of their death. Such tales have brought new lessons from the past to some of our leaders.\n\n    Art is what resists death.\n    Art is what resists."
 
     #After events options:
     pw_art_exhibition.OK: "The wonders of art."

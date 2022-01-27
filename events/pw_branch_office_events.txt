@@ -15,6 +15,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_bloodsports_arena_complete
@@ -90,11 +91,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_bloodsports_arena_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -160,6 +161,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_meditation_garden_complete
@@ -235,11 +237,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_meditation_garden_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -305,6 +307,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_innovation_hub_complete
@@ -380,11 +383,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_innovation_hub_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -450,6 +453,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_salvation_shrine_complete
@@ -525,11 +529,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_salvation_shrine_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -624,6 +628,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_exotic_beauty_center_complete
@@ -699,11 +704,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_exotic_beauty_center_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -766,6 +771,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_national_pride_gallery_complete
@@ -841,11 +847,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_national_pride_gallery_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -908,6 +914,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_aristocracy_tower_complete
@@ -983,11 +990,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_aristocracy_tower_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -1050,6 +1057,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_factory_city_complete
@@ -1125,11 +1133,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_factory_city_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 
@@ -1192,6 +1200,7 @@ planet_event = {
 	}
 
 	immediate = {
+		save_event_target_as = pw_branch_office_building_planet
 		create_message = {
 			type = PW_BRANCH_OFFICE_COMPLETED
 			localization = pw_message_tax_haven_complete
@@ -1267,11 +1276,11 @@ country_event = {
 			type = PW_BRANCH_OFFICE_OWNER_COMPLETED
 			localization = pw_message_tax_haven_complete
 			days = 30
-			target = prev
+			target = event_target:pw_branch_office_building_planet
 			variable = {
 				type = name
 				localization = PLANET
-				scope = prev
+				scope = event_target:pw_branch_office_building_planet
 			}
 		}
 

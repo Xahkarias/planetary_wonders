@@ -2177,7 +2177,7 @@ pw_preserver = {
 		}
 		modifier = {
 			factor = 1.5
-			has_job = pw_tomb_scholar
+			has_job = pw_preserver
 		}
 		modifier = {
 			factor = 1.5

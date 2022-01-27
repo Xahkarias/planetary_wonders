@@ -2099,12 +2099,14 @@ pw_building_unhallowed_necropolis = {
 			is_planet_class = pc_nuked
 			owner = {
 				#Has any of the civics:
-				has_valid_civic = civic_memorialist
-				has_valid_civic = civic_hive_memorialist
-				has_valid_civic = civic_machine_memorialist
-				has_valid_civic = civic_death_cult
-				has_valid_civic = civic_death_cult_corporate
-				has_valid_civic = civic_reanimated_armies
+				OR = {
+					has_valid_civic = civic_memorialist
+					has_valid_civic = civic_hive_memorialist
+					has_valid_civic = civic_machine_memorialist
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+					has_valid_civic = civic_reanimated_armies
+				}
 			}
 		}
 
@@ -2317,6 +2319,7 @@ pw_building_unhallowed_necropolis = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_gestalt = no }
 			owner = { is_megacorp = no }
 			owner = { is_spiritualist = no }
 			NOT = { owner = { has_valid_civic = civic_death_cult }}

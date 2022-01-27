@@ -357,19 +357,31 @@ pw_blossoming_preserve_harmonious_blossom = {
 			}
 			if = {
 				limit = {
-					is_planet_class = pc_hive
+					owner = { is_machine_empire = yes }
 				}
 				add_modifier = {
-					modifier = pw_pm_blossoming_preserve_harmonious_blossom_hive
+					modifier = pw_pm_blossoming_preserve_harmonious_blossom_machine
 					days = 1800
 					clear_on_owner_change = yes
 				}
 			}
 			else = {
-				add_modifier = {
-					modifier = pw_pm_blossoming_preserve_harmonious_blossom_gaia
-					days = 1800
-					clear_on_owner_change = yes
+				if = {
+					limit = {
+						is_planet_class = pc_hive
+					}
+					add_modifier = {
+						modifier = pw_pm_blossoming_preserve_harmonious_blossom_hive
+						days = 1800
+						clear_on_owner_change = yes
+					}
+				}
+				else = {
+					add_modifier = {
+						modifier = pw_pm_blossoming_preserve_harmonious_blossom_gaia
+						days = 1800
+						clear_on_owner_change = yes
+					}
 				}
 			}
 		}
