@@ -204,7 +204,7 @@
 
     #25%
     pw_research.2111.name: "Governmental Experiments: Social Construction"
-    pw_research.2111.desc: "By erasing the memory of the population in the $pw_domed_city$ and instilling different material and immaterial conditions on some individuals, with the purpose of promoting divisions, we can investigate the development of social constructs and how they can divide or unite a community. If we were to investigate further this topic, we could fabricate our own social constructs in order to manipúlate the ambition of our people."
+    pw_research.2111.desc: "By erasing the memory of the population in the $pw_domed_city$ and instilling different material and immaterial conditions on some individuals, with the purpose of promoting divisions, we can investigate the development of social constructs and how they can divide or unite a community. If we were to investigate further this topic, we could fabricate our own social constructs in order to manipulate the ambition of our people."
     pw_research.2111.a: "Start that investigation."
     #50%
     pw_research.2112.name: "Governmental Experiments: Manufacturing Consent"

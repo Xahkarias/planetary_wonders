@@ -97,13 +97,13 @@
 
     #Strategic Resources boost
     edict_pw_chemist_abundance: "Chemical Abundance"
-    edict_pw_chemist_abundance_desc: "Providing an overwhelming supply of minerals to the chemist of the $pw_building_erebus_fracking_plant$, alongside increased subsides, the production of £volatile_motes£ §Y$volatile_motes$§! can be greatly increased, at the cost of wasting some of the input."
+    edict_pw_chemist_abundance_desc: "Providing an overwhelming supply of minerals to the chemist of the $pw_building_erebus_fracking_plant$, alongside increased subsidies, the production of £volatile_motes£ §Y$volatile_motes$§! can be greatly increased, at the cost of wasting some of the input."
 
     edict_pw_translucer_abundance: "Translucent Abundance"
-    edict_pw_translucer_abundance_desc: "Providing an overwhelming supply of minerals to the translucers of the $pw_building_helios_translucent_obelisk$, alongside increased subsides, the production of £rare_crystals£ §Y$rare_crystals$§! can be greatly increased, at the cost of wasting some of the input."
+    edict_pw_translucer_abundance_desc: "Providing an overwhelming supply of minerals to the translucers of the $pw_building_helios_translucent_obelisk$, alongside increased subsidies, the production of £rare_crystals£ §Y$rare_crystals$§! can be greatly increased, at the cost of wasting some of the input."
 
     edict_pw_refiners_abundance: "Refinery Abundance"
-    edict_pw_refiners_abundance_desc: "Providing an overwhelming supply of minerals to the gas refiners of the $pw_building_demetrius_chemical_garden$, alongside increased subsides, the production of £exotic_gases£ §Y$exotic_gases$§! can be greatly increased, at the cost of wasting some of the input."
+    edict_pw_refiners_abundance_desc: "Providing an overwhelming supply of minerals to the gas refiners of the $pw_building_demetrius_chemical_garden$, alongside increased subsidies, the production of £exotic_gases£ §Y$exotic_gases$§! can be greatly increased, at the cost of wasting some of the input."
 
     #Strategic Resource Edicts
     edict_pw_crystal_personal_armor: "Crystalize Personal Armor"

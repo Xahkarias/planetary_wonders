@@ -757,7 +757,7 @@
     pw_wonder.2402.c: "The galaxy will see more worlds like this."
     pw_wonder.2402.d: "Behold the beautiful work of entropy."
     pw_wonder.2403.name: "The Rebirth of [THIS.GetName]"
-    pw_wonder.2403.desc: "Fortunately, no longer [THIS.GetName] suffers from the scars that made it a Tomb World. Unfortunately, no longer we can maintain a mausoleum where there is no tomb. Our death scholars and surveyors will leave the world for the living for now and cease their studies."
+    pw_wonder.2403.desc: "Fortunately, no longer [THIS.GetName] suffers from the scars that made it a Tomb World. Unfortunately, no longer we can maintain a mausoleum where there is no tomb. Our Tomb Scholars and Surveyors will leave the world for the living for now and cease their studies."
     pw_wonder.2403.a: "We can only hope the future does not erase the past."
     pw_wonder.2403.b: "Let the past rest bellow the foundations of the future."
     pw_message_blossoming_preserve_complete: "$pw_blossoming_preserve$ has been constructed on $PLANET|Y$."

@@ -29,6 +29,7 @@ pw_decision_integrated_urbanism = {
 		add_modifier = {
 			modifier = pw_mod_integrated_monuments
 		}
+		custom_tooltip = pw_mod_integrated_monuments_tooltip
 	}
 
 	ai_weight = {
