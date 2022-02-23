@@ -179,3 +179,10 @@ on_planet_class_changed = {
 		pw_wonder.2403 #Unhallowed Necropolis -> changed tomb world
 	}
 }
+
+# This = Planet
+on_blocker_cleared = {
+	events = {
+		pw_archaeology.10
+	}
+}
