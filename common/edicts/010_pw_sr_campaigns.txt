@@ -1,18 +1,23 @@
 # Named "001_pw_campaigns" so it is grouped with other energy campaigns
 
 # Values copied from "01_campaigns"
-@campaignSRCost = 50
-@campaignDuration = 3600
+
+@Edict1Cost = 20
+@Edict2Cost = 25
+@Edict3Cost = 30
+
+@EdictDuration = -1
 
 @pw_campaign_cost_minerals = 500
 
 pw_chemist_abundance = {
-	length = @campaignDuration
+	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = rare_edicts
-		cost = {
-			minerals = @pw_campaign_cost_minerals
+		upkeep = {
+			minerals = @Edict3Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -38,12 +43,13 @@ pw_chemist_abundance = {
 }
 
 pw_translucer_abundance = {
-	length = @campaignDuration
+	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = rare_edicts
-		cost = {
-			minerals = @pw_campaign_cost_minerals
+		upkeep = {
+			minerals = @Edict3Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -69,12 +75,13 @@ pw_translucer_abundance = {
 }
 
 pw_refiners_abundance = {
-	length = @campaignDuration
+	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = rare_edicts
-		cost = {
-			minerals = @pw_campaign_cost_minerals
+		upkeep = {
+			minerals = @Edict3Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -100,12 +107,13 @@ pw_refiners_abundance = {
 }
 
 pw_crystal_personal_armor = {
-	length = @campaignDuration
+	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = rare_edicts
-		cost = {
-			rare_crystals = @campaignSRCost
+		upkeep = {
+			rare_crystals = 1
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -131,12 +139,13 @@ pw_crystal_personal_armor = {
 }
 
 pw_exotic_nerve_gas = {
-	length = @campaignDuration
+	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = rare_edicts
-		cost = {
-			exotic_gases = @campaignSRCost
+		upkeep = {
+			exotic_gases = 1
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -173,12 +182,13 @@ pw_exotic_nerve_gas = {
 }
 
 pw_motes_portable_weapons = {
-	length = @campaignDuration
+	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = rare_edicts
-		cost = {
-			volatile_motes = @campaignSRCost
+		upkeep = {
+			volatile_motes = 1
+			multiplier = value:edict_size_effect
 		}
 	}
 

@@ -114,7 +114,7 @@ pw_building_transplanetary_logistics_network = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -130,15 +130,38 @@ pw_building_transplanetary_logistics_network = {
 		}
 	}
 
-	#Clerk Bureaucrat
+	#Clerk
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_egalitarian = yes }
 		}
 		modifier = {
-			job_bureaucrat_add = 1
 			job_clerk_add = 4
+		}
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
 		}
 	}
 
@@ -178,7 +201,7 @@ pw_building_transplanetary_logistics_network = {
 			owner = { is_egalitarian = yes }
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	triggered_desc = {
@@ -219,7 +242,6 @@ pw_building_transplanetary_logistics_network = {
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				OR = {
 					AND = {
@@ -389,7 +411,7 @@ pw_building_transhabitat_logistics_network = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -405,15 +427,38 @@ pw_building_transhabitat_logistics_network = {
 		}
 	}
 
-	#Clerk Bureaucrats
+	#Clerk
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_egalitarian = yes }
 		}
 		modifier = {
-			job_bureaucrat_add = 1
 			job_clerk_add = 4
+		}
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
 		}
 	}
 
@@ -453,7 +498,7 @@ pw_building_transhabitat_logistics_network = {
 			owner = { is_egalitarian = yes }
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	triggered_desc = {
@@ -494,7 +539,6 @@ pw_building_transhabitat_logistics_network = {
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				OR = {
 					AND = {
@@ -655,7 +699,7 @@ pw_building_festival_plaza = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 			job_culture_worker_add = 3
 		}
 	}
@@ -737,7 +781,7 @@ pw_building_festival_plaza = {
 			owner = { is_pacifist = yes }
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	triggered_desc = {
@@ -794,7 +838,6 @@ pw_building_festival_plaza = {
 		modifier = {
 			factor = 0
 			buildings_has_crystals = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				OR = {
 					AND = {
@@ -981,7 +1024,7 @@ pw_building_nostalgia_paradise = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -1102,7 +1145,7 @@ pw_building_nostalgia_paradise = {
 			owner = { is_regular_empire = yes }
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	#Executive
@@ -1195,7 +1238,6 @@ pw_building_nostalgia_paradise = {
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				OR = {
 					AND = {
@@ -1357,7 +1399,7 @@ pw_building_blossoming_preserve = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -1451,7 +1493,7 @@ pw_building_blossoming_preserve = {
 			owner = { is_gestalt = no }
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	#CEO
@@ -1499,7 +1541,6 @@ pw_building_blossoming_preserve = {
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				OR = {
 					AND = {

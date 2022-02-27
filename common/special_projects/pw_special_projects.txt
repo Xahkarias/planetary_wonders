@@ -22,9 +22,6 @@ special_project = {
 			}
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Move a mountain for the Galactic Model.
@@ -49,9 +46,6 @@ special_project = {
 				id = pw_wonder.806
 			}
 		}
-	}
-
-	on_fail = {
 	}
 }
 
@@ -78,9 +72,6 @@ special_project = {
 			}
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Align Magnetic Field for the Galactic Model.
@@ -105,9 +96,6 @@ special_project = {
 				id = pw_wonder.810
 			}
 		}
-	}
-
-	on_fail = {
 	}
 }
 
@@ -134,9 +122,6 @@ special_project = {
 			}
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Final Alignment for the Galactic Model.
@@ -155,9 +140,6 @@ special_project = {
 			id = pw_wonder.814
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Fix drones for the Enigma Engine
@@ -174,9 +156,6 @@ special_project = {
 	on_success = {
 		planet_event = { id = pw_wonder.1013 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Reform the capital with the Industrial Hearth
@@ -191,9 +170,6 @@ special_project = {
 
 	on_success = {
 		planet_event = { id = pw_wonder.1372 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -213,9 +189,6 @@ special_project = {
 			country_event = { id = pw_wonder.1321 }
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Remove Mantle Crucible habitability modifier
@@ -231,9 +204,6 @@ special_project = {
 
 	on_success = {
 		country_event = { id = pw_wonder.1323 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -258,9 +228,6 @@ special_project = {
 	on_success = {
 		ship_event = { id = pw_anomaly.101 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Anomaly: Delve into the secrets of the Enigma Engine.
@@ -281,9 +248,6 @@ special_project = {
 
 	on_success = {
 		ship_event = { id = pw_anomaly.102 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -306,9 +270,6 @@ special_project = {
 	on_success = {
 		ship_event = { id = pw_anomaly.111 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Anomaly: Discover the secrets of the Solipsist Debate Hall (Gestalt)
@@ -329,9 +290,6 @@ special_project = {
 
 	on_success = {
 		ship_event = { id = pw_anomaly.112 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -385,9 +343,6 @@ special_project = {
 			}
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Anomaly: Translate Poetry
@@ -408,9 +363,6 @@ special_project = {
 
 	on_success = {
 		ship_event = { id = pw_anomaly.142 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -433,9 +385,6 @@ special_project = {
 	on_success = {
 		ship_event = { id = pw_anomaly.181 }
 	}
-
-	on_fail = {
-	}
 }
 
 
@@ -454,9 +403,6 @@ special_project = {
 
 	on_success = {
 		planet_event = { id = pw_grand_archive.105 }
-	}
-
-	on_fail = {
 	}
 }
 #ARK Project (Frozen specimen, any barren cold or frozen planet)
@@ -517,9 +463,6 @@ special_project = {
 			country_event = { id = pw_grand_archive.110 }
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Library of Babel
@@ -537,9 +480,6 @@ special_project = {
 		owner = {
 			country_event = { id = pw_grand_archive.210 }
 		}
-	}
-
-	on_fail = {
 	}
 }
 
@@ -579,9 +519,6 @@ special_project = {
 	on_success = {
 		planet_event = { id = pw_grand_archive.306 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Cradle Initiative (Cold planet)
@@ -619,9 +556,6 @@ special_project = {
 
 	on_success = {
 		planet_event = { id = pw_grand_archive.308 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -661,9 +595,6 @@ special_project = {
 	on_success = {
 		planet_event = { id = pw_grand_archive.310 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Cradle Initiative (Exotic planet)
@@ -702,9 +633,6 @@ special_project = {
 	on_success = {
 		planet_event = { id = pw_grand_archive.312 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Particle Museum
@@ -722,9 +650,6 @@ special_project = {
 		owner = {
 			country_event = { id = pw_grand_archive.410 }
 		}
-	}
-
-	on_fail = {
 	}
 }
 
@@ -744,9 +669,6 @@ special_project = {
 			country_event = { id = pw_grand_archive.510 }
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Secure the Omnidatabase
@@ -764,9 +686,6 @@ special_project = {
 		owner = {
 			country_event = { id = pw_grand_archive.522 }
 		}
-	}
-
-	on_fail = {
 	}
 }
 
@@ -807,9 +726,6 @@ special_project = {
 	on_success = {
 		planet_event = { id = pw_grand_archive.606 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Zero-g Exposition
@@ -830,9 +746,6 @@ special_project = {
 	on_success = {
 		ship_event = { id = pw_grand_archive.710 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Mechanist Collection
@@ -850,9 +763,6 @@ special_project = {
 		owner = {
 			country_event = { id = pw_grand_archive.810 }
 		}
-	}
-
-	on_fail = {
 	}
 }
 
@@ -872,9 +782,6 @@ special_project = {
 			country_event = { id = pw_grand_archive.910 }
 		}
 	}
-
-	on_fail = {
-	}
 }
 
 #Meta-Architectural Complex(Space Elevator)
@@ -891,9 +798,6 @@ special_project = {
 
 	on_success = {
 		planet_event = { id = pw_grand_archive.905 }
-	}
-
-	on_fail = {
 	}
 }
 
@@ -912,9 +816,6 @@ special_project = {
 	on_success = {
 		planet_event = { id = pw_grand_archive.906 }
 	}
-
-	on_fail = {
-	}
 }
 
 #Meta-Architectural Complex(Guardian Angel)
@@ -931,8 +832,5 @@ special_project = {
 
 	on_success = {
 		planet_event = { id = pw_grand_archive.907 }
-	}
-
-	on_fail = {
 	}
 }

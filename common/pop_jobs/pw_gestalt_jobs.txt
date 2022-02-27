@@ -27,15 +27,6 @@ pw_mining_coordinator = {
 		upkeep = {
 			energy = @pw_job_director_resource_upkeep
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = mining_subsidies
-				}
-			}
-			energy = 1
-		}
 	}
 
 	planet_modifier = {
@@ -105,15 +96,6 @@ pw_energy_coordinator = {
 		category = planet_technician
 		produces = {
 			energy = @pw_job_director_resource_base
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = capacity_subsidies
-				}
-			}
-			energy = 1
 		}
 	}
 
@@ -188,15 +170,6 @@ pw_food_coordinator = {
 		}
 		upkeep = {
 			energy = @pw_job_director_resource_upkeep
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = farming_subsidies
-				}
-			}
-			energy = 1
 		}
 	}
 
@@ -274,15 +247,6 @@ pw_enigma_decipher = {
 		upkeep = {
 			energy = 15
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 2
-		}
 	}
 
 	planet_modifier = {
@@ -359,15 +323,6 @@ pw_domed_city_subject_drone = {
 			minerals = 8
 			food = 8
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1
-		}
 	}
 
 	planet_modifier = {
@@ -430,15 +385,6 @@ pw_poly_artisan_drone ={
 			minerals = 12
 			unity = 2
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = industrial_subsidies
-				}
-			}
-			energy = 2
-		}
 	}
 
 	weight = {
@@ -498,15 +444,6 @@ pw_lunar_archivist_gestalt = {
 				}
 			}
 			minerals = 5
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 2
 		}
 	}
 

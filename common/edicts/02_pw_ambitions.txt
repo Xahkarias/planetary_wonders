@@ -1,10 +1,15 @@
-# Ambition duration variable (copied from 02_ambitions.txt)
-@ambitionDuration = 3600
+##########################################################################
+# Unity Ambitions - edicts
+##########################################################################
 
+@ambitionDuration = -1
+@ambitionCost = 75
+@ambitionUpkeep = 75
+
+#Unused!!!
 pw_ambition_monumentality = {
 	length = @ambitionDuration
 	icon = "GFX_edict_type_time"
-	is_ambition = yes # Costs Unity scaled to tradition cost
 
 	potential = {
 		has_technology = tech_ascension_theory
@@ -17,6 +22,16 @@ pw_ambition_monumentality = {
 
 	resources = {
 		category = edicts
+
+		cost = {
+			unity = @ambitionCost
+			multiplier = value:edict_size_effect
+		}
+
+		upkeep = {
+			unity = @ambitionUpkeep
+			multiplier = value:edict_size_effect
+		}
 	}
 
 	effect = {
@@ -40,10 +55,10 @@ pw_ambition_monumentality = {
 	}
 }
 
+#Unused!!!
 pw_ambition_wonders_beyond_ambition = {
 	length = @ambitionDuration
 	icon = "GFX_edict_type_time"
-	is_ambition = yes # Costs Unity scaled to tradition cost
 
 	potential = {
 		always = no
@@ -57,6 +72,16 @@ pw_ambition_wonders_beyond_ambition = {
 
 	resources = {
 		category = edicts
+
+		cost = {
+			unity = @ambitionCost
+			multiplier = value:edict_size_effect
+		}
+
+		upkeep = {
+			unity = @ambitionUpkeep
+			multiplier = value:edict_size_effect
+		}
 	}
 
 	effect = {

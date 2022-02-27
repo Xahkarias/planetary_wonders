@@ -117,7 +117,6 @@ pw_building_living_spire_0 = {
 				buildings_has_crystals = no
 				buildings_has_motes = no
 			}
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -323,7 +322,7 @@ pw_building_living_spire_1 = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -392,7 +391,7 @@ pw_building_living_spire_1 = {
 			exists = owner
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 	#Executive
 	triggered_desc = {
@@ -435,7 +434,6 @@ pw_building_living_spire_1 = {
 				buildings_has_crystals = no
 				buildings_has_motes = no
 			}
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -642,7 +640,7 @@ pw_building_living_spire_2 = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -802,7 +800,7 @@ pw_building_living_spire_2 = {
 			exists = owner
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 	#Executive
 	triggered_desc = {
@@ -877,7 +875,6 @@ pw_building_living_spire_2 = {
 				buildings_has_crystals = no
 				buildings_has_motes = no
 			}
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -1085,7 +1082,7 @@ pw_building_living_spire_3 = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 2
+			job_politician_add = 2
 		}
 	}
 
@@ -1245,7 +1242,7 @@ pw_building_living_spire_3 = {
 			exists = owner
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 	#Executive
 	triggered_desc = {
@@ -1320,7 +1317,6 @@ pw_building_living_spire_3 = {
 				buildings_has_crystals = no
 				buildings_has_motes = no
 			}
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25

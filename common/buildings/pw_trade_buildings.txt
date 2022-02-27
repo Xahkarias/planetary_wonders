@@ -430,7 +430,6 @@ pw_building_space_elevator = {
 		weight = 25
 		modifier = {
 			factor = 0
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -716,8 +715,6 @@ pw_building_department_of_xenoeconomics = {
 		weight = 50
 		modifier = {
 			factor = 0
-			building_relaxed_basic_income_check = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				country_uses_consumer_goods = yes
 				has_monthly_income = {

@@ -414,8 +414,29 @@ pw_d_infrastructure_local_administration = {
 	planet_modifier = {
 		planet_jobs_specialist_produces_mult = 0.10
 		planet_jobs_unity_produces_mult = 0.10
-		job_bureaucrat_add = 1
 		planet_jobs_upkeep_mult = 0.10
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
+		}
 	}
 }
 
@@ -449,8 +470,29 @@ pw_d_infrastructure_distributed_education = {
 	planet_modifier = {
 		planet_jobs_specialist_produces_mult = 0.15
 		planet_jobs_unity_produces_mult = 0.15
-		job_bureaucrat_add = 1
 		planet_jobs_upkeep_mult = 0.15
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
+		}
 	}
 }
 
@@ -485,8 +527,29 @@ pw_d_infrastructure_arts_installations = {
 		planet_jobs_specialist_produces_mult = 0.20
 		planet_jobs_unity_produces_mult = 0.20
 		planet_amenities_add = 10
-		job_bureaucrat_add = 1
 		planet_jobs_upkeep_mult = 0.20
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
+		}
 	}
 
 	#Entertainers
@@ -773,7 +836,7 @@ pw_d_infrastructure_seat_of_power = {
 	}
 
 	country_modifier = {
-		country_edict_cap_add = 1
+		country_edict_fund_add = 50
 	}
 }
 
@@ -807,7 +870,7 @@ pw_d_infrastructure_throne_room = {
 	}
 
 	country_modifier = {
-		country_edict_cap_add = 1
+		country_edict_fund_add = 50
 	}
 }
 
@@ -841,7 +904,7 @@ pw_d_infrastructure_imperial_holy_throne = {
 	}
 
 	country_modifier = {
-		country_edict_cap_add = 2
+		country_edict_fund_add = 100
 	}
 }
 
@@ -1360,8 +1423,29 @@ pw_d_infrastructure_galactic_bureau = {
 		planet_jobs_specialist_produces_mult = 0.20
 		planet_crime_add = -20
 		trade_value_mult = 0.20
-		job_bureaucrat_add = 1
 		planet_jobs_upkeep_mult = 0.05
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
+		}
 	}
 
 	#Entertainer
@@ -1929,7 +2013,7 @@ pw_d_integration_shard_of_enigma = {
 
 	planet_modifier = {
 		planet_housing_add = 2
-		planet_evaluators_produces_mult = 0.10
+		planet_administrators_produces_mult = 0.10
 		job_pw_enigma_decipher_add = 1
 	}
 }

@@ -29,7 +29,7 @@ pw_tech_planetary_mega_engineering = {
 		factor = 0.5
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -131,7 +131,7 @@ pw_tech_space_elevator = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
@@ -245,7 +245,7 @@ pw_tech_space_elevator_orbital_commerce = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -336,7 +336,7 @@ pw_tech_space_elevator_orbital_logistics = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -407,7 +407,7 @@ pw_tech_space_elevator_planetary_orbital_logistics = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
@@ -498,7 +498,7 @@ pw_tech_space_elevator_orbital_planetary_logistics = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
@@ -594,7 +594,7 @@ pw_tech_space_elevator_orbital_districts = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
@@ -670,7 +670,7 @@ pw_tech_space_elevator_moon_colony_expansion = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
@@ -756,7 +756,7 @@ pw_tech_space_elevator_counterweight_habitat = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_voidcraft
@@ -898,7 +898,7 @@ pw_tech_space_elevator_intergalactic_assets_concession = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -985,7 +985,7 @@ pw_tech_particle_supercollider = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_particles
@@ -1063,7 +1063,7 @@ pw_tech_domed_city = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -1140,7 +1140,7 @@ pw_tech_abyssal_crater_test_site = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_propulsion
@@ -1217,7 +1217,7 @@ pw_tech_erebus_project = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -1302,7 +1302,7 @@ pw_tech_erebus_fracking_plant = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -1458,7 +1458,7 @@ pw_tech_helios_tower = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_field_manipulation
@@ -1542,7 +1542,7 @@ pw_tech_helios_translucent_obelisk = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_field_manipulation
@@ -1698,7 +1698,7 @@ pw_tech_demetrius_fields = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_biology
@@ -1790,7 +1790,7 @@ pw_tech_demetrius_chemical_garden = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_biology
@@ -1964,7 +1964,7 @@ pw_tech_resource_land_repurposing_1 = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -2077,7 +2077,7 @@ pw_tech_resource_land_repurposing_2 = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -2190,7 +2190,7 @@ pw_tech_resource_land_repurposing_3 = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -2287,7 +2287,7 @@ pw_tech_galactic_modeling = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -2412,7 +2412,7 @@ pw_tech_galactic_model_expanding_bureaucracy = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -2544,7 +2544,7 @@ pw_tech_galactic_model_expanding_bureaucracy_hive = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -2676,7 +2676,7 @@ pw_tech_galactic_model_expanding_bureaucracy_machine = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -2810,7 +2810,7 @@ pw_tech_utilitarian_vigilance = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -2919,7 +2919,7 @@ pw_tech_panopticon_penal_industries = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -2986,7 +2986,7 @@ pw_tech_panopticon_criminal_reintegration = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3043,7 +3043,7 @@ pw_tech_panopticon_reformatory_bureaucratic_work = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3110,7 +3110,7 @@ pw_tech_panopticon_enlist_prisoners = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3177,7 +3177,7 @@ pw_tech_panopticon_repentance_preaching = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3244,7 +3244,7 @@ pw_tech_panopticon_prisoner_subjects = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3321,7 +3321,7 @@ pw_tech_panopticon_racialized_sentencing = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3389,7 +3389,7 @@ pw_tech_panopticon_galpol_detention_center = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3473,7 +3473,7 @@ pw_tech_metaphysical_singularity = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -3560,7 +3560,7 @@ pw_tech_metacognition_dialectics = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -3653,7 +3653,7 @@ pw_tech_guardian_angel = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -3789,7 +3789,7 @@ pw_tech_stellar_sentinel = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -3907,7 +3907,7 @@ pw_tech_planetary_mantle_production = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_materials
@@ -4016,7 +4016,7 @@ pw_tech_titan_forge = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_materials
@@ -4194,7 +4194,7 @@ pw_tech_industrial_hearth = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -4437,7 +4437,7 @@ pw_tech_great_art_exhibition = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -4561,7 +4561,7 @@ pw_tech_artistic_dissemination = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -4679,7 +4679,7 @@ pw_tech_xeno_art_integration = {
 		factor = 0.5
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -4829,7 +4829,7 @@ pw_tech_artistic_exaltation = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -4943,7 +4943,7 @@ pw_tech_xeno_art_alienation = {
 		factor = 0.5
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -5092,7 +5092,7 @@ pw_tech_artistic_defamation = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -5200,7 +5200,7 @@ pw_tech_spiritual_artifacts_studies = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -5395,7 +5395,7 @@ pw_tech_materialist_archiving = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -5796,7 +5796,7 @@ pw_tech_transplanetary_logistics = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -5906,7 +5906,7 @@ pw_tech_egalitarian_distribution_services = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -6012,7 +6012,7 @@ pw_tech_egalitarian_emergency_services = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -6118,7 +6118,7 @@ pw_tech_egalitarian_cultural_development = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -6224,7 +6224,7 @@ pw_tech_egalitarian_industrial_development = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -6372,7 +6372,7 @@ pw_tech_elitist_urbanism = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -6451,11 +6451,11 @@ pw_tech_elitist_urbanism = {
 
 		modifier = {
 			factor = 1.5
-			has_authority = auth_dictatorial
+			is_autocracy = yes
 		}
 
 		modifier = {
-			factor = 2
+			factor = 1.5
 			has_authority = auth_imperial
 		}
 	}
@@ -6492,7 +6492,7 @@ pw_tech_capital_developments = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -6609,7 +6609,7 @@ pw_tech_capital_developments_luxury_retreat = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -6720,7 +6720,7 @@ pw_tech_capital_developments_wardens_directorate = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -6831,7 +6831,7 @@ pw_tech_capital_developments_overseers_ring = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -6941,7 +6941,7 @@ pw_tech_centralized_emergency_developments = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -7043,7 +7043,7 @@ pw_tech_centralized_power_developments = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -7146,7 +7146,7 @@ pw_tech_central_council_ambassador_chambers = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7233,7 +7233,7 @@ pw_tech_central_council_internal_affairs = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7320,7 +7320,7 @@ pw_tech_central_council_intellectual_circles = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -7397,7 +7397,7 @@ pw_tech_central_council_holy_tribunal = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7489,7 +7489,7 @@ pw_tech_central_council_ballroom = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7571,7 +7571,7 @@ pw_tech_central_council_war_room = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -7666,7 +7666,7 @@ pw_tech_festivals_of_harmony = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7765,7 +7765,7 @@ pw_tech_harvest_festival = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7831,7 +7831,7 @@ pw_tech_commemorate_perfection = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7896,7 +7896,7 @@ pw_tech_peace_manipulation = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -7973,7 +7973,7 @@ pw_tech_brace_against_the_storm = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -8073,7 +8073,7 @@ pw_tech_parades_of_supremacy = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8191,7 +8191,7 @@ pw_tech_flight_of_the_corvettes = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8257,7 +8257,7 @@ pw_tech_national_march = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8323,7 +8323,7 @@ pw_tech_combat_demonstrations = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8389,7 +8389,7 @@ pw_tech_merchants_of_war = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8455,7 +8455,7 @@ pw_tech_march_of_the_dead = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8520,7 +8520,7 @@ pw_tech_vision_beyond_war = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8612,7 +8612,7 @@ pw_tech_into_the_storm = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_military_theory
@@ -8717,7 +8717,7 @@ pw_tech_living_spire = {
 		factor = 0.20
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -8915,7 +8915,7 @@ pw_tech_conduit_of_unity = {
 		factor = 0.20
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -9064,7 +9064,7 @@ pw_tech_drone_integration = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = leader_trait_expertise_industry
@@ -9152,7 +9152,7 @@ pw_tech_communication_integration = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -9241,7 +9241,7 @@ pw_tech_shard_of_enigma = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = leader_trait_expertise_computing
@@ -9330,7 +9330,7 @@ pw_tech_chamber_of_reflection = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -9424,7 +9424,7 @@ pw_tech_augmented_reality_resorts = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -9564,7 +9564,7 @@ pw_tech_worldly_mausoleums = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -9710,7 +9710,7 @@ pw_tech_cyberecology = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_new_worlds
@@ -9850,7 +9850,7 @@ pw_tech_xenoeconomy = {
 		factor = @pw_tech_weight_mod
 
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -9960,7 +9960,7 @@ pw_tech_exploitation_of_belligerence = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -10042,7 +10042,7 @@ pw_tech_exploitation_of_philosophy = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -10124,7 +10124,7 @@ pw_tech_exploitation_of_diplomacy = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -10206,7 +10206,7 @@ pw_tech_exploitation_of_hierarchy = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
@@ -10283,7 +10283,7 @@ pw_tech_criminal_exploitation = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 1.5
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft

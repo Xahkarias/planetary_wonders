@@ -119,7 +119,6 @@ pw_building_conduit_of_unity_0 = {
 				buildings_has_crystals = no
 				buildings_has_motes = no
 			}
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -467,7 +466,6 @@ pw_building_conduit_of_unity_1 = {
 				buildings_has_crystals = no
 				buildings_has_motes = no
 			}
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -999,7 +997,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			planet_synapse_drones_produces_mult = 0.10
+			planet_administrators_produces_mult = 0.10
 		}
 	}
 	triggered_planet_modifier = {

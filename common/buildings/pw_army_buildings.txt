@@ -284,7 +284,6 @@ pw_building_guardian_angel = {
 		modifier = {
 			factor = 0
 			buildings_has_motes = no
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -618,7 +617,6 @@ pw_building_stellar_sentinel = {
 		modifier = {
 			factor = 0
 			buildings_has_motes = no
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -783,7 +781,7 @@ pw_building_martial_avenue = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 			job_culture_worker_add = 2
 		}
 	}
@@ -894,7 +892,7 @@ pw_building_martial_avenue = {
 			owner = { is_militarist = yes }
 			owner = { is_megacorp = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	triggered_desc = {
@@ -968,7 +966,6 @@ pw_building_martial_avenue = {
 		modifier = {
 			factor = 0
 			buildings_has_motes = no
-			building_relaxed_basic_income_check = no
 			owner = {
 				OR = {
 					AND = {

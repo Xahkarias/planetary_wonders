@@ -28,15 +28,6 @@ pw_mining_director = {
 		upkeep = {
 			consumer_goods = @pw_job_director_resource_upkeep
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = mining_subsidies
-				}
-			}
-			energy = 1
-		}
 	}
 
 	planet_modifier = {
@@ -157,15 +148,6 @@ pw_energy_director = {
 		}
 		upkeep = {
 			consumer_goods = @pw_job_director_resource_upkeep
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = capacity_subsidies
-				}
-			}
-			energy = 1
 		}
 	}
 
@@ -297,15 +279,6 @@ pw_agriculture_director = {
 		}
 		upkeep = {
 			consumer_goods = @pw_job_director_resource_upkeep
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = farming_subsidies
-				}
-			}
-			energy = 1
 		}
 	}
 
@@ -463,24 +436,8 @@ pw_domed_city_test_subject = {
 		produces = {
 			society_research = 5
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 1
-		}
 		upkeep = {
 			consumer_goods = 5
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1
 		}
 	}
 
@@ -611,15 +568,6 @@ pw_big_brother = {
 		category = planet_enforcers
 		produces = {
 			unity = 10
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_valid_civic = civic_police_state
-				}
-			}
-			unity = 5
 		}
 		upkeep = {
 			energy = 10
@@ -820,15 +768,6 @@ pw_poly_artisan = {
 		}
 		upkeep = {
 			minerals = 12
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = industrial_subsidies
-				}
-			}
-			energy = 2
 		}
 	}
 
@@ -1265,24 +1204,8 @@ pw_grand_archivist = {
 			society_research = 5
 			unity = 2
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 2
-		}
 		upkeep = {
 			consumer_goods = 3
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 2
 		}
 	}
 
@@ -1434,24 +1357,8 @@ pw_master_archivist = {
 			society_research = 6
 			unity = 3
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 3
-		}
 		upkeep = {
 			consumer_goods = 4
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 3
 		}
 	}
 
@@ -1628,24 +1535,8 @@ pw_lunar_archivist = {
 			society_research = 4
 			unity = 2
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 2
-		}
 		upkeep = {
 			consumer_goods = 2
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 2
 		}
 	}
 
@@ -1793,13 +1684,6 @@ pw_relic_keeper = {
 		produces = {
 			unity = 6
 			society_research = 4
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_exalted_priesthood }
-			}
-			unity = 2
 		}
 		upkeep = {
 			consumer_goods = 4
@@ -1986,24 +1870,8 @@ pw_tomb_scholar = {
 			physics_research = 4
 			society_research = 4
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 1
-		}
 		upkeep = {
 			consumer_goods = 2
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
 		}
 	}
 

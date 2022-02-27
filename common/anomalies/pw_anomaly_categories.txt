@@ -274,7 +274,7 @@ pw_anomaly_FC_forgotten_throne = {
 			uninhabitable_regular_planet = yes
 			from = {
 				owner = {
-					has_authority = auth_imperial
+					is_autocracy = yes
 				}
 			}
 		}

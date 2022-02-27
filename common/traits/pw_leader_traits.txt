@@ -1,7 +1,6 @@
 # Ruler Traits
 pw_leader_trait_ruler_codex_of_past_ages = {
 	cost = 0
-	modification = no
 	initial = no
 	randomized = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_intellectual.dds"
@@ -9,9 +8,9 @@ pw_leader_trait_ruler_codex_of_past_ages = {
 		species_leader_exp_gain = 0.25
 	}
 	modifier = {
-		country_base_influence_produces_add = 0.5
-		edicts_cost_mult = -0.1
-		empire_size_mult = -0.15
+		country_base_influence_produces_add = 0.50
+		edicts_cost_mult = -0.10
+		edicts_upkeep_mult = -0.10
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -20,13 +19,12 @@ pw_leader_trait_ruler_codex_of_past_ages = {
 #Granted by Forbidden City anomaly
 pw_leader_trait_ruler_millenary_throne = {
 	cost = 1
-	modification = no
 	initial = no
 	randomized = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_armchair_commander.dds"
 	modifier = {
 		country_base_influence_produces_add = 0.5
-		country_edict_cap_add = 1
+		country_edict_fund_add = 50
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -36,7 +34,6 @@ pw_leader_trait_ruler_millenary_throne = {
 
 pw_leader_trait_governor_codex_of_past_ages = {
 	cost = 1
-	modification = no
 	initial = no
 	randomized = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_intellectual.dds"
@@ -55,7 +52,6 @@ pw_leader_trait_governor_codex_of_past_ages = {
 
 pw_leader_trait_scientist_codex_of_past_ages = {
 	cost = 1
-	modification = no
 	initial = no
 	randomized = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_intellectual.dds"
@@ -75,7 +71,6 @@ pw_leader_trait_scientist_codex_of_past_ages = {
 
 pw_leader_trait_admiral_codex_of_past_ages = {
 	cost = 1
-	modification = no
 	initial = no
 	randomized = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_intellectual.dds"
@@ -95,7 +90,6 @@ pw_leader_trait_admiral_codex_of_past_ages = {
 
 pw_leader_trait_general_codex_of_past_ages = {
 	cost = 1
-	modification = no
 	initial = no
 	randomized = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_intellectual.dds"

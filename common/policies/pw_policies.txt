@@ -113,7 +113,7 @@ pw_policy_modeling_focus = {
 		name = pw_policy_modeling_focus_unfocused_modeling
 
 		modifier = {
-			country_admin_cap_mult = 0.10
+			planet_administrators_produces_mult = 0.10
 		}
 
 		ai_weight = {
@@ -129,7 +129,7 @@ pw_policy_modeling_focus = {
 			empire_size_pops_mult = -0.10
 			planet_districts_cost_mult = -0.10
 			country_starbase_influence_cost_mult = -0.10
-			planet_bureaucrats_upkeep_mult = 0.25
+			planet_administrators_upkeep_mult = 0.25
 		}
 
 		ai_weight = {
@@ -149,7 +149,7 @@ pw_policy_modeling_focus = {
 			empire_size_colonies_mult = -0.10
 			local_trade_protection_add = 15
 			intel_encryption_add = 1
-			planet_bureaucrats_upkeep_mult = 0.25
+			planet_administrators_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -169,7 +169,7 @@ pw_policy_modeling_focus = {
 			empire_size_colonies_mult = -0.10
 			planet_amenities_no_happiness_mult = 0.05
 			intel_encryption_add = 1
-			planet_bureaucrats_upkeep_mult = 0.25
+			planet_administrators_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -184,7 +184,7 @@ pw_policy_modeling_focus = {
 			diplomacy_upkeep_mult = -0.25
 			envoys_add = 1
 			diplo_weight_pops_mult = 0.10
-			country_admin_cap_mult = -0.15
+			planet_administrators_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -200,7 +200,7 @@ pw_policy_modeling_focus = {
 			add_base_country_intel = 10
 			envoys_add = 1
 			intel_decryption_add = 1
-			country_admin_cap_mult = -0.15
+			planet_administrators_upkeep_mult = 0.20
 		}
 
 		ai_weight = {

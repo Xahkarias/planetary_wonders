@@ -8,7 +8,7 @@ pw_decision_integrated_urbanism = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 75
+			unity = 500
 			minerals = 1000
 		}
 	}
@@ -44,7 +44,7 @@ pw_decision_remove_integrated_urbanism = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 		}
 	}
 
@@ -75,7 +75,7 @@ pw_decision_erebus_prospecting = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_resource_influence_cost
+			unity = 250
 			volatile_motes = @pw_decision_resource_rare_resource_cost
 		}
 	}
@@ -125,7 +125,7 @@ pw_decision_helios_seeding = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_resource_influence_cost
+			unity = 250
 			rare_crystals = @pw_decision_resource_rare_resource_cost
 		}
 	}
@@ -175,7 +175,7 @@ pw_decision_demetrius_harvesting = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_resource_influence_cost
+			unity = 250
 			exotic_gases = @pw_decision_resource_rare_resource_cost
 		}
 	}
@@ -227,14 +227,14 @@ pw_decision_manage_land_repurposing = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
 				exists = owner
 				owner = { has_ascension_perk = ap_mastery_of_nature }
 			}
-			influence = -25
+			unity = -250
 		}
 	}
 
@@ -324,7 +324,7 @@ pw_decision_SE_install_space_ramp = {
 		cost = {
 			minerals = @pw_se_infrastructure_cost
 			alloys = @pw_se_infrastructure_cost_extra
-			influence = @pw_se_infrastructure_influence_cost
+			unity = 250
 		}
 	}
 
@@ -429,7 +429,7 @@ pw_decision_SE_install_skyhook = {
 		cost = {
 			minerals = @pw_se_infrastructure_cost
 			alloys = @pw_se_infrastructure_cost_extra
-			influence = @pw_se_infrastructure_influence_cost
+			unity = 250
 		}
 	}
 
@@ -534,7 +534,7 @@ pw_decision_SE_moon_colony_expansion = {
 		cost = {
 			minerals = @pw_se_expansion_cost
 			alloys = @pw_se_expansion_cost_extra
-			influence = @pw_se_expansion_influence_cost
+			unity = 500
 		}
 	}
 
@@ -649,7 +649,7 @@ pw_decision_SE_orbital_districts = {
 		cost = {
 			minerals = @pw_se_expansion_cost
 			alloys = @pw_se_expansion_cost_extra
-			influence = @pw_se_expansion_influence_cost
+			unity = 500
 		}
 	}
 
@@ -837,7 +837,7 @@ pw_decision_SE_open_for_galactic_market = {
 		category = decisions
 		cost = {
 			energy = 500
-			influence = 25
+			unity = 250
 		}
 	}
 
@@ -931,7 +931,7 @@ pw_decision_SE_change_galactic_market_bonus = {
 		category = decisions
 		cost = {
 			energy = 500
-			influence = 25
+			unity = 250
 		}
 	}
 
@@ -1004,7 +1004,7 @@ pw_decision_rebuild_flying_fortress = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 			minerals = 1000
 		}
 	}
@@ -1056,7 +1056,7 @@ pw_decision_mantle_crucible_alloys = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_resource_influence_cost
+			unity = 250
 			volatile_motes = @pw_building_cost_rare_half
 		}
 	}
@@ -1111,7 +1111,7 @@ pw_decision_mantle_crucible_consumer_goods = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = @pw_decision_resource_influence_cost
+			unity = 250
 			rare_crystals = @pw_building_cost_rare_half
 		}
 	}
@@ -1167,8 +1167,9 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_1
 		}
 	}
 
@@ -1249,52 +1250,9 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets < 5
-				}
-			}
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 5
-					num_owned_planets < 10
-				}
-			}
-			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 10
-					num_owned_planets < 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 20
-					num_owned_planets < 30
-				}
-			}
-			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 30
-				}
-			}
-			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_1
 		}
 	}
 
@@ -1374,52 +1332,9 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets < 5
-				}
-			}
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 5
-					num_owned_planets < 10
-				}
-			}
-			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 10
-					num_owned_planets < 15
-				}
-			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 15
-					num_owned_planets < 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_2
 		}
 	}
 
@@ -1489,8 +1404,9 @@ pw_decision_fair_of_worlds_planetary_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_1
 		}
 	}
 
@@ -1556,52 +1472,9 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets < 5
-				}
-			}
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 5
-					num_owned_planets < 10
-				}
-			}
-			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 10
-					num_owned_planets < 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 20
-					num_owned_planets < 30
-				}
-			}
-			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 30
-				}
-			}
-			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_1
 		}
 	}
 
@@ -1678,52 +1551,9 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets < 5
-				}
-			}
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 5
-					num_owned_planets < 10
-				}
-			}
-			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 10
-					num_owned_planets < 15
-				}
-			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 15
-					num_owned_planets < 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_2
 		}
 	}
 
@@ -1785,8 +1615,9 @@ pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_1
 		}
 	}
 
@@ -1851,52 +1682,9 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets < 5
-				}
-			}
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 5
-					num_owned_planets < 10
-				}
-			}
-			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 10
-					num_owned_planets < 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 20
-					num_owned_planets < 30
-				}
-			}
-			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 30
-				}
-			}
-			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_1
 		}
 	}
 
@@ -1973,52 +1761,9 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 	resources = {
 		category = decisions
 		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets < 5
-				}
-			}
-			unity = @pw_decision_exhibition_cost_1
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 5
-					num_owned_planets < 10
-				}
-			}
-			unity = @pw_decision_exhibition_cost_2
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 10
-					num_owned_planets < 15
-				}
-			}
-			unity = @pw_decision_exhibition_cost_3
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 15
-					num_owned_planets < 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_4
-			energy = @pw_decision_exhibition_cost_energy
-		}
-		cost = {
-			trigger = {
-				owner = {
-					num_owned_planets > 20
-				}
-			}
-			unity = @pw_decision_exhibition_cost_5
-			energy = @pw_decision_exhibition_cost_energy
+			unity = @pw_decision_exhibition_cost_base
+			energy = @pw_decision_exhibition_cost_base
+			multiplier = value:pw_art_exhibition_cost_2
 		}
 	}
 
@@ -2143,7 +1888,7 @@ pw_decision_festivities_of_plenitude = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2235,7 +1980,7 @@ pw_decision_fertility_bacchanal = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2327,7 +2072,7 @@ pw_decision_cultivate_peace = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2419,7 +2164,7 @@ pw_decision_harvest_festival = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2511,7 +2256,7 @@ pw_decision_commemorate_perfection = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2603,7 +2348,7 @@ pw_decision_cancel_festivities = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 		}
 	}
 
@@ -2658,7 +2403,7 @@ pw_decision_military_parade = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2774,7 +2519,7 @@ pw_decision_flight_of_the_corvettes = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -2890,7 +2635,7 @@ pw_decision_national_march = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -3006,7 +2751,7 @@ pw_decision_combat_demonstrations = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -3122,7 +2867,7 @@ pw_decision_merchants_of_war = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -3238,7 +2983,7 @@ pw_decision_march_of_the_dead = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 		cost = {
 			trigger = {
@@ -3354,7 +3099,7 @@ pw_decision_cancel_parades = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 		}
 	}
 
@@ -3423,7 +3168,7 @@ pw_decision_religious_persecution = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 300
 		}
 	}
 
@@ -3476,7 +3221,7 @@ pw_decision_living_spire_change_designation = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 			unity = 10000
 		}
 	}
@@ -3521,7 +3266,7 @@ pw_decision_nostalgia_paradise_change_theme = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 			energy = 1000
 		}
 	}
@@ -3563,7 +3308,7 @@ pw_decision_mausoleum_world = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 100
+			unity = 1000
 		}
 	}
 
@@ -3623,7 +3368,7 @@ pw_decision_remove_mausoleum_world = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			unity = 500
 		}
 	}
 
@@ -3661,7 +3406,7 @@ pw_decision_release_sedative_gas = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 			exotic_gases = 250
 		}
 	}
@@ -3712,7 +3457,7 @@ pw_decision_living_metal_construction = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			unity = 250
 			sr_living_metal = 500
 		}
 	}

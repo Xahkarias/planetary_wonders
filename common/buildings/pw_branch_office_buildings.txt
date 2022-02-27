@@ -49,6 +49,7 @@ pw_building_bloodsports_arena = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		upkeep = {
 			energy = @pw_building_branch_office_upkeep
@@ -180,6 +181,7 @@ pw_building_meditation_garden = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		upkeep = {
 			energy = @pw_building_branch_office_upkeep
@@ -194,7 +196,30 @@ pw_building_meditation_garden = {
 		branch_office_value_mult = 0.15
 		pop_ethic_pacifist_attraction_mult = 0.20
 		job_clerk_add = 1
-		job_bureaucrat_add = 1
+	}
+
+	#Bureaucrat
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { is_spiritualist = no }
+		}
+		modifier = {
+			job_bureaucrat_add = 1
+		}
+	}
+
+	#Priest (spiritualist)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { is_spiritualist = yes }
+		}
+		modifier = {
+			job_priest_add = 1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -286,6 +311,7 @@ pw_building_innovation_hub = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		produces = {
 			society_research = 12
@@ -392,6 +418,7 @@ pw_building_salvation_shrine = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		produces = {
 			unity = 15
@@ -508,6 +535,7 @@ pw_building_exotic_beauty_center = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		upkeep = {
 			energy = @pw_building_branch_office_upkeep
@@ -614,6 +642,7 @@ pw_building_national_pride_gallery = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		upkeep = {
 			energy = @pw_building_branch_office_upkeep
@@ -720,6 +749,7 @@ pw_building_aristocracy_tower = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		produces = {
 			energy = 15
@@ -824,6 +854,7 @@ pw_building_factory_city = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = @pw_building_branch_office_cost
+			influence = 25
 		}
 		produces = {
 			consumer_goods = 8

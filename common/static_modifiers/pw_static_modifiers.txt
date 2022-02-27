@@ -767,8 +767,8 @@ pw_pm_living_spire_designation_tradition = {
 pw_pm_living_spire_designation_administration = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_administration.dds"
 	icon_frame = @pw_icon_frame_green
-	job_bureaucrat_add = 2
-	planet_bureaucrats_upkeep_mult = -0.25
+	job_politician_add = 1
+	planet_administrators_upkeep_mult = -0.25
 }
 
 pw_pm_living_spire_designation_death_cult = {

@@ -11,7 +11,10 @@ planet_event = {
 
 	immediate = {
 		owner = {
-			set_country_flag = pw_ongoing_art_exhibition
+			set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 		}
 	}
 
@@ -456,7 +459,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = pw_ongoing_art_exhibition
+		set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 	}
 
 	option = { #War Propaganda
@@ -1107,7 +1113,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = pw_ongoing_art_exhibition
+		set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 	}
 
 	option = { #War Propaganda
@@ -1684,7 +1693,10 @@ planet_event = {
 
 	immediate = {
 		owner = {
-			set_country_flag = pw_ongoing_art_exhibition
+			set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 		}
 	}
 
@@ -2241,7 +2253,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = pw_ongoing_art_exhibition
+		set_timed_country_flag = {
+			flag = pw_ongoing_art_exhibition
+			days = @pw_art_exhibition_duration
+		}
 	}
 
 	option = { #War Propaganda
@@ -2968,7 +2983,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = pw_ongoing_art_exhibition
+		set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 	}
 
 	option = { #War Propaganda
@@ -3621,7 +3639,10 @@ planet_event = {
 
 	immediate = {
 		owner = {
-			set_country_flag = pw_ongoing_art_exhibition
+			set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 		}
 	}
 
@@ -4178,7 +4199,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = pw_ongoing_art_exhibition
+		set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 	}
 
 	option = { #War Propaganda
@@ -4905,7 +4929,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = pw_ongoing_art_exhibition
+		set_timed_country_flag = {
+				flag = pw_ongoing_art_exhibition
+				days = @pw_art_exhibition_duration
+			}
 	}
 
 	option = { #War Propaganda

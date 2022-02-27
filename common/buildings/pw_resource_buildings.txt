@@ -939,20 +939,14 @@ pw_building_erebus_project = {
 
 	triggered_desc = {
 		trigger = {
-			NOR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_regular_empire = yes }
 		}
 		text = pw_erebus_project_jobs_add_regular
 	}
 
 	triggered_desc = {
 		trigger = {
-			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = yes }
 		}
 		text = pw_erebus_project_jobs_add_gestalt
 	}
@@ -994,11 +988,7 @@ pw_building_erebus_project = {
 	}
 
 	ai_weight = {
-		weight = 30
-		modifier = {
-			factor = 0
-			building_relaxed_basic_income_check = no
-		}
+		weight = 10
 		modifier = {
 			factor = 0.25
 			free_building_slots < 1
@@ -1021,11 +1011,11 @@ pw_building_erebus_project = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 10
 			has_designation = col_mining
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt
@@ -1036,7 +1026,7 @@ pw_building_erebus_project = {
 			districts_good_minerals = yes
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			exists = owner
 			owner = {
 				has_monthly_income = {
@@ -1044,6 +1034,9 @@ pw_building_erebus_project = {
 					value < 100
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_mining_district_count
 		}
 	}
 }
@@ -2090,10 +2083,6 @@ pw_building_erebus_fracking_plant = {
 	ai_weight = {
 		weight = 35
 		modifier = {
-			factor = 0
-			building_relaxed_basic_income_check = no
-		}
-		modifier = {
 			factor = 0.25
 			free_building_slots < 1
 			free_district_slots < 1
@@ -2115,7 +2104,7 @@ pw_building_erebus_fracking_plant = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 5
 			has_designation = col_mining
 		}
 		modifier = {
@@ -2138,6 +2127,9 @@ pw_building_erebus_fracking_plant = {
 					value < 100
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_mining_district_count
 		}
 	}
 }
@@ -2217,6 +2209,7 @@ pw_building_helios_tower = {
 				planet = {
 					OR = {
 						has_designation = col_generator
+						has_designation = col_ring_generator
 						has_designation = col_habitat_energy
 					}
 				}
@@ -2247,8 +2240,9 @@ pw_building_helios_tower = {
 			trigger = {
 				planet = {
 					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
+						has_designation = col_generator
+						has_designation = col_ring_generator
+						has_designation = col_habitat_energy
 					}
 				}
 			}
@@ -3141,7 +3135,7 @@ pw_building_helios_tower = {
 	}
 
 	ai_weight = {
-		weight = 30
+		weight = 10
 		modifier = {
 			factor = 0.25
 			free_building_slots < 1
@@ -3156,7 +3150,7 @@ pw_building_helios_tower = {
 			NOT = { has_building_construction = pw_building_helios_tower }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			exists = owner
 			OR = {
 				owner = { is_machine_empire = yes }
@@ -3174,11 +3168,11 @@ pw_building_helios_tower = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			districts_good_energy = yes
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			exists = owner
 			owner = {
 				has_monthly_income = {
@@ -3186,6 +3180,9 @@ pw_building_helios_tower = {
 					value < 100
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_generator_district_count
 		}
 	}
 }
@@ -3261,6 +3258,7 @@ pw_building_helios_translucent_obelisk = {
 				planet = {
 					OR = {
 						has_designation = col_generator
+						has_designation = col_ring_generator
 						has_designation = col_habitat_energy
 					}
 				}
@@ -3291,8 +3289,9 @@ pw_building_helios_translucent_obelisk = {
 			trigger = {
 				planet = {
 					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
+						has_designation = col_generator
+						has_designation = col_ring_generator
+						has_designation = col_habitat_energy
 					}
 				}
 			}
@@ -4275,9 +4274,12 @@ pw_building_helios_translucent_obelisk = {
 			owner = {
 				has_monthly_income = {
 					resource = energy
-					value < 100
+					value < 300
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_generator_district_count
 		}
 	}
 }
@@ -5827,7 +5829,7 @@ pw_building_demetrius_fields = {
 	}
 
 	ai_weight = {
-		weight = 30
+		weight = 10
 		modifier = {
 			factor = 0.25
 			free_building_slots < 1
@@ -5872,6 +5874,9 @@ pw_building_demetrius_fields = {
 					value < 100
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_farming_district_count
 		}
 	}
 }
@@ -7510,6 +7515,9 @@ pw_building_demetrius_chemical_garden = {
 					value < 100
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_farming_district_count
 		}
 	}
 }

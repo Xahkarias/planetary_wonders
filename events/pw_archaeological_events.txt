@@ -21,6 +21,8 @@ planet_event = {
 				is_deposit_type = d_mountain_range
 				is_deposit_type = d_bomb_crater
 				is_deposit_type = d_dangerous_wildlife_blocker
+				is_deposit_type = d_dense_jungle
+				is_deposit_type = d_quicksand_basin
 			}
 		}
 		owner = {

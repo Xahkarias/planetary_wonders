@@ -118,6 +118,7 @@
 @pw_se_expansion_cost_extra = 1000
 @pw_se_expansion_influence_cost = 50
 
+@pw_decision_exhibition_cost_base = 500
 @pw_decision_exhibition_cost_energy = 1000
 @pw_decision_exhibition_cost_1 = 10000
 @pw_decision_exhibition_cost_2 = 20000
@@ -128,49 +129,49 @@
 
 
 #Holy Reliquary artifacts cost check:
-@pw_holy_reliquary_sanctify_cost_check_0 = 20000
-@pw_holy_reliquary_sanctify_cost_check_1 = 25000
-@pw_holy_reliquary_sanctify_cost_check_2 = 30000
-@pw_holy_reliquary_sanctify_cost_check_3 = 40000
-@pw_holy_reliquary_sanctify_cost_check_4 = 50000
-@pw_holy_reliquary_sanctify_cost_check_5 = 75000
-@pw_holy_reliquary_sanctify_cost_check_6 = 100000
-@pw_holy_reliquary_sanctify_cost_check_7 = 125000
+@pw_holy_reliquary_sanctify_cost_check_0 = 1000
+@pw_holy_reliquary_sanctify_cost_check_1 = 1500
+@pw_holy_reliquary_sanctify_cost_check_2 = 2000
+@pw_holy_reliquary_sanctify_cost_check_3 = 2500
+@pw_holy_reliquary_sanctify_cost_check_4 = 3000
+@pw_holy_reliquary_sanctify_cost_check_5 = 3500
+@pw_holy_reliquary_sanctify_cost_check_6 = 4000
+@pw_holy_reliquary_sanctify_cost_check_7 = 5000
 #Holy Reliquary artifacts cost (SHOULD BE EQUAL BUT NEGATIVE):
-@pw_holy_reliquary_sanctify_cost_0 = -20000
-@pw_holy_reliquary_sanctify_cost_1 = -25000
-@pw_holy_reliquary_sanctify_cost_2 = -30000
-@pw_holy_reliquary_sanctify_cost_3 = -40000
-@pw_holy_reliquary_sanctify_cost_4 = -50000
-@pw_holy_reliquary_sanctify_cost_5 = -75000
-@pw_holy_reliquary_sanctify_cost_6 = -100000
-@pw_holy_reliquary_sanctify_cost_7 = -125000
+@pw_holy_reliquary_sanctify_cost_0 = -1000
+@pw_holy_reliquary_sanctify_cost_1 = -1500
+@pw_holy_reliquary_sanctify_cost_2 = -2000
+@pw_holy_reliquary_sanctify_cost_3 = -2500
+@pw_holy_reliquary_sanctify_cost_4 = -3000
+@pw_holy_reliquary_sanctify_cost_5 = -3500
+@pw_holy_reliquary_sanctify_cost_6 = -4000
+@pw_holy_reliquary_sanctify_cost_7 = -5000
 #Holy Reliquary change modifier influence cost:
-@pw_holy_reliquary_change_artifact_cost_check = 150
-@pw_holy_reliquary_change_artifact_cost = -150
+@pw_holy_reliquary_change_artifact_cost_check = 100
+@pw_holy_reliquary_change_artifact_cost = -100
 
 #Grand Archive assemble archive check:
-@pw_grand_archive_assemble_cost_check_0 = 20000
-@pw_grand_archive_assemble_cost_check_1 = 25000
-@pw_grand_archive_assemble_cost_check_2 = 30000
-@pw_grand_archive_assemble_cost_check_3 = 40000
-@pw_grand_archive_assemble_cost_check_4 = 50000
-@pw_grand_archive_assemble_cost_check_5 = 60000
-@pw_grand_archive_assemble_cost_check_6 = 70000
-@pw_grand_archive_assemble_cost_check_7 = 80000
-@pw_grand_archive_assemble_cost_check_8 = 90000
-@pw_grand_archive_assemble_cost_check_final = 100000
+@pw_grand_archive_assemble_cost_check_0 = 1000
+@pw_grand_archive_assemble_cost_check_1 = 1500
+@pw_grand_archive_assemble_cost_check_2 = 2000
+@pw_grand_archive_assemble_cost_check_3 = 2500
+@pw_grand_archive_assemble_cost_check_4 = 3000
+@pw_grand_archive_assemble_cost_check_5 = 3500
+@pw_grand_archive_assemble_cost_check_6 = 4000
+@pw_grand_archive_assemble_cost_check_7 = 5000
+@pw_grand_archive_assemble_cost_check_8 = 6000
+@pw_grand_archive_assemble_cost_check_final = 10000
 #Grand Archive assemble archive (SHOULD BE EQUAL BUT NEGATIVE):
-@pw_grand_archive_assemble_cost_0 = -20000
-@pw_grand_archive_assemble_cost_1 = -25000
-@pw_grand_archive_assemble_cost_2 = -30000
-@pw_grand_archive_assemble_cost_3 = -40000
-@pw_grand_archive_assemble_cost_4 = -50000
-@pw_grand_archive_assemble_cost_5 = -60000
-@pw_grand_archive_assemble_cost_6 = -70000
-@pw_grand_archive_assemble_cost_7 = -80000
-@pw_grand_archive_assemble_cost_8 = -90000
-@pw_grand_archive_assemble_cost_final = -100000
+@pw_grand_archive_assemble_cost_0 = -1000
+@pw_grand_archive_assemble_cost_1 = -1500
+@pw_grand_archive_assemble_cost_2 = -2000
+@pw_grand_archive_assemble_cost_3 = -2500
+@pw_grand_archive_assemble_cost_4 = -3000
+@pw_grand_archive_assemble_cost_5 = -3500
+@pw_grand_archive_assemble_cost_6 = -4000
+@pw_grand_archive_assemble_cost_7 = -5000
+@pw_grand_archive_assemble_cost_8 = -6000
+@pw_grand_archive_assemble_cost_final = -10000
 #Grand Archive delve into secrets cost:
 @pw_grand_archive_secrets_cost_check = 100
 @pw_grand_archive_secrets_cost = -100
@@ -196,6 +197,7 @@
 
 @pw_tls_resource_cost = 1000
 @pw_tls_influence_cost = 50
+@pw_tls_unity_cost = 500
 
 
 #Forbidden City Infrastructure decisions:
@@ -213,6 +215,11 @@
 @pw_fc_influence_cost_2 = 50
 @pw_fc_influence_cost_3 = 100
 @pw_fc_influence_cost_4 = 125
+
+@pw_fc_unity_cost_1 = 250
+@pw_fc_unity_cost_2 = 500
+@pw_fc_unity_cost_3 = 1000
+@pw_fc_unity_cost_4 = 1500
 
 @pw_fc_rare_cost_3 = 200
 @pw_fc_rare_cost_4 = 400

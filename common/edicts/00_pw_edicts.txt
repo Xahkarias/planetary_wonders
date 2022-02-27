@@ -1,7 +1,14 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+@Edict1Cost = 10
+@Edict2Cost = 20
+@Edict3Cost = 30
+
 pw_wonders_beyond_ambition = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
-	edict_cap_usage = 1
 
 	potential = {
 		has_tradition = tr_pw_monumentality_finish
@@ -13,17 +20,9 @@ pw_wonders_beyond_ambition = {
 
 	resources = {
 		category = edicts
-		cost = { #Activation Cost
-			trigger = {
-				NOT = { has_edict = pw_wonders_beyond_ambition }
-			}
-			influence = 200
-		}
-		cost = { #Deactivation Cost
-			trigger = {
-				has_edict = pw_wonders_beyond_ambition
-			}
-			influence = 50
+		upkeep = {
+			unity = @Edict3Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -46,21 +45,12 @@ pw_wonders_beyond_ambition = {
 pw_edict_panspectron = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
-	edict_cap_usage = 1
 
 	resources = {
 		category = edicts
-		cost = { #Activation Cost
-			trigger = {
-				NOT = { has_edict = pw_edict_panspectron }
-			}
-			influence = 200
-		}
-		cost = { #Deactivation Cost
-			trigger = {
-				has_edict = pw_edict_panspectron
-			}
-			influence = 50
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -101,7 +91,7 @@ pw_edict_hive_debate = {
 			trigger = {
 				NOT = { has_edict = pw_edict_hive_debate }
 			}
-			influence = 50
+			unity = 500
 		}
 	}
 
@@ -200,7 +190,6 @@ pw_grand_archive_visit_the_archive = {
 pw_festival_plaza_brace_for_the_worst = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
-	edict_cap_usage = 1
 
 	prerequisites = {
 		pw_tech_peace_manipulation
@@ -208,17 +197,9 @@ pw_festival_plaza_brace_for_the_worst = {
 
 	resources = {
 		category = edicts
-		cost = { #Activation Cost
-			trigger = {
-				NOT = { has_edict = pw_festival_plaza_brace_for_the_worst }
-			}
-			influence = 200
-		}
-		cost = { #Deactivation Cost
-			trigger = {
-				has_edict = pw_festival_plaza_brace_for_the_worst
-			}
-			influence = 50
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -254,7 +235,6 @@ pw_festival_plaza_brace_for_the_worst = {
 pw_festival_plaza_justified_conflicts = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
-	edict_cap_usage = 1
 
 	prerequisites = {
 		pw_tech_peace_manipulation
@@ -262,17 +242,9 @@ pw_festival_plaza_justified_conflicts = {
 
 	resources = {
 		category = edicts
-		cost = { #Activation Cost
-			trigger = {
-				NOT = { has_edict = pw_festival_plaza_justified_conflicts }
-			}
-			influence = 200
-		}
-		cost = { #Deactivation Cost
-			trigger = {
-				has_edict = pw_festival_plaza_justified_conflicts
-			}
-			influence = 50
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -310,7 +282,6 @@ pw_festival_plaza_justified_conflicts = {
 pw_martial_avenue_soldier_side = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
-	edict_cap_usage = 1
 
 	prerequisites = {
 		pw_tech_vision_beyond_war
@@ -318,17 +289,9 @@ pw_martial_avenue_soldier_side = {
 
 	resources = {
 		category = edicts
-		cost = { #Activation Cost
-			trigger = {
-				NOT = { has_edict = pw_martial_avenue_soldier_side }
-			}
-			influence = 200
-		}
-		cost = { #Deactivation Cost
-			trigger = {
-				has_edict = pw_martial_avenue_soldier_side
-			}
-			influence = 50
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -364,7 +327,6 @@ pw_martial_avenue_soldier_side = {
 pw_martial_avenue_something_to_return = {
 	length = @pw_EdictPerpetual
 	icon = "GFX_edict_type_policy"
-	edict_cap_usage = 1
 
 	prerequisites = {
 		pw_tech_vision_beyond_war
@@ -372,17 +334,9 @@ pw_martial_avenue_something_to_return = {
 
 	resources = {
 		category = edicts
-		cost = { #Activation Cost
-			trigger = {
-				NOT = { has_edict = pw_martial_avenue_something_to_return }
-			}
-			influence = 200
-		}
-		cost = { #Deactivation Cost
-			trigger = {
-				has_edict = pw_martial_avenue_something_to_return
-			}
-			influence = 50
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -413,5 +367,404 @@ pw_martial_avenue_something_to_return = {
 
 	ai_weight = {
 		weight = @EdictLowPrio
+	}
+}
+
+#Peace Crisis edicts:
+pw_festival_plaza_this_too_shall_pass = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_brace_against_the_storm
+	}
+
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_festival_plaza
+		}
+	}
+
+	allow = {
+		is_pacifist = yes
+		any_owned_planet = {
+			has_active_building = pw_building_festival_plaza
+		}
+		NOT = {
+			has_edict = pw_festival_plaza_inexorable_peace
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = 0.25
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+		modifier = {
+			factor = 2
+			OR = {
+				has_global_flag = galactic_crisis_happened
+				has_global_flag = gray_goo_crisis_active
+			}
+		}
+	}
+}
+
+pw_festival_plaza_inexorable_peace = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_brace_against_the_storm
+	}
+
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_festival_plaza
+		}
+	}
+
+	allow = {
+		is_pacifist = yes
+		any_owned_planet = {
+			has_active_building = pw_building_festival_plaza
+		}
+		NOT = {
+			has_edict = pw_festival_plaza_this_too_shall_pass
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = -0.50
+		country_unity_produces_mult = 0.20
+		country_influence_produces_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#War Crisis edicts:
+pw_martial_avenue_our_greatest_foe = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_into_the_storm
+	}
+
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_martial_avenue
+		}
+	}
+
+	allow = {
+		is_militarist = yes
+		any_owned_planet = {
+			has_active_building = pw_building_martial_avenue
+		}
+		NOT = {
+			has_edict = pw_martial_avenue_bring_us_a_challenge
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = 0.25
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+		modifier = {
+			factor = 2
+			OR = {
+				has_global_flag = galactic_crisis_happened
+				has_global_flag = gray_goo_crisis_active
+			}
+		}
+	}
+}
+
+pw_martial_avenue_bring_us_a_challenge = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	prerequisites = {
+		pw_tech_into_the_storm
+	}
+
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_martial_avenue
+		}
+	}
+
+	allow = {
+		is_militarist = yes
+		any_owned_planet = {
+			has_active_building = pw_building_martial_avenue
+		}
+		NOT = {
+			has_edict = pw_martial_avenue_our_greatest_foe
+		}
+	}
+
+	modifier = {
+		pw_mod_damage_against_end_game_crisis = -0.50
+		country_unity_produces_mult = 0.20
+		country_influence_produces_mult = 0.1
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+		modifier = {
+			factor = 2
+			OR = {
+				has_global_flag = galactic_crisis_happened
+				has_global_flag = gray_goo_crisis_active
+			}
+		}
+	}
+}
+
+#Research Wonders Subsides
+
+pw_particle_supercollider_subsidies = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		pw_tech_particle_supercollider_organization
+	}
+
+	potential = {
+		any_owned_planet = {
+			pw_planet_has_particle_supercollider = yes
+		}
+	}
+
+	modifier = {
+		planet_researchers_physics_research_produces_mult = 0.10
+		planet_researchers_upkeep_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 5
+		}
+	}
+}
+
+pw_domed_city_subsidies = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		pw_tech_domed_city_organization
+	}
+
+	potential = {
+		any_owned_planet = {
+			pw_planet_has_domed_city = yes
+		}
+	}
+
+	modifier = {
+		planet_researchers_society_research_produces_mult = 0.10
+		planet_researchers_upkeep_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 5
+		}
+	}
+}
+
+pw_abyssal_crater_test_site_subsidies = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		pw_tech_abyssal_crater_test_site_organization
+	}
+
+	potential = {
+		any_owned_planet = {
+			pw_planet_has_abyssal_test_crater = yes
+		}
+	}
+
+	modifier = {
+		planet_researchers_engineering_research_produces_mult = 0.10
+		planet_researchers_upkeep_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 5
+		}
+	}
+}
+
+#Blossoming Preserve
+
+pw_blossoming_preserve_harmonious_blossom = {
+	length = 3600
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = 500
+		}
+	}
+
+	prerequisites = {
+		pw_tech_cyberecology
+	}
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_blossoming_preserve
+		}
+	}
+
+	modifier = {
+		pop_environment_tolerance = 0.10
+		country_unity_produces_mult = 0.10
+		planet_amenities_mult = 0.10
+	}
+
+	effect = {
+		every_owned_planet = {
+			limit = {
+				has_active_building = pw_building_blossoming_preserve
+			}
+			if = {
+				limit = {
+					owner = { is_machine_empire = yes }
+				}
+				add_modifier = {
+					modifier = pw_pm_blossoming_preserve_harmonious_blossom_machine
+					days = 1800
+					clear_on_owner_change = yes
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_planet_class = pc_hive
+					}
+					add_modifier = {
+						modifier = pw_pm_blossoming_preserve_harmonious_blossom_hive
+						days = 1800
+						clear_on_owner_change = yes
+					}
+				}
+				else = {
+					add_modifier = {
+						modifier = pw_pm_blossoming_preserve_harmonious_blossom_gaia
+						days = 1800
+						clear_on_owner_change = yes
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 2
+			resource_stockpile_compare = {
+				resource = influence
+				value > 500
+			}
+		}
+		modifier = {
+			factor = 1.2
+			count_owned_planet = {
+				count > 2
+				limit = {
+					has_active_building = pw_building_blossoming_preserve
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			count_owned_planet = {
+				count > 3
+				limit = {
+					has_active_building = pw_building_blossoming_preserve
+				}
+			}
+		}
+		modifier = {
+			factor = 1.8
+			count_owned_planet = {
+				count > 4
+				limit = {
+					has_active_building = pw_building_blossoming_preserve
+				}
+			}
+		}
 	}
 }

@@ -490,8 +490,8 @@ planet_event = {
 			set_timed_star_flag = { flag = pw_wonder_event_110 days = @pw_5years }
 			random_system_planet = {
 				limit = { has_active_building = pw_building_space_elevator }
+				save_event_target_as = pw_space_elevator_aid_dev_planet
 			}
-			save_event_target_as = pw_space_elevator_aid_dev_planet
 		}
 	}
 
@@ -8698,6 +8698,7 @@ planet_event = {
 				#Has the building:
 				has_active_building = pw_building_grand_archive
 				exists = owner
+				NOT = { has_deposit = pw_d_holoarchive }
 				OR = {
 					AND = {
 						owner = { has_country_flag = pw_grand_archive_holoarchive_unified }
@@ -8765,6 +8766,7 @@ planet_event = {
 	trigger = {
 		#Has the building:
 		has_active_building = pw_building_grand_archive
+		NOT = { has_deposit = pw_d_holoarchive }
 		OR = { #Has the flag, but not the deposit
 			AND = {
 				owner = { has_country_flag = pw_grand_archive_holoarchive_unified }

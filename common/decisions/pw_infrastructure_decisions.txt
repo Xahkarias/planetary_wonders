@@ -341,7 +341,7 @@ pw_decision_tls_infrastructure_distribution_4 = {
 		category = decisions
 		cost = {
 			minerals = @pw_tls_mineral_cost_4
-			influence = @pw_tls_influence_cost
+			unity = @pw_tls_unity_cost
 			rare_crystals = @pw_tls_rare_cost_4
 		}
 	}
@@ -787,7 +787,7 @@ pw_decision_tls_infrastructure_emergency_4 = {
 		category = decisions
 		cost = {
 			minerals = @pw_tls_mineral_cost_4
-			influence = @pw_tls_influence_cost
+			unity = @pw_tls_unity_cost
 			exotic_gases = @pw_tls_rare_cost_4
 		}
 	}
@@ -1236,7 +1236,7 @@ pw_decision_tls_infrastructure_culture_4 = {
 		category = decisions
 		cost = {
 			minerals = @pw_tls_mineral_cost_4
-			influence = @pw_tls_influence_cost
+			unity = @pw_tls_unity_cost
 			exotic_gases = @pw_tls_rare_cost_4
 		}
 	}
@@ -1687,7 +1687,7 @@ pw_decision_tls_infrastructure_industrial_4 = {
 		category = decisions
 		cost = {
 			minerals = @pw_tls_mineral_cost_4
-			influence = @pw_tls_influence_cost
+			unity = @pw_tls_unity_cost
 			volatile_motes = @pw_tls_rare_cost_4
 		}
 	}
@@ -1807,7 +1807,7 @@ pw_decision_fc_infrastructure_capital_1 = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_1
-			influence = @pw_fc_influence_cost_1
+			unity = @pw_fc_unity_cost_1
 		}
 	}
 
@@ -1921,7 +1921,7 @@ pw_decision_fc_infrastructure_capital_2 = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -2031,7 +2031,7 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_4
-			influence = @pw_fc_influence_cost_3
+			unity = @pw_fc_unity_cost_3
 			rare_crystals = @pw_fc_rare_cost_3
 		}
 	}
@@ -2148,7 +2148,7 @@ pw_decision_fc_infrastructure_capital_throne_room = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_4
-			influence = @pw_fc_influence_cost_4
+			unity = @pw_fc_unity_cost_4
 			rare_crystals = @pw_fc_rare_cost_3
 		}
 	}
@@ -2265,7 +2265,7 @@ pw_decision_fc_infrastructure_capital_holy_throne = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_4
-			influence = @pw_fc_influence_cost_4
+			unity = @pw_fc_unity_cost_4
 			rare_crystals = @pw_fc_rare_cost_4
 		}
 	}
@@ -2379,7 +2379,7 @@ pw_decision_fc_infrastructure_capital_resort = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -2476,7 +2476,7 @@ pw_decision_fc_infrastructure_capital_penal = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -2573,7 +2573,7 @@ pw_decision_fc_infrastructure_capital_slave = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -3446,7 +3446,7 @@ pw_decision_fc_infrastructure_power_4 = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_4
-			influence = @pw_fc_influence_cost_3
+			unity = @pw_fc_unity_cost_3
 			volatile_motes = @pw_fc_rare_cost_4
 		}
 	}
@@ -3566,7 +3566,7 @@ pw_decision_fc_infrastructure_ambassador_chambers = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -3665,7 +3665,7 @@ pw_decision_fc_infrastructure_internal_affairs = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -3764,7 +3764,7 @@ pw_decision_fc_infrastructure_intellectual_circles = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -3856,7 +3856,7 @@ pw_decision_fc_infrastructure_holy_tribunal = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -3960,7 +3960,7 @@ pw_decision_fc_infrastructure_ballroom = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 
@@ -4055,7 +4055,7 @@ pw_decision_fc_infrastructure_war_room = {
 		category = decisions
 		cost = {
 			minerals = @pw_fc_mineral_cost_2
-			influence = @pw_fc_influence_cost_2
+			unity = @pw_fc_unity_cost_2
 		}
 	}
 

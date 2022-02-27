@@ -21,25 +21,9 @@ pw_researcher_particle_supercollider = {
 		produces = {
 			physics_research = 12
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 1
-		}
 		upkeep = {
 			consumer_goods = 2
 			energy = 4
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
 		}
 	}
 
@@ -156,24 +140,8 @@ pw_researcher_domed_city = {
 		produces = {
 			society_research = 12
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 1
-		}
 		upkeep = {
 			consumer_goods = 3
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
 		}
 	}
 
@@ -290,25 +258,9 @@ pw_researcher_abyssal_crater_test_site = {
 		produces = {
 			engineering_research = 12
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_technocracy }
-			}
-			unity = 1
-		}
 		upkeep = {
 			consumer_goods = 2
 			alloys = 1
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
 		}
 	}
 

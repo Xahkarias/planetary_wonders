@@ -1030,7 +1030,6 @@ pw_building_mantle_crucible = {
 		weight = 50
 		modifier = {
 			factor = 0
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -1237,7 +1236,7 @@ pw_building_titan_forge = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 		}
 	}
 
@@ -1405,7 +1404,7 @@ pw_building_titan_forge = {
 			exists = owner
 			owner = { is_gestalt = no }
 		}
-		text = job_administrator_effect_desc
+		text = job_politician_effect_desc
 	}
 
 	triggered_desc = {
@@ -1469,7 +1468,6 @@ pw_building_titan_forge = {
 		weight = 80
 		modifier = {
 			factor = 0
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25
@@ -1761,7 +1759,6 @@ pw_building_industrial_hearth = {
 		weight = 80
 		modifier = {
 			factor = 0
-			building_relaxed_basic_income_check = no
 		}
 		modifier = {
 			factor = 0.25

@@ -256,7 +256,7 @@ pw_site_translunar_network = {
 pw_site_forgotten_reliquary = {
 	desc = pw_site_forgotten_reliquary_desc
 	picture = GFX_evt_baol_ruins
-	stages = 5
+	stages = 4
 	weight = { #Added on blocker removed
 		base = 0
 	}

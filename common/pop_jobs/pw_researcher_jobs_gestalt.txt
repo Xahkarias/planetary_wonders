@@ -26,15 +26,6 @@ pw_brain_drone_particle_supercollider = {
 			minerals = 6
 			energy = 3
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
-		}
 	}
 
 	weight = {
@@ -109,15 +100,6 @@ pw_brain_drone_domed_city = {
 		}
 		upkeep = {
 			minerals = 8
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
 		}
 	}
 
@@ -195,15 +177,6 @@ pw_brain_drone_abyssal_crater_test_site = {
 			minerals = 6
 			alloys = 1
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
-		}
 	}
 
 	weight = {
@@ -279,15 +252,6 @@ pw_calculator_particle_supercollider = {
 		upkeep = {
 			energy = 6
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
-		}
 	}
 
 	weight = {
@@ -360,15 +324,6 @@ pw_calculator_domed_city = {
 			energy = 4
 			minerals = 2
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
-		}
 	}
 
 	weight = {
@@ -440,15 +395,6 @@ pw_calculator_abyssal_crater_test_site = {
 		upkeep = {
 			energy = 4
 			alloys = 1
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = research_subsidies
-				}
-			}
-			energy = 1.5
 		}
 	}
 
