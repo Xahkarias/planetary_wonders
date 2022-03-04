@@ -2171,13 +2171,15 @@ pw_building_unhallowed_necropolis = {
 		NOR = {
 			is_planet_class = pc_nuked
 			owner = {
-				#does not has any of the civics:
-				has_valid_civic = civic_memorialist
-				has_valid_civic = civic_hive_memorialist
-				has_valid_civic = civic_machine_memorialist
-				has_valid_civic = civic_death_cult
-				has_valid_civic = civic_death_cult_corporate
-				has_valid_civic = civic_reanimated_armies
+				OR = {
+					#does not has any of the civics:
+					has_valid_civic = civic_memorialist
+					has_valid_civic = civic_hive_memorialist
+					has_valid_civic = civic_machine_memorialist
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+					has_valid_civic = civic_reanimated_armies
+				}
 			}
 		}
 	}
