@@ -212,10 +212,6 @@ pw_d_SE_skyhook = {
 		planet_amenities_mult = 0.05
 	}
 
-	country_modifier = {
-		empire_size_pops_mult = -0.10
-	}
-
 	#Non Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {

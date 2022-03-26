@@ -1609,7 +1609,7 @@ pw_d_infrastructure_ballroom = {
 	}
 
 	country_modifier = {
-		empire_size_pops_mult = -0.05
+		diplo_weight_pops_mult = 0.05
 	}
 }
 
@@ -1691,7 +1691,7 @@ pw_d_integration_cyber_pylon = {
 	}
 
 	country_modifier = {
-		empire_size_pops_mult = -0.05
+		diplo_weight_pops_mult = 0.05
 	}
 
 	triggered_planet_modifier = {

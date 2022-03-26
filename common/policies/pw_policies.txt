@@ -130,8 +130,8 @@ pw_policy_modeling_focus = {
 		policy_flags = { pw_policy_modeling_focus_growth_projection }
 
 		modifier = {
-			empire_size_districts_mult = -0.10
-			empire_size_pops_mult = -0.10
+			empire_size_districts_mult = -0.05
+			empire_size_pops_mult = -0.05
 			planet_districts_cost_mult = -0.10
 			country_starbase_influence_cost_mult = -0.10
 			planet_administrators_upkeep_mult = 0.25
@@ -151,8 +151,8 @@ pw_policy_modeling_focus = {
 		}
 
 		modifier = {
-			empire_size_systems_mult = -0.10
-			empire_size_colonies_mult = -0.10
+			empire_size_systems_mult = -0.05
+			empire_size_colonies_mult = -0.05
 			local_trade_protection_add = 15
 			intel_encryption_add = 1
 			planet_administrators_upkeep_mult = 0.20
@@ -172,8 +172,8 @@ pw_policy_modeling_focus = {
 		}
 
 		modifier = {
-			empire_size_systems_mult = -0.10
-			empire_size_colonies_mult = -0.10
+			empire_size_systems_mult = -0.05
+			empire_size_colonies_mult = -0.05
 			planet_amenities_no_happiness_mult = 0.05
 			intel_encryption_add = 1
 			planet_administrators_upkeep_mult = 0.20

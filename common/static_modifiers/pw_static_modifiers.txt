@@ -1042,15 +1042,15 @@ pw_mod_IH_consumerism_investigation = {
 #Stargazing Mirror: Introspective Gaze
 pw_holy_reliquary_expansion_introspective_gaze = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	empire_size_pops_mult = -0.10
-	empire_size_systems_mult = -0.15
+	empire_size_pops_mult = -0.05
+	empire_size_systems_mult = -0.05
 }
 
 #Stargazing Mirror: Extrospective Gaze
 pw_holy_reliquary_expansion_extrospective_gaze = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	colony_start_num_pops_add = 1
-	empire_size_colonies_mult = -0.20
+	empire_size_colonies_mult = -0.05
 	planet_colony_development_speed_mult = 0.50
 }
 
@@ -1079,7 +1079,7 @@ pw_holy_reliquary_prosperity_coin_of_fortune = {
 pw_holy_reliquary_harmony_scale_of_balance = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	planet_stability_add = 5
-	empire_size_pops_mult = -0.20
+	planet_administrators_upkeep_mult = 0.10
 }
 
 #Defender of the Faith: Holy Might

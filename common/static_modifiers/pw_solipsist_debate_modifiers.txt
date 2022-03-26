@@ -131,7 +131,7 @@ pw_debate_mod_syncretic = {
 	icon = "gfx/interface/icons/modifiers/mod_planet_crime_mult.dds"
 	icon_frame = @pw_icon_frame_green
 
-	empire_size_pops_mult = 0.2
+	empire_size_pops_mult = 0.05
 }
 
 pw_debate_mod_deviancy = {
