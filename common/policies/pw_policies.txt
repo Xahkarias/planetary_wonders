@@ -12,6 +12,7 @@ pw_policy_expansion = {
 
 	option = {
 		name = pw_expansion_policy_organic_growth
+		policy_flags = { pw_expansion_policy_organic_growth }
 
 		modifier = {
 			empire_size_mult = -0.05
@@ -24,6 +25,7 @@ pw_policy_expansion = {
 
 	option = {
 		name = pw_expansion_policy_concentrated_expansion
+		policy_flags = { pw_expansion_policy_concentrated_expansion }
 
 		modifier = {
 			empire_size_districts_mult = -0.25
@@ -59,6 +61,7 @@ pw_policy_expansion = {
 
 	option = {
 		name = pw_expansion_policy_scattered_expansion
+		policy_flags = { pw_expansion_policy_scattered_expansion }
 
 		modifier = {
 			empire_size_systems_mult = -0.25
@@ -111,6 +114,7 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_unfocused_modeling
+		policy_flags = { pw_policy_modeling_focus_unfocused_modeling }
 
 		modifier = {
 			planet_administrators_produces_mult = 0.10
@@ -123,6 +127,7 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_growth_projection
+		policy_flags = { pw_policy_modeling_focus_growth_projection }
 
 		modifier = {
 			empire_size_districts_mult = -0.10
@@ -139,6 +144,7 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_domestic_surveillance
+		policy_flags = { pw_policy_modeling_focus_domestic_surveillance }
 
 		potential = {
 			is_gestalt = no
@@ -159,6 +165,7 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_drone_surveillance
+		policy_flags = { pw_policy_modeling_focus_drone_surveillance }
 
 		potential = {
 			is_gestalt = yes
@@ -179,6 +186,7 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_diplomatic_behavior_modeling
+		policy_flags = { pw_policy_modeling_focus_diplomatic_behavior_modeling }
 
 		modifier = {
 			diplomacy_upkeep_mult = -0.25
@@ -194,6 +202,7 @@ pw_policy_modeling_focus = {
 
 	option = {
 		name = pw_policy_modeling_focus_foreign_assets_support
+		policy_flags = { pw_policy_modeling_focus_foreign_assets_support }
 
 		modifier = {
 			operations_cost_mult = -0.25
@@ -223,6 +232,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_interplanetary_customhouses
+		policy_flags = { pw_policy_orbital_commerce_interplanetary_customhouses }
 
 		valid = {
 			can_generate_trade_value = yes
@@ -236,8 +246,6 @@ pw_policy_orbital_commerce = {
 			# custom_tooltip = pw_policy_orbital_commerce_interplanetary_customhouses_tooltip
 		}
 
-		policy_flags = { pw_policy_orbital_commerce_interplanetary_customhouses }
-
 		ai_weight = {
 			weight = 10
 		}
@@ -245,6 +253,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_exotic_goods_importer
+		policy_flags = { pw_policy_orbital_commerce_exotic_goods_importer }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
@@ -253,8 +262,6 @@ pw_policy_orbital_commerce = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_exotic_goods_importer_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_commerce_exotic_goods_importer }
 
 		ai_weight = {
 			weight = 0
@@ -263,6 +270,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_cultural_agencies
+		policy_flags = { pw_policy_orbital_commerce_cultural_agencies }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
@@ -272,8 +280,6 @@ pw_policy_orbital_commerce = {
 			# custom_tooltip = pw_policy_orbital_commerce_cultural_agencies_tooltip
 		}
 
-		policy_flags = { pw_policy_orbital_commerce_cultural_agencies }
-
 		ai_weight = {
 			weight = 0
 		}
@@ -281,6 +287,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_border_control
+		policy_flags = { pw_policy_orbital_commerce_border_control }
 
 		valid = {
 			NOT = { is_criminal_syndicate = yes }
@@ -294,8 +301,6 @@ pw_policy_orbital_commerce = {
 			# custom_tooltip = pw_policy_orbital_commerce_border_control_tooltip
 		}
 
-		policy_flags = { pw_policy_orbital_commerce_border_control }
-
 		ai_weight = {
 			weight = 0
 		}
@@ -303,6 +308,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_relocation_offices
+		policy_flags = { pw_policy_orbital_commerce_relocation_offices }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
@@ -311,8 +317,6 @@ pw_policy_orbital_commerce = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_relocation_offices_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_commerce_relocation_offices }
 
 		ai_weight = {
 			weight = 0
@@ -321,6 +325,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_migration_bureau
+		policy_flags = { pw_policy_orbital_commerce_migration_bureau }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
@@ -330,8 +335,6 @@ pw_policy_orbital_commerce = {
 			# custom_tooltip = pw_policy_orbital_commerce_migration_bureau_tooltip
 		}
 
-		policy_flags = { pw_policy_orbital_commerce_migration_bureau }
-
 		ai_weight = {
 			weight = 0
 		}
@@ -339,6 +342,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_foreign_traders
+		policy_flags = { pw_policy_orbital_commerce_foreign_traders }
 
 		potential = {
 			is_megacorp = yes
@@ -352,8 +356,6 @@ pw_policy_orbital_commerce = {
 			# custom_tooltip = pw_policy_orbital_commerce_foreign_traders_tooltip
 		}
 
-		policy_flags = { pw_policy_orbital_commerce_foreign_traders }
-
 		ai_weight = {
 			weight = 0
 		}
@@ -361,6 +363,7 @@ pw_policy_orbital_commerce = {
 
 	option = {
 		name = pw_policy_orbital_commerce_smuggling_contacts
+		policy_flags = { pw_policy_orbital_commerce_smuggling_contacts }
 
 		potential = {
 			is_criminal_syndicate = yes
@@ -373,8 +376,6 @@ pw_policy_orbital_commerce = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_commerce_smuggling_contacts_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_commerce_smuggling_contacts }
 
 		ai_weight = {
 			weight = 0
@@ -396,6 +397,7 @@ pw_policy_orbital_logistics = {
 
 	option = {
 		name = pw_policy_orbital_logistics_drone_care
+		policy_flags = { pw_policy_orbital_logistics_drone_care }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
@@ -404,8 +406,6 @@ pw_policy_orbital_logistics = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_drone_care_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_logistics_drone_care }
 
 		ai_weight = {
 			weight = 0
@@ -414,6 +414,7 @@ pw_policy_orbital_logistics = {
 
 	option = {
 		name = pw_policy_orbital_logistics_drone_scan
+		policy_flags = { pw_policy_orbital_logistics_drone_scan }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
@@ -422,8 +423,6 @@ pw_policy_orbital_logistics = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_drone_scan_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_logistics_drone_scan }
 
 		ai_weight = {
 			weight = 0
@@ -432,6 +431,7 @@ pw_policy_orbital_logistics = {
 
 	option = {
 		name = pw_policy_orbital_logistics_gestalt_pylon
+		policy_flags = { pw_policy_orbital_logistics_gestalt_pylon }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
@@ -440,8 +440,6 @@ pw_policy_orbital_logistics = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_gestalt_pylon_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_logistics_gestalt_pylon }
 
 		ai_weight = {
 			weight = 0
@@ -450,6 +448,7 @@ pw_policy_orbital_logistics = {
 
 	option = {
 		name = pw_policy_orbital_logistics_production_supply
+		policy_flags = { pw_policy_orbital_logistics_production_supply }
 
 		on_enabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
@@ -458,8 +457,6 @@ pw_policy_orbital_logistics = {
 		on_disabled = {
 			# custom_tooltip = pw_policy_orbital_logistics_production_supply_tooltip
 		}
-
-		policy_flags = { pw_policy_orbital_logistics_production_supply }
 
 		ai_weight = {
 			weight = 10
@@ -489,6 +486,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name =pw_policy_research_wonder_focus_unfocused
+		policy_flags = { pw_policy_research_wonder_focus_unfocused }
 
 		ai_weight = {
 			weight = 10
@@ -497,6 +495,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name = pw_policy_research_wonder_focus_physics
+		policy_flags = { pw_policy_research_wonder_focus_physics }
 
 		potential = {
 			any_owned_planet = {
@@ -522,6 +521,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name = pw_policy_research_wonder_focus_physics_extra
+		policy_flags = { pw_policy_research_wonder_focus_physics_extra }
 
 		potential = {
 			any_owned_planet = {
@@ -543,6 +543,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name =pw_policy_research_wonder_focus_society
+		policy_flags = { pw_policy_research_wonder_focus_society }
 
 		potential = {
 			any_owned_planet = {
@@ -568,6 +569,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name = pw_policy_research_wonder_focus_society_extra
+		policy_flags = { pw_policy_research_wonder_focus_society_extra }
 
 		potential = {
 			any_owned_planet = {
@@ -589,6 +591,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name = pw_policy_research_wonder_focus_engineering
+		policy_flags = { pw_policy_research_wonder_focus_engineering }
 
 		potential = {
 			any_owned_planet = {
@@ -614,6 +617,7 @@ pw_policy_research_wonder_focus = {
 
 	option = {
 		name = pw_policy_research_wonder_focus_engineering_extra
+		policy_flags = { pw_policy_research_wonder_focus_engineering_extra }
 
 		potential = {
 			any_owned_planet = {
