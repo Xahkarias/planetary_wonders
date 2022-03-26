@@ -9555,7 +9555,10 @@ pw_tech_worldly_mausoleums = {
 
 			#Has a tomb world:
 			any_owned_planet = {
-				is_planet_class = pc_nuked
+				OR = {
+					is_planet_class = pc_nuked
+					is_planet_class = pc_relic
+				}
 			}
 		}
 	}
@@ -9643,7 +9646,10 @@ pw_tech_worldly_mausoleums = {
 			count_owned_planet = {
 				count > 1
 				limit = {
-					is_planet_class = pc_nuked
+					OR = {
+						is_planet_class = pc_nuked
+						is_planet_class = pc_relic
+					}
 				}
 			}
 		}
@@ -9653,7 +9659,10 @@ pw_tech_worldly_mausoleums = {
 			count_owned_planet = {
 				count > 2
 				limit = {
-					is_planet_class = pc_nuked
+					OR = {
+						is_planet_class = pc_nuked
+						is_planet_class = pc_relic
+					}
 				}
 			}
 		}
@@ -9663,7 +9672,10 @@ pw_tech_worldly_mausoleums = {
 			count_owned_planet = {
 				count > 3
 				limit = {
-					is_planet_class = pc_nuked
+					OR = {
+						is_planet_class = pc_nuked
+						is_planet_class = pc_relic
+					}
 				}
 			}
 		}

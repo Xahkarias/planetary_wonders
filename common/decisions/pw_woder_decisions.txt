@@ -3318,8 +3318,11 @@ pw_decision_mausoleum_world = {
 		NOT = { has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world }
 		NOT = { has_modifier = penal_colony }
 		NOT = { has_modifier = slave_colony }
-		is_planet_class = pc_nuked
 		is_artificial = no
+		OR = {
+			is_planet_class = pc_nuked
+			is_planet_class = pc_relic
+		}
 	}
 
 	allow = {

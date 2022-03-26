@@ -2093,6 +2093,7 @@ pw_building_unhallowed_necropolis = {
 	allow = {
 		OR = {
 			is_planet_class = pc_nuked
+			is_planet_class = pc_relic
 			owner = {
 				#Has any of the civics:
 				OR = {
@@ -2170,6 +2171,7 @@ pw_building_unhallowed_necropolis = {
 	destroy_trigger = {
 		NOR = {
 			is_planet_class = pc_nuked
+			is_planet_class = pc_relic
 			owner = {
 				OR = {
 					#does not has any of the civics:
@@ -2245,7 +2247,10 @@ pw_building_unhallowed_necropolis = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = no }
-			is_planet_class = pc_nuked
+			OR = {
+				is_planet_class = pc_nuked
+				is_planet_class = pc_relic
+			}
 		}
 		modifier = {
 			job_pw_tomb_scholar_add = 2
@@ -2347,7 +2352,10 @@ pw_building_unhallowed_necropolis = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = yes }
-			is_planet_class = pc_nuked
+			OR = {
+				is_planet_class = pc_nuked
+				is_planet_class = pc_relic
+			}
 		}
 		modifier = {
 			job_pw_tomb_surveyor_add = 2
@@ -2485,7 +2493,10 @@ pw_building_unhallowed_necropolis = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			is_planet_class = pc_nuked
+			OR = {
+				is_planet_class = pc_nuked
+				is_planet_class = pc_relic
+			}
 		}
 		text = job_pw_tomb_scholar_effect_desc
 	}
@@ -2495,7 +2506,10 @@ pw_building_unhallowed_necropolis = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = yes }
-			is_planet_class = pc_nuked
+			OR = {
+				is_planet_class = pc_nuked
+				is_planet_class = pc_relic
+			}
 		}
 		text = job_pw_tomb_surveyor_effect_desc
 	}
@@ -2647,7 +2661,10 @@ pw_building_unhallowed_necropolis = {
 		}
 		modifier = {
 			factor = 5
-			is_planet_class = pc_nuked
+			OR = {
+				is_planet_class = pc_nuked
+				is_planet_class = pc_relic
+			}
 		}
 		modifier = {
 			factor = 0.5

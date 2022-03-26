@@ -12796,7 +12796,18 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.2401
 	title = pw_wonder.2401.name
-	desc = pw_wonder.2401.desc
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_relic }
+		}
+		text = pw_wonder.2401.desc
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_relic
+		}
+		text = pw_wonder.2401.desc.relic
+	}
 	picture = GFX_evt_bone_building
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -12899,7 +12910,18 @@ planet_event = {
 planet_event = {
 	id = pw_wonder.2402
 	title = pw_wonder.2402.name
-	desc = pw_wonder.2402.desc
+	desc = {
+		trigger = {
+			NOT = { is_planet_class = pc_relic }
+		}
+		text = pw_wonder.2402.desc
+	}
+	desc = {
+		trigger = {
+			is_planet_class = pc_relic
+		}
+		text = pw_wonder.2402.desc.relic
+	}
 	picture = GFX_evt_bone_building
 	show_sound = event_construction
 	is_triggered_only = yes
@@ -13037,7 +13059,10 @@ planet_event = {
 	}
 
 	trigger = {
-		NOT = { is_planet_class = pc_nuked }
+		NOR = {
+			is_planet_class = pc_nuked
+			is_planet_class = pc_relic
+		}
 		OR = {
 			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
 			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness
