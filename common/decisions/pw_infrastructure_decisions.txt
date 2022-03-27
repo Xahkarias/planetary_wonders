@@ -374,6 +374,10 @@ pw_decision_tls_infrastructure_distribution_4 = {
 		remove_deposit = pw_d_infrastructure_goods_distribution
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1705 }
+			planet_event = { #Final development
+				id = pw_wonder.1715
+				days = 5
+			}
 		}
 	}
 
@@ -823,6 +827,10 @@ pw_decision_tls_infrastructure_emergency_4 = {
 		remove_deposit = pw_d_infrastructure_emergency_services
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1705 }
+			planet_event = { #Final development
+				id = pw_wonder.1715
+				days = 5
+			}
 		}
 	}
 
@@ -1274,6 +1282,10 @@ pw_decision_tls_infrastructure_culture_4 = {
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1705 }
 			planet_event = { id = pw_wonder.1713 } #Ballroom Street Carnival
+			planet_event = { #Final development
+				id = pw_wonder.1715
+				days = 5
+			}
 		}
 	}
 
@@ -1724,6 +1736,10 @@ pw_decision_tls_infrastructure_industrial_4 = {
 		remove_deposit = pw_d_infrastructure_cooperatives_manufacturers
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1705 }
+			planet_event = { #Final development
+				id = pw_wonder.1715
+				days = 5
+			}
 		}
 	}
 
@@ -2064,6 +2080,10 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1805 }
 			planet_event = { id = pw_wonder.1803 } #Destroy the previous Seat of Power
+			planet_event = { #Final development
+				id = pw_wonder.1815
+				days = 5
+			}
 		}
 	}
 
@@ -2181,6 +2201,10 @@ pw_decision_fc_infrastructure_capital_throne_room = {
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1805 }
 			planet_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
+			planet_event = { #Final development
+				id = pw_wonder.1815
+				days = 5
+			}
 		}
 	}
 
@@ -3032,6 +3056,10 @@ pw_decision_fc_infrastructure_emergency_4 = {
 		remove_deposit = pw_d_infrastructure_crisis_bunker
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1805 }
+			planet_event = { #Final development
+				id = pw_wonder.1815
+				days = 5
+			}
 		}
 	}
 
@@ -3482,6 +3510,10 @@ pw_decision_fc_infrastructure_power_4 = {
 		remove_deposit = pw_d_infrastructure_central_treasury
 		hidden_effect = {
 			planet_event = { id = pw_wonder.1805 }
+			planet_event = { #Final development
+				id = pw_wonder.1815
+				days = 5
+			}
 		}
 	}
 
