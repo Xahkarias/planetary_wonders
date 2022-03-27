@@ -16,17 +16,29 @@
     #Policy: Modeling Focus
     policy_pw_policy_modeling_focus: "Modeling Focus"
     policy_pw_policy_modeling_focus_desc: "Even in the encompassing $pw_building_galactic_model$, the galaxy is far too complex to be fully understood without guidelines to focus our modeling efforts."
+
     pw_policy_modeling_focus_unfocused_modeling: "Unfocused Modeling"
+    pw_policy_modeling_focus_unfocused_modeling_name: "Unfocused Modeling"
     pw_policy_modeling_focus_unfocused_modeling_desc: "The galaxy lives and breathes, we should let the analysts of the Galactic Model decide the focus of their modeling and utilize what information we can."
+
     pw_policy_modeling_focus_growth_projection: "Growth Projection"
+    pw_policy_modeling_focus_growth_projection_name: "Growth Projection"
     pw_policy_modeling_focus_growth_projection_desc: "By focusing our model analysis on growth projection we can avoid unforeseen setbacks and greatly reduce penalities of our sprawling dominion."
+
     pw_policy_modeling_focus_domestic_surveillance: "Domestic Surveillance and Logistics"
+    pw_policy_modeling_focus_domestic_surveillance_name: "Domestic Surveillance and Logistics"
     pw_policy_modeling_focus_domestic_surveillance_desc: "By focusing the modeling of our administration in domestic surveillance and reinforcing logistics lines we can protect both valuable information and established cities infrastructure."
+
     pw_policy_modeling_focus_drone_surveillance: "Drone Surveillance and Logistics"
+    pw_policy_modeling_focus_drone_surveillance_name: "Drone Surveillance and Logistics"
     pw_policy_modeling_focus_drone_surveillance_desc: "By focusing the modeling of our administration in surveillance or our drones and reinforcing logistics lines we can protect both valuable information for the Gestalt and established operational infrastructure"
+
     pw_policy_modeling_focus_diplomatic_behavior_modeling: "Diplomatic Behavior Modeling"
+    pw_policy_modeling_focus_diplomatic_behavior_modeling_name: "Diplomatic Behavior Modeling"
     pw_policy_modeling_focus_diplomatic_behavior_modeling_desc: "By utilizing what information we have to predict and model alien behavior we can gain a crucial advantage in diplomatic actions, dominating the galactic scene with information they could not possibly know we have."
+
     pw_policy_modeling_focus_foreign_assets_support: "Foreign Assets Support"
+    pw_policy_modeling_focus_foreign_assets_support_name: "Foreign Assets Support"
     pw_policy_modeling_focus_foreign_assets_support_desc: "By feeding our undercover operators with intelligence gathered from analysis of the Galactic Model, we can streamline espionage actions, guaranteeing the best possible outcome and reliable intel."
 
     #Policy: Orbital Commerce
@@ -102,22 +114,29 @@
     policy_pw_policy_research_wonder_focus_desc: "By dedicating more support and attention to a certain area of knowledge we can expand research in that area, while sacrificing advancements in other fields."
 
     pw_policy_research_wonder_focus_unfocused: "Unfocused"
+    pw_policy_research_wonder_focus_unfocused_name: "Unfocused"
     pw_policy_research_wonder_focus_unfocused_desc: "A single field of science must not overshadow any other, progress is found in equilibrium."
 
     pw_policy_research_wonder_focus_physics: "Physics Focus"
+    pw_policy_research_wonder_focus_physics_name: "Physics Focus"
     pw_policy_research_wonder_focus_physics_desc: "The $pw_building_particle_supercollider$ has brought forward many new physical problems, focus on this area is paramount to solve these mysteries of the universe."
 
     pw_policy_research_wonder_focus_physics_extra: "Dimensional Physics Focus"
+    pw_policy_research_wonder_focus_physics_extra_name: "Dimensional Physics Focus"
     pw_policy_research_wonder_focus_physics_extra_desc: "The $pw_building_interdimensional_collider$ pushes event further the study of physics, incentive to pursue these studies are also further required."
 
     pw_policy_research_wonder_focus_society: "Society Focus"
+    pw_policy_research_wonder_focus_society_name: "Society Focus"
     pw_policy_research_wonder_focus_society_desc: "The $pw_building_domed_city$ provides a novelty way to put to test social theories, focus on this area in needed to completely understand the most exotic social relations."
 
     pw_policy_research_wonder_focus_society_extra: "Psionic Societal Focus"
+    pw_policy_research_wonder_focus_society_extra_name: "Psionic Societal Focus"
     pw_policy_research_wonder_focus_society_extra_desc: "The $pw_building_psionic_observatory$ gives our researchers a new way to look at societal problems, but that observation requires focus and additional resources."
 
     pw_policy_research_wonder_focus_engineering: "Engineering Focus"
+    pw_policy_research_wonder_focus_engineering_name: "Engineering Focus"
     pw_policy_research_wonder_focus_engineering_desc: "Engineering needs to evolve with the times and requires focus to remain relevant, the $pw_building_abyssal_crater_test_site$ provides the perfect space to promote suc development."
 
     pw_policy_research_wonder_focus_engineering_extra: "Moldable Engineering Focus"
+    pw_policy_research_wonder_focus_engineering_extra_name: "Moldable Engineering Focus"
     pw_policy_research_wonder_focus_engineering_extra_desc: "The $pw_building_metal_vivarium$ provides our engineers with the most adaptable and flexible environment to develop new prototypes, but such space requires support and focus to achieve ts maximum efficiency"
