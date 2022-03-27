@@ -442,7 +442,7 @@ pw_domed_city_test_subject = {
 	}
 
 	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.025
 	}
 
 	triggered_pop_modifier = {
@@ -567,7 +567,7 @@ pw_big_brother = {
 	resources = {
 		category = planet_enforcers
 		produces = {
-			unity = 10
+			unity = 5
 		}
 		upkeep = {
 			energy = 10
@@ -767,12 +767,12 @@ pw_poly_artisan = {
 			unity = 2
 		}
 		upkeep = {
-			minerals = 12
+			minerals = 15
 		}
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 2
 		trade_value_add = 2
 	}
 
@@ -892,7 +892,7 @@ pw_diversity_curator = {
 	resources = {
 		category = planet_culture_workers
 		produces = {
-			unity = 10
+			unity = 5
 			society_research = 6
 		}
 		upkeep = {
@@ -1046,7 +1046,7 @@ pw_degeneracy_curator = {
 	resources = {
 		category = planet_culture_workers
 		produces = {
-			unity = 10
+			unity = 5
 			society_research = 6
 		}
 		upkeep = {
@@ -1202,10 +1202,10 @@ pw_grand_archivist = {
 			physics_research = 5
 			engineering_research = 5
 			society_research = 5
-			unity = 2
+			unity = 0.5
 		}
 		upkeep = {
-			consumer_goods = 3
+			consumer_goods = 4
 		}
 	}
 
@@ -1363,7 +1363,7 @@ pw_master_archivist = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 6
+		planet_amenities_add = 4
 	}
 
 	triggered_planet_modifier = {
@@ -1533,7 +1533,7 @@ pw_lunar_archivist = {
 			physics_research = 4
 			engineering_research = 4
 			society_research = 4
-			unity = 2
+			unity = 1
 		}
 		upkeep = {
 			consumer_goods = 2
@@ -1682,7 +1682,7 @@ pw_relic_keeper = {
 	resources = {
 		category = planet_priests
 		produces = {
-			unity = 6
+			unity = 3
 			society_research = 4
 		}
 		upkeep = {
@@ -1866,12 +1866,12 @@ pw_tomb_scholar = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			unity = 3
+			unity = 2
 			physics_research = 4
 			society_research = 4
 		}
 		upkeep = {
-			consumer_goods = 2
+			consumer_goods = 3
 		}
 	}
 
@@ -1988,11 +1988,11 @@ pw_preserver = {
 	resources = {
 		category = planet_culture_workers
 		produces = {
-			unity = 3
+			unity = 2
 			society_research = 4
 		}
 		upkeep = {
-			consumer_goods = 2
+			consumer_goods = 3
 		}
 	}
 

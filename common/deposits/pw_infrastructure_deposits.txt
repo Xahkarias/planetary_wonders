@@ -12,7 +12,7 @@ pw_d_infrastructure_food_distribution = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 		upkeep = {
@@ -44,7 +44,7 @@ pw_d_infrastructure_energy_distribution = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 		upkeep = {
@@ -77,7 +77,7 @@ pw_d_infrastructure_goods_distribution = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 			rare_crystals = 1
 		}
@@ -112,7 +112,7 @@ pw_d_infrastructure_luxury_distribution = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 5
 			rare_crystals = 2
 		}
@@ -148,7 +148,7 @@ pw_d_infrastructure_medical_posts = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 		upkeep = {
@@ -194,7 +194,7 @@ pw_d_infrastructure_habitation_support = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 		upkeep = {
@@ -241,7 +241,7 @@ pw_d_infrastructure_emergency_services = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 			exotic_gases = 1
 		}
@@ -302,7 +302,7 @@ pw_d_infrastructure_crisis_responders = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 5
 			exotic_gases = 2
 		}
@@ -364,7 +364,7 @@ pw_d_infrastructure_public_agoras = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 		upkeep = {
@@ -397,7 +397,7 @@ pw_d_infrastructure_local_administration = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 		upkeep = {
@@ -452,7 +452,7 @@ pw_d_infrastructure_distributed_education = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 			exotic_gases = 1
 		}
@@ -508,7 +508,7 @@ pw_d_infrastructure_arts_installations = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 5
 			exotic_gases = 2
 		}
@@ -591,7 +591,7 @@ pw_d_infrastructure_public_markets = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 		upkeep = {
@@ -624,7 +624,7 @@ pw_d_infrastructure_inventions_fair = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 		upkeep = {
@@ -659,7 +659,7 @@ pw_d_infrastructure_cooperatives_manufacturers = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 			volatile_motes = 1
 		}
@@ -695,7 +695,7 @@ pw_d_infrastructure_industrial_unions = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 5
 			volatile_motes = 2
 		}
@@ -765,7 +765,7 @@ pw_d_infrastructure_planetary_command = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 	}
@@ -792,7 +792,7 @@ pw_d_infrastructure_governor_mansion = {
 			influence = 0.25
 		}
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 	}
@@ -889,7 +889,7 @@ pw_d_infrastructure_imperial_holy_throne = {
 			influence = 1.5
 		}
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 6
 			rare_crystals = 2
 		}
@@ -920,7 +920,7 @@ pw_d_infrastructure_luxury_retreat = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 	}
@@ -949,7 +949,7 @@ pw_d_infrastructure_wardens_directorate = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 	}
@@ -978,7 +978,7 @@ pw_d_infrastructure_overseers_ring = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 	}
@@ -1007,7 +1007,7 @@ pw_d_infrastructure_palatial_physicians = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 	}
@@ -1056,7 +1056,7 @@ pw_d_infrastructure_city_defenders = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 	}
@@ -1125,7 +1125,7 @@ pw_d_infrastructure_crisis_bunker = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 			volatile_motes = 1
 		}
@@ -1200,7 +1200,7 @@ pw_d_infrastructure_personal_guardian = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 5
 			volatile_motes = 2
 		}
@@ -1276,7 +1276,7 @@ pw_d_infrastructure_central_of_disinformation = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 2
+			energy = 3
 			consumer_goods = 1
 		}
 	}
@@ -1319,7 +1319,7 @@ pw_d_infrastructure_center_of_justice = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			consumer_goods = 2
 		}
 	}
@@ -1363,7 +1363,7 @@ pw_d_infrastructure_central_treasury = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 			exotic_gases = 1
 		}
@@ -1409,7 +1409,7 @@ pw_d_infrastructure_galactic_bureau = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 10
+			energy = 12
 			consumer_goods = 5
 			exotic_gases = 2
 		}
@@ -1477,7 +1477,7 @@ pw_d_infrastructure_ambassador_chambers = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 		}
 	}
@@ -1504,7 +1504,7 @@ pw_d_infrastructure_internal_affairs = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 		}
 	}
@@ -1531,7 +1531,7 @@ pw_d_infrastructure_intellectual_circles = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 		}
 	}
@@ -1558,7 +1558,7 @@ pw_d_infrastructure_holy_tribunal = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 		}
 	}
@@ -1598,7 +1598,7 @@ pw_d_infrastructure_ballroom = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 		}
 	}
@@ -1625,7 +1625,7 @@ pw_d_infrastructure_war_room = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 6
+			energy = 7
 			consumer_goods = 3
 		}
 	}
@@ -1654,7 +1654,7 @@ pw_d_integration_cyber_pylon = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			rare_crystals = 1
 		}
 		upkeep = {
@@ -1723,7 +1723,7 @@ pw_d_integration_CARE_facility = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			volatile_motes = 1
 		}
 		upkeep = {
@@ -1775,7 +1775,7 @@ pw_d_integration_coordination_center = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			volatile_motes = 1
 		}
 		upkeep = {
@@ -1825,7 +1825,7 @@ pw_d_integration_xeno_accommodation = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			rare_crystals = 1
 		}
 		upkeep = {
@@ -1886,7 +1886,7 @@ pw_d_integration_drone_surveillance = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			exotic_gases = 1
 		}
 		upkeep = {
@@ -1940,7 +1940,7 @@ pw_d_integration_integrated_replication = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			exotic_gases = 1
 		}
 		upkeep = {
@@ -2005,7 +2005,7 @@ pw_d_integration_shard_of_enigma = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			alloys = 2
 			exotic_gases = 1
 		}
@@ -2030,7 +2030,7 @@ pw_d_integration_chamber_of_reflection = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 4
+			energy = 5
 			exotic_gases = 1
 		}
 		upkeep = {

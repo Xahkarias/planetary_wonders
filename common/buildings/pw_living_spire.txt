@@ -140,24 +140,10 @@ pw_building_living_spire_0 = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			free_housing < 5
+			factor = value:pw_housing_factor
 		}
 		modifier = {
-			factor = 2
-			free_housing < 1
-		}
-		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 100
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -457,24 +443,10 @@ pw_building_living_spire_1 = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			free_housing < 5
+			factor = value:pw_housing_factor
 		}
 		modifier = {
-			factor = 2
-			free_housing < 1
-		}
-		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 100
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -898,24 +870,10 @@ pw_building_living_spire_2 = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			free_housing < 5
+			factor = value:pw_housing_factor
 		}
 		modifier = {
-			factor = 2
-			free_housing < 1
-		}
-		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 100
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -1340,24 +1298,10 @@ pw_building_living_spire_3 = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			free_housing < 5
+			factor = value:pw_housing_factor
 		}
 		modifier = {
-			factor = 2
-			free_housing < 1
-		}
-		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 100
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 150
+			factor = value:pw_pop_factor
 		}
 	}
 }

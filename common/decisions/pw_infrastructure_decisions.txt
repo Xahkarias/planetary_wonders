@@ -47,7 +47,7 @@ pw_decision_tls_infrastructure_distribution_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -155,7 +155,7 @@ pw_decision_tls_infrastructure_distribution_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -264,7 +264,7 @@ pw_decision_tls_infrastructure_distribution_3 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -382,7 +382,7 @@ pw_decision_tls_infrastructure_distribution_4 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -497,7 +497,7 @@ pw_decision_tls_infrastructure_emergency_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -605,7 +605,7 @@ pw_decision_tls_infrastructure_emergency_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -714,7 +714,7 @@ pw_decision_tls_infrastructure_emergency_3 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -835,7 +835,7 @@ pw_decision_tls_infrastructure_emergency_4 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -950,7 +950,7 @@ pw_decision_tls_infrastructure_culture_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1058,7 +1058,7 @@ pw_decision_tls_infrastructure_culture_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1167,7 +1167,7 @@ pw_decision_tls_infrastructure_culture_3 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1290,7 +1290,7 @@ pw_decision_tls_infrastructure_culture_4 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1405,7 +1405,7 @@ pw_decision_tls_infrastructure_industrial_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1513,7 +1513,7 @@ pw_decision_tls_infrastructure_industrial_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1622,7 +1622,7 @@ pw_decision_tls_infrastructure_industrial_3 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1744,7 +1744,7 @@ pw_decision_tls_infrastructure_industrial_4 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1861,7 +1861,7 @@ pw_decision_fc_infrastructure_capital_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -1971,7 +1971,7 @@ pw_decision_fc_infrastructure_capital_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -2088,7 +2088,7 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -2209,7 +2209,7 @@ pw_decision_fc_infrastructure_capital_throne_room = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -2729,7 +2729,7 @@ pw_decision_fc_infrastructure_emergency_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -2836,7 +2836,7 @@ pw_decision_fc_infrastructure_emergency_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -2944,7 +2944,7 @@ pw_decision_fc_infrastructure_emergency_3 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3064,7 +3064,7 @@ pw_decision_fc_infrastructure_emergency_4 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3179,7 +3179,7 @@ pw_decision_fc_infrastructure_power_1 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3286,7 +3286,7 @@ pw_decision_fc_infrastructure_power_2 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3394,7 +3394,7 @@ pw_decision_fc_infrastructure_power_3 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3518,7 +3518,7 @@ pw_decision_fc_infrastructure_power_4 = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3632,7 +3632,7 @@ pw_decision_fc_infrastructure_ambassador_chambers = {
 	}
 
 	ai_weight = {
-		weight = 0.5
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3731,7 +3731,7 @@ pw_decision_fc_infrastructure_internal_affairs = {
 	}
 
 	ai_weight = {
-		weight = 0.5
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3831,7 +3831,7 @@ pw_decision_fc_infrastructure_intellectual_circles = {
 	}
 
 	ai_weight = {
-		weight = 0.5
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -3923,7 +3923,7 @@ pw_decision_fc_infrastructure_holy_tribunal = {
 	}
 
 	ai_weight = {
-		weight = 0.5
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -4026,7 +4026,7 @@ pw_decision_fc_infrastructure_ballroom = {
 	}
 
 	ai_weight = {
-		weight = 0.5
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -4121,7 +4121,7 @@ pw_decision_fc_infrastructure_war_room = {
 	}
 
 	ai_weight = {
-		weight = 0.5
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {

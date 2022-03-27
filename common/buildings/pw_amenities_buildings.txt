@@ -238,7 +238,7 @@ pw_building_transplanetary_logistics_network = {
 	# }
 
 	ai_weight = {
-		weight = 55
+		weight = 65
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
@@ -278,6 +278,9 @@ pw_building_transplanetary_logistics_network = {
 			factor = 2
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_egalitarian }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -576,6 +579,9 @@ pw_building_transhabitat_logistics_network = {
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_egalitarian }
 		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
 	}
 }
 
@@ -834,7 +840,7 @@ pw_building_festival_plaza = {
 	}
 
 	ai_weight = {
-		weight = 35
+		weight = 45
 		modifier = {
 			factor = 0
 			buildings_has_crystals = no
@@ -889,14 +895,7 @@ pw_building_festival_plaza = {
 			owner = { has_valid_civic = civic_agrarian_idyll }
 		}
 		modifier = {
-			factor = 0.1
-			exists = owner
-			owner = { is_at_war = yes }
-		}
-		modifier = {
-			factor = 2
-			exists = owner
-			owner = { is_at_war = no }
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -1281,6 +1280,15 @@ pw_building_nostalgia_paradise = {
 				is_xenophile = yes
 			}
 		}
+		modifier = {
+			factor = value:pw_pop_factor
+			OR = {
+				has_modifier = resort_colony
+				any_owned_pop = {
+					has_job = bio_trophy
+				}
+			}
+		}
 	}
 }
 
@@ -1588,6 +1596,9 @@ pw_building_blossoming_preserve = {
 					has_valid_civic = civic_hive_idyllic_bloom
 				}
 			}
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }

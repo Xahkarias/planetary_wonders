@@ -131,8 +131,8 @@ pw_building_space_elevator = {
 		}
 		modifier = {
 			job_merchant_add = 1
-			job_clerk_add = 10
 			job_enforcer_add = 1
+			job_clerk_add = 10
 			trade_value_mult = 0.05
 		}
 	}
@@ -427,10 +427,7 @@ pw_building_space_elevator = {
 	}
 
 	ai_weight = {
-		weight = 25
-		modifier = {
-			factor = 0
-		}
+		weight = 30
 		modifier = {
 			factor = 0.25
 			free_building_slots < 1
@@ -483,16 +480,10 @@ pw_building_space_elevator = {
 			}
 		}
 		modifier = {
-			factor = 2.5
-			num_pops > 60
+			factor = value:pw_pop_factor
 		}
 		modifier = {
-			factor = 0.75
-			planet_size < 15
-		}
-		modifier = {
-			factor = 1.5
-			planet_size > 20
+			factor = value:pw_trade_factor
 		}
 	}
 }
@@ -712,7 +703,7 @@ pw_building_department_of_xenoeconomics = {
 	}
 
 	ai_weight = {
-		weight = 50
+		weight = 60
 		modifier = {
 			factor = 0
 			owner = {
@@ -751,28 +742,10 @@ pw_building_department_of_xenoeconomics = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 1.2
-			solar_system = {
-				has_system_trade_value > 50
-			}
+			factor = value:pw_pop_factor
 		}
 		modifier = {
-			factor = 1.5
-			solar_system = {
-				has_system_trade_value > 100
-			}
-		}
-		modifier = {
-			factor = 1.8
-			solar_system = {
-				has_system_trade_value > 150
-			}
-		}
-		modifier = {
-			factor = 2
-			solar_system = {
-				has_system_trade_value > 200
-			}
+			factor = value:pw_trade_factor
 		}
 	}
 }

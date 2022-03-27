@@ -1027,7 +1027,7 @@ pw_building_mantle_crucible = {
 	# }
 
 	ai_weight = {
-		weight = 50
+		weight = 60
 		modifier = {
 			factor = 0
 		}
@@ -1053,7 +1053,7 @@ pw_building_mantle_crucible = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_active_building = building_foundry_1
 				has_active_building = building_foundry_2
@@ -1065,7 +1065,7 @@ pw_building_mantle_crucible = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			OR = {
 				has_designation = col_foundry
 				has_designation = col_ecu_foundry
@@ -1490,7 +1490,7 @@ pw_building_titan_forge = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_active_building = building_foundry_1
 				has_active_building = building_foundry_2
@@ -1498,7 +1498,7 @@ pw_building_titan_forge = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			OR = {
 				has_designation = col_foundry
 				has_designation = col_ecu_foundry
@@ -1774,7 +1774,7 @@ pw_building_industrial_hearth = {
 			NOT = { has_building_construction = pw_building_industrial_hearth }
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_active_building = building_factory_1
 				has_active_building = building_factory_2
@@ -1782,7 +1782,7 @@ pw_building_industrial_hearth = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			OR = {
 				has_designation = col_factory
 				has_designation = col_ecu_factory

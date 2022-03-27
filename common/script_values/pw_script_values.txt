@@ -184,3 +184,42 @@ pw_farming_district_count = {
 		mult = $MULT|1$
 	}
 }
+
+#Planet Scope
+pw_pop_factor = {
+	base = 0.1
+	mult = trigger:num_pops
+}
+
+#Planet Scope
+pw_trade_factor = {
+	base = 0.05
+	mult = solar_system.trigger:has_system_trade_value
+}
+
+#Planet Scope
+pw_housing_factor = {
+	base = 20
+	divide = trigger:free_housing
+}
+
+#Planet Scope
+pw_crime_factor = {
+	base = 0.1
+	mult = trigger:planet_crime
+}
+
+#Planet Scope
+pw_job_factor = {
+	base = 0.5
+
+	complex_trigger_modifier = {
+		trigger = count_owned_pop
+		parameters = {
+			limit = {
+				has_job = $JOB$
+			}
+		}
+		mode = mult
+	}
+}

@@ -23,7 +23,7 @@ pw_researcher_particle_supercollider = {
 		}
 		upkeep = {
 			consumer_goods = 2
-			energy = 4
+			energy = 5
 		}
 	}
 
@@ -141,7 +141,7 @@ pw_researcher_domed_city = {
 			society_research = 12
 		}
 		upkeep = {
-			consumer_goods = 3
+			consumer_goods = 4
 		}
 	}
 
@@ -260,7 +260,7 @@ pw_researcher_abyssal_crater_test_site = {
 		}
 		upkeep = {
 			consumer_goods = 2
-			alloys = 1
+			alloys = 2
 		}
 	}
 

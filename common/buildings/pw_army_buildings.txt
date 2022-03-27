@@ -280,7 +280,7 @@ pw_building_guardian_angel = {
 	# }
 
 	ai_weight = {
-		weight = 20
+		weight = 40
 		modifier = {
 			factor = 0
 			buildings_has_motes = no
@@ -323,6 +323,10 @@ pw_building_guardian_angel = {
 		modifier = {
 			factor = 3
 			owner = { is_at_war = yes }
+		}
+		modifier = {
+			factor = 10
+			colony_type = col_fortress
 		}
 	}
 }
@@ -656,6 +660,10 @@ pw_building_stellar_sentinel = {
 		modifier = {
 			factor = 3
 			owner = { is_at_war = yes }
+		}
+		modifier = {
+			factor = 10
+			colony_type = col_fortress
 		}
 	}
 }
@@ -1004,19 +1012,7 @@ pw_building_martial_avenue = {
 			owner = { has_ethic = ethic_fanatic_militarist }
 		}
 		modifier = {
-			factor = 1.25
-			exists = owner
-			owner = { num_rivals > 0 }
-		}
-		modifier = {
-			factor = 1.25
-			exists = owner
-			owner = { num_rivals > 1 }
-		}
-		modifier = {
-			factor = 1.5
-			exists = owner
-			owner = { num_rivals > 2 }
+			factor = owner.trigger:num_rivals
 		}
 		modifier = {
 			factor = 1.15
@@ -1047,6 +1043,9 @@ pw_building_martial_avenue = {
 			factor = 0.5
 			exists = owner
 			owner = { is_at_war = no }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }

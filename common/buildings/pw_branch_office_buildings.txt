@@ -123,11 +123,14 @@ pw_building_bloodsports_arena = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_militarist }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -253,11 +256,14 @@ pw_building_meditation_garden = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_pacifist }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -360,11 +366,14 @@ pw_building_innovation_hub = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -477,11 +486,14 @@ pw_building_salvation_shrine = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -584,11 +596,14 @@ pw_building_exotic_beauty_center = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -691,11 +706,14 @@ pw_building_national_pride_gallery = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -796,11 +814,14 @@ pw_building_aristocracy_tower = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -942,11 +963,14 @@ pw_building_factory_city = {
 	}
 
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 1.5
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_egalitarian }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -1026,6 +1050,9 @@ pw_building_tax_haven = {
 	}
 
 	ai_weight = {
-		weight = 260
+		weight = 160
+		modifier = {
+			factor = value:pw_pop_factor
+		}
 	}
 }

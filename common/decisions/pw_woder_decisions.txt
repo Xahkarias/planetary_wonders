@@ -352,7 +352,7 @@ pw_decision_SE_install_space_ramp = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -385,7 +385,7 @@ pw_decision_SE_install_space_ramp = {
 			free_district_slots < 2
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.5
 			OR = {
 				has_designation = col_city
 				has_designation = col_nexus
@@ -400,20 +400,7 @@ pw_decision_SE_install_space_ramp = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			factor = 1.5
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 75
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 100
-		}
-		modifier = {
-			factor = 2
-			num_pops > 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -457,7 +444,7 @@ pw_decision_SE_install_skyhook = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -490,7 +477,7 @@ pw_decision_SE_install_skyhook = {
 			free_district_slots < 2
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.5
 			OR = {
 				has_designation = col_city
 				has_designation = col_nexus
@@ -505,20 +492,7 @@ pw_decision_SE_install_skyhook = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			factor = 1.5
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 75
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 100
-		}
-		modifier = {
-			factor = 2
-			num_pops > 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -573,7 +547,7 @@ pw_decision_SE_moon_colony_expansion = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -606,7 +580,7 @@ pw_decision_SE_moon_colony_expansion = {
 			free_district_slots < 2
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.5
 			OR = {
 				has_designation = col_city
 				has_designation = col_nexus
@@ -621,20 +595,7 @@ pw_decision_SE_moon_colony_expansion = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			factor = 1.5
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 75
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 100
-		}
-		modifier = {
-			factor = 2
-			num_pops > 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -678,7 +639,7 @@ pw_decision_SE_orbital_districts = {
 	}
 
 	ai_weight = {
-		weight = 0.75
+		weight = 2
 		modifier = {
 			factor = 0
 			owner = {
@@ -711,7 +672,7 @@ pw_decision_SE_orbital_districts = {
 			free_district_slots < 2
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.5
 			OR = {
 				has_designation = col_city
 				has_designation = col_nexus
@@ -726,20 +687,7 @@ pw_decision_SE_orbital_districts = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			factor = 1.5
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 75
-		}
-		modifier = {
-			factor = 1.5
-			num_pops > 100
-		}
-		modifier = {
-			factor = 2
-			num_pops > 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -1039,7 +987,7 @@ pw_decision_rebuild_flying_fortress = {
 	}
 
 	ai_weight = {
-		weight = 2
+		weight = 5
 		modifier = {
 			factor = 0
 			planet_devastation > 10

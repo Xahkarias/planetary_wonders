@@ -239,10 +239,10 @@ pw_enigma_decipher = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			society_research = 3
-			physics_research = 3
-			engineering_research = 3
-			unity = 3
+			society_research = 2
+			physics_research = 2
+			engineering_research = 2
+			unity = 2
 		}
 		upkeep = {
 			energy = 15
@@ -326,7 +326,7 @@ pw_domed_city_subject_drone = {
 	}
 
 	planet_modifier = {
-		planet_jobs_society_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.025
 	}
 
 	triggered_pop_modifier = {
@@ -380,10 +380,10 @@ pw_poly_artisan_drone ={
 		category = planet_artisans
 		produces = {
 			consumer_goods = 12
+			unity = 2
 		}
 		upkeep = {
-			minerals = 12
-			unity = 2
+			minerals = 15
 		}
 	}
 
@@ -434,7 +434,7 @@ pw_lunar_archivist_gestalt = {
 					is_machine_empire = yes
 				}
 			}
-			energy = 5
+			energy = 6
 		}
 		upkeep = {
 			trigger = {
@@ -443,7 +443,7 @@ pw_lunar_archivist_gestalt = {
 					is_hive_empire = yes
 				}
 			}
-			minerals = 5
+			minerals = 6
 		}
 	}
 
@@ -587,7 +587,7 @@ pw_logistics_drone = {
 	}
 
 	resources = {
-		category = planet_jobs
+		category = planet_administrators
 		produces = {
 			trigger = {
 				exists = owner
@@ -595,7 +595,7 @@ pw_logistics_drone = {
 					has_valid_civic = civic_machine_maintenance_protocols
 				}
 			}
-			unity = 1
+			unity = 2.5
 		}
 		upkeep = {
 			trigger = {
@@ -605,8 +605,8 @@ pw_logistics_drone = {
 					is_lithoid = no
 				}
 			}
-			food = 3
-			energy = 3
+			food = 4
+			energy = 4
 		}
 		upkeep = {
 			trigger = {
@@ -616,8 +616,8 @@ pw_logistics_drone = {
 					is_lithoid = yes
 				}
 			}
-			minerals = 3
-			energy = 3
+			minerals = 4
+			energy = 4
 		}
 		upkeep = {
 			trigger = {
@@ -626,52 +626,7 @@ pw_logistics_drone = {
 					is_machine_empire = yes
 				}
 			}
-			energy = 6
-		}
-	}
-
-	country_modifier = {
-		country_admin_cap_add = 4
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			country_admin_cap_add = 2
-		}
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				exists = sector
-				sector = {
-					exists = leader
-					OR = {
-						leader = { has_trait = leader_trait_mindfulness }
-						leader = { has_trait = leader_trait_amplifier }
-					}
-				}
-			}
-		}
-		modifier = {
-			country_admin_cap_add = 1
-		}
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_synchronicity_integrated_preservation
-			}
-		}
-		modifier = {
-			country_admin_cap_add = 1
+			energy = 8
 		}
 	}
 
@@ -760,7 +715,7 @@ pw_tomb_surveyor = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			unity = 4
+			unity = 2
 			physics_research = 4
 			society_research = 4
 		}
@@ -847,11 +802,11 @@ pw_preserver_drone = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			unity = 3
+			unity = 2
 			society_research = 4
 		}
 		upkeep = {
-			minerals = 3
+			minerals = 2
 			energy = 3
 		}
 	}
@@ -862,7 +817,7 @@ pw_preserver_drone = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			planet_amenities_add = 5
+			planet_amenities_no_happiness_add = 5
 		}
 	}
 

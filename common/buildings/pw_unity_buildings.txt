@@ -259,7 +259,7 @@ pw_building_pavilion_of_wonders = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_jobs_unity_produces_mult = 0.10
+			planet_jobs_unity_produces_mult = 0.05
 		}
 	}
 
@@ -350,7 +350,7 @@ pw_building_pavilion_of_wonders = {
 	}
 
 	ai_weight = {
-		weight = 25
+		weight = 40
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
@@ -858,7 +858,7 @@ pw_building_fair_of_worlds = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_jobs_unity_produces_mult = 0.20
+			planet_jobs_unity_produces_mult = 0.10
 		}
 	}
 
@@ -869,7 +869,7 @@ pw_building_fair_of_worlds = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			trade_value_mult = 0.20
+			trade_value_mult = 0.15
 		}
 	}
 
@@ -973,7 +973,7 @@ pw_building_fair_of_worlds = {
 	}
 
 	ai_weight = {
-		weight = 40
+		weight = 50
 		modifier = {
 			factor = 0
 			buildings_has_crystals = no
@@ -1500,7 +1500,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_jobs_unity_produces_mult = 0.20
+			planet_jobs_unity_produces_mult = 0.10
 		}
 	}
 
@@ -1511,7 +1511,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			trade_value_mult = 0.20
+			trade_value_mult = 0.15
 		}
 	}
 
@@ -1640,7 +1640,7 @@ pw_building_museum_of_the_grotesque = {
 	}
 
 	ai_weight = {
-		weight = 40
+		weight = 50
 		modifier = {
 			factor = 0
 			buildings_has_motes = no
@@ -1938,7 +1938,7 @@ pw_building_holy_reliquary = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_priests_produces_mult = 0.25
+			planet_priests_produces_mult = 0.15
 		}
 	}
 
@@ -2021,7 +2021,7 @@ pw_building_holy_reliquary = {
 	}
 
 	ai_weight = {
-		weight = 50
+		weight = 75
 		modifier = {
 			factor = 0
 			buildings_has_crystals = no
@@ -2065,6 +2065,12 @@ pw_building_holy_reliquary = {
 			factor = 3
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		modifier = {
+			factor = value:pw_job_factor|JOB|priest|
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }

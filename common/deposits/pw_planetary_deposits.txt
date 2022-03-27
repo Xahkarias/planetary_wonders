@@ -8,7 +8,7 @@ pw_d_ancient_cornucopia = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_food_produces_mult = 0.05
 		district_farming_max = 1
 	}
 
@@ -64,7 +64,7 @@ pw_d_ancient_solar_tower = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_energy_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.05
 		district_generator_max = 1
 	}
 
@@ -98,7 +98,7 @@ pw_d_ancient_mining_project = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.05
 		district_mining_max = 1
 	}
 
@@ -135,7 +135,7 @@ pw_d_SE_space_ramp = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 5
+			energy = 6
 			alloys = 2
 		}
 	}
@@ -203,7 +203,7 @@ pw_d_SE_skyhook = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 5
+			energy = 6
 			alloys = 2
 		}
 	}
@@ -729,8 +729,8 @@ pw_d_holoarchive = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			energy = 20
-			consumer_goods = 10
+			energy = 40
+			consumer_goods = 20
 		}
 	}
 

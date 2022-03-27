@@ -20,6 +20,7 @@ pw_monument_base = {
 	}
 
 	destroy_trigger = {
+		#Conquered monuments are maintained
 		has_upgraded_capital = no
 	}
 
@@ -40,9 +41,6 @@ pw_monument_base = {
 		}
 		upkeep = {
 			energy = 2
-		}
-		produces = {
-			unity = 5
 		}
 	}
 

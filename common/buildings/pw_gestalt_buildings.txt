@@ -1,4 +1,4 @@
-#Gestalt Buildings
+.#Gestalt Buildings
 
 #Conduit of Unity: 2 Construction phases
 pw_building_conduit_of_unity_0 = {
@@ -142,24 +142,10 @@ pw_building_conduit_of_unity_0 = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			free_housing < 5
+			factor = value:pw_housing_factor
 		}
 		modifier = {
-			factor = 2
-			free_housing < 1
-		}
-		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 100
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -489,24 +475,10 @@ pw_building_conduit_of_unity_1 = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			free_housing < 5
+			factor = value:pw_housing_factor
 		}
 		modifier = {
-			factor = 2
-			free_housing < 1
-		}
-		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 100
-		}
-		modifier = {
-			factor = 1.5
-			num_pops < 150
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -710,7 +682,7 @@ pw_building_enigma_engine = {
 	}
 
 	ai_weight = {
-		weight = 50
+		weight = 60
 		modifier = {
 			factor = 0
 			owner = {
@@ -725,12 +697,7 @@ pw_building_enigma_engine = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 2
-			num_pops > 100
+			factor = value:pw_pop_factor
 		}
 	}
 }
@@ -1161,7 +1128,7 @@ pw_building_solipsist_debate_hall = {
 	}
 
 	ai_weight = {
-		weight = 50
+		weight = 60
 		modifier = {
 			factor = 0
 			buildings_has_exotic_gases = no
@@ -1171,12 +1138,7 @@ pw_building_solipsist_debate_hall = {
 			is_capital = yes
 		}
 		modifier = {
-			factor = 2
-			num_pops > 50
-		}
-		modifier = {
-			factor = 2
-			num_pops > 100
+			factor = value:pw_pop_factor
 		}
 	}
 }

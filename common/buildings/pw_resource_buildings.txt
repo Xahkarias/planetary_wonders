@@ -925,7 +925,7 @@ pw_building_erebus_project = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_jobs_minerals_upkeep_mult = -0.15
+			planet_jobs_minerals_upkeep_mult = -0.10
 		}
 	}
 
@@ -1015,7 +1015,7 @@ pw_building_erebus_project = {
 			has_designation = col_mining
 		}
 		modifier = {
-			factor = 3
+			factor = 5
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt
@@ -2108,7 +2108,7 @@ pw_building_erebus_fracking_plant = {
 			has_designation = col_mining
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt
@@ -3161,7 +3161,7 @@ pw_building_helios_tower = {
 			has_designation = col_generator
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt
@@ -4254,11 +4254,11 @@ pw_building_helios_translucent_obelisk = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 5
 			has_designation = col_generator
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt
@@ -5851,11 +5851,11 @@ pw_building_demetrius_fields = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 5
 			has_designation = col_farming
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt
@@ -7492,11 +7492,11 @@ pw_building_demetrius_chemical_garden = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 5
 			has_designation = col_farming
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			OR = {
 				has_designation = col_rural
 				has_designation = col_rural_gestalt

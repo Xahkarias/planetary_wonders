@@ -37,17 +37,17 @@
 
 #Buildings
 
-@pw_building_buildtime = 2000 #+/-5 years
+@pw_building_buildtime = 2300 #+/-6 years
 @pw_building_branch_office_buildtime = 720 #+/-2 years
 
 #Resource Cost:
-@pw_building_cost = 10000 #Base build cost
+@pw_building_cost = 12000 #Base build cost
 @pw_building_cost_upgrade = 15000 #Base build cost for upgrades (rare)
-@pw_building_cost_half = 5000
+@pw_building_cost_half = 6000
 @pw_building_cost_extra = 5000 #Additional build cost for additional wonder
 @pw_building_cost_extra_half = 2500
 @pw_building_cost_discount = -1000 #Discount cost for designation planets
-@pw_building_branch_office_cost = 1500
+@pw_building_branch_office_cost = 2000
 
 @pw_building_cost_advanced = 1000 #Alloys in some cases
 @pw_building_cost_rare = 500 #Rare resources cost
@@ -76,25 +76,25 @@
 @pw_building_ruler_jobs = 1
 
 #Modifiers production:
-@pw_building_research_mod = 0.15
+@pw_building_research_mod = 0.10
 @pw_building_research_upgrade_mod = 0.10
 
 #Deposits
-@pw_deposits_upkeep_common = 2
-@pw_deposits_upkeep_advanced = 1
+@pw_deposits_upkeep_common = 4
+@pw_deposits_upkeep_advanced = 2
 
 #Monuments:
-@pw_monument_cost = 1000
+@pw_monument_cost = 1500
 @pw_monument_time = 360
-@pw_monument_unity_production = 10
+@pw_monument_unity_production = 5
 @pw_monument_upkeep = 5
 
 #Jobs
 
 #Production
-@pw_job_director_resource_base = 2
-@pw_job_director_resource_upkeep = 2
-@pw_job_director_resource_amenities = 3
+@pw_job_director_resource_base = 4
+@pw_job_director_resource_upkeep = 6
+@pw_job_director_resource_amenities = 2
 @pw_job_director_resource_mult = 0.25
 
 
