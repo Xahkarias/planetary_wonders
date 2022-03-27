@@ -64,6 +64,7 @@ pw_building_conduit_of_unity_0 = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_conduit_of_unity_0 }
 				}
 			}
 			minerals = @pw_building_cost_extra_half
@@ -205,6 +206,7 @@ pw_building_conduit_of_unity_1 = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_conduit_of_unity_1 }
 				}
 			}
 			minerals = @pw_building_cost_extra
@@ -549,6 +551,7 @@ pw_building_enigma_engine = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_enigma_engine }
 				}
 			}
 			minerals = @pw_building_cost_extra
@@ -773,6 +776,7 @@ pw_building_solipsist_debate_hall = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_solipsist_debate_hall }
 				}
 			}
 			minerals = @pw_building_cost_extra

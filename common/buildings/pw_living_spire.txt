@@ -62,6 +62,7 @@ pw_building_living_spire_0 = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_living_spire_0 }
 				}
 			}
 			minerals = @pw_building_cost_extra_half
@@ -207,6 +208,7 @@ pw_building_living_spire_1 = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_living_spire_1 }
 				}
 			}
 			minerals = @pw_building_cost_extra_half
@@ -510,6 +512,7 @@ pw_building_living_spire_2 = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_living_spire_2 }
 				}
 			}
 			minerals = @pw_building_cost_extra
@@ -937,6 +940,7 @@ pw_building_living_spire_3 = {
 			trigger = {
 				planet = {
 					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_living_spire_3 }
 				}
 			}
 			minerals = @pw_building_cost_extra
