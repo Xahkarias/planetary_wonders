@@ -82,6 +82,11 @@
     pw_wonder.251.desc: "The long experiment chain that was prepared for the Supercollider has been completed, but the path to understanding physics and our material reality is only beginning. The breaches found by colliding particles, the systems developed for navigating dimensions and finally the probing and manipulations of portals have culminated on the groundbreaking $pw_interdimensional_collider$, that now stands upon the foundations of the old accelerator.\n\nNew realities are now at our grasp to explore."
     pw_wonder.251.a: "There is much to be known, in this world and beyond."
 
+    #Explanation that Particle Supercollider can still be built
+    pw_wonder.255.name: "Remaining Physics Mysteries"
+    pw_wonder.255.desc: "The impact of the $pw_interdimensional_collider$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_particle_supercollider$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
+    pw_wonder.255.a: "There is no end to the mysteries of the universe."
+
 
     #Complete Domed City
     pw_message_domed_city_complete: "$pw_domed_city$ has been constructed on $PLANET|Y$."
@@ -107,6 +112,11 @@
     pw_wonder.351.a: "Zro opens the doors of the mind, but we must cross them."
     pw_wonder.351.b: "We must recognize that its effects are undeniable."
 
+    #Explanation that Domed City can still be built
+    pw_wonder.355.name: "Remaining Societal Mysteries"
+    pw_wonder.355.desc: "The impact of the $pw_building_psionic_observatory$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_domed_city$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
+    pw_wonder.355.a: "There is no end to the mysteries of society."
+
     #Complete Abyssal Crater Test Site
     pw_message_abyssal_crater_test_site_complete: "$pw_abyssal_crater_test_site$ has been constructed on $PLANET|Y$."
     pw_message_abyssal_crater_test_site_habitat_complete: "$pw_abyssal_crater_test_site_habitat$ has been constructed on $PLANET|Y$."
@@ -129,6 +139,11 @@
     pw_wonder.451.name: "Liquid Modernity"
     pw_wonder.451.desc: "The long experiment chain that was prepared for the $pw_building_abyssal_crater_test_site$ has been completed, but the path of developing revolutions of industrial production and void construction is far from over. This new $pw_metal_vivarium$ will achieve much more than that. It will allow us to grow, tame and model Living Metal to our will and apply this control into meta-experiments, using the properties of the substance not only on our projects but as reliable test control.\n\nThis is engineering adapted to the new era: a revolution of the industry."
     pw_wonder.451.a: "The shape of our future lies on our hands."
+
+    #Explanation that Abyssal Crater Test Site can still be built
+    pw_wonder.455.name: "Remaining Engineering Advancements"
+    pw_wonder.455.desc: "The impact of the $pw_metal_vivarium$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_building_abyssal_crater_test_site$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
+    pw_wonder.455.a: "There is no end to the advancements of engineering."
 
     #Complete Erebus Project
     pw_message_erebus_project_complete: "§MErebus Project§! has been constructed on $PLANET|Y$."

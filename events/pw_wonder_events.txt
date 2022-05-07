@@ -1038,6 +1038,32 @@ planet_event = {
 			}
 		}
 	}
+
+	after = {
+		planet_event = {
+			id = pw_wonder.255
+			days = 10
+		}
+	}
+}
+
+#Explanation that Particle Supercollider can still be built
+planet_event = {
+	id = pw_wonder.255
+	title = pw_wonder.255.name
+	desc = pw_wonder.255.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	option = {
+		name = pw_wonder.255.a
+	}
 }
 
 
@@ -1356,6 +1382,32 @@ planet_event = {
 			}
 		}
 	}
+
+	after = {
+		planet_event = {
+			id = pw_wonder.355
+			days = 10
+		}
+	}
+}
+
+#Explanation that Domed City can still be built
+planet_event = {
+	id = pw_wonder.355
+	title = pw_wonder.355.name
+	desc = pw_wonder.355.desc
+	picture = GFX_evt_pw_domed_city
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	option = {
+		name = pw_wonder.355.a
+	}
 }
 
 # Abyssal Crater Test Site -> id 400
@@ -1641,6 +1693,32 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
+	}
+
+	after = {
+		planet_event = {
+			id = pw_wonder.455
+			days = 10
+		}
+	}
+}
+
+#Explanation that Abyssal Crater Test Site can still be built
+planet_event = {
+	id = pw_wonder.455
+	title = pw_wonder.455.name
+	desc = pw_wonder.455.desc
+	picture = GFX_evt_pw_abyssal_crater_test_site
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	option = {
+		name = pw_wonder.455.a
 	}
 }
 

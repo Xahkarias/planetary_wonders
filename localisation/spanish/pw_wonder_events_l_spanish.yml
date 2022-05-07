@@ -789,3 +789,13 @@
     pw_wonder.1815.name: "Elitist Utopia"
     pw_wonder.1815.desc: "With the construction of the final development on the $pw_forbidden_city$ the ruling elite of our capital can finally enjoy the complete fruits of utopia, absolutely sheltered from the troubles of the galaxy - troubles that still afflict the lesser citizen of our planets. By having every one of their needs satisfied, material or otherwise, the aristocracy can focus on what truly matters, without any of the burdens of scarcity that plague the rest of society.\n\nAs the elites evolve, and their needs evolve with them, the City is able to adapt in order to fullfil any of their desires.\nWe have made freedom a scarce resource. Good thing that we are at the top to enjoy it."
     pw_wonder.1815.a: "Utopia is here for those who deserve it."
+
+    pw_wonder.255.name: "Remaining Physics Mysteries"
+    pw_wonder.255.desc: "The impact of the $pw_interdimensional_collider$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_particle_supercollider$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
+    pw_wonder.255.a: "There is no end to the mysteries of the universe."
+    pw_wonder.355.name: "Remaining Societal Mysteries"
+    pw_wonder.355.desc: "The impact of the $pw_building_psionic_observatory$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_domed_city$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
+    pw_wonder.355.a: "There is no end to the mysteries of society."
+    pw_wonder.455.name: "Remaining Engineering Advancements"
+    pw_wonder.455.desc: "The impact of the $pw_metal_vivarium$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_building_abyssal_crater_test_site$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
+    pw_wonder.455.a: "There is no end to the advancements of engineering."
