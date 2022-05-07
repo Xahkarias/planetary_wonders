@@ -976,7 +976,7 @@ pw_tech_particle_supercollider = {
 	category = { particles }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_engineering_3
+		tech_physics_3
 	}
 	weight = @tier4weight3
 	is_rare = yes
@@ -1131,7 +1131,7 @@ pw_tech_abyssal_crater_test_site = {
 	category = { propulsion }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_physics_3
+		tech_engineering_3
 	}
 	weight = @tier4weight3
 	is_rare = yes
