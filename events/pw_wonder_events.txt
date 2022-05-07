@@ -7601,7 +7601,7 @@ planet_event = {
 						owner = { has_tech_option = pw_tech_industrial_hearth_industry_military }
 					}
 				}
-				planet_event = { id = pw_wonder.1365	}
+				planet_event = { id = pw_wonder.1365 }
 			}
 			10 = {
 				modifier = {
@@ -7612,7 +7612,7 @@ planet_event = {
 						owner = { has_tech_option = pw_tech_industrial_hearth_industry_civilian }
 					}
 				}
-				planet_event = { id = pw_wonder.1366	}
+				planet_event = { id = pw_wonder.1366 }
 			}
 			10 = {
 				modifier = {
@@ -7625,7 +7625,7 @@ planet_event = {
 						}
 					}
 				}
-				planet_event = { id = pw_wonder.1367	}
+				planet_event = { id = pw_wonder.1367 }
 			}
 			10 = {
 				modifier = {
@@ -7636,19 +7636,23 @@ planet_event = {
 						owner = { has_tech_option = pw_tech_industrial_hearth_housing }
 					}
 				}
-				planet_event = { id = pw_wonder.1368	}
+				planet_event = { id = pw_wonder.1368 }
 			}
-			10 = {
+			5 = {
 				modifier = {
 					factor = 0
 					exists = owner
-					NOT = { owner = { has_valid_civic = civic_environmentalist }}
 					OR = {
 						owner = { has_technology = pw_tech_industrial_hearth_gardens }
 						owner = { has_tech_option = pw_tech_industrial_hearth_gardens }
 					}
 				}
-				planet_event = { id = pw_wonder.1369	}
+				modifier = {
+					factor = 5
+					exists = owner
+					owner = { has_valid_civic = civic_environmentalist }
+				}
+				planet_event = { id = pw_wonder.1369 }
 			}
 			10 = {
 				modifier = {
@@ -7664,7 +7668,7 @@ planet_event = {
 					exists = owner
 					owner = { is_megacorp = yes }
 				}
-				planet_event = { id = pw_wonder.1370	}
+				planet_event = { id = pw_wonder.1370 }
 			}
 			10 = {
 				modifier = {
