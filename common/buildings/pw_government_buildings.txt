@@ -132,7 +132,7 @@ pw_building_galactic_model = {
 	}
 
 	country_modifier = {
-		planet_administrators_produces_mult = 0.10
+		diplomacy_upkeep_mult = -0.25
 	}
 
 	#Politician
@@ -274,7 +274,7 @@ pw_building_galactic_model = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			diplomacy_upkeep_mult = -0.25
+			planet_administrators_produces_mult = 0.10
 			planet_administrators_upkeep_mult = -0.10
 		}
 	}
@@ -532,7 +532,7 @@ pw_building_aligned_galactic_model = {
 	}
 
 	country_modifier = {
-		planet_administrators_produces_mult = 0.15
+		diplomacy_upkeep_mult = -0.30
 		country_edict_fund_add = 50
 	}
 
@@ -677,8 +677,8 @@ pw_building_aligned_galactic_model = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			diplomacy_upkeep_mult = -0.30
-			planet_administrators_upkeep_mult = -0.10
+			planet_administrators_produces_mult = 0.15
+			planet_administrators_upkeep_mult = -0.15
 		}
 	}
 
