@@ -17,14 +17,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.1102 }
+		country_event = { id = pw_research.1101 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.1103 }
+		country_event = { id = pw_research.1102 }
+		country_event = { id = pw_research.1101 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.1104 }
+		country_event = { id = pw_research.1103 }
+		country_event = { id = pw_research.1102 }
+		country_event = { id = pw_research.1101 }
 	}
 
 	on_fail = {
@@ -49,14 +55,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.1112 }
+		country_event = { id = pw_research.1111 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.1113 }
+		country_event = { id = pw_research.1112 }
+		country_event = { id = pw_research.1111 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.1114 }
+		country_event = { id = pw_research.1113 }
+		country_event = { id = pw_research.1112 }
+		country_event = { id = pw_research.1111 }
 	}
 
 	on_fail = {
@@ -81,14 +93,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.1122 }
+		country_event = { id = pw_research.1121 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.1123 }
+		country_event = { id = pw_research.1122 }
+		country_event = { id = pw_research.1121 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.1124 }
+		country_event = { id = pw_research.1123 }
+		country_event = { id = pw_research.1122 }
+		country_event = { id = pw_research.1121 }
 	}
 
 	on_fail = {
@@ -114,14 +132,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.2102 }
+		country_event = { id = pw_research.2101 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.2103 }
+		country_event = { id = pw_research.2102 }
+		country_event = { id = pw_research.2101 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.2104 }
+		country_event = { id = pw_research.2103 }
+		country_event = { id = pw_research.2102 }
+		country_event = { id = pw_research.2101 }
 	}
 
 	on_fail = {
@@ -146,14 +170,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.2112 }
+		country_event = { id = pw_research.2111 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.2113 }
+		country_event = { id = pw_research.2112 }
+		country_event = { id = pw_research.2111 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.2114 }
+		country_event = { id = pw_research.2113 }
+		country_event = { id = pw_research.2112 }
+		country_event = { id = pw_research.2111 }
 	}
 
 	on_fail = {
@@ -178,14 +208,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.2122 }
+		country_event = { id = pw_research.2121 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.2123 }
+		country_event = { id = pw_research.2122 }
+		country_event = { id = pw_research.2121 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.2124 }
+		country_event = { id = pw_research.2123 }
+		country_event = { id = pw_research.2122 }
+		country_event = { id = pw_research.2121 }
 	}
 
 	on_fail = {
@@ -211,14 +247,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.3102 }
+		country_event = { id = pw_research.3101 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.3103 }
+		country_event = { id = pw_research.3102 }
+		country_event = { id = pw_research.3101 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.3104 }
+		country_event = { id = pw_research.3103 }
+		country_event = { id = pw_research.3102 }
+		country_event = { id = pw_research.3101 }
 	}
 
 	on_fail = {
@@ -243,14 +285,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.3112 }
+		country_event = { id = pw_research.3111 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.3113 }
+		country_event = { id = pw_research.3112 }
+		country_event = { id = pw_research.3111 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.3114 }
+		country_event = { id = pw_research.3113 }
+		country_event = { id = pw_research.3112 }
+		country_event = { id = pw_research.3111 }
 	}
 
 	on_fail = {
@@ -275,14 +323,20 @@ special_project = {
 
 	on_progress_50 = {
 		country_event = { id = pw_research.3122 }
+		country_event = { id = pw_research.3121 }
 	}
 
 	on_progress_75 = {
 		country_event = { id = pw_research.3123 }
+		country_event = { id = pw_research.3122 }
+		country_event = { id = pw_research.3121 }
 	}
 
 	on_success = {
 		country_event = { id = pw_research.3124 }
+		country_event = { id = pw_research.3123 }
+		country_event = { id = pw_research.3122 }
+		country_event = { id = pw_research.3121 }
 	}
 
 	on_fail = {

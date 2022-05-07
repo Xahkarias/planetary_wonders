@@ -23,7 +23,7 @@
 @pw_research_tech_cost_1 = 40000 #Tier 1
 @pw_research_tech_cost_2 = 50000 #Tier 2
 @pw_research_tech_cost_3 = 75000 #Tier 3
-@pw_research_project_cost = 50000
+@pw_research_project_cost = 75000
 
 #Infrastructure (TLN & FC)
 @pw_tech_cost_infra = 42000
