@@ -3328,10 +3328,10 @@ pw_building_grand_archive = {
 				exists = owner
 				owner = { is_gestalt = yes }
 			}
-			AND = {
-				exists = owner
-				owner = { is_materialist =  no }
-			}
+			# AND = {
+			# 	exists = owner
+			# 	owner = { is_materialist =  no }
+			# }
 		}
 	}
 
@@ -3345,8 +3345,22 @@ pw_building_grand_archive = {
 	}
 
 	#Grand-Archivist
-	planet_modifier = {
-		job_pw_grand_archivist_add = 6
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_materialist = yes }
+		}
+		modifier = {
+			job_pw_grand_archivist_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_materialist = no }
+		}
+		modifier = {
+			job_researcher_add = 6
+		}
 	}
 
 	#Reduces district slots without modifier
@@ -3364,6 +3378,7 @@ pw_building_grand_archive = {
 		potential = {
 			exists = owner
 			owner = {
+				is_materialist = yes
 				has_country_flag = pw_grand_archive_holoarchive_master_archivist_appointed
 			}
 		}

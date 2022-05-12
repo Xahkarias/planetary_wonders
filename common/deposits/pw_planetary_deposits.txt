@@ -452,6 +452,7 @@ pw_d_ark_project = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -485,6 +486,7 @@ pw_d_library_of_babel = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -517,6 +519,7 @@ pw_d_cradle_initiative = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -549,6 +552,7 @@ pw_d_particle_museum = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -581,6 +585,7 @@ pw_d_omnidatabase = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -613,6 +618,7 @@ pw_d_stellarium = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -646,6 +652,7 @@ pw_d_zero_g_exposition = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -678,6 +685,7 @@ pw_d_mechanist_collection = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -710,6 +718,7 @@ pw_d_meta_architectural_complex = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 1
@@ -751,6 +760,7 @@ pw_d_holoarchive = {
 	triggered_planet_modifier = {
 		potential = {
 			has_active_building = pw_building_grand_archive
+			owner = { is_materialist = yes }
 		}
 		modifier = {
 			job_pw_grand_archivist_add = 9

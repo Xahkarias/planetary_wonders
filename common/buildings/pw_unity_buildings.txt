@@ -693,6 +693,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = {
 				count_envoy = {
 					count > 0
@@ -710,6 +711,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = {
 				count_envoy = {
 					count > 1
@@ -727,6 +729,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = {
 				count_envoy = {
 					count > 2
@@ -744,6 +747,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = {
 				count_envoy = {
 					count > 3
@@ -761,6 +765,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = {
 				count_envoy = {
 					count > 4
@@ -779,6 +784,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { has_federation = yes }
 			owner = {
 				count_federation_ally = { count > 0 }
@@ -792,6 +798,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { has_federation = yes }
 			owner = {
 				count_federation_ally = { count > 1 }
@@ -805,6 +812,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { has_federation = yes }
 			owner = {
 				count_federation_ally = { count > 2 }
@@ -818,6 +826,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { has_federation = yes }
 			owner = {
 				count_federation_ally = { count > 3 }
@@ -831,6 +840,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { has_federation = yes }
 			owner = {
 				count_federation_ally = { count > 4 }
@@ -856,6 +866,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { is_megacorp = no }
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
@@ -867,6 +878,7 @@ pw_building_fair_of_worlds = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = { is_megacorp = yes }
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
@@ -957,6 +969,7 @@ pw_building_fair_of_worlds = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
+			owner = { is_xenophile = yes }
 			owner = {
 				OR = {
 					has_federation = yes
@@ -1158,10 +1171,10 @@ pw_building_museum_of_the_grotesque = {
 				exists = owner
 				owner = { is_gestalt = yes }
 			}
-			AND = {
-				exists = owner
-				owner = { is_xenophobe = no }
-			}
+			# AND = {
+			# 	exists = owner
+			# 	owner = { is_xenophobe = no }
+			# }
 		}
 	}
 
@@ -1302,6 +1315,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_envoy = {
 					count > 0
@@ -1319,6 +1333,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_envoy = {
 					count > 1
@@ -1336,6 +1351,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_envoy = {
 					count > 2
@@ -1353,6 +1369,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_envoy = {
 					count > 3
@@ -1370,6 +1387,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_envoy = {
 					count > 4
@@ -1388,6 +1406,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_rival_country = {
 					count > 0
@@ -1402,6 +1421,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_rival_country = {
 					count > 1
@@ -1416,6 +1436,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_rival_country = {
 					count > 2
@@ -1430,6 +1451,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_rival_country = {
 					count > 3
@@ -1444,6 +1466,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				count_rival_country = {
 					count > 4
@@ -1459,6 +1482,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				is_at_war = yes
 			}
@@ -1472,6 +1496,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = {
 				OR = {
 					has_valid_civic = civic_fanatic_purifiers
@@ -1499,6 +1524,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = { is_megacorp = no }
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
@@ -1510,6 +1536,7 @@ pw_building_museum_of_the_grotesque = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_xenophobe = yes }
 			owner = { is_megacorp = yes }
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
@@ -1810,10 +1837,10 @@ pw_building_holy_reliquary = {
 				exists = owner
 				owner = { is_gestalt = yes }
 			}
-			AND = {
-				exists = owner
-				owner = { is_spiritualist =  no }
-			}
+			# AND = {
+			# 	exists = owner
+			# 	owner = { is_spiritualist =  no }
+			# }
 		}
 	}
 

@@ -1399,7 +1399,7 @@ pw_building_forbidden_city = {
 		exists = owner
 		OR = {
 			owner = { is_gestalt = yes }
-			owner = { is_authoritarian = no }
+			# owner = { is_authoritarian = no }
 		}
 	}
 

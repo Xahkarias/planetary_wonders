@@ -80,10 +80,10 @@ pw_building_transplanetary_logistics_network = {
 				exists = owner
 				owner = { is_gestalt = yes }
 			}
-			AND = {
-				exists = owner
-				owner = { is_egalitarian = no }
-			}
+			# AND = {
+			# 	exists = owner
+			# 	owner = { is_egalitarian = no }
+			# }
 		}
 	}
 
@@ -377,10 +377,10 @@ pw_building_transhabitat_logistics_network = {
 				exists = owner
 				owner = { is_gestalt = yes }
 			}
-			AND = {
-				exists = owner
-				owner = { is_egalitarian = no }
-			}
+			# AND = {
+			# 	exists = owner
+			# 	owner = { is_egalitarian = no }
+			# }
 		}
 	}
 

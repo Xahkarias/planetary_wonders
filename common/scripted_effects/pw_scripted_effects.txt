@@ -17,39 +17,39 @@ pw_add_unique_modifier = {
 #Art exhibitions event choice (country scope):
 pw_trigger_art_generic_events = {
 	random_list = {
-		1 = {
+		10 = {
 			country_event = { id = pw_art_exhibition.500 }
 		}
-		1 = {
+		10 = {
 			modifier = {
 				factor = 0
 				is_egalitarian = yes
 			}
 			country_event = { id = pw_art_exhibition.501 }
 		}
-		1 = {
+		10 = {
 			modifier = {
 				factor = 0
 				is_authoritarian = yes
 			}
 			country_event = { id = pw_art_exhibition.502 }
 		}
-		1 = {
+		10 = {
 			country_event = { id = pw_art_exhibition.503 }
 		}
-		1 = {
+		10 = {
 			country_event = { id = pw_art_exhibition.504 }
 		}
-		1 = {
+		10 = {
 			country_event = { id = pw_art_exhibition.505 }
 		}
-		1 = {
+		10 = {
 			country_event = { id = pw_art_exhibition.506 }
 		}
-		1 = {
+		10 = {
 			country_event = { id = pw_art_exhibition.507 }
 		}
-		1 = {
+		10 = {
 			modifier = {
 				factor = 0
 				NOR = {
@@ -66,7 +66,7 @@ pw_trigger_art_generic_events = {
 			}
 			country_event = { id = pw_art_exhibition.508 }
 		}
-		1.5 = {
+		15 = {
 			modifier = {
 				factor = 0
 				NOT = {
@@ -77,14 +77,14 @@ pw_trigger_art_generic_events = {
 			}
 			country_event = { id = pw_art_exhibition.509 }
 		}
-		2.5 = {
+		25 = {
 			modifier = {
 				factor = 0
 				NOT = { has_valid_civic = civic_pompous_purists	}
 			}
 			country_event = { id = pw_art_exhibition.700 }
 		}
-		2 = {
+		20 = {
 			modifier = {
 				factor = 0
 				NOT = { has_valid_civic = civic_idyllic_bloom }
@@ -99,7 +99,7 @@ pw_trigger_art_generic_events = {
 			}
 			country_event = { id = pw_art_exhibition.701 }
 		}
-		2.5 = {
+		25 = {
 			modifier = {
 				factor = 0
 				NOR = {
@@ -392,21 +392,21 @@ pw_holy_reliquary_flip_coin = {
 			custom_tooltip = pw_holy_reliquary.good_luck
 			hidden_effect = {
 				random_list = {
-					1 = { country_event = { id = pw_holy_reliquary.330 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.331 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.332 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.333 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.334 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.335 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.337 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.339 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.340 }}
-					1.5 = { country_event = { id = pw_holy_reliquary.341 } modifier = { factor = 0 NOT = { has_country_flag = zro_found }}}
-					1.5 = { country_event = { id = pw_holy_reliquary.342 } modifier = { factor = 0 NOT = { has_country_flag = living_metal_found }}}
-					1.5 = { country_event = { id = pw_holy_reliquary.343 } modifier = { factor = 0 NOT = { has_country_flag = dark_matter_found }}}
+					10 = { country_event = { id = pw_holy_reliquary.330 }}
+					15 = { country_event = { id = pw_holy_reliquary.331 }}
+					15 = { country_event = { id = pw_holy_reliquary.332 }}
+					15 = { country_event = { id = pw_holy_reliquary.333 }}
+					15 = { country_event = { id = pw_holy_reliquary.334 }}
+					15 = { country_event = { id = pw_holy_reliquary.335 }}
+					15 = { country_event = { id = pw_holy_reliquary.337 }}
+					15 = { country_event = { id = pw_holy_reliquary.339 }}
+					15 = { country_event = { id = pw_holy_reliquary.340 }}
+					15 = { country_event = { id = pw_holy_reliquary.341 } modifier = { factor = 0 NOT = { has_country_flag = zro_found }}}
+					15 = { country_event = { id = pw_holy_reliquary.342 } modifier = { factor = 0 NOT = { has_country_flag = living_metal_found }}}
+					15 = { country_event = { id = pw_holy_reliquary.343 } modifier = { factor = 0 NOT = { has_country_flag = dark_matter_found }}}
 					0 = { country_event = { id = pw_holy_reliquary.344 }
 						modifier = {
-							add = 1
+							add = 10
 							any_controlled_planet = {
 								OR = {
 									is_planet_class = pc_barren
@@ -419,7 +419,7 @@ pw_holy_reliquary_flip_coin = {
 					}
 					0 = { country_event = { id = pw_holy_reliquary.345 }
 						modifier = {
-							add = 1
+							add = 10
 							any_owned_planet = {
 								is_artificial = no
 								NOT = { has_modifier = natural_beauty }
@@ -428,7 +428,7 @@ pw_holy_reliquary_flip_coin = {
 					}
 					0 = { country_event = { id = pw_holy_reliquary.346 }
 						modifier = {
-							add = 1
+							add = 10
 							any_owned_planet = {
 								is_artificial = no
 								NOT = { has_deposit = d_betharian_deposit }
@@ -437,15 +437,15 @@ pw_holy_reliquary_flip_coin = {
 					}
 					0 = { country_event = { id = pw_holy_reliquary.347 }
 						modifier = {
-							add = 1
+							add = 10
 							any_owned_planet = {
 								is_artificial = no
 								NOT = { has_deposit = d_alien_pets_deposit }
 							}
 						}
 					}
-					1 = { country_event = { id = pw_holy_reliquary.348 }}
-					1 = { country_event = { id = pw_holy_reliquary.349 }}
+					10 = { country_event = { id = pw_holy_reliquary.348 }}
+					10 = { country_event = { id = pw_holy_reliquary.349 }}
 				}
 			}
 		}
@@ -525,21 +525,21 @@ pw_coin_of_fortune_relic_flip_coin = {
 			custom_tooltip = pw_holy_reliquary.good_luck
 			hidden_effect = {
 				random_list = {
-					1 = { country_event = { id = pw_archaeology.530 }}
-					1.5 = { country_event = { id = pw_archaeology.531 }}
-					1.5 = { country_event = { id = pw_archaeology.532 }}
-					1.5 = { country_event = { id = pw_archaeology.533 }}
-					1.5 = { country_event = { id = pw_archaeology.534 }}
-					1.5 = { country_event = { id = pw_archaeology.535 }}
-					1.5 = { country_event = { id = pw_archaeology.537 }}
-					1.5 = { country_event = { id = pw_archaeology.539 }}
-					1.5 = { country_event = { id = pw_archaeology.540 }}
-					1.5 = { country_event = { id = pw_archaeology.541 } modifier = { factor = 0 NOT = { has_country_flag = zro_found }}}
-					1.5 = { country_event = { id = pw_archaeology.542 } modifier = { factor = 0 NOT = { has_country_flag = living_metal_found }}}
-					1.5 = { country_event = { id = pw_archaeology.543 } modifier = { factor = 0 NOT = { has_country_flag = dark_matter_found }}}
+					10 = { country_event = { id = pw_archaeology.530 }}
+					15 = { country_event = { id = pw_archaeology.531 }}
+					15 = { country_event = { id = pw_archaeology.532 }}
+					15 = { country_event = { id = pw_archaeology.533 }}
+					15 = { country_event = { id = pw_archaeology.534 }}
+					15 = { country_event = { id = pw_archaeology.535 }}
+					15 = { country_event = { id = pw_archaeology.537 }}
+					15 = { country_event = { id = pw_archaeology.539 }}
+					15 = { country_event = { id = pw_archaeology.540 }}
+					15 = { country_event = { id = pw_archaeology.541 } modifier = { factor = 0 NOT = { has_country_flag = zro_found }}}
+					15 = { country_event = { id = pw_archaeology.542 } modifier = { factor = 0 NOT = { has_country_flag = living_metal_found }}}
+					15 = { country_event = { id = pw_archaeology.543 } modifier = { factor = 0 NOT = { has_country_flag = dark_matter_found }}}
 					0 = { country_event = { id = pw_archaeology.544 }
 						modifier = {
-							add = 1
+							add = 10
 							any_controlled_planet = {
 								OR = {
 									is_planet_class = pc_barren
@@ -552,7 +552,7 @@ pw_coin_of_fortune_relic_flip_coin = {
 					}
 					0 = { country_event = { id = pw_archaeology.545 }
 						modifier = {
-							add = 1
+							add = 10
 							any_owned_planet = {
 								is_artificial = no
 								NOT = { has_modifier = natural_beauty }
@@ -561,7 +561,7 @@ pw_coin_of_fortune_relic_flip_coin = {
 					}
 					0 = { country_event = { id = pw_archaeology.546 }
 						modifier = {
-							add = 1
+							add = 10
 							any_owned_planet = {
 								is_artificial = no
 								NOT = { has_deposit = d_betharian_deposit }
@@ -570,15 +570,15 @@ pw_coin_of_fortune_relic_flip_coin = {
 					}
 					0 = { country_event = { id = pw_archaeology.547 }
 						modifier = {
-							add = 1
+							add = 10
 							any_owned_planet = {
 								is_artificial = no
 								NOT = { has_deposit = d_alien_pets_deposit }
 							}
 						}
 					}
-					1 = { country_event = { id = pw_archaeology.548 }}
-					1 = { country_event = { id = pw_archaeology.549 }}
+					10 = { country_event = { id = pw_archaeology.548 }}
+					10 = { country_event = { id = pw_archaeology.549 }}
 				}
 			}
 		}

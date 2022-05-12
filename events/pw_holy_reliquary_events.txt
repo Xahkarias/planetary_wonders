@@ -3979,29 +3979,29 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			2 = {}
-			1 = {
+			20 = {}
+			10 = {
 				country_event = {
 					id = pw_holy_reliquary.1010
 					days = @pw_halfYear
 					random = @pw_halfYear
 				}
 			}
-			1 = {
+			10 = {
 				country_event = {
 					id = pw_holy_reliquary.1011
 					days = @pw_halfYear
 					random = @pw_halfYear
 				}
 			}
-			1 = {
+			10 = {
 				country_event = {
 					id = pw_holy_reliquary.1013
 					days = @pw_halfYear
 					random = @pw_halfYear
 				}
 			}
-			1.5 = {
+			15 = {
 				country_event = {
 					id = pw_holy_reliquary.1014
 					days = @pw_halfYear
