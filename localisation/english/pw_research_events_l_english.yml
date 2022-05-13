@@ -118,7 +118,7 @@
     ## Domed City
     #Xenophile Fallen Empire request
     pw_research.2000.name: "§H[PWFallenEmpireDC.GetName]§!: Under Our Dome"
-    pw_research.2000.desc: "Noble [THIS.GetSpeciesNamePlural], we constantly monitor the galaxy in search of new species that need top be conserved, and it has not escaped our sight that you have constructed a preserve of your own.\nWe congratulate you.\n\nEven tough, as we understand it, this domed reserve will not be directed to the preservation of living specimens, but for societal experiments, we would like to establish our own surveillance and sensory equipment inside the Dome.\n\nThe process will not take more than §Y6 months§!. Besides, we care not for you experimental data or methods, these can remain in secrecy."
+    pw_research.2000.desc: "Noble [THIS.GetSpeciesNamePlural], we constantly monitor the galaxy in search of new species that need to be conserved, and it has not escaped our sight that you have constructed a preserve of your own.\nWe congratulate you.\n\nEven tough, as we understand it, this domed reserve will not be directed to the preservation of living specimens, but for societal experiments, we would like to establish our own surveillance and sensory equipment inside the Dome.\n\nThe process will not take more than §Y6 months§!. Besides, we care not for you experimental data or methods, these can remain in secrecy."
     pw_research.2000.a: "Install what equipment you must."
     pw_research.2000.b: "Exactly what information will you be gathering?"
     pw_research.2000.c: "What happens in the $pw_building_domed_city$ stays there."

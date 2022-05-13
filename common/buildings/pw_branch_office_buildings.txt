@@ -5,7 +5,7 @@ pw_building_bloodsports_arena = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_belligerence
@@ -21,10 +21,14 @@ pw_building_bloodsports_arena = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_bloodsports_arena
-						has_building_construction = pw_building_bloodsports_arena
+					has_holding = {
+						holding = pw_building_bloodsports_arena
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_bloodsports_arena
+					# 	has_building_construction = pw_building_bloodsports_arena
+					# }
 				}
 			}
 		}
@@ -140,7 +144,7 @@ pw_building_meditation_garden = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_belligerence
@@ -156,10 +160,14 @@ pw_building_meditation_garden = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_meditation_garden
-						has_building_construction = pw_building_meditation_garden
+					has_holding = {
+						holding = pw_building_meditation_garden
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_meditation_garden
+					# 	has_building_construction = pw_building_meditation_garden
+					# }
 				}
 			}
 		}
@@ -273,7 +281,7 @@ pw_building_innovation_hub = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_philosophy
@@ -289,10 +297,14 @@ pw_building_innovation_hub = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_innovation_hub
-						has_building_construction = pw_building_innovation_hub
+					has_holding = {
+						holding = pw_building_innovation_hub
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_innovation_hub
+					# 	has_building_construction = pw_building_innovation_hub
+					# }
 				}
 			}
 		}
@@ -383,7 +395,7 @@ pw_building_salvation_shrine = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_philosophy
@@ -399,10 +411,14 @@ pw_building_salvation_shrine = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_salvation_shrine
-						has_building_construction = pw_building_salvation_shrine
+					has_holding = {
+						holding = pw_building_salvation_shrine
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_salvation_shrine
+					# 	has_building_construction = pw_building_salvation_shrine
+					# }
 				}
 			}
 		}
@@ -503,7 +519,7 @@ pw_building_exotic_beauty_center = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_diplomacy
@@ -519,10 +535,14 @@ pw_building_exotic_beauty_center = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_exotic_beauty_center
-						has_building_construction = pw_building_exotic_beauty_center
+					has_holding = {
+						holding = pw_building_exotic_beauty_center
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_exotic_beauty_center
+					# 	has_building_construction = pw_building_exotic_beauty_center
+					# }
 				}
 			}
 		}
@@ -613,7 +633,7 @@ pw_building_national_pride_gallery = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_diplomacy
@@ -629,10 +649,14 @@ pw_building_national_pride_gallery = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_national_pride_gallery
-						has_building_construction = pw_building_national_pride_gallery
+					has_holding = {
+						holding = pw_building_national_pride_gallery
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_national_pride_gallery
+					# 	has_building_construction = pw_building_national_pride_gallery
+					# }
 				}
 			}
 		}
@@ -665,7 +689,7 @@ pw_building_national_pride_gallery = {
 	}
 
 	country_modifier = {
-		country_influence_produces_add = 0.5
+		country_base_influence_produces_add = 0.5
 	}
 
 	planet_modifier = {
@@ -723,7 +747,7 @@ pw_building_aristocracy_tower = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_hierarchy
@@ -739,10 +763,14 @@ pw_building_aristocracy_tower = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_aristocracy_tower
-						has_building_construction = pw_building_aristocracy_tower
+					has_holding = {
+						holding = pw_building_aristocracy_tower
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_aristocracy_tower
+					# 	has_building_construction = pw_building_aristocracy_tower
+					# }
 				}
 			}
 		}
@@ -831,7 +859,7 @@ pw_building_factory_city = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_exploitation_of_hierarchy
@@ -847,10 +875,14 @@ pw_building_factory_city = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_factory_city
-						has_building_construction = pw_building_factory_city
+					has_holding = {
+						holding = pw_building_factory_city
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_factory_city
+					# 	has_building_construction = pw_building_factory_city
+					# }
 				}
 			}
 		}
@@ -980,7 +1012,7 @@ pw_building_tax_haven = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
 	empire_limit = { base = 1 }
-	branch_office_building = yes
+	owner_type = corporate
 
 	prerequisites = {
 		pw_tech_criminal_exploitation
@@ -996,10 +1028,14 @@ pw_building_tax_haven = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					OR = {
-						has_building = pw_building_tax_haven
-						has_building_construction = pw_building_tax_haven
+					has_holding = {
+						holding = pw_building_tax_haven
+						owner = planet.branch_office_owner
 					}
+					# OR = {
+					# 	has_building = pw_building_tax_haven
+					# 	has_building_construction = pw_building_tax_haven
+					# }
 				}
 			}
 		}

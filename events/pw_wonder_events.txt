@@ -4751,7 +4751,8 @@ planet_event = {
 		}
 
 		create_country = {
-			name = "NAME_Incoming_Asteroid"
+			# name = "NAME_Incoming_Asteroid"
+			name = random
 			type = faction
 			auto_delete = no
 			flag = {
@@ -6066,7 +6067,12 @@ country_event = {
 	}
 	option = {
 		name = pw_wonder.1105.b
-		add_100_unity_per_year_passed = yes
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
 		hidden_effect = { event_target:PWFallenEmpireGiftOrigin = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_request }}}
 	}
 	option = {

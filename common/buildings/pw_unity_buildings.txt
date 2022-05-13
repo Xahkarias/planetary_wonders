@@ -549,10 +549,10 @@ pw_building_fair_of_worlds = {
 				exists = owner
 				owner = { is_gestalt = yes }
 			}
-			AND = {
-				exists = owner
-				owner = { is_xenophile = no }
-			}
+			# AND = {
+			# 	exists = owner
+			# 	owner = { is_xenophile = no }
+			# }
 		}
 	}
 
@@ -1909,6 +1909,7 @@ pw_building_holy_reliquary = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_spiritualist = yes }
 			NOR = {
 				owner = { has_valid_civic = civic_death_cult }
 				owner = { has_valid_civic = civic_death_cult_corporate }
@@ -1933,6 +1934,7 @@ pw_building_holy_reliquary = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { is_spiritualist = yes }
 			NOT = { owner = { has_valid_civic = civic_memorialist }}
 		}
 		modifier = {
@@ -1943,8 +1945,11 @@ pw_building_holy_reliquary = {
 	#Prosperity preacher
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			has_active_building = building_temple_of_prosperity
+			exists = planet.branch_office_owner
+			has_holding = {
+				holding = building_temple_of_prosperity
+				owner = planet.branch_office_owner
+			}
 		}
 		modifier = {
 			job_preacher_add = 2
@@ -2041,8 +2046,11 @@ pw_building_holy_reliquary = {
 
 	triggered_desc = {
 		trigger = {
-			exists = owner
-			has_active_building = building_temple_of_prosperity
+			exists = planet.branch_office_owner
+			has_holding = {
+				holding = building_temple_of_prosperity
+				owner = planet.branch_office_owner
+			}
 		}
 		text = job_preacher_effect_desc
 	}

@@ -327,18 +327,18 @@ special_project = {
 				ship_event = { id = pw_anomaly.131 }
 			}
 			0 = { #Success (UNUSED!)
-				modifier = {
-					factor = 2
-					leader = {
-						has_level > 6
-					}
-				}
-				modifier = {
-					factor = 2
-					leader = {
-						has_trait = leader_trait_meticulous
-					}
-				}
+				# modifier = {
+				# 	factor = 2
+				# 	leader = {
+				# 		has_level > 6
+				# 	}
+				# }
+				# modifier = {
+				# 	factor = 2
+				# 	leader = {
+				# 		has_trait = leader_trait_meticulous
+				# 	}
+				# }
 				ship_event = { id = pw_anomaly.132 }
 			}
 		}

@@ -722,7 +722,7 @@ pw_pm_living_spire_designation_default = {
 pw_pm_living_spire_designation_imperial = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_imperial.dds"
 	icon_frame = @pw_icon_frame_green
-	country_influence_produces_add = 1
+	country_base_influence_produces_add = 1
 	planet_jobs_produces_mult = 0.20
 	planet_jobs_upkeep_mult = 0.20
 }
@@ -1183,8 +1183,8 @@ pw_holy_reliquary_heart_of_the_leviathan_preserved = {
 #HR Archaeology heart of the leviathan: study
 pw_holy_reliquary_heart_of_the_leviathan_study = {
 	icon = "gfx/interface/icons/modifiers/pw_holy_reliquary_heart_of_the_leviathan.dds"
-	country_society_research_produces_add = 3
-	country_physics_research_produces_add = 3
+	country_society_research_produces_mult = 0.025
+	country_physics_research_produces_mult = 0.025
 	country_energy_produces_mult = 0.05
 }
 

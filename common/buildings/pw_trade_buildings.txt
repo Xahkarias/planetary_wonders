@@ -454,8 +454,14 @@ pw_building_space_elevator = {
 			OR = {
 				has_active_building = building_holo_theatres
 				has_active_building = building_temple
-				has_active_building = building_temple_of_prosperity
 				has_active_building = building_sacrificial_temple_1
+				AND = {
+					exists = planet.branch_office_owner
+					has_holding = {
+						holding = building_temple_of_prosperity
+						owner = planet.branch_office_owner
+					}
+				}
 			}
 		}
 		modifier = {
