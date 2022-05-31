@@ -908,6 +908,16 @@ pw_building_erebus_project = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_origin = origin_subterranean }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
 	#Stability
 	triggered_planet_modifier = {
 		potential = {
@@ -1971,6 +1981,16 @@ pw_building_erebus_fracking_plant = {
 		}
 		modifier = {
 			job_mining_drone_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_origin = origin_subterranean }
+		}
+		modifier = {
+			planet_housing_add = 10
 		}
 	}
 

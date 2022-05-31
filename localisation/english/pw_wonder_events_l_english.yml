@@ -153,6 +153,8 @@
     pw_wonder.501.a: "The minerals must flow!"
     pw_wonder.501.b: "The guilds revel with this project!"
     pw_wonder.501.c: "Begin the Grand Harvest!"
+    pw_wonder.501.d: "It feels like home!"
+    pw_wonder.501.tooltip: "Origin $origin_subterranean$: $pw_building_erebus_project$ provides §Y+5§!£housing£ Housing"
     #First Time Complete Erebus Project (Gestalt)
     pw_wonder.502.name: "Down in the deep of [ROOT.GetName]"
     pw_wonder.502.desc: "The tunnels are secured and excavated, the terrain has been prospected the equipment is prepared; we are ready to start exploiting the bowels of [ROOT.GetName] in search of valuable and constantly needed minerals.\nThe Erebus Project now offers a multitude of tunnels and passageways deep in the underground of the planet, all populated with the infrastructure and materials needed for the extraction and transportation of mineral resources: from common rock to rare ore. New storage facilities in the surface were also installed to deal with the increase in production.\n\nWe have ventured deep into space, now it is time to venture equally deep into the earth."
@@ -185,6 +187,8 @@
     pw_wonder.551.a: "The minerals can never stop flowing!"
     pw_wonder.551.b: "The mines have never let us down."
     pw_wonder.551.c: "A banquet for the ages!"
+    pw_wonder.551.d: "Our home expands!"
+    pw_wonder.551.tooltip: "Origin $origin_subterranean$: $pw_building_erebus_fracking_plant$ provides §Y+10§!£housing£ Housing"
 
     #Complete Helios Tower
     pw_message_helios_tower_complete: "§MHelios Tower§! has been constructed on $PLANET|Y$."

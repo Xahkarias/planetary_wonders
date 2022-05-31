@@ -798,3 +798,8 @@
     pw_wonder.455.name: "Remaining Engineering Advancements"
     pw_wonder.455.desc: "The impact of the $pw_metal_vivarium$ on our advancement of science is immeasurable. However, there are still many experiments and unexplored lines of inquiry that the old $pw_building_abyssal_crater_test_site$ was better equipped to explore. If we were to rebuild it in another world, it would be greatly appreciated by the scientific community."
     pw_wonder.455.a: "There is no end to the advancements of engineering."
+
+    pw_wonder.501.d: "It feels like home!"
+    pw_wonder.501.tooltip: "Origin $origin_subterranean$: $pw_building_erebus_project$ provides §Y+5§!£housing£ Housing"
+    pw_wonder.551.d: "Our home expands!"
+    pw_wonder.551.tooltip: "Origin $origin_subterranean$: $pw_building_erebus_fracking_plant$ provides §Y+10§!£housing£ Housing"
