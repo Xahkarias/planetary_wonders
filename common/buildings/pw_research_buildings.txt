@@ -108,6 +108,15 @@ pw_building_particle_supercollider = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					is_specialist_subject_type = { TYPE = scholarium }
+				}
+			}
+			energy = -2
+		}
 		produces = {
 			trigger = {
 				exists = owner
@@ -433,6 +442,12 @@ pw_building_particle_supercollider = {
 			factor = 1.5
 			planet_size > 20
 		}
+		modifier = {
+			factor = 2
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
+		}
 	}
 }
 
@@ -538,6 +553,15 @@ pw_building_interdimensional_collider = {
 				}
 			}
 			energy = @pw_building_upkeep_discount
+		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					is_specialist_subject_type = { TYPE = scholarium }
+				}
+			}
+			energy = -2
 		}
 		produces = {
 			trigger = {
@@ -772,6 +796,12 @@ pw_building_interdimensional_collider = {
 		modifier = {
 			factor = 1.5
 			planet_size > 20
+		}
+		modifier = {
+			factor = 2
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
 		}
 	}
 }
@@ -1229,6 +1259,12 @@ pw_building_domed_city = {
 			factor = 1.5
 			planet_size > 20
 		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
+		}
 	}
 }
 
@@ -1675,6 +1711,12 @@ pw_building_secluded_sector = {
 			factor = 1.5
 			planet_size > 20
 		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
+		}
 	}
 }
 
@@ -2032,6 +2074,12 @@ pw_building_psionic_observatory = {
 		modifier = {
 			factor = 1.5
 			planet_size > 20
+		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
 		}
 	}
 }
@@ -2470,6 +2518,12 @@ pw_building_abyssal_crater_test_site = {
 			factor = 1.5
 			planet_size > 20
 		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
+		}
 	}
 }
 
@@ -2898,6 +2952,12 @@ pw_building_abyssal_crater_test_site_habitat = {
 			factor = 1.5
 			planet_size > 20
 		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
+		}
 	}
 }
 
@@ -3236,6 +3296,12 @@ pw_building_metal_vivarium = {
 		modifier = {
 			factor = 1.5
 			planet_size > 20
+		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = scholarium }
+			}
 		}
 	}
 }

@@ -99,6 +99,15 @@ pw_building_guardian_angel = {
 			}
 			energy = @pw_building_upkeep_discount
 		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					is_specialist_subject_type = { TYPE = bulwark }
+				}
+			}
+			energy = -2
+		}
 		produces = {
 			trigger = {
 				exists = owner
@@ -329,6 +338,12 @@ pw_building_guardian_angel = {
 			factor = 10
 			colony_type = col_fortress
 		}
+		modifier = {
+			factor = 2
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = bulwark }
+			}
+		}
 	}
 }
 
@@ -427,6 +442,15 @@ pw_building_stellar_sentinel = {
 				}
 			}
 			energy = @pw_building_upkeep_discount
+		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					is_specialist_subject_type = { TYPE = bulwark }
+				}
+			}
+			energy = -2
 		}
 		produces = {
 			trigger = {
@@ -666,6 +690,12 @@ pw_building_stellar_sentinel = {
 		modifier = {
 			factor = 10
 			colony_type = col_fortress
+		}
+		modifier = {
+			factor = 2
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = bulwark }
+			}
 		}
 	}
 }

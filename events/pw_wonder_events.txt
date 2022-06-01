@@ -819,6 +819,10 @@ planet_event = {
 
 		planet_event = { id = pw_wonder.201 }
 		planet_event = { id = pw_wonder.202 }
+		owner = { country_event = { #Subject/Overlord events
+			id = pw_wonder.203
+			days = 10
+		}}
 	}
 }
 
@@ -966,6 +970,83 @@ planet_event = {
 					random = 30
 				}
 			}
+		}
+	}
+}
+
+
+#Rewards a bulwark for building GA
+country_event = {
+	id = pw_wonder.203
+	title = pw_wonder.203.name
+	desc = pw_wonder.203.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	trigger = {
+		exists = overlord
+		is_specialist_subject_type = { TYPE = scholarium }
+		NOT = { has_country_flag = pw_particle_supercollider_scholarium_subject }
+	}
+
+	immediate = {
+		set_country_flag = pw_particle_supercollider_scholarium_subject
+	}
+
+	option = {
+		name = pw_wonder.203.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+
+	option = {
+		name = pw_wonder.203.b
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			overlord = {
+				country_event = { id = pw_wonder.204 }
+			}
+		}
+	}
+}
+
+#Notifies overlord when a Bulwark builds GA
+country_event = {
+	id = pw_wonder.204
+	title = pw_wonder.204.name
+	desc = pw_wonder.204.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = pw_particle_supercollider_scholarium_overlord }
+	}
+
+	immediate = {
+		set_country_flag = pw_particle_supercollider_scholarium_overlord
+	}
+
+	option = {
+		name = pw_wonder.204.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
 		}
 	}
 }
@@ -1186,6 +1267,40 @@ planet_event = {
 		}
 	}
 
+	option = {
+		name = pw_wonder.301.c
+		trigger = {
+			owner = {
+				is_overlord = yes
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_domed_city_authoritarian
+			days = @pw_5years
+			clear_on_owner_change = yes
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier1unityreward
+				min = @tier1unitymin
+				max = @tier1unitymax
+			}
+		}
+	}
+
 	after = {
 		hidden_effect = {
 			owner = {
@@ -1266,6 +1381,35 @@ planet_event = {
 			add_modifier = {
 				modifier = pw_mod_wonder_built_recently_unity
 				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.301.c
+		trigger = {
+			owner = {
+				is_overlord = yes
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier1unityreward
+				min = @tier1unitymin
+				max = @tier1unitymax
 			}
 		}
 	}
@@ -6269,6 +6413,10 @@ planet_event = {
 		planet_event = { id = pw_wonder.1203 } #Add flying fortress army
 		planet_event = { id = pw_wonder.1207 days = 60 random = 30 } #Guardian Angel Peace Choice.
 		planet_event = { id = pw_wonder.1204 days = @pw_halfYear } #Recursive check event
+		owner = { country_event = { #Subject/Overlord events
+			id = pw_wonder.1209
+			days = 10
+		}}
 	}
 }
 
@@ -6549,6 +6697,81 @@ planet_event = {
 	}
 }
 
+#Rewards a bulwark for building GA
+country_event = {
+	id = pw_wonder.1209
+	title = pw_wonder.1209.name
+	desc = pw_wonder.1209.desc
+	picture = GFX_evt_landing_ship_2
+	show_sound = event_salute
+	is_triggered_only = yes
+
+	trigger = {
+		exists = overlord
+		is_specialist_subject_type = { TYPE = bulwark }
+		NOT = { has_country_flag = pw_guardian_angel_bulwark_subject }
+	}
+
+	immediate = {
+		set_country_flag = pw_guardian_angel_bulwark_subject
+	}
+
+	option = {
+		name = pw_wonder.1209.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			overlord = {
+				country_event = { id = pw_wonder.1210 }
+			}
+		}
+	}
+}
+
+#Notifies overlord when a Bulwark builds GA
+country_event = {
+	id = pw_wonder.1210
+	title = pw_wonder.1210.name
+	desc = pw_wonder.1210.desc
+	picture = GFX_evt_landing_ship_2
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = pw_guardian_angel_bulwark_overlord }
+	}
+
+	immediate = {
+		set_country_flag = pw_guardian_angel_bulwark_overlord
+	}
+
+	option = {
+		name = pw_wonder.1210.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+
+	option = {
+		name = pw_wonder.1210.b
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+}
+
 # Stellar Sentinel -> id 1250
 
 #On Stellar Sentinel built
@@ -6635,6 +6858,10 @@ planet_event = {
 		planet_event = { id = pw_wonder.1302 } #Gestalt first time
 		planet_event = { id = pw_wonder.1303 } #Crucible Mantle Devastation
 		planet_event = { id = pw_wonder.1310 days = @pw_halfYear } #Recursive check event
+		owner = { country_event = { #Subject/Overlord events
+			id = pw_wonder.1324
+			days = 10
+		}}
 	}
 }
 
@@ -7390,6 +7617,82 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = pw_mantle_crucible_habitability_project_completed
+		}
+	}
+}
+
+#Rewards a Prospectorium for building MC
+country_event = {
+	id = pw_wonder.1324
+	title = pw_wonder.1324.name
+	desc = pw_wonder.1324.desc
+	picture = GFX_evt_underground_civilization
+	show_sound = event_solar_fusion
+	is_triggered_only = yes
+
+	trigger = {
+		exists = overlord
+		is_specialist_subject_type = { TYPE = prospectorium }
+		NOT = { has_country_flag = pw_mantle_crucible_prospectorium_subject }
+	}
+
+	immediate = {
+		set_country_flag = pw_mantle_crucible_prospectorium_subject
+	}
+
+	option = {
+		name = pw_wonder.1324.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+
+	option = {
+		name = pw_wonder.1324.b
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			overlord = {
+				country_event = { id = pw_wonder.1325 }
+			}
+		}
+	}
+}
+
+#Notifies overlord when a Prospectorium builds MC
+country_event = {
+	id = pw_wonder.1325
+	title = pw_wonder.1325.name
+	desc = pw_wonder.1325.desc
+	picture = GFX_evt_underground_civilization
+	show_sound = event_solar_fusion
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = pw_mantle_crucible_prospectorium_overlord }
+	}
+
+	immediate = {
+		set_country_flag = pw_mantle_crucible_prospectorium_overlord
+	}
+
+	option = {
+		name = pw_wonder.1325.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
 		}
 	}
 }

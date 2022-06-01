@@ -1049,6 +1049,12 @@ pw_building_erebus_project = {
 		modifier = {
 			factor = value:pw_mining_district_count
 		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
+		}
 	}
 }
 
@@ -2153,6 +2159,12 @@ pw_building_erebus_fracking_plant = {
 		modifier = {
 			factor = value:pw_mining_district_count
 		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
+		}
 	}
 }
 
@@ -3206,6 +3218,12 @@ pw_building_helios_tower = {
 		}
 		modifier = {
 			factor = value:pw_generator_district_count
+		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
 		}
 	}
 }
@@ -4304,6 +4322,12 @@ pw_building_helios_translucent_obelisk = {
 		}
 		modifier = {
 			factor = value:pw_generator_district_count
+		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
 		}
 	}
 }
@@ -5902,6 +5926,12 @@ pw_building_demetrius_fields = {
 		}
 		modifier = {
 			factor = value:pw_farming_district_count
+		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
 		}
 	}
 }
@@ -7544,6 +7574,12 @@ pw_building_demetrius_chemical_garden = {
 		}
 		modifier = {
 			factor = value:pw_farming_district_count
+		}
+		modifier = {
+			factor = 1.5
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
 		}
 	}
 }
