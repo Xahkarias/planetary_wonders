@@ -113,3 +113,7 @@
     pw_policy_research_wonder_focus_society_extra_name: "Psionic Societal Focus"
     pw_policy_research_wonder_focus_engineering_name: "Engineering Focus"
     pw_policy_research_wonder_focus_engineering_extra_name: "Moldable Engineering Focus"
+
+    pw_policy_modeling_focus_speculative_navigation: "Speculative Navigation"
+    pw_policy_modeling_focus_speculative_navigation_name: "Speculative Navigation"
+    pw_policy_modeling_focus_speculative_navigation_desc: "The speculative physical phenomena of the universe can be studied by our modellers, while they will never disappear in a nondeterministic universe, our space navigators can benefit from minimizing uncertainty."

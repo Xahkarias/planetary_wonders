@@ -41,6 +41,10 @@
     pw_policy_modeling_focus_foreign_assets_support_name: "Foreign Assets Support"
     pw_policy_modeling_focus_foreign_assets_support_desc: "By feeding our undercover operators with intelligence gathered from analysis of the Galactic Model, we can streamline espionage actions, guaranteeing the best possible outcome and reliable intel."
 
+    pw_policy_modeling_focus_speculative_navigation: "Speculative Navigation"
+    pw_policy_modeling_focus_speculative_navigation_name: "Speculative Navigation"
+    pw_policy_modeling_focus_speculative_navigation_desc: "The speculative physical phenomena of the universe can be studied by our modellers, while they will never disappear in a nondeterministic universe, our space navigators can benefit from minimizing uncertainty."
+
     #Policy: Orbital Commerce
     policy_pw_policy_orbital_commerce: "Orbital Commerce"
     policy_pw_policy_orbital_commerce_desc: "The establishment of surface-orbit trade networks provided by our $pw_building_space_elevator_plural$ creates an unprecedented logistics endeavour and we must determine which institutions will take priority in this system."
