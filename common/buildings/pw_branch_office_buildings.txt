@@ -23,7 +23,7 @@ pw_building_bloodsports_arena = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_bloodsports_arena
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_bloodsports_arena
@@ -162,7 +162,7 @@ pw_building_meditation_garden = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_meditation_garden
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_meditation_garden
@@ -299,7 +299,7 @@ pw_building_innovation_hub = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_innovation_hub
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_innovation_hub
@@ -413,7 +413,7 @@ pw_building_salvation_shrine = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_salvation_shrine
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_salvation_shrine
@@ -537,7 +537,7 @@ pw_building_exotic_beauty_center = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_exotic_beauty_center
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_exotic_beauty_center
@@ -651,7 +651,7 @@ pw_building_national_pride_gallery = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_national_pride_gallery
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_national_pride_gallery
@@ -765,7 +765,7 @@ pw_building_aristocracy_tower = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_aristocracy_tower
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_aristocracy_tower
@@ -877,7 +877,7 @@ pw_building_factory_city = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_factory_city
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_factory_city
@@ -1030,7 +1030,7 @@ pw_building_tax_haven = {
 				any_owned_planet = {
 					has_holding = {
 						holding = pw_building_tax_haven
-						owner = planet.branch_office_owner
+						owner = ROOT.branch_office_owner
 					}
 					# OR = {
 					# 	has_building = pw_building_tax_haven

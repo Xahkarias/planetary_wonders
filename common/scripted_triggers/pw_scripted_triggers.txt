@@ -665,55 +665,55 @@ pw_has_any_unique_branch_office_building = {
 		OR = {
 			has_holding = {
 				holding = pw_building_bloodsports_arena
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_bloodsports_arena
 			# has_building_construction = pw_building_bloodsports_arena
 			has_holding = {
 				holding = pw_building_meditation_garden
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_meditation_garden
 			# has_building_construction = pw_building_meditation_garden
 			has_holding = {
 				holding = pw_building_innovation_hub
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_innovation_hub
 			# has_building_construction = pw_building_innovation_hub
 			has_holding = {
 				holding = pw_building_salvation_shrine
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_salvation_shrine
 			# has_building_construction = pw_building_salvation_shrine
 			has_holding = {
 				holding = pw_building_exotic_beauty_center
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_exotic_beauty_center
 			# has_building_construction = pw_building_exotic_beauty_center
 			has_holding = {
 				holding = pw_building_national_pride_gallery
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_national_pride_gallery
 			# has_building_construction = pw_building_national_pride_gallery
 			has_holding = {
 				holding = pw_building_aristocracy_tower
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_aristocracy_tower
 			# has_building_construction = pw_building_aristocracy_tower
 			has_holding = {
 				holding = pw_building_factory_city
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_factory_city
 			# has_building_construction = pw_building_factory_city
 			has_holding = {
 				holding = pw_building_tax_haven
-				owner = planet.branch_office_owner
+				owner = branch_office_owner
 			}
 			# has_building = pw_building_tax_haven
 			# has_building_construction = pw_building_tax_haven
