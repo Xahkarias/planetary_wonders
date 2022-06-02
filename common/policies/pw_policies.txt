@@ -237,17 +237,19 @@ pw_policy_modeling_focus = {
 		}
 
 		valid = {
-			has_megastructure = quantum_catapult_1
-			has_megastructure = quantum_catapult_2
-			has_megastructure = quantum_catapult_3
-			has_megastructure = quantum_catapult_improved_slingshot
-			has_megastructure = quantum_catapult_restored
-			has_megastructure = quantum_catapult_restored_slingshot
+			OR = {
+				has_megastructure = quantum_catapult_1
+				has_megastructure = quantum_catapult_2
+				has_megastructure = quantum_catapult_3
+				has_megastructure = quantum_catapult_improved_slingshot
+				has_megastructure = quantum_catapult_restored
+				has_megastructure = quantum_catapult_restored_slingshot
+			}
 		}
 
 		modifier = {
 			catapult_range_mult = 0.10
-			catapult_spread_mult = -0.10
+			catapult_spread_mult = 0.10
 			country_mia_time_mult = -0.10
 			science_ship_survey_speed = 0.20
 			planet_administrators_upkeep_mult = 0.20

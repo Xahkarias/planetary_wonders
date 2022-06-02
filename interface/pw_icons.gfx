@@ -44,6 +44,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/pw_sentinel_command_center.dds"
 	}
 
+	spriteType = {
+		name = "GFX_pw_ring_elevator_hyper_port"
+		textureFile = "gfx/interface/icons/modules/pw_ring_elevator_hyper_port.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pw_ring_abyssal_crater_observatory"
+		texturefile = "gfx/interface/icons/modules/pw_ring_abyssal_crater_observatory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pw_orbital_ring_guardian_harbor"
+		texturefile = "gfx/interface/icons/modules/pw_orbital_ring_guardian_harbor.dds"
+	}
+
 	## Tradition Tree Assets ##
 	#GFX Name
 	spriteType = {

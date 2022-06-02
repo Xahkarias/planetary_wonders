@@ -10,3 +10,10 @@
     sm_pw_sentinel_command_center_desc: "A control center in direct communication with the Stellar Sentinel, allowing for coordinated defense of every planet within the system and support for our fleets."
 
     mod_starbase_constructions_produces_mult: "Resources from starbase constructions"
+
+    sm_pw_ring_elevator_hyper_port: "Elevator Hyper Port"
+    sm_pw_ring_elevator_hyper_port_desc: "A gateway connecting the Space Elevator directly to the Hyper Relay Network, shortening distances in both directions."
+    sm_pw_ring_abyssal_crater_observatory: "Abyssal Crater Observatory"
+    sm_pw_ring_abyssal_crater_observatory_desc: "The sister location for the $pw_abyssal_crater_test_site$ installed on the planet, it remains at the zenith of he site and assists with observation and atmosphere-surface launches."
+    sm_pw_orbital_ring_guardian_harbor: "Guardian Harbor"
+    sm_pw_orbital_ring_guardian_harbor_desc: "A supplying station for the Flying Fortress, where the Fortress can assist the on orbital defense and hangar ships can patrol the planet."

@@ -26,6 +26,8 @@
     pw_tech_space_elevator_planetary_orbital_logistics_desc: "There is no logistic challenge more pernicious and more prevalent in our stellar expansion than leaving the gravitational pull of our planets simply and cheaply."
     pw_tech_space_elevator_orbital_planetary_logistics: "Orbital-Planetary Logistics"
     pw_tech_space_elevator_orbital_planetary_logistics_desc: "It is only natural to look for ways to expand the operations of the Space Elevator, both on the planet surface and our orbital stations."
+    pw_tech_space_elevator_planetary_relay_logistics: "Planetary-Relay Logistics"
+    pw_tech_space_elevator_planetary_relay_logistics_desc: "The next step on space logistics is allowing flow from the surface directly to the Hyper Relay trough the Space Elevator. Let the Space Bulgine run."
 
     pw_tech_space_elevator_intergalactic_assets_concession: "Intergalactic Assets Concession"
     pw_tech_space_elevator_intergalactic_assets_concession_desc: "The perfect vicious cycle: foreign debt and foreign investments oblige us to multiply exports that they themselves devour."
