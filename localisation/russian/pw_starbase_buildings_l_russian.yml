@@ -1,19 +1,19 @@
 ﻿l_russian:
 
     
-    sm_pw_offworld_logistics_station: "Offworld Logistics Station"
-    sm_pw_offworld_logistics_station_desc: "The connecting port between the Hyperlane System and the Space Elevator network of the planets in this system, specially equipped for routing goods and materials."
-    sm_pw_station_skyhook: "Starbase Skyhook"
-    sm_pw_station_skyhook_desc: "A matching Skyhook satellite station orbiting this starbase, to catch incoming materials and ships dispatched from our planetary Skyhook. Its tether can be much shorter, but is no less valuable to the operation of our shipyards."
+    sm_pw_offworld_logistics_station: "Внемировая логистическая станция"
+    sm_pw_offworld_logistics_station_desc: "Соединительный порт между системой Гиперлейн и сетью космических лифтов планет этой системы, специально оборудованный для маршрутизации товаров и материалов."
+    sm_pw_station_skyhook: "Небесный крюк звездной базы."
+    sm_pw_station_skyhook_desc: "Соответствующая станция-спутник Небесный крюк, вращающаяся вокруг этой звездной базы, чтобы принимать поступающие материалы и корабли, отправляемые с нашей планетарной Небесного крюка. Ее привязь может быть гораздо короче, но она не менее ценна для работы наших верфей."
 
-    sm_pw_sentinel_command_center: "Sentinel Command Center"
-    sm_pw_sentinel_command_center_desc: "A control center in direct communication with the Stellar Sentinel, allowing for coordinated defense of every planet within the system and support for our fleets."
+    sm_pw_sentinel_command_center: "Командный центр Сентинела"
+    sm_pw_sentinel_command_center_desc: "Центр управления в прямой связи со звездным часовым, позволяющий координировать оборону каждой планеты в системе и поддержку наших флотов."
 
-    mod_starbase_constructions_produces_mult: "Resources from starbase constructions"
+    mod_starbase_constructions_produces_mult: "Ресурсы от строительства звездных баз"
 
-    sm_pw_ring_elevator_hyper_port: "Elevator Hyper Port"
-    sm_pw_ring_elevator_hyper_port_desc: "A gateway connecting the Space Elevator directly to the Hyper Relay Network, shortening distances in both directions."
-    sm_pw_ring_abyssal_crater_observatory: "Abyssal Crater Observatory"
-    sm_pw_ring_abyssal_crater_observatory_desc: "The sister location for the $pw_abyssal_crater_test_site$ installed on the planet, it remains at the zenith of he site and assists with observation and atmosphere-surface launches."
-    sm_pw_orbital_ring_guardian_harbor: "Guardian Harbor"
-    sm_pw_orbital_ring_guardian_harbor_desc: "A supplying station for the Flying Fortress, where the Fortress can assist the on orbital defense and hangar ships can patrol the planet."
+    sm_pw_ring_elevator_hyper_port: "Гиперпорт лифта"
+    sm_pw_ring_elevator_hyper_port_desc: "Шлюз, соединяющий космический лифт непосредственно с гиперрелейной сетью, сокращая расстояния в обоих направлениях."
+    sm_pw_ring_abyssal_crater_observatory: "Обсерватория Абиссального кратера."
+    sm_pw_ring_abyssal_crater_observatory_desc: "Родственное место для $pw_abyssal_crater_test_site$, установленного на планете, оно остается в зените площадки и помогает в наблюдениях и запусках атмосфера-поверхность."
+    sm_pw_orbital_ring_guardian_harbor: "Гавань Хранителей"
+    sm_pw_orbital_ring_guardian_harbor_desc: "Станция снабжения для Летающей Крепости, где Крепость может помогать орбитальной обороне, а ангарные корабли - патрулировать планету."
