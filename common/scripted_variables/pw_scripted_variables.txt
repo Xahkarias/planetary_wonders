@@ -116,7 +116,7 @@
 @pw_se_expansion_time = 720 #2 years
 @pw_se_expansion_cost = 1500
 @pw_se_expansion_cost_extra = 1000
-@pw_se_expansion_influence_cost = 50
+@pw_se_expansion_influence_cost = 75
 
 @pw_decision_exhibition_cost_base = 500
 @pw_decision_exhibition_cost_energy = 1000

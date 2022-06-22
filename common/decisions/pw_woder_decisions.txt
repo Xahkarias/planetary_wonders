@@ -518,7 +518,7 @@ pw_decision_SE_moon_colony_expansion = {
 
 	potential = {
 		exists = owner
-		NOT = { has_modifier = slave_colony }
+		# NOT = { has_modifier = slave_colony }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
@@ -620,7 +620,7 @@ pw_decision_SE_orbital_districts = {
 
 	potential = {
 		exists = owner
-		NOT = { has_modifier = slave_colony }
+		# NOT = { has_modifier = slave_colony }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
@@ -712,19 +712,19 @@ pw_decision_SE_counterweight_habitat = {
 
 	potential = {
 		exists = owner
-		NOT = { has_modifier = slave_colony }
+		# NOT = { has_modifier = slave_colony }
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_3 }
 		NOT = { has_planet_flag = has_megastructure }
-		NOT = { has_moon = yes }
+		# NOT = { has_moon = yes }
 	}
 
 	allow = {
 		has_active_building = pw_building_space_elevator
-		has_modifier = pw_mod_space_elevator_orbital_districts
+		# has_modifier = pw_mod_space_elevator_orbital_districts
 	}
 
 	effect = {
