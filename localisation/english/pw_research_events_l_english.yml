@@ -1,5 +1,9 @@
 ﻿l_english:
 
+    ## General
+    pw_research.skip_experiment: "Skip straight to the research that matters."
+    pw_research.skip_experiment.tooltip: "§YWarning§!: Our researchers may overlook useful technologies if we choose to skip these studies.\nThey will be lost to History!"
+
     ## Particle Supercollider
     #Spiritualist Fallen Empire request
     pw_research.1000.name: "§H[PWFallenEmpirePC.GetName]§!: A Matter of Faith"

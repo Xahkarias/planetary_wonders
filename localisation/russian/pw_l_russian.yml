@@ -4449,3 +4449,6 @@
     pw_wonder.2030.c: "Forgo of politics in the speech, simply comfort people."
     pw_wonder.2120.progress: "The Spire of Progress"
     pw_wonder.2120.death: "The Death Spire"
+
+    pw_research.skip_experiment: "Skip straight to the research that matters."
+    pw_research.skip_experiment.tooltip: "§YWarning§!: Our researchers may overlook useful technologies if we choose to skip these studies.\nThey will be lost to History!"

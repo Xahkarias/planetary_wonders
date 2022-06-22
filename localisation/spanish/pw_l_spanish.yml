@@ -4401,3 +4401,6 @@
     pw_wonder.2601.desc: "If a company wants to survive in the current state of the galaxy, it must never stop growing its profit margins. We have exhausted our domestic options of growth long ago. The only way to expand now is outwards.\n\nThe $pw_department_of_xenoeconomics$ is now the central think tank for exploiting - and creating - xeno needs in foreign countries. These galactic empires are so passionate about their morals and ethics that we can easily fabricate situations where they are satisfied - and charge a lot for that privilege. Since we can obviously see beyond ideology, we can focus on what really matters: £energy£ §YCredits§!.\n\nWe are ready to start researching new - corporate approved - ways of extracting money from our commercial partners."
     pw_wonder.2601.a: "It's all offer and demand. We just need to create demand."
     pw_wonder.2601.b: "It's like taking credits from a child."
+
+    pw_research.skip_experiment: "Skip straight to the research that matters."
+    pw_research.skip_experiment.tooltip: "§YWarning§!: Our researchers may overlook useful technologies if we choose to skip these studies.\nThey will be lost to History!"

@@ -464,6 +464,23 @@ country_event = {
 			location = event_target:PWPCPlanet
 		}
 	}
+
+	#Skip the experiments
+	option = {
+		name = pw_research.skip_experiment
+		custom_tooltip = pw_research.skip_experiment.tooltip
+
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = unity value >= 500 }
+			}
+		}
+		add_resource = {
+			unity = -500
+		}
+
+		add_research_option = pw_tech_interdimensional_collider
+	}
 }
 #25% Progress - Nuclear Core Collision
 country_event = {
@@ -1347,6 +1364,23 @@ country_event = {
 			owner = root
 			location = event_target:PWDCPlanet
 		}
+	}
+
+	#Skip the experiments
+	option = {
+		name = pw_research.skip_experiment
+		custom_tooltip = pw_research.skip_experiment.tooltip
+
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = unity value >= 500 }
+			}
+		}
+		add_resource = {
+			unity = -500
+		}
+
+		add_research_option = pw_tech_psionic_observatory
 	}
 }
 #25% Progress - Too hazardous
@@ -2319,6 +2353,23 @@ country_event = {
 			owner = root
 			location = event_target:PWACTSPlanet
 		}
+	}
+
+	#Skip the experiments
+	option = {
+		name = pw_research.skip_experiment
+		custom_tooltip = pw_research.skip_experiment.tooltip
+
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = unity value >= 500 }
+			}
+		}
+		add_resource = {
+			unity = -500
+		}
+
+		add_research_option = pw_tech_metal_vivarium
 	}
 }
 #25% Progress - Portable Weapons
