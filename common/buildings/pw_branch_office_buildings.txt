@@ -4,7 +4,7 @@
 pw_building_bloodsports_arena = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -18,20 +18,20 @@ pw_building_bloodsports_arena = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_bloodsports_arena
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_bloodsports_arena
-					# 	has_building_construction = pw_building_bloodsports_arena
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_bloodsports_arena
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_bloodsports_arena
+		# 			# 	has_building_construction = pw_building_bloodsports_arena
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -143,7 +143,7 @@ pw_building_bloodsports_arena = {
 pw_building_meditation_garden = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -157,20 +157,20 @@ pw_building_meditation_garden = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_meditation_garden
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_meditation_garden
-					# 	has_building_construction = pw_building_meditation_garden
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_meditation_garden
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_meditation_garden
+		# 			# 	has_building_construction = pw_building_meditation_garden
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -280,7 +280,7 @@ pw_building_meditation_garden = {
 pw_building_innovation_hub = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -294,20 +294,20 @@ pw_building_innovation_hub = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_innovation_hub
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_innovation_hub
-					# 	has_building_construction = pw_building_innovation_hub
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_innovation_hub
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_innovation_hub
+		# 			# 	has_building_construction = pw_building_innovation_hub
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -394,7 +394,7 @@ pw_building_innovation_hub = {
 pw_building_salvation_shrine = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -408,20 +408,20 @@ pw_building_salvation_shrine = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_salvation_shrine
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_salvation_shrine
-					# 	has_building_construction = pw_building_salvation_shrine
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_salvation_shrine
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_salvation_shrine
+		# 			# 	has_building_construction = pw_building_salvation_shrine
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -518,7 +518,7 @@ pw_building_salvation_shrine = {
 pw_building_exotic_beauty_center = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -532,20 +532,20 @@ pw_building_exotic_beauty_center = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_exotic_beauty_center
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_exotic_beauty_center
-					# 	has_building_construction = pw_building_exotic_beauty_center
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_exotic_beauty_center
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_exotic_beauty_center
+		# 			# 	has_building_construction = pw_building_exotic_beauty_center
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -632,7 +632,7 @@ pw_building_exotic_beauty_center = {
 pw_building_national_pride_gallery = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -646,20 +646,20 @@ pw_building_national_pride_gallery = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_national_pride_gallery
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_national_pride_gallery
-					# 	has_building_construction = pw_building_national_pride_gallery
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_national_pride_gallery
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_national_pride_gallery
+		# 			# 	has_building_construction = pw_building_national_pride_gallery
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -746,7 +746,7 @@ pw_building_national_pride_gallery = {
 pw_building_aristocracy_tower = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -760,20 +760,20 @@ pw_building_aristocracy_tower = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_aristocracy_tower
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_aristocracy_tower
-					# 	has_building_construction = pw_building_aristocracy_tower
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_aristocracy_tower
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_aristocracy_tower
+		# 			# 	has_building_construction = pw_building_aristocracy_tower
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -858,7 +858,7 @@ pw_building_aristocracy_tower = {
 pw_building_factory_city = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -872,20 +872,20 @@ pw_building_factory_city = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_factory_city
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_factory_city
-					# 	has_building_construction = pw_building_factory_city
-					# }
-				}
-			}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_factory_city
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_factory_city
+		# 			# 	has_building_construction = pw_building_factory_city
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
@@ -1011,7 +1011,7 @@ pw_building_factory_city = {
 pw_building_tax_haven = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	base_cap_amount = 1
-	empire_limit = { base = 1 }
+	empire_limit = 1
 	owner_type = corporate
 
 	prerequisites = {
@@ -1025,21 +1025,21 @@ pw_building_tax_haven = {
 			any_owned_planet = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
-		NOT = {
-			owner = {
-				any_owned_planet = {
-					has_holding = {
-						holding = pw_building_tax_haven
-						owner = ROOT.branch_office_owner
-					}
-					# OR = {
-					# 	has_building = pw_building_tax_haven
-					# 	has_building_construction = pw_building_tax_haven
-					# }
-				}
-			}
 		}
-		}
+		# NOT = {
+		# 	owner = {
+		# 		any_owned_planet = {
+		# 			has_holding = {
+		# 				holding = pw_building_tax_haven
+		# 				owner = ROOT.branch_office_owner
+		# 			}
+		# 			# OR = {
+		# 			# 	has_building = pw_building_tax_haven
+		# 			# 	has_building_construction = pw_building_tax_haven
+		# 			# }
+		# 		}
+		# 	}
+		# }
 	}
 
 	allow = {
