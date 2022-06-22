@@ -85,7 +85,8 @@ for file in files:
         print("Skipping file: ", file.name)
         continue
     for language in languages:
-        language_file = LOCAL_DIR / language / file.name.replace(ref_language, language)
+        # language_file = LOCAL_DIR / language / file.name.replace(ref_language, language)
+        language_file = LOCAL_DIR / language / 'pw_l_{0}.yml'.format(language)
         try:
             current_keys = getLocalisationKeys(language_file)
         except FileNotFoundError: #No file for the current language

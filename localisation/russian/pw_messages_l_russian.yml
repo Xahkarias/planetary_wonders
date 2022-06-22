@@ -1,8 +1,0 @@
-﻿l_russian:
-
-    # Wonder complete message (unused)
-    #PW_WONDER_COMPLETE_MESSAGE_TYPE_TITLE:1 "Планетарное чудо завершено"
-    PW_MESSAGE_WONDER_COMPLETE: "$WONDER|M$ был построен на $PLANET|Y$."
-
-    PW_MESSAGE_BRANCH_OFFICE_COMPLETED: "Завершено строительство уникального здания филиала."
-    PW_MESSAGE_BRANCH_OFFICE_OWNER_COMPLETED: "Мы завершили строительство уникального здания филиала."
