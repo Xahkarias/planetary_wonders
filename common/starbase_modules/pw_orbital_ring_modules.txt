@@ -9,12 +9,6 @@ pw_orbital_ring_guardian_harbor = {
 	potential = {
 		exists = owner
 		owner = { has_technology = pw_tech_guardian_angel }
-		starbase = {
-			NOR = {
-				has_starbase_module = pw_orbital_ring_guardian_harbor
-				is_starbase_building_module = pw_orbital_ring_guardian_harbor
-			}
-		}
 		is_orbital_ring = yes
 	}
 
@@ -30,11 +24,15 @@ pw_orbital_ring_guardian_harbor = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			alloys = 300
+			alloys = 360
 		}
 		upkeep = {
 			energy = 3
 		}
+	}
+
+	planet_modifier = {
+		pop_defense_armies_add = 1
 	}
 
 	#Regular Jobs
@@ -74,7 +72,7 @@ pw_orbital_ring_guardian_harbor = {
 	station_modifier = {
 		ship_hull_mult = 0.20
 		ship_armor_mult = 0.20
-		starbase_defense_platform_capacity_add = 4
+		starbase_defense_platform_capacity_add = 2
 	}
 
 	ai_build_at_chokepoint = yes
