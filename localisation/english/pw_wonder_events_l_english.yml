@@ -968,6 +968,7 @@
     pw_wonder.2120.administration: "The Spire of Administration"
     pw_wonder.2120.death: "The Death Spire"
     pw_wonder.2120.aquatic: "The Submerged Spire"
+    pw_wonder.2120.subterranean: "The Upside Down Spire"
     pw_wonder.2120.tooltip: "Designation can be changed in the future by enacting a planetary decision."
 
     pw_wonder.2106.name: "The Fall of the Spire"

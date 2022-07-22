@@ -329,6 +329,9 @@
     pw_pm_living_spire_designation_submerged: "Submerged Spire"
     pw_pm_living_spire_designation_submerged_desc: "From the depths of the oceans that cover this world, the Living Spire towers over the surface providing comfortable spaces for both aquatic and terrestrial inhabitants."
 
+    pw_pm_living_spire_designation_upside_down: "Upside Down Spire"
+    pw_pm_living_spire_designation_upside_down_desc: "A subterranean spire that instead of rising to the clouds, climbs to the depths of the planet. A much more pleasant prospect for the Cave Dweller inhabitants."
+
     #Nostalgia Paradise themes:
     pw_pm_nostalgia_paradise_theme_new_frontiers: "$pw_nostalgia_paradise$: New Frontiers"
     pw_pm_nostalgia_paradise_theme_new_frontiers_desc: "Guests of the $pw_nostalgia_paradise$ enjoy the exploration of harsh and barely habitable lands, where every step can lead to a new adventure and they can live their wildest fantasies at the edge of society."

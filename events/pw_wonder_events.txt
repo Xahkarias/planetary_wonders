@@ -12474,6 +12474,7 @@ planet_event = {
 					has_modifier = pw_pm_living_spire_designation_death_cult
 					has_modifier = pw_pm_living_spire_designation_death_necro
 					has_modifier = pw_pm_living_spire_designation_submerged
+					has_modifier = pw_pm_living_spire_designation_upside_down
 				}
 			}
 			planet_event = { id = pw_wonder.2106 }
@@ -12513,6 +12514,7 @@ planet_event = {
 			has_modifier = pw_pm_living_spire_designation_death_cult
 			has_modifier = pw_pm_living_spire_designation_death_necro
 			has_modifier = pw_pm_living_spire_designation_submerged
+			has_modifier = pw_pm_living_spire_designation_upside_down
 		}
 	}
 
@@ -12561,6 +12563,10 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_living_spire_designation_submerged }
 			remove_modifier = pw_pm_living_spire_designation_submerged
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_upside_down }
+			remove_modifier = pw_pm_living_spire_designation_upside_down
 		}
 	}
 }
@@ -12645,6 +12651,12 @@ planet_event = {
 				has_modifier = pw_pm_living_spire_designation_submerged
 			}
 			remove_modifier = pw_pm_living_spire_designation_submerged
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_upside_down
+			}
+			remove_modifier = pw_pm_living_spire_designation_upside_down
 		}
 	}
 
@@ -12763,6 +12775,19 @@ planet_event = {
 		}
 		add_modifier = {
 			modifier = pw_pm_living_spire_designation_submerged
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.subterranean
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			owner = {
+				has_origin = origin_subterranean
+			}
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_upside_down
 		}
 	}
 }
