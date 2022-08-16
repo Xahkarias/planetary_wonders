@@ -149,7 +149,7 @@ pw_building_erebus_project = {
 		}
 	}
 
-	#Add Regular Mining: 1 for each District (max 15)
+	#Add Regular Mining: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -161,7 +161,7 @@ pw_building_erebus_project = {
 		mult = value:pw_mining_value
 	}
 
-	#Add Gestalt Mining: 1 for each District (max 15 or 20 in Hive/Machine)
+	#Add Gestalt Mining: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -496,7 +496,7 @@ pw_building_erebus_fracking_plant = {
 		}
 	}
 
-	#Add Regular Mining: 1 for each District (max 15)
+	#Add Regular Mining: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -508,7 +508,7 @@ pw_building_erebus_fracking_plant = {
 		mult = value:pw_mining_value
 	}
 
-	#Add Gestalt Mining: 1 for each District (max 15 or 20 in Hive/Machine)
+	#Add Gestalt Mining: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -567,20 +567,14 @@ pw_building_erebus_fracking_plant = {
 
 	triggered_desc = {
 		trigger = {
-			NOR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = no }
 		}
 		text = pw_erebus_project_jobs_add_regular
 	}
 
 	triggered_desc = {
 		trigger = {
-			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = yes }
 		}
 		text = pw_erebus_project_jobs_add_gestalt
 	}
@@ -854,7 +848,7 @@ pw_building_helios_tower = {
 		}
 	}
 
-	#Add Regular Technician: 1 for each District (max 15)
+	#Add Regular Technician: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -866,7 +860,7 @@ pw_building_helios_tower = {
 		mult = value:pw_generators_value
 	}
 
-	#Add Gestalt Technician: 1 for each District (max 15)
+	#Add Gestalt Technician: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -910,20 +904,14 @@ pw_building_helios_tower = {
 
 	triggered_desc = {
 		trigger = {
-			NOR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = no }
 		}
 		text = pw_helios_tower_jobs_add_regular
 	}
 
 	triggered_desc = {
 		trigger = {
-			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = yes }
 		}
 		text = pw_helios_tower_jobs_add_gestalt
 	}
@@ -1201,7 +1189,7 @@ pw_building_helios_translucent_obelisk = {
 		}
 	}
 
-	#Add Regular Technician: 1 for each District (max 15)
+	#Add Regular Technician: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1213,7 +1201,7 @@ pw_building_helios_translucent_obelisk = {
 		mult = value:pw_generators_value
 	}
 
-	#Add Gestalt Technician: 1 for each District (max 15)
+	#Add Gestalt Technician: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1262,20 +1250,14 @@ pw_building_helios_translucent_obelisk = {
 
 	triggered_desc = {
 		trigger = {
-			NOR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = no }
 		}
 		text = pw_helios_tower_jobs_add_regular
 	}
 
 	triggered_desc = {
 		trigger = {
-			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
-			}
+			owner = { is_gestalt = yes }
 		}
 		text = pw_helios_tower_jobs_add_gestalt
 	}
@@ -1538,7 +1520,7 @@ pw_building_demetrius_fields = {
 		}
 	}
 
-	#Add Regular Farmer: 1 for each District (max 15)
+	#Add Regular Farmer: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1557,8 +1539,7 @@ pw_building_demetrius_fields = {
 		mult = value:pw_farming_value
 	}
 
-
-	#Add Angler and Pearl Diver: 1 for each District (max 15)
+	#Add Angler and Pearl Diver: 1 of each for every 2 Districts
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1576,12 +1557,11 @@ pw_building_demetrius_fields = {
 		mult = value:pw_farming_value
 	}
 
-	#Add Gestalt Farmer: 1 for each District (max 15)
+	#Add Gestalt Farmer: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = yes }
-
 		}
 		modifier = {
 			job_agri_drone_add = 1
@@ -1621,8 +1601,14 @@ pw_building_demetrius_fields = {
 
 	triggered_desc = {
 		trigger = {
-			NOT = {
-				is_planet_class = pc_hive
+			exists = owner
+			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
 			}
 		}
 		text = pw_demetrius_fields_jobs_add_regular
@@ -1630,7 +1616,20 @@ pw_building_demetrius_fields = {
 
 	triggered_desc = {
 		trigger = {
-			is_planet_class = pc_hive
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		text = pw_demetrius_fields_jobs_add_angler
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
 		}
 		text = pw_demetrius_fields_jobs_add_gestalt
 	}
@@ -1896,7 +1895,7 @@ pw_building_demetrius_chemical_garden = {
 		}
 	}
 
-	#Translucers jobs
+	#Gas Refiners jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1918,7 +1917,7 @@ pw_building_demetrius_chemical_garden = {
 		}
 	}
 
-	#Translucers Drone
+	#Gas Refiners Drone
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1929,7 +1928,7 @@ pw_building_demetrius_chemical_garden = {
 		}
 	}
 
-	#Add Regular Farmer: 1 for each District (max 15)
+	#Add Regular Farmer: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1948,8 +1947,7 @@ pw_building_demetrius_chemical_garden = {
 		mult = value:pw_farming_value
 	}
 
-
-	#Add Angler and Pearl Diver: 1 for each District (max 15)
+	#Add Angler and Pearl Diver: 1 of each for every 2 Districts
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1967,7 +1965,7 @@ pw_building_demetrius_chemical_garden = {
 		mult = value:pw_farming_value
 	}
 
-	#Add Gestalt Farmer: 1 for each District (max 15)
+	#Add Gestalt Farmer: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2017,8 +2015,14 @@ pw_building_demetrius_chemical_garden = {
 
 	triggered_desc = {
 		trigger = {
-			NOT = {
-				is_planet_class = pc_hive
+			exists = owner
+			owner = { is_regular_empire = yes }
+			OR = {
+				owner = { is_anglers_empire = no }
+				AND = {
+					owner = { is_anglers_empire = yes }
+					NOT = { is_wet = yes }
+				}
 			}
 		}
 		text = pw_demetrius_fields_jobs_add_regular
@@ -2026,7 +2030,20 @@ pw_building_demetrius_chemical_garden = {
 
 	triggered_desc = {
 		trigger = {
-			is_planet_class = pc_hive
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_anglers_empire = yes
+			}
+			is_wet = yes
+		}
+		text = pw_demetrius_fields_jobs_add_angler
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
 		}
 		text = pw_demetrius_fields_jobs_add_gestalt
 	}

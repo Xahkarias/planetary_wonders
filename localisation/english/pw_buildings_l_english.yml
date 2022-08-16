@@ -157,6 +157,7 @@
     pw_building_demetrius_fields: "Demetrius Cornucopia"
     pw_building_demetrius_fields_desc: "An entire artificial environment with controlled climate and regulated food chains design to extract the most in quantity and type of nutrients from the soil."
     pw_demetrius_fields_jobs_add_regular: "Provides §G+1§! £job_farmer£ §Y$job_farmer$§! job for each §Y$district_farming$§! on the planet."
+    pw_demetrius_fields_jobs_add_angler: "Provides §G+1§! £job_farmer£ §Y$job_angler$§! job and §G+1§! £job_farmer£ §Y$job_pearl_diver$§! job for every 2 §Y$district_farming$§! on the planet."
     pw_demetrius_fields_jobs_add_gestalt: "Provides §G+1§! £job_agri_drone£ §Y$job_agri_drone$§! job for each §Y$district_farming$§! on the planet."
     mod_country_resource_max_food_add: "Food Storage Capacity"
 

@@ -4452,3 +4452,5 @@
 
     pw_research.skip_experiment: "Skip straight to the research that matters."
     pw_research.skip_experiment.tooltip: "§YWarning§!: Our researchers may overlook useful technologies if we choose to skip these studies.\nThey will be lost to History!"
+
+    pw_demetrius_fields_jobs_add_angler: "Provides §G+1§! £job_farmer£ §Y$job_angler$§! job and §G+1§! £job_farmer£ §Y$job_pearl_diver$§! job for every 2 §Y$district_farming$§! on the planet."
