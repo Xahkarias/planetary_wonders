@@ -39,6 +39,9 @@
     pw_tech_space_elevator_counterweight_habitat: "$pw_space_elevator$ - Counterweight Habitat"
     pw_tech_space_elevator_counterweight_habitat_desc: "Historically we have used alloys and mineral as counterweight to sustain the tip of the Space elevator in orbit, but what if we were to utilize that spot for habitation support? There would be no lack of goods and infrastructure to support this endeavour."
 
+    pw_tech_space_elevator_nuclear_launch_pad: "Nuclear Launch Pad"
+    pw_tech_space_elevator_nuclear_launch_pad_desc: "A peculiar design for space logistics found by our explorers. Using controlled nuclear explosions we can greatly improve the efficiency of our Space Ramp."
+
     # Particle Supercollider:
     pw_tech_particle_supercollider: "Particle Supercollider"
     pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with an array of state of the art sensors."

@@ -192,6 +192,74 @@ pw_d_SE_space_ramp = {
 	}
 }
 
+#Nuclear launcher (Space Ramp upgrade)
+pw_d_SE_nuclear_launcher = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 8
+			alloys = 3
+		}
+	}
+
+	planet_modifier = {
+		pop_resettlement_cost_mult = -0.50
+	}
+
+	#Non Gestalt Jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { can_generate_trade_value = yes }
+		}
+		modifier = {
+			job_merchant_add = 2
+		}
+	}
+
+	#Gestalt jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_pw_logistics_drone_add = 2
+		}
+	}
+
+	#Skyhook combo bonus (non-Gestalt)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			has_deposit = pw_d_SE_skyhook
+		}
+		modifier = {
+			trade_value_mult = 0.05
+		}
+	}
+
+	#Skyhook combo bonus (Gestalt)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+			has_deposit = pw_d_SE_skyhook
+		}
+		modifier = {
+			planet_jobs_produces_mult = 0.025
+		}
+	}
+}
+
 #Orbit-Planet (Skyhook)
 pw_d_SE_skyhook = {
 	is_for_colonizable = yes
@@ -235,24 +303,30 @@ pw_d_SE_skyhook = {
 		}
 	}
 
-	#Skyhook combo bonus (non-Gestalt)
+	#Space Ramp combo bonus (non-Gestalt)
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_hive_empire = no }
-			has_deposit = pw_d_SE_space_ramp
+			OR = {
+				has_deposit = pw_d_SE_space_ramp
+				has_deposit = pw_d_SE_nuclear_launcher
+			}
 		}
 		modifier = {
 			trade_value_mult = 0.05
 		}
 	}
 
-	#Skyhook combo bonus (Gestalt)
+	#Space Ramp combo bonus (Gestalt)
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_hive_empire = yes }
-			has_deposit = pw_d_SE_space_ramp
+			OR = {
+				has_deposit = pw_d_SE_space_ramp
+				has_deposit = pw_d_SE_nuclear_launcher
+			}
 		}
 		modifier = {
 			planet_jobs_produces_mult = 0.025

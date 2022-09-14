@@ -338,6 +338,7 @@ pw_decision_SE_install_space_ramp = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = {has_deposit = pw_d_SE_space_ramp }
+		NOT = {has_deposit = pw_d_SE_nuclear_launcher }
 	}
 
 	allow = {
@@ -402,6 +403,50 @@ pw_decision_SE_install_space_ramp = {
 		modifier = {
 			factor = value:pw_pop_factor
 		}
+	}
+}
+
+pw_decision_SE_install_nuclear_launcher = {
+	owned_planets_only = yes
+	sound = event_mega_structure_other_empire_build_start_01
+
+	enactment_time = @pw_se_infrastructure_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_se_infrastructure_cost
+			alloys = @pw_se_infrastructure_cost_extra
+			unity = 250
+		}
+	}
+
+	prerequisites = {
+		pw_tech_space_elevator_nuclear_launch_pad
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_deposit = pw_d_SE_nuclear_launcher }
+	}
+	
+	allow = {
+		has_deposit = pw_d_SE_space_ramp
+		has_active_building = pw_building_space_elevator
+	}
+
+	effect = {
+		if = {
+			limit = { has_deposit = pw_d_SE_space_ramp }
+			remove_deposit = pw_d_SE_space_ramp
+		}
+		add_deposit = pw_d_SE_nuclear_launcher
+		hidden_effect = {
+			planet_event = { id = pw_wonder.120 }
+		}
+	}
+
+	ai_weight = {
+		weight = 100
 	}
 }
 

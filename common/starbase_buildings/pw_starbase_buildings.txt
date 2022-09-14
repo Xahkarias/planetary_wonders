@@ -18,7 +18,10 @@ pw_offworld_logistics_station = {
 			any_system_planet = {
 				is_owned_by = from
 				has_active_building = pw_building_space_elevator
-				has_deposit = pw_d_SE_space_ramp
+				OR = {
+					has_deposit = pw_d_SE_space_ramp
+					has_deposit = pw_d_SE_nuclear_launcher
+				}
 			}
 		}
 		NOT = { has_starbase_building = pw_offworld_logistics_station }

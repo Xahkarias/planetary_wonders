@@ -1,3 +1,22 @@
+pw_anomaly_ruined_nuclear_launcher_category = {
+	level = 3
+	picture = GFX_evt_landing_ship
+	max_once = yes
+
+	spawn_chance = {
+		modifier = {
+			add = 0.55
+			uninhabitable_regular_planet = yes
+		}
+		modifier = {
+			add = 0.15
+			habitable_planet = yes
+		}
+	}
+
+	on_success = pw_anomaly.10
+}
+
 pw_anomaly_ruined_particle_supercollider_category = {
 	level = 2
 	picture = GFX_evt_city_ruins

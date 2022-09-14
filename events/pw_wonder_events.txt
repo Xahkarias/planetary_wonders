@@ -567,7 +567,10 @@ planet_event = {
 	trigger = {
 		has_active_building = pw_building_space_elevator
 		has_deposit = pw_d_SE_skyhook
-		has_deposit = pw_d_SE_space_ramp
+		OR = {
+			has_deposit = pw_d_SE_space_ramp
+			has_deposit = pw_d_SE_nuclear_launcher
+		}
 		owner = {
 			NOT = { has_country_flag = pw_wonder_event_120 }
 		}
