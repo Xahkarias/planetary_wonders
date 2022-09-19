@@ -56,9 +56,15 @@
 
     #Guardian Angel - Rebuild Flying Fortress
     pw_decision_rebuild_flying_fortress: "Rebuild Flying Fortress"
-    pw_decision_rebuild_flying_fortress_desc: "Our Flying fortress might have fallen from the skies, but the Guardian Angel framework is still in place. We can rebuild it to protect the skies once more."
+    pw_decision_rebuild_flying_fortress_desc: "Our Flying Fortress might have fallen from the skies, but the Guardian Angel framework is still in place. We can rebuild it to protect the skies once more."
     pw_decision_rebuild_flying_fortress_tooltip: "Creates a Flying Fortress army to defend this planet."
 
+    #Guardian Angel - Rebuild Flying Fortress
+    pw_decision_guardian_angel_change_peace_choice: "Flying Fortress: Choose new peace designation"
+    pw_decision_guardian_angel_change_peace_choice_desc: "As the tides of war change, so do the tides of peace. We can choose some other function for the Flying Fortress to perform in quiet times, while it is not occupied with planetary protection."
+    pw_decision_guardian_angel_change_peace_choice.tooltip: "Select a new designation while in times of peace for the $pw_guardian_angel$, replacing any current planetary features."
+
+    #Mantle Crucible
     pw_decision_mantle_crucible_alloys: "Mantle Crucible Focus: Military"
     pw_decision_mantle_crucible_alloys_desc: "By disregarding some of the consumer goods production we can multiply the manufacturing of alloys for our military."
     pw_decision_mantle_crucible_alloys_regular_tooltip: "$pw_mantle_crucible$:\n    +3 $job_foundry$ Jobs\n    -3 $job_artisan$ Jobs\n    +1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"

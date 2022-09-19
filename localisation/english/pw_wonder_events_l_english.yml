@@ -523,6 +523,9 @@
     pw_wonder.1207.c: "Use the fortress as a Tourist Attraction"
     pw_wonder.1207.c.tooltip: "In times of peace, the Guardian Angel will be used as a tourist attraction, which provides cultural expositions and recreational flights to visitors."
 
+    pw_wonder.1207.no_peace: "We need not to think of times of peace"
+    pw_wonder.1207.no_peace.tooltip: "We can choose a designation for times of peace in the future by enacting a planetary decision"
+
     #Guardian Angel destroy Deposits
     pw_wonder.1208.name: "No More Angels"
     pw_wonder.1208.desc: "Without the support of the Guardian Angel, the functions it performed during peace times on [THIS.GetName] can no longer be supported and the services will be dismantled. We can come back to promote them again, if we rebuild the Guardian Angel."

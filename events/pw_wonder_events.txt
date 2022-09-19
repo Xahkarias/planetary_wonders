@@ -6414,8 +6414,10 @@ planet_event = {
 		planet_event = { id = pw_wonder.1201 } #Regular first time
 		planet_event = { id = pw_wonder.1202 } #Gestalt first time
 		planet_event = { id = pw_wonder.1203 } #Add flying fortress army
+
 		planet_event = { id = pw_wonder.1207 days = 60 random = 30 } #Guardian Angel Peace Choice.
 		planet_event = { id = pw_wonder.1204 days = @pw_halfYear } #Recursive check event
+
 		owner = { country_event = { #Subject/Overlord events
 			id = pw_wonder.1209
 			days = 10
@@ -6629,26 +6631,44 @@ planet_event = {
 	is_triggered_only = yes
 	location = this
 
-	trigger = {
-		owner = { is_at_war = no }
-		NOT = { has_planet_flag = pw_guardian_angel_choice }
+	pre_triggers = {
+		has_owner = yes
 	}
+
+	immediate = {
+		remove_planet_flag = pw_guardian_angel_choice
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_training
+			}
+			remove_deposit = pw_d_guardian_angel_training
+		}
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_police_operations
+			}
+			remove_deposit = pw_d_guardian_angel_police_operations
+		}
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_tourist_attraction
+			}
+			remove_deposit = pw_d_guardian_angel_tourist_attraction
+		}
+	}
+
 	option = {
 		name = pw_wonder.1207.a
 		custom_tooltip = pw_wonder.1207.a.tooltip
 		add_deposit = pw_d_guardian_angel_training
-		hidden_effect = {
-			set_planet_flag = pw_guardian_angel_choice
-		}
 	}
+
 	option = {
 		name = pw_wonder.1207.b
 		custom_tooltip = pw_wonder.1207.b.tooltip
 		add_deposit = pw_d_guardian_angel_police_operations
-		hidden_effect = {
-			set_planet_flag = pw_guardian_angel_choice
-		}
 	}
+
 	option = {
 		name = pw_wonder.1207.c
 		custom_tooltip = pw_wonder.1207.c.tooltip
@@ -6656,9 +6676,15 @@ planet_event = {
 			owner = { can_generate_trade_value = yes }
 		}
 		add_deposit = pw_d_guardian_angel_tourist_attraction
-		hidden_effect = {
-			set_planet_flag = pw_guardian_angel_choice
-		}
+	}
+
+	option = {
+		name = pw_wonder.1207.no_peace
+		custom_tooltip = pw_wonder.1207.no_peace.tooltip
+	}
+
+	after = {
+		set_planet_flag = pw_guardian_angel_choice
 	}
 }
 

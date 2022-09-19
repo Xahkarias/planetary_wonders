@@ -4493,3 +4493,10 @@
     pw_situation_stage_feast: "Feast"
 
     mod_planet_miners_unity_produces_add: "Unity from Miners"
+
+    pw_decision_guardian_angel_change_peace_choice: "Flying Fortress: Choose new peace designation"
+    pw_decision_guardian_angel_change_peace_choice_desc: "As the tides of war change, so do the tides of peace. We can choose some other function for the Flying Fortress to perform in quiet times, while it is not occupied with planetary protection."
+    pw_decision_guardian_angel_change_peace_choice.tooltip: "Select a new designation while in times of peace for the $pw_guardian_angel$, replacing any current planetary features."
+
+    pw_wonder.1207.no_peace: "We need not to think of times of peace"
+    pw_wonder.1207.no_peace.tooltip: "We can choose a designation for times of peace in the future by enacting a planetary decision"

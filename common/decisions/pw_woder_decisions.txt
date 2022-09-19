@@ -1040,6 +1040,42 @@ pw_decision_rebuild_flying_fortress = {
 	}
 }
 
+#Guardian Angel change Peace Choice
+pw_decision_guardian_angel_change_peace_choice = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+			energy = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = pw_guardian_angel_choice
+	}
+
+	allow = {
+		OR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1207
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 #Change Mantle Crucible specialization:
 pw_decision_mantle_crucible_alloys = {
 	owned_planets_only = yes
@@ -3215,7 +3251,7 @@ pw_decision_living_spire_change_designation = {
 		category = decisions
 		cost = {
 			unity = 250
-			unity = 10000
+			energy = 1000
 		}
 	}
 
