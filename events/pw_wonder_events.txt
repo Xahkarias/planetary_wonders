@@ -13981,3 +13981,522 @@ planet_event = {
 		}
 	}
 }
+
+# Feastings Grounds -> id 2700
+
+#On Feastings Grounds built
+planet_event = {
+	id = pw_wonder.2700
+	hide_window = yes
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		create_message = {
+			type = PW_WONDER_COMPLETED
+			localization = pw_message_feasting_grounds_complete
+			days = 30
+			target = this
+			variable = {
+				type = name
+				localization = PLANET
+				scope = root
+			}
+		}
+
+		planet_event = { id = pw_wonder.2701 } #Regular first time
+	}
+}
+
+#On first time Feastings Grounds is built (Regular Empire)
+planet_event = {
+	id = pw_wonder.2701
+	title = pw_wonder.2701.name
+	desc = pw_wonder.2701.desc
+	picture = GFX_evt_infested
+	show_sound = event_construction
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_feasting_grounds_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_feasting_grounds_built }
+	}
+
+	option = {
+		name = pw_wonder.2701.a
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2701.b
+		trigger = {
+			owner = { is_lithoid_empire = no }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2701.c
+		trigger = {
+			owner = { is_lithoid_empire = yes }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
+	}
+}
+
+#Feasting grounds decision: choose Feast to begin
+planet_event = {
+	id = pw_wonder.2710
+	title = pw_wonder.2710.name
+	desc = pw_wonder.2710.desc
+	picture = GFX_evt_infested
+	show_sound = event_swarm
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		set_planet_flag = pw_FG_is_choosing_feast
+	}
+
+	trigger = {
+		has_active_building = pw_building_feasting_grounds
+		NOT = { has_planet_flag = pw_FG_is_choosing_feast }
+	}
+
+	option = {
+		name = pw_wonder.2710.strength_in_numbers
+
+		allow = {
+			owner = {
+				#Can pay
+				if = {
+					limit = { is_lithoid_empire = yes }
+					resource_stockpile_compare = {
+						resource = minerals
+						value >= 50
+						mult = root.trigger:num_pops
+					}
+				}
+				else = {
+					resource_stockpile_compare = {
+						resource = food
+						value >= 50
+						mult = root.trigger:num_pops
+					}
+				}
+				#Does not have duplicated situation
+				hidden_trigger = {
+					NOT = {
+						any_situation = {
+							is_situation_type = pw_feasting_grounds_feast
+							has_situation_flag = pw_feasting_grounds_feast_strength_in_numbers
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = pw_wonder.2710.tooltip
+		tooltip = {
+			owner = {
+				add_modifier = {
+					modifier = pw_FG_feast_strength_in_numbers
+					years = 5
+				}
+			}
+		}
+
+		owner = {
+			#Pay the resources
+			if = {
+				limit = {
+					is_lithoid_empire = yes
+				}
+				add_resource = {
+					minerals = -50
+					mult = root.trigger:num_pops
+				}
+			}
+			else = {
+				add_resource = {
+					food = -50
+					mult = root.trigger:num_pops
+				}
+			}
+			#Start the situation
+			start_situation = {
+				type = pw_feasting_grounds_feast
+				target = root
+			}
+		}
+		#Adde the flag to specify which feast is it
+		hidden_effect = {
+			every_targeting_situation = {
+				limit = {
+					is_situation_type = pw_feasting_grounds_feast
+				}
+				set_situation_flag = pw_feasting_grounds_feast_strength_in_numbers
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2710.driving_hunger
+
+		allow = {
+			owner = {
+				#Can pay
+				if = {
+					limit = { is_lithoid_empire = yes }
+					resource_stockpile_compare = {
+						resource = minerals
+						value >= 50
+						mult = root.trigger:num_pops
+					}
+				}
+				else = {
+					resource_stockpile_compare = {
+						resource = food
+						value >= 50
+						mult = root.trigger:num_pops
+					}
+				}
+				#Does not have duplicated situation
+				hidden_trigger = {
+					NOT = {
+						any_situation = {
+							is_situation_type = pw_feasting_grounds_feast
+							has_situation_flag = pw_feasting_grounds_feast_driving_hunger
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = pw_wonder.2710.tooltip
+		tooltip = {
+			owner = {
+				add_modifier = {
+					modifier = pw_FG_feast_driving_hunger
+					years = 5
+				}
+			}
+		}
+
+		owner = {
+			#Pay the resources
+			if = {
+				limit = {
+					is_lithoid_empire = yes
+				}
+				add_resource = {
+					minerals = -50
+					mult = root.trigger:num_pops
+				}
+			}
+			else = {
+				add_resource = {
+					food = -50
+					mult = root.trigger:num_pops
+				}
+			}
+			#Start the situation
+			start_situation = {
+				type = pw_feasting_grounds_feast
+				target = root
+			}
+		}
+		hidden_effect = {
+			every_targeting_situation = {
+				limit = {
+					is_situation_type = pw_feasting_grounds_feast
+				}
+				set_situation_flag = pw_feasting_grounds_feast_driving_hunger
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2710.sprawling_offspring
+		allow = {
+			owner = {
+				#Can pay
+				if = {
+					limit = { is_lithoid_empire = yes }
+					resource_stockpile_compare = {
+						resource = minerals
+						value >= 100
+						mult = root.trigger:num_pops
+					}
+				}
+				else = {
+					resource_stockpile_compare = {
+						resource = food
+						value >= 100
+						mult = root.trigger:num_pops
+					}
+				}
+				#Does not have duplicated situation
+				hidden_trigger = {
+					NOT = {
+						any_situation = {
+							is_situation_type = pw_feasting_grounds_feast
+							has_situation_flag = pw_feasting_grounds_feast_sprawling_offspring
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip = pw_wonder.2710.tooltip
+		tooltip = {
+			owner = {
+				add_modifier = {
+					modifier = pw_FG_feast_sprawling_offspring
+					years = 5
+				}
+			}
+		}
+		owner = {
+			#Pay the resources
+			if = {
+				limit = {
+					is_lithoid_empire = yes
+				}
+				add_resource = {
+					minerals = -100
+					mult = root.trigger:num_pops
+				}
+			}
+			else = {
+				add_resource = {
+					food = -100
+					mult = root.trigger:num_pops
+				}
+			}
+			#Start the situation
+			start_situation = {
+				type = pw_feasting_grounds_feast
+				target = root
+			}
+		}
+		hidden_effect = {
+			every_targeting_situation = {
+				limit = {
+					is_situation_type = pw_feasting_grounds_feast
+				}
+				set_situation_flag = pw_feasting_grounds_feast_sprawling_offspring
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2710.purpose_of_life
+
+		allow = {
+			owner = {
+				#Can pay
+				if = {
+					limit = { is_lithoid_empire = yes }
+					resource_stockpile_compare = {
+						resource = minerals
+						value >= 100
+						mult = root.trigger:num_pops
+					}
+				}
+				else = {
+					resource_stockpile_compare = {
+						resource = food
+						value >= 100
+						mult = root.trigger:num_pops
+					}
+				}
+				#Does not have duplicated situation
+				hidden_trigger = {
+					NOT = {
+						any_situation = {
+							is_situation_type = pw_feasting_grounds_feast
+							has_situation_flag = pw_feasting_grounds_feast_purpose_of_life
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = pw_wonder.2710.tooltip
+		tooltip = {
+			owner = {
+				add_modifier = {
+					modifier = pw_FG_feast_purpose_of_life
+					years = 5
+				}
+			}
+		}
+
+		owner = {
+			#Pay the resources
+			if = {
+				limit = {
+					is_lithoid_empire = yes
+				}
+				add_resource = {
+					minerals = -100
+					mult = root.trigger:num_pops
+				}
+			}
+			else = {
+				add_resource = {
+					food = -100
+					mult = root.trigger:num_pops
+				}
+			}
+			#Start the situation
+			start_situation = {
+				type = pw_feasting_grounds_feast
+				target = root
+			}
+		}
+		hidden_effect = {
+			every_targeting_situation = {
+				limit = {
+					is_situation_type = pw_feasting_grounds_feast
+				}
+				set_situation_flag = pw_feasting_grounds_feast_purpose_of_life
+			}
+		}
+	}
+
+	option = {
+		name = pw_wonder.2710.cancel
+	}
+
+	after = {
+		hidden_effect = {
+			remove_planet_flag = pw_FG_is_choosing_feast
+		}
+	}
+}
+
+#Feasting grounds conclusions
+situation_event = {
+	id = pw_wonder.2711
+	title = pw_wonder.2710.strength_in_numbers
+	desc = pw_wonder.2711.desc
+	picture = GFX_evt_infested
+	show_sound = event_swarm
+	is_triggered_only = yes
+
+	option = {
+		name = pw_wonder.2710.complete_feast
+		owner = {
+			add_modifier = {
+				modifier = pw_FG_feast_strength_in_numbers
+				years = 5
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = pw_wonder.2712
+	title = pw_wonder.2710.driving_hunger
+	desc = pw_wonder.2712.desc
+	picture = GFX_evt_infested
+	show_sound = event_swarm
+	is_triggered_only = yes
+
+	option = {
+		name = pw_wonder.2710.complete_feast
+		owner = {
+			add_modifier = {
+				modifier = pw_FG_feast_driving_hunger
+				years = 5
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = pw_wonder.2713
+	title = pw_wonder.2710.sprawling_offspring
+	desc = pw_wonder.2713.desc
+	picture = GFX_evt_infested
+	show_sound = event_swarm
+	is_triggered_only = yes
+
+	option = {
+		name = pw_wonder.2710.complete_feast
+		owner = {
+			add_modifier = {
+				modifier = pw_FG_feast_sprawling_offspring
+				years = 5
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = pw_wonder.2714
+	title = pw_wonder.2710.purpose_of_life
+	desc = pw_wonder.2714.desc
+	picture = GFX_evt_infested
+	show_sound = event_swarm
+	is_triggered_only = yes
+
+	option = {
+		name = pw_wonder.2710.complete_feast
+		owner = {
+			add_modifier = {
+				modifier = pw_FG_feast_purpose_of_life
+				years = 5
+			}
+		}
+	}
+}

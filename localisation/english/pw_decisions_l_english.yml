@@ -50,6 +50,10 @@
     pw_decision_living_metal_construction: "Living Metal Expansion"
     pw_decision_living_metal_construction_desc: "Employ Living Metal on the construction of new buildings and districts to allow our structures to serve multiple functions at once, increasing usable space."
 
+    #Feasting Grounds - organize feast
+    pw_decision_FG_organize_feast: "Organize Planetary Feast"
+    pw_decision_FG_organize_feast_desc: "Coordinate every steward drone of the planet to organize a gigantic Feast."
+
     #Guardian Angel - Rebuild Flying Fortress
     pw_decision_rebuild_flying_fortress: "Rebuild Flying Fortress"
     pw_decision_rebuild_flying_fortress_desc: "Our Flying fortress might have fallen from the skies, but the Guardian Angel framework is still in place. We can rebuild it to protect the skies once more."

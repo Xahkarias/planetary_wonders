@@ -1210,3 +1210,25 @@ pw_hidden_factory_archaeology_exhausted_minerals = {
 	district_mining_max = -2
 	planet_jobs_minerals_produces_mult = -0.15
 }
+
+pw_FG_feast_strength_in_numbers = {
+	ship_experience_gain_mult = 0.20
+	shipsize_corvette_build_speed_mult = 0.10
+	ship_corvette_cost_mult = -0.10
+}
+
+pw_FG_feast_driving_hunger = {
+	army_experience_gain_mult = 0.50
+	army_damage_mult = 0.20
+	planet_army_build_speed_mult = 0.25
+}
+
+pw_FG_feast_sprawling_offspring = {
+	pop_growth_speed = 0.15
+	colony_start_num_pops_add = 1
+}
+
+pw_FG_feast_purpose_of_life = {
+	planet_jobs_produces_mult = 0.05
+	country_unity_produces_mult = 0.10
+}

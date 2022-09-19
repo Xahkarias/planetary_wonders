@@ -25,10 +25,10 @@ ship_event = {
 		}
 
 		owner = {
-			add_research_option = pw_tech_space_elevator_nuclear_launch_pad
 			hidden_effect = {
 				set_country_flag = pw_space_elevator_nuclear_launcher_anomaly_found
 			}
+			add_research_option = pw_tech_space_elevator_nuclear_launch_pad
 		}
 	}
 

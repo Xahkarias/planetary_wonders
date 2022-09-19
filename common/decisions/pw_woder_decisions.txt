@@ -3479,3 +3479,35 @@ pw_decision_living_metal_construction = {
 		weight = 5
 	}
 }
+
+pw_decision_FG_organize_feast = {
+	# icon = pw_decision_SE_change_galactic_market_bonus
+	owned_planets_only = yes
+	enactment_time = 0
+
+	prerequisites = {
+		pw_tech_planetary_banquets
+	}
+
+	potential = {
+		has_active_building = pw_building_feasting_grounds
+	}
+
+	allow = {
+		NOT = {
+			any_targeting_situation = {
+				is_situation_type = pw_feasting_grounds_feast
+			}
+		}
+	}
+
+	effect = {
+		planet_event = {
+			id = pw_wonder.2710
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -331,6 +331,7 @@
 
     pw_pm_living_spire_designation_upside_down: "Upside Down Spire"
     pw_pm_living_spire_designation_upside_down_desc: "A subterranean spire that instead of rising to the clouds, climbs to the depths of the planet. A much more pleasant prospect for the Cave Dweller inhabitants."
+    mod_planet_miners_unity_produces_add: "Unity from Miners"
 
     #Nostalgia Paradise themes:
     pw_pm_nostalgia_paradise_theme_new_frontiers: "$pw_nostalgia_paradise$: New Frontiers"
@@ -527,6 +528,19 @@
     # Conduit of Unity:
     pw_mod_conduit_of_unity_recently_build: "Unity in Cohesion"
     pw_mod_conduit_of_unity_recently_build_desc: "The recent construction of the foundations of the Conduit of Unity already triggers connections within the Gestalt that improve coordination, allowing us to continue the construction in record time."
+
+    # Feasting Grounds:
+    pw_FG_feast_strength_in_numbers: "Strength in Numbers"
+    pw_FG_feast_strength_in_numbers_desc: "As long as we feed our drones, our numbers will be overwhelming."
+
+    pw_FG_feast_driving_hunger: "Driving Hunger"
+    pw_FG_feast_driving_hunger_desc: "The purpose of the mind is clear: Consume."
+
+    pw_FG_feast_sprawling_offspring: "Sprawling Offspring"
+    pw_FG_feast_sprawling_offspring_desc: "Our children shall spread over the stars in search of food."
+
+    pw_FG_feast_purpose_of_life: "Purpose of Life"
+    pw_FG_feast_purpose_of_life_desc: "All life has purpose: ours is to eat, while anything else is to be eaten."
 
     #Solipsist Debates:
 

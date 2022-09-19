@@ -437,6 +437,9 @@
     pw_tech_criminal_exploitation: "Criminal Exploitation"
     pw_tech_criminal_exploitation_desc: "To make a profit from the blindside of a legislation is made easier when we actually study foreign laws and how to bend them."
 
+    #Feasting Grounds
+    pw_tech_planetary_banquets: "Planetary Banquets"
+    pw_tech_planetary_banquets_desc: "Food is the very fuel that drives our ambition. The mind should organize planetary scale feasts to bring our drones and warriors together in unending consumption."
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"
