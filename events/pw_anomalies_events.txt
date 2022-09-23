@@ -1,5 +1,71 @@
 namespace = pw_anomaly
 
+#Ruined Nuclear Launcher.
+ship_event = {
+	id = pw_anomaly.10
+	title = pw_anomaly.10.name
+	desc = pw_anomaly.10.desc
+	picture = GFX_evt_ghost_ship
+	show_sound = event_ship_thrusters
+	is_triggered_only = yes
+	location = this
+
+	#If this is the first sign of life, play story event.
+	immediate = { owner = { country_event = { id = story.5 days = 30 }}}
+
+	#Get the tech now (has researched Space Ramp)
+	option = {
+		name = pw_anomaly.10.a
+
+		trigger = {
+			owner = {
+				has_technology = pw_tech_space_elevator_planetary_orbital_logistics
+				NOT = { has_technology = pw_tech_space_elevator_nuclear_launch_pad }
+			}
+		}
+
+		owner = {
+			hidden_effect = {
+				set_country_flag = pw_space_elevator_nuclear_launcher_anomaly_found
+			}
+			add_research_option = pw_tech_space_elevator_nuclear_launch_pad
+		}
+	}
+
+	#Get the tech later (has not yet researched Space Ramp)
+	option = {
+		name = pw_anomaly.10.b
+		custom_tooltip = pw_anomaly.10.b.tooltip
+		
+		trigger = {
+			owner = {
+				NOT = { has_technology = pw_tech_space_elevator_planetary_orbital_logistics }
+			}
+		}
+
+		owner = {
+			hidden_effect = {
+				set_country_flag = pw_space_elevator_nuclear_launcher_anomaly_found
+			}
+		}
+	}
+
+	#Ignore the tech
+	option = {
+		name = pw_anomaly.10.c
+		custom_tooltip = pw_anomaly.10.c.tooltip
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier3materialreward
+				min = @tier3materialmin
+				max = @tier3materialmax
+			}
+		}
+	}
+}
+
 #Ruined Particle Supercollider.
 ship_event = {
 	id = pw_anomaly.20

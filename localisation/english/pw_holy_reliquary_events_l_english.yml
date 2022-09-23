@@ -388,6 +388,27 @@
     pw_holy_reliquary.855.name: "Praise the [THIS.GetRulerTitle]"
     pw_holy_reliquary.855.desc: "Constructed for the purpose of epitomizing the power of the empire in a single representation, the Imperial Holy Throne was designed by the most accomplished theologians, drawing themes and images from our holy texts, and assembled by the most talented artisan using almost exclusively rare materials found in space. Lastly, to make certain the divine authority of this throne, the [THIS.GetRulerTitle] [THIS.Leader.GetHerHis]self has layed imperial blessings upon it.\n\nThe throne needs only a worthy capital and a matching throne room so that the great [THIS.GetRulerTitle] [THIS.GetRulerName] may take [THIS.Leader.GetHerHis] rightful seat. For now, the [THIS.GetRulerTitle] may show the people how a true leader rules."
 
+    #Bonus: Corroded Heraldry -> 950
+    pw_holy_reliquary.corroded_heraldry: "§BCorroded Heraldry§!"
+    pw_holy_reliquary.1.corroded_heraldry.sanctify: "$pw_holy_reliquary.sanctify$ $pw_holy_reliquary.corroded_heraldry$"
+    pw_holy_reliquary.1.corroded_heraldry.access: "$pw_holy_reliquary.corroded_heraldry$"
+
+    #Sanctify:
+    pw_holy_reliquary.950.name: "The $pw_holy_reliquary.corroded_heraldry$"
+    pw_holy_reliquary.950.desc: "Many ancient legends of our old home planets tell the tales of the passing of the Toxic God, but some in particular speak of a holy symbol that survived the devastating decay of yore. Theologians have named it The $pw_holy_reliquary.corroded_heraldry$, a decorative shield said to have been touched by the Toxicity itself and the inspiration of many of our order symbols.\n\nIf we were to retrieve the Heraldry from the toxic wastes of our capital and sanctify it, we would renew the spirit of pursuit of our questing knights."
+    pw_holy_reliquary.950.a: "Sanctify the $pw_holy_reliquary.corroded_heraldry$"
+
+    #Just Sanctified:
+    pw_holy_reliquary.951.name: "Praise the Toxic God"
+    pw_holy_reliquary.951.desc: "Finally, the $pw_holy_reliquary.corroded_heraldry$ rests in its rightful place at the symbolic center of the order.\n\nThe Heraldry is a stone escutcheon - a shield - deformed by corrosion when exposed to the passing of the Toxic God. It was once decorated with brilliant inlaid metals and painted supports, now only the stone base of the coat of arms remain, with scraps of oxidate metal hanging from the crevices. Remade by toxicity, it stands as a stark remainder of both the power of the Toxic God and our resolution before it.\n\nAs it represents a symbol of the order, we can use it to inspire the pursuit of our knights in different ways."
+    pw_holy_reliquary.951.a: "Inspire the Pursuit of Knowledge"
+    pw_holy_reliquary.951.b: "Inspire the Pursuit of Honor"
+
+    #Access Chamber:
+    pw_holy_reliquary.955.name: "Praise the Toxic God"
+    pw_holy_reliquary.955.desc: "The Heraldry is a stone escutcheon - a shield - deformed by corrosion when exposed to the passing of the Toxic God. It was once decorated with brilliant inlaid metals and painted supports, now only the stone base of the coat of arms remain, with scraps of oxidate metal hanging from the crevices. Remade by toxicity, it stands as a stark remainder of both the power of the Toxic God and our resolution before it.\n\nAs it represents a symbol of the order, we can use it to inspire the pursuit of our knights in different ways."
+
+
     #Venerate Tradition:
     pw_holy_reliquary.1.venerate_tradition: "Venerate Our Tradition"
     pw_holy_reliquary.900.name: "Venerable Traditions"

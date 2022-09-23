@@ -278,6 +278,12 @@
     pw_solipsist_debate_hall_tooltip: "§YAllows us to deliberate with ourselves over certain subjects.§!"
     mod_planet_synapse_drones_produces_mult: "Planet Synapse Drones Production"
 
+    # Feasting Grounds
+    pw_feasting_grounds: "§MFeasting Grounds§!"
+    pw_building_feasting_grounds: "Feasting Grounds"
+    pw_building_feasting_grounds_desc: "A crater filled with nests and tunnels where our ever-hungry drones come to gather in consumption and unity. This is where unending feasts of planetary magnitude are held by our steward drones, where we show the galaxy the fate of our prisoners."
+    pw_building_feasting_grounds_tooltip: "§GUnlocks decisions that create Feasts to consume £food£ §Y$food$§!/£minerals£ §Y$minerals$§! in order to gain bonuses.§!"
+
     #Monuments:
     pw_monument_base: "Monument Foundation"
     pw_monument_base_desc: "Every work of expression needs to start somewhere."

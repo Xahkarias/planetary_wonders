@@ -353,6 +353,35 @@ country_event = {
 		}
 	}
 
+	#Bonus: Corroded Heraldry -> 975
+	option = { #Sanctify
+		name = pw_holy_reliquary.1.corroded_heraldry.sanctify
+		trigger = {
+			NOT = { has_country_flag = pw_holy_reliquary_sanctified_heraldry }
+			has_origin = origin_toxic_knights
+			NOT = { has_country_flag = quest_abandoned }
+		}
+		custom_tooltip = pw_holy_reliquary.1.tooltip
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.950
+			}
+		}
+	}
+
+	option = { #Access
+		name = pw_holy_reliquary.1.corroded_heraldry.access
+		trigger = {
+			has_country_flag = pw_holy_reliquary_sanctified_heraldry
+		}
+		custom_tooltip = pw_holy_reliquary.1.tooltip
+		hidden_effect = {
+			country_event = {
+				id = pw_holy_reliquary.955
+			}
+		}
+	}
+
 	#Appoint Relic Keeper (all relics):
 	option = {
 		name = pw_holy_reliquary.1.appoint_relic_keeper
@@ -3824,7 +3853,7 @@ country_event = {
 		}
 	}
 
-	#Codex of Future Ages
+	#Giving Hand
 	option = {
 		name = pw_holy_reliquary.851.b
 		custom_tooltip = pw_holy_reliquary.851.b.tooltip
@@ -3887,6 +3916,154 @@ country_event = {
 			set_country_flag = pw_holy_reliquary_venerated_tradition
 		}
 		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+
+	#Leave the reliquary
+	option = {
+		name = pw_holy_reliquary.leave
+		pw_holy_reliquary_leave = yes
+	}
+}
+
+#Bonus Artifact (Corroder Heraldry) -> 950
+#Sanctify:
+country_event = {
+	id = pw_holy_reliquary.950
+	title = pw_holy_reliquary.950.name
+	desc = pw_holy_reliquary.950.desc
+	picture = GFX_evt_knights
+	is_triggered_only = yes
+
+	#Sanctify
+	option = {
+		name = pw_holy_reliquary.950.a
+		allow = {
+			hidden_trigger = { NOT = { has_country_flag = pw_holy_reliquary_sanctified_heraldry }}
+			resource_stockpile_compare = {
+				resource = unity
+				value >= @pw_holy_reliquary_sanctify_cost_check_3
+			}
+		}
+		add_resource = {
+			unity = @pw_holy_reliquary_sanctify_cost_3
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.951 }
+		}
+	}
+	#Return
+	option = {
+		name = pw_holy_reliquary.return
+		pw_holy_reliquary_return_to_hub = yes
+	}
+}
+
+#Just Sanctified:
+country_event = {
+	id = pw_holy_reliquary.951
+	title = pw_holy_reliquary.951.name
+	desc = pw_holy_reliquary.951.desc
+	picture = GFX_evt_knights
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = pw_holy_reliquary_sanctified_heraldry
+	}
+
+	#Pursuit of knowledge
+	option = {
+		name = pw_holy_reliquary.951.a
+		add_modifier = {
+			modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
+	}
+
+	#Pursuit of Honor
+	option = {
+		name = pw_holy_reliquary.951.b
+		add_modifier = {
+			modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_honor
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
+	}
+}
+
+#Access:
+country_event = {
+	id = pw_holy_reliquary.955
+	title = pw_holy_reliquary.955.name
+	desc = pw_holy_reliquary.955.desc
+	picture = GFX_evt_knights
+	is_triggered_only = yes
+
+	#Pursuit of knowledge
+	option = {
+		name = pw_holy_reliquary.951.a
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_honor
+			}
+			remove_modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_honor
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
+	}
+
+	#Pursuit of Honor
+	option = {
+		name = pw_holy_reliquary.951.b
+		allow = {
+			NOT = { has_modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_honor }
+			resource_stockpile_compare = {
+				resource = influence
+				value >= @pw_holy_reliquary_change_artifact_cost_check
+			}
+		}
+		add_resource = {
+			influence = @pw_holy_reliquary_change_artifact_cost
+		}
+		add_modifier = {
+			modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_honor
+		}
+		if = {
+			limit = {
+				has_modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge
+			}
+			remove_modifier = pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge
+		}
+		hidden_effect = {
+			country_event = { id = pw_holy_reliquary.1009 } #Random Flavour Event
+			pw_holy_reliquary_return_to_hub = yes
+		}
 	}
 
 	#Return

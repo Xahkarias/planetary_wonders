@@ -338,6 +338,7 @@ pw_decision_SE_install_space_ramp = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_ringworld_habitable }
 		NOT = {has_deposit = pw_d_SE_space_ramp }
+		NOT = {has_deposit = pw_d_SE_nuclear_launcher }
 	}
 
 	allow = {
@@ -402,6 +403,50 @@ pw_decision_SE_install_space_ramp = {
 		modifier = {
 			factor = value:pw_pop_factor
 		}
+	}
+}
+
+pw_decision_SE_install_nuclear_launcher = {
+	owned_planets_only = yes
+	sound = event_mega_structure_other_empire_build_start_01
+
+	enactment_time = @pw_se_infrastructure_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_se_infrastructure_cost
+			alloys = @pw_se_infrastructure_cost_extra
+			unity = 250
+		}
+	}
+
+	prerequisites = {
+		pw_tech_space_elevator_nuclear_launch_pad
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_deposit = pw_d_SE_nuclear_launcher }
+	}
+	
+	allow = {
+		has_deposit = pw_d_SE_space_ramp
+		has_active_building = pw_building_space_elevator
+	}
+
+	effect = {
+		if = {
+			limit = { has_deposit = pw_d_SE_space_ramp }
+			remove_deposit = pw_d_SE_space_ramp
+		}
+		add_deposit = pw_d_SE_nuclear_launcher
+		hidden_effect = {
+			planet_event = { id = pw_wonder.120 }
+		}
+	}
+
+	ai_weight = {
+		weight = 100
 	}
 }
 
@@ -992,6 +1037,42 @@ pw_decision_rebuild_flying_fortress = {
 			factor = 0
 			planet_devastation > 10
 		}
+	}
+}
+
+#Guardian Angel change Peace Choice
+pw_decision_guardian_angel_change_peace_choice = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+			energy = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = pw_guardian_angel_choice
+	}
+
+	allow = {
+		OR = {
+			has_active_building = pw_building_guardian_angel
+			has_active_building = pw_building_stellar_sentinel
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			planet_event = {
+				id = pw_wonder.1207
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -1836,52 +1917,8 @@ pw_decision_festivities_of_plenitude = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -1901,6 +1938,7 @@ pw_decision_festivities_of_plenitude = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -1928,52 +1966,8 @@ pw_decision_fertility_bacchanal = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -1993,6 +1987,7 @@ pw_decision_fertility_bacchanal = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -2020,52 +2015,8 @@ pw_decision_cultivate_peace = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2085,6 +2036,7 @@ pw_decision_cultivate_peace = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -2112,52 +2064,8 @@ pw_decision_harvest_festival = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2177,6 +2085,7 @@ pw_decision_harvest_festival = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -2204,52 +2113,8 @@ pw_decision_commemorate_perfection = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2269,6 +2134,7 @@ pw_decision_commemorate_perfection = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -2276,6 +2142,55 @@ pw_decision_commemorate_perfection = {
 		custom_tooltip = pw_FP_increases_peace_stability
 		add_modifier = {
 			modifier = pw_mod_FP_commemorate_perfection
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_peace_stability_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 2.5
+	}
+}
+
+#Chivalrous ceremonies
+pw_decision_chivalrous_ceremonies = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 25
+			mult = trigger:num_pops
+		}
+	}
+
+	prerequisites = {
+		pw_tech_chivalrous_ceremonies
+	}
+
+	potential = {
+		has_active_building = pw_building_festival_plaza
+	}
+
+	allow = {
+		owner = { is_at_war = no }
+		NOR = {
+			has_modifier = pw_mod_FP_festivities_of_plenitude
+			has_modifier = pw_mod_FP_fertility_bacchanal
+			has_modifier = pw_mod_FP_cultivate_peace
+			has_modifier = pw_mod_FP_harvest_festival
+			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_FP_increases_peace_stability
+		add_modifier = {
+			modifier = pw_mod_FP_chivalrous_ceremonies
 			clear_on_owner_change = yes
 		}
 		owner = {
@@ -2307,6 +2222,7 @@ pw_decision_cancel_festivities = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -2331,6 +2247,10 @@ pw_decision_cancel_festivities = {
 			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
 			remove_modifier = pw_mod_FP_commemorate_perfection
 		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_chivalrous_ceremonies }
+			remove_modifier = pw_mod_FP_chivalrous_ceremonies
+		}
 		owner = {
 			pw_determine_peace_stability_modifier = yes
 		}
@@ -2351,52 +2271,8 @@ pw_decision_military_parade = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2419,6 +2295,7 @@ pw_decision_military_parade = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -2467,52 +2344,8 @@ pw_decision_flight_of_the_corvettes = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2535,6 +2368,7 @@ pw_decision_flight_of_the_corvettes = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -2583,52 +2417,8 @@ pw_decision_national_march = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2651,6 +2441,7 @@ pw_decision_national_march = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -2699,52 +2490,8 @@ pw_decision_combat_demonstrations = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2767,6 +2514,7 @@ pw_decision_combat_demonstrations = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -2815,52 +2563,8 @@ pw_decision_merchants_of_war = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2883,6 +2587,7 @@ pw_decision_merchants_of_war = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -2931,52 +2636,8 @@ pw_decision_march_of_the_dead = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 500
-		}
-		cost = {
-			trigger = {
-				num_pops < 10
-			}
-			energy = 1000
-			unity = 1000
-		}
-		cost = {
-			trigger = {
-				num_pops >= 20
-				num_pops < 30
-			}
-			energy = 1400
-			unity = 1400
-		}
-		cost = {
-			trigger = {
-				num_pops >= 40
-				num_pops < 50
-			}
-			energy = 1800
-			unity = 1800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 60
-				num_pops < 70
-			}
-			energy = 2200
-			unity = 2200
-		}
-		cost = {
-			trigger = {
-				num_pops >= 100
-			}
-			energy = 2800
-			unity = 2800
-		}
-		cost = {
-			trigger = {
-				num_pops >= 150
-			}
-			energy = 3000
-			unity = 3000
+			unity = 25
+			mult = trigger:num_pops
 		}
 	}
 
@@ -2999,6 +2660,7 @@ pw_decision_march_of_the_dead = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -3006,6 +2668,79 @@ pw_decision_march_of_the_dead = {
 		custom_tooltip = pw_MA_increases_war_drive
 		add_modifier = {
 			modifier = pw_mod_MA_march_of_the_dead
+			clear_on_owner_change = yes
+		}
+		owner = {
+			pw_determine_war_drive_modifier = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 1.75
+		modifier = {
+			factor = 0.75
+			OR = {
+				owner = { has_modifier = pw_mod_MA_war_drive_5 }
+				owner = { has_modifier = pw_mod_MA_war_drive_6 }
+				owner = { has_modifier = pw_mod_MA_war_drive_7 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				owner = { has_modifier = pw_mod_MA_war_drive_8 }
+				owner = { has_modifier = pw_mod_MA_war_drive_9 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				owner = { has_modifier = pw_mod_MA_war_drive_10 }
+			}
+		}
+	}
+}
+
+#Toxic Jousting Tournament
+pw_decision_toxic_jousting_tournament = {
+	owned_planets_only = yes
+	sound = event_celebration
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 25
+			mult = trigger:num_pops
+		}
+	}
+
+	prerequisites = {
+		pw_tech_toxic_jousting_tournaments
+	}
+
+	potential = {
+		has_active_building = pw_building_martial_avenue
+	}
+
+	allow = {
+		owner = { is_at_war = no }
+		NOR = {
+			has_modifier = pw_mod_MA_military_parade
+			has_modifier = pw_mod_MA_do_your_own_part
+			has_modifier = pw_mod_MA_enemies_at_the_gate
+			has_modifier = pw_mod_MA_flight_of_the_corvettes
+			has_modifier = pw_mod_MA_national_march
+			has_modifier = pw_mod_MA_combat_demonstrations
+			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
+		}
+	}
+
+	effect = {
+		custom_tooltip = pw_MA_increases_war_drive
+		add_modifier = {
+			modifier = pw_mod_MA_toxic_jousting_tournaments
 			clear_on_owner_change = yes
 		}
 		owner = {
@@ -3062,6 +2797,7 @@ pw_decision_cancel_parades = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -3097,6 +2833,10 @@ pw_decision_cancel_parades = {
 		else_if = {
 			limit = { has_modifier = pw_mod_MA_march_of_the_dead }
 			remove_modifier = pw_mod_MA_march_of_the_dead
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_toxic_jousting_tournaments }
+			remove_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 		owner = {
 			pw_determine_war_drive_modifier = yes
@@ -3170,7 +2910,7 @@ pw_decision_living_spire_change_designation = {
 		category = decisions
 		cost = {
 			unity = 250
-			unity = 10000
+			energy = 1000
 		}
 	}
 
@@ -3187,6 +2927,9 @@ pw_decision_living_spire_change_designation = {
 			has_modifier = pw_pm_living_spire_designation_death_cult
 			has_modifier = pw_pm_living_spire_designation_death_necro
 			has_modifier = pw_pm_living_spire_designation_submerged
+			has_modifier = pw_pm_living_spire_designation_upside_down
+			has_modifier = pw_pm_living_spire_designation_mutant
+			has_modifier = pw_pm_living_spire_designation_order
 		}
 	}
 
@@ -3230,6 +2973,8 @@ pw_decision_nostalgia_paradise_change_theme = {
 			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa
+			has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine
 			has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
@@ -3431,5 +3176,36 @@ pw_decision_living_metal_construction = {
 
 	ai_weight = {
 		weight = 5
+	}
+}
+
+pw_decision_FG_organize_feast = {
+	owned_planets_only = yes
+	enactment_time = 0
+
+	prerequisites = {
+		pw_tech_planetary_banquets
+	}
+
+	potential = {
+		has_active_building = pw_building_feasting_grounds
+	}
+
+	allow = {
+		NOT = {
+			any_targeting_situation = {
+				is_situation_type = pw_feasting_grounds_feast
+			}
+		}
+	}
+
+	effect = {
+		planet_event = {
+			id = pw_wonder.2710
+		}
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }

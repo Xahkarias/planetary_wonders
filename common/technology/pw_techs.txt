@@ -1025,7 +1025,7 @@ pw_tech_space_elevator_intergalactic_assets_concession = {
 			has_federation = yes
 			federation = {
 				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_space_elevator_counterweight_habitat }
+				any_member = { has_technology = pw_tech_space_elevator_intergalactic_assets_concession }
 			}
 		}
 
@@ -1057,6 +1057,84 @@ pw_tech_space_elevator_intergalactic_assets_concession = {
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+#Space Elevator (Anomaly) - Nuclear launching pad
+pw_tech_space_elevator_nuclear_launch_pad = {
+	area = engineering
+	cost = @pw_tech_cost_4
+	tier = 4
+	category = { voidcraft }
+	is_rare = yes
+	prerequisites = {
+		pw_tech_space_elevator_orbital_planetary_logistics
+	}
+	weight = @tier3weight1
+
+	potential = {
+		has_country_flag = pw_space_elevator_nuclear_launcher_anomaly_found
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			count_owned_planet = {
+				count < 1
+				limit = {
+					has_active_building = pw_building_space_elevator
+				}
+			}
+		}
+
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_space_elevator_nuclear_launch_pad }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
@@ -7972,6 +8050,73 @@ pw_tech_commemorate_perfection = {
 	}
 }
 
+#Toxic God decision:
+pw_tech_chivalrous_ceremonies = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @pw_tech_cost_3
+	prerequisites = {
+		pw_tech_festivals_of_harmony
+	}
+	weight = @tier5weight1
+
+	potential = {
+		is_gestalt = no
+		is_pacifist = yes
+		has_origin = origin_toxic_knights
+		NOT = { has_country_flag = quest_abandoned }
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_pacifist = no
+		}
+
+		modifier = {
+			factor = 2.5
+			has_ethic = ethic_fanatic_pacifist
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_planet = {
+				has_active_building = pw_building_festival_plaza
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
 #Peace Edicts:
 pw_tech_peace_manipulation = {
 	area = society
@@ -8545,6 +8690,73 @@ pw_tech_march_of_the_dead = {
 		is_gestalt = no
 		is_militarist = yes
 		has_valid_civic = civic_reanimated_armies
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_militarist = no
+		}
+
+		modifier = {
+			factor = 2.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = 2
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_planet = {
+				has_active_building = pw_building_martial_avenue
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+	}
+}
+
+#Knights of the Toxic Gods origins decision:
+pw_tech_toxic_jousting_tournaments = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @pw_tech_cost_3
+	prerequisites = {
+		pw_tech_parades_of_supremacy
+	}
+	weight = @tier5weight1
+
+	potential = {
+		is_gestalt = no
+		is_militarist = yes
+		has_origin = origin_toxic_knights
+		NOT = { has_country_flag = quest_abandoned }
 	}
 
 	weight_modifier = {
@@ -9787,7 +9999,7 @@ pw_tech_worldly_mausoleums = {
 	}
 }
 
-# Unhallowed Necropolis
+# Blossoming Preserve
 pw_tech_cyberecology = {
 	area = society
 	category = { new_worlds }
@@ -9810,6 +10022,7 @@ pw_tech_cyberecology = {
 				}
 			}
 		}
+		is_relentless_industrialist_empire = no
 	}
 
 	weight_modifier = {
@@ -10439,6 +10652,94 @@ pw_tech_criminal_exploitation = {
 			research_leader = {
 				area = society
 				has_trait = leader_trait_expertise_statecraft
+			}
+		}
+	}
+}
+
+# Feasting Grounds
+pw_tech_planetary_banquets = {
+	area = society
+	cost = @pw_tech_cost_4
+	tier = 3
+	category = { military_theory }
+	prerequisites = {
+		pw_tech_planetary_mega_engineering
+		tech_centralized_command
+		tech_doctrine_fleet_size_3
+	}
+	weight = @tier5weight1
+	is_rare = yes
+
+	potential = {
+		is_hive_empire = yes
+		has_valid_civic = civic_hive_devouring_swarm
+	}
+
+	weight_modifier = {
+		factor = @pw_tech_weight_mod
+
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_spark_of_genius
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = society
+				has_trait = leader_trait_curator
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_tech_planetary_banquets }
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_hive_one_mind
+		}
+
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_hive_strength_of_legions
+		}
+
+		modifier = {
+			factor = 1.2
+			has_valid_civic = civic_idyllic_bloom
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}

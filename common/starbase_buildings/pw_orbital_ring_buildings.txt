@@ -16,7 +16,13 @@ pw_ring_elevator_hyper_port = {
 			has_active_building = pw_building_space_elevator
 		}
 		solar_system = {
-			has_megastructure = hyper_relay
+			OR = {
+				has_megastructure = hyper_relay
+				has_megastructure = gateway_final
+				hidden_trigger = {
+					has_megastructure = gateway_restored
+				}
+			}
 		}
 	}
 

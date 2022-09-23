@@ -39,6 +39,9 @@
     pw_tech_space_elevator_counterweight_habitat: "$pw_space_elevator$ - Counterweight Habitat"
     pw_tech_space_elevator_counterweight_habitat_desc: "Historically we have used alloys and mineral as counterweight to sustain the tip of the Space elevator in orbit, but what if we were to utilize that spot for habitation support? There would be no lack of goods and infrastructure to support this endeavour."
 
+    pw_tech_space_elevator_nuclear_launch_pad: "Nuclear Launch Pad"
+    pw_tech_space_elevator_nuclear_launch_pad_desc: "A peculiar design for space logistics found by our explorers. Using controlled nuclear explosions we can greatly improve the efficiency of our Space Ramp."
+
     # Particle Supercollider:
     pw_tech_particle_supercollider: "Particle Supercollider"
     pw_tech_particle_supercollider_desc: "The next step in experimental physics, a particle collider the size of a city, capable of positron-electron collisions and equipped with an array of state of the art sensors."
@@ -351,6 +354,9 @@
     pw_tech_commemorate_perfection: "Commemorate Perfection"
     pw_tech_commemorate_perfection_desc: "Beyond just peace there is so much to commemorate in our accomplishments towards achieving perfection and our ability to remain pure, without the vile influences of external forces."
 
+    pw_tech_chivalrous_ceremonies: "Chivalrous Ceremonies"
+    pw_tech_chivalrous_ceremonies_desc: "Beyond just peace there is so much to commemorate in the great work of our questing knights and revel in the blessings of the Toxic God."
+
     pw_tech_peace_manipulation: "Peace Manipulation"
     pw_tech_peace_manipulation_desc: "Sometimes war finds us where we live, sometimes we must be driven unto it. Whatever the case may be, with the Festival Plaza we can use our influence to better manipulate the state of peace to prepare for a coming conflict, at the cost of some stability."
 
@@ -375,6 +381,9 @@
 
     pw_tech_march_of_the_dead: "March Of The Dead"
     pw_tech_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe."
+
+    pw_tech_toxic_jousting_tournaments: "Toxic Jousting Tournament"
+    pw_tech_toxic_jousting_tournaments_desc: "Come one come all the knight and squires that shall honor our Toxic God with in a grand tournament."
 
     pw_tech_vision_beyond_war: "Vision Beyond War"
     pw_tech_vision_beyond_war_desc: "Sometimes war cannot be an end onto itself, our soldiers and our country need something to come back to. We must realize that war is a means to an end, and that end needs attention too."
@@ -434,6 +443,9 @@
     pw_tech_criminal_exploitation: "Criminal Exploitation"
     pw_tech_criminal_exploitation_desc: "To make a profit from the blindside of a legislation is made easier when we actually study foreign laws and how to bend them."
 
+    #Feasting Grounds
+    pw_tech_planetary_banquets: "Planetary Banquets"
+    pw_tech_planetary_banquets_desc: "Food is the very fuel that drives our ambition. The mind should organize planetary scale feasts to bring our drones and warriors together in unending consumption."
 
     #Enigma tech:
     pw_enigma_tech: "§BEnigma Technology:§!"

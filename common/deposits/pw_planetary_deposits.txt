@@ -192,6 +192,74 @@ pw_d_SE_space_ramp = {
 	}
 }
 
+#Nuclear launcher (Space Ramp upgrade)
+pw_d_SE_nuclear_launcher = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 8
+			alloys = 3
+		}
+	}
+
+	planet_modifier = {
+		pop_resettlement_cost_mult = -0.50
+	}
+
+	#Non Gestalt Jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { can_generate_trade_value = yes }
+		}
+		modifier = {
+			job_merchant_add = 2
+		}
+	}
+
+	#Gestalt jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_pw_logistics_drone_add = 2
+		}
+	}
+
+	#Skyhook combo bonus (non-Gestalt)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			has_deposit = pw_d_SE_skyhook
+		}
+		modifier = {
+			trade_value_mult = 0.05
+		}
+	}
+
+	#Skyhook combo bonus (Gestalt)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+			has_deposit = pw_d_SE_skyhook
+		}
+		modifier = {
+			planet_jobs_produces_mult = 0.025
+		}
+	}
+}
+
 #Orbit-Planet (Skyhook)
 pw_d_SE_skyhook = {
 	is_for_colonizable = yes
@@ -235,24 +303,30 @@ pw_d_SE_skyhook = {
 		}
 	}
 
-	#Skyhook combo bonus (non-Gestalt)
+	#Space Ramp combo bonus (non-Gestalt)
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_hive_empire = no }
-			has_deposit = pw_d_SE_space_ramp
+			OR = {
+				has_deposit = pw_d_SE_space_ramp
+				has_deposit = pw_d_SE_nuclear_launcher
+			}
 		}
 		modifier = {
 			trade_value_mult = 0.05
 		}
 	}
 
-	#Skyhook combo bonus (Gestalt)
+	#Space Ramp combo bonus (Gestalt)
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_hive_empire = yes }
-			has_deposit = pw_d_SE_space_ramp
+			OR = {
+				has_deposit = pw_d_SE_space_ramp
+				has_deposit = pw_d_SE_nuclear_launcher
+			}
 		}
 		modifier = {
 			planet_jobs_produces_mult = 0.025
@@ -347,6 +421,203 @@ pw_d_guardian_angel_tourist_attraction = {
 		modifier = {
 			trade_value_add = 20
 			planet_housing_add = 2
+		}
+	}
+}
+
+pw_d_guardian_angel_arena = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_at_war = no }
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			planet_amenities_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_valid_civic = civic_warrior_culture
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			job_duelist_add = 1
+		}
+	}
+}
+
+pw_d_guardian_angel_parade = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = no }
+				OR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
+			}
+			unity = 5
+		}
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	#War parade contributions are calculate on script
+	custom_tooltip = pw_MA_increases_war_drive
+}
+
+pw_d_guardian_angel_order_outpost = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_at_war = no }
+				OR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
+			}
+			unity = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = no
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			knights_independent_category_produces_mult = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			job_knight_add = 1
+		}
+	}
+}
+
+pw_d_guardian_angel_scenic_set_piece = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+		produces = {
+			trigger = {
+				owner = { is_at_war = no }
+			}
+			unity = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = no
+				is_gestalt = no
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			planet_amenities_add = 5
+			job_culture_worker_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = no
+				is_gestalt = yes
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 5
 		}
 	}
 }

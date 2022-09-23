@@ -329,7 +329,10 @@ pw_building_living_spire_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			NOT = { owner = { has_ascension_perk = ap_synthetic_evolution }}
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = no
+			}
 		}
 		modifier = {
 			job_healthcare_add = 1
@@ -344,6 +347,20 @@ pw_building_living_spire_1 = {
 		}
 		modifier = {
 			job_roboticist_add = 1
+		}
+	}
+
+	#Spa Attendants (1) (only mutagenic spas)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_add = 1
 		}
 	}
 
@@ -393,7 +410,10 @@ pw_building_living_spire_1 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			NOT = { owner = { has_ascension_perk = ap_synthetic_evolution }}
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = no
+			}
 		}
 		text = job_healthcare_effect_desc
 	}
@@ -404,6 +424,17 @@ pw_building_living_spire_1 = {
 			owner = { has_ascension_perk = ap_synthetic_evolution }
 		}
 		text = job_roboticist_effect_desc
+	}
+	#Bath Attendant
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_desc
 	}
 	#Clerk
 	triggered_desc = {
@@ -645,14 +676,32 @@ pw_building_living_spire_2 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			NOR = {
-				owner = { has_ascension_perk = ap_transcendence }
-				owner = { has_ascension_perk = ap_evolutionary_mastery }
-				owner = { has_ascension_perk = ap_synthetic_evolution }
+			owner = {
+				NOT = { has_ascension_perk = ap_transcendence }
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = no
 			}
 		}
 		modifier = {
 			job_healthcare_add = 1
+		}
+	}
+
+	#Spa Attendants (only mutagenic spas) (No Ascension Path)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = {
+				NOT = { has_ascension_perk = ap_transcendence }
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_add = 1
 		}
 	}
 
@@ -790,6 +839,7 @@ pw_building_living_spire_2 = {
 		trigger = {
 			exists = owner
 			NOT = { owner = { has_ascension_perk = ap_synthetic_evolution }}
+			owner = { has_toxic_baths = yes }
 		}
 		text = job_healthcare_effect_desc
 	}
@@ -800,6 +850,19 @@ pw_building_living_spire_2 = {
 			owner = { has_ascension_perk = ap_synthetic_evolution }
 		}
 		text = job_roboticist_effect_desc
+	}
+	#Bath Attendant
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_transcendence }
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_desc
 	}
 	#Clerk
 	triggered_desc = {
@@ -1074,14 +1137,32 @@ pw_building_living_spire_3 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			NOR = {
-				owner = { has_ascension_perk = ap_transcendence }
-				owner = { has_ascension_perk = ap_evolutionary_mastery }
-				owner = { has_ascension_perk = ap_synthetic_evolution }
+			owner = {
+				NOT = { has_ascension_perk = ap_transcendence }
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = no
 			}
 		}
 		modifier = {
 			job_healthcare_add = 2
+		}
+	}
+
+	#Spa Attendants (only mutagenic spas) (No Ascension Path)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = {
+				NOT = { has_ascension_perk = ap_transcendence }
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_add = 2
 		}
 	}
 
@@ -1219,6 +1300,7 @@ pw_building_living_spire_3 = {
 		trigger = {
 			exists = owner
 			NOT = { owner = { has_ascension_perk = ap_synthetic_evolution }}
+			owner = { has_toxic_baths = no	}
 		}
 		text = job_healthcare_effect_desc
 	}
@@ -1229,6 +1311,19 @@ pw_building_living_spire_3 = {
 			owner = { has_ascension_perk = ap_synthetic_evolution }
 		}
 		text = job_roboticist_effect_desc
+	}
+	#Bath Attendant
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = { has_ascension_perk = ap_transcendence }
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_desc
 	}
 	#Clerk
 	triggered_desc = {

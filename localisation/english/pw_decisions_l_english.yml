@@ -22,6 +22,8 @@
     #Space Elevator Logistics:
     pw_decision_SE_install_space_ramp: "Install a §BSpace Ramp§!"
     pw_decision_SE_install_space_ramp_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing Space Ramp stations, allowing for rocket-powered sled launches from maglev rails. This will provide better and cheaper mobility for our pops and goods."
+    pw_decision_SE_install_nuclear_launcher: "Install a §BNuclear Launcher§!"
+    pw_decision_SE_install_nuclear_launcher_desc: "Expand even further the infrastructure of the $pw_space_elevator$ by upgrading the Space Ramp to use controlled nuclear explosions in order to launch logistics vessels."
     pw_decision_SE_install_skyhook: "Install a §BSkyhook§!"
     pw_decision_SE_install_skyhook_desc: "Expand the infrastructure of the $pw_space_elevator$ by installing a Skyhook satellite to usher outgoing ships from low orbit to space, and steering incoming ships from space back to low orbit. Utilizing a tether system, this structure can manipulate its orbital momentum to accelerate and decelerate ships, saving on fuel and boosting transportation efficiency."
 
@@ -48,11 +50,21 @@
     pw_decision_living_metal_construction: "Living Metal Expansion"
     pw_decision_living_metal_construction_desc: "Employ Living Metal on the construction of new buildings and districts to allow our structures to serve multiple functions at once, increasing usable space."
 
+    #Feasting Grounds - organize feast
+    pw_decision_FG_organize_feast: "Organize Planetary Feast"
+    pw_decision_FG_organize_feast_desc: "Coordinate every steward drone of the planet to organize a gigantic Feast."
+
     #Guardian Angel - Rebuild Flying Fortress
     pw_decision_rebuild_flying_fortress: "Rebuild Flying Fortress"
-    pw_decision_rebuild_flying_fortress_desc: "Our Flying fortress might have fallen from the skies, but the Guardian Angel framework is still in place. We can rebuild it to protect the skies once more."
+    pw_decision_rebuild_flying_fortress_desc: "Our Flying Fortress might have fallen from the skies, but the Guardian Angel framework is still in place. We can rebuild it to protect the skies once more."
     pw_decision_rebuild_flying_fortress_tooltip: "Creates a Flying Fortress army to defend this planet."
 
+    #Guardian Angel - Rebuild Flying Fortress
+    pw_decision_guardian_angel_change_peace_choice: "Flying Fortress: Choose new peace designation"
+    pw_decision_guardian_angel_change_peace_choice_desc: "As the tides of war change, so do the tides of peace. We can choose some other function for the Flying Fortress to perform in quiet times, while it is not occupied with planetary protection."
+    pw_decision_guardian_angel_change_peace_choice.tooltip: "Select a new designation while in times of peace for the $pw_guardian_angel$, replacing any current planetary features."
+
+    #Mantle Crucible
     pw_decision_mantle_crucible_alloys: "Mantle Crucible Focus: Military"
     pw_decision_mantle_crucible_alloys_desc: "By disregarding some of the consumer goods production we can multiply the manufacturing of alloys for our military."
     pw_decision_mantle_crucible_alloys_regular_tooltip: "$pw_mantle_crucible$:\n    +3 $job_foundry$ Jobs\n    -3 $job_artisan$ Jobs\n    +1 £volatile_motes£ §Y$volatile_motes$§! Upkeep"
@@ -263,6 +275,9 @@
     pw_decision_commemorate_perfection: "$pw_decision_FP.festival$ Commemorate Perfection"
     pw_decision_commemorate_perfection_desc: "Host a celebration of our achievement in the peaceful purist of perfection, strengthening our unity and independence of foreign forces. This will value our peaceful ways and the purity we maintain."
 
+    pw_decision_chivalrous_ceremonies: "$pw_decision_FP.festival$ Chivalrous Ceremonies"
+    pw_decision_chivalrous_ceremonies_desc: "Host various ceremonies celebrating the peacekeeping work of our questing knights, where we can welcome them to many balls, banquets and coronations when they need rest from their duties."
+
     pw_decision_cancel_festivities: "Cancel Festivities"
     pw_decision_cancel_festivities_desc: "End current peace festivities, hopefully to host a new one and not because a war approaches."
 
@@ -285,7 +300,10 @@
     pw_decision_merchants_of_war_desc: "War is business. When two sides launch missiles at each other, the one who wins is whomever sold them the weapons. Host a military parade across every urban center with great focus in the private military complex that sponsors the event, from missile factories to mercenary contractors."
 
     pw_decision_march_of_the_dead: "$pw_decision_MA.parade$ March Of The Dead"
-    pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe.."
+    pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe."
+
+    pw_decision_toxic_jousting_tournament: "$pw_decision_MA.parade$ Toxic Jousting"
+    pw_decision_toxic_jousting_tournament_desc: "Come one come all the knight and squires that shall honor our Toxic God with in a grand tournament."
 
     pw_decision_cancel_parades: "Cancel Parades"
     pw_decision_cancel_parades_desc: "End current military parades or war effort, hopefully to host a new one and not because a our people started turning on each other with uncontrolled bloodlust."
