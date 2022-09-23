@@ -425,6 +425,203 @@ pw_d_guardian_angel_tourist_attraction = {
 	}
 }
 
+pw_d_guardian_angel_arena = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_at_war = no }
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			planet_amenities_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_valid_civic = civic_warrior_culture
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			job_duelist_add = 1
+		}
+	}
+}
+
+pw_d_guardian_angel_parade = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = no }
+				OR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
+			}
+			unity = 5
+		}
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+	}
+
+	#War parade contributions are calculate on script
+	custom_tooltip = pw_MA_increases_war_drive
+}
+
+pw_d_guardian_angel_order_outpost = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_at_war = no }
+				OR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
+			}
+			unity = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = no
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			knights_independent_category_produces_mult = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			job_knight_add = 1
+		}
+	}
+}
+
+pw_d_guardian_angel_scenic_set_piece = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	should_swap_deposit_on_terraforming = no
+
+	#Can't occur naturally
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = @pw_deposits_upkeep_common
+		}
+		produces = {
+			trigger = {
+				owner = { is_at_war = no }
+			}
+			unity = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = no
+				is_gestalt = no
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			planet_amenities_add = 5
+			job_culture_worker_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_at_war = no
+				is_gestalt = yes
+			}
+			OR = {
+				has_active_building = pw_building_guardian_angel
+				has_active_building = pw_building_stellar_sentinel
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 5
+		}
+	}
+}
+
 # Holy Reliquary Features
 pw_d_monument_to_the_solar_regent = {
 	is_for_colonizable = yes

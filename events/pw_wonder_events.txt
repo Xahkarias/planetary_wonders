@@ -387,7 +387,7 @@ planet_event = {
 	}
 }
 
-#Kessler Effect
+#Kessler Effect -> Convert to situation!
 planet_event = {
 	id = pw_wonder.107
 	title = pw_wonder.107.name
@@ -462,6 +462,27 @@ planet_event = {
 		add_modifier = {
 			modifier = pw_mod_space_elevator_kessler_effect
 			days = @pw_2years
+		}
+	}
+
+	option = {
+		name = pw_wonder.107.d
+		trigger = {
+			owner = { is_scavenger = yes }
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 3000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -3000
+				alloys = 500
+			}
 		}
 	}
 }
@@ -6549,6 +6570,10 @@ planet_event = {
 					has_deposit = pw_d_guardian_angel_training
 					has_deposit = pw_d_guardian_angel_police_operations
 					has_deposit = pw_d_guardian_angel_tourist_attraction
+					has_deposit = pw_d_guardian_angel_arena
+					has_deposit = pw_d_guardian_angel_parade
+					has_deposit = pw_d_guardian_angel_order_outpost
+					has_deposit = pw_d_guardian_angel_scenic_set_piece
 				}
 			}
 			planet_event = { #Remove the Fortress
@@ -6655,6 +6680,30 @@ planet_event = {
 			}
 			remove_deposit = pw_d_guardian_angel_tourist_attraction
 		}
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_arena
+			}
+			remove_deposit = pw_d_guardian_angel_arena
+		}
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_parade
+			}
+			remove_deposit = pw_d_guardian_angel_parade
+		}
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_order_outpost
+			}
+			remove_deposit = pw_d_guardian_angel_order_outpost
+		}
+		if = {
+			limit = {
+				has_deposit = pw_d_guardian_angel_scenic_set_piece
+			}
+			remove_deposit = pw_d_guardian_angel_scenic_set_piece
+		}
 	}
 
 	option = {
@@ -6679,11 +6728,56 @@ planet_event = {
 	}
 
 	option = {
+		name = pw_wonder.1207.d
+		custom_tooltip = pw_wonder.1207.d.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_warrior_culture }
+		}
+		add_deposit = pw_d_guardian_angel_arena
+	}
+
+	option = {
+		name = pw_wonder.1207.e
+		custom_tooltip = pw_wonder.1207.e.tooltip
+		trigger = {
+			has_active_building = pw_building_martial_avenue
+		}
+		add_deposit = pw_d_guardian_angel_parade
+	}
+
+	option = {
+		name = pw_wonder.1207.f
+		custom_tooltip = pw_wonder.1207.f.tooltip
+		trigger = {
+			owner = {
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+		}
+		add_deposit = pw_d_guardian_angel_order_outpost
+	}
+
+	option = {
+		name = pw_wonder.1207.g
+		custom_tooltip = pw_wonder.1207.g.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_media_conglomerate }
+		}
+		add_deposit = pw_d_guardian_angel_scenic_set_piece
+	}
+
+	option = {
 		name = pw_wonder.1207.no_peace
 		custom_tooltip = pw_wonder.1207.no_peace.tooltip
 	}
 
 	after = {
+		owner = {
+			hidden_effect = {
+				#In case the Guardian Parade is added or removed
+				pw_determine_war_drive_modifier = yes
+			}
+		}
 		set_planet_flag = pw_guardian_angel_choice
 	}
 }
@@ -6706,6 +6800,10 @@ planet_event = {
 			has_deposit = pw_d_guardian_angel_training
 			has_deposit = pw_d_guardian_angel_police_operations
 			has_deposit = pw_d_guardian_angel_tourist_attraction
+			has_deposit = pw_d_guardian_angel_arena
+			has_deposit = pw_d_guardian_angel_parade
+			has_deposit = pw_d_guardian_angel_order_outpost
+			has_deposit = pw_d_guardian_angel_scenic_set_piece
 		}
 	}
 
@@ -6722,6 +6820,22 @@ planet_event = {
 		if = {
 			limit = { has_deposit = pw_d_guardian_angel_tourist_attraction }
 			remove_deposit = pw_d_guardian_angel_tourist_attraction
+		}
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_arena }
+			remove_deposit = pw_d_guardian_angel_arena
+		}
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_parade }
+			remove_deposit = pw_d_guardian_angel_parade
+		}
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_order_outpost }
+			remove_deposit = pw_d_guardian_angel_order_outpost
+		}
+		if = {
+			limit = { has_deposit = pw_d_guardian_angel_scenic_set_piece }
+			remove_deposit = pw_d_guardian_angel_scenic_set_piece
 		}
 	}
 }
@@ -6931,6 +7045,40 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
+	}
+
+	option = {
+		name = pw_wonder.1301.b
+
+		trigger = {
+			owner = { is_relentless_industrialist_empire = yes }
+		}
+
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_10years
+			}
+		}
+
+		if = {
+			limit = {
+				owner = { NOT = { has_country_flag = pw_mantle_crucible_end_devastation_project_complete }}
+			}
+
+			add_modifier = {
+				modifier = pw_mod_mantle_crucible_uncompromising_industry
+				clear_on_owner_change = yes
+			}
+			add_deposit = d_unpleasant_atmosphere
+		}
+
 	}
 }
 
@@ -7363,6 +7511,7 @@ planet_event = {
 				OR = {
 					has_modifier = pw_mod_mantle_crucible_alloys
 					has_modifier = pw_mod_mantle_crucible_consumer_goods
+					has_modifier = pw_mod_mantle_crucible_uncompromising_industry
 				}
 			}
 			planet_event = { id = pw_wonder.1311 }
@@ -7384,6 +7533,7 @@ planet_event = {
 		OR = {
 			has_modifier = pw_mod_mantle_crucible_alloys
 			has_modifier = pw_mod_mantle_crucible_consumer_goods
+			has_modifier = pw_mod_mantle_crucible_uncompromising_industry
 		}
 	}
 
@@ -7395,6 +7545,10 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_mod_mantle_crucible_consumer_goods }
 			remove_modifier = pw_mod_mantle_crucible_consumer_goods
+		}
+		if = {
+			limit = { has_modifier = pw_mod_mantle_crucible_uncompromising_industry }
+			remove_modifier = pw_mod_mantle_crucible_uncompromising_industry
 		}
 	}
 }
@@ -7540,9 +7694,24 @@ planet_event = {
 			location = this
 		}
 	}
+
+	option = {
+		name = pw_wonder.1320.b
+		add_planet_devastation = 20
+		random_owned_pop = { kill_pop = yes }
+		add_deposit = d_deep_sinkhole
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier1influencereward
+				min = @tier1influencemin
+				max = @tier1influencemax
+			}
+		}
+	}
 }
 
-#Completed Mantle Crucible
+#Completed Mantle Crucible devastation special project
 country_event = {
 	id = pw_wonder.1321
 	title = pw_wonder.1321.name
@@ -7559,6 +7728,7 @@ country_event = {
 	option = {
 		name = pw_wonder.1321.a
 		trigger = {
+			is_relentless_industrialist_empire = no
 			NOT = { has_valid_civic = civic_environmentalist }
 		}
 		add_monthly_resource_mult = {
@@ -7585,6 +7755,19 @@ country_event = {
 			value = @tier3unityreward
 			min = @tier3unitymin
 			max = @tier3unitymax
+		}
+	}
+
+	option = {
+		name = pw_wonder.1321.c
+		trigger = {
+			is_relentless_industrialist_empire = yes
+		}
+		every_owned_planet = {
+			limit = {
+				has_modifier = pw_mod_mantle_crucible_uncompromising_industry
+			}
+			remove_modifier = pw_mod_mantle_crucible_uncompromising_industry
 		}
 	}
 
@@ -7756,6 +7939,13 @@ planet_event = {
 			}
 		}
 
+		if = {
+			limit = {
+				has_modifier = pw_mod_mantle_crucible_uncompromising_industry
+			}
+			remove_modifier = pw_mod_mantle_crucible_uncompromising_industry
+		}
+
 		planet_event = { id = pw_wonder.1331 } #Regular first time
 		planet_event = { id = pw_wonder.1332 } #Gestalt first time
 		planet_event = { id = pw_wonder.1334 } #Remove Mantle Crucible mods
@@ -7800,7 +7990,40 @@ planet_event = {
 				days = @pw_5years
 			}
 		}
+	}
 
+	option = {
+		name = pw_wonder.1331.b
+		trigger = {
+			owner = { is_relentless_industrialist_empire = yes }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+
+		if = {
+			limit = {
+				owner = { NOT = { has_country_flag = pw_mantle_crucible_end_devastation_project_complete }}
+			}
+
+			add_modifier = {
+				modifier = pw_mod_titan_forge_uncompromising_industry
+				clear_on_owner_change = yes
+			}
+			add_deposit = d_rotten_soil
+		}
+	}
+	
+	after = {
 		hidden_effect = {
 			owner = {
 				country_event = { id = pw_wonder.1340 days = @pw_1year random = @pw_halfYear }
@@ -7995,6 +8218,13 @@ planet_event = {
 			}
 		}
 
+		if = {
+			limit = {
+				has_modifier = pw_mod_mantle_crucible_uncompromising_industry
+			}
+			remove_modifier = pw_mod_mantle_crucible_uncompromising_industry
+		}
+
 		planet_event = { id = pw_wonder.1361 } #Regular first time
 		planet_event = { id = pw_wonder.1362 } #Gestalt first time
 		planet_event = { id = pw_wonder.1363 } #Remove Mantle Crucible mods
@@ -8051,6 +8281,37 @@ planet_event = {
 			}
 		}
 	}
+
+	option = {
+		name = pw_wonder.1361.c
+		trigger = {
+			owner = { is_relentless_industrialist_empire = yes }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
+
+		if = {
+			limit = {
+				owner = { NOT = { has_country_flag = pw_mantle_crucible_end_devastation_project_complete }}
+			}
+
+			add_modifier = {
+				modifier = pw_mod_industrial_heart_uncompromising_industry
+				clear_on_owner_change = yes
+			}
+			add_deposit = d_venomous_insects
+		}
+	}
 }
 
 #On first time Industrial Hearth is built (Gestalt Empire)
@@ -8074,6 +8335,12 @@ planet_event = {
 
 	immediate = {
 		owner = { set_country_flag = pw_industrial_hearth_built }
+		if = {
+			limit = {
+				has_modifier = pw_mod_mantle_crucible_uncompromising_industry
+			}
+			remove_modifier = pw_mod_mantle_crucible_uncompromising_industry
+		}
 	}
 
 	option = {
@@ -11200,6 +11467,7 @@ planet_event = {
 					has_modifier = pw_mod_FP_cultivate_peace
 					has_modifier = pw_mod_FP_harvest_festival
 					has_modifier = pw_mod_FP_commemorate_perfection
+					has_modifier = pw_mod_FP_chivalrous_ceremonies
 				}
 			}
 			planet_event = { id = pw_wonder.1906 }
@@ -11232,6 +11500,7 @@ planet_event = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -11256,6 +11525,10 @@ planet_event = {
 		else_if = {
 			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
 			remove_modifier = pw_mod_FP_commemorate_perfection
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_chivalrous_ceremonies }
+			remove_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 		owner = {
 			pw_determine_peace_stability_modifier = yes
@@ -11295,6 +11568,7 @@ country_event = {
 					has_modifier = pw_mod_FP_cultivate_peace
 					has_modifier = pw_mod_FP_harvest_festival
 					has_modifier = pw_mod_FP_commemorate_perfection
+					has_modifier = pw_mod_FP_chivalrous_ceremonies
 				}
 			}
 			#Remove the planetary modifiers:
@@ -11326,6 +11600,7 @@ planet_event = {
 			has_modifier = pw_mod_FP_cultivate_peace
 			has_modifier = pw_mod_FP_harvest_festival
 			has_modifier = pw_mod_FP_commemorate_perfection
+			has_modifier = pw_mod_FP_chivalrous_ceremonies
 		}
 	}
 
@@ -11354,6 +11629,11 @@ planet_event = {
 			limit = { has_modifier = pw_mod_FP_commemorate_perfection }
 			remove_modifier = pw_mod_FP_commemorate_perfection
 			set_planet_flag = pw_FP_has_commemorate_perfection_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_FP_chivalrous_ceremonies }
+			remove_modifier = pw_mod_FP_chivalrous_ceremonies
+			set_planet_flag = pw_FP_has_chivalrous_ceremonies_mod
 		}
 	}
 }
@@ -11421,6 +11701,7 @@ country_event = {
 					has_planet_flag = pw_FP_has_cultivate_peace_mod
 					has_planet_flag = pw_FP_has_harvest_festival_mod
 					has_planet_flag = pw_FP_has_commemorate_perfection_mod
+					has_planet_flag = pw_FP_has_chivalrous_ceremonies_mod
 				}
 			}
 			#Remove the planetary modifiers:
@@ -11451,6 +11732,7 @@ planet_event = {
 			has_planet_flag = pw_FP_has_cultivate_peace_mod
 			has_planet_flag = pw_FP_has_harvest_festival_mod
 			has_planet_flag = pw_FP_has_commemorate_perfection_mod
+			has_planet_flag = pw_FP_has_chivalrous_ceremonies_mod
 		}
 	}
 
@@ -11506,6 +11788,17 @@ planet_event = {
 				limit = { has_active_building = pw_building_festival_plaza }
 				add_modifier = {
 					modifier = pw_mod_FP_commemorate_perfection
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_FP_has_chivalrous_ceremonies_mod }
+			remove_planet_flag = pw_FP_has_chivalrous_ceremonies_mod
+			if = {
+				limit = { has_active_building = pw_building_festival_plaza }
+				add_modifier = {
+					modifier = pw_mod_FP_chivalrous_ceremonies
 					clear_on_owner_change = yes
 				}
 			}
@@ -11708,6 +12001,7 @@ planet_event = {
 					has_modifier =pw_mod_MA_combat_demonstrations
 					has_modifier =pw_mod_MA_merchants_of_war
 					has_modifier =pw_mod_MA_march_of_the_dead
+					has_modifier =pw_mod_MA_toxic_jousting_tournaments
 				}
 			}
 			planet_event = { id = pw_wonder.2006 }
@@ -11735,14 +12029,15 @@ planet_event = {
 	trigger = {
 		NOT = { has_active_building = pw_building_martial_avenue } #Does not has the building
 		OR = { #But has one of the modifiers:
-			has_modifier =pw_mod_MA_military_parade
-			has_modifier =pw_mod_MA_do_your_own_part
-			has_modifier =pw_mod_MA_enemies_at_the_gate
-			has_modifier =pw_mod_MA_flight_of_the_corvettes
-			has_modifier =pw_mod_MA_national_march
-			has_modifier =pw_mod_MA_combat_demonstrations
-			has_modifier =pw_mod_MA_merchants_of_war
-			has_modifier =pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_military_parade
+			has_modifier = pw_mod_MA_do_your_own_part
+			has_modifier = pw_mod_MA_enemies_at_the_gate
+			has_modifier = pw_mod_MA_flight_of_the_corvettes
+			has_modifier = pw_mod_MA_national_march
+			has_modifier = pw_mod_MA_combat_demonstrations
+			has_modifier = pw_mod_MA_merchants_of_war
+			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -11779,6 +12074,10 @@ planet_event = {
 		else_if = {
 			limit = { has_modifier =pw_mod_MA_march_of_the_dead }
 			remove_modifier = pw_mod_MA_march_of_the_dead
+		}
+		else_if = {
+			limit = { has_modifier =pw_mod_MA_toxic_jousting_tournaments }
+			remove_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 		owner = {
 			pw_determine_war_drive_modifier = yes
@@ -11820,6 +12119,7 @@ country_event = {
 					has_modifier = pw_mod_MA_combat_demonstrations
 					has_modifier = pw_mod_MA_merchants_of_war
 					has_modifier = pw_mod_MA_march_of_the_dead
+					has_modifier = pw_mod_MA_toxic_jousting_tournaments
 				}
 			}
 			#Remove the planetary modifiers:
@@ -11852,6 +12152,7 @@ planet_event = {
 			has_modifier = pw_mod_MA_combat_demonstrations
 			has_modifier = pw_mod_MA_merchants_of_war
 			has_modifier = pw_mod_MA_march_of_the_dead
+			has_modifier = pw_mod_MA_toxic_jousting_tournaments
 		}
 	}
 
@@ -11886,6 +12187,11 @@ planet_event = {
 			limit = { has_modifier = pw_mod_MA_march_of_the_dead }
 			remove_modifier = pw_mod_MA_march_of_the_dead
 			set_planet_flag = pw_MA_has_march_of_the_dead_mod
+		}
+		else_if = {
+			limit = { has_modifier = pw_mod_MA_toxic_jousting_tournaments }
+			remove_modifier = pw_mod_MA_toxic_jousting_tournaments
+			set_planet_flag = pw_MA_toxic_jousting_tournament_mod
 		}
 		#Add next modifier:
 		if = {
@@ -12003,6 +12309,7 @@ country_event = {
 					has_planet_flag = pw_MA_has_combat_demonstrations_mod
 					has_planet_flag = pw_MA_has_merchants_of_war_mod
 					has_planet_flag = pw_MA_has_march_of_the_dead_mod
+					has_planet_flag = pw_MA_toxic_jousting_tournament_mod
 				}
 			}
 			#Remove the planetary modifiers:
@@ -12034,6 +12341,7 @@ planet_event = {
 			has_planet_flag = pw_MA_has_combat_demonstrations_mod
 			has_planet_flag = pw_MA_has_merchants_of_war_mod
 			has_planet_flag = pw_MA_has_march_of_the_dead_mod
+			has_planet_flag = pw_MA_toxic_jousting_tournament_mod
 		}
 	}
 
@@ -12109,6 +12417,17 @@ planet_event = {
 				limit = { has_active_building = pw_building_martial_avenue }
 				add_modifier = {
 					modifier = pw_mod_MA_march_of_the_dead
+					clear_on_owner_change = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { has_planet_flag = pw_MA_toxic_jousting_tournament_mod }
+			remove_planet_flag = pw_MA_toxic_jousting_tournament_mod
+			if = {
+				limit = { has_active_building = pw_building_martial_avenue }
+				add_modifier = {
+					modifier = pw_mod_MA_toxic_jousting_tournaments
 					clear_on_owner_change = yes
 				}
 			}
@@ -12504,6 +12823,8 @@ planet_event = {
 					has_modifier = pw_pm_living_spire_designation_death_necro
 					has_modifier = pw_pm_living_spire_designation_submerged
 					has_modifier = pw_pm_living_spire_designation_upside_down
+					has_modifier = pw_pm_living_spire_designation_mutant
+					has_modifier = pw_pm_living_spire_designation_order
 				}
 			}
 			planet_event = { id = pw_wonder.2106 }
@@ -12544,6 +12865,8 @@ planet_event = {
 			has_modifier = pw_pm_living_spire_designation_death_necro
 			has_modifier = pw_pm_living_spire_designation_submerged
 			has_modifier = pw_pm_living_spire_designation_upside_down
+			has_modifier = pw_pm_living_spire_designation_mutant
+			has_modifier = pw_pm_living_spire_designation_order
 		}
 	}
 
@@ -12596,6 +12919,14 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_living_spire_designation_upside_down }
 			remove_modifier = pw_pm_living_spire_designation_upside_down
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_mutant }
+			remove_modifier = pw_pm_living_spire_designation_mutant
+		}
+		if = {
+			limit = { has_modifier = pw_pm_living_spire_designation_order }
+			remove_modifier = pw_pm_living_spire_designation_order
 		}
 	}
 }
@@ -12686,6 +13017,18 @@ planet_event = {
 				has_modifier = pw_pm_living_spire_designation_upside_down
 			}
 			remove_modifier = pw_pm_living_spire_designation_upside_down
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_mutant
+			}
+			remove_modifier = pw_pm_living_spire_designation_mutant
+		}
+		if = {
+			limit = {
+				has_modifier = pw_pm_living_spire_designation_order
+			}
+			remove_modifier = pw_pm_living_spire_designation_order
 		}
 	}
 
@@ -12817,6 +13160,36 @@ planet_event = {
 		}
 		add_modifier = {
 			modifier = pw_pm_living_spire_designation_upside_down
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.mutant
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			owner = {
+				OR = {
+					has_origin = origin_overtuned
+					has_toxic_baths = yes
+				}
+			}
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_mutant
+		}
+	}
+
+	option = {
+		name = pw_wonder.2120.order
+		custom_tooltip = pw_wonder.2120.tooltip
+		trigger = {
+			owner = {
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+		}
+		add_modifier = {
+			modifier = pw_pm_living_spire_designation_order
 		}
 	}
 }
@@ -13191,6 +13564,8 @@ planet_event = {
 					has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
 					has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 					has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+					has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa
+					has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine
 					has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 				}
 			}
@@ -13228,6 +13603,8 @@ planet_event = {
 			has_modifier = pw_pm_nostalgia_paradise_theme_war_epoch_machine
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures
 			has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+			has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa
+			has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine
 			has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort
 		}
 	}
@@ -13265,6 +13642,14 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine }
 			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine }
+			remove_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine
 		}
 		if = {
 			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort }
@@ -13319,6 +13704,14 @@ planet_event = {
 		if = {
 			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine	}
 			remove_modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa
+		}
+		if = {
+			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine	}
+			remove_modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine
 		}
 		if = {
 			limit = { has_modifier = pw_pm_nostalgia_paradise_theme_automated_resort	}
@@ -13396,6 +13789,29 @@ planet_event = {
 		custom_tooltip = pw_wonder.2120.tooltip
 		add_modifier = {
 			modifier = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.noxious_spa
+		trigger = {
+			owner = { has_toxic_baths = yes }
+		}
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_nostalgia_paradise_theme_noxious_spa
+		}
+	}
+
+	option = {
+		name = pw_wonder.2310.noxious_spa
+		trigger = {
+			owner = { has_valid_civic = civic_machine_servitor }
+			owner = { has_toxic_baths = yes }
+		}
+		custom_tooltip = pw_wonder.2120.tooltip
+		add_modifier = {
+			modifier = pw_pm_nostalgia_paradise_theme_noxious_spa_machine
 		}
 	}
 

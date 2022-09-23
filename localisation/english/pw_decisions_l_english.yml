@@ -275,6 +275,9 @@
     pw_decision_commemorate_perfection: "$pw_decision_FP.festival$ Commemorate Perfection"
     pw_decision_commemorate_perfection_desc: "Host a celebration of our achievement in the peaceful purist of perfection, strengthening our unity and independence of foreign forces. This will value our peaceful ways and the purity we maintain."
 
+    pw_decision_chivalrous_ceremonies: "$pw_decision_FP.festival$ Chivalrous Ceremonies"
+    pw_decision_chivalrous_ceremonies_desc: "Host various ceremonies celebrating the peacekeeping work of our questing knights, where we can welcome them to many balls, banquets and coronations when they need rest from their duties."
+
     pw_decision_cancel_festivities: "Cancel Festivities"
     pw_decision_cancel_festivities_desc: "End current peace festivities, hopefully to host a new one and not because a war approaches."
 
@@ -297,7 +300,10 @@
     pw_decision_merchants_of_war_desc: "War is business. When two sides launch missiles at each other, the one who wins is whomever sold them the weapons. Host a military parade across every urban center with great focus in the private military complex that sponsors the event, from missile factories to mercenary contractors."
 
     pw_decision_march_of_the_dead: "$pw_decision_MA.parade$ March Of The Dead"
-    pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe.."
+    pw_decision_march_of_the_dead_desc: "Death is no excuse to refuse the call to arms. We can show the power of both our risen soldiers and our necromancers by performing never-ending marches along the Military Avenue. Our enemies will know that they face a tireless foe."
+
+    pw_decision_toxic_jousting_tournament: "$pw_decision_MA.parade$ Toxic Jousting"
+    pw_decision_toxic_jousting_tournament_desc: "Come one come all the knight and squires that shall honor our Toxic God with in a grand tournament."
 
     pw_decision_cancel_parades: "Cancel Parades"
     pw_decision_cancel_parades_desc: "End current military parades or war effort, hopefully to host a new one and not because a our people started turning on each other with uncontrolled bloodlust."

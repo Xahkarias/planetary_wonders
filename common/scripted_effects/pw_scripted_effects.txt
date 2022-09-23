@@ -812,6 +812,7 @@ pw_determine_peace_stability_modifier = {
 					has_modifier = pw_mod_FP_cultivate_peace
 					has_modifier = pw_mod_FP_harvest_festival
 					has_modifier = pw_mod_FP_commemorate_perfection
+					has_modifier = pw_mod_FP_chivalrous_ceremonies
 					has_modifier = pw_mod_FP_black_letters_peace
 					has_modifier = pw_mod_FP_black_letters_war
 				}
@@ -824,6 +825,7 @@ pw_determine_peace_stability_modifier = {
 						has_modifier = pw_mod_FP_cultivate_peace
 						has_modifier = pw_mod_FP_harvest_festival
 						has_modifier = pw_mod_FP_commemorate_perfection
+						has_modifier = pw_mod_FP_chivalrous_ceremonies
 					}
 				}
 				owner = {
@@ -1075,8 +1077,10 @@ pw_determine_war_drive_modifier = {
 					has_modifier = pw_mod_MA_combat_demonstrations
 					has_modifier = pw_mod_MA_merchants_of_war
 					has_modifier = pw_mod_MA_march_of_the_dead
+					has_modifier = pw_mod_MA_toxic_jousting_tournaments
 					has_modifier = pw_mod_MA_black_letters_peace
 					has_modifier = pw_mod_MA_black_letters_war
+					has_deposit = pw_d_guardian_angel_parade
 				}
 			}
 			if = {
@@ -1090,8 +1094,18 @@ pw_determine_war_drive_modifier = {
 						has_modifier = pw_mod_MA_combat_demonstrations
 						has_modifier = pw_mod_MA_merchants_of_war
 						has_modifier = pw_mod_MA_march_of_the_dead
+						has_modifier = pw_mod_MA_toxic_jousting_tournaments
 					}
 				}
+				owner = {
+					change_variable = {
+						which = pw_war_drive_count
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = { has_deposit = pw_d_guardian_angel_parade }
 				owner = {
 					change_variable = {
 						which = pw_war_drive_count

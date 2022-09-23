@@ -317,7 +317,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 	}
 
-	#Replicator/Coordinator
+	#Coordinator
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
@@ -326,7 +326,32 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			job_coordinator_add = 2
+		}
+	}
+
+	#Replicator
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_machine_empire = yes
+				has_toxic_baths = no
+			}
+		}
+		modifier = {
 			job_replicator_add = 1
+		}
+	}
+
+	#Lubricants
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_machine_empire = yes
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_machine_add = 1
 		}
 	}
 
@@ -344,7 +369,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 	}
 
-	#Spawning Drone/Synapsis
+	#Synapsis
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
@@ -353,7 +378,32 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			job_synapse_drone_add = 2
+		}
+	}
+
+	#Spawning Drone
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_hive_empire = yes
+				has_toxic_baths = no
+			}
+		}
+		modifier = {
 			job_spawning_drone_add = 1
+		}
+	}
+
+	#Permutation
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_hive_empire = yes
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_hive_add = 1
 		}
 	}
 
@@ -420,11 +470,22 @@ pw_building_conduit_of_unity_1 = {
 		}
 		text = job_replicator_effect_desc
 	}
+	#Lubricant
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_machine_desc
+	}
 	#Synapsis
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_hive_empire = yes }
 		}
 		text = job_synapse_drone_effect_desc
 	}
@@ -432,9 +493,20 @@ pw_building_conduit_of_unity_1 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { is_hive_empire = yes }
 		}
 		text = job_spawning_drone_effect_desc
+	}
+	#Permutation
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_hive_desc
 	}
 	#Maintenance
 	triggered_desc = {
@@ -875,6 +947,19 @@ pw_building_solipsist_debate_hall = {
 		}
 	}
 
+	#Permutation Drones
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_hive_empire = yes
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_hive_add = 1
+		}
+	}
+
 	#Stability Bonus
 	triggered_planet_modifier = {
 		potential = {
@@ -1048,6 +1133,18 @@ pw_building_solipsist_debate_hall = {
 			exists = owner
 			owner = {
 				has_edict = pw_wonders_beyond_ambition
+				has_valid_civic = civic_hive_toxic_baths
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_galactic_sovereign
 			}
 		}
@@ -1116,6 +1213,18 @@ pw_building_solipsist_debate_hall = {
 			NOT = { owner = { has_valid_civic = civic_hive_devouring_swarm }}
 		}
 		text = job_brain_drone_effect_desc
+	}
+
+	#Permutation
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_hive_desc
 	}
 
 	triggered_desc = {

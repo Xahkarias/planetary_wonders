@@ -32,6 +32,18 @@
     pw_d_guardian_angel_tourist_attraction: "Guardian Tourist Attraction"
     pw_d_guardian_angel_tourist_attraction_desc: "People come from all over the empire to take a cruise over the entire planet surface aboard the $pw_guardian_angel$, stopping at the most famous landmarks. Provided we are not engaged in war. The vessel makes several luxury hotel suites available for those lucky to be hosted here."
 
+    pw_d_guardian_angel_arena: "Guardian Arena"
+    pw_d_guardian_angel_arena_desc: "Now that the gates of the arena have been open, duelist from all over the empire yearn to test their mettle at the $pw_guardian_angel$, where in times of peace these events shall be hosted. Even when we are at peace, the spirit of war will always guide our warriors."
+
+    pw_d_guardian_angel_parade: "Guardian Parade"
+    pw_d_guardian_angel_parade_desc: "The military parades at the $pw_martial_avenue$ were never quite complete without the presence of the great protector of the planet. Now, while not engaged in conflict, the $pw_guardian_angel$ shall attends those parades and boost even further the fervor of war from our people.\n$pw_MA_increases_war_drive$"
+
+    pw_d_guardian_angel_order_outpost: "Guardian Order Outpost"
+    pw_d_guardian_angel_order_outpost_desc: "When the $pw_guardian_angel$ is not involved in defending the planet, the great fortress will welcome every knight and their squires dedicated to the holy quest of the Toxic God."
+
+    pw_d_guardian_angel_scenic_set_piece: "Guardian Scenic Set Piece"
+    pw_d_guardian_angel_scenic_set_piece_desc: "By pressure of producers and executives the $pw_guardian_angel$ has granted filming rights to the propagandists and filmmakers. While not in conflict, it serves as a spectacular set piece for our cinematic productions, as long as the military retains final say on the script."
+
     #Holy Reliquary Features
 
     pw_d_monument_to_the_solar_regent: "Monument to the Solar-Regent"

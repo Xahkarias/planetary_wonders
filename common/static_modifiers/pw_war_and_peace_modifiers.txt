@@ -46,6 +46,15 @@ pw_mod_FP_commemorate_perfection = {
 	pop_growth_speed = 0.05
 }
 
+#Chivalrous ceremonies
+pw_mod_FP_chivalrous_ceremonies = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_FP_chivalrous_ceremonies.dds"
+	icon_frame = @pw_icon_frame_green
+	knights_independent_category_produces_mult = 0.10
+	planet_amenities_add = 10
+	pop_happiness = 0.05
+}
+
 
 #Festival Plaza: Peace Stability (Country Scope)
 
@@ -216,6 +225,13 @@ pw_mod_MA_march_of_the_dead = {
 	pop_ethic_militarist_attraction_mult = 0.15
 }
 
+#Toxic Jousting Tournaments (not at war, Toxic God origin)
+pw_mod_MA_toxic_jousting_tournaments = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_mod_MA_toxic_jousting_tournaments.dds"
+	icon_frame = @pw_icon_frame_green
+	knights_independent_category_produces_mult = 0.10
+	pop_ethic_militarist_attraction_mult = 0.10
+}
 
 #Martial Avenue: War Drive (Country Scope)
 

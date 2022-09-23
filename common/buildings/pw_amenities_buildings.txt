@@ -1092,6 +1092,21 @@ pw_building_nostalgia_paradise = {
 		}
 	}
 
+	#Spa Attendants (1) (only mutagenic spas)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = {
+				has_toxic_baths = yes
+			}
+		}
+		modifier = {
+			job_bath_attendant_add = 1
+		}
+	}
+
+
 	#Machine Jobs (Servitor)
 	triggered_planet_modifier = {
 		potential = {
@@ -1102,6 +1117,18 @@ pw_building_nostalgia_paradise = {
 			job_bio_trophy_add = 10
 			job_artisan_drone_add = 1
 			job_maintenance_drone_add = 5
+		}
+	}
+
+	#Lubricator terminal (1) for toxic baths
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_machine_servitor }
+			owner = { has_toxic_baths = yes }
+		}
+		modifier = {
+			job_bath_attendant_machine_add = 1
 		}
 	}
 
@@ -1193,6 +1220,18 @@ pw_building_nostalgia_paradise = {
 		text = job_entertainer_effect_desc
 	}
 
+	#Spa Attendants (1) (only mutagenic spas)
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = {
+				has_toxic_baths = yes
+			}
+		}
+		text = job_toxic_baths_effect_desc
+	}
+
 	#Duelist
 	triggered_desc = {
 		trigger = {
@@ -1221,6 +1260,16 @@ pw_building_nostalgia_paradise = {
 			owner = { has_valid_civic = civic_machine_servitor }
 		}
 		text = job_artisan_drone_effect_desc
+	}
+
+	#Lubricator terminal (1) for toxic baths
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { has_valid_civic = civic_machine_servitor }
+			owner = { has_toxic_baths = yes }
+		}
+		text = job_toxic_baths_effect_machine_desc
 	}
 
 	#Maintenance

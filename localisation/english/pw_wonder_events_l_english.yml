@@ -38,6 +38,7 @@
     pw_wonder.107.a: "Do what it takes to clear the debris."
     pw_wonder.107.b: "There is nothing we can do."
     pw_wonder.107.c: "Invest in propaganda to clear it faster."
+    pw_wonder.107.d: "One's trash is another's treasure."
     #Aid Development
     pw_wonder.110.name: "Aid Development"
     pw_wonder.110.desc: "As the colonization process of [THIS.GetName] begins, intrepid engineers on [pw_space_elevator_aid_dev_planet.GetName] have drew plans to utilize their Space Elevator in order to aid the development of the new colony in the system. Pre-fab facilities, perishable materials and specialized work can be readily arranged and dispatched to the forming colony, greatly increasing its development speed."
@@ -511,17 +512,25 @@
 
     #Guardian Angel destroy Flying Fortress
     pw_wonder.1205.name: "Fallen Fortress"
-    pw_wonder.1205.desc: "Without the support of the Guardian Angel, the Flying Fortress defending [THIS.GetName] can no longer be supported and will be decommissioned. It can come back to defending our planet whenever we rebuild the Guardian Angel."
+    pw_wonder.1205.desc: "Without the support of the $pw_building_guardian_angel$, the Flying Fortress defending [THIS.GetName] can no longer be supported and will be decommissioned. It can come back to defending our planet whenever we rebuild the $pw_building_guardian_angel$."
 
     #Guardian Angel Decision on peace times
     pw_wonder.1207.name: "Courage in Times of Peace?"
-    pw_wonder.1207.desc: "After taking its glorious flight, the Guardian Angel has been a symbol of hope and security to the population of [ROOT.GetName]. As we are not presently at war, this should be a wonderful time to decide what shall be made of the Guardian during its years in peace, when defending the planet from our enemies is not a pressing matter."
+    pw_wonder.1207.desc: "After taking its glorious flight, the $pw_building_guardian_angel$ has been a symbol of hope and security to the population of [ROOT.GetName]. As we are not presently at war, this should be a wonderful time to decide what shall be made of the $pw_building_guardian_angel$ its years in peace, when defending the planet from our enemies is not a pressing matter."
     pw_wonder.1207.a: "Use the fortress as Training Grounds"
-    pw_wonder.1207.a.tooltip: "In times of peace, the Guardian Angel will be used as training ground for our defensive and assaulting armies, as it provides unique combat experiences."
+    pw_wonder.1207.a.tooltip: "In times of peace, the $pw_guardian_angel$ will be used as training ground for our defensive and assaulting armies, as it provides unique combat experiences."
     pw_wonder.1207.b: "Use the fortress as an Enforcer Center"
-    pw_wonder.1207.b.tooltip: "In times of peace, the Guardian Angel will be used as the center of enforcer operations in the planet, monitoring most of the criminal action here."
+    pw_wonder.1207.b.tooltip: "In times of peace, the $pw_guardian_angel$ will be used as the center of enforcer operations in the planet, monitoring most of the criminal action here."
     pw_wonder.1207.c: "Use the fortress as a Tourist Attraction"
-    pw_wonder.1207.c.tooltip: "In times of peace, the Guardian Angel will be used as a tourist attraction, which provides cultural expositions and recreational flights to visitors."
+    pw_wonder.1207.c.tooltip: "In times of peace, the $pw_guardian_angel$ will be used as a tourist attraction, which provides cultural expositions and recreational flights to visitors."
+    pw_wonder.1207.d: "Use the fortress as a Fighting Arena"
+    pw_wonder.1207.d.tooltip: "In times of peace, the $pw_guardian_angel$ will be used by our warrior and duelist in spectacular battles on the skies, both maintaining our traditions and honoring our military."
+    pw_wonder.1207.e: "Use the fortress for our Martial Parades"
+    pw_wonder.1207.e.tooltip: "In times of peace, the $pw_guardian_angel$ will join our other military assets during Martial Parades conducted on this planet. It will be an imposing sight for the population."
+    pw_wonder.1207.f: "Use the fortress as an outpost for our Knights"
+    pw_wonder.1207.f.tooltip: "In times of peace, the $pw_guardian_angel$ will serve as safe harbour for any questing knights and their squires passing by. may they have any help we can spare in their quest."
+    pw_wonder.1207.g: "Let filmmakers use it as a Scenic Set Piece"
+    pw_wonder.1207.g.tooltip: "In times of peace, the $pw_guardian_angel$ will be used in action and propaganda films as a spectacular prop and set piece. We wil make sure to have final say on those scripts for the privilege of using our assets."
 
     pw_wonder.1207.no_peace: "We need not to think of times of peace"
     pw_wonder.1207.no_peace.tooltip: "We can choose a designation for times of peace in the future by enacting a planetary decision"
@@ -554,6 +563,7 @@
     pw_wonder.1301.name: "The Fires of Creation"
     pw_wonder.1301.desc: "There has always been a concealed natural foundry right beneath our feet, where metals revolt and crystals are born. The magma mantle of [ROOT.GetName] has remained unreached for the millennia the planetary crust protected it; until now, when we have finally drilled it.\nThe Mantle Crucible is an audacious project come to life. With it we can finally exploit the mantles extreme temperatures and pressures, the ideal conditions for producing modernized ceramic-polymer-metal alloys or artificial fabrication of rare minerals and crystals. Raw input begins processing in the lowest point we could reach of the [ROOT.GetName] upper mantle and climbs the whole facility, being subject to any required refinement in proper pressure levels.\nThis revolutionary industrial method is powerful enough to output more industrial products than any other single factory we have while being flexible enough that we may alter the production focus either to our military needs or to our civilian needs.\n\nHere weapons shall be forged and goods shall be bound."
     pw_wonder.1301.a: "Light the fires beneath the world."
+    pw_wonder.1301.b: "Let the fumes consume the skies."
     #First Time Complete Mantle Crucible (Gestalt)
     pw_wonder.1302.name: "The Fires of Creation"
     pw_wonder.1302.desc: "There has always been a concealed natural foundry right beneath our feet, where metals revolt and crystals are born. The magma mantle of [ROOT.GetName] has remained unreached for the millennia the planetary crust protected it; until now, when we have finally drilled it.\nThe Mantle Crucible is an audacious project come to life. With it we can finally exploit the mantles extreme temperatures and pressures, the ideal conditions for producing modernized ceramic-polymer-metal alloys or artificial fabrication of rare minerals and crystals. Raw input begins processing in the lowest point we could reach of the [ROOT.GetName] upper mantle and climbs the whole facility, being subject to any required refinement in proper pressure levels.\nThis revolutionary industrial method is powerful enough to output more industrial products than any other single factory we have, maybe we will satisfy our military.\n\nHere weapons shall be forged and goods shall be bound."
@@ -581,11 +591,13 @@
     pw_wonder.1320.name: "The Final Straw"
     pw_wonder.1320.desc: "Particularly severe disturbances beneath the surface of [THIS.GetName] have destroyed one of the urban areas of the planet, killing several of the inhabitants and leaving the terrain heavily scarred.\n\nSeismologists have concluded that the cause must be the exploitation of the planetary mantle by our industrial buildings, specially the Mantle Crucible. They are already working on new manufacturing techniques to avoid further disasters while maintaining production levels."
     pw_wonder.1320.a: "We must develop a solution for this."
+    pw_wonder.1320.b: "That would be a waste of time and resources."
     #Complete project to prevent devastation
     pw_wonder.1321.name: "No More Disasters"
     pw_wonder.1321.desc: "With the help of our seismologists and environmentalists, our engineers have formulated new industrial techniques, that align the operation of the Mantle Crucible with the ebb and flow of magma beneath the surface of our planets. These industrial facilities have been moved to more appropriate tectonic lines in order to minimize the devastation they cause.\n\nAll of the measures we have taken should prevent any future disasters caused by this type of industrial production from affecting our planets."
     pw_wonder.1321.a: "Our industry is safer now."
     pw_wonder.1321.b: "That kind of exploitation was unsustainable."
+    pw_wonder.1321.c: "A shameful compromise."
 
     #Start project to remove habitability mod
     pw_wonder.1322.name: "Harm Reduction"
@@ -614,6 +626,7 @@
     pw_wonder.1331.name: "Birth of Titans"
     pw_wonder.1331.desc: "The Mantle Crucible gave our engineers the proper base for the constructions of the greatest military industrial complex seen in [ROOT.OWNER.GetAdj] space and now we may witness its first fires roar.\nIncrusted beneath the surface of [ROOT.GetName] we have installed an enormous martial workshop, ready to process the alloys from The Crucible into machines of war. This has also given us the opportunity to evolve these machines into the epitome of planetary assault: the War Titan."
     pw_wonder.1331.a: "We can hear the pneumatic hammers already falling."
+    pw_wonder.1331.b: "Roll out a tainted carpet for the Titan."
     #First Time Complete Titan Forge (Gestalt)
     pw_wonder.1332.name: "Birth of Titans"
     pw_wonder.1332.desc: "The Mantle Crucible gave our engineers the proper base for the constructions of the greatest military industrial complex seen in [ROOT.OWNER.GetAdj] space and now we may witness its first fires roar.\nIncrusted beneath the surface of [ROOT.GetName] we have installed an enormous martial workshop, ready to process the alloys from The Crucible into machines of war. This has also given us the opportunity to evolve these machines into the epitome of planetary assault: the War Titan."
@@ -640,6 +653,7 @@
     pw_wonder.1361.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas.\n\nBit by bit the pieces fit."
     pw_wonder.1361.a: "The [ROOT.OWNER.GetAdj] machine advances!"
     pw_wonder.1361.b: "A new era of industrial development."
+    pw_wonder.1361.c: "We cannot compromise with the environment to push forward."
     #First Time Complete Industrial Hearth (Gestalt)
     pw_wonder.1362.name: "Heart of Industry"
     pw_wonder.1362.desc: "The revolutionary process by which the Mantle Crucible works lead to key changes in the way we face industrial production issues. A new, multidisciplinary path has opened up to us: the notion of the poly-artisan, an artisan in tune with the systems operation in our society. This new school of thought can gather artistic, manufacturer, industrial, urbanist, architectural, engineering tools in a cybernetic solution, creating a new school of though. The Industrial Hearth shall serve as the central hub of these new synergetic ideas."
@@ -972,6 +986,8 @@
     pw_wonder.2120.death: "The Death Spire"
     pw_wonder.2120.aquatic: "The Submerged Spire"
     pw_wonder.2120.subterranean: "The Upside Down Spire"
+    pw_wonder.2120.mutant: "The Mutant Spire"
+    pw_wonder.2120.order: "The Spire of the Knightly Order"
     pw_wonder.2120.tooltip: "Designation can be changed in the future by enacting a planetary decision."
 
     pw_wonder.2106.name: "The Fall of the Spire"
@@ -1019,6 +1035,7 @@
     pw_wonder.2310.golden_age: "They shall experience the luxuries of a Golden Age"
     pw_wonder.2310.war_epoch: "They shall see glory and love in an Epoch of War"
     pw_wonder.2310.palace_of_pleasures: "They shall meet their desires at the Palace of Pleasures"
+    pw_wonder.2310.noxious_spa: "They shall be intoxicated at the Noxious Spa"
     pw_wonder.2310.none: "They need no theme, an automated resort is enough."
 
     #Complete Unhallowed Necropolis

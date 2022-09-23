@@ -237,6 +237,15 @@
     pw_mod_mantle_crucible_consumer_goods: "$pw_mantle_crucible$: Consumer Goods"
     pw_mod_mantle_crucible_consumer_goods_desc: "Focusing the $pw_mantle_crucible$ on civilian industry to produce more consumer goods for our population."
 
+    pw_mod_mantle_crucible_uncompromising_industry: "$pw_mantle_crucible$: Uncompromising Industry"
+    pw_mod_mantle_crucible_uncompromising_industry_desc: "Nothing should stand in the path of progress, nothing shall stand in the path of the $pw_mantle_crucible$. No matter the cost the planet will pay, no matter the hardship the population will endure."
+
+    pw_mod_titan_forge_uncompromising_industry: "$pw_titan_forge$: Uncompromising Industry"
+    pw_mod_titan_forge_uncompromising_industry_desc: "Nothing should stand in the path of progress, nothing shall stand in the path of the $pw_titan_forge$. No matter the cost the planet will pay, no matter the hardship the population will endure."
+
+    pw_mod_industrial_heart_uncompromising_industry: "$pw_industrial_hearth$: Uncompromising Industry"
+    pw_mod_industrial_heart_uncompromising_industry_desc: "Nothing should stand in the path of progress, nothing shall stand in the path of the $pw_industrial_hearth$. No matter the cost the planet will pay, no matter the hardship the population will endure."
+
     pw_mod_mantle_crucible_habitability: "Ecologically Integrated Industries"
     pw_mod_mantle_crucible_habitability_desc: "Our researchers have developed several industrial techniques and machines that allow us to minimize the general impact of habitation across our worlds."
 
@@ -333,6 +342,12 @@
     pw_pm_living_spire_designation_upside_down_desc: "A subterranean spire that instead of rising to the clouds, climbs to the depths of the planet. A much more pleasant prospect for the Cave Dweller inhabitants."
     mod_planet_miners_unity_produces_add: "Unity from Miners"
 
+    pw_pm_living_spire_designation_mutant: "Mutant Spire"
+    pw_pm_living_spire_designation_mutant_desc: "A living and changing spire, that adapts and attunes to the world and its inhabitants in the same way that we adapt to our environment. The Spire lives, the Spire mutates."
+
+    pw_pm_living_spire_designation_order: "Spire of the Knightly Order"
+    pw_pm_living_spire_designation_order_desc: "A living space for the true servants of the Toxic God, where knights and their squires are always guests of honor when they come to rest from their questing duties."
+
     #Nostalgia Paradise themes:
     pw_pm_nostalgia_paradise_theme_new_frontiers: "$pw_nostalgia_paradise$: New Frontiers"
     pw_pm_nostalgia_paradise_theme_new_frontiers_desc: "Guests of the $pw_nostalgia_paradise$ enjoy the exploration of harsh and barely habitable lands, where every step can lead to a new adventure and they can live their wildest fantasies at the edge of society."
@@ -369,6 +384,15 @@
 
     pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine: "$pw_nostalgia_paradise$: Palace of Pleasures"
     pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine_desc: "At the $pw_nostalgia_paradise$, Bio-Trophies can realize their most obscure pleasures without any fear of being judged by their machine servitors."
+
+    pw_pm_nostalgia_paradise_theme_noxious_spa: "$pw_nostalgia_paradise$: Noxious Spa"
+    pw_pm_nostalgia_paradise_theme_noxious_spa_desc: "At the $pw_nostalgia_paradise$, guests can bathe in prime toxic waste and smell vintage noxious gases extracted from the most polluting of our factories. Our robot servants are protected, but the guests suffer a transcending experience like no other that dulls the senses and changes both the body and the mind. Detox by intoxication."
+    pw_pm_nostalgia_paradise_theme_noxious_spa_other_planets: "$pw_nostalgia_paradise$: Palace of Pleasures"
+    pw_pm_nostalgia_paradise_theme_noxious_spa_other_planets_desc: "At the $pw_nostalgia_paradise$ guests require the most premium of noxious gases and waste, so they are extracted from around the most polluting parts of the empire, cleaning the environment somewhat."
+    pw_pm_nostalgia_paradise_theme_noxious_spa_empire_effects: "Other Empire Colonies:\n    $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+5%§!\n    $MOD_POP_HAPPINESS$: §G+5%§!"
+
+    pw_pm_nostalgia_paradise_theme_noxious_spa_machine: "$pw_nostalgia_paradise$: Palace of Pleasures"
+    pw_pm_nostalgia_paradise_theme_noxious_spa_machine_desc: "At the $pw_nostalgia_paradise$, Bio-Trophies are bathe in prime toxic waste and vintage noxious gases extracted from the most polluting of our factories. Our robot servants benefit somewhat of the strange lubricating liquids, but the Bio-Trophies suffer a transcending experience like no other that dulls the senses and changes both the body and the mind. Detox by intoxication."
 
     pw_pm_nostalgia_paradise_theme_automated_resort: "$pw_nostalgia_paradise$: Automated Resort"
     pw_pm_nostalgia_paradise_theme_automated_resort_desc: "All of the infrastructure of the $pw_nostalgia_paradise$ is diverted to a simply automated resort, where all can relax and enjoy a shard of paradise."
@@ -451,6 +475,17 @@
 
     pw_holy_reliquary_holy_throne_giving_hand: "Emperor's Giving Hand"
     pw_holy_reliquary_holy_throne_giving_hand_desc: "A firm hand, a kind hand. The God-Emperor sits upon the $pw_holy_reliquary.holy_throne$ and extends the imperial grace to all the subjects in the empire. Adoration sustains the Throne in place."
+
+    pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge: "Pursuit Of Knowledge"
+    pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge_desc: "Inspired by the $pw_holy_reliquary.corroded_heraldry$, our knights travel to different planets in pursuit of long lost knowledge left behind by the Toxic God."
+
+    pw_holy_reliquary_corroded_heraldry_pursuit_of_honor: "Pursuit Of Honor"
+    pw_holy_reliquary_corroded_heraldry_pursuit_of_honor_desc: "Inspired by the $pw_holy_reliquary.corroded_heraldry$, our knights go out of their way to uphold our tradition in honor of the Toxic God."
+
+    mod_knights_independent_category_physics_research_produces_mult: "£physics_research£ $physics_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_knights_independent_category_society_research_produces_mult: "£society_research£ $society_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_knights_independent_category_engineering_research_produces_mult: "£engineering_research£ $engineering_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_knights_independent_category_unity_produces_mult: "£unity£ $unity$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
 
     pw_holy_reliquary_heart_of_the_leviathan_preserved: "Heart of the Leviathan: Preserved"
     pw_holy_reliquary_heart_of_the_leviathan_preserved_desc: "We have preserved the Heart of the Leviathan worshiped by the late Bal'Fu and now it attracts many to study their customs anf faith."
@@ -773,6 +808,9 @@
     pw_mod_FP_commemorate_perfection: "Commemorate Perfection"
     pw_mod_FP_commemorate_perfection_desc: "Almost every month this planet hosts a celebration of our achievement in the peaceful purist of perfection, strengthening our unity and independence of foreign forces.\n$pw_FP_increases_peace_stability$"
 
+    pw_mod_FP_chivalrous_ceremonies: "Chivalrous Ceremonies"
+    pw_mod_FP_chivalrous_ceremonies_desc: "Knighting ceremonies, balls and banquets: this planet constantly offers a prestigious refuge for questing knights to find revelry and courtship on their resting times.\n$pw_FP_increases_peace_stability$"
+
     #Peace stability tooltips:
     pw_FP_add_peace_stability_modifier: "§BSet a new Peace Stability country modifier.§!"
     pw_FP_increases_peace_stability: "§GIncreases peace stability.§!"
@@ -842,6 +880,9 @@
 
     pw_mod_MA_march_of_the_dead: "March of the Dead"
     pw_mod_MA_march_of_the_dead_desc: "Almost every month this planet hosts a military parade across every urban center with a morbid display from our most experienced necromancers. The fallen from previous conflicts rise once again to march, showing our population that they are safe, and that our enemies have no escape.\n$pw_MA_increases_war_drive$"
+
+    pw_mod_MA_toxic_jousting_tournaments: "Toxic Jousting Tournaments"
+    pw_mod_MA_toxic_jousting_tournaments_desc: "Every knight or squire that is worth their arms has competed on the monthly tournaments hosted on this planet. It draws spectators from across the planet to a variety of war games, all on the name of our toxic deity.\n$pw_MA_increases_war_drive$"
 
     #War Drive tooltips:
     pw_MA_add_war_drive_modifier: "§BSet a new War Drive country modifier.§!"

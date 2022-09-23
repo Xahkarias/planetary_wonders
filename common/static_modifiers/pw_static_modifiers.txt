@@ -455,8 +455,35 @@ pw_mod_mantle_crucible_consumer_goods = {
 	planet_artisans_upkeep_mult = 0.05
 }
 
+pw_mod_mantle_crucible_uncompromising_industry = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drilling_for_gas.dds"
+	icon_frame = @pw_icon_frame_yellow
+
+	planet_metallurgists_produces_mult = 0.05
+	planet_artisans_produces_mult = 0.05
+	pop_growth_speed = -0.10
+}
+
 pw_mod_mantle_crucible_habitability = {
 	pop_environment_tolerance = 0.05
+}
+
+pw_mod_titan_forge_uncompromising_industry = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drilling_for_gas.dds"
+	icon_frame = @pw_icon_frame_yellow
+
+	planet_metallurgists_produces_mult = 0.10
+	pop_growth_speed = -0.10
+	pop_environment_tolerance = -0.05
+}
+
+pw_mod_industrial_heart_uncompromising_industry = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_drilling_for_gas.dds"
+	icon_frame = @pw_icon_frame_yellow
+
+	planet_artisans_produces_mult = 0.10
+	pop_growth_speed = -0.10
+	pop_environment_tolerance = -0.05
 }
 
 pw_mod_pilot_plan = {
@@ -801,6 +828,21 @@ pw_pm_living_spire_designation_upside_down = {
 	pop_amenities_usage_mult = -0.05
 }
 
+pw_pm_living_spire_designation_mutant = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_death.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_environment_tolerance = 0.10
+	planet_pops_upkeep_mult = -0.10
+	planet_amenities_mult = 0.05
+}
+
+pw_pm_living_spire_designation_order = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_order.dds"
+	icon_frame = @pw_icon_frame_green
+	job_knight_add = 1
+	job_squire_add = 1
+}
+
 #Nostalgia Paradise themes
 #New frontiers
 pw_pm_nostalgia_paradise_theme_new_frontiers = {
@@ -920,6 +962,38 @@ pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine = {
 	biological_pop_growth_speed = 0.15
 }
 
+#Noxious Spa
+pw_pm_nostalgia_paradise_theme_noxious_spa = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_noxious_spa.dds"
+	icon_frame = @pw_icon_frame_green
+	biological_pop_growth_speed = 0.20
+	pop_happiness = -0.05
+	pop_environment_tolerance = -0.05
+
+	custom_tooltip = pw_pm_nostalgia_paradise_theme_noxious_spa_empire_effects
+	show_only_custom_tooltip = no
+	# This only works on timed planet modifiers!
+	apply_modifier_to_other_planets = pw_pm_nostalgia_paradise_theme_noxious_spa_other_planets
+}
+
+pw_pm_nostalgia_paradise_theme_noxious_spa_other_planets = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_noxious_spa.dds"
+	icon_frame = @pw_icon_frame_green
+
+	pop_environment_tolerance = 0.05
+	pop_happiness = 0.05
+}
+
+pw_pm_nostalgia_paradise_theme_noxious_spa_machine = {
+	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_noxious_spa.dds"
+	icon_frame = @pw_icon_frame_green
+	biological_pop_growth_speed = 0.15
+	pop_assembly_speed = 0.10
+	pop_happiness = -0.05
+	pop_environment_tolerance = -0.05
+}
+
+#Automated resort
 pw_pm_nostalgia_paradise_theme_automated_resort = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_golden_age.dds"
 	icon_frame = @pw_icon_frame_green
@@ -1179,6 +1253,22 @@ pw_holy_reliquary_holy_throne_giving_hand = {
 	pop_government_ethic_attraction = 0.25
 	planet_jobs_upkeep_mult = -0.10
 	pop_happiness = 0.10
+}
+
+#Corroded Heraldry: Pursuit of Knowledge
+pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	planet_stability_add = 5
+	knights_independent_category_physics_research_produces_mult = 0.10
+	knights_independent_category_society_research_produces_mult = 0.10
+	knights_independent_category_engineering_research_produces_mult = 0.10
+}
+
+#Corroded Heraldry: Pursuit of Honor
+pw_holy_reliquary_corroded_heraldry_pursuit_of_honor = {
+	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
+	planet_stability_add = 5
+	knights_independent_category_unity_produces_mult = 0.10
 }
 
 #HR Archaeology heart of the leviathan: preserved
