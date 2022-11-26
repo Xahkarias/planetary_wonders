@@ -3643,7 +3643,7 @@
     tr_pw_monumentality_builders_of_worlds_delayed: "Our constructions - our legacy - will break their planetary bounds and cover the stars. We lay the foundation of future worlds."
     tr_pw_monumentality_celestial_monuments: "Celestial Monuments"
     tr_pw_monumentality_celestial_monuments_delayed: "The whole galaxy shall marvel at our wonders."
-    tr_pw_monumentality_celestial_monuments_desc: "Whenever a construction phase of a Megastructure is concluded it generates between §G500§! and §G1500§! £unity£ §Y$unity$§!.\n§G+1§! Megastructure build capacity."
+    # tr_pw_monumentality_celestial_monuments_desc: "Whenever a construction phase of a Megastructure is concluded it generates between §G500§! and §G1500§! £unity£ §Y$unity$§!.\n§G+1§! Megastructure build capacity."
 
     pw_leader_trait_ruler_millenary_throne: "Millenary Throne"
     pw_leader_trait_ruler_millenary_throne_desc: "An ancient and emblematic throne has been recovered and outfitted to fit this ruler and this ruler alone, extending their imperial powers."

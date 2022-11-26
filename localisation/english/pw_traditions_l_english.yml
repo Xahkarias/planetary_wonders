@@ -33,5 +33,5 @@
 
     tr_pw_monumentality_celestial_monuments: "Celestial Monuments"
     tr_pw_monumentality_celestial_monuments_delayed: "The whole galaxy shall marvel at our wonders."
-    tr_pw_monumentality_celestial_monuments_desc: "Whenever a construction phase of a Megastructure is concluded it generates between §G500§! and §G1500§! £unity£ §Y$unity$§!.\n§G+1§! Megastructure build capacity."
+    # tr_pw_monumentality_celestial_monuments_desc: "Whenever a construction phase of a Megastructure is concluded it generates between §G500§! and §G1500§! £unity£ §Y$unity$§!.\n§G+1§! Megastructure build capacity."
     # tr_pw_monumentality_celestial_monuments_effects: ""

@@ -156,21 +156,21 @@ on_fleet_destroyed_perp = {
 # From = Megastructure
 # FromFrom = System
 # FromFromFrom = Fleet
-on_megastructure_built = {
-	events = {
-		pw_wonder.10
-	}
-}
+# on_megastructure_built = {
+# 	events = {
+# 		pw_wonder.10
+# 	}
+# }
 
 # A Megastructure has been upgraded
 # Root = Country
 # From = Megastructure
 # FromFrom = System
-on_megastructure_upgraded = {
-	events = {
-		pw_wonder.10
-	}
-}
+# on_megastructure_upgraded = {
+# 	events = {
+# 		pw_wonder.10
+# 	}
+# }
 
 # Planet has changed planet class in whatever way. Note that this is also called during galaxy creation in some places.
 # This = Planet

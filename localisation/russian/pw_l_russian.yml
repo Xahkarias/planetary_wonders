@@ -3680,7 +3680,7 @@
     tr_pw_monumentality_builders_of_worlds_delayed: "Наши сооружения - наше наследие - нарушат планетарные границы и охватят звезды. Мы закладываем фундамент будущих миров."
     tr_pw_monumentality_celestial_monuments: "Небесные памятники"
     tr_pw_monumentality_celestial_monuments_delayed: "Вся галактика будет восхищаться нашими чудесами."
-    tr_pw_monumentality_celestial_monuments_desc: "Каждый раз, когда завершается фаза строительства мегаструктуры, она генерирует от §G500§! до §G1500§! £unity£ §Y$unity$§!.\n§G+1§! Мегаструктурный строительный потенциал."
+    # tr_pw_monumentality_celestial_monuments_desc: "Каждый раз, когда завершается фаза строительства мегаструктуры, она генерирует от §G500§! до §G1500§! £unity£ §Y$unity$§!.\n§G+1§! Мегаструктурный строительный потенциал."
     
     #pw_traits_l_russian.yml:
     pw_leader_trait_ruler_codex_of_past_ages: "Кодекс прошлых веков"

@@ -71,8 +71,9 @@ tr_pw_monumentality_integrated_urbanism = {
 
 tr_pw_monumentality_builders_of_worlds = {
 	modifier = {
-		megastructure_build_speed_mult = 0.15
 		planet_building_build_speed_mult = 0.25
+		starbase_building_build_speed_mult = 0.15
+		starbase_building_build_speed_mult = 0.15
 	}
 
 	ai_weight = {
@@ -87,11 +88,7 @@ tr_pw_monumentality_celestial_monuments = {
 
 	modifier = {
 		country_megastructure_build_cap_add = 1
-	}
-
-	on_enabled = {
-		# Implemented on on_action for each megastructure
-		# custom_tooltip = tr_pw_monumentality_celestial_monuments_tooltip
+		megastructure_build_speed_mult = 0.15
 	}
 
 	ai_weight = {
