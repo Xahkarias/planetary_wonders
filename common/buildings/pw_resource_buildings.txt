@@ -439,7 +439,7 @@ pw_building_erebus_fracking_plant = {
 	}
 
 	planet_modifier = {
-		planet_chemists_produces_mult = 0.05
+		planet_chemists_produces_mult = 0.10
 	}
 
 	#Reduces district slots without modifier
@@ -1132,7 +1132,7 @@ pw_building_helios_translucent_obelisk = {
 	}
 
 	planet_modifier = {
-		planet_translucers_produces_mult = 0.05
+		planet_translucers_produces_mult = 0.10
 	}
 
 	#Reduces district slots without modifier
@@ -1871,7 +1871,7 @@ pw_building_demetrius_chemical_garden = {
 	}
 
 	planet_modifier = {
-		planet_refiners_produces_mult = 0.05
+		planet_refiners_produces_mult = 0.10
 	}
 
 	#Reduces district slots without modifier
