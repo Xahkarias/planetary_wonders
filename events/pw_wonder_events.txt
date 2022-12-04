@@ -11478,6 +11478,142 @@ planet_event = {
 	}
 }
 
+#Festival Plaza select festival
+planet_event = {
+	id = pw_wonder.1902
+	title = pw_wonder.1902.name
+	desc = pw_wonder.1902.desc
+	picture = GFX_evt_galactic_market
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		set_planet_flag = pw_festival_plaza_choice
+		if = {
+			limit = {
+				has_modifier = pw_mod_FP_festivities_of_plenitude
+			}
+			remove_modifier = pw_mod_FP_festivities_of_plenitude
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_FP_fertility_bacchanal
+			}
+			remove_modifier = pw_mod_FP_fertility_bacchanal
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_FP_cultivate_peace
+			}
+			remove_modifier = pw_mod_FP_cultivate_peace
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_FP_harvest_festival
+			}
+			remove_modifier = pw_mod_FP_harvest_festival
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_FP_commemorate_perfection
+			}
+			remove_modifier = pw_mod_FP_commemorate_perfection
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_FP_chivalrous_ceremonies
+			}
+			remove_modifier = pw_mod_FP_chivalrous_ceremonies
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.a
+		custom_tooltip = pw_wonder.1902.a.tooltip
+		add_modifier = {
+			modifier = pw_mod_FP_festivities_of_plenitude
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.b
+		custom_tooltip = pw_wonder.1902.b.tooltip
+		add_modifier = {
+			modifier = pw_mod_FP_fertility_bacchanal
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.c
+		custom_tooltip = pw_wonder.1902.c.tooltip
+		add_modifier = {
+			modifier = pw_mod_FP_cultivate_peace
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.d
+		custom_tooltip = pw_wonder.1902.d.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		add_modifier = {
+			modifier = pw_mod_FP_harvest_festival
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.e
+		custom_tooltip = pw_wonder.1902.e.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_inwards_perfection }
+		}
+		add_modifier = {
+			modifier = pw_mod_FP_commemorate_perfection
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.f
+		custom_tooltip = pw_wonder.1902.f.tooltip
+		trigger = {
+			owner = {
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_FP_chivalrous_ceremonies
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.1902.cancel_festivities
+		custom_tooltip = pw_wonder.1902.cancel_festivities.tooltip
+	}
+
+	after = {
+		owner = {
+			hidden_effect = {
+				#Recalculate the country modifier
+				pw_determine_peace_stability_modifier = yes
+			}
+		}
+		remove_planet_flag = pw_festival_plaza_choice
+	}
+}
+
 #Check if FP was destroyed/replaced (recursive)
 planet_event = {
 	id = pw_wonder.1905
@@ -12006,6 +12142,176 @@ country_event = {
 
 	option = {
 		name = pw_wonder.2002.b
+	}
+}
+
+#Festival Plaza select festival
+planet_event = {
+	id = pw_wonder.2003
+	title = pw_wonder.2003.name
+	desc = pw_wonder.2003.desc
+	picture = GFX_evt_victorious_army
+	show_sound = event_celebration
+	is_triggered_only = yes
+	location = this
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		set_planet_flag = pw_martial_avenue_choice
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_military_parade
+			}
+			remove_modifier = pw_mod_MA_military_parade
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_flight_of_the_corvettes
+			}
+			remove_modifier = pw_mod_MA_flight_of_the_corvettes
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_national_march
+			}
+			remove_modifier = pw_mod_MA_national_march
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_combat_demonstrations
+			}
+			remove_modifier = pw_mod_MA_combat_demonstrations
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_merchants_of_war
+			}
+			remove_modifier = pw_mod_MA_merchants_of_war
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_march_of_the_dead
+			}
+			remove_modifier = pw_mod_MA_march_of_the_dead
+		}
+		if = {
+			limit = {
+				has_modifier = pw_mod_MA_toxic_jousting_tournaments
+			}
+			remove_modifier = pw_mod_MA_toxic_jousting_tournaments
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.a
+		custom_tooltip = pw_wonder.2003.a.tooltip
+		add_modifier = {
+			modifier = pw_mod_MA_military_parade
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.b
+		custom_tooltip = pw_wonder.2003.b.tooltip
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_naval_contractors
+					has_valid_civic = civic_distinguished_admiralty
+				}
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_MA_flight_of_the_corvettes
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.c
+		custom_tooltip = pw_wonder.2003.c.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_nationalistic_zeal }
+		}
+		add_modifier = {
+			modifier = pw_mod_MA_national_march
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.d
+		custom_tooltip = pw_wonder.2003.d.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_warrior_culture }
+		}
+		add_modifier = {
+			modifier = pw_mod_MA_combat_demonstrations
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.e
+		custom_tooltip = pw_wonder.2003.e.tooltip
+		trigger = {
+			owner = { has_valid_civic = civic_private_military_companies }
+		}
+		add_modifier = {
+			modifier = pw_mod_MA_merchants_of_war
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.f
+		custom_tooltip = pw_wonder.2003.f.tooltip
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_reanimated_armies
+					has_valid_civic = civic_permanent_employment
+				}
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_MA_march_of_the_dead
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.g
+		custom_tooltip = pw_wonder.2003.g.tooltip
+		trigger = {
+			owner = {
+				has_origin = origin_toxic_knights
+				NOT = { has_country_flag = quest_abandoned }
+			}
+		}
+		add_modifier = {
+			modifier = pw_mod_MA_toxic_jousting_tournaments
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.2003.cancel_parade
+		custom_tooltip = pw_wonder.2003.cancel_parade.tooltip
+	}
+
+	after = {
+		owner = {
+			hidden_effect = {
+				#Recalculate the country modifier
+				pw_determine_war_drive_modifier = yes
+			}
+		}
+		remove_planet_flag = pw_martial_avenue_choice
 	}
 }
 
