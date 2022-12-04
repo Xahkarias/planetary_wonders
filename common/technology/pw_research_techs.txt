@@ -1582,7 +1582,7 @@ pw_tech_living_formation = {
 	}
 
 	modifier = {
-		pop_assembly_speed = 0.10
+		planet_pop_assembly_mult = 0.10
 		planet_jobs_worker_produces_mult = 0.05
 	}
 
