@@ -830,6 +830,14 @@ pw_building_panopticon = {
 	can_be_ruined = no
 	category = government
 
+	empire_limit = {
+		base = 1
+		modifier = {
+			owner = { has_valid_civic = civic_police_state }
+			add = 2
+		}
+	}
+
 	prerequisites = {
 		pw_tech_utilitarian_vigilance
 	}
@@ -937,7 +945,7 @@ pw_building_panopticon = {
 	}
 
 	country_modifier = {
-		planet_crime_mult = -0.20
+		planet_crime_mult = -0.10
 		intel_encryption_add = 1
 	}
 

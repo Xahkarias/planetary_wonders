@@ -5539,6 +5539,14 @@ planet_event = {
 	is_triggered_only = yes
 	location = this
 
+	trigger = {
+		NOT = {owner = { has_country_flag = pw_panopticon_built }}
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_panopticon_built }
+	}
+
 	option = {
 		name = pw_wonder.901.a
 		if = {
@@ -5571,12 +5579,31 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = { has_country_flag = pw_panopticon_built }}
-	}
-
-	immediate = {
-		owner = { set_country_flag = pw_panopticon_built }
+	option = {
+		name = pw_wonder.901.c
+		trigger = {
+			owner = { has_valid_civic = civic_police_state }
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_happiness
+				days = @pw_5years
+			}
+		}
 	}
 }
 
