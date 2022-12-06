@@ -231,7 +231,9 @@ pw_districts_value = {
 		parameters = {
 			type = $TYPE$
 		}
-		[[FACTOR]multiplier = $FACTOR$]
+		[[FACTOR]
+			mult = $FACTOR$
+		]
 		mode = add
 	}
 }
@@ -242,7 +244,9 @@ pw_buildings_value = {
 		parameters = {
 			type = $TYPE$
 		}
-		[[FACTOR]multiplier = $FACTOR$]
+		[[FACTOR]
+			mult = $FACTOR$
+		]
 		mode = add
 	}
 }
