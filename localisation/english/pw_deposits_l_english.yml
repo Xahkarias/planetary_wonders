@@ -163,8 +163,12 @@
     pw_d_infrastructure_throne_room: "$pw_forbidden_city.infrastructure$ Throne Room"
     pw_d_infrastructure_throne_room_desc: "The central point from where power emanates on the empire, the absolute symbol of the authority of the emperor, from where orders of major importance are issued."
 
-    pw_d_infrastructure_imperial_holy_throne: "$pw_forbidden_city.infrastructure$ imperial Holy Throne"
+    pw_d_infrastructure_imperial_holy_throne: "$pw_forbidden_city.infrastructure$ Imperial Holy Throne"
     pw_d_infrastructure_imperial_holy_throne_desc: "The central point from where the divine power of the emperor emanates, the absolute symbol of holy authority, where the most devout subject can gather to pray for imperial mercy."
+
+    pw_d_infrastructure_galactic_throne: "$pw_forbidden_city.infrastructure$ Galactic Throne"
+    pw_d_infrastructure_galactic_throne_desc: "The central Quasar of power in the galaxy, from where it emanates to all the corners of our empires and to where our subjects come to praise their Galactic Leader."
+    pw_d_infrastructure_galactic_throne_effect: "Production of £influence£ §Y$influence$§! and upkeep of £energy£ §Y$energy$§! scales with Imperial Authority."
 
     pw_d_infrastructure_luxury_retreat: "$pw_forbidden_city.infrastructure$ Luxury Retreat"
     pw_d_infrastructure_luxury_retreat_desc: "An isolated retreat, where the wealthy and powerful elite of the empire can find peace of mind, among their laborious life of management."

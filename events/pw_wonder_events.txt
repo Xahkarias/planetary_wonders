@@ -10715,6 +10715,7 @@ planet_event = {
 						#Throne Room is somewhere.
 						has_deposit = pw_d_infrastructure_throne_room
 						has_deposit = pw_d_infrastructure_imperial_holy_throne
+						has_deposit = pw_d_infrastructure_galactic_throne
 					}
 				}
 			}
@@ -10743,14 +10744,20 @@ planet_event = {
 					OR = {
 						has_deposit = pw_d_infrastructure_throne_room
 						has_deposit = pw_d_infrastructure_imperial_holy_throne
+						has_deposit = pw_d_infrastructure_galactic_throne
 					}
 				}
 				if = {
 					limit = { has_deposit = pw_d_infrastructure_throne_room }
 					remove_deposit = pw_d_infrastructure_throne_room
 				}
-				else = {
+				if = {
+					limit = { has_deposit = pw_d_infrastructure_imperial_holy_throne }
 					remove_deposit = pw_d_infrastructure_imperial_holy_throne
+				}
+				if = {
+					limit = { has_deposit = pw_d_infrastructure_galactic_throne }
+					remove_deposit = pw_d_infrastructure_galactic_throne
 				}
 				if = {
 					limit = { is_sector_capital = yes }
@@ -11374,6 +11381,7 @@ planet_event = {
 					has_deposit = pw_d_infrastructure_seat_of_power
 					has_deposit = pw_d_infrastructure_throne_room
 					has_deposit = pw_d_infrastructure_imperial_holy_throne
+					has_deposit = pw_d_infrastructure_galactic_throne
 					has_deposit = pw_d_infrastructure_luxury_retreat
 					has_deposit = pw_d_infrastructure_wardens_directorate
 					has_deposit = pw_d_infrastructure_overseers_ring
