@@ -6,24 +6,23 @@ tr_pw_monumentality_adopt = {
 }
 
 tr_pw_monumentality_finish = {
+
+	#Unlocks Monuments & edict
+	custom_tooltip_with_modifiers = tr_pw_monumentality_finish_desc
+
+	#Automatically displayed
 	modifier = {
 		ascension_perks_add = 1
-	}
-
-	on_enabled = {
-		#Unlocks Monuments & edict
-		# custom_tooltip = tr_pw_monumentality_finish_tooltip
 	}
 }
 
 tr_pw_monumentality_architecture_parlante = {
+
+	# Implemented Unity on each wonder
+	custom_tooltip_with_modifiers = tr_pw_monumentality_architecture_parlante_desc
+
 	modifier = {
 		planet_districts_cost_mult = -0.10
-	}
-
-	on_enabled = {
-		# Implemented Unity on each wonder
-		# custom_tooltip = tr_pw_monumentality_architecture_parlante_tooltip
 	}
 
 	ai_weight = {
@@ -32,6 +31,10 @@ tr_pw_monumentality_architecture_parlante = {
 }
 
 tr_pw_monumentality_brutalism = {
+
+	# Implemented Stability on each wonder
+	custom_tooltip_with_modifiers = tr_pw_monumentality_brutalism_desc
+
 	possible = {
 		has_tradition = tr_pw_monumentality_architecture_parlante
 	}
@@ -40,28 +43,22 @@ tr_pw_monumentality_brutalism = {
 		planet_buildings_cost_mult = -0.10
 	}
 
-	on_enabled = {
-		# Implemented Stability on each wonder
-		# custom_tooltip = tr_pw_monumentality_brutalism_tooltip
-	}
-
 	ai_weight = {
 		factor = 5000
 	}
 }
 
 tr_pw_monumentality_integrated_urbanism = {
+
+	#Also unlocks a new decision
+	custom_tooltip_with_modifiers = tr_pw_monumentality_integrated_urbanism_desc
+
 	possible = {
 		has_tradition = tr_pw_monumentality_brutalism
 	}
 
 	modifier = {
 		planet_decision_enact_speed_mult = 0.25
-	}
-
-	on_enabled = {
-		#Also unlocks a new decision
-		# custom_tooltip = tr_pw_monumentality_integrated_urbanism_tooltip
 	}
 
 	ai_weight = {
