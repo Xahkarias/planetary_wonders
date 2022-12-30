@@ -1167,7 +1167,7 @@ pw_d_infrastructure_city_defenders = {
 	#Enforcer
 	triggered_planet_modifier = {
 		potential = {
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 1
@@ -1177,7 +1177,7 @@ pw_d_infrastructure_city_defenders = {
 	#Telepath
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 1
@@ -1257,7 +1257,7 @@ pw_d_infrastructure_crisis_bunker = {
 	#Enforcer
 	triggered_planet_modifier = {
 		potential = {
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 1
@@ -1267,7 +1267,7 @@ pw_d_infrastructure_crisis_bunker = {
 	#Telepath
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 1
@@ -1348,7 +1348,7 @@ pw_d_infrastructure_personal_guardian = {
 	#Enforcer
 	triggered_planet_modifier = {
 		potential = {
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 1
@@ -1358,7 +1358,7 @@ pw_d_infrastructure_personal_guardian = {
 	#Telepath
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 1
@@ -1675,14 +1675,14 @@ pw_d_infrastructure_holy_tribunal = {
 
 	triggered_planet_modifier = {
 		potential = {
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		job_enforcer_add = 1
 	}
 
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		job_telepath_add = 1
 	}

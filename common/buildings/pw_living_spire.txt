@@ -677,8 +677,9 @@ pw_building_living_spire_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_ascension_perk = ap_transcendence }
-				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_mind_over_matter }
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 				NOT = { has_ascension_perk = ap_synthetic_evolution }
 				has_toxic_baths = no
 			}
@@ -694,8 +695,9 @@ pw_building_living_spire_2 = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			owner = {
-				NOT = { has_ascension_perk = ap_transcendence }
-				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_mind_over_matter }
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 				NOT = { has_ascension_perk = ap_synthetic_evolution }
 				has_toxic_baths = yes
 			}
@@ -705,11 +707,16 @@ pw_building_living_spire_2 = {
 		}
 	}
 
-	#Transcendence
+	#Mind over matter/The flesh is weak
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_ascension_perk = ap_transcendence }
+			owner = {
+				OR = {
+					has_ascension_perk = ap_mind_over_matter
+					has_ascension_perk = ap_the_flesh_is_weak
+				}
+			}
 		}
 		modifier = {
 			job_healthcare_add = 1
@@ -717,11 +724,11 @@ pw_building_living_spire_2 = {
 		}
 	}
 
-	#Evolution Mastery
+	#Engineered Evolution
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_ascension_perk = ap_evolutionary_mastery }
+			owner = { has_ascension_perk = ap_engineered_evolution }
 		}
 		modifier = {
 			job_healthcare_add = 1
@@ -733,7 +740,9 @@ pw_building_living_spire_2 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_ascension_perk = ap_synthetic_evolution }
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
 		}
 		modifier = {
 			job_roboticist_add = 1
@@ -746,7 +755,7 @@ pw_building_living_spire_2 = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			NOT = { owner = { has_ascension_perk = ap_mind_over_matter }}
+			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 1
@@ -758,7 +767,7 @@ pw_building_living_spire_2 = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 1
@@ -856,8 +865,9 @@ pw_building_living_spire_2 = {
 		trigger = {
 			exists = owner
 			owner = {
-				NOT = { has_ascension_perk = ap_transcendence }
-				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_mind_over_matter }
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 				NOT = { has_ascension_perk = ap_synthetic_evolution }
 				has_toxic_baths = yes
 			}
@@ -875,7 +885,7 @@ pw_building_living_spire_2 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			NOT = { owner = { has_ascension_perk = ap_mind_over_matter }}
+			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		text = job_enforcer_effect_desc
 	}
@@ -883,7 +893,7 @@ pw_building_living_spire_2 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		text = job_telepath_effect_desc
 	}
@@ -1138,8 +1148,9 @@ pw_building_living_spire_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = { has_ascension_perk = ap_transcendence }
-				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_mind_over_matter }
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 				NOT = { has_ascension_perk = ap_synthetic_evolution }
 				has_toxic_baths = no
 			}
@@ -1155,8 +1166,9 @@ pw_building_living_spire_3 = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 			owner = {
-				NOT = { has_ascension_perk = ap_transcendence }
-				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_mind_over_matter }
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 				NOT = { has_ascension_perk = ap_synthetic_evolution }
 				has_toxic_baths = yes
 			}
@@ -1166,11 +1178,16 @@ pw_building_living_spire_3 = {
 		}
 	}
 
-	#Transcendence
+	#Mind over matter/The flesh is weak
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_ascension_perk = ap_transcendence }
+			owner = {
+				OR = {
+					has_ascension_perk = ap_mind_over_matter 
+					has_ascension_perk = ap_the_flesh_is_weak
+				}
+			}
 		}
 		modifier = {
 			job_healthcare_add = 1
@@ -1178,11 +1195,11 @@ pw_building_living_spire_3 = {
 		}
 	}
 
-	#Evolution Mastery
+	#Engineered Evolution
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_ascension_perk = ap_evolutionary_mastery }
+			owner = { has_ascension_perk = ap_engineered_evolution }
 		}
 		modifier = {
 			job_healthcare_add = 1
@@ -1207,7 +1224,7 @@ pw_building_living_spire_3 = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			NOT = { owner = { has_ascension_perk = ap_mind_over_matter }}
+			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 2
@@ -1219,7 +1236,7 @@ pw_building_living_spire_3 = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 2
@@ -1317,8 +1334,9 @@ pw_building_living_spire_3 = {
 		trigger = {
 			exists = owner
 			owner = {
-				NOT = { has_ascension_perk = ap_transcendence }
-				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+				NOT = { has_ascension_perk = ap_mind_over_matter }
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 				NOT = { has_ascension_perk = ap_synthetic_evolution }
 				has_toxic_baths = yes
 			}
@@ -1336,7 +1354,7 @@ pw_building_living_spire_3 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			NOT = { owner = { has_ascension_perk = ap_mind_over_matter }}
+			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		text = job_enforcer_effect_desc
 	}
@@ -1344,7 +1362,7 @@ pw_building_living_spire_3 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		text = job_telepath_effect_desc
 	}

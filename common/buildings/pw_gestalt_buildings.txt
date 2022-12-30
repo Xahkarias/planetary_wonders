@@ -360,9 +360,9 @@ pw_building_conduit_of_unity_1 = {
 		potential = {
 			owner = {
 				is_machine_empire = yes
+				has_active_tradition = tr_synthetics_finish_machine
 			}
 			exists = owner
-			owner = { has_ascension_perk = ap_synthetic_age }
 		}
 		modifier = {
 			job_replicator_add = 1
@@ -407,17 +407,40 @@ pw_building_conduit_of_unity_1 = {
 		}
 	}
 
-	#Spawning Drone -> AP
+	#Spawning Drone -> from tradition
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
 				is_hive_empire = yes
+				OR = {
+					has_active_tradition = tr_genetics_finish
+					has_active_tradition = tr_genetics_finish_extra_traits
+				}
 			}
 			exists = owner
-			owner = { has_ascension_perk = ap_evolutionary_mastery }
 		}
 		modifier = {
 			job_spawning_drone_add = 1
+		}
+	}
+
+	#Augmentation Drone -> form tradition
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_hive_empire = yes
+				OR = {
+					has_active_tradition = tr_cybernetics_modular_cybernetics_hive
+					has_active_tradition = tr_cybernetics_assimilator_modular_cybernetics
+					has_active_tradition = tr_cybernetics_modular_cybernetics_1
+					has_active_tradition = tr_cybernetics_modular_cybernetics_2
+					has_active_tradition = tr_cybernetics_modular_cybernetics_3
+				}
+			}
+			exists = owner
+		}
+		modifier = {
+			job_cyber_drone_add = 1
 		}
 	}
 

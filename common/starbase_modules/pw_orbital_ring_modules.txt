@@ -40,7 +40,7 @@ pw_orbital_ring_guardian_harbor = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 1
@@ -51,7 +51,7 @@ pw_orbital_ring_guardian_harbor = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 1

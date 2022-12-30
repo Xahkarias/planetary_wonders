@@ -170,7 +170,7 @@ pw_building_guardian_angel = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 2
@@ -181,7 +181,7 @@ pw_building_guardian_angel = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 1
@@ -251,7 +251,7 @@ pw_building_guardian_angel = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		text = job_enforcer_effect_desc
 	}
@@ -260,7 +260,7 @@ pw_building_guardian_angel = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		text = job_telepath_effect_desc
 	}
@@ -518,7 +518,7 @@ pw_building_stellar_sentinel = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
 			job_enforcer_add = 2
@@ -529,7 +529,7 @@ pw_building_stellar_sentinel = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
 			job_telepath_add = 2
@@ -603,7 +603,7 @@ pw_building_stellar_sentinel = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { NOT = { has_ascension_perk = ap_mind_over_matter }}
+			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		text = job_enforcer_effect_desc
 	}
@@ -612,7 +612,7 @@ pw_building_stellar_sentinel = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { has_ascension_perk = ap_mind_over_matter }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		text = job_telepath_effect_desc
 	}
