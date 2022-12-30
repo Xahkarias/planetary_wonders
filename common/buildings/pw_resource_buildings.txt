@@ -1000,7 +1000,7 @@ pw_building_helios_tower = {
 			}
 		}
 		modifier = {
-			factor = value:pw_generator_value
+			factor = value:pw_generators_value
 		}
 		modifier = {
 			factor = 1.5
@@ -1363,7 +1363,7 @@ pw_building_helios_translucent_obelisk = {
 			}
 		}
 		modifier = {
-			factor = value:pw_generator_value
+			factor = value:pw_generators_value
 		}
 		modifier = {
 			factor = 1.5
