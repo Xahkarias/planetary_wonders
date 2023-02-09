@@ -6132,9 +6132,18 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1013.a
-		remove_modifier = pw_mod_enigma_engine_energy
-		remove_modifier = pw_mod_enigma_engine_housing
-		remove_modifier = pw_mod_enigma_engine_art
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_energy }
+			remove_modifier = pw_mod_enigma_engine_energy
+		}
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_housing }
+			remove_modifier = pw_mod_enigma_engine_housing
+		}
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_art }
+			remove_modifier = pw_mod_enigma_engine_art
+		}
 		owner = {
 			add_resource = {
 				influence = 50
@@ -6155,9 +6164,18 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1014.a
-		remove_modifier = pw_mod_enigma_engine_energy
-		remove_modifier = pw_mod_enigma_engine_housing
-		remove_modifier = pw_mod_enigma_engine_art
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_energy }
+			remove_modifier = pw_mod_enigma_engine_energy
+		}
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_housing }
+			remove_modifier = pw_mod_enigma_engine_housing
+		}
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_art }
+			remove_modifier = pw_mod_enigma_engine_art
+		}
 		owner = {
 			add_modifier = {
 				modifier = pw_mod_enigma_engine_final
@@ -6167,9 +6185,18 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1014.b
-		remove_modifier = pw_mod_enigma_engine_energy
-		remove_modifier = pw_mod_enigma_engine_housing
-		remove_modifier = pw_mod_enigma_engine_art
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_energy }
+			remove_modifier = pw_mod_enigma_engine_energy
+		}
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_housing }
+			remove_modifier = pw_mod_enigma_engine_housing
+		}
+		if = {
+			limit = { has_modifier = pw_mod_enigma_engine_art }
+			remove_modifier = pw_mod_enigma_engine_art
+		}
 		owner = {
 			add_modifier = {
 				modifier = pw_mod_enigma_engine_final
