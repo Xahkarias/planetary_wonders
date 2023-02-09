@@ -1,3 +1,8 @@
+#Used to check if the mod is active before on_game_start
+#All scopes
+has_planetary_wonders = { always = yes }
+
+
 #Scope: Planet
 pw_can_build_planetary_wonder = {
 	custom_tooltip = {
