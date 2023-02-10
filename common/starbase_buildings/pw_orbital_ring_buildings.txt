@@ -20,7 +20,10 @@ pw_ring_elevator_hyper_port = {
 				has_megastructure = hyper_relay
 				has_megastructure = gateway_final
 				hidden_trigger = {
-					has_megastructure = gateway_restored
+					OR = {
+						has_megastructure = hyper_relay_restored
+						has_megastructure = gateway_restored
+					}
 				}
 			}
 		}
