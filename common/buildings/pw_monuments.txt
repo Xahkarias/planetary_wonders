@@ -622,7 +622,7 @@ pw_monument_synchronicity = {
 	}
 
 	country_modifier = {
-		planet_jobs_upkeep_mult = -0.05
+		country_edict_fund_add = 5
 	}
 
 	ai_weight = {
