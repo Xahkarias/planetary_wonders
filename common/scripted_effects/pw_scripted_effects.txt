@@ -1587,3 +1587,43 @@ pw_remove_galactic_market_modifiers = {
 		remove_modifier = pw_mod_space_elevator_open_market_local_content_requirements_gestalt
 	}
 }
+
+#Replace orbital artifact deposits that hide other deposits with ones that don't
+pw_replace_minor_artifact_deposits = {
+	hidden_effect = {
+		from.planet = {
+			if = {
+				limit = { has_deposit = d_artifacts_planet_1 }
+				remove_deposit = d_artifacts_planet_1
+				add_deposit = d_artifacts_1
+			}
+			if = {
+				limit = { has_deposit = d_artifacts_planet_2 }
+				remove_deposit = d_artifacts_planet_2
+				add_deposit = d_artifacts_2
+			}
+			if = {
+				limit = { has_deposit = d_artifacts_planet_3 }
+				remove_deposit = d_artifacts_planet_3
+				add_deposit = d_artifacts_3
+			}
+
+
+			if = {
+				limit = { has_deposit = d_artifacts_mining_1 }
+				remove_deposit = d_artifacts_mining_1
+				add_deposit = d_artifacts_1
+			}
+			if = {
+				limit = { has_deposit = d_artifacts_mining_2 }
+				remove_deposit = d_artifacts_mining_2
+				add_deposit = d_artifacts_2
+			}
+			if = {
+				limit = { has_deposit = d_artifacts_mining_3 }
+				remove_deposit = d_artifacts_mining_3
+				add_deposit = d_artifacts_3
+			}
+		}
+	}
+} 

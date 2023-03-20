@@ -468,6 +468,8 @@ fleet_event = {
 
 	after = {
 		from = { set_site_progress_locked = no }
+
+		pw_replace_minor_artifact_deposits = yes
 	}
 
 	option = {
@@ -855,6 +857,8 @@ fleet_event = {
 
 	after = {
 		from = { set_site_progress_locked = no }
+
+		pw_replace_minor_artifact_deposits = yes
 	}
 
 	option = {
@@ -1106,6 +1110,8 @@ fleet_event = {
 
 	after = {
 		from = { set_site_progress_locked = no }
+
+		pw_replace_minor_artifact_deposits = yes
 	}
 
 	option = {
