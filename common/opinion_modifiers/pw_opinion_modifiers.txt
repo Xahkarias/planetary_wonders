@@ -240,3 +240,27 @@ pw_opinion_HR_diplomacy_refuse_diplomacy = {
 		base = 5
 	}
 }
+
+# MSI persecuted sympathetic artists
+pw_opinion_MSI_persecuted_sympathetic_artists = {
+	opinion = {
+		base = -50
+	}
+	unique = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# MSI praise sympathetic artists
+pw_opinion_MSI_praised_sympathetic_artists = {
+	opinion = {
+		base = 50
+	}
+	unique = yes
+
+	decay = {
+		base = 2
+	}
+}

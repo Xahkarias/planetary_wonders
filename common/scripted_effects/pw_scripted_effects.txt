@@ -109,6 +109,21 @@ pw_trigger_art_generic_events = {
 			}
 			country_event = { id = pw_art_exhibition.702 }
 		}
+		20 = {
+			modifier = {
+				factor = 0
+				OR = {
+					#Country does not have related origin
+					NOR = {
+						has_origin = origin_payback
+						has_origin = origin_broken_shackles
+					}
+					#MSI does not exist (anymore?)
+					NOT = { exists = event_target:MSI_country }
+				}
+			}
+			country_event = { id = pw_art_exhibition.705 }
+		}
 	}
 }
 

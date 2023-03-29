@@ -6043,7 +6043,7 @@ country_event = {
 	id = pw_art_exhibition.500
 	title = pw_art_exhibition.500.name
 	desc = pw_art_exhibition.500.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_bribery
 	is_triggered_only = yes
 
 	option = {
@@ -6191,7 +6191,7 @@ country_event = {
 	id = pw_art_exhibition.508
 	title = pw_art_exhibition.508.name
 	desc = pw_art_exhibition.508.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_hand_shake
 	is_triggered_only = yes
 
 	option = {
@@ -6216,7 +6216,7 @@ country_event = {
 	id = pw_art_exhibition.509
 	title = pw_art_exhibition.509.name
 	desc = pw_art_exhibition.509.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_infiltration_failure
 	is_triggered_only = yes
 
 	option = { #Replace it.
@@ -6252,7 +6252,7 @@ country_event = {
 	id = pw_art_exhibition.510
 	title = pw_art_exhibition.510.name
 	desc = pw_art_exhibition.510.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_open_revolt
 	is_triggered_only = yes
 
 	option = {
@@ -6269,7 +6269,7 @@ country_event = {
 	id = pw_art_exhibition.511
 	title = pw_art_exhibition.511.name
 	desc = pw_art_exhibition.511.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_imperial_vassal
 	is_triggered_only = yes
 
 	option = {
@@ -6310,7 +6310,7 @@ country_event = {
 	id = pw_art_exhibition.513
 	title = pw_art_exhibition.513.name
 	desc = pw_art_exhibition.513.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_mercenary_fleet
 	is_triggered_only = yes
 
 	option = {
@@ -6326,7 +6326,7 @@ country_event = {
 	id = pw_art_exhibition.514
 	title = pw_art_exhibition.514.name
 	desc = pw_art_exhibition.514.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_crisis_declared
 	is_triggered_only = yes
 
 	option = {
@@ -6343,7 +6343,7 @@ country_event = {
 	id = pw_art_exhibition.515
 	title = pw_art_exhibition.515.name
 	desc = pw_art_exhibition.515.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_observation
 	is_triggered_only = yes
 
 	option = {
@@ -6366,7 +6366,7 @@ country_event = {
 	id = pw_art_exhibition.516
 	title = pw_art_exhibition.516.name
 	desc = pw_art_exhibition.516.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_engineering_research
 	is_triggered_only = yes
 
 	option = {
@@ -6384,7 +6384,7 @@ country_event = {
 	id = pw_art_exhibition.517
 	title = pw_art_exhibition.517.name
 	desc = pw_art_exhibition.517.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_grand_speech
 	is_triggered_only = yes
 
 	option = {
@@ -6408,7 +6408,7 @@ country_event = {
 	id = pw_art_exhibition.520
 	title = pw_art_exhibition.520.name
 	desc = pw_art_exhibition.520.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_tradestation_interior
 	is_triggered_only = yes
 
 	option = {
@@ -6451,7 +6451,7 @@ country_event = {
 	id = pw_art_exhibition.521
 	title = pw_art_exhibition.521.name
 	desc = pw_art_exhibition.521.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_friendly_infiltration
 	is_triggered_only = yes
 
 	option = {
@@ -6468,7 +6468,7 @@ country_event = {
 	id = pw_art_exhibition.522
 	title = pw_art_exhibition.522.name
 	desc = pw_art_exhibition.522.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_striking_a_deal
 	is_triggered_only = yes
 
 	option = {
@@ -6487,7 +6487,7 @@ country_event = {
 	id = pw_art_exhibition.523
 	title = pw_art_exhibition.523.name
 	desc = pw_art_exhibition.523.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_gaia
 	is_triggered_only = yes
 
 	option = {
@@ -6512,7 +6512,7 @@ country_event = {
 	id = pw_art_exhibition.524
 	title = pw_art_exhibition.524.name
 	desc = pw_art_exhibition.524.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_civil_action
 	is_triggered_only = yes
 
 	trigger = {
@@ -6534,7 +6534,7 @@ country_event = {
 	id = pw_art_exhibition.525
 	title = pw_art_exhibition.525.name
 	desc = pw_art_exhibition.525.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_animal_wildlife
 	is_triggered_only = yes
 
 	option = {
@@ -6551,7 +6551,7 @@ country_event = {
 	id = pw_art_exhibition.526
 	title = pw_art_exhibition.526.name
 	desc = pw_art_exhibition.526.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_failed_observation
 	is_triggered_only = yes
 
 	option = {
@@ -6574,7 +6574,7 @@ country_event = {
 	id = pw_art_exhibition.530
 	title = pw_art_exhibition.530.name
 	desc = pw_art_exhibition.530.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_ancient_artifact
 	is_triggered_only = yes
 
 	option = {
@@ -6593,7 +6593,7 @@ country_event = {
 	id = pw_art_exhibition.531
 	title = pw_art_exhibition.531.name
 	desc = pw_art_exhibition.531.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_hive_mind
 	is_triggered_only = yes
 
 	option = {
@@ -6610,7 +6610,7 @@ country_event = {
 	id = pw_art_exhibition.532
 	title = pw_art_exhibition.532.name
 	desc = pw_art_exhibition.532.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_necromancy
 	is_triggered_only = yes
 
 	option = {
@@ -6627,7 +6627,7 @@ country_event = {
 	id = pw_art_exhibition.533
 	title = pw_art_exhibition.533.name
 	desc = pw_art_exhibition.533.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_friendly_enlightenment
 	is_triggered_only = yes
 
 	option = {
@@ -6653,7 +6653,7 @@ country_event = {
 	id = pw_art_exhibition.535
 	title = pw_art_exhibition.535.name
 	desc = pw_art_exhibition.535.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_shroudwalker_teachers
 	is_triggered_only = yes
 
 	option = {
@@ -6673,7 +6673,7 @@ country_event = {
 	id = pw_art_exhibition.536
 	title = pw_art_exhibition.536.name
 	desc = pw_art_exhibition.536.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_necrophage
 	is_triggered_only = yes
 
 	option = {
@@ -6691,7 +6691,7 @@ country_event = {
 	id = pw_art_exhibition.540
 	title = pw_art_exhibition.540.name
 	desc = pw_art_exhibition.540.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_two_sided_deal
 	is_triggered_only = yes
 
 	option = {
@@ -6710,7 +6710,7 @@ country_event = {
 	id = pw_art_exhibition.541
 	title = pw_art_exhibition.541.name
 	desc = pw_art_exhibition.541.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_rare_tech_cache
 	is_triggered_only = yes
 
 	option = {
@@ -6727,7 +6727,7 @@ country_event = {
 	id = pw_art_exhibition.542
 	title = pw_art_exhibition.542.name
 	desc = pw_art_exhibition.542.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_smugglers_in_bar
 	is_triggered_only = yes
 
 	option = {
@@ -6746,7 +6746,7 @@ country_event = {
 	id = pw_art_exhibition.543
 	title = pw_art_exhibition.543.name
 	desc = pw_art_exhibition.543.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_technosphere
 	is_triggered_only = yes
 
 	option = {
@@ -6778,7 +6778,7 @@ country_event = {
 	id = pw_art_exhibition.545
 	title = pw_art_exhibition.545.name
 	desc = pw_art_exhibition.545.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_cybernetics
 	is_triggered_only = yes
 
 	option = {
@@ -6795,7 +6795,7 @@ country_event = {
 	id = pw_art_exhibition.550
 	title = pw_art_exhibition.550.name
 	desc = pw_art_exhibition.550.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_friendly_enlightenment
 	is_triggered_only = yes
 
 	option = {
@@ -6812,7 +6812,7 @@ country_event = {
 	id = pw_art_exhibition.551
 	title = pw_art_exhibition.551.name
 	desc = pw_art_exhibition.551.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_happy_reunion
 	is_triggered_only = yes
 
 	option = {
@@ -6829,7 +6829,7 @@ country_event = {
 	id = pw_art_exhibition.552
 	title = pw_art_exhibition.552.name
 	desc = pw_art_exhibition.552.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_hive_mind_pre_ftl
 	is_triggered_only = yes
 
 	option = {
@@ -6846,7 +6846,7 @@ country_event = {
 	id = pw_art_exhibition.553
 	title = pw_art_exhibition.553.name
 	desc = pw_art_exhibition.553.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_galactic_market
 	is_triggered_only = yes
 
 	option = {
@@ -6864,7 +6864,7 @@ country_event = {
 	id = pw_art_exhibition.555
 	title = pw_art_exhibition.555.name
 	desc = pw_art_exhibition.555.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_knights
 	is_triggered_only = yes
 
 	option = {
@@ -6915,7 +6915,7 @@ country_event = {
 	id = pw_art_exhibition.560
 	title = pw_art_exhibition.560.name
 	desc = pw_art_exhibition.560.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_overt_indoctrination
 	is_triggered_only = yes
 
 	option = {
@@ -6932,7 +6932,7 @@ country_event = {
 	id = pw_art_exhibition.561
 	title = pw_art_exhibition.561.name
 	desc = pw_art_exhibition.561.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_partition
 	is_triggered_only = yes
 
 	option = {
@@ -6949,7 +6949,7 @@ country_event = {
 	id = pw_art_exhibition.562
 	title = pw_art_exhibition.562.name
 	desc = pw_art_exhibition.562.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_obelisk_tourists
 	is_triggered_only = yes
 
 	option = {
@@ -6979,7 +6979,7 @@ country_event = {
 	id = pw_art_exhibition.563
 	title = pw_art_exhibition.563.name
 	desc = pw_art_exhibition.563.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_hand_shake
 	is_triggered_only = yes
 
 	option = {
@@ -6998,7 +6998,7 @@ country_event = {
 	id = pw_art_exhibition.564
 	title = pw_art_exhibition.564.name
 	desc = pw_art_exhibition.564.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_acquire_asset
 	is_triggered_only = yes
 
 	option = {
@@ -7019,7 +7019,7 @@ country_event = {
 	id = pw_art_exhibition.565
 	title = pw_art_exhibition.565.name
 	desc = pw_art_exhibition.565.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_hyper_relay_conjunction
 	is_triggered_only = yes
 
 	option = {
@@ -7062,7 +7062,7 @@ country_event = {
 	id = pw_art_exhibition.570
 	title = pw_art_exhibition.570.name
 	desc = pw_art_exhibition.570.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_alien_hieroglyphics
 	is_triggered_only = yes
 
 	option = {
@@ -7079,7 +7079,7 @@ country_event = {
 	id = pw_art_exhibition.571
 	title = pw_art_exhibition.571.name
 	desc = pw_art_exhibition.571.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_black_market
 	is_triggered_only = yes
 
 	option = {
@@ -7096,7 +7096,7 @@ country_event = {
 	id = pw_art_exhibition.572
 	title = pw_art_exhibition.572.name
 	desc = pw_art_exhibition.572.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_gunrunning
 	is_triggered_only = yes
 
 	option = {
@@ -7113,7 +7113,7 @@ country_event = {
 	id = pw_art_exhibition.573
 	title = pw_art_exhibition.573.name
 	desc = pw_art_exhibition.573.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_one_sided_deal
 	is_triggered_only = yes
 
 	option = {
@@ -7130,7 +7130,7 @@ country_event = {
 	id = pw_art_exhibition.574
 	title = pw_art_exhibition.574.name
 	desc = pw_art_exhibition.574.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_overtuned
 	is_triggered_only = yes
 
 	option = {
@@ -7149,7 +7149,7 @@ country_event = {
 	id = pw_art_exhibition.575
 	title = pw_art_exhibition.575.name
 	desc = pw_art_exhibition.575.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_slaver_empire
 	is_triggered_only = yes
 
 	option = {
@@ -7166,7 +7166,7 @@ country_event = {
 	id = pw_art_exhibition.576
 	title = pw_art_exhibition.576.name
 	desc = pw_art_exhibition.576.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_spy_network
 	is_triggered_only = yes
 
 	option = {
@@ -7183,7 +7183,7 @@ country_event = {
 	id = pw_art_exhibition.577
 	title = pw_art_exhibition.577.name
 	desc = pw_art_exhibition.577.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_hostile_infiltration
 	is_triggered_only = yes
 
 	option = {
@@ -7200,7 +7200,7 @@ country_event = {
 	id = pw_art_exhibition.578
 	title = pw_art_exhibition.578.name
 	desc = pw_art_exhibition.578.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_infiltration_failure
 	is_triggered_only = yes
 
 	option = {
@@ -7218,7 +7218,7 @@ country_event = {
 	id = pw_art_exhibition.580
 	title = pw_art_exhibition.580.name
 	desc = pw_art_exhibition.580.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_enlightenment_failure
 	is_triggered_only = yes
 
 	option = {
@@ -7238,7 +7238,7 @@ country_event = {
 	id = pw_art_exhibition.590
 	title = pw_art_exhibition.590.name
 	desc = pw_art_exhibition.590.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_scientific_experiments
 	is_triggered_only = yes
 
 	option = {
@@ -7265,7 +7265,7 @@ country_event = {
 	id = pw_art_exhibition.600
 	title = pw_art_exhibition.600.name
 	desc = pw_art_exhibition.600.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_black_market
 	is_triggered_only = yes
 
 	option = {
@@ -7281,7 +7281,7 @@ country_event = {
 	id = pw_art_exhibition.601
 	title = pw_art_exhibition.601.name
 	desc = pw_art_exhibition.601.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_caravaneers
 	is_triggered_only = yes
 
 	option = {
@@ -7298,7 +7298,7 @@ country_event = {
 	id = pw_art_exhibition.610
 	title = pw_art_exhibition.610.name
 	desc = pw_art_exhibition.610.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_black_hole
 	is_triggered_only = yes
 
 	option = {
@@ -7327,7 +7327,7 @@ country_event = {
 	id = pw_art_exhibition.611
 	title = pw_art_exhibition.611.name
 	desc = pw_art_exhibition.611.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_scanning_remains
 	is_triggered_only = yes
 
 	option = {
@@ -7353,7 +7353,7 @@ country_event = {
 	id = pw_art_exhibition.700
 	title = pw_art_exhibition.700.name
 	desc = pw_art_exhibition.700.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_three_sided_deal
 	is_triggered_only = yes
 
 	option = {
@@ -7371,7 +7371,7 @@ country_event = {
 	id = pw_art_exhibition.701
 	title = pw_art_exhibition.701.name
 	desc = pw_art_exhibition.701.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_scholarium_anomaly
 	is_triggered_only = yes
 
 	option = {
@@ -7409,7 +7409,7 @@ country_event = {
 	id = pw_art_exhibition.702
 	title = pw_art_exhibition.702.name
 	desc = pw_art_exhibition.702.desc
-	picture = GFX_evt_galactic_community
+	picture = GFX_evt_crisis_defeated
 	is_triggered_only = yes
 
 	option = {
@@ -7433,7 +7433,7 @@ country_event = {
 	id = pw_art_exhibition.703
 	title = pw_art_exhibition.703.name
 	desc = pw_art_exhibition.703.desc
-	picture = GFX_evt_underground_city
+	picture = GFX_evt_megastructure_construction
 	is_triggered_only = yes
 
 	trigger = {
@@ -7491,7 +7491,7 @@ country_event = {
 	id = pw_art_exhibition.704
 	title = pw_art_exhibition.704.name
 	desc = pw_art_exhibition.704.desc
-	picture = GFX_evt_underground_city
+	picture = GFX_evt_black_market
 	is_triggered_only = yes
 
 	trigger = {
@@ -7539,6 +7539,85 @@ country_event = {
 			value = @tier2unityreward
 			min = @tier2unitymin
 			max = @tier2unitymax
+		}
+	}
+}
+
+#Broken Shackles/Payback:
+#Praise the MSI
+country_event = {
+	id = pw_art_exhibition.705
+	title = pw_art_exhibition.705.name
+	desc = pw_art_exhibition.705.desc
+	picture = GFX_evt_underground_city
+	is_triggered_only = yes
+
+	#Punish the artists
+	option = {
+		name = pw_art_exhibition.705.a
+		add_modifier = {
+			modifier = pw_art_mod_masterful_artificers
+			days = @pw_5years
+		}
+
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier2influencereward
+			min = @tier2influencemin
+			max = @tier2influencemax
+		}
+
+		if = {
+			limit = {exists = event_target:MSI_country }
+			event_target:MSI_country = {
+				add_opinion_modifier = {
+					who = root
+					modifier = pw_opinion_MSI_persecuted_sympathetic_artists
+				}
+			}
+		}
+	}
+
+	#Freedom of expression
+	option = {
+		name = pw_art_exhibition.705.b
+		add_modifier = {
+			modifier = pw_art_mod_artistic_freedom
+			days = @pw_5years
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+
+		if = {
+			limit = {exists = event_target:MSI_country }
+			event_target:MSI_country = {
+				add_opinion_modifier = {
+					who = root
+					modifier = pw_opinion_MSI_praised_sympathetic_artists
+				}
+			}
+		}
+		
+	}
+
+	#Historical Struggle
+	option = {
+		name = pw_art_exhibition.705.c
+		add_modifier = {
+			modifier = pw_art_mod_historical_perspective
+			days = @pw_5years
+		}
+
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier2influencereward
+			min = @tier2influencemin
+			max = @tier2influencemax
 		}
 	}
 }

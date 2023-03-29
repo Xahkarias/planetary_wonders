@@ -399,3 +399,18 @@ pw_art_mod_masterful_artificers = {
 	trade_value_mult = 0.10
 	planet_artisans_upkeep_mult = -0.15
 }
+
+pw_art_mod_cultural_censorship = {
+	country_unity_produces_mult = -0.10
+	pop_government_ethic_attraction = 0.20
+}
+
+pw_art_mod_artistic_freedom = {
+	country_unity_produces_mult = 0.05
+	pop_ethics_shift_speed_mult = 0.10
+}
+
+pw_art_mod_historical_perspective = {
+	country_unity_produces_mult = 0.05
+	country_war_exhaustion_mult = -0.5
+}

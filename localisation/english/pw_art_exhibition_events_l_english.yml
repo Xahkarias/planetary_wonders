@@ -22,7 +22,7 @@
 
     #Organize Planetary Exhibition (Xenophile - Interstellar):
     pw_art_exhibition.6.name: "Mega Arts Exchange"
-    pw_art_exhibition.6.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and exchange is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather artists from many species and cultures that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops."
+    pw_art_exhibition.6.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and exchange is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather artists from many species and cultures that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops.§!"
 
     #Organize Planetary Exhibition (Xenophobe - Planetary):
     pw_art_exhibition.7.name: "Great Arts Hegemony"
@@ -34,7 +34,7 @@
 
     #Organize Planetary Exhibition (Xenophobe - Interstellar):
     pw_art_exhibition.9.name: "Mega Arts Hegemony"
-    pw_art_exhibition.9.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and and upholding of our moral values is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather the most important artists of our species that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops."
+    pw_art_exhibition.9.desc: "An enormous art showing that will gather all of our developed planets into cultural production, appreciation and and upholding of our moral values is about to commence. We now have the opportunity to promote a theme to focus on this exhibition, that could sway the political perception of our population. We will gather the most important artists of our species that relate to that theme.\n\n§YThe selected exhibitions will be hosted in every planet with more than 10 pops.§!"
 
     #Exhibitions focus options:
     pw_art_exhibition.militarist: "War propaganda"
@@ -323,3 +323,10 @@
     pw_art_exhibition.704.desc: "Many artificers from the $pw_industrial_hearth$ have come together to organize an exposition of their masterwork crafts at the $pw_pavilion_of_wonders$. These works show more artistic then utilitarian value and represent the inclinations of our artificers during their time off of work. Some of them even reported being struck by \"strange moods\" during which they felt compelled to gather materials in order to complete their art pieces.\n\nIn any case, if we provide more resources and promote more expositions we could see our traditional crafts flourish into new works."
     pw_art_exhibition.704.a: "We should incentivize these artists further."
     pw_art_exhibition.704.b: "What marvelous craftsmanship!"
+
+    #Payback/Broken Shackles: The art of MSI
+    pw_art_exhibition.705.name: "The art of MSI"
+    pw_art_exhibition.705.desc: "After the conclusion of our latest art exhibition showcasing several pieces praising the Minamar Specialized Industries, there has been a significant public outcry, exacerbated by messages from representatives from the MSI. Some individuals are demanding that the art be banned and those responsible punished, while others are defending the artist's right to freedom of expression. Still, others see the art as an opportunity to remember their past struggles and as a call to action for a better future. As the leader of the empire, you must decide how to address this situation and what message your decision will send to your people."
+    pw_art_exhibition.705.a: "We will not stand for this glorification of our oppressors. Ban the art and punish those responsible!"
+    pw_art_exhibition.705.b: "This art may be controversial, but art is supposed to be controversial."
+    pw_art_exhibition.705.c: "Let us use this art as a reminder of our past struggles and as a call to action for our future."

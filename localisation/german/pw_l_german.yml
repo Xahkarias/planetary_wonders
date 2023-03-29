@@ -4630,3 +4630,18 @@
     pw_wonder.2003.g.tooltip: "Come one come all the knight and squires that shall honor our Toxic God with in a grand tournament."
     pw_wonder.2003.cancel_parade: "Cancel Parades"
     pw_wonder.2003.cancel_parade.tooltip: "nd current military parades or war effort, hopefully to host a new one and not because a our people started turning on each other with uncontrolled bloodlust."
+
+    pw_art_exhibition.705.name: "The art of MSI"
+    pw_art_exhibition.705.desc: "After the conclusion of our latest art exhibition showcasing several pieces praising the Minamar Specialized Industries, there has been a significant public outcry, exacerbated by messages from representatives from the MSI. Some individuals are demanding that the art be banned and those responsible punished, while others are defending the artist's right to freedom of expression. Still, others see the art as an opportunity to remember their past struggles and as a call to action for a better future. As the leader of the empire, you must decide how to address this situation and what message your decision will send to your people."
+    pw_art_exhibition.705.a: "We will not stand for this glorification of our oppressors. Ban the art and punish those responsible!"
+    pw_art_exhibition.705.b: "This art may be controversial, but art is supposed to be controversial."
+    pw_art_exhibition.705.c: "Let us use this art as a reminder of our past struggles and as a call to action for our future."
+
+    pw_opinion_MSI_persecuted_sympathetic_artists: "Persecuted Sympathetic Artists"
+    pw_opinion_MSI_praised_sympathetic_artists: "Praised Sympathetic Artists"
+    pw_art_mod_cultural_censorship: "Cultural Censorship"
+    pw_art_mod_cultural_censorship_desc: "Any defense, praise or even critical reverence of any aspect of the MSI on our art shall be severely persecuted. The work of censors might hinder artistic production, but that is a sacrifice we are willing to make."
+    pw_art_mod_artistic_freedom: "Artistic Freedom"
+    pw_art_mod_artistic_freedom_desc: "We have stimulated the formation of a new wave of controversial art, that uses shock tactics - praise of the MSI among them - to boost their popularity and fame. The political impact of such movement is yet to be seen."
+    pw_art_mod_historical_perspective: "Historical Perspective"
+    pw_art_mod_historical_perspective_desc: "By promoting art that focus on our historical struggle with the MSI we were able to rekindle our sense of purpose and reinstating them as our eternal enemies."

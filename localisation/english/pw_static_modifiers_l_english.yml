@@ -791,6 +791,15 @@
     pw_art_mod_masterful_artificers: "Masterful Artificers"
     pw_art_mod_masterful_artificers_desc: "Incentive with exposition of crafts and friendly competition among artificers have greatly increased the value of the goods crafted and general interest on the art."
 
+    pw_art_mod_cultural_censorship: "Cultural Censorship"
+    pw_art_mod_cultural_censorship_desc: "Any defense, praise or even critical reverence of any aspect of the MSI on our art shall be severely persecuted. The work of censors might hinder artistic production, but that is a sacrifice we are willing to make."
+
+    pw_art_mod_artistic_freedom: "Artistic Freedom"
+    pw_art_mod_artistic_freedom_desc: "We have stimulated the formation of a new wave of controversial art, that uses shock tactics - praise of the MSI among them - to boost their popularity and fame. The political impact of such movement is yet to be seen."
+
+    pw_art_mod_historical_perspective: "Historical Perspective"
+    pw_art_mod_historical_perspective_desc: "By promoting art that focus on our historical struggle with the MSI we were able to rekindle our sense of purpose and reinstating them as our eternal enemies."
+
     #Peace Festivals Modifiers (Planet)
 
     pw_mod_FP_festivities_of_plenitude: "Festivities Of Plenitude"
