@@ -306,6 +306,9 @@
     pw_monument_order: "Monument of Order"
     pw_monument_order_desc: "A monument to reinforce our control not only of the planet, but of those who inhabit it."
 
+    pw_monument_remembrance: "Monument of Remembrance"
+    pw_monument_remembrance_desc: "A monument to honor, remember and study the fallen. Specially those lives and planets taken by the darkness of the void."
+
     pw_monument_synchronicity: "Monument of Synchronicity"
     pw_monument_synchronicity_desc: "A monument to show to the galaxy what we can accomplish when we work as one."
 
