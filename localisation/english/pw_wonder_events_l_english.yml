@@ -1095,6 +1095,7 @@
     pw_wonder.2402.b: "Begin protocol: Unearth."
     pw_wonder.2402.c: "The galaxy will see more worlds like this."
     pw_wonder.2402.d: "Behold the beautiful work of entropy."
+    pw_wonder.2402.e: "If only we could reanimate planets."
 
     #On mausoleum world change class -> remove modifier
     pw_wonder.2403.name: "The Rebirth of [THIS.GetName]"
