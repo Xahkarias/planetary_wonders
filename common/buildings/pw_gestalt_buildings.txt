@@ -1024,6 +1024,18 @@ pw_building_solipsist_debate_hall = {
 			exists = owner
 			owner = {
 				has_edict = pw_wonders_beyond_ambition
+				has_valid_civic = civic_hive_ascensionists
+			}
+		}
+		modifier = {
+			tech_cost_empire_size_mult = 0.10
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_natural_neural_network
 			}
 		}
@@ -1120,6 +1132,18 @@ pw_building_solipsist_debate_hall = {
 			exists = owner
 			owner = {
 				has_edict = pw_wonders_beyond_ambition
+				has_valid_civic = civic_hive_cordyceptic_drones
+			}
+		}
+		modifier = {
+			planet_pops_food_upkeep_mult = -0.10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
 				has_valid_civic = civic_hive_memorialist
 			}
 		}
@@ -1161,6 +1185,18 @@ pw_building_solipsist_debate_hall = {
 		}
 		modifier = {
 			pop_growth_speed = 0.05
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
+				has_valid_civic = civic_hive_stargazers
+			}
+		}
+		modifier = {
+			planet_resettlement_unemployed_mult = 1.00
 		}
 	}
 	triggered_planet_modifier = {
