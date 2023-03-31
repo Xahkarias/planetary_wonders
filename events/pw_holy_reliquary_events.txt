@@ -517,6 +517,71 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			#Eager explorers flavor event:
+			country_event = {
+				id = pw_holy_reliquary.102
+				days = 30
+			}
+		}
+	}
+}
+
+#Eager explorers flavor after just sanctifying
+country_event = {
+	id = pw_holy_reliquary.102
+	title = pw_holy_reliquary.102.name
+	desc = pw_holy_reliquary.102.desc
+	picture = GFX_evt_pw_stargazing_mirror
+	show_sound = event_mystic_reveal_light
+	is_triggered_only = yes
+
+	trigger = {
+		is_eager_explorer_empire = yes
+	}
+
+	#Remember the lessons of the past
+	option = {
+		name = pw_holy_reliquary.102.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = @tier2influencereward
+			min = @tier2influencemin
+			max = @tier2influencemax
+		}
+	}
+
+	#Explore the galaxy and uncover its secrets
+	option = {
+		name = pw_holy_reliquary.102.b
+
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier2researchreward
+			min = @tier2researchmin
+			max = @tier2researchmax
+		}
+	}
 }
 
 #Access:

@@ -25,13 +25,25 @@ pw_mod_wonder_built_recently_unity = {
 pw_mod_space_elevator_xenophile = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_ethic_xenophile_attraction_mult = 0.1
+	pop_ethic_xenophile_attraction_mult = 0.10
 }
 
 pw_mod_space_elevator_xenophobe = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_ethic_xenophobe_attraction_mult = 0.1
+	pop_ethic_xenophobe_attraction_mult = 0.10
+}
+
+pw_mod_space_elevator_explorers = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_government_ethic_attraction = 0.10
+}
+
+pw_mod_space_elevator_ladder_to_the_sky = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = @pw_icon_frame_green
+	planet_jobs_unity_produces_mult = 0.15
 }
 
 pw_mod_space_elevator_105_a = {

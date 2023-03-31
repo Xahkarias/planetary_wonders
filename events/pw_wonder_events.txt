@@ -67,11 +67,11 @@ country_event = {
 			}
 		}
 		add_monthly_resource_mult = {
-				resource = unity
-				value = @tier3unityreward
-				min = 500
-				max = @tier3unitymax
-			}
+			resource = unity
+			value = @tier3unityreward
+			min = 500
+			max = @tier3unitymax
+		}
 	}
 }
 
@@ -127,18 +127,6 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.101.a
-		if = {
-			limit = {
-				NOR = {
-					has_modifier = pw_mod_wonder_built_recently_happiness
-					has_modifier = pw_mod_wonder_built_recently_unity
-				}
-			}
-			add_modifier = {
-				modifier = pw_mod_wonder_built_recently_happiness
-				days = @pw_5years
-			}
-		}
 		add_modifier = {
 			modifier = pw_mod_space_elevator_xenophile
 			days = @pw_5years
@@ -148,6 +136,49 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.101.b
+		add_modifier = {
+			modifier = pw_mod_space_elevator_xenophobe
+			days = @pw_5years
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.101.c
+
+		trigger = {
+			owner = {
+				is_eager_explorer_empire = yes
+			}
+		}
+
+		add_modifier = {
+			modifier = pw_mod_space_elevator_explorers
+			days = @pw_5years
+			clear_on_owner_change = yes
+		}
+	}
+
+	option = {
+		name = pw_wonder.101.d
+
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_ascensionists
+					has_valid_civic = civic_corporate_ascensionists
+				}
+			}
+		}
+
+		add_modifier = {
+			modifier = pw_mod_space_elevator_ladder_to_the_sky
+			days = @pw_5years
+			clear_on_owner_change = yes
+		}
+	}
+
+	after = {
 		if = {
 			limit = {
 				NOR = {
@@ -159,11 +190,6 @@ planet_event = {
 				modifier = pw_mod_wonder_built_recently_happiness
 				days = @pw_5years
 			}
-		}
-		add_modifier = {
-			modifier = pw_mod_space_elevator_xenophobe
-			days = @pw_5years
-			clear_on_owner_change = yes
 		}
 	}
 }
@@ -177,6 +203,15 @@ planet_event = {
 	show_sound = event_construction
 	is_triggered_only = yes
 	location = this
+
+	trigger = {
+		NOT = {owner = {has_country_flag = pw_space_elevator_built }}
+		owner = { is_gestalt = yes }
+	}
+
+	immediate = {
+		owner = { set_country_flag = pw_space_elevator_built }
+	}
 
 	option = {
 		name = pw_wonder.102.a
@@ -210,13 +245,55 @@ planet_event = {
 		}
 	}
 
-	trigger = {
-		NOT = {owner = {has_country_flag = pw_space_elevator_built }}
-		owner = { is_gestalt = yes }
+	option = {
+		name = pw_wonder.102.c
+
+		trigger = {
+			owner = {
+				is_eager_explorer_empire = yes
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
 	}
 
-	immediate = {
-		owner = { set_country_flag = pw_space_elevator_built }
+	option = {
+		name = pw_wonder.102.d
+
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_hive_ascensionists
+					has_valid_civic = civic_machine_ascensionists
+				}
+			}
+		}
+
+		add_modifier = {
+			modifier = pw_mod_space_elevator_ladder_to_the_sky
+			days = @pw_5years
+			clear_on_owner_change = yes
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = pw_mod_wonder_built_recently_happiness
+					has_modifier = pw_mod_wonder_built_recently_unity
+				}
+			}
+			add_modifier = {
+				modifier = pw_mod_wonder_built_recently_unity
+				days = @pw_5years
+			}
+		}
 	}
 }
 
@@ -13041,6 +13118,29 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.2110.a
+	}
+
+	option = {
+		name = pw_wonder.2110.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_ascensionists
+					has_valid_civic = civic_corporate_ascensionists
+				}
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier1unityreward
+				min = @tier1unitymin
+				max = @tier1unitymax
+			}
+		}
+	}
+
+	after = {
 		add_modifier = {
 			modifier = pw_mod_living_spire_recently_build
 			days = @pw_2years
@@ -13074,6 +13174,26 @@ planet_event = {
 	option = {
 		name = pw_wonder.2111.a
 	}
+
+	option = {
+		name = pw_wonder.2111.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_ascensionists
+					has_valid_civic = civic_corporate_ascensionists
+				}
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier1unityreward
+				min = @tier1unitymin
+				max = @tier1unitymax
+			}
+		}
+	}
 }
 
 #On first time Living Spire 2 is built (Regular Empire)
@@ -13102,6 +13222,26 @@ planet_event = {
 	option = {
 		name = pw_wonder.2112.a
 	}
+
+	option = {
+		name = pw_wonder.2112.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_ascensionists
+					has_valid_civic = civic_corporate_ascensionists
+				}
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier1unityreward
+				min = @tier1unitymin
+				max = @tier1unitymax
+			}
+		}
+	}
 }
 
 #On first time Living Spire 3 is built (Regular Empire)
@@ -13129,6 +13269,29 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.2113.a
+	}
+
+	option = {
+		name = pw_wonder.2113.b
+		trigger = {
+			owner = {
+				OR = {
+					has_valid_civic = civic_ascensionists
+					has_valid_civic = civic_corporate_ascensionists
+				}
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier1unityreward
+				min = @tier1unitymin
+				max = @tier1unitymax
+			}
+		}
+	}
+
+	after = {
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.2120
@@ -13204,7 +13367,7 @@ planet_event = {
 	}
 }
 
-#When the LS is destroyed/replaced -> demolish Integrations
+#When the LS is destroyed/replaced -> remove designation
 planet_event = {
 	id = pw_wonder.2106
 	title = pw_wonder.2106.name
@@ -13476,8 +13639,8 @@ planet_event = {
 		custom_tooltip = pw_wonder.2120.tooltip
 		trigger = {
 			OR = {
-				owner = { has_valid_civic = civic_death_cult }
-				owner = { has_valid_civic = civic_death_cult_corporate }
+				is_reanimator = yes
+				is_death_cult_empire = yes
 			}
 		}
 		add_modifier = {

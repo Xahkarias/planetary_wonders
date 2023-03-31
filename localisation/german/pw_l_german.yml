@@ -4650,3 +4650,21 @@
     pw_monument_remembrance_desc: "A monument to honor, remember and study the fallen. Specially those lives and planets taken by the darkness of the void."
 
     pw_wonder.2402.e: "If only we could reanimate planets."
+
+    pw_holy_reliquary.102.name: "The Stars Gaze Unto Us"
+    pw_holy_reliquary.102.desc: "As [Root.Owner.GetName] gazes into the reflective surface of the Stargazing Mirror, memories of the early days of exploration come flooding back. The stars were always calling for us, yearning us to reach them. A question lingers: what did this relic truly mean to us in those early days, and what does it mean to us now?"
+    pw_holy_reliquary.102.a: "We must remember it's lessons of the past."
+    pw_holy_reliquary.102.b: "We must continue to explore the galaxy with this old guide."
+
+    pw_mod_space_elevator_explorers: "Space Elevator: Explores of the Unknown"
+    pw_mod_space_elevator_explorers_desc: "The Space Elevator opens the gate for further and further exploration of the galaxy."
+    pw_mod_space_elevator_ladder_to_the_sky: "Space Elevator: Ladder to the Skies"
+    pw_mod_space_elevator_ladder_to_the_sky_desc: "The Space Elevator allows for our literal ascension to levels beyond imagination."
+
+    pw_wonder.101.c: "We gazed at them and now we can easily reach them."
+    pw_wonder.101.d: "Our ladder to the skies!"
+    pw_wonder.102.c: "We gazed at them and now we can easily reach them."
+    pw_wonder.102.d: "We ascend!"
+    pw_wonder.2110.b: "The first step towards ascension."
+    pw_wonder.2112.b: "We reach higher and higher."
+    pw_wonder.2113.b: "The tower ascends above all!"

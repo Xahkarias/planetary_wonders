@@ -37,6 +37,12 @@
     pw_holy_reliquary.101.b: "Gaze upon the stars."
     pw_holy_reliquary.101.b.tooltip: "Incite our population to explore the stars and seek new places beyond their home planet."
 
+    #Eager explorers flavor after just sanctifying
+    pw_holy_reliquary.102.name: "The Stars Gaze Unto Us"
+    pw_holy_reliquary.102.desc: "As [Root.Owner.GetName] gazes into the reflective surface of the Stargazing Mirror, memories of the early days of exploration come flooding back. The stars were always calling for us, yearning us to reach them. A question lingers: what did this relic truly mean to us in those early days, and what does it mean to us now?"
+    pw_holy_reliquary.102.a: "We must remember it's lessons of the past."
+    pw_holy_reliquary.102.b: "We must continue to explore the galaxy with this old guide."
+
     #Access Chamber:
     pw_holy_reliquary.105.name: "Cosmovision"
     pw_holy_reliquary.105.desc: "The chamber of the $pw_holy_reliquary.stargazing_mirror$ draws the eyes of the visitors to the celling, where a skylight invites all to look trough the Mirror into the dark universe. It also holds the legend of the artifact in stained glass:\n\nDepictions of our first planetary expansions, guided by the stars; of past revolutions and evolutions, where meditation and certainty were paramount; and finally of our arrival at the stars themselves.\n\nThe Mirror itself consist of a large bowl made of bronze, detailed with stripes of gold on the outside and trees of silver on the inside. The water it holds is usually blessed and allow us to gaze at the skies in pursue of a path thought the stars, or to see ourselves reflected in the water and search for answers inward.\n\nHere we may cast our gaze elsewhere, in search of answers in unseen places."

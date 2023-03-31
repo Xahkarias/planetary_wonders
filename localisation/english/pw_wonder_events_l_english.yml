@@ -9,11 +9,15 @@
     pw_wonder.101.desc: "A great spire launches for the clouds of [ROOT.GetName] ending only on its outer atmosphere. Already the platforms of our recently built Space Elevator run up and down, carrying immigrants and emigrants; exports and imports.\nThe city sized launch complex provides a variety of jobs in transportation and logistics, but it also caries some concern on the surveillance of our planet borders.\n\nNevertheless it stands as monument to space logistics."
     pw_wonder.101.a: "We welcome the galaxy here!"
     pw_wonder.101.b: "Increase migration checks, just to to be sure."
+    pw_wonder.101.c: "We gazed at them and now we can easily reach them."
+    pw_wonder.101.d: "Our ladder to the skies!"
     #First Time Complete Space Elevator (Gestalt)
     pw_wonder.102.name: "To The Stars We Rise As One"
     pw_wonder.102.desc: "A great spire launches for the clouds of [ROOT.GetName] ending only on its outer atmosphere. Already the platforms of our recently built Space Elevator run up and down, carrying drones and resources, output and input.\nThe district sized launch complex demands jobs in transportation and logistics that should keep our drones occupied. It also presents the minor concern that it is now easier for deviant drones to infiltrate our borders or to flee them.\n\nNevertheless it stands as monument to space logistics."
     pw_wonder.102.a: "We move trough the galaxy as We please."
     pw_wonder.102.b: "Every resource we need will be readily available here."
+    pw_wonder.102.c: "We gazed at them and now we can easily reach them."
+    pw_wonder.102.d: "We ascend!"
     #Seize unregulated goods
     pw_wonder.104.name: "FBES"
     pw_wonder.104.desc: "Our Space Elevator in [ROOT.GetName] is fully operational and many goods are taken to and from the planet. However, our security offices have apprehended a large shipment of novelty Flavour Based Entertainment Systems which every household in [ROOT.GetName] desires. The documents of the goods seem to be conflicting and there are reports of a similar cargo being hijacked from our borders. The transporting company, which has a regulated registry, is offering some great compensation if we \"let this one slide\"."
@@ -988,6 +992,7 @@
     pw_wonder.2110.name: "A Strong Foundation"
     pw_wonder.2110.desc: "The first step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Every structure that aims to reach heights of this scale needs a solid foundation; and the ones we have built are the deepest and strongest we have ever planted. The alloy bones of the Spire will stand on the depths of [THIS.GetName] and support its skies.\n\nWith a strong base, we can now continue to build this Living Wonder."
     pw_wonder.2110.a: "Let the construction continue."
+    pw_wonder.2110.b: "The first step towards ascension."
 
     #Complete Living Spire 1
     pw_message_living_spire_1_complete: "$pw_building_living_spire_1$ has been constructed on $PLANET|Y$. The construction may continue."
@@ -995,6 +1000,7 @@
     pw_wonder.2111.name: "A Space for Life"
     pw_wonder.2111.desc: "The second step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Already many may call this massive - yet incomplete - structure their home. Rooms upon rooms, connected by vertical plazas, service corridors and supplied with the basic needs of modern life, can now house those who wish to come to live at the Spire.\n\nThere is much still to build, many services to be provided here and many lives to be made whole."
     pw_wonder.2111.a: "Let the construction continue."
+    pw_wonder.2111.a: "Step by step we climb."
 
     #Complete Living Spire 2
     pw_message_living_spire_2_complete: "$pw_building_living_spire_2$ has been constructed on $PLANET|Y$. The construction may continue."
@@ -1002,6 +1008,7 @@
     pw_wonder.2112.name: "A Place to Call Home"
     pw_wonder.2112.desc: "The third step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Work facilities have been constructed, everything that the inhabitants of the Spire need shall be provided to them: food and goods, sanitation, entertainment, education, culture, exercise, security and political power.\n\nNow only the final details remain to be added, the final spires and decoration needed to consolidate the image of the Living Spire."
     pw_wonder.2112.a: "Let the construction continue."
+    pw_wonder.2112.b: "We reach higher and higher."
 
     #Complete Living Spire 3
     pw_message_living_spire_3_complete: "$pw_building_living_spire_3$ has been completed on $PLANET|Y$."
@@ -1009,6 +1016,7 @@
     pw_wonder.2113.name: "Housing Zenith"
     pw_wonder.2113.desc: "Finally, the $pw_living_spire$ on [THIS.GetName] reaches its zenith and can be proclaimed complete. The corridors and plazas already are bustling with the new inhabitants looking for their new homes. All the details are in place, all of the infrastructure is working, all is in harmony."
     pw_wonder.2113.a: "The great vertical city is completed!"
+    pw_wonder.2113.b: "The tower ascends above all!"
     #Second Time onwards Complete Living Spire (Regular Empire)
     pw_wonder.2114.name: "Another Reaches Zenith"
     pw_wonder.2114.desc: "Finally, another $pw_living_spire$, this one on [THIS.GetName], reaches its zenith as its sisters and can be proclaimed complete. The corridors and plazas already are bustling with the new inhabitants looking for their new homes. All the details are in place, all of the infrastructure is working, all is in harmony."
