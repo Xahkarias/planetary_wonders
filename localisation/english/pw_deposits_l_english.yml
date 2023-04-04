@@ -247,3 +247,6 @@
 
     pw_d_integration_chamber_of_reflection: "$pw_conduit_of_unity.integration$ Chamber Of Reflection"
     pw_d_integration_chamber_of_reflection_desc: "Fresh perspectives are always welcome on the $pw_solipsist_debate_hall$. Here drones from this planet can gather and contribute to any ongoing discussion."
+
+    pw_d_integration_stargazing_orrery: "$pw_conduit_of_unity.integration$ Stargazing Orrery"
+    pw_d_integration_stargazing_orrery_desc: "Even after leaving our home planet never stopped gazing at the start, eagerly wondering what could be just beyond our grasp. At this orrery we can continue to observe and elaborate on our exploration of the galaxy."

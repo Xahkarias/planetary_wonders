@@ -356,3 +356,6 @@
 
     pw_decision_cu_chamber_of_reflection: "$pw_decision_cu.integrate$ Chamber Of Reflection"
     pw_decision_cu_chamber_of_reflection_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate chambers where drones from this planet can gather and contribute to any ongoing discussion on the $pw_solipsist_debate_hall$."
+
+    pw_decision_cu_stargazing_orrery: "$pw_decision_cu.integrate$ Stargazing Orrery"
+    pw_decision_cu_stargazing_orrery_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate an orrery where drones continue to gaze at the distant stars and push our exploration further."

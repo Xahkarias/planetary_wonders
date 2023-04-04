@@ -4668,3 +4668,9 @@
     pw_wonder.2110.b: "The first step towards ascension."
     pw_wonder.2112.b: "We reach higher and higher."
     pw_wonder.2113.b: "The tower ascends above all!"
+
+    pw_decision_cu_stargazing_orrery: "$pw_decision_cu.integrate$ Stargazing Orrery"
+    pw_decision_cu_stargazing_orrery_desc: "Use the $pw_conduit_of_unity$ infrastructure to integrate an orrery where drones continue to gaze at the distant stars and push our exploration further."
+
+    pw_d_integration_stargazing_orrery: "$pw_conduit_of_unity.integration$ Stargazing Orrery"
+    pw_d_integration_stargazing_orrery_desc: "Even after leaving our home planet never stopped gazing at the start, eagerly wondering what could be just beyond our grasp. At this orrery we can continue to observe and elaborate on our exploration of the galaxy."
