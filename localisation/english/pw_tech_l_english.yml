@@ -525,6 +525,9 @@
     pw_enigma_tech_simulations_within_simulations: "$pw_enigma_tech$ Simulations Within Simulations"
     pw_enigma_tech_simulations_within_simulations_desc: "When we were able to perform perfect simulations of the galaxy, our analogue evaluators were quick to star their own simulations within. Inside these simulations, only the Enigma Engine can guide us back into reality, as we know it."
 
+    pw_enigma_tech_sophistication_of_simplicity: "$pw_enigma_tech$ Sophistication of Simplicity"
+    pw_enigma_tech_sophistication_of_simplicity_desc: "Following our primary directive of exploration protocols we need to continue to observe the pre-FTL species in order to understanding the societal and technological sophistication that the simplicity of these societies hide."
+
     ##Research Wonders Chain Techs
     pw_research_experiments: "§EStudy:§!"
     #Physics

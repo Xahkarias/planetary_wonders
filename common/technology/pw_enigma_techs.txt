@@ -1888,3 +1888,82 @@ pw_enigma_tech_simulations_within_simulations = {
 		}
 	}
 }
+
+pw_enigma_tech_sophistication_of_simplicity = {
+	area = society
+	category = { new_worlds }
+	cost = @pw_enigma_tech_cost_1
+	tier = 5
+	prerequisites = {
+		pw_tech_metaphysical_singularity
+	}
+	weight = @tier5weight2
+	is_rare = yes
+
+	potential = {
+		any_owned_planet = {
+			has_active_building = pw_building_enigma_engine
+		}
+		has_valid_civic = civic_machine_exploration_protocol
+		count_observed_pre_ftl_within_border = {
+			count > 0
+		}
+	}
+
+	modifier = {
+		station_observers_physics_research_produces_add = 2
+		station_observers_society_research_produces_add = 2
+		station_observers_engineering_research_produces_add = 2
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = value:tech_weight_likelihood
+			OR = {
+				research_leader = {
+					area = society
+					has_trait = leader_trait_expertise_new_worlds
+				}
+				research_leader = {
+					area = society
+					has_trait = leader_trait_curator
+				}
+				research_leader = {
+					area = society
+					has_trait = leader_trait_maniacal
+				}
+			}
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = pw_enigma_tech_atomic_clock_synchronization }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @pw_tech_ai_weight
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_new_worlds
+			}
+		}
+	}
+}
