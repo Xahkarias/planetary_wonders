@@ -7556,7 +7556,7 @@ country_event = {
 	option = {
 		name = pw_art_exhibition.705.a
 		add_modifier = {
-			modifier = pw_art_mod_masterful_artificers
+			modifier = pw_art_mod_cultural_censorship
 			days = @pw_5years
 		}
 

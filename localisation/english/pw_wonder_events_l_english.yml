@@ -1000,7 +1000,7 @@
     pw_wonder.2111.name: "A Space for Life"
     pw_wonder.2111.desc: "The second step in the construction of the vertical city that is the $pw_living_spire$ is now concluded. Already many may call this massive - yet incomplete - structure their home. Rooms upon rooms, connected by vertical plazas, service corridors and supplied with the basic needs of modern life, can now house those who wish to come to live at the Spire.\n\nThere is much still to build, many services to be provided here and many lives to be made whole."
     pw_wonder.2111.a: "Let the construction continue."
-    pw_wonder.2111.a: "Step by step we climb."
+    pw_wonder.2111.b: "Step by step we climb."
 
     #Complete Living Spire 2
     pw_message_living_spire_2_complete: "$pw_building_living_spire_2$ has been constructed on $PLANET|Y$. The construction may continue."

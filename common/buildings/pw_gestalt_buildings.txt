@@ -1019,7 +1019,7 @@ pw_building_solipsist_debate_hall = {
 			job_synapse_drone_add = 1
 		}
 	}
-	triggered_planet_modifier = {
+	triggered_country_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -1136,7 +1136,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			planet_pops_food_upkeep_mult = -0.10
+			planet_pops_organics_food_upkeep_mult = -0.10
 		}
 	}
 	triggered_planet_modifier = {

@@ -253,12 +253,13 @@ planet_event = {
 				is_eager_explorer_empire = yes
 			}
 		}
-
-		add_monthly_resource_mult = {
-			resource = unity
-			value = @tier2unityreward
-			min = @tier2unitymin
-			max = @tier2unitymax
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
 		}
 	}
 
@@ -13638,9 +13639,11 @@ planet_event = {
 		name = pw_wonder.2120.death
 		custom_tooltip = pw_wonder.2120.tooltip
 		trigger = {
-			OR = {
-				is_reanimator = yes
-				is_death_cult_empire = yes
+			owner = {
+				OR = {
+					is_reanimator = yes
+					is_death_cult_empire = yes
+				}
 			}
 		}
 		add_modifier = {

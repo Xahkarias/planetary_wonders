@@ -9852,12 +9852,9 @@ pw_tech_worldly_mausoleums = {
 	potential = {
 		OR = {
 			#Has any of the civics:
-			has_valid_civic = civic_memorialist
-			has_valid_civic = civic_hive_memorialist
-			has_valid_civic = civic_machine_memorialist
-			has_valid_civic = civic_death_cult
-			has_valid_civic = civic_death_cult_corporate
-			has_valid_civic = civic_reanimated_armies
+			is_memorialist_empire = yes
+			is_death_cult_empire = yes
+			is_reanimator = yes
 
 			#Has a tomb world:
 			any_owned_planet = {

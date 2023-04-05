@@ -32,6 +32,7 @@ pw_monument_base = {
 		pw_monument_order
 		pw_monument_synchronicity
 		pw_monument_builders
+		pw_monument_remembrance
 	}
 
 	resources = {
@@ -591,7 +592,7 @@ pw_monument_remembrance = {
 		is_homeworld = yes
 		owner = {
 			OR = {
-				is_memorialist_empire = yes 
+				is_memorialist_empire = yes
 				has_origin = origin_fear_of_the_dark
 			}
 		}
@@ -602,15 +603,6 @@ pw_monument_remembrance = {
 
 	allow = {
 		has_upgraded_capital = yes
-	}
-
-	destroy_trigger = {
-		owner = {
-			NOR = {
-				is_memorialist_empire = yes 
-				has_origin = origin_fear_of_the_dark
-			}
-		}
 	}
 
 	resources = {

@@ -2186,7 +2186,7 @@ pw_d_integration_stargazing_orrery = {
 
 	planet_modifier = {
 		planet_sensor_range_add = 1
-		planet_jobs_unity_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.05
 		planet_jobs_physics_research_produces_mult = 0.05
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_jobs_engineering_research_produces_mult = 0.05
