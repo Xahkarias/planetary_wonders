@@ -14,7 +14,7 @@ pw_building_pavilion_of_wonders = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -461,7 +461,7 @@ pw_building_fair_of_worlds = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -1083,7 +1083,7 @@ pw_building_museum_of_the_grotesque = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -1766,7 +1766,7 @@ pw_building_holy_reliquary = {
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = resort_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -2130,14 +2130,14 @@ pw_building_unhallowed_necropolis = {
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = resort_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
 
 	allow = {
 		OR = {
-			is_planet_class = pc_nuked
+			merg_is_nuked = yes
 			is_planet_class = pc_relic
 			owner = {
 				#Has any of the civics:
@@ -2213,7 +2213,7 @@ pw_building_unhallowed_necropolis = {
 
 	destroy_trigger = {
 		NOR = {
-			is_planet_class = pc_nuked
+			merg_is_nuked = yes
 			is_planet_class = pc_relic
 			owner = {
 				OR = {
@@ -2291,7 +2291,7 @@ pw_building_unhallowed_necropolis = {
 			exists = owner
 			owner = { is_gestalt = no }
 			OR = {
-				is_planet_class = pc_nuked
+				merg_is_nuked = yes
 				is_planet_class = pc_relic
 			}
 		}
@@ -2396,7 +2396,7 @@ pw_building_unhallowed_necropolis = {
 			exists = owner
 			owner = { is_gestalt = yes }
 			OR = {
-				is_planet_class = pc_nuked
+				merg_is_nuked = yes
 				is_planet_class = pc_relic
 			}
 		}
@@ -2537,7 +2537,7 @@ pw_building_unhallowed_necropolis = {
 			exists = owner
 			owner = { is_gestalt = no }
 			OR = {
-				is_planet_class = pc_nuked
+				merg_is_nuked = yes
 				is_planet_class = pc_relic
 			}
 		}
@@ -2550,7 +2550,7 @@ pw_building_unhallowed_necropolis = {
 			exists = owner
 			owner = { is_gestalt = yes }
 			OR = {
-				is_planet_class = pc_nuked
+				merg_is_nuked = yes
 				is_planet_class = pc_relic
 			}
 		}
@@ -2705,7 +2705,7 @@ pw_building_unhallowed_necropolis = {
 		modifier = {
 			factor = 5
 			OR = {
-				is_planet_class = pc_nuked
+				merg_is_nuked = yes
 				is_planet_class = pc_relic
 			}
 		}

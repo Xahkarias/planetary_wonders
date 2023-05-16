@@ -1367,8 +1367,8 @@ country_event = {
 		random_controlled_planet = {
 			limit = {
 				OR = {
-					is_planet_class = pc_barren
-					is_planet_class = pc_barren_cold
+					merg_is_barren = yes
+					merg_is_barren_cold = yes
 				}
 				has_deposit = no
 				NOT = { has_modifier = terraforming_candidate }
@@ -3288,7 +3288,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						ruler = {
-							has_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+							has_trait = pw_leader_trait_ruler_codex_of_past_ages
 						}
 					}
 					country_event = { id = pw_holy_reliquary.710 }
@@ -3416,7 +3416,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						ruler = {
-							has_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+							has_trait = pw_leader_trait_ruler_codex_of_past_ages
 						}
 					}
 					country_event = { id = pw_holy_reliquary.710 }
@@ -3538,7 +3538,7 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.710.a
 		ruler = {
-			add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+			add_trait = pw_leader_trait_ruler_codex_of_past_ages
 			add_experience = 100
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3564,7 +3564,7 @@ country_event = {
 			add_trait = pw_leader_trait_governor_codex_of_past_ages
 			add_experience = 100
 			hidden_effect = {
-				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = pw_leader_trait_ruler_codex_of_past_ages
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3590,7 +3590,7 @@ country_event = {
 			add_trait = pw_leader_trait_scientist_codex_of_past_ages
 			add_experience = 100
 			hidden_effect = {
-				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = pw_leader_trait_ruler_codex_of_past_ages
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3616,7 +3616,7 @@ country_event = {
 			add_trait = pw_leader_trait_admiral_codex_of_past_ages
 			add_experience = 100
 			hidden_effect = {
-				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = pw_leader_trait_ruler_codex_of_past_ages
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3642,7 +3642,7 @@ country_event = {
 			add_trait = pw_leader_trait_general_codex_of_past_ages
 			add_experience = 100
 			hidden_effect = {
-				add_ruler_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = pw_leader_trait_ruler_codex_of_past_ages
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes

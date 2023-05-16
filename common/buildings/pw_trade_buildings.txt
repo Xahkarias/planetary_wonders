@@ -12,8 +12,8 @@ pw_building_space_elevator = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 	}
 
 	allow = {

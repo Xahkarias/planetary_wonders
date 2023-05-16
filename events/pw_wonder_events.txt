@@ -703,7 +703,7 @@ planet_event = {
 	location = this
 
 	trigger = {
-		is_planet_class = pc_habitat
+		merg_is_habitat = yes
 		exists = orbit
 		orbit = {
 			has_active_building = pw_building_space_elevator
@@ -1265,7 +1265,7 @@ planet_event = {
 
 	immediate = {
 		if = {
-			limit = { is_planet_class = pc_habitat }
+			limit = { merg_is_habitat = yes }
 			create_message = {
 				type = PW_WONDER_COMPLETED
 				localization = pw_message_secluded_sector_complete
@@ -1303,13 +1303,13 @@ planet_event = {
 	title = pw_wonder.301.name
 	desc = {
 		trigger = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 		}
 		text = pw_wonder.301.desc.planet
 	}
 	desc = {
 		trigger = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		text = pw_wonder.301.desc.habitat
 	}
@@ -1432,13 +1432,13 @@ planet_event = {
 	title = pw_wonder.302.name
 	desc = {
 		trigger = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 		}
 		text = pw_wonder.302.desc.planet
 	}
 	desc = {
 		trigger = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		text = pw_wonder.302.desc.habitat
 	}
@@ -1671,7 +1671,7 @@ planet_event = {
 
 	immediate = {
 		if = {
-			limit = { is_planet_class = pc_habitat }
+			limit = { merg_is_habitat = yes }
 			create_message = {
 				type = PW_WONDER_COMPLETED
 				localization = pw_message_abyssal_crater_test_site_habitat_complete
@@ -1709,13 +1709,13 @@ planet_event = {
 	title = pw_wonder.401.name
 	desc = {
 		trigger = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 		}
 		text = pw_wonder.401.desc.planet
 	}
 	desc = {
 		trigger = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		text = pw_wonder.401.desc.habitat
 	}
@@ -1799,13 +1799,13 @@ planet_event = {
 	title = pw_wonder.402.name
 	desc = {
 		trigger = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 		}
 		text = pw_wonder.402.desc.planet
 	}
 	desc = {
 		trigger = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		text = pw_wonder.402.desc.habitat
 	}
@@ -2783,8 +2783,8 @@ planet_event = {
 				modifier = {
 					factor = 0
 					OR = {
-						is_planet_class = pc_machine
-						is_planet_class = pc_hive
+						merg_is_machine_world = yes
+						merg_is_hive_world = yes
 					}
 				}
 				planet_event = {
@@ -3262,7 +3262,7 @@ planet_event = {
 			10 = {
 				modifier = {
 					factor = 0 #Hive planets can't have Natural Beauty mod.
-					is_planet_class = pc_hive
+					merg_is_hive_world = yes
 				}
 				planet_event = {
 					id = pw_wonder.708
@@ -5701,7 +5701,7 @@ country_event = {
 		any_country = {
 			any_neighbor_country = {
 				is_ai = yes
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_gestalt = no
 				is_homicidal = no
 				has_communications = root
@@ -5718,7 +5718,7 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				is_ai = yes
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_gestalt = no
 				is_homicidal = no
 				has_communications = root
@@ -5971,9 +5971,9 @@ country_event = {
 			has_active_building = pw_building_enigma_engine
 		}
 		any_country = {
-			is_country_type = fallen_empire
+			merg_is_fallen_empire = yes
 			is_at_war = no
-			has_authority = auth_machine_intelligence
+			is_machine_empire = yes
 			has_communications = root
 			opinion = {
 				who = this
@@ -5985,9 +5985,9 @@ country_event = {
 	immediate = {
 		random_country = {
 			limit = {
-				is_country_type = fallen_empire
+				merg_is_fallen_empire = yes
 				is_at_war = no
-				has_authority = auth_machine_intelligence
+				is_machine_empire = yes
 				has_communications = root
 				opinion = {
 					who = this
@@ -6412,7 +6412,7 @@ country_event = {
 			has_active_building = pw_building_solipsist_debate_hall
 		}
 		any_country = {
-			is_country_type = fallen_empire
+			merg_is_fallen_empire = yes
 			is_at_war = no
 			OR = {
 				has_ethic = ethic_fanatic_spiritualist
@@ -6430,14 +6430,14 @@ country_event = {
 	immediate = {
 		random_country = {
 			limit = {
-				is_country_type = fallen_empire
+				merg_is_fallen_empire = yes
 				is_at_war = no
 				OR = {
 					has_ethic = ethic_fanatic_spiritualist
 					has_ethic = ethic_fanatic_xenophile
 					has_ethic = ethic_fanatic_materialist
 				}
-				NOT = { has_authority = auth_machine_intelligence }
+				NOT = { is_machine_empire = yes }
 				has_communications = root
 				opinion = {
 					who = this
@@ -8549,7 +8549,7 @@ planet_event = {
 					OR = {
 						owner = { has_country_flag = pw_industrial_hearth_capital }
 						owner.capital_scope = {
-							is_planet_class = pc_ringworld_habitable
+							merg_is_hab_ringworld = yes
 						}
 					}
 				}
@@ -9857,13 +9857,13 @@ planet_event = {
 	title = pw_wonder.1701.name
 	desc = {
 		trigger = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 		}
 		text = pw_wonder.1701.desc
 	}
 	desc = {
 		trigger = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		text = pw_wonder.1701.desc.habitat
 	}
@@ -11347,7 +11347,7 @@ planet_event = {
 		name = pw_wonder.1810.b
 		trigger = {
 			ruler = {
-				NOT = { has_ruler_trait = trait_ruler_champion_of_the_people }
+				NOT = { has_trait = trait_ruler_champion_of_the_people }
 			}
 		}
 		allow = {
@@ -14685,7 +14685,7 @@ planet_event = {
 
 	trigger = {
 		NOR = {
-			is_planet_class = pc_nuked
+			merg_is_nuked = yes
 			is_planet_class = pc_relic
 		}
 		OR = {

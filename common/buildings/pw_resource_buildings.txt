@@ -12,9 +12,9 @@ pw_building_erebus_project = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_hab_ringworld = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			AND = {
 				owner = { has_ascension_perk = ap_voidborn }
 				has_planet_flag = mining_habitat
@@ -25,7 +25,7 @@ pw_building_erebus_project = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -43,7 +43,7 @@ pw_building_erebus_project = {
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -337,9 +337,9 @@ pw_building_erebus_fracking_plant = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_hab_ringworld = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			AND = {
 				owner = { has_ascension_perk = ap_voidborn }
 				has_planet_flag = mining_habitat
@@ -350,7 +350,7 @@ pw_building_erebus_fracking_plant = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -365,7 +365,7 @@ pw_building_erebus_fracking_plant = {
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 
 		# Empire Unique:
@@ -706,9 +706,9 @@ pw_building_helios_tower = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_hab_ringworld = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			AND = {
 				owner = { has_ascension_perk = ap_voidborn }
 				OR = {
@@ -722,7 +722,7 @@ pw_building_helios_tower = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -740,7 +740,7 @@ pw_building_helios_tower = {
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -1025,9 +1025,9 @@ pw_building_helios_translucent_obelisk = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_hab_ringworld = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			AND = {
 				owner = { has_ascension_perk = ap_voidborn }
 				OR = {
@@ -1041,7 +1041,7 @@ pw_building_helios_translucent_obelisk = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -1056,7 +1056,7 @@ pw_building_helios_translucent_obelisk = {
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 
 		# Empire Unique:
@@ -1388,15 +1388,15 @@ pw_building_demetrius_fields = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { is_planet_class = pc_machine }
-		NOT = { is_planet_class = pc_habitat }
+		NOT = { merg_is_machine_world = yes }
+		NOT = { merg_is_habitat = yes }
 	}
 
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			is_planet_class = pc_city
-			is_planet_class = pc_machine
+			merg_is_arcology = yes
+			merg_is_machine_world = yes
 		}
 	}
 
@@ -1414,7 +1414,7 @@ pw_building_demetrius_fields = {
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 	}
 
@@ -1774,15 +1774,15 @@ pw_building_demetrius_chemical_garden = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { is_planet_class = pc_machine }
-		NOT = { is_planet_class = pc_habitat }
+		NOT = { merg_is_machine_world = yes }
+		NOT = { merg_is_habitat = yes }
 	}
 
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			is_planet_class = pc_city
-			is_planet_class = pc_machine
+			merg_is_arcology = yes
+			merg_is_machine_world = yes
 		}
 	}
 
@@ -1797,7 +1797,7 @@ pw_building_demetrius_chemical_garden = {
 		NOR = {
 			has_modifier = pw_mod_gaia_unstable_weather
 			has_modifier = resort_colony
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 
 		# Empire Unique:

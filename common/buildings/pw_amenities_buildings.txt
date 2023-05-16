@@ -14,7 +14,7 @@ pw_building_transplanetary_logistics_network = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = penal_colony }
-		NOT = { is_planet_class = pc_habitat }
+		NOT = { merg_is_habitat = yes }
 	}
 
 	allow = {
@@ -310,7 +310,7 @@ pw_building_transhabitat_logistics_network = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = penal_colony }
-		is_planet_class = pc_habitat
+		merg_is_habitat = yes
 	}
 
 	allow = {
@@ -602,7 +602,7 @@ pw_building_festival_plaza = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -1364,8 +1364,8 @@ pw_building_blossoming_preserve = {
 
 	allow = {
 		OR = {
-			is_planet_class = pc_gaia
-			is_planet_class = pc_hive
+			merg_is_gaia = yes
+			merg_is_hive_world = yes
 		}
 
 		#Generic triggers
@@ -1424,8 +1424,8 @@ pw_building_blossoming_preserve = {
 
 	destroy_trigger = {
 		NOR = {
-			is_planet_class = pc_gaia
-			is_planet_class = pc_hive
+			merg_is_gaia = yes
+			merg_is_hive_world = yes
 		}
 	}
 
@@ -1482,8 +1482,8 @@ pw_building_blossoming_preserve = {
 			exists = owner
 			owner = { is_gestalt = no }
 			OR = {
-				is_planet_class = pc_gaia
-				is_planet_class = pc_hive
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
 			}
 		}
 		modifier = {
@@ -1498,8 +1498,8 @@ pw_building_blossoming_preserve = {
 			exists = owner
 			owner = { is_gestalt = yes }
 			OR = {
-				is_planet_class = pc_gaia
-				is_planet_class = pc_hive
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
 			}
 		}
 		modifier = {
@@ -1513,8 +1513,8 @@ pw_building_blossoming_preserve = {
 			exists = owner
 			owner = { is_gestalt = yes }
 			OR = {
-				is_planet_class = pc_gaia
-				is_planet_class = pc_hive
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
 			}
 		}
 		modifier = {
@@ -1574,8 +1574,8 @@ pw_building_blossoming_preserve = {
 			exists = owner
 			owner = { is_gestalt = no }
 			OR = {
-				is_planet_class = pc_gaia
-				is_planet_class = pc_hive
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
 			}
 		}
 		text = job_pw_preserver_effect_desc
@@ -1587,8 +1587,8 @@ pw_building_blossoming_preserve = {
 			exists = owner
 			owner = { is_gestalt = yes }
 			OR = {
-				is_planet_class = pc_gaia
-				is_planet_class = pc_hive
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
 			}
 		}
 		text = job_pw_preserver_drone_effect_desc

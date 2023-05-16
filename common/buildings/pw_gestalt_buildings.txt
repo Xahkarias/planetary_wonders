@@ -20,7 +20,7 @@ pw_building_conduit_of_unity_0 = {
 		exists = owner
 		owner = { is_gestalt = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -170,7 +170,7 @@ pw_building_conduit_of_unity_1 = {
 		exists = owner
 		owner = { is_gestalt = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -257,10 +257,10 @@ pw_building_conduit_of_unity_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			NOR = {
-				is_planet_class = pc_ringworld_habitable
-				is_planet_class = pc_habitat
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_machine_world = yes
+				merg_is_hive_world = yes
 			}
 		}
 		modifier = {
@@ -272,7 +272,7 @@ pw_building_conduit_of_unity_1 = {
 	#Habitat
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		modifier = {
 			planet_housing_add = 6
@@ -284,8 +284,8 @@ pw_building_conduit_of_unity_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_hive
+				merg_is_machine_world = yes
+				merg_is_hive_world = yes
 			}
 		}
 		modifier = {
@@ -297,7 +297,7 @@ pw_building_conduit_of_unity_1 = {
 	#Ring World
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_ringworld_habitable
+			merg_is_hab_ringworld = yes
 		}
 		modifier = {
 			planet_housing_add = 24
@@ -607,7 +607,7 @@ pw_building_enigma_engine = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 		OR = {
 			is_capital = yes
-			is_planet_class = pc_machine
+			merg_is_machine_world = yes
 		}
 
 		# Empire Unique:
@@ -617,7 +617,7 @@ pw_building_enigma_engine = {
 	destroy_trigger = {
 		NOR = {
 			is_capital = yes
-			is_planet_class = pc_machine
+			merg_is_machine_world = yes
 		}
 	}
 
@@ -827,7 +827,7 @@ pw_building_solipsist_debate_hall = {
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 		OR = {
 			is_capital = yes
-			is_planet_class = pc_hive
+			merg_is_hive_world = yes
 		}
 
 		# Empire Unique:
@@ -837,7 +837,7 @@ pw_building_solipsist_debate_hall = {
 	destroy_trigger = {
 		NOR = {
 			is_capital = yes
-			is_planet_class = pc_hive
+			merg_is_hive_world = yes
 		}
 	}
 
@@ -1330,8 +1330,8 @@ pw_building_feasting_grounds = {
 		owner = {
 			is_hive_empire = yes
 		}
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 	}
 
 	allow = {
@@ -1386,7 +1386,7 @@ pw_building_feasting_grounds = {
 					OR = {
 						has_designation = col_capital_hive
 						has_designation = col_fortress
-						is_planet_class = pc_hive
+						merg_is_hive_world = yes
 					}
 				}
 			}
@@ -1419,7 +1419,7 @@ pw_building_feasting_grounds = {
 					OR = {
 						has_designation = col_capital_hive
 						has_designation = col_fortress
-						is_planet_class = pc_hive
+						merg_is_hive_world = yes
 					}
 				}
 			}

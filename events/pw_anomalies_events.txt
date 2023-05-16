@@ -1343,7 +1343,7 @@ ship_event = {
 		name = pw_anomaly.181.a
 		owner = {
 			ruler = {
-				add_ruler_trait = pw_leader_trait_ruler_millenary_throne
+				add_trait = pw_leader_trait_ruler_millenary_throne
 			}
 			add_monthly_resource_mult = {
 				resource = society_research

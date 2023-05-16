@@ -19,7 +19,7 @@ pw_building_galactic_model = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -427,7 +427,7 @@ pw_building_aligned_galactic_model = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -846,7 +846,7 @@ pw_building_panopticon = {
 		exists = owner
 		owner = { is_regular_empire = yes }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -1343,7 +1343,7 @@ pw_building_forbidden_city = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}

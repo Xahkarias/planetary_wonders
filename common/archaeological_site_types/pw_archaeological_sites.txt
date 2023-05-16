@@ -8,9 +8,9 @@ pw_site_drained_paradise = {
 		modifier = {
 			add = 100
 			OR = {
-				is_planet_class = pc_barren
-				is_planet_class = pc_barren_cold
-				is_planet_class = pc_frozen
+				merg_is_barren = yes
+				merg_is_barren_cold = yes
+				merg_is_frozen = yes
 				is_planet_class = pc_toxic
 			}
 		}

@@ -21,7 +21,7 @@ pw_building_living_spire_0 = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -168,7 +168,7 @@ pw_building_living_spire_1 = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -259,9 +259,9 @@ pw_building_living_spire_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			NOR = {
-				is_planet_class = pc_ringworld_habitable
-				is_planet_class = pc_habitat
-				is_planet_class = pc_city
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_arcology = yes
 			}
 		}
 		modifier = {
@@ -273,7 +273,7 @@ pw_building_living_spire_1 = {
 	#Habitat
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		modifier = {
 			planet_housing_add = 4
@@ -284,7 +284,7 @@ pw_building_living_spire_1 = {
 	#Ecu
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 		modifier = {
 			planet_housing_add = 10
@@ -295,7 +295,7 @@ pw_building_living_spire_1 = {
 	#Ring World
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_ringworld_habitable
+			merg_is_hab_ringworld = yes
 		}
 		modifier = {
 			planet_housing_add = 20
@@ -503,7 +503,7 @@ pw_building_living_spire_2 = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -595,9 +595,9 @@ pw_building_living_spire_2 = {
 	triggered_planet_modifier = {
 		potential = {
 			NOR = {
-				is_planet_class = pc_ringworld_habitable
-				is_planet_class = pc_habitat
-				is_planet_class = pc_city
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_arcology = yes
 			}
 		}
 		modifier = {
@@ -609,7 +609,7 @@ pw_building_living_spire_2 = {
 	#Habitat
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		modifier = {
 			planet_housing_add = 8
@@ -620,7 +620,7 @@ pw_building_living_spire_2 = {
 	#Ecu
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 		modifier = {
 			planet_housing_add = 20
@@ -631,7 +631,7 @@ pw_building_living_spire_2 = {
 	#Ring World
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_ringworld_habitable
+			merg_is_hab_ringworld = yes
 		}
 		modifier = {
 			planet_housing_add = 30
@@ -973,7 +973,7 @@ pw_building_living_spire_3 = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -1066,9 +1066,9 @@ pw_building_living_spire_3 = {
 	triggered_planet_modifier = {
 		potential = {
 			NOR = {
-				is_planet_class = pc_ringworld_habitable
-				is_planet_class = pc_habitat
-				is_planet_class = pc_city
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_arcology = yes
 			}
 		}
 		modifier = {
@@ -1080,7 +1080,7 @@ pw_building_living_spire_3 = {
 	#Habitat
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_habitat
+			merg_is_habitat = yes
 		}
 		modifier = {
 			planet_housing_add = 10
@@ -1091,7 +1091,7 @@ pw_building_living_spire_3 = {
 	#Ecu
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_city
+			merg_is_arcology = yes
 		}
 		modifier = {
 			planet_housing_add = 30
@@ -1102,7 +1102,7 @@ pw_building_living_spire_3 = {
 	#Ring World
 	triggered_planet_modifier = {
 		potential = {
-			is_planet_class = pc_ringworld_habitable
+			merg_is_hab_ringworld = yes
 		}
 		modifier = {
 			planet_housing_add = 40

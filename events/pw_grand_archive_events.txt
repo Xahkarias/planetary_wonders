@@ -449,8 +449,8 @@ country_event = {
 						status = yes
 					}
 					OR = {
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_frozen
+						merg_is_barren_cold = yes
+						merg_is_frozen = yes
 						is_planet_class = pc_ice_asteroid
 					}
 					solar_system = {
@@ -474,10 +474,10 @@ country_event = {
 						status = yes
 					}
 					OR = {
-						is_planet_class = pc_continental
-						is_planet_class = pc_ocean
-						is_planet_class = pc_tropical
-						is_planet_class = pc_gaia
+						merg_is_continental = yes
+						merg_is_ocean = yes
+						merg_is_tropical = yes
+						merg_is_gaia = yes
 					}
 					solar_system = {
 						OR = {
@@ -521,8 +521,8 @@ country_event = {
 						status = yes
 					}
 					OR = {
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_frozen
+						merg_is_barren_cold = yes
+						merg_is_frozen = yes
 						is_planet_class = pc_ice_asteroid
 					}
 					solar_system = {
@@ -551,10 +551,10 @@ country_event = {
 						status = yes
 					}
 					OR = {
-						is_planet_class = pc_continental
-						is_planet_class = pc_ocean
-						is_planet_class = pc_tropical
-						is_planet_class = pc_gaia
+						merg_is_continental = yes
+						merg_is_ocean = yes
+						merg_is_tropical = yes
+						merg_is_gaia = yes
 					}
 					solar_system = {
 						OR = {
@@ -597,8 +597,8 @@ country_event = {
 							status = yes
 						}
 						OR = {
-							is_planet_class = pc_barren_cold
-							is_planet_class = pc_frozen
+							merg_is_barren_cold = yes
+							merg_is_frozen = yes
 							is_planet_class = pc_ice_asteroid
 						}
 						solar_system = {
@@ -622,10 +622,10 @@ country_event = {
 							status = yes
 						}
 						OR = {
-							is_planet_class = pc_continental
-							is_planet_class = pc_ocean
-							is_planet_class = pc_tropical
-							is_planet_class = pc_gaia
+							merg_is_continental = yes
+							merg_is_ocean = yes
+							merg_is_tropical = yes
+							merg_is_gaia = yes
 						}
 						solar_system = {
 							OR = {
@@ -1155,15 +1155,15 @@ country_event = {
 			if = {
 				limit = {
 					any_planet_within_border = {
-						is_planet_class = pc_nuked
-						is_planet_class = pc_gaia
+						merg_is_nuked = yes
+						merg_is_gaia = yes
 						is_capital = no
 					}
 				}
 				random_planet_within_border = {
 					limit = {
-						is_planet_class = pc_nuked
-						is_planet_class = pc_gaia
+						merg_is_nuked = yes
+						merg_is_gaia = yes
 						is_capital = no
 					}
 					enable_special_project = {
@@ -1567,8 +1567,8 @@ country_event = {
 		last_increased_tech = pw_tech_grand_archive_crucible_of_worlds_secrets
 		any_planet_within_border = {
 			OR = {
-				is_planet_class = pc_barren_cold
-				is_planet_class = pc_barren
+				merg_is_barren_cold = yes
+				merg_is_barren = yes
 			}
 			NOT = { has_modifier = terraforming_candidate }
 		}
@@ -1578,8 +1578,8 @@ country_event = {
 		random_planet_within_border = {
 			limit = {
 				OR = {
-					is_planet_class = pc_barren_cold
-					is_planet_class = pc_barren
+					merg_is_barren_cold = yes
+					merg_is_barren = yes
 				}
 				NOT = { has_modifier = terraforming_candidate }
 			}

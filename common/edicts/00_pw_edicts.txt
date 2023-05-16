@@ -82,7 +82,7 @@ pw_edict_panspectron = {
 }
 
 pw_edict_hive_debate = {
-	length = 0
+	length = -1
 	icon = "GFX_edict_type_policy"
 
 	resources = {
@@ -123,7 +123,7 @@ pw_edict_hive_debate = {
 }
 
 pw_holy_reliquary_visit_the_reliquary = {
-	length = 0
+	length = -1
 	icon = "GFX_edict_type_policy"
 
 	effect = {
@@ -155,7 +155,7 @@ pw_holy_reliquary_visit_the_reliquary = {
 }
 
 pw_grand_archive_visit_the_archive = {
-	length = 0
+	length = -1
 	icon = "GFX_edict_type_policy"
 
 	effect = {
@@ -711,7 +711,7 @@ pw_blossoming_preserve_harmonious_blossom = {
 			else = {
 				if = {
 					limit = {
-						is_planet_class = pc_hive
+						merg_is_hive_world = yes
 					}
 					add_modifier = {
 						modifier = pw_pm_blossoming_preserve_harmonious_blossom_hive

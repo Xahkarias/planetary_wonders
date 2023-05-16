@@ -1667,8 +1667,8 @@ country_event = {
 		random_controlled_planet = {
 			limit = {
 				OR = {
-					is_planet_class = pc_barren
-					is_planet_class = pc_barren_cold
+					merg_is_barren = yes
+					merg_is_barren_cold = yes
 				}
 				has_deposit = no
 				NOT = { has_modifier = terraforming_candidate }

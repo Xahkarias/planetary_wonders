@@ -335,8 +335,8 @@ pw_decision_SE_install_space_ramp = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 		NOT = {has_deposit = pw_d_SE_space_ramp }
 		NOT = {has_deposit = pw_d_SE_nuclear_launcher }
 	}
@@ -472,8 +472,8 @@ pw_decision_SE_install_skyhook = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 		NOT = {has_deposit = pw_d_SE_skyhook }
 	}
 
@@ -564,8 +564,8 @@ pw_decision_SE_moon_colony_expansion = {
 	potential = {
 		exists = owner
 		# NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
@@ -666,8 +666,8 @@ pw_decision_SE_orbital_districts = {
 	potential = {
 		exists = owner
 		# NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
@@ -758,8 +758,8 @@ pw_decision_SE_counterweight_habitat = {
 	potential = {
 		exists = owner
 		# NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		NOT = { merg_is_habitat = yes }
+		NOT = { merg_is_hab_ringworld = yes }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_3 }
@@ -796,7 +796,7 @@ pw_decision_SE_counterweight_habitat = {
 			factor = 0
 			solar_system = {
 				any_system_planet = {
-					is_planet_class = pc_habitat
+					merg_is_habitat = yes
 					is_colony = no
 				}
 			}
@@ -3114,7 +3114,7 @@ pw_decision_mausoleum_world = {
 		NOT = { has_modifier = slave_colony }
 		is_artificial = no
 		OR = {
-			is_planet_class = pc_nuked
+			merg_is_nuked = yes
 			is_planet_class = pc_relic
 		}
 	}

@@ -13,7 +13,7 @@ pw_building_guardian_angel = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -362,7 +362,7 @@ pw_building_stellar_sentinel = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -715,7 +715,7 @@ pw_building_martial_avenue = {
 		exists = owner
 		owner = { is_gestalt = no }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}

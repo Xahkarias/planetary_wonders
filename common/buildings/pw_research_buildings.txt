@@ -14,7 +14,7 @@ pw_building_particle_supercollider = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -467,7 +467,7 @@ pw_building_interdimensional_collider = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -821,7 +821,7 @@ pw_building_domed_city = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
+		NOT = { merg_is_habitat = yes }
 	}
 
 	allow = {
@@ -1283,7 +1283,7 @@ pw_building_secluded_sector = {
 
 	potential = {
 		exists = owner
-		is_planet_class = pc_habitat
+		merg_is_habitat = yes
 		owner = { has_ascension_perk = ap_voidborn }
 	}
 
@@ -1736,7 +1736,7 @@ pw_building_psionic_observatory = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -2099,7 +2099,7 @@ pw_building_abyssal_crater_test_site = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_habitat }
+		NOT = { merg_is_habitat = yes }
 	}
 
 	allow = {
@@ -2542,7 +2542,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 
 	potential = {
 		exists = owner
-		is_planet_class = pc_habitat
+		merg_is_habitat = yes
 		owner = { has_ascension_perk = ap_voidborn }
 	}
 
@@ -2977,7 +2977,7 @@ pw_building_metal_vivarium = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
@@ -3323,7 +3323,7 @@ pw_building_grand_archive = {
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = resort_colony }
 		OR = {
-			NOT = { is_planet_class = pc_habitat }
+			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}

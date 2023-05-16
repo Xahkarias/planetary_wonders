@@ -10,7 +10,7 @@ cb_pw_r_coin_of_fortune = {
 	potential = {
 		OR = {
 			#Using scripted trigger to allow overwrites
-			is_playable_country = yes
+			merg_is_standard_empire = yes
 			is_berserk_fallen_machine_empire = yes
 		}
 		NOT = { is_fallen_empire = yes }

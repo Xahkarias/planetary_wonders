@@ -6497,9 +6497,9 @@ country_event = {
 			random_planet_within_border = {
 				limit = {
 					is_planet_class = pc_gas_giant
-					is_planet_class = pc_barren_cold
-					is_planet_class = pc_barren
-					is_planet_class = pc_frozen
+					merg_is_barren_cold = yes
+					merg_is_barren = yes
+					merg_is_frozen = yes
 				}
 				add_deposit = d_trade_value_5
 			}
@@ -6636,9 +6636,9 @@ country_event = {
 			count = 3
 			random_planet_within_border = {
 				limit = {
-					is_planet_class = pc_barren_cold
-					is_planet_class = pc_barren
-					is_planet_class = pc_frozen
+					merg_is_barren_cold = yes
+					merg_is_barren = yes
+					merg_is_frozen = yes
 					has_deposit = no
 				}
 				add_deposit = d_society_5

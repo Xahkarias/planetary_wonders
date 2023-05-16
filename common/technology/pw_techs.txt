@@ -845,7 +845,7 @@ pw_tech_space_elevator_counterweight_habitat = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				is_planet_class = pc_habitat
+				merg_is_habitat = yes
 			}
 		}
 
@@ -987,7 +987,7 @@ pw_tech_space_elevator_intergalactic_assets_concession = {
 		modifier = {
 			factor = 2
 			any_owned_planet = {
-				is_planet_class = pc_habitat
+				merg_is_habitat = yes
 			}
 		}
 
@@ -9859,7 +9859,7 @@ pw_tech_worldly_mausoleums = {
 			#Has a tomb world:
 			any_owned_planet = {
 				OR = {
-					is_planet_class = pc_nuked
+					merg_is_nuked = yes
 					is_planet_class = pc_relic
 				}
 			}
@@ -9950,7 +9950,7 @@ pw_tech_worldly_mausoleums = {
 				count > 1
 				limit = {
 					OR = {
-						is_planet_class = pc_nuked
+						merg_is_nuked = yes
 						is_planet_class = pc_relic
 					}
 				}
@@ -9963,7 +9963,7 @@ pw_tech_worldly_mausoleums = {
 				count > 2
 				limit = {
 					OR = {
-						is_planet_class = pc_nuked
+						merg_is_nuked = yes
 						is_planet_class = pc_relic
 					}
 				}
@@ -9976,7 +9976,7 @@ pw_tech_worldly_mausoleums = {
 				count > 3
 				limit = {
 					OR = {
-						is_planet_class = pc_nuked
+						merg_is_nuked = yes
 						is_planet_class = pc_relic
 					}
 				}
@@ -10014,8 +10014,8 @@ pw_tech_cyberecology = {
 			#Has a gaia or hive world:
 			any_owned_planet = {
 				OR = {
-					is_planet_class = pc_gaia
-					is_planet_class = pc_hive
+					merg_is_gaia = yes
+					merg_is_hive_world = yes
 				}
 			}
 		}
@@ -10092,8 +10092,8 @@ pw_tech_cyberecology = {
 				count > 1
 				limit = {
 					OR = {
-						is_planet_class = pc_gaia
-						is_planet_class = pc_hive
+						merg_is_gaia = yes
+						merg_is_hive_world = yes
 					}
 				}
 			}
@@ -10105,8 +10105,8 @@ pw_tech_cyberecology = {
 				count > 2
 				limit = {
 					OR = {
-						is_planet_class = pc_gaia
-						is_planet_class = pc_hive
+						merg_is_gaia = yes
+						merg_is_hive_world = yes
 					}
 				}
 			}
@@ -10118,8 +10118,8 @@ pw_tech_cyberecology = {
 				count > 3
 				limit = {
 					OR = {
-						is_planet_class = pc_gaia
-						is_planet_class = pc_hive
+						merg_is_gaia = yes
+						merg_is_hive_world = yes
 					}
 				}
 			}

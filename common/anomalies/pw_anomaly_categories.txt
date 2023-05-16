@@ -130,8 +130,8 @@ pw_anomaly_frozen_war_titan_category = {
 	spawn_chance = {
 		modifier = {
 			add = 2
-			is_planet_class = pc_barren_cold
-			is_planet_class = pc_frozen
+			merg_is_barren_cold = yes
+			merg_is_frozen = yes
 			is_planet_class = pc_ice_asteroid
 		}
 	}
@@ -147,8 +147,8 @@ pw_anomaly_TF_abandoned_forge = {
 		modifier = {
 			add = 1
 			OR = {
-				is_planet_class = pc_molten
-				is_planet_class = pc_barren
+				merg_is_molten = yes
+				merg_is_barren = yes
 				is_planet_class = pc_broken
 			}
 		}
@@ -165,16 +165,16 @@ pw_anomaly_IH_abandoned_factory = {
 		modifier = {
 			add = 1
 			OR = {
-				is_planet_class = pc_molten
-				is_planet_class = pc_barren
+				merg_is_molten = yes
+				merg_is_barren = yes
 				is_planet_class = pc_broken
 			}
 		}
 		modifier = {
 			add = 1
 			OR = {
-				is_planet_class = pc_molten
-				is_planet_class = pc_barren
+				merg_is_molten = yes
+				merg_is_barren = yes
 				is_planet_class = pc_broken
 			}
 			from.owner = {

@@ -424,8 +424,8 @@ pw_holy_reliquary_flip_coin = {
 							add = 10
 							any_controlled_planet = {
 								OR = {
-									is_planet_class = pc_barren
-									is_planet_class = pc_barren_cold
+									merg_is_barren = yes
+									merg_is_barren_cold = yes
 								}
 								has_deposit = no
 								NOT = { has_modifier = terraforming_candidate }
@@ -557,8 +557,8 @@ pw_coin_of_fortune_relic_flip_coin = {
 							add = 10
 							any_controlled_planet = {
 								OR = {
-									is_planet_class = pc_barren
-									is_planet_class = pc_barren_cold
+									merg_is_barren = yes
+									merg_is_barren_cold = yes
 								}
 								has_deposit = no
 								NOT = { has_modifier = terraforming_candidate }
