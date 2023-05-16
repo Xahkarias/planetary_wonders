@@ -6766,7 +6766,7 @@ planet_event = {
 
 	immediate = {
 		create_message = {
-			type = ARMY_RECRUITMENT
+			type = PW_FLYING_FORTRESS_REBUILD
 			localization = pw_message_guardian_angel_flying_fortress_rebuild
 			days = 30
 			target = this

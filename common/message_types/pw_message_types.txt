@@ -50,3 +50,13 @@ message_type = {
 	sound_is_advisor = yes
 	ping = "ping_notification_green"
 }
+
+message_type = {
+	key = "PW_FLYING_FORTRESS_REBUILD"
+	icon = "GFX_message_other_construction_surface"
+	icon_frame = 1
+	name = "PW_MESSAGE_FLYING_FORTRESS_REBUILD"
+	sound = "advisor_notification_construction_complete"
+	sound_is_advisor = yes
+	ping = "ping_notification_green"
+}
