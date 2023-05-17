@@ -1003,6 +1003,10 @@ pw_decision_rebuild_flying_fortress = {
 	}
 
 	potential = {
+
+		#While defense armies in orbit are bugged
+		always = no
+
 		OR = {
 			has_active_building = pw_building_guardian_angel
 			has_active_building = pw_building_stellar_sentinel
@@ -1021,9 +1025,8 @@ pw_decision_rebuild_flying_fortress = {
 	effect = {
 		custom_tooltip = pw_decision_rebuild_flying_fortress_tooltip
 		create_army = {
-			name = pw_army_flying_fortress_name
+			name = "pw_army_flying_fortress_name"
 			owner = this.owner
-			species = this.owner.owner_species
 			type = pw_army_flying_fortress
 		}
 		hidden_effect = {

@@ -6659,6 +6659,10 @@ planet_event = {
 	location = this
 
 	trigger = {
+
+		#While defense armies in orbit are bugged
+		always = no
+
 		OR = {
 			has_active_building = pw_building_guardian_angel
 			has_active_building = pw_building_stellar_sentinel
@@ -6672,9 +6676,8 @@ planet_event = {
 
 	immediate = {
 		create_army = {
-			name = pw_army_flying_fortress_name
+			name = "pw_army_flying_fortress_name"
 			owner = this.owner
-			species = this.owner_main_species
 			type = pw_army_flying_fortress
 		}
 	}

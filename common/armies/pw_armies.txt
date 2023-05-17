@@ -9,8 +9,6 @@ pw_army_flying_fortress = {
 	morale_damage = 2
 	has_morale = no
 	has_species = no
-	collateral_damage = 0.0
-	war_exhaustion = 0.0
 
 	resources = {
 		category = armies
@@ -20,7 +18,7 @@ pw_army_flying_fortress = {
 	}
 
 	#Can't be built, must be spawned (by event/decision).
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -53,7 +51,7 @@ pw_army_war_titan = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		custom_tooltip = {
 			text = pw_army_war_titan_limit
 			planet = {
@@ -112,7 +110,7 @@ pw_army_salvaged_war_titan = {
 	}
 
 	#Can't be built, must be spawned (by event/decision).
-	potential = {
+	potential_country = {
 		always = no
 	}
 }
@@ -141,7 +139,7 @@ pw_assault_acolyte = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		has_modifier = pw_holy_reliquary_supremacy_call_to_arms
 		owner = {
 			is_spiritualist = yes
@@ -182,7 +180,7 @@ pw_army_living_metal_warform = {
 		}
 	}
 
-	potential = {
+	potential_country = {
 		owner = {
 			any_owned_planet = {
 				pw_planet_has_abyssal_test_crater = yes
