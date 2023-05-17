@@ -250,7 +250,7 @@ pw_policy_modeling_focus = {
 		modifier = {
 			catapult_range_mult = 0.10
 			catapult_spread_mult = 0.10
-			country_mia_time_mult = -0.10
+			fleet_mia_time_mult = -0.10
 			science_ship_survey_speed = 0.20
 			planet_administrators_upkeep_mult = 0.20
 		}

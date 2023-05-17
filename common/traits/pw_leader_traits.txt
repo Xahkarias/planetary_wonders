@@ -25,8 +25,7 @@ pw_leader_trait_ruler_codex_of_past_ages = {
 	}
 
 	selectable_weight = 0
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = all
 }
 
 #Granted by Forbidden City anomaly
@@ -52,8 +51,7 @@ pw_leader_trait_ruler_millenary_throne = {
 	}
 
 	selectable_weight = 0
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = all
 }
 
 # Governor Traits
@@ -81,7 +79,6 @@ pw_leader_trait_governor_codex_of_past_ages = {
 		species_leader_exp_gain = 0.25
 	}
 
-	leader_trait = { governor }
 	leader_class = { governor }
 }
 
@@ -110,7 +107,6 @@ pw_leader_trait_scientist_codex_of_past_ages = {
 		species_leader_exp_gain = 0.25
 	}
 
-	leader_trait = { scientist }
 	leader_class = { scientist }
 }
 
@@ -139,7 +135,6 @@ pw_leader_trait_admiral_codex_of_past_ages = {
 	self_modifier = {
 		species_leader_exp_gain = 0.25
 	}
-	leader_trait = { admiral }
 	leader_class = { admiral }
 }
 
@@ -168,6 +163,5 @@ pw_leader_trait_general_codex_of_past_ages = {
 		species_leader_exp_gain = 0.25
 	}
 
-	leader_trait = { general }
 	leader_class = { general }
 }

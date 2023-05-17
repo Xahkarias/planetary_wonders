@@ -29,17 +29,14 @@ pw_enigma_tech_micro_graviton_equipment = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_industry
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_industry
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -68,9 +65,8 @@ pw_enigma_tech_micro_graviton_equipment = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -103,17 +99,14 @@ pw_enigma_tech_absolute_processor_cooling = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_materials
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_materials
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -142,9 +135,8 @@ pw_enigma_tech_absolute_processor_cooling = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_materials
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -177,17 +169,14 @@ pw_enigma_tech_non_euclidean_building = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_industry
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_industry
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -216,9 +205,8 @@ pw_enigma_tech_non_euclidean_building = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -252,17 +240,14 @@ pw_enigma_tech_impossible_architecture = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_industry
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_industry
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -291,9 +276,8 @@ pw_enigma_tech_impossible_architecture = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -326,17 +310,14 @@ pw_enigma_tech_quantum_movement = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_propulsion
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_propulsion
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -365,9 +346,8 @@ pw_enigma_tech_quantum_movement = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_propulsion
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_propulsion
 			}
 		}
 	}
@@ -400,17 +380,14 @@ pw_enigma_tech_harmonic_aligning_magnets = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_propulsion
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_propulsion
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -439,9 +416,8 @@ pw_enigma_tech_harmonic_aligning_magnets = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -475,17 +451,14 @@ pw_enigma_tech_one_with_the_machine = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_propulsion
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_propulsion
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -514,9 +487,8 @@ pw_enigma_tech_one_with_the_machine = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -553,17 +525,14 @@ pw_enigma_tech_virtual_conscience = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_computing
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_computing
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -592,9 +561,8 @@ pw_enigma_tech_virtual_conscience = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -627,17 +595,14 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_particles
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_particles
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -666,9 +631,8 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_particles
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_particles
 			}
 		}
 	}
@@ -702,17 +666,14 @@ pw_enigma_tech_hypersonic_frequency_harmony = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_particles
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_particles
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -741,9 +702,8 @@ pw_enigma_tech_hypersonic_frequency_harmony = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_particles
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_particles
 			}
 		}
 	}
@@ -776,17 +736,14 @@ pw_enigma_tech_hyper_stabilization_fields = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -815,9 +772,8 @@ pw_enigma_tech_hyper_stabilization_fields = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -851,17 +807,14 @@ pw_enigma_tech_complete_stabilization_fields = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -890,9 +843,8 @@ pw_enigma_tech_complete_stabilization_fields = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -925,17 +877,14 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -964,9 +913,8 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -1000,17 +948,14 @@ pw_enigma_tech_atomic_transistor_substrate = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1039,9 +984,8 @@ pw_enigma_tech_atomic_transistor_substrate = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -1074,17 +1018,14 @@ pw_enigma_tech_simultaneous_prime_analysis = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1113,9 +1054,8 @@ pw_enigma_tech_simultaneous_prime_analysis = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -1148,17 +1088,14 @@ pw_enigma_tech_unintelligible_data_organization = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1187,9 +1124,8 @@ pw_enigma_tech_unintelligible_data_organization = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -1226,17 +1162,14 @@ pw_enigma_tech_reflex_arc_emulators = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_military_theory
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_military_theory
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1265,9 +1198,8 @@ pw_enigma_tech_reflex_arc_emulators = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_military_theory
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_military_theory
 			}
 		}
 	}
@@ -1301,17 +1233,14 @@ pw_enigma_tech_atomic_clock_synchronization = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_statecraft
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_statecraft
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1340,9 +1269,8 @@ pw_enigma_tech_atomic_clock_synchronization = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -1375,17 +1303,14 @@ pw_enigma_tech_gas_molecular_sculpting = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_biology
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_biology
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1414,9 +1339,8 @@ pw_enigma_tech_gas_molecular_sculpting = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_biology
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -1450,17 +1374,14 @@ pw_enigma_tech_gas_molecular_generation = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_biology
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_biology
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1489,9 +1410,8 @@ pw_enigma_tech_gas_molecular_generation = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_biology
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -1525,17 +1445,14 @@ pw_enigma_tech_exoteric_predictions_system = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_military_theory
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_military_theory
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1564,9 +1481,8 @@ pw_enigma_tech_exoteric_predictions_system = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_military_theory
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_military_theory
 			}
 		}
 	}
@@ -1600,17 +1516,14 @@ pw_enigma_tech_bio_frequency_emitters = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_biology
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_biology
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1651,9 +1564,8 @@ pw_enigma_tech_bio_frequency_emitters = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_biology
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -1678,7 +1590,7 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 	}
 
 	modifier = {
-		country_command_limit_add = 50
+		command_limit_add = 50
 	}
 
 	weight_modifier = {
@@ -1686,17 +1598,14 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_biology
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_biology
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1732,9 +1641,8 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_military_theory
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_military_theory
 			}
 		}
 	}
@@ -1768,17 +1676,14 @@ pw_enigma_tech_societal_overclock_regime = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_statecraft
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_statecraft
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1807,9 +1712,8 @@ pw_enigma_tech_societal_overclock_regime = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -1842,17 +1746,14 @@ pw_enigma_tech_simulations_within_simulations = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_statecraft
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_statecraft
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1881,9 +1782,8 @@ pw_enigma_tech_simulations_within_simulations = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -1921,17 +1821,14 @@ pw_enigma_tech_sophistication_of_simplicity = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_new_worlds
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_new_worlds
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1960,9 +1857,8 @@ pw_enigma_tech_sophistication_of_simplicity = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_new_worlds
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_new_worlds
 			}
 		}
 	}

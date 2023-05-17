@@ -29,9 +29,8 @@ pw_tech_fallen_empire_experiments_physics = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -61,9 +60,8 @@ pw_tech_nuclear_core_collision = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_particles
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_particles
 			}
 		}
 	}
@@ -93,9 +91,8 @@ pw_tech_small_particle_weaponizing = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_particles
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_particles
 			}
 		}
 	}
@@ -124,9 +121,8 @@ pw_tech_particle_supercollider_organization = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_particles
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_particles
 			}
 		}
 	}
@@ -156,9 +152,8 @@ pw_tech_dimensional_randomizing = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -189,9 +184,8 @@ pw_tech_reality_map = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -216,9 +210,8 @@ pw_tech_crystal_personal_armor = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -249,9 +242,8 @@ pw_tech_food_dimension_draining = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -278,9 +270,8 @@ pw_tech_interdimensional_collider = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -312,17 +303,14 @@ pw_tech_intradimensional_matter_drawing = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -351,9 +339,8 @@ pw_tech_intradimensional_matter_drawing = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -385,17 +372,14 @@ pw_tech_interdimensional_matter_drawing = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_field_manipulation
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -424,9 +408,8 @@ pw_tech_interdimensional_matter_drawing = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_field_manipulation
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
@@ -459,17 +442,14 @@ pw_tech_suprareality_survey = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_expertise_computing
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_computing
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -498,9 +478,8 @@ pw_tech_suprareality_survey = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = leader_trait_expertise_computing
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_computing
 			}
 		}
 	}
@@ -533,9 +512,8 @@ pw_tech_fallen_empire_experiments_society = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -565,9 +543,8 @@ pw_tech_extreme_habitation_studies = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_new_worlds
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_new_worlds
 			}
 		}
 	}
@@ -597,9 +574,8 @@ pw_tech_crisis_management = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -628,9 +604,8 @@ pw_tech_domed_city_organization = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -660,9 +635,8 @@ pw_tech_social_construction_fabrication = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_statecraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -694,9 +668,8 @@ pw_tech_military_social_values = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_military_theory
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_military_theory
 			}
 		}
 	}
@@ -721,9 +694,8 @@ pw_tech_targeted_chemical_bliss = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_biology
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -752,9 +724,8 @@ pw_tech_mind_opening_substances = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_biology
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -787,9 +758,8 @@ pw_tech_exotic_nerve_gas = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_biology
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -816,9 +786,8 @@ pw_tech_psionic_observatory = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.50
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_psionics
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_psionics
 			}
 		}
 	}
@@ -850,17 +819,14 @@ pw_tech_zro_refurbishing = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_psionics
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_psionics
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -889,9 +855,8 @@ pw_tech_zro_refurbishing = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_psionics
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_psionics
 			}
 		}
 	}
@@ -923,17 +888,14 @@ pw_tech_zro_recycling = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_psionics
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_psionics
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -962,9 +924,8 @@ pw_tech_zro_recycling = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_psionics
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_psionics
 			}
 		}
 	}
@@ -997,17 +958,14 @@ pw_tech_psionic_social_infiltration = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = society
-					has_trait = leader_trait_expertise_psionics
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_psionics
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = society
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1041,9 +999,8 @@ pw_tech_psionic_social_infiltration = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = leader_trait_expertise_psionics
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_psionics
 			}
 		}
 	}
@@ -1077,9 +1034,8 @@ pw_tech_fallen_empire_experiments_engineering = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_propulsion
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_propulsion
 			}
 		}
 	}
@@ -1104,9 +1060,8 @@ pw_tech_motes_portable_weapons = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_propulsion
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_propulsion
 			}
 		}
 	}
@@ -1136,9 +1091,8 @@ pw_tech_massive_mounted_weapons = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_propulsion
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_propulsion
 			}
 		}
 	}
@@ -1167,9 +1121,8 @@ pw_tech_weaponized_disaster = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_voidcraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_voidcraft
 			}
 		}
 	}
@@ -1198,9 +1151,8 @@ pw_tech_abyssal_crater_test_site_organization = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -1230,9 +1182,8 @@ pw_tech_variable_pressure_armor = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_voidcraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_voidcraft
 			}
 		}
 	}
@@ -1262,9 +1213,8 @@ pw_tech_efficient_urbanism = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -1295,9 +1245,8 @@ pw_tech_reinforced_military_production = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
@@ -1322,9 +1271,8 @@ pw_tech_living_metal_districts = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_materials
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -1354,9 +1302,8 @@ pw_tech_living_metal_decouples = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_voidcraft
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_voidcraft
 			}
 		}
 	}
@@ -1381,9 +1328,8 @@ pw_tech_living_metal_warforms = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_materials
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -1410,9 +1356,8 @@ pw_tech_metal_vivarium = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_materials
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -1444,17 +1389,14 @@ pw_tech_living_metal_breeding = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_materials
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_materials
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1483,9 +1425,8 @@ pw_tech_living_metal_breeding = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_materials
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -1517,17 +1458,14 @@ pw_tech_living_metal_reproduction = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_materials
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_materials
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1556,9 +1494,8 @@ pw_tech_living_metal_reproduction = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_materials
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -1591,17 +1528,14 @@ pw_tech_living_formation = {
 		modifier = {
 			factor = value:tech_weight_likelihood
 			OR = {
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_expertise_industry
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_industry
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_curator
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
 				}
-				research_leader = {
-					area = engineering
-					has_trait = leader_trait_maniacal
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
 				}
 			}
 		}
@@ -1640,9 +1574,8 @@ pw_tech_living_formation = {
 		factor = @pw_tech_ai_weight
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = leader_trait_expertise_industry
+			has_trait_in_council = {
+				TRAIT = leader_trait_expertise_industry
 			}
 		}
 	}
