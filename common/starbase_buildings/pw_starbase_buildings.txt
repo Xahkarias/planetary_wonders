@@ -6,7 +6,7 @@ pw_offworld_logistics_station = {
 	potential = {
 		exists = owner
 		owner = { has_technology = pw_tech_space_elevator_planetary_orbital_logistics }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -123,7 +123,7 @@ pw_station_skyhook = {
 	potential = {
 		exists = owner
 		owner = { has_technology = pw_tech_space_elevator_orbital_planetary_logistics }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -177,7 +177,7 @@ pw_sentinel_command_center = {
 	potential = {
 		exists = owner
 		owner = { has_technology = pw_tech_stellar_sentinel }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {

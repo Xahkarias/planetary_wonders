@@ -51,7 +51,7 @@ pw_army_war_titan = {
 		}
 	}
 
-	potential_country = {
+	potential = {
 		custom_tooltip = {
 			text = pw_army_war_titan_limit
 			planet = {

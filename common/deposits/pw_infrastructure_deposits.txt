@@ -928,10 +928,10 @@ pw_d_infrastructure_galactic_throne = {
 			consumer_goods = 6
 			rare_crystals = 2
 		}
-		upkeep = {
-			energy = 0.1
-			mult = trigger:imperial_authority
-		}
+		# upkeep = {
+		# 	energy = 0.1
+		# 	mult = trigger:imperial_authority
+		# }
 	}
 
 	custom_tooltip = pw_d_infrastructure_galactic_throne_effect

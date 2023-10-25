@@ -48,7 +48,10 @@ pw_building_pavilion_of_wonders = {
 				planet = {
 					OR = {
 						has_designation = col_resort
-						has_designation = col_habitat_leisure
+						has_designation = col_habitat_bureau
+						has_designation = col_habitat_bureau_hive
+						has_designation = col_habitat_bureau_machine
+						has_designation = col_habitat_bureau_spiritualist
 					}
 				}
 			}
@@ -80,7 +83,10 @@ pw_building_pavilion_of_wonders = {
 				planet = {
 					OR = {
 						has_designation = col_resort
-						has_designation = col_habitat_leisure
+						has_designation = col_habitat_bureau
+						has_designation = col_habitat_bureau_hive
+						has_designation = col_habitat_bureau_machine
+						has_designation = col_habitat_bureau_spiritualist
 					}
 				}
 			}
@@ -495,7 +501,10 @@ pw_building_fair_of_worlds = {
 				planet = {
 					OR = {
 						has_designation = col_resort
-						has_designation = col_habitat_leisure
+						has_designation = col_habitat_bureau
+						has_designation = col_habitat_bureau_hive
+						has_designation = col_habitat_bureau_machine
+						has_designation = col_habitat_bureau_spiritualist
 					}
 				}
 			}
@@ -527,7 +536,10 @@ pw_building_fair_of_worlds = {
 				planet = {
 					OR = {
 						has_designation = col_resort
-						has_designation = col_habitat_leisure
+						has_designation = col_habitat_bureau
+						has_designation = col_habitat_bureau_hive
+						has_designation = col_habitat_bureau_machine
+						has_designation = col_habitat_bureau_spiritualist
 					}
 				}
 			}
@@ -1117,7 +1129,10 @@ pw_building_museum_of_the_grotesque = {
 				planet = {
 					OR = {
 						has_designation = col_resort
-						has_designation = col_habitat_leisure
+						has_designation = col_habitat_bureau
+						has_designation = col_habitat_bureau_hive
+						has_designation = col_habitat_bureau_machine
+						has_designation = col_habitat_bureau_spiritualist
 					}
 				}
 			}
@@ -1149,7 +1164,10 @@ pw_building_museum_of_the_grotesque = {
 				planet = {
 					OR = {
 						has_designation = col_resort
-						has_designation = col_habitat_leisure
+						has_designation = col_habitat_bureau
+						has_designation = col_habitat_bureau_hive
+						has_designation = col_habitat_bureau_machine
+						has_designation = col_habitat_bureau_spiritualist
 					}
 				}
 			}
