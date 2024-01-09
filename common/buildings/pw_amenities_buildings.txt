@@ -142,29 +142,29 @@ pw_building_transplanetary_logistics_network = {
 		}
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
-	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_egalitarian = yes }
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_egalitarian = yes }
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
 
 	#Stability from ambition
 	triggered_planet_modifier = {
@@ -214,12 +214,17 @@ pw_building_transplanetary_logistics_network = {
 		text = job_executive_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-		}
-		text = job_bureaucrat_effect_desc
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_egalitarian = yes }
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_egalitarian = yes"
+		AMOUNT = 1
 	}
 
 	triggered_desc = {
@@ -443,30 +448,30 @@ pw_building_transhabitat_logistics_network = {
 		}
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
-	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
-
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_egalitarian = yes }
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_egalitarian = yes }
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
+#
 	#Stability from ambition
 	triggered_planet_modifier = {
 		potential = {
@@ -515,12 +520,17 @@ pw_building_transhabitat_logistics_network = {
 		text = job_executive_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-		}
-		text = job_bureaucrat_effect_desc
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_egalitarian = yes }
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_egalitarian = yes"
+		AMOUNT = 1
 	}
 
 	triggered_desc = {
