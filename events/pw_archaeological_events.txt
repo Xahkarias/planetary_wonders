@@ -1374,7 +1374,7 @@ fleet_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					leader_class = governor
+					leader_class = official
 				}
 				add_experience = 100
 			}

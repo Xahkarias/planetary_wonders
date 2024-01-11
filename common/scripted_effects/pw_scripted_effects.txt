@@ -140,10 +140,7 @@ pw_trigger_art_militaristic_events = {
 			modifier = {
 				factor = 0
 				NOT = { any_owned_leader = {
-					OR = {
-						leader_class = admiral
-						leader_class = general
-					}
+					leader_class = commander
 				}}
 			}
 			country_event = { id = pw_art_exhibition.512 }
@@ -243,7 +240,7 @@ pw_trigger_art_egalitarian_events = {
 				factor = 0
 				NOT = {
 					any_owned_leader = {
-						leader_class = governor
+						leader_class = official
 						NOT = { has_trait = leader_trait_architectural_interest }
 					}
 				}
