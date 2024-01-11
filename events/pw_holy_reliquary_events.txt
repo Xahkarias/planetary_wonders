@@ -3298,7 +3298,7 @@ country_event = {
 						factor = 0
 						NOT = {
 							any_owned_leader = {
-								leader_class = governor
+								leader_class = official
 								NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
 							}
 						}
@@ -3322,7 +3322,7 @@ country_event = {
 						factor = 0
 						NOT = {
 							any_owned_leader = {
-								leader_class = admiral
+								leader_class = commander
 								NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
 							}
 						}
@@ -3334,7 +3334,7 @@ country_event = {
 						factor = 0
 						NOT = {
 							any_owned_leader = {
-								leader_class = general
+								leader_class = commander
 								NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
 							}
 						}
@@ -3426,7 +3426,7 @@ country_event = {
 						factor = 0
 						NOT = {
 							any_owned_leader = {
-								leader_class = governor
+								leader_class = official
 								NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
 							}
 						}
@@ -3450,7 +3450,7 @@ country_event = {
 						factor = 0
 						NOT = {
 							any_owned_leader = {
-								leader_class = admiral
+								leader_class = commander
 								NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
 							}
 						}
@@ -3462,7 +3462,7 @@ country_event = {
 						factor = 0
 						NOT = {
 							any_owned_leader = {
-								leader_class = general
+								leader_class = commander
 								NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
 							}
 						}
@@ -3558,7 +3558,7 @@ country_event = {
 		name = pw_holy_reliquary.710.a
 		random_owned_leader = {
 			limit = {
-				leader_class = governor
+				leader_class = official
 				NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
 			}
 			add_trait = pw_leader_trait_governor_codex_of_past_ages
@@ -3610,7 +3610,7 @@ country_event = {
 		name = pw_holy_reliquary.710.a
 		random_owned_leader = {
 			limit = {
-				leader_class = admiral
+				leader_class = commander
 				NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
 			}
 			add_trait = pw_leader_trait_admiral_codex_of_past_ages
@@ -3636,7 +3636,7 @@ country_event = {
 		name = pw_holy_reliquary.710.a
 		random_owned_leader = {
 			limit = {
-				leader_class = general
+				leader_class = commander
 				NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
 			}
 			add_trait = pw_leader_trait_general_codex_of_past_ages

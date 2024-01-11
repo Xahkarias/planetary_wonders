@@ -6292,10 +6292,7 @@ country_event = {
 	immediate = {
 		random_owned_leader = {
 			limit = {
-				OR = {
-					leader_class = admiral
-					leader_class = general
-				}
+				leader_class = commander
 			}
 			save_event_target_as = pw_war_games_leader
 		}
@@ -6392,9 +6389,8 @@ country_event = {
 		every_owned_leader = {
 			limit = {
 				OR = {
-					leader_class = admiral
-					leader_class = general
-					leader_class = governor
+					leader_class = commander
+					leader_class = official
 				}
 			}
 			add_experience = 50
@@ -6956,7 +6952,7 @@ country_event = {
 		name = pw_art_exhibition.OK
 		random_owned_leader = {
 			limit = {
-				leader_class = governor
+				leader_class = official
 				NOT = { has_trait = leader_trait_architectural_interest }
 			}
 			add_trait = leader_trait_architectural_interest
@@ -7336,9 +7332,8 @@ country_event = {
 			count = 3
 			random_owned_leader = {
 				limit = {
-					leader_class = governor
-					leader_class = admiral
-					leader_class = general
+					leader_class = official
+					leader_class = commander
 				}
 				add_experience = 100
 			}
