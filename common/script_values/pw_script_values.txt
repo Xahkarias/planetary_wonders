@@ -260,12 +260,13 @@ pw_farming_districts_value = {
 	# Normal
 	add = value:pw_districts_value|TYPE|district_farming|
 	add = value:pw_districts_value|TYPE|district_farming_uncapped|
-	# Habitat
-	modifier = {
-		has_designation = col_habitat_farming
-		NOT = { has_global_flag = stellarisevolved }
-		add = value:pw_districts_value|TYPE|district|FACTOR|0.5|
-	}
+#	# Habitat
+#	Wrong TYPE parameter. There is no "district" district.
+#	modifier = {
+#		has_designation = col_habitat_farming
+#		NOT = { has_global_flag = stellarisevolved }
+#		add = value:pw_districts_value|TYPE|district|FACTOR|0.5|
+#	}
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_farming|FACTOR|4|
 	# Evovled

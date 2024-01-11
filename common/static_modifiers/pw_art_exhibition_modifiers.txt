@@ -376,7 +376,8 @@ pw_art_mod_prosumer_culture = {
 }
 
 pw_art_mod_diplomatic_lineage = {
-	diplo_weight_envoys_mult = 0.25
+#	diplo_weight_envoys_mult = 0.25
+	diplo_weight_delegate_mult = 0.25
 	country_influence_produces_mult = 0.10
 }
 

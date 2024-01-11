@@ -159,29 +159,29 @@ pw_building_galactic_model = {
 		}
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 8
-		}
-	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 8
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 8
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 8
+#		}
+#	}
 
 	#Bureaucrats from tech
 	triggered_planet_modifier = {
@@ -309,12 +309,17 @@ pw_building_galactic_model = {
 		text = job_executive_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_bureaucrat_effect_desc
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_regular_empire = yes"
+		AMOUNT = 8
 	}
 
 	triggered_desc = {
@@ -560,29 +565,29 @@ pw_building_aligned_galactic_model = {
 		}
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 10
-		}
-	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 10
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 10
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 10
+#		}
+#	}
 
 	#Bureaucrats from tech
 	triggered_planet_modifier = {
@@ -712,12 +717,17 @@ pw_building_aligned_galactic_model = {
 		text = job_executive_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_bureaucrat_effect_desc
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_regular_empire = yes"
+		AMOUNT = 10
 	}
 
 	triggered_desc = {
@@ -1114,31 +1124,31 @@ pw_building_panopticon = {
 		}
 	}
 
-	#Pacifist
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_pacifist = yes }
-			owner = { is_spiritualist = no }
-			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
-		}
-		modifier = {
-			job_bureaucrat_add = 2
-		}
-	}
-
-	#Pacifist & Spiritualist
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_pacifist = yes }
-			owner = { is_spiritualist = yes }
-			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
-		}
-		modifier = {
-			job_priest_add = 2
-		}
-	}
+#	#Pacifist
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = no }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 2
+#		}
+#	}
+#
+#	#Pacifist & Spiritualist
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = yes }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
 
 	#Militarist
 	triggered_planet_modifier = {
@@ -1261,6 +1271,137 @@ pw_building_panopticon = {
 			owner = { is_machine_empire = yes }
 		}
 		text = job_patrol_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				OR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		text = job_catalytic_technician_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				OR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		text = job_artisan_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				OR = {
+					has_valid_civic = civic_crafters
+					has_valid_civic = civic_corporate_crafters
+				}
+			}
+		}
+		text = job_artificer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		text = job_foundry_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
+		}
+		text = job_culture_worker_effect_desc
+	}
+
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = no }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = yes }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		text = job_priest_effect_desc
+#	}
+
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_pacifist = yes
+						   has_technology = pw_tech_panopticon_reformatory_bureaucratic_work"
+		AMOUNT = 2
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_militarist = yes }
+			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
+		}
+		text = job_soldier_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_spiritualist = yes
+				has_technology = pw_tech_panopticon_repentance_preaching
+				# Pacifists-spiritualist can have priest jobs also.
+				nand = {
+					is_pacifist = yes
+					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+				}
+			}
+		}
+		text = job_priest_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_pacifist = yes }
+			owner = { is_materialist = yes }
+			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
+		}
+		text = job_researcher_effect_desc
 	}
 
 	on_built = {

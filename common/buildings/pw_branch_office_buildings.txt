@@ -211,29 +211,29 @@ pw_building_meditation_garden = {
 		job_clerk_add = 1
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
-	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -259,6 +259,12 @@ pw_building_meditation_garden = {
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
+	}
+
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = ""
+		AMOUNT = 1
 	}
 
 	on_built = {

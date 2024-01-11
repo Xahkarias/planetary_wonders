@@ -3,7 +3,7 @@ pw_leader_trait_ruler_codex_of_past_ages = {
 	cost = 0
 	initial = no
 	randomized = no
-	councilor_trait = yes
+#	councilor_trait = yes
 
 	inline_script = {
 		script = trait/icon
@@ -14,8 +14,10 @@ pw_leader_trait_ruler_codex_of_past_ages = {
 		TIER = none
 	}
 	
-	is_councilor_trait_for_ruler = yes
-	modifier = {
+#	is_councilor_trait_for_ruler = yes
+	force_councilor_trait = yes
+#	modifier = {
+	councilor_modifier = {
 		country_base_influence_produces_add = 0.50
 		edicts_cost_mult = -0.10
 		edicts_upkeep_mult = -0.10
@@ -33,7 +35,7 @@ pw_leader_trait_ruler_millenary_throne = {
 	cost = 1
 	initial = no
 	randomized = no
-	councilor_trait = yes
+#	councilor_trait = yes
 
 	inline_script = {
 		script = trait/icon
@@ -44,8 +46,10 @@ pw_leader_trait_ruler_millenary_throne = {
 		TIER = none
 	}
 
-	is_councilor_trait_for_ruler = yes
-	modifier = {
+#	is_councilor_trait_for_ruler = yes
+	force_councilor_trait = yes
+#	modifier = {
+	councilor_modifier = {
 		country_base_influence_produces_add = 0.5
 		country_edict_fund_add = 50
 	}
@@ -60,11 +64,12 @@ pw_leader_trait_governor_codex_of_past_ages = {
 	cost = 1
 	initial = no
 	randomized = no
-	councilor_trait = no
+#	councilor_trait = no
 
 	inline_script = {
 		script = trait/icon
-		CLASS = governor
+#		CLASS = governor
+		CLASS = official
 		ICON = "GFX_leader_trait_intellectual"
 		RARITY = common
 		COUNCIL = no
@@ -79,7 +84,8 @@ pw_leader_trait_governor_codex_of_past_ages = {
 		species_leader_exp_gain = 0.25
 	}
 
-	leader_class = { governor }
+#	leader_class = { governor }
+	leader_class = { official }
 }
 
 # Scientist Traits
@@ -88,7 +94,7 @@ pw_leader_trait_scientist_codex_of_past_ages = {
 	cost = 1
 	initial = no
 	randomized = no
-	councilor_trait = no
+#	councilor_trait = no
 
 	inline_script = {
 		script = trait/icon
@@ -116,11 +122,12 @@ pw_leader_trait_admiral_codex_of_past_ages = {
 	cost = 1
 	initial = no
 	randomized = no
-	councilor_trait = no
+#	councilor_trait = no
 
 	inline_script = {
 		script = trait/icon
-		CLASS = admiral
+#		CLASS = admiral
+		CLASS = commander
 		ICON = "GFX_leader_trait_intellectual"
 		RARITY = common
 		COUNCIL = no
@@ -135,7 +142,8 @@ pw_leader_trait_admiral_codex_of_past_ages = {
 	self_modifier = {
 		species_leader_exp_gain = 0.25
 	}
-	leader_class = { admiral }
+#	leader_class = { admiral }
+	leader_class = { commander }
 }
 
 # General Traits
@@ -144,11 +152,12 @@ pw_leader_trait_general_codex_of_past_ages = {
 	cost = 1
 	initial = no
 	randomized = no
-	councilor_trait = no
+#	councilor_trait = no
 
 	inline_script = {
 		script = trait/icon
-		CLASS = general
+#		CLASS = general
+		CLASS = commander
 		ICON = "GFX_leader_trait_intellectual"
 		RARITY = common
 		COUNCIL = no
@@ -163,5 +172,6 @@ pw_leader_trait_general_codex_of_past_ages = {
 		species_leader_exp_gain = 0.25
 	}
 
-	leader_class = { general }
+#	leader_class = { general }
+	leader_class = { commander }
 }

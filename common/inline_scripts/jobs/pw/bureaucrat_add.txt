@@ -1,0 +1,56 @@
+# Usage:
+#inline_script = {
+#	script = jobs/pw/bureaucrat_add
+#	OWNER_CONDITION = "is_egalitarian = yes"
+#	AMOUNT = 1
+#}
+
+#Bureaucrat
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = no
+		}
+	}
+	modifier = {
+		job_bureaucrat_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = no
+		}
+	}
+	text = job_bureaucrat_effect_desc
+}
+
+#Priest
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = yes
+		}
+	}
+	modifier = {
+		job_priest_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = yes
+		}
+	}
+	text = job_priest_effect_desc
+}
