@@ -486,10 +486,10 @@
     pw_holy_reliquary_corroded_heraldry_pursuit_of_honor: "Pursuit Of Honor"
     pw_holy_reliquary_corroded_heraldry_pursuit_of_honor_desc: "Inspired by the $pw_holy_reliquary.corroded_heraldry$, our knights go out of their way to uphold our tradition in honor of the Toxic God."
 
-    mod_knights_independent_category_physics_research_produces_mult: "£physics_research£ $physics_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
-    mod_knights_independent_category_society_research_produces_mult: "£society_research£ $society_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
-    mod_knights_independent_category_engineering_research_produces_mult: "£engineering_research£ $engineering_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
-    mod_knights_independent_category_unity_produces_mult: "£unity£ $unity$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_planet_knights_physics_research_produces_mult: "£physics_research£ $physics_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_planet_knights_society_research_produces_mult: "£society_research£ $society_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_planet_knights_engineering_research_produces_mult: "£engineering_research£ $engineering_research$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
+    mod_planet_knights_unity_produces_mult: "£unity£ $unity$ from £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
 
     pw_holy_reliquary_heart_of_the_leviathan_preserved: "Heart of the Leviathan: Preserved"
     pw_holy_reliquary_heart_of_the_leviathan_preserved_desc: "We have preserved the Heart of the Leviathan worshiped by the late Bal'Fu and now it attracts many to study their customs anf faith."

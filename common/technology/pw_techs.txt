@@ -1114,7 +1114,7 @@ pw_tech_particle_supercollider = {
 	category = { particles }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier4weight3
 	is_rare = yes
@@ -1177,7 +1177,7 @@ pw_tech_domed_city = {
 	category = { statecraft }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier4weight3
 	is_rare = yes
@@ -1240,7 +1240,7 @@ pw_tech_abyssal_crater_test_site = {
 	category = { propulsion }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier4weight3
 	is_rare = yes
@@ -3474,7 +3474,7 @@ pw_tech_metaphysical_singularity = {
 	category = { computing }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_physics_3
+#		tech_physics_3
 		tech_positronic_implants
 	}
 	weight = @tier5weight2
@@ -3565,7 +3565,7 @@ pw_tech_metacognition_dialectics = {
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
 		tech_hive_confluence
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight1
 	is_rare = yes
