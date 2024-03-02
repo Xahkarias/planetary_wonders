@@ -542,7 +542,8 @@ pw_d_guardian_angel_order_outpost = {
 			}
 		}
 		modifier = {
-			knights_independent_category_produces_mult = 0.05
+#			knights_independent_category_produces_mult = 0.05
+			planet_knights_produces_mult = 0.05
 		}
 	}
 

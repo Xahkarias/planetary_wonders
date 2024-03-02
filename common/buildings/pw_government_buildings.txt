@@ -1216,7 +1216,7 @@ pw_building_panopticon = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { is_megacorp = yes }
+			owner = { is_megacorp = no }
 		}
 		text = job_politician_effect_desc
 	}
@@ -1225,7 +1225,7 @@ pw_building_panopticon = {
 		trigger = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { is_megacorp = no }
+			owner = { is_megacorp = yes }
 		}
 		text = job_executive_effect_desc
 	}
@@ -1279,6 +1279,21 @@ pw_building_panopticon = {
 			owner = {
 				is_authoritarian = yes
 				has_technology = pw_tech_panopticon_penal_industries
+				NOR = {
+					has_valid_civic = civic_catalytic_processing
+					has_valid_civic = civic_corporate_catalytic_processing
+				}
+			}
+		}
+		text = job_foundry_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_authoritarian = yes
+				has_technology = pw_tech_panopticon_penal_industries
 				OR = {
 					has_valid_civic = civic_catalytic_processing
 					has_valid_civic = civic_corporate_catalytic_processing
@@ -1294,7 +1309,7 @@ pw_building_panopticon = {
 			owner = {
 				is_authoritarian = yes
 				has_technology = pw_tech_panopticon_penal_industries
-				OR = {
+				NOR = {
 					has_valid_civic = civic_crafters
 					has_valid_civic = civic_corporate_crafters
 				}
@@ -1316,21 +1331,6 @@ pw_building_panopticon = {
 			}
 		}
 		text = job_artificer_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_authoritarian = yes
-				has_technology = pw_tech_panopticon_penal_industries
-				NOR = {
-					has_valid_civic = civic_catalytic_processing
-					has_valid_civic = civic_corporate_catalytic_processing
-				}
-			}
-		}
-		text = job_foundry_effect_desc
 	}
 
 	triggered_desc = {
