@@ -1002,7 +1002,7 @@ pw_d_infrastructure_wardens_directorate = {
 		}
 		planet_housing_add = 2
 		planet_stability_add = 5
-		job_enforcer_per_pop = 1
+		job_enforcer_add = 1
 		planet_jobs_worker_produces_mult = 0.10
 		planet_pops_upkeep_mult = 0.10
 	}
