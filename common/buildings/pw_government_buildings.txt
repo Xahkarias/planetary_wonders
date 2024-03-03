@@ -1583,6 +1583,7 @@ pw_building_forbidden_city = {
 				NOT = { has_valid_civic = civic_merchant_guilds }
 				NOT = { has_valid_civic = civic_aristocratic_elite }
 				NOT = { has_valid_civic = civic_technocracy }
+				NOT = { has_valid_civic = civic_exalted_priesthood }
 				NOT = { has_valid_civic = civic_merchant_guilds }
 			}
 		}
@@ -1733,6 +1734,7 @@ pw_building_forbidden_city = {
 				NOT = { has_valid_civic = civic_merchant_guilds }
 				NOT = { has_valid_civic = civic_aristocratic_elite }
 				NOT = { has_valid_civic = civic_technocracy }
+				NOT = { has_valid_civic = civic_exalted_priesthood }
 				NOT = { has_valid_civic = civic_merchant_guilds }
 			}
 		}
