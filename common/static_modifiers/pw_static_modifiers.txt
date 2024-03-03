@@ -1271,16 +1271,20 @@ pw_holy_reliquary_holy_throne_giving_hand = {
 pw_holy_reliquary_corroded_heraldry_pursuit_of_knowledge = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	planet_stability_add = 5
-	knights_independent_category_physics_research_produces_mult = 0.10
-	knights_independent_category_society_research_produces_mult = 0.10
-	knights_independent_category_engineering_research_produces_mult = 0.10
+#	knights_independent_category_physics_research_produces_mult = 0.10
+#	knights_independent_category_society_research_produces_mult = 0.10
+#	knights_independent_category_engineering_research_produces_mult = 0.10
+	planet_knights_physics_research_produces_mult = 0.10
+	planet_knights_society_research_produces_mult = 0.10
+	planet_knights_engineering_research_produces_mult = 0.10
 }
 
 #Corroded Heraldry: Pursuit of Honor
 pw_holy_reliquary_corroded_heraldry_pursuit_of_honor = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	planet_stability_add = 5
-	knights_independent_category_unity_produces_mult = 0.10
+#	knights_independent_category_unity_produces_mult = 0.10
+	planet_knights_unity_produces_mult = 0.10
 }
 
 #HR Archaeology heart of the leviathan: preserved

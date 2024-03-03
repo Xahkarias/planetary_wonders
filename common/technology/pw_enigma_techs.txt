@@ -9,7 +9,7 @@ pw_enigma_tech_micro_graviton_equipment = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -79,7 +79,7 @@ pw_enigma_tech_absolute_processor_cooling = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -149,7 +149,7 @@ pw_enigma_tech_non_euclidean_building = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -220,7 +220,7 @@ pw_enigma_tech_impossible_architecture = {
 	prerequisites = {
 		pw_tech_metaphysical_singularity
 		pw_enigma_tech_non_euclidean_building
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -290,7 +290,7 @@ pw_enigma_tech_quantum_movement = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -360,7 +360,7 @@ pw_enigma_tech_harmonic_aligning_magnets = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -430,7 +430,7 @@ pw_enigma_tech_one_with_the_machine = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_engineering_3
+#		tech_engineering_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -503,7 +503,7 @@ pw_enigma_tech_virtual_conscience = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -575,7 +575,7 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -646,7 +646,7 @@ pw_enigma_tech_hypersonic_frequency_harmony = {
 	prerequisites = {
 		pw_tech_metaphysical_singularity
 		pw_enigma_tech_hypersonic_frequency_tuning
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -716,7 +716,7 @@ pw_enigma_tech_hyper_stabilization_fields = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -787,7 +787,7 @@ pw_enigma_tech_complete_stabilization_fields = {
 	prerequisites = {
 		pw_tech_metaphysical_singularity
 		pw_enigma_tech_hyper_stabilization_fields
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -857,7 +857,7 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -927,7 +927,7 @@ pw_enigma_tech_atomic_transistor_substrate = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_physics_3
+#		tech_physics_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1140,7 +1140,7 @@ pw_enigma_tech_reflex_arc_emulators = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1212,7 +1212,7 @@ pw_enigma_tech_atomic_clock_synchronization = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1283,7 +1283,7 @@ pw_enigma_tech_gas_molecular_sculpting = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1354,7 +1354,7 @@ pw_enigma_tech_gas_molecular_generation = {
 	prerequisites = {
 		pw_tech_metaphysical_singularity
 		pw_enigma_tech_gas_molecular_sculpting
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1424,7 +1424,7 @@ pw_enigma_tech_exoteric_predictions_system = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1495,7 +1495,7 @@ pw_enigma_tech_bio_frequency_emitters = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
@@ -1578,7 +1578,7 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 	tier = 5
 	prerequisites = {
 		pw_tech_metaphysical_singularity
-		tech_society_3
+#		tech_society_3
 	}
 	weight = @tier5weight2
 	is_rare = yes
