@@ -1,0 +1,81 @@
+# Usage:
+#inline_script = {
+#	script = jobs/pw/culture_worker_add
+#	OWNER_CONDITION = "is_egalitarian = yes"
+#	AMOUNT = 1
+#}
+
+#Culture Worker
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_megacorp = no
+		}
+	}
+	modifier = {
+		job_culture_worker_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_megacorp = no
+		}
+	}
+	text = job_culture_worker_effect_desc
+}
+
+#Manager
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_megacorp = yes
+			is_worker_coop_empire = no
+		}
+	}
+	modifier = {
+		job_manager_add = $AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_megacorp = yes
+			is_worker_coop_empire = no
+		}
+	}
+	text = job_manager_effect_desc
+}
+
+#Steward
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_worker_coop_empire = yes
+		}
+	}
+	job_steward_add = $AMOUNT$
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_worker_coop_empire = yes
+		}
+	}
+	text = job_steward_effect_desc
+}

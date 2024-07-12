@@ -3800,12 +3800,14 @@ planet_event = {
 			if = {
 				limit = { has_ascension_perk = ap_mastery_of_nature }
 				owner = {
-					add_resource = { influence = 25 }
+#					add_resource = { influence = 25 }
+					add_resource = { unity = 250 }
 				}
 			}
 			else = {
 				owner = {
-					add_resource = { influence = 50 }
+#					add_resource = { influence = 50 }
+					add_resource = { unity = 500 }
 				}
 			}
 		}

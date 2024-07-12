@@ -1,15 +1,14 @@
-# It adds "job_XXX_add" only. On buildings, use it with "jobs/pw/bureaucrat_effect_desc". On deposits, use it only, without "jobs/pw/bureaucrat_effect_desc".
+# It adds "job_XXX_effect_desc" only. On buildings, use it with "jobs/pw/bureaucrat_add".
 # unlike "jobs/priests_add", it supports non-spiritual jobs (Bureaucrat, Manager and Steward) also.
 # Usage:
 #inline_script = {
-#	script = jobs/pw/bureaucrat_add
+#	script = jobs/pw/bureaucrat_effect_desc
 #	OWNER_CONDITION = "is_egalitarian = yes"
-#	AMOUNT = 1
 #}
 
 #Bureaucrat
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
@@ -17,14 +16,12 @@ triggered_planet_modifier = {
 			is_megacorp = no
 		}
 	}
-	modifier = {
-		job_bureaucrat_add = $AMOUNT$
-	}
+	text = job_bureaucrat_effect_desc
 }
 
 #Manager
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
@@ -33,14 +30,12 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = no
 		}
 	}
-	modifier = {
-		job_manager_add = $AMOUNT$
-	}
+	text = job_manager_effect_desc
 }
 
 #Steward
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
@@ -48,14 +43,12 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = yes
 		}
 	}
-	modifier = {
-		job_steward_add = $AMOUNT$
-	}
+	text = job_steward_effect_desc
 }
 
 #Priest
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
@@ -64,14 +57,12 @@ triggered_planet_modifier = {
 			NOT = { has_origin = origin_cybernetic_creed }
 		}
 	}
-	modifier = {
-		job_priest_add = $AMOUNT$
-	}
+	text = job_priest_effect_desc
 }
 
 #Preacher
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
@@ -80,14 +71,12 @@ triggered_planet_modifier = {
 			NOT = { has_origin = origin_cybernetic_creed }
 		}
 	}
-	modifier = {
-		job_preacher_add = $AMOUNT$
-	}
+	text = job_preacher_effect_desc
 }
 
 #Haruspex
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
@@ -95,7 +84,5 @@ triggered_planet_modifier = {
 			has_origin = origin_cybernetic_creed
 		}
 	}
-	modifier = {
-		job_haruspex_add = $AMOUNT$
-	}
+	text = job_haruspex_effect_desc
 }

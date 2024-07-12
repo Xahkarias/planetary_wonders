@@ -1,0 +1,112 @@
+# Usage:
+#inline_script = {
+#	script = jobs/pw/death_chronicler_add
+#	OWNER_CONDITION = "is_egalitarian = yes"
+#	AMOUNT = 1
+#}
+# Note: because buildings which use this script have other jobs, triggered_desc are disabled.
+
+#Culture Worker
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_megacorp = no
+			not = { has_valid_civic = civic_memorialist }
+		}
+	}
+	modifier = {
+		job_culture_worker_add = $AMOUNT$
+	}
+}
+
+#triggered_desc = {
+#	trigger = {
+#		exists = owner
+#		owner = {
+#			$OWNER_CONDITION$
+#			is_megacorp = no
+#			not = { has_valid_civic = civic_memorialist }
+#		}
+#	}
+#	text = job_culture_worker_effect_desc
+#}
+
+#Manager
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_megacorp = yes
+			is_worker_coop_empire = no
+			not = { has_valid_civic = civic_memorialist }
+		}
+	}
+	modifier = {
+		job_manager_add = $AMOUNT$
+	}
+}
+
+#triggered_desc = {
+#	trigger = {
+#		exists = owner
+#		owner = {
+#			$OWNER_CONDITION$
+#			is_megacorp = yes
+#			is_worker_coop_empire = no
+#			not = { has_valid_civic = civic_memorialist }
+#		}
+#	}
+#	text = job_manager_effect_desc
+#}
+
+#Steward
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_worker_coop_empire = yes
+			not = { has_valid_civic = civic_memorialist }
+		}
+	}
+	job_steward_add = $AMOUNT$
+}
+
+#triggered_desc = {
+#	trigger = {
+#		exists = owner
+#		owner = {
+#			$OWNER_CONDITION$
+#			is_megacorp = yes
+#			is_worker_coop_empire = yes
+#			not = { has_valid_civic = civic_memorialist }
+#		}
+#	}
+#	text = job_steward_effect_desc
+#}
+
+#Death Chronicler
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			has_valid_civic = civic_memorialist
+		}
+	}
+	job_death_chronicler_add = $AMOUNT$
+}
+
+#triggered_desc = {
+#	trigger = {
+#		exists = owner
+#		owner = {
+#			$OWNER_CONDITION$
+#			has_valid_civic = civic_memorialist
+#		}
+#	}
+#	text = job_death_chronicler_effect_desc
+#}

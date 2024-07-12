@@ -672,7 +672,8 @@ planet_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					is_researching_area = society
+#					is_researching_area = society
+					is_head_of_research = yes
 				}
 				add_experience = 300
 			}

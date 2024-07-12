@@ -811,33 +811,52 @@ pw_building_martial_avenue = {
 		}
 	}
 
+	triggered_desc = {
+		text = pw_planet_wonder_lb
+	}
+
+	triggered_desc = {
+		text = pw_martial_avenue_tooltip
+	}
+
 	#Reminder: Cannot be Gestalt and must be pacifist!
 	# 7 Jobs added in total (With more from festivities)
 
-	#Administrator/Culture workers
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_culture_worker_add = 2
-		}
+#	#Administrator/Culture workers
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_militarist = yes }
+#			owner = { is_megacorp = no }
+#		}
+#		modifier = {
+#			job_politician_add = 1
+#			job_culture_worker_add = 2
+#		}
+#	}
+#
+#	#Executive/Manager
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_militarist = yes }
+#			owner = { is_megacorp = yes }
+#		}
+#		modifier = {
+#			job_executive_add = 1
+#			job_manager_add = 2
+#		}
+#	}
+	inline_script = {
+		script = jobs/pw/politician_add
+		OWNER_CONDITION = "is_militarist = yes"
+		SHOW_JOB_STEWARD_EFFECT_DESC = no
+		AMOUNT = 1
 	}
-
-	#Executive/Manager
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_executive_add = 1
-			job_manager_add = 2
-		}
+	inline_script = {
+		script = jobs/pw/culture_worker_add
+		OWNER_CONDITION = "is_militarist = yes"
+		AMOUNT = 2
 	}
 
 	#Entertainer
@@ -919,31 +938,31 @@ pw_building_martial_avenue = {
 		}
 	}
 
-	triggered_desc = {
-		text = pw_planet_wonder_lb
-	}
-
-	triggered_desc = {
-		text = pw_martial_avenue_tooltip
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+#	triggered_desc = {
+#		text = pw_planet_wonder_lb
+#	}
+#
+#	triggered_desc = {
+#		text = pw_martial_avenue_tooltip
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_militarist = yes }
+#			owner = { is_megacorp = no }
+#		}
+#		text = job_politician_effect_desc
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_militarist = yes }
+#			owner = { is_megacorp = yes }
+#		}
+#		text = job_executive_effect_desc
+#	}
 
 	triggered_desc = {
 		trigger = {
@@ -963,23 +982,23 @@ pw_building_martial_avenue = {
 		text = job_duelist_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { is_megacorp = no }
-		}
-		text = job_culture_worker_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { is_megacorp = yes }
-		}
-		text = job_manager_effect_desc
-	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_militarist = yes }
+#			owner = { is_megacorp = no }
+#		}
+#		text = job_culture_worker_effect_desc
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_militarist = yes }
+#			owner = { is_megacorp = yes }
+#		}
+#		text = job_manager_effect_desc
+#	}
 
 	triggered_desc = {
 		trigger = {
