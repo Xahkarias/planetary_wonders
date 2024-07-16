@@ -3608,7 +3608,7 @@ pw_tech_metacognition_dialectics = {
 			has_federation = yes
 			federation = {
 				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_metaphysical_singularity }
+				any_member = { has_technology = pw_tech_metacognition_dialectics }
 			}
 		}
 
