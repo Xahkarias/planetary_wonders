@@ -7,5 +7,5 @@ tags={
 }
 name="Planetary Wonders"
 picture="thumbnail.png"
-supported_version="3.11.*"
+supported_version="v3.12.*"
 remote_file_id="2305790641"
