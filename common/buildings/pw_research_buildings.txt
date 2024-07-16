@@ -15,7 +15,7 @@ pw_building_particle_supercollider = {
 		NOT = { has_modifier = slave_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -468,7 +468,7 @@ pw_building_interdimensional_collider = {
 		NOT = { has_modifier = slave_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -1274,7 +1274,7 @@ pw_building_secluded_sector = {
 	base_cap_amount = 1
 	can_be_ruined = no
 	icon = pw_building_domed_city
-	show_tech_unlock_if = { owner = { has_ascension_perk = ap_voidborn }}
+	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
 	category = research
 
 	prerequisites = {
@@ -1284,7 +1284,7 @@ pw_building_secluded_sector = {
 	potential = {
 		exists = owner
 		merg_is_habitat = yes
-		owner = { has_ascension_perk = ap_voidborn }
+		owner = { is_void_dweller_empire = yes }
 	}
 
 	allow = {
@@ -1737,7 +1737,7 @@ pw_building_psionic_observatory = {
 		NOT = { has_modifier = slave_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -2533,7 +2533,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	base_cap_amount = 1
 	can_be_ruined = no
 	icon = pw_building_abyssal_crater_test_site
-	show_tech_unlock_if = { owner = { has_ascension_perk = ap_voidborn }}
+	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
 	category = research
 
 	prerequisites = {
@@ -2543,7 +2543,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	potential = {
 		exists = owner
 		merg_is_habitat = yes
-		owner = { has_ascension_perk = ap_voidborn }
+		owner = { is_void_dweller_empire = yes }
 	}
 
 	allow = {
@@ -2978,7 +2978,7 @@ pw_building_metal_vivarium = {
 		NOT = { has_modifier = slave_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -3324,7 +3324,7 @@ pw_building_grand_archive = {
 		NOT = { has_modifier = resort_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 

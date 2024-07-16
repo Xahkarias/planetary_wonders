@@ -16,7 +16,7 @@ pw_building_erebus_project = {
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			AND = {
-				owner = { has_ascension_perk = ap_voidborn }
+				owner = { is_void_dweller_empire = yes }
 				has_planet_flag = mining_habitat
 			}
 		}
@@ -341,7 +341,7 @@ pw_building_erebus_fracking_plant = {
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			AND = {
-				owner = { has_ascension_perk = ap_voidborn }
+				owner = { is_void_dweller_empire = yes }
 				has_planet_flag = mining_habitat
 			}
 		}
@@ -710,7 +710,7 @@ pw_building_helios_tower = {
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			AND = {
-				owner = { has_ascension_perk = ap_voidborn }
+				owner = { is_void_dweller_empire = yes }
 				OR = {
 					has_planet_flag = energy_habitat
 					owner = { is_gestalt = yes }
@@ -1029,7 +1029,7 @@ pw_building_helios_translucent_obelisk = {
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			AND = {
-				owner = { has_ascension_perk = ap_voidborn }
+				owner = { is_void_dweller_empire = yes }
 				OR = {
 					has_planet_flag = energy_habitat
 					owner = { is_gestalt = yes }

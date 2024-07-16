@@ -312,7 +312,7 @@ pw_building_transhabitat_logistics_network = {
 	show_tech_unlock_if = {
 		exists = owner
 		owner = {
-			has_ascension_perk = ap_voidborn
+			is_void_dweller_empire = yes
 		}
 	}
 
@@ -326,7 +326,7 @@ pw_building_transhabitat_logistics_network = {
 
 	allow = {
 		owner = { is_egalitarian = yes }
-		owner = { has_ascension_perk = ap_voidborn }
+		owner = { is_void_dweller_empire = yes }
 		has_major_upgraded_capital = yes
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
@@ -625,7 +625,7 @@ pw_building_festival_plaza = {
 		owner = { is_gestalt = no }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
