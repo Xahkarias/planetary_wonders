@@ -183,30 +183,36 @@ pw_building_galactic_model = {
 #		}
 #	}
 
-	#Bureaucrats from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-		}
-		modifier = {
-			job_bureaucrat_per_pop = @pw_job_per_25_pop
-		}
-	}
+#	#Bureaucrats from tech
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = no }
+#			owner = { is_spiritualist = no }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+#		}
+#		modifier = {
+#			job_bureaucrat_per_pop = @pw_job_per_25_pop
+#		}
+#	}
+#
+#	#Priest from tech (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = no }
+#			owner = { is_spiritualist = yes }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+#		}
+#		modifier = {
+#			job_priest_per_pop = @pw_job_per_25_pop
+#		}
+#	}
 
-	#Priest from tech (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = yes }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-		}
-		modifier = {
-			job_priest_per_pop = @pw_job_per_25_pop
-		}
+	inline_script = {
+		script = jobs/pw/job_bureaucrat_per_pop
+		OWNER_CONDITION = ""
+		AMOUNT = @pw_job_per_25_pop
 	}
 
 	#Hive Jobs
@@ -220,17 +226,17 @@ pw_building_galactic_model = {
 		}
 	}
 
-	#Synapse from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
-		}
-		modifier = {
-			job_synapse_drone_per_pop = @pw_job_per_25_pop
-		}
-	}
+#	#Synapse from tech
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_hive_empire = yes }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
+#		}
+#		modifier = {
+#			job_synapse_drone_per_pop = @pw_job_per_25_pop
+#		}
+#	}
 
 	#Machine Jobs
 	triggered_planet_modifier = {
@@ -244,17 +250,17 @@ pw_building_galactic_model = {
 		}
 	}
 
-	#Coordinator from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
-		}
-		modifier = {
-			job_coordinator_per_pop = @pw_job_per_25_pop
-		}
-	}
+#	#Coordinator from tech
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_machine_empire = yes }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
+#		}
+#		modifier = {
+#			job_coordinator_per_pop = @pw_job_per_25_pop
+#		}
+#	}
 
 	#Stability Bonus
 	triggered_planet_modifier = {
@@ -589,31 +595,37 @@ pw_building_aligned_galactic_model = {
 #		}
 #	}
 
-	#Bureaucrats from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-		}
-		modifier = {
-			job_bureaucrat_per_pop = @pw_job_per_25_pop
-		}
+	inline_script = {
+		script = jobs/pw/job_bureaucrat_per_pop
+		OWNER_CONDITION = ""
+		AMOUNT = @pw_job_per_25_pop
 	}
 
-	#Priest from tech (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = yes }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-		}
-		modifier = {
-			job_priest_per_pop = @pw_job_per_25_pop
-		}
-	}
+#	#Bureaucrats from tech
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = no }
+#			owner = { is_spiritualist = no }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+#		}
+#		modifier = {
+#			job_bureaucrat_per_pop = @pw_job_per_25_pop
+#		}
+#	}
+#
+#	#Priest from tech (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_gestalt = no }
+#			owner = { is_spiritualist = yes }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+#		}
+#		modifier = {
+#			job_priest_per_pop = @pw_job_per_25_pop
+#		}
+#	}
 
 	#Hive Jobs
 	triggered_planet_modifier = {
@@ -627,17 +639,17 @@ pw_building_aligned_galactic_model = {
 		}
 	}
 
-	#Synapse from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
-		}
-		modifier = {
-			job_synapse_drone_per_pop = @pw_job_per_25_pop
-		}
-	}
+#	#Synapse from tech
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_hive_empire = yes }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
+#		}
+#		modifier = {
+#			job_synapse_drone_per_pop = @pw_job_per_25_pop
+#		}
+#	}
 
 	#Machine Jobs
 	triggered_planet_modifier = {
@@ -652,17 +664,17 @@ pw_building_aligned_galactic_model = {
 		}
 	}
 
-	#Coordinator from tech
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
-		}
-		modifier = {
-			job_coordinator_per_pop = @pw_job_per_25_pop
-		}
-	}
+#	#Coordinator from tech
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_machine_empire = yes }
+#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
+#		}
+#		modifier = {
+#			job_coordinator_per_pop = @pw_job_per_25_pop
+#		}
+#	}
 
 	#Stability Bonus
 	triggered_planet_modifier = {
@@ -1163,16 +1175,38 @@ pw_building_panopticon = {
 	}
 
 	#Spiritualist
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			owner = { has_technology = pw_tech_panopticon_repentance_preaching }
-		}
-		modifier = {
-			job_priest_add = 2
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_spiritualist = yes has_technology = pw_tech_panopticon_repentance_preaching"
+		AMOUNT = 2
 	}
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+##				is_megacorp = no
+#			}
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
+
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+#				is_megacorp = yes
+#			}
+#		}
+#		modifier = {
+#			job_preacher_add = 2
+#		}
+#	}
 
 	#Materialist
 	triggered_planet_modifier = {
@@ -1378,21 +1412,48 @@ pw_building_panopticon = {
 		text = job_soldier_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				is_spiritualist = yes
-				has_technology = pw_tech_panopticon_repentance_preaching
-				# Pacifists-spiritualist can have priest jobs also.
-				nand = {
-					is_pacifist = yes
-					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
-				}
-			}
-		}
-		text = job_priest_effect_desc
+	inline_script = {
+		script = jobs/pw/bureaucrat_effect_desc
+		OWNER_CONDITION =  "is_spiritualist = yes
+							has_technology = pw_tech_panopticon_repentance_preaching
+		    				nand = {
+		    					is_pacifist = yes
+		    					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+		    				}"
 	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { 
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+#				# Pacifists-spiritualist can have priest jobs also.
+#				nand = {
+#					is_pacifist = yes
+#					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+#				}
+##				is_megacorp = no
+#			}
+#		}
+#		text = job_priest_effect_desc
+#	}
+
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { 
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+#				# Pacifists-spiritualist can have priest jobs also.
+#				nand = {
+#					is_pacifist = yes
+#					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+#				}
+#				is_megacorp = yes
+#			}
+#		}
+#		text = job_preacher_effect_desc
+#	}
 
 	triggered_desc = {
 		trigger = {

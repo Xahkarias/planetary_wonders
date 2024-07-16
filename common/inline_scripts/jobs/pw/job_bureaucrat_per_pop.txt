@@ -1,0 +1,140 @@
+# Usage:
+#inline_script = {
+#	script = jobs/pw/job_bureaucrat_per_pop
+#	OWNER_CONDITION = ""
+#	AMOUNT = @pw_job_per_25_pop
+#}
+
+#Bureaucrat
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_regular_empire = yes
+			is_spiritualist = no
+			is_megacorp = no
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy
+		}
+	}
+	modifier = {
+		job_bureaucrat_per_pop = $AMOUNT$
+	}
+}
+
+# all triggered_desc are removed. It is assumed any other triggered_desc is active already.
+
+#Manager
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_regular_empire = yes
+			is_spiritualist = no
+			is_megacorp = yes
+			is_worker_coop_empire = no
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy
+		}
+	}
+	modifier = {
+		job_manager_per_pop = $AMOUNT$
+	}
+}
+
+#Steward
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_regular_empire = yes
+			is_spiritualist = no
+			is_worker_coop_empire = yes
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy
+		}
+	}
+	modifier = {
+		job_steward_per_pop = $AMOUNT$
+	}
+}
+
+#Priest
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = yes
+			is_megacorp = no
+			NOT = { has_origin = origin_cybernetic_creed }
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy
+		}
+	}
+	modifier = {
+		job_priest_per_pop = $AMOUNT$
+	}
+}
+
+#Preacher
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = yes
+			is_megacorp = yes
+			NOT = { has_origin = origin_cybernetic_creed }
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy
+		}
+	}
+	modifier = {
+		job_preacher_per_pop = $AMOUNT$
+	}
+}
+
+#Haruspex
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_spiritualist = yes
+			has_origin = origin_cybernetic_creed
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy
+		}
+	}
+	modifier = {
+		job_haruspex_per_pop = $AMOUNT$
+	}
+}
+
+#Synapse
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_hive_empire = yes
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive
+		}
+	}
+	modifier = {
+		job_synapse_drone_per_pop = $AMOUNT$
+	}
+}
+
+#Coordinator
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			$OWNER_CONDITION$
+			is_machine_empire = yes
+			has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine
+		}
+	}
+	modifier = {
+		job_coordinator_per_pop = $AMOUNT$
+	}
+}

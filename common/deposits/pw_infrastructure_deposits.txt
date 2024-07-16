@@ -417,27 +417,32 @@ pw_d_infrastructure_local_administration = {
 		planet_jobs_upkeep_mult = 0.10
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = ""
+		AMOUNT = 1
 	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
 }
 
 # Distributed Education
@@ -473,27 +478,32 @@ pw_d_infrastructure_distributed_education = {
 		planet_jobs_upkeep_mult = 0.15
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = ""
+		AMOUNT = 1
 	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
 }
 
 # Arts Installations (Requires Pavilion of Wonders/Fair of Worlds/Museum of the Grotesque)
@@ -530,27 +540,32 @@ pw_d_infrastructure_arts_installations = {
 		planet_jobs_upkeep_mult = 0.20
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = ""
+		AMOUNT = 1
 	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
 
 	#Entertainers
 	triggered_planet_modifier = {
@@ -1528,27 +1543,32 @@ pw_d_infrastructure_galactic_bureau = {
 		planet_jobs_upkeep_mult = 0.05
 	}
 
-	#Bureaucrat
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = no }
-		}
-		modifier = {
-			job_bureaucrat_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = ""
+		AMOUNT = 1
 	}
-
-	#Priest (spiritualist)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 1
-		}
-	}
+#	#Bureaucrat
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = no }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 1
+#		}
+#	}
+#
+#	#Priest (spiritualist)
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 1
+#		}
+#	}
 
 	#Entertainer
 	triggered_planet_modifier = {

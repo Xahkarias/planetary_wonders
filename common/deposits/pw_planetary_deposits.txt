@@ -649,15 +649,20 @@ pw_d_monument_to_the_solar_regent = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 2
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_spiritualist = yes"
+		AMOUNT = 2
 	}
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
 }
 
 pw_d_parliament_of_the_void_speakers = {
@@ -685,15 +690,20 @@ pw_d_parliament_of_the_void_speakers = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-		}
-		modifier = {
-			job_priest_add = 2
-		}
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_spiritualist = yes"
+		AMOUNT = 2
 	}
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_spiritualist = yes }
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
 }
 
 # Grand Archive Features

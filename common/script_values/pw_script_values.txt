@@ -379,3 +379,22 @@ pw_generators_buildings_value = {
 	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor_on|
 	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_nexus_A|
 }
+
+# usage: value:pw_added|BASE_VALUE|2|ADDED_VALUE|1|
+pw_added = {
+	set = $BASE_VALUE$
+	add = $ADDED_VALUE|1$
+}
+
+# It is assumed there is planet owner and the owner is spiritualist.
+pw_building_holy_reliquary_priest_jobs = {
+	base = 4
+ 	modifier = {
+ 		add = 2
+ 		owner = { is_death_cult_empire = no }
+ 	}
+ 	modifier = {
+ 		add = 2
+ 		owner = { is_memorialist_empire = no }
+ 	}
+}

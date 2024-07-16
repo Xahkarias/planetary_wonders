@@ -303,26 +303,36 @@ pw_building_living_spire_1 = {
 		}
 	}
 
-	#Administrator
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 1
-		}
+#	#Administrator
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_megacorp = no }
+#		}
+#		modifier = {
+#			job_politician_add = 1
+#		}
+#	}
+#
+#	#Executive
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_megacorp = yes }
+#		}
+#		modifier = {
+#			job_executive_add = 1
+#		}
+#	}
+	triggered_desc = {
+		text = pw_planet_wonder_lb
 	}
 
-	#Executive
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_executive_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/politician_add
+		OWNER_CONDITION = ""
+		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		AMOUNT = 1
 	}
 
 	#Medical Worker
@@ -390,22 +400,22 @@ pw_building_living_spire_1 = {
 		text = pw_planet_wonder_lb
 	}
 
-	#Administrator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
-	#Executive
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+#	#Administrator
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_megacorp = no }
+#		}
+#		text = job_politician_effect_desc
+#	}
+#	#Executive
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_megacorp = yes }
+#		}
+#		text = job_executive_effect_desc
+#	}
 	#Medical Worker
 	triggered_desc = {
 		trigger = {
@@ -639,26 +649,35 @@ pw_building_living_spire_2 = {
 		}
 	}
 
-	#Administrator
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 1
-		}
+#	#Administrator
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_megacorp = no }
+#		}
+#		modifier = {
+#			job_politician_add = 1
+#		}
+#	}
+#
+#	#Executive/Manager
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_megacorp = yes }
+#		}
+#		modifier = {
+#			job_executive_add = 1
+#		}
+#	}
+	triggered_desc = {
+		text = pw_planet_wonder_lb
 	}
-
-	#Executive/Manager
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_executive_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/politician_add
+		OWNER_CONDITION = ""
+		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		AMOUNT = 1
 	}
 
 	#Merchant
@@ -824,25 +843,25 @@ pw_building_living_spire_2 = {
 		}
 	}
 
-	triggered_desc = {
-		text = pw_planet_wonder_lb
-	}
-	#Administrator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
-	#Executive
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+#	triggered_desc = {
+#		text = pw_planet_wonder_lb
+#	}
+#	#Administrator
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_megacorp = no }
+#		}
+#		text = job_politician_effect_desc
+#	}
+#	#Executive
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_megacorp = yes }
+#		}
+#		text = job_executive_effect_desc
+#	}
 	#Medical Worker
 	triggered_desc = {
 		trigger = {
@@ -1110,26 +1129,35 @@ pw_building_living_spire_3 = {
 		}
 	}
 
-	#Administrator
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 2
-		}
+#	#Administrator
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_megacorp = no }
+#		}
+#		modifier = {
+#			job_politician_add = 2
+#		}
+#	}
+#
+#	#Executive/Manager
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_megacorp = yes }
+#		}
+#		modifier = {
+#			job_executive_add = 2
+#		}
+#	}
+	triggered_desc = {
+		text = pw_planet_wonder_lb
 	}
-
-	#Executive/Manager
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_executive_add = 2
-		}
+	inline_script = {
+		script = jobs/pw/politician_add
+		OWNER_CONDITION = ""
+		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		AMOUNT = 2
 	}
 
 	#Merchant
@@ -1293,25 +1321,25 @@ pw_building_living_spire_3 = {
 		}
 	}
 
-	triggered_desc = {
-		text = pw_planet_wonder_lb
-	}
-	#Administrator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
-	#Executive
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+#	triggered_desc = {
+#		text = pw_planet_wonder_lb
+#	}
+#	#Administrator
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_megacorp = no }
+#		}
+#		text = job_politician_effect_desc
+#	}
+#	#Executive
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_megacorp = yes }
+#		}
+#		text = job_executive_effect_desc
+#	}
 	#Medical Worker
 	triggered_desc = {
 		trigger = {

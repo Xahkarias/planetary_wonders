@@ -11,7 +11,8 @@ cb_pw_r_coin_of_fortune = {
 		OR = {
 			#Using scripted trigger to allow overwrites
 			merg_is_standard_empire = yes
-			is_berserk_fallen_machine_empire = yes
+#			is_berserk_fallen_machine_empire = yes
+			is_fallen_empire_berserk_machine = yes
 		}
 		NOT = { is_fallen_empire = yes }
 		NOT = { is_in_federation_with = from }

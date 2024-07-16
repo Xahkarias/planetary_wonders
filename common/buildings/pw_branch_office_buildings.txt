@@ -486,11 +486,85 @@ pw_building_salvation_shrine = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_fanatic_spiritualist
+				# This building is a corporate branch (can be built on non-corporate planet).
+				# So planet owner is not megacorp always.
+#				is_megacorp = no
+				NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
 		modifier = {
 			job_priest_add = 1
 		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_spiritualist
+#				is_megacorp = no
+				NOT = { has_origin = origin_cybernetic_creed }
+			}
+		}
+		text = job_priest_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_spiritualist
+				has_origin = origin_cybernetic_creed
+			}
+		}
+		modifier = {
+			job_haruspex_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_spiritualist
+				has_origin = origin_cybernetic_creed
+			}
+		}
+		text = job_haruspex_effect_desc
+	}
+
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				has_ethic = ethic_fanatic_spiritualist
+#				is_megacorp = yes
+#			}
+#		}
+#		modifier = {
+#			job_preacher_add = 1
+#		}
+#	}
+
+	triggered_desc = {
+		trigger = {
+#			or = {
+#				and = {
+					exists = branch_office_owner
+					branch_office_owner = {
+						has_valid_civic = civic_gospel_of_the_masses
+					}
+#				}
+#				and = {
+#					exists = owner
+#					owner = {
+#						has_ethic = ethic_fanatic_spiritualist
+#						is_megacorp = yes
+#					}
+#				}
+#			}
+		}
+		text = job_preacher_effect_desc
 	}
 
 	triggered_planet_modifier = {
@@ -639,7 +713,7 @@ pw_building_exotic_beauty_center = {
 	}
 }
 
-#Xenophile: National Pride Gallery
+#Xenophobe: National Pride Gallery
 pw_building_national_pride_gallery = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = unity
