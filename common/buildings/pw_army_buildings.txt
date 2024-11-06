@@ -714,6 +714,8 @@ pw_building_martial_avenue = {
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
+		# At Stellaris 3.13, many army buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
@@ -776,10 +778,16 @@ pw_building_martial_avenue = {
 	}
 
 	destroy_trigger = {
-		exists = owner
-		OR = {
-			owner = { is_gestalt = yes }
-			owner = { is_militarist = no }
+		or = {
+			and = {
+				exists = owner
+				OR = {
+					owner = { is_gestalt = yes }
+					owner = { is_militarist = no }
+				}
+			}
+			# At Stellaris 3.13, many amenity buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 

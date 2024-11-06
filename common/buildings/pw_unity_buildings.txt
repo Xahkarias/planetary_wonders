@@ -13,6 +13,9 @@ pw_building_pavilion_of_wonders = {
 		exists = owner
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
+
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
@@ -104,6 +107,9 @@ pw_building_pavilion_of_wonders = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = slave_colony
+			# At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
+
 			AND = {
 				exists = owner
 				owner = { is_gestalt = yes }
@@ -470,6 +476,9 @@ pw_building_fair_of_worlds = {
 		exists = owner
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
+
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
@@ -561,6 +570,9 @@ pw_building_fair_of_worlds = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = slave_colony
+			# At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
+
 			AND = {
 				exists = owner
 				owner = { is_gestalt = yes }
@@ -1102,6 +1114,9 @@ pw_building_museum_of_the_grotesque = {
 		exists = owner
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
+
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { has_ascension_perk = ap_voidborn }
@@ -1193,6 +1208,9 @@ pw_building_museum_of_the_grotesque = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = slave_colony
+			# At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
+
 			AND = {
 				exists = owner
 				owner = { is_gestalt = yes }

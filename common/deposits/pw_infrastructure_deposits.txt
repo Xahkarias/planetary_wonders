@@ -733,35 +733,10 @@ pw_d_infrastructure_industrial_unions = {
 		planet_jobs_upkeep_mult = 0.20
 	}
 
-	#Artisan
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					has_valid_civic = civic_crafters
-					has_valid_civic = civic_corporate_crafters
-				}
-			}
-		}
-		modifier = {
-			job_artisan_add = 1
-		}
-	}
-	#Artificer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				OR = {
-					has_valid_civic = civic_crafters
-					has_valid_civic = civic_corporate_crafters
-				}
-			}
-		}
-		modifier = {
-			job_artificer_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/factory_add
+		OWNER_CONDITION = ""
+		AMOUNT = 1
 	}
 }
 

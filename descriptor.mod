@@ -5,7 +5,6 @@ tags={
 	"Gameplay"
 	"Economy"
 }
-name="Planetary Wonders"
+name="[Local Fork] Planetary Wonders Fork"
 picture="thumbnail.png"
-supported_version="3.11.*"
-remote_file_id="2305790641"
+supported_version="v3.14.*"

@@ -12,6 +12,9 @@ pw_building_space_elevator = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, trade buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
+
 		NOT = { merg_is_habitat = yes }
 		NOT = { merg_is_hab_ringworld = yes }
 	}
@@ -27,6 +30,8 @@ pw_building_space_elevator = {
 
 	destroy_trigger = {
 		has_modifier = slave_colony
+		# At Stellaris 3.13, trade buildings can't be built on Penal Colony.
+		has_modifier = penal_colony
 	}
 
 	convert_to = {
@@ -512,6 +517,9 @@ pw_building_department_of_xenoeconomics = {
 		owner = { is_megacorp = yes }
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = resort_colony }
+		# At Stellaris 3.13, trade buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
+
 		NOT = { has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world }
 	}
 
@@ -530,6 +538,9 @@ pw_building_department_of_xenoeconomics = {
 			# owner = { is_megacorp = no }
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, trade buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
+
 			has_modifier = pw_pm_unhallowed_necropolis_mausoleum_world
 		}
 	}
