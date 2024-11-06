@@ -22,7 +22,7 @@ pw_building_living_spire_0 = {
 		owner = { is_gestalt = no }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -169,7 +169,7 @@ pw_building_living_spire_1 = {
 		owner = { is_gestalt = no }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -514,7 +514,7 @@ pw_building_living_spire_2 = {
 		owner = { is_gestalt = no }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -993,7 +993,7 @@ pw_building_living_spire_3 = {
 		owner = { is_gestalt = no }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 

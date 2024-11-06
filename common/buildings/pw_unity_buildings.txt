@@ -18,7 +18,7 @@ pw_building_pavilion_of_wonders = {
 
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -481,7 +481,7 @@ pw_building_fair_of_worlds = {
 
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -1119,7 +1119,7 @@ pw_building_museum_of_the_grotesque = {
 
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -1815,7 +1815,7 @@ pw_building_holy_reliquary = {
 		NOT = { has_modifier = resort_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -2225,7 +2225,7 @@ pw_building_unhallowed_necropolis = {
 		NOT = { has_modifier = resort_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 

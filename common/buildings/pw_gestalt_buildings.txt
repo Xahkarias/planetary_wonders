@@ -21,7 +21,7 @@ pw_building_conduit_of_unity_0 = {
 		owner = { is_gestalt = yes }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -171,7 +171,7 @@ pw_building_conduit_of_unity_1 = {
 		owner = { is_gestalt = yes }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 

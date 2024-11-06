@@ -14,7 +14,7 @@ pw_building_guardian_angel = {
 		NOT = { has_modifier = resort_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -363,7 +363,7 @@ pw_building_stellar_sentinel = {
 		NOT = { has_modifier = resort_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
@@ -718,7 +718,7 @@ pw_building_martial_avenue = {
 		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
-			owner = { has_ascension_perk = ap_voidborn }
+			owner = { is_void_dweller_empire = yes }
 		}
 	}
 
