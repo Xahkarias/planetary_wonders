@@ -13,6 +13,8 @@ pw_building_particle_supercollider = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { is_void_dweller_empire = yes }
@@ -35,6 +37,8 @@ pw_building_particle_supercollider = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -466,6 +470,8 @@ pw_building_interdimensional_collider = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { is_void_dweller_empire = yes }
@@ -484,6 +490,8 @@ pw_building_interdimensional_collider = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -821,6 +829,8 @@ pw_building_domed_city = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		NOT = { merg_is_habitat = yes }
 	}
 
@@ -847,6 +857,8 @@ pw_building_domed_city = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -1735,6 +1747,8 @@ pw_building_psionic_observatory = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { is_void_dweller_empire = yes }
@@ -1753,6 +1767,8 @@ pw_building_psionic_observatory = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -2099,6 +2115,8 @@ pw_building_abyssal_crater_test_site = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		NOT = { merg_is_habitat = yes }
 	}
 
@@ -2125,6 +2143,8 @@ pw_building_abyssal_crater_test_site = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -2976,6 +2996,8 @@ pw_building_metal_vivarium = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { is_void_dweller_empire = yes }
@@ -2994,6 +3016,8 @@ pw_building_metal_vivarium = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -3322,6 +3346,8 @@ pw_building_grand_archive = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_modifier = resort_colony }
+		# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { is_void_dweller_empire = yes }
@@ -3390,6 +3416,8 @@ pw_building_grand_archive = {
 		OR = {
 			has_modifier = slave_colony
 			has_modifier = resort_colony
+			# At Stellaris 3.13, research buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 			AND = {
 				exists = owner
 				owner = { is_gestalt = yes }

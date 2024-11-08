@@ -623,6 +623,8 @@ pw_building_festival_plaza = {
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
+		# At Stellaris 3.13, many amenity buildings can't be built on Penal Colony.
+		NOT = { has_modifier = penal_colony }
 		OR = {
 			NOT = { merg_is_habitat = yes }
 			owner = { is_void_dweller_empire = yes }
@@ -685,10 +687,16 @@ pw_building_festival_plaza = {
 	}
 
 	destroy_trigger = {
-		exists = owner
-		OR = {
-			owner = { is_gestalt = yes }
-			owner = { is_pacifist = no }
+		or = {
+			and = {
+				exists = owner
+				OR = {
+					owner = { is_gestalt = yes }
+					owner = { is_pacifist = no }
+				}
+			}
+			# At Stellaris 3.13, many amenity buildings can't be built on Penal Colony.
+			has_modifier = penal_colony
 		}
 	}
 
@@ -1496,7 +1504,7 @@ pw_building_blossoming_preserve = {
 
 	convert_to = {
 		building_communal_housing
-		building_slave_huts
+		# building_slave_huts
 		building_luxury_residence
 		building_hive_warren
 		building_drone_storage

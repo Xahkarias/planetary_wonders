@@ -1012,56 +1012,16 @@ pw_building_factory_city = {
 		job_clerk_add = 1
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				NOT = { has_valid_civic = civic_crafters }
-			}
-		}
-		modifier = {
-			job_artisan_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/factory_add
+		OWNER_CONDITION = "is_gestalt = no"
+		AMOUNT = 1
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				has_valid_civic = civic_crafters
-			}
-		}
-		modifier = {
-			job_artificer_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOT = { has_civic = civic_catalytic_processing }
-				has_ethic = ethic_fanatic_egalitarian
-			}
-		}
-		modifier = {
-			job_foundry_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_civic = civic_catalytic_processing
-				has_ethic = ethic_fanatic_egalitarian
-			}
-		}
-		modifier = {
-			job_catalytic_technician_add = 1
-		}
+	inline_script = {
+		script = jobs/pw/foundry_add
+		OWNER_CONDITION = "has_ethic = ethic_fanatic_egalitarian"
+		AMOUNT = 1
 	}
 
 	triggered_planet_modifier = {

@@ -260,39 +260,36 @@ pw_farming_districts_value = {
 	# Normal
 	add = value:pw_districts_value|TYPE|district_farming|
 	add = value:pw_districts_value|TYPE|district_farming_uncapped|
-#	# Habitat
-#	Wrong TYPE parameter. There is no "district" district.
-#	modifier = {
-#		has_designation = col_habitat_farming
-#		NOT = { has_global_flag = stellarisevolved }
-#		add = value:pw_districts_value|TYPE|district|FACTOR|0.5|
-#	}
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_farming|FACTOR|4|
 	# Evovled
-	add = value:pw_districts_value|TYPE|district_tec_aqua_farming|
-	add = value:pw_districts_value|TYPE|district_tec_hab_food|
-	add = value:pw_districts_value|TYPE|district_tec_eco_farming|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_farming|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_proto_farming|
+	add = value:pw_farming_districts_value_evolved
+#	add = value:pw_districts_value|TYPE|district_tec_aqua_farming|
+#	add = value:pw_districts_value|TYPE|district_tec_hab_food|
+#	add = value:pw_districts_value|TYPE|district_tec_eco_farming|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_farming|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_tec_proto_farming|
 	# PD
-	add = value:pw_districts_value|TYPE|district_pdhab_food|
+	# PD 3.12 removed district_pdhab_food.
+#	add = value:pw_districts_value|TYPE|district_pdhab_food|
 	# Giga
-	add = value:pw_districts_value|TYPE|district_giga_alderson_farming|FACTOR|10|
-	add = value:pw_districts_value|TYPE|district_flusion_farming|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_farming|
-	add = value:pw_districts_value|TYPE|district_penrose_farming|FACTOR|4|
+	add = value:pw_farming_districts_value_giga
+#	add = value:pw_districts_value|TYPE|district_giga_alderson_farming|FACTOR|10|
+#	add = value:pw_districts_value|TYPE|district_flusion_farming|FACTOR|3|
+#	add = value:pw_districts_value|TYPE|district_giga_frameworld_farming|
+#	add = value:pw_districts_value|TYPE|district_penrose_farming|FACTOR|4|
 }
 
 pw_farming_buildings_value = {
 	add = value:pw_buildings_value|TYPE|building_hydroponics_farm|
 
 	# Evolved
-	add = value:pw_buildings_value|TYPE|building_hydroponics_farm_2|
-	add = value:pw_buildings_value|TYPE|building_hydroponics_farm_3|
-	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_1|
-	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_2|
-	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_3|
+	add = value:pw_farming_buildings_value_evolved
+#	add = value:pw_buildings_value|TYPE|building_hydroponics_farm_2|
+#	add = value:pw_buildings_value|TYPE|building_hydroponics_farm_3|
+#	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_1|
+#	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_2|
+#	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_3|
 }
 
 pw_mining_value = {
@@ -306,33 +303,38 @@ pw_mining_districts_value = {
 	add = value:pw_districts_value|TYPE|district_mining_uncapped|
 	add = value:pw_districts_value|TYPE|district_hab_mining|
 	# RW
-	add = value:pw_districts_value|TYPE|district_tec_rw_replicator|FACTOR|4|
+	# What "district_tec_rw_replicator" is? What is mod it belongs?
+#	add = value:pw_districts_value|TYPE|district_tec_rw_replicator|FACTOR|4|
 	# Evovled
-	add = value:pw_districts_value|TYPE|district_tec_aqua_mining|
-	add = value:pw_districts_value|TYPE|district_tec_eco_mining|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_mining|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_proto_mining|
+	add = value:pw_mining_districts_value_evolved
+#	add = value:pw_districts_value|TYPE|district_tec_aqua_mining|
+#	add = value:pw_districts_value|TYPE|district_tec_eco_mining|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_mining|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_tec_proto_mining|
 	# PD
-	add = value:pw_districts_value|TYPE|district_pdhab_mining|
+	# PD 3.12 removed district_pdhab_mining.
+#	add = value:pw_districts_value|TYPE|district_pdhab_mining|
 	# Giga
-	add = value:pw_districts_value|TYPE|district_giga_alderson_mining|FACTOR|10|
-	add = value:pw_districts_value|TYPE|district_flusion_mining|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_mining|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_decompressor|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_hab_scavenger|
-
-	
+	add = value:pw_mining_districts_value_giga
+#	add = value:pw_districts_value|TYPE|district_giga_alderson_mining|FACTOR|10|
+#	add = value:pw_districts_value|TYPE|district_flusion_mining|FACTOR|3|
+#	add = value:pw_districts_value|TYPE|district_giga_frameworld_mining|
+#	add = value:pw_districts_value|TYPE|district_giga_frameworld_decompressor|FACTOR|3|
+#	add = value:pw_districts_value|TYPE|district_giga_hab_scavenger|
+	# Extra District
+	add = value:pw_mining_districts_value_ED
 }
 
 pw_mining_buildings_value = {
 	# Buildings
 	# Evolved
-	add = value:pw_buildings_value|TYPE|building_tec_stripmine_1|
-	add = value:pw_buildings_value|TYPE|building_tec_stripmine_2|
-	add = value:pw_buildings_value|TYPE|building_tec_stripmine_3|
-	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_1|
-	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_2|
-	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_3|
+	add = value:pw_mining_buildings_value_evolved
+#	add = value:pw_buildings_value|TYPE|building_tec_stripmine_1|
+#	add = value:pw_buildings_value|TYPE|building_tec_stripmine_2|
+#	add = value:pw_buildings_value|TYPE|building_tec_stripmine_3|
+#	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_1|
+#	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_2|
+#	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_3|
 }
 
 pw_generators_value = {
@@ -348,36 +350,38 @@ pw_generators_districts_value = {
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_generator|FACTOR|4|
 	# Evovled
-	add = value:pw_districts_value|TYPE|district_tec_aqua_generator|
-	add = value:pw_districts_value|TYPE|district_tec_hab_generator|
-	add = value:pw_districts_value|TYPE|district_tec_eco_generator|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_generator|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_proto_generator|
+	add = value:pw_generators_districts_value_evolved
+#	add = value:pw_districts_value|TYPE|district_tec_aqua_generator|
+#	add = value:pw_districts_value|TYPE|district_tec_hab_generator|
+#	add = value:pw_districts_value|TYPE|district_tec_eco_generator|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_generator|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_tec_proto_generator|
 	# PD
-	add = value:pw_districts_value|TYPE|district_pdhab_energy|
-	add = value:pw_districts_value|TYPE|district_archive_energy|
+	# PD 3.12 removed these districts.
+#	add = value:pw_districts_value|TYPE|district_pdhab_energy|
+#	add = value:pw_districts_value|TYPE|district_archive_energy|
 	# Giga
-	add = value:pw_districts_value|TYPE|district_giga_alderson_generator|FACTOR|10|
-	add = value:pw_districts_value|TYPE|district_flusion_heavy_industry|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_generator|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_penrose|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_gas_giant_habitat_wind|FACTOR|2|
-	add = value:pw_districts_value|TYPE|district_interstellar_generator|FACTOR|4|
-	add = value:pw_districts_value|TYPE|district_giga_planet_wind|
-	add = value:pw_districts_value|TYPE|district_giga_planet_solar|
-	add = value:pw_districts_value|TYPE|district_giga_planet_geothermal|
-
-	
+	add = value:pw_generators_districts_value_giga
+#	add = value:pw_districts_value|TYPE|district_giga_alderson_generator|FACTOR|10|
+#	add = value:pw_districts_value|TYPE|district_flusion_heavy_industry|FACTOR|1.5|
+#	add = value:pw_districts_value|TYPE|district_giga_frameworld_generator|
+#	add = value:pw_districts_value|TYPE|district_giga_frameworld_penrose|FACTOR|3|
+#	add = value:pw_districts_value|TYPE|district_giga_gas_giant_habitat_wind|FACTOR|2|
+#	add = value:pw_districts_value|TYPE|district_interstellar_generator|FACTOR|4|
+#	add = value:pw_districts_value|TYPE|district_giga_planet_wind|
+#	add = value:pw_districts_value|TYPE|district_giga_planet_solar|
+#	add = value:pw_districts_value|TYPE|district_giga_planet_geothermal|
 }
 
 pw_generators_buildings_value = {
 	# Evolved
-	add = value:pw_buildings_value|TYPE|building_tec_energrid_1|
-	add = value:pw_buildings_value|TYPE|building_tec_energrid_2|
-	add = value:pw_buildings_value|TYPE|building_tec_energrid_3|
-	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor|
-	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor_on|
-	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_nexus_A|
+	add = value:pw_generators_buildings_value_evolved
+#	add = value:pw_buildings_value|TYPE|building_tec_energrid_1|
+#	add = value:pw_buildings_value|TYPE|building_tec_energrid_2|
+#	add = value:pw_buildings_value|TYPE|building_tec_energrid_3|
+#	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor|
+#	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor_on|
+#	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_nexus_A|
 }
 
 # usage: value:pw_added|BASE_VALUE|2|ADDED_VALUE|1|
@@ -397,4 +401,126 @@ pw_building_holy_reliquary_priest_jobs = {
  		add = 2
  		owner = { is_memorialist_empire = no }
  	}
+}
+
+# this = planet
+pw_building_mantle_crucible_foundry_jobs = {
+	base = 4
+	#Alloys (no CG)
+	# It includes hiues and non-Servitor machines.
+	modifier = {
+		add = 2
+		exists = owner
+		owner = { country_uses_consumer_goods = no }
+	}
+	#Designation Changes > Alloys
+ 	modifier = {
+ 		subtract = 1
+ 		OR = {
+			has_designation = col_factory
+			has_designation = col_ecu_factory
+			and = {
+				has_designation = col_mac_factory
+				exists = owner
+				owner = {
+					is_machine_empire = yes
+					country_uses_consumer_goods = yes
+				}
+			}
+		}
+ 	}
+ 	modifier = {
+ 		add = 1
+ 		OR = {
+			has_designation = col_foundry
+			has_designation = col_ecu_foundry
+			and = {
+				has_designation = col_mac_foundry
+				exists = owner
+				owner = {
+					is_machine_empire = yes
+					country_uses_consumer_goods = yes
+				}
+			}
+		}
+ 	}
+	#Modifier Changes -> Alloys
+	modifier = {
+		add = 2
+		has_modifier = pw_mod_mantle_crucible_alloys
+	}
+	modifier = {
+		subtract = 2
+		has_modifier = pw_mod_mantle_crucible_consumer_goods
+	}
+}
+
+# this = planet
+pw_building_mantle_crucible_artisan_jobs = {
+	base = 4
+	#Designation Changes -> -Consumer Goods
+ 	modifier = {
+ 		subtract = 1
+ 		OR = {
+			has_designation = col_foundry
+			has_designation = col_ecu_foundry
+			and = {
+				has_designation = col_mac_foundry
+				exists = owner
+				owner = {
+					is_machine_empire = yes
+					country_uses_consumer_goods = yes
+				}
+			}
+		}
+ 	}
+ 	modifier = {
+ 		add = 1
+ 		OR = {
+			has_designation = col_factory
+			has_designation = col_ecu_factory
+			and = {
+				has_designation = col_mac_factory
+				exists = owner
+				owner = {
+					is_machine_empire = yes
+					country_uses_consumer_goods = yes
+				}
+			}
+		}
+ 	}
+	#Modifier Changes -> -Consumer Goods
+	modifier = {
+		subtract = 2
+		has_modifier = pw_mod_mantle_crucible_alloys
+	}
+	modifier = {
+		add = 2
+		has_modifier = pw_mod_mantle_crucible_consumer_goods
+	}
+}
+
+pw_building_titan_forge_foundry_jobs = {
+	base = 7
+	# hive have 8 (not 7) jobs.
+	modifier = {
+		add = 1
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+}
+
+pw_d_hidden_mantle_factory_foundry_jobs = {
+	base = 1
+	#Alloys (no CG)
+	modifier = {
+		add = 1
+		exists = owner
+		owner = {
+			is_gestalt = no
+			country_uses_consumer_goods = no
+		}
+	}
 }
