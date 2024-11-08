@@ -1,3 +1,11 @@
+# Version 1.6.10 (for Stellaris 3.14.*)
+
+## Update by FebHare
+
+*Prevented several wonders from being built on Penal Colonies
+*Streamlined several job trigger scripts
+*Added support for the [Extra Districts](https://steamcommunity.com/sharedfiles/filedetails/?id=2792270076) mod
+
 # Version 1.6.9 (for Stellaris 3.12.*)
 
 ## Update by FebHare
