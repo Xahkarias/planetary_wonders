@@ -1,0 +1,191 @@
+# Usage:
+#inline_script = {
+#	script = jobs/pw/living_spire_AP_jobs_add
+#	JOB_AMOUNT = 2
+#	POP_GROWTH_SPEED = 0.20
+# 	ASSEMBLY_ORGANIC_ADD = 5
+# 	ASSEMBLY_MULT = 0.15
+#}
+#Medical Worker (No Ascension Path)
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_path = no
+			NOR = {
+				has_origin = origin_cybernetic_creed
+				has_origin = origin_shroudwalker_apprentice
+				has_origin = origin_synthetic_fertility
+				is_individual_machine = yes
+			}
+			has_toxic_baths = no
+		}
+	}
+	modifier = {
+		job_healthcare_add = $JOB_AMOUNT$
+	}
+}
+
+# No Ascension Path / Mind over matter / Engineered Evolution
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			nor = {
+				has_ascension_perk = ap_synthetic_evolution
+				has_origin = origin_synthetic_fertility
+				is_individual_machine = yes
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_origin = origin_cybernetic_creed
+			}
+			has_toxic_baths = no
+		}
+	}
+	text = job_healthcare_effect_desc
+}
+
+#Spa Attendants (only mutagenic spas) (No Ascension Path)
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_path = no
+			NOR = {
+				has_origin = origin_cybernetic_creed
+				has_origin = origin_shroudwalker_apprentice
+				has_origin = origin_synthetic_fertility
+				is_individual_machine = yes
+			}
+			has_toxic_baths = yes
+		}
+	}
+	modifier = {
+		job_bath_attendant_add = $JOB_AMOUNT$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			has_ascension_path = no
+			NOR = {
+				has_origin = origin_cybernetic_creed
+				has_origin = origin_shroudwalker_apprentice
+				has_origin = origin_synthetic_fertility
+				is_individual_machine = yes
+			}
+			has_toxic_baths = yes
+		}
+	}
+	text = job_toxic_baths_effect_desc
+}
+
+#Mind over matter
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_ascension_perk = ap_mind_over_matter
+				has_origin = origin_shroudwalker_apprentice
+			}
+		}
+	}
+	modifier = {
+		job_healthcare_add = 1
+		pop_growth_speed = $POP_GROWTH_SPEED$
+	}
+}
+
+#Engineered Evolution
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_perk = ap_engineered_evolution
+		}
+	}
+	modifier = {
+		job_healthcare_add = 1
+		planet_pop_assembly_organic_add = $ASSEMBLY_ORGANIC_ADD$
+	}
+}
+
+#The flesh is weak
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_origin = origin_cybernetic_creed
+			}
+		}
+	}
+	modifier = {
+		job_augmentor_add = 1
+		pop_growth_speed = $POP_GROWTH_SPEED$
+	}
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			or = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_origin = origin_cybernetic_creed
+			}
+		}
+		is_cyborg_empire = yes
+	}
+	text = job_augmentor_growth_effect_desc
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			or = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				has_origin = origin_cybernetic_creed
+			}
+		}
+		is_cyborg_empire = no
+	}
+	text = job_augmentor_research_effect_desc
+}
+
+#Synthetic Evolution
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			or = {
+				has_ascension_perk = ap_synthetic_evolution
+				has_origin = origin_synthetic_fertility
+				is_individual_machine = yes
+			}
+		}
+	}
+	modifier = {
+		job_roboticist_add = 1
+		planet_pop_assembly_mult = $ASSEMBLY_MULT$
+	}
+}
+
+#Roboticist
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			or = {
+				has_ascension_perk = ap_synthetic_evolution
+				has_origin = origin_synthetic_fertility
+				is_individual_machine = yes
+			}
+		}
+	}
+	text = job_roboticist_effect_desc
+}
