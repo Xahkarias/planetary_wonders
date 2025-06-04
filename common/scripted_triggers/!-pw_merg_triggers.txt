@@ -1,9 +1,11 @@
 #Triggers overwritten by Merger of Rules used for compatibility
+#TODO: Merger of Rules may or may not remain a thing. Might have to rethink this.
 
 ##Country Scope
 merg_is_standard_empire = {
 	OR = {
 		is_country_type = default
+		is_country_type = awakened_marauders
 		is_country_type = fallen_empire
 		is_country_type = awakened_fallen_empire
 	}

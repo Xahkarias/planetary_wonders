@@ -10,13 +10,9 @@ wg_pw_r_coin_of_fortune = {
 	hide_if_no_cb = yes
 	release_occupied_systems_on_status_quo = no
 
-	allowed_peace_offers = {
-		status_quo
-		surrender
-		demand_surrender
-	}
+	# forbidden_peace_offers = {}
 
-	surrender_acceptance = 20
+	surrender_acceptance = -20
 
 	potential = {
 		# has_total_war_cb = no
