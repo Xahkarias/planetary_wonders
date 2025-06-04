@@ -357,7 +357,7 @@ pw_mod_domed_city_zro_psionic_development = {
 pw_mod_domed_city_zro_cloning = {
 	#Country Mod
 	icon = "gfx/interface/icons/modifiers/mod_resource_sr_zro_mult.dds"
-	planet_pop_assembly_organic_mult = 0.10
+	bonus_pop_growth_mult = 0.10
 }
 
 pw_mod_domed_city_zro_circuitry = {

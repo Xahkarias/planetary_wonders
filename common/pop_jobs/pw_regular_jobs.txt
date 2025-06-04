@@ -774,7 +774,6 @@ pw_poly_artisan = {
 
 	planet_modifier = {
 		planet_amenities_add = 40
-		# trade_value_add = 2
 	}
 
 	triggered_planet_modifier = {
@@ -1999,7 +1998,7 @@ pw_preserver = {
 
 	planet_modifier = {
 		bonus_pop_growth_mult = 0.025
-		planet_pop_assembly_organic_mult = 0.025
+		bonus_pop_growth_mult = 0.025
 		pop_environment_tolerance = 0.025
 	}
 

@@ -108,7 +108,7 @@ triggered_planet_modifier = {
 	}
 	modifier = {
 		job_healthcare_add = 1
-		planet_pop_assembly_organic_add = $ASSEMBLY_ORGANIC_ADD$
+		bonus_pop_growth = $ASSEMBLY_ORGANIC_ADD$
 	}
 }
 

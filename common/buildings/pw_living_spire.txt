@@ -886,7 +886,7 @@ pw_building_living_spire_2 = {
 	# 	}
 	# 	modifier = {
 	# 		job_healthcare_add = 1
-	# 		planet_pop_assembly_organic_add = 3
+	# 		bonus_pop_growth = 3
 	# 	}
 	# }
 	# #Synthetic Evolution
@@ -1416,7 +1416,7 @@ pw_building_living_spire_3 = {
 	# 	}
 	# 	modifier = {
 	# 		job_healthcare_add = 1
-	# 		planet_pop_assembly_organic_add = 5
+	# 		bonus_pop_growth = 5
 	# 	}
 	# }
 	# #Synthetic Evolution

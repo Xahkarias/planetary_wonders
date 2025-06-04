@@ -433,7 +433,6 @@ pw_d_guardian_angel_tourist_attraction = {
 			}
 		}
 		modifier = {
-			# trade_value_add = 20
 			planet_housing_add = 200
 		}
 	}
