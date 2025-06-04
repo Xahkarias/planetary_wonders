@@ -43,7 +43,7 @@ pw_mining_director = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.4
+			planet_amenities_add = 8
 		}
 	}
 
@@ -52,7 +52,7 @@ pw_mining_director = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.4
+			planet_amenities_add = -8
 		}
 	}
 
@@ -164,7 +164,7 @@ pw_energy_director = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.4
+			planet_amenities_add = 8
 		}
 	}
 
@@ -173,7 +173,7 @@ pw_energy_director = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.4
+			planet_amenities_add = -8
 		}
 	}
 
@@ -293,7 +293,7 @@ pw_agriculture_director = {
 			owner = { has_valid_civic = civic_agrarian_idyll }
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 40
 		}
 	}
 
@@ -305,7 +305,7 @@ pw_agriculture_director = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.4
+			planet_amenities_add = 8
 		}
 	}
 
@@ -314,7 +314,7 @@ pw_agriculture_director = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.4
+			planet_amenities_add = -8
 		}
 	}
 
@@ -328,7 +328,7 @@ pw_agriculture_director = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.4
+			planet_amenities_add = 8
 		}
 	}
 
@@ -339,7 +339,7 @@ pw_agriculture_director = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.4
+			planet_amenities_add = -8
 		}
 	}
 
@@ -686,19 +686,19 @@ pw_tourist = {
 		# worker_job_check_trigger = yes
 	}
 
-	planet_modifier = {
-		trade_value_add = 4
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			any_playable_country = {
-				NOT = { is_country = owner }
-				has_migration_access = owner
-			}
+	resources = {
+		category = planet_traders
+		produces = {
+			trade = 4
 		}
-		modifier = {
-			trade_value_add = 4
+		produces = {
+			trigger = {
+				any_playable_country = {
+					NOT = { is_country = owner }
+					has_migration_access = owner
+				}
+			}
+			trade = 4
 		}
 	}
 
@@ -765,6 +765,7 @@ pw_poly_artisan = {
 		produces = {
 			consumer_goods = 8
 			unity = 2
+			trade = 2
 		}
 		upkeep = {
 			minerals = 15
@@ -772,8 +773,8 @@ pw_poly_artisan = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 2
-		trade_value_add = 2
+		planet_amenities_add = 40
+		# trade_value_add = 2
 	}
 
 	triggered_planet_modifier = {
@@ -784,7 +785,7 @@ pw_poly_artisan = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 40
 		}
 	}
 
@@ -793,7 +794,7 @@ pw_poly_artisan = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -40
 		}
 	}
 
@@ -901,7 +902,7 @@ pw_diversity_curator = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 8
+		planet_amenities_add = 160
 	}
 
 	triggered_planet_modifier = {
@@ -912,13 +913,13 @@ pw_diversity_curator = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 40
 		}
 	}
 	triggered_planet_modifier = {
 		potential = { has_trait = trait_repugnant }
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -40
 		}
 	}
 
@@ -1055,7 +1056,7 @@ pw_degeneracy_curator = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 8
+		planet_amenities_add = 160
 	}
 
 	triggered_planet_modifier = {
@@ -1066,13 +1067,13 @@ pw_degeneracy_curator = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 40
 		}
 	}
 	triggered_planet_modifier = {
 		potential = { has_trait = trait_repugnant }
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -40
 		}
 	}
 
@@ -1363,7 +1364,7 @@ pw_master_archivist = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 4
+		planet_amenities_add = 80
 	}
 
 	triggered_planet_modifier = {
@@ -1374,7 +1375,7 @@ pw_master_archivist = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 40
 		}
 	}
 
@@ -1383,7 +1384,7 @@ pw_master_archivist = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -40
 		}
 	}
 
@@ -1691,7 +1692,7 @@ pw_relic_keeper = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 10
+		planet_amenities_add = 200
 		planet_stability_add = 5
 	}
 
@@ -1703,7 +1704,7 @@ pw_relic_keeper = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 40
 		}
 	}
 
@@ -1712,7 +1713,7 @@ pw_relic_keeper = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -40
 		}
 	}
 
@@ -1997,7 +1998,7 @@ pw_preserver = {
 	}
 
 	planet_modifier = {
-		pop_growth_speed = 0.025
+		bonus_pop_growth_mult = 0.025
 		planet_pop_assembly_organic_mult = 0.025
 		pop_environment_tolerance = 0.025
 	}

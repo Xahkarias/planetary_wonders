@@ -94,7 +94,7 @@
 #Production
 @pw_job_director_resource_base = 4
 @pw_job_director_resource_upkeep = 6
-@pw_job_director_resource_amenities = 2
+@pw_job_director_resource_amenities = 40
 @pw_job_director_resource_mult = 0.25
 
 

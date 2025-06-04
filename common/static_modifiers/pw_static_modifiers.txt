@@ -55,7 +55,7 @@ pw_mod_space_elevator_105_a = {
 pw_mod_space_elevator_105_b = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_green
-	trade_value_mult = 0.1
+	planet_traders_produces_mult = 0.1
 }
 
 pw_mod_space_elevator_105_c = {
@@ -70,7 +70,7 @@ pw_mod_space_elevator_kessler_effect = {
 	icon_frame = @pw_icon_frame_red
 	pop_environment_tolerance = -0.05
 	planet_amenities_mult = -0.10
-	trade_value_mult = -0.10
+	planet_traders_produces_mult = -0.10
 }
 
 pw_mod_space_elevator_kessler_effect_no_happiness = {
@@ -89,7 +89,7 @@ pw_mod_space_elevator_aided_development_colonization = {
 pw_mod_space_elevator_aided_development_established = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_assist_research.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_growth_speed = 0.10
+	bonus_pop_growth_mult = 0.10
 }
 
 pw_mod_space_elevator_moon_colony_expansion_1 = {
@@ -134,7 +134,7 @@ pw_mod_space_elevator_counterweight_habitat = {
 
 #Space elevator Open Market decision:
 pw_mod_space_elevator_open_market = {
-	trade_value_mult = 0.05
+	planet_traders_produces_mult = 0.05
 }
 pw_mod_space_elevator_open_market_gestalt = {
 	country_energy_produces_mult = 0.05
@@ -143,7 +143,7 @@ pw_mod_space_elevator_open_market_gestalt = {
 pw_mod_space_elevator_open_market_free_assets_concession = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
 	icon_frame = @pw_icon_frame_green
-	trade_value_mult = 0.10
+	planet_traders_produces_mult = 0.10
 	planet_pops_upkeep_mult = 0.05
 }
 
@@ -159,7 +159,7 @@ pw_mod_space_elevator_open_market_industrial_protectionism = {
 	icon_frame = @pw_icon_frame_green
 	planet_jobs_alloys_produces_mult = 0.05
 	planet_jobs_consumer_goods_produces_mult = 0.05
-	trade_value_mult = -0.05
+	planet_traders_produces_mult = -0.05
 }
 
 pw_mod_space_elevator_open_market_industrial_protectionism_gestalt = {
@@ -189,7 +189,7 @@ pw_mod_space_elevator_open_market_local_extraction_subsides = {
 	icon_frame = @pw_icon_frame_green
 	planet_jobs_food_produces_mult = 0.10
 	planet_jobs_minerals_produces_mult = 0.10
-	trade_value_mult = -0.05
+	planet_traders_produces_mult = -0.05
 }
 
 pw_mod_space_elevator_open_market_local_extraction_subsides_gestalt = {
@@ -204,7 +204,7 @@ pw_mod_space_elevator_open_market_local_content_requirements = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_space_elevator_open_market.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_researchers_produces_mult = 0.05
-	trade_value_mult = -0.05
+	planet_traders_produces_mult = -0.05
 }
 
 pw_mod_space_elevator_open_market_local_content_requirements_gestalt = {
@@ -284,7 +284,7 @@ pw_mod_domed_city_transmitted_experiments_unity = {
 
 pw_mod_domed_city_transmitted_experiments_megacorp = {
 	#Country Mod
-	trade_value_mult = 0.05
+	planet_traders_produces_mult = 0.05
 	country_unity_produces_mult = 0.05
 }
 
@@ -343,13 +343,13 @@ pw_mod_domed_city_repairing_domed_city = {
 pw_mod_domed_city_zro_fertility = {
 	#Country Mod
 	icon = "gfx/interface/icons/modifiers/mod_resource_sr_zro_mult.dds"
-	pop_growth_speed = 0.05
+	bonus_pop_growth_mult = 0.05
 }
 
 pw_mod_domed_city_zro_psionic_development = {
 	#Country Mod
 	icon = "gfx/interface/icons/modifiers/mod_resource_sr_zro_mult.dds"
-	pop_growth_speed = 0.05
+	bonus_pop_growth_mult = 0.05
 	planet_jobs_produces_mult = 0.05
 	planet_jobs_upkeep_mult = 0.05
 }
@@ -473,7 +473,7 @@ pw_mod_mantle_crucible_uncompromising_industry = {
 
 	planet_metallurgists_produces_mult = 0.05
 	planet_artisans_produces_mult = 0.05
-	pop_growth_speed = -0.10
+	bonus_pop_growth_mult = -0.10
 }
 
 pw_mod_mantle_crucible_habitability = {
@@ -485,7 +485,7 @@ pw_mod_titan_forge_uncompromising_industry = {
 	icon_frame = @pw_icon_frame_yellow
 
 	planet_metallurgists_produces_mult = 0.10
-	pop_growth_speed = -0.10
+	bonus_pop_growth_mult = -0.10
 	pop_environment_tolerance = -0.05
 }
 
@@ -494,7 +494,7 @@ pw_mod_industrial_heart_uncompromising_industry = {
 	icon_frame = @pw_icon_frame_yellow
 
 	planet_artisans_produces_mult = 0.10
-	pop_growth_speed = -0.10
+	bonus_pop_growth_mult = -0.10
 	pop_environment_tolerance = -0.05
 }
 
@@ -573,13 +573,13 @@ pw_mod_TLN_mutual_aid = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_machine_sapience.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.1
-	pop_growth_speed = 0.05
+	bonus_pop_growth_mult = 0.05
 }
 
 pw_mod_TLN_inspired_militia = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_martial_law.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_defense_armies_add = 2
+	planet_defense_armies_add = 2
 	army_defense_health_mult = 0.15
 }
 
@@ -676,7 +676,7 @@ pw_mod_conduit_of_unity_recently_build = {
 pw_holy_reliquary_expansion_reflective_meditation = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_space_walk.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_growth_speed = 0.10
+	bonus_pop_growth_mult = 0.10
 	pop_ethics_shift_speed_mult = 0.25
 }
 
@@ -684,15 +684,15 @@ pw_holy_reliquary_expansion_reflective_meditation = {
 pw_holy_reliquary_expansion_peregrination_pathways = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_expel_population.dds"
 	icon_frame = @pw_icon_frame_green
-	planet_immigration_pull_mult = 0.20
-	pop_growth_from_immigration = 0.20
+	planet_resettlement_unemployed_destination_mult = 0.20
+	planet_resettlement_unemployed_mult = 0.20
 }
 
 #Scale of Balance: Tipped balance effects
 pw_holy_reliquary_harmony_tipped_balance_pop = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_growth_speed = 0.10
+	bonus_pop_growth_mult = 0.10
 	pop_environment_tolerance = 0.10
 }
 
@@ -739,7 +739,7 @@ pw_holy_reliquary_appeased_iconoclasts = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_unity_symbol.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.10
-	planet_priests_produces_mult = 0.10
+	planet_bureaucrats_produces_mult = 0.10
 }
 
 #Event: Controlled Iconoclast
@@ -747,7 +747,7 @@ pw_holy_reliquary_controlled_iconoclasts = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_unity_symbol.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = -0.05
-	planet_priests_produces_mult = 0.15
+	planet_bureaucrats_produces_mult = 0.15
 }
 
 #Living Spire designations
@@ -769,7 +769,7 @@ pw_pm_living_spire_designation_imperial = {
 pw_pm_living_spire_designation_commerce = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_commerce.dds"
 	icon_frame = @pw_icon_frame_green
-	trade_value_mult = 0.25
+	planet_traders_produces_mult = 0.25
 	planet_pops_upkeep_mult = 0.10
 }
 
@@ -807,7 +807,7 @@ pw_pm_living_spire_designation_administration = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_administration.dds"
 	icon_frame = @pw_icon_frame_green
 	job_politician_add = 1
-	planet_administrators_upkeep_mult = -0.25
+	planet_bureaucrats_upkeep_mult = -0.25
 }
 
 pw_pm_living_spire_designation_death_cult = {
@@ -860,8 +860,8 @@ pw_pm_living_spire_designation_order = {
 pw_pm_nostalgia_paradise_theme_new_frontiers = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_new_frontiers.dds"
 	icon_frame = @pw_icon_frame_green
-	trade_value_mult = 0.10
-	planet_immigration_pull_mult = 0.10
+	planet_traders_produces_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 
 	custom_tooltip = pw_pm_nostalgia_paradise_theme_new_frontiers_empire_effects
 	show_only_custom_tooltip = no
@@ -874,13 +874,13 @@ pw_pm_nostalgia_paradise_theme_new_frontiers_other_planets = {
 	icon_frame = @pw_icon_frame_green
 
 	planet_amenities_mult = 0.10
-	trade_value_mult = 0.05
+	planet_traders_produces_mult = 0.05
 }
 
 pw_pm_nostalgia_paradise_theme_new_frontiers_machine = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_new_frontiers.dds"
 	icon_frame = @pw_icon_frame_green
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 	pop_happiness = 0.05
 	pop_environment_tolerance = 0.10
 }
@@ -890,7 +890,7 @@ pw_pm_nostalgia_paradise_theme_golden_age = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_golden_age.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_jobs_unity_produces_mult = 0.15
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 
 	custom_tooltip = pw_pm_nostalgia_paradise_theme_golden_age_empire_effects
 	show_only_custom_tooltip = no
@@ -909,7 +909,7 @@ pw_pm_nostalgia_paradise_theme_golden_age_other_planets = {
 pw_pm_nostalgia_paradise_theme_golden_age_machine = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_golden_age.dds"
 	icon_frame = @pw_icon_frame_green
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 	pop_happiness = 0.05
 	planet_bio_trophies_produces_mult = 0.25
 }
@@ -920,7 +920,7 @@ pw_pm_nostalgia_paradise_theme_war_epoch = {
 	icon_frame = @pw_icon_frame_green
 	job_soldier_add = 1
 	army_defense_damage_mult = 0.10
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 
 	custom_tooltip = pw_pm_nostalgia_paradise_theme_war_epoch_empire_effects
 	show_only_custom_tooltip = no
@@ -939,18 +939,18 @@ pw_pm_nostalgia_paradise_theme_war_epoch_other_planets = {
 pw_pm_nostalgia_paradise_theme_war_epoch_machine = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_war_epoch.dds"
 	icon_frame = @pw_icon_frame_green
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 	pop_happiness = 0.05
 	army_defense_damage_mult = 0.10
-	pop_defense_armies_add = 2
+	planet_defense_armies_add = 2
 }
 
 #Palace of Pleasure
 pw_pm_nostalgia_paradise_theme_palace_of_pleasures = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_palace_of_pleasures.dds"
 	icon_frame = @pw_icon_frame_green
-	biological_pop_growth_speed = 0.10
-	planet_immigration_pull_mult = 0.10
+	biological_logistic_growth_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 
 	custom_tooltip = pw_pm_nostalgia_paradise_theme_palace_of_pleasures_empire_effects
 	show_only_custom_tooltip = no
@@ -969,16 +969,16 @@ pw_pm_nostalgia_paradise_theme_palace_of_pleasures_other_planets = {
 pw_pm_nostalgia_paradise_theme_palace_of_pleasures_machine = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_palace_of_pleasures.dds"
 	icon_frame = @pw_icon_frame_green
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 	pop_happiness = 0.05
-	biological_pop_growth_speed = 0.15
+	biological_logistic_growth_mult = 0.15
 }
 
 #Noxious Spa
 pw_pm_nostalgia_paradise_theme_noxious_spa = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_noxious_spa.dds"
 	icon_frame = @pw_icon_frame_green
-	biological_pop_growth_speed = 0.20
+	biological_logistic_growth_mult = 0.20
 	pop_happiness = -0.05
 	pop_environment_tolerance = -0.05
 
@@ -999,7 +999,7 @@ pw_pm_nostalgia_paradise_theme_noxious_spa_other_planets = {
 pw_pm_nostalgia_paradise_theme_noxious_spa_machine = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_noxious_spa.dds"
 	icon_frame = @pw_icon_frame_green
-	biological_pop_growth_speed = 0.15
+	biological_logistic_growth_mult = 0.15
 	planet_pop_assembly_mult = 0.10
 	pop_happiness = -0.05
 	pop_environment_tolerance = -0.05
@@ -1010,7 +1010,7 @@ pw_pm_nostalgia_paradise_theme_automated_resort = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_golden_age.dds"
 	icon_frame = @pw_icon_frame_green
 	pop_happiness = 0.05
-	biological_pop_growth_speed = 0.10
+	biological_logistic_growth_mult = 0.10
 	planet_jobs_unity_produces_mult = 0.10
 }
 
@@ -1020,7 +1020,7 @@ pw_pm_unhallowed_necropolis_mausoleum_world = {
 	icon_frame = @pw_icon_frame_green
 	job_pw_tomb_scholar_per_pop = @pw_job_per_25_pop
 	pop_environment_tolerance = 0.10
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 	planet_amenities_mult = 0.05
 
 	custom_tooltip = pw_pm_unhallowed_necropolis_mausoleum_world_empire_effects
@@ -1033,7 +1033,7 @@ pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness = {
 	icon_frame = @pw_icon_frame_green
 	job_pw_tomb_surveyor_per_pop = @pw_job_per_25_pop
 	pop_environment_tolerance = 0.10
-	planet_immigration_pull_mult = 0.10
+	planet_resettlement_unemployed_destination_mult = 0.10
 	planet_amenities_no_happiness_mult = 0.05
 
 	custom_tooltip = pw_pm_unhallowed_necropolis_mausoleum_world_empire_effects
@@ -1054,7 +1054,7 @@ pw_pm_blossoming_preserve_harmonious_blossom_gaia = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_blossoming_preserve_harmonious_blossom_gaia.dds"
 	icon_frame = @pw_icon_frame_green
 
-	pop_growth_speed = 0.10
+	bonus_pop_growth_mult = 0.10
 }
 
 pw_pm_blossoming_preserve_harmonious_blossom_hive = {
@@ -1128,7 +1128,7 @@ pw_mod_IH_integrated_maintenance_protocols = {
 }
 
 pw_mod_IH_consumerism_investigation = {
-	trade_value_mult = 0.05
+	planet_traders_produces_mult = 0.05
 }
 
 #Holy Reliquary Artifacts Modifiers:
@@ -1143,7 +1143,7 @@ pw_holy_reliquary_expansion_introspective_gaze = {
 #Stargazing Mirror: Extrospective Gaze
 pw_holy_reliquary_expansion_extrospective_gaze = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	colony_start_num_pops_add = 1
+	# colony_start_num_pops_add = 1
 	empire_size_colonies_mult = -0.05
 	planet_colony_development_speed_mult = 0.50
 }
@@ -1165,7 +1165,7 @@ pw_holy_reliquary_domination_way_of_the_void_speakers = {
 #Coin of Fortune
 pw_holy_reliquary_prosperity_coin_of_fortune = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
-	trade_value_mult = 0.20
+	planet_traders_produces_mult = 0.20
 	planet_jobs_worker_produces_mult = 0.10
 }
 
@@ -1173,7 +1173,7 @@ pw_holy_reliquary_prosperity_coin_of_fortune = {
 pw_holy_reliquary_harmony_scale_of_balance = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	planet_stability_add = 5
-	planet_administrators_upkeep_mult = 0.10
+	planet_bureaucrats_upkeep_mult = 0.10
 }
 
 #Defender of the Faith: Holy Might
@@ -1212,7 +1212,7 @@ pw_holy_reliquary_diplomacy_might_of_fleet = {
 pw_holy_reliquary_diplomacy_abundance_of_riches = {
 	icon = "gfx/interface/icons/modifiers/pw_mod_holy_reliquary_artifact.dds"
 	diplo_weight_economy_mult = 0.15
-	trade_value_mult = 0.10
+	planet_traders_produces_mult = 0.10
 	envoys_add = 1
 }
 
@@ -1330,8 +1330,9 @@ pw_FG_feast_driving_hunger = {
 }
 
 pw_FG_feast_sprawling_offspring = {
-	pop_growth_speed = 0.15
-	colony_start_num_pops_add = 1
+	bonus_pop_growth_mult = 0.15
+	# colony_start_num_pops_add = 1
+	planet_colony_development_speed_mult = 0.25
 }
 
 pw_FG_feast_purpose_of_life = {

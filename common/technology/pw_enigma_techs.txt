@@ -433,7 +433,7 @@ pw_enigma_tech_atomic_transistor_substrate = {
 
 	modifier = {
 		planet_researchers_produces_mult = 0.10
-		planet_administrators_produces_mult = 0.10
+		planet_bureaucrats_produces_mult = 0.10
 	}
 
 	inline_script = {

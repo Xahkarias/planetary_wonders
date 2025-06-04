@@ -94,7 +94,7 @@ triggered_planet_modifier = {
 	}
 	modifier = {
 		job_healthcare_add = 1
-		pop_growth_speed = $POP_GROWTH_SPEED$
+		bonus_pop_growth_mult = $POP_GROWTH_SPEED$
 	}
 }
 
@@ -125,7 +125,7 @@ triggered_planet_modifier = {
 	}
 	modifier = {
 		job_augmentor_add = 1
-		pop_growth_speed = $POP_GROWTH_SPEED$
+		bonus_pop_growth_mult = $POP_GROWTH_SPEED$
 	}
 }
 

@@ -60,7 +60,7 @@ pw_art_mod_spiritualist = {
 
 	pop_ethic_spiritualist_attraction_mult = 0.30
 	planet_amenities_mult = 0.10
-	planet_priests_produces_mult = 0.20
+	planet_bureaucrats_produces_mult = 0.20
 }
 
 pw_art_mod_exalted_priesthood = {
@@ -70,7 +70,7 @@ pw_art_mod_exalted_priesthood = {
 
 	pop_ethic_spiritualist_attraction_mult = 0.45
 	planet_amenities_mult = 0.10
-	planet_priests_produces_mult = 0.25
+	planet_bureaucrats_produces_mult = 0.25
 	pop_cat_ruler_happiness = 0.15
 }
 
@@ -160,7 +160,7 @@ pw_art_mod_megacorp = {
 
 	pop_government_ethic_attraction = 0.30
 	planet_amenities_mult = 0.15
-	trade_value_mult = 0.25
+	planet_traders_produces_mult = 0.25
 }
 
 pw_art_mod_imperial_cult = {
@@ -189,7 +189,7 @@ pw_art_mod_barbaric_despoilers = {
 
 	pop_government_ethic_attraction = 0.30
 	planet_amenities_mult = 0.15
-	trade_value_mult = 0.25
+	planet_traders_produces_mult = 0.25
 }
 
 pw_art_mod_memorialist = {
@@ -207,7 +207,7 @@ pw_art_mod_cottage_core = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_museum.dds"
 	icon_frame = @pw_icon_frame_green
 
-	planet_immigration_pull_mult = 0.25
+	planet_resettlement_unemployed_destination_mult = 0.25
 }
 
 # Country Modifiers:
@@ -217,8 +217,8 @@ pw_art_mod_xenophile = {
 
 	pop_ethic_xenophile_attraction_mult = 0.25
 	planet_amenities_mult = 0.10
-	pop_growth_from_immigration = 0.25
-	planet_immigration_pull_mult = 0.50
+	planet_resettlement_unemployed_mult = 0.25
+	planet_resettlement_unemployed_destination_mult = 0.50
 }
 
 pw_art_mod_xenophobe = {
@@ -228,7 +228,7 @@ pw_art_mod_xenophobe = {
 	pop_ethic_xenophobe_attraction_mult = 0.25
 	planet_amenities_mult = 0.10
 	country_influence_produces_mult = 0.15
-	pop_growth_speed = 0.10
+	bonus_pop_growth_mult = 0.10
 }
 
 pw_art_mod_imperial_cult_country = {
@@ -273,7 +273,7 @@ pw_art_mod_peace_protest_song = {
 
 pw_art_mod_pastoral_utopia = {
 	icon = "gfx/interface/icons/modifiers/mod_country_immigration_pull_add.dds"
-	pop_growth_from_immigration = 0.1
+	planet_resettlement_unemployed_mult = 0.1
 }
 
 pw_art_mod_sacred_chorus = {
@@ -283,7 +283,7 @@ pw_art_mod_sacred_chorus = {
 
 pw_art_mod_spiritual_censer_maker = {
 	icon = "gfx/interface/icons/modifiers/mod_job_priest_add.dds"
-	planet_priests_produces_mult = 0.25
+	planet_bureaucrats_produces_mult = 0.25
 }
 
 pw_art_mod_contemplative_wave = {
@@ -316,7 +316,7 @@ pw_art_mod_hostile_architecture = {
 
 pw_art_mod_luxury_desire = {
 	icon = "gfx/interface/icons/modifiers/mod_resource_luxury_goods_mult.dds"
-	trade_value_mult = 0.15
+	planet_traders_produces_mult = 0.15
 }
 
 pw_art_mod_common_heroes = {
@@ -337,17 +337,17 @@ pw_art_mod_shared_wealth = {
 
 pw_art_mod_cycle_of_nostalgia = {
 	icon = "gfx/interface/icons/modifiers/mod_resource_luxury_goods_mult.dds"
-	trade_value_mult = 0.15
+	planet_traders_produces_mult = 0.15
 }
 
 pw_art_mod_merchandise_fetishism = {
 	icon = "gfx/interface/icons/modifiers/mod_resource_luxury_goods_mult.dds"
-	trade_value_mult = 0.15
+	planet_traders_produces_mult = 0.15
 }
 
 pw_art_mod_consumer_addiction = {
 	icon = "gfx/interface/icons/modifiers/mod_resource_luxury_goods_mult.dds"
-	trade_value_mult = 0.15
+	planet_traders_produces_mult = 0.15
 }
 
 pw_art_mod_pop_industry = {
@@ -366,12 +366,12 @@ pw_art_mod_union_busting = {
 }
 
 pw_art_mod_cultivated_identity = {
-	trade_value_mult = 0.05
+	planet_traders_produces_mult = 0.05
 	country_unity_produces_mult = 0.05
 }
 
 pw_art_mod_prosumer_culture = {
-	trade_value_mult = 0.05
+	planet_traders_produces_mult = 0.05
 	country_unity_produces_mult = 0.05
 }
 
@@ -387,7 +387,7 @@ pw_art_mod_terraforming_pursuits = {
 }
 
 pw_art_mod_hedonism = {
-	pop_growth_speed = 0.10
+	bonus_pop_growth_mult = 0.10
 	pop_happiness = 0.10
 }
 
@@ -397,7 +397,7 @@ pw_art_mod_metallic_art_subsides = {
 }
 
 pw_art_mod_masterful_artificers = {
-	trade_value_mult = 0.10
+	planet_traders_produces_mult = 0.10
 	planet_artisans_upkeep_mult = -0.15
 }
 

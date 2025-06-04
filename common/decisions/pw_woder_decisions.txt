@@ -1921,7 +1921,7 @@ pw_decision_host_peace_festival = {
 		category = decisions
 		cost = {
 			unity = 25
-			mult = trigger:num_pops
+			mult = trigger:pop_amount
 		}
 	}
 
@@ -1970,7 +1970,7 @@ pw_decision_host_peace_festival = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2019,7 +2019,7 @@ pw_decision_host_peace_festival = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2068,7 +2068,7 @@ pw_decision_host_peace_festival = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2117,7 +2117,7 @@ pw_decision_host_peace_festival = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2166,7 +2166,7 @@ pw_decision_host_peace_festival = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2215,7 +2215,7 @@ pw_decision_host_peace_festival = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2324,7 +2324,7 @@ pw_decision_host_military_parade = {
 		category = decisions
 		cost = {
 			unity = 25
-			mult = trigger:num_pops
+			mult = trigger:pop_amount
 		}
 	}
 
@@ -2376,7 +2376,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2449,7 +2449,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2522,7 +2522,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2595,7 +2595,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2668,7 +2668,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2741,7 +2741,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 
@@ -2814,7 +2814,7 @@ pw_decision_host_military_parade = {
 # 		category = decisions
 # 		cost = {
 # 			unity = 25
-# 			mult = trigger:num_pops
+# 			mult = trigger:pop_amount
 # 		}
 # 	}
 

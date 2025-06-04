@@ -126,7 +126,7 @@ pw_monument_unity = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			planet_amenities_add = 10
+			planet_amenities_add = 200
 		}
 	}
 

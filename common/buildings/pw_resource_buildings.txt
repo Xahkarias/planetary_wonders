@@ -179,7 +179,7 @@ pw_building_erebus_project = {
 			owner = { has_origin = origin_subterranean }
 		}
 		modifier = {
-			planet_housing_add = 5
+			planet_housing_add = 500
 		}
 	}
 
@@ -526,7 +526,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { has_origin = origin_subterranean }
 		}
 		modifier = {
-			planet_housing_add = 10
+			planet_housing_add = 1000
 		}
 	}
 

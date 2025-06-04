@@ -264,7 +264,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 8
+			planet_housing_add = 800
 			job_maintenance_drone_add = 5
 		}
 	}
@@ -275,7 +275,7 @@ pw_building_conduit_of_unity_1 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 6
+			planet_housing_add = 600
 			job_maintenance_drone_add = 3
 		}
 	}
@@ -289,7 +289,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 16
+			planet_housing_add = 1600
 			job_maintenance_drone_add = 10
 		}
 	}
@@ -300,7 +300,7 @@ pw_building_conduit_of_unity_1 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 24
+			planet_housing_add = 2400
 			job_maintenance_drone_add = 15
 		}
 	}
@@ -1075,7 +1075,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			pop_defense_armies_add = 2
+			planet_defense_armies_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -1087,7 +1087,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			planet_administrators_produces_mult = 0.10
+			planet_bureaucrats_produces_mult = 0.10
 		}
 	}
 	triggered_planet_modifier = {
@@ -1183,7 +1183,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			pop_growth_speed = 0.05
+			bonus_pop_growth_mult = 0.05
 		}
 	}
 	triggered_planet_modifier = {

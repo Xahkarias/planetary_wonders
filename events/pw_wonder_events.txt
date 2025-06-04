@@ -5100,7 +5100,7 @@ planet_event = {
 	}
 
 	trigger = {
-		num_pops > 0
+		pop_amount > 0
 		has_planet_flag = pw_aligned_galactic_model_tomb_world
 		NOT = { has_planet_flag = pw_aligned_galactic_model_asteroid }
 	}
@@ -5525,21 +5525,21 @@ planet_event = {
 			limit = { owner = { has_country_flag = pw_aligned_galactic_model_destroyed_asteroid }}
 			if = {
 				limit = {
-					num_pops < 2
+					pop_amount < 200
 				}
 				random_owned_pop = { kill_pop = yes }
 			}
 			else_if = {
 				limit = {
-					num_pops > 2
-					num_pops < 6
+					pop_amount > 200
+					pop_amount < 600
 				}
 				random_owned_pop = { kill_pop = yes }
 				random_owned_pop = { kill_pop = yes }
 			}
 			else_if = {
 				limit = {
-					num_pops > 6
+					pop_amount > 600
 				}
 				random_owned_pop = { kill_pop = yes }
 				random_owned_pop = { kill_pop = yes }
@@ -15133,14 +15133,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15173,13 +15173,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation
@@ -15210,14 +15210,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15250,13 +15250,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation
@@ -15285,14 +15285,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15323,13 +15323,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation
@@ -15359,14 +15359,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15399,13 +15399,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation

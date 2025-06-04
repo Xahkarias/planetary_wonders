@@ -139,7 +139,7 @@ pw_building_space_elevator = {
 			job_merchant_add = 1
 			job_enforcer_add = 1
 			job_clerk_add = 10
-			trade_value_mult = 0.05
+			planet_traders_produces_mult = 0.05
 		}
 	}
 
@@ -204,7 +204,7 @@ pw_building_space_elevator = {
 			owner = { has_policy_flag = pw_policy_orbital_commerce_interplanetary_customhouses }
 		}
 		modifier = {
-			trade_value_mult = 0.15
+			planet_traders_produces_mult = 0.15
 		}
 	}
 	#Amenities
@@ -254,7 +254,7 @@ pw_building_space_elevator = {
 			owner = { has_policy_flag = pw_policy_orbital_commerce_migration_bureau }
 		}
 		modifier = {
-			planet_immigration_pull_mult = 0.25
+			planet_resettlement_unemployed_destination_mult = 0.25
 		}
 	}
 
@@ -344,7 +344,7 @@ pw_building_space_elevator = {
 		}
 		modifier = {
 			planet_amenities_mult = 0.05
-			trade_value_mult = 0.05
+			planet_traders_produces_mult = 0.05
 		}
 	}
 
@@ -688,7 +688,7 @@ pw_building_department_of_xenoeconomics = {
 
 		}
 		modifier = {
-			trade_value_mult = 0.10
+			planet_traders_produces_mult = 0.10
 		}
 	}
 

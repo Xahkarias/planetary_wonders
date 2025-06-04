@@ -1134,7 +1134,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_militarist
@@ -1163,7 +1163,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_warrior_culture
@@ -1192,7 +1192,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_nationalistic_zeal
@@ -1221,7 +1221,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_pacifist
@@ -1250,7 +1250,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_agrarian_idyll
@@ -1279,7 +1279,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_spiritualist
@@ -1308,7 +1308,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_exalted_priesthood
@@ -1340,7 +1340,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_death_cult
@@ -1369,7 +1369,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_materialist
@@ -1398,7 +1398,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_technocracy
@@ -1427,7 +1427,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_authoritarian
@@ -1456,7 +1456,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_aristocratic_elite
@@ -1485,7 +1485,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_egalitarian
@@ -1514,7 +1514,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_shared_burden
@@ -1547,7 +1547,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_megacorp
@@ -1580,7 +1580,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_imperial_cult
@@ -1609,7 +1609,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_fanatic_purifiers
@@ -1638,7 +1638,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_barbaric_despoilers
@@ -1667,7 +1667,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_memorialist
@@ -3008,7 +3008,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_militarist
@@ -3041,7 +3041,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_warrior_culture
@@ -3074,7 +3074,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_nationalistic_zeal
@@ -3107,7 +3107,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_pacifist
@@ -3140,7 +3140,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_agrarian_idyll
@@ -3173,7 +3173,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_spiritualist
@@ -3206,7 +3206,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_exalted_priesthood
@@ -3242,7 +3242,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_death_cult
@@ -3275,7 +3275,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_materialist
@@ -3308,7 +3308,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_technocracy
@@ -3341,7 +3341,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_authoritarian
@@ -3374,7 +3374,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_aristocratic_elite
@@ -3407,7 +3407,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_egalitarian
@@ -3440,7 +3440,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_shared_burden
@@ -3477,7 +3477,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_megacorp
@@ -3514,7 +3514,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_imperial_cult
@@ -3547,7 +3547,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_fanatic_purifiers
@@ -3580,7 +3580,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_barbaric_despoilers
@@ -3613,7 +3613,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_memorialist
@@ -4954,7 +4954,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_militarist
@@ -4987,7 +4987,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_warrior_culture
@@ -5020,7 +5020,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_nationalistic_zeal
@@ -5053,7 +5053,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_pacifist
@@ -5086,7 +5086,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_agrarian_idyll
@@ -5119,7 +5119,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_spiritualist
@@ -5152,7 +5152,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_exalted_priesthood
@@ -5188,7 +5188,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_death_cult
@@ -5221,7 +5221,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_materialist
@@ -5254,7 +5254,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_technocracy
@@ -5287,7 +5287,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_authoritarian
@@ -5320,7 +5320,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_aristocratic_elite
@@ -5353,7 +5353,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_egalitarian
@@ -5386,7 +5386,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_shared_burden
@@ -5423,7 +5423,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_megacorp
@@ -5460,7 +5460,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_imperial_cult
@@ -5493,7 +5493,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_fanatic_purifiers
@@ -5526,7 +5526,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_barbaric_despoilers
@@ -5559,7 +5559,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_planet = {
 				limit = {
-					num_pops > 10
+					pop_amount > 1000
 				}
 				pw_add_unique_modifier = {
 					MODIFIER = pw_art_mod_memorialist

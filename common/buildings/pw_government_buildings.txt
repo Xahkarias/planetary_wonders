@@ -280,8 +280,8 @@ pw_building_galactic_model = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_administrators_produces_mult = 0.10
-			planet_administrators_upkeep_mult = -0.10
+			planet_bureaucrats_produces_mult = 0.10
+			planet_bureaucrats_upkeep_mult = -0.10
 		}
 	}
 
@@ -694,8 +694,8 @@ pw_building_aligned_galactic_model = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_administrators_produces_mult = 0.15
-			planet_administrators_upkeep_mult = -0.15
+			planet_bureaucrats_produces_mult = 0.15
+			planet_bureaucrats_upkeep_mult = -0.15
 		}
 	}
 

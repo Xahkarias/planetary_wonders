@@ -946,7 +946,7 @@ pw_banquet_steward_drone = {
 	}
 
 	pop_modifier = {
-		pop_defense_armies_add = 2
+		planet_defense_armies_add = 2
 	}
 
 	weight = {

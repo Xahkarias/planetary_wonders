@@ -32,7 +32,7 @@ pw_orbital_ring_guardian_harbor = {
 	}
 
 	planet_modifier = {
-		pop_defense_armies_add = 1
+		planet_defense_armies_add = 1
 	}
 
 	#Regular Jobs

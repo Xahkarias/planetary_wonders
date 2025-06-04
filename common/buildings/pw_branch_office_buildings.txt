@@ -1121,7 +1121,7 @@ pw_building_tax_haven = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		planet_crime_add = 50
-		trade_value_mult = 0.10
+		planet_traders_produces_mult = 0.10
 		job_clerk_add = 1
 		job_merchant_add = 1
 	}

@@ -689,7 +689,7 @@ country_event = {
 				base = 1
 				modifier = {
 					factor = 3
-					num_pops > 50
+					pop_amount > 5000
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_modifier_planet
@@ -759,7 +759,7 @@ country_event = {
 				base = 1
 				modifier = {
 					factor = 3
-					num_pops > 50
+					pop_amount > 5000
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_modifier_planet
@@ -984,7 +984,7 @@ country_event = {
 				base = 1
 				modifier = {
 					factor = 3
-					num_pops > 50
+					pop_amount > 5000
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_shrine_planet
@@ -1019,7 +1019,7 @@ country_event = {
 				base = 1
 				modifier = {
 					factor = 3
-					num_pops > 50
+					pop_amount > 5000
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_shrine_planet

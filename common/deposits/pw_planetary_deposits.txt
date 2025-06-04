@@ -178,7 +178,7 @@ pw_d_SE_space_ramp = {
 			has_deposit = pw_d_SE_skyhook
 		}
 		modifier = {
-			trade_value_mult = 0.05
+			planet_traders_produces_mult = 0.05
 		}
 	}
 
@@ -246,7 +246,7 @@ pw_d_SE_nuclear_launcher = {
 			has_deposit = pw_d_SE_skyhook
 		}
 		modifier = {
-			trade_value_mult = 0.05
+			planet_traders_produces_mult = 0.05
 		}
 	}
 
@@ -317,7 +317,7 @@ pw_d_SE_skyhook = {
 			}
 		}
 		modifier = {
-			trade_value_mult = 0.05
+			planet_traders_produces_mult = 0.05
 		}
 	}
 
@@ -364,7 +364,7 @@ pw_d_guardian_angel_training = {
 		}
 		modifier = {
 			planet_army_build_speed_mult = 0.25
-			planet_housing_add = 2
+			planet_housing_add = 200
 		}
 	}
 }
@@ -392,7 +392,7 @@ pw_d_guardian_angel_police_operations = {
 		}
 		modifier = {
 			planet_crime_add = -20
-			planet_housing_add = 2
+			planet_housing_add = 200
 		}
 	}
 }
@@ -407,6 +407,17 @@ pw_d_guardian_angel_tourist_attraction = {
 
 	resources = {
 		category = planet_deposits
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_at_war = no }
+				OR = {
+					has_active_building = pw_building_guardian_angel
+					has_active_building = pw_building_stellar_sentinel
+				}
+			}
+			trade = 20
+		}
 		upkeep = {
 			energy = @pw_deposits_upkeep_common
 		}
@@ -422,8 +433,8 @@ pw_d_guardian_angel_tourist_attraction = {
 			}
 		}
 		modifier = {
-			trade_value_add = 20
-			planet_housing_add = 2
+			# trade_value_add = 20
+			planet_housing_add = 200
 		}
 	}
 }
@@ -453,7 +464,7 @@ pw_d_guardian_angel_arena = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 10
+			planet_amenities_add = 200
 		}
 	}
 
@@ -603,7 +614,7 @@ pw_d_guardian_angel_scenic_set_piece = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 5
+			planet_amenities_add = 100
 			job_culture_worker_add = 1
 		}
 	}
@@ -730,8 +741,8 @@ pw_d_ark_project = {
 
 	country_modifier = {
 		category_biology_research_speed_mult = 0.15
-		BIOLOGICAL_pop_growth_speed = 0.10
-		LITHOID_pop_growth_speed = 0.10
+		biological_logistic_growth_mult = 0.10
+		lithoid_logistic_growth_mult = 0.10
 	}
 
 	triggered_planet_modifier = {
@@ -1030,8 +1041,8 @@ pw_d_holoarchive = {
 
 	country_modifier = {
 		all_technology_research_speed = 0.20
-		BIOLOGICAL_pop_growth_speed = 0.10
-		LITHOID_pop_growth_speed = 0.10
+		biological_logistic_growth_mult = 0.10
+		lithoid_logistic_growth_mult = 0.10
 		country_unity_produces_mult = 0.15
 		pop_environment_tolerance = 0.10
 		weapon_type_energy_weapon_fire_rate_mult = 0.15

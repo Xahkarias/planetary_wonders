@@ -93,19 +93,19 @@ pw_decision_tls_infrastructure_distribution_1 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -201,19 +201,19 @@ pw_decision_tls_infrastructure_distribution_2 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -314,19 +314,19 @@ pw_decision_tls_infrastructure_distribution_3 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -432,19 +432,19 @@ pw_decision_tls_infrastructure_distribution_4 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -543,19 +543,19 @@ pw_decision_tls_infrastructure_emergency_1 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -651,19 +651,19 @@ pw_decision_tls_infrastructure_emergency_2 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -764,19 +764,19 @@ pw_decision_tls_infrastructure_emergency_3 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -885,19 +885,19 @@ pw_decision_tls_infrastructure_emergency_4 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -996,19 +996,19 @@ pw_decision_tls_infrastructure_culture_1 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1104,19 +1104,19 @@ pw_decision_tls_infrastructure_culture_2 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1217,19 +1217,19 @@ pw_decision_tls_infrastructure_culture_3 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1340,19 +1340,19 @@ pw_decision_tls_infrastructure_culture_4 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1451,19 +1451,19 @@ pw_decision_tls_infrastructure_industrial_1 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1559,19 +1559,19 @@ pw_decision_tls_infrastructure_industrial_2 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1672,19 +1672,19 @@ pw_decision_tls_infrastructure_industrial_3 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }
@@ -1794,19 +1794,19 @@ pw_decision_tls_infrastructure_industrial_4 = {
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 50
+			pop_amount > 5000
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 75
+			pop_amount > 7500
 		}
 		modifier = {
 			factor = 1.5
-			num_pops > 100
+			pop_amount > 10000
 		}
 		modifier = {
 			factor = 2
-			num_pops > 150
+			pop_amount > 15000
 		}
 	}
 }

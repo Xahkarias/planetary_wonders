@@ -283,7 +283,7 @@ pw_building_pavilion_of_wonders = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			trade_value_mult = 0.10
+			planet_traders_produces_mult = 0.10
 		}
 	}
 
@@ -911,7 +911,7 @@ pw_building_fair_of_worlds = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			trade_value_mult = 0.15
+			planet_traders_produces_mult = 0.15
 		}
 	}
 
@@ -1585,7 +1585,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			trade_value_mult = 0.15
+			planet_traders_produces_mult = 0.15
 		}
 	}
 
@@ -2052,7 +2052,7 @@ pw_building_holy_reliquary = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_priests_produces_mult = 0.15
+			planet_bureaucrats_produces_mult = 0.15
 		}
 	}
 

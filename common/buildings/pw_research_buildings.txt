@@ -291,7 +291,7 @@ pw_building_particle_supercollider = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_physics_research_produces_mult = @pw_building_research_mod
+			planet_jobs_physics_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -581,7 +581,7 @@ pw_building_interdimensional_collider = {
 	}
 
 	planet_modifier = {
-		planet_researchers_physics_research_produces_mult = @pw_building_research_upgrade_mod
+		planet_jobs_physics_research_produces_mult = @pw_building_research_upgrade_mod
 	}
 
 	#Reduces district slots without modifier
@@ -649,7 +649,7 @@ pw_building_interdimensional_collider = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_physics_research_produces_mult = @pw_building_research_mod
+			planet_jobs_physics_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -1101,7 +1101,7 @@ pw_building_domed_city = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_society_research_produces_mult = @pw_building_research_mod
+			planet_jobs_society_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -1553,7 +1553,7 @@ pw_building_secluded_sector = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_society_research_produces_mult = @pw_building_research_mod
+			planet_jobs_society_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -1849,7 +1849,7 @@ pw_building_psionic_observatory = {
 	}
 
 	planet_modifier = {
-		planet_researchers_society_research_produces_mult = @pw_building_research_upgrade_mod
+		planet_jobs_society_research_produces_mult = @pw_building_research_upgrade_mod
 	}
 
 	#Reduces district slots without modifier
@@ -1920,7 +1920,7 @@ pw_building_psionic_observatory = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_society_research_produces_mult = @pw_building_research_mod
+			planet_jobs_society_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -2384,7 +2384,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
+			planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -2818,7 +2818,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
+			planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -3098,7 +3098,7 @@ pw_building_metal_vivarium = {
 	}
 
 	planet_modifier = {
-		planet_researchers_engineering_research_produces_mult = @pw_building_research_upgrade_mod
+		planet_jobs_engineering_research_produces_mult = @pw_building_research_upgrade_mod
 	}
 
 	#Reduces district slots without modifier
@@ -3166,7 +3166,7 @@ pw_building_metal_vivarium = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
+			planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
 		}
 	}
 

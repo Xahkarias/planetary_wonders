@@ -288,7 +288,7 @@ pw_building_living_spire_1 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 5
+			planet_housing_add = 500
 			job_clerk_add = 2
 		}
 	}
@@ -298,7 +298,7 @@ pw_building_living_spire_1 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 4
+			planet_housing_add = 400
 			job_clerk_add = 2
 		}
 	}
@@ -308,7 +308,7 @@ pw_building_living_spire_1 = {
 			merg_is_arcology = yes
 		}
 		modifier = {
-			planet_housing_add = 10
+			planet_housing_add = 1000
 			job_clerk_add = 4
 		}
 	}
@@ -318,7 +318,7 @@ pw_building_living_spire_1 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 20
+			planet_housing_add = 2000
 			job_clerk_add = 8
 		}
 	}
@@ -733,7 +733,7 @@ pw_building_living_spire_2 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 10
+			planet_housing_add = 1000
 			job_clerk_add = 4
 		}
 	}
@@ -743,7 +743,7 @@ pw_building_living_spire_2 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 8
+			planet_housing_add = 800
 			job_clerk_add = 2
 		}
 	}
@@ -753,7 +753,7 @@ pw_building_living_spire_2 = {
 			merg_is_arcology = yes
 		}
 		modifier = {
-			planet_housing_add = 20
+			planet_housing_add = 2000
 			job_clerk_add = 8
 		}
 	}
@@ -763,7 +763,7 @@ pw_building_living_spire_2 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 30
+			planet_housing_add = 3000
 			job_clerk_add = 12
 		}
 	}
@@ -873,7 +873,7 @@ pw_building_living_spire_2 = {
 	# 	}
 	# 	modifier = {
 	# 		job_healthcare_add = 1
-	# 		pop_growth_speed = 0.1
+	# 		bonus_pop_growth_mult = 0.1
 	# 	}
 	# }
 	# #Engineered Evolution
@@ -1283,7 +1283,7 @@ pw_building_living_spire_3 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 15
+			planet_housing_add = 1500
 			job_clerk_add = 10
 		}
 	}
@@ -1293,7 +1293,7 @@ pw_building_living_spire_3 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 10
+			planet_housing_add = 1000
 			job_clerk_add = 5
 		}
 	}
@@ -1303,7 +1303,7 @@ pw_building_living_spire_3 = {
 			merg_is_arcology = yes
 		}
 		modifier = {
-			planet_housing_add = 30
+			planet_housing_add = 3000
 			job_clerk_add = 15
 		}
 	}
@@ -1313,7 +1313,7 @@ pw_building_living_spire_3 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 40
+			planet_housing_add = 4000
 			job_clerk_add = 20
 		}
 	}
@@ -1405,7 +1405,7 @@ pw_building_living_spire_3 = {
 	# 	}
 	# 	modifier = {
 	# 		job_healthcare_add = 1
-	# 		pop_growth_speed = 0.20
+	# 		bonus_pop_growth_mult = 0.20
 	# 	}
 	# }
 	# #Engineered Evolution
