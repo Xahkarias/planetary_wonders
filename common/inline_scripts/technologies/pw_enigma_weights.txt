@@ -1,0 +1,44 @@
+# standard weight modifier components for enigma techs:
+# Usage:
+# inline_script = {
+#	script = technologies/pw_enigma_weights
+# 	BASE_FACTOR = 0.5
+#   AI_FACTOR = 1.25
+#	COUNCIL_TRAIT = leader_trait_expertise_industry
+#	TECHNOLOGY = pw_enigma_tech_micro_graviton_equipment
+# }
+
+weight_modifier = {
+	factor = $BASE_FACTOR$
+
+	# council trait modifier
+	modifier = {
+		factor = value:tech_weight_likelihood
+		OR = {
+			has_trait_in_council = { TRAIT = $COUNCIL_TRAIT$ }
+			has_trait_in_council = { TRAIT = leader_trait_curator }
+			has_trait_in_council = { TRAIT = leader_trait_maniacal }
+		}
+	}
+
+	# normal rare tech modifier
+	inline_script = {
+		script = technologies/rare_technologies_weight_modifiers
+		TECHNOLOGY = $TECHNOLOGY$
+	}
+
+	# plus enigmatic engineering ascension perk modifier
+	modifier = {
+		factor = @ap_technological_ascendancy_rare_tech
+		has_ascension_perk = ap_enigmatic_engineering
+	}
+}
+
+ai_weight = {
+	factor = @pw_tech_ai_weight
+	modifier = {
+		factor = $AI_FACTOR$
+		has_trait_in_council = { TRAIT = $COUNCIL_TRAIT$ }
+	}
+}
+
