@@ -11372,7 +11372,7 @@ planet_event = {
 			}
 		}
 		ruler = {
-			add_trait = trait_ruler_champion_of_the_people
+			add_trait = { trait = trait_ruler_champion_of_the_people }
 		}
 	}
 

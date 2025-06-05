@@ -3538,7 +3538,7 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.710.a
 		ruler = {
-			add_trait = pw_leader_trait_ruler_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_ruler_codex_of_past_ages }
 			add_experience = 100
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3561,10 +3561,10 @@ country_event = {
 				leader_class = official
 				NOT = { has_trait = pw_leader_trait_governor_codex_of_past_ages }
 			}
-			add_trait = pw_leader_trait_governor_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_governor_codex_of_past_ages }
 			add_experience = 100
 			hidden_effect = {
-				add_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = { trait = pw_leader_trait_ruler_codex_of_past_ages show_message = no }
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3587,10 +3587,10 @@ country_event = {
 				leader_class = scientist
 				NOT = { has_trait = pw_leader_trait_scientist_codex_of_past_ages }
 			}
-			add_trait = pw_leader_trait_scientist_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_scientist_codex_of_past_ages }
 			add_experience = 100
 			hidden_effect = {
-				add_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = { trait = pw_leader_trait_ruler_codex_of_past_ages show_message = no }
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3613,10 +3613,10 @@ country_event = {
 				leader_class = commander
 				NOT = { has_trait = pw_leader_trait_admiral_codex_of_past_ages }
 			}
-			add_trait = pw_leader_trait_admiral_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_admiral_codex_of_past_ages }
 			add_experience = 100
 			hidden_effect = {
-				add_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = { trait = pw_leader_trait_ruler_codex_of_past_ages show_message = no }
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -3639,10 +3639,10 @@ country_event = {
 				leader_class = commander
 				NOT = { has_trait = pw_leader_trait_general_codex_of_past_ages }
 			}
-			add_trait = pw_leader_trait_general_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_general_codex_of_past_ages }
 			add_experience = 100
 			hidden_effect = {
-				add_trait = pw_leader_trait_ruler_codex_of_past_ages
+				add_trait = { trait = pw_leader_trait_ruler_codex_of_past_ages show_message = no }
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes

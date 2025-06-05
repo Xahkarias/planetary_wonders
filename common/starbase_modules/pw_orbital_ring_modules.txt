@@ -3,6 +3,7 @@ pw_orbital_ring_guardian_harbor = {
 	icon = "GFX_pw_orbital_ring_guardian_harbor"
 	section = "HANGAR_ORBITAL_RING_SECTION"
 	construction_days = 480
+	starbase_type = orbital_ring
 
 	show_in_tech = pw_tech_guardian_angel
 

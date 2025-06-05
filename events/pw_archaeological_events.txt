@@ -668,7 +668,7 @@ fleet_event = {
 	option = {
 		name = pw_archaeology.311.a
 		leader = {
-			add_trait = pw_leader_trait_scientist_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_scientist_codex_of_past_ages }
 		}
 	}
 }
@@ -2414,7 +2414,7 @@ fleet_event = {
 			}
 		}
 		leader = {
-			add_trait = leader_trait_maimed
+			add_trait = { trait = leader_trait_maimed }
 		}
 	}
 }

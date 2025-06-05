@@ -6352,7 +6352,7 @@ country_event = {
 					has_trait = leader_trait_expertise_military_theory
 				}
 			}
-			add_trait = leader_trait_expertise_military_theory
+			add_trait = { trait = leader_trait_expertise_military_theory }
 		}
 	}
 }
@@ -6955,7 +6955,7 @@ country_event = {
 				leader_class = official
 				NOT = { has_trait = leader_trait_architectural_interest }
 			}
-			add_trait = leader_trait_architectural_interest
+			add_trait = { trait = leader_trait_architectural_interest }
 		}
 		if = {
 			limit = {
@@ -6964,7 +6964,7 @@ country_event = {
 				}
 			}
 			ruler = {
-				add_trait = trait_ruler_architectural_sense
+				add_trait = { trait = trait_ruler_architectural_sense }
 			}
 		}
 	}
@@ -7004,7 +7004,7 @@ country_event = {
 				leader_class = scientist
 				NOT = { has_trait = leader_trait_expertise_statecraft }
 			}
-			add_trait = leader_trait_expertise_statecraft
+			add_trait = { trait = leader_trait_expertise_statecraft }
 		}
 	}
 }
@@ -7244,7 +7244,7 @@ country_event = {
 				leader_class = scientist
 				NOT = { has_trait = leader_trait_expertise_biology }
 			}
-			add_trait = leader_trait_expertise_biology
+			add_trait = { trait = leader_trait_expertise_biology }
 		}
 		add_monthly_resource_mult = {
 			resource = influence
@@ -7305,7 +7305,7 @@ country_event = {
 				NOT = { has_trait = leader_trait_expertise_particles }
 				NOT = { has_trait = leader_trait_expertise_field_manipulation }
 			}
-			add_trait = leader_trait_expertise_particles
+			add_trait = { trait = leader_trait_expertise_particles }
 		}
 		random_owned_leader = {
 			limit = {
@@ -7313,7 +7313,7 @@ country_event = {
 				NOT = { has_trait = leader_trait_expertise_particles }
 				NOT = { has_trait = leader_trait_expertise_field_manipulation }
 			}
-			add_trait = leader_trait_expertise_field_manipulation
+			add_trait = { trait = leader_trait_expertise_field_manipulation }
 		}
 	}
 }

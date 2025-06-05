@@ -2,6 +2,7 @@
 pw_ring_elevator_hyper_port = {
 	icon = "GFX_pw_ring_elevator_hyper_port"
 	construction_days = 480
+	starbase_type = orbital_ring
 
 	show_in_tech = pw_tech_space_elevator_planetary_relay_logistics
 
@@ -77,6 +78,7 @@ pw_ring_elevator_hyper_port = {
 pw_ring_abyssal_crater_observatory = {
 	icon = "GFX_pw_ring_abyssal_crater_observatory"
 	construction_days = 480
+	starbase_type = orbital_ring
 
 	show_in_tech = pw_tech_abyssal_crater_test_site
 
