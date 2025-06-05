@@ -440,7 +440,7 @@ pw_d_infrastructure_local_administration = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 100
+#			job_bureaucrat_add = 100 # priest
 #		}
 #	}
 }
@@ -501,7 +501,7 @@ pw_d_infrastructure_distributed_education = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 100
+#			job_bureaucrat_add = 100 # priest
 #		}
 #	}
 }
@@ -563,7 +563,7 @@ pw_d_infrastructure_arts_installations = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 100
+#			job_bureaucrat_add = 100 # priest
 #		}
 #	}
 
@@ -1541,7 +1541,7 @@ pw_d_infrastructure_galactic_bureau = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 100
+#			job_bureaucrat_add = 100 # priest
 #		}
 #	}
 

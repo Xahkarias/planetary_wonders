@@ -814,7 +814,7 @@ pw_pm_living_spire_designation_death_cult = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_death.dds"
 	icon_frame = @pw_icon_frame_green
 	job_mortal_initiate_add = 100
-	job_death_priest_add = 100
+	job_bureaucrat_add = 100 # death_priest
 }
 
 pw_pm_living_spire_designation_death_necro = {

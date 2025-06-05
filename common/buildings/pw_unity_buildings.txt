@@ -1938,7 +1938,7 @@ pw_building_holy_reliquary = {
 		}
 		modifier = {
 			job_politician_add = 100 # high_priest
-#			job_priest_add = 400
+#			job_bureaucrat_add = 400 # priest
 		}
 	}
 
@@ -1952,7 +1952,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_politician_add = 100 # technophant
+			job_technophant_add = 100
 		}
 	}
 
@@ -1974,7 +1974,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_death_priest_add = 200
+			job_bureaucrat_add = 200 # death_priest
 			job_mortal_initiate_add = 200
 		}
 	}
@@ -1989,7 +1989,7 @@ pw_building_holy_reliquary = {
 #			}
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 
@@ -2011,7 +2011,7 @@ pw_building_holy_reliquary = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 
@@ -2366,7 +2366,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_politician_add = 100 # technophant
+			job_technophant_add = 100
 		}
 	}
 
@@ -2475,7 +2475,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_death_priest_add = 200
+			job_bureaucrat_add = 200 # death_priest
 		}
 	}
 
@@ -2494,7 +2494,7 @@ pw_building_unhallowed_necropolis = {
 #			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 

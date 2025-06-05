@@ -179,7 +179,7 @@ pw_building_galactic_model = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 800
+#			job_bureaucrat_add = 800 # priest
 #		}
 #	}
 
@@ -205,7 +205,7 @@ pw_building_galactic_model = {
 #			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
 #		}
 #		modifier = {
-#			job_priest_per_pop = @pw_job_per_25_pop
+#			job_bureaucrat_per_pop = @pw_job_per_25_pop # priest
 #		}
 #	}
 
@@ -591,7 +591,7 @@ pw_building_aligned_galactic_model = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 1000
+#			job_bureaucrat_add = 1000 # priest
 #		}
 #	}
 
@@ -623,7 +623,7 @@ pw_building_aligned_galactic_model = {
 #			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
 #		}
 #		modifier = {
-#			job_priest_per_pop = @pw_job_per_25_pop
+#			job_bureaucrat_per_pop = @pw_job_per_25_pop # priest
 #		}
 #	}
 
@@ -1104,7 +1104,7 @@ pw_building_panopticon = {
 #			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 
@@ -1136,7 +1136,7 @@ pw_building_panopticon = {
 #			}
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 

@@ -162,7 +162,7 @@ pw_building_transplanetary_logistics_network = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 100
+#			job_bureaucrat_add = 100 # priest
 #		}
 #	}
 
@@ -474,7 +474,7 @@ pw_building_transhabitat_logistics_network = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 100
+#			job_bureaucrat_add = 100 # priest
 #		}
 #	}
 

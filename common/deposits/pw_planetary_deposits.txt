@@ -673,7 +673,7 @@ pw_d_monument_to_the_solar_regent = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 }
@@ -714,7 +714,7 @@ pw_d_parliament_of_the_void_speakers = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 200
+#			job_bureaucrat_add = 200 # priest
 #		}
 #	}
 }
