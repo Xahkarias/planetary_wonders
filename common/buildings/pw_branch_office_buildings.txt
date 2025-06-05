@@ -68,7 +68,7 @@ pw_building_bloodsports_arena = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_militarist_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -80,7 +80,7 @@ pw_building_bloodsports_arena = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 1
+			job_entertainer_add = 100
 		}
 	}
 
@@ -93,7 +93,7 @@ pw_building_bloodsports_arena = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 1
+			job_duelist_add = 100
 		}
 	}
 
@@ -105,7 +105,7 @@ pw_building_bloodsports_arena = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = 100
 		}
 	}
 
@@ -208,7 +208,7 @@ pw_building_meditation_garden = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_pacifist_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 #	#Bureaucrat
@@ -219,7 +219,7 @@ pw_building_meditation_garden = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 1
+#			job_bureaucrat_add = 100
 #		}
 #	}
 #
@@ -231,7 +231,7 @@ pw_building_meditation_garden = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 1
+#			job_priest_add = 100
 #		}
 #	}
 
@@ -243,7 +243,7 @@ pw_building_meditation_garden = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -353,7 +353,7 @@ pw_building_innovation_hub = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_materialist_attraction_mult = 0.20
-		job_clerk_add = 2
+		job_clerk_add = 200
 	}
 
 	triggered_planet_modifier = {
@@ -364,7 +364,7 @@ pw_building_innovation_hub = {
 			}
 		}
 		modifier = {
-			job_researcher_add = 1
+			job_researcher_add = 100
 		}
 	}
 
@@ -466,7 +466,7 @@ pw_building_salvation_shrine = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_spiritualist_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -477,7 +477,7 @@ pw_building_salvation_shrine = {
 			}
 		}
 		modifier = {
-			job_preacher_add = 1
+			job_preacher_add = 100
 		}
 	}
 
@@ -493,7 +493,7 @@ pw_building_salvation_shrine = {
 			}
 		}
 		modifier = {
-			job_priest_add = 1
+			job_priest_add = 100
 		}
 	}
 
@@ -518,7 +518,7 @@ pw_building_salvation_shrine = {
 			}
 		}
 		modifier = {
-			job_haruspex_add = 1
+			job_haruspex_add = 100
 		}
 	}
 
@@ -542,7 +542,7 @@ pw_building_salvation_shrine = {
 #			}
 #		}
 #		modifier = {
-#			job_preacher_add = 1
+#			job_preacher_add = 100
 #		}
 #	}
 
@@ -666,8 +666,8 @@ pw_building_exotic_beauty_center = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_xenophile_attraction_mult = 0.20
-		job_clerk_add = 1
-		job_entertainer_add = 1
+		job_clerk_add = 100
+		job_entertainer_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -678,7 +678,7 @@ pw_building_exotic_beauty_center = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -781,8 +781,8 @@ pw_building_national_pride_gallery = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_xenophobe_attraction_mult = 0.20
-		job_clerk_add = 1
-		job_entertainer_add = 1
+		job_clerk_add = 100
+		job_entertainer_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -793,7 +793,7 @@ pw_building_national_pride_gallery = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -895,7 +895,7 @@ pw_building_aristocracy_tower = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_authoritarian_attraction_mult = 0.20
-		job_merchant_add = 1
+		job_merchant_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -906,7 +906,7 @@ pw_building_aristocracy_tower = {
 			}
 		}
 		modifier = {
-			job_clerk_add = 1
+			job_clerk_add = 100
 		}
 	}
 
@@ -1009,7 +1009,7 @@ pw_building_factory_city = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_egalitarian_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 	inline_script = {
@@ -1122,8 +1122,8 @@ pw_building_tax_haven = {
 		branch_office_value_mult = 0.15
 		planet_crime_add = 50
 		planet_traders_produces_mult = 0.10
-		job_clerk_add = 1
-		job_merchant_add = 1
+		job_clerk_add = 100
+		job_merchant_add = 100
 	}
 
 	triggered_desc = {

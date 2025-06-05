@@ -55,7 +55,7 @@ pw_edict_panspectron = {
 	}
 
 	modifier = {
-		job_enforcer_add = 2
+		job_enforcer_add = 200
 		intel_encryption_add = 1
 		pop_government_ethic_attraction = 0.50
 		pop_cat_worker_political_power = -0.25

@@ -429,7 +429,7 @@ pw_d_infrastructure_local_administration = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 1
+#			job_bureaucrat_add = 100
 #		}
 #	}
 #
@@ -440,7 +440,7 @@ pw_d_infrastructure_local_administration = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 1
+#			job_priest_add = 100
 #		}
 #	}
 }
@@ -490,7 +490,7 @@ pw_d_infrastructure_distributed_education = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 1
+#			job_bureaucrat_add = 100
 #		}
 #	}
 #
@@ -501,7 +501,7 @@ pw_d_infrastructure_distributed_education = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 1
+#			job_priest_add = 100
 #		}
 #	}
 }
@@ -552,7 +552,7 @@ pw_d_infrastructure_arts_installations = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 1
+#			job_bureaucrat_add = 100
 #		}
 #	}
 #
@@ -563,7 +563,7 @@ pw_d_infrastructure_arts_installations = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 1
+#			job_priest_add = 100
 #		}
 #	}
 
@@ -576,7 +576,7 @@ pw_d_infrastructure_arts_installations = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 1
+			job_entertainer_add = 100
 		}
 	}
 
@@ -589,7 +589,7 @@ pw_d_infrastructure_arts_installations = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 1
+			job_duelist_add = 100
 		}
 	}
 }
@@ -657,7 +657,7 @@ pw_d_infrastructure_inventions_fair = {
 		pop_happiness = 0.05
 		planet_jobs_worker_produces_mult = 0.10
 		planet_traders_produces_mult = 0.10
-		job_merchant_add = 1
+		job_merchant_add = 100
 		planet_jobs_upkeep_mult = 0.10
 	}
 }
@@ -693,7 +693,7 @@ pw_d_infrastructure_cooperatives_manufacturers = {
 		pop_happiness = 0.10
 		planet_jobs_worker_produces_mult = 0.15
 		planet_traders_produces_mult = 0.15
-		job_merchant_add = 1
+		job_merchant_add = 100
 		planet_jobs_upkeep_mult = 0.15
 	}
 }
@@ -729,7 +729,7 @@ pw_d_infrastructure_industrial_unions = {
 		pop_happiness = 0.10
 		planet_jobs_worker_produces_mult = 0.20
 		planet_traders_produces_mult = 0.20
-		job_merchant_add = 1
+		job_merchant_add = 100
 		planet_jobs_upkeep_mult = 0.20
 	}
 
@@ -992,7 +992,7 @@ pw_d_infrastructure_wardens_directorate = {
 		}
 		planet_housing_add = 200
 		planet_stability_add = 5
-		job_enforcer_add = 1
+		job_enforcer_add = 100
 		planet_jobs_worker_produces_mult = 0.10
 		planet_pops_upkeep_mult = 0.10
 	}
@@ -1022,7 +1022,7 @@ pw_d_infrastructure_overseers_ring = {
 		planet_housing_add = 200
 		planet_stability_add = 5
 		planet_jobs_slave_produces_mult = 0.25
-		job_slave_overseer_add = 2
+		job_slave_overseer_add = 200
 		planet_pops_upkeep_mult = 0.10
 	}
 }
@@ -1059,7 +1059,7 @@ pw_d_infrastructure_palatial_physicians = {
 			}
 		}
 		modifier = {
-			job_healthcare_add = 1
+			job_healthcare_add = 100
 		}
 	}
 
@@ -1072,7 +1072,7 @@ pw_d_infrastructure_palatial_physicians = {
 			}
 		}
 		modifier = {
-			job_roboticist_add = 1
+			job_roboticist_add = 100
 		}
 	}
 
@@ -1086,7 +1086,7 @@ pw_d_infrastructure_palatial_physicians = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 }
@@ -1123,7 +1123,7 @@ pw_d_infrastructure_city_defenders = {
 			}
 		}
 		modifier = {
-			job_healthcare_add = 1
+			job_healthcare_add = 100
 		}
 	}
 
@@ -1136,7 +1136,7 @@ pw_d_infrastructure_city_defenders = {
 			}
 		}
 		modifier = {
-			job_roboticist_add = 1
+			job_roboticist_add = 100
 		}
 	}
 
@@ -1150,7 +1150,7 @@ pw_d_infrastructure_city_defenders = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 
@@ -1160,7 +1160,7 @@ pw_d_infrastructure_city_defenders = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 
@@ -1170,7 +1170,7 @@ pw_d_infrastructure_city_defenders = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 }
@@ -1213,7 +1213,7 @@ pw_d_infrastructure_crisis_bunker = {
 			}
 		}
 		modifier = {
-			job_healthcare_add = 1
+			job_healthcare_add = 100
 		}
 	}
 
@@ -1226,7 +1226,7 @@ pw_d_infrastructure_crisis_bunker = {
 			}
 		}
 		modifier = {
-			job_roboticist_add = 1
+			job_roboticist_add = 100
 		}
 	}
 
@@ -1240,7 +1240,7 @@ pw_d_infrastructure_crisis_bunker = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 
@@ -1250,7 +1250,7 @@ pw_d_infrastructure_crisis_bunker = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 
@@ -1260,7 +1260,7 @@ pw_d_infrastructure_crisis_bunker = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 }
@@ -1304,7 +1304,7 @@ pw_d_infrastructure_personal_guardian = {
 			}
 		}
 		modifier = {
-			job_healthcare_add = 1
+			job_healthcare_add = 100
 		}
 	}
 
@@ -1317,7 +1317,7 @@ pw_d_infrastructure_personal_guardian = {
 			}
 		}
 		modifier = {
-			job_roboticist_add = 1
+			job_roboticist_add = 100
 		}
 	}
 
@@ -1331,7 +1331,7 @@ pw_d_infrastructure_personal_guardian = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 
@@ -1341,7 +1341,7 @@ pw_d_infrastructure_personal_guardian = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 
@@ -1351,7 +1351,7 @@ pw_d_infrastructure_personal_guardian = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 }
@@ -1387,7 +1387,7 @@ pw_d_infrastructure_central_of_disinformation = {
 		potential = {
 			owner = { NOT = { has_valid_civic = civic_warrior_culture }}
 		}
-		job_entertainer_add = 1
+		job_entertainer_add = 100
 	}
 
 	#Duelist
@@ -1395,7 +1395,7 @@ pw_d_infrastructure_central_of_disinformation = {
 		potential = {
 			owner = { has_valid_civic = civic_warrior_culture }
 		}
-		job_duelist_add = 1
+		job_duelist_add = 100
 	}
 }
 
@@ -1431,7 +1431,7 @@ pw_d_infrastructure_center_of_justice = {
 		potential = {
 			owner = { NOT = { has_valid_civic = civic_warrior_culture }}
 		}
-		job_entertainer_add = 1
+		job_entertainer_add = 100
 	}
 
 	#Duelist
@@ -1439,7 +1439,7 @@ pw_d_infrastructure_center_of_justice = {
 		potential = {
 			owner = { has_valid_civic = civic_warrior_culture }
 		}
-		job_duelist_add = 1
+		job_duelist_add = 100
 	}
 }
 
@@ -1477,7 +1477,7 @@ pw_d_infrastructure_central_treasury = {
 		potential = {
 			owner = { NOT = { has_valid_civic = civic_warrior_culture }}
 		}
-		job_entertainer_add = 1
+		job_entertainer_add = 100
 	}
 
 	#Duelist
@@ -1485,7 +1485,7 @@ pw_d_infrastructure_central_treasury = {
 		potential = {
 			owner = { has_valid_civic = civic_warrior_culture }
 		}
-		job_duelist_add = 1
+		job_duelist_add = 100
 	}
 }
 
@@ -1530,7 +1530,7 @@ pw_d_infrastructure_galactic_bureau = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 1
+#			job_bureaucrat_add = 100
 #		}
 #	}
 #
@@ -1541,7 +1541,7 @@ pw_d_infrastructure_galactic_bureau = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 1
+#			job_priest_add = 100
 #		}
 #	}
 
@@ -1550,7 +1550,7 @@ pw_d_infrastructure_galactic_bureau = {
 		potential = {
 			owner = { NOT = { has_valid_civic = civic_warrior_culture }}
 		}
-		job_entertainer_add = 1
+		job_entertainer_add = 100
 	}
 
 	#Duelist
@@ -1558,7 +1558,7 @@ pw_d_infrastructure_galactic_bureau = {
 		potential = {
 			owner = { has_valid_civic = civic_warrior_culture }
 		}
-		job_duelist_add = 1
+		job_duelist_add = 100
 	}
 }
 
@@ -1672,14 +1672,14 @@ pw_d_infrastructure_holy_tribunal = {
 		potential = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
-		job_enforcer_add = 1
+		job_enforcer_add = 100
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
-		job_telepath_add = 1
+		job_telepath_add = 100
 	}
 }
 
@@ -1702,7 +1702,7 @@ pw_d_infrastructure_ballroom = {
 
 	planet_modifier = {
 		pop_ethic_pacifist_attraction_mult = 0.10
-		job_entertainer_add = 1
+		job_entertainer_add = 100
 	}
 
 	country_modifier = {
@@ -1729,7 +1729,7 @@ pw_d_infrastructure_war_room = {
 
 	planet_modifier = {
 		pop_ethic_militarist_attraction_mult = 0.10
-		job_soldier_add = 1
+		job_soldier_add = 100
 	}
 
 	country_modifier = {
@@ -1796,7 +1796,7 @@ pw_d_integration_cyber_pylon = {
 			exists = owner
 			owner = { is_machine_empire = yes }
 		}
-		job_coordinator_add = 2
+		job_coordinator_add = 200
 	}
 
 	triggered_planet_modifier = {
@@ -1804,7 +1804,7 @@ pw_d_integration_cyber_pylon = {
 			exists = owner
 			owner = { is_hive_empire = yes }
 		}
-		job_synapse_drone_add = 2
+		job_synapse_drone_add = 200
 	}
 }
 
@@ -1853,8 +1853,8 @@ pw_d_integration_CARE_facility = {
 
 	planet_modifier = {
 		planet_housing_add = 200
-		job_patrol_drone_add = 1
-		job_maintenance_drone_add = 2
+		job_patrol_drone_add = 100
+		job_maintenance_drone_add = 200
 		planet_amenities_mult = 0.15
 		planet_pops_upkeep_mult = 0.10
 	}
@@ -2077,7 +2077,7 @@ pw_d_integration_integrated_replication = {
 			exists = owner
 			owner = { is_hive_empire = yes }
 		}
-		job_spawning_drone_add = 1
+		job_spawning_drone_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -2085,7 +2085,7 @@ pw_d_integration_integrated_replication = {
 			exists = owner
 			owner = { is_machine_empire = yes }
 		}
-		job_replicator_add = 1
+		job_replicator_add = 100
 	}
 }
 
@@ -2110,7 +2110,7 @@ pw_d_integration_shard_of_enigma = {
 	planet_modifier = {
 		planet_housing_add = 200
 		planet_bureaucrats_produces_mult = 0.10
-		job_pw_enigma_decipher_add = 1
+		job_pw_enigma_decipher_add = 100
 	}
 }
 
@@ -2146,7 +2146,7 @@ pw_d_integration_chamber_of_reflection = {
 	planet_modifier = {
 		planet_housing_add = 200
 		planet_jobs_complex_drone_produces_mult = 0.10
-		job_brain_drone_add = 2
+		job_brain_drone_add = 200
 	}
 }
 

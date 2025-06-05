@@ -143,7 +143,7 @@ pw_building_galactic_model = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -155,7 +155,7 @@ pw_building_galactic_model = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_executive_add = 100
 		}
 	}
 
@@ -167,7 +167,7 @@ pw_building_galactic_model = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 8
+#			job_bureaucrat_add = 800
 #		}
 #	}
 #
@@ -179,7 +179,7 @@ pw_building_galactic_model = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 8
+#			job_priest_add = 800
 #		}
 #	}
 
@@ -222,7 +222,7 @@ pw_building_galactic_model = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
+			job_synapse_drone_add = 1000
 		}
 	}
 
@@ -245,8 +245,8 @@ pw_building_galactic_model = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 8
-			job_evaluator_add = 2
+			job_coordinator_add = 800
+			job_evaluator_add = 200
 		}
 	}
 
@@ -555,7 +555,7 @@ pw_building_aligned_galactic_model = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 2
+			job_politician_add = 200
 		}
 	}
 
@@ -567,7 +567,7 @@ pw_building_aligned_galactic_model = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 2
+			job_executive_add = 200
 		}
 	}
 
@@ -579,7 +579,7 @@ pw_building_aligned_galactic_model = {
 #			owner = { is_spiritualist = no }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 10
+#			job_bureaucrat_add = 1000
 #		}
 #	}
 #
@@ -591,7 +591,7 @@ pw_building_aligned_galactic_model = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 10
+#			job_priest_add = 1000
 #		}
 #	}
 
@@ -634,8 +634,8 @@ pw_building_aligned_galactic_model = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
-			job_pw_logistics_drone_add = 2
+			job_synapse_drone_add = 1000
+			job_pw_logistics_drone_add = 200
 		}
 	}
 
@@ -658,9 +658,9 @@ pw_building_aligned_galactic_model = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 8
-			job_evaluator_add = 2
-			job_pw_logistics_drone_add = 2
+			job_coordinator_add = 800
+			job_evaluator_add = 200
+			job_pw_logistics_drone_add = 200
 		}
 	}
 
@@ -979,7 +979,7 @@ pw_building_panopticon = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -991,7 +991,7 @@ pw_building_panopticon = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_executive_add = 100
 		}
 	}
 
@@ -1003,7 +1003,7 @@ pw_building_panopticon = {
 			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 5
+			job_enforcer_add = 500
 		}
 	}
 
@@ -1015,7 +1015,7 @@ pw_building_panopticon = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 5
+			job_telepath_add = 500
 		}
 	}
 
@@ -1027,7 +1027,7 @@ pw_building_panopticon = {
 			owner = { has_edict = pw_edict_panspectron }
 		}
 		modifier = {
-			job_pw_big_brother_add = 1
+			job_pw_big_brother_add = 100
 		}
 	}
 
@@ -1038,7 +1038,7 @@ pw_building_panopticon = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 5
+			job_patrol_drone_add = 500
 		}
 	}
 
@@ -1049,7 +1049,7 @@ pw_building_panopticon = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 5
+			job_patrol_drone_add = 500
 		}
 	}
 
@@ -1078,7 +1078,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
 		}
 		modifier = {
-			job_culture_worker_add = 2
+			job_culture_worker_add = 200
 		}
 	}
 
@@ -1091,7 +1091,7 @@ pw_building_panopticon = {
 #			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
 #		}
 #		modifier = {
-#			job_bureaucrat_add = 2
+#			job_bureaucrat_add = 200
 #		}
 #	}
 #
@@ -1104,7 +1104,7 @@ pw_building_panopticon = {
 #			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 
@@ -1116,7 +1116,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
 		}
 		modifier = {
-			job_soldier_add = 2
+			job_soldier_add = 200
 		}
 	}
 
@@ -1136,7 +1136,7 @@ pw_building_panopticon = {
 #			}
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 
@@ -1150,7 +1150,7 @@ pw_building_panopticon = {
 #			}
 #		}
 #		modifier = {
-#			job_preacher_add = 2
+#			job_preacher_add = 200
 #		}
 #	}
 
@@ -1162,7 +1162,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
 		}
 		modifier = {
-			job_researcher_add = 1
+			job_researcher_add = 100
 		}
 	}
 
@@ -1547,7 +1547,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -1559,7 +1559,7 @@ pw_building_forbidden_city = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_executive_add = 100
 		}
 	}
 
@@ -1574,7 +1574,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_merchant_add = 100
 		}
 	}
 
@@ -1586,7 +1586,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_aristocratic_elite }
 		}
 		modifier = {
-			job_noble_add = 1
+			job_noble_add = 100
 		}
 	}
 
@@ -1598,7 +1598,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_technocracy }
 		}
 		modifier = {
-			job_head_researcher_add = 1
+			job_head_researcher_add = 100
 		}
 	}
 
@@ -1610,7 +1610,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_exalted_priesthood }
 		}
 		modifier = {
-			job_high_priest_add = 1
+			job_high_priest_add = 100
 		}
 	}
 
@@ -1621,7 +1621,7 @@ pw_building_forbidden_city = {
 			owner = { is_authoritarian = yes }
 		}
 		modifier = {
-			job_clerk_add = 4
+			job_clerk_add = 400
 		}
 	}
 
@@ -1635,7 +1635,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 
@@ -1649,7 +1649,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 

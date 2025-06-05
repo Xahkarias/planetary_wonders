@@ -61,7 +61,7 @@ pw_ring_elevator_hyper_port = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 1
+			job_pw_logistics_drone_add = 100
 			planet_jobs_upkeep_mult = -0.05
 		}
 	}
@@ -116,7 +116,7 @@ pw_ring_abyssal_crater_observatory = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -127,7 +127,7 @@ pw_ring_abyssal_crater_observatory = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -138,7 +138,7 @@ pw_ring_abyssal_crater_observatory = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 

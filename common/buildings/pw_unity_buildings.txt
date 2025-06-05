@@ -150,7 +150,7 @@ pw_building_pavilion_of_wonders = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -160,7 +160,7 @@ pw_building_pavilion_of_wonders = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_merchant_add = 100
 		}
 	}
 
@@ -192,7 +192,7 @@ pw_building_pavilion_of_wonders = {
 #			owner = { has_valid_civic = civic_memorialist }
 #		}
 #		modifier = {
-#			job_death_chronicler_add = 1
+#			job_death_chronicler_add = 100
 #		}
 #	}
 #
@@ -203,7 +203,7 @@ pw_building_pavilion_of_wonders = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_culture_worker_add = 1
+#			job_culture_worker_add = 100
 #		}
 #	}
 #
@@ -214,7 +214,7 @@ pw_building_pavilion_of_wonders = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_manager_add = 1
+#			job_manager_add = 100
 #		}
 #	}
 
@@ -237,7 +237,7 @@ pw_building_pavilion_of_wonders = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 2
+			job_entertainer_add = 200
 		}
 	}
 
@@ -249,7 +249,7 @@ pw_building_pavilion_of_wonders = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 2
+			job_duelist_add = 200
 		}
 	}
 
@@ -614,7 +614,7 @@ pw_building_fair_of_worlds = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -624,7 +624,7 @@ pw_building_fair_of_worlds = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_merchant_add = 100
 		}
 	}
 
@@ -656,7 +656,7 @@ pw_building_fair_of_worlds = {
 #			owner = { has_valid_civic = civic_memorialist }
 #		}
 #		modifier = {
-#			job_death_chronicler_add = 2
+#			job_death_chronicler_add = 200
 #		}
 #	}
 #
@@ -667,7 +667,7 @@ pw_building_fair_of_worlds = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_culture_worker_add = 2
+#			job_culture_worker_add = 200
 #		}
 #	}
 #
@@ -678,7 +678,7 @@ pw_building_fair_of_worlds = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_manager_add = 2
+#			job_manager_add = 200
 #		}
 #	}
 
@@ -701,7 +701,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 3
+			job_entertainer_add = 300
 		}
 	}
 
@@ -713,7 +713,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 3
+			job_duelist_add = 300
 		}
 	}
 
@@ -732,7 +732,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -750,7 +750,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -768,7 +768,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -786,7 +786,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -804,7 +804,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -819,7 +819,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -833,7 +833,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -847,7 +847,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -861,7 +861,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -875,7 +875,7 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 1
+			job_pw_diversity_curator_add = 100
 		}
 	}
 
@@ -1252,7 +1252,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -1262,7 +1262,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_merchant_add = 100
 		}
 	}
 
@@ -1294,7 +1294,7 @@ pw_building_museum_of_the_grotesque = {
 #			owner = { has_valid_civic = civic_memorialist }
 #		}
 #		modifier = {
-#			job_death_chronicler_add = 2
+#			job_death_chronicler_add = 200
 #		}
 #	}
 #
@@ -1305,7 +1305,7 @@ pw_building_museum_of_the_grotesque = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_culture_worker_add = 2
+#			job_culture_worker_add = 200
 #		}
 #	}
 #
@@ -1316,7 +1316,7 @@ pw_building_museum_of_the_grotesque = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_manager_add = 2
+#			job_manager_add = 200
 #		}
 #	}
 
@@ -1339,7 +1339,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 3
+			job_entertainer_add = 300
 		}
 	}
 
@@ -1351,7 +1351,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 3
+			job_duelist_add = 300
 		}
 	}
 
@@ -1370,7 +1370,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1388,7 +1388,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1406,7 +1406,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1424,7 +1424,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1442,7 +1442,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1458,7 +1458,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1473,7 +1473,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1488,7 +1488,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1503,7 +1503,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1518,7 +1518,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 1
+			job_pw_degeneracy_curator_add = 100
 		}
 	}
 
@@ -1532,7 +1532,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 2
+			job_pw_degeneracy_curator_add = 200
 		}
 	}
 
@@ -1549,7 +1549,7 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 3
+			job_pw_degeneracy_curator_add = 300
 		}
 	}
 
@@ -1923,7 +1923,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_pw_relic_keeper_add = 1
+			job_pw_relic_keeper_add = 100
 		}
 	}
 
@@ -1937,8 +1937,8 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_high_priest_add = 1
-#			job_priest_add = 4
+			job_high_priest_add = 100
+#			job_priest_add = 400
 		}
 	}
 
@@ -1952,7 +1952,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_technophant_add = 1
+			job_technophant_add = 100
 		}
 	}
 
@@ -1974,8 +1974,8 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_death_priest_add = 2
-			job_mortal_initiate_add = 2
+			job_death_priest_add = 200
+			job_mortal_initiate_add = 200
 		}
 	}
 
@@ -1989,7 +1989,7 @@ pw_building_holy_reliquary = {
 #			}
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 
@@ -2000,7 +2000,7 @@ pw_building_holy_reliquary = {
 			owner = { has_valid_civic = civic_memorialist }
 		}
 		modifier = {
-			job_death_chronicler_add = 2
+			job_death_chronicler_add = 200
 		}
 	}
 
@@ -2011,7 +2011,7 @@ pw_building_holy_reliquary = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 
@@ -2030,7 +2030,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_preacher_add = 2
+			job_preacher_add = 200
 		}
 	}
 
@@ -2353,7 +2353,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_high_priest_add = 1
+			job_high_priest_add = 100
 		}
 	}
 
@@ -2366,7 +2366,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_technophant_add = 1
+			job_technophant_add = 100
 		}
 	}
 
@@ -2378,7 +2378,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -2391,7 +2391,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_worker_coop_empire = no }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_executive_add = 100
 		}
 	}
 
@@ -2405,7 +2405,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_steward_add = 2
+			job_steward_add = 200
 		}
 	}
 
@@ -2420,7 +2420,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_pw_tomb_scholar_add = 2
+			job_pw_tomb_scholar_add = 200
 		}
 	}
 
@@ -2432,7 +2432,7 @@ pw_building_unhallowed_necropolis = {
 #			owner = { has_valid_civic = civic_memorialist }
 #		}
 #		modifier = {
-#			job_death_chronicler_add = 2
+#			job_death_chronicler_add = 200
 #		}
 #	}
 #
@@ -2444,7 +2444,7 @@ pw_building_unhallowed_necropolis = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_culture_worker_add = 2
+#			job_culture_worker_add = 200
 #		}
 #	}
 #
@@ -2456,7 +2456,7 @@ pw_building_unhallowed_necropolis = {
 #			NOT = { owner = { has_valid_civic = civic_memorialist }}
 #		}
 #		modifier = {
-#			job_manager_add = 2
+#			job_manager_add = 200
 #		}
 #	}
 	inline_script = {
@@ -2475,7 +2475,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_death_priest_add = 2
+			job_death_priest_add = 200
 		}
 	}
 
@@ -2494,7 +2494,7 @@ pw_building_unhallowed_necropolis = {
 #			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 
@@ -2508,7 +2508,7 @@ pw_building_unhallowed_necropolis = {
 			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 		}
 		modifier = {
-			job_culture_worker_add = 2
+			job_culture_worker_add = 200
 		}
 	}
 
@@ -2522,7 +2522,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_worker_coop_empire = no }
 		}
 		modifier = {
-			job_manager_add = 2
+			job_manager_add = 200
 		}
 	}
 
@@ -2535,7 +2535,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_steward_add = 2
+			job_steward_add = 200
 		}
 	}
 
@@ -2551,7 +2551,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_pw_tomb_surveyor_add = 2
+			job_pw_tomb_surveyor_add = 200
 		}
 	}
 
@@ -2562,7 +2562,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 1
+			job_patrol_drone_add = 100
 		}
 	}
 
@@ -2576,7 +2576,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_chronicle_drone_add = 2
+			job_chronicle_drone_add = 200
 		}
 	}
 
@@ -2587,7 +2587,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { NOT = { has_valid_civic = civic_hive_memorialist }}
 		}
 		modifier = {
-			job_synapse_drone_add = 2
+			job_synapse_drone_add = 200
 		}
 	}
 
@@ -2598,7 +2598,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { NOT = { has_valid_civic = civic_machine_memorialist }}
 		}
 		modifier = {
-			job_evaluator_add = 2
+			job_evaluator_add = 200
 		}
 	}
 
@@ -2609,7 +2609,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 2
+			job_synapse_drone_add = 200
 		}
 	}
 
@@ -2619,7 +2619,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_evaluator_add = 2
+			job_evaluator_add = 200
 		}
 	}
 

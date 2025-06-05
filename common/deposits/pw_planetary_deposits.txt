@@ -26,7 +26,7 @@ pw_d_ancient_cornucopia = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 3
+			job_farmer_add = 300
 		}
 	}
 
@@ -40,8 +40,8 @@ pw_d_ancient_cornucopia = {
 			is_wet = yes
 		}
 		modifier = {
-			job_angler_add = 2
-			job_pearl_diver_add = 1
+			job_angler_add = 200
+			job_pearl_diver_add = 100
 		}
 	}
 
@@ -51,7 +51,7 @@ pw_d_ancient_cornucopia = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_agri_drone_add = 3
+			job_agri_drone_add = 300
 		}
 	}
 }
@@ -76,7 +76,7 @@ pw_d_ancient_solar_tower = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_technician_add = 3
+			job_technician_add = 300
 		}
 	}
 
@@ -86,7 +86,7 @@ pw_d_ancient_solar_tower = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = 3
+			job_technician_drone_add = 300
 		}
 	}
 }
@@ -111,7 +111,7 @@ pw_d_ancient_mining_project = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_miner_add = 3
+			job_miner_add = 300
 		}
 	}
 
@@ -121,7 +121,7 @@ pw_d_ancient_mining_project = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 3
+			job_mining_drone_add = 300
 		}
 	}
 }
@@ -155,7 +155,7 @@ pw_d_SE_space_ramp = {
 			owner = { can_generate_trade_value = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_merchant_add = 100
 		}
 	}
 
@@ -166,7 +166,7 @@ pw_d_SE_space_ramp = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 1
+			job_pw_logistics_drone_add = 100
 		}
 	}
 
@@ -223,7 +223,7 @@ pw_d_SE_nuclear_launcher = {
 			owner = { can_generate_trade_value = yes }
 		}
 		modifier = {
-			job_merchant_add = 2
+			job_merchant_add = 200
 		}
 	}
 
@@ -234,7 +234,7 @@ pw_d_SE_nuclear_launcher = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 2
+			job_pw_logistics_drone_add = 200
 		}
 	}
 
@@ -291,7 +291,7 @@ pw_d_SE_skyhook = {
 			owner = { can_generate_trade_value = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_merchant_add = 100
 		}
 	}
 
@@ -302,7 +302,7 @@ pw_d_SE_skyhook = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 1
+			job_pw_logistics_drone_add = 100
 		}
 	}
 
@@ -480,7 +480,7 @@ pw_d_guardian_angel_arena = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 1
+			job_duelist_add = 100
 		}
 	}
 }
@@ -574,7 +574,7 @@ pw_d_guardian_angel_order_outpost = {
 			}
 		}
 		modifier = {
-			job_knight_add = 1
+			job_knight_add = 100
 		}
 	}
 }
@@ -614,7 +614,7 @@ pw_d_guardian_angel_scenic_set_piece = {
 		}
 		modifier = {
 			planet_amenities_add = 100
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -673,7 +673,7 @@ pw_d_monument_to_the_solar_regent = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 }
@@ -714,7 +714,7 @@ pw_d_parliament_of_the_void_speakers = {
 #			owner = { is_spiritualist = yes }
 #		}
 #		modifier = {
-#			job_priest_add = 2
+#			job_priest_add = 200
 #		}
 #	}
 }
@@ -750,7 +750,7 @@ pw_d_ark_project = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -784,7 +784,7 @@ pw_d_library_of_babel = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -817,7 +817,7 @@ pw_d_cradle_initiative = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -850,7 +850,7 @@ pw_d_particle_museum = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -883,7 +883,7 @@ pw_d_omnidatabase = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -916,7 +916,7 @@ pw_d_stellarium = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -950,7 +950,7 @@ pw_d_zero_g_exposition = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -983,7 +983,7 @@ pw_d_mechanist_collection = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -1016,7 +1016,7 @@ pw_d_meta_architectural_complex = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 1
+			job_pw_grand_archivist_add = 100
 		}
 	}
 }
@@ -1058,7 +1058,7 @@ pw_d_holoarchive = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 9
+			job_pw_grand_archivist_add = 900
 		}
 	}
 }
@@ -1091,7 +1091,7 @@ pw_d_lunar_archive = {
 			}
 		}
 		modifier = {
-			job_pw_lunar_archivist_add = 1
+			job_pw_lunar_archivist_add = 100
 		}
 	}
 
@@ -1104,7 +1104,7 @@ pw_d_lunar_archive = {
 			has_upgraded_capital = yes
 		}
 		modifier = {
-			job_pw_lunar_archivist_add = 1
+			job_pw_lunar_archivist_add = 100
 		}
 	}
 
@@ -1117,7 +1117,7 @@ pw_d_lunar_archive = {
 			has_fully_upgraded_capital = yes
 		}
 		modifier = {
-			job_pw_lunar_archivist_add = 1
+			job_pw_lunar_archivist_add = 100
 		}
 	}
 
@@ -1129,7 +1129,7 @@ pw_d_lunar_archive = {
 			}
 		}
 		modifier = {
-			job_pw_lunar_archivist_gestalt_add = 1
+			job_pw_lunar_archivist_gestalt_add = 100
 		}
 	}
 
@@ -1142,7 +1142,7 @@ pw_d_lunar_archive = {
 			has_upgraded_capital = yes
 		}
 		modifier = {
-			job_pw_lunar_archivist_gestalt_add = 1
+			job_pw_lunar_archivist_gestalt_add = 100
 		}
 	}
 
@@ -1155,7 +1155,7 @@ pw_d_lunar_archive = {
 			has_fully_upgraded_capital = yes
 		}
 		modifier = {
-			job_pw_lunar_archivist_gestalt_add = 1
+			job_pw_lunar_archivist_gestalt_add = 100
 		}
 	}
 }
@@ -1196,7 +1196,7 @@ pw_d_hidden_mantle_factory = {
 			owner = { country_uses_consumer_goods = no }
 		}
 		modifier = {
-			job_miner_add = 1
+			job_miner_add = 100
 		}
 	}
 	#Alloys (no CG)
@@ -1209,7 +1209,7 @@ pw_d_hidden_mantle_factory = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 1
+			job_mining_drone_add = 100
 		}
 	}
 	#Alloys
@@ -1225,7 +1225,7 @@ pw_d_hidden_mantle_factory = {
 			owner = { country_uses_consumer_goods = no }
 		}
 		modifier = {
-			job_mining_drone_add = 1
+			job_mining_drone_add = 100
 		}
 	}
 }
@@ -1274,7 +1274,7 @@ pw_d_hidden_mantle_factory_overdrive = {
 			owner = { country_uses_consumer_goods = no }
 		}
 		modifier = {
-			job_miner_add = 1
+			job_miner_add = 100
 		}
 	}
 	#Alloys (no CG)
@@ -1287,7 +1287,7 @@ pw_d_hidden_mantle_factory_overdrive = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 1
+			job_mining_drone_add = 100
 		}
 	}
 	#Alloys
@@ -1303,7 +1303,7 @@ pw_d_hidden_mantle_factory_overdrive = {
 			owner = { country_uses_consumer_goods = no }
 		}
 		modifier = {
-			job_mining_drone_add = 1
+			job_mining_drone_add = 100
 		}
 	}
 }
@@ -1345,7 +1345,7 @@ pw_d_mantle_replicator = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_replicator_add = 1
+			job_replicator_add = 100
 		}
 	}
 	#Alloys

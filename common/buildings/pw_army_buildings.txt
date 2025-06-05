@@ -138,7 +138,7 @@ pw_building_guardian_angel = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 4
+			job_soldier_add = 400
 		}
 	}
 
@@ -150,7 +150,7 @@ pw_building_guardian_angel = {
 			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = 100
 		}
 	}
 
@@ -161,7 +161,7 @@ pw_building_guardian_angel = {
 			owner = { has_valid_civic = civic_reanimated_armies }
 		}
 		modifier = {
-			job_necromancer_add = 1
+			job_necromancer_add = 100
 		}
 	}
 
@@ -173,7 +173,7 @@ pw_building_guardian_angel = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 2
+			job_enforcer_add = 200
 		}
 	}
 
@@ -184,7 +184,7 @@ pw_building_guardian_angel = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 
@@ -195,8 +195,8 @@ pw_building_guardian_angel = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 5
-			job_patrol_drone_add = 2
+			job_warrior_drone_add = 500
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -486,7 +486,7 @@ pw_building_stellar_sentinel = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 5
+			job_soldier_add = 500
 		}
 	}
 
@@ -498,7 +498,7 @@ pw_building_stellar_sentinel = {
 			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
 		}
 		modifier = {
-			job_soldier_add = 2
+			job_soldier_add = 200
 		}
 	}
 
@@ -509,7 +509,7 @@ pw_building_stellar_sentinel = {
 			owner = { has_valid_civic = civic_reanimated_armies }
 		}
 		modifier = {
-			job_necromancer_add = 2
+			job_necromancer_add = 200
 		}
 	}
 
@@ -521,7 +521,7 @@ pw_building_stellar_sentinel = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 2
+			job_enforcer_add = 200
 		}
 	}
 
@@ -532,7 +532,7 @@ pw_building_stellar_sentinel = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 2
+			job_telepath_add = 200
 		}
 	}
 
@@ -543,8 +543,8 @@ pw_building_stellar_sentinel = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 7
-			job_patrol_drone_add = 2
+			job_warrior_drone_add = 700
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -838,8 +838,8 @@ pw_building_martial_avenue = {
 #			owner = { is_megacorp = no }
 #		}
 #		modifier = {
-#			job_politician_add = 1
-#			job_culture_worker_add = 2
+#			job_politician_add = 100
+#			job_culture_worker_add = 200
 #		}
 #	}
 #
@@ -851,8 +851,8 @@ pw_building_martial_avenue = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 1
-#			job_manager_add = 2
+#			job_executive_add = 100
+#			job_manager_add = 200
 #		}
 #	}
 	inline_script = {
@@ -877,7 +877,7 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 2
+			job_entertainer_add = 200
 		}
 	}
 
@@ -891,7 +891,7 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 2
+			job_duelist_add = 200
 		}
 	}
 
@@ -905,7 +905,7 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 2
+			job_soldier_add = 200
 		}
 	}
 
@@ -919,8 +919,8 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 1
-			job_necromancer_add = 1
+			job_soldier_add = 100
+			job_necromancer_add = 100
 		}
 	}
 

@@ -31,7 +31,7 @@ pw_building_polyhedron = {
 	}
 
 	planet_modifier = {
-		planet_max_buildings_add = 1
+		# planet_max_buildings_add = 1
 	}
 
 	#Regular Jobs
@@ -41,8 +41,8 @@ pw_building_polyhedron = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_researcher_add = 1
-			job_culture_worker_add = 2
+			job_researcher_add = 100
+			job_culture_worker_add = 200
 		}
 	}
 
@@ -53,8 +53,8 @@ pw_building_polyhedron = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 1
-			job_synapse_drone_add = 2
+			job_brain_drone_add = 100
+			job_synapse_drone_add = 200
 		}
 	}
 
@@ -65,8 +65,8 @@ pw_building_polyhedron = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 1
-			job_evaluator_add = 2
+			job_calculator_add = 100
+			job_evaluator_add = 200
 		}
 	}
 

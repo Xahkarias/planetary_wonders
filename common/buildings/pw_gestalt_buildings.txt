@@ -265,7 +265,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 800
-			job_maintenance_drone_add = 5
+			job_maintenance_drone_add = 500
 		}
 	}
 
@@ -276,7 +276,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 600
-			job_maintenance_drone_add = 3
+			job_maintenance_drone_add = 300
 		}
 	}
 
@@ -290,7 +290,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 1600
-			job_maintenance_drone_add = 10
+			job_maintenance_drone_add = 1000
 		}
 	}
 
@@ -301,7 +301,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 2400
-			job_maintenance_drone_add = 15
+			job_maintenance_drone_add = 1500
 		}
 	}
 
@@ -313,7 +313,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_patrol_drone_add = 2
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -325,7 +325,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_coordinator_add = 2
+			job_coordinator_add = 200
 		}
 	}
 
@@ -338,7 +338,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_replicator_add = 1
+			job_replicator_add = 100
 		}
 	}
 
@@ -351,7 +351,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_machine_add = 1
+			job_bath_attendant_machine_add = 100
 		}
 	}
 
@@ -365,7 +365,7 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_replicator_add = 1
+			job_replicator_add = 100
 		}
 	}
 
@@ -377,7 +377,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 2
+			job_synapse_drone_add = 200
 		}
 	}
 
@@ -390,7 +390,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -403,7 +403,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_hive_add = 1
+			job_bath_attendant_hive_add = 100
 		}
 	}
 
@@ -420,7 +420,7 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -438,8 +438,8 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-#			job_cyber_drone_add = 1
-			job_augmentor_drone_add = 1
+#			job_cyber_drone_add = 100
+			job_augmentor_drone_add = 100
 		}
 	}
 
@@ -712,7 +712,7 @@ pw_building_enigma_engine = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_pw_enigma_decipher_add = 5
+			job_pw_enigma_decipher_add = 500
 			job_pw_enigma_decipher_per_pop = @pw_job_per_25_pop
 		}
 	}
@@ -947,7 +947,7 @@ pw_building_solipsist_debate_hall = {
 			job_brain_drone_per_pop = @pw_job_per_50_pop
 			job_synapse_drone_per_pop = @pw_job_per_50_pop
 			job_patrol_drone_per_pop = @pw_job_per_100_pop
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -965,7 +965,7 @@ pw_building_solipsist_debate_hall = {
 			#Complex
 			job_patrol_drone_per_pop = @pw_job_per_50_pop
 			job_synapse_drone_per_pop = @pw_job_per_50_pop
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -978,7 +978,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_hive_add = 1
+			job_bath_attendant_hive_add = 100
 		}
 	}
 
@@ -1015,7 +1015,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 1
+			job_synapse_drone_add = 100
 		}
 	}
 	triggered_country_modifier = {
@@ -1039,7 +1039,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_brain_drone_add = 1
+			job_brain_drone_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1111,7 +1111,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1147,7 +1147,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_chronicle_drone_add = 1
+			job_chronicle_drone_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1159,7 +1159,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_catalytic_drone_add = 1
+			job_catalytic_drone_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1451,11 +1451,11 @@ pw_building_feasting_grounds = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_add = 2
-			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 200
+			job_warrior_drone_add = 200
 
 			#Complex
-			job_pw_banquet_steward_drone_add = 4
+			job_pw_banquet_steward_drone_add = 400
 		}
 	}
 
@@ -1468,11 +1468,11 @@ pw_building_feasting_grounds = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_add = 2
-			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 200
+			job_warrior_drone_add = 200
 
 			#Complex
-			job_patrol_drone_add = 2
+			job_patrol_drone_add = 200
 		}
 	}
 

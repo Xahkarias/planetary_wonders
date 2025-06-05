@@ -68,7 +68,7 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = yes
 		}
 	}
-	job_steward_add = 1
+	job_steward_add = 100
 	mult            = value:pw_added|BASE_VALUE|$AMOUNT$|
 }
 

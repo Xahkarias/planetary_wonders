@@ -18,7 +18,7 @@ pw_art_mod_warrior_culture = {
 	pop_ethic_militarist_attraction_mult = 0.45
 	planet_amenities_mult = 0.10
 	planet_jobs_alloys_produces_mult = 0.05
-	job_duelist_add = 1
+	job_duelist_add = 100
 }
 
 pw_art_mod_nationalistic_zeal = {

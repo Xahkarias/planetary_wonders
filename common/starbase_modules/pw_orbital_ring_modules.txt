@@ -43,7 +43,7 @@ pw_orbital_ring_guardian_harbor = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 
@@ -54,7 +54,7 @@ pw_orbital_ring_guardian_harbor = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 
@@ -65,7 +65,7 @@ pw_orbital_ring_guardian_harbor = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 1
+			job_warrior_drone_add = 100
 		}
 	}
 

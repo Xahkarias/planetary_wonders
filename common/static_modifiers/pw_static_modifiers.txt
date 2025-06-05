@@ -97,7 +97,7 @@ pw_mod_space_elevator_moon_colony_expansion_1 = {
 	icon_frame = @pw_icon_frame_green
 	planet_max_districts_add = 2
 	planet_districts_upkeep_mult = 0.10
-	planet_max_buildings_add = 1
+	# planet_max_buildings_add = 1
 }
 
 pw_mod_space_elevator_moon_colony_expansion_2 = {
@@ -105,7 +105,7 @@ pw_mod_space_elevator_moon_colony_expansion_2 = {
 	icon_frame = @pw_icon_frame_green
 	planet_max_districts_add = 3
 	planet_districts_upkeep_mult = 0.10
-	planet_max_buildings_add = 1
+	# planet_max_buildings_add = 1
 }
 
 pw_mod_space_elevator_moon_colony_expansion_3 = {
@@ -113,7 +113,7 @@ pw_mod_space_elevator_moon_colony_expansion_3 = {
 	icon_frame = @pw_icon_frame_green
 	planet_max_districts_add = 4
 	planet_districts_upkeep_mult = 0.10
-	planet_max_buildings_add = 2
+	# planet_max_buildings_add = 2
 }
 
 pw_mod_space_elevator_orbital_districts = {
@@ -128,7 +128,7 @@ pw_mod_space_elevator_counterweight_habitat = {
 	icon_frame = @pw_icon_frame_green
 	planet_colony_development_speed_mult = 1.50
 	planet_max_districts_add = 2
-	planet_max_buildings_add = 1
+	# planet_max_buildings_add = 1
 	planet_amenities_mult = 0.10
 }
 
@@ -388,7 +388,7 @@ pw_mod_abyssal_test_crater_research_in_use = {
 pw_mod_abyssal_test_crater_living_metal_construction = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
 	icon_frame = @pw_icon_frame_red
-	planet_max_buildings_add = 1
+	# planet_max_buildings_add = 1
 	planet_max_districts_add = 1
 }
 
@@ -731,7 +731,7 @@ pw_holy_reliquary_supremacy_religious_persecution = {
 	pop_happiness = -0.15
 	planet_stability_add = 5
 	pop_ethic_spiritualist_attraction_mult = 0.20
-	job_enforcer_add = 1
+	job_enforcer_add = 100
 }
 
 #Event: Happy Iconoclast
@@ -806,22 +806,22 @@ pw_pm_living_spire_designation_tradition = {
 pw_pm_living_spire_designation_administration = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_administration.dds"
 	icon_frame = @pw_icon_frame_green
-	job_politician_add = 1
+	job_politician_add = 100
 	planet_bureaucrats_upkeep_mult = -0.25
 }
 
 pw_pm_living_spire_designation_death_cult = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_death.dds"
 	icon_frame = @pw_icon_frame_green
-	job_mortal_initiate_add = 1
-	job_death_priest_add = 1
+	job_mortal_initiate_add = 100
+	job_death_priest_add = 100
 }
 
 pw_pm_living_spire_designation_death_necro = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_death.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_jobs_ruler_produces_mult = 0.10
-	job_necro_apprentice_add = 3
+	job_necro_apprentice_add = 300
 }
 
 pw_pm_living_spire_designation_submerged = {
@@ -851,8 +851,8 @@ pw_pm_living_spire_designation_mutant = {
 pw_pm_living_spire_designation_order = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_living_spire_designation_order.dds"
 	icon_frame = @pw_icon_frame_green
-	job_knight_add = 1
-	job_squire_add = 1
+	job_knight_add = 100
+	job_squire_add = 100
 }
 
 #Nostalgia Paradise themes
@@ -918,7 +918,7 @@ pw_pm_nostalgia_paradise_theme_golden_age_machine = {
 pw_pm_nostalgia_paradise_theme_war_epoch = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_war_epoch.dds"
 	icon_frame = @pw_icon_frame_green
-	job_soldier_add = 1
+	job_soldier_add = 100
 	army_defense_damage_mult = 0.10
 	planet_resettlement_unemployed_destination_mult = 0.10
 
@@ -1082,7 +1082,7 @@ pw_pm_lunar_archive = {
 
 #Added by Ambition
 pw_mod_ambition_monumentality = {
-	planet_max_buildings_add = 1
+	# planet_max_buildings_add = 1
 }
 
 pw_mod_galactic_model_anomaly_sensor = {
