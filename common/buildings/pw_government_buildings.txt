@@ -1162,7 +1162,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
 		}
 		modifier = {
-			job_researcher_add = 100
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 100 }
 		}
 	}
 

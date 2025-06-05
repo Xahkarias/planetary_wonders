@@ -944,7 +944,9 @@ pw_building_solipsist_debate_hall = {
 			job_warrior_drone_per_pop = @pw_job_per_50_pop
 
 			#Complex
-			job_brain_drone_per_pop = @pw_job_per_50_pop
+			job_calculator_physicist_per_pop = @pw_job_per_50_pop
+			job_calculator_biologist_per_pop = @pw_job_per_50_pop
+			job_calculator_engineer_per_pop = @pw_job_per_50_pop
 			job_synapse_drone_per_pop = @pw_job_per_50_pop
 			job_patrol_drone_per_pop = @pw_job_per_100_pop
 			job_spawning_drone_add = 100
@@ -1039,7 +1041,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_brain_drone_add = 100
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 100 }
 		}
 	}
 	triggered_planet_modifier = {

@@ -364,7 +364,7 @@ pw_building_innovation_hub = {
 			}
 		}
 		modifier = {
-			job_researcher_add = 100
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 100 }
 		}
 	}
 

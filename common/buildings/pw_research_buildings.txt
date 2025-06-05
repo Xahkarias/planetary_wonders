@@ -148,7 +148,7 @@ pw_building_particle_supercollider = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_particle_supercollider_add = 400
 		}
 	}
@@ -192,7 +192,7 @@ pw_building_particle_supercollider = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_particle_supercollider_add = 400
 		}
 	}
@@ -236,7 +236,7 @@ pw_building_particle_supercollider = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_particle_supercollider_add = 400
 		}
 	}
@@ -602,7 +602,7 @@ pw_building_interdimensional_collider = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_particle_supercollider_add = 800
 		}
 	}
@@ -614,7 +614,7 @@ pw_building_interdimensional_collider = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_particle_supercollider_add = 1000
 		}
 	}
@@ -626,7 +626,7 @@ pw_building_interdimensional_collider = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_particle_supercollider_add = 1000
 		}
 	}
@@ -955,7 +955,7 @@ pw_building_domed_city = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_domed_city_add = 400
 			job_pw_domed_city_test_subject_add = 100
 		}
@@ -1000,7 +1000,7 @@ pw_building_domed_city = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_domed_city_add = 400
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -1045,7 +1045,7 @@ pw_building_domed_city = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_domed_city_add = 400
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -1407,7 +1407,7 @@ pw_building_secluded_sector = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_domed_city_add = 400
 			job_pw_domed_city_test_subject_add = 100
 		}
@@ -1452,7 +1452,7 @@ pw_building_secluded_sector = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_domed_city_add = 400
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -1497,7 +1497,7 @@ pw_building_secluded_sector = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_domed_city_add = 400
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -1870,7 +1870,7 @@ pw_building_psionic_observatory = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_domed_city_add = 800
 			job_pw_domed_city_test_subject_add = 100
 		}
@@ -1883,7 +1883,7 @@ pw_building_psionic_observatory = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_domed_city_add = 1000
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -1896,7 +1896,7 @@ pw_building_psionic_observatory = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_domed_city_add = 1000
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -2241,7 +2241,7 @@ pw_building_abyssal_crater_test_site = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
 	}
@@ -2285,7 +2285,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_abyssal_crater_test_site_add = 400
 		}
 	}
@@ -2329,7 +2329,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_abyssal_crater_test_site_add = 400
 		}
 	}
@@ -2675,7 +2675,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
 	}
@@ -2719,7 +2719,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_abyssal_crater_test_site_add = 400
 		}
 	}
@@ -2763,7 +2763,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_abyssal_crater_test_site_add = 400
 		}
 	}
@@ -3119,7 +3119,7 @@ pw_building_metal_vivarium = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			job_researcher_add = 400
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_abyssal_crater_test_site_add = 800
 		}
 	}
@@ -3131,7 +3131,7 @@ pw_building_metal_vivarium = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_brain_drone_abyssal_crater_test_site_add = 1000
 		}
 	}
@@ -3143,7 +3143,7 @@ pw_building_metal_vivarium = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 400
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_abyssal_crater_test_site_add = 1000
 		}
 	}
@@ -3453,7 +3453,7 @@ pw_building_grand_archive = {
 			owner = { is_materialist = no }
 		}
 		modifier = {
-			job_researcher_add = 600
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 600 }
 		}
 	}
 

@@ -1,0 +1,10 @@
+# Inline replacement for old job_calculator_add and job_brain_drone_add
+# Usage:
+# inline_script = {
+#	script = jobs/pw/calculator_add
+#	AMOUNT = 100
+# }
+
+job_calculator_physicist_add = $AMOUNT$
+job_calculator_biologist_add = $AMOUNT$
+job_calculator_engineer_add = $AMOUNT$
