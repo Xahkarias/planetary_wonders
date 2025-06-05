@@ -147,7 +147,7 @@ pw_building_particle_supercollider = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 100
+			job_politician_add = 100 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_particle_supercollider_add = 400
 		}
@@ -601,7 +601,7 @@ pw_building_interdimensional_collider = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 200
+			job_politician_add = 200 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_particle_supercollider_add = 800
 		}
@@ -954,7 +954,7 @@ pw_building_domed_city = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 100
+			job_politician_add = 100 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_domed_city_add = 400
 			job_pw_domed_city_test_subject_add = 100
@@ -1406,7 +1406,7 @@ pw_building_secluded_sector = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 100
+			job_politician_add = 100 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_domed_city_add = 400
 			job_pw_domed_city_test_subject_add = 100
@@ -1869,7 +1869,7 @@ pw_building_psionic_observatory = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 200
+			job_politician_add = 200 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_domed_city_add = 800
 			job_pw_domed_city_test_subject_add = 100
@@ -2240,7 +2240,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 100
+			job_politician_add = 100 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
@@ -2674,7 +2674,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 100
+			job_politician_add = 100 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
@@ -3118,7 +3118,7 @@ pw_building_metal_vivarium = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 200
+			job_politician_add = 200 # head researcher
 			job_researcher_add = 400
 			job_pw_researcher_abyssal_crater_test_site_add = 800
 		}

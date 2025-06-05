@@ -155,7 +155,7 @@ pw_d_SE_space_ramp = {
 			owner = { can_generate_trade_value = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -223,7 +223,7 @@ pw_d_SE_nuclear_launcher = {
 			owner = { can_generate_trade_value = yes }
 		}
 		modifier = {
-			job_merchant_add = 200
+			job_politician_add = 200 # merchant
 		}
 	}
 
@@ -291,7 +291,7 @@ pw_d_SE_skyhook = {
 			owner = { can_generate_trade_value = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 

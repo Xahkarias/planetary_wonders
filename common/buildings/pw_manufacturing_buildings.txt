@@ -846,7 +846,7 @@ pw_building_industrial_hearth = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 			job_pw_poly_artisan_add = 600
 			job_pw_poly_artisan_per_pop = @pw_job_per_25_pop
 		}

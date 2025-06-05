@@ -657,7 +657,7 @@ pw_d_infrastructure_inventions_fair = {
 		pop_happiness = 0.05
 		planet_jobs_worker_produces_mult = 0.10
 		planet_traders_produces_mult = 0.10
-		job_merchant_add = 100
+		job_politician_add = 100 # merchant
 		planet_jobs_upkeep_mult = 0.10
 	}
 }
@@ -693,7 +693,7 @@ pw_d_infrastructure_cooperatives_manufacturers = {
 		pop_happiness = 0.10
 		planet_jobs_worker_produces_mult = 0.15
 		planet_traders_produces_mult = 0.15
-		job_merchant_add = 100
+		job_politician_add = 100 # merchant
 		planet_jobs_upkeep_mult = 0.15
 	}
 }
@@ -729,7 +729,7 @@ pw_d_infrastructure_industrial_unions = {
 		pop_happiness = 0.10
 		planet_jobs_worker_produces_mult = 0.20
 		planet_traders_produces_mult = 0.20
-		job_merchant_add = 100
+		job_politician_add = 100 # merchant
 		planet_jobs_upkeep_mult = 0.20
 	}
 

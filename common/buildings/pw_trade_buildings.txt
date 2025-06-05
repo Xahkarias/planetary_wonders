@@ -136,7 +136,7 @@ pw_building_space_elevator = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 			job_enforcer_add = 100
 			job_clerk_add = 1000
 			planet_traders_produces_mult = 0.05
@@ -643,8 +643,8 @@ pw_building_department_of_xenoeconomics = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-#			job_executive_add = 100
-			job_merchant_add = 200
+#			job_politician_add = 100 # executive
+			job_politician_add = 200 # merchant
 #			job_manager_add = 200
 			job_clerk_add = 200
 		}

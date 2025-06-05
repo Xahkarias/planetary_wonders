@@ -160,7 +160,7 @@ pw_building_pavilion_of_wonders = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -624,7 +624,7 @@ pw_building_fair_of_worlds = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -1262,7 +1262,7 @@ pw_building_museum_of_the_grotesque = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -1937,7 +1937,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_high_priest_add = 100
+			job_politician_add = 100 # high_priest
 #			job_priest_add = 400
 		}
 	}
@@ -1952,7 +1952,7 @@ pw_building_holy_reliquary = {
 			}
 		}
 		modifier = {
-			job_technophant_add = 100
+			job_politician_add = 100 # technophant
 		}
 	}
 
@@ -2353,7 +2353,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_high_priest_add = 100
+			job_politician_add = 100 # high_priest
 		}
 	}
 
@@ -2366,7 +2366,7 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_technophant_add = 100
+			job_politician_add = 100 # technophant
 		}
 	}
 
@@ -2391,7 +2391,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_worker_coop_empire = no }
 		}
 		modifier = {
-			job_executive_add = 100
+			job_politician_add = 100 # executive
 		}
 	}
 

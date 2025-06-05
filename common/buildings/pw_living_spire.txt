@@ -340,7 +340,7 @@ pw_building_living_spire_1 = {
 	#			owner = { is_megacorp = yes }
 	#		}
 	#		modifier = {
-	#			job_executive_add = 100
+	#			job_politician_add = 100 # executive
 	#		}
 	#	}
 	triggered_desc = {
@@ -785,7 +785,7 @@ pw_building_living_spire_2 = {
 	#			owner = { is_megacorp = yes }
 	#		}
 	#		modifier = {
-	#			job_executive_add = 100
+	#			job_politician_add = 100 # executive
 	#		}
 	#	}
 	triggered_desc = {
@@ -806,7 +806,7 @@ pw_building_living_spire_2 = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 	#Medical Worker (No Ascension Path)
@@ -1335,7 +1335,7 @@ pw_building_living_spire_3 = {
 	#			owner = { is_megacorp = yes }
 	#		}
 	#		modifier = {
-	#			job_executive_add = 200
+	#			job_politician_add = 200 # executive
 	#		}
 	#	}
 	triggered_desc = {
@@ -1356,7 +1356,7 @@ pw_building_living_spire_3 = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 	#Medical Worker (No Ascension Path)

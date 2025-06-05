@@ -127,7 +127,7 @@ pw_building_transplanetary_logistics_network = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 100
+#			job_politician_add = 100 # executive
 #		}
 #	}
 
@@ -439,7 +439,7 @@ pw_building_transhabitat_logistics_network = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 100
+#			job_politician_add = 100 # executive
 #		}
 #	}
 
@@ -759,7 +759,7 @@ pw_building_festival_plaza = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 100
+#			job_politician_add = 100 # executive
 #			job_manager_add = 300
 #		}
 #	}
@@ -1068,7 +1068,7 @@ pw_building_nostalgia_paradise = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -1100,7 +1100,7 @@ pw_building_nostalgia_paradise = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 100
+#			job_politician_add = 100 # executive
 #		}
 #	}
 #
@@ -1549,7 +1549,7 @@ pw_building_blossoming_preserve = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 100
+#			job_politician_add = 100 # executive
 #		}
 #	}
 	inline_script = {

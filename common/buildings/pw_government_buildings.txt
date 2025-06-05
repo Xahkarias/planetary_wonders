@@ -155,7 +155,7 @@ pw_building_galactic_model = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 100
+			job_politician_add = 100 # executive
 		}
 	}
 
@@ -567,7 +567,7 @@ pw_building_aligned_galactic_model = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 200
+			job_politician_add = 200 # executive
 		}
 	}
 
@@ -991,7 +991,7 @@ pw_building_panopticon = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 100
+			job_politician_add = 100 # executive
 		}
 	}
 
@@ -1559,7 +1559,7 @@ pw_building_forbidden_city = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 100
+			job_politician_add = 100 # executive
 		}
 	}
 
@@ -1574,7 +1574,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 100
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -1586,7 +1586,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_aristocratic_elite }
 		}
 		modifier = {
-			job_noble_add = 100
+			job_politician_add = 100 # noble
 		}
 	}
 
@@ -1598,7 +1598,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_technocracy }
 		}
 		modifier = {
-			job_head_researcher_add = 100
+			job_politician_add = 100 # head researcher
 		}
 	}
 
@@ -1610,7 +1610,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_exalted_priesthood }
 		}
 		modifier = {
-			job_high_priest_add = 100
+			job_politician_add = 100 # high_priest
 		}
 	}
 

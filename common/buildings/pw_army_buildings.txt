@@ -851,7 +851,7 @@ pw_building_martial_avenue = {
 #			owner = { is_megacorp = yes }
 #		}
 #		modifier = {
-#			job_executive_add = 100
+#			job_politician_add = 100 # executive
 #			job_manager_add = 200
 #		}
 #	}
