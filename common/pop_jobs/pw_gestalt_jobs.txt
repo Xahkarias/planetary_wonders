@@ -1,9 +1,15 @@
 #Added by Erebus Project
 pw_mining_coordinator = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_erebus_project
-	icon = miner
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_erebus_project
+			icon = miner
+		}
+	}
+
+	tags = { minerals }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -52,6 +58,8 @@ pw_mining_coordinator = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|pw_mining_coordinator|RESOURCE|minerals|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_minerals_produces_mult|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -74,9 +82,15 @@ pw_mining_coordinator = {
 #Added by Helios Tower
 pw_energy_coordinator = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_helios_tower
-	icon = technician
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_helios_tower
+			icon = technician
+		}
+	}
+
+	tags = { energy }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -122,6 +136,8 @@ pw_energy_coordinator = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|pw_energy_coordinator|RESOURCE|energy|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_energy_produces_mult|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -145,9 +161,15 @@ pw_energy_coordinator = {
 #Added by Demetrius Cornucopia
 pw_food_coordinator = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_demetrius_fields
-	icon = farmer
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_demetrius_fields
+			icon = farmer
+		}
+	}
+
+	tags = { food }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -196,6 +218,8 @@ pw_food_coordinator = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|pw_food_coordinator|RESOURCE|food|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_food_produces_mult|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -218,8 +242,15 @@ pw_food_coordinator = {
 #Added by Enigma Machine
 pw_enigma_decipher = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_enigma_engine
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_enigma_engine
+			icon = pw_enigma_decipher
+		}
+	}
+
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -256,6 +287,7 @@ pw_enigma_decipher = {
 
 	weight = {
 		weight = 50
+		mult = value:job_weights_research_modifier|JOB|pw_enigma_decipher|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -299,8 +331,15 @@ pw_enigma_decipher = {
 #Added by Domed City
 pw_domed_city_subject_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_domed_city
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_domed_city
+			icon = pw_domed_city_subject_drone
+		}
+	}
+
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -335,6 +374,8 @@ pw_domed_city_subject_drone = {
 
 	weight = {
 		weight = @simple_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_domed_city_subject_drone|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_society_research_produces_mult|
 		modifier = {
 			factor = 1.25
 			has_trait = trait_charismatic
@@ -358,10 +399,17 @@ pw_domed_city_subject_drone = {
 }
 
 #Added by Industrial Hearth
-pw_poly_artisan_drone ={
+pw_poly_artisan_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_industrial_hearth
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_industrial_hearth
+			icon = pw_poly_artisan_drone
+		}
+	}
+
+	tags = { consumer_goods unity }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -389,6 +437,7 @@ pw_poly_artisan_drone ={
 
 	weight = {
 		weight = 50
+		mult = value:job_weights_modifier|JOB|pw_poly_artisan_drone|RESOURCE|consumer_goods|
 		modifier = {
 			factor = 0
 			exists = owner
@@ -404,10 +453,16 @@ pw_poly_artisan_drone ={
 #Added by Archaeology deposit: Lunar Archive
 pw_lunar_archivist_gestalt = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_grand_archive
-	clothes_texture_index = 3
-	icon = pw_grand_archivist
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_grand_archive
+			# clothes_texture_index = 3
+			icon = pw_grand_archivist
+		}
+	}
+	
+	tags = { research }	
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -449,6 +504,7 @@ pw_lunar_archivist_gestalt = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_lunar_archivist_gestalt|
 		modifier = {
 			factor = 1.25
 			always = yes
@@ -569,8 +625,15 @@ pw_lunar_archivist_gestalt = {
 #Added by Space Elevator
 pw_logistics_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_space_elevator
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_space_elevator
+			icon = pw_logistics_drone
+		}
+	}
+	
+	tags = { unity }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -669,6 +732,8 @@ pw_logistics_drone = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
+		mult = value:job_weights_modifier|JOB|pw_logistics_drone|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_produces_mult|
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -695,8 +760,15 @@ pw_logistics_drone = {
 #Added by Unhallowed Necropolis
 pw_tomb_surveyor = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_unhallowed_necropolis
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_unhallowed_necropolis
+			icon = pw_tomb_surveyor
+		}
+	}
+	
+	tags = { research unity }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -727,6 +799,7 @@ pw_tomb_surveyor = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_tomb_surveyor|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -782,8 +855,15 @@ pw_tomb_surveyor = {
 #Added by Blossoming Preserve
 pw_preserver_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_blossoming_preserve
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_blossoming_preserve
+			icon = pw_preserver_drone
+		}
+	}
+	
+	tags = { research unity }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -837,6 +917,7 @@ pw_preserver_drone = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_preserver_drone|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -892,9 +973,15 @@ pw_preserver_drone = {
 #Added by Feasting Grounds
 pw_banquet_steward_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_feasting_grounds
-	icon = servant
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_feasting_grounds
+			icon = servant
+		}
+	}
+
+	tags = { unity }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -951,7 +1038,7 @@ pw_banquet_steward_drone = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		factor = 1.1
+		mult = value:job_weights_modifier|JOB|pw_banquet_steward_drone|RESOURCE|unity|
 		modifier = {
 			weight = 100
 			exists = owner

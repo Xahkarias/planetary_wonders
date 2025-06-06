@@ -1,7 +1,14 @@
 pw_brain_drone_particle_supercollider = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_particle_supercollider
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_particle_supercollider
+			icon = pw_brain_drone_particle_supercollider
+		}
+	}
+
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -30,6 +37,7 @@ pw_brain_drone_particle_supercollider = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_brain_drone_particle_supercollider|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -76,8 +84,15 @@ pw_brain_drone_particle_supercollider = {
 
 pw_brain_drone_domed_city = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_domed_city
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_domed_city
+			icon = pw_brain_drone_domed_city
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -105,6 +120,7 @@ pw_brain_drone_domed_city = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_brain_drone_domed_city|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -151,8 +167,15 @@ pw_brain_drone_domed_city = {
 
 pw_brain_drone_abyssal_crater_test_site = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_abyssal_crater_test_site
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_abyssal_crater_test_site
+			icon = pw_brain_drone_abyssal_crater_test_site
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -181,6 +204,7 @@ pw_brain_drone_abyssal_crater_test_site = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_brain_drone_abyssal_crater_test_site|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -227,8 +251,15 @@ pw_brain_drone_abyssal_crater_test_site = {
 
 pw_calculator_particle_supercollider = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_particle_supercollider
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_particle_supercollider
+			icon = pw_calculator_particle_supercollider
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -256,6 +287,7 @@ pw_calculator_particle_supercollider = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_calculator_particle_supercollider|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -298,8 +330,15 @@ pw_calculator_particle_supercollider = {
 
 pw_calculator_domed_city = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_domed_city
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_domed_city
+			icon = pw_calculator_domed_city
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -328,6 +367,7 @@ pw_calculator_domed_city = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_calculator_domed_city|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
@@ -370,8 +410,15 @@ pw_calculator_domed_city = {
 
 pw_calculator_abyssal_crater_test_site = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = pw_building_abyssal_crater_test_site
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = pw_building_abyssal_crater_test_site
+			icon = pw_calculator_abyssal_crater_test_site
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -400,6 +447,7 @@ pw_calculator_abyssal_crater_test_site = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_calculator_abyssal_crater_test_site|
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
