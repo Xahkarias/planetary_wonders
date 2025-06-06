@@ -11,6 +11,23 @@ pw_capricorns_heart_system_initializer = {
 		radius = 185
 	}
 
+	flags = { pw_capricorns_heart_system }
+	usage = misc_system_init
+
+	# create one, somewhere in unused space
+	max_instances = 1
+	usage_odds = {
+		base = 0
+		modifier = {
+			add = 2000000
+			NOR = {
+				is_fe_cluster = yes
+				is_marauder_cluster = yes
+				has_star_flag = empire_cluster
+			}
+		}
+	}
+
 	planet = {
 		name = "NAME_pw_capricorns_heart"
 		class = "pc_g_star"

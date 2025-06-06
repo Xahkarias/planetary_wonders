@@ -494,9 +494,9 @@ pw_building_space_elevator = {
 		modifier = {
 			factor = value:pw_pop_factor
 		}
-		modifier = {
-			factor = value:pw_trade_factor
-		}
+		# modifier = {
+		# 	factor = value:pw_trade_factor
+		# }
 	}
 }
 
@@ -782,8 +782,8 @@ pw_building_department_of_xenoeconomics = {
 		modifier = {
 			factor = value:pw_pop_factor
 		}
-		modifier = {
-			factor = value:pw_trade_factor
-		}
+		# modifier = {
+		# 	factor = value:pw_trade_factor
+		# }
 	}
 }
