@@ -443,10 +443,10 @@ pw_poly_artisan_drone = {
 			exists = owner
 			owner = { has_valid_civic = civic_machine_assimilator }
 		}
-		modifier = {
-			factor = 2
-			has_job = artisan_drone
-		}
+		# modifier = {
+		# 	factor = 2
+		# 	has_job = pw_poly_artisan_drone
+		# }
 	}
 }
 
@@ -553,10 +553,10 @@ pw_lunar_archivist_gestalt = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_grand_archivist
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	can_work_specific_job = pw_lunar_archivist_gestalt
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
@@ -650,7 +650,7 @@ pw_logistics_drone = {
 	}
 
 	resources = {
-		category = planet_administrators
+		category = planet_bureaucrats
 		produces = {
 			trigger = {
 				exists = owner

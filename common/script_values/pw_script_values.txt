@@ -210,19 +210,20 @@ pw_crime_factor = {
 }
 
 #Planet Scope
-pw_job_factor = {
-	base = 0.005
+# TODO: figure this out
+# pw_job_factor = {
+# 	base = 0.005
 
-	complex_trigger_modifier = {
-		trigger = count_owned_pop_amount
-		parameters = {
-			limit = {
-				has_job = $JOB$
-			}
-		}
-		mode = mult
-	}
-}
+# 	complex_trigger_modifier = {
+# 		trigger = count_owned_pop_amount
+# 		parameters = {
+# 			limit = {
+# 				has_job = $JOB$
+# 			}
+# 		}
+# 		mode = mult
+# 	}
+# }
 
 # Factor is used to scale number of districts, useful to make bigger districts provide more value
 pw_districts_value = {

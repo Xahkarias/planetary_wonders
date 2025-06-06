@@ -2199,9 +2199,9 @@ pw_building_holy_reliquary = {
 			exists = owner
 			owner = { has_ethic = ethic_fanatic_spiritualist }
 		}
-		modifier = {
-			factor = value:pw_job_factor|JOB|priest|
-		}
+		# modifier = {
+		# 	factor = value:pw_job_factor|JOB|priest|
+		# }
 		modifier = {
 			factor = value:pw_pop_factor
 		}

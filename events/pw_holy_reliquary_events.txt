@@ -1903,8 +1903,10 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.bad_luck.a
 		capital_scope = {
-			random_owned_pop = {
-				kill_pop = yes
+			random_owned_pop_job = {
+				kill_assigned_pop_amount = {
+					amount = @pw_event_casualty_1
+				}
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes

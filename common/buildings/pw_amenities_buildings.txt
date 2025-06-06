@@ -1410,8 +1410,8 @@ pw_building_nostalgia_paradise = {
 			factor = value:pw_pop_factor
 			OR = {
 				has_modifier = resort_colony
-				any_owned_pop = {
-					has_job = bio_trophy
+				any_owned_pop_group = {
+					is_pop_category = bio_trophy
 				}
 			}
 		}

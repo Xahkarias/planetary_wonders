@@ -153,7 +153,7 @@ pw_policy_modeling_focus = {
 		modifier = {
 			empire_size_systems_mult = -0.05
 			empire_size_colonies_mult = -0.05
-			local_trade_protection_add = 15
+			# local_trade_protection_add = 15
 			intel_encryption_add = 1
 			planet_bureaucrats_upkeep_mult = 0.20
 		}

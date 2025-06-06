@@ -75,10 +75,10 @@ pw_researcher_particle_supercollider = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_researcher_particle_supercollider
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = pw_researcher_particle_supercollider
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
@@ -201,10 +201,10 @@ pw_researcher_domed_city = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_researcher_domed_city
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = pw_researcher_domed_city
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
@@ -328,10 +328,10 @@ pw_researcher_abyssal_crater_test_site = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_researcher_abyssal_crater_test_site
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = pw_researcher_abyssal_crater_test_site
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
