@@ -59,10 +59,7 @@ pw_building_guardian_angel = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -91,10 +88,7 @@ pw_building_guardian_angel = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -403,10 +397,7 @@ pw_building_stellar_sentinel = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -435,10 +426,7 @@ pw_building_stellar_sentinel = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount

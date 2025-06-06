@@ -6554,7 +6554,8 @@ country_event = {
 		name = pw_art_exhibition.OK
 		every_owned_planet = {
 			limit = {
-				has_designation = col_rural
+				# TODO: this is wrong.
+				has_rural_designation = yes
 			}
 			add_modifier = {
 				modifier = pw_art_mod_cottage_core

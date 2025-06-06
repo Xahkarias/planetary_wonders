@@ -69,10 +69,7 @@ pw_building_erebus_project = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -100,10 +97,7 @@ pw_building_erebus_project = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -288,15 +282,15 @@ pw_building_erebus_project = {
 		}
 		modifier = {
 			factor = 10
-			has_designation = col_mining
+			has_mining_designation = yes
 		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_minerals = yes
@@ -390,10 +384,7 @@ pw_building_erebus_fracking_plant = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -421,10 +412,7 @@ pw_building_erebus_fracking_plant = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -657,15 +645,15 @@ pw_building_erebus_fracking_plant = {
 		}
 		modifier = {
 			factor = 5
-			has_designation = col_mining
+			has_mining_designation = yes
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_minerals = yes
@@ -766,11 +754,7 @@ pw_building_helios_tower = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -798,11 +782,7 @@ pw_building_helios_tower = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -978,13 +958,13 @@ pw_building_helios_tower = {
 			factor = 4
 			has_designation = col_generator
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 3
 			districts_good_energy = yes
@@ -1081,11 +1061,7 @@ pw_building_helios_translucent_obelisk = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1113,11 +1089,7 @@ pw_building_helios_translucent_obelisk = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1341,13 +1313,13 @@ pw_building_helios_translucent_obelisk = {
 			factor = 5
 			has_designation = col_generator
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_energy = yes
@@ -1727,13 +1699,13 @@ pw_building_demetrius_fields = {
 			factor = 5
 			has_designation = col_farming
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_food = yes
@@ -2158,13 +2130,13 @@ pw_building_demetrius_chemical_garden = {
 			factor = 5
 			has_designation = col_farming
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_food = yes

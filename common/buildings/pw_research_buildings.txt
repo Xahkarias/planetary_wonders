@@ -68,12 +68,7 @@ pw_building_particle_supercollider = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -102,12 +97,7 @@ pw_building_particle_supercollider = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -413,17 +403,16 @@ pw_building_particle_supercollider = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				num_pops_with_job_tag = {
+					value > 0
+					tags = { research }
+				}
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -517,12 +506,7 @@ pw_building_interdimensional_collider = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -552,12 +536,7 @@ pw_building_interdimensional_collider = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -772,17 +751,12 @@ pw_building_interdimensional_collider = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -884,12 +858,7 @@ pw_building_domed_city = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -918,12 +887,7 @@ pw_building_domed_city = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1239,17 +1203,12 @@ pw_building_domed_city = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -1336,12 +1295,7 @@ pw_building_secluded_sector = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1370,12 +1324,7 @@ pw_building_secluded_sector = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1691,17 +1640,12 @@ pw_building_secluded_sector = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -1794,12 +1738,7 @@ pw_building_psionic_observatory = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1829,12 +1768,7 @@ pw_building_psionic_observatory = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -2059,17 +1993,12 @@ pw_building_psionic_observatory = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2170,12 +2099,7 @@ pw_building_abyssal_crater_test_site = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -2204,12 +2128,7 @@ pw_building_abyssal_crater_test_site = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -2506,17 +2425,12 @@ pw_building_abyssal_crater_test_site = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2603,12 +2517,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -2637,12 +2546,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -2940,17 +2844,12 @@ pw_building_abyssal_crater_test_site_habitat = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -3043,12 +2942,7 @@ pw_building_metal_vivarium = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -3078,12 +2972,7 @@ pw_building_metal_vivarium = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -3289,17 +3178,12 @@ pw_building_metal_vivarium = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -3579,17 +3463,12 @@ pw_building_grand_archive = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = value:pw_pop_factor

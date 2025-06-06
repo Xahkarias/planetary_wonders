@@ -49,13 +49,7 @@ pw_building_pavilion_of_wonders = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_resort
-						has_designation = col_habitat_bureau
-						has_designation = col_habitat_bureau_hive
-						has_designation = col_habitat_bureau_machine
-						has_designation = col_habitat_bureau_spiritualist
-					}
+					pw_has_designation_fair_of_worlds = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -84,13 +78,7 @@ pw_building_pavilion_of_wonders = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_resort
-						has_designation = col_habitat_bureau
-						has_designation = col_habitat_bureau_hive
-						has_designation = col_habitat_bureau_machine
-						has_designation = col_habitat_bureau_spiritualist
-					}
+					pw_has_designation_fair_of_worlds = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -512,13 +500,7 @@ pw_building_fair_of_worlds = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_resort
-						has_designation = col_habitat_bureau
-						has_designation = col_habitat_bureau_hive
-						has_designation = col_habitat_bureau_machine
-						has_designation = col_habitat_bureau_spiritualist
-					}
+					pw_has_designation_fair_of_worlds = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -547,13 +529,7 @@ pw_building_fair_of_worlds = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_resort
-						has_designation = col_habitat_bureau
-						has_designation = col_habitat_bureau_hive
-						has_designation = col_habitat_bureau_machine
-						has_designation = col_habitat_bureau_spiritualist
-					}
+					pw_has_designation_fair_of_worlds = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1150,13 +1126,7 @@ pw_building_museum_of_the_grotesque = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_resort
-						has_designation = col_habitat_bureau
-						has_designation = col_habitat_bureau_hive
-						has_designation = col_habitat_bureau_machine
-						has_designation = col_habitat_bureau_spiritualist
-					}
+					pw_has_designation_museum_of_the_grotesque = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1185,13 +1155,7 @@ pw_building_museum_of_the_grotesque = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_resort
-						has_designation = col_habitat_bureau
-						has_designation = col_habitat_bureau_hive
-						has_designation = col_habitat_bureau_machine
-						has_designation = col_habitat_bureau_spiritualist
-					}
+					pw_has_designation_museum_of_the_grotesque = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount

@@ -68,12 +68,7 @@ pw_building_galactic_model = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -102,12 +97,7 @@ pw_building_galactic_model = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -476,12 +466,7 @@ pw_building_aligned_galactic_model = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -513,12 +498,7 @@ pw_building_aligned_galactic_model = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount

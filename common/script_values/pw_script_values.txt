@@ -417,33 +417,11 @@ pw_building_mantle_crucible_foundry_jobs = {
 	#Designation Changes > Alloys
  	modifier = {
  		subtract = 1
- 		OR = {
-			has_designation = col_factory
-			has_designation = col_ecu_factory
-			and = {
-				has_designation = col_mac_factory
-				exists = owner
-				owner = {
-					is_machine_empire = yes
-					country_uses_consumer_goods = yes
-				}
-			}
-		}
+ 		pw_has_designation_mantle_crucible_check = yes
  	}
  	modifier = {
  		add = 1
- 		OR = {
-			has_designation = col_foundry
-			has_designation = col_ecu_foundry
-			and = {
-				has_designation = col_mac_foundry
-				exists = owner
-				owner = {
-					is_machine_empire = yes
-					country_uses_consumer_goods = yes
-				}
-			}
-		}
+ 		pw_has_designation_mantle_crucible_check = yes
  	}
 	#Modifier Changes -> Alloys
 	modifier = {
@@ -462,33 +440,11 @@ pw_building_mantle_crucible_artisan_jobs = {
 	#Designation Changes -> -Consumer Goods
  	modifier = {
  		subtract = 1
- 		OR = {
-			has_designation = col_foundry
-			has_designation = col_ecu_foundry
-			and = {
-				has_designation = col_mac_foundry
-				exists = owner
-				owner = {
-					is_machine_empire = yes
-					country_uses_consumer_goods = yes
-				}
-			}
-		}
+ 		pw_has_designation_mantle_crucible_check = yes
  	}
  	modifier = {
  		add = 1
- 		OR = {
-			has_designation = col_factory
-			has_designation = col_ecu_factory
-			and = {
-				has_designation = col_mac_factory
-				exists = owner
-				owner = {
-					is_machine_empire = yes
-					country_uses_consumer_goods = yes
-				}
-			}
-		}
+ 		pw_has_designation_mantle_crucible_check = yes
  	}
 	#Modifier Changes -> -Consumer Goods
 	modifier = {
