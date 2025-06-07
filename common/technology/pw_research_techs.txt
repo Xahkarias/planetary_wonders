@@ -299,7 +299,7 @@ pw_tech_intradimensional_matter_drawing = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -329,7 +329,7 @@ pw_tech_interdimensional_matter_drawing = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -360,7 +360,7 @@ pw_tech_suprareality_survey = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_computing
@@ -698,7 +698,7 @@ pw_tech_zro_refurbishing = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_psionics
@@ -728,7 +728,7 @@ pw_tech_zro_recycling = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_psionics
@@ -761,7 +761,7 @@ pw_tech_psionic_social_infiltration = {
 	weight_modifier = {
 		factor = 0.25
 		inline_script = {
-			script = technologies/pw_rare_modifier
+			script = technologies/pw/rare_modifier
 			COUNCIL_TRAIT = leader_trait_expertise_psionics
 			TECHNOLOGY = pw_tech_psionic_social_infiltration
 		}
@@ -1161,7 +1161,7 @@ pw_tech_living_metal_breeding = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_materials
@@ -1191,7 +1191,7 @@ pw_tech_living_metal_reproduction = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_materials
@@ -1224,7 +1224,7 @@ pw_tech_living_formation = {
 	weight_modifier = {
 		factor = 0.25
 		inline_script = {
-			script = technologies/pw_rare_modifier
+			script = technologies/pw/rare_modifier
 			COUNCIL_TRAIT = leader_trait_expertise_industry
 			TECHNOLOGY = pw_tech_living_formation
 		}

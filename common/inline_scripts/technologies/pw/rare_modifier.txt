@@ -1,6 +1,6 @@
 # Usage: weight_modifier contributions for rare techs (for enigma techs)
 # inline_script = {
-#	script = technologies/pw_rare_modifier
+#	script = technologies/pw/rare_modifier
 #	COUNCIL_TRAIT = leader_trait_expertise_industry
 #	TECHNOLOGY = pw_tech_micro_graviton_equipment
 # }

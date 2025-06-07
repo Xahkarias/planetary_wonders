@@ -25,7 +25,7 @@ pw_enigma_tech_micro_graviton_equipment = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_industry
@@ -56,7 +56,7 @@ pw_enigma_tech_absolute_processor_cooling = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_materials
@@ -87,7 +87,7 @@ pw_enigma_tech_non_euclidean_building = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_industry
@@ -119,7 +119,7 @@ pw_enigma_tech_impossible_architecture = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_industry
@@ -150,7 +150,7 @@ pw_enigma_tech_quantum_movement = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_propulsion
@@ -181,7 +181,7 @@ pw_enigma_tech_harmonic_aligning_magnets = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_propulsion
@@ -213,7 +213,7 @@ pw_enigma_tech_one_with_the_machine = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_propulsion
@@ -248,7 +248,7 @@ pw_enigma_tech_virtual_conscience = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_computing
@@ -279,7 +279,7 @@ pw_enigma_tech_hypersonic_frequency_tuning = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_particles
@@ -311,7 +311,7 @@ pw_enigma_tech_hypersonic_frequency_harmony = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_particles
@@ -342,7 +342,7 @@ pw_enigma_tech_hyper_stabilization_fields = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -374,7 +374,7 @@ pw_enigma_tech_complete_stabilization_fields = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -405,7 +405,7 @@ pw_enigma_tech_breach_of_thermodynamic_law = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -437,7 +437,7 @@ pw_enigma_tech_atomic_transistor_substrate = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -468,7 +468,7 @@ pw_enigma_tech_simultaneous_prime_analysis = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
@@ -499,7 +499,7 @@ pw_enigma_tech_unintelligible_data_organization = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_computing
@@ -534,7 +534,7 @@ pw_enigma_tech_reflex_arc_emulators = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_military_theory
@@ -566,7 +566,7 @@ pw_enigma_tech_atomic_clock_synchronization = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_statecraft
@@ -597,7 +597,7 @@ pw_enigma_tech_gas_molecular_sculpting = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_biology
@@ -629,7 +629,7 @@ pw_enigma_tech_gas_molecular_generation = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_biology
@@ -661,7 +661,7 @@ pw_enigma_tech_exoteric_predictions_system = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_military_theory
@@ -693,7 +693,7 @@ pw_enigma_tech_bio_frequency_emitters = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_biology
@@ -724,7 +724,7 @@ pw_enigma_tech_exoteric_fleet_pattern = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_military_theory
@@ -756,7 +756,7 @@ pw_enigma_tech_societal_overclock_regime = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_statecraft
@@ -787,7 +787,7 @@ pw_enigma_tech_simulations_within_simulations = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_statecraft
@@ -823,7 +823,7 @@ pw_enigma_tech_sophistication_of_simplicity = {
 	}
 
 	inline_script = {
-		script = technologies/pw_enigma_weights
+		script = technologies/pw/enigma_weights
 		BASE_FACTOR = 0.5
 		AI_FACTOR = 1.25
 		COUNCIL_TRAIT = leader_trait_expertise_new_worlds
