@@ -5,6 +5,11 @@ pw_building_transplanetary_logistics_network = {
 	can_be_ruined = no
 	category = amenity
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_transplanetary_logistics
 	}
@@ -306,6 +311,11 @@ pw_building_transhabitat_logistics_network = {
 	can_be_ruined = no
 	category = amenity
 	icon = pw_building_transplanetary_logistics_network
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_transplanetary_logistics
@@ -617,6 +627,11 @@ pw_building_festival_plaza = {
 	category = amenity
 	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_festivals_of_harmony
@@ -960,6 +975,11 @@ pw_building_nostalgia_paradise = {
 	category = amenity
 	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_augmented_reality_resorts
@@ -1427,6 +1447,11 @@ pw_building_blossoming_preserve = {
 	planet_limit = 1
 	can_be_ruined = no
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_cyberecology
 	}
@@ -1524,6 +1549,7 @@ pw_building_blossoming_preserve = {
 
 	#Increases planet capacity
 	planet_modifier = {
+		# TODO: Don't think this does anything anymore
 		planet_carry_cap_add = 20
 	}
 

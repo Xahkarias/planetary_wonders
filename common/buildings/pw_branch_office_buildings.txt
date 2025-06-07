@@ -8,6 +8,11 @@ pw_building_bloodsports_arena = {
 	empire_limit = 1
 	owner_type = corporate
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_exploitation_of_belligerence
 	}
@@ -147,6 +152,11 @@ pw_building_meditation_garden = {
 	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_belligerence
@@ -292,6 +302,11 @@ pw_building_innovation_hub = {
 	empire_limit = 1
 	owner_type = corporate
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_exploitation_of_philosophy
 	}
@@ -406,6 +421,11 @@ pw_building_salvation_shrine = {
 	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_philosophy
@@ -606,6 +626,11 @@ pw_building_exotic_beauty_center = {
 	empire_limit = 1
 	owner_type = corporate
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_exploitation_of_diplomacy
 	}
@@ -720,6 +745,11 @@ pw_building_national_pride_gallery = {
 	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_diplomacy
@@ -836,6 +866,11 @@ pw_building_aristocracy_tower = {
 	empire_limit = 1
 	owner_type = corporate
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_exploitation_of_hierarchy
 	}
@@ -948,6 +983,11 @@ pw_building_factory_city = {
 	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_hierarchy
@@ -1062,6 +1102,11 @@ pw_building_tax_haven = {
 	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_criminal_exploitation

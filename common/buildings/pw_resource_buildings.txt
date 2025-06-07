@@ -5,6 +5,11 @@ pw_building_erebus_project = {
 	can_be_ruined = no
 	category = resource
 
+	building_sets = {
+		government
+		mining
+	}
+
 	prerequisites = {
 		pw_tech_erebus_project
 	}
@@ -323,6 +328,11 @@ pw_building_erebus_fracking_plant = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		mining
+	}
 
 	prerequisites = {
 		pw_tech_erebus_fracking_plant
@@ -687,6 +697,11 @@ pw_building_helios_tower = {
 	can_be_ruined = no
 	category = resource
 
+	building_sets = {
+		government
+		generator
+	}
+
 	prerequisites = {
 		pw_tech_helios_tower
 	}
@@ -997,6 +1012,11 @@ pw_building_helios_translucent_obelisk = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		generator
+	}
 
 	prerequisites = {
 		pw_tech_helios_translucent_obelisk
@@ -1352,6 +1372,11 @@ pw_building_demetrius_fields = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		farming
+	}
 
 	prerequisites = {
 		pw_tech_demetrius_fields
@@ -1738,6 +1763,11 @@ pw_building_demetrius_chemical_garden = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		farming
+	}
 
 	prerequisites = {
 		pw_tech_demetrius_chemical_garden

@@ -5,6 +5,11 @@ pw_building_particle_supercollider = {
 	can_be_ruined = no
 	category = research
 
+	building_sets = {
+		government
+		research
+	}
+
 	prerequisites = {
 		pw_tech_particle_supercollider
 	}
@@ -451,6 +456,11 @@ pw_building_interdimensional_collider = {
 	can_be_ruined = no
 	position_priority = 100
 
+	building_sets = {
+		government
+		research
+	}
+
 	prerequisites = {
 		pw_tech_interdimensional_collider
 	}
@@ -794,6 +804,11 @@ pw_building_domed_city = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_domed_city
@@ -1248,6 +1263,11 @@ pw_building_secluded_sector = {
 	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
 	category = research
 
+	building_sets = {
+		government
+		research
+	}
+
 	prerequisites = {
 		pw_tech_domed_city
 	}
@@ -1683,6 +1703,11 @@ pw_building_psionic_observatory = {
 	can_be_ruined = no
 	position_priority = 100
 
+	building_sets = {
+		government
+		research
+	}
+
 	prerequisites = {
 		pw_tech_psionic_observatory
 	}
@@ -2035,6 +2060,11 @@ pw_building_abyssal_crater_test_site = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_abyssal_crater_test_site
@@ -2470,6 +2500,11 @@ pw_building_abyssal_crater_test_site_habitat = {
 	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
 	category = research
 
+	building_sets = {
+		government
+		research
+	}
+
 	prerequisites = {
 		pw_tech_abyssal_crater_test_site
 	}
@@ -2887,6 +2922,11 @@ pw_building_metal_vivarium = {
 	can_be_ruined = no
 	position_priority = 100
 
+	building_sets = {
+		government
+		research
+	}
+
 	prerequisites = {
 		pw_tech_metal_vivarium
 	}
@@ -3220,6 +3260,11 @@ pw_building_grand_archive = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_materialist_archiving

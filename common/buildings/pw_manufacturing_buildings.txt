@@ -5,6 +5,13 @@ pw_building_mantle_crucible = {
 	planet_limit = 1
 	can_be_ruined = no
 
+	building_sets = {
+		government
+		industrial
+		foundry
+		factory
+	}
+
 	prerequisites = {
 		pw_tech_planetary_mantle_production
 	}
@@ -433,6 +440,12 @@ pw_building_titan_forge = {
 	can_be_ruined = no
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		industrial
+		foundry
+	}
+
 	prerequisites = {
 		pw_tech_titan_forge
 	}
@@ -706,6 +719,12 @@ pw_building_industrial_hearth = {
 	category = manufacturing
 	can_be_ruined = no
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		factory
+		industrial
+	}
 
 	prerequisites = {
 		pw_tech_industrial_hearth

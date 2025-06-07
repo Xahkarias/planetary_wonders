@@ -8,6 +8,11 @@ pw_building_conduit_of_unity_0 = {
 	planet_limit = 1
 	can_be_ruined = no
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_conduit_of_unity
 	}
@@ -157,6 +162,11 @@ pw_building_conduit_of_unity_1 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_conduit_of_unity
@@ -587,6 +597,11 @@ pw_building_enigma_engine = {
 	can_be_ruined = no
 	category = research
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_metaphysical_singularity
 	}
@@ -806,6 +821,11 @@ pw_building_solipsist_debate_hall = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = unity
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_metacognition_dialectics
@@ -1322,6 +1342,11 @@ pw_building_feasting_grounds = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = army
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_planetary_banquets

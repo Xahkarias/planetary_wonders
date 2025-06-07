@@ -5,6 +5,11 @@ pw_building_guardian_angel = {
 	planet_limit = 1
 	category = army
 
+	building_sets = {
+		government
+		fortress
+	}
+
 	prerequisites = {
 		pw_tech_guardian_angel
 	}
@@ -347,6 +352,11 @@ pw_building_stellar_sentinel = {
 	planetary_ftl_inhibitor = yes
 	can_build = no #Only upgrades
 	category = army
+
+	building_sets = {
+		government
+		fortress
+	}
 
 	prerequisites = {
 		pw_tech_stellar_sentinel
@@ -694,6 +704,11 @@ pw_building_martial_avenue = {
 	category = army
 	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		fortress
+	}
 
 	prerequisites = {
 		pw_tech_parades_of_supremacy

@@ -8,6 +8,12 @@ pw_monument_base = {
 	category = unity
 	planet_limit = 3
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -80,6 +86,12 @@ pw_monument_unity = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		NOR = {
@@ -180,6 +192,12 @@ pw_monument_philosophy = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		NOR = {
@@ -282,6 +300,12 @@ pw_monument_builders = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		NOR = {
 			has_modifier = penal_colony
@@ -383,6 +407,12 @@ pw_monument_conquest = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -451,6 +481,12 @@ pw_monument_liberation = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		exists = owner
@@ -521,6 +557,12 @@ pw_monument_order = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		OR = {
 			has_modifier = penal_colony
@@ -587,6 +629,12 @@ pw_monument_remembrance = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		is_homeworld = yes
@@ -662,6 +710,12 @@ pw_monument_synchronicity = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		exists = owner

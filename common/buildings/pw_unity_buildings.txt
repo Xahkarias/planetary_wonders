@@ -5,6 +5,11 @@ pw_building_pavilion_of_wonders = {
 	planet_limit = 1
 	can_be_ruined = no
 
+	building_sets = {
+		government
+		unity
+	}
+
 	prerequisites = {
 		pw_tech_great_art_exhibition
 	}
@@ -455,6 +460,11 @@ pw_building_fair_of_worlds = {
 	category = unity
 	can_be_ruined = no
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		unity
+	}
 
 	prerequisites = {
 		pw_tech_xeno_art_integration
@@ -1081,6 +1091,11 @@ pw_building_museum_of_the_grotesque = {
 	category = unity
 	can_be_ruined = no
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		unity
+	}
 
 	prerequisites = {
 		pw_tech_xeno_art_alienation
@@ -1768,6 +1783,11 @@ pw_building_holy_reliquary = {
 	planet_limit = 1
 	can_be_ruined = no
 
+	building_sets = {
+		government
+		unity
+	}
+
 	prerequisites = {
 		pw_tech_spiritual_artifacts_studies
 	}
@@ -2178,6 +2198,11 @@ pw_building_unhallowed_necropolis = {
 	category = unity
 	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		unity
+	}
 
 	prerequisites = {
 		pw_tech_worldly_mausoleums

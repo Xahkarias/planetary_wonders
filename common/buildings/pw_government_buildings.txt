@@ -10,6 +10,11 @@ pw_building_galactic_model = {
 	# 	}
 	# }
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_galactic_modeling
 	}
@@ -418,6 +423,11 @@ pw_building_aligned_galactic_model = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = government
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_hyperreality_modeling
@@ -840,6 +850,11 @@ pw_building_panopticon = {
 		}
 	}
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_utilitarian_vigilance
 	}
@@ -1112,7 +1127,7 @@ pw_building_panopticon = {
 	# 		owner = {
 	# 			is_spiritualist = yes
 	# 			has_technology = pw_tech_panopticon_repentance_preaching
-##				is_megacorp = no
+	#			is_megacorp = no
 	# 		}
 	# 	}
 	# 	modifier = {
@@ -1310,7 +1325,7 @@ pw_building_panopticon = {
 	# 				is_pacifist = yes
 	# 				has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
 	# 			}
-##				is_megacorp = no
+	#			is_megacorp = no
 	# 		}
 	# 	}
 	# 	text = job_priest_effect_desc
@@ -1414,6 +1429,11 @@ pw_building_forbidden_city = {
 	planet_limit = 1
 	can_be_ruined = no
 	category = government
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_elitist_urbanism

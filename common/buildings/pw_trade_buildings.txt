@@ -5,6 +5,12 @@ pw_building_space_elevator = {
 	can_be_ruined = no
 	category = trade
 
+	building_sets = {
+		government
+		urban
+		trade
+	}
+
 	prerequisites = {
 		pw_tech_space_elevator
 	}
@@ -485,6 +491,12 @@ pw_building_department_of_xenoeconomics = {
 	empire_limit = { base = 1 }
 	can_be_ruined = no
 	category = trade
+
+	building_sets = {
+		government
+		urban
+		trade
+	}
 
 	prerequisites = {
 		pw_tech_xenoeconomy

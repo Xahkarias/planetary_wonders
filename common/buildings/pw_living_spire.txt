@@ -7,6 +7,12 @@ pw_building_living_spire_0 = {
 	category = amenity
 	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -169,6 +175,12 @@ pw_building_living_spire_1 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -613,6 +625,12 @@ pw_building_living_spire_2 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -1160,6 +1178,12 @@ pw_building_living_spire_3 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}

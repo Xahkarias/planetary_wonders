@@ -8,6 +8,11 @@ pw_building_polyhedron = {
 	can_be_ruined = no
 	category = government
 
+	building_sets = {
+		government
+		urban
+	}
+
 	potential = {
 		#Cannot be build, only spawned
 		always = no
