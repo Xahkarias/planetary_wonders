@@ -2,7 +2,7 @@
 pw_building_polyhedron = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 10
-	base_cap_amount = 1
+	planet_limit = 1
 	can_build = no
 	can_be_disabled = no
 	can_be_ruined = no

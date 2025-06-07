@@ -1,7 +1,7 @@
 pw_building_galactic_model = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = government
 	# empire_limit = {
@@ -828,7 +828,7 @@ pw_building_aligned_galactic_model = {
 pw_building_panopticon = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = government
 
@@ -1411,7 +1411,7 @@ pw_building_panopticon = {
 pw_building_forbidden_city = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = government
 

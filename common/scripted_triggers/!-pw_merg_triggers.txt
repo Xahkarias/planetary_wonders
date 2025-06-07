@@ -3,12 +3,7 @@
 
 ##Country Scope
 merg_is_standard_empire = {
-	OR = {
-		is_country_type = default
-		is_country_type = awakened_marauders
-		is_country_type = fallen_empire
-		is_country_type = awakened_fallen_empire
-	}
+	is_default_or_fallen = yes
 }
 
 merg_is_default_empire = {
@@ -18,7 +13,7 @@ merg_is_default_empire = {
 }
 
 merg_is_fallen_empire = {
-	is_country_type = fallen_empire
+	is_fallen_empire = yes
 }
 
 ##Planet Scope

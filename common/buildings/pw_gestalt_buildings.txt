@@ -5,7 +5,7 @@ pw_building_conduit_of_unity_0 = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {
@@ -583,7 +583,7 @@ pw_building_conduit_of_unity_1 = {
 pw_building_enigma_engine = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
 
@@ -803,7 +803,7 @@ pw_building_enigma_engine = {
 pw_building_solipsist_debate_hall = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = unity
 
@@ -1319,7 +1319,7 @@ pw_building_solipsist_debate_hall = {
 pw_building_feasting_grounds = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 65
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = army
 

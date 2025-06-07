@@ -2,7 +2,7 @@ pw_building_guardian_angel = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 50
 	planetary_ftl_inhibitor = yes
-	base_cap_amount = 1
+	planet_limit = 1
 	category = army
 
 	prerequisites = {
@@ -692,7 +692,7 @@ pw_building_martial_avenue = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
 	category = army
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {

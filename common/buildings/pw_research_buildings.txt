@@ -1,7 +1,7 @@
 pw_building_particle_supercollider = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
 
@@ -791,7 +791,7 @@ pw_building_interdimensional_collider = {
 pw_building_domed_city = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
 
@@ -1242,7 +1242,7 @@ pw_building_domed_city = {
 pw_building_secluded_sector = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	icon = pw_building_domed_city
 	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
@@ -2032,7 +2032,7 @@ pw_building_psionic_observatory = {
 pw_building_abyssal_crater_test_site = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
 
@@ -2464,7 +2464,7 @@ pw_building_abyssal_crater_test_site = {
 pw_building_abyssal_crater_test_site_habitat = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	icon = pw_building_abyssal_crater_test_site
 	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
@@ -3217,7 +3217,7 @@ pw_building_metal_vivarium = {
 pw_building_grand_archive = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
 

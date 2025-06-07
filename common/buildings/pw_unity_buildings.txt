@@ -2,7 +2,7 @@ pw_building_pavilion_of_wonders = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {
@@ -1765,7 +1765,7 @@ pw_building_holy_reliquary = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {
@@ -2176,7 +2176,7 @@ pw_building_unhallowed_necropolis = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {

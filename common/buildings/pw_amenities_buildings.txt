@@ -1,7 +1,7 @@
 pw_building_transplanetary_logistics_network = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = amenity
 
@@ -300,7 +300,7 @@ pw_building_transplanetary_logistics_network = {
 pw_building_transhabitat_logistics_network = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = amenity
 	icon = pw_building_transplanetary_logistics_network
@@ -613,7 +613,7 @@ pw_building_festival_plaza = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {
@@ -956,7 +956,7 @@ pw_building_nostalgia_paradise = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {
@@ -1422,7 +1422,7 @@ pw_building_blossoming_preserve = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {

@@ -6,7 +6,7 @@ pw_monument_base = {
 	base_buildtime = @pw_monument_time
 	position_priority = 175
 	category = unity
-	base_cap_amount = 3
+	planet_limit = 3
 
 	potential = {
 		exists = owner

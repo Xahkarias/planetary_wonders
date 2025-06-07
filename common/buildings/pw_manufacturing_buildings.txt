@@ -2,7 +2,7 @@ pw_building_mantle_crucible = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = manufacturing
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 
 	prerequisites = {

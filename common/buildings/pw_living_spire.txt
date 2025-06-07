@@ -5,7 +5,7 @@ pw_building_living_spire_0 = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	prerequisites = {
 		pw_tech_living_spire

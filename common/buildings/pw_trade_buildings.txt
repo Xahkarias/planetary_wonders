@@ -1,7 +1,7 @@
 pw_building_space_elevator = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = trade
 
@@ -481,7 +481,7 @@ pw_building_space_elevator = {
 pw_building_department_of_xenoeconomics = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = { base = 1 }
 	can_be_ruined = no
 	category = trade

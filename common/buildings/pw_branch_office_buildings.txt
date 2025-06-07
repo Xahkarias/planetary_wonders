@@ -4,7 +4,7 @@
 pw_building_bloodsports_arena = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -144,7 +144,7 @@ pw_building_bloodsports_arena = {
 pw_building_meditation_garden = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -288,7 +288,7 @@ pw_building_meditation_garden = {
 pw_building_innovation_hub = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = research
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -403,7 +403,7 @@ pw_building_innovation_hub = {
 pw_building_salvation_shrine = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -602,7 +602,7 @@ pw_building_salvation_shrine = {
 pw_building_exotic_beauty_center = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -717,7 +717,7 @@ pw_building_exotic_beauty_center = {
 pw_building_national_pride_gallery = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -832,7 +832,7 @@ pw_building_national_pride_gallery = {
 pw_building_aristocracy_tower = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = trade
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -945,7 +945,7 @@ pw_building_aristocracy_tower = {
 pw_building_factory_city = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = manufacturing
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
@@ -1059,7 +1059,7 @@ pw_building_factory_city = {
 pw_building_tax_haven = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = trade
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
 
