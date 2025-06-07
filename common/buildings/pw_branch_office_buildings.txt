@@ -211,29 +211,29 @@ pw_building_meditation_garden = {
 		job_clerk_add = 100
 	}
 
-#	#Bureaucrat
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = no }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 100
-#		}
-#	}
-#
-#	#Priest (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = yes }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 100 # priest
-#		}
-#	}
+	# #Bureaucrat
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = no }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100
+	# 	}
+	# }
+	
+	# #Priest (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100 # priest
+	# 	}
+	# }
 
 	triggered_planet_modifier = {
 		potential = {
@@ -488,7 +488,7 @@ pw_building_salvation_shrine = {
 				has_ethic = ethic_fanatic_spiritualist
 				# This building is a corporate branch (can be built on non-corporate planet).
 				# So planet owner is not megacorp always.
-#				is_megacorp = no
+	# 			is_megacorp = no
 				NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
@@ -502,7 +502,7 @@ pw_building_salvation_shrine = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_fanatic_spiritualist
-#				is_megacorp = no
+	# 			is_megacorp = no
 				NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
@@ -533,36 +533,36 @@ pw_building_salvation_shrine = {
 		text = job_haruspex_effect_desc
 	}
 
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = {
-#				has_ethic = ethic_fanatic_spiritualist
-#				is_megacorp = yes
-#			}
-#		}
-#		modifier = {
-#			job_preacher_add = 100
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_ethic = ethic_fanatic_spiritualist
+	# 			is_megacorp = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_preacher_add = 100
+	# 	}
+	# }
 
 	triggered_desc = {
 		trigger = {
-#			or = {
-#				and = {
+	# 		or = {
+	# 			and = {
 					exists = branch_office_owner
 					branch_office_owner = {
 						has_valid_civic = civic_gospel_of_the_masses
 					}
-#				}
-#				and = {
-#					exists = owner
-#					owner = {
-#						has_ethic = ethic_fanatic_spiritualist
-#						is_megacorp = yes
-#					}
-#				}
-#			}
+	# 			}
+	# 			and = {
+	# 				exists = owner
+	# 				owner = {
+	# 					has_ethic = ethic_fanatic_spiritualist
+	# 					is_megacorp = yes
+	# 				}
+	# 			}
+	# 		}
 		}
 		text = job_preacher_effect_desc
 	}

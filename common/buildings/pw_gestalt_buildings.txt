@@ -438,7 +438,7 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-#			job_cyber_drone_add = 100
+	# 		job_cyber_drone_add = 100
 			job_augmentor_drone_add = 100
 		}
 	}

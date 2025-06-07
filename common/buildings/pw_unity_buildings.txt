@@ -152,59 +152,59 @@ pw_building_pavilion_of_wonders = {
 		}
 	}
 
-#	#Culture Workers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_culture_worker_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_manager_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	#Death Chroniclers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		modifier = {
-#			job_death_chronicler_add = 100
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_culture_worker_add = 100
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_manager_add = 100
-#		}
-#	}
+	# #Culture Workers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_manager_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# #Death Chroniclers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	modifier = {
+	# 		job_death_chronicler_add = 100
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 100
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 100
+	# 	}
+	# }
 
 	#Tourists
 	# triggered_planet_modifier = {
@@ -295,29 +295,29 @@ pw_building_pavilion_of_wonders = {
 		text = job_merchant_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_culture_worker_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_manager_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		text = job_death_chronicler_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_culture_worker_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	text = job_death_chronicler_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/death_chronicler_add_pavilion
 		AMOUNT = 1
@@ -604,59 +604,59 @@ pw_building_fair_of_worlds = {
 		}
 	}
 
-#	#Culture Workers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_culture_worker_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_manager_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	#Death Chroniclers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		modifier = {
-#			job_death_chronicler_add = 200
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_culture_worker_add = 200
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_manager_add = 200
-#		}
-#	}
+	# #Culture Workers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_manager_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# #Death Chroniclers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	modifier = {
+	# 		job_death_chronicler_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 200
+	# 	}
+	# }
 
 	#Tourists
 	# triggered_planet_modifier = {
@@ -919,29 +919,29 @@ pw_building_fair_of_worlds = {
 		text = job_merchant_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_culture_worker_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_manager_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		text = job_death_chronicler_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_culture_worker_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	text = job_death_chronicler_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/death_chronicler_add_pavilion
 		AMOUNT = 2
@@ -1230,59 +1230,59 @@ pw_building_museum_of_the_grotesque = {
 		}
 	}
 
-#	#Culture Workers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_culture_worker_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_manager_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	#Death Chroniclers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		modifier = {
-#			job_death_chronicler_add = 200
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_culture_worker_add = 200
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_manager_add = 200
-#		}
-#	}
+	# #Culture Workers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_manager_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# #Death Chroniclers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	modifier = {
+	# 		job_death_chronicler_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 200
+	# 	}
+	# }
 
 	#Tourists
 	# triggered_planet_modifier = {
@@ -1603,29 +1603,29 @@ pw_building_museum_of_the_grotesque = {
 		text = job_merchant_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_culture_worker_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_manager_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		text = job_death_chronicler_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_culture_worker_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	text = job_death_chronicler_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/death_chronicler_add_pavilion
 		AMOUNT = 2
@@ -1902,7 +1902,7 @@ pw_building_holy_reliquary = {
 		}
 		modifier = {
 			job_politician_add = 100 # high_priest
-#			job_bureaucrat_add = 400 # priest
+	# 		job_bureaucrat_add = 400 # priest
 		}
 	}
 
@@ -1924,7 +1924,7 @@ pw_building_holy_reliquary = {
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_spiritualist = yes"
-#		AMOUNT = 4
+	# 	AMOUNT = 4
 		AMOUNT = value:pw_building_holy_reliquary_priest_jobs
 	}
 	
@@ -1943,19 +1943,19 @@ pw_building_holy_reliquary = {
 		}
 	}
 
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_spiritualist = yes }
-#			NOR = {
-#				owner = { has_valid_civic = civic_death_cult }
-#				owner = { has_valid_civic = civic_death_cult_corporate }
-#			}
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 200 # priest
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_spiritualist = yes }
+	# 		NOR = {
+	# 			owner = { has_valid_civic = civic_death_cult }
+	# 			owner = { has_valid_civic = civic_death_cult_corporate }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200 # priest
+	# 	}
+	# }
 
 	#Death Chroniclers
 	triggered_planet_modifier = {
@@ -1968,16 +1968,16 @@ pw_building_holy_reliquary = {
 		}
 	}
 
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_spiritualist = yes }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 200 # priest
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_spiritualist = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200 # priest
+	# 	}
+	# }
 
 	inline_script = {
 		script = jobs/pw/bureaucrat_effect_desc
@@ -2051,15 +2051,15 @@ pw_building_holy_reliquary = {
 		text = job_high_priest_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = {
-#				is_spiritualist = yes
-#			}
-#		}
-#		text = job_priest_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 		}
+	# 	}
+	# 	text = job_priest_effect_desc
+	# }
 
 	triggered_desc = {
 		trigger = {
@@ -2388,41 +2388,41 @@ pw_building_unhallowed_necropolis = {
 		}
 	}
 
-#	#Death Chroniclers/Culture workers/Managers (2)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { has_valid_civic = civic_memorialist }
-#		}
-#		modifier = {
-#			job_death_chronicler_add = 200
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = no }
-#			owner = { is_gestalt = no }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_culture_worker_add = 200
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_megacorp = yes }
-#			owner = { is_gestalt = no }
-#			NOT = { owner = { has_valid_civic = civic_memorialist }}
-#		}
-#		modifier = {
-#			job_manager_add = 200
-#		}
-#	}
+	# #Death Chroniclers/Culture workers/Managers (2)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	modifier = {
+	# 		job_death_chronicler_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 		owner = { is_gestalt = no }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 		owner = { is_gestalt = no }
+	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 200
+	# 	}
+	# }
 	inline_script = {
 		script = jobs/pw/death_chronicler_add
 		OWNER_CONDITION = "is_gestalt = no"
@@ -2450,17 +2450,17 @@ pw_building_unhallowed_necropolis = {
 		AMOUNT = 2
 	}
 
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_spiritualist = yes }
-#			NOT = { owner = { has_valid_civic = civic_death_cult }}
-#			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 200 # priest
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_spiritualist = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_death_cult }}
+	# 		NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200 # priest
+	# 	}
+	# }
 
 	triggered_planet_modifier = {
 		potential = {
@@ -2709,17 +2709,17 @@ pw_building_unhallowed_necropolis = {
 		text = job_death_priest_effect_desc
 	}
 
-#	#Priest
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_spiritualist = yes }
-#			owner = { NOT = { has_valid_civic = civic_death_cult }}
-#			owner = { NOT = { has_valid_civic = civic_death_cult_corporate }}
-#		}
-#		text = job_priest_effect_desc
-#	}
+	# #Priest
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = yes }
+	# 		owner = { NOT = { has_valid_civic = civic_death_cult }}
+	# 		owner = { NOT = { has_valid_civic = civic_death_cult_corporate }}
+	# 	}
+	# 	text = job_priest_effect_desc
+	# }
 
 	inline_script = {
 		script = jobs/pw/bureaucrat_effect_desc

@@ -332,7 +332,7 @@ pw_building_living_spire_1 = {
 	#			job_politician_add = 100
 	#		}
 	#	}
-	#
+		
 	#	#Executive
 	#	triggered_planet_modifier = {
 	#		potential = {
@@ -777,7 +777,7 @@ pw_building_living_spire_2 = {
 	#			job_politician_add = 100
 	#		}
 	#	}
-	#
+		
 	#	#Executive/Manager
 	#	triggered_planet_modifier = {
 	#		potential = {
@@ -1327,7 +1327,7 @@ pw_building_living_spire_3 = {
 	#			job_politician_add = 200
 	#		}
 	#	}
-	#
+		
 	#	#Executive/Manager
 	#	triggered_planet_modifier = {
 	#		potential = {
