@@ -21,9 +21,8 @@ triggered_planet_modifier = {
 			has_toxic_baths = no
 		}
 	}
-	modifier = {
-		job_healthcare_add = $JOB_AMOUNT$
-	}
+	job_healthcare_add = 100
+	mult = $JOB_AMOUNT$
 }
 
 # No Ascension Path / Mind over matter / Engineered Evolution
@@ -59,9 +58,8 @@ triggered_planet_modifier = {
 			has_toxic_baths = yes
 		}
 	}
-	modifier = {
-		job_bath_attendant_add = $JOB_AMOUNT$
-	}
+	job_bath_attendant_add = 100
+	mult = $JOB_AMOUNT$
 }
 
 triggered_desc = {

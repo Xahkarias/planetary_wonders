@@ -1,0 +1,22 @@
+# Dear Irony please fallback to simple parser
+# Inny78's code toggle approach
+
+# Usage:
+# inline_script = {
+# 	script = compat/pw/toggled_code
+# 	toggle = $toggle$
+# 	code = "
+# 		# Code here will only be included if the toggle is != 0
+# 	"
+# }
+
+# Note: you can merge toggles using inline arithmatic:
+# 	- toggle = @[ variable_1 * variable_2 ] # AND two variables
+# 	- toggle = @[ variable_1 + variable_2 ] # OR two variables
+
+inline_script = {
+	script = compat/pw/parts/switch
+	file = compat/pw/parts/toggled_code_case_
+	value = @[ (-1 * ((-1 * (($toggle$*$toggle$) / (($toggle$*$toggle$)+1))) - ((((-1 * (($toggle$*$toggle$) / (($toggle$*$toggle$)+1))) % 1) + 1) % 1))) ]
+	params = "code = \"$code$\""
+}

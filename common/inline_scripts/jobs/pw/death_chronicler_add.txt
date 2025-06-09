@@ -16,9 +16,8 @@ triggered_planet_modifier = {
 			not = { has_valid_civic = civic_memorialist }
 		}
 	}
-	modifier = {
-		job_culture_worker_add = $AMOUNT$
-	}
+	job_culture_worker_add = 100
+	mult = $AMOUNT$
 }
 
 #triggered_desc = {
@@ -44,9 +43,8 @@ triggered_planet_modifier = {
 			not = { has_valid_civic = civic_memorialist }
 		}
 	}
-	modifier = {
-		job_manager_add = $AMOUNT$
-	}
+	job_manager_add = 100
+	mult = $AMOUNT$
 }
 
 #triggered_desc = {
@@ -72,7 +70,8 @@ triggered_planet_modifier = {
 			not = { has_valid_civic = civic_memorialist }
 		}
 	}
-	job_steward_add = $AMOUNT$
+	job_steward_add = 100
+	mult = $AMOUNT$
 }
 
 #triggered_desc = {
@@ -97,7 +96,8 @@ triggered_planet_modifier = {
 			has_valid_civic = civic_memorialist
 		}
 	}
-	job_death_chronicler_add = $AMOUNT$
+	job_death_chronicler_add = 100
+	mult = $AMOUNT$
 }
 
 #triggered_desc = {

@@ -1,3 +1,8 @@
+# Compatability
+
+# Let other mods know that this mod is active without the need for a trigger
+@has_planetary_wonders = 1
+
 # Techs
 
 #Regular Tech Cost

@@ -1,0 +1,12 @@
+# Default states for mod-presence triggers
+# Top of the file order (overwritten by actual mod files)
+
+# Gigastructures
+has_gigastructures = {
+	always = no
+}
+
+# Stellaris Evolved
+has_stellaris_evolved = {
+	always = no
+}

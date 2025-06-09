@@ -17,10 +17,8 @@ triggered_planet_modifier = {
 			is_megacorp = no
 		}
 	}
-	modifier = {
-		job_bureaucrat_add = 100
-		mult = $AMOUNT$
-	}
+	job_bureaucrat_add = 100
+	mult = $AMOUNT$
 }
 
 #Manager
@@ -34,10 +32,8 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = no
 		}
 	}
-	modifier = {
-		job_manager_add = 100
-		mult = $AMOUNT$
-	}
+	job_manager_add = 100
+	mult = $AMOUNT$
 }
 
 #Steward
@@ -50,10 +46,8 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = yes
 		}
 	}
-	modifier = {
-		job_steward_add = 100
-		mult = $AMOUNT$
-	}
+	job_steward_add = 100
+	mult = $AMOUNT$
 }
 
 #Priest
@@ -67,10 +61,8 @@ triggered_planet_modifier = {
 			NOT = { has_origin = origin_cybernetic_creed }
 		}
 	}
-	modifier = {
-		job_bureaucrat_add = 100 # priest
-		mult = $AMOUNT$
-	}
+	job_bureaucrat_add = 100 # priest
+	mult = $AMOUNT$
 }
 
 #Preacher
@@ -84,10 +76,8 @@ triggered_planet_modifier = {
 			NOT = { has_origin = origin_cybernetic_creed }
 		}
 	}
-	modifier = {
-		job_preacher_add = 100
-		mult = $AMOUNT$
-	}
+	job_preacher_add = 100
+	mult = $AMOUNT$
 }
 
 #Haruspex
@@ -100,8 +90,6 @@ triggered_planet_modifier = {
 			has_origin = origin_cybernetic_creed
 		}
 	}
-	modifier = {
-		job_haruspex_add = 100
-		mult = $AMOUNT$
-	}
+	job_haruspex_add = 100
+	mult = $AMOUNT$
 }

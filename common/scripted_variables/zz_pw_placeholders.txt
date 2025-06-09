@@ -1,0 +1,10 @@
+# Irony this is a placeholder file please ignore it
+
+# These should all find themselves late in the load order so they
+# are used only if they aren't set by anything else
+
+# Gigastructures
+@has_gigastructures = 0
+
+# Stellaris Evolved
+@has_stellaris_evolved = 0

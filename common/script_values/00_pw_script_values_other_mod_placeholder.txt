@@ -1,80 +1,135 @@
 # Note: this file's name must be before other files, in ASCIIbetical order (0, 9, A, Z, a, z).
 # Note: The coder (FebHare) isn't famillar with "Stellaris Evolved" or "Gigastructure" mod. So these lists might be outdated.
 pw_farming_districts_value_evolved = {
-	add = value:pw_districts_value|TYPE|district_tec_aqua_farming|
-	add = value:pw_districts_value|TYPE|district_tec_hab_food|
-	add = value:pw_districts_value|TYPE|district_tec_eco_farming|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_farming|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_proto_farming|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_stellaris_evolved
+		code = "
+			add = value:pw_districts_value|TYPE|district_tec_aqua_farming|
+			add = value:pw_districts_value|TYPE|district_tec_hab_food|
+			add = value:pw_districts_value|TYPE|district_tec_eco_farming|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_tec_eco_aqua_farming|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_tec_proto_farming|
+		"
+	}
 }
 
 pw_farming_districts_value_giga = {
-	add = value:pw_districts_value|TYPE|district_giga_alderson_farming|FACTOR|10|
-	add = value:pw_districts_value|TYPE|district_flusion_farming|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_farming|
-	add = value:pw_districts_value|TYPE|district_penrose_farming|FACTOR|4|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_gigastructures
+		code = "
+			add = value:pw_districts_value|TYPE|district_giga_alderson_farming|FACTOR|10|
+			add = value:pw_districts_value|TYPE|district_flusion_farming|FACTOR|3|
+			add = value:pw_districts_value|TYPE|district_giga_frameworld_farming|
+			add = value:pw_districts_value|TYPE|district_penrose_farming|FACTOR|4|
+		"
+	}
 }
 
 pw_farming_buildings_value_evolved = {
-	add = value:pw_buildings_value|TYPE|building_hydroponics_farm_2|
-	add = value:pw_buildings_value|TYPE|building_hydroponics_farm_3|
-	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_1|
-	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_2|
-	add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_3|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_stellaris_evolved
+		code = "
+			add = value:pw_buildings_value|TYPE|building_hydroponics_farm_2|
+			add = value:pw_buildings_value|TYPE|building_hydroponics_farm_3|
+			add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_1|
+			add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_2|
+			add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_3|
+		"
+	}
 }
 
 pw_mining_districts_value_evolved = {
-	add = value:pw_districts_value|TYPE|district_tec_aqua_mining|
-	add = value:pw_districts_value|TYPE|district_tec_eco_mining|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_mining|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_proto_mining|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_stellaris_evolved
+		code = "
+			add = value:pw_districts_value|TYPE|district_tec_rw_replicator|FACTOR|4|
+			add = value:pw_districts_value|TYPE|district_tec_aqua_mining|
+			add = value:pw_districts_value|TYPE|district_tec_eco_mining|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_tec_eco_aqua_mining|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_tec_proto_mining|
+		"
+	}
 }
 
 pw_mining_districts_value_giga = {
-	add = value:pw_districts_value|TYPE|district_giga_alderson_mining|FACTOR|10|
-	add = value:pw_districts_value|TYPE|district_flusion_mining|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_mining|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_decompressor|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_hab_scavenger|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_gigastructures
+		code = "
+			add = value:pw_districts_value|TYPE|district_giga_alderson_mining|FACTOR|10|
+			add = value:pw_districts_value|TYPE|district_flusion_mining|FACTOR|3|
+			add = value:pw_districts_value|TYPE|district_giga_frameworld_mining|
+			add = value:pw_districts_value|TYPE|district_giga_frameworld_decompressor|FACTOR|3|
+			add = value:pw_districts_value|TYPE|district_giga_hab_scavenger|
+		"
+	}
 }
 
 pw_mining_districts_value_ED = {
 }
 
 pw_mining_buildings_value_evolved = {
-	add = value:pw_buildings_value|TYPE|building_tec_stripmine_1|
-	add = value:pw_buildings_value|TYPE|building_tec_stripmine_2|
-	add = value:pw_buildings_value|TYPE|building_tec_stripmine_3|
-	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_1|
-	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_2|
-	add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_3|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_stellaris_evolved
+		code = "
+			add = value:pw_buildings_value|TYPE|building_tec_stripmine_1|
+			add = value:pw_buildings_value|TYPE|building_tec_stripmine_2|
+			add = value:pw_buildings_value|TYPE|building_tec_stripmine_3|
+			add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_1|
+			add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_2|
+			add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_3|
+		"
+	}
 }
 
 pw_generators_districts_value_evolved = {
-	add = value:pw_districts_value|TYPE|district_tec_aqua_generator|
-	add = value:pw_districts_value|TYPE|district_tec_hab_generator|
-	add = value:pw_districts_value|TYPE|district_tec_eco_generator|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_eco_aqua_generator|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_tec_proto_generator|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_stellaris_evolved
+		code = "
+			add = value:pw_districts_value|TYPE|district_tec_aqua_generator|
+			add = value:pw_districts_value|TYPE|district_tec_hab_generator|
+			add = value:pw_districts_value|TYPE|district_tec_eco_generator|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_tec_eco_aqua_generator|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_tec_proto_generator|
+		"
+	}
 }
 
 pw_generators_districts_value_giga = {
-	add = value:pw_districts_value|TYPE|district_giga_alderson_generator|FACTOR|10|
-	add = value:pw_districts_value|TYPE|district_flusion_heavy_industry|FACTOR|1.5|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_generator|
-	add = value:pw_districts_value|TYPE|district_giga_frameworld_penrose|FACTOR|3|
-	add = value:pw_districts_value|TYPE|district_giga_gas_giant_habitat_wind|FACTOR|2|
-	add = value:pw_districts_value|TYPE|district_interstellar_generator|FACTOR|4|
-	add = value:pw_districts_value|TYPE|district_giga_planet_wind|
-	add = value:pw_districts_value|TYPE|district_giga_planet_solar|
-	add = value:pw_districts_value|TYPE|district_giga_planet_geothermal|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_gigastructures
+		code = "
+			add = value:pw_districts_value|TYPE|district_giga_alderson_generator|FACTOR|10|
+			add = value:pw_districts_value|TYPE|district_flusion_heavy_industry|FACTOR|1.5|
+			add = value:pw_districts_value|TYPE|district_giga_frameworld_generator|
+			add = value:pw_districts_value|TYPE|district_giga_frameworld_penrose|FACTOR|3|
+			add = value:pw_districts_value|TYPE|district_giga_gas_giant_habitat_wind|FACTOR|2|
+			add = value:pw_districts_value|TYPE|district_interstellar_generator|FACTOR|4|
+			add = value:pw_districts_value|TYPE|district_giga_planet_wind|
+			add = value:pw_districts_value|TYPE|district_giga_planet_solar|
+			add = value:pw_districts_value|TYPE|district_giga_planet_geothermal|
+		"
+	}
 }
 
 pw_generators_buildings_value_evolved = {
-	add = value:pw_buildings_value|TYPE|building_tec_energrid_1|
-	add = value:pw_buildings_value|TYPE|building_tec_energrid_2|
-	add = value:pw_buildings_value|TYPE|building_tec_energrid_3|
-	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor|
-	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor_on|
-	add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_nexus_A|
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @has_stellaris_evolved
+		code = "
+			add = value:pw_buildings_value|TYPE|building_tec_energrid_1|
+			add = value:pw_buildings_value|TYPE|building_tec_energrid_2|
+			add = value:pw_buildings_value|TYPE|building_tec_energrid_3|
+			add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor|
+			add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor_on|
+			add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_nexus_A|
+		"
+	}
 }

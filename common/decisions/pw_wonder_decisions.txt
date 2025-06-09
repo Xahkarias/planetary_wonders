@@ -727,6 +727,7 @@ pw_decision_SE_counterweight_habitat = {
 	}
 
 	potential = {
+		has_gigastructures = yes
 		exists = owner
 		# NOT = { has_modifier = slave_colony }
 		NOT = { merg_is_habitat = yes }
@@ -739,24 +740,30 @@ pw_decision_SE_counterweight_habitat = {
 	}
 
 	allow = {
+		has_gigastructures = yes
 		has_active_building = pw_building_space_elevator
 		# has_modifier = pw_mod_space_elevator_orbital_districts
 	}
 
 	effect = {
 		custom_tooltip = pw_decision_SE_counterweight_habitat_tooltip
-		solar_system = {
-			spawn_megastructure = {
-				type = major_orbital
-				planet = prev
-				owner = owner
-				init_effect = {
-					add_modifier = {
-						modifier = pw_mod_space_elevator_counterweight_habitat
+		inline_script = {
+			script = compat/pw/toggled_code
+			toggle = @has_gigastructures
+			code = "
+				solar_system = {
+					spawn_megastructure = {
+						type = major_orbital # giga megastructure
+						planet = prev
+						owner = owner
+						init_effect = {
+							add_modifier = {
+								modifier = pw_mod_space_elevator_counterweight_habitat
+							}
+						}
 					}
-				}
-			}
-
+				}	
+			"
 		}
 	}
 
