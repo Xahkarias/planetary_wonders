@@ -41,7 +41,7 @@ pw_mining_coordinator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_charismatic
+			prev = { has_trait = trait_charismatic }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = 1
@@ -49,7 +49,7 @@ pw_mining_coordinator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_repugnant
+			prev = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = -1
@@ -119,7 +119,7 @@ pw_energy_coordinator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_charismatic
+			prev = { has_trait = trait_charismatic }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = 1
@@ -127,7 +127,7 @@ pw_energy_coordinator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_repugnant
+			prev = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = -1
@@ -201,7 +201,7 @@ pw_food_coordinator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_charismatic
+			prev = { has_trait = trait_charismatic }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = 1
@@ -209,7 +209,7 @@ pw_food_coordinator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_repugnant
+			prev = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = -1
@@ -368,9 +368,10 @@ pw_domed_city_subject_drone = {
 		planet_jobs_society_research_produces_mult = 0.025
 	}
 
-	triggered_pop_modifier = {
-		pop_housing_usage_add = -1
-	}
+	# triggered_pop_group_modifier = {
+	# 	potential = { always = yes}
+	# 	pop_housing_usage_add = -1
+	# }	
 
 	weight = {
 		weight = @simple_drone_job_weight
@@ -699,9 +700,11 @@ pw_logistics_drone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			OR = {
-				has_trait = trait_robot_emotion_emulators
-				has_trait = trait_charismatic
+			prev = {
+				OR = {
+					has_trait = trait_robot_emotion_emulators
+					has_trait = trait_charismatic
+				}
 			}
 		}
 		modifier = {
@@ -710,9 +713,11 @@ pw_logistics_drone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			OR = {
-				has_trait = trait_robot_uncanny
-				has_trait = trait_repugnant
+			prev = {
+				OR = {
+					has_trait = trait_robot_uncanny
+					has_trait = trait_repugnant
+				}
 			}
 		}
 		modifier = {
@@ -1032,7 +1037,7 @@ pw_banquet_steward_drone = {
 		}
 	}
 
-	pop_modifier = {
+	planet_modifier = {
 		planet_defense_armies_add = 2
 	}
 

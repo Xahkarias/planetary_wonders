@@ -892,7 +892,7 @@ pw_building_festival_plaza = {
 	# 		owner = { is_pacifist = yes }
 	# 		owner = { is_megacorp = no }
 	# 	}
-	# 	text = job_culture_worker_effect_desc
+	# 	text = job_bureaucrat_effect_desc
 	# }
 	
 	# triggered_desc = {
@@ -1290,7 +1290,7 @@ pw_building_nostalgia_paradise = {
 	# 		owner = { is_regular_empire = yes }
 	# 		owner = { is_megacorp = no }
 	# 	}
-	# 	text = job_culture_worker_effect_desc
+	# 	text = job_bureaucrat_effect_desc
 	# }
 	
 	# #Manager

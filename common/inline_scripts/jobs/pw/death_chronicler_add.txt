@@ -30,7 +30,7 @@ triggered_planet_modifier = {
 #			not = { has_valid_civic = civic_memorialist }
 #		}
 #	}
-#	text = job_culture_worker_effect_desc
+#	text = job_bureaucrat_effect_desc
 #}
 
 #Manager

@@ -1266,7 +1266,7 @@ pw_building_panopticon = {
 			owner = { is_egalitarian = yes }
 			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
 		}
-		text = job_culture_worker_effect_desc
+		text = job_bureaucrat_effect_desc
 	}
 
 	# triggered_desc = {

@@ -88,7 +88,7 @@ pw_building_polyhedron = {
 			exists = owner
 			owner = { is_gestalt = no }
 		}
-		text = job_culture_worker_effect_desc
+		text = job_bureaucrat_effect_desc
 	}
 
 	triggered_desc = {

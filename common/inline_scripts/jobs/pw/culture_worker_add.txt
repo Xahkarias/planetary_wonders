@@ -27,7 +27,7 @@ triggered_desc = {
 			is_megacorp = no
 		}
 	}
-	text = job_culture_worker_effect_desc
+	text = job_bureaucrat_effect_desc
 }
 
 #Manager

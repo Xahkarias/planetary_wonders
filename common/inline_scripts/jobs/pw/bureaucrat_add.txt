@@ -18,7 +18,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_bureaucrat_add = $AMOUNT$
+		job_bureaucrat_add = 100
+		mult = $AMOUNT$
 	}
 }
 
@@ -34,7 +35,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_manager_add = $AMOUNT$
+		job_manager_add = 100
+		mult = $AMOUNT$
 	}
 }
 
@@ -49,7 +51,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_steward_add = $AMOUNT$
+		job_steward_add = 100
+		mult = $AMOUNT$
 	}
 }
 
@@ -65,7 +68,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_bureaucrat_add = $AMOUNT$ # priest
+		job_bureaucrat_add = 100 # priest
+		mult = $AMOUNT$
 	}
 }
 
@@ -81,7 +85,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_preacher_add = $AMOUNT$
+		job_preacher_add = 100
+		mult = $AMOUNT$
 	}
 }
 
@@ -96,6 +101,7 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_haruspex_add = $AMOUNT$
+		job_haruspex_add = 100
+		mult = $AMOUNT$
 	}
 }

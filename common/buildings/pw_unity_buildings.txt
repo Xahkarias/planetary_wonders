@@ -305,7 +305,7 @@ pw_building_pavilion_of_wonders = {
 	# 		exists = owner
 	# 		owner = { is_megacorp = no }
 	# 	}
-	# 	text = job_culture_worker_effect_desc
+	# 	text = job_bureaucrat_effect_desc
 	# }
 	
 	# triggered_desc = {
@@ -934,7 +934,7 @@ pw_building_fair_of_worlds = {
 	# 		exists = owner
 	# 		owner = { is_megacorp = no }
 	# 	}
-	# 	text = job_culture_worker_effect_desc
+	# 	text = job_bureaucrat_effect_desc
 	# }
 	
 	# triggered_desc = {
@@ -1623,7 +1623,7 @@ pw_building_museum_of_the_grotesque = {
 	# 		exists = owner
 	# 		owner = { is_megacorp = no }
 	# 	}
-	# 	text = job_culture_worker_effect_desc
+	# 	text = job_bureaucrat_effect_desc
 	# }
 	
 	# triggered_desc = {
@@ -2763,7 +2763,7 @@ pw_building_unhallowed_necropolis = {
 				owner = { NOT = { has_valid_civic = civic_death_cult }}
 			}
 		}
-		text = job_culture_worker_effect_desc
+		text = job_bureaucrat_effect_desc
 	}
 
 	#Manager
