@@ -16,7 +16,7 @@ triggered_planet_modifier = {
 		NOT = {	has_modifier = penal_colony }
 	}
 	job_foundry_add = 100
-	mult            = $AMOUNT$
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -30,7 +30,7 @@ triggered_planet_modifier = {
 		has_modifier = penal_colony
 	}
 	job_foundry_prison_worker_add = 100
-	mult           				  = $AMOUNT$
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -44,7 +44,7 @@ triggered_planet_modifier = {
 		NOT = {	has_modifier = penal_colony }
 	}
 	job_catalytic_technician_add = 100
-	mult           				 = $AMOUNT$
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -58,7 +58,7 @@ triggered_planet_modifier = {
 		has_modifier = penal_colony
 	}
 	job_catalytic_technician_prison_worker_add = 100
-	mult           							   = $AMOUNT$
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -72,7 +72,7 @@ triggered_planet_modifier = {
 		NOT = {	has_modifier = penal_colony }
 	}
 	job_alloy_drone_add = 100
-	mult 	            = $AMOUNT$
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -86,7 +86,7 @@ triggered_planet_modifier = {
 		NOT = {	has_modifier = penal_colony }
 	}
 	job_fabricator_add = 100
-	mult          	   = $AMOUNT$
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -100,5 +100,5 @@ triggered_planet_modifier = {
 		NOT = {	has_modifier = penal_colony }
 	}
 	job_catalytic_drone_add = 100
-	mult       			    = $AMOUNT$
+	mult = $AMOUNT$
 }

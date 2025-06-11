@@ -213,23 +213,30 @@ pw_has_build_any_planetary_wonder = {
 	}
 }
 
+
+# Scope: Country/Sector
+# Check that the wonder (building) does not exist on any planet other than root
+pw_wonder_unique_elsewhere = {
+	# count_owned_planet with count=all doesn't behave as expected
+	# all(x) = not any (not x)
+	NOT = { 
+		any_owned_planet = {
+			NOT = { is_planet = root }
+			OR = {
+				has_building = $WONDER$
+				has_building_construction = $WONDER$
+			}
+		}
+	}
+}
+
+
 # Scope: Planet
 pw_is_wonder_empire_unique = {
 	custom_tooltip = {
 		fail_text = pw_empire_unique_tooltip
 		owner = {
-			count_owned_planet = {
-				count = all #Every owned planet
-				limit = {
-					OR = {
-						is_planet = root #Ignores the triggering planet so it does not mess up upgrades.
-						NOR = { #Cannot have or be constructing this wonder
-							has_building = $WONDER$
-							has_building_construction = $WONDER$
-						}
-					}
-				}
-			}
+			pw_wonder_unique_elsewhere = { WONDER = $WONDER$ } 
 		}
 	}
 }
@@ -239,18 +246,7 @@ pw_is_wonder_sector_unique = {
 	custom_tooltip = {
 		fail_text = pw_sector_unique_tooltip
 		sector = {
-			count_owned_planet = {
-				count = all #Every owned planet
-				limit = {
-					OR = {
-						is_planet = root #Ignores the triggering planet so it does not mess up upgrades.
-						NOR = { #Cannot have or be constructing this wonder
-							has_building = $WONDER$
-							has_building_construction = $WONDER$
-						}
-					}
-				}
-			}
+			pw_wonder_unique_elsewhere = { WONDER = $WONDER$ } 
 		}
 	}
 }
