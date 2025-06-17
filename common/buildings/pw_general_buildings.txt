@@ -59,7 +59,7 @@ pw_building_polyhedron = {
 		}
 		modifier = {
 			inline_script = { script = jobs/pw/calculator_add AMOUNT = 100 }
-			job_synapse_drone_add = 200
+			job_coordinator_add = 200
 		}
 	}
 

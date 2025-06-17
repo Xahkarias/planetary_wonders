@@ -149,7 +149,7 @@ pw_building_space_elevator = {
 			job_pw_logistics_drone_add = 500
 			job_maintenance_drone_add = 300
 			job_patrol_drone_add = 100
-			job_synapse_drone_add = 100
+			job_coordinator_add = 100
 			planet_amenities_no_happiness_mult = 0.05
 		}
 	}

@@ -2576,7 +2576,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { NOT = { has_valid_civic = civic_hive_memorialist }}
 		}
 		modifier = {
-			job_synapse_drone_add = 200
+			job_coordinator_add = 200
 		}
 	}
 
@@ -2598,7 +2598,7 @@ pw_building_unhallowed_necropolis = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 200
+			job_coordinator_add = 200
 		}
 	}
 

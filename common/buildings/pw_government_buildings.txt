@@ -217,7 +217,7 @@ pw_building_galactic_model = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 1000
+			job_coordinator_add = 1000
 		}
 	}
 
@@ -624,7 +624,7 @@ pw_building_aligned_galactic_model = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 1000
+			job_coordinator_add = 1000
 			job_pw_logistics_drone_add = 200
 		}
 	}

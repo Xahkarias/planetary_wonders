@@ -1804,7 +1804,7 @@ pw_d_integration_cyber_pylon = {
 			exists = owner
 			owner = { is_hive_empire = yes }
 		}
-		job_synapse_drone_add = 200
+		job_coordinator_add = 200
 	}
 }
 

@@ -387,7 +387,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 200
+			job_coordinator_add = 200
 		}
 	}
 
@@ -1037,7 +1037,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 100
+			job_coordinator_add = 100
 		}
 	}
 	triggered_country_modifier = {

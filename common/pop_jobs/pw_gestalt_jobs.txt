@@ -44,7 +44,7 @@ pw_mining_coordinator = {
 			prev = { has_trait = trait_charismatic }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 1
+			planet_amenities_no_happiness_add = 20
 		}
 	}
 	triggered_planet_modifier = {
@@ -52,7 +52,7 @@ pw_mining_coordinator = {
 			prev = { has_trait = trait_repugnant }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = -1
+			planet_amenities_no_happiness_add = -20
 		}
 	}
 
@@ -122,7 +122,7 @@ pw_energy_coordinator = {
 			prev = { has_trait = trait_charismatic }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 1
+			planet_amenities_no_happiness_add = 20
 		}
 	}
 	triggered_planet_modifier = {
@@ -130,7 +130,7 @@ pw_energy_coordinator = {
 			prev = { has_trait = trait_repugnant }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = -1
+			planet_amenities_no_happiness_add = -20
 		}
 	}
 
@@ -204,7 +204,7 @@ pw_food_coordinator = {
 			prev = { has_trait = trait_charismatic }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 1
+			planet_amenities_no_happiness_add = 20
 		}
 	}
 	triggered_planet_modifier = {
@@ -212,7 +212,7 @@ pw_food_coordinator = {
 			prev = { has_trait = trait_repugnant }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = -1
+			planet_amenities_no_happiness_add = -20
 		}
 	}
 
@@ -282,7 +282,7 @@ pw_enigma_decipher = {
 
 	planet_modifier = {
 		planet_crime_no_happiness_add = -5
-		planet_amenities_no_happiness_add = 2
+		planet_amenities_no_happiness_add = 40
 	}
 
 	weight = {
@@ -695,7 +695,7 @@ pw_logistics_drone = {
 	}
 
 	planet_modifier = {
-		planet_amenities_no_happiness_add = 2
+		planet_amenities_no_happiness_add = 40
 		planet_jobs_produces_mult = 0.005
 	}
 	triggered_planet_modifier = {
@@ -708,7 +708,7 @@ pw_logistics_drone = {
 			}
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 1
+			planet_amenities_no_happiness_add = 20
 		}
 	}
 	triggered_planet_modifier = {
@@ -721,7 +721,7 @@ pw_logistics_drone = {
 			}
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = -1
+			planet_amenities_no_happiness_add = -20
 		}
 	}
 
@@ -731,7 +731,7 @@ pw_logistics_drone = {
 			owner = { has_active_tradition = tr_synchronicity_integrated_preservation }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 1
+			planet_amenities_no_happiness_add = 20
 		}
 	}
 
@@ -902,7 +902,7 @@ pw_preserver_drone = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 5
+			planet_amenities_no_happiness_add = 100
 		}
 	}
 
