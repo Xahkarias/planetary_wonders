@@ -1,3 +1,14 @@
+[h1]Version 1.7.0 (for Stellaris 4.0.*)[/h1]
+[h2]Update by AdmirableOstrich[/h2]
+[list]
+    [*]Batch changes for all the simple 3.14 -> 4.0.x modding changes: e.g. pops get 100x, amenities get 20x, changes to pop_growth mults, etc.
+    [*]Added inlines, triggers, effects to simplify some repeated code (also fixed a few bugs hidden amongst the duplication)
+    [*]All buildings now have building sets (4.0 requirement)
+    [*]Added the triggered code implementation from the possibly-no-longer Merger and wrapped giga and stellaris evolved dependencies so they don't throw a bunch of errors on game start. Both (whenever stellaris evolved gets updated) should now be natively supported.
+    [*]Vanquished the error log. Barring future Stellaris changes or other mods changing the vanilla files, there are no remaining error messages.
+    [*]Fixed an issue where the empire/sector unique check was failing. This was caused by the count_owned_planet trigger not functioning with count=all. If it every behaved as intended it isn't anymore. Fortunately, any_owned_planet works fine which is basically the same check just inverted.
+[/list]
+
 [h1]Version 1.6.11 (for Stellaris 3.14.*)[/h1]
 [h2]Update by FebHare[/h2]
 [list]

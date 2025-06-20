@@ -1,4 +1,15 @@
 /* cSpell:disable */
+[h1]Versão 1.7.0 (para Stellaris 4.0.*)[/h1]
+[h2]Update por AdmirableOstrich[/h2]
+[list]
+    [*]Alterações em lote para todas as mudanças simples de modding de 3.14 -> 4.0.x: por exemplo, pops agora são 100x, amenidades são 20x, mudanças nos multiplicadores de crescimento populacional, etc.
+    [*]Adicionados inlines, triggers e efeitos para simplificar códigos repetidos (também corrigidos alguns bugs escondidos na duplicação)
+    [*]Todos os prédios agora possuem conjuntos de prédios (requisito do 4.0)
+    [*]Adicionada a implementação de código triggered do possivelmente extinto Merger e envolvidas as dependências do giga e stellaris evolved para que não gerem vários erros ao iniciar o jogo. Ambos (assim que o stellaris evolved for atualizado) agora devem ser suportados nativamente.
+    [*]Errores do log eliminados. Salvo futuras mudanças do Stellaris ou outros mods alterando arquivos vanilla, não há mais mensagens de erro restantes.
+    [*]Corrigido um problema onde a checagem única de império/setor estava falhando. Isso era causado pelo trigger count_owned_planet não funcionar com count=all. Se algum dia funcionou como pretendido, não funciona mais. Felizmente, any_owned_planet funciona bem, que é basicamente a mesma checagem só que invertida.
+[/list]
+
 [h1]Versão 1.6.11 (para Stellaris 3.14.*)[/h1]
 [h2]Update por FebHare[/h2]
 [list]
