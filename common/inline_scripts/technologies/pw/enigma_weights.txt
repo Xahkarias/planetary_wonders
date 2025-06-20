@@ -1,0 +1,26 @@
+# standard weight modifier components for enigma techs:
+# Usage:
+# inline_script = {
+#	script = technologies/pw/enigma_weights
+# 	BASE_FACTOR = 0.5
+#   AI_FACTOR = 1.25
+#	COUNCIL_TRAIT = leader_trait_expertise_industry
+#	TECHNOLOGY = pw_enigma_tech_micro_graviton_equipment
+# }
+
+weight_modifier = {
+	factor = $BASE_FACTOR$
+	inline_script = {
+		script = technologies/pw/rare_modifier
+		COUNCIL_TRAIT = $COUNCIL_TRAIT$
+		TECHNOLOGY = $TECHNOLOGY$
+	}
+}
+
+ai_weight = {
+	factor = @pw_tech_ai_weight
+	modifier = {
+		factor = $AI_FACTOR$
+		has_trait_in_council = { TRAIT = $COUNCIL_TRAIT$ }
+	}
+}

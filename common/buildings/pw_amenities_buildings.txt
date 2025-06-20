@@ -1,9 +1,14 @@
 pw_building_transplanetary_logistics_network = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = amenity
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_transplanetary_logistics
@@ -107,29 +112,29 @@ pw_building_transplanetary_logistics_network = {
 	#Reminder: Cannot be Gestalt and must be egalitarian!
 	# 6 Jobs added in total (with more from deposits)
 
-#	#Administrator
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_politician_add = 1
-#		}
-#	}
-#
-#	#Executive
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_executive_add = 1
-#		}
-#	}
+	# #Administrator
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+	
+	# #Executive
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
 
 	#Clerk
 	triggered_planet_modifier = {
@@ -138,33 +143,33 @@ pw_building_transplanetary_logistics_network = {
 			owner = { is_egalitarian = yes }
 		}
 		modifier = {
-			job_clerk_add = 4
+			job_clerk_add = 400
 		}
 	}
 
-#	#Bureaucrat
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_spiritualist = no }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 1
-#		}
-#	}
-#
-#	#Priest (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_spiritualist = yes }
-#		}
-#		modifier = {
-#			job_priest_add = 1
-#		}
-#	}
+	# #Bureaucrat
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_spiritualist = no }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100
+	# 	}
+	# }
+	
+	# #Priest (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100 # priest
+	# 	}
+	# }
 
 	#Stability from ambition
 	triggered_planet_modifier = {
@@ -196,23 +201,24 @@ pw_building_transplanetary_logistics_network = {
 		text = pw_transplanetary_logistics_network_tooltip
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_politician_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_executive_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
+
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_egalitarian = yes"
@@ -220,13 +226,14 @@ pw_building_transplanetary_logistics_network = {
 		AMOUNT = 1
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#		}
-#		text = job_bureaucrat_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
+
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_egalitarian = yes"
@@ -300,10 +307,15 @@ pw_building_transplanetary_logistics_network = {
 pw_building_transhabitat_logistics_network = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = amenity
 	icon = pw_building_transplanetary_logistics_network
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_transplanetary_logistics
@@ -419,29 +431,29 @@ pw_building_transhabitat_logistics_network = {
 	#Reminder: Cannot be Gestalt and must be egalitarian!
 	# 6 Jobs added in total (with more from deposits)
 
-#	#Administrator
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_politician_add = 1
-#		}
-#	}
-#
-#	#Executive
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_executive_add = 1
-#		}
-#	}
+	# #Administrator
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+
+	# #Executive
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
 
 	#Clerk
 	triggered_planet_modifier = {
@@ -450,33 +462,33 @@ pw_building_transhabitat_logistics_network = {
 			owner = { is_egalitarian = yes }
 		}
 		modifier = {
-			job_clerk_add = 4
+			job_clerk_add = 400
 		}
 	}
 
-#	#Bureaucrat
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_spiritualist = no }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 1
-#		}
-#	}
-#
-#	#Priest (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_spiritualist = yes }
-#		}
-#		modifier = {
-#			job_priest_add = 1
-#		}
-#	}
+	# #Bureaucrat
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_spiritualist = no }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100
+	# 	}
+	# }
+	
+	# #Priest (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100 # priest
+	# 	}
+	# }
 
 	#Stability from ambition
 	triggered_planet_modifier = {
@@ -508,23 +520,23 @@ pw_building_transhabitat_logistics_network = {
 		text = pw_transplanetary_logistics_network_tooltip
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_politician_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_executive_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_egalitarian = yes"
@@ -532,13 +544,13 @@ pw_building_transhabitat_logistics_network = {
 		AMOUNT = 1
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_egalitarian = yes }
-#		}
-#		text = job_bureaucrat_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_egalitarian = yes"
@@ -613,8 +625,13 @@ pw_building_festival_plaza = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_festivals_of_harmony
@@ -738,31 +755,31 @@ pw_building_festival_plaza = {
 	#Reminder: Cannot be Gestalt and must be pacifist!
 	# 7 Jobs added in total (With more from festivities)
 
-#	#Administrator/Culture workers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_politician_add = 1
-#			job_culture_worker_add = 3
-#		}
-#	}
-#
-#	#Executive/Manager
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_executive_add = 1
-#			job_manager_add = 3
-#		}
-#	}
+	# #Administrator/Culture workers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 		job_culture_worker_add = 300
+	# 	}
+	# }
+	
+	# #Executive/Manager
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 		job_manager_add = 300
+	# 	}
+	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_pacifist = yes"
@@ -785,7 +802,7 @@ pw_building_festival_plaza = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 3
+			job_entertainer_add = 300
 		}
 	}
 
@@ -799,7 +816,7 @@ pw_building_festival_plaza = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 3
+			job_duelist_add = 300
 		}
 	}
 
@@ -825,31 +842,31 @@ pw_building_festival_plaza = {
 		}
 	}
 
-#	triggered_desc = {
-#		text = pw_planet_wonder_lb
-#	}
-#
-#	triggered_desc = {
-#		text = pw_festival_plaza_tooltip
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_politician_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_executive_effect_desc
-#	}
+	# triggered_desc = {
+	# 	text = pw_planet_wonder_lb
+	# }
+	
+	# triggered_desc = {
+	# 	text = pw_festival_plaza_tooltip
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
 	triggered_desc = {
 		trigger = {
@@ -869,23 +886,23 @@ pw_building_festival_plaza = {
 		text = job_duelist_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_culture_worker_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_manager_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1900 }
@@ -956,8 +973,13 @@ pw_building_nostalgia_paradise = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_augmented_reality_resorts
@@ -1053,7 +1075,7 @@ pw_building_nostalgia_paradise = {
 
 	#Housing
 	planet_modifier = {
-		planet_housing_add = 5
+		planet_housing_add = 500
 	}
 
 	triggered_desc = {
@@ -1068,7 +1090,7 @@ pw_building_nostalgia_paradise = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -1081,51 +1103,51 @@ pw_building_nostalgia_paradise = {
 		text = job_merchant_effect_desc
 	}
 
-#	#Administrator(1)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_politician_add = 1
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_executive_add = 1
-#		}
-#	}
-#
-#	#Culture Workers (2)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_culture_worker_add = 2
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_manager_add = 2
-#		}
-#	}
+	# #Administrator(1)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
+	
+	# #Culture Workers (2)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 200
+	# 	}
+	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = ""
@@ -1148,7 +1170,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 2
+			job_entertainer_add = 200
 		}
 	}
 
@@ -1161,7 +1183,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 2
+			job_duelist_add = 200
 		}
 	}
 
@@ -1175,7 +1197,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 
@@ -1187,9 +1209,9 @@ pw_building_nostalgia_paradise = {
 			owner = { has_valid_civic = civic_machine_servitor }
 		}
 		modifier = {
-			job_bio_trophy_add = 10
-			job_artisan_drone_add = 1
-			job_maintenance_drone_add = 5
+			job_bio_trophy_add = 1000
+			job_artisan_drone_add = 100
+			job_maintenance_drone_add = 500
 		}
 	}
 
@@ -1201,7 +1223,7 @@ pw_building_nostalgia_paradise = {
 			owner = { has_toxic_baths = yes }
 		}
 		modifier = {
-			job_bath_attendant_machine_add = 1
+			job_bath_attendant_machine_add = 100
 		}
 	}
 
@@ -1228,58 +1250,58 @@ pw_building_nostalgia_paradise = {
 		}
 	}
 
-#	triggered_desc = {
-#		text = pw_planet_wonder_lb
-#	}
-#
-#	#Merchant
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#		}
-#		text = job_merchant_effect_desc
-#	}
-#
-#	#Administrator
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_politician_effect_desc
-#	}
-#
-#	#Executive
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_executive_effect_desc
-#	}
-#
-#	#Culture Worker
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_culture_worker_effect_desc
-#	}
-#
-#	#Manager
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_manager_effect_desc
-#	}
+	# triggered_desc = {
+	# 	text = pw_planet_wonder_lb
+	# }
+	
+	# #Merchant
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
+	
+	# #Administrator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# #Executive
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
+	
+	# #Culture Worker
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
+	
+	# #Manager
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
 
 	#Entertainer
 	triggered_desc = {
@@ -1410,8 +1432,8 @@ pw_building_nostalgia_paradise = {
 			factor = value:pw_pop_factor
 			OR = {
 				has_modifier = resort_colony
-				any_owned_pop = {
-					has_job = bio_trophy
+				any_owned_pop_group = {
+					is_pop_category = bio_trophy
 				}
 			}
 		}
@@ -1422,8 +1444,13 @@ pw_building_blossoming_preserve = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_cyberecology
@@ -1522,6 +1549,7 @@ pw_building_blossoming_preserve = {
 
 	#Increases planet capacity
 	planet_modifier = {
+		# TODO: Don't think this does anything anymore
 		planet_carry_cap_add = 20
 	}
 
@@ -1530,28 +1558,28 @@ pw_building_blossoming_preserve = {
 	}
 
 	#Regular Jobs (total: 5)
-#	#Administrator/CEO (1)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_politician_add = 1
-#		}
-#	}
-#
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_executive_add = 1
-#		}
-#	}
+	# #Administrator/CEO (1)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_gestalt = no"
@@ -1570,7 +1598,7 @@ pw_building_blossoming_preserve = {
 			}
 		}
 		modifier = {
-			job_pw_preserver_add = 4
+			job_pw_preserver_add = 400
 		}
 	}
 
@@ -1586,7 +1614,7 @@ pw_building_blossoming_preserve = {
 			}
 		}
 		modifier = {
-			job_pw_preserver_drone_add = 2
+			job_pw_preserver_drone_add = 200
 		}
 	}
 
@@ -1627,29 +1655,29 @@ pw_building_blossoming_preserve = {
 		}
 	}
 
-#	triggered_desc = {
-#		text = pw_planet_wonder_lb
-#	}
-#
-#	#Administrator
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_politician_effect_desc
-#	}
-#
-#	#CEO
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_executive_effect_desc
-#	}
+	# triggered_desc = {
+	# 	text = pw_planet_wonder_lb
+	# }
+	
+	# #Administrator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# #CEO
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
 	#Preservers
 	triggered_desc = {

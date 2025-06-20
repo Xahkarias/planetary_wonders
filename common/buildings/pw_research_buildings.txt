@@ -1,9 +1,14 @@
 pw_building_particle_supercollider = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_particle_supercollider
@@ -68,12 +73,7 @@ pw_building_particle_supercollider = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -102,12 +102,7 @@ pw_building_particle_supercollider = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -147,9 +142,9 @@ pw_building_particle_supercollider = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 1
-			job_researcher_add = 4
-			job_pw_researcher_particle_supercollider_add = 4
+			job_politician_add = 100 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_particle_supercollider_add = 400
 		}
 	}
 
@@ -161,7 +156,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_particle_supercollider_add = 1
+			job_pw_researcher_particle_supercollider_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -171,7 +166,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_researcher_particle_supercollider_add = 1
+			job_pw_researcher_particle_supercollider_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -181,7 +176,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_researcher_particle_supercollider_add = 1
+			job_pw_researcher_particle_supercollider_add = 100
 		}
 	}
 
@@ -192,8 +187,8 @@ pw_building_particle_supercollider = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_particle_supercollider_add = 4
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_particle_supercollider_add = 400
 		}
 	}
 
@@ -205,7 +200,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_brain_drone_particle_supercollider_add = 1
+			job_pw_brain_drone_particle_supercollider_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -215,7 +210,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_brain_drone_particle_supercollider_add = 1
+			job_pw_brain_drone_particle_supercollider_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -225,7 +220,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_brain_drone_particle_supercollider_add = 1
+			job_pw_brain_drone_particle_supercollider_add = 100
 		}
 	}
 
@@ -236,8 +231,8 @@ pw_building_particle_supercollider = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_particle_supercollider_add = 4
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_particle_supercollider_add = 400
 		}
 	}
 
@@ -249,7 +244,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_calculator_particle_supercollider_add = 1
+			job_pw_calculator_particle_supercollider_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -259,7 +254,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_calculator_particle_supercollider_add = 1
+			job_pw_calculator_particle_supercollider_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -269,7 +264,7 @@ pw_building_particle_supercollider = {
 			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_calculator_particle_supercollider_add = 1
+			job_pw_calculator_particle_supercollider_add = 100
 		}
 	}
 
@@ -291,7 +286,7 @@ pw_building_particle_supercollider = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_physics_research_produces_mult = @pw_building_research_mod
+			planet_jobs_physics_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -413,17 +408,16 @@ pw_building_particle_supercollider = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				num_pops_with_job_tag = {
+					value > 0
+					tags = { research }
+				}
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -461,6 +455,11 @@ pw_building_interdimensional_collider = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	position_priority = 100
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_interdimensional_collider
@@ -517,12 +516,7 @@ pw_building_interdimensional_collider = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -552,12 +546,7 @@ pw_building_interdimensional_collider = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -581,7 +570,7 @@ pw_building_interdimensional_collider = {
 	}
 
 	planet_modifier = {
-		planet_researchers_physics_research_produces_mult = @pw_building_research_upgrade_mod
+		planet_jobs_physics_research_produces_mult = @pw_building_research_upgrade_mod
 	}
 
 	#Reduces district slots without modifier
@@ -601,9 +590,9 @@ pw_building_interdimensional_collider = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 2
-			job_researcher_add = 4
-			job_pw_researcher_particle_supercollider_add = 8
+			job_politician_add = 200 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_particle_supercollider_add = 800
 		}
 	}
 
@@ -614,8 +603,8 @@ pw_building_interdimensional_collider = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_particle_supercollider_add = 10
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_particle_supercollider_add = 1000
 		}
 	}
 
@@ -626,8 +615,8 @@ pw_building_interdimensional_collider = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_particle_supercollider_add = 10
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_particle_supercollider_add = 1000
 		}
 	}
 
@@ -649,7 +638,7 @@ pw_building_interdimensional_collider = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_physics_research_produces_mult = @pw_building_research_mod
+			planet_jobs_physics_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -772,17 +761,12 @@ pw_building_interdimensional_collider = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -817,9 +801,14 @@ pw_building_interdimensional_collider = {
 pw_building_domed_city = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_domed_city
@@ -884,12 +873,7 @@ pw_building_domed_city = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -918,12 +902,7 @@ pw_building_domed_city = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -954,10 +933,10 @@ pw_building_domed_city = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 1
-			job_researcher_add = 4
-			job_pw_researcher_domed_city_add = 4
-			job_pw_domed_city_test_subject_add = 1
+			job_politician_add = 100 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_domed_city_add = 400
+			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
@@ -969,7 +948,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_pw_researcher_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -979,7 +958,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_pw_researcher_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -989,7 +968,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_pw_researcher_domed_city_add = 100
 		}
 	}
 
@@ -1000,9 +979,9 @@ pw_building_domed_city = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_domed_city_add = 4
-			job_pw_domed_city_subject_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_domed_city_add = 400
+			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
@@ -1014,7 +993,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 1
+			job_pw_brain_drone_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1024,7 +1003,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 1
+			job_pw_brain_drone_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1034,7 +1013,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 1
+			job_pw_brain_drone_domed_city_add = 100
 		}
 	}
 
@@ -1045,9 +1024,9 @@ pw_building_domed_city = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_domed_city_add = 4
-			job_pw_domed_city_subject_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_domed_city_add = 400
+			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
@@ -1059,7 +1038,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_pw_calculator_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1069,7 +1048,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_pw_calculator_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1079,7 +1058,7 @@ pw_building_domed_city = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_pw_calculator_domed_city_add = 100
 		}
 	}
 
@@ -1101,7 +1080,7 @@ pw_building_domed_city = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_society_research_produces_mult = @pw_building_research_mod
+			planet_jobs_society_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -1239,17 +1218,12 @@ pw_building_domed_city = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -1283,11 +1257,16 @@ pw_building_domed_city = {
 pw_building_secluded_sector = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	icon = pw_building_domed_city
 	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_domed_city
@@ -1336,12 +1315,7 @@ pw_building_secluded_sector = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1370,12 +1344,7 @@ pw_building_secluded_sector = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1406,10 +1375,10 @@ pw_building_secluded_sector = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 1
-			job_researcher_add = 4
-			job_pw_researcher_domed_city_add = 4
-			job_pw_domed_city_test_subject_add = 1
+			job_politician_add = 100 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_domed_city_add = 400
+			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
@@ -1421,7 +1390,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_pw_researcher_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1431,7 +1400,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_pw_researcher_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1441,7 +1410,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_pw_researcher_domed_city_add = 100
 		}
 	}
 
@@ -1452,9 +1421,9 @@ pw_building_secluded_sector = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_domed_city_add = 4
-			job_pw_domed_city_subject_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_domed_city_add = 400
+			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
@@ -1466,7 +1435,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 1
+			job_pw_brain_drone_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1476,7 +1445,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 1
+			job_pw_brain_drone_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1486,7 +1455,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 1
+			job_pw_brain_drone_domed_city_add = 100
 		}
 	}
 
@@ -1497,9 +1466,9 @@ pw_building_secluded_sector = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_domed_city_add = 4
-			job_pw_domed_city_subject_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_domed_city_add = 400
+			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
@@ -1511,7 +1480,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_pw_calculator_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1521,7 +1490,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_pw_calculator_domed_city_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1531,7 +1500,7 @@ pw_building_secluded_sector = {
 			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_pw_calculator_domed_city_add = 100
 		}
 	}
 
@@ -1553,7 +1522,7 @@ pw_building_secluded_sector = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_society_research_produces_mult = @pw_building_research_mod
+			planet_jobs_society_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -1691,17 +1660,12 @@ pw_building_secluded_sector = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -1738,6 +1702,11 @@ pw_building_psionic_observatory = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	position_priority = 100
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_psionic_observatory
@@ -1794,12 +1763,7 @@ pw_building_psionic_observatory = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1829,12 +1793,7 @@ pw_building_psionic_observatory = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1849,7 +1808,7 @@ pw_building_psionic_observatory = {
 	}
 
 	planet_modifier = {
-		planet_researchers_society_research_produces_mult = @pw_building_research_upgrade_mod
+		planet_jobs_society_research_produces_mult = @pw_building_research_upgrade_mod
 	}
 
 	#Reduces district slots without modifier
@@ -1869,10 +1828,10 @@ pw_building_psionic_observatory = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 2
-			job_researcher_add = 4
-			job_pw_researcher_domed_city_add = 8
-			job_pw_domed_city_test_subject_add = 1
+			job_politician_add = 200 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_domed_city_add = 800
+			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
@@ -1883,9 +1842,9 @@ pw_building_psionic_observatory = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_domed_city_add = 10
-			job_pw_domed_city_subject_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_domed_city_add = 1000
+			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
@@ -1896,9 +1855,9 @@ pw_building_psionic_observatory = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_domed_city_add = 10
-			job_pw_domed_city_subject_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_domed_city_add = 1000
+			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
@@ -1920,7 +1879,7 @@ pw_building_psionic_observatory = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_society_research_produces_mult = @pw_building_research_mod
+			planet_jobs_society_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -2059,17 +2018,12 @@ pw_building_psionic_observatory = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2103,9 +2057,14 @@ pw_building_psionic_observatory = {
 pw_building_abyssal_crater_test_site = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_abyssal_crater_test_site
@@ -2170,12 +2129,7 @@ pw_building_abyssal_crater_test_site = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -2204,12 +2158,7 @@ pw_building_abyssal_crater_test_site = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -2240,9 +2189,9 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 1
-			job_researcher_add = 4
-			job_pw_researcher_abyssal_crater_test_site_add = 4
+			job_politician_add = 100 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
 	}
 
@@ -2254,7 +2203,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2264,7 +2213,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2274,7 +2223,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -2285,8 +2234,8 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_abyssal_crater_test_site_add = 4
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_abyssal_crater_test_site_add = 400
 		}
 	}
 
@@ -2298,7 +2247,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2308,7 +2257,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2318,7 +2267,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -2329,8 +2278,8 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_abyssal_crater_test_site_add = 4
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_abyssal_crater_test_site_add = 400
 		}
 	}
 
@@ -2342,7 +2291,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2352,7 +2301,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2362,7 +2311,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -2384,7 +2333,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
+			planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -2506,17 +2455,12 @@ pw_building_abyssal_crater_test_site = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2550,11 +2494,16 @@ pw_building_abyssal_crater_test_site = {
 pw_building_abyssal_crater_test_site_habitat = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	icon = pw_building_abyssal_crater_test_site
 	show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_abyssal_crater_test_site
@@ -2603,12 +2552,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -2637,12 +2581,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -2674,9 +2613,9 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 1
-			job_researcher_add = 4
-			job_pw_researcher_abyssal_crater_test_site_add = 4
+			job_politician_add = 100 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
 	}
 
@@ -2688,7 +2627,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2698,7 +2637,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2708,7 +2647,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_pw_researcher_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -2719,8 +2658,8 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_abyssal_crater_test_site_add = 4
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_abyssal_crater_test_site_add = 400
 		}
 	}
 
@@ -2732,7 +2671,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2742,7 +2681,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2752,7 +2691,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1
+			job_pw_brain_drone_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -2763,8 +2702,8 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_abyssal_crater_test_site_add = 4
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_abyssal_crater_test_site_add = 400
 		}
 	}
 
@@ -2776,7 +2715,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2786,7 +2725,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -2796,7 +2735,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_pw_calculator_abyssal_crater_test_site_add = 100
 		}
 	}
 
@@ -2818,7 +2757,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
+			planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -2940,17 +2879,12 @@ pw_building_abyssal_crater_test_site_habitat = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -2987,6 +2921,11 @@ pw_building_metal_vivarium = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	position_priority = 100
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_metal_vivarium
@@ -3043,12 +2982,7 @@ pw_building_metal_vivarium = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -3078,12 +3012,7 @@ pw_building_metal_vivarium = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_research
-						has_designation = col_ecu_research
-						has_designation = col_ring_research
-						has_designation = col_habitat_research
-					}
+					has_research_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -3098,7 +3027,7 @@ pw_building_metal_vivarium = {
 	}
 
 	planet_modifier = {
-		planet_researchers_engineering_research_produces_mult = @pw_building_research_upgrade_mod
+		planet_jobs_engineering_research_produces_mult = @pw_building_research_upgrade_mod
 	}
 
 	#Reduces district slots without modifier
@@ -3118,9 +3047,9 @@ pw_building_metal_vivarium = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 2
-			job_researcher_add = 4
-			job_pw_researcher_abyssal_crater_test_site_add = 8
+			job_politician_add = 200 # head researcher
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
+			job_pw_researcher_abyssal_crater_test_site_add = 800
 		}
 	}
 
@@ -3131,8 +3060,8 @@ pw_building_metal_vivarium = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 4
-			job_pw_brain_drone_abyssal_crater_test_site_add = 10
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_brain_drone_abyssal_crater_test_site_add = 1000
 		}
 	}
 
@@ -3143,8 +3072,8 @@ pw_building_metal_vivarium = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 4
-			job_pw_calculator_abyssal_crater_test_site_add = 10
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
+			job_pw_calculator_abyssal_crater_test_site_add = 1000
 		}
 	}
 
@@ -3166,7 +3095,7 @@ pw_building_metal_vivarium = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_researchers_engineering_research_produces_mult = @pw_building_research_mod
+			planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
 		}
 	}
 
@@ -3289,17 +3218,12 @@ pw_building_metal_vivarium = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -3333,9 +3257,14 @@ pw_building_metal_vivarium = {
 pw_building_grand_archive = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		research
+	}
 
 	prerequisites = {
 		pw_tech_materialist_archiving
@@ -3444,7 +3373,7 @@ pw_building_grand_archive = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 6
+			job_pw_grand_archivist_add = 600
 		}
 	}
 
@@ -3453,7 +3382,7 @@ pw_building_grand_archive = {
 			owner = { is_materialist = no }
 		}
 		modifier = {
-			job_researcher_add = 6
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 600 }
 		}
 	}
 
@@ -3477,7 +3406,7 @@ pw_building_grand_archive = {
 			}
 		}
 		modifier = {
-			job_pw_master_archivist_add = 1
+			job_pw_master_archivist_add = 100
 		}
 	}
 
@@ -3579,17 +3508,12 @@ pw_building_grand_archive = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
-				jobs_any_research = yes
+				pw_jobs_any_research = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_designation = col_research
-				has_designation = col_ecu_research
-				has_designation = col_ring_research
-				has_designation = col_habitat_research
-			}
+			has_research_designation = yes
 		}
 		modifier = {
 			factor = value:pw_pop_factor

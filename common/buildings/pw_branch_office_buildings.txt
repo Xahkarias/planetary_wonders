@@ -4,9 +4,14 @@
 pw_building_bloodsports_arena = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_belligerence
@@ -68,7 +73,7 @@ pw_building_bloodsports_arena = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_militarist_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -80,7 +85,7 @@ pw_building_bloodsports_arena = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 1
+			job_entertainer_add = 100
 		}
 	}
 
@@ -93,7 +98,7 @@ pw_building_bloodsports_arena = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 1
+			job_duelist_add = 100
 		}
 	}
 
@@ -105,7 +110,7 @@ pw_building_bloodsports_arena = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = 100
 		}
 	}
 
@@ -144,9 +149,14 @@ pw_building_bloodsports_arena = {
 pw_building_meditation_garden = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_belligerence
@@ -208,32 +218,32 @@ pw_building_meditation_garden = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_pacifist_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
-#	#Bureaucrat
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = no }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 1
-#		}
-#	}
-#
-#	#Priest (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = yes }
-#		}
-#		modifier = {
-#			job_priest_add = 1
-#		}
-#	}
+	# #Bureaucrat
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = no }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100
+	# 	}
+	# }
+	
+	# #Priest (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 100 # priest
+	# 	}
+	# }
 
 	triggered_planet_modifier = {
 		potential = {
@@ -243,7 +253,7 @@ pw_building_meditation_garden = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -288,9 +298,14 @@ pw_building_meditation_garden = {
 pw_building_innovation_hub = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = research
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_philosophy
@@ -353,7 +368,7 @@ pw_building_innovation_hub = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_materialist_attraction_mult = 0.20
-		job_clerk_add = 2
+		job_clerk_add = 200
 	}
 
 	triggered_planet_modifier = {
@@ -364,7 +379,7 @@ pw_building_innovation_hub = {
 			}
 		}
 		modifier = {
-			job_researcher_add = 1
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 100 }
 		}
 	}
 
@@ -403,9 +418,14 @@ pw_building_innovation_hub = {
 pw_building_salvation_shrine = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_philosophy
@@ -466,7 +486,7 @@ pw_building_salvation_shrine = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_spiritualist_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -477,7 +497,7 @@ pw_building_salvation_shrine = {
 			}
 		}
 		modifier = {
-			job_preacher_add = 1
+			job_preacher_add = 100
 		}
 	}
 
@@ -488,12 +508,12 @@ pw_building_salvation_shrine = {
 				has_ethic = ethic_fanatic_spiritualist
 				# This building is a corporate branch (can be built on non-corporate planet).
 				# So planet owner is not megacorp always.
-#				is_megacorp = no
+	# 			is_megacorp = no
 				NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
 		modifier = {
-			job_priest_add = 1
+			job_bureaucrat_add = 100 # priest
 		}
 	}
 
@@ -502,7 +522,7 @@ pw_building_salvation_shrine = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_fanatic_spiritualist
-#				is_megacorp = no
+	# 			is_megacorp = no
 				NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
@@ -518,7 +538,7 @@ pw_building_salvation_shrine = {
 			}
 		}
 		modifier = {
-			job_haruspex_add = 1
+			job_haruspex_add = 100
 		}
 	}
 
@@ -533,36 +553,36 @@ pw_building_salvation_shrine = {
 		text = job_haruspex_effect_desc
 	}
 
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = {
-#				has_ethic = ethic_fanatic_spiritualist
-#				is_megacorp = yes
-#			}
-#		}
-#		modifier = {
-#			job_preacher_add = 1
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_ethic = ethic_fanatic_spiritualist
+	# 			is_megacorp = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_preacher_add = 100
+	# 	}
+	# }
 
 	triggered_desc = {
 		trigger = {
-#			or = {
-#				and = {
+	# 		or = {
+	# 			and = {
 					exists = branch_office_owner
 					branch_office_owner = {
 						has_valid_civic = civic_gospel_of_the_masses
 					}
-#				}
-#				and = {
-#					exists = owner
-#					owner = {
-#						has_ethic = ethic_fanatic_spiritualist
-#						is_megacorp = yes
-#					}
-#				}
-#			}
+	# 			}
+	# 			and = {
+	# 				exists = owner
+	# 				owner = {
+	# 					has_ethic = ethic_fanatic_spiritualist
+	# 					is_megacorp = yes
+	# 				}
+	# 			}
+	# 		}
 		}
 		text = job_preacher_effect_desc
 	}
@@ -602,9 +622,14 @@ pw_building_salvation_shrine = {
 pw_building_exotic_beauty_center = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_diplomacy
@@ -666,8 +691,8 @@ pw_building_exotic_beauty_center = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_xenophile_attraction_mult = 0.20
-		job_clerk_add = 1
-		job_entertainer_add = 1
+		job_clerk_add = 100
+		job_entertainer_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -678,7 +703,7 @@ pw_building_exotic_beauty_center = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -717,9 +742,14 @@ pw_building_exotic_beauty_center = {
 pw_building_national_pride_gallery = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = unity
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_diplomacy
@@ -781,8 +811,8 @@ pw_building_national_pride_gallery = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_xenophobe_attraction_mult = 0.20
-		job_clerk_add = 1
-		job_entertainer_add = 1
+		job_clerk_add = 100
+		job_entertainer_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -793,7 +823,7 @@ pw_building_national_pride_gallery = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 1
+			job_culture_worker_add = 100
 		}
 	}
 
@@ -832,9 +862,14 @@ pw_building_national_pride_gallery = {
 pw_building_aristocracy_tower = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = trade
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_hierarchy
@@ -895,7 +930,7 @@ pw_building_aristocracy_tower = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_authoritarian_attraction_mult = 0.20
-		job_merchant_add = 1
+		job_politician_add = 100 # merchant
 	}
 
 	triggered_planet_modifier = {
@@ -906,7 +941,7 @@ pw_building_aristocracy_tower = {
 			}
 		}
 		modifier = {
-			job_clerk_add = 1
+			job_clerk_add = 100
 		}
 	}
 
@@ -945,9 +980,14 @@ pw_building_aristocracy_tower = {
 pw_building_factory_city = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = manufacturing
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_exploitation_of_hierarchy
@@ -1009,7 +1049,7 @@ pw_building_factory_city = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_egalitarian_attraction_mult = 0.20
-		job_clerk_add = 1
+		job_clerk_add = 100
 	}
 
 	inline_script = {
@@ -1059,9 +1099,14 @@ pw_building_factory_city = {
 pw_building_tax_haven = {
 	base_buildtime = @pw_building_branch_office_buildtime
 	category = trade
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
 	owner_type = corporate
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_criminal_exploitation
@@ -1121,9 +1166,9 @@ pw_building_tax_haven = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		planet_crime_add = 50
-		trade_value_mult = 0.10
-		job_clerk_add = 1
-		job_merchant_add = 1
+		planet_traders_produces_mult = 0.10
+		job_clerk_add = 100
+		job_politician_add = 100 # merchant
 	}
 
 	triggered_desc = {

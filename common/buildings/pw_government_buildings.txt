@@ -1,7 +1,7 @@
 pw_building_galactic_model = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 100
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = government
 	# empire_limit = {
@@ -9,6 +9,11 @@ pw_building_galactic_model = {
 	# 		add = 1
 	# 	}
 	# }
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_galactic_modeling
@@ -68,12 +73,7 @@ pw_building_galactic_model = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -102,12 +102,7 @@ pw_building_galactic_model = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -143,7 +138,7 @@ pw_building_galactic_model = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -155,59 +150,59 @@ pw_building_galactic_model = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_politician_add = 100 # executive
 		}
 	}
 
-#	#Bureaucrat
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = no }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 8
-#		}
-#	}
-#
-#	#Priest (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = yes }
-#		}
-#		modifier = {
-#			job_priest_add = 8
-#		}
-#	}
+	# #Bureaucrat
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = no }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 800
+	# 	}
+	# }
+	
+	# #Priest (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 800 # priest
+	# 	}
+	# }
 
-#	#Bureaucrats from tech
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_spiritualist = no }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-#		}
-#		modifier = {
-#			job_bureaucrat_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	#Priest from tech (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_spiritualist = yes }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-#		}
-#		modifier = {
-#			job_priest_per_pop = @pw_job_per_25_pop
-#		}
-#	}
+	# #Bureaucrats from tech
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# #Priest from tech (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = yes }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop # priest
+	# 	}
+	# }
 
 	inline_script = {
 		script = jobs/pw/job_bureaucrat_per_pop
@@ -222,21 +217,21 @@ pw_building_galactic_model = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
+			job_coordinator_add = 1000
 		}
 	}
 
-#	#Synapse from tech
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_hive_empire = yes }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
-#		}
-#		modifier = {
-#			job_synapse_drone_per_pop = @pw_job_per_25_pop
-#		}
-#	}
+	# #Synapse from tech
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
+	# 	}
+	# 	modifier = {
+	# 		job_synapse_drone_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
 
 	#Machine Jobs
 	triggered_planet_modifier = {
@@ -245,22 +240,22 @@ pw_building_galactic_model = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 8
-			job_evaluator_add = 2
+			job_coordinator_add = 800
+			job_evaluator_add = 200
 		}
 	}
 
-#	#Coordinator from tech
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_machine_empire = yes }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
-#		}
-#		modifier = {
-#			job_coordinator_per_pop = @pw_job_per_25_pop
-#		}
-#	}
+	# #Coordinator from tech
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
+	# 	}
+	# 	modifier = {
+	# 		job_coordinator_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
 
 	#Stability Bonus
 	triggered_planet_modifier = {
@@ -280,8 +275,8 @@ pw_building_galactic_model = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_administrators_produces_mult = 0.10
-			planet_administrators_upkeep_mult = -0.10
+			planet_bureaucrats_produces_mult = 0.10
+			planet_bureaucrats_upkeep_mult = -0.10
 		}
 	}
 
@@ -315,13 +310,13 @@ pw_building_galactic_model = {
 		text = job_executive_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#		}
-#		text = job_bureaucrat_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_regular_empire = yes"
@@ -429,6 +424,11 @@ pw_building_aligned_galactic_model = {
 	can_be_ruined = no
 	category = government
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_hyperreality_modeling
 	}
@@ -476,12 +476,7 @@ pw_building_aligned_galactic_model = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -513,12 +508,7 @@ pw_building_aligned_galactic_model = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_bureau
-						has_designation = col_capital
-						has_designation = col_capital_hive
-						has_designation = col_capital_machine
-					}
+					pw_has_designation_galactic_model = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -555,7 +545,7 @@ pw_building_aligned_galactic_model = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 2
+			job_politician_add = 200
 		}
 	}
 
@@ -567,33 +557,33 @@ pw_building_aligned_galactic_model = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 2
+			job_politician_add = 200 # executive
 		}
 	}
 
-#	#Bureaucrat
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = no }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 10
-#		}
-#	}
-#
-#	#Priest (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#			owner = { is_spiritualist = yes }
-#		}
-#		modifier = {
-#			job_priest_add = 10
-#		}
-#	}
+	# #Bureaucrat
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = no }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 1000
+	# 	}
+	# }
+	
+	# #Priest (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 1000 # priest
+	# 	}
+	# }
 
 	inline_script = {
 		script = jobs/pw/job_bureaucrat_per_pop
@@ -601,31 +591,31 @@ pw_building_aligned_galactic_model = {
 		AMOUNT = @pw_job_per_25_pop
 	}
 
-#	#Bureaucrats from tech
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_spiritualist = no }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-#		}
-#		modifier = {
-#			job_bureaucrat_per_pop = @pw_job_per_25_pop
-#		}
-#	}
-#
-#	#Priest from tech (spiritualist)
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_gestalt = no }
-#			owner = { is_spiritualist = yes }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
-#		}
-#		modifier = {
-#			job_priest_per_pop = @pw_job_per_25_pop
-#		}
-#	}
+	# #Bureaucrats from tech
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
+	
+	# #Priest from tech (spiritualist)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = yes }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop # priest
+	# 	}
+	# }
 
 	#Hive Jobs
 	triggered_planet_modifier = {
@@ -634,22 +624,22 @@ pw_building_aligned_galactic_model = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
-			job_pw_logistics_drone_add = 2
+			job_coordinator_add = 1000
+			job_pw_logistics_drone_add = 200
 		}
 	}
 
-#	#Synapse from tech
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_hive_empire = yes }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
-#		}
-#		modifier = {
-#			job_synapse_drone_per_pop = @pw_job_per_25_pop
-#		}
-#	}
+	# #Synapse from tech
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive }
+	# 	}
+	# 	modifier = {
+	# 		job_synapse_drone_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
 
 	#Machine Jobs
 	triggered_planet_modifier = {
@@ -658,23 +648,23 @@ pw_building_aligned_galactic_model = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 8
-			job_evaluator_add = 2
-			job_pw_logistics_drone_add = 2
+			job_coordinator_add = 800
+			job_evaluator_add = 200
+			job_pw_logistics_drone_add = 200
 		}
 	}
 
-#	#Coordinator from tech
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_machine_empire = yes }
-#			owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
-#		}
-#		modifier = {
-#			job_coordinator_per_pop = @pw_job_per_25_pop
-#		}
-#	}
+	# #Coordinator from tech
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 		owner = { has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine }
+	# 	}
+	# 	modifier = {
+	# 		job_coordinator_per_pop = @pw_job_per_25_pop
+	# 	}
+	# }
 
 	#Stability Bonus
 	triggered_planet_modifier = {
@@ -694,8 +684,8 @@ pw_building_aligned_galactic_model = {
 			owner = { has_edict = pw_wonders_beyond_ambition }
 		}
 		modifier = {
-			planet_administrators_produces_mult = 0.15
-			planet_administrators_upkeep_mult = -0.15
+			planet_bureaucrats_produces_mult = 0.15
+			planet_bureaucrats_upkeep_mult = -0.15
 		}
 	}
 
@@ -729,13 +719,13 @@ pw_building_aligned_galactic_model = {
 		text = job_executive_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_regular_empire = yes }
-#		}
-#		text = job_bureaucrat_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_regular_empire = yes"
@@ -848,7 +838,7 @@ pw_building_aligned_galactic_model = {
 pw_building_panopticon = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = government
 
@@ -858,6 +848,11 @@ pw_building_panopticon = {
 			owner = { has_valid_civic = civic_police_state }
 			add = 2
 		}
+	}
+
+	building_sets = {
+		government
+		urban
 	}
 
 	prerequisites = {
@@ -979,7 +974,7 @@ pw_building_panopticon = {
 			owner = { is_megacorp = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -991,7 +986,7 @@ pw_building_panopticon = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_politician_add = 100 # executive
 		}
 	}
 
@@ -1003,7 +998,7 @@ pw_building_panopticon = {
 			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 5
+			job_enforcer_add = 500
 		}
 	}
 
@@ -1015,7 +1010,7 @@ pw_building_panopticon = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 5
+			job_telepath_add = 500
 		}
 	}
 
@@ -1027,7 +1022,7 @@ pw_building_panopticon = {
 			owner = { has_edict = pw_edict_panspectron }
 		}
 		modifier = {
-			job_pw_big_brother_add = 1
+			job_pw_big_brother_add = 100
 		}
 	}
 
@@ -1038,7 +1033,7 @@ pw_building_panopticon = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 5
+			job_patrol_drone_add = 500
 		}
 	}
 
@@ -1049,7 +1044,7 @@ pw_building_panopticon = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 5
+			job_patrol_drone_add = 500
 		}
 	}
 
@@ -1078,35 +1073,35 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
 		}
 		modifier = {
-			job_culture_worker_add = 2
+			job_culture_worker_add = 200
 		}
 	}
 
-#	#Pacifist
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_spiritualist = no }
-#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
-#		}
-#		modifier = {
-#			job_bureaucrat_add = 2
-#		}
-#	}
-#
-#	#Pacifist & Spiritualist
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_spiritualist = yes }
-#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
-#		}
-#		modifier = {
-#			job_priest_add = 2
-#		}
-#	}
+	# #Pacifist
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200
+	# 	}
+	# }
+	
+	# #Pacifist & Spiritualist
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 		owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200 # priest
+	# 	}
+	# }
 
 	#Militarist
 	triggered_planet_modifier = {
@@ -1116,7 +1111,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
 		}
 		modifier = {
-			job_soldier_add = 2
+			job_soldier_add = 200
 		}
 	}
 
@@ -1126,33 +1121,33 @@ pw_building_panopticon = {
 		OWNER_CONDITION = "is_spiritualist = yes has_technology = pw_tech_panopticon_repentance_preaching"
 		AMOUNT = 2
 	}
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = {
-#				is_spiritualist = yes
-#				has_technology = pw_tech_panopticon_repentance_preaching
-##				is_megacorp = no
-#			}
-#		}
-#		modifier = {
-#			job_priest_add = 2
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			has_technology = pw_tech_panopticon_repentance_preaching
+	#			is_megacorp = no
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200 # priest
+	# 	}
+	# }
 
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = {
-#				is_spiritualist = yes
-#				has_technology = pw_tech_panopticon_repentance_preaching
-#				is_megacorp = yes
-#			}
-#		}
-#		modifier = {
-#			job_preacher_add = 2
-#		}
-#	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			has_technology = pw_tech_panopticon_repentance_preaching
+	# 			is_megacorp = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_preacher_add = 200
+	# 	}
+	# }
 
 	#Materialist
 	triggered_planet_modifier = {
@@ -1162,7 +1157,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
 		}
 		modifier = {
-			job_researcher_add = 1
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 100 }
 		}
 	}
 
@@ -1271,28 +1266,28 @@ pw_building_panopticon = {
 			owner = { is_egalitarian = yes }
 			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
 		}
-		text = job_culture_worker_effect_desc
+		text = job_bureaucrat_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_spiritualist = no }
-#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
-#		}
-#		text = job_bureaucrat_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_pacifist = yes }
-#			owner = { is_spiritualist = yes }
-#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
-#		}
-#		text = job_priest_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_spiritualist = yes }
+	# 		owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+	# 	}
+	# 	text = job_priest_effect_desc
+	# }
 
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
@@ -1319,39 +1314,39 @@ pw_building_panopticon = {
 		    					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
 		    				}"
 	}
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { 
-#				is_spiritualist = yes
-#				has_technology = pw_tech_panopticon_repentance_preaching
-#				# Pacifists-spiritualist can have priest jobs also.
-#				nand = {
-#					is_pacifist = yes
-#					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
-#				}
-##				is_megacorp = no
-#			}
-#		}
-#		text = job_priest_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { 
+	# 			is_spiritualist = yes
+	# 			has_technology = pw_tech_panopticon_repentance_preaching
+	# 			# Pacifists-spiritualist can have priest jobs also.
+	# 			nand = {
+	# 				is_pacifist = yes
+	# 				has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+	# 			}
+	#			is_megacorp = no
+	# 		}
+	# 	}
+	# 	text = job_priest_effect_desc
+	# }
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { 
-#				is_spiritualist = yes
-#				has_technology = pw_tech_panopticon_repentance_preaching
-#				# Pacifists-spiritualist can have priest jobs also.
-#				nand = {
-#					is_pacifist = yes
-#					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
-#				}
-#				is_megacorp = yes
-#			}
-#		}
-#		text = job_preacher_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { 
+	# 			is_spiritualist = yes
+	# 			has_technology = pw_tech_panopticon_repentance_preaching
+	# 			# Pacifists-spiritualist can have priest jobs also.
+	# 			nand = {
+	# 				is_pacifist = yes
+	# 				has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+	# 			}
+	# 			is_megacorp = yes
+	# 		}
+	# 	}
+	# 	text = job_preacher_effect_desc
+	# }
 
 	triggered_desc = {
 		trigger = {
@@ -1431,9 +1426,14 @@ pw_building_panopticon = {
 pw_building_forbidden_city = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = government
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_elitist_urbanism
@@ -1547,7 +1547,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -1559,7 +1559,7 @@ pw_building_forbidden_city = {
 			owner = { is_megacorp = yes }
 		}
 		modifier = {
-			job_executive_add = 1
+			job_politician_add = 100 # executive
 		}
 	}
 
@@ -1574,7 +1574,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -1586,7 +1586,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_aristocratic_elite }
 		}
 		modifier = {
-			job_noble_add = 1
+			job_politician_add = 100 # noble
 		}
 	}
 
@@ -1598,7 +1598,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_technocracy }
 		}
 		modifier = {
-			job_head_researcher_add = 1
+			job_politician_add = 100 # head researcher
 		}
 	}
 
@@ -1610,7 +1610,7 @@ pw_building_forbidden_city = {
 			owner = { has_valid_civic = civic_exalted_priesthood }
 		}
 		modifier = {
-			job_high_priest_add = 1
+			job_politician_add = 100 # high_priest
 		}
 	}
 
@@ -1621,7 +1621,7 @@ pw_building_forbidden_city = {
 			owner = { is_authoritarian = yes }
 		}
 		modifier = {
-			job_clerk_add = 4
+			job_clerk_add = 400
 		}
 	}
 
@@ -1635,7 +1635,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 
@@ -1649,7 +1649,7 @@ pw_building_forbidden_city = {
 			}
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 

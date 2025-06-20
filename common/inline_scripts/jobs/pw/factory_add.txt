@@ -16,8 +16,8 @@ triggered_planet_modifier = {
 		}
 		NOT = { has_modifier = penal_colony }
 	}
-	job_artisan_add = 1
-	mult            = $AMOUNT$
+	job_artisan_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -30,8 +30,8 @@ triggered_planet_modifier = {
 		}
 		has_modifier = penal_colony
 	}
-	job_artisan_prison_worker_add = 1
-	mult          				  = $AMOUNT$
+	job_artisan_prison_worker_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -44,8 +44,8 @@ triggered_planet_modifier = {
 		}
 		NOT = { has_modifier = penal_colony }
 	}
-	job_artificer_add = 1
-	mult         	  = $AMOUNT$
+	job_artificer_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -56,8 +56,8 @@ triggered_planet_modifier = {
 			is_gestalt = yes
 		}
 	}
-	job_artisan_drone_add = 1
-	mult         		  = $AMOUNT$
+	job_artisan_drone_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_planet_modifier = {
@@ -70,6 +70,6 @@ triggered_planet_modifier = {
 		}
 		has_modifier = penal_colony
 	}
-	job_artificer_prison_worker_add = 1
-	mult         				    = $AMOUNT$
+	job_artificer_prison_worker_add = 100
+	mult = $AMOUNT$
 }

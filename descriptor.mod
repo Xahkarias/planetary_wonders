@@ -1,4 +1,4 @@
-version="3.3.2"
+version="3.4.0"
 tags={
 	"Buildings"
 	"Technologies"
@@ -7,5 +7,5 @@ tags={
 }
 name="Planetary Wonders"
 picture="thumbnail.png"
-supported_version="v3.14.*"
+supported_version="v4.0.*"
 remote_file_id="2305790641"

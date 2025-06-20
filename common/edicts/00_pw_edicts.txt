@@ -55,7 +55,7 @@ pw_edict_panspectron = {
 	}
 
 	modifier = {
-		job_enforcer_add = 2
+		job_enforcer_add = 200
 		intel_encryption_add = 1
 		pop_government_ethic_attraction = 0.50
 		pop_cat_worker_political_power = -0.25
@@ -585,7 +585,7 @@ pw_particle_supercollider_subsidies = {
 	}
 
 	modifier = {
-		planet_researchers_physics_research_produces_mult = 0.10
+		planet_jobs_physics_research_produces_mult = 0.10
 		planet_researchers_upkeep_mult = 0.10
 	}
 
@@ -619,7 +619,7 @@ pw_domed_city_subsidies = {
 	}
 
 	modifier = {
-		planet_researchers_society_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
 		planet_researchers_upkeep_mult = 0.10
 	}
 
@@ -653,7 +653,7 @@ pw_abyssal_crater_test_site_subsidies = {
 	}
 
 	modifier = {
-		planet_researchers_engineering_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
 		planet_researchers_upkeep_mult = 0.10
 	}
 

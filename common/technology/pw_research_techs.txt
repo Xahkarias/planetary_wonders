@@ -22,7 +22,7 @@ pw_tech_fallen_empire_experiments_physics = {
 	modifier = {
 		planet_technician_energy_produces_mult = 0.10
 		starbase_constructions_energy_produces_mult = 0.10
-		planet_researchers_physics_research_produces_mult = 0.10
+		planet_jobs_physics_research_produces_mult = 0.10
 	}
 
 	ai_weight = {
@@ -298,51 +298,12 @@ pw_tech_intradimensional_matter_drawing = {
 		country_sr_dark_matter_produces_mult = 0.05
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_field_manipulation
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_intradimensional_matter_drawing }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_field_manipulation
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
+		TECHNOLOGY = pw_tech_intradimensional_matter_drawing
 	}
 }
 
@@ -367,51 +328,12 @@ pw_tech_interdimensional_matter_drawing = {
 		country_sr_dark_matter_produces_mult = 0.05
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_field_manipulation
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_interdimensional_matter_drawing }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_field_manipulation
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_field_manipulation
+		TECHNOLOGY = pw_tech_interdimensional_matter_drawing
 	}
 }
 
@@ -437,51 +359,12 @@ pw_tech_suprareality_survey = {
 		add_base_country_intel = 10
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_computing
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_suprareality_survey }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_computing
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_computing
+		TECHNOLOGY = pw_tech_suprareality_survey
 	}
 }
 
@@ -505,7 +388,7 @@ pw_tech_fallen_empire_experiments_society = {
 
 	modifier = {
 		country_influence_produces_mult = 0.10
-		planet_researchers_society_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
 	}
 
 	ai_weight = {
@@ -814,51 +697,12 @@ pw_tech_zro_refurbishing = {
 		country_sr_zro_produces_mult = 0.05
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_psionics
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_zro_refurbishing }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_psionics
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_psionics
+		TECHNOLOGY = pw_tech_zro_refurbishing
 	}
 }
 
@@ -883,51 +727,12 @@ pw_tech_zro_recycling = {
 		country_sr_zro_produces_mult = 0.05
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_psionics
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_zro_recycling }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_psionics
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_psionics
+		TECHNOLOGY = pw_tech_zro_recycling
 	}
 }
 
@@ -955,40 +760,11 @@ pw_tech_psionic_social_infiltration = {
 
 	weight_modifier = {
 		factor = 0.25
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_psionics
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
+		inline_script = {
+			script = technologies/pw/rare_modifier
+			COUNCIL_TRAIT = leader_trait_expertise_psionics
+			TECHNOLOGY = pw_tech_psionic_social_infiltration
 		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_psionic_social_infiltration }
-			}
-		}
-
 		modifier = {
 			factor = 2
 			has_ascension_perk = ap_mind_over_matter
@@ -1027,7 +803,7 @@ pw_tech_fallen_empire_experiments_engineering = {
 	modifier = {
 		ship_orbital_bombardment_mult = 0.10
 		planet_orbital_bombardment_damage = -0.05
-		planet_researchers_engineering_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
 	}
 
 	ai_weight = {
@@ -1384,51 +1160,12 @@ pw_tech_living_metal_breeding = {
 		country_sr_living_metal_produces_mult = 0.05
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_materials
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_living_metal_breeding }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_materials
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_materials
+		TECHNOLOGY = pw_tech_living_metal_breeding
 	}
 }
 
@@ -1453,51 +1190,12 @@ pw_tech_living_metal_reproduction = {
 		country_sr_living_metal_produces_mult = 0.05
 	}
 
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_materials
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_living_metal_reproduction }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = @pw_tech_ai_weight
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_materials
-			}
-		}
+	inline_script = {
+		script = technologies/pw/enigma_weights
+		BASE_FACTOR = 0.5
+		AI_FACTOR = 1.25
+		COUNCIL_TRAIT = leader_trait_expertise_materials
+		TECHNOLOGY = pw_tech_living_metal_reproduction
 	}
 }
 
@@ -1525,45 +1223,15 @@ pw_tech_living_formation = {
 
 	weight_modifier = {
 		factor = 0.25
-		modifier = {
-			factor = value:tech_weight_likelihood
-			OR = {
-				has_trait_in_council = {
-					TRAIT = leader_trait_expertise_industry
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_curator
-				}
-				has_trait_in_council = {
-					TRAIT = leader_trait_maniacal
-				}
-			}
+		inline_script = {
+			script = technologies/pw/rare_modifier
+			COUNCIL_TRAIT = leader_trait_expertise_industry
+			TECHNOLOGY = pw_tech_living_formation
 		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = pw_tech_living_formation }
-			}
-		}
-
 		modifier = {
 			factor = 2
 			has_ascension_perk = ap_the_flesh_is_weak
 		}
-
 		modifier = {
 			factor = 2
 			is_machine_empire = yes

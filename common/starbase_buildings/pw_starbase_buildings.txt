@@ -36,63 +36,47 @@ pw_offworld_logistics_station = {
 			energy = 3
 			alloys = 1
 		}
+		produces = {
+			trigger = {
+				hidden_trigger = { exists = this }
+				exists = owner
+				owner = { is_galactic_community_member = yes }
+				owner = { is_gestalt = no }
+				OR = {
+					is_active_resolution = resolution_commerce_underdeveloped_system_utilization
+					is_active_resolution = resolution_commerce_holistic_asset_coordination
+					is_active_resolution = resolution_commerce_profit_maximization_engines
+				}
+			}
+			trade = 2
+		}
+		produces = {
+			trigger = {
+				hidden_trigger = { exists = this }
+				exists = owner
+				owner = { is_galactic_community_member = yes }
+				owner = { is_gestalt = no }
+				OR = {
+					is_active_resolution = resolution_commerce_holistic_asset_coordination
+					is_active_resolution = resolution_commerce_profit_maximization_engines
+				}
+			}
+			trade = 2
+		}
+		produces = {
+			trigger = {
+				hidden_trigger = { exists = this }
+				exists = owner
+				owner = { is_galactic_community_member = yes }
+				owner = { is_gestalt = no }
+				is_active_resolution = resolution_commerce_profit_maximization_engines
+			}
+			trade = 2
+		}
 	}
 
 	orbit_modifier = {
 		ship_orbit_upkeep_mult = -0.25
-	}
-
-	#Non-Gestalt Modifiers:
-	triggered_station_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		starbase_trade_collection_range_add = 2
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = { is_galactic_community_member = yes }
-			owner = { is_gestalt = no }
-			OR = {
-				is_active_resolution = resolution_commerce_underdeveloped_system_utilization
-				is_active_resolution = resolution_commerce_holistic_asset_coordination
-				is_active_resolution = resolution_commerce_profit_maximization_engines
-			}
-		}
-
-		trade_value_add = 2
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = { is_galactic_community_member = yes }
-			owner = { is_gestalt = no }
-			OR = {
-				is_active_resolution = resolution_commerce_holistic_asset_coordination
-				is_active_resolution = resolution_commerce_profit_maximization_engines
-			}
-		}
-
-		trade_value_add = 2
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = { is_galactic_community_member = yes }
-			owner = { is_gestalt = no }
-			is_active_resolution = resolution_commerce_profit_maximization_engines
-		}
-
-		trade_value_add = 2
 	}
 
 	#Gestalt Modifiers:
@@ -154,7 +138,7 @@ pw_station_skyhook = {
 	}
 
 	system_modifier = {
-		pop_growth_from_immigration = 0.10
+		planet_resettlement_unemployed_mult = 0.10
 	}
 
 	station_modifier = {
@@ -205,7 +189,7 @@ pw_sentinel_command_center = {
 	}
 
 	system_modifier = {
-		pop_defense_armies_add = 2
+		planet_defense_armies_add = 2
 	}
 
 	station_modifier = {

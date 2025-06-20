@@ -14,9 +14,8 @@ triggered_planet_modifier = {
 			is_megacorp = no
 		}
 	}
-	modifier = {
-		job_culture_worker_add = $AMOUNT$
-	}
+	job_culture_worker_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_desc = {
@@ -27,7 +26,7 @@ triggered_desc = {
 			is_megacorp = no
 		}
 	}
-	text = job_culture_worker_effect_desc
+	text = job_bureaucrat_effect_desc
 }
 
 #Manager
@@ -40,9 +39,8 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = no
 		}
 	}
-	modifier = {
-		job_manager_add = $AMOUNT$
-	}
+	job_manager_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_desc = {
@@ -66,7 +64,8 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = yes
 		}
 	}
-	job_steward_add = $AMOUNT$
+	job_steward_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_desc = {

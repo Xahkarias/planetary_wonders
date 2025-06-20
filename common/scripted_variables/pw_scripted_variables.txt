@@ -1,3 +1,8 @@
+# Compatability
+
+# Let other mods know that this mod is active without the need for a trigger
+@has_planetary_wonders = 1
+
 # Techs
 
 #Regular Tech Cost
@@ -94,7 +99,7 @@
 #Production
 @pw_job_director_resource_base = 4
 @pw_job_director_resource_upkeep = 6
-@pw_job_director_resource_amenities = 2
+@pw_job_director_resource_amenities = 40
 @pw_job_director_resource_mult = 0.25
 
 
@@ -231,3 +236,11 @@
 @pw_cu_integration_mineral_cost = 1500
 @pw_cu_integration_resource_cost = 1000
 @pw_cu_integration_rare_cost = 250
+
+# Casualties for events, pop_amount value
+@pw_event_casualty_1 = 10
+@pw_event_casualty_2 = 20
+@pw_event_casualty_3 = 30
+@pw_event_casualty_4 = 40
+
+

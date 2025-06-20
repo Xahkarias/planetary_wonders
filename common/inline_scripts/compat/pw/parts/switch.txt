@@ -1,0 +1,6 @@
+# Dear Irony please fallback to simple parser
+# Inny78's code toggle approach
+inline_script = {
+	script = $file$$value$
+	$params$
+}

@@ -213,23 +213,30 @@ pw_has_build_any_planetary_wonder = {
 	}
 }
 
+
+# Scope: Country/Sector
+# Check that the wonder (building) does not exist on any planet other than root
+pw_wonder_unique_elsewhere = {
+	# count_owned_planet with count=all doesn't behave as expected
+	# all(x) = not any (not x)
+	NOT = { 
+		any_owned_planet = {
+			NOT = { is_planet = root }
+			OR = {
+				has_building = $WONDER$
+				has_building_construction = $WONDER$
+			}
+		}
+	}
+}
+
+
 # Scope: Planet
 pw_is_wonder_empire_unique = {
 	custom_tooltip = {
 		fail_text = pw_empire_unique_tooltip
 		owner = {
-			count_owned_planet = {
-				count = all #Every owned planet
-				limit = {
-					OR = {
-						is_planet = root #Ignores the triggering planet so it does not mess up upgrades.
-						NOR = { #Cannot have or be constructing this wonder
-							has_building = $WONDER$
-							has_building_construction = $WONDER$
-						}
-					}
-				}
-			}
+			pw_wonder_unique_elsewhere = { WONDER = $WONDER$ } 
 		}
 	}
 }
@@ -239,18 +246,7 @@ pw_is_wonder_sector_unique = {
 	custom_tooltip = {
 		fail_text = pw_sector_unique_tooltip
 		sector = {
-			count_owned_planet = {
-				count = all #Every owned planet
-				limit = {
-					OR = {
-						is_planet = root #Ignores the triggering planet so it does not mess up upgrades.
-						NOR = { #Cannot have or be constructing this wonder
-							has_building = $WONDER$
-							has_building_construction = $WONDER$
-						}
-					}
-				}
-			}
+			pw_wonder_unique_elsewhere = { WONDER = $WONDER$ } 
 		}
 	}
 }
@@ -727,5 +723,106 @@ pw_has_any_unique_branch_office_building = {
 			# has_building = pw_building_tax_haven
 			# has_building_construction = pw_building_tax_haven
 		}
+	}
+}
+
+# Some custom had_designation sets
+
+#Scope: Planet
+# Check if the planet is suitable for a Galactic Model
+pw_has_designation_galactic_model = {
+	OR = {
+		has_designation = col_bureau
+		has_designation = col_capital
+		has_designation = col_capital_hive
+		has_designation = col_capital_machine
+	}
+}
+
+#Scope: Planet
+pw_has_designation_space_elevator = {
+	OR = {
+		has_designation = col_capital
+		has_designation = col_capital_hive
+		has_designation = col_capital_machine
+		has_designation = col_city
+		has_designation = col_hive
+		has_designation = col_nexus
+		has_designation = col_ring_trade
+		has_designation = col_habitat_trade
+		has_designation = col_ecu_mix
+		has_designation = col_resort
+	}
+}
+
+#Scope: Planet
+pw_has_designation_SE_bonus = {
+	OR = {
+		has_designation = col_city
+		has_designation = col_nexus
+		has_designation = col_hive
+		has_designation = col_capital
+		has_designation = col_capital_hive
+		has_designation = col_capital_machine
+	}
+}
+
+
+#Scope: Planet
+pw_has_designation_dept_xeno = {
+	OR = {
+		has_designation = col_capital
+		has_designation = col_city
+		has_designation = col_ring_trade
+		has_designation = col_habitat_trade
+		has_designation = col_ecu_mix
+	}
+}
+
+#Scope: Planet
+pw_has_designation_fair_of_worlds = {
+	OR = {
+		has_designation = col_resort
+		has_designation = col_habitat_bureau
+		has_designation = col_habitat_bureau_hive
+		has_designation = col_habitat_bureau_machine
+		has_designation = col_habitat_bureau_spiritualist
+	}
+}
+
+#Scope: Planet
+pw_has_designation_museum_of_the_grotesque = {
+	OR = {
+		has_designation = col_resort
+		has_designation = col_habitat_bureau
+		has_designation = col_habitat_bureau_hive
+		has_designation = col_habitat_bureau_machine
+		has_designation = col_habitat_bureau_spiritualist
+	}
+}
+
+#Scope: Planet
+pw_has_designation_mantle_crucible_check = {
+	OR = {
+		has_designation = col_foundry
+		has_designation = col_ecu_foundry
+		and = {
+			has_designation = col_mac_foundry
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				country_uses_consumer_goods = yes
+			}
+		}
+	}
+}
+
+# Merger Replacement. Just in Case
+
+#Scope: Planet
+pw_jobs_any_research = {
+	num_pops_with_job_tag = {
+		value > 0
+		tags = { research }
 	}
 }

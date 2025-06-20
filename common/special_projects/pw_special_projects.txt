@@ -315,7 +315,7 @@ special_project = {
 				modifier = {
 					factor = 2
 					leader = {
-						has_level < 3
+						has_total_skill < 3
 					}
 				}
 				modifier = {
@@ -330,7 +330,7 @@ special_project = {
 				# modifier = {
 				# 	factor = 2
 				# 	leader = {
-				# 		has_level > 6
+				# 		has_total_skill > 6
 				# 	}
 				# }
 				# modifier = {

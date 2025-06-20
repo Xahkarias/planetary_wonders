@@ -1,8 +1,15 @@
 pw_researcher_particle_supercollider = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = pw_building_particle_supercollider
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = pw_building_particle_supercollider
+			# clothes_texture_index = 3
+			icon = pw_researcher_particle_supercollider
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -29,6 +36,7 @@ pw_researcher_particle_supercollider = {
 
 	weight = {
 		weight = @specialist_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_researcher_particle_supercollider|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -67,10 +75,10 @@ pw_researcher_particle_supercollider = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_researcher_particle_supercollider
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = pw_researcher_particle_supercollider
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
@@ -119,9 +127,16 @@ pw_researcher_particle_supercollider = {
 
 pw_researcher_domed_city = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = pw_building_domed_city
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = pw_building_domed_city
+			# clothes_texture_index = 3
+			icon = pw_researcher_domed_city
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -147,6 +162,7 @@ pw_researcher_domed_city = {
 
 	weight = {
 		weight = @specialist_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_researcher_domed_city|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -185,10 +201,10 @@ pw_researcher_domed_city = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_researcher_domed_city
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = pw_researcher_domed_city
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic
@@ -237,9 +253,16 @@ pw_researcher_domed_city = {
 
 pw_researcher_abyssal_crater_test_site = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = pw_building_abyssal_crater_test_site
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = pw_building_abyssal_crater_test_site
+			# clothes_texture_index = 3
+			icon = pw_researcher_abyssal_crater_test_site
+		}
+	}
+	
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -266,6 +289,7 @@ pw_researcher_abyssal_crater_test_site = {
 
 	weight = {
 		weight = @specialist_job_weight
+		mult = value:job_weights_research_modifier|JOB|pw_researcher_abyssal_crater_test_site|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -304,10 +328,10 @@ pw_researcher_abyssal_crater_test_site = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
 		}
-		modifier = {
-			factor = 1.5
-			has_job = pw_researcher_abyssal_crater_test_site
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = pw_researcher_abyssal_crater_test_site
+		# }
 		modifier = {
 			factor = 1.5
 			has_trait = trait_latent_psionic

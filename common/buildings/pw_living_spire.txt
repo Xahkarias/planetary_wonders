@@ -5,8 +5,14 @@ pw_building_living_spire_0 = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -169,6 +175,12 @@ pw_building_living_spire_1 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -288,8 +300,8 @@ pw_building_living_spire_1 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 5
-			job_clerk_add = 2
+			planet_housing_add = 500
+			job_clerk_add = 200
 		}
 	}
 	#Habitat
@@ -298,8 +310,8 @@ pw_building_living_spire_1 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 4
-			job_clerk_add = 2
+			planet_housing_add = 400
+			job_clerk_add = 200
 		}
 	}
 	#Ecu
@@ -308,8 +320,8 @@ pw_building_living_spire_1 = {
 			merg_is_arcology = yes
 		}
 		modifier = {
-			planet_housing_add = 10
-			job_clerk_add = 4
+			planet_housing_add = 1000
+			job_clerk_add = 400
 		}
 	}
 	#Ring World
@@ -318,8 +330,8 @@ pw_building_living_spire_1 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 20
-			job_clerk_add = 8
+			planet_housing_add = 2000
+			job_clerk_add = 800
 		}
 	}
 	#	#Administrator
@@ -329,10 +341,10 @@ pw_building_living_spire_1 = {
 	#			owner = { is_megacorp = no }
 	#		}
 	#		modifier = {
-	#			job_politician_add = 1
+	#			job_politician_add = 100
 	#		}
 	#	}
-	#
+		
 	#	#Executive
 	#	triggered_planet_modifier = {
 	#		potential = {
@@ -340,7 +352,7 @@ pw_building_living_spire_1 = {
 	#			owner = { is_megacorp = yes }
 	#		}
 	#		modifier = {
-	#			job_executive_add = 1
+	#			job_politician_add = 100 # executive
 	#		}
 	#	}
 	triggered_desc = {
@@ -371,7 +383,7 @@ pw_building_living_spire_1 = {
 			}
 		}
 		modifier = {
-			job_healthcare_add = 1
+			job_healthcare_add = 100
 		}
 	}
 	#Roboticist
@@ -388,7 +400,7 @@ pw_building_living_spire_1 = {
 			}
 		}
 		modifier = {
-			job_roboticist_add = 1
+			job_roboticist_add = 100
 		}
 	}
 	#Spa Attendants (1) (only mutagenic spas)
@@ -410,7 +422,7 @@ pw_building_living_spire_1 = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -424,7 +436,7 @@ pw_building_living_spire_1 = {
 			}
 		}
 		modifier = {
-			job_augmentor_add = 1
+			job_augmentor_add = 100
 		}
 	}
 	#Stability from ambition
@@ -613,6 +625,12 @@ pw_building_living_spire_2 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -733,8 +751,8 @@ pw_building_living_spire_2 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 10
-			job_clerk_add = 4
+			planet_housing_add = 1000
+			job_clerk_add = 400
 		}
 	}
 	#Habitat
@@ -743,8 +761,8 @@ pw_building_living_spire_2 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 8
-			job_clerk_add = 2
+			planet_housing_add = 800
+			job_clerk_add = 200
 		}
 	}
 	#Ecu
@@ -753,8 +771,8 @@ pw_building_living_spire_2 = {
 			merg_is_arcology = yes
 		}
 		modifier = {
-			planet_housing_add = 20
-			job_clerk_add = 8
+			planet_housing_add = 2000
+			job_clerk_add = 800
 		}
 	}
 	#Ring World
@@ -763,8 +781,8 @@ pw_building_living_spire_2 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 30
-			job_clerk_add = 12
+			planet_housing_add = 3000
+			job_clerk_add = 1200
 		}
 	}
 	#	#Administrator
@@ -774,10 +792,10 @@ pw_building_living_spire_2 = {
 	#			owner = { is_megacorp = no }
 	#		}
 	#		modifier = {
-	#			job_politician_add = 1
+	#			job_politician_add = 100
 	#		}
 	#	}
-	#
+		
 	#	#Executive/Manager
 	#	triggered_planet_modifier = {
 	#		potential = {
@@ -785,7 +803,7 @@ pw_building_living_spire_2 = {
 	#			owner = { is_megacorp = yes }
 	#		}
 	#		modifier = {
-	#			job_executive_add = 1
+	#			job_politician_add = 100 # executive
 	#		}
 	#	}
 	triggered_desc = {
@@ -806,7 +824,7 @@ pw_building_living_spire_2 = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_politician_add = 100 # merchant
 		}
 	}
 	#Medical Worker (No Ascension Path)
@@ -830,7 +848,7 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_healthcare_add = 1
+	# 		job_healthcare_add = 100
 	# 	}
 	# }
 	# #Spa Attendants (only mutagenic spas) (No Ascension Path)
@@ -857,7 +875,7 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_bath_attendant_add = 1
+	# 		job_bath_attendant_add = 100
 	# 	}
 	# }
 	# #Mind over matter/The flesh is weak
@@ -872,8 +890,8 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_healthcare_add = 1
-	# 		pop_growth_speed = 0.1
+	# 		job_healthcare_add = 100
+	# 		bonus_pop_growth_mult = 0.1
 	# 	}
 	# }
 	# #Engineered Evolution
@@ -885,8 +903,8 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_healthcare_add = 1
-	# 		planet_pop_assembly_organic_add = 3
+	# 		job_healthcare_add = 100
+	# 		bonus_pop_growth = 3
 	# 	}
 	# }
 	# #Synthetic Evolution
@@ -898,7 +916,7 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_roboticist_add = 1
+	# 		job_roboticist_add = 100
 	# 		planet_pop_assembly_mult = 0.1
 	# 	}
 	# }
@@ -916,7 +934,7 @@ pw_building_living_spire_2 = {
 			}
 		}
 		modifier = {
-			job_enforcer_add = 1
+			job_enforcer_add = 100
 		}
 	}
 	#Telepath
@@ -931,7 +949,7 @@ pw_building_living_spire_2 = {
 			}
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 	#Entertainer
@@ -944,7 +962,7 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_entertainer_add = 2
+	# 		job_entertainer_add = 200
 	# 	}
 	# }
 	# #Duelist
@@ -957,7 +975,7 @@ pw_building_living_spire_2 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_duelist_add = 2
+	# 		job_duelist_add = 200
 	# 	}
 	# }
 	#Stability from ambition
@@ -1160,6 +1178,12 @@ pw_building_living_spire_3 = {
 	category = amenity
 	can_be_ruined = no
 	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_living_spire
 	}
@@ -1283,8 +1307,8 @@ pw_building_living_spire_3 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 15
-			job_clerk_add = 10
+			planet_housing_add = 1500
+			job_clerk_add = 1000
 		}
 	}
 	#Habitat
@@ -1293,8 +1317,8 @@ pw_building_living_spire_3 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 10
-			job_clerk_add = 5
+			planet_housing_add = 1000
+			job_clerk_add = 500
 		}
 	}
 	#Ecu
@@ -1303,8 +1327,8 @@ pw_building_living_spire_3 = {
 			merg_is_arcology = yes
 		}
 		modifier = {
-			planet_housing_add = 30
-			job_clerk_add = 15
+			planet_housing_add = 3000
+			job_clerk_add = 1500
 		}
 	}
 	#Ring World
@@ -1313,8 +1337,8 @@ pw_building_living_spire_3 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 40
-			job_clerk_add = 20
+			planet_housing_add = 4000
+			job_clerk_add = 2000
 		}
 	}
 	#	#Administrator
@@ -1324,10 +1348,10 @@ pw_building_living_spire_3 = {
 	#			owner = { is_megacorp = no }
 	#		}
 	#		modifier = {
-	#			job_politician_add = 2
+	#			job_politician_add = 200
 	#		}
 	#	}
-	#
+		
 	#	#Executive/Manager
 	#	triggered_planet_modifier = {
 	#		potential = {
@@ -1335,7 +1359,7 @@ pw_building_living_spire_3 = {
 	#			owner = { is_megacorp = yes }
 	#		}
 	#		modifier = {
-	#			job_executive_add = 2
+	#			job_politician_add = 200 # executive
 	#		}
 	#	}
 	triggered_desc = {
@@ -1356,7 +1380,7 @@ pw_building_living_spire_3 = {
 			}
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_politician_add = 100 # merchant
 		}
 	}
 	#Medical Worker (No Ascension Path)
@@ -1372,7 +1396,7 @@ pw_building_living_spire_3 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_healthcare_add = 2
+	# 		job_healthcare_add = 200
 	# 	}
 	# }
 	# #Spa Attendants (only mutagenic spas) (No Ascension Path)
@@ -1389,7 +1413,7 @@ pw_building_living_spire_3 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_bath_attendant_add = 2
+	# 		job_bath_attendant_add = 200
 	# 	}
 	# }
 	# #Mind over matter/The flesh is weak
@@ -1404,8 +1428,8 @@ pw_building_living_spire_3 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_healthcare_add = 1
-	# 		pop_growth_speed = 0.20
+	# 		job_healthcare_add = 100
+	# 		bonus_pop_growth_mult = 0.20
 	# 	}
 	# }
 	# #Engineered Evolution
@@ -1415,8 +1439,8 @@ pw_building_living_spire_3 = {
 	# 		owner = { has_ascension_perk = ap_engineered_evolution }
 	# 	}
 	# 	modifier = {
-	# 		job_healthcare_add = 1
-	# 		planet_pop_assembly_organic_add = 5
+	# 		job_healthcare_add = 100
+	# 		bonus_pop_growth = 5
 	# 	}
 	# }
 	# #Synthetic Evolution
@@ -1426,7 +1450,7 @@ pw_building_living_spire_3 = {
 	# 		owner = { has_ascension_perk = ap_synthetic_evolution }
 	# 	}
 	# 	modifier = {
-	# 		job_roboticist_add = 1
+	# 		job_roboticist_add = 100
 	# 		planet_pop_assembly_mult = 0.15
 	# 	}
 	# }
@@ -1444,7 +1468,7 @@ pw_building_living_spire_3 = {
 			}
 		}
 		modifier = {
-			job_enforcer_add = 2
+			job_enforcer_add = 200
 		}
 	}
 	#Telepath
@@ -1459,7 +1483,7 @@ pw_building_living_spire_3 = {
 			}
 		}
 		modifier = {
-			job_telepath_add = 2
+			job_telepath_add = 200
 		}
 	}
 	#Entertainer
@@ -1472,7 +1496,7 @@ pw_building_living_spire_3 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_entertainer_add = 3
+	# 		job_entertainer_add = 300
 	# 	}
 	# }
 	# #Duelist
@@ -1485,7 +1509,7 @@ pw_building_living_spire_3 = {
 	# 		}
 	# 	}
 	# 	modifier = {
-	# 		job_duelist_add = 3
+	# 		job_duelist_add = 300
 	# 	}
 	# }
 	#Stability from ambition

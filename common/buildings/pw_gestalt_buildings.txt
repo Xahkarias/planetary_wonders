@@ -5,8 +5,13 @@ pw_building_conduit_of_unity_0 = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_conduit_of_unity
@@ -158,6 +163,11 @@ pw_building_conduit_of_unity_1 = {
 	can_be_ruined = no
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+	}
+
 	prerequisites = {
 		pw_tech_conduit_of_unity
 	}
@@ -264,8 +274,8 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 8
-			job_maintenance_drone_add = 5
+			planet_housing_add = 800
+			job_maintenance_drone_add = 500
 		}
 	}
 
@@ -275,8 +285,8 @@ pw_building_conduit_of_unity_1 = {
 			merg_is_habitat = yes
 		}
 		modifier = {
-			planet_housing_add = 6
-			job_maintenance_drone_add = 3
+			planet_housing_add = 600
+			job_maintenance_drone_add = 300
 		}
 	}
 
@@ -289,8 +299,8 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 16
-			job_maintenance_drone_add = 10
+			planet_housing_add = 1600
+			job_maintenance_drone_add = 1000
 		}
 	}
 
@@ -300,8 +310,8 @@ pw_building_conduit_of_unity_1 = {
 			merg_is_hab_ringworld = yes
 		}
 		modifier = {
-			planet_housing_add = 24
-			job_maintenance_drone_add = 15
+			planet_housing_add = 2400
+			job_maintenance_drone_add = 1500
 		}
 	}
 
@@ -313,7 +323,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_patrol_drone_add = 2
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -325,7 +335,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_coordinator_add = 2
+			job_coordinator_add = 200
 		}
 	}
 
@@ -338,7 +348,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_replicator_add = 1
+			job_replicator_add = 100
 		}
 	}
 
@@ -351,7 +361,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_machine_add = 1
+			job_bath_attendant_machine_add = 100
 		}
 	}
 
@@ -365,7 +375,7 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_replicator_add = 1
+			job_replicator_add = 100
 		}
 	}
 
@@ -377,7 +387,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 2
+			job_coordinator_add = 200
 		}
 	}
 
@@ -390,7 +400,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -403,7 +413,7 @@ pw_building_conduit_of_unity_1 = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_hive_add = 1
+			job_bath_attendant_hive_add = 100
 		}
 	}
 
@@ -420,7 +430,7 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -438,8 +448,8 @@ pw_building_conduit_of_unity_1 = {
 			exists = owner
 		}
 		modifier = {
-#			job_cyber_drone_add = 1
-			job_augmentor_drone_add = 1
+	# 		job_cyber_drone_add = 100
+			job_augmentor_drone_add = 100
 		}
 	}
 
@@ -583,9 +593,14 @@ pw_building_conduit_of_unity_1 = {
 pw_building_enigma_engine = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 95
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = research
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_metaphysical_singularity
@@ -712,7 +727,7 @@ pw_building_enigma_engine = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_pw_enigma_decipher_add = 5
+			job_pw_enigma_decipher_add = 500
 			job_pw_enigma_decipher_per_pop = @pw_job_per_25_pop
 		}
 	}
@@ -803,9 +818,14 @@ pw_building_enigma_engine = {
 pw_building_solipsist_debate_hall = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 85
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = unity
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_metacognition_dialectics
@@ -944,10 +964,12 @@ pw_building_solipsist_debate_hall = {
 			job_warrior_drone_per_pop = @pw_job_per_50_pop
 
 			#Complex
-			job_brain_drone_per_pop = @pw_job_per_50_pop
+			job_calculator_physicist_per_pop = @pw_job_per_50_pop
+			job_calculator_biologist_per_pop = @pw_job_per_50_pop
+			job_calculator_engineer_per_pop = @pw_job_per_50_pop
 			job_synapse_drone_per_pop = @pw_job_per_50_pop
 			job_patrol_drone_per_pop = @pw_job_per_100_pop
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -965,7 +987,7 @@ pw_building_solipsist_debate_hall = {
 			#Complex
 			job_patrol_drone_per_pop = @pw_job_per_50_pop
 			job_synapse_drone_per_pop = @pw_job_per_50_pop
-			job_spawning_drone_add = 1
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -978,7 +1000,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_hive_add = 1
+			job_bath_attendant_hive_add = 100
 		}
 	}
 
@@ -1015,7 +1037,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = 1
+			job_coordinator_add = 100
 		}
 	}
 	triggered_country_modifier = {
@@ -1039,7 +1061,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_brain_drone_add = 1
+			inline_script = { script = jobs/pw/calculator_add AMOUNT = 100 }
 		}
 	}
 	triggered_planet_modifier = {
@@ -1075,7 +1097,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			pop_defense_armies_add = 2
+			planet_defense_armies_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -1087,7 +1109,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			planet_administrators_produces_mult = 0.10
+			planet_bureaucrats_produces_mult = 0.10
 		}
 	}
 	triggered_planet_modifier = {
@@ -1111,7 +1133,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1147,7 +1169,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_chronicle_drone_add = 1
+			job_chronicle_drone_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1159,7 +1181,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_catalytic_drone_add = 1
+			job_catalytic_drone_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -1183,7 +1205,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			pop_growth_speed = 0.05
+			bonus_pop_growth_mult = 0.05
 		}
 	}
 	triggered_planet_modifier = {
@@ -1317,9 +1339,14 @@ pw_building_solipsist_debate_hall = {
 pw_building_feasting_grounds = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 65
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = army
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_planetary_banquets
@@ -1451,11 +1478,11 @@ pw_building_feasting_grounds = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_add = 2
-			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 200
+			job_warrior_drone_add = 200
 
 			#Complex
-			job_pw_banquet_steward_drone_add = 4
+			job_pw_banquet_steward_drone_add = 400
 		}
 	}
 
@@ -1468,11 +1495,11 @@ pw_building_feasting_grounds = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_add = 2
-			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 200
+			job_warrior_drone_add = 200
 
 			#Complex
-			job_patrol_drone_add = 2
+			job_patrol_drone_add = 200
 		}
 	}
 

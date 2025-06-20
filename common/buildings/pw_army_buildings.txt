@@ -2,8 +2,13 @@ pw_building_guardian_angel = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 50
 	planetary_ftl_inhibitor = yes
-	base_cap_amount = 1
+	planet_limit = 1
 	category = army
+
+	building_sets = {
+		government
+		fortress
+	}
 
 	prerequisites = {
 		pw_tech_guardian_angel
@@ -59,10 +64,7 @@ pw_building_guardian_angel = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -91,10 +93,7 @@ pw_building_guardian_angel = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -138,7 +137,7 @@ pw_building_guardian_angel = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 4
+			job_soldier_add = 400
 		}
 	}
 
@@ -150,7 +149,7 @@ pw_building_guardian_angel = {
 			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = 100
 		}
 	}
 
@@ -161,7 +160,7 @@ pw_building_guardian_angel = {
 			owner = { has_valid_civic = civic_reanimated_armies }
 		}
 		modifier = {
-			job_necromancer_add = 1
+			job_necromancer_add = 100
 		}
 	}
 
@@ -173,7 +172,7 @@ pw_building_guardian_angel = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 2
+			job_enforcer_add = 200
 		}
 	}
 
@@ -184,7 +183,7 @@ pw_building_guardian_angel = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 1
+			job_telepath_add = 100
 		}
 	}
 
@@ -195,8 +194,8 @@ pw_building_guardian_angel = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 5
-			job_patrol_drone_add = 2
+			job_warrior_drone_add = 500
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -354,6 +353,11 @@ pw_building_stellar_sentinel = {
 	can_build = no #Only upgrades
 	category = army
 
+	building_sets = {
+		government
+		fortress
+	}
+
 	prerequisites = {
 		pw_tech_stellar_sentinel
 	}
@@ -403,10 +407,7 @@ pw_building_stellar_sentinel = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -435,10 +436,7 @@ pw_building_stellar_sentinel = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_fortress
-						has_designation = col_habitat_fortress
-					}
+					has_fortress_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -486,7 +484,7 @@ pw_building_stellar_sentinel = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 5
+			job_soldier_add = 500
 		}
 	}
 
@@ -498,7 +496,7 @@ pw_building_stellar_sentinel = {
 			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
 		}
 		modifier = {
-			job_soldier_add = 2
+			job_soldier_add = 200
 		}
 	}
 
@@ -509,7 +507,7 @@ pw_building_stellar_sentinel = {
 			owner = { has_valid_civic = civic_reanimated_armies }
 		}
 		modifier = {
-			job_necromancer_add = 2
+			job_necromancer_add = 200
 		}
 	}
 
@@ -521,7 +519,7 @@ pw_building_stellar_sentinel = {
 			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
 		}
 		modifier = {
-			job_enforcer_add = 2
+			job_enforcer_add = 200
 		}
 	}
 
@@ -532,7 +530,7 @@ pw_building_stellar_sentinel = {
 			owner = { has_active_tradition = tr_psionics_psi_corps }
 		}
 		modifier = {
-			job_telepath_add = 2
+			job_telepath_add = 200
 		}
 	}
 
@@ -543,8 +541,8 @@ pw_building_stellar_sentinel = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 7
-			job_patrol_drone_add = 2
+			job_warrior_drone_add = 700
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -704,8 +702,13 @@ pw_building_martial_avenue = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 75
 	category = army
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		fortress
+	}
 
 	prerequisites = {
 		pw_tech_parades_of_supremacy
@@ -830,31 +833,31 @@ pw_building_martial_avenue = {
 	#Reminder: Cannot be Gestalt and must be pacifist!
 	# 7 Jobs added in total (With more from festivities)
 
-#	#Administrator/Culture workers
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_militarist = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		modifier = {
-#			job_politician_add = 1
-#			job_culture_worker_add = 2
-#		}
-#	}
-#
-#	#Executive/Manager
-#	triggered_planet_modifier = {
-#		potential = {
-#			exists = owner
-#			owner = { is_militarist = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		modifier = {
-#			job_executive_add = 1
-#			job_manager_add = 2
-#		}
-#	}
+	# #Administrator/Culture workers
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+	
+	# #Executive/Manager
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 		job_manager_add = 200
+	# 	}
+	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_militarist = yes"
@@ -877,7 +880,7 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 2
+			job_entertainer_add = 200
 		}
 	}
 
@@ -891,7 +894,7 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 2
+			job_duelist_add = 200
 		}
 	}
 
@@ -905,7 +908,7 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 2
+			job_soldier_add = 200
 		}
 	}
 
@@ -919,8 +922,8 @@ pw_building_martial_avenue = {
 			}
 		}
 		modifier = {
-			job_soldier_add = 1
-			job_necromancer_add = 1
+			job_soldier_add = 100
+			job_necromancer_add = 100
 		}
 	}
 
@@ -946,31 +949,31 @@ pw_building_martial_avenue = {
 		}
 	}
 
-#	triggered_desc = {
-#		text = pw_planet_wonder_lb
-#	}
-#
-#	triggered_desc = {
-#		text = pw_martial_avenue_tooltip
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_militarist = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_politician_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_militarist = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_executive_effect_desc
-#	}
+	# triggered_desc = {
+	# 	text = pw_planet_wonder_lb
+	# }
+	
+	# triggered_desc = {
+	# 	text = pw_martial_avenue_tooltip
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
 	triggered_desc = {
 		trigger = {
@@ -990,23 +993,23 @@ pw_building_martial_avenue = {
 		text = job_duelist_effect_desc
 	}
 
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_militarist = yes }
-#			owner = { is_megacorp = no }
-#		}
-#		text = job_culture_worker_effect_desc
-#	}
-#
-#	triggered_desc = {
-#		trigger = {
-#			exists = owner
-#			owner = { is_militarist = yes }
-#			owner = { is_megacorp = yes }
-#		}
-#		text = job_manager_effect_desc
-#	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
+	
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
 
 	triggered_desc = {
 		trigger = {

@@ -6,7 +6,13 @@ pw_monument_base = {
 	base_buildtime = @pw_monument_time
 	position_priority = 175
 	category = unity
-	base_cap_amount = 3
+	planet_limit = 3
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		exists = owner
@@ -81,6 +87,12 @@ pw_monument_unity = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		NOR = {
 			has_modifier = penal_colony
@@ -126,7 +138,7 @@ pw_monument_unity = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			planet_amenities_add = 10
+			planet_amenities_add = 200
 		}
 	}
 
@@ -136,7 +148,7 @@ pw_monument_unity = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 10
+			planet_amenities_no_happiness_add = 200
 		}
 	}
 
@@ -180,6 +192,12 @@ pw_monument_philosophy = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		NOR = {
@@ -282,6 +300,12 @@ pw_monument_builders = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		NOR = {
 			has_modifier = penal_colony
@@ -383,6 +407,12 @@ pw_monument_conquest = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -451,6 +481,12 @@ pw_monument_liberation = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		exists = owner
@@ -521,6 +557,12 @@ pw_monument_order = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		OR = {
 			has_modifier = penal_colony
@@ -587,6 +629,12 @@ pw_monument_remembrance = {
 	position_priority = 175
 	category = unity
 	can_build = no #Only upgrades
+
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		is_homeworld = yes
@@ -663,6 +711,12 @@ pw_monument_synchronicity = {
 	category = unity
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		urban
+		unity
+	}
+
 	potential = {
 		exists = owner
 		owner = { is_gestalt = yes }
@@ -694,7 +748,7 @@ pw_monument_synchronicity = {
 
 	planet_modifier = {
 		planet_stability_add = 5
-		planet_amenities_no_happiness_add = 10
+		planet_amenities_no_happiness_add = 200
 	}
 
 	country_modifier = {

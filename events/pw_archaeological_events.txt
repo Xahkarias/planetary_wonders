@@ -668,7 +668,7 @@ fleet_event = {
 	option = {
 		name = pw_archaeology.311.a
 		leader = {
-			add_trait = pw_leader_trait_scientist_codex_of_past_ages
+			add_trait = { trait = pw_leader_trait_scientist_codex_of_past_ages }
 		}
 	}
 }
@@ -2189,8 +2189,10 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.bad_luck.a
 		capital_scope = {
-			random_owned_pop = {
-				kill_pop = yes
+			random_owned_pop_job = {
+				kill_assigned_pop_amount = {
+					amount = @pw_event_casualty_1
+				}
 			}
 		}
 	}
@@ -2414,7 +2416,7 @@ fleet_event = {
 			}
 		}
 		leader = {
-			add_trait = leader_trait_maimed
+			add_trait = { trait = leader_trait_maimed }
 		}
 	}
 }

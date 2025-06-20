@@ -15,9 +15,8 @@ triggered_planet_modifier = {
 			is_megacorp = no
 		}
 	}
-	modifier = {
-		job_politician_add = $AMOUNT$
-	}
+	job_politician_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_desc = {
@@ -41,9 +40,8 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = no
 		}
 	}
-	modifier = {
-		job_executive_add = $AMOUNT$
-	}
+	job_executive_add = 100
+	mult = $AMOUNT$
 }
 
 triggered_desc = {
@@ -68,8 +66,8 @@ triggered_planet_modifier = {
 			is_worker_coop_empire = yes
 		}
 	}
-	job_steward_add = 1
-	mult            = value:pw_added|BASE_VALUE|$AMOUNT$|
+	job_steward_add = 100
+	mult = value:pw_added|BASE_VALUE|$AMOUNT$|
 }
 
 triggered_desc = {

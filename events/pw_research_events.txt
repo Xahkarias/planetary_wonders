@@ -1409,27 +1409,34 @@ country_event = {
 		name = pw_research.2101.a
 		event_target:PWDCPlanet = {
 			if = {
+				# if there are any domed_city pops, prefer them
 				limit = {
-					any_owned_pop = {
+					any_owned_pop_job = {
 						OR = {
-							has_job = pw_domed_city_subject_drone
-							has_job = pw_domed_city_test_subject
+							has_job_type = pw_domed_city_subject_drone
+							has_job_type = pw_domed_city_test_subject
 						}
 					}
 				}
-				random_owned_pop = {
+				# kill some randomly (only one building so job = workforce)
+				random_owned_pop_job = {
 					limit = {
 						OR = {
-							has_job = pw_domed_city_subject_drone
-							has_job = pw_domed_city_test_subject
+							has_job_type = pw_domed_city_subject_drone
+							has_job_type = pw_domed_city_test_subject
 						}
 					}
-					kill_pop = yes
+					kill_assigned_pop_amount = {
+						amount = @pw_event_casualty_1
+					}
 				}
 			}
+			# else, kill indiscriminately
 			else = {
-				random_owned_pop = {
-					kill_pop = yes
+				random_owned_pop_job = {
+					kill_assigned_pop_amount = {
+						amount = @pw_event_casualty_1
+					}
 				}
 			}
 		}

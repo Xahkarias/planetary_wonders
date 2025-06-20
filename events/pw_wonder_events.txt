@@ -5100,7 +5100,7 @@ planet_event = {
 	}
 
 	trigger = {
-		num_pops > 0
+		pop_amount > 0
 		has_planet_flag = pw_aligned_galactic_model_tomb_world
 		NOT = { has_planet_flag = pw_aligned_galactic_model_asteroid }
 	}
@@ -5525,26 +5525,28 @@ planet_event = {
 			limit = { owner = { has_country_flag = pw_aligned_galactic_model_destroyed_asteroid }}
 			if = {
 				limit = {
-					num_pops < 2
+					pop_amount < 200
 				}
-				random_owned_pop = { kill_pop = yes }
+				random_owned_pop_job = {
+					kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
+				}
 			}
 			else_if = {
 				limit = {
-					num_pops > 2
-					num_pops < 6
+					pop_amount > 200
+					pop_amount < 600
 				}
-				random_owned_pop = { kill_pop = yes }
-				random_owned_pop = { kill_pop = yes }
+				random_owned_pop_job = {
+					kill_assigned_pop_amount = { amount = @pw_event_casualty_2 }
+				}
 			}
 			else_if = {
 				limit = {
-					num_pops > 6
+					pop_amount > 600
 				}
-				random_owned_pop = { kill_pop = yes }
-				random_owned_pop = { kill_pop = yes }
-				random_owned_pop = { kill_pop = yes }
-				random_owned_pop = { kill_pop = yes }
+				random_owned_pop_job = {
+					kill_assigned_pop_amount = { amount = @pw_event_casualty_4 }
+				}
 			}
 			add_planet_devastation = 30
 		}
@@ -6537,7 +6539,9 @@ country_event = {
 			limit = {
 				has_active_building = pw_building_solipsist_debate_hall
 			}
-			random_owned_pop = { kill_pop = yes }
+			random_owned_pop_job = {
+				kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
+			}
 		}
 	}
 }
@@ -7824,7 +7828,9 @@ planet_event = {
 	option = {
 		name = pw_wonder.1320.a
 		add_planet_devastation = 20
-		random_owned_pop = { kill_pop = yes }
+		random_owned_pop_job = {
+			kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
+		}
 		add_deposit = d_deep_sinkhole
 		enable_special_project = {
 			name = PW_MANTLE_CRUCIBLE_STOP_DEVASTATION
@@ -7836,7 +7842,9 @@ planet_event = {
 	option = {
 		name = pw_wonder.1320.b
 		add_planet_devastation = 20
-		random_owned_pop = { kill_pop = yes }
+		random_owned_pop_job = {
+			kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
+		}
 		add_deposit = d_deep_sinkhole
 		owner = {
 			add_monthly_resource_mult = {
@@ -11372,7 +11380,7 @@ planet_event = {
 			}
 		}
 		ruler = {
-			add_trait = trait_ruler_champion_of_the_people
+			add_trait = { trait = trait_ruler_champion_of_the_people }
 		}
 	}
 
@@ -15133,14 +15141,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15173,13 +15181,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation
@@ -15210,14 +15218,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 50
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15250,13 +15258,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -50
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation
@@ -15285,14 +15293,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15323,13 +15331,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation
@@ -15359,14 +15367,14 @@ planet_event = {
 					resource_stockpile_compare = {
 						resource = minerals
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				else = {
 					resource_stockpile_compare = {
 						resource = food
 						value >= 100
-						mult = root.trigger:num_pops
+						mult = root.trigger:pop_amount
 					}
 				}
 				#Does not have duplicated situation
@@ -15399,13 +15407,13 @@ planet_event = {
 				}
 				add_resource = {
 					minerals = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			else = {
 				add_resource = {
 					food = -100
-					mult = root.trigger:num_pops
+					mult = root.trigger:pop_amount
 				}
 			}
 			#Start the situation

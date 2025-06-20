@@ -39,22 +39,22 @@ pw_policy_expansion = {
 
 			modifier = {
 				factor = 2
-				num_pops > 50
+				pop_amount > 5000
 			}
 
 			modifier = {
 				factor = 2
-				num_pops > 100
+				pop_amount > 10000
 			}
 
 			modifier = {
 				factor = 2
-				num_pops > 150
+				pop_amount > 15000
 			}
 
 			modifier = {
 				factor = 2
-				num_pops > 200
+				pop_amount > 20000
 			}
 		}
 	}
@@ -117,7 +117,7 @@ pw_policy_modeling_focus = {
 		policy_flags = { pw_policy_modeling_focus_unfocused_modeling }
 
 		modifier = {
-			planet_administrators_produces_mult = 0.10
+			planet_bureaucrats_produces_mult = 0.10
 		}
 
 		ai_weight = {
@@ -134,7 +134,7 @@ pw_policy_modeling_focus = {
 			empire_size_pops_mult = -0.05
 			planet_districts_cost_mult = -0.10
 			country_starbase_influence_cost_mult = -0.10
-			planet_administrators_upkeep_mult = 0.25
+			planet_bureaucrats_upkeep_mult = 0.25
 		}
 
 		ai_weight = {
@@ -153,9 +153,9 @@ pw_policy_modeling_focus = {
 		modifier = {
 			empire_size_systems_mult = -0.05
 			empire_size_colonies_mult = -0.05
-			local_trade_protection_add = 15
+			# local_trade_protection_add = 15
 			intel_encryption_add = 1
-			planet_administrators_upkeep_mult = 0.20
+			planet_bureaucrats_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -176,7 +176,7 @@ pw_policy_modeling_focus = {
 			empire_size_colonies_mult = -0.05
 			planet_amenities_no_happiness_mult = 0.05
 			intel_encryption_add = 1
-			planet_administrators_upkeep_mult = 0.20
+			planet_bureaucrats_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -192,7 +192,7 @@ pw_policy_modeling_focus = {
 			diplomacy_upkeep_mult = -0.25
 			envoys_add = 1
 			diplo_weight_pops_mult = 0.10
-			planet_administrators_upkeep_mult = 0.20
+			planet_bureaucrats_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -209,7 +209,7 @@ pw_policy_modeling_focus = {
 			add_base_country_intel = 10
 			envoys_add = 1
 			intel_decryption_add = 1
-			planet_administrators_upkeep_mult = 0.20
+			planet_bureaucrats_upkeep_mult = 0.20
 		}
 
 		ai_weight = {
@@ -252,7 +252,7 @@ pw_policy_modeling_focus = {
 			catapult_spread_mult = 0.10
 			fleet_mia_time_mult = -0.10
 			science_ship_survey_speed = 0.20
-			planet_administrators_upkeep_mult = 0.20
+			planet_bureaucrats_upkeep_mult = 0.20
 		}
 
 		ai_weight = {

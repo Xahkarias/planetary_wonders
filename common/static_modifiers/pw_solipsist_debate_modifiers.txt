@@ -3,7 +3,7 @@
 pw_debate_mod_love_0 = {
 	icon = "gfx/interface/icons/modifiers/mod_country_trust_growth.dds"
 	icon_frame = @pw_icon_frame_green
-	pop_growth_speed = 0.1
+	bonus_pop_growth_mult = 0.1
 	planet_pops_organics_food_upkeep_mult = 0.25
 	planet_pops_organics_minerals_upkeep_mult = 0.25
 }

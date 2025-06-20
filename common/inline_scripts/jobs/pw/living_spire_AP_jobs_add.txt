@@ -21,9 +21,8 @@ triggered_planet_modifier = {
 			has_toxic_baths = no
 		}
 	}
-	modifier = {
-		job_healthcare_add = $JOB_AMOUNT$
-	}
+	job_healthcare_add = 100
+	mult = $JOB_AMOUNT$
 }
 
 # No Ascension Path / Mind over matter / Engineered Evolution
@@ -59,9 +58,8 @@ triggered_planet_modifier = {
 			has_toxic_baths = yes
 		}
 	}
-	modifier = {
-		job_bath_attendant_add = $JOB_AMOUNT$
-	}
+	job_bath_attendant_add = 100
+	mult = $JOB_AMOUNT$
 }
 
 triggered_desc = {
@@ -93,8 +91,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_healthcare_add = 1
-		pop_growth_speed = $POP_GROWTH_SPEED$
+		job_healthcare_add = 100
+		bonus_pop_growth_mult = $POP_GROWTH_SPEED$
 	}
 }
 
@@ -107,8 +105,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_healthcare_add = 1
-		planet_pop_assembly_organic_add = $ASSEMBLY_ORGANIC_ADD$
+		job_healthcare_add = 100
+		bonus_pop_growth = $ASSEMBLY_ORGANIC_ADD$
 	}
 }
 
@@ -124,8 +122,8 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_augmentor_add = 1
-		pop_growth_speed = $POP_GROWTH_SPEED$
+		job_augmentor_add = 100
+		bonus_pop_growth_mult = $POP_GROWTH_SPEED$
 	}
 }
 
@@ -170,7 +168,7 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_roboticist_add = 1
+		job_roboticist_add = 100
 		planet_pop_assembly_mult = $ASSEMBLY_MULT$
 	}
 }

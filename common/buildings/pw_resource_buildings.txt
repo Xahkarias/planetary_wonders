@@ -1,9 +1,14 @@
 pw_building_erebus_project = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		mining
+	}
 
 	prerequisites = {
 		pw_tech_erebus_project
@@ -69,10 +74,7 @@ pw_building_erebus_project = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -100,10 +102,7 @@ pw_building_erebus_project = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -134,7 +133,7 @@ pw_building_erebus_project = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_mining_director_add = 1
+			job_pw_mining_director_add = 100
 		}
 	}
 
@@ -145,7 +144,7 @@ pw_building_erebus_project = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_mining_coordinator_add = 1
+			job_pw_mining_coordinator_add = 100
 		}
 	}
 
@@ -156,7 +155,7 @@ pw_building_erebus_project = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_miner_add = 1
+			job_miner_add = 100
 		}
 		mult = value:pw_mining_value
 	}
@@ -168,7 +167,7 @@ pw_building_erebus_project = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 1
+			job_mining_drone_add = 100
 		}
 		mult = value:pw_mining_value
 	}
@@ -179,7 +178,7 @@ pw_building_erebus_project = {
 			owner = { has_origin = origin_subterranean }
 		}
 		modifier = {
-			planet_housing_add = 5
+			planet_housing_add = 500
 		}
 	}
 
@@ -288,15 +287,15 @@ pw_building_erebus_project = {
 		}
 		modifier = {
 			factor = 10
-			has_designation = col_mining
+			has_mining_designation = yes
 		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_minerals = yes
@@ -329,6 +328,11 @@ pw_building_erebus_fracking_plant = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		mining
+	}
 
 	prerequisites = {
 		pw_tech_erebus_fracking_plant
@@ -390,10 +394,7 @@ pw_building_erebus_fracking_plant = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -421,10 +422,7 @@ pw_building_erebus_fracking_plant = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_mining
-						has_designation = col_habitat_mining
-					}
+					has_mining_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -459,7 +457,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_mining_director_add = 2
+			job_pw_mining_director_add = 200
 		}
 	}
 
@@ -470,7 +468,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_chemist_add = 3
+			job_chemist_add = 300
 		}
 	}
 
@@ -481,7 +479,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_mining_coordinator_add = 2
+			job_pw_mining_coordinator_add = 200
 		}
 	}
 
@@ -492,7 +490,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_chemist_drone_add = 3
+			job_chemist_drone_add = 300
 		}
 	}
 
@@ -503,7 +501,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_miner_add = 1
+			job_miner_add = 100
 		}
 		mult = value:pw_mining_value
 	}
@@ -515,7 +513,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 1
+			job_mining_drone_add = 100
 		}
 		mult = value:pw_mining_value
 	}
@@ -526,7 +524,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { has_origin = origin_subterranean }
 		}
 		modifier = {
-			planet_housing_add = 10
+			planet_housing_add = 1000
 		}
 	}
 
@@ -657,15 +655,15 @@ pw_building_erebus_fracking_plant = {
 		}
 		modifier = {
 			factor = 5
-			has_designation = col_mining
+			has_mining_designation = yes
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_minerals = yes
@@ -695,9 +693,14 @@ pw_building_erebus_fracking_plant = {
 pw_building_helios_tower = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		generator
+	}
 
 	prerequisites = {
 		pw_tech_helios_tower
@@ -766,11 +769,7 @@ pw_building_helios_tower = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -798,11 +797,7 @@ pw_building_helios_tower = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -855,7 +850,7 @@ pw_building_helios_tower = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_technician_add = 1
+			job_technician_add = 100
 		}
 		mult = value:pw_generators_value
 	}
@@ -867,7 +862,7 @@ pw_building_helios_tower = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = 1
+			job_technician_drone_add = 100
 		}
 		mult = value:pw_generators_value
 	}
@@ -978,13 +973,13 @@ pw_building_helios_tower = {
 			factor = 4
 			has_designation = col_generator
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 3
 			districts_good_energy = yes
@@ -1017,6 +1012,11 @@ pw_building_helios_translucent_obelisk = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		generator
+	}
 
 	prerequisites = {
 		pw_tech_helios_translucent_obelisk
@@ -1081,11 +1081,7 @@ pw_building_helios_translucent_obelisk = {
 		cost = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			minerals = @pw_building_cost_discount
@@ -1113,11 +1109,7 @@ pw_building_helios_translucent_obelisk = {
 		upkeep = {
 			trigger = {
 				planet = {
-					OR = {
-						has_designation = col_generator
-						has_designation = col_ring_generator
-						has_designation = col_habitat_energy
-					}
+					has_generator_designation = yes
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1152,7 +1144,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_energy_director_add = 2
+			job_pw_energy_director_add = 200
 		}
 	}
 
@@ -1163,7 +1155,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_translucer_add = 3
+			job_translucer_add = 300
 		}
 	}
 
@@ -1174,7 +1166,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_energy_coordinator_add = 2
+			job_pw_energy_coordinator_add = 200
 		}
 	}
 
@@ -1185,7 +1177,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_translucer_drone_add = 3
+			job_translucer_drone_add = 300
 		}
 	}
 
@@ -1196,7 +1188,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_technician_add = 1
+			job_technician_add = 100
 		}
 		mult = value:pw_generators_value
 	}
@@ -1208,7 +1200,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = 1
+			job_technician_drone_add = 100
 		}
 		mult = value:pw_generators_value
 	}
@@ -1341,13 +1333,13 @@ pw_building_helios_translucent_obelisk = {
 			factor = 5
 			has_designation = col_generator
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_energy = yes
@@ -1377,9 +1369,14 @@ pw_building_helios_translucent_obelisk = {
 pw_building_demetrius_fields = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		farming
+	}
 
 	prerequisites = {
 		pw_tech_demetrius_fields
@@ -1534,7 +1531,7 @@ pw_building_demetrius_fields = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 1
+			job_farmer_add = 100
 		}
 		mult = value:pw_farming_value
 	}
@@ -1550,8 +1547,8 @@ pw_building_demetrius_fields = {
 			is_wet = yes
 		}
 		modifier = {
-			job_angler_add = 0.5
-			job_pearl_diver_add = 0.5
+			job_angler_add = 50
+			job_pearl_diver_add = 50
 		}
 		
 		mult = value:pw_farming_value
@@ -1564,7 +1561,7 @@ pw_building_demetrius_fields = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_agri_drone_add = 1
+			job_agri_drone_add = 100
 		}
 		mult = value:pw_farming_value
 	}
@@ -1727,13 +1724,13 @@ pw_building_demetrius_fields = {
 			factor = 5
 			has_designation = col_farming
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_food = yes
@@ -1766,6 +1763,11 @@ pw_building_demetrius_chemical_garden = {
 	can_build = no #Only upgrades
 	can_be_ruined = no
 	category = resource
+
+	building_sets = {
+		government
+		farming
+	}
 
 	prerequisites = {
 		pw_tech_demetrius_chemical_garden
@@ -1891,7 +1893,7 @@ pw_building_demetrius_chemical_garden = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_agriculture_director_add = 2
+			job_pw_agriculture_director_add = 200
 		}
 	}
 
@@ -1902,7 +1904,7 @@ pw_building_demetrius_chemical_garden = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_gas_refiner_add = 3
+			job_gas_refiner_add = 300
 		}
 	}
 
@@ -1913,7 +1915,7 @@ pw_building_demetrius_chemical_garden = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_food_coordinator_add = 2
+			job_pw_food_coordinator_add = 200
 		}
 	}
 
@@ -1924,7 +1926,7 @@ pw_building_demetrius_chemical_garden = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_gas_refiner_drone_add = 3
+			job_gas_refiner_drone_add = 300
 		}
 	}
 
@@ -1942,7 +1944,7 @@ pw_building_demetrius_chemical_garden = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 1
+			job_farmer_add = 100
 		}
 		mult = value:pw_farming_value
 	}
@@ -1958,8 +1960,8 @@ pw_building_demetrius_chemical_garden = {
 			is_wet = yes
 		}
 		modifier = {
-			job_angler_add = 0.5
-			job_pearl_diver_add = 0.5
+			job_angler_add = 50
+			job_pearl_diver_add = 50
 		}
 		
 		mult = value:pw_farming_value
@@ -1973,7 +1975,7 @@ pw_building_demetrius_chemical_garden = {
 
 		}
 		modifier = {
-			job_agri_drone_add = 1
+			job_agri_drone_add = 100
 		}
 		mult = value:pw_farming_value
 	}
@@ -2158,13 +2160,13 @@ pw_building_demetrius_chemical_garden = {
 			factor = 5
 			has_designation = col_farming
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_designation = col_rural
-				has_designation = col_rural_gestalt
-			}
-		}
+		# modifier = {
+		# 	factor = 3
+		# 	OR = {
+		# 		has_designation = col_rural
+		# 		has_designation = col_rural_gestalt
+		# 	}
+		# }
 		modifier = {
 			factor = 2
 			districts_good_food = yes

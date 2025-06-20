@@ -1,6 +1,6 @@
 tr_pw_monumentality_adopt = {
 	modifier = {
-		planet_max_buildings_add = 1
+		# planet_max_buildings_add = 1
 		planet_colony_development_speed_mult = 0.15
 	}
 }
