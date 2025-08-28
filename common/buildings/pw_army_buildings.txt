@@ -229,56 +229,56 @@ pw_building_guardian_angel = {
 		text = pw_guardian_angel_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_soldier_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_soldier_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		text = job_necromancer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_valid_civic = civic_reanimated_armies }
+	# 	}
+	# 	text = job_necromancer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-		}
-		text = job_enforcer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
+	# 	}
+	# 	text = job_enforcer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { has_active_tradition = tr_psionics_psi_corps }
-		}
-		text = job_telepath_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
+	# 	}
+	# 	text = job_telepath_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_warrior_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_warrior_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1200 }
@@ -580,56 +580,56 @@ pw_building_stellar_sentinel = {
 		text = pw_guardian_angel_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_soldier_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_soldier_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		text = job_necromancer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_valid_civic = civic_reanimated_armies }
+	# 	}
+	# 	text = job_necromancer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-		}
-		text = job_enforcer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
+	# 	}
+	# 	text = job_enforcer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { has_active_tradition = tr_psionics_psi_corps }
-		}
-		text = job_telepath_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
+	# 	}
+	# 	text = job_telepath_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_warrior_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_warrior_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -861,42 +861,44 @@ pw_building_martial_avenue = {
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_militarist = yes"
-		SHOW_JOB_STEWARD_EFFECT_DESC = no
+		# SHOW_JOB_STEWARD_EFFECT_DESC = no
 		AMOUNT = 1
 	}
-	inline_script = {
-		script = jobs/pw/culture_worker_add
-		OWNER_CONDITION = "is_militarist = yes"
-		AMOUNT = 2
-	}
+	# inline_script = {
+	# 	script = jobs/pw/culture_worker_add
+	# 	OWNER_CONDITION = "is_militarist = yes"
+	# 	AMOUNT = 2
+	# }
 
+	# culture worker (bureaucrat)
 	#Entertainer
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_militarist = yes
-				NOT = { has_valid_civic = civic_warrior_culture }
+				# NOT = { has_valid_civic = civic_warrior_culture }
 			}
 		}
 		modifier = {
+			job_bureaucrat_add = 200
 			job_entertainer_add = 200
 		}
 	}
 
 	#Duelist
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_militarist = yes
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_militarist = yes
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 200
+	# 	}
+	# }
 
 	#Soldier
 	triggered_planet_modifier = {
@@ -975,23 +977,23 @@ pw_building_martial_avenue = {
 	# 	text = job_executive_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			NOT = { owner = { has_valid_civic = civic_warrior_culture }}
-		}
-		text = job_entertainer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_warrior_culture }}
+	# 	}
+	# 	text = job_entertainer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { has_valid_civic = civic_warrior_culture }
-		}
-		text = job_duelist_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { has_valid_civic = civic_warrior_culture }
+	# 	}
+	# 	text = job_duelist_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -1011,22 +1013,22 @@ pw_building_martial_avenue = {
 	# 	text = job_manager_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-		}
-		text = job_soldier_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 	}
+	# 	text = job_soldier_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		text = job_necromancer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { has_valid_civic = civic_reanimated_armies }
+	# 	}
+	# 	text = job_necromancer_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.2000 }

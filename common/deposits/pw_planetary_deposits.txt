@@ -7,10 +7,11 @@ pw_d_ancient_cornucopia = {
 	#Can't occur naturally
 	potential = { always = no }
 
-	triggered_planet_modifier = {
+	# triggered_planet_modifier = {
+	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.05
-		district_farming_max = 1
-		mult = value:natural_desposit_district_amount_multiplier
+		district_farming_max_add = 1
+		# mult = value:natural_desposit_district_amount_multiplier
 	}
 
 	triggered_planet_modifier = {
@@ -64,10 +65,11 @@ pw_d_ancient_solar_tower = {
 	#Can't occur naturally
 	potential = { always = no }
 
-	triggered_planet_modifier = {
+	# triggered_planet_modifier = {
+	planet_modifier = {
 		planet_jobs_energy_produces_mult = 0.05
-		district_generator_max = 1
-		mult = value:natural_desposit_district_amount_multiplier
+		district_generator_max_add = 1
+		# mult = value:natural_desposit_district_amount_multiplier
 	}
 
 	triggered_planet_modifier = {
@@ -99,10 +101,11 @@ pw_d_ancient_mining_project = {
 	#Can't occur naturally
 	potential = { always = no }
 
-	triggered_planet_modifier = {
+	planet_modifier = {
+	# triggered_planet_modifier = {
 		planet_jobs_minerals_produces_mult = 0.05
-		district_mining_max = 1
-		mult = value:natural_desposit_district_amount_multiplier
+		district_mining_max_add = 1
+		# mult = value:natural_desposit_district_amount_multiplier
 	}
 
 	triggered_planet_modifier = {
@@ -480,7 +483,8 @@ pw_d_guardian_angel_arena = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 100
+			# job_duelist_add = 100
+			job_entertainer_add = 100
 		}
 	}
 }

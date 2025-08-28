@@ -226,37 +226,37 @@ pw_building_erebus_project = {
 		text = pw_erebus_project_jobs_add_gestalt
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_mining_director_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_mining_director_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_mining_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_mining_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_miner_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_miner_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_mining_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_mining_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.500 }
@@ -577,53 +577,53 @@ pw_building_erebus_fracking_plant = {
 		text = pw_erebus_project_jobs_add_gestalt
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_mining_director_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_mining_director_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_mining_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_mining_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_chemist_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_chemist_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_chemist_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_chemist_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_miner_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_miner_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_mining_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_mining_drone_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -911,37 +911,37 @@ pw_building_helios_tower = {
 		text = pw_helios_tower_jobs_add_gestalt
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_energy_director_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_energy_director_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_energy_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_energy_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_technician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_technician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_technician_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_technician_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.600 }
@@ -1254,53 +1254,53 @@ pw_building_helios_translucent_obelisk = {
 		text = pw_helios_tower_jobs_add_gestalt
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_energy_director_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_energy_director_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_energy_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_energy_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_translucer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_translucer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_translucer_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_translucer_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_technician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_technician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_technician_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_technician_drone_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -1631,68 +1631,68 @@ pw_building_demetrius_fields = {
 		text = pw_demetrius_fields_jobs_add_gestalt
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_agriculture_director_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_agriculture_director_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_food_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_food_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			OR = {
-				owner = { is_anglers_empire = no }
-				AND = {
-					owner = { is_anglers_empire = yes }
-					NOT = { is_wet = yes }
-				}
-			}
-		}
-		text = job_farmer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		OR = {
+	# 			owner = { is_anglers_empire = no }
+	# 			AND = {
+	# 				owner = { is_anglers_empire = yes }
+	# 				NOT = { is_wet = yes }
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_farmer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_anglers_empire = yes
-			}
-			is_wet = yes
-		}
-		text = job_aqu_angler_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_regular_empire = yes
+	# 			is_anglers_empire = yes
+	# 		}
+	# 		is_wet = yes
+	# 	}
+	# 	text = job_aqu_angler_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_anglers_empire = yes
-			}
-			is_wet = yes
-		}
-		text = job_pearl_diver_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_regular_empire = yes
+	# 			is_anglers_empire = yes
+	# 		}
+	# 		is_wet = yes
+	# 	}
+	# 	text = job_pearl_diver_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_agri_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_agri_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.700 }
@@ -2050,84 +2050,84 @@ pw_building_demetrius_chemical_garden = {
 		text = pw_demetrius_fields_jobs_add_gestalt
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_agriculture_director_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_agriculture_director_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_food_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_food_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_gas_refiner_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_gas_refiner_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_gas_refiner_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_gas_refiner_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			OR = {
-				owner = { is_anglers_empire = no }
-				AND = {
-					owner = { is_anglers_empire = yes }
-					NOT = { is_wet = yes }
-				}
-			}
-		}
-		text = job_farmer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		OR = {
+	# 			owner = { is_anglers_empire = no }
+	# 			AND = {
+	# 				owner = { is_anglers_empire = yes }
+	# 				NOT = { is_wet = yes }
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_farmer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_anglers_empire = yes
-			}
-			is_wet = yes
-		}
-		text = job_aqu_angler_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_regular_empire = yes
+	# 			is_anglers_empire = yes
+	# 		}
+	# 		is_wet = yes
+	# 	}
+	# 	text = job_aqu_angler_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_anglers_empire = yes
-			}
-			is_wet = yes
-		}
-		text = job_pearl_diver_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_regular_empire = yes
+	# 			is_anglers_empire = yes
+	# 		}
+	# 		is_wet = yes
+	# 	}
+	# 	text = job_pearl_diver_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_agri_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_agri_drone_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.

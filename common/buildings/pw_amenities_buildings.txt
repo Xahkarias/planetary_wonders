@@ -222,7 +222,7 @@ pw_building_transplanetary_logistics_network = {
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_egalitarian = yes"
-		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		# SHOW_JOB_STEWARD_EFFECT_DESC = yes
 		AMOUNT = 1
 	}
 
@@ -240,13 +240,13 @@ pw_building_transplanetary_logistics_network = {
 		AMOUNT = 1
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-		}
-		text = job_clerk_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 	}
+	# 	text = job_clerk_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1700 }
@@ -540,7 +540,7 @@ pw_building_transhabitat_logistics_network = {
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_egalitarian = yes"
-		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		# SHOW_JOB_STEWARD_EFFECT_DESC = yes
 		AMOUNT = 1
 	}
 
@@ -557,13 +557,13 @@ pw_building_transhabitat_logistics_network = {
 		AMOUNT = 1
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-		}
-		text = job_clerk_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 	}
+	# 	text = job_clerk_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1700 }
@@ -783,42 +783,44 @@ pw_building_festival_plaza = {
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_pacifist = yes"
-		SHOW_JOB_STEWARD_EFFECT_DESC = no
+		# SHOW_JOB_STEWARD_EFFECT_DESC = no
 		AMOUNT = 1
 	}
-	inline_script = {
-		script = jobs/pw/culture_worker_add
-		OWNER_CONDITION = "is_pacifist = yes"
-		AMOUNT = 3
-	}
+	# inline_script = {
+	# 	script = jobs/pw/culture_worker_add
+	# 	OWNER_CONDITION = "is_pacifist = yes"
+	# 	AMOUNT = 3
+	# }
 
+	# culture worker (bureaucrat)
 	#Entertainer
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_pacifist = yes
-				NOT = { has_valid_civic = civic_warrior_culture }
+				# NOT = { has_valid_civic = civic_warrior_culture }
 			}
 		}
 		modifier = {
+			job_bureaucrat_add = 300
 			job_entertainer_add = 300
 		}
 	}
 
 	#Duelist
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_pacifist = yes
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 300
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_pacifist = yes
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 300
+	# 	}
+	# }
 
 	#Stability from ambition
 	triggered_planet_modifier = {
@@ -868,23 +870,23 @@ pw_building_festival_plaza = {
 	# 	text = job_executive_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_pacifist = yes }
-			NOT = { owner = { has_valid_civic = civic_warrior_culture }}
-		}
-		text = job_entertainer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_warrior_culture }}
+	# 	}
+	# 	text = job_entertainer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_pacifist = yes }
-			owner = { has_valid_civic = civic_warrior_culture }
-		}
-		text = job_duelist_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { has_valid_civic = civic_warrior_culture }
+	# 	}
+	# 	text = job_duelist_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -1095,13 +1097,13 @@ pw_building_nostalgia_paradise = {
 	}
 
 	#Merchant
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_merchant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
 
 	# #Administrator(1)
 	# triggered_planet_modifier = {
@@ -1148,44 +1150,50 @@ pw_building_nostalgia_paradise = {
 	# 		job_manager_add = 200
 	# 	}
 	# }
+	# inline_script = {
+	# 	script = jobs/pw/politician_add
+	# 	OWNER_CONDITION = ""
+	# 	SHOW_JOB_STEWARD_EFFECT_DESC = no
+	# 	AMOUNT = 1
+	# }
 	inline_script = {
-		script = jobs/pw/politician_add
-		OWNER_CONDITION = ""
-		SHOW_JOB_STEWARD_EFFECT_DESC = no
-		AMOUNT = 1
+		script = jobs/politician_add
+		AMOUNT = 100
 	}
-	inline_script = {
-		script = jobs/pw/culture_worker_add
-		OWNER_CONDITION = ""
-		AMOUNT = 2
-	}
+	# inline_script = {
+	# 	script = jobs/pw/culture_worker_add
+	# 	OWNER_CONDITION = ""
+	# 	AMOUNT = 2
+	# }
 
+	# culture worker (bureaucrat)
 	#Entertainers (2)
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
+			# owner = {
+			# 	NOT = { has_valid_civic = civic_warrior_culture }
+			# }
 		}
 		modifier = {
+			job_bureaucrat_add = 200
 			job_entertainer_add = 200
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 200
+	# 	}
+	# }
 
 	#Spa Attendants (1) (only mutagenic spas)
 	triggered_planet_modifier = {
@@ -1197,7 +1205,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 100
+			job_healthcare_add = 100
 		}
 	}
 
@@ -1211,7 +1219,7 @@ pw_building_nostalgia_paradise = {
 		modifier = {
 			job_bio_trophy_add = 1000
 			job_artisan_drone_add = 100
-			job_maintenance_drone_add = 500
+			# job_maintenance_drone_add = 500
 		}
 	}
 
@@ -1223,7 +1231,7 @@ pw_building_nostalgia_paradise = {
 			owner = { has_toxic_baths = yes }
 		}
 		modifier = {
-			job_bath_attendant_machine_add = 100
+			job_replicator_add = 100
 		}
 	}
 
@@ -1304,77 +1312,77 @@ pw_building_nostalgia_paradise = {
 	# }
 
 	#Entertainer
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		text = job_entertainer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	text = job_entertainer_effect_desc
+	# }
 
-	#Spa Attendants (1) (only mutagenic spas)
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = {
-				has_toxic_baths = yes
-			}
-		}
-		text = job_toxic_baths_effect_desc
-	}
+	# #Spa Attendants (1) (only mutagenic spas)
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = {
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	text = job_toxic_baths_effect_desc
+	# }
 
-	#Duelist
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		text = job_duelist_effect_desc
-	}
+	# #Duelist
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	text = job_duelist_effect_desc
+	# }
 
 	#Trophy
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_valid_civic = civic_machine_servitor }
-		}
-		text = job_bio_trophy_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_machine_servitor }
+	# 	}
+	# 	text = job_bio_trophy_effect_desc
+	# }
 
-	#Artisan
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_valid_civic = civic_machine_servitor }
-		}
-		text = job_artisan_drone_effect_desc
-	}
+	# #Artisan
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_machine_servitor }
+	# 	}
+	# 	text = job_artisan_drone_effect_desc
+	# }
 
-	#Lubricator terminal (1) for toxic baths
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_valid_civic = civic_machine_servitor }
-			owner = { has_toxic_baths = yes }
-		}
-		text = job_toxic_baths_effect_machine_desc
-	}
+	# #Lubricator terminal (1) for toxic baths
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_machine_servitor }
+	# 		owner = { has_toxic_baths = yes }
+	# 	}
+	# 	text = job_toxic_baths_effect_machine_desc
+	# }
 
-	#Maintenance
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_valid_civic = civic_machine_servitor }
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+	# #Maintenance
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_machine_servitor }
+	# 	}
+	# 	text = job_maintenance_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.2300 }
@@ -1583,7 +1591,7 @@ pw_building_blossoming_preserve = {
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_gestalt = no"
-		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		# SHOW_JOB_STEWARD_EFFECT_DESC = yes
 		AMOUNT = 1
 	}
 
@@ -1680,30 +1688,30 @@ pw_building_blossoming_preserve = {
 	# }
 
 	#Preservers
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			OR = {
-				merg_is_gaia = yes
-				merg_is_hive_world = yes
-			}
-		}
-		text = job_pw_preserver_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		OR = {
+	# 			merg_is_gaia = yes
+	# 			merg_is_hive_world = yes
+	# 		}
+	# 	}
+	# 	text = job_pw_preserver_effect_desc
+	# }
 
-	#Preserver Drone
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-			OR = {
-				merg_is_gaia = yes
-				merg_is_hive_world = yes
-			}
-		}
-		text = job_pw_preserver_drone_effect_desc
-	}
+	# #Preserver Drone
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 		OR = {
+	# 			merg_is_gaia = yes
+	# 			merg_is_hive_world = yes
+	# 		}
+	# 	}
+	# 	text = job_pw_preserver_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.2500 }

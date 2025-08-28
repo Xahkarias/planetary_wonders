@@ -12,49 +12,50 @@ triggered_planet_modifier = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
-			is_megacorp = no
+			# is_megacorp = no
+			is_worker_coop_empire = no
 		}
 	}
 	job_politician_add = 100
 	mult = $AMOUNT$
 }
 
-triggered_desc = {
-	trigger = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_megacorp = no
-		}
-	}
-	text = job_politician_effect_desc
-}
+# triggered_desc = {
+# 	trigger = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_megacorp = no
+# 		}
+# 	}
+# 	text = job_politician_effect_desc
+# }
 
-#Executive
-triggered_planet_modifier = {
-	potential = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_megacorp = yes
-			is_worker_coop_empire = no
-		}
-	}
-	job_executive_add = 100
-	mult = $AMOUNT$
-}
+# #Executive
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_megacorp = yes
+# 			is_worker_coop_empire = no
+# 		}
+# 	}
+# 	job_executive_add = 100
+# 	mult = $AMOUNT$
+# }
 
-triggered_desc = {
-	trigger = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_megacorp = yes
-			is_worker_coop_empire = no
-		}
-	}
-	text = job_executive_effect_desc
-}
+# triggered_desc = {
+# 	trigger = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_megacorp = yes
+# 			is_worker_coop_empire = no
+# 		}
+# 	}
+# 	text = job_executive_effect_desc
+# }
 
 #Steward
 triggered_planet_modifier = {
@@ -62,23 +63,23 @@ triggered_planet_modifier = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
-			is_megacorp = yes
+			# is_megacorp = yes
 			is_worker_coop_empire = yes
 		}
 	}
-	job_steward_add = 100
+	job_bureaucrat_add = 100
 	mult = value:pw_added|BASE_VALUE|$AMOUNT$|
 }
 
-triggered_desc = {
-	trigger = {
-		exists = owner
-		owner = {
-			always = $SHOW_JOB_STEWARD_EFFECT_DESC$
-			$OWNER_CONDITION$
-			is_megacorp = yes
-			is_worker_coop_empire = yes
-		}
-	}
-	text = job_steward_effect_desc
-}
+# triggered_desc = {
+# 	trigger = {
+# 		exists = owner
+# 		owner = {
+# 			always = $SHOW_JOB_STEWARD_EFFECT_DESC$
+# 			$OWNER_CONDITION$
+# 			is_megacorp = yes
+# 			is_worker_coop_empire = yes
+# 		}
+# 	}
+# 	text = job_steward_effect_desc
+# }

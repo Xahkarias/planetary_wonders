@@ -137,25 +137,30 @@ pw_building_pavilion_of_wonders = {
 	#Reminder: Cannot be Gestalt!
 
 	#Administrator
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 100
-		}
+	planet_modifier = {
+		job_politician_add = 100
+		job_entertainer_add = 200
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_politician_add = 100 # merchant
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # merchant
+	# 	}
+	# }
 
 	# #Culture Workers
 	# triggered_planet_modifier = {
@@ -222,29 +227,29 @@ pw_building_pavilion_of_wonders = {
 	# }
 
 	#Entertainers
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		modifier = {
-			job_entertainer_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_entertainer_add = 200
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 200
+	# 	}
+	# }
 
 	#Stability
 	triggered_planet_modifier = {
@@ -284,21 +289,21 @@ pw_building_pavilion_of_wonders = {
 		text = pw_planet_wonder_lb
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		text = job_merchant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -335,25 +340,25 @@ pw_building_pavilion_of_wonders = {
 	# 	text = job_pw_tourist_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		text = job_entertainer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	text = job_entertainer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		text = job_duelist_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	text = job_duelist_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1400 }
@@ -594,25 +599,30 @@ pw_building_fair_of_worlds = {
 	#Reminder: Cannot be Gestalt and must be xenophile!
 
 	#Administrator
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 100
-		}
+	planet_modifier = {
+		job_politician_add = 100
+		job_entertainer_add = 300
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_politician_add = 100 # merchant
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # merchant
+	# 	}
+	# }
 
 	# #Culture Workers
 	# triggered_planet_modifier = {
@@ -679,29 +689,29 @@ pw_building_fair_of_worlds = {
 	# }
 
 	#Entertainers
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		modifier = {
-			job_entertainer_add = 300
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_entertainer_add = 300
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 300
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 300
+	# 	}
+	# }
 
 	#Curators of Diversity (Envoys, max 5)
 	triggered_planet_modifier = {
@@ -913,21 +923,21 @@ pw_building_fair_of_worlds = {
 		text = pw_building_fair_of_worlds_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		text = job_merchant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -964,41 +974,41 @@ pw_building_fair_of_worlds = {
 	# 	text = job_pw_tourist_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		text = job_entertainer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	text = job_entertainer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		text = job_duelist_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	text = job_duelist_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_xenophile = yes }
-			owner = {
-				OR = {
-					has_federation = yes
-					any_envoy = {
-						has_envoy_task = { task = improve_relations }
-					}
-				}
-			}
-		}
-		text = job_pw_diversity_curator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_xenophile = yes }
+	# 		owner = {
+	# 			OR = {
+	# 				has_federation = yes
+	# 				any_envoy = {
+	# 					has_envoy_task = { task = improve_relations }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_pw_diversity_curator_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -1225,25 +1235,30 @@ pw_building_museum_of_the_grotesque = {
 	#Reminder: Cannot be Gestalt and must be xenophobe!
 
 	#Administrator
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 100
-		}
+	planet_modifier = {
+		job_politician_add = 100
+		job_entertainer_add = 300
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			job_politician_add = 100 # merchant
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # merchant
+	# 	}
+	# }
 
 	# #Culture Workers
 	# triggered_planet_modifier = {
@@ -1310,29 +1325,29 @@ pw_building_museum_of_the_grotesque = {
 	# }
 
 	#Entertainers
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		modifier = {
-			job_entertainer_add = 300
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_entertainer_add = 300
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 300
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 300
+	# 	}
+	# }
 
 	#Curators of Degeneracy (Envoys, max 5)
 	triggered_planet_modifier = {
@@ -1602,21 +1617,21 @@ pw_building_museum_of_the_grotesque = {
 		text = pw_building_museum_of_the_grotesque_tooltip_no_diplomacy
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		text = job_merchant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -1653,43 +1668,43 @@ pw_building_museum_of_the_grotesque = {
 	# 	text = job_pw_tourist_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		text = job_entertainer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	text = job_entertainer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		text = job_duelist_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	text = job_duelist_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				OR = {
-					is_at_war = yes
-					has_valid_civic = civic_fanatic_purifiers
-					has_valid_civic = civic_inwards_perfection
-					count_rival_country = { count > 0 }
-					any_envoy = {
-						has_envoy_task = { task = harm_relations }
-					}
-				}
-			}
-		}
-		text = job_pw_degeneracy_curator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			OR = {
+	# 				is_at_war = yes
+	# 				has_valid_civic = civic_fanatic_purifiers
+	# 				has_valid_civic = civic_inwards_perfection
+	# 				count_rival_country = { count > 0 }
+	# 				any_envoy = {
+	# 					has_envoy_task = { task = harm_relations }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_pw_degeneracy_curator_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -1999,10 +2014,10 @@ pw_building_holy_reliquary = {
 	# 	}
 	# }
 
-	inline_script = {
-		script = jobs/pw/bureaucrat_effect_desc
-		OWNER_CONDITION = "is_spiritualist = yes"
-	}
+	# inline_script = {
+	# 	script = jobs/pw/bureaucrat_effect_desc
+	# 	OWNER_CONDITION = "is_spiritualist = yes"
+	# }
 
 	#Prosperity preacher
 	triggered_planet_modifier = {
@@ -2052,24 +2067,24 @@ pw_building_holy_reliquary = {
 		text = pw_building_holy_reliquary_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_country_flag = pw_holy_reliquary_relic_keeper_appointed }
-		}
-		text = job_pw_relic_keeper_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_country_flag = pw_holy_reliquary_relic_keeper_appointed }
+	# 	}
+	# 	text = job_pw_relic_keeper_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_spiritualist = yes
-				not = { has_origin = origin_cybernetic_creed }
-			}
-		}
-		text = job_high_priest_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			not = { has_origin = origin_cybernetic_creed }
+	# 		}
+	# 	}
+	# 	text = job_high_priest_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -2081,57 +2096,57 @@ pw_building_holy_reliquary = {
 	# 	text = job_priest_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_spiritualist = yes
-				has_origin = origin_cybernetic_creed
-			}
-		}
-		text = job_technophant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			has_origin = origin_cybernetic_creed
+	# 		}
+	# 	}
+	# 	text = job_technophant_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			OR = {
-				owner = { has_valid_civic = civic_death_cult }
-				owner = { has_valid_civic = civic_death_cult_corporate }
-			}
-		}
-		text = job_death_priest_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_death_cult }
+	# 			owner = { has_valid_civic = civic_death_cult_corporate }
+	# 		}
+	# 	}
+	# 	text = job_death_priest_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			OR = {
-				owner = { has_valid_civic = civic_death_cult }
-				owner = { has_valid_civic = civic_death_cult_corporate }
-			}
-		}
-		text = job_mortal_initiate_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_death_cult }
+	# 			owner = { has_valid_civic = civic_death_cult_corporate }
+	# 		}
+	# 	}
+	# 	text = job_mortal_initiate_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_valid_civic = civic_memorialist }
-		}
-		text = job_death_chronicler_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	text = job_death_chronicler_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = planet.branch_office_owner
-			has_holding = {
-				holding = building_temple_of_prosperity
-				owner = planet.branch_office_owner
-			}
-		}
-		text = job_preacher_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = planet.branch_office_owner
+	# 		has_holding = {
+	# 			holding = building_temple_of_prosperity
+	# 			owner = planet.branch_office_owner
+	# 		}
+	# 	}
+	# 	text = job_preacher_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1500 }
@@ -2333,70 +2348,74 @@ pw_building_unhallowed_necropolis = {
 
 	#Regular Jobs (total: 7/5)
 	#High Priest/Technophant/Administrator/CEO
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_spiritualist = yes
-				not = { has_origin = origin_cybernetic_creed }
-			}
-		}
-		modifier = {
-			job_politician_add = 100 # high_priest
-		}
+	inline_script = {
+		script = jobs/politician_add
+		AMOUNT = 100
 	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			not = { has_origin = origin_cybernetic_creed }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # high_priest
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_spiritualist = yes
-				has_origin = origin_cybernetic_creed
-			}
-		}
-		modifier = {
-			job_technophant_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			has_origin = origin_cybernetic_creed
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_technophant_add = 100
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = no }
-		}
-		modifier = {
-			job_politician_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = yes }
-			owner = { is_worker_coop_empire = no }
-		}
-		modifier = {
-			job_politician_add = 100 # executive
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { is_megacorp = yes }
+	# 		owner = { is_worker_coop_empire = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				is_spiritualist = no
-				is_worker_coop_empire = yes
-			}
-		}
-		modifier = {
-			job_steward_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_gestalt = no
+	# 			is_spiritualist = no
+	# 			is_worker_coop_empire = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_steward_add = 200
+	# 	}
+	# }
 
 	#Tomb scholars (2)
 	triggered_planet_modifier = {
@@ -2448,85 +2467,94 @@ pw_building_unhallowed_necropolis = {
 	# 		job_manager_add = 200
 	# 	}
 	# }
-	inline_script = {
-		script = jobs/pw/death_chronicler_add
-		OWNER_CONDITION = "is_gestalt = no"
-		AMOUNT = 2
-	}
-
-	#Death Priests/Priests/Culture workers/Managers (2)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			OR = {
-				owner = { has_valid_civic = civic_death_cult }
-				owner = { has_valid_civic = civic_death_cult_corporate }
-			}
-		}
-		modifier = {
-			job_bureaucrat_add = 200 # death_priest
-		}
-	}
-
-	# Note: if the owner is not spiritualist, this building is not destroyed but produce no job.
-	inline_script = {
-		script = jobs/pw/bureaucrat_add
-		OWNER_CONDITION = "is_spiritualist = yes is_death_cult_empire = no"
-		AMOUNT = 2
-	}
-
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = { is_spiritualist = yes }
-	# 		NOT = { owner = { has_valid_civic = civic_death_cult }}
-	# 		NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
-	# 	}
-	# 	modifier = {
-	# 		job_bureaucrat_add = 200 # priest
-	# 	}
-	# }
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_gestalt = no }
-			owner = { is_megacorp = no }
-			owner = { is_spiritualist = no }
-			NOT = { owner = { has_valid_civic = civic_death_cult }}
-			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 		}
 		modifier = {
-			job_culture_worker_add = 200
+			job_bureaucrat_add = 400
 		}
 	}
+	# inline_script = {
+	# 	script = jobs/pw/death_chronicler_add
+	# 	OWNER_CONDITION = "is_gestalt = no"
+	# 	AMOUNT = 2
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-			owner = { is_spiritualist = no }
-			NOT = { owner = { has_valid_civic = civic_death_cult }}
-			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
-			owner = { is_worker_coop_empire = no }
-		}
-		modifier = {
-			job_manager_add = 200
-		}
-	}
+	#Death Priests/Priests/Culture workers/Managers (2)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_death_cult }
+	# 			owner = { has_valid_civic = civic_death_cult_corporate }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_bureaucrat_add = 200 # death_priest
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_worker_coop_empire = yes
-				is_spiritualist = no
-			}
-		}
-		modifier = {
-			job_steward_add = 200
-		}
-	}
+	# # Note: if the owner is not spiritualist, this building is not destroyed but produce no job.
+	# inline_script = {
+	# 	script = jobs/pw/bureaucrat_add
+	# 	OWNER_CONDITION = "is_spiritualist = yes is_death_cult_empire = no"
+	# 	AMOUNT = 2
+	# }
+
+	# # triggered_planet_modifier = {
+	# # 	potential = {
+	# # 		exists = owner
+	# # 		owner = { is_spiritualist = yes }
+	# # 		NOT = { owner = { has_valid_civic = civic_death_cult }}
+	# # 		NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
+	# # 	}
+	# # 	modifier = {
+	# # 		job_bureaucrat_add = 200 # priest
+	# # 	}
+	# # }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = no }
+	# 		owner = { is_spiritualist = no }
+	# 		NOT = { owner = { has_valid_civic = civic_death_cult }}
+	# 		NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_megacorp = yes }
+	# 		owner = { is_spiritualist = no }
+	# 		NOT = { owner = { has_valid_civic = civic_death_cult }}
+	# 		NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
+	# 		owner = { is_worker_coop_empire = no }
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 200
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_worker_coop_empire = yes
+	# 			is_spiritualist = no
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_steward_add = 200
+	# 	}
+	# }
 
 	#Gestalt Jobs (total: 7/5)
 	#Tomb surveyors (2)
@@ -2559,58 +2587,68 @@ pw_building_unhallowed_necropolis = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			OR = {
-				owner = { has_valid_civic = civic_hive_memorialist }
-				owner = { has_valid_civic = civic_machine_memorialist }
-			}
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_chronicle_drone_add = 200
+			job_coordinator_add = 400
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { NOT = { has_valid_civic = civic_hive_memorialist }}
-		}
-		modifier = {
-			job_coordinator_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_hive_memorialist }
+	# 			owner = { has_valid_civic = civic_machine_memorialist }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_chronicle_drone_add = 200
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { NOT = { has_valid_civic = civic_machine_memorialist }}
-		}
-		modifier = {
-			job_evaluator_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		owner = { NOT = { has_valid_civic = civic_hive_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_coordinator_add = 200
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 		owner = { NOT = { has_valid_civic = civic_machine_memorialist }}
+	# 	}
+	# 	modifier = {
+	# 		job_evaluator_add = 200
+	# 	}
+	# }
 
 	#Evaluator/Synapse (2)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_coordinator_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_coordinator_add = 200
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			job_evaluator_add = 200
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_evaluator_add = 200
+	# 	}
+	# }
 
 	#Stability from ambition
 	triggered_planet_modifier = {
@@ -2639,100 +2677,100 @@ pw_building_unhallowed_necropolis = {
 	}
 
 	#High Priest
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_spiritualist = yes
-				not = { has_origin = origin_cybernetic_creed }
-			}
-		}
-		text = job_high_priest_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			not = { has_origin = origin_cybernetic_creed }
+	# 		}
+	# 	}
+	# 	text = job_high_priest_effect_desc
+	# }
 
-	#Technophant
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_spiritualist = yes
-				has_origin = origin_cybernetic_creed
-			}
-		}
-		text = job_technophant_effect_desc
-	}
+	# #Technophant
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_spiritualist = yes
+	# 			has_origin = origin_cybernetic_creed
+	# 		}
+	# 	}
+	# 	text = job_technophant_effect_desc
+	# }
 
-	#Administrator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# #Administrator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	#CEO
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = yes }
-			owner = { is_worker_coop_empire = no }
-		}
-		text = job_executive_effect_desc
-	}
+	# #CEO
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { is_megacorp = yes }
+	# 		owner = { is_worker_coop_empire = no }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
-	#Tomb Scholar
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			OR = {
-				merg_is_nuked = yes
-				is_planet_class = pc_relic
-			}
-		}
-		text = job_pw_tomb_scholar_effect_desc
-	}
+	# #Tomb Scholar
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		OR = {
+	# 			merg_is_nuked = yes
+	# 			is_planet_class = pc_relic
+	# 		}
+	# 	}
+	# 	text = job_pw_tomb_scholar_effect_desc
+	# }
 
-	#Tomb surveyor
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-			OR = {
-				merg_is_nuked = yes
-				is_planet_class = pc_relic
-			}
-		}
-		text = job_pw_tomb_surveyor_effect_desc
-	}
+	# #Tomb surveyor
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 		OR = {
+	# 			merg_is_nuked = yes
+	# 			is_planet_class = pc_relic
+	# 		}
+	# 	}
+	# 	text = job_pw_tomb_surveyor_effect_desc
+	# }
 
-	#Death Chronicler
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { has_valid_civic = civic_memorialist }
-		}
-		text = job_death_chronicler_effect_desc
-	}
+	# #Death Chronicler
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_valid_civic = civic_memorialist }
+	# 	}
+	# 	text = job_death_chronicler_effect_desc
+	# }
 
-	#Death Priests
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			OR = {
-				owner = { has_valid_civic = civic_death_cult }
-				owner = { has_valid_civic = civic_death_cult_corporate }
-			}
-		}
-		text = job_death_priest_effect_desc
-	}
+	# #Death Priests
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_death_cult }
+	# 			owner = { has_valid_civic = civic_death_cult_corporate }
+	# 		}
+	# 	}
+	# 	text = job_death_priest_effect_desc
+	# }
 
 	# #Priest
 	# triggered_desc = {
@@ -2746,85 +2784,85 @@ pw_building_unhallowed_necropolis = {
 	# 	text = job_priest_effect_desc
 	# }
 
-	inline_script = {
-		script = jobs/pw/bureaucrat_effect_desc
-		OWNER_CONDITION = "is_spiritualist = yes"
-	}
+	# inline_script = {
+	# 	script = jobs/pw/bureaucrat_effect_desc
+	# 	OWNER_CONDITION = "is_spiritualist = yes"
+	# }
 
-	#Culture Worker
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = no }
-			OR = {
-				owner = { NOT = { has_valid_civic = civic_memorialist }}
-				owner = { NOT = { has_valid_civic = civic_death_cult }}
-			}
-		}
-		text = job_bureaucrat_effect_desc
-	}
+	# #Culture Worker
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_spiritualist = no }
+	# 		owner = { is_megacorp = no }
+	# 		OR = {
+	# 			owner = { NOT = { has_valid_civic = civic_memorialist }}
+	# 			owner = { NOT = { has_valid_civic = civic_death_cult }}
+	# 		}
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
 
-	#Manager
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_megacorp = yes }
-			owner = { is_worker_coop_empire = no }
-		}
-		text = job_manager_effect_desc
-	}
+	# #Manager
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = yes }
+	# 		owner = { is_worker_coop_empire = no }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
 
-	#Steward
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_worker_coop_empire = yes }
-		}
-		text = job_steward_effect_desc
-	}
+	# #Steward
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_worker_coop_empire = yes }
+	# 	}
+	# 	text = job_steward_effect_desc
+	# }
 
-	#Hunter-Seeker drone
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# #Hunter-Seeker drone
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
-	#Chronicle Drone
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-			OR = {
-				owner = { has_valid_civic = civic_hive_memorialist }
-				owner = { has_valid_civic = civic_machine_memorialist }
-			}
-		}
-		text = job_chronicle_drone_effect_desc
-	}
+	# #Chronicle Drone
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_hive_memorialist }
+	# 			owner = { has_valid_civic = civic_machine_memorialist }
+	# 		}
+	# 	}
+	# 	text = job_chronicle_drone_effect_desc
+	# }
 
-	#Evaluator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_evaluator_effect_desc
-	}
+	# #Evaluator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_evaluator_effect_desc
+	# }
 
-	#Synapse
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_synapse_drone_effect_desc
-	}
+	# #Synapse
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_synapse_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.2400 }

@@ -310,41 +310,41 @@ pw_building_mantle_crucible = {
 		text = pw_planet_wonder_lb
 	}
 
-	inline_script = {
-		script = jobs/pw/foundry_effect_desc
-		OWNER_CONDITION = ""
-	}
+	# inline_script = {
+	# 	script = jobs/pw/foundry_effect_desc
+	# 	OWNER_CONDITION = ""
+	# }
 
-	inline_script = {
-		script = jobs/pw/factory_effect_desc
-		OWNER_CONDITION = "country_uses_consumer_goods = yes"
-	}
+	# inline_script = {
+	# 	script = jobs/pw/factory_effect_desc
+	# 	OWNER_CONDITION = "country_uses_consumer_goods = yes"
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { country_uses_consumer_goods = no }
-		}
-		text = job_miner_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { country_uses_consumer_goods = no }
+	# 	}
+	# 	text = job_miner_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_mining_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_mining_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { country_uses_consumer_goods = no }
-		}
-		text = job_mining_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 		owner = { country_uses_consumer_goods = no }
+	# 	}
+	# 	text = job_mining_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1300 }
@@ -632,26 +632,26 @@ pw_building_titan_forge = {
 		text = pw_empire_unique_lb
 	}
 
-	inline_script = {
-		script = jobs/pw/foundry_effect_desc
-		OWNER_CONDITION = ""
-	}
+	# inline_script = {
+	# 	script = jobs/pw/foundry_effect_desc
+	# 	OWNER_CONDITION = ""
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_replicator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_replicator_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -919,37 +919,37 @@ pw_building_industrial_hearth = {
 		text = pw_empire_unique_lb
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_pw_poly_artisan_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_pw_poly_artisan_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_merchant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_pw_poly_artisan_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_pw_poly_artisan_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_replicator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_replicator_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.

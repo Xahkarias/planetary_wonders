@@ -1313,7 +1313,7 @@ pw_holy_reliquary_archaeology_signet_ring = {
 pw_hidden_factory_archaeology_exhausted_minerals = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
 	icon_frame = @pw_icon_frame_red
-	district_mining_max = -2
+	district_mining_max_add = -2
 	planet_jobs_minerals_produces_mult = -0.15
 }
 
