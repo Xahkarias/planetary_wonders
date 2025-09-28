@@ -906,7 +906,7 @@ pw_building_martial_avenue = {
 			exists = owner
 			owner = {
 				is_militarist = yes
-				NOT = { has_valid_civic = civic_reanimated_armies }
+				# NOT = { has_valid_civic = civic_reanimated_armies }
 			}
 		}
 		modifier = {
@@ -915,19 +915,19 @@ pw_building_martial_avenue = {
 	}
 
 	#Necromancer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_militarist = yes
-				has_valid_civic = civic_reanimated_armies
-			}
-		}
-		modifier = {
-			job_soldier_add = 100
-			job_necromancer_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_militarist = yes
+	# 			has_valid_civic = civic_reanimated_armies
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_soldier_add = 100
+	# 		job_necromancer_add = 100
+	# 	}
+	# }
 
 	#Stability from ambition
 	triggered_planet_modifier = {
