@@ -49,10 +49,7 @@ pw_tech_planetary_mega_engineering = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -147,10 +144,7 @@ pw_tech_space_elevator = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -848,10 +842,7 @@ pw_tech_space_elevator_counterweight_habitat = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -986,10 +977,7 @@ pw_tech_space_elevator_intergalactic_assets_concession = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1080,10 +1068,7 @@ pw_tech_space_elevator_nuclear_launch_pad = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1143,10 +1128,7 @@ pw_tech_particle_supercollider = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1206,10 +1188,7 @@ pw_tech_domed_city = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1269,10 +1248,7 @@ pw_tech_abyssal_crater_test_site = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1332,10 +1308,7 @@ pw_tech_erebus_project = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1413,10 +1386,7 @@ pw_tech_erebus_fracking_plant = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1565,10 +1535,7 @@ pw_tech_helios_tower = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1645,10 +1612,7 @@ pw_tech_helios_translucent_obelisk = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1797,10 +1761,7 @@ pw_tech_demetrius_fields = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -1885,10 +1846,7 @@ pw_tech_demetrius_chemical_garden = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2055,10 +2013,7 @@ pw_tech_resource_land_repurposing_1 = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2164,10 +2119,7 @@ pw_tech_resource_land_repurposing_2 = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2273,10 +2225,7 @@ pw_tech_resource_land_repurposing_3 = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2366,10 +2315,7 @@ pw_tech_galactic_modeling = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2487,10 +2433,7 @@ pw_tech_galactic_model_expanding_bureaucracy = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2615,10 +2558,7 @@ pw_tech_galactic_model_expanding_bureaucracy_hive = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2743,10 +2683,7 @@ pw_tech_galactic_model_expanding_bureaucracy_machine = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -2872,10 +2809,7 @@ pw_tech_utilitarian_vigilance = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -3515,10 +3449,7 @@ pw_tech_metaphysical_singularity = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -3598,10 +3529,7 @@ pw_tech_metacognition_dialectics = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -3687,10 +3615,7 @@ pw_tech_guardian_angel = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -3819,10 +3744,7 @@ pw_tech_stellar_sentinel = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -3933,10 +3855,7 @@ pw_tech_planetary_mantle_production = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4038,10 +3957,7 @@ pw_tech_titan_forge = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4212,10 +4128,7 @@ pw_tech_industrial_hearth = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4451,10 +4364,7 @@ pw_tech_great_art_exhibition = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4571,10 +4481,7 @@ pw_tech_artistic_dissemination = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4685,10 +4592,7 @@ pw_tech_xeno_art_integration = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4830,10 +4734,7 @@ pw_tech_artistic_exaltation = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -4940,10 +4841,7 @@ pw_tech_xeno_art_alienation = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -5084,10 +4982,7 @@ pw_tech_artistic_defamation = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -5188,10 +5083,7 @@ pw_tech_spiritual_artifacts_studies = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -5379,10 +5271,7 @@ pw_tech_materialist_archiving = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -5776,10 +5665,7 @@ pw_tech_transplanetary_logistics = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -5882,10 +5768,7 @@ pw_tech_egalitarian_distribution_services = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -5984,10 +5867,7 @@ pw_tech_egalitarian_emergency_services = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -6086,10 +5966,7 @@ pw_tech_egalitarian_cultural_development = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -6188,10 +6065,7 @@ pw_tech_egalitarian_industrial_development = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -6331,10 +6205,7 @@ pw_tech_elitist_urbanism = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -6447,10 +6318,7 @@ pw_tech_capital_developments = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -7591,10 +7459,7 @@ pw_tech_festivals_of_harmony = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -8051,10 +7916,7 @@ pw_tech_parades_of_supremacy = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -8742,10 +8604,7 @@ pw_tech_living_spire = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -8936,10 +8795,7 @@ pw_tech_conduit_of_unity = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -9425,10 +9281,7 @@ pw_tech_augmented_reality_resorts = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -9561,10 +9414,7 @@ pw_tech_worldly_mausoleums = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -9713,10 +9563,7 @@ pw_tech_cyberecology = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -9849,10 +9696,7 @@ pw_tech_xenoeconomy = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
@@ -10346,10 +10190,7 @@ pw_tech_planetary_banquets = {
 			}
 		}
 
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
+		
 
 		modifier = {
 			factor = @federation_perk_factor
