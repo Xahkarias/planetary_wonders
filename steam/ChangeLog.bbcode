@@ -1,3 +1,21 @@
+[h1]Version 1.7.1 (for Stellaris 4.1.*)[/h1]
+[h2]Update by FebHare and Xahkarias[/h2]
+[list]
+    [*] Removed @ap_technological_ascendancy_rare_tech, which allows all the techs to be drawn again.
+    [*] Buildings no longer need job_XXX_effect_desc. Now they are generated automatically. 
+    [*] Replaced usings of jobs/pw/politician_add inline script with jobs/politician_add inline script. 
+    [*] Changed district_XXX_max modifier to district_XXX_max_add. 
+    [*] Fixed pw_jobs_any_research scripted trigger.
+    [*] Integrated job_duelist_add into job_entertainer_add. Opened job is a mock, so nobody can take it. 
+    [*] Integrated job_culture_worker_add, job_preacher_add and job_haruspex_add into job_bureaucrat_add. Opened jobs are mocks, so nobody can take it. 
+    [*] Integrated job_bath_attendant_add into job_healthcare_add. Opened job is a mock, so nobody can take it. 
+    [*] Integrated job_bath_attendant_hive_add into job_spawning_drone_add. Opened job is a mock, so nobody can take it. 
+    [*] Integrated job_bath_attendant_machine_add into job_replicator_add. Opened job is a mock, so nobody can take it. 
+    [*] Disabled job_maintenance_drone_add and job_maintenance_drone_per_pop. This job is not capped by job slots, so these modifier isn't required.
+    [*] Fixed pw_wonder.106 colony ship doesn't have any ship component so can't move.
+    [*] Disabled job_necromancer_add in Martial Avenue building.
+[/list]
+
 [h1]Version 1.7.0 (for Stellaris 4.0.*)[/h1]
 [h2]Update by AdmirableOstrich[/h2]
 [list]
