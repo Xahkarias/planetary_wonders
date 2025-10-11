@@ -20,9 +20,3 @@ inline_script = {
 	script = technologies/rare_technologies_weight_modifiers
 	TECHNOLOGY = $TECHNOLOGY$
 }
-
-# plus enigmatic engineering ascension perk modifier
-modifier = {
-	factor = @ap_technological_ascendancy_rare_tech
-	has_ascension_perk = ap_enigmatic_engineering
-}
