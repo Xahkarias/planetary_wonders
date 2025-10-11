@@ -21,80 +21,80 @@ pw_mod_demetrius_harvesting = {
 pw_mod_extra_mining_district = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_mining_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_mining_max = 1
-	district_generator_max = -1
-	district_farming_max = -1
+	district_mining_max_add = 1
+	district_generator_max_add = -1
+	district_farming_max_add = -1
 	planet_districts_cost_mult = 0.15
 }
 
 pw_mod_extra_mining_district_extra = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_mining_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_mining_max = 2
-	district_generator_max = -2
-	district_farming_max = -2
+	district_mining_max_add = 2
+	district_generator_max_add = -2
+	district_farming_max_add = -2
 	planet_districts_cost_mult = 0.25
 }
 
 pw_mod_extra_mining_district_max = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_mining_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_mining_max = 4
-	district_generator_max = -4
-	district_farming_max = -4
+	district_mining_max_add = 4
+	district_generator_max_add = -4
+	district_farming_max_add = -4
 	planet_districts_cost_mult = 0.50
 }
 
 pw_mod_extra_generator_district = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_generator_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_generator_max = 1
-	district_mining_max = -1
-	district_farming_max = -1
+	district_generator_max_add = 1
+	district_mining_max_add = -1
+	district_farming_max_add = -1
 	planet_districts_cost_mult = 0.15
 }
 
 pw_mod_extra_generator_district_extra = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_generator_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_generator_max = 2
-	district_mining_max = -2
-	district_farming_max = -2
+	district_generator_max_add = 2
+	district_mining_max_add = -2
+	district_farming_max_add = -2
 	planet_districts_cost_mult = 0.25
 }
 
 pw_mod_extra_generator_district_max = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_generator_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_generator_max = 4
-	district_mining_max = -4
-	district_farming_max = -4
+	district_generator_max_add = 4
+	district_mining_max_add = -4
+	district_farming_max_add = -4
 	planet_districts_cost_mult = 0.50
 }
 
 pw_mod_extra_farming_district = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_farming_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_farming_max = 1
-	district_generator_max = -1
-	district_mining_max = -1
+	district_farming_max_add = 1
+	district_generator_max_add = -1
+	district_mining_max_add = -1
 	planet_districts_cost_mult = 0.15
 }
 
 pw_mod_extra_farming_district_extra = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_farming_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_farming_max = 2
-	district_generator_max = -2
-	district_mining_max = -2
+	district_farming_max_add = 2
+	district_generator_max_add = -2
+	district_mining_max_add = -2
 	planet_districts_cost_mult = 0.25
 }
 
 pw_mod_extra_farming_district_max = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_extra_farming_district.dds"
 	icon_frame = @pw_icon_frame_green
-	district_farming_max = 4
-	district_generator_max = -4
-	district_mining_max = -4
+	district_farming_max_add = 4
+	district_generator_max_add = -4
+	district_mining_max_add = -4
 	planet_districts_cost_mult = 0.50
 }

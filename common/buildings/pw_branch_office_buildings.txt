@@ -74,33 +74,34 @@ pw_building_bloodsports_arena = {
 		branch_office_value_mult = 0.15
 		pop_ethic_militarist_attraction_mult = 0.20
 		job_clerk_add = 100
+		job_entertainer_add = 100
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				NOT = { has_valid_civic = civic_warrior_culture }
-			}
-		}
-		modifier = {
-			job_entertainer_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_gestalt = no
+	# 			NOT = { has_valid_civic = civic_warrior_culture }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_entertainer_add = 100
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				has_valid_civic = civic_warrior_culture
-			}
-		}
-		modifier = {
-			job_duelist_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_gestalt = no
+	# 			has_valid_civic = civic_warrior_culture
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_duelist_add = 100
+	# 	}
+	# }
 
 	triggered_planet_modifier = {
 		potential = {
@@ -219,6 +220,7 @@ pw_building_meditation_garden = {
 		branch_office_value_mult = 0.15
 		pop_ethic_pacifist_attraction_mult = 0.20
 		job_clerk_add = 100
+		job_bureaucrat_add = 100
 	}
 
 	# #Bureaucrat
@@ -253,7 +255,7 @@ pw_building_meditation_garden = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 
@@ -271,11 +273,11 @@ pw_building_meditation_garden = {
 		text = pw_branch_office_unique_lb
 	}
 
-	inline_script = {
-		script = jobs/pw/bureaucrat_add
-		OWNER_CONDITION = ""
-		AMOUNT = 1
-	}
+	# inline_script = {
+	# 	script = jobs/pw/bureaucrat_add
+	# 	OWNER_CONDITION = ""
+	# 	AMOUNT = 1
+	# }
 
 	on_built = {
 		planet_event = { id = pw_branch_office.120 }
@@ -497,7 +499,7 @@ pw_building_salvation_shrine = {
 			}
 		}
 		modifier = {
-			job_preacher_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 
@@ -509,7 +511,7 @@ pw_building_salvation_shrine = {
 				# This building is a corporate branch (can be built on non-corporate planet).
 				# So planet owner is not megacorp always.
 	# 			is_megacorp = no
-				NOT = { has_origin = origin_cybernetic_creed }
+				# NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
 		modifier = {
@@ -517,41 +519,41 @@ pw_building_salvation_shrine = {
 		}
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_ethic = ethic_fanatic_spiritualist
-	# 			is_megacorp = no
-				NOT = { has_origin = origin_cybernetic_creed }
-			}
-		}
-		text = job_priest_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_ethic = ethic_fanatic_spiritualist
+	# # 			is_megacorp = no
+	# 			NOT = { has_origin = origin_cybernetic_creed }
+	# 		}
+	# 	}
+	# 	text = job_priest_effect_desc
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_ethic = ethic_fanatic_spiritualist
-				has_origin = origin_cybernetic_creed
-			}
-		}
-		modifier = {
-			job_haruspex_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_ethic = ethic_fanatic_spiritualist
+	# 			has_origin = origin_cybernetic_creed
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_haruspex_add = 100
+	# 	}
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_ethic = ethic_fanatic_spiritualist
-				has_origin = origin_cybernetic_creed
-			}
-		}
-		text = job_haruspex_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_ethic = ethic_fanatic_spiritualist
+	# 			has_origin = origin_cybernetic_creed
+	# 		}
+	# 	}
+	# 	text = job_haruspex_effect_desc
+	# }
 
 	# triggered_planet_modifier = {
 	# 	potential = {
@@ -566,26 +568,26 @@ pw_building_salvation_shrine = {
 	# 	}
 	# }
 
-	triggered_desc = {
-		trigger = {
-	# 		or = {
-	# 			and = {
-					exists = branch_office_owner
-					branch_office_owner = {
-						has_valid_civic = civic_gospel_of_the_masses
-					}
-	# 			}
-	# 			and = {
-	# 				exists = owner
-	# 				owner = {
-	# 					has_ethic = ethic_fanatic_spiritualist
-	# 					is_megacorp = yes
+	# triggered_desc = {
+	# 	trigger = {
+	# # 		or = {
+	# # 			and = {
+	# 				exists = branch_office_owner
+	# 				branch_office_owner = {
+	# 					has_valid_civic = civic_gospel_of_the_masses
 	# 				}
-	# 			}
-	# 		}
-		}
-		text = job_preacher_effect_desc
-	}
+	# # 			}
+	# # 			and = {
+	# # 				exists = owner
+	# # 				owner = {
+	# # 					has_ethic = ethic_fanatic_spiritualist
+	# # 					is_megacorp = yes
+	# # 				}
+	# # 			}
+	# # 		}
+	# 	}
+	# 	text = job_preacher_effect_desc
+	# }
 
 	triggered_planet_modifier = {
 		potential = {
@@ -703,7 +705,7 @@ pw_building_exotic_beauty_center = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 
@@ -823,7 +825,7 @@ pw_building_national_pride_gallery = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 

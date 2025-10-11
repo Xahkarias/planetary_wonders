@@ -821,7 +821,8 @@ pw_has_designation_mantle_crucible_check = {
 
 #Scope: Planet
 pw_jobs_any_research = {
-	num_pops_with_job_tag = {
+	# num_pops_with_job_tag = {
+	total_workforce_with_job_tag = {
 		value > 0
 		tags = { research }
 	}

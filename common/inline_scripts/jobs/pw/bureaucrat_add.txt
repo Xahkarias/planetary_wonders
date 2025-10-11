@@ -13,8 +13,8 @@ triggered_planet_modifier = {
 		exists = owner
 		owner = {
 			$OWNER_CONDITION$
-			is_spiritualist = no
-			is_megacorp = no
+			# is_spiritualist = no
+			# is_megacorp = no
 		}
 	}
 	job_bureaucrat_add = 100
@@ -22,74 +22,74 @@ triggered_planet_modifier = {
 }
 
 #Manager
-triggered_planet_modifier = {
-	potential = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_spiritualist = no
-			is_megacorp = yes
-			is_worker_coop_empire = no
-		}
-	}
-	job_manager_add = 100
-	mult = $AMOUNT$
-}
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_spiritualist = no
+# 			is_megacorp = yes
+# 			is_worker_coop_empire = no
+# 		}
+# 	}
+# 	job_manager_add = 100
+# 	mult = $AMOUNT$
+# }
 
-#Steward
-triggered_planet_modifier = {
-	potential = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_spiritualist = no
-			is_worker_coop_empire = yes
-		}
-	}
-	job_steward_add = 100
-	mult = $AMOUNT$
-}
+# #Steward
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_spiritualist = no
+# 			is_worker_coop_empire = yes
+# 		}
+# 	}
+# 	job_steward_add = 100
+# 	mult = $AMOUNT$
+# }
 
-#Priest
-triggered_planet_modifier = {
-	potential = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_spiritualist = yes
-			is_megacorp = no
-			NOT = { has_origin = origin_cybernetic_creed }
-		}
-	}
-	job_bureaucrat_add = 100 # priest
-	mult = $AMOUNT$
-}
+# #Priest
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_spiritualist = yes
+# 			is_megacorp = no
+# 			NOT = { has_origin = origin_cybernetic_creed }
+# 		}
+# 	}
+# 	job_bureaucrat_add = 100 # priest
+# 	mult = $AMOUNT$
+# }
 
-#Preacher
-triggered_planet_modifier = {
-	potential = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_spiritualist = yes
-			is_megacorp = yes
-			NOT = { has_origin = origin_cybernetic_creed }
-		}
-	}
-	job_preacher_add = 100
-	mult = $AMOUNT$
-}
+# #Preacher
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_spiritualist = yes
+# 			is_megacorp = yes
+# 			NOT = { has_origin = origin_cybernetic_creed }
+# 		}
+# 	}
+# 	job_preacher_add = 100
+# 	mult = $AMOUNT$
+# }
 
-#Haruspex
-triggered_planet_modifier = {
-	potential = {
-		exists = owner
-		owner = {
-			$OWNER_CONDITION$
-			is_spiritualist = yes
-			has_origin = origin_cybernetic_creed
-		}
-	}
-	job_haruspex_add = 100
-	mult = $AMOUNT$
-}
+# #Haruspex
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			$OWNER_CONDITION$
+# 			is_spiritualist = yes
+# 			has_origin = origin_cybernetic_creed
+# 		}
+# 	}
+# 	job_haruspex_add = 100
+# 	mult = $AMOUNT$
+# }

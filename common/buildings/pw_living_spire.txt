@@ -358,11 +358,15 @@ pw_building_living_spire_1 = {
 	triggered_desc = {
 		text = pw_planet_wonder_lb
 	}
+	# inline_script = {
+	# 	script = jobs/pw/politician_add
+	# 	OWNER_CONDITION = ""
+	# 	SHOW_JOB_STEWARD_EFFECT_DESC = yes
+	# 	AMOUNT = 1
+	# }
 	inline_script = {
-		script = jobs/pw/politician_add
-		OWNER_CONDITION = ""
-		SHOW_JOB_STEWARD_EFFECT_DESC = yes
-		AMOUNT = 1
+		script = jobs/politician_add
+		AMOUNT = 100
 	}
 	#Medical Worker
 	triggered_planet_modifier = {
@@ -379,7 +383,7 @@ pw_building_living_spire_1 = {
 					has_ascension_perk = ap_the_flesh_is_weak
 					has_origin = origin_cybernetic_creed
 				}
-				has_toxic_baths = no
+				# has_toxic_baths = no
 			}
 		}
 		modifier = {
@@ -404,27 +408,27 @@ pw_building_living_spire_1 = {
 		}
 	}
 	#Spa Attendants (1) (only mutagenic spas)
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				# NOT = {
-				# 	has_ascension_perk = ap_synthetic_evolution
-				# }
-				nor = {
-					has_ascension_perk = ap_synthetic_evolution
-					has_origin = origin_synthetic_fertility
-					is_individual_machine = yes
-					has_ascension_perk = ap_the_flesh_is_weak
-					has_origin = origin_cybernetic_creed
-				}
-				has_toxic_baths = yes
-			}
-		}
-		modifier = {
-			job_bath_attendant_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			# NOT = {
+	# 			# 	has_ascension_perk = ap_synthetic_evolution
+	# 			# }
+	# 			nor = {
+	# 				has_ascension_perk = ap_synthetic_evolution
+	# 				has_origin = origin_synthetic_fertility
+	# 				is_individual_machine = yes
+	# 				has_ascension_perk = ap_the_flesh_is_weak
+	# 				has_origin = origin_cybernetic_creed
+	# 			}
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_bath_attendant_add = 100
+	# 	}
+	# }
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -483,94 +487,94 @@ pw_building_living_spire_1 = {
 	#		text = job_executive_effect_desc
 	#	}
 	#Medical Worker
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				# NOT = {
-				# 	has_ascension_perk = ap_synthetic_evolution
-				# }
-				nor = {
-					has_ascension_perk = ap_synthetic_evolution
-					has_origin = origin_synthetic_fertility
-					is_individual_machine = yes
-					has_ascension_perk = ap_the_flesh_is_weak
-					has_origin = origin_cybernetic_creed
-				}
-				has_toxic_baths = no
-			}
-		}
-		text = job_healthcare_effect_desc
-	}
-	#Roboticist
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				# has_ascension_perk = ap_synthetic_evolution
-				OR = {
-					has_ascension_perk = ap_synthetic_evolution
-					has_origin = origin_synthetic_fertility
-					is_individual_machine = yes
-				}
-			}
-		}
-		text = job_roboticist_effect_desc
-	}
-	#Bath Attendant
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				# NOT = {
-				# 	has_ascension_perk = ap_synthetic_evolution
-				# }
-				nor = {
-					has_ascension_perk = ap_synthetic_evolution
-					has_origin = origin_synthetic_fertility
-					is_individual_machine = yes
-					has_ascension_perk = ap_the_flesh_is_weak
-					has_origin = origin_cybernetic_creed
-				}
-				has_toxic_baths = yes
-			}
-		}
-		text = job_toxic_baths_effect_desc
-	}
-	#Augmentor
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				or = {
-					has_ascension_perk = ap_the_flesh_is_weak
-					has_origin = origin_cybernetic_creed
-				}
-			}
-			is_cyborg_empire = yes
-		}
-		text = job_augmentor_growth_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				or = {
-					has_ascension_perk = ap_the_flesh_is_weak
-					has_origin = origin_cybernetic_creed
-				}
-			}
-			is_cyborg_empire = no
-		}
-		text = job_augmentor_research_effect_desc
-	}
-	#Clerk
-	triggered_desc = {
-		trigger = {
-			exists = owner
-		}
-		text = job_clerk_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			# NOT = {
+	# 			# 	has_ascension_perk = ap_synthetic_evolution
+	# 			# }
+	# 			nor = {
+	# 				has_ascension_perk = ap_synthetic_evolution
+	# 				has_origin = origin_synthetic_fertility
+	# 				is_individual_machine = yes
+	# 				has_ascension_perk = ap_the_flesh_is_weak
+	# 				has_origin = origin_cybernetic_creed
+	# 			}
+	# 			has_toxic_baths = no
+	# 		}
+	# 	}
+	# 	text = job_healthcare_effect_desc
+	# }
+	# #Roboticist
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			# has_ascension_perk = ap_synthetic_evolution
+	# 			OR = {
+	# 				has_ascension_perk = ap_synthetic_evolution
+	# 				has_origin = origin_synthetic_fertility
+	# 				is_individual_machine = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_roboticist_effect_desc
+	# }
+	# #Bath Attendant
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			# NOT = {
+	# 			# 	has_ascension_perk = ap_synthetic_evolution
+	# 			# }
+	# 			nor = {
+	# 				has_ascension_perk = ap_synthetic_evolution
+	# 				has_origin = origin_synthetic_fertility
+	# 				is_individual_machine = yes
+	# 				has_ascension_perk = ap_the_flesh_is_weak
+	# 				has_origin = origin_cybernetic_creed
+	# 			}
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	text = job_toxic_baths_effect_desc
+	# }
+	# #Augmentor
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			or = {
+	# 				has_ascension_perk = ap_the_flesh_is_weak
+	# 				has_origin = origin_cybernetic_creed
+	# 			}
+	# 		}
+	# 		is_cyborg_empire = yes
+	# 	}
+	# 	text = job_augmentor_growth_effect_desc
+	# }
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			or = {
+	# 				has_ascension_perk = ap_the_flesh_is_weak
+	# 				has_origin = origin_cybernetic_creed
+	# 			}
+	# 		}
+	# 		is_cyborg_empire = no
+	# 	}
+	# 	text = job_augmentor_research_effect_desc
+	# }
+	# #Clerk
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 	}
+	# 	text = job_clerk_effect_desc
+	# }
 	ai_weight = {
 		weight = 60
 		modifier = {
@@ -809,11 +813,15 @@ pw_building_living_spire_2 = {
 	triggered_desc = {
 		text = pw_planet_wonder_lb
 	}
+	# inline_script = {
+	# 	script = jobs/pw/politician_add
+	# 	OWNER_CONDITION = ""
+	# 	SHOW_JOB_STEWARD_EFFECT_DESC = yes
+	# 	AMOUNT = 1
+	# }
 	inline_script = {
-		script = jobs/pw/politician_add
-		OWNER_CONDITION = ""
-		SHOW_JOB_STEWARD_EFFECT_DESC = yes
-		AMOUNT = 1
+		script = jobs/politician_add
+		AMOUNT = 100
 	}
 	#Merchant
 	triggered_planet_modifier = {
@@ -1076,34 +1084,34 @@ pw_building_living_spire_2 = {
 		ASSEMBLY_MULT = 0.1
 	}
 	#Clerk
-	triggered_desc = {
-		trigger = {
-			exists = owner
-		}
-		text = job_clerk_effect_desc
-	}
-	#Enforcer
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			NOT = {
-				owner = {
-					has_active_tradition = tr_psionics_psi_corps
-				}
-			}
-		}
-		text = job_enforcer_effect_desc
-	}
-	#Telepath
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_psionics_psi_corps
-			}
-		}
-		text = job_telepath_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 	}
+	# 	text = job_clerk_effect_desc
+	# }
+	# #Enforcer
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		NOT = {
+	# 			owner = {
+	# 				has_active_tradition = tr_psionics_psi_corps
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_enforcer_effect_desc
+	# }
+	# #Telepath
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_active_tradition = tr_psionics_psi_corps
+	# 		}
+	# 	}
+	# 	text = job_telepath_effect_desc
+	# }
 	#Entertainer
 	# triggered_desc = {
 	# 	trigger = {
@@ -1365,11 +1373,15 @@ pw_building_living_spire_3 = {
 	triggered_desc = {
 		text = pw_planet_wonder_lb
 	}
+	# inline_script = {
+	# 	script = jobs/pw/politician_add
+	# 	OWNER_CONDITION = ""
+	# 	SHOW_JOB_STEWARD_EFFECT_DESC = yes
+	# 	AMOUNT = 2
+	# }
 	inline_script = {
-		script = jobs/pw/politician_add
-		OWNER_CONDITION = ""
-		SHOW_JOB_STEWARD_EFFECT_DESC = yes
-		AMOUNT = 2
+		script = jobs/politician_add
+		AMOUNT = 200
 	}
 	#Merchant
 	triggered_planet_modifier = {
@@ -1594,34 +1606,34 @@ pw_building_living_spire_3 = {
 		ASSEMBLY_MULT = 0.15
 	}
 	#Clerk
-	triggered_desc = {
-		trigger = {
-			exists = owner
-		}
-		text = job_clerk_effect_desc
-	}
-	#Enforcer
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			NOT = {
-				owner = {
-					has_active_tradition = tr_psionics_psi_corps
-				}
-			}
-		}
-		text = job_enforcer_effect_desc
-	}
-	#Telepath
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_psionics_psi_corps
-			}
-		}
-		text = job_telepath_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 	}
+	# 	text = job_clerk_effect_desc
+	# }
+	# #Enforcer
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		NOT = {
+	# 			owner = {
+	# 				has_active_tradition = tr_psionics_psi_corps
+	# 			}
+	# 		}
+	# 	}
+	# 	text = job_enforcer_effect_desc
+	# }
+	# #Telepath
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			has_active_tradition = tr_psionics_psi_corps
+	# 		}
+	# 	}
+	# 	text = job_telepath_effect_desc
+	# }
 	#Entertainer
 	# triggered_desc = {
 	# 	trigger = {

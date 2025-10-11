@@ -275,7 +275,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 800
-			job_maintenance_drone_add = 500
+			# job_maintenance_drone_add = 500
 		}
 	}
 
@@ -286,7 +286,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 600
-			job_maintenance_drone_add = 300
+			# job_maintenance_drone_add = 300
 		}
 	}
 
@@ -300,7 +300,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 1600
-			job_maintenance_drone_add = 1000
+			# job_maintenance_drone_add = 1000
 		}
 	}
 
@@ -311,7 +311,7 @@ pw_building_conduit_of_unity_1 = {
 		}
 		modifier = {
 			planet_housing_add = 2400
-			job_maintenance_drone_add = 1500
+			# job_maintenance_drone_add = 1500
 		}
 	}
 
@@ -344,7 +344,7 @@ pw_building_conduit_of_unity_1 = {
 		potential = {
 			owner = {
 				is_machine_empire = yes
-				has_toxic_baths = no
+				# has_toxic_baths = no
 			}
 		}
 		modifier = {
@@ -353,17 +353,17 @@ pw_building_conduit_of_unity_1 = {
 	}
 
 	#Lubricants
-	triggered_planet_modifier = {
-		potential = {
-			owner = {
-				is_machine_empire = yes
-				has_toxic_baths = yes
-			}
-		}
-		modifier = {
-			job_bath_attendant_machine_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		owner = {
+	# 			is_machine_empire = yes
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_bath_attendant_machine_add = 100
+	# 	}
+	# }
 
 	#Replicator -> AP
 	triggered_planet_modifier = {
@@ -396,7 +396,7 @@ pw_building_conduit_of_unity_1 = {
 		potential = {
 			owner = {
 				is_hive_empire = yes
-				has_toxic_baths = no
+				# has_toxic_baths = no
 			}
 		}
 		modifier = {
@@ -405,17 +405,17 @@ pw_building_conduit_of_unity_1 = {
 	}
 
 	#Permutation
-	triggered_planet_modifier = {
-		potential = {
-			owner = {
-				is_hive_empire = yes
-				has_toxic_baths = yes
-			}
-		}
-		modifier = {
-			job_bath_attendant_hive_add = 100
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		owner = {
+	# 			is_hive_empire = yes
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_bath_attendant_hive_add = 100
+	# 	}
+	# }
 
 	#Spawning Drone -> from tradition
 	triggered_planet_modifier = {
@@ -479,75 +479,75 @@ pw_building_conduit_of_unity_1 = {
 		text = pw_planet_wonder_lb
 	}
 	#Patrol
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
-	#Coordinator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_coordinator_effect_desc
-	}
-	#Replicator
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_replicator_effect_desc
-	}
-	#Lubricant
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-				has_toxic_baths = yes
-			}
-		}
-		text = job_toxic_baths_effect_machine_desc
-	}
-	#Synapsis
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_synapse_drone_effect_desc
-	}
-	#Spawning
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_spawning_drone_effect_desc
-	}
-	#Permutation
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_hive_empire = yes
-				has_toxic_baths = yes
-			}
-		}
-		text = job_toxic_baths_effect_hive_desc
-	}
-	#Maintenance
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
+	# #Coordinator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_coordinator_effect_desc
+	# }
+	# #Replicator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_replicator_effect_desc
+	# }
+	# #Lubricant
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_machine_empire = yes
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	text = job_toxic_baths_effect_machine_desc
+	# }
+	# #Synapsis
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_synapse_drone_effect_desc
+	# }
+	# #Spawning
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_spawning_drone_effect_desc
+	# }
+	# #Permutation
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_hive_empire = yes
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	text = job_toxic_baths_effect_hive_desc
+	# }
+	# #Maintenance
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_maintenance_drone_effect_desc
+	# }
 
 	ai_weight = {
 		weight = 70
@@ -781,13 +781,13 @@ pw_building_enigma_engine = {
 		text = pw_enigma_engine_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_pw_enigma_decipher_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_pw_enigma_decipher_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1000 }
@@ -960,7 +960,7 @@ pw_building_solipsist_debate_hall = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_per_pop = @pw_job_per_25_pop
+			# job_maintenance_drone_per_pop = @pw_job_per_25_pop
 			job_warrior_drone_per_pop = @pw_job_per_50_pop
 
 			#Complex
@@ -981,7 +981,7 @@ pw_building_solipsist_debate_hall = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_per_pop = @pw_job_per_25_pop
+			# job_maintenance_drone_per_pop = @pw_job_per_25_pop
 			job_warrior_drone_per_pop = @pw_job_per_30_pop
 
 			#Complex
@@ -1000,7 +1000,7 @@ pw_building_solipsist_debate_hall = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_hive_add = 100
+			job_spawning_drone_add = 100
 		}
 	}
 
@@ -1245,76 +1245,76 @@ pw_building_solipsist_debate_hall = {
 		text = pw_solipsist_debate_hall_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_maintenance_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_warrior_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_warrior_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_spawning_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_spawning_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			NOT = { owner = { has_valid_civic = civic_hive_devouring_swarm }}
-		}
-		text = job_synapse_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_hive_devouring_swarm }}
+	# 	}
+	# 	text = job_synapse_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			NOT = { owner = { has_valid_civic = civic_hive_devouring_swarm }}
-		}
-		text = job_brain_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		NOT = { owner = { has_valid_civic = civic_hive_devouring_swarm }}
+	# 	}
+	# 	text = job_brain_drone_effect_desc
+	# }
 
-	#Permutation
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_hive_empire = yes
-				has_toxic_baths = yes
-			}
-		}
-		text = job_toxic_baths_effect_hive_desc
-	}
+	# #Permutation
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_hive_empire = yes
+	# 			has_toxic_baths = yes
+	# 		}
+	# 	}
+	# 	text = job_toxic_baths_effect_hive_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_valid_civic = civic_hive_memorialist }
-			owner = { has_edict = pw_wonders_beyond_ambition }
-		}
-		text = job_chronicle_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { has_valid_civic = civic_hive_memorialist }
+	# 		owner = { has_edict = pw_wonders_beyond_ambition }
+	# 	}
+	# 	text = job_chronicle_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1100 }
@@ -1478,7 +1478,7 @@ pw_building_feasting_grounds = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_add = 200
+			# job_maintenance_drone_add = 200
 			job_warrior_drone_add = 200
 
 			#Complex
@@ -1495,7 +1495,7 @@ pw_building_feasting_grounds = {
 		}
 		modifier = {
 			#Simple
-			job_maintenance_drone_add = 200
+			# job_maintenance_drone_add = 200
 			job_warrior_drone_add = 200
 
 			#Complex
@@ -1536,38 +1536,38 @@ pw_building_feasting_grounds = {
 		text = pw_building_feasting_grounds_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_maintenance_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_maintenance_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_warrior_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_warrior_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_valid_civic = civic_hive_devouring_swarm }
-		}
-		text = job_pw_banquet_steward_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		owner = { has_valid_civic = civic_hive_devouring_swarm }
+	# 	}
+	# 	text = job_pw_banquet_steward_drone_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.2700 }

@@ -444,8 +444,13 @@ planet_event = {
 					set_location = root
 					create_ship = {
 						name = random
-						design = "NAME_Colonizer"
+						# This desine have no components, so can't go to other systems.
+						# design = "NAME_Colonizer"
 						colonizer_species = root.owner.owner_species
+						# based on distar.71 event, "no_room" option.
+						random_existing_design = colonizer
+						prefix = no
+						upgradable = no
 					}
 				}
 			}

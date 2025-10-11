@@ -292,23 +292,23 @@ pw_building_galactic_model = {
 	# 	text = pw_building_galactic_model_policy_tooltip
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -323,29 +323,29 @@ pw_building_galactic_model = {
 		AMOUNT = 8
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_synapse_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_synapse_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_evaluator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_evaluator_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.800 }
@@ -701,23 +701,23 @@ pw_building_aligned_galactic_model = {
 	# 	text = pw_building_galactic_model_policy_tooltip
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -732,37 +732,37 @@ pw_building_aligned_galactic_model = {
 		AMOUNT = 10
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_synapse_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_synapse_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_coordinator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_coordinator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_evaluator_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_evaluator_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_pw_logistics_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_pw_logistics_drone_effect_desc
+	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -1073,7 +1073,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
 		}
 		modifier = {
-			job_culture_worker_add = 200
+			job_bureaucrat_add = 200
 		}
 	}
 
@@ -1187,87 +1187,87 @@ pw_building_panopticon = {
 		text = pw_planet_wonder_lb
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_megacorp = no }
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
-		}
-		text = job_enforcer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
+	# 	}
+	# 	text = job_enforcer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { has_active_tradition = tr_psionics_psi_corps }
-		}
-		text = job_telepath_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
+	# 	}
+	# 	text = job_telepath_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_edict = pw_edict_panspectron }
-		}
-		text = job_pw_big_brother_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { has_edict = pw_edict_panspectron }
+	# 	}
+	# 	text = job_pw_big_brother_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_patrol_drone_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 	}
+	# 	text = job_patrol_drone_effect_desc
+	# }
 
-	inline_script = {
-		script = jobs/pw/foundry_effect_desc
-		OWNER_CONDITION = "is_authoritarian = yes
-						   has_technology = pw_tech_panopticon_penal_industries"
-	}
+	# inline_script = {
+	# 	script = jobs/pw/foundry_effect_desc
+	# 	OWNER_CONDITION = "is_authoritarian = yes
+	# 					   has_technology = pw_tech_panopticon_penal_industries"
+	# }
 
-	inline_script = {
-		script = jobs/pw/factory_effect_desc
-		OWNER_CONDITION = "is_authoritarian = yes
-						   has_technology = pw_tech_panopticon_penal_industries"
-	}
+	# inline_script = {
+	# 	script = jobs/pw/factory_effect_desc
+	# 	OWNER_CONDITION = "is_authoritarian = yes
+	# 					   has_technology = pw_tech_panopticon_penal_industries"
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_egalitarian = yes }
-			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
-		}
-		text = job_bureaucrat_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_egalitarian = yes }
+	# 		owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
 
 	# triggered_desc = {
 	# 	trigger = {
@@ -1291,29 +1291,28 @@ pw_building_panopticon = {
 
 	inline_script = {
 		script = jobs/pw/bureaucrat_add
-		OWNER_CONDITION = "is_pacifist = yes
-						   has_technology = pw_tech_panopticon_reformatory_bureaucratic_work"
+		OWNER_CONDITION = "is_pacifist = yes has_technology = pw_tech_panopticon_reformatory_bureaucratic_work"
 		AMOUNT = 2
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_militarist = yes }
-			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
-		}
-		text = job_soldier_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_militarist = yes }
+	# 		owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
+	# 	}
+	# 	text = job_soldier_effect_desc
+	# }
 
-	inline_script = {
-		script = jobs/pw/bureaucrat_effect_desc
-		OWNER_CONDITION =  "is_spiritualist = yes
-							has_technology = pw_tech_panopticon_repentance_preaching
-		    				nand = {
-		    					is_pacifist = yes
-		    					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
-		    				}"
-	}
+	# inline_script = {
+	# 	script = jobs/pw/bureaucrat_effect_desc
+	# 	OWNER_CONDITION =  "is_spiritualist = yes
+	# 						has_technology = pw_tech_panopticon_repentance_preaching
+	# 	    				nand = {
+	# 	    					is_pacifist = yes
+	# 	    					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+	# 	    				}"
+	# }
 	# triggered_desc = {
 	# 	trigger = {
 	# 		exists = owner
@@ -1348,15 +1347,15 @@ pw_building_panopticon = {
 	# 	text = job_preacher_effect_desc
 	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_pacifist = yes }
-			owner = { is_materialist = yes }
-			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
-		}
-		text = job_researcher_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_pacifist = yes }
+	# 		owner = { is_materialist = yes }
+	# 		owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
+	# 	}
+	# 	text = job_researcher_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.900 }
@@ -1684,95 +1683,95 @@ pw_building_forbidden_city = {
 		text = pw_forbidden_city_tooltip
 	}
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_authoritarian = yes
-				is_megacorp = no
-				NOT = { has_valid_civic = civic_merchant_guilds }
-				NOT = { has_valid_civic = civic_aristocratic_elite }
-				NOT = { has_valid_civic = civic_technocracy }
-				NOT = { has_valid_civic = civic_exalted_priesthood }
-				NOT = { has_valid_civic = civic_merchant_guilds }
-			}
-		}
-		text = job_politician_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_authoritarian = yes
+	# 			is_megacorp = no
+	# 			NOT = { has_valid_civic = civic_merchant_guilds }
+	# 			NOT = { has_valid_civic = civic_aristocratic_elite }
+	# 			NOT = { has_valid_civic = civic_technocracy }
+	# 			NOT = { has_valid_civic = civic_exalted_priesthood }
+	# 			NOT = { has_valid_civic = civic_merchant_guilds }
+	# 		}
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			owner = { is_megacorp = yes }
-		}
-		text = job_executive_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			OR = {
-				owner = { has_valid_civic = civic_merchant_guilds }
-				owner = { has_valid_civic = civic_corporate_dominion }
-			}
-		}
-		text = job_merchant_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		OR = {
+	# 			owner = { has_valid_civic = civic_merchant_guilds }
+	# 			owner = { has_valid_civic = civic_corporate_dominion }
+	# 		}
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			owner = { has_valid_civic = civic_aristocratic_elite }
-		}
-		text = job_noble_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		owner = { has_valid_civic = civic_aristocratic_elite }
+	# 	}
+	# 	text = job_noble_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			owner = { has_valid_civic = civic_technocracy }
-		}
-		text = job_head_researcher_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		owner = { has_valid_civic = civic_technocracy }
+	# 	}
+	# 	text = job_head_researcher_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			owner = { has_valid_civic = civic_exalted_priesthood }
-		}
-		text = job_high_priest_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		owner = { has_valid_civic = civic_exalted_priesthood }
+	# 	}
+	# 	text = job_high_priest_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
-		}
-		text = job_enforcer_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
+	# 	}
+	# 	text = job_enforcer_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-			owner = { has_active_tradition = tr_psionics_psi_corps }
-		}
-		text = job_telepath_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
+	# 	}
+	# 	text = job_telepath_effect_desc
+	# }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-		}
-		text = job_clerk_effect_desc
-	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_authoritarian = yes }
+	# 	}
+	# 	text = job_clerk_effect_desc
+	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1800 }
