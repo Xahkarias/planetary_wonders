@@ -133,7 +133,7 @@ pw_building_erebus_project = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_mining_director_add = 100
+			job_pw_mining_director_add = @pw_building_ruler_jobs
 		}
 	}
 
@@ -144,7 +144,7 @@ pw_building_erebus_project = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_mining_coordinator_add = 100
+			job_pw_mining_coordinator_add = @pw_building_ruler_jobs
 		}
 	}
 
@@ -457,7 +457,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_mining_director_add = 200
+			job_pw_mining_director_add = @[2 * pw_building_ruler_jobs]
 		}
 	}
 
@@ -479,7 +479,7 @@ pw_building_erebus_fracking_plant = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_mining_coordinator_add = 200
+			job_pw_mining_coordinator_add = @[2 * pw_building_ruler_jobs]
 		}
 	}
 
@@ -1144,7 +1144,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_energy_director_add = 200
+			job_pw_energy_director_add = @[2 * pw_building_ruler_jobs]
 		}
 	}
 
@@ -1166,7 +1166,7 @@ pw_building_helios_translucent_obelisk = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_energy_coordinator_add = 200
+			job_pw_energy_coordinator_add = @[2 * pw_building_ruler_jobs]
 		}
 	}
 
@@ -1893,7 +1893,7 @@ pw_building_demetrius_chemical_garden = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_agriculture_director_add = 200
+			job_pw_agriculture_director_add = @[2 * pw_building_ruler_jobs]
 		}
 	}
 
@@ -1915,7 +1915,7 @@ pw_building_demetrius_chemical_garden = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_food_coordinator_add = 200
+			job_pw_food_coordinator_add = @[2 * pw_building_ruler_jobs]
 		}
 	}
 

@@ -78,7 +78,7 @@
 #@pw_influence_production = 0.1
 
 #Regular Jobs:
-@pw_building_ruler_jobs = 1
+@pw_building_ruler_jobs = 100
 
 #Modifiers production:
 @pw_building_research_mod = 0.10
