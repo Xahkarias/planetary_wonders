@@ -450,7 +450,7 @@ pw_building_erebus_fracking_plant = {
 		}
 	}
 
-	#Mining director
+	#Individual
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -458,21 +458,11 @@ pw_building_erebus_fracking_plant = {
 		}
 		modifier = {
 			job_pw_mining_director_add = @[2 * pw_building_ruler_jobs]
+			job_translucer_add = 300
 		}
 	}
 
-	#Chemist jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_chemist_add = 300
-		}
-	}
-
-	#Mining coordinator
+	#Gestalt
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -480,17 +470,7 @@ pw_building_erebus_fracking_plant = {
 		}
 		modifier = {
 			job_pw_mining_coordinator_add = @[2 * pw_building_ruler_jobs]
-		}
-	}
-
-	#Chemist Drone
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_chemist_drone_add = 300
+			job_translucer_drone_add = 300
 		}
 	}
 
@@ -1137,7 +1117,7 @@ pw_building_helios_translucent_obelisk = {
 		}
 	}
 
-	#Energy director
+	#Individual
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1145,17 +1125,7 @@ pw_building_helios_translucent_obelisk = {
 		}
 		modifier = {
 			job_pw_energy_director_add = @[2 * pw_building_ruler_jobs]
-		}
-	}
-
-	#Translucers jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_translucer_add = 300
+			job_chemist_add = 300
 		}
 	}
 
@@ -1167,17 +1137,7 @@ pw_building_helios_translucent_obelisk = {
 		}
 		modifier = {
 			job_pw_energy_coordinator_add = @[2 * pw_building_ruler_jobs]
-		}
-	}
-
-	#Translucers Drone
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_translucer_drone_add = 300
+			job_chemist_drone_add = 300
 		}
 	}
 
@@ -1886,7 +1846,7 @@ pw_building_demetrius_chemical_garden = {
 		}
 	}
 
-	#Agriculture Director
+	#Individual
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1894,21 +1854,11 @@ pw_building_demetrius_chemical_garden = {
 		}
 		modifier = {
 			job_pw_agriculture_director_add = @[2 * pw_building_ruler_jobs]
-		}
-	}
-
-	#Gas Refiners jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
 			job_gas_refiner_add = 300
 		}
 	}
 
-	#Food Coordinator
+	#Gestalt
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1916,32 +1866,15 @@ pw_building_demetrius_chemical_garden = {
 		}
 		modifier = {
 			job_pw_food_coordinator_add = @[2 * pw_building_ruler_jobs]
-		}
-	}
-
-	#Gas Refiners Drone
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
 			job_gas_refiner_drone_add = 300
 		}
 	}
 
-	#Add Regular Farmer: 1 for each District
+	#Add Farmer: 1 for each District
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			OR = {
-				owner = { is_anglers_empire = no }
-				AND = {
-					owner = { is_anglers_empire = yes }
-					NOT = { is_wet = yes }
-				}
-			}
 		}
 		modifier = {
 			job_farmer_add = 100
@@ -1952,18 +1885,13 @@ pw_building_demetrius_chemical_garden = {
 	#Add Angler and Pearl Diver: 1 of each for every 2 Districts
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_anglers_empire = yes
-			}
-			is_wet = yes
+			farmer_is_angler_trigger = yes
 		}
-		modifier = {
-			job_angler_add = 50
-			job_pearl_diver_add = 50
+		modifier = {	# due to job swaps we add the original job and then it swaps
+			job_farmer_add = -25	
+			job_artisan_add = 75
+			# these modifiers plus the ones above makes it equal to the angler specialization
 		}
-		
 		mult = value:pw_farming_value
 	}
 
