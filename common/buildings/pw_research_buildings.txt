@@ -8,6 +8,7 @@ pw_building_particle_supercollider = {
 	building_sets = {
 		government
 		research
+		physics
 	}
 
 	prerequisites = {
@@ -460,6 +461,7 @@ pw_building_interdimensional_collider = {
 	building_sets = {
 		government
 		research
+		physics
 	}
 
 	prerequisites = {
@@ -809,6 +811,7 @@ pw_building_domed_city = {
 	building_sets = {
 		government
 		research
+		society
 	}
 
 	prerequisites = {
@@ -1267,6 +1270,7 @@ pw_building_secluded_sector = {
 	building_sets = {
 		government
 		research
+		society
 	}
 
 	prerequisites = {
@@ -1707,6 +1711,7 @@ pw_building_psionic_observatory = {
 	building_sets = {
 		government
 		research
+		society
 	}
 
 	prerequisites = {
@@ -2065,6 +2070,7 @@ pw_building_abyssal_crater_test_site = {
 	building_sets = {
 		government
 		research
+		engineering
 	}
 
 	prerequisites = {
@@ -2504,6 +2510,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	building_sets = {
 		government
 		research
+		engineering
 	}
 
 	prerequisites = {
@@ -2926,6 +2933,7 @@ pw_building_metal_vivarium = {
 	building_sets = {
 		government
 		research
+		engineering
 	}
 
 	prerequisites = {

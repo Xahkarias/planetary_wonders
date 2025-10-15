@@ -996,7 +996,9 @@ pw_building_nostalgia_paradise = {
 			has_modifier = resort_colony
 			owner = { has_valid_civic = civic_machine_servitor }
 		}
-
+		NOT = { 
+			is_planet_class = { pc_machine }
+		}
 		has_upgraded_capital = yes
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
