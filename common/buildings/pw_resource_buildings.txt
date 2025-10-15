@@ -437,7 +437,7 @@ pw_building_erebus_fracking_plant = {
 	}
 
 	planet_modifier = {
-		planet_chemists_produces_mult = 0.10
+		planet_translucers_produces_mult = 0.10
 	}
 
 	#Reduces district slots without modifier
@@ -527,7 +527,7 @@ pw_building_erebus_fracking_plant = {
 		}
 		modifier = {
 			planet_jobs_minerals_upkeep_mult = -0.20
-			planet_chemists_produces_mult = 0.05
+			planet_translucers_produces_mult = 0.05
 		}
 	}
 
@@ -1104,7 +1104,7 @@ pw_building_helios_translucent_obelisk = {
 	}
 
 	planet_modifier = {
-		planet_translucers_produces_mult = 0.10
+		planet_chemists_produces_mult = 0.10
 	}
 
 	#Reduces district slots without modifier
@@ -1184,7 +1184,7 @@ pw_building_helios_translucent_obelisk = {
 		}
 		modifier = {
 			planet_buildings_energy_upkeep_mult = -0.25
-			planet_translucers_produces_mult = 0.05
+			planet_chemists_produces_mult = 0.05
 		}
 	}
 

@@ -137,30 +137,7 @@ pw_building_guardian_angel = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 400
-		}
-	}
-
-	#Necromancer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
-		}
-		modifier = {
-			job_soldier_add = 100
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		modifier = {
-			job_necromancer_add = 100
+			job_soldier_add = 500
 		}
 	}
 
@@ -484,30 +461,7 @@ pw_building_stellar_sentinel = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 500
-		}
-	}
-
-	#Necromancer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
-		}
-		modifier = {
-			job_soldier_add = 200
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		modifier = {
-			job_necromancer_add = 200
+			job_soldier_add = 700
 		}
 	}
 
