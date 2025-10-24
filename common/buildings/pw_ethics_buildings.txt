@@ -505,7 +505,7 @@ pw_building_holy_reliquary = {
 # both add jobs based on diplomatic status
 
 # Xenophile
-# gives extra unity / amenities based on federation envoys + improve relation
+# gives extra unity / amenities jobs based on federation size + improve relation
 # this one is an upgrade from Pavilion of Wonders
 pw_building_fair_of_worlds = {
     base_buildtime = @pw_building_buildtime
@@ -636,7 +636,7 @@ pw_building_fair_of_worlds = {
 
     #base wonder stuff
     inline_script = {
-        script = pw/general_wonder_empire
+        script = pw/general_wonder
     }
 
     #Administrator
@@ -747,7 +747,6 @@ pw_building_fair_of_worlds = {
             job_pw_diversity_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -761,7 +760,6 @@ pw_building_fair_of_worlds = {
             job_pw_diversity_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -775,7 +773,6 @@ pw_building_fair_of_worlds = {
             job_pw_diversity_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -789,7 +786,6 @@ pw_building_fair_of_worlds = {
             job_pw_diversity_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -915,8 +911,8 @@ pw_building_fair_of_worlds = {
     }
 }
 
-# Xenophile
-# gives extra unity / amenities based on rivalies + harm relation + war
+# Xenophobe
+# gives extra unity / amenities jobs based on rivalries + harm relation + war
 # this one is an upgrade from Pavilion of Wonders
 pw_building_museum_of_the_grotesque = {
     base_buildtime = @pw_building_buildtime
@@ -1047,7 +1043,7 @@ pw_building_museum_of_the_grotesque = {
 
     #base wonder stuff
     inline_script = {
-        script = pw/general_wonder_empire
+        script = pw/general_wonder
     }
 
     #Administrator
@@ -1075,7 +1071,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1093,7 +1088,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1111,7 +1105,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1129,7 +1122,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1148,7 +1140,7 @@ pw_building_museum_of_the_grotesque = {
         }
     }
 
-    #Curators of Degeneracy (Rival, max 5 -> max 3 in vanilla)
+    #Curators of Degeneracy (Rival, max 5)
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1163,7 +1155,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1178,7 +1169,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1193,7 +1183,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1208,7 +1197,6 @@ pw_building_museum_of_the_grotesque = {
             job_pw_degeneracy_curator_add = 100
         }
     }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -1234,7 +1222,7 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 200
+            job_pw_degeneracy_curator_add = 300
         }
     }
 
