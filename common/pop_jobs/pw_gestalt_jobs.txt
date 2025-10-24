@@ -718,7 +718,7 @@ pw_banquet_steward_drone = {
 
 	triggered_country_modifier = {
 		potential = {
-            has_technology = "tech_ground_defense_planning" }
+            has_technology = "tech_ground_defense_planning"
 		}
 		modifier = {
 			country_naval_cap_add = 2
