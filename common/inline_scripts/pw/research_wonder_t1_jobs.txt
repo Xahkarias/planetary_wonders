@@ -1,0 +1,75 @@
+# 800 base
+inline_script = {
+    script = jobs/$JOB_NAME_SCRIPT$_add
+    AMOUNT = 800
+}
+
+# every experiment gives 100 more physicists, but also increases job eff by 5%
+# normal
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_regular_empire = yes }
+        owner = { has_country_flag = $EXPERIMENT_TAG$_1 }
+    }
+    modifier = {
+        job_$JOB$_add = 100
+        $JOB$_jobs_bonus_workforce_mult = 0.05
+    }
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_regular_empire = yes }
+        owner = { has_country_flag = $EXPERIMENT_TAG$_2 }
+    }
+    modifier = {
+        job_$JOB$_add = 100
+        $JOB$_jobs_bonus_workforce_mult = 0.05
+    }
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_regular_empire = yes }
+        owner = { has_country_flag = $EXPERIMENT_TAG$_3 }
+    }
+    modifier = {
+        job_$JOB$_add = 100
+        $JOB$_jobs_bonus_workforce_mult = 0.05
+    }
+}
+# gestalt
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_gestalt = yes }
+        owner = { has_country_flag = $EXPERIMENT_TAG$_1 }
+    }
+    modifier = {
+        job_calculator_$JOB$_add = 100
+        $JOB$_jobs_bonus_workforce_mult = 0.05
+    }
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_gestalt = yes }
+        owner = { has_country_flag = $EXPERIMENT_TAG$_2 }
+    }
+    modifier = {
+        job_calculator_$JOB$_add = 100
+        $JOB$_jobs_bonus_workforce_mult = 0.05
+    }
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_gestalt = yes }
+        owner = { has_country_flag = $EXPERIMENT_TAG$_3 }
+    }
+    modifier = {
+        job_calculator_$JOB$_add = 100
+        $JOB$_jobs_bonus_workforce_mult = 0.05
+    }
+}

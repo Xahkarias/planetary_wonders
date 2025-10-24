@@ -59,10 +59,6 @@ on_building_upgraded = {
 
 		pw_wonder.2201 #Conduit of Unity 1
 
-		pw_wonder.250 #Interdimensional Collider
-		pw_wonder.350 #Psionic Observatory
-		pw_wonder.450 #Metal Vivarium
-
 		pw_wonder.550 #Erebus Fracking Plant
 		pw_wonder.650 #Helios Translucent Obelisk
 		pw_wonder.750 #Demetrius Chemical Garden

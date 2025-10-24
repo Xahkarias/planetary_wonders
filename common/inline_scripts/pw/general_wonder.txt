@@ -1,0 +1,35 @@
+#Reduces district slots without modifier
+triggered_planet_modifier = {
+    potential = {
+        NOT = { has_modifier = pw_mod_integrated_monuments }
+    }
+    modifier = {
+        planet_max_districts_add = -1
+    }
+}
+
+#Stability Bonus
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { has_tradition = tr_pw_monumentality_brutalism }
+    }
+    modifier = {
+        planet_stability_add = @pw_stability_production
+    }
+}
+
+#Ambition Bonus
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { has_edict = pw_wonders_beyond_ambition }
+    }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = @pw_building_research_mod
+    }
+}
+
+triggered_desc = {
+    text = pw_planet_wonder_lb
+}

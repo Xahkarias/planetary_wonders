@@ -60,7 +60,7 @@
     pw_research.1009.a: "We hope it was worth the effort."
 
     #Physics Experiments Chain
-    pw_research_add_more_physics_jobs: "$pw_particle_supercollider$: §G+1§! $job_pw_researcher_particle_supercollider$ Job."
+    pw_research_add_more_physics_jobs: "$pw_particle_supercollider$: §G+100§! $job_physicist$ Job."
     #Begin The chain - Particles
     pw_research.1100.name: "Supercollider Experiments"
     pw_research.1100.desc: "Experiments on the $pw_particle_supercollider$ are successfully conducted as more and more theories are drawn and proven or disproven. The edge of our understanding of science is breached in a matter of months here and great advancements are constantly made.\n\nBut in order to reach truly breakthroughs in the field of physics, bolder experiments need to be elaborated. We have developed a new line of investigation that will push even further the barrier of the unknown, but it will require complete dedication of the entire physics community in order to complete it."
@@ -184,7 +184,7 @@
     pw_research.2010.e: "It's not only unprofessional, it's immoral."
 
     #Society Experiments Chain
-    pw_research_add_more_society_jobs: "$pw_domed_city$: §G+1§! $job_pw_researcher_domed_city$ Job."
+    pw_research_add_more_society_jobs: "$pw_domed_city$: §G+100§! $job_biologist$ Job."
     #Begin The chain - Hazard Environment
     pw_research.2100.name: "Domed City Experiments"
     pw_research.2100.desc: "Observations on the $pw_domed_city$ are insightful and indispensable for our understanding of social organization. Experiments already conducted here hang in the balance of ethical science, but they also help us explore the very conception of ethics and morality.\n\nAs always, more can be done in order to get to the bottom of the flagstones of civilization and systematic organization; bolder experiments need to be elaborated. We have developed several new lines of investigation that will push further what can be learned in the Dome, but it will require complete dedication of the entire community of social sciences in order to complete them."
@@ -314,7 +314,7 @@
     pw_research.3009.a: "The data and the minerals shall be of value to us."
 
     #Engineering Experiments Chain
-    pw_research_add_more_engineering_jobs: "$pw_abyssal_crater_test_site$: §G+1§! $job_pw_researcher_abyssal_crater_test_site$ Job."
+    pw_research_add_more_engineering_jobs: "$pw_abyssal_crater_test_site$: §G+100§! $job_engineer$ Job."
     #Begin The chain - Weapons Testing
     pw_research.3100.name: "Abyssal Crater Experiments"
     pw_research.3100.desc: "The $pw_abyssal_crater_test_site$ provides the perfect place to experiment with our most destructive weaponry and marvelous feats of engineering in a controlled and safe space. Tests conducted here already guarantee that our industry and voidcraft is cutting edge.\n\nHowever, without systematic organization, engineering projects are simply fancy inventions, that will never be more that prototypes. We need to develop methodic experimentation if we wish to mass produce massive constructions. For that end, researchers have developed batches of experiments to be run on the Crater, starting with weapon firing tests."
