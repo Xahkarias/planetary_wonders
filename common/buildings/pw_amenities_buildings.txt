@@ -997,7 +997,7 @@ pw_building_nostalgia_paradise = {
 			owner = { has_valid_civic = civic_machine_servitor }
 		}
 		NOT = { 
-			is_planet_class = { pc_machine }
+			is_planet_class = pc_machine
 		}
 		has_upgraded_capital = yes
 		OR = {
