@@ -1,0 +1,2241 @@
+
+
+####################################################################################################################
+## BASELINE UNITY WONDER
+####################################################################################################################
+# AVAILABLE TO ALL INDIVIDUALIST
+pw_building_pavilion_of_wonders = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 120
+    category = unity
+    planet_limit = 1
+    can_be_ruined = no
+
+    building_sets = {
+        government
+        unity
+    }
+
+    prerequisites = {
+        pw_tech_great_art_exhibition
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_pavilion_of_wonders }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_designation_fair_of_worlds = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_designation_fair_of_worlds = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            # At Stellaris 3.13, some unity buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+
+            AND = {
+                exists = owner
+                owner = { is_gestalt = yes }
+            }
+        }
+    }
+
+    convert_to = {
+        building_heritage_site
+        building_holotemple
+        building_simulation_2
+        building_hive_cluster
+        building_corporate_site
+        building_galactic_memorial_2
+    }
+
+    upgrades = {
+        pw_building_fair_of_worlds
+        pw_building_museum_of_the_grotesque
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    #Administrator
+    planet_modifier = {
+        job_politician_add = 100
+        job_entertainer_add = 200
+        job_bureaucrat_per_pop = @pw_job_per_25_pop
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_megacorp = no }
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_unity_produces_mult = 0.05
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_megacorp = yes }
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_traders_produces_mult = 0.10
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.1400 }
+    }
+
+    ai_weight = {
+        weight = 40
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_pavilion_of_wonders }
+            NOT = { has_building_construction = pw_building_pavilion_of_wonders }
+        }
+        modifier = {
+            factor = 2
+            has_designation = col_resort
+        }
+        modifier = {
+            factor = 2
+            is_capital = yes
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = {
+                OR = {
+                    is_xenophile = yes
+                    is_xenophobe = yes
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = {
+                OR = {
+                    has_ethic = ethic_fanatic_xenophile
+                    has_ethic = ethic_fanatic_xenophobe
+                }
+            }
+        }
+        modifier = {
+            factor = 5
+            exists = owner
+            owner = {
+                any_owned_planet = {
+                    NOT = { is_planet = root }
+                    OR = {
+                        has_active_building = pw_building_pavilion_of_wonders
+                        has_active_building = pw_building_fair_of_worlds
+                        has_active_building = pw_building_museum_of_the_grotesque
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = {
+                OR = {
+                    has_megastructure = mega_art_installation_2
+                    has_megastructure = mega_art_installation_3
+                    has_megastructure = mega_art_installation_4
+                    has_megastructure = mega_art_installation_restored
+                    has_megastructure = mega_art_installation_restored_2
+                }
+            }
+        }
+    }
+}
+
+####################################################################################################################
+# RESEARCH WONDERS
+####################################################################################################################
+
+### PHYSICS
+##########################
+pw_building_particle_supercollider = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 100
+    planet_limit = 1
+    can_be_ruined = no
+    category = research
+
+    building_sets = {
+        government
+        research
+        physics
+    }
+
+    prerequisites = {
+        pw_tech_particle_supercollider
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_particle_supercollider }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_research_lab_1
+    }
+
+    upgrades = {
+        pw_building_interdimensional_collider
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            volatile_motes = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_particle_supercollider }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            volatile_motes = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        upkeep = {
+            trigger = {
+                exists = planet.owner
+                planet.owner = {
+                    is_specialist_subject_type = { TYPE = scholarium }
+                }
+            }
+            energy = -2
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Individuals get 100 politicians
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Gestalts get 150 of synapse or coordinator (job swap)
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 150
+        }
+    }
+
+    inline_script = {
+        script = pw/research_wonder_t1_jobs
+        JOB_NAME_SCRIPT = physicists
+        JOB = physicist
+        EXPERIMENT_TAG = pw_particle_supercollider_experiment_completed
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_physics_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.200 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_crystals = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_particle_supercollider }
+            NOT = { has_building_construction = pw_building_particle_supercollider }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                # num_pops_with_job_tag = {
+                total_workforce_with_job_tag = {
+                    value > 0
+                    tags = { research }
+                }
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.5
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_domed_city
+                        has_active_building = pw_building_secluded_sector
+                        has_active_building = pw_building_abyssal_crater_test_site
+                        has_active_building = pw_building_abyssal_crater_test_site_habitat
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 2
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+pw_building_interdimensional_collider = {
+    base_buildtime = @pw_building_buildtime
+    category = research
+    can_build = no #Only upgrades
+    can_be_ruined = no
+    position_priority = 100
+
+    building_sets = {
+        government
+        research
+        physics
+    }
+
+    prerequisites = {
+        pw_tech_interdimensional_collider
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        #Upgrade Wonders don't need to check for availability
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_interdimensional_collider }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_research_lab_2
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost_upgrade
+            sr_dark_matter = @pw_building_cost_rare_half
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_interdimensional_collider }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            rare_crystals = @pw_building_upkeep_rare_1
+            sr_dark_matter = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        upkeep = {
+            trigger = {
+                exists = planet.owner
+                planet.owner = {
+                    is_specialist_subject_type = { TYPE = scholarium }
+                }
+            }
+            energy = -2
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    # produces mult
+    planet_modifier = {
+        planet_jobs_physics_research_produces_mult = @pw_building_research_upgrade_mod
+        physicist_jobs_bonus_workforce_mult = 0.15
+    }
+
+    #Regular jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_politician_add = 200 # head researcher
+        }
+    }
+    #Gestalt Jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 300
+        }
+    }
+
+    # 1500 physicists
+    inline_script = {
+        script = jobs/physicists_add
+        AMOUNT = 1500
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_physics_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.250 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_crystals = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_interdimensional_collider }
+            NOT = { has_building_construction = pw_building_interdimensional_collider }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_domed_city
+                        has_active_building = pw_building_secluded_sector
+                        has_active_building = pw_building_abyssal_crater_test_site
+                        has_active_building = pw_building_abyssal_crater_test_site_habitat
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 2
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+### SOCIETY
+##########################
+pw_building_domed_city = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 100
+    planet_limit = 1
+    can_be_ruined = no
+    category = research
+
+    building_sets = {
+        government
+        research
+        society
+    }
+
+    prerequisites = {
+        pw_tech_domed_city
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        NOT = { merg_is_habitat = yes }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        AND = {
+            pw_is_wonder_empire_unique = { WONDER = pw_building_domed_city }
+            hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_secluded_sector }}
+        }
+    }
+
+    upgrades = {
+        pw_building_psionic_observatory
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_research_lab_1
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_domed_city }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Individuals get 100 politicians
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Gestalts get 150 of synapse or coordinator (job swap)
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 150
+        }
+    }
+
+    inline_script = {
+        script = pw/research_wonder_t1_jobs
+        JOB_NAME_SCRIPT = biologists
+        JOB = biologist
+        EXPERIMENT_TAG = pw_domed_city_experiment_completed
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_society_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.300 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_domed_city }
+            NOT = { has_building_construction = pw_building_domed_city }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_particle_supercollider
+                        has_active_building = pw_building_abyssal_crater_test_site
+                        has_active_building = pw_building_abyssal_crater_test_site_habitat
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 1.5
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+pw_building_secluded_sector = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 100
+    planet_limit = 1
+    can_be_ruined = no
+    icon = pw_building_domed_city
+    show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
+    category = research
+
+    building_sets = {
+        government
+        research
+        society
+    }
+
+    prerequisites = {
+        pw_tech_domed_city
+    }
+
+    potential = {
+        exists = owner
+        merg_is_habitat = yes
+        owner = { is_void_dweller_empire = yes }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        AND = {
+            pw_is_wonder_empire_unique = { WONDER = pw_building_domed_city }
+            hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_secluded_sector }}
+        }
+    }
+
+    upgrades = {
+        pw_building_psionic_observatory
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_secluded_sector }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Individuals get 100 politicians
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Gestalts get 150 of synapse or coordinator (job swap)
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 150
+        }
+    }
+
+    inline_script = {
+        script = pw/research_wonder_t1_jobs
+        JOB_NAME_SCRIPT = biologists
+        JOB = biologist
+        EXPERIMENT_TAG = pw_domed_city_experiment_completed
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_society_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.300 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_secluded_sector }
+            NOT = { has_building_construction = pw_building_secluded_sector }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_particle_supercollider
+                        has_active_building = pw_building_abyssal_crater_test_site
+                        has_active_building = pw_building_abyssal_crater_test_site_habitat
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 1.5
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+pw_building_psionic_observatory = {
+    base_buildtime = @pw_building_buildtime
+    category = research
+    can_build = no #Only upgrades
+    can_be_ruined = no
+    position_priority = 100
+
+    building_sets = {
+        government
+        research
+        society
+    }
+
+    prerequisites = {
+        pw_tech_psionic_observatory
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        #Upgrade Wonders don't need to check for availability
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_psionic_observatory }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_research_lab_2
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost_upgrade
+            sr_zro = @pw_building_cost_rare_half
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_psionic_observatory }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            exotic_gases = @pw_building_upkeep_rare_1
+            sr_zro = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    # produces mult
+    planet_modifier = {
+        planet_jobs_society_research_produces_mult = @pw_building_research_upgrade_mod
+        biologist_jobs_bonus_workforce_mult = 0.15
+    }
+
+    #Regular jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_politician_add = 200 # head researcher
+        }
+    }
+    #Gestalt Jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 300
+        }
+    }
+
+    # 1500 biologists
+    inline_script = {
+        script = jobs/biologists_add
+        AMOUNT = 1500
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_society_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.350 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_psionic_observatory }
+            NOT = { has_building_construction = pw_building_psionic_observatory }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_particle_supercollider
+                        has_active_building = pw_building_abyssal_crater_test_site
+                        has_active_building = pw_building_abyssal_crater_test_site_habitat
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 1.5
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+### ENGINEERING
+##########################
+pw_building_abyssal_crater_test_site = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 100
+    planet_limit = 1
+    can_be_ruined = no
+    category = research
+
+    building_sets = {
+        government
+        research
+        engineering
+    }
+
+    prerequisites = {
+        pw_tech_abyssal_crater_test_site
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        NOT = { merg_is_habitat = yes }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        AND = {
+            pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site }
+            hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site_habitat }}
+        }
+    }
+
+    upgrades = {
+        pw_building_metal_vivarium
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_research_lab_1
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            rare_crystals = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_abyssal_crater_test_site }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            rare_crystals = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Individuals get 100 politicians
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Gestalts get 150 of synapse or coordinator (job swap)
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 150
+        }
+    }
+
+    inline_script = {
+        script = pw/research_wonder_t1_jobs
+        JOB_NAME_SCRIPT = engineers
+        JOB = engineer
+        EXPERIMENT_TAG = pw_abyssal_crater_test_site_experiment_completed
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.400 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_motes = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_abyssal_crater_test_site }
+            NOT = { has_building_construction = pw_building_abyssal_crater_test_site }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_particle_supercollider
+                        has_active_building = pw_building_domed_city
+                        has_active_building = pw_building_secluded_sector
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 1.5
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+pw_building_abyssal_crater_test_site_habitat = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 100
+    planet_limit = 1
+    can_be_ruined = no
+    icon = pw_building_abyssal_crater_test_site
+    show_tech_unlock_if = { owner = { is_void_dweller_empire = yes }}
+    category = research
+
+    building_sets = {
+        government
+        research
+        engineering
+    }
+
+    prerequisites = {
+        pw_tech_abyssal_crater_test_site
+    }
+
+    potential = {
+        exists = owner
+        merg_is_habitat = yes
+        owner = { is_void_dweller_empire = yes }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        AND = {
+            pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site }
+            hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_abyssal_crater_test_site_habitat }}
+        }
+    }
+
+    upgrades = {
+        pw_building_metal_vivarium
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            rare_crystals = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_abyssal_crater_test_site_habitat }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            volatile_motes = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Individuals get 100 politicians
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Gestalts get 150 of synapse or coordinator (job swap)
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 150
+        }
+    }
+
+    inline_script = {
+        script = pw/research_wonder_t1_jobs
+        JOB_NAME_SCRIPT = engineers
+        JOB = engineer
+        EXPERIMENT_TAG = pw_abyssal_crater_test_site_experiment_completed
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.400 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_motes = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_abyssal_crater_test_site_habitat }
+            NOT = { has_building_construction = pw_building_abyssal_crater_test_site_habitat }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_particle_supercollider
+                        has_active_building = pw_building_domed_city
+                        has_active_building = pw_building_secluded_sector
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 1.5
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
+
+pw_building_metal_vivarium = {
+    base_buildtime = @pw_building_buildtime
+    category = research
+    can_build = no #Only upgrades
+    can_be_ruined = no
+    position_priority = 100
+
+    building_sets = {
+        government
+        research
+        engineering
+    }
+
+    prerequisites = {
+        pw_tech_metal_vivarium
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        #Upgrade Wonders don't need to check for availability
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_metal_vivarium }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_research_lab_2
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost_upgrade
+            sr_living_metal = @pw_building_cost_rare_half
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_metal_vivarium }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            volatile_motes = @pw_building_upkeep_rare_1
+            sr_living_metal = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    has_research_designation = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    # produces mult
+    planet_modifier = {
+        planet_jobs_engineering_research_produces_mult = @pw_building_research_upgrade_mod
+        engineer_jobs_bonus_workforce_mult = 0.15
+    }
+
+    #Regular jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_politician_add = 200 # head researcher
+        }
+    }
+    #Gestalt Jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 300
+        }
+    }
+
+    # 1500 biologists
+    inline_script = {
+        script = jobs/engineers_add
+        AMOUNT = 1500
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_jobs_engineering_research_produces_mult = @pw_building_research_mod
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.450 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_motes = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_metal_vivarium }
+            NOT = { has_building_construction = pw_building_metal_vivarium }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = 1.25
+            owner = {
+                any_owned_planet = {
+                    OR = {
+                        has_active_building = pw_building_particle_supercollider
+                        has_active_building = pw_building_domed_city
+                        has_active_building = pw_building_secluded_sector
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.75
+            planet_size < 15
+        }
+        modifier = {
+            factor = 1.5
+            planet_size > 20
+        }
+        modifier = {
+            factor = 1.5
+            planet.owner = {
+                is_specialist_subject_type = { TYPE = scholarium }
+            }
+        }
+    }
+}
