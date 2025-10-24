@@ -1,7 +1,7 @@
 ####################################################################################################################
 # Materialist - Spiritualist
 ####################################################################################################################
-# both add modifiers when collecting stuff
+# add planet or country modifiers when doing specific tasks
 
 # Materialist
 # adds the special projects that buff the planet itself
@@ -502,7 +502,7 @@ pw_building_holy_reliquary = {
 ####################################################################################################################
 # Xenophile - Xenophobe
 ####################################################################################################################
-# both add jobs based on diplomatic status
+# add jobs based on diplomatic status
 
 # Xenophile
 # gives extra unity / amenities jobs based on federation size + improve relation
@@ -1374,3 +1374,16 @@ pw_building_museum_of_the_grotesque = {
         }
     }
 }
+
+####################################################################################################################
+# Egalitarian - Authoritarian
+####################################################################################################################
+# add decisions that add planet deposits
+
+
+####################################################################################################################
+# Militarist - Pacifist
+####################################################################################################################
+# add decisions that add swappable planet modifiers
+
+
