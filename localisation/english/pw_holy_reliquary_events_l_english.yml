@@ -370,7 +370,7 @@
     pw_holy_reliquary.1.appoint_relic_keeper: "Appoint Relic Keeper"
     pw_holy_reliquary.800.name: "Keeper of Relics"
     pw_holy_reliquary.800.desc: "The harmony of our $pw_holy_reliquary$ is almost fulfilled with all the artifacts we have sanctified. Each shard of our history, each piece of our culture, each component of our philosophy must be finally guarded by a trusted theologian. Only the most versed in our myths and legend, the most pious and the most holy of the devotees in the Reliquary shall be chosen to maintain and carry forward the spirit of our faith."
-    pw_holy_reliquary.800.a.tooltip: "$pw_holy_reliquary$: §G+1§! $mod_job_pw_relic_keeper_add$."
+    pw_holy_reliquary.800.a.tooltip: "$pw_holy_reliquary$: §G+100§! $mod_job_pw_relic_keeper_add$."
 
     #Bonus: Holy Throne -> 850
     pw_holy_reliquary.holy_throne: "§BHoly Throne§!"

@@ -328,19 +328,6 @@ pw_added = {
 	add = $ADDED_VALUE|1$
 }
 
-# It is assumed there is planet owner and the owner is spiritualist.
-pw_building_holy_reliquary_priest_jobs = {
-	base = 4
- 	modifier = {
- 		add = 2
- 		owner = { is_death_cult_empire = no }
- 	}
- 	modifier = {
- 		add = 2
- 		owner = { is_memorialist_empire = no }
- 	}
-}
-
 # this = planet
 pw_building_mantle_crucible_foundry_jobs = {
 	base = 4

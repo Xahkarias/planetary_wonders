@@ -1,0 +1,500 @@
+####################################################################################################################
+# Materialist - Spiritualist
+####################################################################################################################
+# both add modifiers when collecting stuff
+
+# Materialist
+# adds the special projects that buff the planet itself
+pw_building_grand_archive = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 95
+    planet_limit = 1
+    can_be_ruined = no
+    category = research
+
+    building_sets = {
+        government
+        research
+    }
+
+    prerequisites = {
+        pw_tech_materialist_archiving
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        NOT = { has_modifier = slave_colony }
+        NOT = { has_modifier = resort_colony }
+        # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        owner = { is_materialist = yes }
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_grand_archive }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_grand_archive }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep_expensive
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            # At Stellaris 3.13, research buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+            AND = {
+                exists = owner
+                owner = { is_gestalt = yes }
+            }
+            # AND = {
+            # 	exists = owner
+            # 	owner = { is_materialist =  no }
+            # }
+        }
+    }
+
+    convert_to = {
+        building_sacred_nexus
+        building_heritage_site
+        building_holotemple
+        building_simulation_2
+        building_hive_cluster
+        building_corporate_site
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Grand-Archivist
+    triggered_planet_modifier = {
+        potential = {
+            owner = { is_materialist = yes }
+        }
+        modifier = {
+            job_pw_grand_archivist_add = 600
+        }
+    }
+    #Master Archivist
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_materialist = yes
+                has_country_flag = pw_grand_archive_holoarchive_master_archivist_appointed
+            }
+        }
+        modifier = {
+            job_pw_master_archivist_add = 100
+        }
+    }
+
+    # for non materialists
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                is_materialist = no
+                # gestalts blow it up
+            }
+        }
+        modifier = {
+            job_physicist_add = 200
+            job_biologist_add = 200
+            job_engineer_add = 200
+        }
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_researchers_upkeep_mult = -0.10
+        }
+    }
+
+    triggered_desc = {
+        text = pw_building_grand_archive_tooltip
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.1600 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                AND = {
+                    country_uses_consumer_goods = yes
+                    has_monthly_income = {
+                        resource = consumer_goods
+                        value < 5
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_grand_archive }
+            NOT = { has_building_construction = pw_building_grand_archive }
+        }
+        modifier = {
+            factor = 2.5
+            is_capital = yes
+        }
+        modifier = {
+            factor = 3
+            exists = owner
+            owner = { has_ethic = ethic_fanatic_materialist }
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_research_lab_1
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                has_active_building = building_research_lab_2
+                has_active_building = building_research_lab_3
+                has_district = district_hab_science
+                has_district = district_rw_science
+                pw_jobs_any_research = yes
+            }
+        }
+        modifier = {
+            factor = 5
+            has_research_designation = yes
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
+
+# Spiritualist
+# adds the special projects that have empire modifiers
+pw_building_holy_reliquary = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 95
+    category = unity
+    planet_limit = 1
+    can_be_ruined = no
+
+    building_sets = {
+        government
+        unity
+    }
+
+    prerequisites = {
+        pw_tech_spiritual_artifacts_studies
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        NOT = { has_modifier = slave_colony }
+        NOT = { has_modifier = resort_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        owner = { is_spiritualist = yes }
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_holy_reliquary }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            rare_crystals = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_holy_reliquary }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep_expensive
+            rare_crystals = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+            AND = {
+                exists = owner
+                owner = { is_gestalt = yes }
+            }
+            # AND = {
+            # 	exists = owner
+            # 	owner = { is_spiritualist =  no }
+            # }
+        }
+    }
+
+    convert_to = {
+        building_sacred_nexus
+        building_heritage_site
+        building_holotemple
+        building_simulation_2
+        building_hive_cluster
+        building_corporate_site
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    #Relic Keeper
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_spiritualist = yes }
+            owner = {
+                has_country_flag = pw_holy_reliquary_relic_keeper_appointed
+            }
+        }
+        modifier = {
+            job_pw_relic_keeper_add = 100
+        }
+    }
+
+    # Politician
+    # can convert to high priests or technophants
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_spiritualist = yes
+            }
+        }
+        modifier = {
+            job_politician_add = 100 # high_priest
+        }
+    }
+
+
+    # only if spiritualist
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_spiritualist = yes
+            }
+        }
+        job_bureaucrat_add = 400
+    }
+
+    # if not spiritualist
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_spiritualist = no
+            }
+        }
+        job_bureaucrat_add = 200
+    }
+
+    # mortal initiates if death priest
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            OR = {
+                owner = { has_valid_civic = civic_death_cult }
+                owner = { has_valid_civic = civic_death_cult_corporate }
+            }
+        }
+        modifier = {
+            job_mortal_initiate_add = 200
+        }
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_bureaucrats_produces_mult = 0.15
+        }
+    }
+
+    triggered_desc = {
+        text = pw_building_holy_reliquary_tooltip
+    }
+
+
+    on_built = {
+        planet_event = { id = pw_wonder.1500 }
+    }
+
+    ai_weight = {
+        weight = 75
+        modifier = {
+            factor = 0
+            buildings_has_crystals = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_holy_reliquary }
+            NOT = { has_building_construction = pw_building_holy_reliquary }
+        }
+        modifier = {
+            factor = 2.5
+            is_capital = yes
+        }
+        modifier = {
+            factor = 3
+            exists = owner
+            owner = { has_ethic = ethic_fanatic_spiritualist }
+        }
+        # modifier = {
+        # 	factor = value:pw_job_factor|JOB|priest|
+        # }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
+
+####################################################################################################################

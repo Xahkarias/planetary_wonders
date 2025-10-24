@@ -19,17 +19,10 @@ triggered_planet_modifier = {
     }
 }
 
-#Ambition Bonus
-triggered_planet_modifier = {
-    potential = {
-        exists = owner
-        owner = { has_edict = pw_wonders_beyond_ambition }
-    }
-    modifier = {
-        planet_jobs_physics_research_produces_mult = @pw_building_research_mod
-    }
+triggered_desc = {
+    text = pw_planet_wonder_lb
 }
 
 triggered_desc = {
-    text = pw_planet_wonder_lb
+    text = pw_empire_unique_lb
 }
