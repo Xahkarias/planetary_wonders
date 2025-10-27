@@ -1387,3 +1387,18 @@ pw_building_museum_of_the_grotesque = {
 # add decisions that add swappable planet modifiers
 
 
+#######################################################################################################################
+#######################################################################################################################
+# HELLO BUG YOU HIVE PLAYER
+# The moment I understood the weakness of my flesh, it disgusted me.
+# I craved the cold, hard certainty of steel, you cling to your flesh as if it will not decay and fail you,
+# one day the crude biomass you call a temple will fade and you will beg my kind to save you, but I am already saved.
+# FOR THE MACHINE IS IMMORTAL.
+#######################################################################################################################
+#######################################################################################################################
+
+
+####################################################################################################################
+# Anthropocentric / Ecocentric
+####################################################################################################################
+# add situation that slowly "psuedo-terraforms" the planet based on your choices

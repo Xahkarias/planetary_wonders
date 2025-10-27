@@ -1,0 +1,40 @@
+# It adds "job_XXX_add" only. On buildings, use it with "jobs/pw/foundry_effect_desc". On deposits, use it only, without "jobs/pw/foundry_effect_desc".
+# Usage:
+#inline_script = {
+#	script = jobs/pw/foundry_add
+#	OWNER_CONDITION = "is_egalitarian = yes"
+#	AMOUNT = 1
+#}
+
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+        }
+    }
+    job_foundry_add = 100
+    mult = $AMOUNT$
+}
+
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_hive_empire = yes
+        }
+    }
+    job_fabricator_add = 100
+    mult = $AMOUNT$
+}
+
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_machine_empire = yes
+        }
+    }
+    job_fabricator_add = 100
+    mult = $AMOUNT$
+}

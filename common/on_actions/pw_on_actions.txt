@@ -48,8 +48,6 @@ on_tech_increased = {
 # This = Planet
 on_building_upgraded = {
 	events = {
-		pw_wonder.1330 #Titan Forge
-		pw_wonder.1360 #Industrial Hearth
 
 		pw_wonder.2101 #Living Spire 1
 		pw_wonder.2102 #Living Spire 2

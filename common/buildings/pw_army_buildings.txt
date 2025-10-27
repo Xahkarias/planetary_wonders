@@ -534,57 +534,6 @@ pw_building_stellar_sentinel = {
 		text = pw_guardian_angel_tooltip
 	}
 
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 	}
-	# 	text = job_soldier_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { has_valid_civic = civic_reanimated_armies }
-	# 	}
-	# 	text = job_necromancer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-	# 	}
-	# 	text = job_enforcer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
-	# 	}
-	# 	text = job_telepath_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_warrior_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_patrol_drone_effect_desc
-	# }
-
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
 		#planet_event = { id = pw_wonder.1250 }

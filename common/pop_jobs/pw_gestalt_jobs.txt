@@ -88,58 +88,6 @@ pw_enigma_decipher = {
 	}
 }
 
-#Added by Industrial Hearth
-pw_poly_artisan_drone = {
-	category = complex_drone
-	swappable_data = {
-		default = {
-			condition_string = DRONE_JOB_TRIGGER
-			building_icon = pw_building_industrial_hearth
-			icon = pw_poly_artisan_drone
-		}
-	}
-
-	tags = { consumer_goods unity }
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-
-	possible_precalc = can_fill_drone_job
-
-	possible = {
-		# drone_job_check_trigger = yes
-	}
-
-	resources = {
-		category = planet_artisans
-		produces = {
-			consumer_goods = 12
-			unity = 2
-		}
-		upkeep = {
-			minerals = 15
-		}
-	}
-
-	weight = {
-		weight = 50
-		mult = value:job_weights_modifier|JOB|pw_poly_artisan_drone|RESOURCE|consumer_goods|
-		modifier = {
-			factor = 0
-			exists = owner
-			owner = { has_valid_civic = civic_machine_assimilator }
-		}
-		# modifier = {
-		# 	factor = 2
-		# 	has_job = pw_poly_artisan_drone
-		# }
-	}
-}
-
 #Added by Archaeology deposit: Lunar Archive
 pw_lunar_archivist_gestalt = {
 	category = complex_drone
