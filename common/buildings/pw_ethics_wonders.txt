@@ -2,6 +2,7 @@
 # Materialist - Spiritualist
 ####################################################################################################################
 # add planet or country modifiers when doing specific tasks
+# these are empire unique
 
 # Materialist
 # adds the special projects that buff the planet itself
@@ -503,6 +504,7 @@ pw_building_holy_reliquary = {
 # Xenophile - Xenophobe
 ####################################################################################################################
 # add jobs based on diplomatic status
+# empire unique
 
 # Xenophile
 # gives extra unity / amenities jobs based on federation size + improve relation
@@ -1385,7 +1387,462 @@ pw_building_museum_of_the_grotesque = {
 # Militarist - Pacifist
 ####################################################################################################################
 # add decisions that add swappable planet modifiers
+# NOT empire unique
 
+# adds happiness when at war
+pw_building_martial_avenue = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 75
+    category = army
+    planet_limit = 1
+    can_be_ruined = no
+
+    building_sets = {
+        government
+        fortress
+    }
+
+    prerequisites = {
+        pw_tech_parades_of_supremacy
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        # At Stellaris 3.13, many army buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        owner = { is_militarist = yes }
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            volatile_motes = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_martial_avenue }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            volatile_motes = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        or = {
+            and = {
+                exists = owner
+                OR = {
+                    owner = { is_gestalt = yes }
+                    owner = { is_militarist = no }
+                }
+            }
+            # At Stellaris 3.13, many amenity buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_dread_encampment
+        building_fortress
+        building_military_academy
+        building_hive_cluster
+        building_simulation_2
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_at_war = yes }
+        }
+        modifier = {
+            pop_happiness = 0.15
+        }
+    }
+
+    triggered_desc = {
+        text = pw_martial_avenue_tooltip
+    }
+
+
+    # the wonder is destroyed if owner isnt militarist so no need to check job validity
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Entertainer
+    planet_modifier = {
+        job_bureaucrat_add = 200
+        job_entertainer_add = 200
+        job_soldier_add = 200
+    }
+
+    #Bonus from ambition
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_amenities_mult = 0.10
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.2000 }
+    }
+
+    ai_weight = {
+        weight = 35
+        modifier = {
+            factor = 0
+            buildings_has_motes = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_martial_avenue }
+            NOT = { has_building_construction = pw_building_martial_avenue }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = { has_ethic = ethic_fanatic_militarist }
+        }
+        modifier = {
+            factor = owner.trigger:num_rivals
+        }
+        modifier = {
+            factor = 1.15
+            owner = { has_valid_civic = civic_warrior_culture }
+        }
+        modifier = {
+            factor = 1.15
+            owner = { has_valid_civic = civic_nationalistic_zeal }
+        }
+        modifier = {
+            factor = 1.15
+            owner = { has_valid_civic = civic_distinguished_admiralty }
+        }
+        modifier = {
+            factor = 1.15
+            owner = { has_valid_civic = civic_private_military_companies }
+        }
+        modifier = {
+            factor = 1.15
+            owner = { has_valid_civic = civic_naval_contractors }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = { is_at_war = yes }
+        }
+        modifier = {
+            factor = 0.5
+            exists = owner
+            owner = { is_at_war = no }
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
+
+# adds happiness when at peace
+pw_building_festival_plaza = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 120
+    category = amenity
+    planet_limit = 1
+    can_be_ruined = no
+
+    building_sets = {
+        government
+        urban
+    }
+
+    prerequisites = {
+        pw_tech_festivals_of_harmony
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        # At Stellaris 3.13, many amenity buildings can't be built on Penal Colony.
+        NOT = { has_modifier = penal_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        owner = { is_pacifist = yes }
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            rare_crystals = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_festival_plaza }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            rare_crystals = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        or = {
+            and = {
+                exists = owner
+                OR = {
+                    owner = { is_gestalt = yes }
+                    owner = { is_pacifist = no }
+                }
+            }
+            # At Stellaris 3.13, many amenity buildings can't be built on Penal Colony.
+            has_modifier = penal_colony
+        }
+    }
+
+    convert_to = {
+        building_hyper_entertainment_forum
+        building_organic_paradise
+        building_hive_cluster
+        building_simulation_2
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_at_war = no }
+        }
+        modifier = {
+            pop_happiness = 0.05
+        }
+    }
+
+
+    triggered_desc = {
+        text = pw_festival_plaza_tooltip
+    }
+
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+
+    #Entertainer
+    planet_modifier = {
+        job_bureaucrat_add = 300
+        job_entertainer_add = 300
+    }
+
+    #Stability from ambition
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_tradition = tr_pw_monumentality_brutalism }
+        }
+        modifier = {
+            planet_stability_add = @pw_stability_production
+        }
+    }
+
+    #Bonus from ambition
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_amenities_mult = 0.10
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.1900 }
+    }
+
+    ai_weight = {
+        weight = 45
+        modifier = {
+            factor = 0
+            buildings_has_crystals = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_festival_plaza }
+            NOT = { has_building_construction = pw_building_festival_plaza }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = { has_ethic = ethic_fanatic_pacifist }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = { exists = federation }
+        }
+        modifier = {
+            factor = 1.25
+            owner = { has_valid_civic = civic_inwards_perfection }
+        }
+        modifier = {
+            factor = 1.25
+            owner = { has_valid_civic = civic_agrarian_idyll }
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
 
 #######################################################################################################################
 #######################################################################################################################
