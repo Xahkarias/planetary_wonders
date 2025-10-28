@@ -1,0 +1,118 @@
+# Usage:
+#inline_script = {
+#	script = jobs/pw/living_spire_AP_jobs_add
+#	ENFORCER_AMOUNT = 100
+#   GROWTH_AMOUNT = 100
+#	POP_GROWTH_SPEED = 0.20
+# 	ASSEMBLY_ORGANIC_ADD = 5
+# 	ASSEMBLY_MULT = 0.15
+#}
+
+
+# ENFORCER OR TELEPATH
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_regular_empire = yes }
+        owner = {
+            NOR = {
+                has_active_tradition = tr_psionics_psi_corps
+                has_active_tradition = tr_psionics_shroud_psi_corps
+            }
+        }
+    }
+    modifier = {
+        job_enforcer_add = $ENFORCER_AMOUNT$
+    }
+}
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = { is_regular_empire = yes }
+        owner = {
+            OR = {
+                has_active_tradition = tr_psionics_psi_corps
+                has_active_tradition = tr_psionics_shroud_psi_corps
+            }
+        }
+    }
+    modifier = {
+        job_telepath_add = $ENFORCER_AMOUNT$
+    }
+}
+
+
+# while more annoying, checking for the TR is better than the AP since you dont have to list ways to skip the AP
+#Medical Worker (No Ascension Path)
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_path = no
+            is_individual_machine = no
+		}
+	}
+	job_healthcare_add = $GROWTH_AMOUNT$
+}
+#Mind over matter
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+            OR = {
+                has_tradition = tr_psionics_adopt
+                has_tradition = tr_psionics_shroud_adopt
+            }
+		}
+	}
+	modifier = {
+		job_healthcare_add = $GROWTH_AMOUNT$
+		bonus_pop_growth_mult = $POP_GROWTH_SPEED$
+	}
+}
+#Engineered Evolution
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+                has_tradition = tr_cloning_adopt
+                has_tradition = tr_purity_adopt
+                has_tradition = tr_mutation_adopt
+            }
+		}
+	}
+	modifier = {
+		job_healthcare_add = $GROWTH_AMOUNT$
+		bonus_pop_growth = $ASSEMBLY_ORGANIC_ADD$
+	}
+}
+#The flesh is weak
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+            has_tradition = tr_cybernetics_adopt
+		}
+	}
+	modifier = {
+		job_augmentor_add = $GROWTH_AMOUNT$
+		bonus_pop_growth_mult = $POP_GROWTH_SPEED$
+	}
+}
+#Synthetic Evolution
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_tradition = tr_synthetics_adopt
+				is_individual_machine = yes
+			}
+		}
+	}
+	modifier = {
+		job_roboticist_add = 100
+		planet_pop_assembly_mult = $ASSEMBLY_MULT$
+	}
+}

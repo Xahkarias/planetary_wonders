@@ -1,0 +1,906 @@
+#Living Spire Construction phases
+#	- only the first needs to check for availability;
+#	- upgrades need an on_action for their construction events.
+pw_building_living_spire_0 = {
+	base_buildtime = @pw_building_buildtime
+	position_priority = 85
+	category = amenity
+	planet_limit = 1
+	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
+
+	prerequisites = {
+		pw_tech_living_spire
+	}
+	show_tech_unlock_if = {
+		always = no
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+		OR = {
+			NOT = {
+				merg_is_habitat = yes
+			}
+			owner = {
+				is_void_dweller_empire = yes
+			}
+		}
+	}
+	allow = {
+		owner = {
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+		has_major_upgraded_capital = yes
+		free_district_slots > 0		# Needs a free district to occupy
+		pw_can_build_planetary_wonder = yes		#Check if there is space for the Wonder
+	}
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				is_gestalt = yes
+			}
+			owner = {
+				NOT = {
+					has_technology = pw_tech_living_spire
+				}
+			}
+		}
+	}
+	convert_to = {
+		building_communal_housing_large
+		building_paradise_dome
+		building_expanded_warren
+		building_drone_megastorage
+	}
+	upgrades = {
+		pw_building_living_spire_1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost_half
+			alloys = @pw_building_cost_rare
+		}
+		cost = {
+			trigger = {
+				planet = {
+					pw_has_any_planetary_wonder = yes
+					NOT = {
+						has_building_construction = pw_building_living_spire_0
+					}
+				}
+			}
+			minerals = @pw_building_cost_extra_half
+		}
+		upkeep = {
+			energy = @pw_building_upkeep_half
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
+			}
+			energy = @pw_building_upkeep_extra_half
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+	}
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+	on_built = {
+		planet_event = {
+			id = pw_wonder.2100
+		}
+	}
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 0
+			OR = {
+				buildings_has_exotic_gases = no
+				buildings_has_crystals = no
+				buildings_has_motes = no
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = {
+				owner = {
+					has_ascension_perk = pw_ap_planetary_wonders
+				}
+			}
+			NOT = {
+				has_active_building = pw_building_living_spire_0
+			}
+			NOT = {
+				has_building_construction = pw_building_living_spire_0
+			}
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 4
+			is_capital = yes
+		}
+		modifier = {
+			factor = value:pw_housing_factor
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+	}
+}
+
+pw_building_living_spire_1 = {
+	base_buildtime = @pw_building_buildtime
+	position_priority = 85
+	category = amenity
+	can_be_ruined = no
+	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
+	prerequisites = {
+		pw_tech_living_spire
+	}
+	show_tech_unlock_if = {
+		always = no
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+		OR = {
+			NOT = {
+				merg_is_habitat = yes
+			}
+			owner = {
+				is_void_dweller_empire = yes
+			}
+		}
+	}
+	allow = {
+		owner = {
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+		has_major_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				is_gestalt = yes
+			}
+			owner = {
+				NOT = {
+					has_technology = pw_tech_living_spire
+				}
+			}
+		}
+	}
+	convert_to = {
+		building_communal_housing_large
+		building_paradise_dome
+		building_expanded_warren
+		building_drone_megastorage
+	}
+	upgrades = {
+		pw_building_living_spire_2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost_half
+			alloys = @pw_building_cost_rare
+			volatile_motes = @pw_building_cost_rare
+		}
+		cost = {
+			trigger = {
+				planet = {
+					pw_has_any_planetary_wonder = yes
+					NOT = {
+						has_building_construction = pw_building_living_spire_1
+					}
+				}
+			}
+			minerals = @pw_building_cost_extra_half
+		}
+		upkeep = {
+			energy = @pw_building_upkeep_half
+			volatile_motes = @pw_building_upkeep_rare_1
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
+			}
+			energy = @pw_building_upkeep_extra_half
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_pw_monumentality_architecture_parlante
+				}
+			}
+			unity = @pw_unity_production
+		}
+	}
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+	#Regular Planets
+	triggered_planet_modifier = {
+		potential = {
+			NOR = {
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_arcology = yes
+			}
+		}
+		modifier = {
+			planet_housing_add = 500
+			job_clerk_add = 200
+		}
+	}
+	#Habitat
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_habitat = yes
+		}
+		modifier = {
+			planet_housing_add = 400
+			job_clerk_add = 200
+		}
+	}
+	#Ecu
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_arcology = yes
+		}
+		modifier = {
+			planet_housing_add = 1000
+			job_clerk_add = 400
+		}
+	}
+	#Ring World
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_hab_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 2000
+			job_clerk_add = 800
+		}
+	}
+
+	inline_script = {
+		script = jobs/politician_add
+		AMOUNT = 100
+	}
+    inline_script = {
+        script = jobs/pw/living_spire_AP_jobs_add
+        ENFORCER_AMOUNT = 0
+        GROWTH_AMOUNT = 100
+        POP_GROWTH_SPEED = 0
+        ASSEMBLY_ORGANIC_ADD = 0
+        ASSEMBLY_MULT = 0
+    }
+
+	#Bonus from ambition
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
+			}
+		}
+		modifier = {
+			planet_housing_mult = 0.05
+		}
+	}
+
+	ai_weight = {
+		weight = 60
+		modifier = {
+			factor = 0
+			OR = {
+				buildings_has_exotic_gases = no
+				buildings_has_crystals = no
+				buildings_has_motes = no
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = {
+				owner = {
+					has_ascension_perk = pw_ap_planetary_wonders
+				}
+			}
+			NOT = {
+				has_active_building = pw_building_living_spire_1
+			}
+			NOT = {
+				has_building_construction = pw_building_living_spire_1
+			}
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 4
+			is_capital = yes
+		}
+		modifier = {
+			factor = value:pw_housing_factor
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+	}
+}
+
+pw_building_living_spire_2 = {
+	base_buildtime = @pw_building_buildtime
+	position_priority = 85
+	category = amenity
+	can_be_ruined = no
+	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
+	prerequisites = {
+		pw_tech_living_spire
+	}
+	show_tech_unlock_if = {
+		always = no
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+		OR = {
+			NOT = {
+				merg_is_habitat = yes
+			}
+			owner = {
+				is_void_dweller_empire = yes
+			}
+		}
+	}
+	allow = {
+		owner = {
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+		has_major_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				is_gestalt = yes
+			}
+			owner = {
+				NOT = {
+					has_technology = pw_tech_living_spire
+				}
+			}
+		}
+	}
+	convert_to = {
+		building_communal_housing_large
+		building_paradise_dome
+		building_expanded_warren
+		building_drone_megastorage
+	}
+	upgrades = {
+		pw_building_living_spire_3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+			alloys = @pw_building_cost_advanced
+			exotic_gases = @pw_building_cost_rare
+		}
+		cost = {
+			trigger = {
+				planet = {
+					pw_has_any_planetary_wonder = yes
+					NOT = {
+						has_building_construction = pw_building_living_spire_2
+					}
+				}
+			}
+			minerals = @pw_building_cost_extra
+		}
+		upkeep = {
+			energy = @pw_building_upkeep
+			volatile_motes = @pw_building_upkeep_rare_1
+			exotic_gases = @pw_building_upkeep_rare_1
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
+			}
+			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_pw_monumentality_architecture_parlante
+				}
+			}
+			unity = @pw_unity_production
+		}
+	}
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+	#Regular Planets
+	triggered_planet_modifier = {
+		potential = {
+			NOR = {
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_arcology = yes
+			}
+		}
+		modifier = {
+			planet_housing_add = 1000
+			job_clerk_add = 400
+		}
+	}
+	#Habitat
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_habitat = yes
+		}
+		modifier = {
+			planet_housing_add = 800
+			job_clerk_add = 200
+		}
+	}
+	#Ecu
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_arcology = yes
+		}
+		modifier = {
+			planet_housing_add = 2000
+			job_clerk_add = 800
+		}
+	}
+	#Ring World
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_hab_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 3000
+			job_clerk_add = 1200
+		}
+	}
+
+
+	inline_script = {
+		script = jobs/politician_add
+		AMOUNT = 100
+	}
+	#Merchant
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		modifier = {
+			job_politician_add = 100 # merchant
+		}
+	}
+
+    inline_script = {
+        script = pw/jobs/living_spire_AP_jobs_add
+        ENFORCER_AMOUNT = 100
+        GROWTH_AMOUNT = 100
+        POP_GROWTH_SPEED = 0.1
+        ASSEMBLY_ORGANIC_ADD = 3
+        ASSEMBLY_MULT = 0.1
+    }
+
+    inline_script = {
+        script = jobs/entertainers_add
+        AMOUNT = 100
+    }
+
+	#Bonus from ambition
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
+			}
+		}
+		modifier = {
+			planet_housing_mult = 0.1
+		}
+	}
+
+	ai_weight = {
+		weight = 65
+		modifier = {
+			factor = 0
+			OR = {
+				buildings_has_exotic_gases = no
+				buildings_has_crystals = no
+				buildings_has_motes = no
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = {
+				owner = {
+					has_ascension_perk = pw_ap_planetary_wonders
+				}
+			}
+			NOT = {
+				has_active_building = pw_building_living_spire_2
+			}
+			NOT = {
+				has_building_construction = pw_building_living_spire_2
+			}
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 4
+			is_capital = yes
+		}
+		modifier = {
+			factor = value:pw_housing_factor
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+	}
+}
+
+pw_building_living_spire_3 = {
+	base_buildtime = @pw_building_buildtime
+	position_priority = 90
+	category = amenity
+	can_be_ruined = no
+	can_build = no	#Only upgrades
+
+	building_sets = {
+		government
+		urban
+	}
+
+	prerequisites = {
+		pw_tech_living_spire
+	}
+	show_tech_unlock_if = {
+		always = no
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+		OR = {
+			NOT = {
+				merg_is_habitat = yes
+			}
+			owner = {
+				is_void_dweller_empire = yes
+			}
+		}
+	}
+	allow = {
+		owner = {
+			has_ascension_perk = pw_ap_planetary_wonders
+		}
+		has_fully_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				is_gestalt = yes
+			}
+			owner = {
+				NOT = {
+					has_technology = pw_tech_living_spire
+				}
+			}
+		}
+	}
+	convert_to = {
+		building_communal_housing_large
+		building_paradise_dome
+		building_expanded_warren
+		building_drone_megastorage
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+			alloys = @pw_building_cost_advanced
+			rare_crystals = @pw_building_cost_rare
+		}
+		cost = {
+			#Costs 1.5x ~ 2x a normal Wonder.
+			minerals = @pw_building_cost_extra
+			alloys = @pw_building_cost_rare
+		}
+		cost = {
+			trigger = {
+				planet = {
+					pw_has_any_planetary_wonder = yes
+					NOT = {
+						has_building_construction = pw_building_living_spire_3
+					}
+				}
+			}
+			minerals = @pw_building_cost_extra
+		}
+		upkeep = {
+			energy = @pw_building_upkeep_expensive
+			volatile_motes = @pw_building_upkeep_rare_1
+			exotic_gases = @pw_building_upkeep_rare_1
+			rare_crystals = @pw_building_upkeep_rare_1
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
+			}
+			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_pw_monumentality_architecture_parlante
+				}
+			}
+			unity = @pw_unity_production
+		}
+	}
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+	#Reminder: Cannot be Gestalt!
+	#Regular Planets
+	triggered_planet_modifier = {
+		potential = {
+			NOR = {
+				merg_is_hab_ringworld = yes
+				merg_is_habitat = yes
+				merg_is_arcology = yes
+			}
+		}
+		modifier = {
+			planet_housing_add = 1500
+			job_clerk_add = 1000
+		}
+	}
+	#Habitat
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_habitat = yes
+		}
+		modifier = {
+			planet_housing_add = 1000
+			job_clerk_add = 500
+		}
+	}
+	#Ecu
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_arcology = yes
+		}
+		modifier = {
+			planet_housing_add = 3000
+			job_clerk_add = 1500
+		}
+	}
+	#Ring World
+	triggered_planet_modifier = {
+		potential = {
+			merg_is_hab_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 4000
+			job_clerk_add = 2000
+		}
+	}
+
+	inline_script = {
+		script = jobs/politician_add
+		AMOUNT = 200
+	}
+	#Merchant
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		modifier = {
+			job_politician_add = 100 # merchant
+		}
+	}
+
+    # main jobs
+    inline_script = {
+        script = pw/jobs/living_spire_AP_jobs_add
+        ENFORCER_AMOUNT = 200
+        GROWTH_AMOUNT = 200
+        POP_GROWTH_SPEED = 0.2
+        ASSEMBLY_ORGANIC_ADD = 5
+        ASSEMBLY_MULT = 0.15
+    }
+    # entertainers
+    inline_script = {
+        script = jobs/entertainers_add
+        AMOUNT = 200
+    }
+
+	#Bonus from ambition
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_edict = pw_wonders_beyond_ambition
+			}
+		}
+		modifier = {
+			planet_housing_mult = 0.15
+		}
+	}
+
+
+	ai_weight = {
+		weight = 70
+		modifier = {
+			factor = 0
+			OR = {
+				buildings_has_exotic_gases = no
+				buildings_has_crystals = no
+				buildings_has_motes = no
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = {
+				owner = {
+					has_ascension_perk = pw_ap_planetary_wonders
+				}
+			}
+			NOT = {
+				has_active_building = pw_building_living_spire_3
+			}
+			NOT = {
+				has_building_construction = pw_building_living_spire_3
+			}
+		}
+		modifier = {
+			factor = 2
+			is_sector_capital = yes
+		}
+		modifier = {
+			factor = 4
+			is_capital = yes
+		}
+		modifier = {
+			factor = value:pw_housing_factor
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+	}
+}

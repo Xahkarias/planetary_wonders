@@ -1381,6 +1381,404 @@ pw_building_museum_of_the_grotesque = {
 # Egalitarian - Authoritarian
 ####################################################################################################################
 # add decisions that add planet deposits
+# NOT empire unique
+
+# Egalitarian
+pw_building_transplanetary_logistics_network = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 75
+    planet_limit = 1
+    can_be_ruined = no
+    category = amenity
+
+    building_sets = {
+        government
+        urban
+        amenities
+    }
+
+    prerequisites = {
+        pw_tech_transplanetary_logistics
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        NOT = { has_modifier = slave_colony }
+        NOT = { has_modifier = penal_colony }
+        NOT = { merg_is_habitat = yes }
+    }
+
+    allow = {
+        owner = { is_egalitarian = yes }
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_transplanetary_logistics_network }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep_expensive
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = penal_colony
+            AND = {
+                exists = owner
+                owner = { is_gestalt = yes }
+            }
+            # AND = {
+            # 	exists = owner
+            # 	owner = { is_egalitarian = no }
+            # }
+        }
+    }
+
+    convert_to = {
+        building_commercial_megaplex
+        building_organic_paradise
+        building_hive_cluster
+        building_simulation_2
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    #Clerk
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_egalitarian = yes }
+        }
+        modifier = {
+            job_clerk_add = 400
+            job_bureaucrat_add = 100
+        }
+    }
+
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+
+    #Bonus from ambition
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_housing_mult = 0.05
+        }
+    }
+
+    triggered_desc = {
+        text = pw_transplanetary_logistics_network_tooltip
+    }
+
+
+    on_built = {
+        planet_event = { id = pw_wonder.1700 }
+    }
+
+    ai_weight = {
+        weight = 65
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_transplanetary_logistics_network }
+            NOT = { has_building_construction = pw_building_transplanetary_logistics_network }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = { has_ethic = ethic_fanatic_egalitarian }
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
+
+pw_building_transhabitat_logistics_network = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 120
+    planet_limit = 1
+    can_be_ruined = no
+    category = amenity
+    icon = pw_building_transplanetary_logistics_network
+
+    building_sets = {
+        government
+        urban
+        amenities
+    }
+
+    prerequisites = {
+        pw_tech_transplanetary_logistics
+    }
+
+    show_tech_unlock_if = {
+        exists = owner
+        owner = {
+            is_void_dweller_empire = yes
+        }
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_gestalt = no }
+        NOT = { has_modifier = slave_colony }
+        NOT = { has_modifier = penal_colony }
+        merg_is_habitat = yes
+    }
+
+    allow = {
+        owner = { is_egalitarian = yes }
+        owner = { is_void_dweller_empire = yes }
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_transhabitat_logistics_network }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep_expensive
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = penal_colony
+            AND = {
+                exists = owner
+                owner = { is_gestalt = yes }
+            }
+            # AND = {
+            # 	exists = owner
+            # 	owner = { is_egalitarian = no }
+            # }
+        }
+    }
+
+    convert_to = {
+        building_commercial_megaplex
+        building_organic_paradise
+        building_hive_cluster
+        building_simulation_2
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    planet_modifier = {
+        planet_amenities_mult = 0.1
+    }
+
+    #Clerk
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_egalitarian = yes }
+        }
+        modifier = {
+            job_clerk_add = 400
+            job_bureaucrat_add = 100
+        }
+    }
+
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+
+    #Bonus from ambition
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_housing_mult = 0.05
+        }
+    }
+
+    triggered_desc = {
+        text = pw_transplanetary_logistics_network_tooltip
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.1700 }
+    }
+
+    ai_weight = {
+        weight = 55
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_transplanetary_logistics_network }
+            NOT = { has_building_construction = pw_building_transplanetary_logistics_network }
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = { has_ethic = ethic_fanatic_egalitarian }
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
 
 
 ####################################################################################################################
@@ -1389,6 +1787,7 @@ pw_building_museum_of_the_grotesque = {
 # add decisions that add swappable planet modifiers
 # NOT empire unique
 
+# Militarist
 # adds happiness when at war
 pw_building_martial_avenue = {
     base_buildtime = @pw_building_buildtime
@@ -1622,6 +2021,7 @@ pw_building_martial_avenue = {
     }
 }
 
+# Pacifist
 # adds happiness when at peace
 pw_building_festival_plaza = {
     base_buildtime = @pw_building_buildtime
@@ -1633,6 +2033,7 @@ pw_building_festival_plaza = {
     building_sets = {
         government
         urban
+        amenities
     }
 
     prerequisites = {
