@@ -1,8 +1,8 @@
 #Game has started
 on_game_start = {
-	# events = {
-	# 	pw_wonder.0
-	# }
+	events = {
+		pw_wonder.0
+	}
 }
 
 #A tech has been researched
@@ -56,7 +56,6 @@ on_building_upgraded = {
 		pw_wonder.2201 #Conduit of Unity 1
 
 		pw_wonder.850 #Aligned Galactic Model
-		pw_wonder.1250 #Stellar Sentinel
 	}
 }
 

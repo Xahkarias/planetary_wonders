@@ -4,8 +4,8 @@ namespace = pw_wonder
 country_event = {
 	id = pw_wonder.0
 	hide_window = yes
-	# is_triggered_only = yes
-	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 1 }
 	fire_only_once = yes
 	trigger = {
 		NOT = { has_global_flag = pw_active }
@@ -6672,8 +6672,6 @@ planet_event = {
 	trigger = {
 
 		#While defense armies in orbit are bugged
-		always = no
-
 		OR = {
 			has_active_building = pw_building_guardian_angel
 			has_active_building = pw_building_stellar_sentinel
