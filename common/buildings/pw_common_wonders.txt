@@ -3846,6 +3846,7 @@ pw_building_metal_vivarium = {
 # MANUFACTURED STUFF
 ####################################################################################################################
 
+# has special frame compat
 pw_building_mantle_crucible = {
     base_buildtime = @pw_building_buildtime
     position_priority = 120
@@ -4127,6 +4128,7 @@ pw_building_mantle_crucible = {
     }
 }
 
+# has special frame compat
 pw_building_titan_forge = {
     base_buildtime = @pw_building_buildtime
     position_priority = 100
@@ -4368,6 +4370,7 @@ pw_building_titan_forge = {
     }
 }
 
+# has special frame compat
 pw_building_industrial_hearth = {
     base_buildtime = @pw_building_buildtime
     position_priority = 100

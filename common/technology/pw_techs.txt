@@ -9350,6 +9350,16 @@ pw_tech_cyberecology = {
 				OR = {
 					merg_is_gaia = yes
 					merg_is_hive_world = yes
+                    inline_script = {
+                        script = compat/pw/toggled_code
+                        toggle = @has_gigastructures
+                        code = "
+                            AND = {
+                                is_planet_class = pc_giga_frameworld
+                                has_deposit = d_frameworld_gaia
+                            }
+                        "
+                    }
 				}
 			}
 		}

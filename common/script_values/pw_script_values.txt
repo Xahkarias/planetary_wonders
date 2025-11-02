@@ -254,7 +254,7 @@ pw_buildings_value = {
 
 pw_farming_value = {
 	add = value:pw_farming_districts_value
-	add = value:pw_farming_buildings_value
+	#add = value:pw_farming_buildings_value
 }
 
 pw_farming_districts_value = {
@@ -263,21 +263,14 @@ pw_farming_districts_value = {
 	add = value:pw_districts_value|TYPE|district_farming_uncapped|
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_farming|FACTOR|4|
-	# Evolved
-	add = value:pw_farming_districts_value_evolved
 	# Giga
 	add = value:pw_farming_districts_value_giga
 }
 
-pw_farming_buildings_value = {
-	add = value:pw_buildings_value|TYPE|building_hydroponics_farm|
-	# Evolved
-	add = value:pw_farming_buildings_value_evolved
-}
 
 pw_mining_value = {
 	add = value:pw_mining_districts_value
-	add = value:pw_mining_buildings_value
+	#add = value:pw_mining_buildings_value
 }
 
 pw_mining_districts_value = {
@@ -285,23 +278,14 @@ pw_mining_districts_value = {
 	add = value:pw_districts_value|TYPE|district_mining|
 	add = value:pw_districts_value|TYPE|district_mining_uncapped|
 	add = value:pw_districts_value|TYPE|district_hab_mining|
-	# Evolved
-	add = value:pw_mining_districts_value_evolved
 	# Giga
 	add = value:pw_mining_districts_value_giga
-	# Extra District
-	add = value:pw_mining_districts_value_ED
 }
 
-pw_mining_buildings_value = {
-	# Buildings
-	# Evolved
-	add = value:pw_mining_buildings_value_evolved
-}
 
 pw_generators_value = {
 	add = value:pw_generators_districts_value
-	add = value:pw_generators_buildings_value
+	#add = value:pw_generators_buildings_value
 }
 
 pw_generators_districts_value = {
@@ -311,15 +295,8 @@ pw_generators_districts_value = {
 	add = value:pw_districts_value|TYPE|district_hab_energy|
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_generator|FACTOR|4|
-	# Evovled
-	add = value:pw_generators_districts_value_evolved
 	# Giga
 	add = value:pw_generators_districts_value_giga
-}
-
-pw_generators_buildings_value = {
-	# Evolved
-	add = value:pw_generators_buildings_value_evolved
 }
 
 # usage: value:pw_added|BASE_VALUE|2|ADDED_VALUE|1|

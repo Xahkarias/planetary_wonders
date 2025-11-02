@@ -613,6 +613,7 @@ pw_building_panopticon = {
 
 
 # gaia or hive
+# special frame compat
 pw_building_blossoming_preserve = {
     base_buildtime = @pw_building_buildtime
     position_priority = 95
@@ -640,6 +641,16 @@ pw_building_blossoming_preserve = {
         OR = {
             merg_is_gaia = yes
             merg_is_hive_world = yes
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    AND = {
+                        is_planet_class = pc_giga_frameworld
+                        has_deposit = d_frameworld_gaia
+                    }
+                "
+            }
         }
 
         #Generic triggers
@@ -700,6 +711,16 @@ pw_building_blossoming_preserve = {
         NOR = {
             merg_is_gaia = yes
             merg_is_hive_world = yes
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    AND = {
+                        is_planet_class = pc_giga_frameworld
+                        has_deposit = d_frameworld_gaia
+                    }
+                "
+            }
         }
     }
 
@@ -856,6 +877,7 @@ pw_building_nostalgia_paradise = {
         government
         urban
         unity
+        amenities
     }
 
     prerequisites = {
@@ -870,6 +892,16 @@ pw_building_nostalgia_paradise = {
         OR = {
             has_modifier = resort_colony
             owner = { has_valid_civic = civic_machine_servitor }
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    AND = {
+                        is_planet_class = pc_giga_frameworld
+                        has_deposit = d_frameworld_gaia
+                    }
+                "
+            }
         }
         NOT = {
             is_planet_class = pc_machine
@@ -931,6 +963,16 @@ pw_building_nostalgia_paradise = {
         NOR = {
             has_modifier = resort_colony
             owner = { has_valid_civic = civic_machine_servitor }
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    AND = {
+                        is_planet_class = pc_giga_frameworld
+                        has_deposit = d_frameworld_gaia
+                    }
+                "
+            }
         }
     }
 
