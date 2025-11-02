@@ -154,10 +154,11 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-            job_bureaucrat_add =200
-            job_physicist_add = 150
-            job_engineer_add = 150
-            job_biologist_add = 150
+            job_bureaucrat_add = 200
+            job_pw_tomb_scholar_add = 600
+            job_physicist_add = 60
+            job_engineer_add = 60
+            job_biologist_add = 60
 		}
 	}
 	triggered_planet_modifier = {
@@ -182,9 +183,10 @@ pw_building_unhallowed_necropolis = {
 		}
 		modifier = {
             job_evaluator_add = 200
-            job_calculator_physicist_add = 150
-            job_calculator_engineer_add = 150
-            job_calculator_biologist_add = 150
+            job_pw_tomb_surveyor_add = 600
+            job_calculator_physicist_add = 60
+            job_calculator_engineer_add = 60
+            job_calculator_biologist_add = 60
 		}
 	}
 	triggered_planet_modifier = {

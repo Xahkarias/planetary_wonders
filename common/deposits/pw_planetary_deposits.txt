@@ -1149,14 +1149,14 @@ pw_d_hidden_mantle_factory = {
 
 	#Alloys
 	inline_script = {
-		script = jobs/pw/foundry_add
+		script = pw/jobs/foundry_add
 		OWNER_CONDITION = ""
 		AMOUNT = value:pw_d_hidden_mantle_factory_foundry_jobs
 	}
 
 	#Consumer Goods
 	inline_script = {
-		script = jobs/pw/factory_add
+		script = pw/jobs/factory_add
 		OWNER_CONDITION = "country_uses_consumer_goods = yes"
 		AMOUNT = 1
 	}
@@ -1227,14 +1227,14 @@ pw_d_hidden_mantle_factory_overdrive = {
 
 	#Alloys
 	inline_script = {
-		script = jobs/pw/foundry_add
+		script = pw/jobs/foundry_add
 		OWNER_CONDITION = ""
 		AMOUNT = value:pw_d_hidden_mantle_factory_foundry_jobs
 	}
 
 	#Consumer Goods
 	inline_script = {
-		script = jobs/pw/factory_add
+		script = pw/jobs/factory_add
 		OWNER_CONDITION = "country_uses_consumer_goods = yes"
 		AMOUNT = 1
 	}
@@ -1302,7 +1302,7 @@ pw_d_mantle_replicator = {
 	#Regular
 	#Alloys
 	inline_script = {
-		script = jobs/pw/foundry_add
+		script = pw/jobs/foundry_add
 		OWNER_CONDITION = ""
 		AMOUNT = value:pw_d_hidden_mantle_factory_foundry_jobs
 	}
