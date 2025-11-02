@@ -2156,6 +2156,13 @@ pw_tech_galactic_modeling = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 3
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    giga_has_frameworld_origin = no
+                "
+            }
 		}
 
 		modifier = {
@@ -2280,6 +2287,13 @@ pw_tech_galactic_model_expanding_bureaucracy = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 3
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    giga_has_frameworld_origin = no
+                "
+            }
 		}
 
 		modifier = {
@@ -2405,6 +2419,13 @@ pw_tech_galactic_model_expanding_bureaucracy_hive = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 3
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    giga_has_frameworld_origin = no
+                "
+            }
 		}
 
 		modifier = {
@@ -2530,6 +2551,13 @@ pw_tech_galactic_model_expanding_bureaucracy_machine = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 3
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    giga_has_frameworld_origin = no
+                "
+            }
 		}
 
 		modifier = {
@@ -2645,6 +2673,13 @@ pw_tech_utilitarian_vigilance = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    giga_has_frameworld_origin = no
+                "
+            }
 		}
 
 		modifier = {
@@ -9122,6 +9157,13 @@ pw_tech_augmented_reality_resorts = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 3
+            inline_script = {
+                script = compat/pw/toggled_code
+                toggle = @has_gigastructures
+                code = "
+                    giga_has_frameworld_origin = no
+                "
+            }
 		}
 
 		modifier = {
