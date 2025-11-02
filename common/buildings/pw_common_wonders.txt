@@ -5202,3 +5202,475 @@ pw_building_stellar_sentinel = {
     }
 }
 
+####################################################################################################################
+# GALACTIC MODEL
+####################################################################################################################
+
+pw_building_galactic_model = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 100
+    planet_limit = 1
+    can_be_ruined = no
+    category = government
+    # empire_limit = {
+    # 	modifier = {
+    # 		add = 1
+    # 	}
+    # }
+
+    building_sets = {
+        government
+        urban
+    }
+
+    prerequisites = {
+        pw_tech_galactic_modeling
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+
+        # Empire Unique:
+        AND = {
+            pw_is_wonder_empire_unique = { WONDER = pw_building_galactic_model }
+            hidden_trigger = { pw_is_wonder_empire_unique = { WONDER = pw_building_aligned_galactic_model }}
+        }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+        }
+    }
+
+    upgrades = {
+        pw_building_aligned_galactic_model
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            rare_crystals = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_galactic_model }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_designation_galactic_model = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            rare_crystals = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_designation_galactic_model = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    country_modifier = {
+        diplomacy_upkeep_mult = -0.25
+    }
+
+
+    # INDIVIDUAL
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        modifier = {
+            job_bureaucrat_per_pop = 0.04
+        }
+    }
+
+    #Gestalt
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 250
+            job_coordinator_per_pop = 0.04
+        }
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_bureaucrats_produces_mult = 0.10
+            planet_bureaucrats_upkeep_mult = -0.10
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.800 }
+    }
+
+    ai_weight = {
+        weight = 60
+        modifier = {
+            factor = 0
+            buildings_has_crystals = no
+            owner = {
+                OR = {
+                    AND = {
+                        is_regular_empire = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value > 5
+                        }
+                    }
+                    AND = {
+                        is_regular_empire = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value > 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_galactic_model }
+            NOT = { has_building_construction = pw_building_galactic_model }
+        }
+        modifier = {
+            factor = owner.trigger:empire_sprawl_over_cap
+        }
+        modifier = {
+            factor = 2
+            owner = { has_valid_civic = civic_byzantine_bureaucracy }
+        }
+        modifier = {
+            factor = 1.5
+            has_active_building = building_bureaucratic_1
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_bureaucratic_2
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+        modifier = {
+            factor = 5
+            OR = {
+                colony_type = col_bureau
+                colony_type = col_bureau_hive
+                colony_type = col_bureau_machine
+                colony_type = col_bureau_spiritualist
+            }
+        }
+    }
+}
+
+pw_building_aligned_galactic_model = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 95
+    can_build = no #Only upgrades
+    can_be_ruined = no
+    category = government
+
+    building_sets = {
+        government
+        urban
+    }
+
+    prerequisites = {
+        pw_tech_hyperreality_modeling
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = resort_colony }
+        NOT = { has_modifier = slave_colony }
+        OR = {
+            NOT = { merg_is_habitat = yes }
+            owner = { is_void_dweller_empire = yes }
+        }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        #Upgrade Wonders don't need to check for availability
+
+        # Empire Unique:
+        pw_is_wonder_empire_unique = { WONDER = pw_building_aligned_galactic_model }
+    }
+
+    destroy_trigger = {
+        OR = {
+            has_modifier = slave_colony
+            has_modifier = resort_colony
+        }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost_upgrade
+            rare_crystals = @pw_building_cost_rare_upgrade
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_aligned_galactic_model }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_designation_galactic_model = yes
+                }
+            }
+            minerals = @pw_building_cost_discount
+        }
+        produces = {
+            influence = 1
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            rare_crystals = @pw_building_upkeep_rare_2
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_designation_galactic_model = yes
+                }
+            }
+            energy = @pw_building_upkeep_discount
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    #base wonder stuff
+    inline_script = {
+        script = pw/general_wonder_empire_unique
+    }
+
+    country_modifier = {
+        diplomacy_upkeep_mult = -0.30
+        country_edict_fund_add = 50
+    }
+
+
+
+
+
+
+    # INDIVIDUAL
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        modifier = {
+            job_bureaucrat_add = 800
+            job_bureaucrat_per_pop = 0.04
+        }
+    }
+
+    #Gestalt
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_coordinator_add = 1050
+            job_logistics_drone_add = 200
+            job_coordinator_per_pop = 0.04
+            job_evaluator_add = 200
+        }
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_bureaucrats_produces_mult = 0.15
+            planet_bureaucrats_upkeep_mult = -0.15
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.850 }
+    }
+
+    ai_weight = {
+        weight = 65
+        modifier = {
+            factor = 0
+            buildings_has_crystals = no
+            owner = {
+                OR = {
+                    AND = {
+                        is_regular_empire = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value > 5
+                        }
+                    }
+                    AND = {
+                        is_regular_empire = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value > 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_aligned_galactic_model }
+            NOT = { has_building_construction = pw_building_aligned_galactic_model }
+        }
+        modifier = {
+            factor = owner.trigger:empire_sprawl_over_cap
+        }
+        modifier = {
+            factor = 2
+            owner = { has_valid_civic = civic_byzantine_bureaucracy }
+        }
+        modifier = {
+            factor = 1.5
+            has_active_building = building_bureaucratic_1
+        }
+        modifier = {
+            factor = 2
+            has_active_building = building_bureaucratic_2
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+        modifier = {
+            factor = 8
+            OR = {
+                colony_type = col_bureau
+                colony_type = col_bureau_hive
+                colony_type = col_bureau_machine
+                colony_type = col_bureau_spiritualist
+            }
+        }
+    }
+}

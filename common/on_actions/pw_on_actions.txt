@@ -54,8 +54,6 @@ on_building_upgraded = {
 		pw_wonder.2103 #Living Spire 3
 
 		pw_wonder.2201 #Conduit of Unity 1
-
-		pw_wonder.850 #Aligned Galactic Model
 	}
 }
 
