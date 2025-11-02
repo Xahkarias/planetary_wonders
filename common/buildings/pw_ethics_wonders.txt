@@ -666,7 +666,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -683,7 +684,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -700,7 +702,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -717,7 +720,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -734,7 +738,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
 
@@ -749,7 +754,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -762,7 +768,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -775,7 +782,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -788,7 +796,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -801,7 +810,8 @@ pw_building_fair_of_worlds = {
             }
         }
         modifier = {
-            job_pw_diversity_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
 
@@ -1073,7 +1083,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1090,7 +1101,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1107,7 +1119,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1124,7 +1137,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1141,7 +1155,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
 
@@ -1157,7 +1172,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1171,7 +1187,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1185,7 +1202,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1199,7 +1217,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
     triggered_planet_modifier = {
@@ -1213,7 +1232,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 100
+            job_entertainer_add = 50
+            job_bureaucrat_add = 50
         }
     }
 
@@ -1227,7 +1247,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 300
+            job_entertainer_add = 150
+            job_bureaucrat_add = 150
         }
     }
 
@@ -1244,7 +1265,8 @@ pw_building_museum_of_the_grotesque = {
             }
         }
         modifier = {
-            job_pw_degeneracy_curator_add = 300
+            job_entertainer_add = 350
+            job_bureaucrat_add = 350
         }
     }
 

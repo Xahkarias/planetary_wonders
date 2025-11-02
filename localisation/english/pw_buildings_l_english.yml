@@ -194,14 +194,14 @@
     pw_fair_of_worlds: "§MFair of Worlds§!"
     pw_building_fair_of_worlds: "Fair of Worlds"
     pw_building_fair_of_worlds_desc: "More than expressing our own vision of the galaxy, the Fair of Worlds provides an entire district to exhibition of xeno art and culture exchange, allowing all to see the strength in unity and diversity, rather than in alienation and otherness."
-    pw_building_fair_of_worlds_tooltip: "§SGenerates 100 $job_pw_diversity_curator$ job per envoy improving relations (max 500) and 100 $job_pw_diversity_curator$ job per each federation member (max 500).§!"
+    pw_building_fair_of_worlds_tooltip: "§SGenerates 50 $job_bureaucrat$ jobs and 50 $job_entertainer$ jobs per envoy improving relations (max 500) and 50 $job_bureaucrat$ jobs and 50 $job_entertainer$ jobs per each federation member (max 500).§!"
 
     # Museum of the Grotesque
     pw_museum_of_the_grotesque: "§MMuseum of the Grotesque§!"
     pw_building_museum_of_the_grotesque: "Museum of the Grotesque"
     pw_building_museum_of_the_grotesque_desc: "Lower and foreign art has no place in our society, by exposing them as examples to be mocked in the expansive Museum of the Grotesque we can make sure this ridiculousness xenos call culture stays away from our prideful mainstream."
-    pw_building_museum_of_the_grotesque_tooltip: "§SGenerates 1 $job_pw_degeneracy_curator$ job per envoy harming relations, 1 $job_pw_degeneracy_curator$ job per each empire declared as our rival and 2 $job_pw_degeneracy_curator$ jobs if we are at war.§!"
-    pw_building_museum_of_the_grotesque_tooltip_no_diplomacy: "§SGenerates 1 $job_pw_degeneracy_curator$ job per envoy harming relations and 2 $job_pw_degeneracy_curator$ jobs if we are at war.§!"
+    pw_building_museum_of_the_grotesque_tooltip: "§SGenerates 100 combined $job_bureaucrat$ and $job_entertainer$ jobs per envoy harming relations,  100 combined $job_bureaucrat$ and $job_entertainer$ jobs per each empire declared as our rival and 300 combined $job_bureaucrat$ and $job_entertainer$ jobs if we are at war.§!"
+    pw_building_museum_of_the_grotesque_tooltip_no_diplomacy: "§SGenerates 100 combined $job_bureaucrat$ and $job_entertainer$ jobs per envoy harming relations and 300 combined $job_bureaucrat$ and $job_entertainer$ jobs if we are at war.§!"
 
     # Holy Reliquary
     pw_holy_reliquary: "§MHoly Reliquary§!"

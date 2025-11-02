@@ -324,7 +324,7 @@ pw_building_living_spire_1 = {
 		AMOUNT = 100
 	}
     inline_script = {
-        script = jobs/pw/living_spire_AP_jobs_add
+        script = pw/jobs/living_spire_AP_jobs_add
         ENFORCER_AMOUNT = 0
         GROWTH_AMOUNT = 100
         POP_GROWTH_SPEED = 0

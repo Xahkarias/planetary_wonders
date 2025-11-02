@@ -120,7 +120,7 @@ pw_mod_space_elevator_orbital_districts = {
 	icon = "gfx/interface/icons/planet_modifiers/capital.dds"
 	icon_frame = @pw_icon_frame_green
 	planet_max_districts_add = 4
-	planet_districts_upkeep_mult = 0.20
+	planet_districts_upkeep_mult = 0.10
 }
 
 pw_mod_space_elevator_counterweight_habitat = {

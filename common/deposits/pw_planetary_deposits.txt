@@ -169,7 +169,7 @@ pw_d_SE_space_ramp = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 100
+			job_logistics_drone_add = 200
 		}
 	}
 
@@ -237,7 +237,7 @@ pw_d_SE_nuclear_launcher = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 200
+            job_logistics_drone_add = 400
 		}
 	}
 
@@ -305,7 +305,7 @@ pw_d_SE_skyhook = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 100
+            job_logistics_drone_add = 200
 		}
 	}
 

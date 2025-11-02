@@ -14,13 +14,13 @@
     pw_tech_space_elevator_orbital_commerce_desc: "With the establishment of a solid logistic network provided by the Space Elevators we have constructed we can dedicate facilities and offices for specific commercial functions."
     pw_tech_space_elevator_orbital_commerce_policy: "§SUnlocks Policy:§! §SOrbital Commerce§!."
     pw_tech_space_elevator_orbital_commerce_policy_desc: "Allows us to set orbital commerce facilities to improve the functionalities of our $pw_building_space_elevator$"
-    pw_tech_space_elevator_orbital_commerce_merchants: "$pw_space_elevator$ provides §G+1§! $job_merchant$ Job per 50 Pops."
+    pw_tech_space_elevator_orbital_commerce_merchants: "$pw_space_elevator$ provides §G+1§! $job_trader$ Job per 50 Pops."
 
     pw_tech_space_elevator_orbital_logistics: "Orbital Logistics"
     pw_tech_space_elevator_orbital_logistics_desc: "With the establishment of a solid logistic network provided by the Space Elevators we have constructed the Gestalt can dedicate facilities for specific drone functions."
     pw_tech_space_elevator_orbital_logistics_policy: "§SUnlocks Policy:§! §SOrbital Logistics§!."
     pw_tech_space_elevator_orbital_logistics_policy_desc: "Allows the Gestalt to set orbital logistic facilities to improve the functionalities of our $pw_building_space_elevator$"
-    pw_tech_space_elevator_orbital_logistics_jobs: "$pw_space_elevator$ provides §G+1§! $job_pw_logistics_drone$ Job per 50 Pops."
+    pw_tech_space_elevator_orbital_logistics_jobs: "$pw_space_elevator$ provides §G+1§! $job_logistics_drone$ Job per 50 Pops."
 
     pw_tech_space_elevator_planetary_orbital_logistics: "Planetary-Orbital Logistics"
     pw_tech_space_elevator_planetary_orbital_logistics_desc: "There is no logistic challenge more pernicious and more prevalent in our stellar expansion than leaving the gravitational pull of our planets simply and cheaply."
