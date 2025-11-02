@@ -376,16 +376,9 @@ pw_building_holy_reliquary = {
 
     # Politician
     # can convert to high priests or technophants
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_spiritualist = yes
-            }
-        }
-        modifier = {
-            job_politician_add = 100 # high_priest
-        }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
     }
 
 
@@ -646,9 +639,12 @@ pw_building_fair_of_worlds = {
 
     #Administrator
     planet_modifier = {
-        job_politician_add = 100
         job_entertainer_add = 300
         job_bureaucrat_add = 800
+    }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
     }
 
     #Curators of Diversity (Envoys, max 5)
@@ -1063,9 +1059,12 @@ pw_building_museum_of_the_grotesque = {
 
     #Administrator
     planet_modifier = {
-        job_politician_add = 100
         job_entertainer_add = 300
         job_bureaucrat_add = 800
+    }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
     }
 
     #Curators of Degeneracy (Envoys, max 5)

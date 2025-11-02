@@ -1751,9 +1751,12 @@ pw_building_pavilion_of_wonders = {
 
     #Administrator
     planet_modifier = {
-        job_politician_add = 100
         job_entertainer_add = 200
         job_bureaucrat_per_pop = @pw_job_per_25_pop
+    }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
     }
 
     #Ambition Bonus
@@ -2277,14 +2280,9 @@ pw_building_interdimensional_collider = {
     }
 
     #Regular jobs
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_regular_empire = yes }
-        }
-        modifier = {
-            job_politician_add = 200 # head researcher
-        }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 200
     }
     #Gestalt Jobs
     triggered_planet_modifier = {
@@ -3004,14 +3002,9 @@ pw_building_psionic_observatory = {
     }
 
     #Regular jobs
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_regular_empire = yes }
-        }
-        modifier = {
-            job_politician_add = 200 # head researcher
-        }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 200
     }
     #Gestalt Jobs
     triggered_planet_modifier = {
@@ -3730,14 +3723,9 @@ pw_building_metal_vivarium = {
     }
 
     #Regular jobs
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_regular_empire = yes }
-        }
-        modifier = {
-            job_politician_add = 200 # head researcher
-        }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 200
     }
     #Gestalt Jobs
     triggered_planet_modifier = {
@@ -4283,14 +4271,9 @@ pw_building_titan_forge = {
     }
 
     #ADMs
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_gestalt = no }
-        }
-        modifier = {
-            job_politician_add = 100
-        }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
     }
 
     #Alloys
@@ -5796,11 +5779,14 @@ pw_building_space_elevator = {
             owner = { is_regular_empire = yes }
         }
         modifier = {
-            job_politician_add = 100 # merchant
             job_enforcer_add = 100
             job_clerk_add = 1000
             planet_traders_produces_mult = 0.05
         }
+    }
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
     }
     #trader from tech
     triggered_planet_modifier = {

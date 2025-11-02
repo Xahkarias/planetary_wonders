@@ -151,16 +151,10 @@ pw_d_SE_space_ramp = {
 	}
 
 	#Non Gestalt Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { can_generate_trade_value = yes }
-		}
-		modifier = {
-			job_politician_add = 100 # merchant
-		}
-	}
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
 
 	#Gestalt jobs
 	triggered_planet_modifier = {
@@ -219,16 +213,10 @@ pw_d_SE_nuclear_launcher = {
 	}
 
 	#Non Gestalt Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { can_generate_trade_value = yes }
-		}
-		modifier = {
-			job_politician_add = 200 # merchant
-		}
-	}
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 200
+    }
 
 	#Gestalt jobs
 	triggered_planet_modifier = {
@@ -287,16 +275,10 @@ pw_d_SE_skyhook = {
 	}
 
 	#Non Gestalt Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-			owner = { can_generate_trade_value = yes }
-		}
-		modifier = {
-			job_politician_add = 100 # merchant
-		}
-	}
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
 
 	#Gestalt jobs
 	triggered_planet_modifier = {

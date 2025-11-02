@@ -610,6 +610,471 @@ pw_building_panopticon = {
 }
 
 
+# gaia or hive
+pw_building_blossoming_preserve = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 95
+    category = amenity
+    planet_limit = 1
+    can_be_ruined = no
+
+    building_sets = {
+        government
+        urban
+        amenities
+    }
+
+    prerequisites = {
+        pw_tech_cyberecology
+    }
+
+    potential = {
+        exists = owner
+        NOT = { has_modifier = slave_colony }
+        NOT = { has_modifier = penal_colony }
+    }
+
+    allow = {
+        OR = {
+            merg_is_gaia = yes
+            merg_is_hive_world = yes
+        }
+
+        #Generic triggers
+        has_major_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_blossoming_preserve }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        NOR = {
+            merg_is_gaia = yes
+            merg_is_hive_world = yes
+        }
+    }
+
+    convert_to = {
+        building_communal_housing
+        # building_slave_huts
+        building_luxury_residence
+        building_hive_warren
+        building_drone_storage
+    }
+
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    #Increases planet capacity
+    planet_modifier = {
+        planet_carry_cap_add = 2000
+        # 400 per district is the normal
+    }
+
+    # politicians
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 100
+    }
+    #Preservers
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+            OR = {
+                merg_is_gaia = yes
+                merg_is_hive_world = yes
+            }
+        }
+        modifier = {
+            job_pw_preserver_add = 800
+        }
+    }
+
+    #Gestalt Jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+            OR = {
+                merg_is_gaia = yes
+                merg_is_hive_world = yes
+            }
+        }
+        modifier = {
+            job_pw_preserver_drone_add = 700
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+            OR = {
+                merg_is_gaia = yes
+                merg_is_hive_world = yes
+            }
+        }
+        modifier = {
+            job_pw_preserver_drone_per_pop = @pw_job_per_25_pop
+        }
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+        }
+        modifier = {
+            planet_housing_mult = 0.05
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.2500 }
+    }
+
+    ai_weight = {
+        weight = 65
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_blossoming_preserve }
+            NOT = { has_building_construction = pw_building_blossoming_preserve }
+        }
+        modifier = {
+            factor = 1.5
+            is_capital = yes
+        }
+        modifier = {
+            factor = 1.5
+            exists = owner
+            owner = {
+                OR = {
+                    has_valid_civic = civic_environmentalist
+                    has_valid_civic = civic_idyllic_bloom
+                    has_valid_civic = civic_hive_ascetic
+                    has_valid_civic = civic_hive_idyllic_bloom
+                }
+            }
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+        }
+    }
+}
+
+
+# resort or servitor
+pw_building_nostalgia_paradise = {
+    base_buildtime = @pw_building_buildtime
+    position_priority = 120
+    category = amenity
+    planet_limit = 1
+    can_be_ruined = no
+
+    building_sets = {
+        government
+        urban
+        unity
+    }
+
+    prerequisites = {
+        pw_tech_augmented_reality_resorts
+    }
+
+    potential = {
+        exists = owner
+    }
+
+    allow = {
+        OR = {
+            has_modifier = resort_colony
+            owner = { has_valid_civic = civic_machine_servitor }
+        }
+        NOT = {
+            is_planet_class = pc_machine
+        }
+        has_upgraded_capital = yes
+        OR = {
+            free_district_slots > 0 # Needs a free district to occupy
+            hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+        }
+        pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @pw_building_cost
+            exotic_gases = @pw_building_cost_rare
+        }
+        cost = {
+            trigger = {
+                planet = {
+                    pw_has_any_planetary_wonder = yes
+                    NOT = { has_building_construction = pw_building_nostalgia_paradise }
+                }
+            }
+            minerals = @pw_building_cost_extra
+        }
+        upkeep = {
+            energy = @pw_building_upkeep
+            exotic_gases = @pw_building_upkeep_rare_1
+        }
+        upkeep = {
+            trigger = {
+                planet = {
+                    pw_has_any_additional_planetary_wonder = yes
+                }
+            }
+            energy = @pw_building_upkeep_extra
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = {
+                    has_edict = pw_wonders_beyond_ambition
+                }
+            }
+            energy = @pw_building_upkeep_ambition
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+            }
+            unity = @pw_unity_production
+        }
+    }
+
+    destroy_trigger = {
+        NOR = {
+            has_modifier = resort_colony
+            owner = { has_valid_civic = civic_machine_servitor }
+        }
+    }
+
+    convert_to = {
+        building_organic_sanctuary
+        building_drone_storage
+        building_hive_warren
+        building_communal_housing
+        building_holo_theatres
+    }
+
+    inline_script = {
+        script = pw/general_wonder
+    }
+
+    #Housing
+    planet_modifier = {
+        planet_housing_add = 500
+    }
+
+    #Regular Jobs (Total: 6)
+    inline_script = {
+        script = jobs/politician_add
+        AMOUNT = 200
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_bureaucrat_add = 300
+            job_entertainer_add = 300
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_healthcare_add = 300
+        }
+    }
+
+
+    #Machine Jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_valid_civic = civic_machine_servitor }
+        }
+        modifier = {
+            job_bio_trophy_add = 6000
+            job_artisan_drone_add = 200
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_valid_civic = civic_machine_servitor }
+            owner = { has_toxic_baths = yes }
+        }
+        modifier = {
+            job_replicator_add = 100
+        }
+    }
+
+    #Ambition Bonus
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_edict = pw_wonders_beyond_ambition }
+            has_modifier = resort_colony
+        }
+        modifier = {
+            planet_amenities_mult = 0.10
+        }
+    }
+
+    on_built = {
+        planet_event = { id = pw_wonder.2300 }
+    }
+
+    ai_weight = {
+        weight = 50
+        modifier = {
+            factor = 0
+            buildings_has_exotic_gases = no
+            owner = {
+                OR = {
+                    AND = {
+                        country_uses_consumer_goods = yes
+                        has_monthly_income = {
+                            resource = consumer_goods
+                            value < 5
+                        }
+                    }
+                    AND = {
+                        country_uses_consumer_goods = no
+                        has_monthly_income = {
+                            resource = minerals
+                            value < 75
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            factor = 0.25
+            free_building_slots < 1
+            free_district_slots < 1
+        }
+        modifier = {
+            factor = 0.25
+            pw_has_any_planetary_wonder = yes
+            exists = owner
+            NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+            NOT = { has_active_building = pw_building_nostalgia_paradise }
+            NOT = { has_building_construction = pw_building_nostalgia_paradise }
+        }
+        modifier = {
+            factor = 2
+            has_designation = col_resort
+        }
+        modifier = {
+            factor = 2
+            exists = owner
+            owner = {
+                is_xenophile = yes
+            }
+        }
+        modifier = {
+            factor = value:pw_pop_factor
+            OR = {
+                has_modifier = resort_colony
+                any_owned_pop_group = {
+                    is_pop_category = bio_trophy
+                }
+            }
+        }
+    }
+}
+
+
+
 ####################################################################################################################
 ## MEGACORPS
 ####################################################################################################################
