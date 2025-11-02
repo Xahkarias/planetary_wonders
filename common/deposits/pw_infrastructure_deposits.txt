@@ -2155,7 +2155,9 @@ pw_d_integration_chamber_of_reflection = {
 	planet_modifier = {
 		planet_housing_add = 200
 		planet_jobs_complex_drone_produces_mult = 0.10
-		inline_script = { script = jobs/pw/calculator_add AMOUNT = 200 }
+        job_calculator_physicist_add = 120
+        job_calculator_biologist_add = 120
+        job_calculator_engineer_add = 120
 	}
 }
 

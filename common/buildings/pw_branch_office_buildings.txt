@@ -24,20 +24,6 @@ pw_building_bloodsports_arena = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_bloodsports_arena
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_bloodsports_arena
-		# 			# 	has_building_construction = pw_building_bloodsports_arena
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -77,32 +63,6 @@ pw_building_bloodsports_arena = {
 		job_entertainer_add = 100
 	}
 
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			is_gestalt = no
-	# 			NOT = { has_valid_civic = civic_warrior_culture }
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		job_entertainer_add = 100
-	# 	}
-	# }
-
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			is_gestalt = no
-	# 			has_valid_civic = civic_warrior_culture
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		job_duelist_add = 100
-	# 	}
-	# }
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -115,15 +75,10 @@ pw_building_bloodsports_arena = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -170,20 +125,6 @@ pw_building_meditation_garden = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_meditation_garden
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_meditation_garden
-		# 			# 	has_building_construction = pw_building_meditation_garden
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -223,30 +164,6 @@ pw_building_meditation_garden = {
 		job_bureaucrat_add = 100
 	}
 
-	# #Bureaucrat
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 		owner = { is_spiritualist = no }
-	# 	}
-	# 	modifier = {
-	# 		job_bureaucrat_add = 100
-	# 	}
-	# }
-	
-	# #Priest (spiritualist)
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 		owner = { is_spiritualist = yes }
-	# 	}
-	# 	modifier = {
-	# 		job_bureaucrat_add = 100 # priest
-	# 	}
-	# }
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -259,25 +176,14 @@ pw_building_meditation_garden = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
 	}
-
-	# inline_script = {
-	# 	script = jobs/pw/bureaucrat_add
-	# 	OWNER_CONDITION = ""
-	# 	AMOUNT = 1
-	# }
 
 	on_built = {
 		planet_event = { id = pw_branch_office.120 }
@@ -320,20 +226,6 @@ pw_building_innovation_hub = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_innovation_hub
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_innovation_hub
-		# 			# 	has_building_construction = pw_building_innovation_hub
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -381,19 +273,16 @@ pw_building_innovation_hub = {
 			}
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 100 }
+			job_biologist_add = 30
+            job_engineer_add = 30
+            job_physicist_add = 30
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -440,20 +329,6 @@ pw_building_salvation_shrine = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_salvation_shrine
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_salvation_shrine
-		# 			# 	has_building_construction = pw_building_salvation_shrine
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -508,10 +383,6 @@ pw_building_salvation_shrine = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_fanatic_spiritualist
-				# This building is a corporate branch (can be built on non-corporate planet).
-				# So planet owner is not megacorp always.
-	# 			is_megacorp = no
-				# NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
 		modifier = {
@@ -519,85 +390,10 @@ pw_building_salvation_shrine = {
 		}
 	}
 
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_ethic = ethic_fanatic_spiritualist
-	# # 			is_megacorp = no
-	# 			NOT = { has_origin = origin_cybernetic_creed }
-	# 		}
-	# 	}
-	# 	text = job_priest_effect_desc
-	# }
-
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_ethic = ethic_fanatic_spiritualist
-	# 			has_origin = origin_cybernetic_creed
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		job_haruspex_add = 100
-	# 	}
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_ethic = ethic_fanatic_spiritualist
-	# 			has_origin = origin_cybernetic_creed
-	# 		}
-	# 	}
-	# 	text = job_haruspex_effect_desc
-	# }
-
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_ethic = ethic_fanatic_spiritualist
-	# 			is_megacorp = yes
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		job_preacher_add = 100
-	# 	}
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# # 		or = {
-	# # 			and = {
-	# 				exists = branch_office_owner
-	# 				branch_office_owner = {
-	# 					has_valid_civic = civic_gospel_of_the_masses
-	# 				}
-	# # 			}
-	# # 			and = {
-	# # 				exists = owner
-	# # 				owner = {
-	# # 					has_ethic = ethic_fanatic_spiritualist
-	# # 					is_megacorp = yes
-	# # 				}
-	# # 			}
-	# # 		}
-	# 	}
-	# 	text = job_preacher_effect_desc
-	# }
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -644,20 +440,6 @@ pw_building_exotic_beauty_center = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_exotic_beauty_center
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_exotic_beauty_center
-		# 			# 	has_building_construction = pw_building_exotic_beauty_center
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -709,15 +491,10 @@ pw_building_exotic_beauty_center = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -764,20 +541,6 @@ pw_building_national_pride_gallery = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_national_pride_gallery
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_national_pride_gallery
-		# 			# 	has_building_construction = pw_building_national_pride_gallery
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -829,15 +592,10 @@ pw_building_national_pride_gallery = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -884,20 +642,6 @@ pw_building_aristocracy_tower = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_aristocracy_tower
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_aristocracy_tower
-		# 			# 	has_building_construction = pw_building_aristocracy_tower
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -947,15 +691,10 @@ pw_building_aristocracy_tower = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -1002,20 +741,6 @@ pw_building_factory_city = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_factory_city
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_factory_city
-		# 			# 	has_building_construction = pw_building_factory_city
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -1054,27 +779,22 @@ pw_building_factory_city = {
 		job_clerk_add = 100
 	}
 
-	inline_script = {
-		script = jobs/pw/factory_add
-		OWNER_CONDITION = "is_gestalt = no"
-		AMOUNT = 1
-	}
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_ethic = ethic_fanatic_egalitarian
+            }
+        }
+        modifier = {
+            job_foundry_add = 100
+        }
+    }
 
-	inline_script = {
-		script = jobs/pw/foundry_add
-		OWNER_CONDITION = "has_ethic = ethic_fanatic_egalitarian"
-		AMOUNT = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = branch_office_owner
-			branch_office_owner = { is_criminal_syndicate = yes }
-		}
-		modifier = {
-			planet_crime_add = 10
-		}
-	}
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb
@@ -1122,20 +842,6 @@ pw_building_tax_haven = {
 				has_active_building = pw_building_department_of_xenoeconomics
 			}
 		}
-		# NOT = {
-		# 	owner = {
-		# 		any_owned_planet = {
-		# 			has_holding = {
-		# 				holding = pw_building_tax_haven
-		# 				owner = ROOT.branch_office_owner
-		# 			}
-		# 			# OR = {
-		# 			# 	has_building = pw_building_tax_haven
-		# 			# 	has_building_construction = pw_building_tax_haven
-		# 			# }
-		# 		}
-		# 	}
-		# }
 	}
 
 	allow = {
@@ -1167,11 +873,16 @@ pw_building_tax_haven = {
 
 	planet_modifier = {
 		branch_office_value_mult = 0.15
-		planet_crime_add = 50
+		planet_crime_add = 25
 		planet_traders_produces_mult = 0.10
 		job_clerk_add = 100
 		job_politician_add = 100 # merchant
 	}
+
+    # criminal stuff
+    inline_script = {
+        script = pw/jobs/criminal_jobs
+    }
 
 	triggered_desc = {
 		text = pw_branch_office_unique_lb

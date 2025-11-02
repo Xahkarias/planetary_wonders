@@ -1,0 +1,30 @@
+triggered_planet_modifier = {
+    potential = {
+        branch_office_owner = {
+            is_criminal_syndicate = yes
+            NOT = { is_legit_or_legal_criminal = yes }
+        }
+    }
+    planet_crime_add = 25
+    mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
+}
+
+triggered_planet_modifier = {
+    potential = {
+        branch_office_owner = {
+            is_criminal_syndicate = yes
+            is_legit_or_legal_criminal = yes
+        }
+    }
+    # @crime_floor_from_legal_crime
+    planet_crime_floor_add = 5
+}
+triggered_planet_modifier = {
+    potential = {
+        branch_office_owner = {
+            is_criminal_syndicate = yes
+            NOT = { is_legit_or_legal_criminal = yes }
+        }
+    }
+    job_criminal_add = 100
+}
