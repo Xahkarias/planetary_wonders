@@ -544,6 +544,7 @@ pw_decision_SE_orbital_districts = {
 		# NOT = { has_modifier = slave_colony }
 		NOT = { merg_is_habitat = yes }
 		NOT = { merg_is_hab_ringworld = yes }
+        NOT = { is_planet_class = pc_giga_frameworld } # FRAME NO
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
