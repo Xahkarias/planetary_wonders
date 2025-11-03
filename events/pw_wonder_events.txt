@@ -5553,7 +5553,7 @@ planet_event = {
 					kill_assigned_pop_amount = { amount = @pw_event_casualty_4 }
 				}
 			}
-			add_planet_devastation = 30
+			add_planet_devastation = 5
 		}
 		else = {
 			custom_tooltip = pw_wonder.868.a.tooltip
@@ -7537,7 +7537,7 @@ planet_event = {
 
 	option = {
 		name = UNFORTUNATE
-		add_planet_devastation = 15
+		add_planet_devastation = 5
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
@@ -7550,7 +7550,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
-		add_planet_devastation = 15
+		add_planet_devastation = 5
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7577,7 +7577,7 @@ planet_event = {
 
 	option = {
 		name = UNFORTUNATE
-		add_planet_devastation = 25
+		add_planet_devastation = 5
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
@@ -7590,7 +7590,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
-		add_planet_devastation = 25
+		add_planet_devastation = 5
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7616,7 +7616,7 @@ planet_event = {
 
 	option = {
 		name = UNFORTUNATE
-		add_planet_devastation = 30
+		add_planet_devastation = 5
 		hidden_effect = {
 			planet_event = {
 				id = pw_wonder.1304
@@ -7629,7 +7629,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
-		add_planet_devastation = 30
+		add_planet_devastation = 5
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7736,7 +7736,7 @@ planet_event = {
 	location = this
 
 	immediate = {
-		add_planet_devastation = 15
+		add_planet_devastation = 5
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_15
@@ -7766,7 +7766,7 @@ planet_event = {
 	location = this
 
 	immediate = {
-		add_planet_devastation = 25
+		add_planet_devastation = 5
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_25
@@ -7796,7 +7796,7 @@ planet_event = {
 	location = this
 
 	immediate = {
-		add_planet_devastation = 30
+		add_planet_devastation = 5
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_30
@@ -7830,7 +7830,7 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1320.a
-		add_planet_devastation = 20
+		add_planet_devastation = 5
 		random_owned_pop_job = {
 			kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
 		}
@@ -7844,7 +7844,7 @@ planet_event = {
 
 	option = {
 		name = pw_wonder.1320.b
-		add_planet_devastation = 20
+		add_planet_devastation = 5
 		random_owned_pop_job = {
 			kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
 		}

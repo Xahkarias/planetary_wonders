@@ -107,7 +107,7 @@
 
 @pw_decision_resource_influence_cost = 25
 @pw_decision_resource_rare_resource_cost = 250
-@pw_decision_resource_devastation = 20
+@pw_decision_resource_devastation = 15
 @pw_decision_resource_mod = 0.20
 @pw_decision_resource_duration = 3600 # 10 years
 
