@@ -244,6 +244,7 @@ pw_decision_manage_land_repurposing = {
 
 	potential = {
 		uses_district_set = standard
+		owner = { is_nomadic = no } # PERSONAL: nomad compat: Land Repurposing disabled for nomads
 	}
 
 	allow = {
@@ -554,6 +555,7 @@ pw_decision_SE_moon_colony_expansion = {
 
 	potential = {
 		exists = owner
+		owner = { is_nomadic = no } # PERSONAL: nomad compat: Moon Colony Expansion disabled for nomads
 		# NOT = { has_modifier = slave_colony }
 		NOT = { merg_is_habitat = yes }
 		NOT = { merg_is_hab_ringworld = yes }
@@ -735,6 +737,7 @@ pw_decision_SE_counterweight_habitat = {
 	potential = {
 		has_gigastructures = yes
 		exists = owner
+		owner = { is_nomadic = no } # PERSONAL: nomad compat: Counterweight Habitat disabled for nomads
 		# NOT = { has_modifier = slave_colony }
 		NOT = { merg_is_habitat = yes }
 		NOT = { merg_is_hab_ringworld = yes }

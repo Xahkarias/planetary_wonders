@@ -715,13 +715,14 @@ pw_tech_space_elevator_moon_colony_expansion = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = {
-		OR = { # PERSONAL: nomad compat
-			tech_habitat_1
-			tech_waystation_3
-		}
+		tech_habitat_1
 		pw_tech_space_elevator
 	}
 	weight = @tier5weight1
+
+	potential = { # PERSONAL: nomad compat: Moon Colony Expansion disabled for nomads
+		is_nomadic = no
+	}
 
 	weight_modifier = {
 		modifier = {
@@ -793,13 +794,14 @@ pw_tech_space_elevator_counterweight_habitat = {
 	category = { voidcraft }
 	is_rare = yes
 	prerequisites = {
-		OR = { # PERSONAL: nomad compat
-			tech_habitat_2
-			tech_arkship_tier_3
-		}
+		tech_habitat_2
 		pw_tech_space_elevator_orbital_districts
 	}
 	weight = @tier5weight2
+
+	potential = { # PERSONAL: nomad compat: Counterweight Habitat disabled for nomads
+		is_nomadic = no
+	}
 
 	weight_modifier = {
 		factor = @pw_tech_weight_mod
