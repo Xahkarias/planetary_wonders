@@ -726,6 +726,14 @@ pw_building_domed_city = {
 
 	inline_script = { script = jobs/biologists_add AMOUNT = 400 }
 
+	# PERSONAL: replaces test subjects: +2.5% society research per 100 former test subject jobs
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_jobs_society_research_produces_mult = 0.025
+		}
+	}
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -734,7 +742,6 @@ pw_building_domed_city = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
@@ -757,16 +764,6 @@ pw_building_domed_city = {
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
 
-	#Gestalt Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_pw_domed_city_subject_drone_add = 100
-		}
-	}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -1015,6 +1012,14 @@ pw_building_secluded_sector = {
 
 	inline_script = { script = jobs/biologists_add AMOUNT = 400 }
 
+	# PERSONAL: replaces test subjects: +2.5% society research per 100 former test subject jobs
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_jobs_society_research_produces_mult = 0.025
+		}
+	}
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -1023,7 +1028,6 @@ pw_building_secluded_sector = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
@@ -1046,16 +1050,6 @@ pw_building_secluded_sector = {
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
 
-	#Gestalt Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_pw_domed_city_subject_drone_add = 100
-		}
-	}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -1322,6 +1316,14 @@ pw_building_psionic_observatory = {
 		}
 	}
 
+	# PERSONAL: replaces test subjects: +2.5% society research per 100 former test subject jobs
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_jobs_society_research_produces_mult = 0.025
+		}
+	}
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -1331,7 +1333,6 @@ pw_building_psionic_observatory = {
 		modifier = {
 			job_politician_add = 200 # head researcher
 			job_biologist_add = 800 # PERSONAL: vanilla researchers
-			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
@@ -1343,7 +1344,6 @@ pw_building_psionic_observatory = {
 		}
 		modifier = {
 			job_calculator_biologist_add = 1000 # PERSONAL: vanilla researchers
-			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
