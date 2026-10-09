@@ -148,6 +148,14 @@ pw_building_particle_supercollider = {
 		}
 	}
 
+	# PERSONAL: vanilla researchers: +0.25 physicist output per 100 physicists on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_physicists_physics_research_produces_add = 0.25
+		}
+	}
+
 	#It includes additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
@@ -155,7 +163,7 @@ pw_building_particle_supercollider = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_researcher_particle_supercollider_add = 1
+			job_physicist_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_particle_supercollider_experiment_completed|
 	}
@@ -167,7 +175,7 @@ pw_building_particle_supercollider = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_particle_supercollider_add = 1
+			job_calculator_physicist_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_particle_supercollider_experiment_completed|
 	}
@@ -432,6 +440,14 @@ pw_building_interdimensional_collider = {
 
 	inline_script = { script = jobs/physicists_add AMOUNT = 400 }
 
+	# PERSONAL: vanilla researchers: +0.25 physicist output per 100 physicists on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_physicists_physics_research_produces_add = 0.25
+		}
+	}
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -440,7 +456,7 @@ pw_building_interdimensional_collider = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			job_pw_researcher_particle_supercollider_add = 800
+			job_physicist_add = 800 # PERSONAL: vanilla researchers
 		}
 	}
 
@@ -451,7 +467,7 @@ pw_building_interdimensional_collider = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_particle_supercollider_add = 1000
+			job_calculator_physicist_add = 1000 # PERSONAL: vanilla researchers
 		}
 	}
 
@@ -717,13 +733,21 @@ pw_building_domed_city = {
 		}
 	}
 
+	# PERSONAL: vanilla researchers: +0.25 biologist output per 100 biologists on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_biologists_society_research_produces_add = 0.25
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_biologist_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
@@ -745,7 +769,7 @@ pw_building_domed_city = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_calculator_biologist_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
@@ -996,13 +1020,21 @@ pw_building_secluded_sector = {
 		}
 	}
 
+	# PERSONAL: vanilla researchers: +0.25 biologist output per 100 biologists on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_biologists_society_research_produces_add = 0.25
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 1
+			job_biologist_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
@@ -1024,7 +1056,7 @@ pw_building_secluded_sector = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1
+			job_calculator_biologist_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
@@ -1274,6 +1306,14 @@ pw_building_psionic_observatory = {
 
 	inline_script = { script = jobs/biologists_add AMOUNT = 400 }
 
+	# PERSONAL: vanilla researchers: +0.25 biologist output per 100 biologists on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_biologists_society_research_produces_add = 0.25
+		}
+	}
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -1282,7 +1322,7 @@ pw_building_psionic_observatory = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			job_pw_researcher_domed_city_add = 800
+			job_biologist_add = 800 # PERSONAL: vanilla researchers
 			job_pw_domed_city_test_subject_add = 100
 		}
 	}
@@ -1294,7 +1334,7 @@ pw_building_psionic_observatory = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_domed_city_add = 1000
+			job_calculator_biologist_add = 1000 # PERSONAL: vanilla researchers
 			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
@@ -1559,13 +1599,21 @@ pw_building_abyssal_crater_test_site = {
 		}
 	}
 
+	# PERSONAL: vanilla researchers: +0.25 engineer output per 100 engineers on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_engineers_engineering_research_produces_add = 0.25
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_engineer_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
@@ -1577,7 +1625,7 @@ pw_building_abyssal_crater_test_site = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_calculator_engineer_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
@@ -1827,13 +1875,21 @@ pw_building_abyssal_crater_test_site_habitat = {
 		}
 	}
 
+	# PERSONAL: vanilla researchers: +0.25 engineer output per 100 engineers on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_engineers_engineering_research_produces_add = 0.25
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 1
+			job_engineer_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
@@ -1845,7 +1901,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1
+			job_calculator_engineer_add = 1 # PERSONAL: vanilla researchers
 		}
 		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
@@ -2095,6 +2151,14 @@ pw_building_metal_vivarium = {
 
 	inline_script = { script = jobs/engineers_add AMOUNT = 400 }
 
+	# PERSONAL: vanilla researchers: +0.25 engineer output per 100 engineers on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_engineers_engineering_research_produces_add = 0.25
+		}
+	}
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -2103,7 +2167,7 @@ pw_building_metal_vivarium = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			job_pw_researcher_abyssal_crater_test_site_add = 800
+			job_engineer_add = 800 # PERSONAL: vanilla researchers
 		}
 	}
 
@@ -2114,7 +2178,7 @@ pw_building_metal_vivarium = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 1000
+			job_calculator_engineer_add = 1000 # PERSONAL: vanilla researchers
 		}
 	}
 
