@@ -31,6 +31,7 @@ pw_building_particle_supercollider = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
@@ -129,6 +130,7 @@ pw_building_particle_supercollider = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -432,6 +434,7 @@ pw_building_interdimensional_collider = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -621,6 +624,7 @@ pw_building_domed_city = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
@@ -713,6 +717,7 @@ pw_building_domed_city = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -921,6 +926,7 @@ pw_building_secluded_sector = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
@@ -1000,6 +1006,7 @@ pw_building_secluded_sector = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -1298,6 +1305,7 @@ pw_building_psionic_observatory = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -1488,6 +1496,7 @@ pw_building_abyssal_crater_test_site = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
@@ -1580,6 +1589,7 @@ pw_building_abyssal_crater_test_site = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -1777,6 +1787,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
@@ -1856,6 +1867,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -2143,6 +2155,7 @@ pw_building_metal_vivarium = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -2336,6 +2349,7 @@ pw_building_grand_archive = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 
@@ -2437,6 +2451,7 @@ pw_building_grand_archive = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1

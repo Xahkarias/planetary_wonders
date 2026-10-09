@@ -30,6 +30,7 @@ pw_building_mantle_crucible = {
 		OR = {
 			free_district_slots > 0 # Needs a free district to occupy
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+			hidden_trigger = { pw_is_nomad_arkship = yes } # PERSONAL: nomad compat: arkships and the World Ark need no free district
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
 		custom_tooltip = { # PERSONAL: both Mantle Crucible variants: no extra Crucible beside a variant, and no third once both variants exist
@@ -162,6 +163,7 @@ pw_building_mantle_crucible = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -563,6 +565,7 @@ pw_building_titan_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -846,6 +849,7 @@ pw_building_industrial_hearth = {
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { has_modifier = pw_mod_integrated_monuments }
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1

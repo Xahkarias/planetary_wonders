@@ -107,6 +107,7 @@ pw_building_living_spire_0 = {
 			NOT = {
 				has_modifier = pw_mod_integrated_monuments
 			}
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -284,6 +285,7 @@ pw_building_living_spire_1 = {
 			NOT = {
 				has_modifier = pw_mod_integrated_monuments
 			}
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -597,6 +599,7 @@ pw_building_living_spire_2 = {
 			NOT = {
 				has_modifier = pw_mod_integrated_monuments
 			}
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
@@ -896,6 +899,7 @@ pw_building_living_spire_3 = {
 			NOT = {
 				has_modifier = pw_mod_integrated_monuments
 			}
+			pw_is_nomad_arkship = no # PERSONAL: nomad compat: wonders take no district slot on arkships or the World Ark
 		}
 		modifier = {
 			planet_max_districts_add = -1
