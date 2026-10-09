@@ -276,6 +276,11 @@ pw_building_galactic_model = {
 				colony_type = col_bureau_hive
 				colony_type = col_bureau_machine
 				colony_type = col_bureau_spiritualist
+				# PERSONAL: nomad compat
+				colony_type = col_nomad_bureau
+				colony_type = col_nomad_bureau_hive
+				colony_type = col_nomad_bureau_machine
+				colony_type = col_nomad_bureau_spiritualist
 			}
 		}
 	}
@@ -551,6 +556,11 @@ pw_building_aligned_galactic_model = {
 				colony_type = col_bureau_hive
 				colony_type = col_bureau_machine
 				colony_type = col_bureau_spiritualist
+				# PERSONAL: nomad compat
+				colony_type = col_nomad_bureau
+				colony_type = col_nomad_bureau_hive
+				colony_type = col_nomad_bureau_machine
+				colony_type = col_nomad_bureau_spiritualist
 			}
 		}
 	}

@@ -274,7 +274,10 @@ pw_decision_manage_land_repurposing = {
 			}
 			else_if = {
 				limit = {
-					has_designation = col_farming
+					OR = { # PERSONAL: nomad compat
+						has_designation = col_farming
+						has_designation = col_nomad_farming
+					}
 				}
 				add_modifier = {
 					modifier = pw_mod_extra_farming_district_extra
@@ -298,6 +301,9 @@ pw_decision_manage_land_repurposing = {
 				has_designation = col_mining
 				has_designation = col_generator
 				has_designation = col_farming
+				# PERSONAL: nomad compat
+				has_designation = col_nomad_generator
+				has_designation = col_nomad_farming
 			}
 		}
 		modifier = {
@@ -1209,12 +1215,7 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 		}
 		#Replace with interstellar version
 		owner = {
-			NOR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
+			NOT = { pw_country_has_mega_art_access = yes } # PERSONAL: nomad compat
 		}
 		#Replace with interplanetary version
 		owner = {
@@ -1298,12 +1299,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 		}
 		#Replace with interstellar version
 		owner = {
-			NOR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
+			NOT = { pw_country_has_mega_art_access = yes } # PERSONAL: nomad compat
 		}
 	}
 
@@ -1348,9 +1344,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 		}
 	}
 
-	prerequisites = {
-		tech_mega_art
-	}
+	# PERSONAL: nomad compat: tech_mega_art prerequisite moved into potential (pw_country_has_mega_art_tech)
 
 	potential = {
 		exists = owner
@@ -1373,7 +1367,7 @@ pw_decision_pavilion_of_wonders_interstellar_art_exhibition = {
 			}
 		}
 		owner = {
-			has_technology = tech_mega_art
+			pw_country_has_mega_art_tech = yes # PERSONAL: nomad compat
 		}
 	}
 
@@ -1430,12 +1424,7 @@ pw_decision_fair_of_worlds_planetary_art_exhibition = {
 		has_active_building = pw_building_fair_of_worlds
 		#Replace with interstellar version
 		owner = {
-			NOR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
+			NOT = { pw_country_has_mega_art_access = yes } # PERSONAL: nomad compat
 		}
 		#Replace with interplanetary version
 		owner = {
@@ -1517,12 +1506,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 		}
 		#Replace with interstellar version
 		owner = {
-			NOR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
+			NOT = { pw_country_has_mega_art_access = yes } # PERSONAL: nomad compat
 		}
 	}
 
@@ -1567,15 +1551,13 @@ pw_decision_fair_of_worlds_interstellar_art_exhibition = {
 		}
 	}
 
-	prerequisites = {
-		tech_mega_art
-	}
+	# PERSONAL: nomad compat: tech_mega_art prerequisite moved into potential (pw_country_has_mega_art_tech)
 
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
 		owner = {
-			has_technology = tech_mega_art
+			pw_country_has_mega_art_tech = yes # PERSONAL: nomad compat
 		}
 		OR = {
 			has_active_building = pw_building_fair_of_worlds
@@ -1641,12 +1623,7 @@ pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
 		has_active_building = pw_building_museum_of_the_grotesque
 		#Replace with interstellar version
 		owner = {
-			NOR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
+			NOT = { pw_country_has_mega_art_access = yes } # PERSONAL: nomad compat
 		}
 		#Replace with interplanetary version
 		owner = {
@@ -1727,12 +1704,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 		}
 		#Replace with interstellar version
 		owner = {
-			NOR = {
-				has_megastructure = mega_art_installation_3
-				has_megastructure = mega_art_installation_4
-				has_megastructure = mega_art_installation_restored
-				has_megastructure = mega_art_installation_restored_2
-			}
+			NOT = { pw_country_has_mega_art_access = yes } # PERSONAL: nomad compat
 		}
 	}
 
@@ -1777,15 +1749,13 @@ pw_decision_museum_of_the_grotesque_interstellar_art_exhibition = {
 		}
 	}
 
-	prerequisites = {
-		tech_mega_art
-	}
+	# PERSONAL: nomad compat: tech_mega_art prerequisite moved into potential (pw_country_has_mega_art_tech)
 
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
 		owner = {
-			has_technology = tech_mega_art
+			pw_country_has_mega_art_tech = yes # PERSONAL: nomad compat
 		}
 		OR = {
 			has_active_building = pw_building_museum_of_the_grotesque

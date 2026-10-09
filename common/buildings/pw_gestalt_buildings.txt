@@ -571,7 +571,13 @@ pw_building_enigma_engine = {
 		cost = {
 			trigger = {
 				planet = {
-					has_designation = col_capital_machine
+					OR = { # PERSONAL: nomad compat
+						has_designation = col_capital_machine
+						has_designation = col_capital_nomad
+						has_designation = col_capital_nomad_foundry
+						has_designation = col_capital_nomad_factory
+						has_designation = col_capital_nomad_trade
+					}
 				}
 			}
 			minerals = -500
@@ -600,7 +606,13 @@ pw_building_enigma_engine = {
 		upkeep = {
 			trigger = {
 				planet = {
-					has_designation = col_capital_machine
+					OR = { # PERSONAL: nomad compat
+						has_designation = col_capital_machine
+						has_designation = col_capital_nomad
+						has_designation = col_capital_nomad_foundry
+						has_designation = col_capital_nomad_factory
+						has_designation = col_capital_nomad_trade
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -793,7 +805,13 @@ pw_building_solipsist_debate_hall = {
 		cost = {
 			trigger = {
 				planet = {
-					has_designation = col_capital_hive
+					OR = { # PERSONAL: nomad compat
+						has_designation = col_capital_hive
+						has_designation = col_capital_nomad
+						has_designation = col_capital_nomad_foundry
+						has_designation = col_capital_nomad_factory
+						has_designation = col_capital_nomad_trade
+					}
 				}
 			}
 			minerals = -500
@@ -822,7 +840,13 @@ pw_building_solipsist_debate_hall = {
 		upkeep = {
 			trigger = {
 				planet = {
-					has_designation = col_capital_hive
+					OR = { # PERSONAL: nomad compat
+						has_designation = col_capital_hive
+						has_designation = col_capital_nomad
+						has_designation = col_capital_nomad_foundry
+						has_designation = col_capital_nomad_factory
+						has_designation = col_capital_nomad_trade
+					}
 				}
 			}
 			energy = @pw_building_upkeep_discount
@@ -1248,6 +1272,12 @@ pw_building_feasting_grounds = {
 					OR = {
 						has_designation = col_capital_hive
 						has_designation = col_fortress
+						# PERSONAL: nomad compat
+						has_designation = col_capital_nomad
+						has_designation = col_capital_nomad_foundry
+						has_designation = col_capital_nomad_factory
+						has_designation = col_capital_nomad_trade
+						has_designation = col_nomad_fortress
 						merg_is_hive_world = yes
 					}
 				}
@@ -1281,6 +1311,12 @@ pw_building_feasting_grounds = {
 					OR = {
 						has_designation = col_capital_hive
 						has_designation = col_fortress
+						# PERSONAL: nomad compat
+						has_designation = col_capital_nomad
+						has_designation = col_capital_nomad_foundry
+						has_designation = col_capital_nomad_factory
+						has_designation = col_capital_nomad_trade
+						has_designation = col_nomad_fortress
 						merg_is_hive_world = yes
 					}
 				}
@@ -1391,6 +1427,8 @@ pw_building_feasting_grounds = {
 			OR = {
 				has_designation = col_hive
 				has_designation = col_fortress
+				# PERSONAL: nomad compat
+				has_designation = col_nomad_fortress
 			}
 		}
 		modifier = {

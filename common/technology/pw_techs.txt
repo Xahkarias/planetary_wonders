@@ -7,15 +7,14 @@ pw_tech_planetary_mega_engineering = {
 	tier = 4
 	prerequisites = {
 		tech_housing_1
-		tech_starbase_4
+		OR = { # PERSONAL: nomad compat (arkship tier 2 = starbase tier 4)
+			tech_starbase_4
+			tech_arkship_tier_2
+		}
 		tech_galactic_administration
 	}
 	weight = @tier4weight2
 	is_rare = yes
-
-	potential = {
-		is_nomadic = no
-	}
 
 	prereqfor_desc = {
 		custom = {
@@ -639,7 +638,10 @@ pw_tech_space_elevator_orbital_districts = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = {
-		tech_habitat_1
+		OR = { # PERSONAL: nomad compat
+			tech_habitat_1
+			tech_waystation_3
+		}
 		pw_tech_space_elevator
 	}
 	weight = @tier5weight1
@@ -713,7 +715,10 @@ pw_tech_space_elevator_moon_colony_expansion = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = {
-		tech_habitat_1
+		OR = { # PERSONAL: nomad compat
+			tech_habitat_1
+			tech_waystation_3
+		}
 		pw_tech_space_elevator
 	}
 	weight = @tier5weight1
@@ -788,7 +793,10 @@ pw_tech_space_elevator_counterweight_habitat = {
 	category = { voidcraft }
 	is_rare = yes
 	prerequisites = {
-		tech_habitat_2
+		OR = { # PERSONAL: nomad compat
+			tech_habitat_2
+			tech_arkship_tier_3
+		}
 		pw_tech_space_elevator_orbital_districts
 	}
 	weight = @tier5weight2
@@ -2778,7 +2786,10 @@ pw_tech_utilitarian_vigilance = {
 	category = { statecraft }
 	prerequisites = {
 		pw_tech_planetary_mega_engineering
-		tech_penal_colonies
+		OR = { # PERSONAL: nomad compat (nomads cannot research penal colonies)
+			tech_penal_colonies
+			tech_artificial_moral_codes
+		}
 	}
 	weight = @tier4weight2
 	is_rare = yes

@@ -238,7 +238,10 @@ pw_building_guardian_angel = {
 		}
 		modifier = {
 			factor = 10
-			colony_type = col_fortress
+			OR = { # PERSONAL: nomad compat
+				colony_type = col_fortress
+				colony_type = col_nomad_fortress
+			}
 		}
 		modifier = {
 			factor = 2
@@ -494,7 +497,10 @@ pw_building_stellar_sentinel = {
 		}
 		modifier = {
 			factor = 10
-			colony_type = col_fortress
+			OR = { # PERSONAL: nomad compat
+				colony_type = col_fortress
+				colony_type = col_nomad_fortress
+			}
 		}
 		modifier = {
 			factor = 2

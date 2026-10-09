@@ -859,7 +859,10 @@ pw_building_helios_tower = {
 		}
 		modifier = {
 			factor = 4
-			has_designation = col_generator
+			OR = { # PERSONAL: nomad compat
+				has_designation = col_generator
+				has_designation = col_nomad_generator
+			}
 		}
 		# modifier = {
 		# 	factor = 3
@@ -1171,7 +1174,10 @@ pw_building_helios_translucent_obelisk = {
 		}
 		modifier = {
 			factor = 5
-			has_designation = col_generator
+			OR = { # PERSONAL: nomad compat
+				has_designation = col_generator
+				has_designation = col_nomad_generator
+			}
 		}
 		# modifier = {
 		# 	factor = 3
@@ -1280,6 +1286,8 @@ pw_building_demetrius_fields = {
 					OR = {
 						has_designation = col_farming
 						has_designation = col_ring_farming
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_farming
 					}
 				}
 			}
@@ -1311,6 +1319,8 @@ pw_building_demetrius_fields = {
 					OR = {
 						has_designation = col_farming
 						has_designation = col_ring_farming
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_farming
 					}
 				}
 			}
@@ -1499,7 +1509,10 @@ pw_building_demetrius_fields = {
 		}
 		modifier = {
 			factor = 5
-			has_designation = col_farming
+			OR = { # PERSONAL: nomad compat
+				has_designation = col_farming
+				has_designation = col_nomad_farming
+			}
 		}
 		# modifier = {
 		# 	factor = 3
@@ -1604,6 +1617,8 @@ pw_building_demetrius_chemical_garden = {
 					OR = {
 						has_designation = col_farming
 						has_designation = col_ring_farming
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_farming
 					}
 				}
 			}
@@ -1635,6 +1650,8 @@ pw_building_demetrius_chemical_garden = {
 					OR = {
 						has_designation = col_farming
 						has_designation = col_ring_farming
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_farming
 					}
 				}
 			}
@@ -1856,7 +1873,10 @@ pw_building_demetrius_chemical_garden = {
 		}
 		modifier = {
 			factor = 5
-			has_designation = col_farming
+			OR = { # PERSONAL: nomad compat
+				has_designation = col_farming
+				has_designation = col_nomad_farming
+			}
 		}
 		# modifier = {
 		# 	factor = 3

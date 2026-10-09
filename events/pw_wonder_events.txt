@@ -12668,6 +12668,8 @@ carrier_event = {
 				OR = {
 					has_designation = col_fortress
 					has_designation = col_habitat_fortress
+					# PERSONAL: nomad compat
+					has_designation = col_nomad_fortress
 					is_in_frontier_space = yes
 				}
 			}

@@ -366,6 +366,11 @@ pw_building_mantle_crucible = {
 				has_designation = col_factory
 				has_designation = col_ecu_factory
 				has_designation = col_mac_factory
+				# PERSONAL: nomad compat
+				has_designation = col_nomad_foundry
+				has_designation = col_capital_nomad_foundry
+				has_designation = col_nomad_factory
+				has_designation = col_capital_nomad_factory
 			}
 		}
 		modifier = {
@@ -452,6 +457,9 @@ pw_building_titan_forge = {
 						has_designation = col_hiv_foundry
 						has_designation = col_mac_foundry
 						has_designation = col_habitat_foundry
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_foundry
+						has_designation = col_capital_nomad_foundry
 					}
 				}
 			}
@@ -487,6 +495,9 @@ pw_building_titan_forge = {
 						has_designation = col_hiv_foundry
 						has_designation = col_mac_foundry
 						has_designation = col_habitat_foundry
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_foundry
+						has_designation = col_capital_nomad_foundry
 					}
 				}
 			}
@@ -641,6 +652,9 @@ pw_building_titan_forge = {
 				has_designation = col_ecu_foundry
 				has_designation = col_mac_foundry
 				has_designation = col_hiv_foundry
+				# PERSONAL: nomad compat
+				has_designation = col_nomad_foundry
+				has_designation = col_capital_nomad_foundry
 			}
 		}
 		modifier = {
@@ -711,6 +725,9 @@ pw_building_industrial_hearth = {
 						has_designation = col_ecu_factory
 						has_designation = col_mac_factory
 						has_designation = col_habitat_factory
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_factory
+						has_designation = col_capital_nomad_factory
 					}
 				}
 			}
@@ -745,6 +762,9 @@ pw_building_industrial_hearth = {
 						has_designation = col_ecu_factory
 						has_designation = col_mac_factory
 						has_designation = col_habitat_factory
+						# PERSONAL: nomad compat
+						has_designation = col_nomad_factory
+						has_designation = col_capital_nomad_factory
 					}
 				}
 			}
@@ -899,6 +919,9 @@ pw_building_industrial_hearth = {
 				has_designation = col_factory
 				has_designation = col_ecu_factory
 				has_designation = col_mac_factory
+				# PERSONAL: nomad compat
+				has_designation = col_nomad_factory
+				has_designation = col_capital_nomad_factory
 			}
 		}
 		modifier = {

@@ -176,10 +176,13 @@ fleet_event = {
 			add_resource = {
 				energy = -1500
 			}
-			add_research_option = tech_terrestrial_sculpting
-			add_tech_progress = {
-				tech = tech_terrestrial_sculpting
-				progress = 0.05
+			if = { # PERSONAL: nomad compat: nomads cannot research Terrestrial Sculpting
+				limit = { is_nomadic = no }
+				add_research_option = tech_terrestrial_sculpting
+				add_tech_progress = {
+					tech = tech_terrestrial_sculpting
+					progress = 0.05
+				}
 			}
 		}
 	}
