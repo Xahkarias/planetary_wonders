@@ -5,8 +5,3 @@
 has_gigastructures = {
 	always = no
 }
-
-# Stellaris Evolved
-has_stellaris_evolved = {
-	always = no
-}

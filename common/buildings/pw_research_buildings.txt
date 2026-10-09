@@ -253,6 +253,7 @@ pw_building_particle_supercollider = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				# num_pops_with_job_tag = {
 				total_workforce_with_job_tag = {
 					value > 0
@@ -536,6 +537,7 @@ pw_building_interdimensional_collider = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -829,6 +831,7 @@ pw_building_domed_city = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -1107,6 +1110,7 @@ pw_building_secluded_sector = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -1377,6 +1381,7 @@ pw_building_psionic_observatory = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -1658,6 +1663,7 @@ pw_building_abyssal_crater_test_site = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -1925,6 +1931,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -2193,6 +2200,7 @@ pw_building_metal_vivarium = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}
@@ -2471,6 +2479,7 @@ pw_building_grand_archive = {
 				has_active_building = building_research_lab_3
 				has_district = district_hab_science
 				has_district = district_rw_science
+				pw_has_xhk_worldark_research_district = yes # PERSONAL: XHK World Ark compat
 				pw_jobs_any_research = yes
 			}
 		}

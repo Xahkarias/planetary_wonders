@@ -6,5 +6,6 @@
 # Gigastructures
 @has_gigastructures = 0
 
-# Stellaris Evolved
-@has_stellaris_evolved = 0
+# PERSONAL: XHK World Ark compat
+# XHK World Ark
+@xhk_world_ark_installed = 0

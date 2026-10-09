@@ -890,3 +890,50 @@ pw_jobs_any_research = {
 		tags = { research }
 	}
 }
+
+# PERSONAL: nomad compat
+#Scope: Planet (carrier). True for vanilla arkships and the XHK World Ark.
+pw_is_nomad_arkship = {
+	OR = {
+		carrier_is_type = ship
+		is_planet_class = pc_ark
+		pw_is_xhk_worldark = yes
+	}
+}
+
+# PERSONAL: XHK World Ark compat
+#Scope: Planet
+pw_is_xhk_worldark = {
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @xhk_world_ark_installed
+		code = "
+			is_planet_class = xhk_pc_worldark
+		"
+	}
+	inline_script = {
+		script = compat/pw/toggled_code_inv
+		toggle = @xhk_world_ark_installed
+		code = "
+			always = no
+		"
+	}
+}
+
+#Scope: Planet
+pw_has_xhk_worldark_research_district = {
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @xhk_world_ark_installed
+		code = "
+			has_district = district_xhk_worldark_research
+		"
+	}
+	inline_script = {
+		script = compat/pw/toggled_code_inv
+		toggle = @xhk_world_ark_installed
+		code = "
+			always = no
+		"
+	}
+}

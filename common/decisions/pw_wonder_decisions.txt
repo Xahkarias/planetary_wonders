@@ -96,7 +96,6 @@ pw_decision_erebus_prospecting = {
 	}
 
 	effect = {
-		add_planet_devastation = @pw_decision_resource_devastation
 		add_modifier = {
 			modifier = pw_mod_erebus_prospecting
 			days = @pw_decision_resource_duration
@@ -146,7 +145,6 @@ pw_decision_helios_seeding = {
 	}
 
 	effect = {
-		add_planet_devastation = @pw_decision_resource_devastation
 		add_modifier = {
 			modifier = pw_mod_helios_seeding
 			days = @pw_decision_resource_duration
@@ -196,7 +194,6 @@ pw_decision_demetrius_harvesting = {
 	}
 
 	effect = {
-		add_planet_devastation = @pw_decision_resource_devastation
 		add_modifier = {
 			modifier = pw_mod_demetrius_harvesting
 			days = @pw_decision_resource_duration

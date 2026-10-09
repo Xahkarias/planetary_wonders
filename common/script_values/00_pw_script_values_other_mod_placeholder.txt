@@ -1,19 +1,5 @@
 # Note: this file's name must be before other files, in ASCIIbetical order (0, 9, A, Z, a, z).
-# Note: The coder (FebHare) isn't famillar with "Stellaris Evolved" or "Gigastructure" mod. So these lists might be outdated.
-pw_farming_districts_value_evolved = {
-	inline_script = {
-		script = compat/pw/toggled_code
-		toggle = @has_stellaris_evolved
-		code = "
-			add = value:pw_districts_value|TYPE|district_tec_aqua_farming|
-			add = value:pw_districts_value|TYPE|district_tec_hab_food|
-			add = value:pw_districts_value|TYPE|district_tec_eco_farming|FACTOR|1.5|
-			add = value:pw_districts_value|TYPE|district_tec_eco_aqua_farming|FACTOR|1.5|
-			add = value:pw_districts_value|TYPE|district_tec_proto_farming|
-		"
-	}
-}
-
+# Note: The coder (FebHare) isn't famillar with "Gigastructure" mod. So these lists might be outdated.
 pw_farming_districts_value_giga = {
 	inline_script = {
 		script = compat/pw/toggled_code
@@ -23,34 +9,6 @@ pw_farming_districts_value_giga = {
 			add = value:pw_districts_value|TYPE|district_flusion_farming|FACTOR|3|
 			add = value:pw_districts_value|TYPE|district_giga_frameworld_farming|
 			add = value:pw_districts_value|TYPE|district_penrose_farming|FACTOR|4|
-		"
-	}
-}
-
-pw_farming_buildings_value_evolved = {
-	inline_script = {
-		script = compat/pw/toggled_code
-		toggle = @has_stellaris_evolved
-		code = "
-			add = value:pw_buildings_value|TYPE|building_hydroponics_farm_2|
-			add = value:pw_buildings_value|TYPE|building_hydroponics_farm_3|
-			add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_1|
-			add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_2|
-			add = value:pw_buildings_value|TYPE|building_tec_biomass_farm_3|
-		"
-	}
-}
-
-pw_mining_districts_value_evolved = {
-	inline_script = {
-		script = compat/pw/toggled_code
-		toggle = @has_stellaris_evolved
-		code = "
-			add = value:pw_districts_value|TYPE|district_tec_rw_replicator|FACTOR|4|
-			add = value:pw_districts_value|TYPE|district_tec_aqua_mining|
-			add = value:pw_districts_value|TYPE|district_tec_eco_mining|FACTOR|1.5|
-			add = value:pw_districts_value|TYPE|district_tec_eco_aqua_mining|FACTOR|1.5|
-			add = value:pw_districts_value|TYPE|district_tec_proto_mining|
 		"
 	}
 }
@@ -72,35 +30,6 @@ pw_mining_districts_value_giga = {
 pw_mining_districts_value_ED = {
 }
 
-pw_mining_buildings_value_evolved = {
-	inline_script = {
-		script = compat/pw/toggled_code
-		toggle = @has_stellaris_evolved
-		code = "
-			add = value:pw_buildings_value|TYPE|building_tec_stripmine_1|
-			add = value:pw_buildings_value|TYPE|building_tec_stripmine_2|
-			add = value:pw_buildings_value|TYPE|building_tec_stripmine_3|
-			add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_1|
-			add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_2|
-			add = value:pw_buildings_value|TYPE|building_tec_biohive_mining_3|
-		"
-	}
-}
-
-pw_generators_districts_value_evolved = {
-	inline_script = {
-		script = compat/pw/toggled_code
-		toggle = @has_stellaris_evolved
-		code = "
-			add = value:pw_districts_value|TYPE|district_tec_aqua_generator|
-			add = value:pw_districts_value|TYPE|district_tec_hab_generator|
-			add = value:pw_districts_value|TYPE|district_tec_eco_generator|FACTOR|1.5|
-			add = value:pw_districts_value|TYPE|district_tec_eco_aqua_generator|FACTOR|1.5|
-			add = value:pw_districts_value|TYPE|district_tec_proto_generator|
-		"
-	}
-}
-
 pw_generators_districts_value_giga = {
 	inline_script = {
 		script = compat/pw/toggled_code
@@ -119,17 +48,52 @@ pw_generators_districts_value_giga = {
 	}
 }
 
-pw_generators_buildings_value_evolved = {
+# PERSONAL: XHK World Ark compat
+# World Ark resource districts are uncapped; the 800-job Penrose and Decompressor variants count as 2.
+pw_farming_districts_value_worldark = {
 	inline_script = {
 		script = compat/pw/toggled_code
-		toggle = @has_stellaris_evolved
+		toggle = @xhk_world_ark_installed
 		code = "
-			add = value:pw_buildings_value|TYPE|building_tec_energrid_1|
-			add = value:pw_buildings_value|TYPE|building_tec_energrid_2|
-			add = value:pw_buildings_value|TYPE|building_tec_energrid_3|
-			add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor|
-			add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_extractor_on|
-			add = value:pw_buildings_value|TYPE|building_tec_machine_anglers_nexus_A|
+			add = value:pw_districts_value|TYPE|district_xhk_worldark_farming|
 		"
+	}
+}
+
+pw_mining_districts_value_worldark = {
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @xhk_world_ark_installed
+		code = "
+			add = value:pw_districts_value|TYPE|district_xhk_worldark_minerals|
+			add = value:pw_districts_value|TYPE|district_xhk_worldark_decompressor|FACTOR|2|
+		"
+	}
+}
+
+pw_generators_districts_value_worldark = {
+	inline_script = {
+		script = compat/pw/toggled_code
+		toggle = @xhk_world_ark_installed
+		code = "
+			add = value:pw_districts_value|TYPE|district_xhk_worldark_generator|
+			add = value:pw_districts_value|TYPE|district_xhk_worldark_penrose|FACTOR|2|
+		"
+	}
+}
+
+# PERSONAL: nomad compat
+# Vanilla arkship "basic" districts farm or harvest depending on the zone in their slot.
+pw_farming_districts_value_ark = {
+	modifier = {
+		add = value:pw_districts_value|TYPE|district_ark_basic|
+		has_zone = { zone = zone_ark_food }
+	}
+}
+
+pw_mining_districts_value_ark = {
+	modifier = {
+		add = value:pw_districts_value|TYPE|district_ark_basic|
+		has_zone = { zone = zone_ark_harvest }
 	}
 }
