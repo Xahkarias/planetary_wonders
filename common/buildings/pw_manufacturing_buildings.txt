@@ -2,7 +2,7 @@ pw_building_mantle_crucible = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = manufacturing
-	planet_limit = 1
+	planet_limit = 2 # PERSONAL: both Mantle Crucible variants
 	can_be_ruined = no
 
 	building_sets = {
@@ -19,7 +19,10 @@ pw_building_mantle_crucible = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { habitable_structure = yes }
+		OR = { # PERSONAL: XHK World Ark compat: the World Ark is artificial but may host the Mantle Crucible line
+			habitable_structure = no
+			pw_is_xhk_worldark = yes
+		}
 	}
 
 	allow = {
@@ -29,6 +32,30 @@ pw_building_mantle_crucible = {
 			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
 		}
 		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+		custom_tooltip = { # PERSONAL: both Mantle Crucible variants: no extra Crucible beside a variant, and no third once both variants exist
+			fail_text = pw_mantle_crucible_variant_limit
+			NOR = {
+				AND = {
+					has_building = pw_building_mantle_crucible
+					OR = {
+						has_building = pw_building_titan_forge
+						has_building = pw_building_industrial_hearth
+						has_building_construction = pw_building_titan_forge
+						has_building_construction = pw_building_industrial_hearth
+					}
+				}
+				AND = {
+					OR = {
+						has_building = pw_building_titan_forge
+						has_building_construction = pw_building_titan_forge
+					}
+					OR = {
+						has_building = pw_building_industrial_hearth
+						has_building_construction = pw_building_industrial_hearth
+					}
+				}
+			}
+		}
 	}
 
 	resources = {
@@ -114,7 +141,10 @@ pw_building_mantle_crucible = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			habitable_structure = yes
+			AND = { # PERSONAL: XHK World Ark compat
+				habitable_structure = yes
+				pw_is_xhk_worldark = no
+			}
 		}
 	}
 
@@ -422,7 +452,10 @@ pw_building_titan_forge = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { habitable_structure = yes }
+		OR = { # PERSONAL: XHK World Ark compat: the World Ark is artificial but may host the Mantle Crucible line
+			habitable_structure = no
+			pw_is_xhk_worldark = yes
+		}
 	}
 
 	allow = {
@@ -515,7 +548,10 @@ pw_building_titan_forge = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			habitable_structure = yes
+			AND = { # PERSONAL: XHK World Ark compat
+				habitable_structure = yes
+				pw_is_xhk_worldark = no
+			}
 		}
 	}
 
@@ -690,7 +726,10 @@ pw_building_industrial_hearth = {
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
-		NOT = { habitable_structure = yes }
+		OR = { # PERSONAL: XHK World Ark compat: the World Ark is artificial but may host the Mantle Crucible line
+			habitable_structure = no
+			pw_is_xhk_worldark = yes
+		}
 		owner = { country_uses_consumer_goods = yes }
 	}
 
@@ -782,7 +821,10 @@ pw_building_industrial_hearth = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			habitable_structure = yes
+			AND = { # PERSONAL: XHK World Ark compat
+				habitable_structure = yes
+				pw_is_xhk_worldark = no
+			}
 			AND = {
 				exists = owner
 				owner = { country_uses_consumer_goods = no }
