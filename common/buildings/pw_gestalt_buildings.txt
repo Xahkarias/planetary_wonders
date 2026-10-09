@@ -647,8 +647,15 @@ pw_building_enigma_engine = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_pw_enigma_decipher_add = 500
-			job_pw_enigma_decipher_per_pop = @pw_job_per_25_pop
+			# PERSONAL: replaces Enigma Deciphers: 150 each, plus 1 each per 100 pops
+			job_calculator_physicist_add = 150
+			job_calculator_biologist_add = 150
+			job_calculator_engineer_add = 150
+			job_coordinator_add = 150
+			job_calculator_physicist_per_pop = @pw_job_per_100_pop
+			job_calculator_biologist_per_pop = @pw_job_per_100_pop
+			job_calculator_engineer_per_pop = @pw_job_per_100_pop
+			job_coordinator_per_pop = @pw_job_per_100_pop
 		}
 	}
 

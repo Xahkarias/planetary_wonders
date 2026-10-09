@@ -1999,7 +1999,11 @@ pw_d_integration_shard_of_enigma = {
 	planet_modifier = {
 		planet_housing_add = 200
 		planet_bureaucrats_produces_mult = 0.10
-		job_pw_enigma_decipher_add = 100
+		# PERSONAL: replaces Enigma Deciphers: 25 each
+		job_calculator_physicist_add = 25
+		job_calculator_biologist_add = 25
+		job_calculator_engineer_add = 25
+		job_coordinator_add = 25
 	}
 }
 
