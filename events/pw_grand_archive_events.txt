@@ -652,7 +652,7 @@ country_event = {
 }
 
 #Complete seed bank:
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.105
 	title = pw_grand_archive.105.name
 	desc = pw_grand_archive.105.desc
@@ -1228,7 +1228,7 @@ ship_event = {
 }
 
 #Complete wet planet (replaced):
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.306
 	title = pw_grand_archive.305.name
 	desc = pw_grand_archive.305.desc
@@ -1308,7 +1308,7 @@ ship_event = {
 }
 
 #Complete cold planet (replaced):
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.308
 	title = pw_grand_archive.307.name
 	desc = pw_grand_archive.307.desc
@@ -1388,7 +1388,7 @@ ship_event = {
 }
 
 #Complete dry planet (replaced):
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.310
 	title = pw_grand_archive.309.name
 	desc = pw_grand_archive.309.desc
@@ -1468,7 +1468,7 @@ ship_event = {
 }
 
 #Complete exotic planet (replaced):
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.312
 	title = pw_grand_archive.311.name
 	desc = pw_grand_archive.311.desc
@@ -2053,15 +2053,15 @@ country_event = {
 					limit = {
 						any_planet_within_border = {
 							is_star = yes
-							NOT = { has_planet_flag = pw_grand_archive_star_project }
+							NOT = { has_carrier_flag = pw_grand_archive_star_project }
 						}
 					}
 					random_planet_within_border = {
 						limit = {
 							is_star = yes
-							NOT = { has_planet_flag = pw_grand_archive_star_project }
+							NOT = { has_carrier_flag = pw_grand_archive_star_project }
 						}
-						set_planet_flag = pw_grand_archive_star_project
+						set_carrier_flag = pw_grand_archive_star_project
 						enable_special_project = {
 							name = PW_STELLARIUM_STAR
 							location = this
@@ -2131,7 +2131,7 @@ ship_event = {
 }
 
 #Complete star simulation:
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.606
 	title = pw_grand_archive.606.name
 	desc = pw_grand_archive.606.desc
@@ -2792,7 +2792,7 @@ country_event = {
 }
 
 #Complete Space Elevator:
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.905
 	title = pw_grand_archive.905.name
 	desc = pw_grand_archive.905.desc
@@ -2832,7 +2832,7 @@ planet_event = {
 }
 
 #Complete Astronomical Model Bureau:
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.906
 	title = pw_grand_archive.906.name
 	desc = pw_grand_archive.906.desc
@@ -2872,7 +2872,7 @@ planet_event = {
 }
 
 #Complete Guardian Angel:
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.907
 	title = pw_grand_archive.907.name
 	desc = pw_grand_archive.907.desc
@@ -3186,7 +3186,7 @@ country_event = {
 }
 
 #Add deposits for AI -> 1101
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1101
 	hide_window = yes
 	is_triggered_only = yes
@@ -3201,14 +3201,14 @@ planet_event = {
 			add_deposit = pw_d_ark_project
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1102
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1102
 	hide_window = yes
 	is_triggered_only = yes
@@ -3223,14 +3223,14 @@ planet_event = {
 			add_deposit = pw_d_cradle_initiative
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1103
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1103
 	hide_window = yes
 	is_triggered_only = yes
@@ -3245,14 +3245,14 @@ planet_event = {
 			add_deposit = pw_d_library_of_babel
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1104
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1104
 	hide_window = yes
 	is_triggered_only = yes
@@ -3267,14 +3267,14 @@ planet_event = {
 			add_deposit = pw_d_particle_museum
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1105
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1105
 	hide_window = yes
 	is_triggered_only = yes
@@ -3289,14 +3289,14 @@ planet_event = {
 			add_deposit = pw_d_omnidatabase
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1106
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1106
 	hide_window = yes
 	is_triggered_only = yes
@@ -3311,14 +3311,14 @@ planet_event = {
 			add_deposit = pw_d_stellarium
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1107
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1107
 	hide_window = yes
 	is_triggered_only = yes
@@ -3333,14 +3333,14 @@ planet_event = {
 			add_deposit = pw_d_zero_g_exposition
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1108
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1108
 	hide_window = yes
 	is_triggered_only = yes
@@ -3355,14 +3355,14 @@ planet_event = {
 			add_deposit = pw_d_mechanist_collection
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1109
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1109
 	hide_window = yes
 	is_triggered_only = yes
@@ -3377,14 +3377,14 @@ planet_event = {
 			add_deposit = pw_d_meta_architectural_complex
 		}
 
-		planet_event = {
+		carrier_event = {
 			id = pw_grand_archive.1110
 			days = @pw_5years
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = pw_grand_archive.1110
 	hide_window = yes
 	is_triggered_only = yes

@@ -16,6 +16,7 @@ pw_multiple_asteroid_attack = {
 			max = 5
 		}
 	}
+	situation_log_category = urgent_matters
 }
 
 # Grand Archive event chains:
@@ -28,6 +29,7 @@ pw_assemble_ARK_project_chain = {
 			max = 3
 		}
 	}
+	situation_log_category = developments
 }
 
 pw_assemble_cradle_initiative_chain = {
@@ -38,6 +40,7 @@ pw_assemble_cradle_initiative_chain = {
 			max = 4
 		}
 	}
+	situation_log_category = developments
 }
 
 pw_assemble_stellarium_chain = {
@@ -48,6 +51,7 @@ pw_assemble_stellarium_chain = {
 			max = 5
 		}
 	}
+	situation_log_category = developments
 }
 
 pw_assemble_meta_architectural_complex_chain = {
@@ -58,20 +62,24 @@ pw_assemble_meta_architectural_complex_chain = {
 			max = 3
 		}
 	}
+	situation_log_category = developments
 }
 
 # Research Wonders Event Chains:
 pw_particle_supercollider_experiment_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
 	picture = GFX_evt_surreal_visions
+	situation_log_category = developments
 }
 
 pw_domed_city_experiment_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
 	picture = GFX_evt_pw_domed_city
+	situation_log_category = developments
 }
 
 pw_abyssal_crater_test_Site_experiment_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
 	picture = GFX_evt_pw_abyssal_crater_test_site
+	situation_log_category = developments
 }

@@ -4,6 +4,7 @@ pw_ap_planetary_wonders = {
 		NOT = {
 			has_ascension_perk = pw_ap_planetary_wonders
 		}
+		is_nomadic = no
 	}
 
 	possible = {

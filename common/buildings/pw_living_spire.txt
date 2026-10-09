@@ -117,7 +117,7 @@ pw_building_living_spire_0 = {
 		text = pw_planet_wonder_lb
 	}
 	on_built = {
-		planet_event = {
+		carrier_event = {
 			id = pw_wonder.2100
 		}
 	}
@@ -727,7 +727,7 @@ pw_building_living_spire_2 = {
 
 	inline_script = {
 		script = jobs/entertainers_add
-		AMOUNT = 1
+		AMOUNT = 100
 	}
 	ai_weight = {
 		weight = 65
@@ -1027,7 +1027,7 @@ pw_building_living_spire_3 = {
 
 	inline_script = {
 		script = jobs/entertainers_add
-		AMOUNT = 3
+		AMOUNT = 300
 	}
 	ai_weight = {
 		weight = 70

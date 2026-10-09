@@ -18,14 +18,6 @@ pw_capricorns_heart_system_initializer = {
 	max_instances = 1
 	usage_odds = {
 		base = 0
-		modifier = {
-			add = 2000000
-			NOR = {
-				is_fe_cluster = yes
-				is_marauder_cluster = yes
-				has_star_flag = empire_cluster
-			}
-		}
 	}
 
 	planet = {
@@ -56,9 +48,9 @@ pw_capricorns_heart_system_initializer = {
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
-			set_planet_flag = pw_aligned_galactic_model_tomb_world
-			set_planet_flag = colony_event #Prevents Random colony events
-			set_planet_flag = nuked_planet_anomalies_disabled #Prevents further anomalies
+			set_carrier_flag = pw_aligned_galactic_model_tomb_world
+			set_carrier_flag = colony_event #Prevents Random colony events
+			set_carrier_flag = nuked_planet_anomalies_disabled #Prevents further anomalies
 			#add_building = pw_building_polyhedron
 		}
 		moon = {

@@ -203,7 +203,7 @@ pw_building_particle_supercollider = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.200 }
+		carrier_event = { id = pw_wonder.200 }
 	}
 
 	ai_weight = {
@@ -486,7 +486,7 @@ pw_building_interdimensional_collider = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.250 }
+		#carrier_event = { id = pw_wonder.250 }
 	}
 
 	ai_weight = {
@@ -779,7 +779,7 @@ pw_building_domed_city = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.300 }
+		carrier_event = { id = pw_wonder.300 }
 	}
 
 	ai_weight = {
@@ -1057,7 +1057,7 @@ pw_building_secluded_sector = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.300 }
+		carrier_event = { id = pw_wonder.300 }
 	}
 
 	ai_weight = {
@@ -1327,7 +1327,7 @@ pw_building_psionic_observatory = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.350 }
+		#carrier_event = { id = pw_wonder.350 }
 	}
 
 	ai_weight = {
@@ -1608,7 +1608,7 @@ pw_building_abyssal_crater_test_site = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.400 }
+		carrier_event = { id = pw_wonder.400 }
 	}
 
 	ai_weight = {
@@ -1875,7 +1875,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.400 }
+		carrier_event = { id = pw_wonder.400 }
 	}
 
 	ai_weight = {
@@ -2143,7 +2143,7 @@ pw_building_metal_vivarium = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.450 }
+		#carrier_event = { id = pw_wonder.450 }
 	}
 
 	ai_weight = {
@@ -2420,7 +2420,7 @@ pw_building_grand_archive = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1600 }
+		carrier_event = { id = pw_wonder.1600 }
 	}
 
 	ai_weight = {

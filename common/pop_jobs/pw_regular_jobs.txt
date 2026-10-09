@@ -50,7 +50,6 @@ pw_mining_director = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|pw_mining_director|RESOURCE|minerals|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_minerals_produces_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
@@ -133,7 +132,6 @@ pw_energy_director = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|pw_energy_director|RESOURCE|energy|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_energy_produces_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
@@ -254,7 +252,6 @@ pw_agriculture_director = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|pw_agriculture_director|RESOURCE|food|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_food_produces_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
@@ -332,7 +329,6 @@ pw_domed_city_test_subject = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_domed_city_subject_drone|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_society_research_produces_mult|
 		modifier = {
 			factor = 0.2
@@ -429,7 +425,6 @@ pw_big_brother = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|pw_big_brother|RESOURCE|unity|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -514,7 +509,6 @@ pw_tourist = {
 
 	weight = {
 		weight = @clerk_job_weight
-		mult = value:job_weights_modifier|JOB|pw_tourist|RESOURCE|trade|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
 			factor = 0.25
@@ -592,7 +586,6 @@ pw_poly_artisan = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|pw_poly_artisan|RESOURCE|consumer_goods|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
 			factor = 0.2
@@ -658,8 +651,6 @@ pw_diversity_curator = {
 
 	weight = {
 		weight = @high_prio_specialist_job_weight
-		mult = value:job_weights_modifier|JOB|pw_diversity_curator|RESOURCE|unity|
-		mult = value:job_weights_research_modifier|JOB|pw_diversity_curator|
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
@@ -727,8 +718,6 @@ pw_degeneracy_curator = {
 
 	weight = {
 		weight = @high_prio_specialist_job_weight
-		mult = value:job_weights_modifier|JOB|pw_degeneracy_curator|RESOURCE|unity|
-		mult = value:job_weights_research_modifier|JOB|pw_degeneracy_curator|
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
@@ -789,7 +778,6 @@ pw_grand_archivist = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_grand_archivist|
 		modifier = {
 			factor = 1.25
 			always = yes
@@ -871,7 +859,6 @@ pw_master_archivist = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_master_archivist|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
 			factor = 0.2
@@ -944,7 +931,6 @@ pw_lunar_archivist = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_lunar_archivist|
 		modifier = {
 			factor = 1.25
 			always = yes
@@ -1030,8 +1016,6 @@ pw_relic_keeper = {
 	}
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|pw_relic_keeper|RESOURCE|unity|
-		mult = value:job_weights_research_modifier|JOB|pw_relic_keeper|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
 			factor = 0.2
@@ -1105,7 +1089,6 @@ pw_tomb_scholar = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_tomb_scholar|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -1172,7 +1155,6 @@ pw_preserver = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_preserver|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no

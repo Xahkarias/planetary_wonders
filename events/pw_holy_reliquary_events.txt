@@ -1490,14 +1490,12 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.good_luck.a
 		capital_scope = {
-			while = {
-				count = 2
-				create_pop = {
-					ethos = {
-						ethic = ethic_spiritualist
-					}
-					species = this.owner_main_species
+			create_pop_group = {
+				size = 200
+				ethos = {
+					ethic = ethic_spiritualist
 				}
+				species = this.owner_main_species
 			}
 		}
 		pw_holy_reliquary_return_to_hub = yes
@@ -4310,7 +4308,8 @@ country_event = {
 			energy = -1500
 		}
 		event_target:pw_holy_reliquary_planet = {
-			create_pop = {
+			create_pop_group = {
+				size = 100
 				species = owner
 			}
 		}

@@ -22,7 +22,7 @@ pw_building_erebus_project = {
 			NOT = { merg_is_habitat = yes }
 			AND = {
 				owner = { is_void_dweller_empire = yes }
-				has_planet_flag = mining_habitat
+				has_carrier_flag = mining_habitat
 			}
 		}
 	}
@@ -227,7 +227,7 @@ pw_building_erebus_project = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.500 }
+		carrier_event = { id = pw_wonder.500 }
 	}
 
 	ai_weight = {
@@ -314,7 +314,7 @@ pw_building_erebus_fracking_plant = {
 			NOT = { merg_is_habitat = yes }
 			AND = {
 				owner = { is_void_dweller_empire = yes }
-				has_planet_flag = mining_habitat
+				has_carrier_flag = mining_habitat
 			}
 		}
 	}
@@ -547,7 +547,7 @@ pw_building_erebus_fracking_plant = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.550 }
+		#carrier_event = { id = pw_wonder.550 }
 	}
 
 	ai_weight = {
@@ -635,7 +635,7 @@ pw_building_helios_tower = {
 			AND = {
 				owner = { is_void_dweller_empire = yes }
 				OR = {
-					has_planet_flag = energy_habitat
+					has_carrier_flag = energy_habitat
 					owner = { is_gestalt = yes }
 				}
 			}
@@ -832,7 +832,7 @@ pw_building_helios_tower = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.600 }
+		carrier_event = { id = pw_wonder.600 }
 	}
 
 	ai_weight = {
@@ -919,7 +919,7 @@ pw_building_helios_translucent_obelisk = {
 			AND = {
 				owner = { is_void_dweller_empire = yes }
 				OR = {
-					has_planet_flag = energy_habitat
+					has_carrier_flag = energy_habitat
 					owner = { is_gestalt = yes }
 				}
 			}
@@ -1144,7 +1144,7 @@ pw_building_helios_translucent_obelisk = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.650 }
+		#carrier_event = { id = pw_wonder.650 }
 	}
 
 	ai_weight = {
@@ -1472,7 +1472,7 @@ pw_building_demetrius_fields = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.700 }
+		carrier_event = { id = pw_wonder.700 }
 	}
 
 	ai_weight = {
@@ -1829,7 +1829,7 @@ pw_building_demetrius_chemical_garden = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.750 }
+		#carrier_event = { id = pw_wonder.750 }
 	}
 
 	ai_weight = {

@@ -120,7 +120,6 @@ pw_calculator_particle_supercollider = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_calculator_particle_supercollider|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -132,15 +131,6 @@ pw_calculator_particle_supercollider = {
 
 	inline_script = "jobs/automodding_priority_research"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = complex_drone
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 pw_calculator_domed_city = {
@@ -214,7 +204,6 @@ pw_calculator_domed_city = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_calculator_domed_city|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -225,16 +214,6 @@ pw_calculator_domed_city = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = complex_drone
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 pw_calculator_abyssal_crater_test_site = {
@@ -313,7 +292,6 @@ pw_calculator_abyssal_crater_test_site = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_calculator_abyssal_crater_test_site|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -324,14 +302,4 @@ pw_calculator_abyssal_crater_test_site = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = complex_drone
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }

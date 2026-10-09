@@ -42,7 +42,7 @@ pw_decision_tls_infrastructure_distribution_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_food_distribution
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -150,7 +150,7 @@ pw_decision_tls_infrastructure_distribution_2 = {
 		add_deposit = pw_d_infrastructure_energy_distribution
 		remove_deposit = pw_d_infrastructure_food_distribution
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -259,7 +259,7 @@ pw_decision_tls_infrastructure_distribution_3 = {
 		add_deposit = pw_d_infrastructure_goods_distribution
 		remove_deposit = pw_d_infrastructure_energy_distribution
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -373,8 +373,8 @@ pw_decision_tls_infrastructure_distribution_4 = {
 		add_deposit = pw_d_infrastructure_luxury_distribution
 		remove_deposit = pw_d_infrastructure_goods_distribution
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1705 }
+			carrier_event = { #Final development
 				id = pw_wonder.1715
 				days = 5
 			}
@@ -492,7 +492,7 @@ pw_decision_tls_infrastructure_emergency_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_medical_posts
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -600,7 +600,7 @@ pw_decision_tls_infrastructure_emergency_2 = {
 		add_deposit = pw_d_infrastructure_habitation_support
 		remove_deposit = pw_d_infrastructure_medical_posts
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -709,7 +709,7 @@ pw_decision_tls_infrastructure_emergency_3 = {
 		add_deposit = pw_d_infrastructure_emergency_services
 		remove_deposit = pw_d_infrastructure_habitation_support
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -826,8 +826,8 @@ pw_decision_tls_infrastructure_emergency_4 = {
 		add_deposit = pw_d_infrastructure_crisis_responders
 		remove_deposit = pw_d_infrastructure_emergency_services
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1705 }
+			carrier_event = { #Final development
 				id = pw_wonder.1715
 				days = 5
 			}
@@ -945,7 +945,7 @@ pw_decision_tls_infrastructure_culture_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_public_agoras
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -1053,7 +1053,7 @@ pw_decision_tls_infrastructure_culture_2 = {
 		add_deposit = pw_d_infrastructure_local_administration
 		remove_deposit = pw_d_infrastructure_public_agoras
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -1162,7 +1162,7 @@ pw_decision_tls_infrastructure_culture_3 = {
 		add_deposit = pw_d_infrastructure_distributed_education
 		remove_deposit = pw_d_infrastructure_local_administration
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -1280,9 +1280,9 @@ pw_decision_tls_infrastructure_culture_4 = {
 		add_deposit = pw_d_infrastructure_arts_installations
 		remove_deposit = pw_d_infrastructure_distributed_education
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
-			planet_event = { id = pw_wonder.1713 } #Ballroom Street Carnival
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1713 } #Ballroom Street Carnival
+			carrier_event = { #Final development
 				id = pw_wonder.1715
 				days = 5
 			}
@@ -1400,7 +1400,7 @@ pw_decision_tls_infrastructure_industrial_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_public_markets
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -1508,7 +1508,7 @@ pw_decision_tls_infrastructure_industrial_2 = {
 		add_deposit = pw_d_infrastructure_inventions_fair
 		remove_deposit = pw_d_infrastructure_public_markets
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -1617,7 +1617,7 @@ pw_decision_tls_infrastructure_industrial_3 = {
 		add_deposit = pw_d_infrastructure_cooperatives_manufacturers
 		remove_deposit = pw_d_infrastructure_inventions_fair
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
+			carrier_event = { id = pw_wonder.1705 }
 		}
 	}
 
@@ -1735,8 +1735,8 @@ pw_decision_tls_infrastructure_industrial_4 = {
 		add_deposit = pw_d_infrastructure_industrial_unions
 		remove_deposit = pw_d_infrastructure_cooperatives_manufacturers
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1705 }
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1705 }
+			carrier_event = { #Final development
 				id = pw_wonder.1715
 				days = 5
 			}
@@ -1856,7 +1856,7 @@ pw_decision_fc_infrastructure_capital_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_planetary_command
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -1966,7 +1966,7 @@ pw_decision_fc_infrastructure_capital_2 = {
 		add_deposit = pw_d_infrastructure_governor_mansion
 		remove_deposit = pw_d_infrastructure_planetary_command
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -2078,9 +2078,9 @@ pw_decision_fc_infrastructure_capital_seat_of_power = {
 		add_deposit = pw_d_infrastructure_seat_of_power
 		remove_deposit = pw_d_infrastructure_governor_mansion
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
-			planet_event = { id = pw_wonder.1803 } #Destroy the previous Seat of Power
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1803 } #Destroy the previous Seat of Power
+			carrier_event = { #Final development
 				id = pw_wonder.1815
 				days = 5
 			}
@@ -2199,9 +2199,9 @@ pw_decision_fc_infrastructure_capital_throne_room = {
 		add_deposit = pw_d_infrastructure_throne_room
 		remove_deposit = pw_d_infrastructure_governor_mansion
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
-			planet_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
+			carrier_event = { #Final development
 				id = pw_wonder.1815
 				days = 5
 			}
@@ -2317,8 +2317,8 @@ pw_decision_fc_infrastructure_capital_holy_throne = {
 		add_deposit = pw_d_infrastructure_imperial_holy_throne
 		remove_deposit = pw_d_infrastructure_throne_room
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
-			planet_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
+			carrier_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
 		}
 	}
 
@@ -2441,8 +2441,8 @@ pw_decision_fc_infrastructure_capital_galactic_throne = {
 			remove_deposit = pw_d_infrastructure_imperial_holy_throne
 		}
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
-			planet_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
+			carrier_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1803 } #Destroy the previous Imperial Throne
 		}
 	}
 
@@ -2512,7 +2512,7 @@ pw_decision_fc_infrastructure_capital_resort = {
 	effect = {
 		add_deposit = pw_d_infrastructure_luxury_retreat
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -2609,7 +2609,7 @@ pw_decision_fc_infrastructure_capital_penal = {
 	effect = {
 		add_deposit = pw_d_infrastructure_wardens_directorate
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -2706,7 +2706,7 @@ pw_decision_fc_infrastructure_capital_slave = {
 	effect = {
 		add_deposit = pw_d_infrastructure_overseers_ring
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -2809,7 +2809,7 @@ pw_decision_fc_infrastructure_emergency_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_palatial_physicians
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -2916,7 +2916,7 @@ pw_decision_fc_infrastructure_emergency_2 = {
 		add_deposit = pw_d_infrastructure_city_defenders
 		remove_deposit = pw_d_infrastructure_palatial_physicians
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3024,7 +3024,7 @@ pw_decision_fc_infrastructure_emergency_3 = {
 		add_deposit = pw_d_infrastructure_crisis_bunker
 		remove_deposit = pw_d_infrastructure_city_defenders
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3140,8 +3140,8 @@ pw_decision_fc_infrastructure_emergency_4 = {
 		add_deposit = pw_d_infrastructure_personal_guardian
 		remove_deposit = pw_d_infrastructure_crisis_bunker
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1805 }
+			carrier_event = { #Final development
 				id = pw_wonder.1815
 				days = 5
 			}
@@ -3259,7 +3259,7 @@ pw_decision_fc_infrastructure_power_1 = {
 	effect = {
 		add_deposit = pw_d_infrastructure_central_of_disinformation
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3366,7 +3366,7 @@ pw_decision_fc_infrastructure_power_2 = {
 		add_deposit = pw_d_infrastructure_center_of_justice
 		remove_deposit = pw_d_infrastructure_central_of_disinformation
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3474,7 +3474,7 @@ pw_decision_fc_infrastructure_power_3 = {
 		add_deposit = pw_d_infrastructure_central_treasury
 		remove_deposit = pw_d_infrastructure_center_of_justice
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3594,8 +3594,8 @@ pw_decision_fc_infrastructure_power_4 = {
 		add_deposit = pw_d_infrastructure_galactic_bureau
 		remove_deposit = pw_d_infrastructure_central_treasury
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
-			planet_event = { #Final development
+			carrier_event = { id = pw_wonder.1805 }
+			carrier_event = { #Final development
 				id = pw_wonder.1815
 				days = 5
 			}
@@ -3712,7 +3712,7 @@ pw_decision_fc_infrastructure_ambassador_chambers = {
 	effect = {
 		add_deposit = pw_d_infrastructure_ambassador_chambers
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3811,7 +3811,7 @@ pw_decision_fc_infrastructure_internal_affairs = {
 	effect = {
 		add_deposit = pw_d_infrastructure_internal_affairs
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -3911,7 +3911,7 @@ pw_decision_fc_infrastructure_intellectual_circles = {
 	effect = {
 		add_deposit = pw_d_infrastructure_intellectual_circles
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -4003,7 +4003,7 @@ pw_decision_fc_infrastructure_holy_tribunal = {
 	effect = {
 		add_deposit = pw_d_infrastructure_holy_tribunal
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -4106,7 +4106,7 @@ pw_decision_fc_infrastructure_ballroom = {
 	effect = {
 		add_deposit = pw_d_infrastructure_ballroom
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -4201,7 +4201,7 @@ pw_decision_fc_infrastructure_war_room = {
 	effect = {
 		add_deposit = pw_d_infrastructure_war_room
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1805 }
+			carrier_event = { id = pw_wonder.1805 }
 		}
 	}
 
@@ -4323,7 +4323,7 @@ pw_decision_cu_cyber_pylon = {
 	effect = {
 		add_deposit = pw_d_integration_cyber_pylon
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -4427,7 +4427,7 @@ pw_decision_cu_CARE_facility = {
 	effect = {
 		add_deposit = pw_d_integration_CARE_facility
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -4531,7 +4531,7 @@ pw_decision_cu_coordination_center = {
 	effect = {
 		add_deposit = pw_d_integration_coordination_center
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -4636,7 +4636,7 @@ pw_decision_cu_xeno_accommodation = {
 	effect = {
 		add_deposit = pw_d_integration_xeno_accommodation
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -4741,7 +4741,7 @@ pw_decision_cu_drone_surveillance = {
 	effect = {
 		add_deposit = pw_d_integration_drone_surveillance
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -4849,7 +4849,7 @@ pw_decision_cu_integrated_replication = {
 	effect = {
 		add_deposit = pw_d_integration_integrated_replication
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -4936,7 +4936,7 @@ pw_decision_cu_shard_of_enigma = {
 	effect = {
 		add_deposit = pw_d_integration_shard_of_enigma
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -5036,7 +5036,7 @@ pw_decision_cu_chamber_of_reflection = {
 	effect = {
 		add_deposit = pw_d_integration_chamber_of_reflection
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 
@@ -5128,7 +5128,7 @@ pw_decision_cu_stargazing_orrery = {
 	effect = {
 		add_deposit = pw_d_integration_stargazing_orrery
 		hidden_effect = {
-			planet_event = { id = pw_wonder.2205 }
+			carrier_event = { id = pw_wonder.2205 }
 		}
 	}
 

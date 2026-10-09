@@ -13,6 +13,10 @@ pw_tech_planetary_mega_engineering = {
 	weight = @tier4weight2
 	is_rare = yes
 
+	potential = {
+		is_nomadic = no
+	}
+
 	prereqfor_desc = {
 		custom = {
 			title = pw_prereq_planetary_wonders

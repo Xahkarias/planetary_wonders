@@ -114,7 +114,7 @@ pw_mining_district_count = {
 	complex_trigger_modifier = {
 		trigger = num_districts
 		parameters = {
-			type = district_mining_uncapped
+			type = district_melting
 		}
 		mode = add
 		mult = $MULT|1$
@@ -146,7 +146,7 @@ pw_generator_district_count = {
 	complex_trigger_modifier = {
 		trigger = num_districts
 		parameters = {
-			type = district_generator_uncapped
+			type = district_geothermal
 		}
 		mode = add
 		mult = $MULT|1$
@@ -170,15 +170,6 @@ pw_farming_district_count = {
 		trigger = num_districts
 		parameters = {
 			type = district_rw_farming
-		}
-		mode = add
-		mult = $MULT|1$
-	}
-
-	complex_trigger_modifier = {
-		trigger = num_districts
-		parameters = {
-			type = district_farming_uncapped
 		}
 		mode = add
 		mult = $MULT|1$
@@ -260,7 +251,6 @@ pw_farming_value = {
 pw_farming_districts_value = {
 	# Normal
 	add = value:pw_districts_value|TYPE|district_farming|
-	add = value:pw_districts_value|TYPE|district_farming_uncapped|
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_farming|FACTOR|4|
 	# Evolved
@@ -283,7 +273,7 @@ pw_mining_value = {
 pw_mining_districts_value = {
 	# Normal
 	add = value:pw_districts_value|TYPE|district_mining|
-	add = value:pw_districts_value|TYPE|district_mining_uncapped|
+	add = value:pw_districts_value|TYPE|district_melting|
 	add = value:pw_districts_value|TYPE|district_hab_mining|
 	# Evolved
 	add = value:pw_mining_districts_value_evolved
@@ -307,7 +297,7 @@ pw_generators_value = {
 pw_generators_districts_value = {
 	# Normal
 	add = value:pw_districts_value|TYPE|district_generator|
-	add = value:pw_districts_value|TYPE|district_generator_uncapped|
+	add = value:pw_districts_value|TYPE|district_geothermal|
 	add = value:pw_districts_value|TYPE|district_hab_energy|
 	# RW
 	add = value:pw_districts_value|TYPE|district_rw_generator|FACTOR|4|

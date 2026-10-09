@@ -221,7 +221,7 @@ pw_wonder_unique_elsewhere = {
 	# all(x) = not any (not x)
 	NOT = { 
 		any_owned_planet = {
-			NOT = { is_planet = root }
+			NOT = { is_same_value = root }
 			OR = {
 				has_building = $WONDER$
 				has_building_construction = $WONDER$

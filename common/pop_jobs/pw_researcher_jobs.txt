@@ -36,7 +36,6 @@ pw_researcher_particle_supercollider = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_researcher_particle_supercollider|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -62,16 +61,6 @@ pw_researcher_particle_supercollider = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 pw_researcher_domed_city = {
@@ -111,7 +100,6 @@ pw_researcher_domed_city = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_researcher_domed_city|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -137,16 +125,6 @@ pw_researcher_domed_city = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 pw_researcher_abyssal_crater_test_site = {
@@ -187,7 +165,6 @@ pw_researcher_abyssal_crater_test_site = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_researcher_abyssal_crater_test_site|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -213,14 +190,4 @@ pw_researcher_abyssal_crater_test_site = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }

@@ -5,7 +5,7 @@ namespace = pw_branch_office
 
 # Bloodsports Arena -> 110
 #On Bloodsports Arena built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.110
 	hide_window = yes
 	is_triggered_only = yes
@@ -28,7 +28,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.111 } #First time owner
+		carrier_event = { id = pw_branch_office.111 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -39,7 +39,7 @@ planet_event = {
 }
 
 #First time Bloodsports Arena is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.111
 	title = pw_branch_office.111.name
 	desc = pw_branch_office.111.desc
@@ -151,7 +151,7 @@ country_event = {
 
 # Meditation Garden -> 120
 #On Meditation Garden built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.120
 	hide_window = yes
 	is_triggered_only = yes
@@ -174,7 +174,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.121 } #First time owner
+		carrier_event = { id = pw_branch_office.121 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -185,7 +185,7 @@ planet_event = {
 }
 
 #First time Meditation Garden is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.121
 	title = pw_branch_office.121.name
 	desc = pw_branch_office.121.desc
@@ -297,7 +297,7 @@ country_event = {
 
 # Innovation Hub -> 130
 #On Innovation Hub built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.130
 	hide_window = yes
 	is_triggered_only = yes
@@ -320,7 +320,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.131 } #First time owner
+		carrier_event = { id = pw_branch_office.131 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -331,7 +331,7 @@ planet_event = {
 }
 
 #First time Innovation Hub is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.131
 	title = pw_branch_office.131.name
 	desc = pw_branch_office.131.desc
@@ -443,7 +443,7 @@ country_event = {
 
 # Salvation Shrine -> 140
 #On Salvation Shrine built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.140
 	hide_window = yes
 	is_triggered_only = yes
@@ -466,7 +466,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.141 } #First time owner
+		carrier_event = { id = pw_branch_office.141 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -477,7 +477,7 @@ planet_event = {
 }
 
 #First time Salvation Shrine is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.141
 	title = pw_branch_office.141.name
 	desc = pw_branch_office.141.desc
@@ -618,7 +618,7 @@ country_event = {
 
 # Exotic Beauty Center -> 150
 #On Exotic Beauty Center built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.150
 	hide_window = yes
 	is_triggered_only = yes
@@ -641,7 +641,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.151 } #First time owner
+		carrier_event = { id = pw_branch_office.151 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -652,7 +652,7 @@ planet_event = {
 }
 
 #First time Exotic Beauty Center is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.151
 	title = pw_branch_office.151.name
 	desc = pw_branch_office.151.desc
@@ -761,7 +761,7 @@ country_event = {
 
 # National Pride Gallery -> 160
 #On National Pride Gallery built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.160
 	hide_window = yes
 	is_triggered_only = yes
@@ -784,7 +784,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.161 } #First time owner
+		carrier_event = { id = pw_branch_office.161 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -795,7 +795,7 @@ planet_event = {
 }
 
 #First time National Pride Gallery is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.161
 	title = pw_branch_office.161.name
 	desc = pw_branch_office.161.desc
@@ -904,7 +904,7 @@ country_event = {
 
 # Aristocracy Tower -> 170
 #On Aristocracy Tower built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.170
 	hide_window = yes
 	is_triggered_only = yes
@@ -927,7 +927,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.171 } #First time owner
+		carrier_event = { id = pw_branch_office.171 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -938,7 +938,7 @@ planet_event = {
 }
 
 #First time Aristocracy Tower is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.171
 	title = pw_branch_office.171.name
 	desc = pw_branch_office.171.desc
@@ -1047,7 +1047,7 @@ country_event = {
 
 # Factory City -> 180
 #On Factory City built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.180
 	hide_window = yes
 	is_triggered_only = yes
@@ -1070,7 +1070,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.181 } #First time owner
+		carrier_event = { id = pw_branch_office.181 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -1081,7 +1081,7 @@ planet_event = {
 }
 
 #First time Factory City is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.181
 	title = pw_branch_office.181.name
 	desc = pw_branch_office.181.desc
@@ -1190,7 +1190,7 @@ country_event = {
 
 # Tax Haven -> 190
 #On Tax Haven built (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.190
 	hide_window = yes
 	is_triggered_only = yes
@@ -1213,7 +1213,7 @@ planet_event = {
 			}
 		}
 
-		planet_event = { id = pw_branch_office.191 } #First time owner
+		carrier_event = { id = pw_branch_office.191 } #First time owner
 		if = {
 			limit = { exists = branch_office_owner }
 			branch_office_owner = {
@@ -1224,7 +1224,7 @@ planet_event = {
 }
 
 #First time Tax Haven is build (owner)
-planet_event = {
+carrier_event = {
 	id = pw_branch_office.191
 	title = pw_branch_office.191.name
 	desc = pw_branch_office.191.desc

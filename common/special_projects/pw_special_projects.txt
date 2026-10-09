@@ -154,7 +154,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_wonder.1013 }
+		carrier_event = { id = pw_wonder.1013 }
 	}
 }
 
@@ -169,7 +169,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_wonder.1372 }
+		carrier_event = { id = pw_wonder.1372 }
 	}
 }
 
@@ -402,7 +402,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.105 }
+		carrier_event = { id = pw_grand_archive.105 }
 	}
 }
 #ARK Project (Frozen specimen, any barren cold or frozen planet)
@@ -517,7 +517,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.306 }
+		carrier_event = { id = pw_grand_archive.306 }
 	}
 }
 
@@ -555,7 +555,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.308 }
+		carrier_event = { id = pw_grand_archive.308 }
 	}
 }
 
@@ -593,7 +593,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.310 }
+		carrier_event = { id = pw_grand_archive.310 }
 	}
 }
 
@@ -631,7 +631,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.312 }
+		carrier_event = { id = pw_grand_archive.312 }
 	}
 }
 
@@ -724,7 +724,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.606 }
+		carrier_event = { id = pw_grand_archive.606 }
 	}
 }
 
@@ -740,7 +740,7 @@ special_project = {
 	event_scope = ship_event
 
 	requirements = {
-		fleet_power = 1500
+		fleet_power >= 1500
 	}
 
 	on_success = {
@@ -797,7 +797,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.905 }
+		carrier_event = { id = pw_grand_archive.905 }
 	}
 }
 
@@ -814,7 +814,7 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.906 }
+		carrier_event = { id = pw_grand_archive.906 }
 	}
 }
 
@@ -831,6 +831,6 @@ special_project = {
 	event_scope = planet_event
 
 	on_success = {
-		planet_event = { id = pw_grand_archive.907 }
+		carrier_event = { id = pw_grand_archive.907 }
 	}
 }

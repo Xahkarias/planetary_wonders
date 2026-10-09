@@ -113,7 +113,7 @@ pw_building_conduit_of_unity_0 = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.2200 }
+		carrier_event = { id = pw_wonder.2200 }
 	}
 
 	ai_weight = {
@@ -685,7 +685,7 @@ pw_building_enigma_engine = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1000 }
+		carrier_event = { id = pw_wonder.1000 }
 	}
 
 	ai_weight = {
@@ -1153,7 +1153,7 @@ pw_building_solipsist_debate_hall = {
 	# }
 
 	on_built = {
-		planet_event = { id = pw_wonder.1100 }
+		carrier_event = { id = pw_wonder.1100 }
 	}
 
 	ai_weight = {
@@ -1373,7 +1373,7 @@ pw_building_feasting_grounds = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.2700 }
+		carrier_event = { id = pw_wonder.2700 }
 	}
 
 	ai_weight = {

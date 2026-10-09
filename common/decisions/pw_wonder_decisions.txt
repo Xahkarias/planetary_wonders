@@ -102,7 +102,7 @@ pw_decision_erebus_prospecting = {
 			days = @pw_decision_resource_duration
 		}
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_wonder.503
 			}
 		}
@@ -152,7 +152,7 @@ pw_decision_helios_seeding = {
 			days = @pw_decision_resource_duration
 		}
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_wonder.603
 			}
 		}
@@ -202,7 +202,7 @@ pw_decision_demetrius_harvesting = {
 			days = @pw_decision_resource_duration
 		}
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_wonder.703
 			}
 		}
@@ -260,7 +260,7 @@ pw_decision_manage_land_repurposing = {
 	effect = {
 		if = {
 			limit = { owner = { is_ai = no }}
-			planet_event = { id = pw_wonder.790 }
+			carrier_event = { id = pw_wonder.790 }
 		}
 		else = {
 			if = {
@@ -347,7 +347,7 @@ pw_decision_SE_install_space_ramp = {
 	effect = {
 		add_deposit = pw_d_SE_space_ramp
 		hidden_effect = {
-			planet_event = { id = pw_wonder.120 }
+			carrier_event = { id = pw_wonder.120 }
 		}
 	}
 
@@ -433,7 +433,7 @@ pw_decision_SE_install_nuclear_launcher = {
 		}
 		add_deposit = pw_d_SE_nuclear_launcher
 		hidden_effect = {
-			planet_event = { id = pw_wonder.120 }
+			carrier_event = { id = pw_wonder.120 }
 		}
 	}
 
@@ -476,7 +476,7 @@ pw_decision_SE_install_skyhook = {
 	effect = {
 		add_deposit = pw_d_SE_skyhook
 		hidden_effect = {
-			planet_event = { id = pw_wonder.120 }
+			carrier_event = { id = pw_wonder.120 }
 		}
 	}
 
@@ -735,7 +735,7 @@ pw_decision_SE_counterweight_habitat = {
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_3 }
-		NOT = { has_planet_flag = has_megastructure }
+		NOT = { has_carrier_flag = has_megastructure }
 		# NOT = { has_moon = yes }
 	}
 
@@ -821,7 +821,7 @@ pw_decision_SE_open_for_galactic_market = {
 		owner = {
 			is_galactic_community_member = yes
 		}
-		NOT = { has_planet_flag = pw_SE_is_choosing_market_bonus }
+		NOT = { has_carrier_flag = pw_SE_is_choosing_market_bonus }
 		NOT = { has_modifier = pw_mod_space_elevator_open_market_free_assets_concession }
 		NOT = { has_modifier = pw_mod_space_elevator_open_market_free_assets_concession_gestalt }
 		NOT = { has_modifier = pw_mod_space_elevator_open_market_industrial_protectionism }
@@ -862,7 +862,7 @@ pw_decision_SE_open_for_galactic_market = {
 			}
 			owner = { add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }}
 		}
-		planet_event = {
+		carrier_event = {
 			id = pw_wonder.130
 		}
 	}
@@ -911,7 +911,7 @@ pw_decision_SE_change_galactic_market_bonus = {
 		owner = {
 			is_galactic_community_member = yes
 		}
-		NOT = { has_planet_flag = pw_SE_is_choosing_market_bonus }
+		NOT = { has_carrier_flag = pw_SE_is_choosing_market_bonus }
 		OR = {
 			has_modifier = pw_mod_space_elevator_open_market_free_assets_concession
 			has_modifier = pw_mod_space_elevator_open_market_free_assets_concession_gestalt
@@ -954,7 +954,7 @@ pw_decision_SE_change_galactic_market_bonus = {
 			}
 			owner = { add_modifier = { modifier = pw_mod_space_elevator_open_market_gestalt }}
 		}
-		planet_event = {
+		carrier_event = {
 			id = pw_wonder.130
 		}
 	}
@@ -1008,7 +1008,7 @@ pw_decision_rebuild_flying_fortress = {
 			type = pw_army_flying_fortress
 		}
 		hidden_effect = {
-			planet_event = { id = pw_wonder.1206 }
+			carrier_event = { id = pw_wonder.1206 }
 		}
 	}
 
@@ -1034,7 +1034,7 @@ pw_decision_guardian_angel_change_peace_choice = {
 	}
 
 	potential = {
-		has_planet_flag = pw_guardian_angel_choice
+		has_carrier_flag = pw_guardian_angel_choice
 	}
 
 	allow = {
@@ -1046,7 +1046,7 @@ pw_decision_guardian_angel_change_peace_choice = {
 
 	effect = {
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_wonder.1207
 			}
 		}
@@ -1220,7 +1220,7 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 		owner = {
 			NOT = {
 				any_owned_planet = {
-					NOT = { is_planet = root }
+					NOT = { is_same_value = root }
 					has_active_building = pw_building_pavilion_of_wonders
 				}
 			}
@@ -1241,7 +1241,7 @@ pw_decision_pavilion_of_wonders_planetary_art_exhibition = {
 	effect = {
 		custom_tooltip = pw_decision_pavilion_of_wonders_planetary_art_exhibition_tooltip
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_art_exhibition.1
 			}
 		}
@@ -1276,7 +1276,7 @@ pw_decision_pavilion_of_wonders_interplanetary_art_exhibition = {
 		has_active_building = pw_building_pavilion_of_wonders
 		owner = {
 			any_owned_planet = {
-				NOT = { is_planet = root }
+				NOT = { is_same_value = root }
 				has_active_building = pw_building_pavilion_of_wonders
 			}
 		}
@@ -1441,7 +1441,7 @@ pw_decision_fair_of_worlds_planetary_art_exhibition = {
 		owner = {
 			NOT = {
 				any_owned_planet = {
-					NOT = { is_planet = root }
+					NOT = { is_same_value = root }
 					has_active_building = pw_building_pavilion_of_wonders
 
 				}
@@ -1463,7 +1463,7 @@ pw_decision_fair_of_worlds_planetary_art_exhibition = {
 	effect = {
 		custom_tooltip = pw_decision_fair_of_worlds_planetary_art_exhibition_tooltip
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_art_exhibition.4
 			}
 		}
@@ -1500,7 +1500,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				has_active_building = pw_building_pavilion_of_wonders
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = root }
+						NOT = { is_same_value = root }
 						has_active_building = pw_building_fair_of_worlds
 					}
 				}
@@ -1509,7 +1509,7 @@ pw_decision_fair_of_worlds_interplanetary_art_exhibition = {
 				has_active_building = pw_building_fair_of_worlds
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = root }
+						NOT = { is_same_value = root }
 						has_active_building = pw_building_pavilion_of_wonders
 					}
 				}
@@ -1652,7 +1652,7 @@ pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
 		owner = {
 			NOT = {
 				any_owned_planet = {
-					NOT = { is_planet = root }
+					NOT = { is_same_value = root }
 					has_active_building = pw_building_pavilion_of_wonders
 				}
 			}
@@ -1673,7 +1673,7 @@ pw_decision_museum_of_the_grotesque_planetary_art_exhibition = {
 	effect = {
 		custom_tooltip = pw_decision_museum_of_the_grotesque_planetary_art_exhibition_tooltip
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_art_exhibition.7
 			}
 		}
@@ -1710,7 +1710,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				has_active_building = pw_building_pavilion_of_wonders
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = root }
+						NOT = { is_same_value = root }
 						has_active_building = pw_building_museum_of_the_grotesque
 					}
 				}
@@ -1719,7 +1719,7 @@ pw_decision_museum_of_the_grotesque_interplanetary_art_exhibition = {
 				has_active_building = pw_building_museum_of_the_grotesque
 				owner = {
 					any_owned_planet = {
-						NOT = { is_planet = root }
+						NOT = { is_same_value = root }
 						has_active_building = pw_building_pavilion_of_wonders
 					}
 				}
@@ -1909,7 +1909,7 @@ pw_decision_host_peace_festival = {
 
 	potential = {
 		has_active_building = pw_building_festival_plaza
-		NOT = { has_planet_flag = pw_festival_plaza_choice }
+		NOT = { has_carrier_flag = pw_festival_plaza_choice }
 	}
 
 	allow = {
@@ -1920,7 +1920,7 @@ pw_decision_host_peace_festival = {
 	}
 
 	effect = {
-		planet_event = { id = pw_wonder.1902 }
+		carrier_event = { id = pw_wonder.1902 }
 	}
 
 	ai_weight = {
@@ -2312,7 +2312,7 @@ pw_decision_host_military_parade = {
 
 	potential = {
 		has_active_building = pw_building_martial_avenue
-		NOT = { has_planet_flag = pw_martial_avenue_choice }
+		NOT = { has_carrier_flag = pw_martial_avenue_choice }
 	}
 
 	allow = {
@@ -2323,7 +2323,7 @@ pw_decision_host_military_parade = {
 	}
 
 	effect = {
-		planet_event = { id = pw_wonder.2003 }
+		carrier_event = { id = pw_wonder.2003 }
 	}
 
 	ai_weight = {
@@ -3041,7 +3041,7 @@ pw_decision_living_spire_change_designation = {
 
 	effect = {
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = pw_wonder.2120
 			}
 		}
@@ -3082,7 +3082,7 @@ pw_decision_nostalgia_paradise_change_theme = {
 	}
 
 	effect = {
-		planet_event = {
+		carrier_event = {
 			id = pw_wonder.2310
 		}
 	}
@@ -3302,7 +3302,7 @@ pw_decision_FG_organize_feast = {
 	}
 
 	effect = {
-		planet_event = {
+		carrier_event = {
 			id = pw_wonder.2710
 		}
 	}

@@ -1,7 +1,7 @@
 namespace = pw_art_exhibition
 
 #Organize Planetary Exhibition
-planet_event = {
+carrier_event = {
 	id = pw_art_exhibition.1
 	title = pw_art_exhibition.1.name
 	desc = pw_art_exhibition.1.desc
@@ -1683,7 +1683,7 @@ country_event = {
 }
 
 #Organize Planetary Xenophile Exhibition
-planet_event = {
+carrier_event = {
 	id = pw_art_exhibition.4
 	title = pw_art_exhibition.4.name
 	desc = pw_art_exhibition.4.desc
@@ -3629,7 +3629,7 @@ country_event = {
 }
 
 #Organize Planetary Xenophobe Exhibition
-planet_event = {
+carrier_event = {
 	id = pw_art_exhibition.7
 	title = pw_art_exhibition.7.name
 	desc = pw_art_exhibition.7.desc

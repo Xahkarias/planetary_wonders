@@ -212,7 +212,7 @@ pw_building_galactic_model = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.800 }
+		carrier_event = { id = pw_wonder.800 }
 	}
 
 	ai_weight = {
@@ -487,7 +487,7 @@ pw_building_aligned_galactic_model = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.850 }
+		#carrier_event = { id = pw_wonder.850 }
 	}
 
 	ai_weight = {
@@ -874,7 +874,7 @@ pw_building_panopticon = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.900 }
+		carrier_event = { id = pw_wonder.900 }
 	}
 
 	ai_weight = {
@@ -1104,11 +1104,11 @@ pw_building_forbidden_city = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1800 }
+		carrier_event = { id = pw_wonder.1800 }
 	}
 
 	# on_destroy = {
-	# 	planet_event = { id = pw_wonder.1802 }
+	# 	carrier_event = { id = pw_wonder.1802 }
 	# }
 
 	ai_weight = {

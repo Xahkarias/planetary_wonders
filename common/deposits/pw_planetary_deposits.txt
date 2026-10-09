@@ -693,7 +693,7 @@ pw_d_parliament_of_the_void_speakers = {
 
 	planet_modifier = {
 		pop_cat_worker_happiness = 0.05
-		pop_cat_slave_happiness = 0.05
+		pop_slave_happiness = 0.05
 	}
 
 	resources = {

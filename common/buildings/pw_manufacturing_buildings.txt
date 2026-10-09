@@ -311,11 +311,11 @@ pw_building_mantle_crucible = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.1300 }
+		carrier_event = { id = pw_wonder.1300 }
 	}
 
 	# on_destroy = {
-	# 	planet_event = { id = pw_wonder.1310 }
+	# 	carrier_event = { id = pw_wonder.1310 }
 	# }
 
 	ai_weight = {
@@ -598,7 +598,7 @@ pw_building_titan_forge = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.1330 }
+		#carrier_event = { id = pw_wonder.1330 }
 	}
 
 	ai_weight = {
@@ -864,7 +864,7 @@ pw_building_industrial_hearth = {
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
-		#planet_event = { id = pw_wonder.1360 }
+		#carrier_event = { id = pw_wonder.1360 }
 	}
 
 	ai_weight = {

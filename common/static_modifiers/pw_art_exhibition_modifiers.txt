@@ -312,7 +312,7 @@ pw_art_mod_elite_fragrance = {
 pw_art_mod_hostile_architecture = {
 	icon = "gfx/interface/icons/modifiers/mod_pop_amenities_usage_mult.dds"
 	pop_cat_worker_political_power = -0.1
-	pop_cat_slave_political_power = -0.1
+	pop_slave_political_power = -0.1
 }
 
 pw_art_mod_luxury_desire = {

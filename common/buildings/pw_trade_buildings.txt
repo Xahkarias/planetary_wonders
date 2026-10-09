@@ -357,7 +357,7 @@ pw_building_space_elevator = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_wonder.100 }
+		carrier_event = { id = pw_wonder.100 }
 	}
 
 	ai_weight = {
@@ -621,7 +621,7 @@ pw_building_department_of_xenoeconomics = {
 	# }
 	
 	on_built = {
-		planet_event = { id = pw_wonder.2600 }
+		carrier_event = { id = pw_wonder.2600 }
 	}
 
 	ai_weight = {

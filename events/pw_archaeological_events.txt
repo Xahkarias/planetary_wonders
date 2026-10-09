@@ -3,7 +3,7 @@ namespace = pw_archaeology
 #Gateway event for archaeology site after a blocker is cleared:
 #	- Forgotten Reliquary
 #	- Hidden Factory
-planet_event = {
+carrier_event = {
 	id = pw_archaeology.10
 	hide_window = yes
 
@@ -12,7 +12,7 @@ planet_event = {
 	trigger = {
 		NOT = { is_homeworld = yes }
 		NOT = { exists = archaeological_site }
-		NOT = { has_planet_flag = suppress_archaeological_sites }
+		NOT = { has_carrier_flag = suppress_archaeological_sites }
 		From = {
 			OR = {
 				is_deposit_type = d_deep_sinkhole
@@ -39,7 +39,7 @@ planet_event = {
 						has_country_flag = triggered_forgotten_reliquary_digsite
 					}
 				}
-				planet_event = { id = pw_archaeology.501 days = 1 }
+				carrier_event = { id = pw_archaeology.501 days = 1 }
 				owner = {
 					set_country_flag = triggered_forgotten_reliquary_digsite
 				}
@@ -51,7 +51,7 @@ planet_event = {
 						has_country_flag = triggered_hidden_factory_digsite
 					}
 				}
-				planet_event = { id = pw_archaeology.601 days = 1 }
+				carrier_event = { id = pw_archaeology.601 days = 1 }
 				owner = {
 					set_country_flag = triggered_hidden_factory_digsite
 				}
@@ -1180,7 +1180,7 @@ country_event = {
 ## Archaeology: Forgotten Reliquary -> 500
 
 # Site Discovery (after blocker was clear)
-planet_event = {
+carrier_event = {
 	id = pw_archaeology.501
 	title = pw_archaeology.501.name
 	desc = pw_archaeology.501.desc
@@ -1786,14 +1786,21 @@ country_event = {
 	option = {
 		name = pw_holy_reliquary.good_luck.a
 		capital_scope = {
-			while = {
-				count = 2
-				create_pop = {
-					ethos = {
-						ethic = ethic_spiritualist
-					}
-					species = this.owner_main_species
+			# while = {
+			# 	count = 2
+			# 	create_pop = {
+			# 		ethos = {
+			# 			ethic = ethic_spiritualist
+			# 		}
+			# 		species = this.owner_main_species
+			# 	}
+			# }
+			create_pop_group = {
+				size = 200
+				ethos = {
+					ethic = ethic_spiritualist
 				}
+				species = this.owner_main_species
 			}
 		}
 	}
@@ -2202,7 +2209,7 @@ country_event = {
 ## Archaeology: Hidden Factory -> 600
 
 # Site Discovery (after blocker was clear)
-planet_event = {
+carrier_event = {
 	id = pw_archaeology.601
 	title = pw_archaeology.601.name
 	desc = pw_archaeology.601.desc

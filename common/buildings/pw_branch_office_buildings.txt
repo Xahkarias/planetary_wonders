@@ -108,7 +108,7 @@ pw_building_bloodsports_arena = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.110 }
+		carrier_event = { id = pw_branch_office.110 }
 	}
 
 	ai_weight = {
@@ -232,7 +232,7 @@ pw_building_meditation_garden = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.120 }
+		carrier_event = { id = pw_branch_office.120 }
 	}
 
 	ai_weight = {
@@ -356,7 +356,7 @@ pw_building_innovation_hub = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.130 }
+		carrier_event = { id = pw_branch_office.130 }
 	}
 
 	ai_weight = {
@@ -494,7 +494,7 @@ pw_building_salvation_shrine = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.140 }
+		carrier_event = { id = pw_branch_office.140 }
 	}
 
 	ai_weight = {
@@ -618,7 +618,7 @@ pw_building_exotic_beauty_center = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.150 }
+		carrier_event = { id = pw_branch_office.150 }
 	}
 
 	ai_weight = {
@@ -742,7 +742,7 @@ pw_building_national_pride_gallery = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.160 }
+		carrier_event = { id = pw_branch_office.160 }
 	}
 
 	ai_weight = {
@@ -854,7 +854,7 @@ pw_building_aristocracy_tower = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.170 }
+		carrier_event = { id = pw_branch_office.170 }
 	}
 
 	ai_weight = {
@@ -977,7 +977,7 @@ pw_building_factory_city = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.180 }
+		carrier_event = { id = pw_branch_office.180 }
 	}
 
 	ai_weight = {
@@ -1078,7 +1078,7 @@ pw_building_tax_haven = {
 	}
 
 	on_built = {
-		planet_event = { id = pw_branch_office.190 }
+		carrier_event = { id = pw_branch_office.190 }
 	}
 
 	ai_weight = {

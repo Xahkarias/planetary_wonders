@@ -48,7 +48,6 @@ pw_mining_coordinator = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
-		mult = value:job_weights_modifier|JOB|pw_mining_coordinator|RESOURCE|minerals|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_minerals_produces_mult|
 		modifier = {
 			factor = 0.9
@@ -116,7 +115,6 @@ pw_energy_coordinator = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
-		mult = value:job_weights_modifier|JOB|pw_energy_coordinator|RESOURCE|energy|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_energy_produces_mult|
 		modifier = {
 			factor = 0.9
@@ -188,7 +186,6 @@ pw_food_coordinator = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
-		mult = value:job_weights_modifier|JOB|pw_food_coordinator|RESOURCE|food|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_food_produces_mult|
 		modifier = {
 			factor = 0.9
@@ -257,7 +254,6 @@ pw_enigma_decipher = {
 
 	weight = {
 		weight = 50
-		mult = value:job_weights_research_modifier|JOB|pw_enigma_decipher|
 		modifier = {
 			factor = 5
 			planet = { planet_crime > 22 }
@@ -312,7 +308,6 @@ pw_domed_city_subject_drone = {
 
 	weight = {
 		weight = @simple_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_domed_city_subject_drone|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_society_research_produces_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
@@ -368,7 +363,6 @@ pw_poly_artisan_drone = {
 
 	weight = {
 		weight = 50
-		mult = value:job_weights_modifier|JOB|pw_poly_artisan_drone|RESOURCE|consumer_goods|
 		modifier = {
 			factor = 0
 			exists = owner
@@ -431,7 +425,6 @@ pw_lunar_archivist_gestalt = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_lunar_archivist_gestalt|
 		modifier = {
 			factor = 1.25
 			always = yes
@@ -553,7 +546,6 @@ pw_logistics_drone = {
 
 	weight = {
 		weight = @synapse_drone_job_weight
-		mult = value:job_weights_modifier|JOB|pw_logistics_drone|RESOURCE|unity|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_produces_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
@@ -614,7 +606,6 @@ pw_tomb_surveyor = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_tomb_surveyor|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -703,7 +694,6 @@ pw_preserver_drone = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_preserver_drone|
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -787,7 +777,6 @@ pw_banquet_steward_drone = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|pw_banquet_steward_drone|RESOURCE|unity|
 		modifier = {
 			weight = 100
 			exists = owner

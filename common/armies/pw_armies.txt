@@ -72,7 +72,7 @@ pw_army_war_titan = {
 			}
 			NOT = {
 				planet = {
-					has_planet_flag = pw_assembling_war_titan
+					has_carrier_flag = pw_assembling_war_titan
 				}
 			}
 		}
@@ -80,13 +80,13 @@ pw_army_war_titan = {
 
 	on_queued = {
 		planet = {
-			set_planet_flag = pw_assembling_war_titan
+			set_carrier_flag = pw_assembling_war_titan
 		}
 	}
 
 	on_unqueued = {
 		planet = {
-			remove_planet_flag = pw_assembling_war_titan
+			remove_carrier_flag = pw_assembling_war_titan
 		}
 	}
 }
