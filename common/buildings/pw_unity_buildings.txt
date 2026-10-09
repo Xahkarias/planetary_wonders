@@ -447,7 +447,44 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 0
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 0
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -465,7 +502,44 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 1
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 1
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -483,7 +557,44 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 2
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 2
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -501,7 +612,44 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 3
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 3
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -519,7 +667,44 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 4
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = {
+				count_envoy = {
+					count > 4
+					limit = {
+						has_envoy_task = { task = improve_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -534,7 +719,36 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 0 }
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 0 }
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -548,7 +762,36 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 1 }
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 1 }
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -562,7 +805,36 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 2 }
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 2 }
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -576,7 +848,36 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 3 }
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 3 }
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -590,7 +891,36 @@ pw_building_fair_of_worlds = {
 			}
 		}
 		modifier = {
-			job_pw_diversity_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 4 }
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophile = yes }
+			owner = { has_federation = yes }
+			owner = {
+				count_federation_ally = { count > 4 }
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -893,7 +1223,44 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 0
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 0
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -911,7 +1278,44 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 1
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 1
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -929,7 +1333,44 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 2
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 2
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -947,7 +1388,44 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 3
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 3
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -965,7 +1443,44 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 4
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_envoy = {
+					count > 4
+					limit = {
+						has_envoy_task = { task = harm_relations }
+					}
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -981,7 +1496,38 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 0
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 0
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -996,7 +1542,38 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 1
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 1
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -1011,7 +1588,38 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 2
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 2
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -1026,7 +1634,38 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 3
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 3
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -1041,7 +1680,38 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 100
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators
+			job_biologist_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 4
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 20 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				count_rival_country = {
+					count > 4
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 20 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -1055,7 +1725,34 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 200
+			job_bureaucrat_add = 80 # PERSONAL: replaces curators
+			job_biologist_add = 80 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				is_at_war = yes
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 40 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				is_at_war = yes
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 40 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
@@ -1072,7 +1769,40 @@ pw_building_museum_of_the_grotesque = {
 			}
 		}
 		modifier = {
-			job_pw_degeneracy_curator_add = 300
+			job_bureaucrat_add = 120 # PERSONAL: replaces curators
+			job_biologist_add = 120 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+			owner = { NOT = { has_valid_civic = civic_dystopian_society } } # PERSONAL: replaces curators: no entertainers for Oppressive Autocracy
+		}
+		modifier = {
+			job_entertainer_add = 60 # PERSONAL: replaces curators
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_xenophobe = yes }
+			owner = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+			owner = { has_valid_civic = civic_dystopian_society } # PERSONAL: replaces curators
+		}
+		modifier = {
+			job_bureaucrat_add = 60 # PERSONAL: replaces curators: entertainer share
 		}
 	}
 
