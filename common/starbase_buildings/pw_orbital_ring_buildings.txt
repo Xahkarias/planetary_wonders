@@ -62,7 +62,7 @@ pw_ring_elevator_hyper_port = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 100
+			job_logistics_drone_add = 100 # PERSONAL: vanilla traders/logistics drones
 			planet_jobs_upkeep_mult = -0.05
 		}
 	}

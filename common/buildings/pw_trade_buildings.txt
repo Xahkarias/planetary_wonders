@@ -124,12 +124,16 @@ pw_building_space_elevator = {
 		modifier = {
 			job_politician_add = 100 # merchant
 			planet_traders_produces_mult = 0.05
+			job_trader_add = 600 # PERSONAL: vanilla traders/logistics drones: replaces 1000 clerks
 		}
 	}
-	inline_script = {
-		script = jobs/pw/clerks_add
-		CONDITION = "owner = { is_regular_empire = yes} "
-		AMOUNT = 1000
+
+	# PERSONAL: vanilla traders/logistics drones: +0.5 trade per 100 traders (includes logistics drones)
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_traders_trade_produces_add = 0.5
+		}
 	}
 
 	inline_script = {
@@ -156,7 +160,7 @@ pw_building_space_elevator = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 500
+			job_logistics_drone_add = 600 # PERSONAL: vanilla traders/logistics drones
 			# job_maintenance_drone_add = 300
 			job_patrol_drone_add = 100
 			job_coordinator_add = 100
@@ -171,7 +175,7 @@ pw_building_space_elevator = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_pw_logistics_drone_add = 500
+			job_logistics_drone_add = 600 # PERSONAL: vanilla traders/logistics drones
 			# job_maintenance_drone_add = 300
 			job_patrol_drone_add = 100
 			job_coordinator_add = 100
@@ -186,7 +190,7 @@ pw_building_space_elevator = {
 			owner = { has_technology = pw_tech_space_elevator_orbital_logistics }
 		}
 		modifier = {
-			job_pw_logistics_drone_per_pop = @pw_job_per_50_pop
+			job_logistics_drone_per_pop = @pw_job_per_50_pop # PERSONAL: vanilla traders/logistics drones
 		}
 	}
 

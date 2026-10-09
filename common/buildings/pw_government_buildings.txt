@@ -435,7 +435,7 @@ pw_building_aligned_galactic_model = {
 		}
 		modifier = {
 			job_coordinator_add = 1000
-			job_pw_logistics_drone_add = 200
+			job_logistics_drone_add = 200 # PERSONAL: vanilla traders/logistics drones
 		}
 	}
 
@@ -448,7 +448,7 @@ pw_building_aligned_galactic_model = {
 		modifier = {
 			job_coordinator_add = 800
 			job_evaluator_add = 200
-			job_pw_logistics_drone_add = 200
+			job_logistics_drone_add = 200 # PERSONAL: vanilla traders/logistics drones
 		}
 	}
 
