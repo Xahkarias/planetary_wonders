@@ -2428,13 +2428,25 @@ pw_building_grand_archive = {
 		building_corporate_site
 	}
 
+	# PERSONAL: +10% researcher job output on this planet
+	triggered_planet_modifier = {
+		potential = { exists = owner }
+		modifier = {
+			planet_researchers_produces_mult = 0.10
+		}
+	}
+
 	#Grand-Archivist
 	triggered_planet_modifier = {
 		potential = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 600
+			# PERSONAL: replaces archivists: 600 grand archivists
+			job_physicist_add = 180
+			job_biologist_add = 180
+			job_engineer_add = 180
+			job_bureaucrat_add = 60
 		}
 	}
 
@@ -2468,7 +2480,7 @@ pw_building_grand_archive = {
 			}
 		}
 		modifier = {
-			job_pw_master_archivist_add = 100
+			job_politician_add = 100 # PERSONAL: replaces archivists: master archivists
 		}
 	}
 

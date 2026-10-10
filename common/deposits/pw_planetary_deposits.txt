@@ -754,7 +754,11 @@ pw_d_ark_project = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -788,7 +792,11 @@ pw_d_library_of_babel = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -821,7 +829,11 @@ pw_d_cradle_initiative = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -854,7 +866,11 @@ pw_d_particle_museum = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -887,7 +903,11 @@ pw_d_omnidatabase = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -920,7 +940,11 @@ pw_d_stellarium = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -954,7 +978,11 @@ pw_d_zero_g_exposition = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -987,7 +1015,11 @@ pw_d_mechanist_collection = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -1020,7 +1052,11 @@ pw_d_meta_architectural_complex = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 100
+			# PERSONAL: replaces archivists: 100 grand archivists
+			job_physicist_add = 30
+			job_biologist_add = 30
+			job_engineer_add = 30
+			job_bureaucrat_add = 10
 		}
 	}
 }
@@ -1062,7 +1098,11 @@ pw_d_holoarchive = {
 			owner = { is_materialist = yes }
 		}
 		modifier = {
-			job_pw_grand_archivist_add = 900
+			# PERSONAL: replaces archivists: 900 grand archivists
+			job_physicist_add = 270
+			job_biologist_add = 270
+			job_engineer_add = 270
+			job_bureaucrat_add = 90
 		}
 	}
 }
