@@ -1028,7 +1028,10 @@ pw_pm_nostalgia_paradise_theme_automated_resort = {
 pw_pm_unhallowed_necropolis_mausoleum_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_unhallowed_necropolis_mausoleum_world.dds"
 	icon_frame = @pw_icon_frame_green
-	job_pw_tomb_scholar_per_pop = @pw_job_per_25_pop
+	# PERSONAL: replaces tomb jobs: 30% each of 1 tomb scholar per 25 pops
+	job_bureaucrat_per_pop = 0.012
+	job_physicist_per_pop = 0.012
+	job_biologist_per_pop = 0.012
 	pop_environment_tolerance = 0.10
 	planet_resettlement_unemployed_destination_mult = 0.10
 	planet_amenities_mult = 0.05
@@ -1041,7 +1044,10 @@ pw_pm_unhallowed_necropolis_mausoleum_world = {
 pw_pm_unhallowed_necropolis_mausoleum_world_no_happiness = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_unhallowed_necropolis_mausoleum_world.dds"
 	icon_frame = @pw_icon_frame_green
-	job_pw_tomb_surveyor_per_pop = @pw_job_per_25_pop
+	# PERSONAL: replaces tomb jobs: 30% each of 1 tomb surveyor per 25 pops
+	job_coordinator_per_pop = 0.012
+	job_calculator_physicist_per_pop = 0.012
+	job_calculator_biologist_per_pop = 0.012
 	pop_environment_tolerance = 0.10
 	planet_resettlement_unemployed_destination_mult = 0.10
 	planet_amenities_no_happiness_mult = 0.05

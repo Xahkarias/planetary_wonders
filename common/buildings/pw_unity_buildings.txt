@@ -2414,7 +2414,10 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_pw_tomb_scholar_add = 200
+			# PERSONAL: replaces tomb jobs: 200 tomb scholars
+			job_bureaucrat_add = 60
+			job_physicist_add = 60
+			job_biologist_add = 60
 		}
 	}
 
@@ -2440,7 +2443,10 @@ pw_building_unhallowed_necropolis = {
 			}
 		}
 		modifier = {
-			job_pw_tomb_surveyor_add = 200
+			# PERSONAL: replaces tomb jobs: 200 tomb surveyors
+			job_coordinator_add = 60
+			job_calculator_physicist_add = 60
+			job_calculator_biologist_add = 60
 		}
 	}
 
