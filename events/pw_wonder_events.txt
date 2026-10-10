@@ -5558,6 +5558,10 @@ carrier_event = {
 					kill_assigned_pop_amount = { amount = @pw_event_casualty_4 }
 				}
 			}
+			if = { # PERSONAL: devastation only for non-nomads
+				limit = { owner? = { is_nomadic = no } }
+				add_planet_devastation = 30
+			}
 		}
 		else = {
 			custom_tooltip = pw_wonder.868.a.tooltip
@@ -7504,6 +7508,10 @@ carrier_event = {
 
 	option = {
 		name = UNFORTUNATE
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 5
+		}
 		hidden_effect = {
 			carrier_event = {
 				id = pw_wonder.1304
@@ -7516,6 +7524,10 @@ carrier_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 5
+		}
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7541,6 +7553,10 @@ carrier_event = {
 
 	option = {
 		name = UNFORTUNATE
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 15
+		}
 		hidden_effect = {
 			carrier_event = {
 				id = pw_wonder.1304
@@ -7553,6 +7569,10 @@ carrier_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 15
+		}
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7579,6 +7599,10 @@ carrier_event = {
 
 	option = {
 		name = UNFORTUNATE
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 25
+		}
 		hidden_effect = {
 			carrier_event = {
 				id = pw_wonder.1304
@@ -7591,6 +7615,10 @@ carrier_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 25
+		}
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7616,6 +7644,10 @@ carrier_event = {
 
 	option = {
 		name = UNFORTUNATE
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 30
+		}
 		hidden_effect = {
 			carrier_event = {
 				id = pw_wonder.1304
@@ -7628,6 +7660,10 @@ carrier_event = {
 	option = {
 		name = pw_wonder.mantle_crucible.hide_devastation_events
 		custom_tooltip = pw_wonder.mantle_crucible.hide_devastation_events.tooltip
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 30
+		}
 		hidden_effect = {
 			owner = {
 				set_country_flag = pw_mantle_crucible_hide_devastation_events
@@ -7704,6 +7740,10 @@ carrier_event = {
 	location = this
 
 	immediate = {
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 5
+		}
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_5
@@ -7733,6 +7773,10 @@ carrier_event = {
 	location = this
 
 	immediate = {
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 15
+		}
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_15
@@ -7762,6 +7806,10 @@ carrier_event = {
 	location = this
 
 	immediate = {
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 25
+		}
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_25
@@ -7791,6 +7839,10 @@ carrier_event = {
 	location = this
 
 	immediate = {
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 30
+		}
 		create_message = {
 			type = PW_MANTLE_CRUCIBLE_DEVASTATION
 			localization = pw_message_mantle_crucible_devastation_30
@@ -7824,6 +7876,10 @@ carrier_event = {
 
 	option = {
 		name = pw_wonder.1320.a
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 20
+		}
 		random_owned_pop_job = {
 			kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
 		}
@@ -7837,6 +7893,10 @@ carrier_event = {
 
 	option = {
 		name = pw_wonder.1320.b
+		if = { # PERSONAL: devastation only for non-nomads
+			limit = { owner? = { is_nomadic = no } }
+			add_planet_devastation = 20
+		}
 		random_owned_pop_job = {
 			kill_assigned_pop_amount = { amount = @pw_event_casualty_1 }
 		}

@@ -786,6 +786,12 @@ country_event = {
 			min = @tier5materialmin
 			max = @tier5materialmax
 		}
+		event_target:PWPCPlanet = {
+			if = { # PERSONAL: devastation only for non-nomads
+				limit = { owner? = { is_nomadic = no } }
+				add_planet_devastation = 25
+			}
+		}
 	}
 }
 #Complete the experiment (and chain)
@@ -2120,6 +2126,12 @@ country_event = {
 	#Contact them
 	option = {
 		name = pw_research.3005.a
+		event_target:PWFallenEmpireACTSPlanet = {
+			if = { # PERSONAL: devastation only for non-nomads
+				limit = { owner? = { is_nomadic = no } }
+				add_planet_devastation = 25
+			}
+		}
 		hidden_effect = {
 			country_event = { id = pw_research.3006 }
 		}
@@ -2128,6 +2140,12 @@ country_event = {
 	#Par for the Course
 	option = {
 		name = pw_research.3005.b
+		event_target:PWFallenEmpireACTSPlanet = {
+			if = { # PERSONAL: devastation only for non-nomads
+				limit = { owner? = { is_nomadic = no } }
+				add_planet_devastation = 25
+			}
+		}
 		hidden_effect = {
 			country_event = { id = pw_research.3004 days = 90 }	#At war
 			country_event = { id = pw_research.3009 days = 90 }
@@ -2419,6 +2437,12 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = living_metal_found
+		}
+		event_target:PWACTSPlanet = {
+			if = { # PERSONAL: devastation only for non-nomads
+				limit = { owner? = { is_nomadic = no } }
+				add_planet_devastation = 20
+			}
 		}
 		hidden_effect = {
 			country_event = {
