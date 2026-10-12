@@ -1,10 +1,10 @@
 # Planetary Wonders (Stellaris Mod)
 
+AI UPDATED FOR MY PERSONAL USE - NEVER TO BE UPLOADED TO STEAM
+
 A mod for the game [Stellaris](https://store.steampowered.com/app/281990/Stellaris/) that aims to add planetary mega-structures to the game.
 
-[Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2305790641)
-
-If you enjoy my work, have some spare money and would like to donate, now you can [Buy me a coffee at Ko-Fi!](https://ko-fi.com/namfoodle)
+[SOURCE MOD Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2305790641)
 
 ## Contents
 
